@@ -23,7 +23,7 @@ class Builder:
         self.root=root.resolve();self.output=output.resolve();self.base_url=base_url.rstrip('/')
         parsed=urlsplit(self.base_url)
         if parsed.scheme not in ('http','https') or not parsed.netloc or parsed.query or parsed.fragment:raise ValueError('base-url must be an absolute HTTP(S) site URL')
-        self.prefix=parsed.path.rstrip('/');self.mapping={};self.pages=[];self.copied={};self.source_html=[]
+        self.prefix=parsed.path.rstrip('/');self.mapping={};self.pages=[];self.copied={};self.source_html=[];self.plot_math_labels=[]
         self.entries=load(self.root/'experiments/registry.json')['experiments']
 
     def url(self,path):return self.prefix+'/'+quote(str(path).replace('\\','/'),safe='/')
@@ -74,6 +74,39 @@ class Builder:
         nav+='</nav>'
         footer='<footer class="site-footer"><span>淮南师范学院 · 普通物理实验</span><a href="'+self.url('licensing.html')+'">许可与素材来源</a><a href="'+self.url('third-party-notices.html')+'">第三方声明</a><a href="'+self.url('llms.txt')+'">Agent 导览</a></footer>'
         return nav,footer
+    def plot_labels(self,soup,page):
+        labels=[];decoder=json.JSONDecoder()
+        def mathematical(value,path=()):
+            if isinstance(value,dict):
+                for key,item in value.items():yield from mathematical(item,path+(key,))
+            elif isinstance(value,list):
+                for index,item in enumerate(value):yield from mathematical(item,path+(index,))
+            elif isinstance(value,str) and re.search(r'(?<!\$)\$(?:\\.|[^$])+\$',value):yield path,value
+        for node in soup.find_all('script'):
+            text=node.get_text();replacements=[]
+            for match in re.finditer(r'Plotly\.newPlot\(\s*("(?:[^"\\]|\\.)*")\s*,',text):
+                plot_id=json.loads(match[1]);position=match.end()
+                while text[position].isspace():position+=1
+                data,end=decoder.raw_decode(text,position);position=end
+                while text[position].isspace() or text[position]==',':position+=1
+                start=position;layout,end=decoder.raw_decode(text,start)
+                if list(mathematical(data)):raise ValueError('Plot data mathematical labels need a declared renderer: '+page)
+                found=list(mathematical(layout))
+                for path,value in found:
+                    if len(path)!=3 or not re.fullmatch(r'[xy]axis\d*',str(path[0])) or path[1:]!=('title','text') or not (value.startswith('$') and value.endswith('$')):
+                        raise ValueError('Plot mathematical label needs a declared renderer: '+str((page,path,value)))
+                    tex=value[1:-1]
+                    # A doubled slash before a command/spacing token is an invalid axis label escape.
+                    tex=re.sub(r'\\\\(?=[A-Za-z]|[;,!])',lambda _: '\\',tex)
+                    accessible=re.sub(r'\\text\{([^{}]*)\}',r'\1',tex)
+                    accessible=re.sub(r'\\[;,!]', ' ', accessible)
+                    axis=layout[path[0]];axis['title']['text']=accessible
+                    label={'page':page,'plot_id':plot_id,'field':'.'.join(path),'axis_class':path[0].replace('axis','')+'title','tex':tex,'accessible_text':accessible,'font_size':axis['title'].get('font',{}).get('size',layout.get('font',{}).get('size',18))}
+                    labels.append(label);self.plot_math_labels.append(label)
+                if found:replacements.append((start,end,json.dumps(layout,ensure_ascii=True,separators=(',',':'))))
+            for start,end,value in reversed(replacements):text=text[:start]+value+text[end:]
+            if replacements:node.string=text
+        return labels
     def transform(self,content,source,destination,title,experiment=None,notebook=False):
         soup=BeautifulSoup(content,'html.parser')
         if soup.html is None:
@@ -81,6 +114,7 @@ class Builder:
         soup.html['lang']='zh-CN'
         if soup.head is None:soup.html.insert(0,soup.new_tag('head'))
         if soup.body is None:raise ValueError('Missing body '+str(source))
+        plot_labels=self.plot_labels(soup,destination)
         for heading in soup.find_all(re.compile(r'^h[1-6]$')):
             strings=[s for s in heading.find_all(string=True) if not any('anchor-link' in p.get('class',[]) or 'headerlink' in p.get('class',[]) for p in s.parents if getattr(p,'attrs',None))]
             if strings:
@@ -115,6 +149,8 @@ class Builder:
         soup.body.insert(0,BeautifulSoup(nav,'html.parser'));soup.body.append(BeautifulSoup(footer,'html.parser'))
         if experiment and experiment['id']=='course-01/pendulum' and destination.endswith('notebooks/analysis.html'):
             soup.body.append(soup.new_tag('script',src=self.url('assets/pendulum-animation.js')))
+        if plot_labels:
+            soup.body.append(soup.new_tag('script',src=self.url('assets/plot-math.js'),attrs={'data-labels':json.dumps(plot_labels,ensure_ascii=False)}))
         self.write(destination,str(soup));self.pages.append(destination)
     def markdown_page(self,path,destination,title=None):
         text=path.read_text(encoding='utf-8')
@@ -162,6 +198,7 @@ class Builder:
         self.write('assets/site.css',(self.root/'site/assets/site.css').read_bytes())
         self.write('assets/favicon.svg',(self.root/'site/assets/favicon.svg').read_bytes())
         self.write('assets/pendulum-animation.js',(self.root/'site/assets/pendulum-animation.js').read_bytes())
+        self.write('assets/plot-math.js',(self.root/'site/assets/plot-math.js').read_bytes())
         vendor=load(self.root/'site/vendor/manifest.json');vendor_files=[]
         versions={s['name']:s['version']for s in vendor['sources']}
         if versions!={'MathJax':'2.7.7','RequireJS':'2.1.10'}:raise ValueError('Unexpected mathematics runtime versions')
@@ -176,7 +213,7 @@ class Builder:
         self.write('sitemap.xml',sitemap);self.write('robots.txt','User-agent: *\nAllow: /\nSitemap: '+self.base_url+'/sitemap.xml\n')
         size=sum(p.stat().st_size for p in self.output.rglob('*')if p.is_file())
         if size>=1_000_000_000:raise ValueError('Pages site exceeds 1GB')
-        record={'status':'built','base_url':self.base_url,'experiment_count':len(self.entries),'html_pages':len(self.pages),'pdf_count':len(list((self.output/'pdf').rglob('*.pdf'))),'bytes':size,'copied_source_files':self.copied,'source_html':self.source_html,'pages':sorted(self.pages),'vendor_files':len(vendor_files)}
+        record={'status':'built','base_url':self.base_url,'experiment_count':len(self.entries),'html_pages':len(self.pages),'pdf_count':len(list((self.output/'pdf').rglob('*.pdf'))),'bytes':size,'copied_source_files':self.copied,'source_html':self.source_html,'pages':sorted(self.pages),'vendor_files':len(vendor_files),'plot_math_labels':self.plot_math_labels}
         self.write('build-manifest.json',json.dumps(record,ensure_ascii=False,indent=2)+'\n')
         print(json.dumps({k:record[k]for k in ['status','experiment_count','html_pages','pdf_count','bytes','vendor_files']},ensure_ascii=False))
 

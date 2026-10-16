@@ -167,7 +167,8 @@ finally:
         'pendulum_animation': 'Play, pause and time selection checked after interruption handling repair',
         'records': []}
     for relative in ('browser-course01-02.json', 'browser-course03.json',
-                     'review-optics/browser-validation.json', 'browser-navigation.json', 'browser-animation.json'):
+                     'review-optics/browser-validation.json', 'browser-navigation.json', 'browser-animation.json',
+                     'browser-plot-math.json'):
         path = ROOT / '.build/pages' / relative
         assert path.is_file(), 'Complete browser validation: ' + relative
         record['browser_validation']['records'].append({'name': relative, 'sha256': sha256(path)})
@@ -180,7 +181,12 @@ finally:
     count = len(browser_pages) + len(qa_optics['pages'])
     assert count == len(entries) * 2, 'Complete every report and computation page browser check'
     record['browser_validation']['experiment_report_and_notebook_pages'] = count
-    record['browser_validation']['rendered_formulas'] = sum(page['rendered'] for page in browser_pages) + sum(page['frames'] for page in qa_optics['pages'])
+    plot_math = json.loads((ROOT / '.build/pages/browser-plot-math.json').read_text(encoding='utf-8'))
+    assert plot_math['status'] == 'passed', 'Complete mathematical plot label rendering checks'
+    site_manifest = json.loads((site / 'build-manifest.json').read_text(encoding='utf-8'))
+    record['browser_validation']['rendered_body_formulas'] = sum(page['rendered'] for page in browser_pages) + sum(page['frames'] for page in qa_optics['pages'])
+    record['browser_validation']['rendered_plot_math_labels'] = len(site_manifest['plot_math_labels'])
+    record['browser_validation']['rendered_formulas'] = record['browser_validation']['rendered_body_formulas'] + record['browser_validation']['rendered_plot_math_labels']
     manifest = output / 'release-manifest.json'
     manifest.write_text(json.dumps(record, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
     files = [*sorted(output.glob('*.zip')), manifest]

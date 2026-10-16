@@ -40,6 +40,8 @@ python -m http.server 8000 --bind 127.0.0.1 --directory .build/pages/preview
 
 计算 HTML 已内嵌 Plotly，构建保留现有交互初始化，仅将 MathJax 与 RequireJS 的 CDN 入口替换为本站资源。首页和各文档使用同一数学运行时。导航、规范 URL、`sitemap.xml` 和 `robots.txt` 由站点构建生成。
 
+图内数学标题由构建逐页登记。弦振动的归一化位移轴使用 `site/assets/plot-math.js` 调用本地 MathJax 2 的 SVG 输出，保留正文 CommonHTML；菜单切换与窗口调整后重新定位数学标题。原始 HTML 与 Notebook 保留正式成稿，发布副本的标题转换和运行资源记录在构建清单中。
+
 `check_pages.py` 核对 45 个实验入口、45 份报告、45 份计算 HTML、57 份 PDF、全部本地链接、站点子路径、数学运行时、许可证、资源哈希、Plotly 初始化数量以及总大小。站点输出采用明确的资源白名单；Notebook 和 Paclet 下载由 GitHub 提供。
 
 ## GitHub Pages 工作流

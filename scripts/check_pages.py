@@ -1,6 +1,6 @@
 """Check the generated Pages tree, links, local runtime and publication boundary."""
 from __future__ import annotations
-import argparse,hashlib,json,sys
+import argparse,hashlib,json,re,sys
 from pathlib import Path
 from urllib.parse import urlsplit,unquote
 from xml.etree import ElementTree
@@ -56,12 +56,29 @@ def check(site):
         if not p.is_file() or p.stat().st_size!=f['bytes'] or sha(p)!=f['sha256']:errors.append([f['path'],'vendor resource hash'])
     for source in vendor['sources']:
         if not (site/'vendor'/source['license_file']).is_file():errors.append([source['name'],'vendor license'])
-    for name in ['site.css','favicon.svg','pendulum-animation.js']:
+    for name in ['site.css','favicon.svg','pendulum-animation.js','plot-math.js']:
         if sha(site/'assets'/name)!=sha(ROOT/'site/assets'/name):errors.append(['assets/'+name,'site runtime source hash'])
     animated='experiments/course-01/pendulum/notebooks/analysis.html'
     for relative in pages:
         published=(site/relative).read_text(encoding='utf-8')
         if ('/assets/pendulum-animation.js' in published)!=(relative==animated):errors.append([relative,'animation runtime scope'])
+    declared=manifest.get('plot_math_labels',[])
+    for relative in pages:
+        soup=BeautifulSoup((site/relative).read_text(encoding='utf-8'),'html.parser')
+        labels=[item for item in declared if item['page']==relative]
+        nodes=soup.select('script[src$="/assets/plot-math.js"]')
+        if len(nodes)!=int(bool(labels)):errors.append([relative,'plot mathematics runtime scope'])
+        if nodes and json.loads(nodes[0].get('data-labels','[]'))!=labels:errors.append([relative,'plot mathematics declaration'])
+        for node in soup.find_all('script'):
+            text=node.get_text()
+            if not re.search(r'Plotly\.newPlot\(\s*"',text):continue
+            for match in re.finditer(r'"(?:[^"\\]|\\.)*"',text):
+                value=json.loads(match[0])
+                if len(value)>2 and value.startswith('$') and value.endswith('$'):errors.append([relative,'literal Plotly TeX',value])
+    for label in declared:
+        if re.search(r'\\\\(?=[A-Za-z]|[;,!])',label['tex']):errors.append([label['page'],'doubled plot TeX escape'])
+    for relative in ['vendor/mathjax-2.7.7/jax/output/SVG/config.js','vendor/mathjax-2.7.7/jax/output/SVG/jax.js']:
+        if not (site/relative).is_file():errors.append([relative,'plot SVG runtime'])
     for rel in ['assets/pendulum-animation.js','vendor/mathjax-2.7.7/MathJax.js','vendor/mathjax-2.7.7/config/TeX-AMS_CHTML-full.js','vendor/mathjax-2.7.7/extensions/Safe.js','vendor/mathjax-2.7.7/jax/output/CommonHTML/jax.js','vendor/requirejs-2.1.10/require.js','llms.txt','llms-full.txt','docs/experiments.json','licensing.html','third-party-notices.html','sitemap.xml','robots.txt','.nojekyll']:
         if not (site/rel).is_file():errors.append([rel,'required file'])
     files=[p for p in site.rglob('*')if p.is_file()]
@@ -75,7 +92,7 @@ def check(site):
     if len(pdfs)!=57:errors.append(['pdf','expected 57',len(pdfs)])
     sitemap=ElementTree.parse(site/'sitemap.xml');locs=sitemap.findall('.//{http://www.sitemaps.org/schemas/sitemap/0.9}loc')
     if len(locs)!=len(pages):errors.append(['sitemap','page count'])
-    record={'status':'passed'if not errors else 'failed','experiments':len(registry),'html_pages':len(pages),'pdfs':len(pdfs),'local_links':local_links,'vendor_files':len(vendor['files']),'bytes':size,'errors':errors}
+    record={'status':'passed'if not errors else 'failed','experiments':len(registry),'html_pages':len(pages),'pdfs':len(pdfs),'local_links':local_links,'vendor_files':len(vendor['files']),'plot_math_labels':len(declared),'bytes':size,'errors':errors}
     return record
 
 def main():
