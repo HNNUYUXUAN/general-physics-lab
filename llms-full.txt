@@ -1,0 +1,1882 @@
+# 普通物理实验 · 完整 Agent 导览
+
+> General Physics Lab: reading, reproduction and 45 experiment cards.
+
+本文件汇集阅读与复现说明及全部实验卡片。报告、原始读数和完整精度结果通过各卡片链接按需读取。
+
+项目：https://github.com/HNNUYUXUAN/general-physics-lab
+
+[简短导览](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/llms.txt) · [机器目录](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/experiments.json)
+
+---
+
+来源：[agent-guide.md](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/agent-guide.md)
+
+## Agent 检索与复现指南
+
+[项目首页](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/README.md) · [实验检索目录](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/experiment-index.md) · [目录接口](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/agent-catalog.md) · [计算复现指南](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/agent-reproduction.md)
+
+本指南面向接手实验问答、数据核对、计算复现和文档维护的 agent。先读仓库 [AGENTS.md](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/AGENTS.md)，以稳定实验标识 `course-NN/slug` 定位材料，再沿“原始记录 → 规范输入 → 计算结果 → 物理解释”读取证据。
+
+### 按任务找到文件
+
+首次查找实验可使用[中英文检索目录](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/experiment-index.md)；程序读取使用 [`docs/experiments.json`](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/experiments.json)。机器目录包含名称与别名、主题与方法、资源路径、主报告 PDF、指标目录、实际接口和复现命令；字段、哈希规则及命令说明见[目录接口](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/agent-catalog.md)。
+
+从仓库根目录先检索，再查看完整实验对象：
+
+```powershell
+python scripts/agent_catalog.py search "物质密度" --json
+python scripts/agent_catalog.py search "RLC bandwidth" --course course-03 --json
+python scripts/agent_catalog.py show course-01/pendulum --json
+```
+
+前两条分别定位 `course-01/density` 与 `course-03/rlc-resonance`；第三条返回单摆的路径、指标及专用接口。搜索多词时要求所有词出现，`--course` 限定课程，`--limit` 调整返回数量。取得标识后，用 `show <id> --json` 的 `resources` 打开文件，按 `metric_catalog` 与 `result_pointer` 读取数值。
+
+[`experiments/registry.json`](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/registry.json) 是构建登记表，记录中文名称 `title`、标识 `id`、Python 模块、Wolfram Paclet、三稿及安装包路径。中文题名适合语义检索；`id`、`module`、`paclet` 适合精确检索。
+
+|任务 / Search intent|首先读取|继续核对|
+|---|---|---|
+|找实验入口 / experiment lookup|实验 `README.md`|课程目录、登记表中的三稿路径|
+|回答实验原理 / physical model|`report/report.md`|`experiment.json` 的参数与模型、计算实现|
+|查读数与来源 / observations, provenance|`data/*.csv`、`data/provenance.json`|源报告 PDF、来源映射和整理记录|
+|引用结果 / metric, uncertainty|`results/python.json`|`results/wolfram.json`、`results/verification.json`、报告的条件说明|
+|复跑计算 / reproduce, execute|`notebooks/analysis.ipynb`|本实验 Python 模块、Paclet 内核与执行记录|
+|找真实交互 / model exploration|`authoring.json` 的 `expansions`|展开块调用的 `explore`、包的 `Explore` 和控件验证记录|
+|维护入口图片 / README figures|`assets/readme-plan.json`|所选 `series`、图题和观测/模型标签|
+
+需要直接检查原文或代码时，补充全文检索：
+
+```powershell
+rg -n '共振|resonance' experiments/registry.json
+rg -n 'surface_tension|条件标准不确定度' experiments/course-02/surface-tension src/physicslab/experiments/surface_tension.py
+python scripts/batch.py --list
+```
+
+逐实验路径统一从登记表取得。例如 Python 中定位密度实验：
+
+```python
+from pathlib import Path
+import json
+
+root = Path.cwd()  # 仓库根目录
+registry = json.loads((root / "experiments/registry.json").read_text(encoding="utf-8"))
+entry = next(e for e in registry["experiments"] if e["id"] == "course-01/density")
+exp = root / "experiments" / entry["id"]
+print(entry["report"], entry["python_module"], entry["wolfram_notebook"])
+```
+
+### 沿证据链读取一个实验
+
+1. **读入口与报告。** 确定实验对象、方法、章节顺序、单位和结论；README 提供阅读路线，报告给出完整推导与记录表。
+2. **读规范输入。** CSV 保存本实验的记录，`experiment.json` 保存参数、模型与条件。查看列名和说明后，再判断哪些列是原始读数、源表派生值或模型参数。
+3. **读来源映射。** `data/provenance.json` 定位源表、列和转换说明。各实验还可能有更正记录或核对文件，按实际文件读取。
+4. **读计算输出。** `results/python.json` 和 `results/wolfram.json` 保存各端结果；`results/verification.json` 保存对照状态与逐项检查。执行与呈现记录位于同一 `results/` 目录。
+5. **按问题打开实现。** Python 算法在登记表的 `python_module`，Wolfram 算法在对应 Paclet 的 `Kernel/analysis.wl`；单摆实现见下节。Notebook 展开块在 `authoring.json`，用于定位推导、表格和交互。
+
+源 DOCX 的标识与哈希保存在登记表和来源记录中。源报告 PDF 的对应关系以 [`pdf/verification.json`](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/pdf/verification.json) 中 `role = "main_report"`、`experiment_id` 和 `pdf_file` 为准，可用它定位原页进行表格核对。文件名与实验标题有差别时，沿该映射查找。
+
+### 数值引用与数据边界
+
+引用一个指标时同时记录 **实验标识、指标键、数值、单位、处理方法和适用条件**。例如密度实验的 `metrics.solid_density.value` 是由质量均值计算的合金密度，`metrics.solid_density.uncertainty` 对应条件标准不确定度；重复性分量另见 `solid_uncertainty_a`。
+
+- 用未修约的 `value` 进行比较和后续运算，在回答、表格或图题中按所需有效数字显示。
+- 单位读取本指标的 `unit`。标准不确定度、回归标准误、相对差和均方根差分别按其定义解释。
+- 数字配上指向本实验报告或结果 JSON 的链接与对应 Git 提交；引用源读数时链接 CSV 或源 PDF，并注明表格或测量组。
+- 检查输入与代码哈希是否对应当前文件。`check_delivery.py` 会核对这些关系以及已保存执行、对照和呈现记录。
+- 保持主报告的测量批次。讲义示例、源作者补齐值、模型扫描与实际观测各按记录身份使用。
+- 空值与待核读数沿用来源说明；已有分量按其范围报告，仪器指标、相关性或系统修正齐全后再扩展预算。
+- 交互参数表示模型情景；从 `authoring.json` 和实际 `explore` 调用确认控件、范围及默认值。静态实验可通过改输入、重跑计算来研究敏感性。
+
+新实验结果通常包含 `metrics`、`tables`、`series` 和 `notes`。单摆还使用 `processed`、`simulation`、`amplitude_scan` 等专用结构；按实际键名读取。
+
+### 三个具体任务示例
+
+#### 任务一：回答“合金和盐水的密度是多少，误差如何解释？”
+
+定位 `course-01/density`，读取 [报告](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-01/density/report/report.md)、[两张称量表的来源映射](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-01/density/data/provenance.json)和[结果 JSON](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-01/density/results/python.json)。以下代码只读取保存结果：
+
+```python
+from pathlib import Path
+import json
+
+exp = Path("experiments/course-01/density")
+result = json.loads((exp / "results/python.json").read_text(encoding="utf-8"))
+verification = json.loads((exp / "results/verification.json").read_text(encoding="utf-8"))
+print("双端对照：", verification["status"])
+for key in ("solid_density", "liquid_density", "solid_uncertainty_a", "liquid_uncertainty_a"):
+    metric = result["metrics"][key]
+    print(key, metric["value"], metric["unit"], metric.get("uncertainty"))
+print(result["notes"])
+```
+
+报告的水密度输入为 0.99779 g/cm³；合金与盐水的估值分别约为 7.90123 和 1.083849 g/cm³。解释误差时，分开描述质量重复性，以及采用 0.01 g 假设误差限的条件预算；共享空瓶质量的传播由三个原始称量变量求导。
+
+#### 任务二：在新内核复跑 RLC 谐振 Notebook
+
+先按[使用指南](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/usage.md)安装 Python 依赖、SimSun 和 Times New Roman。以下命令从仓库根目录运行：
+
+```powershell
+.\.venv\Scripts\python.exe scripts/execute_notebooks.py --experiment course-03/rlc-resonance
+.\.venv\Scripts\python.exe scripts/check_delivery.py --experiment course-03/rlc-resonance
+```
+
+第一条命令使用当前 Python 环境创建新内核，执行结果写入 `.build/notebook-checks/<运行编号>/course-03/rlc-resonance/analysis.ipynb`，同次 `execution.json` 记录状态。第二条检查正式成稿、链接、哈希与既有双端及呈现记录。两项输出分别回答“本环境重跑是否成功”和“正式交付是否对应当前输入与实现”。
+
+若需要检查已有交互的物理关系，接着读取该实验的 `authoring.json` 和 `src/physicslab/experiments/rlc_resonance.py`，定位实际展开块与参数控件。
+
+#### 任务三：比较单摆的数值周期与解析周期
+
+单摆标识为 `course-01/pendulum`。其 Python 接口同样接受实验目录，但结果结构包含专用模型输出：
+
+```python
+from pathlib import Path
+from physicslab.experiments.pendulum import analyze
+
+result = analyze(Path("experiments/course-01/pendulum"))
+model = result["simulation"]
+print("拟合重力：", result["metrics"]["gravity_fit"])
+print("ODE 周期 / s：", model["period_ode_s"])
+print("椭圆积分周期 / s：", model["period_exact_s"])
+print("相对能量漂移：", model["relative_energy_drift"])
+```
+
+初始摆角、有效摆长、角速度和时长读自 `experiment.json` 的 `simulation`。ODE 周期取首次过平衡位置时刻的四倍；解析周期使用完整椭圆积分。将两者与相对能量漂移一起检查，连接模型假设与数值精度。
+
+Wolfram 单摆采用 `PL` 前缀的接口与 `Pendulum.nb` 文件名：
+
+```wolfram
+root = "D:/general-physics-lab";
+PacletInstall[FileNameJoin[{root, "notebook", "paclets", "PendulumLab", "dist", "PendulumLab-0.1.0.paclet"}]];
+Needs["PendulumLab`"];
+PendulumLab`PLAnalyze[]
+PendulumLab`PLOpenNotebook[]
+```
+
+其他实验使用登记表中的包名，例如 ``DensityLab`Analyze[]``、``DensityLab`LabNotebookPath[]``、``DensityLab`OpenNotebook[]``、``DensityLab`ResultsFigure["solid_repeat"]``。图和探索的键从对应结果及 `authoring.json` 获取。
+
+### 修改输入或展示后怎样复现
+
+科学输入或算法修改时，同步更新来源说明及计算实现，然后运行实验的双端完整流程。以密度实验为例：
+
+```powershell
+.\.venv\Scripts\python.exe scripts/pipeline.py all --experiment course-01/density
+.\.venv\Scripts\python.exe -m pytest
+.\.venv\Scripts\python.exe scripts/check_delivery.py --experiment course-01/density
+```
+
+完整流程需要 WolframScript、Wolfram 前端及指定字体。`WOLFRAMSCRIPT` 可指定可执行文件；Windows 的 `PHYSICSLAB_BUILD_ROOT` 可指定较短的暂存目录。构建后核对报告结论、默认与改变参数后的图形状态，并更新相应呈现记录。
+
+命令的批量范围如下：
+
+|命令|范围与产物|
+|---|---|
+|`python scripts/pipeline.py all --all`|构建单摆以外的 44 个实验|
+|`python scripts/pipeline.py all`|构建单摆|
+|`python scripts/pipeline.py compare`|核对单摆当前输入、代码及两端结果|
+|`python scripts/execute_notebooks.py --all`|在新内核执行全部 45 个 Notebook，保存到独立检查目录|
+|`python scripts/check_delivery.py --all`|读取并检查全部 45 项正式交付|
+|`python scripts/build_readme_assets.py --experiment course-01/density`|按入口选图计划生成密度实验的概览与结果图片|
+
+仅维护入口文案或选图时，修改实验 `README.md` 与 `assets/readme-plan.json`，按需执行最后一条图片命令。核对图题位于图下、表题位于表上、公式显示、相对链接与观测/模型标识；科学报告和计算改动则按完整复现流程验收。
+
+---
+
+来源：[agent-reproduction.md](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/agent-reproduction.md)
+
+## Agent 复现与维护指南
+
+本仓库按“规范输入 → 独立双端计算 → 报告与 Notebook → 执行及呈现核验”维护 45 个普通物理实验。接手时先确定实验标识，再选择阅读、复算或修改路径。
+
+### 先定位实验和证据
+
+[`experiments/registry.json`](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/registry.json) 是实验标识、课程、Python 模块、Paclet、主 DOCX 与成稿路径的索引。以 `course-03/rlc-resonance` 为例：
+
+|需要了解什么|读取位置|
+|---|---|
+|实验问题、关键结果与各格式入口|实验的 `README.md`|
+|原理、记录、计算与结论|`report/report.md`、源报告 PDF|
+|输入读数、单位与参数|`data/*.csv`、`experiment.json`|
+|资料来源、单位转换与更正|`data/provenance.json`|
+|报告章节、比较指标、Notebook 展开块|`authoring.json`|
+|Python 计算|`src/physicslab/experiments/<module>.py`|
+|Wolfram 独立计算|`notebook/paclets/<Paclet>/Kernel/analysis.wl`|
+|计算输出与双端数值对照|`results/python.json`、`wolfram.json`、`verification.json`|
+|执行、视觉、控件与包核验|本实验 `results/` 中相应的 `*-review.json`、`*-validation.json`|
+
+源 DOCX 位于本地 `archive/`，按登记表中的 `source_docx` 定位；仓库中的 [`pdf/verification.json`](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/pdf/verification.json) 记录源 PDF 的实验归属、页数与哈希。公开运行的计算输入随实验提供，资料对照使用 PDF。
+
+### 新环境与已有输出
+
+以下命令在仓库根目录的 Windows PowerShell 中执行。Python 要求 3.11 及以上，成稿字体使用 SimSun 与 Times New Roman；Wolfram 完整构建需要内核、WolframScript 和可用前端。现有安装包声明 Wolfram 14.0+，已保存的本地完整运行记录使用 15.0.1。
+
+```powershell
+python -m venv .venv
+.\.venv\Scripts\python.exe -m pip install -e ".[test]" jupyterlab
+$env:PYTHONUTF8 = "1"
+$env:WOLFRAMSCRIPT = "C:/Program Files/Wolfram Research/WolframScript/wolframscript.exe"
+$env:PHYSICSLAB_BUILD_ROOT = "D:/physicslab-build"
+```
+
+`PHYSICSLAB_BUILD_ROOT` 指向较短的暂存路径，适合 Windows 的 Wolfram 文件接口。macOS/Linux 使用 `.venv/bin/python`，并按本机安装设置环境变量。成稿计算环境的依赖快照见 [`requirements-windows.lock.txt`](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/requirements-windows.lock.txt)；当前运行与测试依赖以 [`pyproject.toml`](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/pyproject.toml) 为准，`.[test]` 同时安装 pytest 与文档校验所用的 PyYAML。阅读与启动方式见[使用指南](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/usage.md)。
+
+Notebook 中的保存输出用于直接阅读。检查某本 Jupyter 在当前环境能否从新内核运行：
+
+```powershell
+.\.venv\Scripts\python.exe scripts/execute_notebooks.py --experiment course-03/rlc-resonance
+.\.venv\Scripts\python.exe scripts/execute_notebooks.py --all
+```
+
+结果写到 `.build/notebook-checks/<运行编号>/<实验标识>/analysis.ipynb`，汇总在同次运行的 `execution.json`。该命令执行现有单元、保留正式文件，`--all` 覆盖全部 45 项。修改输入后，采用下节的完整构建同步报告文字中的数值、数表与图表。
+
+### 修改一项实验
+
+1. 从主报告、来源记录与规范输入确认数据粒度、单位、测量批次及模型条件。原始读数和派生量分别维护；讲义示例、源作者补齐值、已报中间量按其来源身份参与分析。
+2. 修改相应 Python 模块与独立 Wolfram 计算，更新适用的解析算例、物理极限或参考检查。报告文字修改写入 `report/report.template.md`；计算值使用 `metrics.*`、`tables.*` 或 `replacements.*` 占位符。
+3. 在 `authoring.json` 维护本实验 DOCX 的章节顺序、`comparison` 指标及按指标设置的 `tolerances`。Notebook 的讲解、两端调用与题注写入相应 `expansions`，章节名称应与报告匹配。
+4. 执行完整构建，再审阅计算、图形、控件和结论，更新与新产物哈希对应的审核记录。
+
+```powershell
+.\.venv\Scripts\python.exe scripts/pipeline.py all --experiment course-03/rlc-resonance
+.\.venv\Scripts\python.exe -m pytest
+.\.venv\Scripts\python.exe scripts/check_delivery.py --experiment course-03/rlc-resonance
+```
+
+构建从隔离快照执行 Python、新 Jupyter 内核、Wolfram 独立计算、测试、打包和独立安装验证，生成真实输出，再复制到该实验及 Paclet 目录。构建中的源文件变化会使该轮输出保留在暂存区，随后以新快照重试。
+
+构建状态与日志位于 `.build/<实验标识>/<运行编号>/`、`.build/progress.json` 和 `.build/batch-summary.json`；实际暂存项目位于 `PHYSICSLAB_BUILD_ROOT/<实验哈希>/<运行编号>/`。`wolfram-build.log` 与 `wolfram-verify.log` 分别记录计算/打包和独立安装/新内核/前端检查。
+
+### 全量构建与单摆入口
+
+```powershell
+.\.venv\Scripts\python.exe scripts/batch.py --list
+.\.venv\Scripts\python.exe scripts/pipeline.py all --all
+.\.venv\Scripts\python.exe scripts/check_delivery.py --all
+```
+
+批量构建选择单摆以外的 **44 项**，按实验依次执行，某项失败后继续其他实验并汇总失败项。恢复工作时选择受影响实验重新运行完整链；现有 CLI 的恢复粒度是实验。
+
+单摆使用独立的既有构建源与结果结构：
+
+```powershell
+.\.venv\Scripts\python.exe scripts/pipeline.py all
+.\.venv\Scripts\python.exe scripts/pipeline.py compare
+.\.venv\Scripts\python.exe scripts/check_delivery.py --experiment course-01/pendulum
+```
+
+无选择参数的 `pipeline.py` 命令作用于单摆；其细分阶段为 `prepare`、`python`、`wolfram`、`report`、`notebook`、`compare`。其他实验由 `all --experiment <id>` 构建，比较实现在 `scripts/batch.py` 的 `compare(p,w,a)` 中。`python-only` 也是单摆入口。
+
+|Wolfram 接口|单摆|其余 44 项|
+|---|---|---|
+|计算|``PendulumLab`PLAnalyze[]``|``<Paclet>`Analyze[]``|
+|Notebook 路径|``PendulumLab`PLNotebookPath[]``|``<Paclet>`LabNotebookPath[]``|
+|打开 Notebook|``PendulumLab`PLOpenNotebook[]``|``<Paclet>`OpenNotebook[]``|
+|Notebook 文件名|`Pendulum.nb`|`<Paclet>.nb`|
+|主要编辑源|`Kernel/PendulumLab.wl`、`Support/build.wls`、`scripts/build_notebook.py`|`Kernel/analysis.wl`、报告模板、`authoring.json`|
+
+其他包还提供 `ExecuteBlock[index]`、`ResultsFigure[key]`、`ResultsTable[tableAssociation]` 和适用的 `Explore[key]`；实际探索键从本实验展开块读取。
+
+从新克隆直接安装 `dist/*.paclet` 即可使用自带代码、数据与 Notebook。源目录的 `data/`、`exports/` 是构建生成资源；完整流水线负责复制规范输入、校验哈希并生成它们。源包直接执行 `Support/build.wls` 时需要这些资源已存在。
+
+### 数值、哈希与呈现核验
+
+`check_delivery.py` 是只读检查，默认单摆，`--all` 覆盖 45 项。它检查章节一致、Jupyter 执行计数与错误、必要产物、链接、报告模板同步、当前输入/代码哈希、双端指标和数表，以及审核记录是否对应当前 Notebook、HTML 和模型源。该命令读取正式成稿及已有记录；本机新内核执行另用 `execute_notebooks.py`，完整双端重算使用 `pipeline.py all`。
+
+新实验的指标容差在 `authoring.json/tolerances` 中声明；默认相对容差为 `1e-8`，绝对容差随指标尺度设置。两端数表中的数值单元另用 `rtol=1e-7`、`atol=1e-9` 比较。先排查单位、量纲、输入身份与数值实现，再依据物理和数值方法确定容差。
+
+其余 44 项的 `input_hashes` 包含 `experiment.json` 和 `data/` 顶层文件；Python 的 `code_hashes` 包含实验模块与公共层，Wolfram 记录 `Kernel/analysis.wl`。单摆采用自己的输入清单与单数 `code_hash` 字段。计算结果中的哈希按原文件字节核验；机器检索目录的 `hash_basis` 另声明文本 LF 规范化或原字节规则，见[目录接口](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/agent-catalog.md)。共享计算或呈现模块变化时，复核全部依赖实验。`.gitattributes` 保留参与字节哈希的文件换行形式。
+
+视觉核验分别查看 Markdown/Jupyter 的 LaTeX、HTML 的 MathJax 与实际 Wolfram 前端。检查中文宋体、西文数字 Times New Roman、公式上下标、单位、图例与图线分离、图题在下、表题在上、图组对齐和 Wolfram 居中。每个实际控件检查默认状态及至少一个参数变化；静态实验复核计算与图表。
+
+README 插图由 `assets/readme-plan.json` 从保存的计算序列选图，题注在 README 中维护：
+
+```powershell
+.\.venv\Scripts\python.exe scripts/build_readme_assets.py --experiment course-03/rlc-resonance
+```
+
+输出为 `assets/readme-*.svg` 与 `.png`，导出检查记录在 `.build/readme-assets/render-checks.json`。已有 README 作为实验入口文稿维护；计算重建后，按新结果更新关键数值、选图和阅读说明。重绘后查看实际图片与 GitHub 页面，结合缺字、裁切和图例位置检查。
+
+Wolfram 参数响应可在串行内核中调用：
+
+```wolfram
+Get["D:/general-physics-lab/scripts/audit_wolfram_interactions.wl"];
+InteractionResponseAudit`AuditProject[
+  "D:/general-physics-lab", {"course-03/rlc-resonance"},
+  "D:/general-physics-lab/.build/rlc-interaction-audit.json"
+]
+```
+
+该工具求值实际 `Manipulate` 模型体的默认值与合法非默认参数，记录计算及几何响应。前端显示与鼠标操作另外检查。完整安装验证记录和包资源校验见本实验 `results/`，已保存汇总见[验收汇总](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/delivery-summary.md)与 [`validation-summary.json`](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/validation-summary.json)。
+
+### 排障顺序
+
+|现象|检查与处理|
+|---|---|
+|`stale input` 或代码哈希变化|确认来源修改，按实验重建上下游产物；保留现有审核记录用于对照，随后审核新哈希|
+|构建成功后呈现审核仍待更新|读取 `presentation-validation.json`，实际查看新 HTML/Notebook，重跑控件并登记对应产物哈希|
+|Notebook 新内核找不到模块|在仓库根目录安装包，使用虚拟环境解释器；单元从头运行|
+|中文缺字或图例符号异常|确认字体实际可用，查看 PNG/SVG 与前端；根据混排路径检查文本字体和数学字体|
+|HTML 原始公式或空白|检查 MathJax 加载与公式语法，用 VS Code/Jupyter 交叉查看标准 LaTeX|
+|Wolfram 包或数据缺失|安装对应 `.paclet`；修改源包时先运行完整流水线生成数据资源|
+|Windows 包复制或资源访问异常|设置较短的 `PHYSICSLAB_BUILD_ROOT`，查看实际暂存路径与包内文件|
+|`Author sources changed during execution`|待本实验源修改完成后重跑，使用新快照|
+|实验 `build.lock` 或全局 `wolfram.lock` 已存在|核对锁内 PID 与实际运行进程；进程结束后再清理遗留锁并重试|
+
+Wolfram 构建与安装共享本机资源，流水线使用独占锁。`scripts/batch.py --skip-frontend --experiment <id>` 可用于计算排查；完整验收仍执行前端显示检查。GitHub 工作流在字体齐全时执行 Jupyter，并单独记录运行环境的 Wolfram 状态，见 [Python workflow](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/.github/workflows/python.yml)。
+
+[开发规则](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/development.md) · [数据与方法](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/data-and-methods.md) · [使用指南](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/usage.md) · [返回项目首页](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/README.md)
+
+---
+
+来源：[agent-catalog.md](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/agent-catalog.md)
+
+## 实验目录接口
+
+[`experiments.json`](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/experiments.json) 是45项实验的机器可读目录，[JSON Schema](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/schemas/experiments.schema.json)定义字段。所有 `path` 相对仓库根目录；`url` 指向 GitHub 阅读页，`raw_url` 指向原文件。
+
+每个资源记录 SHA-256、字节数与 `hash_basis`。`utf8-lf` 表示先将 UTF-8 文本的 CRLF 换为 LF，再计算哈希和字节数，便于跨平台识别同一内容；PDF、Paclet 使用 `raw-bytes`，直接计算原字节。计算结果内的 `input_hashes` 和 `code_hashes` 按各实验原有的原字节规则核验。
+
+### 检索命令
+
+在仓库根目录运行，检索本身只依赖 Python 标准库：
+
+```text
+python scripts/agent_catalog.py search "重力加速度"
+python scripts/agent_catalog.py search "RLC bandwidth" --json
+python scripts/agent_catalog.py search "interference" --course course-04 --json
+python scripts/agent_catalog.py show course-03/rlc-resonance --json
+```
+
+搜索使用标题、英文标题、别名、主题、方法、摘要和指标键/标签，多词查询要求所有词出现；默认返回最多10项，可通过 `--limit` 调整。`search --json` 返回命中列表；`show --json` 返回一个完整实验对象。实验标识保持稳定，展示名称和别名可以更新。
+
+### 主要字段
+
+|字段|含义|
+|---|---|
+|`id`、`course`、`title`、`title_en`|稳定标识、课程、中文和英文名称|
+|`aliases`、`topics`、`methods`、`summary_zh`|人工核对的检索词与实验摘要|
+|`sections`|本实验报告的章节顺序|
+|`resources`|README、报告、Notebook、源PDF、参数、数据来源、代码、结果及验证文件|
+|`data_files`|数据目录中的CSV文件、原表头、首行以外的记录行数和资源描述|
+|`metric_catalog`|结果中全部指标的键、标签和单位|
+|`key_results`|代表性结果摘录；44项按README选图计划，单摆选拟合重力、斜率与截距；以对应 `results/python.json` 为计算依据|
+|`key_results[].result_pointer`|数值在结果JSON中的指针，例如 `/metrics/C02_R1_Q_bandwidth`|
+|`python_interface`、`wolfram_interface`|实际模块、分析函数、包上下文及Notebook打开函数|
+|`commands`|单实验审计、新内核执行、双端重建与入口图更新命令|
+|`verification`|已有记录的状态、双端检查数量及原记录路径|
+|`source_identity`|主DOCX归档身份及对应PDF的路径、页数和哈希|
+
+`verification` 描述随仓库保存的记录。重新执行产生的新记录按[复现指南](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/agent-reproduction.md)处理。模型条件、不确定度定义与来源细节分别读取 `experiment.json`、原始结果及 `data/provenance.json`。
+
+CSV表头按位置原样列出，同名和空白列保留原表结构；参与计算的表和列由计算模块确定。指标的 `label` 沿用保存结果；提供 `description` 的指标附有检索释义，结合指标键与单位阅读。
+
+### 更新目录
+
+```text
+python scripts/agent_catalog.py build
+python scripts/agent_catalog.py build --check
+```
+
+`build` 更新机器目录、Markdown检索目录、短导览和完整导览。`build --check` 只比较生成内容，发生来源变化时以非零状态退出并列出待更新文件。生成文件使用固定排序与UTF-8，保持相同输入对应相同输出。
+
+## 普通物理实验 1 · 8项
+
+### 单摆测重力加速度 · Determination of Gravitational Acceleration with a Simple Pendulum
+
+标识：`course-01/pendulum`。用摆长和重复计时求周期，以周期平方对有效摆长的含截距拟合估计重力加速度，并比较小角度与非线性单摆模型。
+
+别名：单摆实验；单摆测重力；重力加速度测量；simple pendulum；pendulum gravity experiment；gravitational acceleration；ODE；least squares。
+
+主题：重力加速度；简谐振动；非线性单摆；小角度近似。方法：有效摆长修正；重复计时与均值统计；周期平方线性拟合与残差 / ordinary least squares；非线性运动数值求解 / nonlinear ODE integration；初始摆角参数扫描。
+
+[实验入口](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-01/pendulum/README.md) · [报告](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-01/pendulum/report/report.md) · [Jupyter](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-01/pendulum/notebooks/analysis.ipynb) · [Wolfram](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/PendulumLab/Notebooks/Pendulum.nb) · [源PDF](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/pdf/course-01/%E5%8D%95%E6%91%86%E6%B5%8B%E9%87%8D%E5%8A%9B%E5%8A%A0%E9%80%9F%E5%BA%A6/%E7%89%9B%E9%A1%BF%E7%AC%AC%E4%BA%8C%E8%BF%90%E5%8A%A8%E5%AE%9A%E5%BE%8B%E6%B5%8B%E9%87%8D%E5%8A%9B%E5%8A%A0%E9%80%9F%E5%BA%A6%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A.pdf)
+
+章节：实验目的 → 实验原理 → 主要仪器设备 → 实验步骤 → 原始数据记录 → 数据处理 → 实验结果与讨论。
+
+[参数](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-01/pendulum/experiment.json) | [来源](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-01/pendulum/data/provenance.json) | [Python计算](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/src/physicslab/experiments/pendulum.py) | [Wolfram计算](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/PendulumLab/Kernel/PendulumLab.wl) | [完整结果](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-01/pendulum/results/python.json) | [双端对照](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-01/pendulum/results/verification.json) | [Paclet](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/PendulumLab/dist/PendulumLab-0.1.0.paclet)
+
+观测表：[diameters.csv](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-01/pendulum/data/diameters.csv)（6行；字段：repeat_id, diameter_cm）；[measurements.csv](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-01/pendulum/data/measurements.csv)（18行；字段：run_id, repeat_id, string_length_cm, oscillations, elapsed_time_s）。
+
+|指标键|数值|单位|
+|---|---:|---|
+|`gravity_fit`|9.73521844234|m/s^2|
+|`slope`|4.05521641227|s^2/m|
+|`intercept`|-0.0185920630702|s^2|
+
+上述为完整结果的选摘；不确定度定义与模型条件见参数、报告和结果文件。
+
+Python：`physicslab.experiments.pendulum.analyze(experiment_directory)`。
+Wolfram：``PendulumLab`PLAnalyze[]``；打开：``PendulumLab`PLOpenNotebook[]``。
+
+```text
+python scripts/execute_notebooks.py --experiment course-01/pendulum
+python scripts/check_delivery.py --experiment course-01/pendulum
+```
+
+
+### 多普勒效应的验证 · Verification of the Acoustic Doppler Effect
+
+标识：`course-01/doppler-verification`。对静止超声声源与运动接收器的五组速度频率记录作线性回归，由斜率反演声速并与温度模型比较。
+
+别名：多普勒效应验证；超声多普勒实验；运动接收器频移；acoustic Doppler effect；ultrasonic Doppler experiment；moving receiver；linear regression。
+
+主题：声波多普勒效应；频移；空气声速。方法：速度与接收频率线性回归；回归斜率反演声速；温度模型声速比较；接收器速度模型扫描。
+
+[实验入口](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-01/doppler-verification/README.md) · [报告](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-01/doppler-verification/report/report.md) · [Jupyter](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-01/doppler-verification/notebooks/analysis.ipynb) · [Wolfram](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/DopplerVerificationLab/Notebooks/DopplerVerificationLab.nb) · [源PDF](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/pdf/course-01/%E5%A4%9A%E6%99%AE%E5%8B%92%E6%95%88%E5%BA%94%E7%9A%84%E9%AA%8C%E8%AF%81/%E5%A4%9A%E6%99%AE%E5%8B%92%E6%95%88%E5%BA%94%E9%AA%8C%E8%AF%81%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A.pdf)
+
+章节：一、实验名称 → 二、实验目的 → 三、实验原理 → 四、主要仪器设备 → 五、实验步骤 → 六、原始数据记录 → 七、数据处理 → 八、实验结果与讨论。
+
+[参数](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-01/doppler-verification/experiment.json) | [来源](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-01/doppler-verification/data/provenance.json) | [Python计算](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/src/physicslab/experiments/doppler_verification.py) | [Wolfram计算](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/DopplerVerificationLab/Kernel/analysis.wl) | [完整结果](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-01/doppler-verification/results/python.json) | [双端对照](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-01/doppler-verification/results/verification.json) | [Paclet](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/DopplerVerificationLab/dist/DopplerVerificationLab-0.1.0.paclet)
+
+观测表：[observations.csv](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-01/doppler-verification/data/observations.csv)（5行；字段：trial, velocity_m_s, frequency_hz）。
+
+|指标键|数值|单位|
+|---|---:|---|
+|`sound_speed`|340.741476167|m/s|
+|`theoretical_speed`|345.180775754|m/s|
+|`relative_deviation`|1.28607961354|%|
+
+上述为完整结果的选摘；不确定度定义与模型条件见参数、报告和结果文件。
+
+Python：`physicslab.experiments.doppler_verification.analyze(experiment_directory)`。
+Wolfram：``DopplerVerificationLab`Analyze[]``；打开：``DopplerVerificationLab`OpenNotebook[]``。
+
+```text
+python scripts/execute_notebooks.py --experiment course-01/doppler-verification
+python scripts/check_delivery.py --experiment course-01/doppler-verification
+```
+
+
+### 多普勒效应的应用 · Doppler Measurement of Spring Oscillations and Spring Stiffness
+
+标识：`course-01/doppler-application`。结合静态加载伸长和多普勒系统保存的振动周期，比较弹簧静动态劲度系数，并分析加载基线与有效质量的影响。
+
+别名：多普勒效应应用；弹簧振子劲度测量；弹簧动静态法；弹簧有效质量；Doppler spring oscillator；spring stiffness；dynamic and static spring methods；spring constant。
+
+主题：弹簧简谐振动；胡克定律；非接触周期测量；弹簧有效质量。方法：静态加载比值计算；带截距力伸长回归；周期均值动态劲度计算；静态选点敏感性比较；均匀弹簧有效质量模型扫描。
+
+[实验入口](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-01/doppler-application/README.md) · [报告](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-01/doppler-application/report/report.md) · [Jupyter](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-01/doppler-application/notebooks/analysis.ipynb) · [Wolfram](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/DopplerApplicationLab/Notebooks/DopplerApplicationLab.nb) · [源PDF](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/pdf/course-01/%E5%A4%9A%E6%99%AE%E5%8B%92%E6%95%88%E5%BA%94%E7%9A%84%E5%BA%94%E7%94%A8/%E5%A4%9A%E6%99%AE%E5%8B%92%E6%95%88%E5%BA%94%E7%9A%84%E5%BA%94%E7%94%A8-%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A.pdf)
+
+章节：一、实验名称 → 二、实验目的 → 三、实验原理 → 四、主要仪器设备 → 五、实验步骤 → 六、原始数据记录 → 七、数据处理 → 八、实验结果与讨论。
+
+[参数](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-01/doppler-application/experiment.json) | [来源](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-01/doppler-application/data/provenance.json) | [Python计算](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/src/physicslab/experiments/doppler_application.py) | [Wolfram计算](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/DopplerApplicationLab/Kernel/analysis.wl) | [完整结果](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-01/doppler-application/results/python.json) | [双端对照](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-01/doppler-application/results/verification.json) | [Paclet](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/DopplerApplicationLab/dist/DopplerApplicationLab-0.1.0.paclet)
+
+观测表：[periods.csv](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-01/doppler-application/data/periods.csv)（13行；字段：trial, period_s）；[static.csv](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-01/doppler-application/data/static.csv)（5行；字段：trial, combination, mass_g, position_cm, included_in_source_mean）。
+
+|指标键|数值|单位|
+|---|---:|---|
+|`static_stiffness`|3.65634116767|N/m|
+|`mean_period`|0.883076923077|s|
+|`dynamic_stiffness`|5.22447147709|N/m|
+
+上述为完整结果的选摘；不确定度定义与模型条件见参数、报告和结果文件。
+
+Python：`physicslab.experiments.doppler_application.analyze(experiment_directory)`。
+Wolfram：``DopplerApplicationLab`Analyze[]``；打开：``DopplerApplicationLab`OpenNotebook[]``。
+
+```text
+python scripts/execute_notebooks.py --experiment course-01/doppler-application
+python scripts/check_delivery.py --experiment course-01/doppler-application
+```
+
+
+### 牛顿第二定律的验证 · Verification of Newton's Second Law on an Air Track
+
+标识：`course-01/newton-second-law`。在保持系统总质量的五组悬挂质量记录中复算加速度，对质量与加速度回归并解释系统质量和等效反向力。
+
+别名：牛顿第二定律实验；气垫导轨加速度；恒质量变力实验；Newton's second law；air track acceleration；force and acceleration。
+
+主题：牛顿第二定律；恒加速度运动；系统质量；等效阻力。方法：双光电门速度换算加速度；组内重复读数平均；悬挂质量对加速度含截距回归；斜率与截距物理反演；逐组暂排除拟合敏感性。
+
+[实验入口](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-01/newton-second-law/README.md) · [报告](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-01/newton-second-law/report/report.md) · [Jupyter](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-01/newton-second-law/notebooks/analysis.ipynb) · [Wolfram](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/NewtonSecondLawLab/Notebooks/NewtonSecondLawLab.nb) · [源PDF](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/pdf/course-01/%E7%89%9B%E9%A1%BF%E7%AC%AC%E4%BA%8C%E5%AE%9A%E5%BE%8B%E7%9A%84%E9%AA%8C%E8%AF%81/%E7%89%9B%E9%A1%BF%E7%AC%AC%E4%BA%8C%E8%BF%90%E5%8A%A8%E5%AE%9A%E5%BE%8B%E9%AA%8C%E8%AF%81%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A.pdf)
+
+章节：一、实验名称 → 二、实验目的 → 三、实验原理 → 四、主要仪器设备 → 五、实验步骤 → 六、原始数据记录 → 七、数据处理 → 八、实验结果与讨论。
+
+[参数](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-01/newton-second-law/experiment.json) | [来源](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-01/newton-second-law/data/provenance.json) | [Python计算](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/src/physicslab/experiments/newton_second_law.py) | [Wolfram计算](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/NewtonSecondLawLab/Kernel/analysis.wl) | [完整结果](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-01/newton-second-law/results/python.json) | [双端对照](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-01/newton-second-law/results/verification.json) | [Paclet](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/NewtonSecondLawLab/dist/NewtonSecondLawLab-0.1.0.paclet)
+
+观测表：[observations.csv](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-01/newton-second-law/data/observations.csv)（25行；字段：group, trial, hanging_mass_g, mode, v1_cm_s, v2_cm_s, reported_acceleration_cm_s2）。
+
+|指标键|数值|单位|
+|---|---:|---|
+|`correlation`|0.999151373191|1|
+|`inferred_system_mass`|163.770378389|g|
+|`equivalent_resistance`|0.0122269033986|N|
+
+上述为完整结果的选摘；不确定度定义与模型条件见参数、报告和结果文件。
+
+Python：`physicslab.experiments.newton_second_law.analyze(experiment_directory)`。
+Wolfram：``NewtonSecondLawLab`Analyze[]``；打开：``NewtonSecondLawLab`OpenNotebook[]``。
+
+```text
+python scripts/execute_notebooks.py --experiment course-01/newton-second-law
+python scripts/check_delivery.py --experiment course-01/newton-second-law
+```
+
+
+### 碰撞规律的研究 · Momentum and Energy in One-Dimensional Collisions
+
+标识：`course-01/collisions`。分别处理粘合碰撞的碰前后速度和弹性附件的碰后速度记录，比较动量、动能与速度比，并用恢复系数模型解释两种极限。
+
+别名：碰撞规律实验；气垫导轨碰撞；完全非弹性碰撞；弹性碰撞速度比；one-dimensional collisions；momentum conservation；coefficient of restitution；inelastic collision。
+
+主题：动量守恒；动能耗散；粘合碰撞；恢复系数。方法：碰前后动量与动能计算；动量亏损和动能损失率比较；碰后速度比与质量模型比较；恢复系数碰撞模型扫描。
+
+[实验入口](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-01/collisions/README.md) · [报告](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-01/collisions/report/report.md) · [Jupyter](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-01/collisions/notebooks/analysis.ipynb) · [Wolfram](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/CollisionsLab/Notebooks/CollisionsLab.nb) · [源PDF](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/pdf/course-01/%E7%A2%B0%E6%92%9E%E8%A7%84%E5%BE%8B%E7%9A%84%E7%A0%94%E7%A9%B6/%E7%A2%B0%E6%92%9E%E8%A7%84%E5%BE%8B%E7%A0%94%E7%A9%B6%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A.pdf)
+
+章节：一、实验名称 → 二、实验目的 → 三、实验原理 → 四、主要仪器设备 → 五、实验步骤 → 六、原始数据记录 → 七、数据处理 → 八、实验结果与讨论。
+
+[参数](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-01/collisions/experiment.json) | [来源](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-01/collisions/data/provenance.json) | [Python计算](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/src/physicslab/experiments/collisions.py) | [Wolfram计算](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/CollisionsLab/Kernel/analysis.wl) | [完整结果](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-01/collisions/results/python.json) | [双端对照](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-01/collisions/results/verification.json) | [Paclet](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/CollisionsLab/dist/CollisionsLab-0.1.0.paclet)
+
+观测表：[elastic.csv](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-01/collisions/data/elastic.csv)（5行；字段：trial, v1_first_cm_s, v2_cm_s, v1_second_cm_s）；[inelastic.csv](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-01/collisions/data/inelastic.csv)（5行；字段：trial, incident_cm_s, common_cm_s）。
+
+|指标键|数值|单位|
+|---|---:|---|
+|`mean_momentum_deviation`|3.1943386092|%|
+|`mean_energy_loss`|35.4507233281|%|
+|`theoretical_energy_loss`|31.1321134935|%|
+
+上述为完整结果的选摘；不确定度定义与模型条件见参数、报告和结果文件。
+
+Python：`physicslab.experiments.collisions.analyze(experiment_directory)`。
+Wolfram：``CollisionsLab`Analyze[]``；打开：``CollisionsLab`OpenNotebook[]``。
+
+```text
+python scripts/execute_notebooks.py --experiment course-01/collisions
+python scripts/check_delivery.py --experiment course-01/collisions
+```
+
+
+### 热功当量的测量 · Electrical Heating and the Mechanical Equivalent of Heat
+
+标识：`course-01/mechanical-equivalent-heat`。对三十个时间温度记录独立求升温速率并比较拟合区间，结合电功和总热容关系讨论热功当量的计算条件。
+
+别名：热功当量实验；电热法热功当量；水温升温曲线；mechanical equivalent of heat；electrical calorimetry；Joule heating。
+
+主题：电功与热量；焦耳热；热容；升温速率。方法：温度时间线性回归；首尾温升速率计算；前后及中段拟合区间比较；仪器记录值与独立升温回归分列。
+
+[实验入口](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-01/mechanical-equivalent-heat/README.md) · [报告](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-01/mechanical-equivalent-heat/report/report.md) · [Jupyter](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-01/mechanical-equivalent-heat/notebooks/analysis.ipynb) · [Wolfram](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/MechanicalEquivalentHeatLab/Notebooks/MechanicalEquivalentHeatLab.nb) · [源PDF](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/pdf/course-01/%E7%83%AD%E5%8A%9F%E5%BD%93%E9%87%8F%E7%9A%84%E6%B5%8B%E9%87%8F/%E7%83%AD%E5%8A%9F%E5%BD%93%E9%87%8F%E7%9A%84%E6%B5%8B%E9%87%8F%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A.pdf)
+
+章节：一、实验名称 → 二、实验目的 → 三、实验原理 → 四、主要仪器设备 → 五、实验步骤 → 六、原始数据记录 → 七、数据处理 → 八、实验结果与讨论。
+
+[参数](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-01/mechanical-equivalent-heat/experiment.json) | [来源](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-01/mechanical-equivalent-heat/data/provenance.json) | [Python计算](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/src/physicslab/experiments/mechanical_equivalent_heat.py) | [Wolfram计算](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/MechanicalEquivalentHeatLab/Kernel/analysis.wl) | [完整结果](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-01/mechanical-equivalent-heat/results/python.json) | [双端对照](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-01/mechanical-equivalent-heat/results/verification.json) | [Paclet](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/MechanicalEquivalentHeatLab/dist/MechanicalEquivalentHeatLab-0.1.0.paclet)
+
+观测表：[temperatures.csv](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-01/mechanical-equivalent-heat/data/temperatures.csv)（30行；字段：trial, time_min, temperature_k）。
+
+|指标键|数值|单位|
+|---|---:|---|
+|`heating_slope`|0.0101596959585|K/s|
+|`early_slope`|0.0108369047619|K/s|
+|`late_slope`|0.00962797619048|K/s|
+
+上述为完整结果的选摘；不确定度定义与模型条件见参数、报告和结果文件。
+
+Python：`physicslab.experiments.mechanical_equivalent_heat.analyze(experiment_directory)`。
+Wolfram：``MechanicalEquivalentHeatLab`Analyze[]``；打开：``MechanicalEquivalentHeatLab`OpenNotebook[]``。
+
+```text
+python scripts/execute_notebooks.py --experiment course-01/mechanical-equivalent-heat
+python scripts/check_delivery.py --experiment course-01/mechanical-equivalent-heat
+```
+
+
+### 物质密度的测量 · Density Measurement by Buoyancy and Pycnometry
+
+标识：`course-01/density`。由合金空气与浸水称量求固体密度，由同一比重瓶中水和盐水净质量求液体密度，并传播重复性与指定质量分量。
+
+别名：物质密度实验；阿基米德法测密度；比重瓶测液体密度；合金与盐水密度；density measurement；Archimedes method；pycnometer；conditional uncertainty propagation。
+
+主题：阿基米德浮力；固体密度；液体密度；共同称量输入。方法：空气与浸水视质量差换算；比重瓶净质量比计算；重复称量均值统计；指定质量误差限条件传播 / conditional uncertainty propagation。
+
+[实验入口](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-01/density/README.md) · [报告](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-01/density/report/report.md) · [Jupyter](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-01/density/notebooks/analysis.ipynb) · [Wolfram](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/DensityLab/Notebooks/DensityLab.nb) · [源PDF](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/pdf/course-01/%E7%89%A9%E8%B4%A8%E5%AF%86%E5%BA%A6%E7%9A%84%E6%B5%8B%E9%87%8F/%E7%89%A9%E8%B4%A8%E5%AF%86%E5%BA%A6%E6%B5%8B%E9%87%8F%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A.pdf)
+
+章节：一、实验名称 → 二、实验目的 → 三、实验原理 → 四、主要仪器设备 → 五、实验步骤 → 六、原始数据记录 → 七、数据处理 → 八、实验结果与讨论。
+
+[参数](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-01/density/experiment.json) | [来源](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-01/density/data/provenance.json) | [Python计算](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/src/physicslab/experiments/density.py) | [Wolfram计算](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/DensityLab/Kernel/analysis.wl) | [完整结果](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-01/density/results/python.json) | [双端对照](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-01/density/results/verification.json) | [Paclet](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/DensityLab/dist/DensityLab-0.1.0.paclet)
+
+观测表：[liquid.csv](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-01/density/data/liquid.csv)（3行；字段：trial, empty_mass_g, water_total_mass_g, brine_total_mass_g）；[solid.csv](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-01/density/data/solid.csv)（3行；字段：trial, air_mass_g, submerged_mass_g）。
+
+|指标键|数值|单位|
+|---|---:|---|
+|`solid_density`|7.9012275265|g/cm^3|
+|`liquid_density`|1.0838493875|g/cm^3|
+|`bottle_volume`|16.0354383187|cm^3|
+
+上述为完整结果的选摘；不确定度定义与模型条件见参数、报告和结果文件。
+
+Python：`physicslab.experiments.density.analyze(experiment_directory)`。
+Wolfram：``DensityLab`Analyze[]``；打开：``DensityLab`OpenNotebook[]``。
+
+```text
+python scripts/execute_notebooks.py --experiment course-01/density
+python scripts/check_delivery.py --experiment course-01/density
+```
+
+
+### 液体比汽化热的测量 · Specific Latent Heat of Vaporization of Water by Condensation Calorimetry
+
+标识：`course-01/vaporization-heat`。用初末质量与温度记录建立蒸汽凝结的热平衡，扣除凝结水显热求比汽化热，并比较称量构成和末温的影响。
+
+别名：水的汽化热；蒸汽凝结量热；水蒸气潜热；latent heat of vaporization；steam condensation calorimetry；specific latent heat of water。
+
+主题：相变潜热；热量守恒；凝结显热；量热器热容。方法：初末称量差求凝结质量；温度电压换算；量热平衡与显热扣除；称量构成条件比较；末温灵敏度扫描。
+
+[实验入口](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-01/vaporization-heat/README.md) · [报告](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-01/vaporization-heat/report/report.md) · [Jupyter](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-01/vaporization-heat/notebooks/analysis.ipynb) · [Wolfram](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/VaporizationHeatLab/Notebooks/VaporizationHeatLab.nb) · [源PDF](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/pdf/course-01/%E6%B6%B2%E4%BD%93%E6%AF%94%E6%B1%BD%E5%8C%96%E7%83%AD%E7%9A%84%E6%B5%8B%E9%87%8F/%E6%B6%B2%E4%BD%93%E6%AF%94%E6%B1%BD%E5%8C%96%E7%83%AD%E6%B5%8B%E9%87%8F%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A.pdf)
+
+章节：一、实验名称 → 二、实验目的 → 三、实验原理 → 四、主要仪器设备 → 五、实验步骤 → 六、原始数据记录 → 七、数据处理 → 八、实验结果与讨论 → 九、思考题。
+
+[参数](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-01/vaporization-heat/experiment.json) | [来源](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-01/vaporization-heat/data/provenance.json) | [Python计算](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/src/physicslab/experiments/vaporization_heat.py) | [Wolfram计算](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/VaporizationHeatLab/Kernel/analysis.wl) | [完整结果](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-01/vaporization-heat/results/python.json) | [双端对照](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-01/vaporization-heat/results/verification.json) | [Paclet](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/VaporizationHeatLab/dist/VaporizationHeatLab-0.1.0.paclet)
+
+观测表：[observations.csv](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-01/vaporization-heat/data/observations.csv)（7行；字段：quantity, value, unit, note）。
+
+|指标键|数值|单位|
+|---|---:|---|
+|`latent_heat`|1973118|J/kg|
+|`alternative_latent_heat`|4108769.87879|J/kg|
+|`final_temperature_sensitivity`|71945.8769231|J/(kg K)|
+
+上述为完整结果的选摘；不确定度定义与模型条件见参数、报告和结果文件。
+
+Python：`physicslab.experiments.vaporization_heat.analyze(experiment_directory)`。
+Wolfram：``VaporizationHeatLab`Analyze[]``；打开：``VaporizationHeatLab`OpenNotebook[]``。
+
+```text
+python scripts/execute_notebooks.py --experiment course-01/vaporization-heat
+python scripts/check_delivery.py --experiment course-01/vaporization-heat
+```
+
+
+## 普通物理实验 2 · 10项
+
+### 表面张力系数的测定(拉脱法) · Surface Tension Measurement by the Ring Detachment Method
+
+标识：`course-02/surface-tension`。通过载荷电压标定、吊环几何与重复拉脱电压差计算表面张力，并比较逐差和回归标定的结果。
+
+别名：表面张力系数测定；吊环拉脱法；水的表面张力；surface tension；ring detachment method；force sensor calibration；conditional uncertainty propagation。
+
+主题：液体表面张力；充分润湿；力传感器标定；拉脱力。方法：增减载荷电压标定；逐差法与线性回归比较；吊环内外接触周界计算；拉脱电压差均值统计；重复性与分辨力条件传播 / conditional uncertainty propagation。
+
+[实验入口](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-02/surface-tension/README.md) · [报告](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-02/surface-tension/report/report.md) · [Jupyter](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-02/surface-tension/notebooks/analysis.ipynb) · [Wolfram](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/SurfaceTensionLab/Notebooks/SurfaceTensionLab.nb) · [源PDF](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/pdf/course-02/01-%E8%A1%A8%E9%9D%A2%E5%BC%A0%E5%8A%9B%E7%B3%BB%E6%95%B0%E7%9A%84%E6%B5%8B%E5%AE%9A%28%E6%8B%89%E8%84%B1%E6%B3%95%29/%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A-%E8%A1%A8%E9%9D%A2%E5%BC%A0%E5%8A%9B%E7%B3%BB%E6%95%B0%E7%9A%84%E6%B5%8B%E5%AE%9A.pdf)
+
+章节：一、实验名称 → 二、实验目的 → 三、实验原理 → 四、主要仪器设备 → 五、实验步骤 → 六、原始数据记录 → 七、数据处理 → 八、实验结果与讨论。
+
+[参数](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-02/surface-tension/experiment.json) | [来源](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-02/surface-tension/data/provenance.json) | [Python计算](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/src/physicslab/experiments/surface_tension.py) | [Wolfram计算](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/SurfaceTensionLab/Kernel/analysis.wl) | [完整结果](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-02/surface-tension/results/python.json) | [双端对照](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-02/surface-tension/results/verification.json) | [Paclet](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/SurfaceTensionLab/dist/SurfaceTensionLab-0.1.0.paclet)
+
+观测表：[calibration.csv](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-02/surface-tension/data/calibration.csv)（8行；字段：mass_mg, loading_mv, unloading_mv）；[diameters.csv](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-02/surface-tension/data/diameters.csv)（5行；字段：trial, inner_mm, outer_mm）；[pulls.csv](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-02/surface-tension/data/pulls.csv)（5行；字段：trial, before_mv, after_mv）。
+
+|指标键|数值|单位|
+|---|---:|---|
+|`surface_tension`|0.0651923212578|N/m|
+|`surface_tension_regression`|0.0650129678241|N/m|
+|`conditional_uncertainty`|0.00107361356922|N/m|
+
+上述为完整结果的选摘；不确定度定义与模型条件见参数、报告和结果文件。
+
+Python：`physicslab.experiments.surface_tension.analyze(experiment_directory)`。
+Wolfram：``SurfaceTensionLab`Analyze[]``；打开：``SurfaceTensionLab`OpenNotebook[]``。
+
+```text
+python scripts/execute_notebooks.py --experiment course-02/surface-tension
+python scripts/check_delivery.py --experiment course-02/surface-tension
+```
+
+
+### 杨氏模量的测量 · Young's Modulus of a Metal Wire by Tensile Loading and an Optical Lever
+
+标识：`course-02/young-modulus`。由加减载荷标尺读数和光杠杆几何反推金属丝伸长，修正直径零差后以逐差及回归计算杨氏模量。
+
+别名：金属杨氏模量；拉伸法杨氏模量；光杠杆测伸长；Young's modulus；tensile wire experiment；optical lever；conditional uncertainty propagation。
+
+主题：弹性形变；轴向拉伸；光杠杆放大；杨氏模量。方法：加减载荷标尺读数平均；测微器正零差修正；逐差与伸长回归比较；光杠杆小角度几何换算；指定标准分量条件传播 / specified uncertainty propagation。
+
+[实验入口](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-02/young-modulus/README.md) · [报告](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-02/young-modulus/report/report.md) · [Jupyter](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-02/young-modulus/notebooks/analysis.ipynb) · [Wolfram](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/YoungModulusLab/Notebooks/YoungModulusLab.nb) · [源PDF](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/pdf/course-02/02-%E6%9D%A8%E6%B0%8F%E6%A8%A1%E9%87%8F%E7%9A%84%E6%B5%8B%E9%87%8F/%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A-%E6%8B%89%E4%BC%B8%E6%B3%95%E6%B5%8B%E9%87%8F%E9%87%91%E5%B1%9E%E6%9D%A8%E6%B0%8F%E6%A8%A1%E9%87%8F.pdf)
+
+章节：一、实验名称 → 二、实验目的 → 三、实验原理 → 四、主要仪器设备 → 五、实验步骤 → 六、原始数据记录 → 七、数据处理 → 八、实验结果与讨论。
+
+[参数](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-02/young-modulus/experiment.json) | [来源](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-02/young-modulus/data/provenance.json) | [Python计算](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/src/physicslab/experiments/young_modulus.py) | [Wolfram计算](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/YoungModulusLab/Kernel/analysis.wl) | [完整结果](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-02/young-modulus/results/python.json) | [双端对照](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-02/young-modulus/results/verification.json) | [Paclet](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/YoungModulusLab/dist/YoungModulusLab-0.1.0.paclet)
+
+观测表：[diameters.csv](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-02/young-modulus/data/diameters.csv)（6行；字段：trial, apparent_mm）；[loading.csv](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-02/young-modulus/data/loading.csv)（10行；字段：mass_kg, loading_mm, unloading_mm）。
+
+|指标键|数值|单位|
+|---|---:|---|
+|`mean_corrected_diameter`|0.52|mm|
+|`young_modulus_difference`|307555716272|Pa|
+|`young_modulus_regression`|308183020376|Pa|
+
+上述为完整结果的选摘；不确定度定义与模型条件见参数、报告和结果文件。
+
+Python：`physicslab.experiments.young_modulus.analyze(experiment_directory)`。
+Wolfram：``YoungModulusLab`Analyze[]``；打开：``YoungModulusLab`OpenNotebook[]``。
+
+```text
+python scripts/execute_notebooks.py --experiment course-02/young-modulus
+python scripts/check_delivery.py --experiment course-02/young-modulus
+```
+
+
+### 弦振动的研究 · Standing Waves on a Stretched String
+
+标识：`course-02/string-vibration`。从两组弦长与驻波半波数记录复算波长，以对数回归比较张力和频率幂指数与理想弦模型。
+
+别名：弦振动实验；弦上驻波；梅尔德实验；张力与频率幂律；standing waves on a string；Melde's experiment；stretched string vibration；log-log regression。
+
+主题：弦上横波；驻波；张力与波速；频率波长幂律。方法：弦长与半波数复算波长；张力扫描常用对数回归；频率扫描常用对数回归；理论幂指数比较；驻波阶数与形状模型比较。
+
+[实验入口](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-02/string-vibration/README.md) · [报告](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-02/string-vibration/report/report.md) · [Jupyter](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-02/string-vibration/notebooks/analysis.ipynb) · [Wolfram](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/StringVibrationLab/Notebooks/StringVibrationLab.nb) · [源PDF](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/pdf/course-02/03-%E5%BC%A6%E6%8C%AF%E5%8A%A8%E7%9A%84%E7%A0%94%E7%A9%B6/%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A-%E5%BC%A6%E6%8C%AF%E5%8A%A8%E7%9A%84%E7%A0%94%E7%A9%B6.pdf)
+
+章节：一、实验名称 → 二、实验目的 → 三、实验原理 → 四、主要仪器设备 → 五、实验步骤 → 六、原始数据记录 → 七、数据处理 → 八、实验结果与讨论。
+
+[参数](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-02/string-vibration/experiment.json) | [来源](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-02/string-vibration/data/provenance.json) | [Python计算](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/src/physicslab/experiments/string_vibration.py) | [Wolfram计算](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/StringVibrationLab/Kernel/analysis.wl) | [完整结果](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-02/string-vibration/results/python.json) | [双端对照](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-02/string-vibration/results/verification.json) | [Paclet](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/StringVibrationLab/dist/StringVibrationLab-0.1.0.paclet)
+
+观测表：[frequency.csv](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-02/string-vibration/data/frequency.csv)（7行；字段：frequency_hz, length_cm, half_waves）；[tension.csv](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-02/string-vibration/data/tension.csv)（7行；字段：mass_g, length_cm, half_waves）。
+
+|指标键|数值|单位|
+|---|---:|---|
+|`tension_exponent`|0.307854763566|1|
+|`frequency_exponent`|-0.983040590327|1|
+|`baseline_wave_speed`|59.46|m/s|
+
+上述为完整结果的选摘；不确定度定义与模型条件见参数、报告和结果文件。
+
+Python：`physicslab.experiments.string_vibration.analyze(experiment_directory)`。
+Wolfram：``StringVibrationLab`Analyze[]``；打开：``StringVibrationLab`OpenNotebook[]``。
+
+```text
+python scripts/execute_notebooks.py --experiment course-02/string-vibration
+python scripts/check_delivery.py --experiment course-02/string-vibration
+```
+
+
+### 声速的测量 · Speed of Sound by Standing-Wave and Phase-Comparison Methods
+
+标识：`course-02/sound-speed`。分别统计驻波法与相位比较法的波长记录，结合频率计算声速，并在给定温度和气体参数下求比热容比。
+
+别名：声速测量实验；驻波法声速；相位比较法声速；超声声速；speed of sound；standing-wave method；phase-comparison method；conditional uncertainty propagation。
+
+主题：空气声速；声驻波；相位差；气体比热容比。方法：两法波长记录分别统计；频率与平均波长换算声速；指定波长频率分量传播 / specified uncertainty propagation；理想气体关系反推比热容比；波长标度敏感性扫描。
+
+[实验入口](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-02/sound-speed/README.md) · [报告](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-02/sound-speed/report/report.md) · [Jupyter](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-02/sound-speed/notebooks/analysis.ipynb) · [Wolfram](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/SoundSpeedLab/Notebooks/SoundSpeedLab.nb) · [源PDF](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/pdf/course-02/04-%E5%A3%B0%E9%80%9F%E7%9A%84%E6%B5%8B%E9%87%8F/%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A-%E5%A3%B0%E9%80%9F%E7%9A%84%E6%B5%8B%E9%87%8F.pdf)
+
+章节：一、实验名称 → 二、实验目的 → 三、实验原理 → 四、主要仪器设备 → 五、实验步骤 → 六、原始数据记录 → 七、数据处理 → 八、实验结果与讨论。
+
+[参数](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-02/sound-speed/experiment.json) | [来源](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-02/sound-speed/data/provenance.json) | [Python计算](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/src/physicslab/experiments/sound_speed.py) | [Wolfram计算](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/SoundSpeedLab/Kernel/analysis.wl) | [完整结果](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-02/sound-speed/results/python.json) | [双端对照](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-02/sound-speed/results/verification.json) | [Paclet](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/SoundSpeedLab/dist/SoundSpeedLab-0.1.0.paclet)
+
+观测表：[wavelengths.csv](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-02/sound-speed/data/wavelengths.csv)（10行；字段：trial, standing_mm, phase_mm）。
+
+|指标键|数值|单位|
+|---|---:|---|
+|`standing_speed`|350.85813|m/s|
+|`phase_speed`|356.98068|m/s|
+|`arithmetic_mean_speed`|353.919405|m/s|
+
+上述为完整结果的选摘；不确定度定义与模型条件见参数、报告和结果文件。
+
+Python：`physicslab.experiments.sound_speed.analyze(experiment_directory)`。
+Wolfram：``SoundSpeedLab`Analyze[]``；打开：``SoundSpeedLab`OpenNotebook[]``。
+
+```text
+python scripts/execute_notebooks.py --experiment course-02/sound-speed
+python scripts/check_delivery.py --experiment course-02/sound-speed
+```
+
+
+### 刚体转动惯量 · Moment of Inertia of Rigid Bodies and the Parallel-Axis Theorem
+
+标识：`course-02/moment-of-inertia`。对已报角加速度求均值、由总惯量差提取附加惯量，并以圆环圆柱几何模型和偏轴距离扫描比较质量分布的作用。
+
+别名：刚体转动惯量测定；圆环转动惯量；平行轴定理；偏轴圆柱惯量；moment of inertia；parallel-axis theorem；rigid body rotation。
+
+主题：质量分布；转动惯量；平行轴定理；圆环与圆柱。方法：已报角加速度均值重算；已报总惯量差分；均匀圆环与圆柱几何计算；圆柱偏轴距离模型扫描。
+
+[实验入口](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-02/moment-of-inertia/README.md) · [报告](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-02/moment-of-inertia/report/report.md) · [Jupyter](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-02/moment-of-inertia/notebooks/analysis.ipynb) · [Wolfram](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/MomentOfInertiaLab/Notebooks/MomentOfInertiaLab.nb) · [源PDF](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/pdf/course-02/05-%E5%88%9A%E4%BD%93%E8%BD%AC%E5%8A%A8%E6%83%AF%E9%87%8F/%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A-%E5%88%9A%E4%BD%93%E8%BD%AC%E5%8A%A8%E6%83%AF%E9%87%8F%E7%9A%84%E6%B5%8B%E5%AE%9A.pdf)
+
+章节：一、实验名称 → 二、实验目的 → 三、实验原理 → 四、主要仪器设备 → 五、实验步骤 → 六、原始数据记录 → 七、数据处理 → 八、实验结果与讨论。
+
+[参数](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-02/moment-of-inertia/experiment.json) | [来源](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-02/moment-of-inertia/data/provenance.json) | [Python计算](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/src/physicslab/experiments/moment_of_inertia.py) | [Wolfram计算](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/MomentOfInertiaLab/Kernel/analysis.wl) | [完整结果](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-02/moment-of-inertia/results/python.json) | [双端对照](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-02/moment-of-inertia/results/verification.json) | [Paclet](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/MomentOfInertiaLab/dist/MomentOfInertiaLab-0.1.0.paclet)
+
+观测表：[geometry.csv](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-02/moment-of-inertia/data/geometry.csv)（7行；字段：quantity, value, unit）。
+
+|指标键|数值|单位|
+|---|---:|---|
+|`ring_inertia_from_reported_totals`|0.004206|kg m^2|
+|`ring_inertia_theory`|0.00554265|kg m^2|
+|`cylinder_offset_inertia_theory`|0.001678675|kg m^2|
+
+上述为完整结果的选摘；不确定度定义与模型条件见参数、报告和结果文件。
+
+Python：`physicslab.experiments.moment_of_inertia.analyze(experiment_directory)`。
+Wolfram：``MomentOfInertiaLab`Analyze[]``；打开：``MomentOfInertiaLab`OpenNotebook[]``。
+
+```text
+python scripts/execute_notebooks.py --experiment course-02/moment-of-inertia
+python scripts/check_delivery.py --experiment course-02/moment-of-inertia
+```
+
+
+### 金属线膨胀系数的测量 · Linear Thermal Expansion of a Metal Rod
+
+标识：`course-02/thermal-expansion`。对八组与讲义同值的温度和千分表读数作逐差及带截距回归，用给定杆长换算线胀系数。
+
+别名：金属线膨胀系数；铜棒热膨胀；千分表伸长测量；linear thermal expansion；coefficient of linear expansion；metal rod expansion；least squares thermal expansion。
+
+主题：线性热膨胀；线胀系数；温度与伸长；有效受热长度。方法：讲义同值温度位移数据复算；等温差逐差平均；带截距温度位移回归；斜率换算线胀系数；指定参考值比较。
+
+[实验入口](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-02/thermal-expansion/README.md) · [报告](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-02/thermal-expansion/report/report.md) · [Jupyter](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-02/thermal-expansion/notebooks/analysis.ipynb) · [Wolfram](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/ThermalExpansionLab/Notebooks/ThermalExpansionLab.nb) · [源PDF](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/pdf/course-02/06-%E9%87%91%E5%B1%9E%E7%BA%BF%E8%86%A8%E8%83%80%E7%B3%BB%E6%95%B0%E7%9A%84%E6%B5%8B%E9%87%8F/%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A-%E9%87%91%E5%B1%9E%E7%BA%BF%E8%83%80%E7%B3%BB%E6%95%B0%E7%9A%84%E6%B5%8B%E9%87%8F.pdf)
+
+章节：实验名称 → 实验目的 → 实验原理 → 主要仪器设备 → 实验步骤 → 原始数据记录 → 数据处理 → 实验结果与讨论。
+
+[参数](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-02/thermal-expansion/experiment.json) | [来源](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-02/thermal-expansion/data/provenance.json) | [Python计算](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/src/physicslab/experiments/thermal_expansion.py) | [Wolfram计算](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/ThermalExpansionLab/Kernel/analysis.wl) | [完整结果](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-02/thermal-expansion/results/python.json) | [双端对照](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-02/thermal-expansion/results/verification.json) | [Paclet](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/ThermalExpansionLab/dist/ThermalExpansionLab-0.1.0.paclet)
+
+观测表：[observations-01.csv](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-02/thermal-expansion/data/observations-01.csv)（7行；字段：项目, 符号或型号, 数值, 单位/说明）；[observations-02.csv](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-02/thermal-expansion/data/observations-02.csv)（2行；字段：测量序号, 1, 2, 3, 4, 5, 6, 7, 8）。
+
+|指标键|数值|单位|
+|---|---:|---|
+|`alpha_difference_per_k`|1.52708333333e-05|1/K|
+|`alpha_fit_per_k`|1.52531746032e-05|1/K|
+|`reference_difference_percent`|11.5757994019|%|
+
+上述为完整结果的选摘；不确定度定义与模型条件见参数、报告和结果文件。
+
+Python：`physicslab.experiments.thermal_expansion.analyze(experiment_directory)`。
+Wolfram：``ThermalExpansionLab`Analyze[]``；打开：``ThermalExpansionLab`OpenNotebook[]``。
+
+```text
+python scripts/execute_notebooks.py --experiment course-02/thermal-expansion
+python scripts/check_delivery.py --experiment course-02/thermal-expansion
+```
+
+
+### 固体导热系数的测量 · Thermal Conductivity and Specific Heat by a Quasi-Steady Heating Method
+
+标识：`course-02/thermal-conductivity`。由中心面和加热面的十六组热电势记录求温升速率与温差，在给定几何和电阻下计算准稳态导热系数及比热容。
+
+别名：固体导热系数；准稳态导热法；热电偶温差测量；thermal conductivity；quasi-steady heating method；specific heat measurement。
+
+主题：傅里叶导热；准稳态热流；比热容；热电偶温差。方法：热电势换算温差；中心面温升线性回归；逐差温升速率比较；给定电阻热流密度计算；末端与平均温差导热估计。
+
+[实验入口](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-02/thermal-conductivity/README.md) · [报告](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-02/thermal-conductivity/report/report.md) · [Jupyter](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-02/thermal-conductivity/notebooks/analysis.ipynb) · [Wolfram](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/ThermalConductivityLab/Notebooks/ThermalConductivityLab.nb) · [源PDF](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/pdf/course-02/07-%E5%9B%BA%E4%BD%93%E5%AF%BC%E7%83%AD%E7%B3%BB%E6%95%B0%E7%9A%84%E6%B5%8B%E9%87%8F/%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A-%E5%9B%BA%E4%BD%93%E5%AF%BC%E7%83%AD%E7%B3%BB%E6%95%B0%E7%9A%84%E6%B5%8B%E9%87%8F.pdf)
+
+章节：实验名称 → 实验目的 → 实验原理 → 主要仪器设备 → 实验步骤 → 原始数据记录 → 数据处理 → 实验结果与讨论。
+
+[参数](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-02/thermal-conductivity/experiment.json) | [来源](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-02/thermal-conductivity/data/provenance.json) | [Python计算](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/src/physicslab/experiments/thermal_conductivity.py) | [Wolfram计算](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/ThermalConductivityLab/Kernel/analysis.wl) | [完整结果](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-02/thermal-conductivity/results/python.json) | [双端对照](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-02/thermal-conductivity/results/verification.json) | [Paclet](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/ThermalConductivityLab/dist/ThermalConductivityLab-0.1.0.paclet)
+
+观测表：[observations-01.csv](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-02/thermal-conductivity/data/observations-01.csv)（7行；字段：项目, 符号, 数值, 单位, 说明）；[observations-02.csv](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-02/thermal-conductivity/data/observations-02.csv)（16行；字段：序号, 时间t/min, 中心面Vc/μV, 加热面Vh/μV）。
+
+|指标键|数值|单位|
+|---|---:|---|
+|`thermal_conductivity_endpoint`|0.233021031572|W/(m K)|
+|`specific_heat_j_kg_k`|2006.50847563|J/(kg K)|
+|`delta_drift_percent`|11.5151515152|%|
+
+上述为完整结果的选摘；不确定度定义与模型条件见参数、报告和结果文件。
+
+Python：`physicslab.experiments.thermal_conductivity.analyze(experiment_directory)`。
+Wolfram：``ThermalConductivityLab`Analyze[]``；打开：``ThermalConductivityLab`OpenNotebook[]``。
+
+```text
+python scripts/execute_notebooks.py --experiment course-02/thermal-conductivity
+python scripts/check_delivery.py --experiment course-02/thermal-conductivity
+```
+
+
+### 液体粘度系数的测量 · Liquid Viscosity by the Falling-Sphere Method
+
+标识：`course-02/liquid-viscosity`。从小球直径和累计下落时间求区间平均速度，采用斯托克斯低雷诺数及管壁修正计算蓖麻油黏度。
+
+别名：液体粘度系数；液体黏滞系数；落球法；蓖麻油黏度；falling-sphere viscometer；Stokes viscosity；liquid viscosity；specified uncertainty propagation。
+
+主题：斯托克斯阻力；终端速度；低雷诺数流动；管壁修正。方法：小球直径零差修正；累计时间斜率拟合；跨间隔逐差时间比较；有限管径黏度修正；直径时间指定分量传播 / specified uncertainty propagation。
+
+[实验入口](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-02/liquid-viscosity/README.md) · [报告](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-02/liquid-viscosity/report/report.md) · [Jupyter](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-02/liquid-viscosity/notebooks/analysis.ipynb) · [Wolfram](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/LiquidViscosityLab/Notebooks/LiquidViscosityLab.nb) · [源PDF](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/pdf/course-02/08-%E6%B6%B2%E4%BD%93%E7%B2%98%E5%BA%A6%E7%B3%BB%E6%95%B0%E7%9A%84%E6%B5%8B%E9%87%8F/%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A-%E6%B6%B2%E4%BD%93%E7%B2%98%E6%BB%9E%E7%B3%BB%E6%95%B0%E7%9A%84%E6%B5%8B%E9%87%8F.pdf)
+
+章节：实验名称 → 实验目的 → 实验原理 → 主要仪器设备 → 实验步骤 → 原始数据记录 → 数据处理 → 实验结果与讨论。
+
+[参数](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-02/liquid-viscosity/experiment.json) | [来源](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-02/liquid-viscosity/data/provenance.json) | [Python计算](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/src/physicslab/experiments/liquid_viscosity.py) | [Wolfram计算](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/LiquidViscosityLab/Kernel/analysis.wl) | [完整结果](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-02/liquid-viscosity/results/python.json) | [双端对照](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-02/liquid-viscosity/results/verification.json) | [Paclet](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/LiquidViscosityLab/dist/LiquidViscosityLab-0.1.0.paclet)
+
+观测表：[observations-01.csv](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-02/liquid-viscosity/data/observations-01.csv)（9行；字段：物理量, 符号, 数值, 单位）；[observations-02.csv](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-02/liquid-viscosity/data/observations-02.csv)（1行；字段：测量次数 i, 1, 2, 3, 4, 5, 6）；[observations-03.csv](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-02/liquid-viscosity/data/observations-03.csv)（1行；字段：测量次数 i, 1, 2, 3, 4, 5, 6）。
+
+|指标键|数值|单位|
+|---|---:|---|
+|`fall_time_fit_s`|31.6551428571|s|
+|`viscosity_pa_s`|0.517102164565|Pa s|
+|`reynolds_number`|0.0114912735204|1|
+
+上述为完整结果的选摘；不确定度定义与模型条件见参数、报告和结果文件。
+
+Python：`physicslab.experiments.liquid_viscosity.analyze(experiment_directory)`。
+Wolfram：``LiquidViscosityLab`Analyze[]``；打开：``LiquidViscosityLab`OpenNotebook[]``。
+
+```text
+python scripts/execute_notebooks.py --experiment course-02/liquid-viscosity
+python scripts/check_delivery.py --experiment course-02/liquid-viscosity
+```
+
+
+### 波尔共振实验 · Pohl Resonance: Free, Damped and Forced Oscillations
+
+标识：`course-02/pohl-resonance`。结合自由、阻尼和受迫振动记录，以累计时间对数回归求衰减率，并比较实测共振峰与线性幅相模型。
+
+别名：波尔共振；波耳共振；弹性摆轮阻尼振动；受迫振动幅相特性；Pohl's pendulum；Pohl resonance；forced and damped oscillations；damped harmonic oscillator。
+
+主题：阻尼振动；受迫共振；振幅包络；幅频与相频响应。方法：周期累计建立衰减时间轴；对数振幅回归；跨周期逐差衰减率计算；四象限相位模型比较；阻尼比例稳态响应扫描。
+
+[实验入口](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-02/pohl-resonance/README.md) · [报告](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-02/pohl-resonance/report/report.md) · [Jupyter](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-02/pohl-resonance/notebooks/analysis.ipynb) · [Wolfram](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/PohlResonanceLab/Notebooks/PohlResonanceLab.nb) · [源PDF](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/pdf/course-02/%E6%B3%A2%E5%B0%94%E5%85%B1%E6%8C%AF%E5%AE%9E%E9%AA%8C/%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A-%E6%B3%A2%E5%B0%94%E5%85%B1%E6%8C%AF%E5%AE%9E%E9%AA%8C.pdf)
+
+章节：实验名称 → 实验目的 → 实验原理 → 主要仪器设备 → 实验步骤 → 原始数据记录 → 数据处理 → 实验结果与讨论。
+
+[参数](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-02/pohl-resonance/experiment.json) | [来源](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-02/pohl-resonance/data/provenance.json) | [Python计算](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/src/physicslab/experiments/pohl_resonance.py) | [Wolfram计算](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/PohlResonanceLab/Kernel/analysis.wl) | [完整结果](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-02/pohl-resonance/results/python.json) | [双端对照](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-02/pohl-resonance/results/verification.json) | [Paclet](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/PohlResonanceLab/dist/PohlResonanceLab-0.1.0.paclet)
+
+观测表：[observations-01.csv](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-02/pohl-resonance/data/observations-01.csv)（4行；字段：θ/(°), T₀/s, θ/(°), T₀/s, θ/(°), T₀/s）；[observations-02.csv](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-02/pohl-resonance/data/observations-02.csv)（5行；字段：i, θᵢ/(°), Tᵢ/s, i+5, θᵢ₊₅/(°), Tᵢ₊₅/s）；[observations-03.csv](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-02/pohl-resonance/data/observations-03.csv)（10行；字段：T/s, θ/(°), φ实/(°)）。
+
+|指标键|数值|单位|
+|---|---:|---|
+|`damping_fit_per_s`|0.0572772811124|1/s|
+|`forced_peak_ratio`|0.987393939394|1|
+|`forced_peak_amplitude_deg`|141.9|deg|
+
+上述为完整结果的选摘；不确定度定义与模型条件见参数、报告和结果文件。
+
+Python：`physicslab.experiments.pohl_resonance.analyze(experiment_directory)`。
+Wolfram：``PohlResonanceLab`Analyze[]``；打开：``PohlResonanceLab`OpenNotebook[]``。
+
+```text
+python scripts/execute_notebooks.py --experiment course-02/pohl-resonance
+python scripts/check_delivery.py --experiment course-02/pohl-resonance
+```
+
+
+### 惯性秤的应用 · Mass Measurement with an Inertial Balance
+
+标识：`course-02/inertial-balance`。用八组标准质量的周期平方建立含截距定标，反推圆柱惯性质量，并从斜率和截距求等效劲度与空载质量。
+
+别名：惯性秤；周期法测质量；惯性质量定标；inertial balance；mass from oscillation period；period-squared calibration；calibration uncertainty。
+
+主题：惯性质量；简谐振动；质量定标；空载等效质量。方法：标准质量周期平方回归；逐差定标斜率比较；未知物周期反演质量；定标参数协方差传播 / calibration covariance propagation；等效劲度与空载质量计算。
+
+[实验入口](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-02/inertial-balance/README.md) · [报告](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-02/inertial-balance/report/report.md) · [Jupyter](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-02/inertial-balance/notebooks/analysis.ipynb) · [Wolfram](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/InertialBalanceLab/Notebooks/InertialBalanceLab.nb) · [源PDF](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/pdf/course-02/%E6%83%AF%E6%80%A7%E7%A7%A4%E7%9A%84%E5%BA%94%E7%94%A8/%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A-%E6%83%AF%E6%80%A7%E7%A7%A4%E7%9A%84%E5%BA%94%E7%94%A8.pdf)
+
+章节：实验名称 → 实验目的 → 实验原理 → 主要仪器设备 → 实验步骤 → 原始数据记录 → 数据处理 → 实验结果与讨论。
+
+[参数](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-02/inertial-balance/experiment.json) | [来源](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-02/inertial-balance/data/provenance.json) | [Python计算](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/src/physicslab/experiments/inertial_balance.py) | [Wolfram计算](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/InertialBalanceLab/Kernel/analysis.wl) | [完整结果](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-02/inertial-balance/results/python.json) | [双端对照](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-02/inertial-balance/results/verification.json) | [Paclet](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/InertialBalanceLab/dist/InertialBalanceLab-0.1.0.paclet)
+
+观测表：[observations-01.csv](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-02/inertial-balance/data/observations-01.csv)（2行；字段：次数, 1, 2, 3, 4, 5, 6, 7, 8, 9）。
+
+|指标键|数值|单位|
+|---|---:|---|
+|`unknown_mass_g`|193.6042387|g|
+|`relative_nominal_difference_percent`|1.62952162729|%|
+|`effective_stiffness_n_m`|20.1843314164|N/m|
+
+上述为完整结果的选摘；不确定度定义与模型条件见参数、报告和结果文件。
+
+Python：`physicslab.experiments.inertial_balance.analyze(experiment_directory)`。
+Wolfram：``InertialBalanceLab`Analyze[]``；打开：``InertialBalanceLab`OpenNotebook[]``。
+
+```text
+python scripts/execute_notebooks.py --experiment course-02/inertial-balance
+python scripts/check_delivery.py --experiment course-02/inertial-balance
+```
+
+
+## 普通物理实验 3 · 13项
+
+### 万用电表的使用 · Use of Digital and Analog Multimeters
+
+标识：`course-03/multimeter`。比较数字式与指针式万用表的电压电阻记录和标称值，并以串联欧姆表模型解释刻度疏密。
+
+别名：万用电表使用；数字万用表；指针万用表；欧姆档刻度；multimeter；digital and analog meters；ohmmeter scale。
+
+主题：电压与电阻测量；量程与分辨率；欧姆刻度非线性；标称值比较。方法：两类仪表示值对照；相对标称偏差计算；指定读格界限条件估计；串联欧姆表归一化模型；电阻比工作点扫描。
+
+[实验入口](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/multimeter/README.md) · [报告](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/multimeter/report/report.md) · [Jupyter](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/multimeter/notebooks/analysis.ipynb) · [Wolfram](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/MultimeterLab/Notebooks/MultimeterLab.nb) · [源PDF](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/pdf/course-03/1%E4%B8%87%E7%94%A8%E7%94%B5%E8%A1%A8%E7%9A%84%E4%BD%BF%E7%94%A8/%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A-%E4%B8%87%E7%94%A8%E7%94%B5%E8%A1%A8%E7%9A%84%E4%BD%BF%E7%94%A8.pdf)
+
+章节：一、实验名称 → 二、实验目的 → 三、实验原理 → 四、主要仪器设备 → 五、实验步骤 → 六、原始数据记录 → 七、数据处理 → 八、实验结果与讨论。
+
+[参数](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/multimeter/experiment.json) | [来源](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/multimeter/data/provenance.json) | [Python计算](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/src/physicslab/experiments/multimeter.py) | [Wolfram计算](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/MultimeterLab/Kernel/analysis.wl) | [完整结果](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/multimeter/results/python.json) | [双端对照](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/multimeter/results/verification.json) | [Paclet](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/MultimeterLab/dist/MultimeterLab-0.1.0.paclet)
+
+观测表：[resistance.csv](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/multimeter/data/resistance.csv)（5行；字段：label, nominal, digital_range, digital, analog_range, analog）；[voltage.csv](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/multimeter/data/voltage.csv)（5行；字段：label, nominal, digital_range, digital, analog_range, analog）。
+
+|指标键|数值|单位|
+|---|---:|---|
+|`resistance_1_digital_deviation`|26.6666666667|%|
+|`resistance_2_digital_deviation`|0.851063829787|%|
+|`voltage_5_digital_deviation`|74.2|%|
+
+上述为完整结果的选摘；不确定度定义与模型条件见参数、报告和结果文件。
+
+Python：`physicslab.experiments.multimeter.analyze(experiment_directory)`。
+Wolfram：``MultimeterLab`Analyze[]``；打开：``MultimeterLab`OpenNotebook[]``。
+
+```text
+python scripts/execute_notebooks.py --experiment course-03/multimeter
+python scripts/check_delivery.py --experiment course-03/multimeter
+```
+
+
+### 制流分压电路 · Current-Limiting and Loaded Voltage-Divider Circuits
+
+标识：`course-03/current-voltage-divider`。在源表标度下比较三种负载比的制流和分压记录，以固定形状幅度估计及归一化扫描分析调节特性。
+
+别名：制流分压电路；滑动变阻器两种接法；限流电路；负载分压；current-limiting circuit；loaded voltage divider；rheostat circuits。
+
+主题：直流电阻电路；分压负载效应；调节范围；归一化电路响应。方法：三负载比位置扫描记录比较；固定电路形状单幅度最小二乘；曲线残差计算；无量纲负载比模型扫描。
+
+[实验入口](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/current-voltage-divider/README.md) · [报告](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/current-voltage-divider/report/report.md) · [Jupyter](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/current-voltage-divider/notebooks/analysis.ipynb) · [Wolfram](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/DividerCircuitsLab/Notebooks/DividerCircuitsLab.nb) · [源PDF](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/pdf/course-03/2%E5%88%B6%E6%B5%81%E5%88%86%E5%8E%8B%E7%94%B5%E8%B7%AF/%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A-%E5%88%B6%E6%B5%81%E5%88%86%E5%8E%8B%E7%94%B5.pdf)
+
+章节：一、实验名称 → 二、实验目的 → 三、实验原理 → 四、主要仪器设备 → 五、实验步骤 → 六、原始数据记录 → 七、数据处理 → 八、实验结果与讨论。
+
+[参数](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/current-voltage-divider/experiment.json) | [来源](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/current-voltage-divider/data/provenance.json) | [Python计算](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/src/physicslab/experiments/current_voltage_divider.py) | [Wolfram计算](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/DividerCircuitsLab/Kernel/analysis.wl) | [完整结果](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/current-voltage-divider/results/python.json) | [双端对照](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/current-voltage-divider/results/verification.json) | [Paclet](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/DividerCircuitsLab/dist/DividerCircuitsLab-0.1.0.paclet)
+
+观测表：[observations.csv](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/current-voltage-divider/data/observations.csv)（60行；字段：kind, K, X, reading）。
+
+|指标键|数值|单位|
+|---|---:|---|
+|`current_K0p1_rmse`|1.63717217985|原记录电流单位|
+|`current_K1p0_rmse`|0.118407378116|原记录电流单位|
+|`model_K1p0_voltage_mid`|0.4|1|
+
+上述为完整结果的选摘；不确定度定义与模型条件见参数、报告和结果文件。
+
+Python：`physicslab.experiments.current_voltage_divider.analyze(experiment_directory)`。
+Wolfram：``DividerCircuitsLab`Analyze[]``；打开：``DividerCircuitsLab`OpenNotebook[]``。
+
+```text
+python scripts/execute_notebooks.py --experiment course-03/current-voltage-divider
+python scripts/check_delivery.py --experiment course-03/current-voltage-divider
+```
+
+
+### 用稳恒电场模拟静电场 · Simulation of an Electrostatic Field with a Steady Current Field
+
+标识：`course-03/electrostatic-field`。将同轴电极间八个电位对应的汇总半径对数线性化，比较边界解析模型并计算径向电位与场强。
+
+别名：稳恒电流场模拟静电场；静电场模拟；同轴电极等位线；electrostatic field mapping；steady current analogy；coaxial electrodes；equipotential mapping；Laplace equation。
+
+主题：拉普拉斯方程；电流场静电场类比；同轴电位；径向场强。方法：内点汇总半径对数线性化；含截距拟合与残差；同轴边界理论比较；电位与场强解析计算；边界电压模型扫描。
+
+[实验入口](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/electrostatic-field/README.md) · [报告](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/electrostatic-field/report/report.md) · [Jupyter](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/electrostatic-field/notebooks/analysis.ipynb) · [Wolfram](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/ElectrostaticFieldLab/Notebooks/ElectrostaticFieldLab.nb) · [源PDF](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/pdf/course-03/3%E7%94%A8%E7%A8%B3%E6%81%92%E7%94%B5%E5%9C%BA%E6%A8%A1%E6%8B%9F%E9%9D%99%E7%94%B5%E5%9C%BA/%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A-%E7%94%A8%E7%A8%B3%E6%81%92%E7%94%B5%E5%9C%BA%E6%A8%A1%E6%8B%9F%E9%9D%99%E7%94%B5%E5%9C%BA.pdf)
+
+章节：一、实验名称 → 二、实验目的 → 三、实验原理 → 四、主要仪器设备 → 五、实验步骤 → 六、原始数据记录 → 七、数据处理 → 八、实验结果与讨论。
+
+[参数](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/electrostatic-field/experiment.json) | [来源](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/electrostatic-field/data/provenance.json) | [Python计算](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/src/physicslab/experiments/electrostatic_field.py) | [Wolfram计算](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/ElectrostaticFieldLab/Kernel/analysis.wl) | [完整结果](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/electrostatic-field/results/python.json) | [双端对照](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/electrostatic-field/results/verification.json) | [Paclet](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/ElectrostaticFieldLab/dist/ElectrostaticFieldLab-0.1.0.paclet)
+
+观测表：[reported_radii.csv](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/electrostatic-field/data/reported_radii.csv)（10行；字段：voltage_V, radius_cm）。
+
+|指标键|数值|单位|
+|---|---:|---|
+|`lnr_slope`|-1.88376286637|1|
+|`theory_slope`|-1.88851161035|1|
+|`max_voltage_difference`|0.0280111075688|V|
+
+上述为完整结果的选摘；不确定度定义与模型条件见参数、报告和结果文件。
+
+Python：`physicslab.experiments.electrostatic_field.analyze(experiment_directory)`。
+Wolfram：``ElectrostaticFieldLab`Analyze[]``；打开：``ElectrostaticFieldLab`OpenNotebook[]``。
+
+```text
+python scripts/execute_notebooks.py --experiment course-03/electrostatic-field
+python scripts/check_delivery.py --experiment course-03/electrostatic-field
+```
+
+
+### 电表的改装与校准 · Galvanometer Range Extension and Meter Calibration
+
+标识：`course-03/meter-calibration`。用表头参数设计电流电压扩程，依据上下行标准读数重算校准误差，并比较电池变化时的欧姆调零可行性。
+
+别名：电表改装与校准；表头扩程；电流表分流电阻；电压表串联电阻；meter calibration；galvanometer range extension；ammeter and voltmeter conversion。
+
+主题：表头扩程；示值误差；往返差；欧姆表调零。方法：分流和串联电阻设计计算；标准上下行均值比较；示值误差与往返差分列；校准曲线回归；电池电压调零可行域扫描。
+
+[实验入口](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/meter-calibration/README.md) · [报告](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/meter-calibration/report/report.md) · [Jupyter](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/meter-calibration/notebooks/analysis.ipynb) · [Wolfram](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/MeterCalibrationLab/Notebooks/MeterCalibrationLab.nb) · [源PDF](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/pdf/course-03/4%E7%94%B5%E8%A1%A8%E7%9A%84%E6%94%B9%E8%A3%85%E4%B8%8E%E6%A0%A1%E5%87%86/%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A-%E7%94%B5%E8%A1%A8%E7%9A%84%E6%94%B9%E8%A3%85%E4%B8%8E%E6%A0%A1%E5%87%86.pdf)
+
+章节：一、实验名称 → 二、实验目的 → 三、实验原理 → 四、主要仪器设备 → 五、实验步骤 → 六、原始数据记录 → 七、数据处理 → 八、实验结果与讨论。
+
+[参数](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/meter-calibration/experiment.json) | [来源](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/meter-calibration/data/provenance.json) | [Python计算](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/src/physicslab/experiments/meter_calibration.py) | [Wolfram计算](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/MeterCalibrationLab/Kernel/analysis.wl) | [完整结果](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/meter-calibration/results/python.json) | [双端对照](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/meter-calibration/results/verification.json) | [Paclet](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/MeterCalibrationLab/dist/MeterCalibrationLab-0.1.0.paclet)
+
+观测表：[current.csv](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/meter-calibration/data/current.csv)（10行；字段：indicated, standard_up, standard_down）；[voltage.csv](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/meter-calibration/data/voltage.csv)（10行；字段：indicated, standard_up, standard_down）。
+
+|指标键|数值|单位|
+|---|---:|---|
+|`shunt_resistance`|7.5|Ω|
+|`series_resistance`|1470|Ω|
+|`current_max_error`|0.105|mA|
+|`voltage_max_error`|0.0805|V|
+
+上述为完整结果的选摘；不确定度定义与模型条件见参数、报告和结果文件。
+
+Python：`physicslab.experiments.meter_calibration.analyze(experiment_directory)`。
+Wolfram：``MeterCalibrationLab`Analyze[]``；打开：``MeterCalibrationLab`OpenNotebook[]``。
+
+```text
+python scripts/execute_notebooks.py --experiment course-03/meter-calibration
+python scripts/check_delivery.py --experiment course-03/meter-calibration
+```
+
+
+### 霍尔效应的实验研究 · Hall Effect and Four-Polarity Signal Decomposition
+
+标识：`course-03/hall-effect`。对工作电流、励磁电流和位置三组四极性电压分别分解霍尔与背景分量，以系列内参照分析相对场和记录一致性。
+
+别名：霍尔效应实验；霍尔电压；四极性换向法；相对磁场测量；Hall effect；Hall voltage；polarity reversal method。
+
+主题：霍尔效应；电流磁场奇偶对称性；背景电压；相对场投影。方法：四极性电压线性投影；工作电流与励磁扫描分别回归；霍尔共模及单奇分量分解；位置系列相对场归一化；逐点极性记录比较。
+
+[实验入口](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/hall-effect/README.md) · [报告](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/hall-effect/report/report.md) · [Jupyter](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/hall-effect/notebooks/analysis.ipynb) · [Wolfram](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/HallEffectLab/Notebooks/HallEffectLab.nb) · [源PDF](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/pdf/course-03/5%E9%9C%8D%E5%B0%94%E6%95%88%E5%BA%94%E7%9A%84%E5%AE%9E%E9%AA%8C%E7%A0%94%E7%A9%B6/%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A-%E9%9C%8D%E5%B0%94%E6%95%88%E5%BA%94%E7%9A%84%E5%AE%9E%E9%AA%8C%E7%A0%94%E7%A9%B6.pdf)
+
+章节：一、实验名称 → 二、实验目的 → 三、实验原理 → 四、主要仪器设备 → 五、实验步骤 → 六、原始数据记录 → 七、数据处理 → 八、实验结果与讨论。
+
+[参数](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/hall-effect/experiment.json) | [来源](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/hall-effect/data/provenance.json) | [Python计算](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/src/physicslab/experiments/hall_effect.py) | [Wolfram计算](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/HallEffectLab/Kernel/analysis.wl) | [完整结果](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/hall-effect/results/python.json) | [双端对照](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/hall-effect/results/verification.json) | [Paclet](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/HallEffectLab/dist/HallEffectLab-0.1.0.paclet)
+
+观测表：[magnet_current.csv](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/hall-effect/data/magnet_current.csv)（10行；字段：x, V1_mV, V2_mV, V3_mV, V4_mV）；[position.csv](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/hall-effect/data/position.csv)（10行；字段：x, V1_mV, V2_mV, V3_mV, V4_mV）；[working_current.csv](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/hall-effect/data/working_current.csv)（10行；字段：x, V1_mV, V2_mV, V3_mV, V4_mV）。
+
+|指标键|数值|单位|
+|---|---:|---|
+|`working_current_slope`|32.0077272727|mV/mA|
+|`field_end_ratio`|0.489151873767|1|
+|`field_inner_spread_percent`|0.407453545105|%|
+
+上述为完整结果的选摘；不确定度定义与模型条件见参数、报告和结果文件。
+
+Python：`physicslab.experiments.hall_effect.analyze(experiment_directory)`。
+Wolfram：``HallEffectLab`Analyze[]``；打开：``HallEffectLab`OpenNotebook[]``。
+
+```text
+python scripts/execute_notebooks.py --experiment course-03/hall-effect
+python scripts/check_delivery.py --experiment course-03/hall-effect
+```
+
+
+### 电阻伏安特性的测定 · Volt-Ampere Characteristics and Instrument Loading
+
+标识：`course-03/resistor-iv`。分别处理两电阻的内外接伏安记录，比较比值与回归估计、选点和加载模型，并对二极管指定正向区间作半对数分析。
+
+别名：电阻伏安特性；伏安法测电阻；电流表内接外接；二极管正向特性；volt-ampere characteristics；ammeter loading；diode forward characteristic；least squares。
+
+主题：欧姆定律；仪表加载误差；回归区间敏感性；二极管非线性。方法：逐点电阻比值统计；带截距与过原点伏安回归；全点和高电压选点比较；仪表内阻比归一化扫描；二极管指定区间半对数拟合。
+
+[实验入口](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/resistor-iv/README.md) · [报告](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/resistor-iv/report/report.md) · [Jupyter](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/resistor-iv/notebooks/analysis.ipynb) · [Wolfram](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/ResistorIVLab/Notebooks/ResistorIVLab.nb) · [源PDF](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/pdf/course-03/6%E7%94%B5%E9%98%BB%E4%BC%8F%E5%AE%89%E7%89%B9%E6%80%A7%E7%9A%84%E6%B5%8B%E5%AE%9A/%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A-%E7%94%B5%E9%98%BB%E4%BC%8F%E5%AE%89%E7%89%B9%E6%80%A7%E7%9A%84%E6%B5%8B%E5%AE%9A.pdf)
+
+章节：一、实验名称 → 二、实验目的 → 三、实验原理 → 四、主要仪器设备 → 五、实验步骤 → 六、原始数据记录 → 七、数据处理 → 八、实验结果与讨论。
+
+[参数](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/resistor-iv/experiment.json) | [来源](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/resistor-iv/data/provenance.json) | [Python计算](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/src/physicslab/experiments/resistor_iv.py) | [Wolfram计算](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/ResistorIVLab/Kernel/analysis.wl) | [完整结果](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/resistor-iv/results/python.json) | [双端对照](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/resistor-iv/results/verification.json) | [Paclet](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/ResistorIVLab/dist/ResistorIVLab-0.1.0.paclet)
+
+观测表：[diode.csv](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/resistor-iv/data/diode.csv)（7行；字段：voltage_V, current_mA）；[resistors.csv](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/resistor-iv/data/resistors.csv)（28行；字段：connection, resistor, voltage_V, current_mA）。
+
+|指标键|数值|单位|
+|---|---:|---|
+|`internal_R1_R_mean`|18.9644613468|Ω|
+|`external_R1_R_mean`|9.12603047653|Ω|
+|`diode_gain_04_06`|286.65625|1|
+
+上述为完整结果的选摘；不确定度定义与模型条件见参数、报告和结果文件。
+
+Python：`physicslab.experiments.resistor_iv.analyze(experiment_directory)`。
+Wolfram：``ResistorIVLab`Analyze[]``；打开：``ResistorIVLab`OpenNotebook[]``。
+
+```text
+python scripts/execute_notebooks.py --experiment course-03/resistor-iv
+python scripts/check_delivery.py --experiment course-03/resistor-iv
+```
+
+
+### 磁场的描绘 · Axial Magnetic Fields of Single and Helmholtz Coils
+
+标识：`course-03/magnetic-field`。对单线圈与双线圈的两电流轴向记录比较比例和形状，并用明确中点坐标的细线圈模型探索间距与均匀性。
+
+别名：磁场描绘；圆线圈轴向磁场；亥姆霍兹线圈；双线圈均匀场；magnetic field mapping；Helmholtz coils；axial field of a circular coil；Biot-Savart law。
+
+主题：圆电流磁场；磁场叠加；亥姆霍兹条件；轴向均匀性。方法：单双线圈轴向记录比较；两电流响应比例检查；细圆线圈解析场叠加；中点坐标归一化场计算；线圈间距半径比扫描。
+
+[实验入口](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/magnetic-field/README.md) · [报告](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/magnetic-field/report/report.md) · [Jupyter](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/magnetic-field/notebooks/analysis.ipynb) · [Wolfram](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/MagneticFieldLab/Notebooks/MagneticFieldLab.nb) · [源PDF](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/pdf/course-03/7%E7%A3%81%E5%9C%BA%E7%9A%84%E6%8F%8F%E7%BB%98/%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A-%E7%A3%81%E5%9C%BA%E7%9A%84%E6%8F%8F%E7%BB%98.pdf)
+
+章节：一、实验名称 → 二、实验目的 → 三、实验原理 → 四、主要仪器设备 → 五、实验步骤 → 六、原始数据记录 → 七、数据处理 → 八、实验结果与讨论。
+
+[参数](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/magnetic-field/experiment.json) | [来源](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/magnetic-field/data/provenance.json) | [Python计算](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/src/physicslab/experiments/magnetic_field.py) | [Wolfram计算](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/MagneticFieldLab/Kernel/analysis.wl) | [完整结果](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/magnetic-field/results/python.json) | [双端对照](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/magnetic-field/results/verification.json) | [Paclet](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/MagneticFieldLab/dist/MagneticFieldLab-0.1.0.paclet)
+
+观测表：[readings.csv](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/magnetic-field/data/readings.csv)（28行；字段：coils, current_mA, position_mm, reading）。
+
+|指标键|数值|单位|
+|---|---:|---|
+|`single_300_peak_position`|-52|mm|
+|`single_current_ratio_max_deviation`|0.827067669173|%|
+|`double_current_ratio_max_deviation`|1.00346020761|%|
+
+上述为完整结果的选摘；不确定度定义与模型条件见参数、报告和结果文件。
+
+Python：`physicslab.experiments.magnetic_field.analyze(experiment_directory)`。
+Wolfram：``MagneticFieldLab`Analyze[]``；打开：``MagneticFieldLab`OpenNotebook[]``。
+
+```text
+python scripts/execute_notebooks.py --experiment course-03/magnetic-field
+python scripts/check_delivery.py --experiment course-03/magnetic-field
+```
+
+
+### 示波器的调节与使用 · Oscilloscope Measurements and Lissajous Figures
+
+标识：`course-03/oscilloscope`。由示波器档位和格数复算三种波形的电压周期，结合李萨如计数求频率，并用理想轨迹比较频率比与相位。
+
+别名：示波器调节使用；示波器读格；李萨如图形；波形有效值；oscilloscope；Lissajous figures；waveform RMS measurement。
+
+主题：波形峰峰值与有效值；周期频率；李萨如频率比；相位差。方法：电压时间档读格换算；波形平方平均有效值计算；李萨如交点计数换算频率；理想波形比较；频率比与相位轨迹扫描。
+
+[实验入口](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/oscilloscope/README.md) · [报告](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/oscilloscope/report/report.md) · [Jupyter](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/oscilloscope/notebooks/analysis.ipynb) · [Wolfram](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/OscilloscopeLab/Notebooks/OscilloscopeLab.nb) · [源PDF](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/pdf/course-03/8%E7%A4%BA%E6%B3%A2%E5%99%A8%E7%9A%84%E8%B0%83%E8%8A%82%E4%B8%8E%E4%BD%BF%E7%94%A8/%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A-%E7%A4%BA%E6%B3%A2%E5%99%A8%E7%9A%84%E8%B0%83%E8%8A%82%E5%92%8C%E4%BD%BF%E7%94%A8%E5%AE%9E%E9%AA%8C.pdf)
+
+章节：一、实验名称 → 二、实验目的 → 三、实验原理 → 四、主要仪器设备 → 五、实验步骤 → 六、原始数据记录 → 七、实验结果与讨论。
+
+[参数](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/oscilloscope/experiment.json) | [来源](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/oscilloscope/data/provenance.json) | [Python计算](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/src/physicslab/experiments/oscilloscope.py) | [Wolfram计算](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/OscilloscopeLab/Kernel/analysis.wl) | [完整结果](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/oscilloscope/results/python.json) | [双端对照](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/oscilloscope/results/verification.json) | [Paclet](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/OscilloscopeLab/dist/OscilloscopeLab-0.1.0.paclet)
+
+观测表：[lissajous.csv](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/oscilloscope/data/lissajous.csv)（5行；字段：standard_Hz, horizontal_count, vertical_count）；[waveforms.csv](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/oscilloscope/data/waveforms.csv)（3行；字段：waveform, label, volts_per_div, vertical_div, meter_rms_V, ms_per_div, horizontal_div, source_Hz）。
+
+|指标键|数值|单位|
+|---|---:|---|
+|`sine_U_rms`|0.353553390593|V|
+|`triangle_U_rms`|0.288675134595|V|
+|`square_U_rms`|0.5|V|
+|`lissajous_mean_frequency`|1000|Hz|
+
+上述为完整结果的选摘；不确定度定义与模型条件见参数、报告和结果文件。
+
+Python：`physicslab.experiments.oscilloscope.analyze(experiment_directory)`。
+Wolfram：``OscilloscopeLab`Analyze[]``；打开：``OscilloscopeLab`OpenNotebook[]``。
+
+```text
+python scripts/execute_notebooks.py --experiment course-03/oscilloscope
+python scripts/check_delivery.py --experiment course-03/oscilloscope
+```
+
+
+### 单臂电桥测电阻 · Resistance Measurement with a Wheatstone Bridge
+
+标识：`course-03/wheatstone-bridge`。依据五组比率盘和比较臂示值计算平衡电阻，结合单桥范围条件阅读结果，并用归一化桥电压分析零点灵敏度。
+
+别名：单臂电桥测电阻；单桥测阻；惠斯通电桥；QJ47单电桥；Wheatstone bridge；single bridge resistance measurement；null balance method。
+
+主题：电桥平衡；比较测量；开路桥电压；零点灵敏度。方法：比率盘与比较臂换算电阻；标称偏差计算；说明书量程条件核对；归一化开路桥电压计算；比率臂灵敏度扫描。
+
+[实验入口](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/wheatstone-bridge/README.md) · [报告](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/wheatstone-bridge/report/report.md) · [Jupyter](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/wheatstone-bridge/notebooks/analysis.ipynb) · [Wolfram](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/WheatstoneBridgeLab/Notebooks/WheatstoneBridgeLab.nb) · [源PDF](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/pdf/course-03/9%E5%8D%95%E8%87%82%E7%94%B5%E6%A1%A5%E6%B5%8B%E7%94%B5%E9%98%BB/%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A-%E5%8D%95%E8%87%82%E7%94%B5%E6%A1%A5%E6%B5%8B%E7%94%B5%E9%98%BB.pdf)
+
+章节：一、实验名称 → 二、实验目的 → 三、实验原理 → 四、主要仪器设备 → 五、实验步骤 → 六、原始数据记录 → 七、数据处理 → 八、实验结果与讨论。
+
+[参数](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/wheatstone-bridge/experiment.json) | [来源](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/wheatstone-bridge/data/provenance.json) | [Python计算](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/src/physicslab/experiments/wheatstone_bridge.py) | [Wolfram计算](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/WheatstoneBridgeLab/Kernel/analysis.wl) | [完整结果](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/wheatstone-bridge/results/python.json) | [双端对照](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/wheatstone-bridge/results/verification.json) | [Paclet](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/WheatstoneBridgeLab/dist/WheatstoneBridgeLab-0.1.0.paclet)
+
+观测表：[balance.csv](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/wheatstone-bridge/data/balance.csv)（5行；字段：nominal_Ohm, ratio_M, ratio_label, comparison_Ohm）。
+
+|指标键|数值|单位|
+|---|---:|---|
+|`R2_measured`|46.594|Ω|
+|`R3_measured`|200.2|Ω|
+|`R4_measured`|1979.7|Ω|
+|`R5_measured`|20421|Ω|
+
+上述为完整结果的选摘；不确定度定义与模型条件见参数、报告和结果文件。
+
+Python：`physicslab.experiments.wheatstone_bridge.analyze(experiment_directory)`。
+Wolfram：``WheatstoneBridgeLab`Analyze[]``；打开：``WheatstoneBridgeLab`OpenNotebook[]``。
+
+```text
+python scripts/execute_notebooks.py --experiment course-03/wheatstone-bridge
+python scripts/check_delivery.py --experiment course-03/wheatstone-bridge
+```
+
+
+### 用直流双臂电桥测低电阻 · Low Resistance and Resistivity with a Kelvin Double Bridge
+
+标识：`course-03/kelvin-bridge`。由双臂桥比率与五个长度下的比较臂示值求电阻，比较逐长度和斜率电阻率，并分析共同直径的平方影响。
+
+别名：直流双臂电桥；凯尔文双电桥；低电阻测量；导体电阻率；Kelvin double bridge；low resistance measurement；four-terminal resistance；resistivity。
+
+主题：低电阻比较测量；四端接法；导体电阻率；截面积敏感性。方法：面板比率换算平衡电阻；逐长度电阻率计算；电阻长度含截距回归；拟合斜率反演电阻率；直径平方敏感性扫描。
+
+[实验入口](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/kelvin-bridge/README.md) · [报告](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/kelvin-bridge/report/report.md) · [Jupyter](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/kelvin-bridge/notebooks/analysis.ipynb) · [Wolfram](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/KelvinBridgeLab/Notebooks/KelvinBridgeLab.nb) · [源PDF](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/pdf/course-03/10%E7%94%A8%E7%9B%B4%E6%B5%81%E5%8F%8C%E8%87%82%E7%94%B5%E6%A1%A5%E6%B5%8B%E4%BD%8E%E7%94%B5%E9%98%BB/%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A-%E7%9B%B4%E6%B5%81%E5%8F%8C%E8%87%82%E7%94%B5%E6%A1%A5%E6%B5%8B%E4%BD%8E%E7%94%B5%E9%98%BB.pdf)
+
+章节：一、实验名称 → 二、实验目的 → 三、实验原理 → 四、主要仪器设备 → 五、实验步骤 → 六、原始数据记录 → 七、数据处理 → 八、实验结果与讨论。
+
+[参数](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/kelvin-bridge/experiment.json) | [来源](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/kelvin-bridge/data/provenance.json) | [Python计算](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/src/physicslab/experiments/kelvin_bridge.py) | [Wolfram计算](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/KelvinBridgeLab/Kernel/analysis.wl) | [完整结果](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/kelvin-bridge/results/python.json) | [双端对照](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/kelvin-bridge/results/verification.json) | [Paclet](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/KelvinBridgeLab/dist/KelvinBridgeLab-0.1.0.paclet)
+
+观测表：[balance.csv](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/kelvin-bridge/data/balance.csv)（5行；字段：length_mm, S_Ohm, M_Ohm, comparison_Ohm）。
+
+|指标键|数值|单位|
+|---|---:|---|
+|`rho_mean`|7.33640247109e-08|Ω·m|
+|`rho_from_slope`|7.51468962739e-08|Ω·m|
+|`resistance_slope`|0.00598|Ω/m|
+
+上述为完整结果的选摘；不确定度定义与模型条件见参数、报告和结果文件。
+
+Python：`physicslab.experiments.kelvin_bridge.analyze(experiment_directory)`。
+Wolfram：``KelvinBridgeLab`Analyze[]``；打开：``KelvinBridgeLab`OpenNotebook[]``。
+
+```text
+python scripts/execute_notebooks.py --experiment course-03/kelvin-bridge
+python scripts/check_delivery.py --experiment course-03/kelvin-bridge
+```
+
+
+### RLC串联电路谐振特性的研究 · Resonance of a Series RLC Circuit
+
+标识：`course-03/rlc-resonance`。从两电容和两电阻设置的频响记录定位峰值与半功率带宽，比较品质因数估计并探索理想串联电路幅相响应。
+
+别名：RLC串联谐振；串联电路幅频特性；半功率带宽；品质因数；series RLC resonance；half-power bandwidth；quality factor。
+
+主题：电路谐振；品质因数；幅频响应；电流相位。方法：观测电阻电压峰值定位；半功率交点线性插值；带宽品质因数计算；谐振电压比条件估计；电容与品质因数稳态模型扫描。
+
+[实验入口](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/rlc-resonance/README.md) · [报告](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/rlc-resonance/report/report.md) · [Jupyter](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/rlc-resonance/notebooks/analysis.ipynb) · [Wolfram](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/RLCResonanceLab/Notebooks/RLCResonanceLab.nb) · [源PDF](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/pdf/course-03/11RLC%E4%B8%B2%E8%81%94%E7%94%B5%E8%B7%AF%E8%B0%90%E6%8C%AF%E7%89%B9%E6%80%A7%E7%9A%84%E7%A0%94%E7%A9%B6/%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A-RLC%E4%B8%B2%E8%81%94%E7%94%B5%E8%B7%AF%E8%B0%90%E6%8C%AF%E7%89%B9%E6%80%A7%E7%9A%84%E7%A0%94%E7%A9%B6%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A.pdf)
+
+章节：一、实验名称 → 二、实验目的 → 三、实验原理 → 四、主要仪器设备 → 五、实验步骤 → 六、原始数据记录 → 七、数据处理 → 八、实验结果与讨论。
+
+[参数](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/rlc-resonance/experiment.json) | [来源](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/rlc-resonance/data/provenance.json) | [Python计算](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/src/physicslab/experiments/rlc_resonance.py) | [Wolfram计算](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/RLCResonanceLab/Kernel/analysis.wl) | [完整结果](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/rlc-resonance/results/python.json) | [双端对照](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/rlc-resonance/results/verification.json) | [Paclet](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/RLCResonanceLab/dist/RLCResonanceLab-0.1.0.paclet)
+
+观测表：[resonance_voltages.csv](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/rlc-resonance/data/resonance_voltages.csv)（4行；字段：group, resistor, U_L_V, U_C_V）；[response.csv](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/rlc-resonance/data/response.csv)（31行；字段：group, frequency_Hz, U_R1_V, U_R2_V）。
+
+|指标键|数值|单位|
+|---|---:|---|
+|`C02_R1_f_peak`|1100|Hz|
+|`C01_R1_f_peak`|1580|Hz|
+|`C02_R1_Q_bandwidth`|15.2234159004|1|
+|`C02_R2_Q_bandwidth`|10.9569653384|1|
+
+上述为完整结果的选摘；不确定度定义与模型条件见参数、报告和结果文件。
+
+Python：`physicslab.experiments.rlc_resonance.analyze(experiment_directory)`。
+Wolfram：``RLCResonanceLab`Analyze[]``；打开：``RLCResonanceLab`OpenNotebook[]``。
+
+```text
+python scripts/execute_notebooks.py --experiment course-03/rlc-resonance
+python scripts/check_delivery.py --experiment course-03/rlc-resonance
+```
+
+
+### 交流电桥 · Capacitance and Dielectric Loss with an AC Bridge
+
+标识：`course-03/ac-bridge`。由三组交流桥平衡参数计算电容量、串联损耗电阻和损耗因数，并用复平面扫描解释双参数平衡。
+
+别名：交流电桥实验；电容电桥；串联损耗电阻；介质损耗因数；AC bridge；capacitance bridge；dissipation factor；complex impedance。
+
+主题：复阻抗平衡；电容量比较测量；串联损耗等效模型；损耗角。方法：复平衡方程实虚部分离；比率臂电容和损耗换算；三组设置散布比较；损耗因数恒等关系检查；复桥输出双参数扫描。
+
+[实验入口](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/ac-bridge/README.md) · [报告](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/ac-bridge/report/report.md) · [Jupyter](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/ac-bridge/notebooks/analysis.ipynb) · [Wolfram](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/ACBridgeLab/Notebooks/ACBridgeLab.nb) · [源PDF](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/pdf/course-03/12%E4%BA%A4%E6%B5%81%E7%94%B5%E6%A1%A5/%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A-%E4%BA%A4%E6%B5%81%E7%94%B5%E6%A1%A5.pdf)
+
+章节：一、实验名称 → 二、实验目的 → 三、实验原理 → 四、主要仪器设备 → 五、实验步骤 → 六、原始数据记录 → 七、数据处理 → 八、实验结果与讨论。
+
+[参数](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/ac-bridge/experiment.json) | [来源](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/ac-bridge/data/provenance.json) | [Python计算](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/src/physicslab/experiments/ac_bridge.py) | [Wolfram计算](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/ACBridgeLab/Kernel/analysis.wl) | [完整结果](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/ac-bridge/results/python.json) | [双端对照](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/ac-bridge/results/verification.json) | [Paclet](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/ACBridgeLab/dist/ACBridgeLab-0.1.0.paclet)
+
+观测表：[balance.csv](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/ac-bridge/data/balance.csv)（3行；字段：Rn_Ohm, Cn_uF, R3_Ohm, R4_Ohm, null_gain）。
+
+|指标键|数值|单位|
+|---|---:|---|
+|`Cx_mean`|1.0319983386e-07|F|
+|`Rx_mean`|218.631|Ω|
+|`loss_mean`|0.141790548432|1|
+|`capacitance_spread_percent`|0.619197024787|%|
+
+上述为完整结果的选摘；不确定度定义与模型条件见参数、报告和结果文件。
+
+Python：`physicslab.experiments.ac_bridge.analyze(experiment_directory)`。
+Wolfram：``ACBridgeLab`Analyze[]``；打开：``ACBridgeLab`OpenNotebook[]``。
+
+```text
+python scripts/execute_notebooks.py --experiment course-03/ac-bridge
+python scripts/check_delivery.py --experiment course-03/ac-bridge
+```
+
+
+### 光敏传感器光电特性研究 · Photocell Load Response and Circuit Consistency
+
+标识：`course-03/photosensor`。由四位置五十六组取样压降换算负载电流，联合检查端电压与串联回路，并以归一化单二极管模型解释响应形状。
+
+别名：光敏传感器光电特性；硅光电池；取样电阻测电流；光电池负载响应；photocell characteristics；silicon photovoltaic cell；single-diode model。
+
+主题：光电转换；光电池负载回路；取样电流；单二极管归一化模型。方法：取样压降换算电流；端电压与串联回路差检查；共同负载位置响应比较；四位置原记录切换；单二极管无量纲形状扫描。
+
+[实验入口](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/photosensor/README.md) · [报告](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/photosensor/report/report.md) · [Jupyter](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/photosensor/notebooks/analysis.ipynb) · [Wolfram](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/PhotosensorLab/Notebooks/PhotosensorLab.nb) · [源PDF](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/pdf/course-03/13%E5%85%89%E6%95%8F%E4%BC%A0%E6%84%9F%E5%99%A8%E5%85%89%E7%94%B5%E7%89%B9%E6%80%A7%E7%A0%94%E7%A9%B6/%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A-%E5%85%89%E6%95%8F%E4%BC%A0%E6%84%9F%E5%99%A8%E5%85%89%E7%94%B5%E7%89%B9%E6%80%A7%E7%A0%94%E7%A9%B6.pdf)
+
+章节：一、实验名称 → 二、实验目的 → 三、实验原理 → 四、主要仪器设备 → 五、实验步骤 → 六、原始数据记录 → 七、数据处理 → 八、实验结果与讨论。
+
+[参数](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/photosensor/experiment.json) | [来源](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/photosensor/data/provenance.json) | [Python计算](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/src/physicslab/experiments/photosensor.py) | [Wolfram计算](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/PhotosensorLab/Kernel/analysis.wl) | [完整结果](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/photosensor/results/python.json) | [双端对照](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/photosensor/results/verification.json) | [Paclet](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/PhotosensorLab/dist/PhotosensorLab-0.1.0.paclet)
+
+观测表：[measurements.csv](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/photosensor/data/measurements.csv)（56行；字段：position_cm, load_kOhm, output_V, sample_mV）。
+
+|指标键|数值|单位|
+|---|---:|---|
+|`L0_maximum_recorded_current`|0.23|mA|
+|`L3_maximum_recorded_current`|0.08|mA|
+|`L0_max_circuit_relative_difference`|70.3787878788|%|
+
+上述为完整结果的选摘；不确定度定义与模型条件见参数、报告和结果文件。
+
+Python：`physicslab.experiments.photosensor.analyze(experiment_directory)`。
+Wolfram：``PhotosensorLab`Analyze[]``；打开：``PhotosensorLab`OpenNotebook[]``。
+
+```text
+python scripts/execute_notebooks.py --experiment course-03/photosensor
+python scripts/check_delivery.py --experiment course-03/photosensor
+```
+
+
+## 普通物理实验 4 · 14项
+
+### 分光计的调节与使用 · Adjustment and Use of an Optical Spectrometer
+
+标识：`course-04/spectrometer`。沿自准直、平行光和调平记录核对分光计准备条件，由五组双游标读数计算偏向角与指定标准分量。
+
+别名：分光计调节与使用；望远镜自准直；平行光管调节；双游标测角；optical spectrometer adjustment；autocollimation；dual-vernier angle measurement。
+
+主题：光轴与转轴调节；平行光；偏向角；圆周角差。方法：自准直与调平记录核对；度分读数换算；双游标最短圆周角差平均；五次重复性统计；指定角度分量合成。
+
+[实验入口](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/spectrometer/README.md) · [报告](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/spectrometer/report/report.md) · [Jupyter](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/spectrometer/notebooks/analysis.ipynb) · [Wolfram](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/SpectrometerLab/Notebooks/SpectrometerLab.nb) · [源PDF](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/pdf/course-04/01_%E5%AE%9E%E9%AA%8C%E4%B8%80_%E5%88%86%E5%85%89%E8%AE%A1%E7%9A%84%E8%B0%83%E8%8A%82%E4%B8%8E%E4%BD%BF%E7%94%A8_%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A.pdf)
+
+章节：实验名称 → 实验目的 → 实验原理 → 主要仪器设备 → 实验步骤 → （一）望远镜调节** → **（二）平行光管和载物台调节** → **（三）偏向角测量** → **原始数据记录 → 数据处理 → 实验结果与讨论。
+
+[参数](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/spectrometer/experiment.json) | [来源](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/spectrometer/data/provenance.json) | [Python计算](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/src/physicslab/experiments/spectrometer.py) | [Wolfram计算](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/SpectrometerLab/Kernel/analysis.wl) | [完整结果](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/spectrometer/results/python.json) | [双端对照](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/spectrometer/results/verification.json) | [Paclet](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/SpectrometerLab/dist/SpectrometerLab-0.1.0.paclet)
+
+观测表：[observations-01.csv](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/spectrometer/data/observations-01.csv)（3行；字段：序号, 调节或检验项目, 读数位置, 读数一, 读数二, 检验结果）；[observations-02.csv](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/spectrometer/data/observations-02.csv)（5行；字段：次数, θ₁（左）, θ₂（右）, θ₃（左）, θ₄（右））。
+
+|指标键|数值|单位|
+|---|---:|---|
+|`angle_mean_deg`|43.2616666667|deg|
+|`angle_type_a_arcmin`|0.3|arcmin|
+|`angle_combined_arcmin`|0.650640709865|arcmin|
+
+上述为完整结果的选摘；不确定度定义与模型条件见参数、报告和结果文件。
+
+Python：`physicslab.experiments.spectrometer.analyze(experiment_directory)`。
+Wolfram：``SpectrometerLab`Analyze[]``；打开：``SpectrometerLab`OpenNotebook[]``。
+
+```text
+python scripts/execute_notebooks.py --experiment course-04/spectrometer
+python scripts/check_delivery.py --experiment course-04/spectrometer
+```
+
+
+### 用分光计测三棱镜的顶角 · Prism Apex Angle by the Reflection Method
+
+标识：`course-04/prism-apex`。将五组两面反射方向的双游标读数换算为反射夹角和棱镜顶角，处理跨零读数并统计均值与标准分量。
+
+别名：三棱镜顶角；反射法测顶角；分光计顶角测量；prism apex angle；reflection method；angle of a prism。
+
+主题：平面反射几何；棱镜顶角；双游标测角；跨零读数。方法：两面反射方向角差计算；双游标平均后顶角换算；圆周跨零修正；五次均值与重复性统计；指定角度分量合成。
+
+[实验入口](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/prism-apex/README.md) · [报告](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/prism-apex/report/report.md) · [Jupyter](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/prism-apex/notebooks/analysis.ipynb) · [Wolfram](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/PrismApexLab/Notebooks/PrismApexLab.nb) · [源PDF](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/pdf/course-04/02_%E5%AE%9E%E9%AA%8C%E4%BA%8C_%E7%94%A8%E5%88%86%E5%85%89%E8%AE%A1%E6%B5%8B%E4%B8%89%E6%A3%B1%E9%95%9C%E7%9A%84%E9%A1%B6%E8%A7%92_%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A_A3%E5%8F%8C%E9%9D%A2%E7%A4%BA%E8%8C%83%E6%A0%BC%E5%BC%8F%E7%89%88.pdf)
+
+章节：实验名称 → 实验目的 → 实验原理 → 主要仪器设备 → 实验步骤 → 原始数据记录 → 数据处理 → 实验结果与讨论。
+
+[参数](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/prism-apex/experiment.json) | [来源](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/prism-apex/data/provenance.json) | [Python计算](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/src/physicslab/experiments/prism_apex.py) | [Wolfram计算](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/PrismApexLab/Kernel/analysis.wl) | [完整结果](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/prism-apex/results/python.json) | [双端对照](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/prism-apex/results/verification.json) | [Paclet](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/PrismApexLab/dist/PrismApexLab-0.1.0.paclet)
+
+观测表：[observations-01.csv](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/prism-apex/data/observations-01.csv)（5行；字段：次数, θ₁（左）, θ₂（右）, θ₃（左）, θ₄（右））。
+
+|指标键|数值|单位|
+|---|---:|---|
+|`angle_mean_deg`|60.005|deg|
+|`angle_type_a_arcmin`|1.34721935853|arcmin|
+|`angle_combined_arcmin`|1.46571939106|arcmin|
+
+上述为完整结果的选摘；不确定度定义与模型条件见参数、报告和结果文件。
+
+Python：`physicslab.experiments.prism_apex.analyze(experiment_directory)`。
+Wolfram：``PrismApexLab`Analyze[]``；打开：``PrismApexLab`OpenNotebook[]``。
+
+```text
+python scripts/execute_notebooks.py --experiment course-04/prism-apex
+python scripts/check_delivery.py --experiment course-04/prism-apex
+```
+
+
+### 三棱镜折射率的测定 · Prism Refractive Index by Minimum Deviation
+
+标识：`course-04/prism-refractive-index`。从五组双游标读数求最小偏向角，以给定顶角反演棱镜折射率，并传播指定顶角和偏向角分量。
+
+别名：三棱镜折射率；最小偏向角法；棱镜对称光路；prism refractive index；minimum deviation method；minimum angle of deviation；uncertainty propagation。
+
+主题：斯涅尔定律；最小偏向；棱镜折射率；角度分量传播。方法：双游标偏向角重算；五次最小偏向角平均；给定顶角三角关系反演；角分转弧度导数传播 / uncertainty propagation。
+
+[实验入口](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/prism-refractive-index/README.md) · [报告](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/prism-refractive-index/report/report.md) · [Jupyter](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/prism-refractive-index/notebooks/analysis.ipynb) · [Wolfram](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/PrismRefractiveIndexLab/Notebooks/PrismRefractiveIndexLab.nb) · [源PDF](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/pdf/course-04/03_%E5%AE%9E%E9%AA%8C%E4%B8%89_%E4%B8%89%E6%A3%B1%E9%95%9C%E6%8A%98%E5%B0%84%E7%8E%87%E7%9A%84%E6%B5%8B%E5%AE%9A_%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A.pdf)
+
+章节：实验名称 → 实验目的 → 实验原理 → 主要仪器设备 → 实验步骤 → 原始数据记录 → 数据处理 → 实验结果与讨论。
+
+[参数](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/prism-refractive-index/experiment.json) | [来源](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/prism-refractive-index/data/provenance.json) | [Python计算](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/src/physicslab/experiments/prism_refractive_index.py) | [Wolfram计算](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/PrismRefractiveIndexLab/Kernel/analysis.wl) | [完整结果](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/prism-refractive-index/results/python.json) | [双端对照](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/prism-refractive-index/results/verification.json) | [Paclet](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/PrismRefractiveIndexLab/dist/PrismRefractiveIndexLab-0.1.0.paclet)
+
+观测表：[observations-01.csv](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/prism-refractive-index/data/observations-01.csv)（5行；字段：次数, θ₁（左）, θ₂（右）, θ₃（左）, θ₄（右））。
+
+|指标键|数值|单位|
+|---|---:|---|
+|`angle_mean_deg`|40.94|deg|
+|`refractive_index`|1.54258285571|1|
+|`refractive_index_standard_uncertainty`|0.000572988268694|1|
+
+上述为完整结果的选摘；不确定度定义与模型条件见参数、报告和结果文件。
+
+Python：`physicslab.experiments.prism_refractive_index.analyze(experiment_directory)`。
+Wolfram：``PrismRefractiveIndexLab`Analyze[]``；打开：``PrismRefractiveIndexLab`OpenNotebook[]``。
+
+```text
+python scripts/execute_notebooks.py --experiment course-04/prism-refractive-index
+python scripts/check_delivery.py --experiment course-04/prism-refractive-index
+```
+
+
+### 用掠射法测定透明介质的折射率 · Liquid Refractive Index by Grazing Incidence with a Right-Angle Prism
+
+标识：`course-04/grazing-refraction`。由五组明暗分界方向读数求平均出射角，在给定直角棱镜折射率下计算透明液体折射率及指定传播分量。
+
+别名：掠射法测折射率；透明液体折射率；直角棱镜明暗分界；grazing-incidence refractometry；liquid refractive index；right-angle prism method；uncertainty propagation。
+
+主题：掠入射折射；明暗边界；液体棱镜界面；折射率反演。方法：双游标边界角差计算；出射角重复均值统计；直角棱镜折射关系反演；给定棱镜与角度分量传播 / specified uncertainty propagation。
+
+[实验入口](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/grazing-refraction/README.md) · [报告](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/grazing-refraction/report/report.md) · [Jupyter](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/grazing-refraction/notebooks/analysis.ipynb) · [Wolfram](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/GrazingRefractionLab/Notebooks/GrazingRefractionLab.nb) · [源PDF](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/pdf/course-04/04_%E5%AE%9E%E9%AA%8C%E5%9B%9B_%E7%94%A8%E6%8E%A0%E5%B0%84%E6%B3%95%E6%B5%8B%E5%AE%9A%E9%80%8F%E6%98%8E%E4%BB%8B%E8%B4%A8%E7%9A%84%E6%8A%98%E5%B0%84%E7%8E%87_%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A.pdf)
+
+章节：实验名称 → 实验目的 → 实验原理 → 主要仪器设备 → 实验步骤 → 原始数据记录 → 数据处理 → 实验结果与讨论。
+
+[参数](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/grazing-refraction/experiment.json) | [来源](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/grazing-refraction/data/provenance.json) | [Python计算](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/src/physicslab/experiments/grazing_refraction.py) | [Wolfram计算](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/GrazingRefractionLab/Kernel/analysis.wl) | [完整结果](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/grazing-refraction/results/python.json) | [双端对照](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/grazing-refraction/results/verification.json) | [Paclet](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/GrazingRefractionLab/dist/GrazingRefractionLab-0.1.0.paclet)
+
+观测表：[observations-01.csv](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/grazing-refraction/data/observations-01.csv)（5行；字段：次数, θ₁, θ₂, θ₃, θ₄）。
+
+|指标键|数值|单位|
+|---|---:|---|
+|`angle_mean_deg`|39.8083333333|deg|
+|`liquid_refractive_index`|1.40336123793|1|
+|`liquid_standard_uncertainty`|0.00187227527566|1|
+
+上述为完整结果的选摘；不确定度定义与模型条件见参数、报告和结果文件。
+
+Python：`physicslab.experiments.grazing_refraction.analyze(experiment_directory)`。
+Wolfram：``GrazingRefractionLab`Analyze[]``；打开：``GrazingRefractionLab`OpenNotebook[]``。
+
+```text
+python scripts/execute_notebooks.py --experiment course-04/grazing-refraction
+python scripts/check_delivery.py --experiment course-04/grazing-refraction
+```
+
+
+### 用透射光栅测定光波波长 · Wavelength Measurement with a Transmission Grating
+
+标识：`course-04/transmission-grating`。对四条谱线的双侧游标记录重算一级衍射角，用绿线标定光栅常数并计算其他波长及双黄线色散。
+
+别名：透射光栅测波长；光栅常数标定；汞灯谱线；双黄线色散；transmission grating；spectral wavelength measurement；angular dispersion；diffraction grating。
+
+主题：光栅衍射；谱线波长；角度色散；标定与回代。方法：同级双侧谱线圆周角差配对；绿线波长标定光栅常数 / diffraction grating calibration；其他谱线波长反演；重复性传播与游标一致性检查；黄线角间隔色散比较。
+
+[实验入口](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/transmission-grating/README.md) · [报告](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/transmission-grating/report/report.md) · [Jupyter](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/transmission-grating/notebooks/analysis.ipynb) · [Wolfram](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/TransmissionGratingLab/Notebooks/TransmissionGratingLab.nb) · [源PDF](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/pdf/course-04/05_%E5%AE%9E%E9%AA%8C%E4%BA%94_%E7%94%A8%E9%80%8F%E5%B0%84%E5%85%89%E6%A0%85%E6%B5%8B%E5%AE%9A%E5%85%89%E6%B3%A2%E6%B3%A2%E9%95%BF_%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A.pdf)
+
+章节：实验名称 → 实验目的 → 实验原理 → 主要仪器设备 → 实验步骤 → 原始数据记录 → 数据处理 → 实验结果与讨论。
+
+[参数](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/transmission-grating/experiment.json) | [来源](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/transmission-grating/data/provenance.json) | [Python计算](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/src/physicslab/experiments/transmission_grating.py) | [Wolfram计算](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/TransmissionGratingLab/Kernel/analysis.wl) | [完整结果](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/transmission-grating/results/python.json) | [双端对照](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/transmission-grating/results/verification.json) | [Paclet](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/TransmissionGratingLab/dist/TransmissionGratingLab-0.1.0.paclet)
+
+观测表：[observations-01.csv](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/transmission-grating/data/observations-01.csv)（5行；字段：次数, V1, V1′, V2, V2′）；[observations-02.csv](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/transmission-grating/data/observations-02.csv)（5行；字段：次数, V1, V1′, V2, V2′）；[observations-03.csv](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/transmission-grating/data/observations-03.csv)（5行；字段：次数, V1, V1′, V2, V2′）；[observations-04.csv](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/transmission-grating/data/observations-04.csv)（5行；字段：次数, V1, V1′, V2, V2′）。
+
+|指标键|数值|单位|
+|---|---:|---|
+|`grating_spacing_nm`|2486.41633444|nm|
+|`violet_wavelength_nm`|436.355115905|nm|
+|`yellow_1_wavelength_nm`|569.641187565|nm|
+|`yellow_2_wavelength_nm`|579.281878484|nm|
+
+上述为完整结果的选摘；不确定度定义与模型条件见参数、报告和结果文件。
+
+Python：`physicslab.experiments.transmission_grating.analyze(experiment_directory)`。
+Wolfram：``TransmissionGratingLab`Analyze[]``；打开：``TransmissionGratingLab`OpenNotebook[]``。
+
+```text
+python scripts/execute_notebooks.py --experiment course-04/transmission-grating
+python scripts/check_delivery.py --experiment course-04/transmission-grating
+```
+
+
+### 用光学仪器测量放大率和微小长度 · Optical Magnification and Microscopic Length Measurement
+
+标识：`course-04/optical-magnification`。分别由标尺长度比求两种放大率，以五次目镜标定均值换算细丝宽度，并区分标定和宽度重复性。
+
+别名：光学放大率测量；显微镜投影放大率；望远镜角放大率；测微目镜标定；optical magnification；eyepiece micrometer calibration；microscopic wire diameter；uncertainty propagation。
+
+主题：显微镜与望远镜放大；测微刻度；微小长度；共同标定因子。方法：物像长度比计算；目镜每格值重复标定；共用标定均值换算细丝直径；标定与宽度重复性独立传播 / uncertainty propagation。
+
+[实验入口](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/optical-magnification/README.md) · [报告](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/optical-magnification/report/report.md) · [Jupyter](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/optical-magnification/notebooks/analysis.ipynb) · [Wolfram](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/OpticalMagnificationLab/Notebooks/OpticalMagnificationLab.nb) · [源PDF](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/pdf/course-04/06_%E5%AE%9E%E9%AA%8C%E5%85%AD_%E7%94%A8%E5%85%89%E5%AD%A6%E4%BB%AA%E5%99%A8%E6%B5%8B%E9%87%8F%E6%94%BE%E5%A4%A7%E7%8E%87%E5%92%8C%E5%BE%AE%E5%B0%8F%E9%95%BF%E5%BA%A6_%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A.pdf)
+
+章节：实验名称 → 实验目的 → 实验原理 → 主要仪器设备 → 实验步骤 → （一）测显微镜放大率** → **（二）测望远镜放大率** → **（三）测微小长度** → **原始数据记录 → 数据处理 → 实验结果与讨论。
+
+[参数](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/optical-magnification/experiment.json) | [来源](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/optical-magnification/data/provenance.json) | [Python计算](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/src/physicslab/experiments/optical_magnification.py) | [Wolfram计算](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/OpticalMagnificationLab/Kernel/analysis.wl) | [完整结果](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/optical-magnification/results/python.json) | [双端对照](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/optical-magnification/results/verification.json) | [Paclet](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/OpticalMagnificationLab/dist/OpticalMagnificationLab-0.1.0.paclet)
+
+观测表：[observations-01.csv](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/optical-magnification/data/observations-01.csv)（5行；字段：次数, 标尺原长 l0/mm, 投影像长 l/mm）；[observations-02.csv](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/optical-magnification/data/observations-02.csv)（5行；字段：次数, 物长 l1/mm, 望远镜中像长 l2/mm）；[observations-03.csv](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/optical-magnification/data/observations-03.csv)（5行；字段：次数, 物台测微尺长度/mm, 目镜测微格数 S/格）；[observations-04.csv](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/optical-magnification/data/observations-04.csv)（5行；字段：次数, 细丝宽度/目镜格）。
+
+|指标键|数值|单位|
+|---|---:|---|
+|`microscope_magnification`|24.988|1|
+|`telescope_magnification`|4.89252513038|1|
+|`eyepiece_scale_mm`|0.00254907389757|mm/div|
+|`wire_diameter_um`|69.1818655802|um|
+
+上述为完整结果的选摘；不确定度定义与模型条件见参数、报告和结果文件。
+
+Python：`physicslab.experiments.optical_magnification.analyze(experiment_directory)`。
+Wolfram：``OpticalMagnificationLab`Analyze[]``；打开：``OpticalMagnificationLab`OpenNotebook[]``。
+
+```text
+python scripts/execute_notebooks.py --experiment course-04/optical-magnification
+python scripts/check_delivery.py --experiment course-04/optical-magnification
+```
+
+
+### 牛顿环实验 · Newton's Rings and Air-Wedge Interference
+
+标识：`course-04/newton-rings`。由六级暗环直径的隔级差与回归求平凸透镜曲率，再以五次劈尖条纹长度求细丝厚度，并探索选点和中心间隙。
+
+别名：牛顿环实验；空气劈尖；平凸透镜曲率半径；劈尖测细丝；Newton's rings；air-wedge interference；radius of curvature；thin-film interference。
+
+主题：等厚干涉；反射半波损失；曲率半径；劈尖厚度。方法：暗环左右位置求直径；隔级直径平方差计算；全环级含截距拟合与残差；劈尖条纹间隔换算厚度；环级选择和中心间隙模型扫描。
+
+[实验入口](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/newton-rings/README.md) · [报告](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/newton-rings/report/report.md) · [Jupyter](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/newton-rings/notebooks/analysis.ipynb) · [Wolfram](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/NewtonRingsLab/Notebooks/NewtonRingsLab.nb) · [源PDF](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/pdf/course-04/07_%E5%AE%9E%E9%AA%8C%E4%B8%83_%E7%89%9B%E9%A1%BF%E7%8E%AF%E5%AE%9E%E9%AA%8C_%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A.pdf)
+
+章节：实验名称 → 实验目的 → 实验原理 → 主要仪器设备 → 实验步骤 → 原始数据记录 → 数据处理 → 实验结果与讨论。
+
+[参数](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/newton-rings/experiment.json) | [来源](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/newton-rings/data/provenance.json) | [Python计算](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/src/physicslab/experiments/newton_rings.py) | [Wolfram计算](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/NewtonRingsLab/Kernel/analysis.wl) | [完整结果](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/newton-rings/results/python.json) | [双端对照](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/newton-rings/results/verification.json) | [Paclet](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/NewtonRingsLab/dist/NewtonRingsLab-0.1.0.paclet)
+
+观测表：[rings.csv](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/newton-rings/data/rings.csv)（6行；字段：order, left_mm, right_mm）；[wedge.csv](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/newton-rings/data/wedge.csv)（5行；字段：trial, fringe_intervals, fringe_length_mm, wedge_length_mm）。
+
+|指标键|数值|单位|
+|---|---:|---|
+|`radius_pair_mean_mm`|805.203207195|mm|
+|`radius_fit_mm`|806.491575962|mm|
+|`wire_diameter_um`|19.9303833291|um|
+
+上述为完整结果的选摘；不确定度定义与模型条件见参数、报告和结果文件。
+
+Python：`physicslab.experiments.newton_rings.analyze(experiment_directory)`。
+Wolfram：``NewtonRingsLab`Analyze[]``；打开：``NewtonRingsLab`OpenNotebook[]``。
+
+```text
+python scripts/execute_notebooks.py --experiment course-04/newton-rings
+python scripts/check_delivery.py --experiment course-04/newton-rings
+```
+
+
+### 迈克尔逊干涉仪的调节和使用 · Laser Wavelength Measurement with a Michelson Interferometer
+
+标识：`course-04/michelson-interferometer`。用五次每次一百条纹的动镜位移记录，按二倍光程差关系计算激光波长并比较重复性及指定参考值。
+
+别名：迈克尔逊干涉仪；动镜位移测波长；条纹计数法；Michelson interferometer；laser wavelength measurement；fringe counting。
+
+主题：分振幅干涉；往返光程差；激光波长；条纹计数。方法：动镜起止位置求位移；往返光程与条纹数换算；五次波长均值和A类统计；指定参考波长相对差比较。
+
+[实验入口](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/michelson-interferometer/README.md) · [报告](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/michelson-interferometer/report/report.md) · [Jupyter](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/michelson-interferometer/notebooks/analysis.ipynb) · [Wolfram](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/MichelsonInterferometerLab/Notebooks/MichelsonInterferometerLab.nb) · [源PDF](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/pdf/course-04/08_%E5%AE%9E%E9%AA%8C%E5%85%AB_%E8%BF%88%E5%85%8B%E5%B0%94%E9%80%8A%E5%B9%B2%E6%B6%89%E4%BB%AA%E7%9A%84%E8%B0%83%E8%8A%82%E5%92%8C%E4%BD%BF%E7%94%A8_%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A.pdf)
+
+章节：实验名称 → 实验目的 → 实验原理 → 主要仪器设备 → 实验步骤 → 原始数据记录 → 数据处理 → 实验结果与讨论。
+
+[参数](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/michelson-interferometer/experiment.json) | [来源](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/michelson-interferometer/data/provenance.json) | [Python计算](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/src/physicslab/experiments/michelson_interferometer.py) | [Wolfram计算](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/MichelsonInterferometerLab/Kernel/analysis.wl) | [完整结果](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/michelson-interferometer/results/python.json) | [双端对照](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/michelson-interferometer/results/verification.json) | [Paclet](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/MichelsonInterferometerLab/dist/MichelsonInterferometerLab-0.1.0.paclet)
+
+观测表：[observations-01.csv](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/michelson-interferometer/data/observations-01.csv)（5行；字段：次数, 条纹数 N, 初读数 d1/mm, 末读数 d2/mm）。
+
+|指标键|数值|单位|
+|---|---:|---|
+|`wavelength_mean_nm`|632.6|nm|
+|`wavelength_type_a_nm`|0.22803508502|nm|
+|`relative_reference_difference_percent`|0.0316055625793|%|
+
+上述为完整结果的选摘；不确定度定义与模型条件见参数、报告和结果文件。
+
+Python：`physicslab.experiments.michelson_interferometer.analyze(experiment_directory)`。
+Wolfram：``MichelsonInterferometerLab`Analyze[]``；打开：``MichelsonInterferometerLab`OpenNotebook[]``。
+
+```text
+python scripts/execute_notebooks.py --experiment course-04/michelson-interferometer
+python scripts/check_delivery.py --experiment course-04/michelson-interferometer
+```
+
+
+### 薄透镜焦距的测定 · Focal Length of Thin Convex and Concave Lenses
+
+标识：`course-04/thin-lens`。分别计算四种方法各五次长度记录的凸凹透镜焦距，比较方法均值与重复性，并探索近轴光线和二次成像临界条件。
+
+别名：薄透镜焦距；自准直法；物距像距法；贝塞尔二次成像法；thin lens focal length；Bessel method；concave lens auxiliary imaging。
+
+主题：近轴薄透镜；物像共轭；焦距符号；二次成像条件。方法：自准直焦距统计；物距像距公式逐次计算；二次成像位置差计算；凹透镜虚物距辅助成像；光线几何与双像分支扫描。
+
+[实验入口](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/thin-lens/README.md) · [报告](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/thin-lens/report/report.md) · [Jupyter](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/thin-lens/notebooks/analysis.ipynb) · [Wolfram](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/ThinLensLab/Notebooks/ThinLensLab.nb) · [源PDF](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/pdf/course-04/09_%E5%AE%9E%E9%AA%8C%E4%B9%9D_%E8%96%84%E9%80%8F%E9%95%9C%E7%84%A6%E8%B7%9D%E7%9A%84%E6%B5%8B%E5%AE%9A_%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A.pdf)
+
+章节：实验名称 → 实验目的 → 实验原理 → 主要仪器设备 → 实验步骤 → 原始数据记录 → 数据处理 → 实验结果与讨论。
+
+[参数](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/thin-lens/experiment.json) | [来源](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/thin-lens/data/provenance.json) | [Python计算](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/src/physicslab/experiments/thin_lens.py) | [Wolfram计算](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/ThinLensLab/Kernel/analysis.wl) | [完整结果](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/thin-lens/results/python.json) | [双端对照](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/thin-lens/results/verification.json) | [Paclet](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/ThinLensLab/dist/ThinLensLab-0.1.0.paclet)
+
+观测表：[autocollimation.csv](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/thin-lens/data/autocollimation.csv)（5行；字段：trial, f_cm）；[bessel.csv](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/thin-lens/data/bessel.csv)（5行；字段：trial, D_cm, d_cm）；[concave.csv](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/thin-lens/data/concave.csv)（5行；字段：trial, a_cm, b_cm）；[conjugates.csv](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/thin-lens/data/conjugates.csv)（5行；字段：trial, u_cm, v_cm）。
+
+|指标键|数值|单位|
+|---|---:|---|
+|`autocollimation_mean_cm`|10.02|cm|
+|`conjugates_mean_cm`|10.0084275691|cm|
+|`bessel_mean_cm`|9.9952271|cm|
+|`concave_mean_cm`|-16.4238214906|cm|
+
+上述为完整结果的选摘；不确定度定义与模型条件见参数、报告和结果文件。
+
+Python：`physicslab.experiments.thin_lens.analyze(experiment_directory)`。
+Wolfram：``ThinLensLab`Analyze[]``；打开：``ThinLensLab`OpenNotebook[]``。
+
+```text
+python scripts/execute_notebooks.py --experiment course-04/thin-lens
+python scripts/check_delivery.py --experiment course-04/thin-lens
+```
+
+
+### 偏振光的观察与分析 · Polarization, Malus's Law and Brewster's Angle
+
+标识：`course-04/polarization`。以五次布儒斯特角求玻璃折射率，对十组检偏器光电流拟合带背景马吕斯关系，并扫描模型角度零点。
+
+别名：偏振光观察分析；马吕斯定律；布儒斯特角；检偏器光强；polarization of light；Malus's law；Brewster angle；uncertainty propagation。
+
+主题：线偏振；反射偏振；马吕斯关系；恒定背景电流。方法：布儒斯特角平均反推折射率；方向余弦平方线性化；光电流带背景拟合与残差；角度重复性传播 / repeatability uncertainty propagation；检偏器零点模型扫描。
+
+[实验入口](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/polarization/README.md) · [报告](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/polarization/report/report.md) · [Jupyter](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/polarization/notebooks/analysis.ipynb) · [Wolfram](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/PolarizationLab/Notebooks/PolarizationLab.nb) · [源PDF](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/pdf/course-04/10_%E5%AE%9E%E9%AA%8C%E5%8D%81_%E5%81%8F%E6%8C%AF%E5%85%89%E7%9A%84%E8%A7%82%E5%AF%9F%E4%B8%8E%E5%88%86%E6%9E%90.pdf)
+
+章节：实验名称 → 实验目的 → 实验原理 → 主要仪器设备 → 实验步骤 → 原始数据记录 → 数据处理 → 实验结果与讨论。
+
+[参数](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/polarization/experiment.json) | [来源](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/polarization/data/provenance.json) | [Python计算](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/src/physicslab/experiments/polarization.py) | [Wolfram计算](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/PolarizationLab/Kernel/analysis.wl) | [完整结果](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/polarization/results/python.json) | [双端对照](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/polarization/results/verification.json) | [Paclet](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/PolarizationLab/dist/PolarizationLab-0.1.0.paclet)
+
+观测表：[observations-01.csv](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/polarization/data/observations-01.csv)（5行；字段：次数, 反射光最暗时入射角 αB）；[observations-02.csv](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/polarization/data/observations-02.csv)（10行；字段：检偏器角度 θ/(°), 光电流 I/mA）。
+
+|指标键|数值|单位|
+|---|---:|---|
+|`glass_refractive_index`|1.49002880032|1|
+|`malus_amplitude_ma`|1.18208447775|mA|
+|`malus_background_ma`|0.0245577611262|mA|
+|`malus_r_squared`|0.999909291816|1|
+
+上述为完整结果的选摘；不确定度定义与模型条件见参数、报告和结果文件。
+
+Python：`physicslab.experiments.polarization.analyze(experiment_directory)`。
+Wolfram：``PolarizationLab`Analyze[]``；打开：``PolarizationLab`OpenNotebook[]``。
+
+```text
+python scripts/execute_notebooks.py --experiment course-04/polarization
+python scripts/check_delivery.py --experiment course-04/polarization
+```
+
+
+### 用旋光仪测定旋光性溶液的旋光率和浓度 · Optical Rotation and Conditional Solution Concentration by Polarimetry
+
+标识：`course-04/optical-rotation`。从五组双游标平衡读数求旋光角大小，在给定蔗糖比旋光率和管长下计算条件浓度及角度重复性传播分量。
+
+别名：旋光仪实验；旋光率与浓度；蔗糖旋光；旋光角大小；polarimetry；optical rotation；specific rotation and concentration；specified uncertainty propagation。
+
+主题：旋光性；比旋光率；溶液条件浓度；双游标角差。方法：样品前后最短圆周角差；双游标绝对角差平均；给定比旋光率与管长浓度反演；旋光角重复性分量传播 / repeatability uncertainty propagation；两游标一致性比较。
+
+[实验入口](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/optical-rotation/README.md) · [报告](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/optical-rotation/report/report.md) · [Jupyter](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/optical-rotation/notebooks/analysis.ipynb) · [Wolfram](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/OpticalRotationLab/Notebooks/OpticalRotationLab.nb) · [源PDF](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/pdf/course-04/11_%E5%AE%9E%E9%AA%8C%E5%8D%81%E4%B8%80_%E7%94%A8%E6%97%8B%E5%85%89%E4%BB%AA%E6%B5%8B%E5%AE%9A%E6%97%8B%E5%85%89%E6%80%A7%E6%BA%B6%E6%B6%B2%E7%9A%84%E6%97%8B%E5%85%89%E7%8E%87%E5%92%8C%E6%B5%93%E5%BA%A6_%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A_A3%E5%8F%8C%E9%9D%A2%E7%A4%BA%E8%8C%83%E6%A0%BC%E5%BC%8F%E7%89%88.pdf)
+
+章节：实验名称 → 实验目的 → 实验原理 → 主要仪器设备 → 实验步骤 → 原始数据记录 → 数据处理 → 实验结果与讨论。
+
+[参数](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/optical-rotation/experiment.json) | [来源](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/optical-rotation/data/provenance.json) | [Python计算](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/src/physicslab/experiments/optical_rotation.py) | [Wolfram计算](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/OpticalRotationLab/Kernel/analysis.wl) | [完整结果](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/optical-rotation/results/python.json) | [双端对照](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/optical-rotation/results/verification.json) | [Paclet](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/OpticalRotationLab/dist/OpticalRotationLab-0.1.0.paclet)
+
+观测表：[observations-01.csv](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/optical-rotation/data/observations-01.csv)（5行；字段：次数, θ₁, θ₂, θ₃, θ₄）。
+
+|指标键|数值|单位|
+|---|---:|---|
+|`rotation_magnitude_deg`|8.15666666667|deg|
+|`conditional_concentration_g_ml`|0.0613652322199|g/mL|
+|`concentration_type_a_g_ml`|0.0014346462532|g/mL|
+
+上述为完整结果的选摘；不确定度定义与模型条件见参数、报告和结果文件。
+
+Python：`physicslab.experiments.optical_rotation.analyze(experiment_directory)`。
+Wolfram：``OpticalRotationLab`Analyze[]``；打开：``OpticalRotationLab`OpenNotebook[]``。
+
+```text
+python scripts/execute_notebooks.py --experiment course-04/optical-rotation
+python scripts/check_delivery.py --experiment course-04/optical-rotation
+```
+
+
+### 单缝衍射光强分布研究 · Single-Slit Diffraction and Intensity Distribution
+
+标识：`course-04/single-slit-diffraction`。由四级暗纹位置计算狭缝宽度并检查近轴几何，将归一化扫描与该缝宽的理想衍射分布比较。
+
+别名：单缝衍射；夫琅禾费单缝；暗纹法测缝宽；衍射光强分布；single-slit diffraction；Fraunhofer diffraction；sinc-squared intensity；slit width。
+
+主题：夫琅禾费衍射；暗纹几何；狭缝宽度；归一化光强。方法：四级暗纹逐级缝宽反演；过原点缝宽拟合；带截距中心偏移检查；精确正弦几何修正；归一化扫描与缝宽模型比较。
+
+[实验入口](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/single-slit-diffraction/README.md) · [报告](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/single-slit-diffraction/report/report.md) · [Jupyter](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/single-slit-diffraction/notebooks/analysis.ipynb) · [Wolfram](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/SingleSlitDiffractionLab/Notebooks/SingleSlitDiffractionLab.nb) · [源PDF](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/pdf/course-04/12_%E5%AE%9E%E9%AA%8C%E5%8D%81%E4%BA%8C_%E5%8D%95%E7%BC%9D%E8%A1%8D%E5%B0%84%E5%85%89%E5%BC%BA%E5%88%86%E5%B8%83%E7%A0%94%E7%A9%B6.pdf)
+
+章节：实验名称 → 实验目的 → 实验原理 → 主要仪器设备 → 实验步骤 → 原始数据记录 → 数据处理 → 实验结果与讨论。
+
+[参数](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/single-slit-diffraction/experiment.json) | [来源](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/single-slit-diffraction/data/provenance.json) | [Python计算](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/src/physicslab/experiments/single_slit_diffraction.py) | [Wolfram计算](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/SingleSlitDiffractionLab/Kernel/analysis.wl) | [完整结果](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/single-slit-diffraction/results/python.json) | [双端对照](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/single-slit-diffraction/results/verification.json) | [Paclet](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/SingleSlitDiffractionLab/dist/SingleSlitDiffractionLab-0.1.0.paclet)
+
+观测表：[observations-01.csv](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/single-slit-diffraction/data/observations-01.csv)（17行；字段：位置 x/mm, 归一化光强 I/I₀）；[observations-02.csv](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/single-slit-diffraction/data/observations-02.csv)（4行；字段：暗纹级数 k, 暗纹中心距 |xₖ|/mm）。
+
+|指标键|数值|单位|
+|---|---:|---|
+|`slit_width_mean_mm`|0.199931154083|mm|
+|`slit_width_origin_fit_mm`|0.200200369101|mm|
+|`scan_model_rmse`|0.0160862001323|1|
+
+上述为完整结果的选摘；不确定度定义与模型条件见参数、报告和结果文件。
+
+Python：`physicslab.experiments.single_slit_diffraction.analyze(experiment_directory)`。
+Wolfram：``SingleSlitDiffractionLab`Analyze[]``；打开：``SingleSlitDiffractionLab`OpenNotebook[]``。
+
+```text
+python scripts/execute_notebooks.py --experiment course-04/single-slit-diffraction
+python scripts/check_delivery.py --experiment course-04/single-slit-diffraction
+```
+
+
+### 阿贝成像原理和空间滤波 · Abbe Imaging and Spatial Filtering
+
+标识：`course-04/abbe-imaging`。用后焦面五级频谱位置求光栅周期，结合不同空间滤波的记录可见度，以复振幅频谱选择解释像结构。
+
+别名：阿贝成像；空间滤波；光学傅里叶变换；后焦面频谱；Abbe imaging；spatial filtering；Fourier optics；coherent imaging。
+
+主题：相干成像；空间频谱；复振幅滤波；像强度与可见度。方法：正负一级频谱位置平均；全级次位置含截距回归；波长焦距换算光栅周期；记录滤波方式与可见度对照；复振幅滤波关系解释。
+
+[实验入口](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/abbe-imaging/README.md) · [报告](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/abbe-imaging/report/report.md) · [Jupyter](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/abbe-imaging/notebooks/analysis.ipynb) · [Wolfram](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/AbbeImagingLab/Notebooks/AbbeImagingLab.nb) · [源PDF](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/pdf/course-04/13_%E5%AE%9E%E9%AA%8C%E5%8D%81%E4%B8%89_%E9%98%BF%E8%B4%9D%E6%88%90%E5%83%8F%E5%8E%9F%E7%90%86%E5%92%8C%E7%A9%BA%E9%97%B4%E6%BB%A4%E6%B3%A2.pdf)
+
+章节：实验名称 → 实验目的 → 实验原理 → 主要仪器设备 → 实验步骤 → 原始数据记录 → 数据处理 → 实验结果与讨论。
+
+[参数](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/abbe-imaging/experiment.json) | [来源](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/abbe-imaging/data/provenance.json) | [Python计算](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/src/physicslab/experiments/abbe_imaging.py) | [Wolfram计算](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/AbbeImagingLab/Kernel/analysis.wl) | [完整结果](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/abbe-imaging/results/python.json) | [双端对照](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/abbe-imaging/results/verification.json) | [Paclet](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/AbbeImagingLab/dist/AbbeImagingLab-0.1.0.paclet)
+
+观测表：[observations-01.csv](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/abbe-imaging/data/observations-01.csv)（5行；字段：衍射级次 k, 频谱面位置 ξ/mm）；[observations-02.csv](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/abbe-imaging/data/observations-02.csv)（5行；字段：滤波方式, 通过的主要频谱成分, 像面现象, 相对可见度）。
+
+|指标键|数值|单位|
+|---|---:|---|
+|`grating_period_mm`|0.199831578947|mm|
+|`period_fit_mm`|0.199915754002|mm|
+|`visibility_zero_only`|0.05|1|
+|`visibility_unfiltered`|0.82|1|
+
+上述为完整结果的选摘；不确定度定义与模型条件见参数、报告和结果文件。
+
+Python：`physicslab.experiments.abbe_imaging.analyze(experiment_directory)`。
+Wolfram：``AbbeImagingLab`Analyze[]``；打开：``AbbeImagingLab`OpenNotebook[]``。
+
+```text
+python scripts/execute_notebooks.py --experiment course-04/abbe-imaging
+python scripts/check_delivery.py --experiment course-04/abbe-imaging
+```
+
+
+### 全息照相 · Holographic Recording Conditions and Reconstruction Magnification
+
+标识：`course-04/holography`。由三组光强和物像尺寸记录计算光强比、曝光量与再现放大率，并用理想平面波关系推算条纹间距和可见度。
+
+别名：全息照相；物光与参考光；全息记录再现；双束干涉条纹；holography；holographic recording；holographic reconstruction；fringe visibility。
+
+主题：相干干涉记录；光强平衡；理论条纹间距；再现横向放大率。方法：参考物光光强比计算；双束夹角条纹间距静态推算；理想相干可见度计算；平均总光强曝光量换算；物像尺寸比与重复性统计。
+
+[实验入口](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/holography/README.md) · [报告](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/holography/report/report.md) · [Jupyter](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/holography/notebooks/analysis.ipynb) · [Wolfram](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/HolographyLab/Notebooks/HolographyLab.nb) · [源PDF](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/pdf/course-04/14_%E5%AE%9E%E9%AA%8C%E5%8D%81%E5%9B%9B_%E5%85%A8%E6%81%AF%E7%85%A7%E7%9B%B8_%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A.pdf)
+
+章节：实验名称 → 实验目的 → 实验原理 → 主要仪器设备 → 实验步骤 → 原始数据记录 → 数据处理 → 实验结果与讨论。
+
+[参数](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/holography/experiment.json) | [来源](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/holography/data/provenance.json) | [Python计算](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/src/physicslab/experiments/holography.py) | [Wolfram计算](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/HolographyLab/Kernel/analysis.wl) | [完整结果](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/holography/results/python.json) | [双端对照](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/holography/results/verification.json) | [Paclet](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/HolographyLab/dist/HolographyLab-0.1.0.paclet)
+
+观测表：[observations-01.csv](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/holography/data/observations-01.csv)（3行；字段：次数, 物光路/cm, 参考光路/cm, 两束光夹角/(°), 物光强/(mW·cm⁻²), 参考光强/(mW·cm⁻²), 曝光时间/s）；[observations-02.csv](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/holography/data/observations-02.csv)（3行；字段：次数, 记录时物距 z_p/mm, 再现像距 z_i/mm, 物宽 Δx_p/mm, 再现像宽 Δx_i/mm）。
+
+|指标键|数值|单位|
+|---|---:|---|
+|`mean_intensity_ratio`|1.82087269456|1|
+|`fringe_spacing_um`|1.22247572575|um|
+|`mean_magnification`|1.00833333333|1|
+|`mean_total_exposure_mj_cm2`|5.5|mJ/cm^2|
+
+上述为完整结果的选摘；不确定度定义与模型条件见参数、报告和结果文件。
+
+Python：`physicslab.experiments.holography.analyze(experiment_directory)`。
+Wolfram：``HolographyLab`Analyze[]``；打开：``HolographyLab`OpenNotebook[]``。
+
+```text
+python scripts/execute_notebooks.py --experiment course-04/holography
+python scripts/check_delivery.py --experiment course-04/holography
+```

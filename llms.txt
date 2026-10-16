@@ -1,0 +1,41 @@
+# 普通物理实验 · General Physics Lab
+
+> 淮南师范学院四门普通物理实验课程的45个实验：Markdown报告、Python/Jupyter与Wolfram计算笔记本、共享CSV/JSON数据、源PDF、双端数值对照与独立Paclet。
+
+Reproducible general physics laboratory experiments in mechanics, thermodynamics, electromagnetism and optics. Primary language: Chinese (zh-CN); English aliases support topic lookup.
+
+按任务检索一个实验，先读其README与报告，再取参数、CSV及完整结果。引用数值时附实验标识、指标键、单位、适用条件与提交SHA。Python要求3.11及以上；Wolfram复算使用本机Wolfram环境。
+
+## 阅读与接手
+
+- [Agent阅读指南 / Reading guide](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/agent-guide.md): 定位实验、读取证据和引用结果。
+- [Agent复现指南 / Reproduction](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/agent-reproduction.md): 新内核执行、双端重建、Paclet与验收。
+- [仓库工作约定 / AGENTS.md](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/AGENTS.md): 修改范围、数据和排版规则。
+- [运行环境 / Setup](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/usage.md): Python、Wolfram、字体与HTML阅读。
+
+## 检索目录
+
+- [45项实验检索目录 / Experiment index](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/experiment-index.md): 中英文名、常用别名、主题、方法和三稿入口。
+- [机器目录 / Machine catalog](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/experiments.json): 路径、raw URL、哈希、数据表、指标和实际接口。
+- [目录接口 / Catalog API](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/agent-catalog.md): 标准库检索CLI与字段说明。
+
+## 按课程阅读
+
+- [普通物理实验 1](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-01/README.md): 8个实验。
+- [普通物理实验 2](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-02/README.md): 10个实验。
+- [普通物理实验 3](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/README.md): 13个实验。
+- [普通物理实验 4](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/README.md): 14个实验。
+
+## 数据、方法与引用
+
+- [数据与方法](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/data-and-methods.md): 单位、模型、统计与结果定义。
+- [验证汇总](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/delivery-summary.md): 实验验证记录与资料条件。
+- [源资料PDF](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/pdf/README.md): 45份主报告和12份参考资料。
+- [引用信息 / Citation](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/CITATION.cff): 作者与项目身份；具体结果附提交与路径。
+
+## Optional
+
+- [完整导览 / Expanded guide](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/llms-full.txt): 接手文档与全部实验卡片。
+- [软件元数据 / CodeMeta](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/codemeta.json): 软件、语言与学科描述。
+- [开发与构建](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/development.md): 成稿组织与构建接口。
+- [索引维护](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/discovery.md): 生成依据、版本链接和同步检查。

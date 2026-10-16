@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "General Physics Lab experiment discovery catalog",
+  "type": "object",
+  "required": ["schema_version", "repository_url", "raw_base_url", "path_base", "experiment_count", "courses", "experiments"],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {"const": 1},
+    "repository_url": {"type": "string", "format": "uri"},
+    "raw_base_url": {"type": "string", "format": "uri"},
+    "path_base": {"const": "repository_root"},
+    "experiment_count": {"type": "integer", "minimum": 1},
+    "courses": {
+      "type": "array", "minItems": 1,
+      "items": {"type": "object", "required": ["id", "title", "experiment_count"], "additionalProperties": false,
+        "properties": {"id": {"type": "string", "pattern": "^course-[0-9]{2}$"}, "title": {"type": "string"}, "experiment_count": {"type": "integer", "minimum": 1}}}
+    },
+    "experiments": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/experiment"}}
+  },
+  "$defs": {
+    "strings": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string", "minLength": 1}},
+    "resource": {
+      "type": "object", "required": ["path", "url", "raw_url", "sha256", "bytes", "hash_basis"], "additionalProperties": false,
+      "properties": {
+        "path": {"type": "string", "minLength": 1, "pattern": "^(?!/)(?!.*\\\\)(?!.*\\.\\./).+$"},
+        "url": {"type": "string", "format": "uri"}, "raw_url": {"type": "string", "format": "uri"},
+        "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}, "bytes": {"type": "integer", "minimum": 1},
+        "hash_basis": {"enum": ["utf8-lf", "raw-bytes"]}
+      }
+    },
+    "experiment": {
+      "type": "object", "additionalProperties": false,
+      "required": ["id", "course", "title", "title_en", "aliases", "topics", "methods", "summary_zh", "sections", "resources", "data_files", "metric_catalog", "key_results", "python_interface", "wolfram_interface", "commands", "verification", "source_identity"],
+      "properties": {
+        "id": {"type": "string", "pattern": "^course-[0-9]{2}/[a-z0-9-]+$"},
+        "course": {"type": "string", "pattern": "^course-[0-9]{2}$"},
+        "title": {"type": "string", "minLength": 1}, "title_en": {"type": "string", "minLength": 1},
+        "aliases": {"$ref": "#/$defs/strings"}, "topics": {"$ref": "#/$defs/strings"}, "methods": {"$ref": "#/$defs/strings"},
+        "summary_zh": {"type": "string", "minLength": 1}, "sections": {"$ref": "#/$defs/strings"},
+        "resources": {"type": "object", "required": ["readme", "report", "jupyter_notebook", "wolfram_notebook", "source_pdf", "config", "provenance", "python_results", "wolfram_results", "verification"], "additionalProperties": {"$ref": "#/$defs/resource"}},
+        "data_files": {"type": "array", "minItems": 1, "items": {"type": "object", "required": ["resource", "columns", "row_count"], "additionalProperties": false,
+          "properties": {"resource": {"$ref": "#/$defs/resource"}, "columns": {"type": "array", "minItems": 1, "items": {"type": "string"}}, "row_count": {"type": "integer", "minimum": 0}}}},
+        "metric_catalog": {"type": "array", "minItems": 1, "items": {"type": "object", "required": ["key", "label", "unit"], "additionalProperties": false,
+          "properties": {"key": {"type": "string", "minLength": 1}, "label": {"type": "string", "minLength": 1}, "unit": {"type": "string"}, "description": {"type": "string", "minLength": 1}}}},
+        "key_results": {"type": "array", "minItems": 1, "items": {"type": "object", "required": ["key", "value", "unit", "result_pointer"],
+          "properties": {"key": {"type": "string"}, "value": {"type": "number"}, "unit": {"type": "string"}, "result_pointer": {"type": "string", "pattern": "^/metrics/"}}}},
+        "python_interface": {"type": "object", "required": ["module", "analyze"], "additionalProperties": false,
+          "properties": {"module": {"type": "string", "pattern": "^physicslab\\.experiments\\.[a-z_]+$"}, "analyze": {"const": "analyze(experiment_directory)"}}},
+        "wolfram_interface": {"type": "object", "required": ["context", "analyze", "notebook_path", "open_notebook"], "additionalProperties": false,
+          "properties": {"context": {"type": "string", "pattern": "^[A-Za-z]+`$"}, "analyze": {"enum": ["Analyze[]", "PLAnalyze[]"]}, "notebook_path": {"enum": ["LabNotebookPath[]", "PLNotebookPath[]"]}, "open_notebook": {"enum": ["OpenNotebook[]", "PLOpenNotebook[]"]}}},
+        "commands": {"type": "object", "required": ["audit", "execute_notebook", "rebuild", "readme_figures"], "additionalProperties": {"type": "string", "minLength": 1}},
+        "verification": {"type": "object", "required": ["recorded_status", "comparison_count", "path"], "additionalProperties": false,
+          "properties": {"recorded_status": {"type": "string"}, "comparison_count": {"type": "integer", "minimum": 1}, "path": {"type": "string"}}},
+        "source_identity": {"type": "object", "required": ["docx_archive_path", "docx_sha256", "pdf_path", "pdf_sha256", "pdf_pages"], "additionalProperties": false,
+          "properties": {"docx_archive_path": {"type": "string"}, "docx_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}, "pdf_path": {"type": "string"}, "pdf_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}, "pdf_pages": {"type": "integer", "minimum": 1}}}
+      }
+    }
+  }
+}

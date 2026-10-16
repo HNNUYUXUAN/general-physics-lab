@@ -12,6 +12,10 @@ jobs:
         run: python -m pip install -e '.[test]'
       - name: Numerical tests
         run: python -m pytest
+      - name: Check agent discovery catalog and documentation
+        run: |
+          python scripts/agent_catalog.py build --check
+          python scripts/check_agent_docs.py
       - name: Check manuscript fonts and execute notebook when available
         shell: python
         run: |

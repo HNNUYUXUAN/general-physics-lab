@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "引用本项目时请使用以下信息；引用具体实验或数值时同时记录实验标识、文件路径和 Git 提交。"
+type: software
+title: "普通物理实验 · General Physics Lab"
+authors:
+  - family-names: "缪"
+    given-names: "雨轩"
+    affiliation: "淮南师范学院"
+repository-code: "https://github.com/HNNUYUXUAN/general-physics-lab"
+url: "https://github.com/HNNUYUXUAN/general-physics-lab"
+abstract: "淮南师范学院四门普通物理实验课程的45个实验，包含独立Markdown报告、Python/Jupyter与Wolfram计算笔记本、共享CSV/JSON数据、结果对照和独立Paclet安装包。"
+keywords:
+  - "普通物理实验"
+  - "general physics laboratory"
+  - "computational physics"
+  - "reproducible research"
+  - "Jupyter Notebook"
+  - "Wolfram Language"
+  - "measurement uncertainty"
+  - "mechanics"
+  - "thermodynamics"
+  - "electromagnetism"
+  - "optics"

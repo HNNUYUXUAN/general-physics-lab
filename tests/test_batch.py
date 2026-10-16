@@ -33,6 +33,18 @@ def test_registry_has_unique_independent_targets():
     assert len({e['source_docx'] for e in entries})==45
     assert [sum(e['course']==f'course-{i:02}' for e in entries) for i in range(1,5)]==[8,10,13,14]
 
+def test_rebuild_preserves_authored_guide(tmp_path):
+    guide=tmp_path/'README.md'
+    original='# 实验入口\n\n![物理过程](assets/readme-overview.svg)\n'.encode('utf-8')
+    guide.write_bytes(original)
+    batch.ensure_readme(tmp_path,{'paclet':'ExampleLab'},{'title':'实验'})
+    assert guide.read_bytes()==original
+
+def test_new_experiment_gets_notebook_entry(tmp_path):
+    batch.ensure_readme(tmp_path,{'paclet':'ExampleLab'},{'title':'实验'})
+    guide=(tmp_path/'README.md').read_text(encoding='utf-8')
+    assert '# 实验' in guide and 'ExampleLab/Notebooks/ExampleLab.nb' in guide
+
 @pytest.mark.parametrize('entry',[e for e in batch.registry() if e['slug']!='pendulum'],ids=lambda e:e['id'])
 def test_experiment_reference_checks_and_relocated_inputs(entry,tmp_path):
     import importlib,numpy as np,shutil

@@ -161,6 +161,13 @@ def compare(p,w,a):
     if not checks or not all(c['passed'] for c in checks):raise AssertionError([c for c in checks if not c['passed']])
     return {'status':'passed','checks':checks}
 
+def ensure_readme(exp,entry,a):
+    """Create an initial entry while preserving an existing experiment guide."""
+    path=exp/'README.md'
+    if path.exists():return
+    readme=f"# {a['title']}\n\n[实验报告](report/report.md) · [报告阅读版](report/report.html) · [Jupyter Notebook](notebooks/analysis.ipynb) · [Notebook 阅读版](notebooks/analysis.html) · [Wolfram Notebook](../../../notebook/paclets/{entry['paclet']}/Notebooks/{entry['paclet']}.nb)\n\n计算使用随项目提供的规范数据。Notebook 可在新内核中依次执行。\n"
+    path.write_text(readme,encoding='utf-8')
+
 def build(entry,skip_frontend=False):
     a=author(entry);exp=ROOT/'experiments'/entry['id'];run_id=stamp();run=ROOT/'.build'/entry['id']/run_id
     run.mkdir(parents=True,exist_ok=True)
@@ -237,8 +244,7 @@ def build(entry,skip_frontend=False):
         # Publish into rollout staging only. A separately guarded deploy copies reviewed results to project.
         for folder in ('report','notebooks','results'):shutil.copytree(tmp/folder,exp/folder,dirs_exist_ok=True)
         shutil.copytree(paclet,package,dirs_exist_ok=True)
-        readme=f"# {a['title']}\n\n[实验报告](report/report.md) · [报告阅读版](report/report.html) · [Jupyter Notebook](notebooks/analysis.ipynb) · [Notebook 阅读版](notebooks/analysis.html) · [Wolfram Notebook](../../../notebook/paclets/{entry['paclet']}/Notebooks/{entry['paclet']}.nb)\n\n计算使用随项目提供的规范数据。Notebook 可在新内核中依次执行。\n"
-        (exp/'README.md').write_text(readme,encoding='utf-8')
+        ensure_readme(exp,entry,a)
         state(entry,'awaiting_visual_review',run=str(run),checks=len(verification['checks']),limitations=a.get('limitations',[]))
         print('BUILD_OK',entry['id'],len(verification['checks']),flush=True)
         return run

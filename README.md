@@ -108,4 +108,10 @@ python -m venv .venv
 
 [数据与方法](docs/data-and-methods.md) · [开发与构建](docs/development.md) · [图像素材来源](docs/assets/README.md)
 
+## 让 agent 找到并接手实验
+
+从 [`llms.txt`](llms.txt) 了解项目，按[中英文实验目录](docs/experiment-index.md)找到物理问题，再沿[阅读指南](docs/agent-guide.md)定位原始数据、完整精度结果与计算实现。[复现指南](docs/agent-reproduction.md)提供新内核执行、双端重建和 Paclet 入口。
+
+程序检索使用[机器目录](docs/experiments.json)与[检索命令](docs/agent-catalog.md)；一次读取可使用 [`llms-full.txt`](llms-full.txt)。引用项目见 [`CITATION.cff`](CITATION.cff)，引用具体数值同时附实验标识、指标键、来源文件和提交版本。
+
 维护：**缪雨轩 · 淮南师范学院**
