@@ -17,6 +17,8 @@ python scripts/agent_catalog.py show course-03/rlc-resonance --json
 
 搜索使用标题、英文标题、别名、主题、方法、摘要和指标键/标签，多词查询要求所有词出现；默认返回最多10项，可通过 `--limit` 调整。`search --json` 返回命中列表；`show --json` 返回一个完整实验对象。实验标识保持稳定，展示名称和别名可以更新。
 
+英文词与缩写按词边界匹配，中文按短语匹配，大小写等价。例如 `ODE` 检索常微分方程方法，`C02_R1_Q_bandwidth` 检索完整指标键。
+
 ## 主要字段
 
 |字段|含义|

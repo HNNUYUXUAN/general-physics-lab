@@ -129,7 +129,7 @@ def compile_catalog(root=ROOT):
             'verification': {'recorded_status': verification['status'],
                              'comparison_count': len(verification['checks']),
                              'path': resources['verification']['path']},
-            'source_identity': {'docx_archive_path': entry['source_docx'],
+            'source_identity': {'docx_archive_path': 'archive/' + entry['source_docx'],
                                 'docx_sha256': entry['source_sha256'],
                                 'pdf_path': pdf_resource['path'], 'pdf_sha256': pdf_resource['sha256'],
                                 'pdf_pages': int(pdf['pages'])},
@@ -258,7 +258,12 @@ def search(catalog, query, course=None, limit=10):
                   (' '.join(e['methods']), 2), (e['summary_zh'], 1),
                   (' '.join(m['key'] + ' ' + m['label'] + ' ' + m.get('description', '')
                             for m in e['metric_catalog']), 1)]
-        field_scores = [max((weight for text, weight in fields if term in text.casefold()), default=0)
+        def matches(term, text):
+            text = text.casefold()
+            if re.fullmatch(r'[a-z0-9_-]+', term):
+                return re.search(r'(?<![a-z0-9_])' + re.escape(term) + r'(?![a-z0-9_])', text) is not None
+            return term in text
+        field_scores = [max((weight for text, weight in fields if matches(term, text)), default=0)
                         for term in terms]
         if all(field_scores):
             ranked.append((sum(field_scores), e))

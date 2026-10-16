@@ -36,6 +36,11 @@ def test_search_respects_course_and_all_query_terms(catalog):
     assert search(catalog, 'RLC不存在的实验名称') == []
 
 
+def test_english_acronym_is_not_a_substring_of_model_or_diode(catalog):
+    found = search(catalog, 'ODE', limit=45)
+    assert [entry['id'] for entry in found] == ['course-01/pendulum']
+
+
 def test_text_content_identity_survives_checkout_line_endings(tmp_path):
     path = tmp_path / 'guide.md'
     path.write_bytes('标题\r\n正文\r\n'.encode('utf-8'))
