@@ -1,0 +1,22 @@
+{
+  "experimentId": "course-01/doppler-verification",
+  "status": "passed",
+  "method": "Brent intersection of each expanding wavefront with receiver trajectory; mean arrival interval",
+  "caseCount": 63,
+  "wavefrontsPerCase": 6,
+  "maxErrors": {
+    "arrival_absolute_s": 6.505213034913027e-19,
+    "frequency_relative": 4.709467118431657e-15
+  },
+  "tolerances": {
+    "arrival_absolute_s": 1e-12,
+    "frequency_relative": 1e-10
+  },
+  "modelSha256": "7cef71f0bc35dfd392e4de60b1ba0dc8e264dd4080343297d48adb54cd381342",
+  "scipyVersion": "1.18.1",
+  "observedFit": {
+    "slope": 117.3969205332106,
+    "intercept": 40000.90797767904,
+    "soundSpeed": 340.7414761674585
+  }
+}

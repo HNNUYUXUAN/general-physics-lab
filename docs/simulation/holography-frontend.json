@@ -1,0 +1,216 @@
+{
+  "status": "passed",
+  "source_hashes": {
+    "simulations/holography/app.mjs": "7bc2f538a152117ca531fbe37095705975e2fef0662e422fc27e2bc6b0e9586c",
+    "simulations/holography/chart.mjs": "94c48a43c413d34f5295eaaa84c81f319caf4ff76f707fb743a23e67ee65fa98",
+    "simulations/holography/fft.mjs": "9617a6ca4a9598de3c3abaeb6f290f51c1377c8ac2878bde97f4e50a37eac7aa",
+    "simulations/holography/index.html": "67ddfd2d09b06c954a1e0fdbf6b46d066828bf7345191cdea95b61e5b4be1fab",
+    "simulations/holography/lab.css": "aa021200be8fa774b810042ddd0dba5148d42dce4214d76590f192671d07ec50",
+    "simulations/holography/model.mjs": "212bc532f76e6c85ad0d326c6475d384960dd06b83982f5f7ded73f8cc40da1c",
+    "simulations/holography/observations.json": "9f2ec28232cecdea87777e5c8f69839d6a137365e0206fa66078d0b870b22634"
+  },
+  "source_record_sha256": "751ca0b2f10e901c99adc30a37ddf873e07cc6e6faf3a386231cc49f1694fad1",
+  "interaction_checks": 4,
+  "visual_status": "passed",
+  "exports_status": "passed",
+  "exports": [
+    {
+      "filename": "holography-holography-experiment.json",
+      "sha256": "50e9f215713a936f2503fb59f74205af067b428e8f843cdd1d15c12788764a55",
+      "bytes": 5695
+    },
+    {
+      "filename": "holography-holography-records.csv",
+      "sha256": "7e55085ef55398c3dbe618a0f8fa27587314d91b7dcfd43b716b7ca98789708e",
+      "bytes": 766
+    }
+  ],
+  "fonts": {
+    "h1": {
+      "fonts": [
+        {
+          "familyName": "SimSun",
+          "postScriptName": "SimSun",
+          "isCustomFont": false,
+          "glyphCount": 13
+        }
+      ]
+    },
+    "#count": {
+      "fonts": [
+        {
+          "familyName": "Times New Roman",
+          "postScriptName": "TimesNewRomanPSMT",
+          "isCustomFont": false,
+          "glyphCount": 1
+        }
+      ]
+    }
+  },
+  "browser": null,
+  "layout": {
+    "mobile": {
+      "width": 390,
+      "scrollWidth": 390,
+      "mathErrors": 0,
+      "mathObjects": 5
+    }
+  },
+  "interaction": [
+    {
+      "name": "匹配距离复场恢复",
+      "status": "passed"
+    },
+    {
+      "name": "离焦与相位再现",
+      "status": "passed"
+    },
+    {
+      "name": "网格与取样改变",
+      "status": "passed"
+    },
+    {
+      "name": "真实双格式导出与刷新恢复",
+      "status": "passed"
+    }
+  ],
+  "background": {
+    "status": "not-applicable"
+  },
+  "checked_at_utc": null,
+  "screenshots": [
+    {
+      "path": "docs/assets/simulations/holography/frontend-01-8c32792bb9e7.png",
+      "sha256": "8c32792bb9e7d607df2b4b852fe8e16a541542e70e99c84b39aef2b74e7f2ef5"
+    },
+    {
+      "path": "docs/assets/simulations/holography/frontend-02-7167fe65e596.png",
+      "sha256": "7167fe65e59643f3d3a3fc5d5295ceb89ddb910cf24e30b8c0eecc2134522833"
+    },
+    {
+      "path": "docs/assets/simulations/holography/frontend-03-2e86d695b834.png",
+      "sha256": "2e86d695b834c0f8fca43076113d7c19784b76d25ede427cc603a49fe444df07"
+    },
+    {
+      "path": "docs/assets/simulations/holography/frontend-04-838906692c33.png",
+      "sha256": "838906692c33b59b2ff070ae9cbc063b9284c014ba012acbf2ec73957068a4c9"
+    },
+    {
+      "path": "docs/assets/simulations/holography/frontend-05-4c9feea32279.png",
+      "sha256": "4c9feea32279b451bbbadf82d3ff2514a0a9dc175a9a120269f190a0d6bd1e65"
+    },
+    {
+      "path": "docs/assets/simulations/holography/frontend-06-2f1235c775ec.png",
+      "sha256": "2f1235c775eca9c99aa0b72013cf406cc6b19f094bdee1f04bad18cacf915045"
+    }
+  ],
+  "schema_version": 1,
+  "experiment_id": "course-04/holography",
+  "numerical": {
+    "status": "passed",
+    "reference_sha256": "7f4dc9daaba350580f8c4987a1ae83f866d3ac557cd8f7eb0ddc946635e634d2",
+    "source_files": {
+      "simulations/holography/index.html": "67ddfd2d09b06c954a1e0fdbf6b46d066828bf7345191cdea95b61e5b4be1fab",
+      "simulations/holography/model.mjs": "212bc532f76e6c85ad0d326c6475d384960dd06b83982f5f7ded73f8cc40da1c",
+      "simulations/holography/app.mjs": "7bc2f538a152117ca531fbe37095705975e2fef0662e422fc27e2bc6b0e9586c",
+      "simulations/holography/chart.mjs": "94c48a43c413d34f5295eaaa84c81f319caf4ff76f707fb743a23e67ee65fa98",
+      "simulations/holography/lab.css": "aa021200be8fa774b810042ddd0dba5148d42dce4214d76590f192671d07ec50",
+      "simulations/holography/observations.json": "9f2ec28232cecdea87777e5c8f69839d6a137365e0206fa66078d0b870b22634",
+      "docs/holography-model-evidence.md": "cc4672586413ef215dbf6f190b7af66067b3d8ee1cc4de31faf919802cc142a3",
+      "docs/holography-references.json": "8d7a173afa419618aff4ab982b9f2d205d7312cd1a4fc60dee2d6e1a3f0006ab",
+      "docs/holography-references.bib": "bd77eb685854f46d10bdbea7564e6c404d9c93cf5317020975b22a41e6a8f275",
+      "docs/simulation/holography-reference.json": "2cfa804d1d3b561d0e9306ee1230113dd7aa3972fe94da44770089fd9ffdaa96",
+      "simulations/holography/fft.mjs": "9617a6ca4a9598de3c3abaeb6f290f51c1377c8ac2878bde97f4e50a37eac7aa",
+      "scripts/validate_holography_simulation.py": "6a2f847d252f05991a475fb936dcbfd463857cdc840a614bac7491e8d67f00a9",
+      "tests/holography-model.test.mjs": "d8a5bc3d5842d3718f7a176d17fc215b842106e10e3aca94c6a5808621214ab1"
+    }
+  },
+  "scientific_evidence": {
+    "status": "verified",
+    "decision_source_files": {
+      "docs/holography-references.json": "8d7a173afa419618aff4ab982b9f2d205d7312cd1a4fc60dee2d6e1a3f0006ab",
+      "docs/holography-model-evidence.md": "cc4672586413ef215dbf6f190b7af66067b3d8ee1cc4de31faf919802cc142a3",
+      "simulations/holography/model.mjs": "212bc532f76e6c85ad0d326c6475d384960dd06b83982f5f7ded73f8cc40da1c"
+    },
+    "core_references": [
+      {
+        "id": "Liu2020OffAxisFresnel",
+        "pdf_sha256": "0d495e3d1c8a7ae6a5d3e9093045ea37614ad10cd65da2778dd7b09700cacd66",
+        "locators": [
+          {
+            "printed_pages": "0709001-2",
+            "pdf_pages": [
+              2
+            ],
+            "location": "第1.1节、式1/3",
+            "role": "传播物场与离轴参考的模平方干涉记录"
+          },
+          {
+            "printed_pages": "0709001-3",
+            "pdf_pages": [
+              3
+            ],
+            "location": "第1.2节、式4-6",
+            "role": "有限窗口、一阶频域选择、零级/共轭项分离及重构；不混同本项目所选交叉项的符号"
+          },
+          {
+            "printed_pages": "0709001-6",
+            "pdf_pages": [
+              6
+            ],
+            "location": "第3.1节",
+            "role": "论文MNIST及波长/传播/网格参数的批次身份，未采用其参考角网格组合"
+          },
+          {
+            "printed_pages": "0709001-11–0709001-12",
+            "pdf_pages": [
+              11,
+              12
+            ],
+            "location": "参考文献7/22/29",
+            "role": "提取后续经典空间滤波和傅里叶光学目标，目标尚未核查"
+          }
+        ]
+      },
+      {
+        "id": "ZhuZeng2007Diffraction",
+        "pdf_sha256": "10ed1933f69d2080d956a34869605440d8d8415b05442f567fc56bf2a8e2ee71",
+        "locators": [
+          {
+            "printed_pages": "27",
+            "pdf_pages": [
+              1
+            ],
+            "location": "第1.1节、式1及随后条件说明",
+            "role": "均匀介质、单色标量Helmholtz基础；不称该式为本项目频域核"
+          },
+          {
+            "printed_pages": "28-29",
+            "pdf_pages": [
+              2,
+              3
+            ],
+            "location": "第2节例1、式9/10",
+            "role": "Fresnel相位二阶截断与高阶误差条件的原则"
+          },
+          {
+            "printed_pages": "29",
+            "pdf_pages": [
+              3
+            ],
+            "location": "例4、式15-17",
+            "role": "核查空间Kirchhoff核与卷积FT表达，不采用其排印有误式15/17"
+          },
+          {
+            "printed_pages": "30",
+            "pdf_pages": [
+              4
+            ],
+            "location": "参考文献1/4",
+            "role": "可选扩展原始来源目标，目标尚未核查"
+          }
+        ]
+      }
+    ]
+  }
+}

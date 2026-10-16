@@ -1,0 +1,8 @@
+import test from'node:test';import assert from'node:assert/strict';import{DEFAULT_PARAMETERS as P,state,endpointEquivalent,sweep,fitRecords,validateParameters}from'../simulations/mechanical-equivalent-heat/model.mjs';const near=(a,b,t=1e-10)=>assert.ok(Math.abs(a-b)<t);
+test('adiabatic heating recovers equivalent',()=>{const p={...P,heatTransfer:0},q=state(p,1000);near(q.heatExchange,0);near(endpointEquivalent(p,1000,q.temperature).uncorrected,p.equivalent);near(fitRecords(sweep(p),'ideal-model').equivalentUncorrected,p.equivalent);});
+test('energy balance including signed environmental exchange',()=>{for(const heating of[true,false]){const q=state(P,1200,heating);near(q.electricalWork,q.absorbed+q.heatExchange);}});
+test('ODE derivative',()=>{const t=300,h=.001;near((state(P,t+h).temperature-state(P,t-h).temperature)/(2*h),state(P,t).slope,1e-9);});
+test('power-off approaches ambient from either side',()=>{assert.ok(state(P,1800,false).temperature>P.initialTemperature);const p={...P,initialTemperature:305};assert.ok(state(p,1800,false).temperature<305);});
+test('known heat-exchange correction recovers J',()=>{const q=state(P,1500);near(endpointEquivalent(P,1500,q.temperature).corrected,P.equivalent);});
+test('heat loss biases uncorrected J upward',()=>{const p={...P,initialTemperature:P.ambientTemperature},q=state(p,1200);assert.ok(endpointEquivalent(p,1200,q.temperature).uncorrected>p.equivalent);});
+test('invalid conditions and mixed records rejected',()=>{assert.throws(()=>validateParameters({...P,heatCapacityCal:0}));const rows=sweep(P);rows[0].parameters.voltage=10;assert.throws(()=>fitRecords(rows,'ideal-model'));});

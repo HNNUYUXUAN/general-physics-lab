@@ -1,0 +1,2374 @@
+{
+  "schema_version": 1,
+  "experiment": "course-02/thermal-conductivity",
+  "model_sha256": "09a610aa106e9940f38750d167458beadf05c817614494e4afd3cf155eee39cc",
+  "validator_sha256": "a4b9e9a23b69004d7048e77b4a75b9eb3518ee51e60225e7e45c2501d402112e",
+  "environment": {
+    "python": "3.14.7",
+    "numpy": "2.5.4"
+  },
+  "method": "independent 200-term Neumann constant-flux Fourier series; 20/40/80 finite-volume CN cell-center profile convergence and mean-energy identity",
+  "case_count": 81,
+  "mesh_runs": 243,
+  "tolerances": {
+    "finest_profile_scaled": 5e-05,
+    "minimum_refinement_ratio": 3.7,
+    "mean_energy_absolute_K": 5e-08
+  },
+  "max_finest_scaled_error": 1.907949114701197e-05,
+  "minimum_refinement_ratio": 3.9269912772279536,
+  "max_mean_energy_error_K": 1.610089839232387e-11,
+  "status": "passed",
+  "failures": [],
+  "cases": [
+    {
+      "parameters": {
+        "conductivity": 0.1,
+        "specificHeat": 1000,
+        "density": 1124,
+        "thickness": 0.005,
+        "voltage": 18.02,
+        "resistance": 110,
+        "area": 0.006885,
+        "thermocouple": 40,
+        "initialTemperature": 20
+      },
+      "fourier_number": 0.02,
+      "time_s": 5.62,
+      "scaled_profile_errors": [
+        0.00029815013856729274,
+        7.592330041116906e-05,
+        1.9079491020069766e-05
+      ],
+      "refinement_ratios": [
+        3.9269912787330825,
+        3.9793147695242572
+      ],
+      "mean_energy_errors_K": [
+        3.552713678800501e-15,
+        1.7763568394002505e-14,
+        8.881784197001252e-14
+      ]
+    },
+    {
+      "parameters": {
+        "conductivity": 0.1,
+        "specificHeat": 1000,
+        "density": 1124,
+        "thickness": 0.005,
+        "voltage": 18.02,
+        "resistance": 110,
+        "area": 0.006885,
+        "thermocouple": 40,
+        "initialTemperature": 20
+      },
+      "fourier_number": 0.1,
+      "time_s": 28.1,
+      "scaled_profile_errors": [
+        0.00015656780691575926,
+        3.928345368904316e-05,
+        9.829138095718268e-06
+      ],
+      "refinement_ratios": [
+        3.985591698609452,
+        3.9966325944851326
+      ],
+      "mean_energy_errors_K": [
+        2.4868995751603507e-14,
+        1.0302869668521453e-13,
+        6.039613253960852e-13
+      ]
+    },
+    {
+      "parameters": {
+        "conductivity": 0.1,
+        "specificHeat": 1000,
+        "density": 1124,
+        "thickness": 0.005,
+        "voltage": 18.02,
+        "resistance": 110,
+        "area": 0.006885,
+        "thermocouple": 40,
+        "initialTemperature": 20
+      },
+      "fourier_number": 0.25,
+      "time_s": 70.25,
+      "scaled_profile_errors": [
+        0.00017294717176979547,
+        4.333731049586855e-05,
+        1.0840627285807629e-05
+      ],
+      "refinement_ratios": [
+        3.990722308120227,
+        3.9976755360462435
+      ],
+      "mean_energy_errors_K": [
+        5.3290705182007514e-14,
+        2.8066438062523957e-13,
+        1.6910917111090384e-12
+      ]
+    },
+    {
+      "parameters": {
+        "conductivity": 0.1,
+        "specificHeat": 1000,
+        "density": 1124,
+        "thickness": 0.01,
+        "voltage": 18.02,
+        "resistance": 110,
+        "area": 0.006885,
+        "thermocouple": 40,
+        "initialTemperature": 20
+      },
+      "fourier_number": 0.02,
+      "time_s": 22.48,
+      "scaled_profile_errors": [
+        0.00029980993657697987,
+        7.592330041017472e-05,
+        1.907949101526386e-05
+      ],
+      "refinement_ratios": [
+        3.948852789028668,
+        3.9793147704744856
+      ],
+      "mean_energy_errors_K": [
+        1.7763568394002505e-14,
+        2.4868995751603507e-14,
+        1.0658141036401503e-13
+      ]
+    },
+    {
+      "parameters": {
+        "conductivity": 0.1,
+        "specificHeat": 1000,
+        "density": 1124,
+        "thickness": 0.01,
+        "voltage": 18.02,
+        "resistance": 110,
+        "area": 0.006885,
+        "thermocouple": 40,
+        "initialTemperature": 20
+      },
+      "fourier_number": 0.1,
+      "time_s": 112.4,
+      "scaled_profile_errors": [
+        0.00015666323159548595,
+        3.9283453684568696e-05,
+        9.829138067711437e-06
+      ],
+      "refinement_ratios": [
+        3.988020830689495,
+        3.996632605417785
+      ],
+      "mean_energy_errors_K": [
+        7.815970093361102e-14,
+        1.3145040611561853e-13,
+        6.004086117172847e-13
+      ]
+    },
+    {
+      "parameters": {
+        "conductivity": 0.1,
+        "specificHeat": 1000,
+        "density": 1124,
+        "thickness": 0.01,
+        "voltage": 18.02,
+        "resistance": 110,
+        "area": 0.006885,
+        "thermocouple": 40,
+        "initialTemperature": 20
+      },
+      "fourier_number": 0.25,
+      "time_s": 281,
+      "scaled_profile_errors": [
+        0.00017301782599975362,
+        4.3337310484599526e-05,
+        1.0840627219519272e-05
+      ],
+      "refinement_ratios": [
+        3.9923526417551396,
+        3.9976755594517455
+      ],
+      "mean_energy_errors_K": [
+        1.9184653865522705e-13,
+        3.126388037344441e-13,
+        1.829647544582258e-12
+      ]
+    },
+    {
+      "parameters": {
+        "conductivity": 0.1,
+        "specificHeat": 1000,
+        "density": 1124,
+        "thickness": 0.015,
+        "voltage": 18.02,
+        "resistance": 110,
+        "area": 0.006885,
+        "thermocouple": 40,
+        "initialTemperature": 20
+      },
+      "fourier_number": 0.02,
+      "time_s": 50.58,
+      "scaled_profile_errors": [
+        0.0003044769434372619,
+        7.592330041735597e-05,
+        1.9079491043491653e-05
+      ],
+      "refinement_ratios": [
+        4.010322809513413,
+        3.979314764963541
+      ],
+      "mean_energy_errors_K": [
+        6.750155989720952e-14,
+        2.5579538487363607e-13,
+        1.0054179711005418e-12
+      ]
+    },
+    {
+      "parameters": {
+        "conductivity": 0.1,
+        "specificHeat": 1000,
+        "density": 1124,
+        "thickness": 0.015,
+        "voltage": 18.02,
+        "resistance": 110,
+        "area": 0.006885,
+        "thermocouple": 40,
+        "initialTemperature": 20
+      },
+      "fourier_number": 0.1,
+      "time_s": 252.9,
+      "scaled_profile_errors": [
+        0.00015694967527198392,
+        3.928345371765764e-05,
+        9.829138205315018e-06
+      ],
+      "refinement_ratios": [
+        3.995312540491727,
+        3.9966325528331126
+      ],
+      "mean_energy_errors_K": [
+        3.801403636316536e-13,
+        1.3891110484109959e-12,
+        5.787370582766016e-12
+      ]
+    },
+    {
+      "parameters": {
+        "conductivity": 0.1,
+        "specificHeat": 1000,
+        "density": 1124,
+        "thickness": 0.015,
+        "voltage": 18.02,
+        "resistance": 110,
+        "area": 0.006885,
+        "thermocouple": 40,
+        "initialTemperature": 20
+      },
+      "fourier_number": 0.25,
+      "time_s": 632.2499999999999,
+      "scaled_profile_errors": [
+        0.00017323311736961374,
+        4.3337310580275726e-05,
+        1.0840627577144957e-05
+      ],
+      "refinement_ratios": [
+        3.9973204393642736,
+        3.9976754363965763
+      ],
+      "mean_energy_errors_K": [
+        1.0231815394945443e-12,
+        3.907985046680551e-12,
+        1.524824710941175e-11
+      ]
+    },
+    {
+      "parameters": {
+        "conductivity": 0.1,
+        "specificHeat": 1500,
+        "density": 1124,
+        "thickness": 0.005,
+        "voltage": 18.02,
+        "resistance": 110,
+        "area": 0.006885,
+        "thermocouple": 40,
+        "initialTemperature": 20
+      },
+      "fourier_number": 0.02,
+      "time_s": 8.430000000000001,
+      "scaled_profile_errors": [
+        0.0002981501385679556,
+        7.592330041017472e-05,
+        1.907949101310949e-05
+      ],
+      "refinement_ratios": [
+        3.9269912787932437,
+        3.9793147709238124
+      ],
+      "mean_energy_errors_K": [
+        3.552713678800501e-15,
+        3.552713678800501e-15,
+        2.4868995751603507e-14
+      ]
+    },
+    {
+      "parameters": {
+        "conductivity": 0.1,
+        "specificHeat": 1500,
+        "density": 1124,
+        "thickness": 0.005,
+        "voltage": 18.02,
+        "resistance": 110,
+        "area": 0.006885,
+        "thermocouple": 40,
+        "initialTemperature": 20
+      },
+      "fourier_number": 0.1,
+      "time_s": 42.150000000000006,
+      "scaled_profile_errors": [
+        0.00015656780690879898,
+        3.9283453671476745e-05,
+        9.829138036390188e-06
+      ],
+      "refinement_ratios": [
+        3.985591700214511,
+        3.996632616821387
+      ],
+      "mean_energy_errors_K": [
+        1.0658141036401503e-14,
+        7.105427357601002e-15,
+        7.460698725481052e-14
+      ]
+    },
+    {
+      "parameters": {
+        "conductivity": 0.1,
+        "specificHeat": 1500,
+        "density": 1124,
+        "thickness": 0.005,
+        "voltage": 18.02,
+        "resistance": 110,
+        "area": 0.006885,
+        "thermocouple": 40,
+        "initialTemperature": 20
+      },
+      "fourier_number": 0.25,
+      "time_s": 105.375,
+      "scaled_profile_errors": [
+        0.00017294717176416098,
+        4.333731045808418e-05,
+        1.0840627126384132e-05
+      ],
+      "refinement_ratios": [
+        3.990722311469591,
+        3.9976755913510744
+      ],
+      "mean_energy_errors_K": [
+        2.4868995751603507e-14,
+        5.3290705182007514e-14,
+        1.6342482922482304e-13
+      ]
+    },
+    {
+      "parameters": {
+        "conductivity": 0.1,
+        "specificHeat": 1500,
+        "density": 1124,
+        "thickness": 0.01,
+        "voltage": 18.02,
+        "resistance": 110,
+        "area": 0.006885,
+        "thermocouple": 40,
+        "initialTemperature": 20
+      },
+      "fourier_number": 0.02,
+      "time_s": 33.720000000000006,
+      "scaled_profile_errors": [
+        0.0003030327203082611,
+        7.592330040884896e-05,
+        1.9079491010623675e-05
+      ],
+      "refinement_ratios": [
+        3.9913006768201855,
+        3.97931477137278
+      ],
+      "mean_energy_errors_K": [
+        9.592326932761353e-14,
+        0.0,
+        1.4210854715202004e-14
+      ]
+    },
+    {
+      "parameters": {
+        "conductivity": 0.1,
+        "specificHeat": 1500,
+        "density": 1124,
+        "thickness": 0.01,
+        "voltage": 18.02,
+        "resistance": 110,
+        "area": 0.006885,
+        "thermocouple": 40,
+        "initialTemperature": 20
+      },
+      "fourier_number": 0.1,
+      "time_s": 168.60000000000002,
+      "scaled_profile_errors": [
+        0.00015686154125919946,
+        3.9283453675288326e-05,
+        9.829138037053073e-06
+      ],
+      "refinement_ratios": [
+        3.9930690044667556,
+        3.9966326169396345
+      ],
+      "mean_energy_errors_K": [
+        5.151434834260726e-13,
+        1.7763568394002505e-14,
+        7.460698725481052e-14
+      ]
+    },
+    {
+      "parameters": {
+        "conductivity": 0.1,
+        "specificHeat": 1500,
+        "density": 1124,
+        "thickness": 0.01,
+        "voltage": 18.02,
+        "resistance": 110,
+        "area": 0.006885,
+        "thermocouple": 40,
+        "initialTemperature": 20
+      },
+      "fourier_number": 0.25,
+      "time_s": 421.5,
+      "scaled_profile_errors": [
+        0.00017316696656620692,
+        4.333731046703311e-05,
+        1.0840627134835897e-05
+      ],
+      "refinement_ratios": [
+        3.9957940329023374,
+        3.997675589059834
+      ],
+      "mean_energy_errors_K": [
+        1.4104273304837989e-12,
+        2.1316282072803006e-14,
+        1.8829382497642655e-13
+      ]
+    },
+    {
+      "parameters": {
+        "conductivity": 0.1,
+        "specificHeat": 1500,
+        "density": 1124,
+        "thickness": 0.015,
+        "voltage": 18.02,
+        "resistance": 110,
+        "area": 0.006885,
+        "thermocouple": 40,
+        "initialTemperature": 20
+      },
+      "fourier_number": 0.02,
+      "time_s": 75.87,
+      "scaled_profile_errors": [
+        0.00030511920943304037,
+        7.592330041735597e-05,
+        1.9079491043491653e-05
+      ],
+      "refinement_ratios": [
+        4.018782215153683,
+        3.979314764963541
+      ],
+      "mean_energy_errors_K": [
+        6.750155989720952e-14,
+        2.5579538487363607e-13,
+        1.0054179711005418e-12
+      ]
+    },
+    {
+      "parameters": {
+        "conductivity": 0.1,
+        "specificHeat": 1500,
+        "density": 1124,
+        "thickness": 0.015,
+        "voltage": 18.02,
+        "resistance": 110,
+        "area": 0.006885,
+        "thermocouple": 40,
+        "initialTemperature": 20
+      },
+      "fourier_number": 0.1,
+      "time_s": 379.35,
+      "scaled_profile_errors": [
+        0.0001569889627652116,
+        3.928345371765764e-05,
+        9.829138205315018e-06
+      ],
+      "refinement_ratios": [
+        3.9963126433215357,
+        3.9966325528331126
+      ],
+      "mean_energy_errors_K": [
+        4.227729277772596e-13,
+        1.3891110484109959e-12,
+        5.787370582766016e-12
+      ]
+    },
+    {
+      "parameters": {
+        "conductivity": 0.1,
+        "specificHeat": 1500,
+        "density": 1124,
+        "thickness": 0.015,
+        "voltage": 18.02,
+        "resistance": 110,
+        "area": 0.006885,
+        "thermocouple": 40,
+        "initialTemperature": 20
+      },
+      "fourier_number": 0.25,
+      "time_s": 948.375,
+      "scaled_profile_errors": [
+        0.00017326254450129945,
+        4.3337310574751696e-05,
+        1.0840627599130596e-05
+      ],
+      "refinement_ratios": [
+        3.9979994652054422,
+        3.997675427779411
+      ],
+      "mean_energy_errors_K": [
+        1.2221335055073723e-12,
+        3.6841640849161195e-12,
+        1.610089839232387e-11
+      ]
+    },
+    {
+      "parameters": {
+        "conductivity": 0.1,
+        "specificHeat": 2000,
+        "density": 1124,
+        "thickness": 0.005,
+        "voltage": 18.02,
+        "resistance": 110,
+        "area": 0.006885,
+        "thermocouple": 40,
+        "initialTemperature": 20
+      },
+      "fourier_number": 0.02,
+      "time_s": 11.24,
+      "scaled_profile_errors": [
+        0.00029815013856729274,
+        7.592330041116906e-05,
+        1.9079491020069766e-05
+      ],
+      "refinement_ratios": [
+        3.9269912787330825,
+        3.9793147695242572
+      ],
+      "mean_energy_errors_K": [
+        3.552713678800501e-15,
+        1.7763568394002505e-14,
+        8.881784197001252e-14
+      ]
+    },
+    {
+      "parameters": {
+        "conductivity": 0.1,
+        "specificHeat": 2000,
+        "density": 1124,
+        "thickness": 0.005,
+        "voltage": 18.02,
+        "resistance": 110,
+        "area": 0.006885,
+        "thermocouple": 40,
+        "initialTemperature": 20
+      },
+      "fourier_number": 0.1,
+      "time_s": 56.2,
+      "scaled_profile_errors": [
+        0.00015656780691575926,
+        3.928345368904316e-05,
+        9.829138095718268e-06
+      ],
+      "refinement_ratios": [
+        3.985591698609452,
+        3.9966325944851326
+      ],
+      "mean_energy_errors_K": [
+        2.4868995751603507e-14,
+        1.0302869668521453e-13,
+        6.039613253960852e-13
+      ]
+    },
+    {
+      "parameters": {
+        "conductivity": 0.1,
+        "specificHeat": 2000,
+        "density": 1124,
+        "thickness": 0.005,
+        "voltage": 18.02,
+        "resistance": 110,
+        "area": 0.006885,
+        "thermocouple": 40,
+        "initialTemperature": 20
+      },
+      "fourier_number": 0.25,
+      "time_s": 140.5,
+      "scaled_profile_errors": [
+        0.00017294717176979547,
+        4.333731049586855e-05,
+        1.0840627285807629e-05
+      ],
+      "refinement_ratios": [
+        3.990722308120227,
+        3.9976755360462435
+      ],
+      "mean_energy_errors_K": [
+        5.3290705182007514e-14,
+        2.8066438062523957e-13,
+        1.6910917111090384e-12
+      ]
+    },
+    {
+      "parameters": {
+        "conductivity": 0.1,
+        "specificHeat": 2000,
+        "density": 1124,
+        "thickness": 0.01,
+        "voltage": 18.02,
+        "resistance": 110,
+        "area": 0.006885,
+        "thermocouple": 40,
+        "initialTemperature": 20
+      },
+      "fourier_number": 0.02,
+      "time_s": 44.96,
+      "scaled_profile_errors": [
+        0.0003041598266170606,
+        7.592330041017472e-05,
+        1.907949101526386e-05
+      ],
+      "refinement_ratios": [
+        4.006146004900218,
+        3.9793147704744856
+      ],
+      "mean_energy_errors_K": [
+        7.815970093361102e-14,
+        2.4868995751603507e-14,
+        1.0658141036401503e-13
+      ]
+    },
+    {
+      "parameters": {
+        "conductivity": 0.1,
+        "specificHeat": 2000,
+        "density": 1124,
+        "thickness": 0.01,
+        "voltage": 18.02,
+        "resistance": 110,
+        "area": 0.006885,
+        "thermocouple": 40,
+        "initialTemperature": 20
+      },
+      "fourier_number": 0.1,
+      "time_s": 224.8,
+      "scaled_profile_errors": [
+        0.00015693094697895278,
+        3.9283453684568696e-05,
+        9.829138067711437e-06
+      ],
+      "refinement_ratios": [
+        3.9948357962374956,
+        3.996632605417785
+      ],
+      "mean_energy_errors_K": [
+        3.943512183468556e-13,
+        1.3145040611561853e-13,
+        6.004086117172847e-13
+      ]
+    },
+    {
+      "parameters": {
+        "conductivity": 0.1,
+        "specificHeat": 2000,
+        "density": 1124,
+        "thickness": 0.01,
+        "voltage": 18.02,
+        "resistance": 110,
+        "area": 0.006885,
+        "thermocouple": 40,
+        "initialTemperature": 20
+      },
+      "fourier_number": 0.25,
+      "time_s": 562,
+      "scaled_profile_errors": [
+        0.00017321902232468188,
+        4.3337310484599526e-05,
+        1.0840627219519272e-05
+      ],
+      "refinement_ratios": [
+        3.996995207772238,
+        3.9976755594517455
+      ],
+      "mean_energy_errors_K": [
+        1.0764722446765518e-12,
+        3.126388037344441e-13,
+        1.829647544582258e-12
+      ]
+    },
+    {
+      "parameters": {
+        "conductivity": 0.1,
+        "specificHeat": 2000,
+        "density": 1124,
+        "thickness": 0.015,
+        "voltage": 18.02,
+        "resistance": 110,
+        "area": 0.006885,
+        "thermocouple": 40,
+        "initialTemperature": 20
+      },
+      "fourier_number": 0.02,
+      "time_s": 101.16,
+      "scaled_profile_errors": [
+        0.000305345577315047,
+        7.609985934827252e-05,
+        1.9079491043491653e-05
+      ],
+      "refinement_ratios": [
+        4.012432873464679,
+        3.9885686245405116
+      ],
+      "mean_energy_errors_K": [
+        2.1316282072803006e-14,
+        7.460698725481052e-14,
+        1.0054179711005418e-12
+      ]
+    },
+    {
+      "parameters": {
+        "conductivity": 0.1,
+        "specificHeat": 2000,
+        "density": 1124,
+        "thickness": 0.015,
+        "voltage": 18.02,
+        "resistance": 110,
+        "area": 0.006885,
+        "thermocouple": 40,
+        "initialTemperature": 20
+      },
+      "fourier_number": 0.1,
+      "time_s": 505.8,
+      "scaled_profile_errors": [
+        0.00015700270569788373,
+        3.9293646177678766e-05,
+        9.829138205315018e-06
+      ],
+      "refinement_ratios": [
+        3.9956257810218445,
+        3.997669516583975
+      ],
+      "mean_energy_errors_K": [
+        5.3290705182007514e-14,
+        3.979039320256561e-13,
+        5.787370582766016e-12
+      ]
+    },
+    {
+      "parameters": {
+        "conductivity": 0.1,
+        "specificHeat": 2000,
+        "density": 1124,
+        "thickness": 0.015,
+        "voltage": 18.02,
+        "resistance": 110,
+        "area": 0.006885,
+        "thermocouple": 40,
+        "initialTemperature": 20
+      },
+      "fourier_number": 0.25,
+      "time_s": 1264.4999999999998,
+      "scaled_profile_errors": [
+        0.00017327284390233747,
+        4.334528291010865e-05,
+        1.0840627577144957e-05
+      ],
+      "refinement_ratios": [
+        3.9975017411162894,
+        3.9984108486018375
+      ],
+      "mean_energy_errors_K": [
+        1.4566126083082054e-13,
+        1.1297629498585593e-12,
+        1.524824710941175e-11
+      ]
+    },
+    {
+      "parameters": {
+        "conductivity": 0.2,
+        "specificHeat": 1000,
+        "density": 1124,
+        "thickness": 0.005,
+        "voltage": 18.02,
+        "resistance": 110,
+        "area": 0.006885,
+        "thermocouple": 40,
+        "initialTemperature": 20
+      },
+      "fourier_number": 0.02,
+      "time_s": 2.81,
+      "scaled_profile_errors": [
+        0.0002981501385676242,
+        7.592330041415202e-05,
+        1.9079491035647532e-05
+      ],
+      "refinement_ratios": [
+        3.9269912785831598,
+        3.979314766431624
+      ],
+      "mean_energy_errors_K": [
+        3.552713678800501e-15,
+        2.1316282072803006e-14,
+        1.2434497875801753e-13
+      ]
+    },
+    {
+      "parameters": {
+        "conductivity": 0.2,
+        "specificHeat": 1000,
+        "density": 1124,
+        "thickness": 0.005,
+        "voltage": 18.02,
+        "resistance": 110,
+        "area": 0.006885,
+        "thermocouple": 40,
+        "initialTemperature": 20
+      },
+      "fourier_number": 0.1,
+      "time_s": 14.05,
+      "scaled_profile_errors": [
+        0.00015656780691509638,
+        3.928345370031218e-05,
+        9.829138156372114e-06
+      ],
+      "refinement_ratios": [
+        3.9855916974492533,
+        3.996632570969122
+      ],
+      "mean_energy_errors_K": [
+        0.0,
+        1.1368683772161603e-13,
+        6.465938895416912e-13
+      ]
+    },
+    {
+      "parameters": {
+        "conductivity": 0.2,
+        "specificHeat": 1000,
+        "density": 1124,
+        "thickness": 0.005,
+        "voltage": 18.02,
+        "resistance": 110,
+        "area": 0.006885,
+        "thermocouple": 40,
+        "initialTemperature": 20
+      },
+      "fourier_number": 0.25,
+      "time_s": 35.125,
+      "scaled_profile_errors": [
+        0.00017294717177145268,
+        4.333731051542361e-05,
+        1.0840627422693086e-05
+      ],
+      "refinement_ratios": [
+        3.990722306357736,
+        3.9976754873711475
+      ],
+      "mean_energy_errors_K": [
+        1.4210854715202004e-14,
+        2.5579538487363607e-13,
+        1.623590151211829e-12
+      ]
+    },
+    {
+      "parameters": {
+        "conductivity": 0.2,
+        "specificHeat": 1000,
+        "density": 1124,
+        "thickness": 0.01,
+        "voltage": 18.02,
+        "resistance": 110,
+        "area": 0.006885,
+        "thermocouple": 40,
+        "initialTemperature": 20
+      },
+      "fourier_number": 0.02,
+      "time_s": 11.24,
+      "scaled_profile_errors": [
+        0.00029815013856729274,
+        7.592330041116906e-05,
+        1.9079491020069766e-05
+      ],
+      "refinement_ratios": [
+        3.9269912787330825,
+        3.9793147695242572
+      ],
+      "mean_energy_errors_K": [
+        3.552713678800501e-15,
+        1.7763568394002505e-14,
+        8.881784197001252e-14
+      ]
+    },
+    {
+      "parameters": {
+        "conductivity": 0.2,
+        "specificHeat": 1000,
+        "density": 1124,
+        "thickness": 0.01,
+        "voltage": 18.02,
+        "resistance": 110,
+        "area": 0.006885,
+        "thermocouple": 40,
+        "initialTemperature": 20
+      },
+      "fourier_number": 0.1,
+      "time_s": 56.2,
+      "scaled_profile_errors": [
+        0.00015656780691575926,
+        3.928345368904316e-05,
+        9.829138095718268e-06
+      ],
+      "refinement_ratios": [
+        3.985591698609452,
+        3.9966325944851326
+      ],
+      "mean_energy_errors_K": [
+        2.4868995751603507e-14,
+        1.0302869668521453e-13,
+        6.039613253960852e-13
+      ]
+    },
+    {
+      "parameters": {
+        "conductivity": 0.2,
+        "specificHeat": 1000,
+        "density": 1124,
+        "thickness": 0.01,
+        "voltage": 18.02,
+        "resistance": 110,
+        "area": 0.006885,
+        "thermocouple": 40,
+        "initialTemperature": 20
+      },
+      "fourier_number": 0.25,
+      "time_s": 140.5,
+      "scaled_profile_errors": [
+        0.00017294717176979547,
+        4.333731049586855e-05,
+        1.0840627285807629e-05
+      ],
+      "refinement_ratios": [
+        3.990722308120227,
+        3.9976755360462435
+      ],
+      "mean_energy_errors_K": [
+        5.3290705182007514e-14,
+        2.8066438062523957e-13,
+        1.6910917111090384e-12
+      ]
+    },
+    {
+      "parameters": {
+        "conductivity": 0.2,
+        "specificHeat": 1000,
+        "density": 1124,
+        "thickness": 0.015,
+        "voltage": 18.02,
+        "resistance": 110,
+        "area": 0.006885,
+        "thermocouple": 40,
+        "initialTemperature": 20
+      },
+      "fourier_number": 0.02,
+      "time_s": 25.29,
+      "scaled_profile_errors": [
+        0.000301006213542988,
+        7.592330042608394e-05,
+        1.9079491078072082e-05
+      ],
+      "refinement_ratios": [
+        3.964609176020164,
+        3.979314758208725
+      ],
+      "mean_energy_errors_K": [
+        1.0658141036401503e-14,
+        2.5224267119483557e-13,
+        1.0054179711005418e-12
+      ]
+    },
+    {
+      "parameters": {
+        "conductivity": 0.2,
+        "specificHeat": 1000,
+        "density": 1124,
+        "thickness": 0.015,
+        "voltage": 18.02,
+        "resistance": 110,
+        "area": 0.006885,
+        "thermocouple": 40,
+        "initialTemperature": 20
+      },
+      "fourier_number": 0.1,
+      "time_s": 126.45,
+      "scaled_profile_errors": [
+        0.00015673814991468035,
+        3.9283453755773444e-05,
+        9.829138370262544e-06
+      ],
+      "refinement_ratios": [
+        3.9899279449593896,
+        3.996632489641526
+      ],
+      "mean_energy_errors_K": [
+        7.460698725481052e-14,
+        1.3642420526593924e-12,
+        5.5990767577895895e-12
+      ]
+    },
+    {
+      "parameters": {
+        "conductivity": 0.2,
+        "specificHeat": 1000,
+        "density": 1124,
+        "thickness": 0.015,
+        "voltage": 18.02,
+        "resistance": 110,
+        "area": 0.006885,
+        "thermocouple": 40,
+        "initialTemperature": 20
+      },
+      "fourier_number": 0.25,
+      "time_s": 316.12499999999994,
+      "scaled_profile_errors": [
+        0.00017307421056622353,
+        4.333731067672529e-05,
+        1.084062798857469e-05
+      ],
+      "refinement_ratios": [
+        3.9936536869412773,
+        3.9976752935715503
+      ],
+      "mean_energy_errors_K": [
+        1.9184653865522705e-13,
+        3.6060043839825084e-12,
+        1.4459544672718039e-11
+      ]
+    },
+    {
+      "parameters": {
+        "conductivity": 0.2,
+        "specificHeat": 1500,
+        "density": 1124,
+        "thickness": 0.005,
+        "voltage": 18.02,
+        "resistance": 110,
+        "area": 0.006885,
+        "thermocouple": 40,
+        "initialTemperature": 20
+      },
+      "fourier_number": 0.02,
+      "time_s": 4.215000000000001,
+      "scaled_profile_errors": [
+        0.00029815013856828706,
+        7.592330041083762e-05,
+        1.9079491017749675e-05
+      ],
+      "refinement_ratios": [
+        3.926991278763322,
+        3.9793147699907756
+      ],
+      "mean_energy_errors_K": [
+        0.0,
+        7.105427357601002e-15,
+        3.197442310920451e-14
+      ]
+    },
+    {
+      "parameters": {
+        "conductivity": 0.2,
+        "specificHeat": 1500,
+        "density": 1124,
+        "thickness": 0.005,
+        "voltage": 18.02,
+        "resistance": 110,
+        "area": 0.006885,
+        "thermocouple": 40,
+        "initialTemperature": 20
+      },
+      "fourier_number": 0.1,
+      "time_s": 21.075000000000003,
+      "scaled_profile_errors": [
+        0.00015656780690449023,
+        3.9283453663853584e-05,
+        9.829138039704606e-06
+      ],
+      "refinement_ratios": [
+        3.9855917008782527,
+        3.9966326146981412
+      ],
+      "mean_energy_errors_K": [
+        1.4210854715202004e-14,
+        1.0658141036401503e-14,
+        1.2079226507921703e-13
+      ]
+    },
+    {
+      "parameters": {
+        "conductivity": 0.2,
+        "specificHeat": 1500,
+        "density": 1124,
+        "thickness": 0.005,
+        "voltage": 18.02,
+        "resistance": 110,
+        "area": 0.006885,
+        "thermocouple": 40,
+        "initialTemperature": 20
+      },
+      "fourier_number": 0.25,
+      "time_s": 52.6875,
+      "scaled_profile_errors": [
+        0.00017294717175620635,
+        4.333731044449507e-05,
+        1.0840627127709898e-05
+      ],
+      "refinement_ratios": [
+        3.9907223125373945,
+        3.997675589608639
+      ],
+      "mean_energy_errors_K": [
+        5.684341886080802e-14,
+        2.4868995751603507e-14,
+        2.948752353404416e-13
+      ]
+    },
+    {
+      "parameters": {
+        "conductivity": 0.2,
+        "specificHeat": 1500,
+        "density": 1124,
+        "thickness": 0.01,
+        "voltage": 18.02,
+        "resistance": 110,
+        "area": 0.006885,
+        "thermocouple": 40,
+        "initialTemperature": 20
+      },
+      "fourier_number": 0.02,
+      "time_s": 16.860000000000003,
+      "scaled_profile_errors": [
+        0.0002981501385679556,
+        7.592330041017472e-05,
+        1.907949101310949e-05
+      ],
+      "refinement_ratios": [
+        3.9269912787932437,
+        3.9793147709238124
+      ],
+      "mean_energy_errors_K": [
+        3.552713678800501e-15,
+        3.552713678800501e-15,
+        2.4868995751603507e-14
+      ]
+    },
+    {
+      "parameters": {
+        "conductivity": 0.2,
+        "specificHeat": 1500,
+        "density": 1124,
+        "thickness": 0.01,
+        "voltage": 18.02,
+        "resistance": 110,
+        "area": 0.006885,
+        "thermocouple": 40,
+        "initialTemperature": 20
+      },
+      "fourier_number": 0.1,
+      "time_s": 84.30000000000001,
+      "scaled_profile_errors": [
+        0.00015656780690879898,
+        3.9283453671476745e-05,
+        9.829138036390188e-06
+      ],
+      "refinement_ratios": [
+        3.985591700214511,
+        3.996632616821387
+      ],
+      "mean_energy_errors_K": [
+        1.0658141036401503e-14,
+        7.105427357601002e-15,
+        7.460698725481052e-14
+      ]
+    },
+    {
+      "parameters": {
+        "conductivity": 0.2,
+        "specificHeat": 1500,
+        "density": 1124,
+        "thickness": 0.01,
+        "voltage": 18.02,
+        "resistance": 110,
+        "area": 0.006885,
+        "thermocouple": 40,
+        "initialTemperature": 20
+      },
+      "fourier_number": 0.25,
+      "time_s": 210.75,
+      "scaled_profile_errors": [
+        0.00017294717176416098,
+        4.333731045808418e-05,
+        1.0840627126384132e-05
+      ],
+      "refinement_ratios": [
+        3.990722311469591,
+        3.9976755913510744
+      ],
+      "mean_energy_errors_K": [
+        2.4868995751603507e-14,
+        5.3290705182007514e-14,
+        1.6342482922482304e-13
+      ]
+    },
+    {
+      "parameters": {
+        "conductivity": 0.2,
+        "specificHeat": 1500,
+        "density": 1124,
+        "thickness": 0.015,
+        "voltage": 18.02,
+        "resistance": 110,
+        "area": 0.006885,
+        "thermocouple": 40,
+        "initialTemperature": 20
+      },
+      "fourier_number": 0.02,
+      "time_s": 37.935,
+      "scaled_profile_errors": [
+        0.0003035646465631891,
+        7.592330042608394e-05,
+        1.9079491078072082e-05
+      ],
+      "refinement_ratios": [
+        3.998306776175098,
+        3.979314758208725
+      ],
+      "mean_energy_errors_K": [
+        4.973799150320701e-14,
+        2.5224267119483557e-13,
+        1.0054179711005418e-12
+      ]
+    },
+    {
+      "parameters": {
+        "conductivity": 0.2,
+        "specificHeat": 1500,
+        "density": 1124,
+        "thickness": 0.015,
+        "voltage": 18.02,
+        "resistance": 110,
+        "area": 0.006885,
+        "thermocouple": 40,
+        "initialTemperature": 20
+      },
+      "fourier_number": 0.1,
+      "time_s": 189.675,
+      "scaled_profile_errors": [
+        0.00015689483660224484,
+        3.9283453755773444e-05,
+        9.829138370262544e-06
+      ],
+      "refinement_ratios": [
+        3.993916562878237,
+        3.996632489641526
+      ],
+      "mean_energy_errors_K": [
+        2.7711166694643907e-13,
+        1.3642420526593924e-12,
+        5.5990767577895895e-12
+      ]
+    },
+    {
+      "parameters": {
+        "conductivity": 0.2,
+        "specificHeat": 1500,
+        "density": 1124,
+        "thickness": 0.015,
+        "voltage": 18.02,
+        "resistance": 110,
+        "area": 0.006885,
+        "thermocouple": 40,
+        "initialTemperature": 20
+      },
+      "fourier_number": 0.25,
+      "time_s": 474.1875,
+      "scaled_profile_errors": [
+        0.00017319191943766576,
+        4.33373106709803e-05,
+        1.084062801089177e-05
+      ],
+      "refinement_ratios": [
+        3.996369796745123,
+        3.997675284811778
+      ],
+      "mean_energy_errors_K": [
+        7.425171588693047e-13,
+        3.4994229736184934e-12,
+        1.48894230278529e-11
+      ]
+    },
+    {
+      "parameters": {
+        "conductivity": 0.2,
+        "specificHeat": 2000,
+        "density": 1124,
+        "thickness": 0.005,
+        "voltage": 18.02,
+        "resistance": 110,
+        "area": 0.006885,
+        "thermocouple": 40,
+        "initialTemperature": 20
+      },
+      "fourier_number": 0.02,
+      "time_s": 5.62,
+      "scaled_profile_errors": [
+        0.0002981501385676242,
+        7.592330041415202e-05,
+        1.9079491035647532e-05
+      ],
+      "refinement_ratios": [
+        3.9269912785831598,
+        3.979314766431624
+      ],
+      "mean_energy_errors_K": [
+        3.552713678800501e-15,
+        2.1316282072803006e-14,
+        1.2434497875801753e-13
+      ]
+    },
+    {
+      "parameters": {
+        "conductivity": 0.2,
+        "specificHeat": 2000,
+        "density": 1124,
+        "thickness": 0.005,
+        "voltage": 18.02,
+        "resistance": 110,
+        "area": 0.006885,
+        "thermocouple": 40,
+        "initialTemperature": 20
+      },
+      "fourier_number": 0.1,
+      "time_s": 28.1,
+      "scaled_profile_errors": [
+        0.00015656780691509638,
+        3.928345370031218e-05,
+        9.829138156372114e-06
+      ],
+      "refinement_ratios": [
+        3.9855916974492533,
+        3.996632570969122
+      ],
+      "mean_energy_errors_K": [
+        0.0,
+        1.1368683772161603e-13,
+        6.465938895416912e-13
+      ]
+    },
+    {
+      "parameters": {
+        "conductivity": 0.2,
+        "specificHeat": 2000,
+        "density": 1124,
+        "thickness": 0.005,
+        "voltage": 18.02,
+        "resistance": 110,
+        "area": 0.006885,
+        "thermocouple": 40,
+        "initialTemperature": 20
+      },
+      "fourier_number": 0.25,
+      "time_s": 70.25,
+      "scaled_profile_errors": [
+        0.00017294717177145268,
+        4.333731051542361e-05,
+        1.0840627422693086e-05
+      ],
+      "refinement_ratios": [
+        3.990722306357736,
+        3.9976754873711475
+      ],
+      "mean_energy_errors_K": [
+        1.4210854715202004e-14,
+        2.5579538487363607e-13,
+        1.623590151211829e-12
+      ]
+    },
+    {
+      "parameters": {
+        "conductivity": 0.2,
+        "specificHeat": 2000,
+        "density": 1124,
+        "thickness": 0.01,
+        "voltage": 18.02,
+        "resistance": 110,
+        "area": 0.006885,
+        "thermocouple": 40,
+        "initialTemperature": 20
+      },
+      "fourier_number": 0.02,
+      "time_s": 22.48,
+      "scaled_profile_errors": [
+        0.0002998099365773113,
+        7.592330041116906e-05,
+        1.9079491020069766e-05
+      ],
+      "refinement_ratios": [
+        3.948852788981317,
+        3.9793147695242572
+      ],
+      "mean_energy_errors_K": [
+        7.105427357601002e-15,
+        1.7763568394002505e-14,
+        8.881784197001252e-14
+      ]
+    },
+    {
+      "parameters": {
+        "conductivity": 0.2,
+        "specificHeat": 2000,
+        "density": 1124,
+        "thickness": 0.01,
+        "voltage": 18.02,
+        "resistance": 110,
+        "area": 0.006885,
+        "thermocouple": 40,
+        "initialTemperature": 20
+      },
+      "fourier_number": 0.1,
+      "time_s": 112.4,
+      "scaled_profile_errors": [
+        0.00015666323159846895,
+        3.928345368904316e-05,
+        9.829138095718268e-06
+      ],
+      "refinement_ratios": [
+        3.9880208303111866,
+        3.9966325944851326
+      ],
+      "mean_energy_errors_K": [
+        6.394884621840902e-14,
+        1.0302869668521453e-13,
+        6.039613253960852e-13
+      ]
+    },
+    {
+      "parameters": {
+        "conductivity": 0.2,
+        "specificHeat": 2000,
+        "density": 1124,
+        "thickness": 0.01,
+        "voltage": 18.02,
+        "resistance": 110,
+        "area": 0.006885,
+        "thermocouple": 40,
+        "initialTemperature": 20
+      },
+      "fourier_number": 0.25,
+      "time_s": 281,
+      "scaled_profile_errors": [
+        0.00017301782600406235,
+        4.333731049586855e-05,
+        1.0840627285807629e-05
+      ],
+      "refinement_ratios": [
+        3.992352640816429,
+        3.9976755360462435
+      ],
+      "mean_energy_errors_K": [
+        1.7053025658242404e-13,
+        2.8066438062523957e-13,
+        1.6910917111090384e-12
+      ]
+    },
+    {
+      "parameters": {
+        "conductivity": 0.2,
+        "specificHeat": 2000,
+        "density": 1124,
+        "thickness": 0.015,
+        "voltage": 18.02,
+        "resistance": 110,
+        "area": 0.006885,
+        "thermocouple": 40,
+        "initialTemperature": 20
+      },
+      "fourier_number": 0.02,
+      "time_s": 50.58,
+      "scaled_profile_errors": [
+        0.0003044769434356047,
+        7.592330042608394e-05,
+        1.9079491078072082e-05
+      ],
+      "refinement_ratios": [
+        4.010322809030568,
+        3.979314758208725
+      ],
+      "mean_energy_errors_K": [
+        6.750155989720952e-14,
+        2.5224267119483557e-13,
+        1.0054179711005418e-12
+      ]
+    },
+    {
+      "parameters": {
+        "conductivity": 0.2,
+        "specificHeat": 2000,
+        "density": 1124,
+        "thickness": 0.015,
+        "voltage": 18.02,
+        "resistance": 110,
+        "area": 0.006885,
+        "thermocouple": 40,
+        "initialTemperature": 20
+      },
+      "fourier_number": 0.1,
+      "time_s": 252.9,
+      "scaled_profile_errors": [
+        0.0001569496752594996,
+        3.9283453755773444e-05,
+        9.829138370262544e-06
+      ],
+      "refinement_ratios": [
+        3.995312536297369,
+        3.996632489641526
+      ],
+      "mean_energy_errors_K": [
+        3.481659405224491e-13,
+        1.3642420526593924e-12,
+        5.5990767577895895e-12
+      ]
+    },
+    {
+      "parameters": {
+        "conductivity": 0.2,
+        "specificHeat": 2000,
+        "density": 1124,
+        "thickness": 0.015,
+        "voltage": 18.02,
+        "resistance": 110,
+        "area": 0.006885,
+        "thermocouple": 40,
+        "initialTemperature": 20
+      },
+      "fourier_number": 0.25,
+      "time_s": 632.2499999999999,
+      "scaled_profile_errors": [
+        0.00017323311734122025,
+        4.333731067672529e-05,
+        1.084062798857469e-05
+      ],
+      "refinement_ratios": [
+        3.9973204298128433,
+        3.9976752935715503
+      ],
+      "mean_energy_errors_K": [
+        9.201528428093297e-13,
+        3.6060043839825084e-12,
+        1.4459544672718039e-11
+      ]
+    },
+    {
+      "parameters": {
+        "conductivity": 0.4,
+        "specificHeat": 1000,
+        "density": 1124,
+        "thickness": 0.005,
+        "voltage": 18.02,
+        "resistance": 110,
+        "area": 0.006885,
+        "thermocouple": 40,
+        "initialTemperature": 20
+      },
+      "fourier_number": 0.02,
+      "time_s": 1.405,
+      "scaled_profile_errors": [
+        0.0002981501385709386,
+        7.592330042078086e-05,
+        1.907949105951134e-05
+      ],
+      "refinement_ratios": [
+        3.92699127828395,
+        3.9793147618019007
+      ],
+      "mean_energy_errors_K": [
+        3.552713678800501e-15,
+        1.7763568394002505e-14,
+        1.0658141036401503e-13
+      ]
+    },
+    {
+      "parameters": {
+        "conductivity": 0.4,
+        "specificHeat": 1000,
+        "density": 1124,
+        "thickness": 0.005,
+        "voltage": 18.02,
+        "resistance": 110,
+        "area": 0.006885,
+        "thermocouple": 40,
+        "initialTemperature": 20
+      },
+      "fourier_number": 0.1,
+      "time_s": 7.025,
+      "scaled_profile_errors": [
+        0.00015656780691907367,
+        3.928345372218734e-05,
+        9.829138265085018e-06
+      ],
+      "refinement_ratios": [
+        3.9855916953311055,
+        3.9966325289908364
+      ],
+      "mean_energy_errors_K": [
+        1.4210854715202004e-14,
+        1.3500311979441904e-13,
+        6.110667527536862e-13
+      ]
+    },
+    {
+      "parameters": {
+        "conductivity": 0.4,
+        "specificHeat": 1000,
+        "density": 1124,
+        "thickness": 0.005,
+        "voltage": 18.02,
+        "resistance": 110,
+        "area": 0.006885,
+        "thermocouple": 40,
+        "initialTemperature": 20
+      },
+      "fourier_number": 0.25,
+      "time_s": 17.5625,
+      "scaled_profile_errors": [
+        0.00017294717177741863,
+        4.333731057375737e-05,
+        1.0840627705744368e-05
+      ],
+      "refinement_ratios": [
+        3.990722301123727,
+        3.9976753883719525
+      ],
+      "mean_energy_errors_K": [
+        3.552713678800501e-14,
+        3.375077994860476e-13,
+        1.5631940186722204e-12
+      ]
+    },
+    {
+      "parameters": {
+        "conductivity": 0.4,
+        "specificHeat": 1000,
+        "density": 1124,
+        "thickness": 0.01,
+        "voltage": 18.02,
+        "resistance": 110,
+        "area": 0.006885,
+        "thermocouple": 40,
+        "initialTemperature": 20
+      },
+      "fourier_number": 0.02,
+      "time_s": 5.62,
+      "scaled_profile_errors": [
+        0.0002981501385676242,
+        7.592330041415202e-05,
+        1.9079491035647532e-05
+      ],
+      "refinement_ratios": [
+        3.9269912785831598,
+        3.979314766431624
+      ],
+      "mean_energy_errors_K": [
+        3.552713678800501e-15,
+        2.1316282072803006e-14,
+        1.2434497875801753e-13
+      ]
+    },
+    {
+      "parameters": {
+        "conductivity": 0.4,
+        "specificHeat": 1000,
+        "density": 1124,
+        "thickness": 0.01,
+        "voltage": 18.02,
+        "resistance": 110,
+        "area": 0.006885,
+        "thermocouple": 40,
+        "initialTemperature": 20
+      },
+      "fourier_number": 0.1,
+      "time_s": 28.1,
+      "scaled_profile_errors": [
+        0.00015656780691509638,
+        3.928345370031218e-05,
+        9.829138156372114e-06
+      ],
+      "refinement_ratios": [
+        3.9855916974492533,
+        3.996632570969122
+      ],
+      "mean_energy_errors_K": [
+        0.0,
+        1.1368683772161603e-13,
+        6.465938895416912e-13
+      ]
+    },
+    {
+      "parameters": {
+        "conductivity": 0.4,
+        "specificHeat": 1000,
+        "density": 1124,
+        "thickness": 0.01,
+        "voltage": 18.02,
+        "resistance": 110,
+        "area": 0.006885,
+        "thermocouple": 40,
+        "initialTemperature": 20
+      },
+      "fourier_number": 0.25,
+      "time_s": 70.25,
+      "scaled_profile_errors": [
+        0.00017294717177145268,
+        4.333731051542361e-05,
+        1.0840627422693086e-05
+      ],
+      "refinement_ratios": [
+        3.990722306357736,
+        3.9976754873711475
+      ],
+      "mean_energy_errors_K": [
+        1.4210854715202004e-14,
+        2.5579538487363607e-13,
+        1.623590151211829e-12
+      ]
+    },
+    {
+      "parameters": {
+        "conductivity": 0.4,
+        "specificHeat": 1000,
+        "density": 1124,
+        "thickness": 0.015,
+        "voltage": 18.02,
+        "resistance": 110,
+        "area": 0.006885,
+        "thermocouple": 40,
+        "initialTemperature": 20
+      },
+      "fourier_number": 0.02,
+      "time_s": 12.645,
+      "scaled_profile_errors": [
+        0.0002981501385762417,
+        7.592330044243508e-05,
+        1.907949114701197e-05
+      ],
+      "refinement_ratios": [
+        3.9269912772337743,
+        3.9793147446872754
+      ],
+      "mean_energy_errors_K": [
+        6.394884621840902e-14,
+        2.4868995751603507e-13,
+        9.734435479913373e-13
+      ]
+    },
+    {
+      "parameters": {
+        "conductivity": 0.4,
+        "specificHeat": 1000,
+        "density": 1124,
+        "thickness": 0.015,
+        "voltage": 18.02,
+        "resistance": 110,
+        "area": 0.006885,
+        "thermocouple": 40,
+        "initialTemperature": 20
+      },
+      "fourier_number": 0.1,
+      "time_s": 63.225,
+      "scaled_profile_errors": [
+        0.0001565678069473567,
+        3.9283453833993704e-05,
+        9.829138692423958e-06
+      ],
+      "refinement_ratios": [
+        3.985591684707511,
+        3.9966323666052608
+      ],
+      "mean_energy_errors_K": [
+        3.161915174132446e-13,
+        1.3322676295501878e-12,
+        5.488942633746774e-12
+      ]
+    },
+    {
+      "parameters": {
+        "conductivity": 0.4,
+        "specificHeat": 1000,
+        "density": 1124,
+        "thickness": 0.015,
+        "voltage": 18.02,
+        "resistance": 110,
+        "area": 0.006885,
+        "thermocouple": 40,
+        "initialTemperature": 20
+      },
+      "fourier_number": 0.25,
+      "time_s": 158.06249999999997,
+      "scaled_profile_errors": [
+        0.00017294717185961623,
+        4.333731086896152e-05,
+        1.0840628798176484e-05
+      ],
+      "refinement_ratios": [
+        3.990722275836505,
+        3.9976750127493847
+      ],
+      "mean_energy_errors_K": [
+        7.958078640513122e-13,
+        3.424815986363683e-12,
+        1.3997691894473974e-11
+      ]
+    },
+    {
+      "parameters": {
+        "conductivity": 0.4,
+        "specificHeat": 1500,
+        "density": 1124,
+        "thickness": 0.005,
+        "voltage": 18.02,
+        "resistance": 110,
+        "area": 0.006885,
+        "thermocouple": 40,
+        "initialTemperature": 20
+      },
+      "fourier_number": 0.02,
+      "time_s": 2.1075000000000004,
+      "scaled_profile_errors": [
+        0.0002981501385696128,
+        7.592330041680356e-05,
+        1.907949102238986e-05
+      ],
+      "refinement_ratios": [
+        3.9269912784722067,
+        3.979314769335684
+      ],
+      "mean_energy_errors_K": [
+        3.552713678800501e-15,
+        0.0,
+        2.842170943040401e-14
+      ]
+    },
+    {
+      "parameters": {
+        "conductivity": 0.4,
+        "specificHeat": 1500,
+        "density": 1124,
+        "thickness": 0.005,
+        "voltage": 18.02,
+        "resistance": 110,
+        "area": 0.006885,
+        "thermocouple": 40,
+        "initialTemperature": 20
+      },
+      "fourier_number": 0.1,
+      "time_s": 10.537500000000001,
+      "scaled_profile_errors": [
+        0.00015656780689653562,
+        3.928345365059591e-05,
+        9.829138035727305e-06
+      ],
+      "refinement_ratios": [
+        3.985591702020847,
+        3.996632614966541
+      ],
+      "mean_energy_errors_K": [
+        1.0658141036401503e-14,
+        1.0658141036401503e-14,
+        8.881784197001252e-14
+      ]
+    },
+    {
+      "parameters": {
+        "conductivity": 0.4,
+        "specificHeat": 1500,
+        "density": 1124,
+        "thickness": 0.005,
+        "voltage": 18.02,
+        "resistance": 110,
+        "area": 0.006885,
+        "thermocouple": 40,
+        "initialTemperature": 20
+      },
+      "fourier_number": 0.25,
+      "time_s": 26.34375,
+      "scaled_profile_errors": [
+        0.00017294717174560023,
+        4.333731041996838e-05,
+        1.0840627083959584e-05
+      ],
+      "refinement_ratios": [
+        3.990722314551204,
+        3.9976756034798724
+      ],
+      "mean_energy_errors_K": [
+        4.618527782440651e-14,
+        1.4210854715202004e-14,
+        1.9539925233402755e-13
+      ]
+    },
+    {
+      "parameters": {
+        "conductivity": 0.4,
+        "specificHeat": 1500,
+        "density": 1124,
+        "thickness": 0.01,
+        "voltage": 18.02,
+        "resistance": 110,
+        "area": 0.006885,
+        "thermocouple": 40,
+        "initialTemperature": 20
+      },
+      "fourier_number": 0.02,
+      "time_s": 8.430000000000001,
+      "scaled_profile_errors": [
+        0.00029815013856828706,
+        7.592330041083762e-05,
+        1.9079491017749675e-05
+      ],
+      "refinement_ratios": [
+        3.926991278763322,
+        3.9793147699907756
+      ],
+      "mean_energy_errors_K": [
+        0.0,
+        7.105427357601002e-15,
+        3.197442310920451e-14
+      ]
+    },
+    {
+      "parameters": {
+        "conductivity": 0.4,
+        "specificHeat": 1500,
+        "density": 1124,
+        "thickness": 0.01,
+        "voltage": 18.02,
+        "resistance": 110,
+        "area": 0.006885,
+        "thermocouple": 40,
+        "initialTemperature": 20
+      },
+      "fourier_number": 0.1,
+      "time_s": 42.150000000000006,
+      "scaled_profile_errors": [
+        0.00015656780690449023,
+        3.9283453663853584e-05,
+        9.829138039704606e-06
+      ],
+      "refinement_ratios": [
+        3.9855917008782527,
+        3.9966326146981412
+      ],
+      "mean_energy_errors_K": [
+        1.4210854715202004e-14,
+        1.0658141036401503e-14,
+        1.2079226507921703e-13
+      ]
+    },
+    {
+      "parameters": {
+        "conductivity": 0.4,
+        "specificHeat": 1500,
+        "density": 1124,
+        "thickness": 0.01,
+        "voltage": 18.02,
+        "resistance": 110,
+        "area": 0.006885,
+        "thermocouple": 40,
+        "initialTemperature": 20
+      },
+      "fourier_number": 0.25,
+      "time_s": 105.375,
+      "scaled_profile_errors": [
+        0.00017294717175620635,
+        4.333731044449507e-05,
+        1.0840627127709898e-05
+      ],
+      "refinement_ratios": [
+        3.9907223125373945,
+        3.997675589608639
+      ],
+      "mean_energy_errors_K": [
+        5.684341886080802e-14,
+        2.4868995751603507e-14,
+        2.948752353404416e-13
+      ]
+    },
+    {
+      "parameters": {
+        "conductivity": 0.4,
+        "specificHeat": 1500,
+        "density": 1124,
+        "thickness": 0.015,
+        "voltage": 18.02,
+        "resistance": 110,
+        "area": 0.006885,
+        "thermocouple": 40,
+        "initialTemperature": 20
+      },
+      "fourier_number": 0.02,
+      "time_s": 18.9675,
+      "scaled_profile_errors": [
+        0.00029815013857579977,
+        7.592330044243508e-05,
+        1.907949114701197e-05
+      ],
+      "refinement_ratios": [
+        3.9269912772279536,
+        3.9793147446872754
+      ],
+      "mean_energy_errors_K": [
+        6.039613253960852e-14,
+        2.4868995751603507e-13,
+        9.734435479913373e-13
+      ]
+    },
+    {
+      "parameters": {
+        "conductivity": 0.4,
+        "specificHeat": 1500,
+        "density": 1124,
+        "thickness": 0.015,
+        "voltage": 18.02,
+        "resistance": 110,
+        "area": 0.006885,
+        "thermocouple": 40,
+        "initialTemperature": 20
+      },
+      "fourier_number": 0.1,
+      "time_s": 94.8375,
+      "scaled_profile_errors": [
+        0.0001565678069473567,
+        3.9283453833993704e-05,
+        9.829138692423958e-06
+      ],
+      "refinement_ratios": [
+        3.985591684707511,
+        3.9966323666052608
+      ],
+      "mean_energy_errors_K": [
+        3.161915174132446e-13,
+        1.3322676295501878e-12,
+        5.488942633746774e-12
+      ]
+    },
+    {
+      "parameters": {
+        "conductivity": 0.4,
+        "specificHeat": 1500,
+        "density": 1124,
+        "thickness": 0.015,
+        "voltage": 18.02,
+        "resistance": 110,
+        "area": 0.006885,
+        "thermocouple": 40,
+        "initialTemperature": 20
+      },
+      "fourier_number": 0.25,
+      "time_s": 237.09375,
+      "scaled_profile_errors": [
+        0.00017294717185961623,
+        4.333731086233268e-05,
+        1.084062881983068e-05
+      ],
+      "refinement_ratios": [
+        3.9907222764469226,
+        3.997675004152533
+      ],
+      "mean_energy_errors_K": [
+        7.958078640513122e-13,
+        3.367972567502875e-12,
+        1.4217960142559605e-11
+      ]
+    },
+    {
+      "parameters": {
+        "conductivity": 0.4,
+        "specificHeat": 2000,
+        "density": 1124,
+        "thickness": 0.005,
+        "voltage": 18.02,
+        "resistance": 110,
+        "area": 0.006885,
+        "thermocouple": 40,
+        "initialTemperature": 20
+      },
+      "fourier_number": 0.02,
+      "time_s": 2.81,
+      "scaled_profile_errors": [
+        0.0002981501385709386,
+        7.592330042078086e-05,
+        1.907949105951134e-05
+      ],
+      "refinement_ratios": [
+        3.92699127828395,
+        3.9793147618019007
+      ],
+      "mean_energy_errors_K": [
+        3.552713678800501e-15,
+        1.7763568394002505e-14,
+        1.0658141036401503e-13
+      ]
+    },
+    {
+      "parameters": {
+        "conductivity": 0.4,
+        "specificHeat": 2000,
+        "density": 1124,
+        "thickness": 0.005,
+        "voltage": 18.02,
+        "resistance": 110,
+        "area": 0.006885,
+        "thermocouple": 40,
+        "initialTemperature": 20
+      },
+      "fourier_number": 0.1,
+      "time_s": 14.05,
+      "scaled_profile_errors": [
+        0.00015656780691907367,
+        3.928345372218734e-05,
+        9.829138265085018e-06
+      ],
+      "refinement_ratios": [
+        3.9855916953311055,
+        3.9966325289908364
+      ],
+      "mean_energy_errors_K": [
+        1.4210854715202004e-14,
+        1.3500311979441904e-13,
+        6.110667527536862e-13
+      ]
+    },
+    {
+      "parameters": {
+        "conductivity": 0.4,
+        "specificHeat": 2000,
+        "density": 1124,
+        "thickness": 0.005,
+        "voltage": 18.02,
+        "resistance": 110,
+        "area": 0.006885,
+        "thermocouple": 40,
+        "initialTemperature": 20
+      },
+      "fourier_number": 0.25,
+      "time_s": 35.125,
+      "scaled_profile_errors": [
+        0.00017294717177741863,
+        4.333731057375737e-05,
+        1.0840627705744368e-05
+      ],
+      "refinement_ratios": [
+        3.990722301123727,
+        3.9976753883719525
+      ],
+      "mean_energy_errors_K": [
+        3.552713678800501e-14,
+        3.375077994860476e-13,
+        1.5631940186722204e-12
+      ]
+    },
+    {
+      "parameters": {
+        "conductivity": 0.4,
+        "specificHeat": 2000,
+        "density": 1124,
+        "thickness": 0.01,
+        "voltage": 18.02,
+        "resistance": 110,
+        "area": 0.006885,
+        "thermocouple": 40,
+        "initialTemperature": 20
+      },
+      "fourier_number": 0.02,
+      "time_s": 11.24,
+      "scaled_profile_errors": [
+        0.0002981501385676242,
+        7.592330041415202e-05,
+        1.9079491035647532e-05
+      ],
+      "refinement_ratios": [
+        3.9269912785831598,
+        3.979314766431624
+      ],
+      "mean_energy_errors_K": [
+        3.552713678800501e-15,
+        2.1316282072803006e-14,
+        1.2434497875801753e-13
+      ]
+    },
+    {
+      "parameters": {
+        "conductivity": 0.4,
+        "specificHeat": 2000,
+        "density": 1124,
+        "thickness": 0.01,
+        "voltage": 18.02,
+        "resistance": 110,
+        "area": 0.006885,
+        "thermocouple": 40,
+        "initialTemperature": 20
+      },
+      "fourier_number": 0.1,
+      "time_s": 56.2,
+      "scaled_profile_errors": [
+        0.00015656780691509638,
+        3.928345370031218e-05,
+        9.829138156372114e-06
+      ],
+      "refinement_ratios": [
+        3.9855916974492533,
+        3.996632570969122
+      ],
+      "mean_energy_errors_K": [
+        0.0,
+        1.1368683772161603e-13,
+        6.465938895416912e-13
+      ]
+    },
+    {
+      "parameters": {
+        "conductivity": 0.4,
+        "specificHeat": 2000,
+        "density": 1124,
+        "thickness": 0.01,
+        "voltage": 18.02,
+        "resistance": 110,
+        "area": 0.006885,
+        "thermocouple": 40,
+        "initialTemperature": 20
+      },
+      "fourier_number": 0.25,
+      "time_s": 140.5,
+      "scaled_profile_errors": [
+        0.00017294717177145268,
+        4.333731051542361e-05,
+        1.0840627422693086e-05
+      ],
+      "refinement_ratios": [
+        3.990722306357736,
+        3.9976754873711475
+      ],
+      "mean_energy_errors_K": [
+        1.4210854715202004e-14,
+        2.5579538487363607e-13,
+        1.623590151211829e-12
+      ]
+    },
+    {
+      "parameters": {
+        "conductivity": 0.4,
+        "specificHeat": 2000,
+        "density": 1124,
+        "thickness": 0.015,
+        "voltage": 18.02,
+        "resistance": 110,
+        "area": 0.006885,
+        "thermocouple": 40,
+        "initialTemperature": 20
+      },
+      "fourier_number": 0.02,
+      "time_s": 25.29,
+      "scaled_profile_errors": [
+        0.00030100621354166226,
+        7.592330044243508e-05,
+        1.907949114701197e-05
+      ],
+      "refinement_ratios": [
+        3.9646091751488686,
+        3.9793147446872754
+      ],
+      "mean_energy_errors_K": [
+        1.4210854715202004e-14,
+        2.4868995751603507e-13,
+        9.734435479913373e-13
+      ]
+    },
+    {
+      "parameters": {
+        "conductivity": 0.4,
+        "specificHeat": 2000,
+        "density": 1124,
+        "thickness": 0.015,
+        "voltage": 18.02,
+        "resistance": 110,
+        "area": 0.006885,
+        "thermocouple": 40,
+        "initialTemperature": 20
+      },
+      "fourier_number": 0.1,
+      "time_s": 126.45,
+      "scaled_profile_errors": [
+        0.00015673814991401747,
+        3.9283453833993704e-05,
+        9.829138692423958e-06
+      ],
+      "refinement_ratios": [
+        3.9899279369978675,
+        3.9966323666052608
+      ],
+      "mean_energy_errors_K": [
+        6.750155989720952e-14,
+        1.3322676295501878e-12,
+        5.488942633746774e-12
+      ]
+    },
+    {
+      "parameters": {
+        "conductivity": 0.4,
+        "specificHeat": 2000,
+        "density": 1124,
+        "thickness": 0.015,
+        "voltage": 18.02,
+        "resistance": 110,
+        "area": 0.006885,
+        "thermocouple": 40,
+        "initialTemperature": 20
+      },
+      "fourier_number": 0.25,
+      "time_s": 316.12499999999994,
+      "scaled_profile_errors": [
+        0.00017307421056313009,
+        4.333731086896152e-05,
+        1.0840628798176484e-05
+      ],
+      "refinement_ratios": [
+        3.9936536691547935,
+        3.9976750127493847
+      ],
+      "mean_energy_errors_K": [
+        1.7053025658242404e-13,
+        3.424815986363683e-12,
+        1.3997691894473974e-11
+      ]
+    }
+  ]
+}

@@ -1,0 +1,143 @@
+{
+  "status": "passed",
+  "source_hashes": {
+    "simulations/surface-tension/app.mjs": "0501f9b55f9d5b555379c9a784f0a857f7d14d0ced02945eafc65dea2fc992ea",
+    "simulations/surface-tension/model.mjs": "0ace7c37a725eb73d413df25fdc3b7a298c4f8525255eda91fd3d85c7d5d6e39",
+    "simulations/surface-tension/index.html": "e8ddd84829b4cf65a7b4b03abbb57663efadbb574fddfdd8291c24b6f7f3bb96",
+    "simulations/surface-tension/lab.css": "2c5b746ab06a64988cbe2bd6ab693c8d00fd28562847716f828b43ef067b4238",
+    "simulations/surface-tension/chart.mjs": "d9de3df2659ebe798d162b1aaaa42686654346c822e72edf9c1a515302532942",
+    "simulations/surface-tension/observations.json": "c87dceda9238d239b03cfd8111bc1bfc32969440d6cb44ceedbfae7592c23a1a"
+  },
+  "source_record_sha256": "73771ee2814f2174ea2f8013e2ae956aad1d8961e36e105d4cdbc1eea41f03b5",
+  "interaction_checks": 5,
+  "visual_status": "passed",
+  "exports_status": "passed",
+  "exports": [
+    {
+      "filename": "surface-tension-export.json",
+      "sha256": "c8f30c7cbb9290f5e9d65defe65f5152f8beedcf682a64e94f908f2835a7fa52",
+      "bytes": 9171
+    },
+    {
+      "filename": "surface-tension-export.csv",
+      "sha256": "68f91f632ef7841156151af5c53d7c41321e4b805b5f00b0f63ba407dbf00314",
+      "bytes": 2089
+    }
+  ],
+  "fonts": {
+    "body": "\"Times New Roman\", SimSun, \"Songti SC\", serif",
+    "simsun": true,
+    "times": true,
+    "mathjax": 8,
+    "math_errors": []
+  },
+  "browser": "fixed Chromium1243 via playwright-cli isolated rollout-mechanics",
+  "layout": {
+    "mobile": {
+      "viewport": 390,
+      "document": 390,
+      "overflow": false,
+      "svg_text": [
+        {
+          "text": "力敏传感器",
+          "size": 14.488890634741773
+        },
+        {
+          "text": "峰值附着状态：内外两侧接触线",
+          "size": 14.488890549517174
+        }
+      ],
+      "math_errors": []
+    }
+  },
+  "interaction": [
+    {
+      "name": "标定与拉脱闭环",
+      "status": "passed"
+    },
+    {
+      "name": "润湿角影响",
+      "status": "passed"
+    },
+    {
+      "name": "拉脱状态",
+      "status": "passed"
+    },
+    {
+      "name": "非法几何",
+      "status": "passed"
+    },
+    {
+      "name": "电压对拒绝",
+      "status": "passed"
+    }
+  ],
+  "background": {
+    "status": "not-applicable"
+  },
+  "checked_at_utc": "2026-10-16T16:15:17.471Z",
+  "screenshots": [
+    {
+      "path": "docs/assets/simulations/surface-tension/frontend-01-f3e6686e9a4f.png",
+      "sha256": "f3e6686e9a4f8025d7c7589d622d3936e5ca6da91423bb913dc47df2d759c812"
+    },
+    {
+      "path": "docs/assets/simulations/surface-tension/frontend-02-e583997386c9.png",
+      "sha256": "e583997386c9a2c310cd74be94b1be2b2a8d7b4b46cd7c8c5472eaf78cc31e89"
+    },
+    {
+      "path": "docs/assets/simulations/surface-tension/frontend-03-11abc4fbfbb8.png",
+      "sha256": "11abc4fbfbb86803897a101ee44cc309bda861e14029dbad37558bd74131d2a8"
+    },
+    {
+      "path": "docs/assets/simulations/surface-tension/frontend-04-c42bd6f16b98.png",
+      "sha256": "c42bd6f16b98e0644b5dcc112e5540e245635861db2fe3b9eae8f691b5075fa1"
+    }
+  ],
+  "schema_version": 1,
+  "experiment_id": "course-02/surface-tension",
+  "numerical": {
+    "status": "passed",
+    "reference_sha256": "ed924acbb93503c4ca5355e3f5452309bdb0bed4419c123f2e9e1f8f5e167fff",
+    "source_files": {
+      "simulations/surface-tension/index.html": "e8ddd84829b4cf65a7b4b03abbb57663efadbb574fddfdd8291c24b6f7f3bb96",
+      "simulations/surface-tension/model.mjs": "0ace7c37a725eb73d413df25fdc3b7a298c4f8525255eda91fd3d85c7d5d6e39",
+      "simulations/surface-tension/app.mjs": "0501f9b55f9d5b555379c9a784f0a857f7d14d0ced02945eafc65dea2fc992ea",
+      "simulations/surface-tension/chart.mjs": "d9de3df2659ebe798d162b1aaaa42686654346c822e72edf9c1a515302532942",
+      "simulations/surface-tension/lab.css": "2c5b746ab06a64988cbe2bd6ab693c8d00fd28562847716f828b43ef067b4238",
+      "simulations/surface-tension/observations.json": "c87dceda9238d239b03cfd8111bc1bfc32969440d6cb44ceedbfae7592c23a1a",
+      "docs/surface-tension-model-evidence.md": "07af54ab524bd4ed087f90130b94914eaa547a95bc959b991f6656ca0565173e",
+      "docs/surface-tension-references.json": "7c3fee765bd211c519b72ca83c05d986ad6ffa7d0a3bafb378583ed3e2dde7aa",
+      "docs/surface-tension-references.bib": "131c26fb799890e854eb7ef14748562697ccc3e9c163b8f45cc356eaad5bfcbd",
+      "docs/simulation/surface-tension-reference.json": "ed924acbb93503c4ca5355e3f5452309bdb0bed4419c123f2e9e1f8f5e167fff",
+      "scripts/validate_surface_tension_simulation.py": "21bf169253ef2a181ab1604c5355494cbc369e9a092e3e7cdfb29d65436f3d7b",
+      "tests/surface-tension-model.test.mjs": "b15760edf2faa09772a04dfacad9ec0d77894fb9dca434b962592dcbf54753aa"
+    }
+  },
+  "scientific_evidence": {
+    "status": "verified",
+    "decision_source_files": {
+      "docs/surface-tension-references.json": "7c3fee765bd211c519b72ca83c05d986ad6ffa7d0a3bafb378583ed3e2dde7aa",
+      "docs/surface-tension-model-evidence.md": "07af54ab524bd4ed087f90130b94914eaa547a95bc959b991f6656ca0565173e",
+      "simulations/surface-tension/model.mjs": "0ace7c37a725eb73d413df25fdc3b7a298c4f8525255eda91fd3d85c7d5d6e39"
+    },
+    "core_references": [
+      {
+        "id": "he2022-surface-error",
+        "pdf_sha256": "c2af1147ab1de860daa321a2b2c2c29b011b75f732d19b071a9224bfc616f379",
+        "locators": [
+          {
+            "page": 105,
+            "location": "§1.2式1–6",
+            "supports": "吊环内外周界、润湿余弦、线性传感器及差分"
+          },
+          {
+            "page": 106,
+            "location": "表2",
+            "supports": "温度依赖转引数据，非精确校准"
+          }
+        ]
+      }
+    ]
+  }
+}

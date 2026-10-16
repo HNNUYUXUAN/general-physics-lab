@@ -1,5 +1,8 @@
 [普通物理实验 2](../README.md) · [项目首页](../../../README.md) · [使用指南](../../../docs/usage.md)
 
+<!-- virtual-laboratory-entry -->
+[在线虚拟实验](https://hnnuyuxuan.github.io/general-physics-lab/simulations/moment-of-inertia/) · [模型依据与参数来源](../../../docs/moment-of-inertia-model-evidence.md)
+
 # 刚体转动惯量
 
 **把质量移离转轴，观察转动惯量怎样按距离平方增加。**

@@ -1,0 +1,175 @@
+{
+  "status": "passed",
+  "source_hashes": {
+    "simulations/michelson-interferometer/app.mjs": "9ab967160ebd5abe875790439f99d0dfbc4cd9265697bab126de851928d60694",
+    "simulations/michelson-interferometer/chart.mjs": "749c2ac73739c15955a77acfea0d24a5358ce3a607c165eeaf525cc23d24dfc6",
+    "simulations/michelson-interferometer/index.html": "5c9140e9bf97f8b918eac7b3305dd4af70927476b3333f2976b67d9048ebe79e",
+    "simulations/michelson-interferometer/lab.css": "563b5c59678bccbd142ae8ed2702da7e32a2a80acf5806434cf7cecc2d0b8927",
+    "simulations/michelson-interferometer/model.mjs": "431b17991ce7f2324c4d3535311dd55b54110a59ffca4c648146e592745a2eee",
+    "simulations/michelson-interferometer/observations.json": "f710ad2baf55913bf490c41c02c6c72d3383e02eddce58c8b21204629568f25f"
+  },
+  "source_record_sha256": "32d34f87f06daaf59b736777360441ac1cd924c3f63bd29e08b3facaa164a71d",
+  "interaction_checks": 5,
+  "visual_status": "passed",
+  "exports_status": "passed",
+  "exports": [
+    {
+      "filename": "michelson-interferometer-michelson-experiment.json",
+      "sha256": "2fe656c0580eef4415803fd10b4e5a6cc47b9fb78b80d660ce21b06e2f0f544e",
+      "bytes": 2310
+    },
+    {
+      "filename": "michelson-interferometer-michelson-records.csv",
+      "sha256": "46c7114e616d49756b4ec56c7a486b1ba002bdb41580068a70bf81425be68a51",
+      "bytes": 295
+    }
+  ],
+  "fonts": {
+    "h1": {
+      "fonts": [
+        {
+          "familyName": "SimSun",
+          "postScriptName": "SimSun",
+          "isCustomFont": false,
+          "glyphCount": 10
+        }
+      ]
+    },
+    "#count": {
+      "fonts": [
+        {
+          "familyName": "Times New Roman",
+          "postScriptName": "TimesNewRomanPSMT",
+          "isCustomFont": false,
+          "glyphCount": 1
+        }
+      ]
+    }
+  },
+  "browser": null,
+  "layout": {
+    "mobile": {
+      "width": 390,
+      "scrollWidth": 390,
+      "mathErrors": 0,
+      "mathObjects": 6
+    }
+  },
+  "interaction": [
+    {
+      "name": "100条纹往返位移",
+      "status": "passed"
+    },
+    {
+      "name": "非法计数不保存",
+      "status": "passed"
+    },
+    {
+      "name": "反向使手动区间失效",
+      "status": "passed"
+    },
+    {
+      "name": "零倾角均匀场",
+      "status": "passed"
+    },
+    {
+      "name": "真实双格式导出与刷新恢复",
+      "status": "passed"
+    }
+  ],
+  "background": {
+    "status": "not-applicable"
+  },
+  "checked_at_utc": null,
+  "screenshots": [
+    {
+      "path": "docs/assets/simulations/michelson-interferometer/frontend-01-c963a949177d.png",
+      "sha256": "c963a949177da8f837f665ffd083a31ba472fdae5d272918480a19cbbf9020c8"
+    },
+    {
+      "path": "docs/assets/simulations/michelson-interferometer/frontend-02-d8b96876c253.png",
+      "sha256": "d8b96876c2538ee39f905f9d145949a34f4019cfee07f3fd222e7f8d4409fce5"
+    },
+    {
+      "path": "docs/assets/simulations/michelson-interferometer/frontend-03-8d825b58b801.png",
+      "sha256": "8d825b58b8019a6cac8adf440c4fd5622640fd21a099e27c22c1c01ea7145302"
+    },
+    {
+      "path": "docs/assets/simulations/michelson-interferometer/frontend-04-301932db507c.png",
+      "sha256": "301932db507ce24016d4ec309d39c30fa03d17cdb2ec0d7811efd71da109e2b3"
+    },
+    {
+      "path": "docs/assets/simulations/michelson-interferometer/frontend-05-8a7d75e499ea.png",
+      "sha256": "8a7d75e499ea6dbdfc0bea6fa154633549f5496bbe07d7070b709a71e96bc139"
+    },
+    {
+      "path": "docs/assets/simulations/michelson-interferometer/frontend-06-53f0e7fc0d71.png",
+      "sha256": "53f0e7fc0d711d9f47bc169d46e976428e74543df012434acff5f8b3319aa406"
+    },
+    {
+      "path": "docs/assets/simulations/michelson-interferometer/frontend-07-8d87666ecc3e.png",
+      "sha256": "8d87666ecc3e1b6f5285aeea944e8df007c492521d2ac1a9f12e37fae6de3ddf"
+    }
+  ],
+  "schema_version": 1,
+  "experiment_id": "course-04/michelson-interferometer",
+  "numerical": {
+    "status": "passed",
+    "reference_sha256": "66c6ef045b68ffc567183731ed91b78dc48445536a40cd251f2304bba5420cc4",
+    "source_files": {
+      "simulations/michelson-interferometer/index.html": "5c9140e9bf97f8b918eac7b3305dd4af70927476b3333f2976b67d9048ebe79e",
+      "simulations/michelson-interferometer/model.mjs": "431b17991ce7f2324c4d3535311dd55b54110a59ffca4c648146e592745a2eee",
+      "simulations/michelson-interferometer/app.mjs": "9ab967160ebd5abe875790439f99d0dfbc4cd9265697bab126de851928d60694",
+      "simulations/michelson-interferometer/chart.mjs": "749c2ac73739c15955a77acfea0d24a5358ce3a607c165eeaf525cc23d24dfc6",
+      "simulations/michelson-interferometer/lab.css": "563b5c59678bccbd142ae8ed2702da7e32a2a80acf5806434cf7cecc2d0b8927",
+      "simulations/michelson-interferometer/observations.json": "f710ad2baf55913bf490c41c02c6c72d3383e02eddce58c8b21204629568f25f",
+      "docs/michelson-interferometer-model-evidence.md": "086686183ed73b4bf10e674b861dace617b478bb29d8c7df1eeba7fab607d617",
+      "docs/michelson-interferometer-references.json": "06d591797f083b7a35853a6c3f1dd5001cb97bdb57c9335ebf56a0d71edc1ffc",
+      "docs/michelson-interferometer-references.bib": "4c27668646b851fb7a7ff428cfbdafdef63657afca18d056198ad55f5235767b",
+      "docs/simulation/michelson-interferometer-reference.json": "788e4ba9694b1a9da68d649c021f1b8a3ef13c892b2f64eb888436739851c1bf",
+      "scripts/validate_michelson_interferometer_simulation.py": "9647f78a4639f9c4cbd5e9aa0de6a17a1b20d6c2f031042c767806f50ae3a469",
+      "tests/michelson-interferometer-model.test.mjs": "57e650432363ec9ecc75d77a80dcfb8da21704a26af269157dc59d0bc3f30c99"
+    }
+  },
+  "scientific_evidence": {
+    "status": "verified",
+    "decision_source_files": {
+      "docs/michelson-interferometer-references.json": "06d591797f083b7a35853a6c3f1dd5001cb97bdb57c9335ebf56a0d71edc1ffc",
+      "docs/michelson-interferometer-model-evidence.md": "086686183ed73b4bf10e674b861dace617b478bb29d8c7df1eeba7fab607d617",
+      "simulations/michelson-interferometer/model.mjs": "431b17991ce7f2324c4d3535311dd55b54110a59ffca4c648146e592745a2eee"
+    },
+    "core_references": [
+      {
+        "id": "Zhang2023MichelsonPlatform",
+        "pdf_sha256": "603ee518c55f5ef58c0cb20aa60ac6d56a56431f489e632a3a27b7d425b97d9c",
+        "locators": [
+          {
+            "printed_pages": "119-120",
+            "pdf_pages": [
+              1,
+              2
+            ],
+            "location": "第1节、图1及未编号光程/强度关系",
+            "role": "虚拟空气膜、往返光程及相干cos平方强度"
+          },
+          {
+            "printed_pages": "122",
+            "pdf_pages": [
+              4
+            ],
+            "location": "第3节，近轴等厚限讨论",
+            "role": "角度相关项可忽略时的近似直条纹，区别完整非定域图样"
+          },
+          {
+            "printed_pages": "123",
+            "pdf_pages": [
+              5
+            ],
+            "location": "参考文献7/14/15",
+            "role": "更完整波长计数与条纹几何的后续候选，目标尚未核查"
+          }
+        ]
+      }
+    ]
+  }
+}

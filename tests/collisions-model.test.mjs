@@ -1,0 +1,9 @@
+import test from'node:test';import assert from'node:assert/strict';import{DEFAULT_PARAMETERS as P,solve,motion,gateReadings,fromGate,energyLossFormula,validateParameters}from'../simulations/collisions/model.mjs';const near=(a,b)=>assert.ok(Math.abs(a-b)<1e-12);
+test('momentum and restitution throughout domain',()=>{for(const mass1 of[.05,.34175,1])for(const mass2 of[.05,.15449,1])for(const restitution of[0,.4,1]){const p={...P,mass1,mass2,restitution},q=solve(p);near(q.momentumDifference,0);near(q.restitution,restitution);near(q.energyLoss,energyLossFormula(p));assert.ok(q.energyLoss>=-1e-12);}});
+test('equal mass elastic velocity exchange',()=>{const q=solve({...P,mass1:.3,mass2:.3});near(q.v1,0);near(q.v2,P.incident);});
+test('adhesion yields common speed',()=>{const q=solve({...P,restitution:0});near(q.v1,q.v2);});
+test('light projectile rebounds elastically',()=>assert.ok(solve({...P,mass1:.1,mass2:.5}).v1<0));
+test('motion continuous at impact and never interpenetrates',()=>{const tc=.7/P.incident,a=motion(P,tc-1e-10),b=motion(P,tc+1e-10);assert.ok(Math.abs(a.x1-b.x1)<1e-8);for(let t=0;t<3;t+=.01)assert.ok(motion(P,t).x2-motion(P,t).x1>=.1-1e-12);});
+test('photogate inversion keeps direction and stationary identity',()=>{for(const p of[P,{...P,mass1:.1,mass2:.5},{...P,mass1:.3,mass2:.3}]){const q=solve(p),r=fromGate(p,gateReadings(p));near(q.v1,r.v1);near(q.v2,r.v2);near(q.incident,r.incident);}});
+test('scale speed doubles p and quadruples E',()=>{const a=solve(P),b=solve({...P,incident:P.incident*2});near(b.momentumIn,2*a.momentumIn);near(b.energyIn,4*a.energyIn);});
+test('invalid records rejected',()=>{assert.throws(()=>validateParameters({...P,restitution:1.01}));assert.throws(()=>fromGate(P,{incidentTime:0,time1:1,time2:1,direction1:1,direction2:1}));assert.throws(()=>motion(P,-1));});

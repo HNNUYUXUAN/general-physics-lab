@@ -1,5 +1,8 @@
 [普通物理实验 2](../README.md) · [项目首页](../../../README.md) · [使用指南](../../../docs/usage.md)
 
+<!-- virtual-laboratory-entry -->
+[在线虚拟实验](https://hnnuyuxuan.github.io/general-physics-lab/simulations/liquid-viscosity/) · [模型依据与参数来源](../../../docs/liquid-viscosity-model-evidence.md)
+
 # 液体粘度系数的测量
 
 **从小球的缓慢下落，估计液体的黏滞阻力。**

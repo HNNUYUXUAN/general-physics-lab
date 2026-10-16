@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "experiment": "course-01/mechanical-equivalent-heat",
+  "references": [
+    {
+      "id": "cai2016-electrothermal",
+      "title": "电热法测量热功当量实验的新探究",
+      "authors": [
+        "蔡晨",
+        "李朝荣",
+        "李英姿",
+        "王选"
+      ],
+      "journal": "大学物理",
+      "year": 2016,
+      "volume": 35,
+      "issue": 5,
+      "pages": "53–56",
+      "doi": "10.16854/j.cnki.1000-0712.2016.0080",
+      "url": "https://doi.org/10.16854/j.cnki.1000-0712.2016.0080",
+      "full_text_status": "obtained_and_read",
+      "pdf_sha256": "5b2e2c394806f977ffd62161df0a2d1ea40f17463731632adc2f3055118c17ea",
+      "locators": [
+        {
+          "page": 53,
+          "location": "式1–5",
+          "supports": "均温总热容、电功和牛顿冷却微分方程"
+        },
+        {
+          "page": 54,
+          "location": "式7–8",
+          "supports": "精确指数温度响应与冷却拟合"
+        },
+        {
+          "page": 55,
+          "location": "§2.2",
+          "supports": "SI热容下能量比为无量纲约1"
+        }
+      ],
+      "symbol_mapping": "K_paper [1/s] = H [W/K] / C_eff [J/K]; C_eff=J_lab [J/cal] C_lab [cal/K]",
+      "verification_notes": [
+        "cooling regression slope is negative; K=-slope",
+        "relative error of temperature increment uses denominator 1-exp(-Kt), not remaining-temperature normalization",
+        "paper 500/530s range is not adopted as universal optimum"
+      ]
+    }
+  ]
+}

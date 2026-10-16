@@ -1,5 +1,8 @@
 [普通物理实验 2](../README.md) · [项目首页](../../../README.md) · [使用指南](../../../docs/usage.md)
 
+<!-- virtual-laboratory-entry -->
+[在线虚拟实验](https://hnnuyuxuan.github.io/general-physics-lab/simulations/surface-tension/) · [模型依据与参数来源](../../../docs/surface-tension-model-evidence.md)
+
 # 表面张力系数的测定(拉脱法)
 
 **让液膜的拉力变成电压，再换算表面张力。**

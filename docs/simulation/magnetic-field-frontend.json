@@ -1,0 +1,233 @@
+{
+  "status": "passed",
+  "source_hashes": {
+    "simulations/magnetic-field/model.mjs": "803df9763e72bf9ed772c54c3e481d6aed37e69b0f42fe3c3364b21f1b74ad3d",
+    "simulations/magnetic-field/app.mjs": "5c4b32f2b1c869b67f7fd0c343c536940a7388adbd3a2fdc512309f5109aa727",
+    "simulations/magnetic-field/chart.mjs": "701c38c99d6db1df0ac90500005477498abd4cb0449c77311e3dd39ebf9d5849",
+    "simulations/magnetic-field/lab.css": "d007905ee689191cb3d99caebe74d1e5e924b6fd068c7a81d2417c75219b6169",
+    "simulations/magnetic-field/observations.json": "f9d94c355bb726e160673d2447a425caf2dd15fc83c6e5434611cb63a7e58afe",
+    "simulations/magnetic-field/diagram.mjs": "d3ce9acf4a65ff772d0bc54758c07a79fde9f83a5d5d05caa0010c91c1e785fe",
+    "simulations/magnetic-field/ui-config.json": "2d38e26b8910822438d175f0c7eb7cfd7025400dc80ec085ef358a04e384fc4f",
+    "simulations/magnetic-field/index.html": "44cb3d97c2fe738dd66de88a2c6fee91124c1176fbb729aa4799c65baed152a6"
+  },
+  "source_record_sha256": "57ccb70f3334efe11c58b9eade916254de746b7e1ad5f5264148717f66e83180",
+  "interaction_checks": 17,
+  "visual_status": "passed",
+  "exports_status": "passed",
+  "exports": [
+    {
+      "filename": "1-magnetic-field-records.csv",
+      "sha256": "d5307b05cbfe17f72c055e6633879fd7803f05277b9b183320de0e4fd9869313",
+      "bytes": 766
+    },
+    {
+      "filename": "2-magnetic-field-records.json",
+      "sha256": "e7a9c6bedb173322c2e4f33ab4e4de52afad43d447ee9a3c2dcdb48af80622d7",
+      "bytes": 2171
+    }
+  ],
+  "fonts": {
+    "h1": [
+      {
+        "familyName": "SimSun",
+        "postScriptName": "SimSun",
+        "isCustomFont": false,
+        "glyphCount": 8
+      }
+    ],
+    "#summary": [
+      {
+        "familyName": "Times New Roman",
+        "postScriptName": "TimesNewRomanPSMT",
+        "isCustomFont": false,
+        "glyphCount": 37
+      },
+      {
+        "familyName": "SimSun",
+        "postScriptName": "SimSun",
+        "isCustomFont": false,
+        "glyphCount": 2
+      }
+    ]
+  },
+  "browser": "fixed Playwright Chromium 1243",
+  "layout": {
+    "wide": {
+      "width": 1280,
+      "scrollWidth": 1280,
+      "math": 2,
+      "mathErrors": 0
+    },
+    "narrow": {
+      "width": 390,
+      "scrollWidth": 390,
+      "math": 2,
+      "mathErrors": 0
+    }
+  },
+  "interaction": [
+    {
+      "name": "coils=single",
+      "status": "passed"
+    },
+    {
+      "name": "coils=double",
+      "status": "passed"
+    },
+    {
+      "name": "current_mA=100",
+      "status": "passed"
+    },
+    {
+      "name": "current_mA=800",
+      "status": "passed"
+    },
+    {
+      "name": "radius_cm=8",
+      "status": "passed"
+    },
+    {
+      "name": "radius_cm=15",
+      "status": "passed"
+    },
+    {
+      "name": "spacingRatio=0.5",
+      "status": "passed"
+    },
+    {
+      "name": "spacingRatio=1.5",
+      "status": "passed"
+    },
+    {
+      "name": "positionRatio=-2",
+      "status": "passed"
+    },
+    {
+      "name": "positionRatio=2",
+      "status": "passed"
+    },
+    {
+      "name": "原表 readings",
+      "status": "passed"
+    },
+    {
+      "name": "默认设置读数与记录",
+      "status": "passed"
+    },
+    {
+      "name": "测量闭环与同组分析",
+      "status": "passed"
+    },
+    {
+      "name": "非法编辑blur后不得记录",
+      "status": "passed"
+    },
+    {
+      "name": "恢复删除与清空",
+      "status": "passed"
+    },
+    {
+      "name": "真实CSV/JSON导出与元数据",
+      "status": "passed"
+    },
+    {
+      "name": "restore",
+      "status": "passed"
+    }
+  ],
+  "background": {
+    "status": "not-applicable"
+  },
+  "checked_at_utc": "2026-10-16T16:13:33.646Z",
+  "screenshots": [
+    {
+      "path": "docs/assets/simulations/magnetic-field/frontend-01-6bc4761bf5bf.png",
+      "sha256": "6bc4761bf5bf779ddab0417c26ae8f3affa61a9b67c1c9b7a83dfa736e0551b1"
+    },
+    {
+      "path": "docs/assets/simulations/magnetic-field/frontend-02-77e51adeaeb5.png",
+      "sha256": "77e51adeaeb58cd141b1e4071bff70e1fc9fbf816b05c9a135ba5e4263feda94"
+    },
+    {
+      "path": "docs/assets/simulations/magnetic-field/frontend-03-0ecfea581ba7.png",
+      "sha256": "0ecfea581ba7c6c6e68792d11ea0efc13d3f5ab406ef6a10764ccd3f3d9ef755"
+    },
+    {
+      "path": "docs/assets/simulations/magnetic-field/frontend-04-6ac35589902f.png",
+      "sha256": "6ac35589902f3915ae3f6844e3db8a13b807e50efb0ef34ae25b5a25debf0901"
+    },
+    {
+      "path": "docs/assets/simulations/magnetic-field/frontend-05-4a9d698b65aa.png",
+      "sha256": "4a9d698b65aa4bb09d9bbf0bec3229d0e20f84fa68a9c387f3f5a9387fa75402"
+    },
+    {
+      "path": "docs/assets/simulations/magnetic-field/frontend-06-6346c0caca0a.png",
+      "sha256": "6346c0caca0a23cf8ae6f87b5b4234b473854d7a4474d1bd32774c4c081dd996"
+    },
+    {
+      "path": "docs/assets/simulations/magnetic-field/frontend-07-e06fe6968942.png",
+      "sha256": "e06fe6968942a7c52b5398c7509c69df17512fac5a579b59150dc0dad8f72355"
+    },
+    {
+      "path": "docs/assets/simulations/magnetic-field/frontend-08-d3c0ae57dbc5.png",
+      "sha256": "d3c0ae57dbc5c13d6aee0d030496d80906fb2c91a61082a2469093f4267e5035"
+    },
+    {
+      "path": "docs/assets/simulations/magnetic-field/frontend-09-70d420a0dfff.png",
+      "sha256": "70d420a0dfff2e7abb10030b2ec7e0323059dc55d7cb8caa58dc8d2ff406b54e"
+    },
+    {
+      "path": "docs/assets/simulations/magnetic-field/frontend-10-8469ca96796c.png",
+      "sha256": "8469ca96796c3ccd41a906e4fa6f18f7781d0f18dda678d44bff8bd945733ca6"
+    },
+    {
+      "path": "docs/assets/simulations/magnetic-field/frontend-11-5647409950a2.png",
+      "sha256": "5647409950a2df4f95699b0678b587e17139c95c8b679889972221dc799afda0"
+    },
+    {
+      "path": "docs/assets/simulations/magnetic-field/frontend-12-5dca2fd9d648.png",
+      "sha256": "5dca2fd9d6482664363fa3c93064173d53c37f1db3d79a36f0bd75fd1bea93e9"
+    }
+  ],
+  "schema_version": 1,
+  "experiment_id": "course-03/magnetic-field",
+  "numerical": {
+    "status": "passed",
+    "reference_sha256": "883f1b37b2ba57660c66de564f29f77ce85d3087aaaf01fd1333811f20e50ceb",
+    "source_files": {
+      "simulations/magnetic-field/index.html": "44cb3d97c2fe738dd66de88a2c6fee91124c1176fbb729aa4799c65baed152a6",
+      "simulations/magnetic-field/model.mjs": "803df9763e72bf9ed772c54c3e481d6aed37e69b0f42fe3c3364b21f1b74ad3d",
+      "simulations/magnetic-field/app.mjs": "5c4b32f2b1c869b67f7fd0c343c536940a7388adbd3a2fdc512309f5109aa727",
+      "simulations/magnetic-field/chart.mjs": "701c38c99d6db1df0ac90500005477498abd4cb0449c77311e3dd39ebf9d5849",
+      "simulations/magnetic-field/lab.css": "d007905ee689191cb3d99caebe74d1e5e924b6fd068c7a81d2417c75219b6169",
+      "simulations/magnetic-field/observations.json": "f9d94c355bb726e160673d2447a425caf2dd15fc83c6e5434611cb63a7e58afe",
+      "docs/magnetic-field-model-evidence.md": "8984c4c4d4e00d7f091fd1be78b26e7e9bc89fe6d6f5d36cc406ca31b2daf8ca",
+      "docs/magnetic-field-references.json": "7c62d11b386261802da0db58cfa9eafcba2cba16fe6c42e190053102a18a8fc9",
+      "docs/magnetic-field-references.bib": "539ef158a2310e883eaf5f5c0ff4e9d7f08a74c5ef5cde4167835615370c4a2f",
+      "docs/simulation/magnetic-field-reference.json": "883f1b37b2ba57660c66de564f29f77ce85d3087aaaf01fd1333811f20e50ceb",
+      "simulations/magnetic-field/diagram.mjs": "d3ce9acf4a65ff772d0bc54758c07a79fde9f83a5d5d05caa0010c91c1e785fe",
+      "simulations/magnetic-field/ui-config.json": "2d38e26b8910822438d175f0c7eb7cfd7025400dc80ec085ef358a04e384fc4f",
+      "scripts/validate_magnetic_field_simulation.py": "7b55c82d84ad8431c4cea6b0afcb43a6df18e21ad481d36c6896a4db6dba4473",
+      "tests/magnetic-field-model.test.mjs": "f624764098bb43f791b2abe7fc9957ada1275e8344bacd91c7e13311506f1485"
+    }
+  },
+  "scientific_evidence": {
+    "status": "verified",
+    "decision_source_files": {
+      "docs/magnetic-field-references.json": "7c62d11b386261802da0db58cfa9eafcba2cba16fe6c42e190053102a18a8fc9",
+      "docs/magnetic-field-model-evidence.md": "8984c4c4d4e00d7f091fd1be78b26e7e9bc89fe6d6f5d36cc406ca31b2daf8ca",
+      "simulations/magnetic-field/model.mjs": "803df9763e72bf9ed772c54c3e481d6aed37e69b0f42fe3c3364b21f1b74ad3d"
+    },
+    "core_references": [
+      {
+        "id": "zhang2026magnetic",
+        "pdf_sha256": "b07d262db0bf2bd801262f0129b38a0650a652dfadebda46d9fefcacad85fc4d",
+        "locators": [
+          "p.30 section 1.1 equations (3)–(5), circular coil axial field and two-coil superposition",
+          "p.31 sections 1.2–1.3, independent apparatus dimensions and D=2R measurement scenario",
+          "p.35 section 2.4, apparatus-dependent measurement errors"
+        ]
+      }
+    ]
+  }
+}

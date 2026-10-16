@@ -1,0 +1,490 @@
+{
+  "schema_version": 1,
+  "experiment": "course-02/pohl-resonance",
+  "model_sha256": "dd17fef4235b83c8a068204012e736b952e5ac9ef409d6514795c3dea3165e6e",
+  "validator_sha256": "9a1daf404037a468b47e7d4c7eed0c8464633ff9e8186695a60e2448102e190f",
+  "environment": {
+    "python": "3.14.7",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1"
+  },
+  "method": "DOP853 angle/velocity plus independent input-work and dissipated-energy states; complex two-real-equation response; exact free extrema logarithmic slope",
+  "case_count": 36,
+  "tolerances": {
+    "absolute": 1e-08
+  },
+  "max_state_absolute_error": 5.966061152051783e-11,
+  "max_energy_balance_error": 6.229017301961903e-12,
+  "status": "passed",
+  "failures": [],
+  "cases": [
+    {
+      "parameters": {
+        "period": 1.5,
+        "beta": 0.05,
+        "forcing": 0.005,
+        "ratio": 0.8,
+        "initialAngle": 0.03490658503988659
+      },
+      "max_state_absolute_error": 1.1331895274566128e-11,
+      "complex_response_error": 1.0842021724855044e-19,
+      "energy_balance_error": 4.798002273265212e-13,
+      "decay_beta_error": 0.0
+    },
+    {
+      "parameters": {
+        "period": 1.5,
+        "beta": 0.05,
+        "forcing": 0.005,
+        "ratio": 1,
+        "initialAngle": 0.03490658503988659
+      },
+      "max_state_absolute_error": 1.2114143022046164e-11,
+      "complex_response_error": 0.0,
+      "energy_balance_error": 6.723753498416585e-13,
+      "decay_beta_error": 0.0
+    },
+    {
+      "parameters": {
+        "period": 1.5,
+        "beta": 0.05,
+        "forcing": 0.005,
+        "ratio": 1.2,
+        "initialAngle": 0.03490658503988659
+      },
+      "max_state_absolute_error": 1.1459938033253625e-11,
+      "complex_response_error": 1.0842021724855044e-19,
+      "energy_balance_error": 4.798002273265212e-13,
+      "decay_beta_error": 0.0
+    },
+    {
+      "parameters": {
+        "period": 1.5,
+        "beta": 0.05,
+        "forcing": 0.02,
+        "ratio": 0.8,
+        "initialAngle": 0.03490658503988659
+      },
+      "max_state_absolute_error": 1.1331895274566128e-11,
+      "complex_response_error": 4.336808689942018e-19,
+      "energy_balance_error": 5.63886177334938e-13,
+      "decay_beta_error": 0.0
+    },
+    {
+      "parameters": {
+        "period": 1.5,
+        "beta": 0.05,
+        "forcing": 0.02,
+        "ratio": 1,
+        "initialAngle": 0.03490658503988659
+      },
+      "max_state_absolute_error": 3.7481802384053964e-11,
+      "complex_response_error": 0.0,
+      "energy_balance_error": 6.229017301961903e-12,
+      "decay_beta_error": 0.0
+    },
+    {
+      "parameters": {
+        "period": 1.5,
+        "beta": 0.05,
+        "forcing": 0.02,
+        "ratio": 1.2,
+        "initialAngle": 0.03490658503988659
+      },
+      "max_state_absolute_error": 1.1331895274566128e-11,
+      "complex_response_error": 4.336808689942018e-19,
+      "energy_balance_error": 5.156205323819663e-13,
+      "decay_beta_error": 0.0
+    },
+    {
+      "parameters": {
+        "period": 1.5,
+        "beta": 0.12,
+        "forcing": 0.005,
+        "ratio": 0.8,
+        "initialAngle": 0.03490658503988659
+      },
+      "max_state_absolute_error": 5.760770332985388e-12,
+      "complex_response_error": 2.7755575615628914e-17,
+      "energy_balance_error": 5.117104656671145e-13,
+      "decay_beta_error": 4.163336342344337e-17
+    },
+    {
+      "parameters": {
+        "period": 1.5,
+        "beta": 0.12,
+        "forcing": 0.005,
+        "ratio": 1,
+        "initialAngle": 0.03490658503988659
+      },
+      "max_state_absolute_error": 5.760770332985388e-12,
+      "complex_response_error": 0.0,
+      "energy_balance_error": 5.041782963344232e-13,
+      "decay_beta_error": 4.163336342344337e-17
+    },
+    {
+      "parameters": {
+        "period": 1.5,
+        "beta": 0.12,
+        "forcing": 0.005,
+        "ratio": 1.2,
+        "initialAngle": 0.03490658503988659
+      },
+      "max_state_absolute_error": 5.760770332985388e-12,
+      "complex_response_error": 1.0842021724855044e-19,
+      "energy_balance_error": 5.548131398747103e-13,
+      "decay_beta_error": 4.163336342344337e-17
+    },
+    {
+      "parameters": {
+        "period": 1.5,
+        "beta": 0.12,
+        "forcing": 0.02,
+        "ratio": 0.8,
+        "initialAngle": 0.03490658503988659
+      },
+      "max_state_absolute_error": 1.6138444747237912e-11,
+      "complex_response_error": 2.7755575615628914e-17,
+      "energy_balance_error": 5.041782963344232e-13,
+      "decay_beta_error": 4.163336342344337e-17
+    },
+    {
+      "parameters": {
+        "period": 1.5,
+        "beta": 0.12,
+        "forcing": 0.02,
+        "ratio": 1,
+        "initialAngle": 0.03490658503988659
+      },
+      "max_state_absolute_error": 7.859907169560643e-12,
+      "complex_response_error": 0.0,
+      "energy_balance_error": 6.742245650670498e-13,
+      "decay_beta_error": 4.163336342344337e-17
+    },
+    {
+      "parameters": {
+        "period": 1.5,
+        "beta": 0.12,
+        "forcing": 0.02,
+        "ratio": 1.2,
+        "initialAngle": 0.03490658503988659
+      },
+      "max_state_absolute_error": 5.760770332985388e-12,
+      "complex_response_error": 4.336808689942018e-19,
+      "energy_balance_error": 5.431584002013601e-13,
+      "decay_beta_error": 4.163336342344337e-17
+    },
+    {
+      "parameters": {
+        "period": 1.5,
+        "beta": 0.4,
+        "forcing": 0.005,
+        "ratio": 0.8,
+        "initialAngle": 0.03490658503988659
+      },
+      "max_state_absolute_error": 3.447409024914805e-12,
+      "complex_response_error": 5.551115123125783e-17,
+      "energy_balance_error": 4.646031823152263e-13,
+      "decay_beta_error": 1.1102230246251565e-16
+    },
+    {
+      "parameters": {
+        "period": 1.5,
+        "beta": 0.4,
+        "forcing": 0.005,
+        "ratio": 1,
+        "initialAngle": 0.03490658503988659
+      },
+      "max_state_absolute_error": 3.440969731371979e-12,
+      "complex_response_error": 0.0,
+      "energy_balance_error": 4.64254069215686e-13,
+      "decay_beta_error": 1.1102230246251565e-16
+    },
+    {
+      "parameters": {
+        "period": 1.5,
+        "beta": 0.4,
+        "forcing": 0.005,
+        "ratio": 1.2,
+        "initialAngle": 0.03490658503988659
+      },
+      "max_state_absolute_error": 3.387873315219281e-12,
+      "complex_response_error": 0.0,
+      "energy_balance_error": 4.582198336045007e-13,
+      "decay_beta_error": 1.1102230246251565e-16
+    },
+    {
+      "parameters": {
+        "period": 1.5,
+        "beta": 0.4,
+        "forcing": 0.02,
+        "ratio": 0.8,
+        "initialAngle": 0.03490658503988659
+      },
+      "max_state_absolute_error": 6.93769672786837e-12,
+      "complex_response_error": 5.551115123125783e-17,
+      "energy_balance_error": 4.5232741163747647e-13,
+      "decay_beta_error": 1.1102230246251565e-16
+    },
+    {
+      "parameters": {
+        "period": 1.5,
+        "beta": 0.4,
+        "forcing": 0.02,
+        "ratio": 1,
+        "initialAngle": 0.03490658503988659
+      },
+      "max_state_absolute_error": 3.331307452114629e-12,
+      "complex_response_error": 0.0,
+      "energy_balance_error": 4.5232741163747647e-13,
+      "decay_beta_error": 1.1102230246251565e-16
+    },
+    {
+      "parameters": {
+        "period": 1.5,
+        "beta": 0.4,
+        "forcing": 0.02,
+        "ratio": 1.2,
+        "initialAngle": 0.03490658503988659
+      },
+      "max_state_absolute_error": 3.331307452114629e-12,
+      "complex_response_error": 0.0,
+      "energy_balance_error": 4.5232741163747647e-13,
+      "decay_beta_error": 1.1102230246251565e-16
+    },
+    {
+      "parameters": {
+        "period": 1.8,
+        "beta": 0.05,
+        "forcing": 0.005,
+        "ratio": 0.8,
+        "initialAngle": 0.03490658503988659
+      },
+      "max_state_absolute_error": 7.72408179083861e-12,
+      "complex_response_error": 2.168404344971009e-19,
+      "energy_balance_error": 3.3864144127759843e-13,
+      "decay_beta_error": 6.938893903907228e-18
+    },
+    {
+      "parameters": {
+        "period": 1.8,
+        "beta": 0.05,
+        "forcing": 0.005,
+        "ratio": 1,
+        "initialAngle": 0.03490658503988659
+      },
+      "max_state_absolute_error": 9.221954797022924e-12,
+      "complex_response_error": 0.0,
+      "energy_balance_error": 5.023724491959314e-13,
+      "decay_beta_error": 6.938893903907228e-18
+    },
+    {
+      "parameters": {
+        "period": 1.8,
+        "beta": 0.05,
+        "forcing": 0.005,
+        "ratio": 1.2,
+        "initialAngle": 0.03490658503988659
+      },
+      "max_state_absolute_error": 7.80674830336281e-12,
+      "complex_response_error": 0.0,
+      "energy_balance_error": 3.3864144127759843e-13,
+      "decay_beta_error": 6.938893903907228e-18
+    },
+    {
+      "parameters": {
+        "period": 1.8,
+        "beta": 0.05,
+        "forcing": 0.02,
+        "ratio": 0.8,
+        "initialAngle": 0.03490658503988659
+      },
+      "max_state_absolute_error": 1.08692915778974e-11,
+      "complex_response_error": 8.673617379884035e-19,
+      "energy_balance_error": 3.3864144127759843e-13,
+      "decay_beta_error": 6.938893903907228e-18
+    },
+    {
+      "parameters": {
+        "period": 1.8,
+        "beta": 0.05,
+        "forcing": 0.02,
+        "ratio": 1,
+        "initialAngle": 0.03490658503988659
+      },
+      "max_state_absolute_error": 3.091570055513415e-11,
+      "complex_response_error": 0.0,
+      "energy_balance_error": 5.395794921980723e-12,
+      "decay_beta_error": 6.938893903907228e-18
+    },
+    {
+      "parameters": {
+        "period": 1.8,
+        "beta": 0.05,
+        "forcing": 0.02,
+        "ratio": 1.2,
+        "initialAngle": 0.03490658503988659
+      },
+      "max_state_absolute_error": 7.72408179083861e-12,
+      "complex_response_error": 0.0,
+      "energy_balance_error": 3.3864144127759843e-13,
+      "decay_beta_error": 6.938893903907228e-18
+    },
+    {
+      "parameters": {
+        "period": 1.8,
+        "beta": 0.12,
+        "forcing": 0.005,
+        "ratio": 0.8,
+        "initialAngle": 0.03490658503988659
+      },
+      "max_state_absolute_error": 3.4840116902579155e-12,
+      "complex_response_error": 0.0,
+      "energy_balance_error": 2.4851128099800945e-13,
+      "decay_beta_error": 4.163336342344337e-17
+    },
+    {
+      "parameters": {
+        "period": 1.8,
+        "beta": 0.12,
+        "forcing": 0.005,
+        "ratio": 1,
+        "initialAngle": 0.03490658503988659
+      },
+      "max_state_absolute_error": 3.909633033982729e-12,
+      "complex_response_error": 0.0,
+      "energy_balance_error": 3.9927696565689175e-13,
+      "decay_beta_error": 4.163336342344337e-17
+    },
+    {
+      "parameters": {
+        "period": 1.8,
+        "beta": 0.12,
+        "forcing": 0.005,
+        "ratio": 1.2,
+        "initialAngle": 0.03490658503988659
+      },
+      "max_state_absolute_error": 4.045028201282719e-12,
+      "complex_response_error": 1.0842021724855044e-19,
+      "energy_balance_error": 2.541456628479821e-13,
+      "decay_beta_error": 4.163336342344337e-17
+    },
+    {
+      "parameters": {
+        "period": 1.8,
+        "beta": 0.12,
+        "forcing": 0.02,
+        "ratio": 0.8,
+        "initialAngle": 0.03490658503988659
+      },
+      "max_state_absolute_error": 5.966061152051783e-11,
+      "complex_response_error": 0.0,
+      "energy_balance_error": 4.2139729206081e-13,
+      "decay_beta_error": 4.163336342344337e-17
+    },
+    {
+      "parameters": {
+        "period": 1.8,
+        "beta": 0.12,
+        "forcing": 0.02,
+        "ratio": 1,
+        "initialAngle": 0.03490658503988659
+      },
+      "max_state_absolute_error": 6.711235733813936e-12,
+      "complex_response_error": 0.0,
+      "energy_balance_error": 6.07416894560231e-13,
+      "decay_beta_error": 4.163336342344337e-17
+    },
+    {
+      "parameters": {
+        "period": 1.8,
+        "beta": 0.12,
+        "forcing": 0.02,
+        "ratio": 1.2,
+        "initialAngle": 0.03490658503988659
+      },
+      "max_state_absolute_error": 4.442370082902158e-12,
+      "complex_response_error": 4.336808689942018e-19,
+      "energy_balance_error": 2.504446303119856e-13,
+      "decay_beta_error": 4.163336342344337e-17
+    },
+    {
+      "parameters": {
+        "period": 1.8,
+        "beta": 0.4,
+        "forcing": 0.005,
+        "ratio": 0.8,
+        "initialAngle": 0.03490658503988659
+      },
+      "max_state_absolute_error": 3.097575581451073e-12,
+      "complex_response_error": 5.551115123125783e-17,
+      "energy_balance_error": 2.0822666507713805e-13,
+      "decay_beta_error": 0.0
+    },
+    {
+      "parameters": {
+        "period": 1.8,
+        "beta": 0.4,
+        "forcing": 0.005,
+        "ratio": 1,
+        "initialAngle": 0.03490658503988659
+      },
+      "max_state_absolute_error": 2.1112139814150055e-12,
+      "complex_response_error": 0.0,
+      "energy_balance_error": 2.5426188932087257e-13,
+      "decay_beta_error": 0.0
+    },
+    {
+      "parameters": {
+        "period": 1.8,
+        "beta": 0.4,
+        "forcing": 0.005,
+        "ratio": 1.2,
+        "initialAngle": 0.03490658503988659
+      },
+      "max_state_absolute_error": 2.0873580641733724e-12,
+      "complex_response_error": 4.440892098500626e-16,
+      "energy_balance_error": 3.109561219627466e-13,
+      "decay_beta_error": 0.0
+    },
+    {
+      "parameters": {
+        "period": 1.8,
+        "beta": 0.4,
+        "forcing": 0.02,
+        "ratio": 0.8,
+        "initialAngle": 0.03490658503988659
+      },
+      "max_state_absolute_error": 4.116951571320193e-12,
+      "complex_response_error": 5.551115123125783e-17,
+      "energy_balance_error": 4.2765574068126533e-13,
+      "decay_beta_error": 0.0
+    },
+    {
+      "parameters": {
+        "period": 1.8,
+        "beta": 0.4,
+        "forcing": 0.02,
+        "ratio": 1,
+        "initialAngle": 0.03490658503988659
+      },
+      "max_state_absolute_error": 2.5362212330293232e-12,
+      "complex_response_error": 0.0,
+      "energy_balance_error": 4.203872493169225e-13,
+      "decay_beta_error": 0.0
+    },
+    {
+      "parameters": {
+        "period": 1.8,
+        "beta": 0.4,
+        "forcing": 0.02,
+        "ratio": 1.2,
+        "initialAngle": 0.03490658503988659
+      },
+      "max_state_absolute_error": 2.158231926507881e-12,
+      "complex_response_error": 4.440892098500626e-16,
+      "energy_balance_error": 3.469603077066452e-13,
+      "decay_beta_error": 0.0
+    }
+  ]
+}

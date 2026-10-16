@@ -1,0 +1,165 @@
+{
+  "status": "passed",
+  "source_hashes": {
+    "simulations/young-modulus/app.mjs": "26d9fd0b9ab627855a2cdf26aad649f9e358f4e5e14c6bdbe0ea322ab60273bb",
+    "simulations/young-modulus/model.mjs": "342f0998f21586cd54fca9198ebcfc33355062986696d875d8a83dc6d217ca01",
+    "simulations/young-modulus/index.html": "4de6f2fe19592f581ee968ee144500e41cd1fd392506beb0d226ff8682120450",
+    "simulations/young-modulus/lab.css": "f7cf64cf269d459e3a70dd4fa9f51571cf5015331cd1807c6ccf0bc0fd66f1b7",
+    "simulations/young-modulus/chart.mjs": "d9de3df2659ebe798d162b1aaaa42686654346c822e72edf9c1a515302532942",
+    "simulations/young-modulus/observations.json": "ded8817355b80e3f93083ffb7e3a6b6b33735c18aca9d368e0a6ae70546fcc4f"
+  },
+  "source_record_sha256": "28721a7ade2c428b4a7a85151bf5a36d278caaeb8f35dec32249dd666f88eaed",
+  "interaction_checks": 5,
+  "visual_status": "passed",
+  "exports_status": "passed",
+  "exports": [
+    {
+      "filename": "young-modulus-export.json",
+      "sha256": "1e788ab683761964924de3020c0500e06a1782f70eb30195c42a35a542f81b98",
+      "bytes": 7701
+    },
+    {
+      "filename": "young-modulus-export.csv",
+      "sha256": "3b11a07d4fb65b76abcf2cf79575d7dd6b39d2990621a447715f1401f8461333",
+      "bytes": 1634
+    }
+  ],
+  "fonts": {
+    "body": "\"Times New Roman\", SimSun, \"Songti SC\", serif",
+    "simsun": true,
+    "times": true,
+    "mathjax": 13,
+    "math_errors": []
+  },
+  "browser": "fixed Chromium1243 via playwright-cli isolated rollout-mechanics",
+  "layout": {
+    "mobile": {
+      "viewport": 390,
+      "document": 390,
+      "overflow": false,
+      "svg_text": [
+        {
+          "text": "5.0 kg",
+          "size": 14.488157109965584
+        },
+        {
+          "text": "金属丝与载荷",
+          "size": 14.488157487953934
+        },
+        {
+          "text": "入射光与反射读数光路",
+          "size": 14.488158202891954
+        },
+        {
+          "text": "标尺位移 32.536 mm",
+          "size": 14.488156571826757
+        },
+        {
+          "text": "转镜光杠杆",
+          "size": 14.488155044724097
+        }
+      ],
+      "math_errors": []
+    }
+  },
+  "interaction": [
+    {
+      "name": "默认六级加载回归",
+      "status": "passed"
+    },
+    {
+      "name": "零差灵敏度",
+      "status": "passed"
+    },
+    {
+      "name": "操作标尺记录",
+      "status": "passed"
+    },
+    {
+      "name": "零载荷条件",
+      "status": "passed"
+    },
+    {
+      "name": "非法材料输入",
+      "status": "passed"
+    }
+  ],
+  "background": {
+    "status": "not-applicable"
+  },
+  "checked_at_utc": "2026-10-16T16:35:06.501Z",
+  "screenshots": [
+    {
+      "path": "docs/assets/simulations/young-modulus/frontend-01-d039ec574ad6.png",
+      "sha256": "d039ec574ad633e374ff6a545a469065edbe13ebcb3baa16f3e0008c58469bd3"
+    },
+    {
+      "path": "docs/assets/simulations/young-modulus/frontend-02-621895a8c5fb.png",
+      "sha256": "621895a8c5fb282c33b9a6cadfbe11fdf140a3f7442db64e74d2b18d916a3b7e"
+    },
+    {
+      "path": "docs/assets/simulations/young-modulus/frontend-03-7b98953f7096.png",
+      "sha256": "7b98953f70963d0cc7d5eed67737537f8bd3132239126afefc42cc495be05f5a"
+    },
+    {
+      "path": "docs/assets/simulations/young-modulus/frontend-04-33f026525249.png",
+      "sha256": "33f026525249045a7cd7b8dfc9e40c4547f7aabec60abea81bf493ee8a30e62a"
+    }
+  ],
+  "schema_version": 1,
+  "experiment_id": "course-02/young-modulus",
+  "numerical": {
+    "status": "passed",
+    "reference_sha256": "e85dfc4f2c0a6ae4476b696f75fecf2fd5c40877e80812c6a72dfc62d890fc70",
+    "source_files": {
+      "simulations/young-modulus/index.html": "4de6f2fe19592f581ee968ee144500e41cd1fd392506beb0d226ff8682120450",
+      "simulations/young-modulus/model.mjs": "342f0998f21586cd54fca9198ebcfc33355062986696d875d8a83dc6d217ca01",
+      "simulations/young-modulus/app.mjs": "26d9fd0b9ab627855a2cdf26aad649f9e358f4e5e14c6bdbe0ea322ab60273bb",
+      "simulations/young-modulus/chart.mjs": "d9de3df2659ebe798d162b1aaaa42686654346c822e72edf9c1a515302532942",
+      "simulations/young-modulus/lab.css": "f7cf64cf269d459e3a70dd4fa9f51571cf5015331cd1807c6ccf0bc0fd66f1b7",
+      "simulations/young-modulus/observations.json": "ded8817355b80e3f93083ffb7e3a6b6b33735c18aca9d368e0a6ae70546fcc4f",
+      "docs/young-modulus-model-evidence.md": "fbb97a9a21d3f933f2f6458746465821441590eaf67c859593f4cd93ffe70516",
+      "docs/young-modulus-references.json": "f8191e42ca184c4c483d2e5533448fa730fc0830d11805d73daad4e5572863ac",
+      "docs/young-modulus-references.bib": "c75e83e199ad6d576bfaf0ec2969843085ba1bb6cd10fca702bdbf58afc73c67",
+      "docs/simulation/young-modulus-reference.json": "e85dfc4f2c0a6ae4476b696f75fecf2fd5c40877e80812c6a72dfc62d890fc70",
+      "scripts/validate_young_modulus_simulation.py": "585d73d32235074c9b3755937dbbe61250c20978647d87386ed0a1418400152d",
+      "tests/young-modulus-model.test.mjs": "123d1a507f4426ba4bb6a978068ec9379a153f4c1e4b777070aa86b1f59f0365"
+    }
+  },
+  "scientific_evidence": {
+    "status": "verified",
+    "decision_source_files": {
+      "docs/young-modulus-references.json": "f8191e42ca184c4c483d2e5533448fa730fc0830d11805d73daad4e5572863ac",
+      "docs/young-modulus-model-evidence.md": "fbb97a9a21d3f933f2f6458746465821441590eaf67c859593f4cd93ffe70516",
+      "simulations/young-modulus/model.mjs": "342f0998f21586cd54fca9198ebcfc33355062986696d875d8a83dc6d217ca01"
+    },
+    "core_references": [
+      {
+        "id": "zhang2022-optical-lever",
+        "pdf_sha256": "6eee6207bf9144990c07d8441244f3cef382cd137f62290540343fdbdb2a9208",
+        "locators": [
+          {
+            "page": 29,
+            "location": "式1–3",
+            "supports": "轴向线弹性和传统光杠杆小角反演"
+          },
+          {
+            "page": 30,
+            "location": "式4",
+            "supports": "含小角近似的几何关系"
+          },
+          {
+            "page": 31,
+            "location": "操作讨论",
+            "supports": "预拉伸和加载卸载"
+          },
+          {
+            "page": 32,
+            "location": "式7–8",
+            "supports": "逐差和斜率处理"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,6 +1,14 @@
 {
   "status": "passed",
-  "source_record_sha256": "f0d96f8655f6215bb7be8fe2a4cf72e93bb0a6c9dff8fd256eec47f0ecac089e",
+  "source_hashes": {
+    "simulations/polarization/app.mjs": "6cf5c3419cee65ea185e36fdf8093b72c6f56ccd3ae6babcda6f91374ead0905",
+    "simulations/polarization/chart.mjs": "d8ede33d60f3aa0fc4b0fe4f52ee4151d369927b1abb08b44507cde65135d90f",
+    "simulations/polarization/index.html": "2b2869d6b90d30ef04f2239831d2275aa37d987049053927db6d17fe4eaf0125",
+    "simulations/polarization/lab.css": "44775a742344aa00b5998f2697a5cf4129789e42174cc33a3346d4cd646f5428",
+    "simulations/polarization/model.mjs": "e0e0c9a71ea742242a3593c0403db9823e3026a35184a20cebde227012f31298",
+    "simulations/polarization/observations.json": "a9048b3d478f79d9161f7761dc93ebee1186e6707b39fe91ccb917a0c993c984"
+  },
+  "source_record_sha256": "ffa83dd844e23b41e3c3ef895c07174e03659c351e412efd33a07f5f0e37c3dd",
   "interaction_checks": 6,
   "visual_status": "passed",
   "exports_status": "passed",
@@ -115,7 +123,7 @@
   "experiment_id": "course-04/polarization",
   "numerical": {
     "status": "passed",
-    "reference_sha256": "44053f25d9c5e0c86d025cec36cde7baeb41a661c2715898dc1ac8f99bc6da30",
+    "reference_sha256": "dafad48c45a07ba02700c2e4297a4f924d67d7cf07683e97b0bc29e92f7d1018",
     "source_files": {
       "simulations/polarization/index.html": "2b2869d6b90d30ef04f2239831d2275aa37d987049053927db6d17fe4eaf0125",
       "simulations/polarization/model.mjs": "e0e0c9a71ea742242a3593c0403db9823e3026a35184a20cebde227012f31298",
@@ -192,13 +200,5 @@
         ]
       }
     ]
-  },
-  "source_hashes": {
-    "simulations/polarization/app.mjs": "6cf5c3419cee65ea185e36fdf8093b72c6f56ccd3ae6babcda6f91374ead0905",
-    "simulations/polarization/chart.mjs": "d8ede33d60f3aa0fc4b0fe4f52ee4151d369927b1abb08b44507cde65135d90f",
-    "simulations/polarization/index.html": "2b2869d6b90d30ef04f2239831d2275aa37d987049053927db6d17fe4eaf0125",
-    "simulations/polarization/lab.css": "44775a742344aa00b5998f2697a5cf4129789e42174cc33a3346d4cd646f5428",
-    "simulations/polarization/model.mjs": "e0e0c9a71ea742242a3593c0403db9823e3026a35184a20cebde227012f31298",
-    "simulations/polarization/observations.json": "a9048b3d478f79d9161f7761dc93ebee1186e6707b39fe91ccb917a0c993c984"
   }
 }

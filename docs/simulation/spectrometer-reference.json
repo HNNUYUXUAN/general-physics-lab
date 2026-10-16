@@ -1,0 +1,168 @@
+{
+  "experiment_id": "course-04/spectrometer",
+  "status": "passed",
+  "created_at": "2026-10-16T14:16:23.067053+00:00",
+  "environment": {
+    "python": "3.14.7",
+    "numpy": "2.5.4"
+  },
+  "model_sha256": "139753e2f75fa828b83645aa60f9bdd92f477114cf45c0a61779f19c51ea33a8",
+  "input_hashes": {
+    "experiments/course-04/spectrometer/experiment.json": "5a4eb7f3bdd57ed1900157ef288fc79ca7f7749655950fdfa20d753ab8bb458c",
+    "experiments/course-04/spectrometer/data/observations-01.csv": "bb65b9d1c453d7af74ac7aade519bae048751b60d30e89118023a2716126ba68",
+    "experiments/course-04/spectrometer/data/observations-02.csv": "0bd363d28b245eeb08707bbcc61d2e61c09a577255b6ad51d458a1fa58e5da90",
+    "experiments/course-04/spectrometer/data/provenance.json": "8f87afdf98e531806cfaf70489cbf9e20347a868594784956db70d276e99a825"
+  },
+  "method": "unit complex-number quotient phase, independently of modulo angular subtraction",
+  "case_count": 27,
+  "cases": [
+    {
+      "deviation_deg": 10,
+      "zero_deg": 0,
+      "eccentricity_arcmin": 0
+    },
+    {
+      "deviation_deg": 10,
+      "zero_deg": 0,
+      "eccentricity_arcmin": 5
+    },
+    {
+      "deviation_deg": 10,
+      "zero_deg": 0,
+      "eccentricity_arcmin": 10
+    },
+    {
+      "deviation_deg": 10,
+      "zero_deg": 180,
+      "eccentricity_arcmin": 0
+    },
+    {
+      "deviation_deg": 10,
+      "zero_deg": 180,
+      "eccentricity_arcmin": 5
+    },
+    {
+      "deviation_deg": 10,
+      "zero_deg": 180,
+      "eccentricity_arcmin": 10
+    },
+    {
+      "deviation_deg": 10,
+      "zero_deg": 359.9,
+      "eccentricity_arcmin": 0
+    },
+    {
+      "deviation_deg": 10,
+      "zero_deg": 359.9,
+      "eccentricity_arcmin": 5
+    },
+    {
+      "deviation_deg": 10,
+      "zero_deg": 359.9,
+      "eccentricity_arcmin": 10
+    },
+    {
+      "deviation_deg": 43.25,
+      "zero_deg": 0,
+      "eccentricity_arcmin": 0
+    },
+    {
+      "deviation_deg": 43.25,
+      "zero_deg": 0,
+      "eccentricity_arcmin": 5
+    },
+    {
+      "deviation_deg": 43.25,
+      "zero_deg": 0,
+      "eccentricity_arcmin": 10
+    },
+    {
+      "deviation_deg": 43.25,
+      "zero_deg": 180,
+      "eccentricity_arcmin": 0
+    },
+    {
+      "deviation_deg": 43.25,
+      "zero_deg": 180,
+      "eccentricity_arcmin": 5
+    },
+    {
+      "deviation_deg": 43.25,
+      "zero_deg": 180,
+      "eccentricity_arcmin": 10
+    },
+    {
+      "deviation_deg": 43.25,
+      "zero_deg": 359.9,
+      "eccentricity_arcmin": 0
+    },
+    {
+      "deviation_deg": 43.25,
+      "zero_deg": 359.9,
+      "eccentricity_arcmin": 5
+    },
+    {
+      "deviation_deg": 43.25,
+      "zero_deg": 359.9,
+      "eccentricity_arcmin": 10
+    },
+    {
+      "deviation_deg": 80,
+      "zero_deg": 0,
+      "eccentricity_arcmin": 0
+    },
+    {
+      "deviation_deg": 80,
+      "zero_deg": 0,
+      "eccentricity_arcmin": 5
+    },
+    {
+      "deviation_deg": 80,
+      "zero_deg": 0,
+      "eccentricity_arcmin": 10
+    },
+    {
+      "deviation_deg": 80,
+      "zero_deg": 180,
+      "eccentricity_arcmin": 0
+    },
+    {
+      "deviation_deg": 80,
+      "zero_deg": 180,
+      "eccentricity_arcmin": 5
+    },
+    {
+      "deviation_deg": 80,
+      "zero_deg": 180,
+      "eccentricity_arcmin": 10
+    },
+    {
+      "deviation_deg": 80,
+      "zero_deg": 359.9,
+      "eccentricity_arcmin": 0
+    },
+    {
+      "deviation_deg": 80,
+      "zero_deg": 359.9,
+      "eccentricity_arcmin": 5
+    },
+    {
+      "deviation_deg": 80,
+      "zero_deg": 359.9,
+      "eccentricity_arcmin": 10
+    }
+  ],
+  "maximum_error_deg": 5.684341886080802e-14,
+  "tolerance_deg": 1e-09,
+  "original_observation_analysis": {
+    "angle_mean_deg": 43.26166666666667,
+    "type_a_arcmin": 0.30000000000001137,
+    "per_trial_deg": [
+      43.266666666666666,
+      43.25,
+      43.26666666666667,
+      43.275000000000006,
+      43.25000000000001
+    ]
+  }
+}

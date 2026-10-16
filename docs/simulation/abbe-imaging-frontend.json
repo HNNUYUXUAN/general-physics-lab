@@ -1,0 +1,207 @@
+{
+  "status": "passed",
+  "source_hashes": {
+    "simulations/abbe-imaging/app.mjs": "20fa5d19d81d38c48611ed5f11683a59ec8c8dbc42d4a5bc8beb12173b4c2895",
+    "simulations/abbe-imaging/chart.mjs": "94c48a43c413d34f5295eaaa84c81f319caf4ff76f707fb743a23e67ee65fa98",
+    "simulations/abbe-imaging/fft.mjs": "9617a6ca4a9598de3c3abaeb6f290f51c1377c8ac2878bde97f4e50a37eac7aa",
+    "simulations/abbe-imaging/index.html": "1fabad1c945f6c0c29814deca06da4ae6c85ebc988f352c9b62de286b8f4da1f",
+    "simulations/abbe-imaging/lab.css": "93b317c2056cc0bc32df54083d64ed938cc76691138d4354067d039c9bd78ee8",
+    "simulations/abbe-imaging/model.mjs": "35721b4c58a7e2510877f60b71c07501569b5540bd2d41679587c3d968ba206a",
+    "simulations/abbe-imaging/observations.json": "9869ddbf237ba47eb34de98284839920a624ac35487f6952f9f286f1f2a891ff"
+  },
+  "source_record_sha256": "ef44f5ec695407ea6966e358267cc02b5ed4938e5cd599eaf8130d7e3aa851b2",
+  "interaction_checks": 4,
+  "visual_status": "passed",
+  "exports_status": "passed",
+  "exports": [
+    {
+      "filename": "abbe-imaging-abbe-imaging-experiment.json",
+      "sha256": "f92dd825cc5b64e911e055d0611e71d9c844be65e39f827298f821bd6c0cdf0d",
+      "bytes": 6286
+    },
+    {
+      "filename": "abbe-imaging-abbe-imaging-records.csv",
+      "sha256": "400fe6ea87de69888955e34cf1d984c48594b9b6cc2e0f3074eb3b6641a2d160",
+      "bytes": 848
+    }
+  ],
+  "fonts": {
+    "h1": {
+      "fonts": [
+        {
+          "familyName": "SimSun",
+          "postScriptName": "SimSun",
+          "isCustomFont": false,
+          "glyphCount": 13
+        }
+      ]
+    },
+    "#count": {
+      "fonts": [
+        {
+          "familyName": "Times New Roman",
+          "postScriptName": "TimesNewRomanPSMT",
+          "isCustomFont": false,
+          "glyphCount": 1
+        }
+      ]
+    }
+  },
+  "browser": null,
+  "layout": {
+    "mobile": {
+      "width": 390,
+      "scrollWidth": 390,
+      "mathErrors": 0,
+      "mathObjects": 4
+    }
+  },
+  "interaction": [
+    {
+      "name": "零级低通与均匀像",
+      "status": "passed"
+    },
+    {
+      "name": "横竖狭缝选择二维方向",
+      "status": "passed"
+    },
+    {
+      "name": "像素复场取样与网格改变",
+      "status": "passed"
+    },
+    {
+      "name": "真实双格式导出与刷新恢复",
+      "status": "passed"
+    }
+  ],
+  "background": {
+    "status": "not-applicable"
+  },
+  "checked_at_utc": null,
+  "screenshots": [
+    {
+      "path": "docs/assets/simulations/abbe-imaging/frontend-01-1241a1b0f2ff.png",
+      "sha256": "1241a1b0f2ff0a53b5d69b04b333bb7b152031aa4d429e8f227d05c57c75e8ba"
+    },
+    {
+      "path": "docs/assets/simulations/abbe-imaging/frontend-02-b18e20fbe5bc.png",
+      "sha256": "b18e20fbe5bcdcc642590d5a8c5c09ff3fdd597f8141d28251c3113f4d512f38"
+    },
+    {
+      "path": "docs/assets/simulations/abbe-imaging/frontend-03-18c9e888497b.png",
+      "sha256": "18c9e888497b74c591889cbbc953a876a670d8faed1162248782f7a3711ee547"
+    },
+    {
+      "path": "docs/assets/simulations/abbe-imaging/frontend-04-154b7160af72.png",
+      "sha256": "154b7160af72596c8ec680a45ebc620fd7887115705fc45de8fadb3067f83d05"
+    },
+    {
+      "path": "docs/assets/simulations/abbe-imaging/frontend-05-c9d3f800291c.png",
+      "sha256": "c9d3f800291c30d11545cb66463c2b7a64e3e1151e95335cd22f0da0b870c06b"
+    },
+    {
+      "path": "docs/assets/simulations/abbe-imaging/frontend-06-27d006dc80a7.png",
+      "sha256": "27d006dc80a7fd0d5bebc2ac30b5688a236e36612d55e2cb7c33e54c61bbfd34"
+    }
+  ],
+  "schema_version": 1,
+  "experiment_id": "course-04/abbe-imaging",
+  "numerical": {
+    "status": "passed",
+    "reference_sha256": "8c1fed8d8a16ade0285f32cdee92da77ee755dcc5349b677c50f2f0afbcf1cd7",
+    "source_files": {
+      "simulations/abbe-imaging/index.html": "1fabad1c945f6c0c29814deca06da4ae6c85ebc988f352c9b62de286b8f4da1f",
+      "simulations/abbe-imaging/model.mjs": "35721b4c58a7e2510877f60b71c07501569b5540bd2d41679587c3d968ba206a",
+      "simulations/abbe-imaging/app.mjs": "20fa5d19d81d38c48611ed5f11683a59ec8c8dbc42d4a5bc8beb12173b4c2895",
+      "simulations/abbe-imaging/chart.mjs": "94c48a43c413d34f5295eaaa84c81f319caf4ff76f707fb743a23e67ee65fa98",
+      "simulations/abbe-imaging/lab.css": "93b317c2056cc0bc32df54083d64ed938cc76691138d4354067d039c9bd78ee8",
+      "simulations/abbe-imaging/observations.json": "9869ddbf237ba47eb34de98284839920a624ac35487f6952f9f286f1f2a891ff",
+      "docs/abbe-imaging-model-evidence.md": "bd86b602771d091e3f018e5d33e24640f73595da714ac94cd1ba24e3d6b8f6c6",
+      "docs/abbe-imaging-references.json": "abeec4ba03bb29e749773a3ae2f713a7649b7441137b5b806cfdfe47f4e8b3c1",
+      "docs/abbe-imaging-references.bib": "4ca1ed8749d9766727a229244498350977928099b63ef7b711261fb20c0a44ae",
+      "docs/simulation/abbe-imaging-reference.json": "96149e1c841749bf7edbce715ca5bc820b45dc04c13097ea3ca2085425d10e2c",
+      "simulations/abbe-imaging/fft.mjs": "9617a6ca4a9598de3c3abaeb6f290f51c1377c8ac2878bde97f4e50a37eac7aa",
+      "scripts/validate_abbe_imaging_simulation.py": "1d4791dba92be0e62f0dba07999f76e1224dde51166edfeea277387c25e40cde",
+      "tests/abbe-imaging-model.test.mjs": "84a905f32a0ac9e6bd5b2aa1443e795b892d9d5cc9b8eb5125dd63a24da23352"
+    }
+  },
+  "scientific_evidence": {
+    "status": "verified",
+    "decision_source_files": {
+      "docs/abbe-imaging-references.json": "abeec4ba03bb29e749773a3ae2f713a7649b7441137b5b806cfdfe47f4e8b3c1",
+      "docs/abbe-imaging-model-evidence.md": "bd86b602771d091e3f018e5d33e24640f73595da714ac94cd1ba24e3d6b8f6c6",
+      "simulations/abbe-imaging/model.mjs": "35721b4c58a7e2510877f60b71c07501569b5540bd2d41679587c3d968ba206a"
+    },
+    "core_references": [
+      {
+        "id": "Wang2020Abbe4F",
+        "pdf_sha256": "b36f7f66d8dc10b56f9e989a2ef82debfefd1b5dc6e562244e5a7ebfb7505aba",
+        "locators": [
+          {
+            "printed_pages": "85",
+            "pdf_pages": [
+              1
+            ],
+            "location": "第1节、未编号复振幅FT及u=xi/(lambda f)关系",
+            "role": "相干复振幅、二维FT及物理焦面坐标"
+          },
+          {
+            "printed_pages": "86",
+            "pdf_pages": [
+              2
+            ],
+            "location": "图1",
+            "role": "四段等f、物面/频谱面/像面的完整等焦距4f"
+          },
+          {
+            "printed_pages": "87-88",
+            "pdf_pages": [
+              3,
+              4
+            ],
+            "location": "第3.1/3.2节、图4/5/8/9",
+            "role": "高低频与正交孔径的频谱选择"
+          }
+        ]
+      },
+      {
+        "id": "Wang2025AbbeDigital",
+        "pdf_sha256": "5007687222ac1f1991ca41e84936608f54c3d4a6afa3b2172a9100959bc8f223",
+        "locators": [
+          {
+            "printed_pages": "222",
+            "pdf_pages": [
+              2
+            ],
+            "location": "第1节、式2/3、图1",
+            "role": "相干阿贝两阶段和二维正逆FT；图1单成像透镜不是本项目完整4f"
+          },
+          {
+            "printed_pages": "223",
+            "pdf_pages": [
+              3
+            ],
+            "location": "第2节、图2",
+            "role": "低通孔径与频谱选择"
+          },
+          {
+            "printed_pages": "224",
+            "pdf_pages": [
+              4
+            ],
+            "location": "第2节续、图3及第3节",
+            "role": "狭缝方向、遮零级、实际装置验证"
+          },
+          {
+            "printed_pages": "225",
+            "pdf_pages": [
+              5
+            ],
+            "location": "参考文献7/8",
+            "role": "提取后续精确标题，目标尚未核查"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,137 @@
+{
+  "slug": "hall-effect",
+  "title": "霍尔效应",
+  "experimentId": "course-03/hall-effect",
+  "controls": [
+    {
+      "key": "polarity",
+      "type": "select",
+      "label": "磁场/工作电流极性",
+      "default": 1,
+      "options": [
+        {
+          "value": 1,
+          "label": "(+B,+I)"
+        },
+        {
+          "value": 2,
+          "label": "(−B,+I)"
+        },
+        {
+          "value": 3,
+          "label": "(−B,−I)"
+        },
+        {
+          "value": 4,
+          "label": "(+B,−I)"
+        }
+      ]
+    },
+    {
+      "key": "current_mA",
+      "type": "number",
+      "label": "工作电流幅值 / mA",
+      "default": 3,
+      "min": 0.1,
+      "max": 5
+    },
+    {
+      "key": "field_T",
+      "type": "number",
+      "label": "教学磁场幅值 / T",
+      "default": 0.3,
+      "min": 0,
+      "max": 1
+    },
+    {
+      "key": "sensitivity",
+      "type": "number",
+      "label": "教学灵敏度 / [V/(A·T)]",
+      "default": 100,
+      "min": 10,
+      "max": 200
+    },
+    {
+      "key": "common_mV",
+      "type": "number",
+      "label": "共模项 / mV",
+      "default": 0.5,
+      "min": -5,
+      "max": 5
+    },
+    {
+      "key": "currentOdd_mV",
+      "type": "number",
+      "label": "电流奇项 / mV",
+      "default": 0.3,
+      "min": -5,
+      "max": 5
+    },
+    {
+      "key": "fieldOdd_mV",
+      "type": "number",
+      "label": "磁场奇项 / mV",
+      "default": 0.2,
+      "min": -5,
+      "max": 5
+    },
+    {
+      "key": "sameParity_mV",
+      "type": "number",
+      "label": "同霍尔奇偶性副项 / mV",
+      "default": 0,
+      "min": -5,
+      "max": 5
+    }
+  ],
+  "columns": [
+    {
+      "key": "polarity",
+      "label": "极性序号",
+      "short": "极性"
+    },
+    {
+      "key": "Bsign",
+      "label": "B方向",
+      "short": "B符号"
+    },
+    {
+      "key": "Isign",
+      "label": "I方向",
+      "short": "I符号"
+    },
+    {
+      "key": "rawVoltage_mV",
+      "label": "原始示值 / mV",
+      "short": "示值mV"
+    },
+    {
+      "key": "trueHall_mV",
+      "label": "教学霍尔项 / mV",
+      "short": "教学VH"
+    }
+  ],
+  "units": {
+    "parameters": {
+      "polarity": "enum",
+      "current_mA": "mA",
+      "field_T": "T",
+      "sensitivity": "V/(A*T)",
+      "common_mV": "mV",
+      "currentOdd_mV": "mV",
+      "fieldOdd_mV": "mV",
+      "sameParity_mV": "mV"
+    },
+    "readings": {
+      "polarity": "enum",
+      "Bsign": "sign",
+      "Isign": "sign",
+      "rawVoltage_mV": "mV",
+      "trueHall_mV": "mV",
+      "projectedHall_mV": "mV",
+      "projectedCommon_mV": "mV",
+      "projectedCurrentOdd_mV": "mV",
+      "projectedFieldOdd_mV": "mV"
+    }
+  }
+}

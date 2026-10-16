@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "experiment": "course-02/moment-of-inertia",
+  "references": [
+    {
+      "id": "chen2020-moment-inertia",
+      "title": "智能手机磁传感器在落体法测量刚体转动惯量中的应用",
+      "authors": [
+        "陈国华",
+        "程敏熙"
+      ],
+      "journal": "大学物理实验",
+      "year": 2020,
+      "volume": 33,
+      "issue": 6,
+      "pages": "55–57+71",
+      "doi": "10.14139/j.cnki.cn22-1228.2020.06.015",
+      "url": "https://doi.org/10.14139/j.cnki.cn22-1228.2020.06.015",
+      "full_text_status": "obtained_and_read",
+      "pdf_sha256": "5941cc26b993bb70e176ba70089e4dc11ee4f9cab37aa86dc3a7882443413adc",
+      "locators": [
+        {
+          "page": 55,
+          "location": "§1.1式1、2、4及图1",
+          "supports": "定轴转动、悬挂砝码和绳张力的耦合动力学"
+        },
+        {
+          "page": 56,
+          "location": "§1.2式6–8",
+          "supports": "恒角加速度下区间平均角速度对应中间时刻；式8中点间隔需独立修正"
+        },
+        {
+          "page": 57,
+          "location": "表1及式9",
+          "supports": "表1算例可核查中点间隔；不确定度导数须取绝对值"
+        }
+      ]
+    }
+  ]
+}

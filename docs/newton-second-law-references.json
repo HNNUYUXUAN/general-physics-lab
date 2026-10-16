@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "experiment": "course-01/newton-second-law",
+  "references": [
+    {
+      "id": "shao2025-photogate-systematic",
+      "title": "验证牛顿第二定律实验中关于光电门测速的一种系统误差分析",
+      "authors": [
+        "邵云"
+      ],
+      "journal": "物理与工程",
+      "year": 2025,
+      "volume": 35,
+      "issue": 4,
+      "pages": "243–247",
+      "doi": null,
+      "pdf_sha256": "c1886f22f87f035ebc507254e8c508d4066e4aaed338fa8a54696b9e129eac08",
+      "locators": [
+        {
+          "page": 244,
+          "location": "式1–2",
+          "supports": "挡光片长度/过门时间及两门加速度"
+        },
+        {
+          "page": 246,
+          "location": "式18–23",
+          "supports": "有限挡片时长、严格偏差与加速度偏大"
+        }
+      ],
+      "full_text_status": "obtained_and_read",
+      "visual_formula_status": "checked_by_integration_agent"
+    }
+  ]
+}

@@ -1,0 +1,1964 @@
+{
+  "schema_version": 1,
+  "experiment": "course-02/sound-speed",
+  "model_sha256": "f993f74b0f149a43088fb08f99771ac50333545b36a436fcc4292e1a49d90944",
+  "validator_sha256": "11d648d71a792c916768b914584fe6c77f6aced2d2880bca21d22a6ed5f27949",
+  "environment": {
+    "python": "3.14.7",
+    "numpy": "2.5.4"
+  },
+  "method": "401 complex paths for round-trip cavity compared to closed form; free propagation phasor; independent expected position scale effect in both regressions",
+  "case_count": 108,
+  "tolerances": {
+    "scaled": 1e-10
+  },
+  "max_scaled_error": 3.196789614828418e-14,
+  "status": "passed",
+  "failures": [],
+  "cases": [
+    {
+      "parameters": {
+        "frequency": 34000,
+        "soundSpeed": 330,
+        "position": 0.05,
+        "roundTrip": 0.3,
+        "electronicPhase": 0,
+        "positionScale": 1,
+        "positionOffset": 0.0005,
+        "temperature": 26.5
+      },
+      "roundtrip_terms": 401,
+      "reference_cavity": [
+        0.2209756451151755,
+        -0.5763027646533754
+      ],
+      "max_scaled_error": 7.0854499536960216e-15
+    },
+    {
+      "parameters": {
+        "frequency": 34000,
+        "soundSpeed": 330,
+        "position": 0.05,
+        "roundTrip": 0.3,
+        "electronicPhase": 1.0,
+        "positionScale": 1.02,
+        "positionOffset": 0.0005,
+        "temperature": 26.5
+      },
+      "roundtrip_terms": 401,
+      "reference_cavity": [
+        0.6043357055168183,
+        -0.1254331189067756
+      ],
+      "max_scaled_error": 7.057779543286363e-15
+    },
+    {
+      "parameters": {
+        "frequency": 34000,
+        "soundSpeed": 330,
+        "position": 0.05,
+        "roundTrip": 0.9,
+        "electronicPhase": 0,
+        "positionScale": 1,
+        "positionOffset": 0.0005,
+        "temperature": 26.5
+      },
+      "roundtrip_terms": 401,
+      "reference_cavity": [
+        0.002418191140160936,
+        -0.06452161165036686
+      ],
+      "max_scaled_error": 7.0854499536960216e-15
+    },
+    {
+      "parameters": {
+        "frequency": 34000,
+        "soundSpeed": 330,
+        "position": 0.05,
+        "roundTrip": 0.9,
+        "electronicPhase": 1.0,
+        "positionScale": 1.02,
+        "positionOffset": 0.0005,
+        "temperature": 26.5
+      },
+      "roundtrip_terms": 401,
+      "reference_cavity": [
+        0.05559961834588571,
+        -0.032826337872856895
+      ],
+      "max_scaled_error": 7.057779543286363e-15
+    },
+    {
+      "parameters": {
+        "frequency": 34000,
+        "soundSpeed": 330,
+        "position": 0.1,
+        "roundTrip": 0.3,
+        "electronicPhase": 0,
+        "positionScale": 1,
+        "positionOffset": 0.0005,
+        "temperature": 26.5
+      },
+      "roundtrip_terms": 401,
+      "reference_cavity": [
+        -0.1026255332349954,
+        -0.5506744379352959
+      ],
+      "max_scaled_error": 1.421995909702643e-14
+    },
+    {
+      "parameters": {
+        "frequency": 34000,
+        "soundSpeed": 330,
+        "position": 0.1,
+        "roundTrip": 0.3,
+        "electronicPhase": 1.0,
+        "positionScale": 1.02,
+        "positionOffset": 0.0005,
+        "temperature": 26.5
+      },
+      "roundtrip_terms": 401,
+      "reference_cavity": [
+        0.4079277493501329,
+        -0.38388707711676934
+      ],
+      "max_scaled_error": 1.4304653901557493e-14
+    },
+    {
+      "parameters": {
+        "frequency": 34000,
+        "soundSpeed": 330,
+        "position": 0.1,
+        "roundTrip": 0.9,
+        "electronicPhase": 0,
+        "positionScale": 1,
+        "positionOffset": 0.0005,
+        "temperature": 26.5
+      },
+      "roundtrip_terms": 401,
+      "reference_cavity": [
+        -0.0010141970682958415,
+        -0.055676269705027315
+      ],
+      "max_scaled_error": 1.421995909702643e-14
+    },
+    {
+      "parameters": {
+        "frequency": 34000,
+        "soundSpeed": 330,
+        "position": 0.1,
+        "roundTrip": 0.9,
+        "electronicPhase": 1.0,
+        "positionScale": 1.02,
+        "positionOffset": 0.0005,
+        "temperature": 26.5
+      },
+      "roundtrip_terms": 401,
+      "reference_cavity": [
+        0.046301992484514436,
+        -0.030935434309610897
+      ],
+      "max_scaled_error": 1.4304653901557493e-14
+    },
+    {
+      "parameters": {
+        "frequency": 34000,
+        "soundSpeed": 330,
+        "position": 0.15,
+        "roundTrip": 0.3,
+        "electronicPhase": 0,
+        "positionScale": 1,
+        "positionOffset": 0.0005,
+        "temperature": 26.5
+      },
+      "roundtrip_terms": 401,
+      "reference_cavity": [
+        -0.8033374795463764,
+        -0.43806502399243236
+      ],
+      "max_scaled_error": 2.3787354154276384e-14
+    },
+    {
+      "parameters": {
+        "frequency": 34000,
+        "soundSpeed": 330,
+        "position": 0.15,
+        "roundTrip": 0.3,
+        "electronicPhase": 1.0,
+        "positionScale": 1.02,
+        "positionOffset": 0.0005,
+        "temperature": 26.5
+      },
+      "roundtrip_terms": 401,
+      "reference_cavity": [
+        -0.06542608544039985,
+        -0.9126727226302759
+      ],
+      "max_scaled_error": 2.381324868272655e-14
+    },
+    {
+      "parameters": {
+        "frequency": 34000,
+        "soundSpeed": 330,
+        "position": 0.15,
+        "roundTrip": 0.9,
+        "electronicPhase": 0,
+        "positionScale": 1,
+        "positionOffset": 0.0005,
+        "temperature": 26.5
+      },
+      "roundtrip_terms": 401,
+      "reference_cavity": [
+        -0.032443401679962555,
+        -0.1809986028314121
+      ],
+      "max_scaled_error": 3.196789614828418e-14
+    },
+    {
+      "parameters": {
+        "frequency": 34000,
+        "soundSpeed": 330,
+        "position": 0.15,
+        "roundTrip": 0.9,
+        "electronicPhase": 1.0,
+        "positionScale": 1.02,
+        "positionOffset": 0.0005,
+        "temperature": 26.5
+      },
+      "roundtrip_terms": 401,
+      "reference_cavity": [
+        0.1347758278355116,
+        -0.1250941436308798
+      ],
+      "max_scaled_error": 3.196778469344863e-14
+    },
+    {
+      "parameters": {
+        "frequency": 34000,
+        "soundSpeed": 347.21,
+        "position": 0.05,
+        "roundTrip": 0.3,
+        "electronicPhase": 0,
+        "positionScale": 1,
+        "positionOffset": 0.0005,
+        "temperature": 26.5
+      },
+      "roundtrip_terms": 401,
+      "reference_cavity": [
+        0.41767916498338065,
+        0.5925869341958249
+      ],
+      "max_scaled_error": 1.336885555457667e-15
+    },
+    {
+      "parameters": {
+        "frequency": 34000,
+        "soundSpeed": 347.21,
+        "position": 0.05,
+        "roundTrip": 0.3,
+        "electronicPhase": 1.0,
+        "positionScale": 1.02,
+        "positionOffset": 0.0005,
+        "temperature": 26.5
+      },
+      "roundtrip_terms": 401,
+      "reference_cavity": [
+        -0.27297169514845315,
+        0.671640985265641
+      ],
+      "max_scaled_error": 1.3911054626160788e-15
+    },
+    {
+      "parameters": {
+        "frequency": 34000,
+        "soundSpeed": 347.21,
+        "position": 0.05,
+        "roundTrip": 0.9,
+        "electronicPhase": 0,
+        "positionScale": 1,
+        "positionOffset": 0.0005,
+        "temperature": 26.5
+      },
+      "roundtrip_terms": 401,
+      "reference_cavity": [
+        0.005944748860950698,
+        0.08628813067271472
+      ],
+      "max_scaled_error": 5.575793696225161e-15
+    },
+    {
+      "parameters": {
+        "frequency": 34000,
+        "soundSpeed": 347.21,
+        "position": 0.05,
+        "roundTrip": 0.9,
+        "electronicPhase": 1.0,
+        "positionScale": 1.02,
+        "positionOffset": 0.0005,
+        "temperature": 26.5
+      },
+      "roundtrip_terms": 401,
+      "reference_cavity": [
+        -0.06939699677702306,
+        0.05162400964997893
+      ],
+      "max_scaled_error": 5.57427740041297e-15
+    },
+    {
+      "parameters": {
+        "frequency": 34000,
+        "soundSpeed": 347.21,
+        "position": 0.1,
+        "roundTrip": 0.3,
+        "electronicPhase": 0,
+        "positionScale": 1,
+        "positionOffset": 0.0005,
+        "temperature": 26.5
+      },
+      "roundtrip_terms": 401,
+      "reference_cavity": [
+        0.0801700602813193,
+        0.5463342413177097
+      ],
+      "max_scaled_error": 3.8609442319919156e-15
+    },
+    {
+      "parameters": {
+        "frequency": 34000,
+        "soundSpeed": 347.21,
+        "position": 0.1,
+        "roundTrip": 0.3,
+        "electronicPhase": 1.0,
+        "positionScale": 1.02,
+        "positionOffset": 0.0005,
+        "temperature": 26.5
+      },
+      "roundtrip_terms": 401,
+      "reference_cavity": [
+        -0.41640834364430357,
+        0.36264642993570945
+      ],
+      "max_scaled_error": 3.84031263598938e-15
+    },
+    {
+      "parameters": {
+        "frequency": 34000,
+        "soundSpeed": 347.21,
+        "position": 0.1,
+        "roundTrip": 0.9,
+        "electronicPhase": 0,
+        "positionScale": 1,
+        "positionOffset": 0.0005,
+        "temperature": 26.5
+      },
+      "roundtrip_terms": 401,
+      "reference_cavity": [
+        0.0007822737563978535,
+        0.054539764705473594
+      ],
+      "max_scaled_error": 2.259939522811673e-16
+    },
+    {
+      "parameters": {
+        "frequency": 34000,
+        "soundSpeed": 347.21,
+        "position": 0.1,
+        "roundTrip": 0.9,
+        "electronicPhase": 1.0,
+        "positionScale": 1.02,
+        "positionOffset": 0.0005,
+        "temperature": 26.5
+      },
+      "roundtrip_terms": 401,
+      "reference_cavity": [
+        -0.04547096520350393,
+        0.03012622130005864
+      ],
+      "max_scaled_error": 2.2250491372754983e-16
+    },
+    {
+      "parameters": {
+        "frequency": 34000,
+        "soundSpeed": 347.21,
+        "position": 0.15,
+        "roundTrip": 0.3,
+        "electronicPhase": 0,
+        "positionScale": 1,
+        "positionOffset": 0.0005,
+        "temperature": 26.5
+      },
+      "roundtrip_terms": 401,
+      "reference_cavity": [
+        -0.12148719969491555,
+        0.5546919844648616
+      ],
+      "max_scaled_error": 3.817400807382691e-15
+    },
+    {
+      "parameters": {
+        "frequency": 34000,
+        "soundSpeed": 347.21,
+        "position": 0.15,
+        "roundTrip": 0.3,
+        "electronicPhase": 1.0,
+        "positionScale": 1.02,
+        "positionOffset": 0.0005,
+        "temperature": 26.5
+      },
+      "roundtrip_terms": 401,
+      "reference_cavity": [
+        -0.5323970245613195,
+        0.1974734046841049
+      ],
+      "max_scaled_error": 3.817375581628245e-15
+    },
+    {
+      "parameters": {
+        "frequency": 34000,
+        "soundSpeed": 347.21,
+        "position": 0.15,
+        "roundTrip": 0.9,
+        "electronicPhase": 0,
+        "positionScale": 1,
+        "positionOffset": 0.0005,
+        "temperature": 26.5
+      },
+      "roundtrip_terms": 401,
+      "reference_cavity": [
+        -0.0012158030741320064,
+        0.056792749468840255
+      ],
+      "max_scaled_error": 8.033562583747098e-15
+    },
+    {
+      "parameters": {
+        "frequency": 34000,
+        "soundSpeed": 347.21,
+        "position": 0.15,
+        "roundTrip": 0.9,
+        "electronicPhase": 1.0,
+        "positionScale": 1.02,
+        "positionOffset": 0.0005,
+        "temperature": 26.5
+      },
+      "roundtrip_terms": 401,
+      "reference_cavity": [
+        -0.048446352029928245,
+        0.029662190484483632
+      ],
+      "max_scaled_error": 8.035448862760239e-15
+    },
+    {
+      "parameters": {
+        "frequency": 34000,
+        "soundSpeed": 360,
+        "position": 0.05,
+        "roundTrip": 0.3,
+        "electronicPhase": 0,
+        "positionScale": 1,
+        "positionOffset": 0.0005,
+        "temperature": 26.5
+      },
+      "roundtrip_terms": 401,
+      "reference_cavity": [
+        -0.05144927189773487,
+        0.5418833092143511
+      ],
+      "max_scaled_error": 1.3944414724548187e-15
+    },
+    {
+      "parameters": {
+        "frequency": 34000,
+        "soundSpeed": 360,
+        "position": 0.05,
+        "roundTrip": 0.3,
+        "electronicPhase": 1.0,
+        "positionScale": 1.02,
+        "positionOffset": 0.0005,
+        "temperature": 26.5
+      },
+      "roundtrip_terms": 401,
+      "reference_cavity": [
+        -0.483777242097145,
+        0.2494877319885359
+      ],
+      "max_scaled_error": 1.3653937842860002e-15
+    },
+    {
+      "parameters": {
+        "frequency": 34000,
+        "soundSpeed": 360,
+        "position": 0.05,
+        "roundTrip": 0.9,
+        "electronicPhase": 0,
+        "positionScale": 1,
+        "positionOffset": 0.0005,
+        "temperature": 26.5
+      },
+      "roundtrip_terms": 401,
+      "reference_cavity": [
+        -0.0004959326577885041,
+        0.053438903451445106
+      ],
+      "max_scaled_error": 5.609468767700655e-15
+    },
+    {
+      "parameters": {
+        "frequency": 34000,
+        "soundSpeed": 360,
+        "position": 0.05,
+        "roundTrip": 0.9,
+        "electronicPhase": 1.0,
+        "positionScale": 1.02,
+        "positionOffset": 0.0005,
+        "temperature": 26.5
+      },
+      "roundtrip_terms": 401,
+      "reference_cavity": [
+        -0.04523524027290006,
+        0.028455849815932993
+      ],
+      "max_scaled_error": 5.611485902575094e-15
+    },
+    {
+      "parameters": {
+        "frequency": 34000,
+        "soundSpeed": 360,
+        "position": 0.1,
+        "roundTrip": 0.3,
+        "electronicPhase": 0,
+        "positionScale": 1,
+        "positionOffset": 0.0005,
+        "temperature": 26.5
+      },
+      "roundtrip_terms": 401,
+      "reference_cavity": [
+        -0.730439184616828,
+        -0.49373651069265684
+      ],
+      "max_scaled_error": 1.4432899320127035e-15
+    },
+    {
+      "parameters": {
+        "frequency": 34000,
+        "soundSpeed": 360,
+        "position": 0.1,
+        "roundTrip": 0.3,
+        "electronicPhase": 1.0,
+        "positionScale": 1.02,
+        "positionOffset": 0.0005,
+        "temperature": 26.5
+      },
+      "roundtrip_terms": 401,
+      "reference_cavity": [
+        0.020806972143248448,
+        -0.8814103552403312
+      ],
+      "max_scaled_error": 1.355199909595506e-15
+    },
+    {
+      "parameters": {
+        "frequency": 34000,
+        "soundSpeed": 360,
+        "position": 0.1,
+        "roundTrip": 0.9,
+        "electronicPhase": 0,
+        "positionScale": 1,
+        "positionOffset": 0.0005,
+        "temperature": 26.5
+      },
+      "roundtrip_terms": 401,
+      "reference_cavity": [
+        -0.021796544247208113,
+        -0.15073257300115783
+      ],
+      "max_scaled_error": 1.2946760452655385e-14
+    },
+    {
+      "parameters": {
+        "frequency": 34000,
+        "soundSpeed": 360,
+        "position": 0.1,
+        "roundTrip": 0.9,
+        "electronicPhase": 1.0,
+        "positionScale": 1.02,
+        "positionOffset": 0.0005,
+        "temperature": 26.5
+      },
+      "roundtrip_terms": 401,
+      "reference_cavity": [
+        0.11506036352918894,
+        -0.09978231631507038
+      ],
+      "max_scaled_error": 1.2953002586281322e-14
+    },
+    {
+      "parameters": {
+        "frequency": 34000,
+        "soundSpeed": 360,
+        "position": 0.15,
+        "roundTrip": 0.3,
+        "electronicPhase": 0,
+        "positionScale": 1,
+        "positionOffset": 0.0005,
+        "temperature": 26.5
+      },
+      "roundtrip_terms": 401,
+      "reference_cavity": [
+        0.17625899280575857,
+        -0.5669662715423252
+      ],
+      "max_scaled_error": 6.522087817232454e-15
+    },
+    {
+      "parameters": {
+        "frequency": 34000,
+        "soundSpeed": 360,
+        "position": 0.15,
+        "roundTrip": 0.3,
+        "electronicPhase": 1.0,
+        "positionScale": 1.02,
+        "positionOffset": 0.0005,
+        "temperature": 26.5
+      },
+      "roundtrip_terms": 401,
+      "reference_cavity": [
+        0.5723188071105288,
+        -0.15801635560627056
+      ],
+      "max_scaled_error": 6.543726462156563e-15
+    },
+    {
+      "parameters": {
+        "frequency": 34000,
+        "soundSpeed": 360,
+        "position": 0.15,
+        "roundTrip": 0.9,
+        "electronicPhase": 0,
+        "positionScale": 1,
+        "positionOffset": 0.0005,
+        "temperature": 26.5
+      },
+      "roundtrip_terms": 401,
+      "reference_cavity": [
+        0.0018450184501735574,
+        -0.06071764823580636
+      ],
+      "max_scaled_error": 1.1520682584471722e-14
+    },
+    {
+      "parameters": {
+        "frequency": 34000,
+        "soundSpeed": 360,
+        "position": 0.15,
+        "roundTrip": 0.9,
+        "electronicPhase": 1.0,
+        "positionScale": 1.02,
+        "positionOffset": 0.0005,
+        "temperature": 26.5
+      },
+      "roundtrip_terms": 401,
+      "reference_cavity": [
+        0.05208900697920145,
+        -0.031253355856440485
+      ],
+      "max_scaled_error": 1.1525987358840321e-14
+    },
+    {
+      "parameters": {
+        "frequency": 36015,
+        "soundSpeed": 330,
+        "position": 0.05,
+        "roundTrip": 0.3,
+        "electronicPhase": 0,
+        "positionScale": 1,
+        "positionOffset": 0.0005,
+        "temperature": 26.5
+      },
+      "roundtrip_terms": 401,
+      "reference_cavity": [
+        -0.8193033765974341,
+        -0.42326710750136487
+      ],
+      "max_scaled_error": 1.1076109276885607e-14
+    },
+    {
+      "parameters": {
+        "frequency": 36015,
+        "soundSpeed": 330,
+        "position": 0.05,
+        "roundTrip": 0.3,
+        "electronicPhase": 1.0,
+        "positionScale": 1.02,
+        "positionOffset": 0.0005,
+        "temperature": 26.5
+      },
+      "roundtrip_terms": 401,
+      "reference_cavity": [
+        -0.08650451379518326,
+        -0.9181122133430031
+      ],
+      "max_scaled_error": 1.1121088022162298e-14
+    },
+    {
+      "parameters": {
+        "frequency": 36015,
+        "soundSpeed": 330,
+        "position": 0.05,
+        "roundTrip": 0.9,
+        "electronicPhase": 0,
+        "positionScale": 1,
+        "positionOffset": 0.0005,
+        "temperature": 26.5
+      },
+      "roundtrip_terms": 401,
+      "reference_cavity": [
+        -0.035871909735326786,
+        -0.18959748073351973
+      ],
+      "max_scaled_error": 7.083927627450313e-15
+    },
+    {
+      "parameters": {
+        "frequency": 36015,
+        "soundSpeed": 330,
+        "position": 0.05,
+        "roundTrip": 0.9,
+        "electronicPhase": 1.0,
+        "positionScale": 1.02,
+        "positionOffset": 0.0005,
+        "temperature": 26.5
+      },
+      "roundtrip_terms": 401,
+      "reference_cavity": [
+        0.1401591032840402,
+        -0.1326251272390363
+      ],
+      "max_scaled_error": 7.093273899344904e-15
+    },
+    {
+      "parameters": {
+        "frequency": 36015,
+        "soundSpeed": 330,
+        "position": 0.1,
+        "roundTrip": 0.3,
+        "electronicPhase": 0,
+        "positionScale": 1,
+        "positionOffset": 0.0005,
+        "temperature": 26.5
+      },
+      "roundtrip_terms": 401,
+      "reference_cavity": [
+        0.5180385541938357,
+        0.5801505168312141
+      ],
+      "max_scaled_error": 1.4392276309838414e-14
+    },
+    {
+      "parameters": {
+        "frequency": 36015,
+        "soundSpeed": 330,
+        "position": 0.1,
+        "roundTrip": 0.3,
+        "electronicPhase": 1.0,
+        "positionScale": 1.02,
+        "positionOffset": 0.0005,
+        "temperature": 26.5
+      },
+      "roundtrip_terms": 401,
+      "reference_cavity": [
+        -0.20828240137524517,
+        0.7493710743604438
+      ],
+      "max_scaled_error": 1.436827630882242e-14
+    },
+    {
+      "parameters": {
+        "frequency": 36015,
+        "soundSpeed": 330,
+        "position": 0.1,
+        "roundTrip": 0.9,
+        "electronicPhase": 0,
+        "positionScale": 1,
+        "positionOffset": 0.0005,
+        "temperature": 26.5
+      },
+      "roundtrip_terms": 401,
+      "reference_cavity": [
+        0.008828351274134952,
+        0.10115014149615456
+      ],
+      "max_scaled_error": 1.424204550810566e-14
+    },
+    {
+      "parameters": {
+        "frequency": 36015,
+        "soundSpeed": 330,
+        "position": 0.1,
+        "roundTrip": 0.9,
+        "electronicPhase": 1.0,
+        "positionScale": 1.02,
+        "positionOffset": 0.0005,
+        "temperature": 26.5
+      },
+      "roundtrip_terms": 401,
+      "reference_cavity": [
+        -0.08034493062779821,
+        0.06208045613013731
+      ],
+      "max_scaled_error": 1.416969070478872e-14
+    },
+    {
+      "parameters": {
+        "frequency": 36015,
+        "soundSpeed": 330,
+        "position": 0.15,
+        "roundTrip": 0.3,
+        "electronicPhase": 0,
+        "positionScale": 1,
+        "positionOffset": 0.0005,
+        "temperature": 26.5
+      },
+      "roundtrip_terms": 401,
+      "reference_cavity": [
+        -0.2992625078632823,
+        -0.5884613809914546
+      ],
+      "max_scaled_error": 1.4138680410974074e-14
+    },
+    {
+      "parameters": {
+        "frequency": 36015,
+        "soundSpeed": 330,
+        "position": 0.15,
+        "roundTrip": 0.3,
+        "electronicPhase": 1.0,
+        "positionScale": 1.02,
+        "positionOffset": 0.0005,
+        "temperature": 26.5
+      },
+      "roundtrip_terms": 401,
+      "reference_cavity": [
+        0.33348095472588035,
+        -0.5697677582718299
+      ],
+      "max_scaled_error": 1.4190457075418935e-14
+    },
+    {
+      "parameters": {
+        "frequency": 36015,
+        "soundSpeed": 330,
+        "position": 0.15,
+        "roundTrip": 0.9,
+        "electronicPhase": 0,
+        "positionScale": 1,
+        "positionOffset": 0.0005,
+        "temperature": 26.5
+      },
+      "roundtrip_terms": 401,
+      "reference_cavity": [
+        -0.003589714816430185,
+        -0.07221607688222909
+      ],
+      "max_scaled_error": 1.4138680410974074e-14
+    },
+    {
+      "parameters": {
+        "frequency": 36015,
+        "soundSpeed": 330,
+        "position": 0.15,
+        "roundTrip": 0.9,
+        "electronicPhase": 1.0,
+        "positionScale": 1.02,
+        "positionOffset": 0.0005,
+        "temperature": 26.5
+      },
+      "roundtrip_terms": 401,
+      "reference_cavity": [
+        0.05882820214032582,
+        -0.04203915372198024
+      ],
+      "max_scaled_error": 1.4190457075418935e-14
+    },
+    {
+      "parameters": {
+        "frequency": 36015,
+        "soundSpeed": 347.21,
+        "position": 0.05,
+        "roundTrip": 0.3,
+        "electronicPhase": 0,
+        "positionScale": 1,
+        "positionOffset": 0.0005,
+        "temperature": 26.5
+      },
+      "roundtrip_terms": 401,
+      "reference_cavity": [
+        0.12652253266155228,
+        -0.5558014684521188
+      ],
+      "max_scaled_error": 1.9076784904469936e-15
+    },
+    {
+      "parameters": {
+        "frequency": 36015,
+        "soundSpeed": 347.21,
+        "position": 0.05,
+        "roundTrip": 0.3,
+        "electronicPhase": 1.0,
+        "positionScale": 1.02,
+        "positionOffset": 0.0005,
+        "temperature": 26.5
+      },
+      "roundtrip_terms": 401,
+      "reference_cavity": [
+        0.5360512251573931,
+        -0.19383577485047226
+      ],
+      "max_scaled_error": 1.9086877908141225e-15
+    },
+    {
+      "parameters": {
+        "frequency": 36015,
+        "soundSpeed": 347.21,
+        "position": 0.05,
+        "roundTrip": 0.9,
+        "electronicPhase": 0,
+        "positionScale": 1,
+        "positionOffset": 0.0005,
+        "temperature": 26.5
+      },
+      "roundtrip_terms": 401,
+      "reference_cavity": [
+        0.001270801484664262,
+        -0.057113373760400134
+      ],
+      "max_scaled_error": 4.8985322553132124e-15
+    },
+    {
+      "parameters": {
+        "frequency": 36015,
+        "soundSpeed": 347.21,
+        "position": 0.05,
+        "roundTrip": 0.9,
+        "electronicPhase": 1.0,
+        "positionScale": 1.02,
+        "positionOffset": 0.0005,
+        "temperature": 26.5
+      },
+      "roundtrip_terms": 401,
+      "reference_cavity": [
+        0.04874586383633013,
+        -0.029789144961857326
+      ],
+      "max_scaled_error": 4.893432007764282e-15
+    },
+    {
+      "parameters": {
+        "frequency": 36015,
+        "soundSpeed": 347.21,
+        "position": 0.1,
+        "roundTrip": 0.3,
+        "electronicPhase": 0,
+        "positionScale": 1,
+        "positionOffset": 0.0005,
+        "temperature": 26.5
+      },
+      "roundtrip_terms": 401,
+      "reference_cavity": [
+        -0.30828110901809336,
+        -0.589423552079625
+      ],
+      "max_scaled_error": 2.8951074449790722e-15
+    },
+    {
+      "parameters": {
+        "frequency": 36015,
+        "soundSpeed": 347.21,
+        "position": 0.1,
+        "roundTrip": 0.3,
+        "electronicPhase": 1.0,
+        "positionScale": 1.02,
+        "positionOffset": 0.0005,
+        "temperature": 26.5
+      },
+      "roundtrip_terms": 401,
+      "reference_cavity": [
+        0.3294178227793474,
+        -0.5778765127247365
+      ],
+      "max_scaled_error": 2.8887141192996264e-15
+    },
+    {
+      "parameters": {
+        "frequency": 36015,
+        "soundSpeed": 347.21,
+        "position": 0.1,
+        "roundTrip": 0.9,
+        "electronicPhase": 0,
+        "positionScale": 1,
+        "positionOffset": 0.0005,
+        "temperature": 26.5
+      },
+      "roundtrip_terms": 401,
+      "reference_cavity": [
+        -0.0037412199953019924,
+        -0.07318163500114953
+      ],
+      "max_scaled_error": 2.5887718836801534e-15
+    },
+    {
+      "parameters": {
+        "frequency": 36015,
+        "soundSpeed": 347.21,
+        "position": 0.1,
+        "roundTrip": 0.9,
+        "electronicPhase": 1.0,
+        "positionScale": 1.02,
+        "positionOffset": 0.0005,
+        "temperature": 26.5
+      },
+      "roundtrip_terms": 401,
+      "reference_cavity": [
+        0.05955883268404767,
+        -0.04268833421215142
+      ],
+      "max_scaled_error": 2.5828535455704272e-15
+    },
+    {
+      "parameters": {
+        "frequency": 36015,
+        "soundSpeed": 347.21,
+        "position": 0.15,
+        "roundTrip": 0.3,
+        "electronicPhase": 0,
+        "positionScale": 1,
+        "positionOffset": 0.0005,
+        "temperature": 26.5
+      },
+      "roundtrip_terms": 401,
+      "reference_cavity": [
+        -0.7051584850099938,
+        0.5092668793103992
+      ],
+      "max_scaled_error": 2.494915946531976e-15
+    },
+    {
+      "parameters": {
+        "frequency": 36015,
+        "soundSpeed": 347.21,
+        "position": 0.15,
+        "roundTrip": 0.3,
+        "electronicPhase": 1.0,
+        "positionScale": 1.02,
+        "positionOffset": 0.0005,
+        "temperature": 26.5
+      },
+      "roundtrip_terms": 401,
+      "reference_cavity": [
+        -0.8095320579167494,
+        -0.31821233563332346
+      ],
+      "max_scaled_error": 2.485635383879593e-15
+    },
+    {
+      "parameters": {
+        "frequency": 36015,
+        "soundSpeed": 347.21,
+        "position": 0.15,
+        "roundTrip": 0.9,
+        "electronicPhase": 0,
+        "positionScale": 1,
+        "positionOffset": 0.0005,
+        "temperature": 26.5
+      },
+      "roundtrip_terms": 401,
+      "reference_cavity": [
+        -0.01930025915393198,
+        0.14260348051965618
+      ],
+      "max_scaled_error": 1.2490533288014085e-14
+    },
+    {
+      "parameters": {
+        "frequency": 36015,
+        "soundSpeed": 347.21,
+        "position": 0.15,
+        "roundTrip": 0.9,
+        "electronicPhase": 1.0,
+        "positionScale": 1.02,
+        "positionOffset": 0.0005,
+        "temperature": 26.5
+      },
+      "roundtrip_terms": 401,
+      "reference_cavity": [
+        -0.1304246657146309,
+        0.06080838127228583
+      ],
+      "max_scaled_error": 1.2487734404687132e-14
+    },
+    {
+      "parameters": {
+        "frequency": 36015,
+        "soundSpeed": 360,
+        "position": 0.05,
+        "roundTrip": 0.3,
+        "electronicPhase": 0,
+        "positionScale": 1,
+        "positionOffset": 0.0005,
+        "temperature": 26.5
+      },
+      "roundtrip_terms": 401,
+      "reference_cavity": [
+        0.9994949374285614,
+        -0.024299052985263157
+      ],
+      "max_scaled_error": 6.924393812582837e-16
+    },
+    {
+      "parameters": {
+        "frequency": 36015,
+        "soundSpeed": 360,
+        "position": 0.05,
+        "roundTrip": 0.3,
+        "electronicPhase": 1.0,
+        "positionScale": 1.02,
+        "positionOffset": 0.0005,
+        "temperature": 26.5
+      },
+      "roundtrip_terms": 401,
+      "reference_cavity": [
+        0.5604763674415925,
+        0.8279171549501687
+      ],
+      "max_scaled_error": 7.108895957933346e-16
+    },
+    {
+      "parameters": {
+        "frequency": 36015,
+        "soundSpeed": 360,
+        "position": 0.05,
+        "roundTrip": 0.9,
+        "electronicPhase": 0,
+        "positionScale": 1,
+        "positionOffset": 0.0005,
+        "temperature": 26.5
+      },
+      "roundtrip_terms": 401,
+      "reference_cavity": [
+        0.9418213686781591,
+        -0.23425322455455014
+      ],
+      "max_scaled_error": 2.094764613337708e-15
+    },
+    {
+      "parameters": {
+        "frequency": 36015,
+        "soundSpeed": 360,
+        "position": 0.05,
+        "roundTrip": 0.9,
+        "electronicPhase": 1.0,
+        "positionScale": 1.02,
+        "positionOffset": 0.0005,
+        "temperature": 26.5
+      },
+      "roundtrip_terms": 401,
+      "reference_cavity": [
+        0.7059855487730394,
+        0.665947797230861
+      ],
+      "max_scaled_error": 2.144196810752504e-15
+    },
+    {
+      "parameters": {
+        "frequency": 36015,
+        "soundSpeed": 360,
+        "position": 0.1,
+        "roundTrip": 0.3,
+        "electronicPhase": 0,
+        "positionScale": 1,
+        "positionOffset": 0.0005,
+        "temperature": 26.5
+      },
+      "roundtrip_terms": 401,
+      "reference_cavity": [
+        0.9979825897248324,
+        -0.04853288852647952
+      ],
+      "max_scaled_error": 1.3783794434545257e-15
+    },
+    {
+      "parameters": {
+        "frequency": 36015,
+        "soundSpeed": 360,
+        "position": 0.1,
+        "roundTrip": 0.3,
+        "electronicPhase": 1.0,
+        "positionScale": 1.02,
+        "positionOffset": 0.0005,
+        "temperature": 26.5
+      },
+      "roundtrip_terms": 401,
+      "reference_cavity": [
+        0.5800513119485332,
+        0.8135509610155914
+      ],
+      "max_scaled_error": 1.2658490090568385e-15
+    },
+    {
+      "parameters": {
+        "frequency": 36015,
+        "soundSpeed": 360,
+        "position": 0.1,
+        "roundTrip": 0.9,
+        "electronicPhase": 0,
+        "positionScale": 1,
+        "positionOffset": 0.0005,
+        "temperature": 26.5
+      },
+      "roundtrip_terms": 401,
+      "reference_cavity": [
+        0.8018531802030571,
+        -0.398948025249222
+      ],
+      "max_scaled_error": 4.577566798522238e-15
+    },
+    {
+      "parameters": {
+        "frequency": 36015,
+        "soundSpeed": 360,
+        "position": 0.1,
+        "roundTrip": 0.9,
+        "electronicPhase": 1.0,
+        "positionScale": 1.02,
+        "positionOffset": 0.0005,
+        "temperature": 26.5
+      },
+      "roundtrip_terms": 401,
+      "reference_cavity": [
+        0.7689463099250411,
+        0.4591836472531146
+      ],
+      "max_scaled_error": 4.545478681435682e-15
+    },
+    {
+      "parameters": {
+        "frequency": 36015,
+        "soundSpeed": 360,
+        "position": 0.15,
+        "roundTrip": 0.3,
+        "electronicPhase": 0,
+        "positionScale": 1,
+        "positionOffset": 0.0005,
+        "temperature": 26.5
+      },
+      "roundtrip_terms": 401,
+      "reference_cavity": [
+        0.9954714367903238,
+        -0.0726369043670374
+      ],
+      "max_scaled_error": 7.987869494273747e-16
+    },
+    {
+      "parameters": {
+        "frequency": 36015,
+        "soundSpeed": 360,
+        "position": 0.15,
+        "roundTrip": 0.3,
+        "electronicPhase": 1.0,
+        "positionScale": 1.02,
+        "positionOffset": 0.0005,
+        "temperature": 26.5
+      },
+      "roundtrip_terms": 401,
+      "reference_cavity": [
+        0.59897736017481,
+        0.7984144433434516
+      ],
+      "max_scaled_error": 7.850462293418876e-16
+    },
+    {
+      "parameters": {
+        "frequency": 36015,
+        "soundSpeed": 360,
+        "position": 0.15,
+        "roundTrip": 0.9,
+        "electronicPhase": 0,
+        "positionScale": 1,
+        "positionOffset": 0.0005,
+        "temperature": 26.5
+      },
+      "roundtrip_terms": 401,
+      "reference_cavity": [
+        0.6426406426781004,
+        -0.47973897274754956
+      ],
+      "max_scaled_error": 3.789423922623494e-15
+    },
+    {
+      "parameters": {
+        "frequency": 36015,
+        "soundSpeed": 360,
+        "position": 0.15,
+        "roundTrip": 0.9,
+        "electronicPhase": 1.0,
+        "positionScale": 1.02,
+        "positionOffset": 0.0005,
+        "temperature": 26.5
+      },
+      "roundtrip_terms": 401,
+      "reference_cavity": [
+        0.7509066469321701,
+        0.28155938128160696
+      ],
+      "max_scaled_error": 3.7258694339903e-15
+    },
+    {
+      "parameters": {
+        "frequency": 40000,
+        "soundSpeed": 330,
+        "position": 0.05,
+        "roundTrip": 0.3,
+        "electronicPhase": 0,
+        "positionScale": 1,
+        "positionOffset": 0.0005,
+        "temperature": 26.5
+      },
+      "roundtrip_terms": 401,
+      "reference_cavity": [
+        0.6936997994965886,
+        -0.5157573696865144
+      ],
+      "max_scaled_error": 4.965068306494546e-16
+    },
+    {
+      "parameters": {
+        "frequency": 40000,
+        "soundSpeed": 330,
+        "position": 0.05,
+        "roundTrip": 0.3,
+        "electronicPhase": 1.0,
+        "positionScale": 1.02,
+        "positionOffset": 0.0005,
+        "temperature": 26.5
+      },
+      "roundtrip_terms": 401,
+      "reference_cavity": [
+        0.8088024630403147,
+        0.30506335733332435
+      ],
+      "max_scaled_error": 4.965068306494546e-16
+    },
+    {
+      "parameters": {
+        "frequency": 40000,
+        "soundSpeed": 330,
+        "position": 0.05,
+        "roundTrip": 0.9,
+        "electronicPhase": 0,
+        "positionScale": 1,
+        "positionOffset": 0.0005,
+        "temperature": 26.5
+      },
+      "roundtrip_terms": 401,
+      "reference_cavity": [
+        0.01830094335779249,
+        -0.1392052577861095
+      ],
+      "max_scaled_error": 5.257539056804368e-15
+    },
+    {
+      "parameters": {
+        "frequency": 40000,
+        "soundSpeed": 330,
+        "position": 0.05,
+        "roundTrip": 0.9,
+        "electronicPhase": 1.0,
+        "positionScale": 1.02,
+        "positionOffset": 0.0005,
+        "temperature": 26.5
+      },
+      "roundtrip_terms": 401,
+      "reference_cavity": [
+        0.12702522725549217,
+        -0.059813208940608605
+      ],
+      "max_scaled_error": 5.2645127851211946e-15
+    },
+    {
+      "parameters": {
+        "frequency": 40000,
+        "soundSpeed": 330,
+        "position": 0.1,
+        "roundTrip": 0.3,
+        "electronicPhase": 0,
+        "positionScale": 1,
+        "positionOffset": 0.0005,
+        "temperature": 26.5
+      },
+      "roundtrip_terms": 401,
+      "reference_cavity": [
+        0.33409901033336636,
+        -0.5916165596829195
+      ],
+      "max_scaled_error": 1.6699540590904642e-15
+    },
+    {
+      "parameters": {
+        "frequency": 40000,
+        "soundSpeed": 330,
+        "position": 0.1,
+        "roundTrip": 0.3,
+        "electronicPhase": 1.0,
+        "positionScale": 1.02,
+        "positionOffset": 0.0005,
+        "temperature": 26.5
+      },
+      "roundtrip_terms": 401,
+      "reference_cavity": [
+        0.6783426347764272,
+        -0.03851716813789596
+      ],
+      "max_scaled_error": 1.6476622377199301e-15
+    },
+    {
+      "parameters": {
+        "frequency": 40000,
+        "soundSpeed": 330,
+        "position": 0.1,
+        "roundTrip": 0.9,
+        "electronicPhase": 0,
+        "positionScale": 1,
+        "positionOffset": 0.0005,
+        "temperature": 26.5
+      },
+      "roundtrip_terms": 401,
+      "reference_cavity": [
+        0.004197134962154423,
+        -0.07603724195857658
+      ],
+      "max_scaled_error": 3.813091091280879e-15
+    },
+    {
+      "parameters": {
+        "frequency": 40000,
+        "soundSpeed": 330,
+        "position": 0.1,
+        "roundTrip": 0.9,
+        "electronicPhase": 1.0,
+        "positionScale": 1.02,
+        "positionOffset": 0.0005,
+        "temperature": 26.5
+      },
+      "roundtrip_terms": 401,
+      "reference_cavity": [
+        0.06625085457105157,
+        -0.03755132987209686
+      ],
+      "max_scaled_error": 3.810128887820944e-15
+    },
+    {
+      "parameters": {
+        "frequency": 40000,
+        "soundSpeed": 330,
+        "position": 0.15,
+        "roundTrip": 0.3,
+        "electronicPhase": 0,
+        "positionScale": 1,
+        "positionOffset": 0.0005,
+        "temperature": 26.5
+      },
+      "roundtrip_terms": 401,
+      "reference_cavity": [
+        0.137265560506249,
+        -0.5582007814058945
+      ],
+      "max_scaled_error": 7.216503035973075e-15
+    },
+    {
+      "parameters": {
+        "frequency": 40000,
+        "soundSpeed": 330,
+        "position": 0.15,
+        "roundTrip": 0.3,
+        "electronicPhase": 1.0,
+        "positionScale": 1.02,
+        "positionOffset": 0.0005,
+        "temperature": 26.5
+      },
+      "roundtrip_terms": 401,
+      "reference_cavity": [
+        0.5438746601079644,
+        -0.18609218295160096
+      ],
+      "max_scaled_error": 7.23776861244768e-15
+    },
+    {
+      "parameters": {
+        "frequency": 40000,
+        "soundSpeed": 330,
+        "position": 0.15,
+        "roundTrip": 0.9,
+        "electronicPhase": 0,
+        "positionScale": 1,
+        "positionOffset": 0.0005,
+        "temperature": 26.5
+      },
+      "roundtrip_terms": 401,
+      "reference_cavity": [
+        0.001389929259263893,
+        -0.05782689029724448
+      ],
+      "max_scaled_error": 2.014124257435931e-14
+    },
+    {
+      "parameters": {
+        "frequency": 40000,
+        "soundSpeed": 330,
+        "position": 0.15,
+        "roundTrip": 0.9,
+        "electronicPhase": 1.0,
+        "positionScale": 1.02,
+        "positionOffset": 0.0005,
+        "temperature": 26.5
+      },
+      "roundtrip_terms": 401,
+      "reference_cavity": [
+        0.04941063231057439,
+        -0.03007441702617905
+      ],
+      "max_scaled_error": 2.0141232955040916e-14
+    },
+    {
+      "parameters": {
+        "frequency": 40000,
+        "soundSpeed": 347.21,
+        "position": 0.05,
+        "roundTrip": 0.3,
+        "electronicPhase": 0,
+        "positionScale": 1,
+        "positionOffset": 0.0005,
+        "temperature": 26.5
+      },
+      "roundtrip_terms": 401,
+      "reference_cavity": [
+        0.018628452282431054,
+        0.5389259464156221
+      ],
+      "max_scaled_error": 1.947299541561642e-15
+    },
+    {
+      "parameters": {
+        "frequency": 40000,
+        "soundSpeed": 347.21,
+        "position": 0.05,
+        "roundTrip": 0.3,
+        "electronicPhase": 1.0,
+        "positionScale": 1.02,
+        "positionOffset": 0.0005,
+        "temperature": 26.5
+      },
+      "roundtrip_terms": 401,
+      "reference_cavity": [
+        -0.4434255511459291,
+        0.3068582336280743
+      ],
+      "max_scaled_error": 2.0053283331865004e-15
+    },
+    {
+      "parameters": {
+        "frequency": 40000,
+        "soundSpeed": 347.21,
+        "position": 0.05,
+        "roundTrip": 0.9,
+        "electronicPhase": 0,
+        "positionScale": 1,
+        "positionOffset": 0.0005,
+        "temperature": 26.5
+      },
+      "roundtrip_terms": 401,
+      "reference_cavity": [
+        0.0001781861007917129,
+        0.05273930865059014
+      ],
+      "max_scaled_error": 1.5514712164401872e-15
+    },
+    {
+      "parameters": {
+        "frequency": 40000,
+        "soundSpeed": 347.21,
+        "position": 0.05,
+        "roundTrip": 0.9,
+        "electronicPhase": 1.0,
+        "positionScale": 1.02,
+        "positionOffset": 0.0005,
+        "temperature": 26.5
+      },
+      "roundtrip_terms": 401,
+      "reference_cavity": [
+        -0.04428232362716829,
+        0.028645108507517666
+      ],
+      "max_scaled_error": 1.5501285534357747e-15
+    },
+    {
+      "parameters": {
+        "frequency": 40000,
+        "soundSpeed": 347.21,
+        "position": 0.1,
+        "roundTrip": 0.3,
+        "electronicPhase": 0,
+        "positionScale": 1,
+        "positionOffset": 0.0005,
+        "temperature": 26.5
+      },
+      "roundtrip_terms": 401,
+      "reference_cavity": [
+        -0.9536125592767459,
+        0.2283145661154884
+      ],
+      "max_scaled_error": 2.44312138127538e-15
+    },
+    {
+      "parameters": {
+        "frequency": 40000,
+        "soundSpeed": 347.21,
+        "position": 0.1,
+        "roundTrip": 0.3,
+        "electronicPhase": 1.0,
+        "positionScale": 1.02,
+        "positionOffset": 0.0005,
+        "temperature": 26.5
+      },
+      "roundtrip_terms": 401,
+      "reference_cavity": [
+        -0.7073591474772316,
+        -0.6790784128442998
+      ],
+      "max_scaled_error": 2.445012586343469e-15
+    },
+    {
+      "parameters": {
+        "frequency": 40000,
+        "soundSpeed": 347.21,
+        "position": 0.1,
+        "roundTrip": 0.9,
+        "electronicPhase": 0,
+        "positionScale": 1,
+        "positionOffset": 0.0005,
+        "temperature": 26.5
+      },
+      "roundtrip_terms": 401,
+      "reference_cavity": [
+        -0.14404262716051236,
+        0.3528263240109938
+      ],
+      "max_scaled_error": 8.549438183260019e-15
+    },
+    {
+      "parameters": {
+        "frequency": 40000,
+        "soundSpeed": 347.21,
+        "position": 0.1,
+        "roundTrip": 0.9,
+        "electronicPhase": 1.0,
+        "positionScale": 1.02,
+        "positionOffset": 0.0005,
+        "temperature": 26.5
+      },
+      "roundtrip_terms": 401,
+      "reference_cavity": [
+        -0.3747196779298105,
+        0.06942518510304636
+      ],
+      "max_scaled_error": 8.583352859670048e-15
+    },
+    {
+      "parameters": {
+        "frequency": 40000,
+        "soundSpeed": 347.21,
+        "position": 0.15,
+        "roundTrip": 0.3,
+        "electronicPhase": 0,
+        "positionScale": 1,
+        "positionOffset": 0.0005,
+        "temperature": 26.5
+      },
+      "roundtrip_terms": 401,
+      "reference_cavity": [
+        -0.056893415919864555,
+        -0.5426097552631313
+      ],
+      "max_scaled_error": 3.1918987380643967e-15
+    },
+    {
+      "parameters": {
+        "frequency": 40000,
+        "soundSpeed": 347.21,
+        "position": 0.15,
+        "roundTrip": 0.3,
+        "electronicPhase": 1.0,
+        "positionScale": 1.02,
+        "positionOffset": 0.0005,
+        "temperature": 26.5
+      },
+      "roundtrip_terms": 401,
+      "reference_cavity": [
+        0.42585072131742085,
+        -0.3410474606783905
+      ],
+      "max_scaled_error": 3.142637229273806e-15
+    },
+    {
+      "parameters": {
+        "frequency": 40000,
+        "soundSpeed": 347.21,
+        "position": 0.15,
+        "roundTrip": 0.9,
+        "electronicPhase": 0,
+        "positionScale": 1,
+        "positionOffset": 0.0005,
+        "temperature": 26.5
+      },
+      "roundtrip_terms": 401,
+      "reference_cavity": [
+        -0.0005494754863483335,
+        -0.053614492357239106
+      ],
+      "max_scaled_error": 7.930830192863774e-15
+    },
+    {
+      "parameters": {
+        "frequency": 40000,
+        "soundSpeed": 347.21,
+        "position": 0.15,
+        "roundTrip": 0.9,
+        "electronicPhase": 1.0,
+        "positionScale": 1.02,
+        "positionOffset": 0.0005,
+        "temperature": 26.5
+      },
+      "roundtrip_terms": 401,
+      "reference_cavity": [
+        0.04481815681152941,
+        -0.029430401527191376
+      ],
+      "max_scaled_error": 7.931261969987521e-15
+    },
+    {
+      "parameters": {
+        "frequency": 40000,
+        "soundSpeed": 360,
+        "position": 0.05,
+        "roundTrip": 0.3,
+        "electronicPhase": 0,
+        "positionScale": 1,
+        "positionOffset": 0.0005,
+        "temperature": 26.5
+      },
+      "roundtrip_terms": 401,
+      "reference_cavity": [
+        -0.7304391846168261,
+        0.49373651069265945
+      ],
+      "max_scaled_error": 1.1157603309187458e-15
+    },
+    {
+      "parameters": {
+        "frequency": 40000,
+        "soundSpeed": 360,
+        "position": 0.05,
+        "roundTrip": 0.3,
+        "electronicPhase": 1.0,
+        "positionScale": 1.02,
+        "positionOffset": 0.0005,
+        "temperature": 26.5
+      },
+      "roundtrip_terms": 401,
+      "reference_cavity": [
+        -0.8101229236330817,
+        -0.3478764048032643
+      ],
+      "max_scaled_error": 1.2225062931717345e-15
+    },
+    {
+      "parameters": {
+        "frequency": 40000,
+        "soundSpeed": 360,
+        "position": 0.05,
+        "roundTrip": 0.9,
+        "electronicPhase": 0,
+        "positionScale": 1,
+        "positionOffset": 0.0005,
+        "temperature": 26.5
+      },
+      "roundtrip_terms": 401,
+      "reference_cavity": [
+        -0.02179654424720667,
+        0.15073257300114454
+      ],
+      "max_scaled_error": 1.0811377896969311e-15
+    },
+    {
+      "parameters": {
+        "frequency": 40000,
+        "soundSpeed": 360,
+        "position": 0.05,
+        "roundTrip": 0.9,
+        "electronicPhase": 1.0,
+        "positionScale": 1.02,
+        "positionOffset": 0.0005,
+        "temperature": 26.5
+      },
+      "roundtrip_terms": 401,
+      "reference_cavity": [
+        -0.13861380976262394,
+        0.0630999972088502
+      ],
+      "max_scaled_error": 1.0664246959634153e-15
+    },
+    {
+      "parameters": {
+        "frequency": 40000,
+        "soundSpeed": 360,
+        "position": 0.1,
+        "roundTrip": 0.3,
+        "electronicPhase": 0,
+        "positionScale": 1,
+        "positionOffset": 0.0005,
+        "temperature": 26.5
+      },
+      "roundtrip_terms": 401,
+      "reference_cavity": [
+        0.3807644077464757,
+        -0.5933557947673692
+      ],
+      "max_scaled_error": 1.5582722720639762e-15
+    },
+    {
+      "parameters": {
+        "frequency": 40000,
+        "soundSpeed": 360,
+        "position": 0.1,
+        "roundTrip": 0.3,
+        "electronicPhase": 1.0,
+        "positionScale": 1.02,
+        "positionOffset": 0.0005,
+        "temperature": 26.5
+      },
+      "roundtrip_terms": 401,
+      "reference_cavity": [
+        0.7050195724623077,
+        -0.00018930294680991056
+      ],
+      "max_scaled_error": 1.6011864169946884e-15
+    },
+    {
+      "parameters": {
+        "frequency": 40000,
+        "soundSpeed": 360,
+        "position": 0.1,
+        "roundTrip": 0.9,
+        "electronicPhase": 0,
+        "positionScale": 1,
+        "positionOffset": 0.0005,
+        "temperature": 26.5
+      },
+      "roundtrip_terms": 401,
+      "reference_cavity": [
+        0.005115716695014605,
+        -0.08155932384793284
+      ],
+      "max_scaled_error": 1.5783237978255176e-14
+    },
+    {
+      "parameters": {
+        "frequency": 40000,
+        "soundSpeed": 360,
+        "position": 0.1,
+        "roundTrip": 0.9,
+        "electronicPhase": 1.0,
+        "positionScale": 1.02,
+        "positionOffset": 0.0005,
+        "temperature": 26.5
+      },
+      "roundtrip_terms": 401,
+      "reference_cavity": [
+        0.07139383808507074,
+        -0.039761963574732336
+      ],
+      "max_scaled_error": 1.5791289849649438e-14
+    },
+    {
+      "parameters": {
+        "frequency": 40000,
+        "soundSpeed": 360,
+        "position": 0.15,
+        "roundTrip": 0.3,
+        "electronicPhase": 0,
+        "positionScale": 1,
+        "positionOffset": 0.0005,
+        "temperature": 26.5
+      },
+      "roundtrip_terms": 401,
+      "reference_cavity": [
+        -0.17625899280576143,
+        0.5669662715423378
+      ],
+      "max_scaled_error": 7.012939286194499e-15
+    },
+    {
+      "parameters": {
+        "frequency": 40000,
+        "soundSpeed": 360,
+        "position": 0.15,
+        "roundTrip": 0.3,
+        "electronicPhase": 1.0,
+        "positionScale": 1.02,
+        "positionOffset": 0.0005,
+        "temperature": 26.5
+      },
+      "roundtrip_terms": 401,
+      "reference_cavity": [
+        -0.572318807110541,
+        0.15801635560627497
+      ],
+      "max_scaled_error": 6.994460125508227e-15
+    },
+    {
+      "parameters": {
+        "frequency": 40000,
+        "soundSpeed": 360,
+        "position": 0.15,
+        "roundTrip": 0.9,
+        "electronicPhase": 0,
+        "positionScale": 1,
+        "positionOffset": 0.0005,
+        "temperature": 26.5
+      },
+      "roundtrip_terms": 401,
+      "reference_cavity": [
+        -0.0018450184501969831,
+        0.060717648235823485
+      ],
+      "max_scaled_error": 1.86064919265715e-14
+    },
+    {
+      "parameters": {
+        "frequency": 40000,
+        "soundSpeed": 360,
+        "position": 0.15,
+        "roundTrip": 0.9,
+        "electronicPhase": 1.0,
+        "positionScale": 1.02,
+        "positionOffset": 0.0005,
+        "temperature": 26.5
+      },
+      "roundtrip_terms": 401,
+      "reference_cavity": [
+        -0.05208900697922852,
+        0.03125335585643002
+      ],
+      "max_scaled_error": 1.861025445262264e-14
+    }
+  ]
+}

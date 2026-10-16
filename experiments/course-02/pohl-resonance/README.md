@@ -1,5 +1,8 @@
 [普通物理实验 2](../README.md) · [项目首页](../../../README.md) · [使用指南](../../../docs/usage.md)
 
+<!-- virtual-laboratory-entry -->
+[在线虚拟实验](https://hnnuyuxuan.github.io/general-physics-lab/simulations/pohl-resonance/) · [模型依据与参数来源](../../../docs/pohl-resonance-model-evidence.md)
+
 # 波尔共振实验
 
 **从指数衰减走向共振峰，连起振幅与相位。**

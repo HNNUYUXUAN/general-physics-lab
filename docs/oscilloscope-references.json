@@ -1,0 +1,36 @@
+{
+  "experimentId": "course-03/oscilloscope",
+  "model_coverage_status": "complete-for-declared-ideal-model",
+  "references": [
+    {
+      "id": "wu2019lissajous",
+      "authors": [
+        "伍泓锦",
+        "段阳",
+        "杨浩林",
+        "樊代和",
+        "贾欣燕"
+      ],
+      "title": "基于李萨如图形的精确测量初相位差研究",
+      "journal": "物理实验",
+      "year": 2019,
+      "volume": "39",
+      "issue": "12",
+      "pages": "50–53",
+      "doi": "10.19655/j.cnki.1005-4642.2019.12.011",
+      "readingStatus": "verified-fulltext",
+      "fulltextSha256": "708e7e50eef819514f807b2cb19d30fffb1d0fc754fb774e254108703ff96ca5",
+      "locators": [
+        "p.51 equations (1)–(3), parametric signals, amplitude and frequency ratio",
+        "pp.51–53 phase branches and experimental ambiguity"
+      ],
+      "notes": [
+        "Read all four PDF pages; rendered p.51 equations checked.",
+        "Use angular frequencies p=2*pi*f_x and q=2*pi*f_y.",
+        "Equation (4) with a principal arcsine is only a branch and is not the renderer for a full curve."
+      ],
+      "application": "p.51式(1)采用两个正交正弦参数轨迹。项目明确以赫兹输入，写成",
+      "coverage_status": "complete-for-declared-ideal-model"
+    }
+  ]
+}

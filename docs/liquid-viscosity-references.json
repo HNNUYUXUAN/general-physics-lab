@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "experiment": "course-02/liquid-viscosity",
+  "references": [
+    {
+      "id": "dai2014-falling-sphere",
+      "title": "用落球法测液体黏度的实验条件分析",
+      "authors": [
+        "代伟",
+        "兰小刚",
+        "徐平川",
+        "谢春茂"
+      ],
+      "journal": "大学物理",
+      "year": 2014,
+      "volume": 33,
+      "issue": 7,
+      "pages": "20–23",
+      "doi": "10.16854/j.cnki.1000-0712.2014.07.006",
+      "url": "https://doi.org/10.16854/j.cnki.1000-0712.2014.07.006",
+      "full_text_status": "obtained_and_read",
+      "pdf_sha256": "9674763196bebe3140560ca3d5e64d8e9664f7ea33d13d24d0cd025ec46dd0d8",
+      "locators": [
+        {
+          "page": 20,
+          "location": "引言、式1",
+          "supports": "Stokes条件、Re及壁面/端部修正"
+        },
+        {
+          "page": 21,
+          "location": "§1",
+          "supports": "忽略端部项须独立满足条件"
+        },
+        {
+          "page": 22,
+          "location": "§4式5",
+          "supports": "低Re零初速动力学和指数终速"
+        },
+        {
+          "page": 23,
+          "location": "计时距离讨论",
+          "supports": "5cm仅为该文场景建议"
+        }
+      ]
+    }
+  ]
+}

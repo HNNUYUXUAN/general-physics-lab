@@ -1,0 +1,18 @@
+{
+  "experimentId": "course-03/hall-effect",
+  "status": "passed",
+  "method": "independent four-polarity linear-system inversion (Hadamard basis)",
+  "caseCount": 216,
+  "maxScaledErrors": {
+    "rawVoltage_mV": 1.7080354225002412e-16,
+    "trueHall_mV": 0,
+    "projectedHall_mV": 5.551115123125783e-17,
+    "projectedCommon_mV": 8.881784197001252e-16,
+    "projectedCurrentOdd_mV": 8.881784197001252e-16,
+    "projectedFieldOdd_mV": 8.881784197001252e-16
+  },
+  "scaling": "abs(error)/max(1,abs(reference))",
+  "tolerance": 1e-10,
+  "modelSha256": "b13a0fa41d3f296de093a980c80e3b8fbce6fba2c4ea038a6e86c8d002a8bde0",
+  "numpyVersion": "2.5.4"
+}

@@ -1,0 +1,300 @@
+{
+  "status": "passed",
+  "source_hashes": {
+    "simulations/oscilloscope/model.mjs": "ed81126d23fddc741fa8742c4f4700c01548f4b43b1ac6ea37243a3a457dc62c",
+    "simulations/oscilloscope/app.mjs": "5c4b32f2b1c869b67f7fd0c343c536940a7388adbd3a2fdc512309f5109aa727",
+    "simulations/oscilloscope/chart.mjs": "7661b7bfc2fe4ac33d2ab50733687b64f47c7110505e27c14c80c42c38df82dd",
+    "simulations/oscilloscope/lab.css": "d007905ee689191cb3d99caebe74d1e5e924b6fd068c7a81d2417c75219b6169",
+    "simulations/oscilloscope/observations.json": "9ee28eaafd7812e31d47d186efe884569f80797fb615be6d550d3a92ac337627",
+    "simulations/oscilloscope/diagram.mjs": "2bab84d0a687d90b1c5c8548a38bd89cb3be30d28de4e23dadf3b978dd0bf0ca",
+    "simulations/oscilloscope/ui-config.json": "87de3b78f7dd5da0b756ad535254c3223afbd62df7f3f173e76f56f1bdee90db",
+    "simulations/oscilloscope/index.html": "ee5037181e40681f996c51fe81cab46362af96379b4411465d5aa3999488fb51"
+  },
+  "source_record_sha256": "eaf1d1bd3bff22cfb61740d4c473e9e772963d4ae7bf9b50532f094a83122248",
+  "interaction_checks": 34,
+  "visual_status": "passed",
+  "exports_status": "passed",
+  "exports": [
+    {
+      "filename": "1-oscilloscope-records.csv",
+      "sha256": "88a315f32820511bb21744273db3ff42d0f3c5adeb02ad2732825591d27790f5",
+      "bytes": 1019
+    },
+    {
+      "filename": "2-oscilloscope-records.json",
+      "sha256": "8f8da74dbc88c5b70189d5eb31e233e6bb4f913ccc4efdb7cc52e807c7dbdd5f",
+      "bytes": 3942
+    }
+  ],
+  "fonts": {
+    "h1": [
+      {
+        "familyName": "SimSun",
+        "postScriptName": "SimSun",
+        "isCustomFont": false,
+        "glyphCount": 12
+      }
+    ],
+    "#summary": [
+      {
+        "familyName": "Times New Roman",
+        "postScriptName": "TimesNewRomanPSMT",
+        "isCustomFont": false,
+        "glyphCount": 37
+      },
+      {
+        "familyName": "SimSun",
+        "postScriptName": "SimSun",
+        "isCustomFont": false,
+        "glyphCount": 8
+      }
+    ]
+  },
+  "browser": "fixed Playwright Chromium 1243",
+  "layout": {
+    "wide": {
+      "width": 1280,
+      "scrollWidth": 1280,
+      "math": 8,
+      "mathErrors": 0
+    },
+    "narrow": {
+      "width": 390,
+      "scrollWidth": 390,
+      "math": 8,
+      "mathErrors": 0
+    }
+  },
+  "interaction": [
+    {
+      "name": "waveform=sine",
+      "status": "passed"
+    },
+    {
+      "name": "waveform=triangle",
+      "status": "passed"
+    },
+    {
+      "name": "waveform=square",
+      "status": "passed"
+    },
+    {
+      "name": "amplitude=0.1",
+      "status": "passed"
+    },
+    {
+      "name": "amplitude=2",
+      "status": "passed"
+    },
+    {
+      "name": "frequency=250",
+      "status": "passed"
+    },
+    {
+      "name": "frequency=2000",
+      "status": "passed"
+    },
+    {
+      "name": "voltsPerDiv=0.05",
+      "status": "passed"
+    },
+    {
+      "name": "voltsPerDiv=1",
+      "status": "passed"
+    },
+    {
+      "name": "msPerDiv=0.05",
+      "status": "passed"
+    },
+    {
+      "name": "msPerDiv=1",
+      "status": "passed"
+    },
+    {
+      "name": "y1=-4",
+      "status": "passed"
+    },
+    {
+      "name": "y1=4",
+      "status": "passed"
+    },
+    {
+      "name": "y2=-4",
+      "status": "passed"
+    },
+    {
+      "name": "y2=4",
+      "status": "passed"
+    },
+    {
+      "name": "x1=0",
+      "status": "passed"
+    },
+    {
+      "name": "x1=10",
+      "status": "passed"
+    },
+    {
+      "name": "x2=0",
+      "status": "passed"
+    },
+    {
+      "name": "x2=10",
+      "status": "passed"
+    },
+    {
+      "name": "phase=0",
+      "status": "passed"
+    },
+    {
+      "name": "phase=360",
+      "status": "passed"
+    },
+    {
+      "name": "ratio=0.25",
+      "status": "passed"
+    },
+    {
+      "name": "ratio=0.5",
+      "status": "passed"
+    },
+    {
+      "name": "ratio=1",
+      "status": "passed"
+    },
+    {
+      "name": "ratio=1.5",
+      "status": "passed"
+    },
+    {
+      "name": "ratio=2",
+      "status": "passed"
+    },
+    {
+      "name": "原表 lissajous",
+      "status": "passed"
+    },
+    {
+      "name": "原表 waveforms",
+      "status": "passed"
+    },
+    {
+      "name": "默认设置读数与记录",
+      "status": "passed"
+    },
+    {
+      "name": "测量闭环与同组分析",
+      "status": "passed"
+    },
+    {
+      "name": "非法编辑blur后不得记录",
+      "status": "passed"
+    },
+    {
+      "name": "恢复删除与清空",
+      "status": "passed"
+    },
+    {
+      "name": "真实CSV/JSON导出与元数据",
+      "status": "passed"
+    },
+    {
+      "name": "restore",
+      "status": "passed"
+    }
+  ],
+  "background": {
+    "status": "not-applicable"
+  },
+  "checked_at_utc": "2026-10-16T16:13:05.331Z",
+  "screenshots": [
+    {
+      "path": "docs/assets/simulations/oscilloscope/frontend-01-3ed4fecbd076.png",
+      "sha256": "3ed4fecbd076f5a939c08efa49d21f4857c6a832538696a63c6184e5c11aea71"
+    },
+    {
+      "path": "docs/assets/simulations/oscilloscope/frontend-02-ea8bae806c2b.png",
+      "sha256": "ea8bae806c2bc01a18408f8ed63bcee1d5e516d2f4806a72b63aac126fd5f47c"
+    },
+    {
+      "path": "docs/assets/simulations/oscilloscope/frontend-03-715c486ffab5.png",
+      "sha256": "715c486ffab5479dc59d69075cb23dd9c6b3097cc5a4e5d68505be86d13ad344"
+    },
+    {
+      "path": "docs/assets/simulations/oscilloscope/frontend-04-351796d08164.png",
+      "sha256": "351796d08164081b40b89fe3f5949b06f69839c3b8a357039b1cbd2625184cc1"
+    },
+    {
+      "path": "docs/assets/simulations/oscilloscope/frontend-05-9313f675c7c9.png",
+      "sha256": "9313f675c7c9a719e720836dc61eb8d1375867c76bd2f43fe6f88f1869c25cdb"
+    },
+    {
+      "path": "docs/assets/simulations/oscilloscope/frontend-06-506efac703bf.png",
+      "sha256": "506efac703bf784b38741f4a8bf9e10a467952df640b926221206d0e486d6085"
+    },
+    {
+      "path": "docs/assets/simulations/oscilloscope/frontend-07-e5498fdc1df5.png",
+      "sha256": "e5498fdc1df527a8c97e14080df94d57e0db5f3a60747dd89414750262664452"
+    },
+    {
+      "path": "docs/assets/simulations/oscilloscope/frontend-08-2bab823ece5d.png",
+      "sha256": "2bab823ece5dbbe894adaa38525fab9cadfc275f1950d28188e2952846a78d84"
+    },
+    {
+      "path": "docs/assets/simulations/oscilloscope/frontend-09-902de9b33458.png",
+      "sha256": "902de9b33458443963eaae52073a96312a8265b2f1d0211ca8c01f68f47e856e"
+    },
+    {
+      "path": "docs/assets/simulations/oscilloscope/frontend-10-d95f296ae067.png",
+      "sha256": "d95f296ae06787422e53d43429de89caabd9dc283c6db0d265ade77a5a4a66ea"
+    },
+    {
+      "path": "docs/assets/simulations/oscilloscope/frontend-11-c0e3e3a0560d.png",
+      "sha256": "c0e3e3a0560d2569cfe1c9478a41ea6d16b600934e6c7b830d2c7c937c9ea77a"
+    },
+    {
+      "path": "docs/assets/simulations/oscilloscope/frontend-12-278e68c27639.png",
+      "sha256": "278e68c2763997178a3e6ce011fc26bf5ca96285f2064565cfc8b27371654449"
+    }
+  ],
+  "schema_version": 1,
+  "experiment_id": "course-03/oscilloscope",
+  "numerical": {
+    "status": "passed",
+    "reference_sha256": "421e5658453d1ae854ff5b94a4d06bd16bd9fcb69f4473c9cfa3c97c58a9c73f",
+    "source_files": {
+      "simulations/oscilloscope/index.html": "ee5037181e40681f996c51fe81cab46362af96379b4411465d5aa3999488fb51",
+      "simulations/oscilloscope/model.mjs": "ed81126d23fddc741fa8742c4f4700c01548f4b43b1ac6ea37243a3a457dc62c",
+      "simulations/oscilloscope/app.mjs": "5c4b32f2b1c869b67f7fd0c343c536940a7388adbd3a2fdc512309f5109aa727",
+      "simulations/oscilloscope/chart.mjs": "7661b7bfc2fe4ac33d2ab50733687b64f47c7110505e27c14c80c42c38df82dd",
+      "simulations/oscilloscope/lab.css": "d007905ee689191cb3d99caebe74d1e5e924b6fd068c7a81d2417c75219b6169",
+      "simulations/oscilloscope/observations.json": "9ee28eaafd7812e31d47d186efe884569f80797fb615be6d550d3a92ac337627",
+      "docs/oscilloscope-model-evidence.md": "e48c741f201adb98a27477fa9b4948749f3653cbb9cb17988538423b761128e0",
+      "docs/oscilloscope-references.json": "9100c82b4567a7c7ba7df68651e19bb9f6434cba8e8575c67ab4115c830639f2",
+      "docs/oscilloscope-references.bib": "8956b1f93aaaef3adafb0901c62ade908f428fe2b5748805213ae664b9145fbe",
+      "docs/simulation/oscilloscope-reference.json": "421e5658453d1ae854ff5b94a4d06bd16bd9fcb69f4473c9cfa3c97c58a9c73f",
+      "simulations/oscilloscope/diagram.mjs": "2bab84d0a687d90b1c5c8548a38bd89cb3be30d28de4e23dadf3b978dd0bf0ca",
+      "simulations/oscilloscope/ui-config.json": "87de3b78f7dd5da0b756ad535254c3223afbd62df7f3f173e76f56f1bdee90db",
+      "scripts/validate_oscilloscope_simulation.py": "badd3fe7de5bbcc4439b1aa8634ca627513c29aa7c7f1befe9682295bf2149b1",
+      "tests/oscilloscope-model.test.mjs": "6097a0bf21049f78a0ee8830be85ed8149b4511449dafc9d14aa64ca419eb0b2"
+    }
+  },
+  "scientific_evidence": {
+    "status": "verified",
+    "decision_source_files": {
+      "docs/oscilloscope-references.json": "9100c82b4567a7c7ba7df68651e19bb9f6434cba8e8575c67ab4115c830639f2",
+      "docs/oscilloscope-model-evidence.md": "e48c741f201adb98a27477fa9b4948749f3653cbb9cb17988538423b761128e0",
+      "simulations/oscilloscope/model.mjs": "ed81126d23fddc741fa8742c4f4700c01548f4b43b1ac6ea37243a3a457dc62c"
+    },
+    "core_references": [
+      {
+        "id": "wu2019lissajous",
+        "pdf_sha256": "708e7e50eef819514f807b2cb19d30fffb1d0fc754fb774e254108703ff96ca5",
+        "locators": [
+          "p.51 equations (1)–(3), parametric signals, amplitude and frequency ratio",
+          "pp.51–53 phase branches and experimental ambiguity"
+        ]
+      }
+    ]
+  }
+}

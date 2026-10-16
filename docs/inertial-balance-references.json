@@ -1,0 +1,34 @@
+{
+  "experimentId": "course-02/inertial-balance",
+  "references": [
+    {
+      "id": "zheng2015",
+      "authors": [
+        "郑雪梅",
+        "杨静",
+        "庄玲",
+        "杨建荣"
+      ],
+      "title": "阻尼惯性秤的定标和惯性质量的测量",
+      "journal": "上饶师范学院学报",
+      "year": 2015,
+      "volume": "35",
+      "issue": "3",
+      "pages": "38–41",
+      "doi": "10.3969/j.issn.1004-2237.2015.03.009",
+      "fulltextSha256": "ede7ba56dd63e142ec2450885c6282a40a5edaac36f52d10f950aee112d4fc8f",
+      "readingStatus": "verified-fulltext",
+      "locators": [
+        "p.38 equations (1), (3)",
+        "pp.39–40 empirical quadratic calibration discussion"
+      ],
+      "uses": [
+        "Ideal horizontal oscillator as zero-damping limit of the damped inertial balance relation"
+      ],
+      "notes": [
+        "Simulation is not a reproduction of the paper apparatus.",
+        "Paper quadratic data not used as independent validation; target-mass inclusion in fitting is not reproduced."
+      ]
+    }
+  ]
+}

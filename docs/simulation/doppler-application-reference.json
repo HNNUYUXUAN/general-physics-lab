@@ -1,0 +1,709 @@
+{
+  "schema_version": 1,
+  "experiment": "course-01/doppler-application",
+  "model_sha256": "61df11205a04373f4ee9d64b89c9be45af382c42e75dd30b475dc212409403e6",
+  "validator_sha256": "27749aacb16455bac7ba49a0666d5bda6ce51cf457318b6fc6123a79c471814a",
+  "environment": {
+    "python": "3.14.7",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1"
+  },
+  "method": "DOP853 mass-spring trajectory and same-direction velocity-zero events; finite difference of retarded phase from moving receiver distance",
+  "case_count": 36,
+  "tolerances": {
+    "period_s": 1e-09,
+    "position_m": 1e-10,
+    "velocity_m_s": 1e-09,
+    "frequency_Hz": 5e-05
+  },
+  "max_period_error_s": 4.2521541843143495e-13,
+  "max_frequency_error_Hz": 2.283872163388878e-06,
+  "status": "passed",
+  "failures": [],
+  "cases": [
+    {
+      "parameters": {
+        "stiffness": 3.0,
+        "mass": 0.05,
+        "springMass": 0.0,
+        "amplitude": 0.01,
+        "carrier": 60000,
+        "soundSpeed": 350,
+        "addedMass": 0.05,
+        "baselinePosition": 0.249,
+        "staticOffset": 0,
+        "gravity": 9.8
+      },
+      "reference_period_s": 0.8111557351949122,
+      "period_error_s": 1.8995915951336428e-13,
+      "max_position_error_m": 5.936223734792634e-14,
+      "max_velocity_error_m_s": 2.835127965727935e-13,
+      "max_acoustic_frequency_error_Hz": 1.6868580132722855e-06
+    },
+    {
+      "parameters": {
+        "stiffness": 3.0,
+        "mass": 0.05,
+        "springMass": 0.0,
+        "amplitude": 0.05,
+        "carrier": 20000,
+        "soundSpeed": 330,
+        "addedMass": 0.05,
+        "baselinePosition": 0.249,
+        "staticOffset": 0,
+        "gravity": 9.8
+      },
+      "reference_period_s": 0.811155735194856,
+      "period_error_s": 1.3367085216486885e-13,
+      "max_position_error_m": 1.9104856585627772e-13,
+      "max_velocity_error_m_s": 1.273536831547517e-12,
+      "max_acoustic_frequency_error_Hz": 4.931644070893526e-07
+    },
+    {
+      "parameters": {
+        "stiffness": 3.0,
+        "mass": 0.05,
+        "springMass": 0.05,
+        "amplitude": 0.01,
+        "carrier": 60000,
+        "soundSpeed": 350,
+        "addedMass": 0.05,
+        "baselinePosition": 0.249,
+        "staticOffset": 0,
+        "gravity": 9.8
+      },
+      "reference_period_s": 0.9366419641389792,
+      "period_error_s": 2.1571633368466792e-13,
+      "max_position_error_m": 4.4254530595644326e-14,
+      "max_velocity_error_m_s": 1.6215501164040802e-13,
+      "max_acoustic_frequency_error_Hz": 9.707655408419669e-07
+    },
+    {
+      "parameters": {
+        "stiffness": 3.0,
+        "mass": 0.05,
+        "springMass": 0.05,
+        "amplitude": 0.05,
+        "carrier": 20000,
+        "soundSpeed": 330,
+        "addedMass": 0.05,
+        "baselinePosition": 0.249,
+        "staticOffset": 0,
+        "gravity": 9.8
+      },
+      "reference_period_s": 0.9366419641389183,
+      "period_error_s": 1.5487611193520934e-13,
+      "max_position_error_m": 1.5853984791647235e-13,
+      "max_velocity_error_m_s": 1.048550135607229e-12,
+      "max_acoustic_frequency_error_Hz": 2.8076829039491713e-07
+    },
+    {
+      "parameters": {
+        "stiffness": 3.0,
+        "mass": 0.1032,
+        "springMass": 0.0,
+        "amplitude": 0.01,
+        "carrier": 60000,
+        "soundSpeed": 350,
+        "addedMass": 0.05,
+        "baselinePosition": 0.249,
+        "staticOffset": 0,
+        "gravity": 9.8
+      },
+      "reference_period_s": 1.1653572695060241,
+      "period_error_s": 2.7489122089718876e-13,
+      "max_position_error_m": 5.333060382195498e-14,
+      "max_velocity_error_m_s": 1.7214311573421348e-13,
+      "max_acoustic_frequency_error_Hz": 1.7771089915186167e-06
+    },
+    {
+      "parameters": {
+        "stiffness": 3.0,
+        "mass": 0.1032,
+        "springMass": 0.0,
+        "amplitude": 0.05,
+        "carrier": 20000,
+        "soundSpeed": 330,
+        "addedMass": 0.05,
+        "baselinePosition": 0.249,
+        "staticOffset": 0,
+        "gravity": 9.8
+      },
+      "reference_period_s": 1.1653572695059435,
+      "period_error_s": 1.942890293094024e-13,
+      "max_position_error_m": 1.4876988529977098e-13,
+      "max_velocity_error_m_s": 8.010814234182817e-13,
+      "max_acoustic_frequency_error_Hz": 6.154259608592838e-07
+    },
+    {
+      "parameters": {
+        "stiffness": 3.0,
+        "mass": 0.1032,
+        "springMass": 0.05,
+        "amplitude": 0.01,
+        "carrier": 60000,
+        "soundSpeed": 350,
+        "addedMass": 0.05,
+        "baselinePosition": 0.249,
+        "staticOffset": 0,
+        "gravity": 9.8
+      },
+      "reference_period_s": 1.2559387357021092,
+      "period_error_s": 2.7355895326763857e-13,
+      "max_position_error_m": 4.8171536204399956e-14,
+      "max_velocity_error_m_s": 1.6546486403257177e-13,
+      "max_acoustic_frequency_error_Hz": 2.100008714478463e-06
+    },
+    {
+      "parameters": {
+        "stiffness": 3.0,
+        "mass": 0.1032,
+        "springMass": 0.05,
+        "amplitude": 0.05,
+        "carrier": 20000,
+        "soundSpeed": 330,
+        "addedMass": 0.05,
+        "baselinePosition": 0.249,
+        "staticOffset": 0,
+        "gravity": 9.8
+      },
+      "reference_period_s": 1.2559387357020444,
+      "period_error_s": 2.0872192862952943e-13,
+      "max_position_error_m": 1.367031488008763e-13,
+      "max_velocity_error_m_s": 7.883971253619393e-13,
+      "max_acoustic_frequency_error_Hz": 5.863475962541997e-07
+    },
+    {
+      "parameters": {
+        "stiffness": 3.0,
+        "mass": 0.2,
+        "springMass": 0.0,
+        "amplitude": 0.01,
+        "carrier": 60000,
+        "soundSpeed": 350,
+        "addedMass": 0.05,
+        "baselinePosition": 0.249,
+        "staticOffset": 0,
+        "gravity": 9.8
+      },
+      "reference_period_s": 1.6223114703898567,
+      "period_error_s": 4.121147867408581e-13,
+      "max_position_error_m": 6.51995818445883e-14,
+      "max_velocity_error_m_s": 1.9291512831642876e-13,
+      "max_acoustic_frequency_error_Hz": 1.2637174222618341e-06
+    },
+    {
+      "parameters": {
+        "stiffness": 3.0,
+        "mass": 0.2,
+        "springMass": 0.0,
+        "amplitude": 0.05,
+        "carrier": 20000,
+        "soundSpeed": 330,
+        "addedMass": 0.05,
+        "baselinePosition": 0.249,
+        "staticOffset": 0,
+        "gravity": 9.8
+      },
+      "reference_period_s": 1.6223114703896935,
+      "period_error_s": 2.489120021209601e-13,
+      "max_position_error_m": 1.4700740624817854e-13,
+      "max_velocity_error_m_s": 6.217248937900877e-13,
+      "max_acoustic_frequency_error_Hz": 5.235960998106748e-07
+    },
+    {
+      "parameters": {
+        "stiffness": 3.0,
+        "mass": 0.2,
+        "springMass": 0.05,
+        "amplitude": 0.01,
+        "carrier": 60000,
+        "soundSpeed": 350,
+        "addedMass": 0.05,
+        "baselinePosition": 0.249,
+        "staticOffset": 0,
+        "gravity": 9.8
+      },
+      "reference_period_s": 1.6885553142272327,
+      "period_error_s": 4.2521541843143495e-13,
+      "max_position_error_m": 6.726216805752472e-14,
+      "max_velocity_error_m_s": 2.002356613850509e-13,
+      "max_acoustic_frequency_error_Hz": 1.798740413505584e-06
+    },
+    {
+      "parameters": {
+        "stiffness": 3.0,
+        "mass": 0.2,
+        "springMass": 0.05,
+        "amplitude": 0.05,
+        "carrier": 20000,
+        "soundSpeed": 330,
+        "addedMass": 0.05,
+        "baselinePosition": 0.249,
+        "staticOffset": 0,
+        "gravity": 9.8
+      },
+      "reference_period_s": 1.688555314227071,
+      "period_error_s": 2.6356694604601216e-13,
+      "max_position_error_m": 1.5420303922653034e-13,
+      "max_velocity_error_m_s": 6.103451077876798e-13,
+      "max_acoustic_frequency_error_Hz": 4.2405008571222425e-07
+    },
+    {
+      "parameters": {
+        "stiffness": 5.2,
+        "mass": 0.05,
+        "springMass": 0.0,
+        "amplitude": 0.01,
+        "carrier": 60000,
+        "soundSpeed": 350,
+        "addedMass": 0.05,
+        "baselinePosition": 0.249,
+        "staticOffset": 0,
+        "gravity": 9.8
+      },
+      "reference_period_s": 0.6161170094006756,
+      "period_error_s": 1.3355982986240633e-13,
+      "max_position_error_m": 7.609191055024667e-14,
+      "max_velocity_error_m_s": 4.676398157599237e-13,
+      "max_acoustic_frequency_error_Hz": 2.283872163388878e-06
+    },
+    {
+      "parameters": {
+        "stiffness": 5.2,
+        "mass": 0.05,
+        "springMass": 0.0,
+        "amplitude": 0.05,
+        "carrier": 20000,
+        "soundSpeed": 330,
+        "addedMass": 0.05,
+        "baselinePosition": 0.249,
+        "staticOffset": 0,
+        "gravity": 9.8
+      },
+      "reference_period_s": 0.6161170094006451,
+      "period_error_s": 1.0302869668521453e-13,
+      "max_position_error_m": 1.643546410079466e-13,
+      "max_velocity_error_m_s": 1.5312751067142472e-12,
+      "max_acoustic_frequency_error_Hz": 7.005037332419306e-07
+    },
+    {
+      "parameters": {
+        "stiffness": 5.2,
+        "mass": 0.05,
+        "springMass": 0.05,
+        "amplitude": 0.01,
+        "carrier": 60000,
+        "soundSpeed": 350,
+        "addedMass": 0.05,
+        "baselinePosition": 0.249,
+        "staticOffset": 0,
+        "gravity": 9.8
+      },
+      "reference_period_s": 0.7114306424595699,
+      "period_error_s": 1.496580637194711e-13,
+      "max_position_error_m": 7.55211865266503e-14,
+      "max_velocity_error_m_s": 3.040519225283589e-13,
+      "max_acoustic_frequency_error_Hz": 1.107502612285316e-06
+    },
+    {
+      "parameters": {
+        "stiffness": 5.2,
+        "mass": 0.05,
+        "springMass": 0.05,
+        "amplitude": 0.05,
+        "carrier": 20000,
+        "soundSpeed": 330,
+        "addedMass": 0.05,
+        "baselinePosition": 0.249,
+        "staticOffset": 0,
+        "gravity": 9.8
+      },
+      "reference_period_s": 0.7114306424595371,
+      "period_error_s": 1.1690648449302898e-13,
+      "max_position_error_m": 1.7325724188665959e-13,
+      "max_velocity_error_m_s": 1.5030754418887682e-12,
+      "max_acoustic_frequency_error_Hz": 2.913584467023611e-07
+    },
+    {
+      "parameters": {
+        "stiffness": 5.2,
+        "mass": 0.1032,
+        "springMass": 0.0,
+        "amplitude": 0.01,
+        "carrier": 60000,
+        "soundSpeed": 350,
+        "addedMass": 0.05,
+        "baselinePosition": 0.249,
+        "staticOffset": 0,
+        "gravity": 9.8
+      },
+      "reference_period_s": 0.8851523876594065,
+      "period_error_s": 2.0461410343841635e-13,
+      "max_position_error_m": 3.917872970493619e-14,
+      "max_velocity_error_m_s": 1.9684254226604025e-13,
+      "max_acoustic_frequency_error_Hz": 1.0706062312237918e-06
+    },
+    {
+      "parameters": {
+        "stiffness": 5.2,
+        "mass": 0.1032,
+        "springMass": 0.0,
+        "amplitude": 0.05,
+        "carrier": 20000,
+        "soundSpeed": 330,
+        "addedMass": 0.05,
+        "baselinePosition": 0.249,
+        "staticOffset": 0,
+        "gravity": 9.8
+      },
+      "reference_period_s": 0.8851523876593479,
+      "period_error_s": 1.4599432773820809e-13,
+      "max_position_error_m": 1.715433350923945e-13,
+      "max_velocity_error_m_s": 1.138089622543248e-12,
+      "max_acoustic_frequency_error_Hz": 4.298235580790788e-07
+    },
+    {
+      "parameters": {
+        "stiffness": 5.2,
+        "mass": 0.1032,
+        "springMass": 0.05,
+        "amplitude": 0.01,
+        "carrier": 60000,
+        "soundSpeed": 350,
+        "addedMass": 0.05,
+        "baselinePosition": 0.249,
+        "staticOffset": 0,
+        "gravity": 9.8
+      },
+      "reference_period_s": 0.953953950218123,
+      "period_error_s": 2.19824158875781e-13,
+      "max_position_error_m": 4.441585987891017e-14,
+      "max_velocity_error_m_s": 1.6527317708847633e-13,
+      "max_acoustic_frequency_error_Hz": 1.024280209094286e-06
+    },
+    {
+      "parameters": {
+        "stiffness": 5.2,
+        "mass": 0.1032,
+        "springMass": 0.05,
+        "amplitude": 0.05,
+        "carrier": 20000,
+        "soundSpeed": 330,
+        "addedMass": 0.05,
+        "baselinePosition": 0.249,
+        "staticOffset": 0,
+        "gravity": 9.8
+      },
+      "reference_period_s": 0.9539539502180611,
+      "period_error_s": 1.5787371410169726e-13,
+      "max_position_error_m": 1.5817902543346918e-13,
+      "max_velocity_error_m_s": 1.0193512700595875e-12,
+      "max_acoustic_frequency_error_Hz": 3.1557647162117064e-07
+    },
+    {
+      "parameters": {
+        "stiffness": 5.2,
+        "mass": 0.2,
+        "springMass": 0.0,
+        "amplitude": 0.01,
+        "carrier": 60000,
+        "soundSpeed": 350,
+        "addedMass": 0.05,
+        "baselinePosition": 0.249,
+        "staticOffset": 0,
+        "gravity": 9.8
+      },
+      "reference_period_s": 1.2322340188013583,
+      "period_error_s": 2.7422508708241367e-13,
+      "max_position_error_m": 5.011442649749398e-14,
+      "max_velocity_error_m_s": 1.7043311206776934e-13,
+      "max_acoustic_frequency_error_Hz": 1.9907529349438846e-06
+    },
+    {
+      "parameters": {
+        "stiffness": 5.2,
+        "mass": 0.2,
+        "springMass": 0.0,
+        "amplitude": 0.05,
+        "carrier": 20000,
+        "soundSpeed": 330,
+        "addedMass": 0.05,
+        "baselinePosition": 0.249,
+        "staticOffset": 0,
+        "gravity": 9.8
+      },
+      "reference_period_s": 1.2322340188012895,
+      "period_error_s": 2.0539125955565396e-13,
+      "max_position_error_m": 1.4031831252481197e-13,
+      "max_velocity_error_m_s": 7.911171717722709e-13,
+      "max_acoustic_frequency_error_Hz": 7.888920663390309e-07
+    },
+    {
+      "parameters": {
+        "stiffness": 5.2,
+        "mass": 0.2,
+        "springMass": 0.05,
+        "amplitude": 0.01,
+        "carrier": 60000,
+        "soundSpeed": 350,
+        "addedMass": 0.05,
+        "baselinePosition": 0.249,
+        "staticOffset": 0,
+        "gravity": 9.8
+      },
+      "reference_period_s": 1.2825498301621392,
+      "period_error_s": 2.751132655021138e-13,
+      "max_position_error_m": 4.882552695484321e-14,
+      "max_velocity_error_m_s": 1.678483740885639e-13,
+      "max_acoustic_frequency_error_Hz": 8.565184543840587e-07
+    },
+    {
+      "parameters": {
+        "stiffness": 5.2,
+        "mass": 0.2,
+        "springMass": 0.05,
+        "amplitude": 0.05,
+        "carrier": 20000,
+        "soundSpeed": 330,
+        "addedMass": 0.05,
+        "baselinePosition": 0.249,
+        "staticOffset": 0,
+        "gravity": 9.8
+      },
+      "reference_period_s": 1.2825498301620752,
+      "period_error_s": 2.1116441928370477e-13,
+      "max_position_error_m": 1.3342105198432819e-13,
+      "max_velocity_error_m_s": 7.796263634674006e-13,
+      "max_acoustic_frequency_error_Hz": 4.3651743908412755e-07
+    },
+    {
+      "parameters": {
+        "stiffness": 8.0,
+        "mass": 0.05,
+        "springMass": 0.0,
+        "amplitude": 0.01,
+        "carrier": 60000,
+        "soundSpeed": 350,
+        "addedMass": 0.05,
+        "baselinePosition": 0.249,
+        "staticOffset": 0,
+        "gravity": 9.8
+      },
+      "reference_period_s": 0.4967294132899136,
+      "period_error_s": 1.0857981180834031e-13,
+      "max_position_error_m": 7.981809657664485e-14,
+      "max_velocity_error_m_s": 5.896810817418441e-13,
+      "max_acoustic_frequency_error_Hz": 1.3729004422202706e-06
+    },
+    {
+      "parameters": {
+        "stiffness": 8.0,
+        "mass": 0.05,
+        "springMass": 0.0,
+        "amplitude": 0.05,
+        "carrier": 20000,
+        "soundSpeed": 330,
+        "addedMass": 0.05,
+        "baselinePosition": 0.249,
+        "staticOffset": 0,
+        "gravity": 9.8
+      },
+      "reference_period_s": 0.49672941328988474,
+      "period_error_s": 7.971401316808624e-14,
+      "max_position_error_m": 1.2851525399426578e-13,
+      "max_velocity_error_m_s": 1.903921464929681e-12,
+      "max_acoustic_frequency_error_Hz": 2.514025254640728e-07
+    },
+    {
+      "parameters": {
+        "stiffness": 8.0,
+        "mass": 0.05,
+        "springMass": 0.05,
+        "amplitude": 0.01,
+        "carrier": 60000,
+        "soundSpeed": 350,
+        "addedMass": 0.05,
+        "baselinePosition": 0.249,
+        "staticOffset": 0,
+        "gravity": 9.8
+      },
+      "reference_period_s": 0.573573720954674,
+      "period_error_s": 1.2634338020234281e-13,
+      "max_position_error_m": 7.891604036913691e-14,
+      "max_velocity_error_m_s": 5.48103229469632e-13,
+      "max_acoustic_frequency_error_Hz": 2.236149157397449e-06
+    },
+    {
+      "parameters": {
+        "stiffness": 8.0,
+        "mass": 0.05,
+        "springMass": 0.05,
+        "amplitude": 0.05,
+        "carrier": 20000,
+        "soundSpeed": 330,
+        "addedMass": 0.05,
+        "baselinePosition": 0.249,
+        "staticOffset": 0,
+        "gravity": 9.8
+      },
+      "reference_period_s": 0.5735737209546438,
+      "period_error_s": 9.614531393253856e-14,
+      "max_position_error_m": 1.6917023337725823e-13,
+      "max_velocity_error_m_s": 1.5640821970919205e-12,
+      "max_acoustic_frequency_error_Hz": 5.707224772777408e-07
+    },
+    {
+      "parameters": {
+        "stiffness": 8.0,
+        "mass": 0.1032,
+        "springMass": 0.0,
+        "amplitude": 0.01,
+        "carrier": 60000,
+        "soundSpeed": 350,
+        "addedMass": 0.05,
+        "baselinePosition": 0.249,
+        "staticOffset": 0,
+        "gravity": 9.8
+      },
+      "reference_period_s": 0.7136326695831867,
+      "period_error_s": 1.504352198367087e-13,
+      "max_position_error_m": 7.535118362600457e-14,
+      "max_velocity_error_m_s": 3.0506500103832934e-13,
+      "max_acoustic_frequency_error_Hz": 1.1845550034195185e-06
+    },
+    {
+      "parameters": {
+        "stiffness": 8.0,
+        "mass": 0.1032,
+        "springMass": 0.0,
+        "amplitude": 0.05,
+        "carrier": 20000,
+        "soundSpeed": 330,
+        "addedMass": 0.05,
+        "baselinePosition": 0.249,
+        "staticOffset": 0,
+        "gravity": 9.8
+      },
+      "reference_period_s": 0.7136326695831533,
+      "period_error_s": 1.170175067954915e-13,
+      "max_position_error_m": 1.6973922267737862e-13,
+      "max_velocity_error_m_s": 1.4934720127257606e-12,
+      "max_acoustic_frequency_error_Hz": 4.5534034143202007e-07
+    },
+    {
+      "parameters": {
+        "stiffness": 8.0,
+        "mass": 0.1032,
+        "springMass": 0.05,
+        "amplitude": 0.01,
+        "carrier": 60000,
+        "soundSpeed": 350,
+        "addedMass": 0.05,
+        "baselinePosition": 0.249,
+        "staticOffset": 0,
+        "gravity": 9.8
+      },
+      "reference_period_s": 0.7691022626666063,
+      "period_error_s": 1.7630341631047486e-13,
+      "max_position_error_m": 7.035691473866734e-14,
+      "max_velocity_error_m_s": 3.117540947616959e-13,
+      "max_acoustic_frequency_error_Hz": 1.3816897990182042e-06
+    },
+    {
+      "parameters": {
+        "stiffness": 8.0,
+        "mass": 0.1032,
+        "springMass": 0.05,
+        "amplitude": 0.05,
+        "carrier": 20000,
+        "soundSpeed": 330,
+        "addedMass": 0.05,
+        "baselinePosition": 0.249,
+        "staticOffset": 0,
+        "gravity": 9.8
+      },
+      "reference_period_s": 0.7691022626665562,
+      "period_error_s": 1.262323578998803e-13,
+      "max_position_error_m": 1.9997892231060632e-13,
+      "max_velocity_error_m_s": 1.3702372569923682e-12,
+      "max_acoustic_frequency_error_Hz": 6.71203451929614e-07
+    },
+    {
+      "parameters": {
+        "stiffness": 8.0,
+        "mass": 0.2,
+        "springMass": 0.0,
+        "amplitude": 0.01,
+        "carrier": 60000,
+        "soundSpeed": 350,
+        "addedMass": 0.05,
+        "baselinePosition": 0.249,
+        "staticOffset": 0,
+        "gravity": 9.8
+      },
+      "reference_period_s": 0.9934588265798397,
+      "period_error_s": 2.297051437949449e-13,
+      "max_position_error_m": 4.207831999503142e-14,
+      "max_velocity_error_m_s": 1.735478080688857e-13,
+      "max_acoustic_frequency_error_Hz": 1.009328116197139e-06
+    },
+    {
+      "parameters": {
+        "stiffness": 8.0,
+        "mass": 0.2,
+        "springMass": 0.0,
+        "amplitude": 0.05,
+        "carrier": 20000,
+        "soundSpeed": 330,
+        "addedMass": 0.05,
+        "baselinePosition": 0.249,
+        "staticOffset": 0,
+        "gravity": 9.8
+      },
+      "reference_period_s": 0.9934588265797747,
+      "period_error_s": 1.6464607455191071e-13,
+      "max_position_error_m": 1.560765405805853e-13,
+      "max_velocity_error_m_s": 9.552358903874847e-13,
+      "max_acoustic_frequency_error_Hz": 3.2004754757508636e-07
+    },
+    {
+      "parameters": {
+        "stiffness": 8.0,
+        "mass": 0.2,
+        "springMass": 0.05,
+        "amplitude": 0.01,
+        "carrier": 60000,
+        "soundSpeed": 350,
+        "addedMass": 0.05,
+        "baselinePosition": 0.249,
+        "staticOffset": 0,
+        "gravity": 9.8
+      },
+      "reference_period_s": 1.0340247305803878,
+      "period_error_s": 2.4003021792395884e-13,
+      "max_position_error_m": 4.742387038625395e-14,
+      "max_velocity_error_m_s": 1.7636456531300304e-13,
+      "max_acoustic_frequency_error_Hz": 1.1186784831807017e-06
+    },
+    {
+      "parameters": {
+        "stiffness": 8.0,
+        "mass": 0.2,
+        "springMass": 0.05,
+        "amplitude": 0.05,
+        "carrier": 20000,
+        "soundSpeed": 330,
+        "addedMass": 0.05,
+        "baselinePosition": 0.249,
+        "staticOffset": 0,
+        "gravity": 9.8
+      },
+      "reference_period_s": 1.0340247305803192,
+      "period_error_s": 1.7141843500212417e-13,
+      "max_position_error_m": 1.533079219129263e-13,
+      "max_velocity_error_m_s": 8.916756222276945e-13,
+      "max_acoustic_frequency_error_Hz": 3.5161065170541406e-07
+    }
+  ]
+}

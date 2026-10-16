@@ -1,0 +1,178 @@
+{
+  "slug": "oscilloscope",
+  "title": "示波器调节与使用",
+  "experimentId": "course-03/oscilloscope",
+  "controls": [
+    {
+      "key": "waveform",
+      "type": "select",
+      "label": "波形",
+      "default": "sine",
+      "options": [
+        {
+          "value": "sine",
+          "label": "正弦"
+        },
+        {
+          "value": "triangle",
+          "label": "三角"
+        },
+        {
+          "value": "square",
+          "label": "方波"
+        }
+      ]
+    },
+    {
+      "key": "amplitude",
+      "type": "number",
+      "label": "信号峰值 $A/\\mathrm V$",
+      "default": 0.5,
+      "min": 0.1,
+      "max": 2
+    },
+    {
+      "key": "frequency",
+      "type": "number",
+      "label": "信号频率 $f/\\mathrm{Hz}$",
+      "default": 1000,
+      "min": 250,
+      "max": 2000
+    },
+    {
+      "key": "voltsPerDiv",
+      "type": "number",
+      "label": "垂直灵敏度 / (V/div)",
+      "default": 0.2,
+      "min": 0.05,
+      "max": 1
+    },
+    {
+      "key": "msPerDiv",
+      "type": "number",
+      "label": "时基 / (ms/div)",
+      "default": 0.2,
+      "min": 0.05,
+      "max": 1
+    },
+    {
+      "key": "y1",
+      "type": "number",
+      "label": "下电压游标 / div",
+      "default": -2.5,
+      "min": -4,
+      "max": 4
+    },
+    {
+      "key": "y2",
+      "type": "number",
+      "label": "上电压游标 / div",
+      "default": 2.5,
+      "min": -4,
+      "max": 4
+    },
+    {
+      "key": "x1",
+      "type": "number",
+      "label": "左时间游标 / div",
+      "default": 1,
+      "min": 0,
+      "max": 10
+    },
+    {
+      "key": "x2",
+      "type": "number",
+      "label": "右时间游标 / div",
+      "default": 6,
+      "min": 0,
+      "max": 10
+    },
+    {
+      "key": "phase",
+      "type": "number",
+      "label": "XY相位 $\\varphi/{}^\\circ$",
+      "default": 45,
+      "min": 0,
+      "max": 360
+    },
+    {
+      "key": "ratio",
+      "type": "select",
+      "label": "XY频率比 fₓ/fᵧ",
+      "default": 1,
+      "options": [
+        {
+          "value": 0.25,
+          "label": "0.25"
+        },
+        {
+          "value": 0.5,
+          "label": "0.5"
+        },
+        {
+          "value": 1,
+          "label": "1"
+        },
+        {
+          "value": 1.5,
+          "label": "1.5"
+        },
+        {
+          "value": 2,
+          "label": "2"
+        }
+      ]
+    }
+  ],
+  "columns": [
+    {
+      "key": "waveform",
+      "label": "波形",
+      "short": "波形"
+    },
+    {
+      "key": "measuredVpp",
+      "label": "游标 $U_{pp}/\\mathrm V$",
+      "short": "游标Upp / V"
+    },
+    {
+      "key": "measuredPeriodMs",
+      "label": "游标 $T/\\mathrm{ms}$",
+      "short": "游标T / ms"
+    },
+    {
+      "key": "measuredFrequency",
+      "label": "游标 $f/\\mathrm{Hz}$",
+      "short": "游标f / Hz"
+    },
+    {
+      "key": "measuredRMS",
+      "label": "游标 $U_{\\mathrm{rms}}/\\mathrm V$",
+      "short": "游标RMS / V"
+    }
+  ],
+  "units": {
+    "parameters": {
+      "waveform": "enum",
+      "amplitude": "V",
+      "frequency": "Hz",
+      "voltsPerDiv": "V/div",
+      "msPerDiv": "ms/div",
+      "y1": "div",
+      "y2": "div",
+      "x1": "div",
+      "x2": "div",
+      "phase": "deg",
+      "ratio": "1"
+    },
+    "readings": {
+      "waveform": "enum",
+      "measuredVpp": "V",
+      "measuredPeriodMs": "ms",
+      "measuredFrequency": "Hz",
+      "measuredRMS": "V",
+      "trueRMS": "V",
+      "clipped": "bool"
+    }
+  }
+}

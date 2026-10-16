@@ -1,0 +1,152 @@
+{
+  "slug": "multimeter",
+  "title": "万用电表",
+  "experimentId": "course-03/multimeter",
+  "controls": [
+    {
+      "key": "mode",
+      "type": "select",
+      "label": "功能",
+      "default": "voltage",
+      "options": [
+        {
+          "value": "voltage",
+          "label": "直流电压"
+        },
+        {
+          "value": "resistance",
+          "label": "串联欧姆表"
+        }
+      ]
+    },
+    {
+      "key": "voltage",
+      "type": "number",
+      "label": "教学源 $E_s/\\mathrm V$",
+      "default": 1.5,
+      "min": 0,
+      "max": 200
+    },
+    {
+      "key": "sourceResistance",
+      "type": "number",
+      "label": "源内阻 $R_s/\\Omega$",
+      "default": 1000,
+      "min": 1,
+      "max": 1000000
+    },
+    {
+      "key": "voltageRange",
+      "type": "select",
+      "label": "直流电压量程 / V",
+      "default": 2,
+      "options": [
+        {
+          "value": 2,
+          "label": "2"
+        },
+        {
+          "value": 20,
+          "label": "20"
+        },
+        {
+          "value": 200,
+          "label": "200"
+        }
+      ]
+    },
+    {
+      "key": "Rx",
+      "type": "number",
+      "label": "待测电阻 $R_x/\\Omega$",
+      "default": 1500,
+      "min": 0,
+      "max": 1000000
+    },
+    {
+      "key": "multiplier",
+      "type": "select",
+      "label": "欧姆倍率",
+      "default": 1,
+      "options": [
+        {
+          "value": 1,
+          "label": "×1"
+        },
+        {
+          "value": 10,
+          "label": "×10"
+        },
+        {
+          "value": 100,
+          "label": "×100"
+        }
+      ]
+    },
+    {
+      "key": "battery",
+      "type": "number",
+      "label": "欧姆电池 / V",
+      "default": 1.5,
+      "min": 0.8,
+      "max": 1.6
+    },
+    {
+      "key": "zeroFactor",
+      "type": "number",
+      "label": "内部电阻相对基准",
+      "default": 1,
+      "min": 0.5,
+      "max": 1.2
+    }
+  ],
+  "columns": [
+    {
+      "key": "mode",
+      "label": "功能",
+      "short": "功能"
+    },
+    {
+      "key": "digitalVoltage",
+      "label": "数字表 / V",
+      "short": "数字表V"
+    },
+    {
+      "key": "analogVoltage",
+      "label": "指针表电压 / V",
+      "short": "指针V"
+    },
+    {
+      "key": "fraction",
+      "label": "欧姆偏转 I/Ig",
+      "short": "欧姆偏转"
+    },
+    {
+      "key": "indicatedResistance",
+      "label": "基准欧姆刻度 / Ω",
+      "short": "基准Ω"
+    }
+  ],
+  "units": {
+    "parameters": {
+      "mode": "enum",
+      "voltage": "V",
+      "sourceResistance": "ohm",
+      "voltageRange": "V",
+      "Rx": "ohm",
+      "multiplier": "1",
+      "battery": "V",
+      "zeroFactor": "1"
+    },
+    "readings": {
+      "mode": "enum",
+      "digitalVoltage": "V",
+      "analogVoltage": "V",
+      "fraction": "1",
+      "indicatedResistance": "ohm",
+      "inputLoadedVoltage": "V",
+      "overrange": "bool",
+      "ohmOverZero": "bool"
+    }
+  }
+}

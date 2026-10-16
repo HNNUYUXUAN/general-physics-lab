@@ -1,0 +1,283 @@
+{
+  "experiment_id": "course-04/abbe-imaging",
+  "status": "passed",
+  "created_at": "2026-10-16T14:58:50.269487+00:00",
+  "environment": {
+    "python": "3.14.7",
+    "numpy": "2.5.4"
+  },
+  "model_sha256": "35721b4c58a7e2510877f60b71c07501569b5540bd2d41679587c3d968ba206a",
+  "fft_sha256": "9617a6ca4a9598de3c3abaeb6f290f51c1377c8ac2878bde97f4e50a37eac7aa",
+  "input_hashes": {
+    "experiments/course-04/abbe-imaging/experiment.json": "2b471c66e12083f84247a7854095b6cfad8156d44d1ef359f3f75f6ac03e0306",
+    "experiments/course-04/abbe-imaging/data/observations-01.csv": "40eb18601744225c5f0b881cc3c8ac2c0d944cdd75c843c1d572abd1c00c6fca",
+    "experiments/course-04/abbe-imaging/data/observations-02.csv": "f48b8a58a0a472a9a6b3df10bb2ba09a292dd540af381965503e29bb5854e829",
+    "experiments/course-04/abbe-imaging/data/provenance.json": "fa0c6408e48fcce4106f63e5354811057dffbe98f410b2847e8d78def543facd"
+  },
+  "methods": [
+    "NumPy complex FFT2 and independently constructed physical Fourier-plane pupil",
+    "pointwise full complex-field comparison",
+    "128to256 grid-doubling comparison at common sample locations",
+    "analytic Fourier coefficients and Parseval checks in Node tests"
+  ],
+  "case_count": 27,
+  "cases": [
+    {
+      "wavelength_nm": 500,
+      "focal_length_mm": 100,
+      "field_length_mm": 4,
+      "cycles": 8,
+      "pupil_radius_mm": 0.1,
+      "filter": "open",
+      "grid_size": 128
+    },
+    {
+      "wavelength_nm": 500,
+      "focal_length_mm": 150,
+      "field_length_mm": 4,
+      "cycles": 8,
+      "pupil_radius_mm": 0.4,
+      "filter": "circle",
+      "grid_size": 128
+    },
+    {
+      "wavelength_nm": 500,
+      "focal_length_mm": 200,
+      "field_length_mm": 4,
+      "cycles": 8,
+      "pupil_radius_mm": 0.8,
+      "filter": "zero-only",
+      "grid_size": 128
+    },
+    {
+      "wavelength_nm": 632.8,
+      "focal_length_mm": 100,
+      "field_length_mm": 4,
+      "cycles": 8,
+      "pupil_radius_mm": 0.1,
+      "filter": "horizontal-slit",
+      "grid_size": 128
+    },
+    {
+      "wavelength_nm": 632.8,
+      "focal_length_mm": 150,
+      "field_length_mm": 4,
+      "cycles": 8,
+      "pupil_radius_mm": 0.4,
+      "filter": "vertical-slit",
+      "grid_size": 128
+    },
+    {
+      "wavelength_nm": 632.8,
+      "focal_length_mm": 200,
+      "field_length_mm": 4,
+      "cycles": 8,
+      "pupil_radius_mm": 0.8,
+      "filter": "block-zero",
+      "grid_size": 128
+    },
+    {
+      "wavelength_nm": 700,
+      "focal_length_mm": 100,
+      "field_length_mm": 4,
+      "cycles": 8,
+      "pupil_radius_mm": 0.1,
+      "filter": "open",
+      "grid_size": 128
+    },
+    {
+      "wavelength_nm": 700,
+      "focal_length_mm": 150,
+      "field_length_mm": 4,
+      "cycles": 8,
+      "pupil_radius_mm": 0.4,
+      "filter": "circle",
+      "grid_size": 128
+    },
+    {
+      "wavelength_nm": 700,
+      "focal_length_mm": 200,
+      "field_length_mm": 4,
+      "cycles": 8,
+      "pupil_radius_mm": 0.8,
+      "filter": "zero-only",
+      "grid_size": 128
+    },
+    {
+      "wavelength_nm": 500,
+      "focal_length_mm": 100,
+      "field_length_mm": 4,
+      "cycles": 16,
+      "pupil_radius_mm": 0.1,
+      "filter": "horizontal-slit",
+      "grid_size": 128
+    },
+    {
+      "wavelength_nm": 500,
+      "focal_length_mm": 150,
+      "field_length_mm": 4,
+      "cycles": 16,
+      "pupil_radius_mm": 0.4,
+      "filter": "vertical-slit",
+      "grid_size": 128
+    },
+    {
+      "wavelength_nm": 500,
+      "focal_length_mm": 200,
+      "field_length_mm": 4,
+      "cycles": 16,
+      "pupil_radius_mm": 0.8,
+      "filter": "block-zero",
+      "grid_size": 128
+    },
+    {
+      "wavelength_nm": 632.8,
+      "focal_length_mm": 100,
+      "field_length_mm": 4,
+      "cycles": 16,
+      "pupil_radius_mm": 0.1,
+      "filter": "open",
+      "grid_size": 128
+    },
+    {
+      "wavelength_nm": 632.8,
+      "focal_length_mm": 150,
+      "field_length_mm": 4,
+      "cycles": 16,
+      "pupil_radius_mm": 0.4,
+      "filter": "circle",
+      "grid_size": 128
+    },
+    {
+      "wavelength_nm": 632.8,
+      "focal_length_mm": 200,
+      "field_length_mm": 4,
+      "cycles": 16,
+      "pupil_radius_mm": 0.8,
+      "filter": "zero-only",
+      "grid_size": 128
+    },
+    {
+      "wavelength_nm": 700,
+      "focal_length_mm": 100,
+      "field_length_mm": 4,
+      "cycles": 16,
+      "pupil_radius_mm": 0.1,
+      "filter": "horizontal-slit",
+      "grid_size": 128
+    },
+    {
+      "wavelength_nm": 700,
+      "focal_length_mm": 150,
+      "field_length_mm": 4,
+      "cycles": 16,
+      "pupil_radius_mm": 0.4,
+      "filter": "vertical-slit",
+      "grid_size": 128
+    },
+    {
+      "wavelength_nm": 700,
+      "focal_length_mm": 200,
+      "field_length_mm": 4,
+      "cycles": 16,
+      "pupil_radius_mm": 0.8,
+      "filter": "block-zero",
+      "grid_size": 128
+    },
+    {
+      "wavelength_nm": 500,
+      "focal_length_mm": 100,
+      "field_length_mm": 4,
+      "cycles": 32,
+      "pupil_radius_mm": 0.1,
+      "filter": "open",
+      "grid_size": 128
+    },
+    {
+      "wavelength_nm": 500,
+      "focal_length_mm": 150,
+      "field_length_mm": 4,
+      "cycles": 32,
+      "pupil_radius_mm": 0.4,
+      "filter": "circle",
+      "grid_size": 128
+    },
+    {
+      "wavelength_nm": 500,
+      "focal_length_mm": 200,
+      "field_length_mm": 4,
+      "cycles": 32,
+      "pupil_radius_mm": 0.8,
+      "filter": "zero-only",
+      "grid_size": 128
+    },
+    {
+      "wavelength_nm": 632.8,
+      "focal_length_mm": 100,
+      "field_length_mm": 4,
+      "cycles": 32,
+      "pupil_radius_mm": 0.1,
+      "filter": "horizontal-slit",
+      "grid_size": 128
+    },
+    {
+      "wavelength_nm": 632.8,
+      "focal_length_mm": 150,
+      "field_length_mm": 4,
+      "cycles": 32,
+      "pupil_radius_mm": 0.4,
+      "filter": "vertical-slit",
+      "grid_size": 128
+    },
+    {
+      "wavelength_nm": 632.8,
+      "focal_length_mm": 200,
+      "field_length_mm": 4,
+      "cycles": 32,
+      "pupil_radius_mm": 0.8,
+      "filter": "block-zero",
+      "grid_size": 128
+    },
+    {
+      "wavelength_nm": 700,
+      "focal_length_mm": 100,
+      "field_length_mm": 4,
+      "cycles": 32,
+      "pupil_radius_mm": 0.1,
+      "filter": "open",
+      "grid_size": 128
+    },
+    {
+      "wavelength_nm": 700,
+      "focal_length_mm": 150,
+      "field_length_mm": 4,
+      "cycles": 32,
+      "pupil_radius_mm": 0.4,
+      "filter": "circle",
+      "grid_size": 128
+    },
+    {
+      "wavelength_nm": 700,
+      "focal_length_mm": 200,
+      "field_length_mm": 4,
+      "cycles": 32,
+      "pupil_radius_mm": 0.8,
+      "filter": "zero-only",
+      "grid_size": 128
+    }
+  ],
+  "maximum_errors": {
+    "complex_field": 7.777020703540027e-16,
+    "energy_fraction": 5.3734794391857577e-14,
+    "grid_doubling_complex_field": 9.35741825324539e-16
+  },
+  "tolerances": {
+    "complex_field": 1e-10,
+    "energy_fraction": 1e-10,
+    "grid_doubling_complex_field": 1e-10
+  },
+  "original_observation_analysis": {
+    "first_order_mean_abs_mm": 0.475,
+    "period_mm": 0.19983157894736844
+  }
+}

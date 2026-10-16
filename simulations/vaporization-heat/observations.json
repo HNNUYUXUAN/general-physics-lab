@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "experiment": "course-01/vaporization-heat",
+  "source_files": [
+    {
+      "path": "experiments/course-01/vaporization-heat/experiment.json",
+      "sha256": "c9076b69918f27af1efb1bba345bbddd2cc5d785dadefb06b671daaf0e4ad776"
+    },
+    {
+      "path": "experiments/course-01/vaporization-heat/data/observations.csv",
+      "sha256": "37468cf162ffae188e79b52c00f0219f258f2c18dee016ab00f34adf400d5236"
+    },
+    {
+      "path": "experiments/course-01/vaporization-heat/data/provenance.json",
+      "sha256": "a32026efe19a962abcc60fd596d7496929c48c031137ca1358065042ae5ae326"
+    }
+  ],
+  "rows": [
+    {
+      "quantity": "inner_mass",
+      "value": 29.52,
+      "unit": "g",
+      "note": ""
+    },
+    {
+      "quantity": "stirrer_mass",
+      "value": 3.84,
+      "unit": "g",
+      "note": ""
+    },
+    {
+      "quantity": "initial_total_mass",
+      "value": 149.28,
+      "unit": "g",
+      "note": "未计入搅拌器"
+    },
+    {
+      "quantity": "final_total_mass",
+      "value": 157.08,
+      "unit": "g",
+      "note": "称量构成未另注明"
+    },
+    {
+      "quantity": "initial_voltage",
+      "value": 285.8,
+      "unit": "mV",
+      "note": ""
+    },
+    {
+      "quantity": "final_voltage",
+      "value": 318.3,
+      "unit": "mV",
+      "note": "最高稳定值"
+    },
+    {
+      "quantity": "steam_voltage",
+      "value": 373.2,
+      "unit": "mV",
+      "note": "100℃理论圆整值"
+    }
+  ],
+  "latent_same_J_kg": 1973117.999999997,
+  "latent_extra_J_kg": 4108769.8787878663
+}

@@ -1,5 +1,8 @@
 [普通物理实验 3](../README.md) · [项目首页](../../../README.md) · [使用指南](../../../docs/usage.md)
 
+<!-- virtual-laboratory-entry -->
+[在线虚拟实验](https://hnnuyuxuan.github.io/general-physics-lab/simulations/hall-effect/) · [模型依据与参数来源](../../../docs/hall-effect-model-evidence.md)
+
 # 霍尔效应的实验研究
 
 **四次换向，把霍尔投影和背景电压分开看。**

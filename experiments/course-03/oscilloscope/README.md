@@ -1,5 +1,8 @@
 [普通物理实验 3](../README.md) · [项目首页](../../../README.md) · [使用指南](../../../docs/usage.md)
 
+<!-- virtual-laboratory-entry -->
+[在线虚拟实验](https://hnnuyuxuan.github.io/general-physics-lab/simulations/oscilloscope/) · [模型依据与参数来源](../../../docs/oscilloscope-model-evidence.md)
+
 # 示波器的调节与使用
 
 **把格数换成物理量，把闭合轨迹换成频率比。**

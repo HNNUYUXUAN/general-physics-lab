@@ -1,0 +1,105 @@
+{
+  "schema_version": 1,
+  "experiment": "course-02/young-modulus",
+  "source_files": [
+    {
+      "path": "experiments/course-02/young-modulus/experiment.json",
+      "sha256": "567180663443e3d13bffd78b425de04b753ee38ddb52656b4788d73e8337760c"
+    },
+    {
+      "path": "experiments/course-02/young-modulus/data/diameters.csv",
+      "sha256": "5e1867cd1d9da89bea7980cbc8d9c51c0f26301d7e55958e058d45c8e8ba1b83"
+    },
+    {
+      "path": "experiments/course-02/young-modulus/data/loading.csv",
+      "sha256": "554d9bae0377fca4770372f7123f8619aefc34fc70bb28f6e9c859a1b42901c8"
+    },
+    {
+      "path": "experiments/course-02/young-modulus/data/provenance.json",
+      "sha256": "c29beb07ad28a4ff74825eb5f01d5b10c9f6234d2e54a098edced97f52600b9b"
+    }
+  ],
+  "diameter_readings_mm": [
+    0.578,
+    0.595,
+    0.581,
+    0.59,
+    0.56,
+    0.588
+  ],
+  "corrected_mean_diameter_mm": 0.52,
+  "loading": [
+    {
+      "index": 1,
+      "mass_kg": 1.0,
+      "loading_mm": 36.1,
+      "unloading_mm": 36.1,
+      "mean_mm": 36.1
+    },
+    {
+      "index": 2,
+      "mass_kg": 2.0,
+      "loading_mm": 40.5,
+      "unloading_mm": 40.5,
+      "mean_mm": 40.5
+    },
+    {
+      "index": 3,
+      "mass_kg": 3.0,
+      "loading_mm": 44.9,
+      "unloading_mm": 45.0,
+      "mean_mm": 44.95
+    },
+    {
+      "index": 4,
+      "mass_kg": 4.0,
+      "loading_mm": 49.0,
+      "unloading_mm": 49.0,
+      "mean_mm": 49.0
+    },
+    {
+      "index": 5,
+      "mass_kg": 5.0,
+      "loading_mm": 53.0,
+      "unloading_mm": 53.1,
+      "mean_mm": 53.05
+    },
+    {
+      "index": 6,
+      "mass_kg": 6.0,
+      "loading_mm": 57.2,
+      "unloading_mm": 57.8,
+      "mean_mm": 57.5
+    },
+    {
+      "index": 7,
+      "mass_kg": 7.0,
+      "loading_mm": 61.5,
+      "unloading_mm": 62.0,
+      "mean_mm": 61.75
+    },
+    {
+      "index": 8,
+      "mass_kg": 8.0,
+      "loading_mm": 65.9,
+      "unloading_mm": 66.0,
+      "mean_mm": 65.95
+    },
+    {
+      "index": 9,
+      "mass_kg": 9.0,
+      "loading_mm": 70.0,
+      "unloading_mm": 70.0,
+      "mean_mm": 70.0
+    },
+    {
+      "index": 10,
+      "mass_kg": 10.0,
+      "loading_mm": 74.1,
+      "unloading_mm": 74.1,
+      "mean_mm": 74.1
+    }
+  ],
+  "young_difference_Pa": 307555716271.98334,
+  "young_regression_Pa": 308183020375.8417
+}

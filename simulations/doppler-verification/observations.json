@@ -1,0 +1,33 @@
+{
+  "experimentId": "course-01/doppler-verification",
+  "source": "original-report-observations",
+  "sourceSha256": "6c82fae6f91efaad98b9d96e4ab1e0b649f02c6fb933ff4c6aaa185a4f45255d",
+  "sourceFrequency": 40002,
+  "temperature": 23.1,
+  "rows": [
+    {
+      "velocity": 0.46,
+      "frequency": 40055.0
+    },
+    {
+      "velocity": 0.76,
+      "frequency": 40090.0
+    },
+    {
+      "velocity": 0.93,
+      "frequency": 40110.0
+    },
+    {
+      "velocity": 1.09,
+      "frequency": 40129.0
+    },
+    {
+      "velocity": 1.27,
+      "frequency": 40150.0
+    }
+  ],
+  "units": {
+    "velocity": "m/s",
+    "frequency": "Hz"
+  }
+}

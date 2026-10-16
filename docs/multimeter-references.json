@@ -1,0 +1,108 @@
+{
+  "experimentId": "course-03/multimeter",
+  "model_coverage_status": "complete-for-declared-ideal-model",
+  "references": [
+    {
+      "id": "yang2021meter",
+      "authors": [
+        "杨铁柱",
+        "周帅",
+        "潘峰"
+      ],
+      "title": "基于LabVIEW的电表的改装与校准仿真实验系统开发",
+      "journal": "大学物理实验",
+      "year": 2021,
+      "volume": "34",
+      "issue": "5",
+      "pages": "98–102",
+      "doi": "10.14139/j.cnki.cn22-1228.2021.05.023",
+      "readingStatus": "verified-fulltext",
+      "fulltextSha256": "9f5c10f2db933018242c9f8170c1bd64cce91d57937232b22502c73810663958",
+      "locators": [
+        "p.99 section 1 equations (1)–(4), figures 2–5",
+        "p.100 section 2.2 equations (6), (9)"
+      ],
+      "notes": [
+        "Read all five PDF pages; equations inspected in rendered pp.99–100.",
+        "Paper 1 ohm/100 ohm/11 megohm values and 2 percent random error are separate simulation settings."
+      ],
+      "application": "p.99图5及p.100式(9)包含有限输入电阻$R_v$对供电支路的加载。移除改装表支路（令$R_g+R_s\\to\\infty$）后得到",
+      "coverage_status": "partial-apparatus-coverage"
+    },
+    {
+      "id": "an2015multimeter",
+      "authors": [
+        "安福全"
+      ],
+      "title": "MF47型万用表的原理及使用",
+      "journal": "职业",
+      "year": 2015,
+      "issue": "30",
+      "pages": "146",
+      "doi": null,
+      "readingStatus": "verified-fulltext",
+      "fulltextSha256": "3dd6ce80b54434c4353798c8920222f9254b7e0b8c4becf6374daf0c636a3358",
+      "locators": [
+        "p.146 section 1, magnetic moving-coil movement, direct-voltage series branch and internal resistance-mode battery",
+        "p.146 section 2.2, short-circuit resistance zeroing, range multiplier and repeated zeroing after range changes",
+        "p.146 section 2.3, direct-voltage range and polarity operation"
+      ],
+      "notes": [
+        "Entire single-page article read directly from rendered original because extracted text is corrupted.",
+        "CNKI issue 2015(30) confirmed by root; article PDF page is 146 and has no volume number.",
+        "This qualitative article has no circuit drawing, series-ohmmeter equations, 20 kohm/V value or 1500 ohm midpoint specification.",
+        "Simplified series-ohmmeter equations are separately derived from an explicit single-loop assumption and the original report, not presented as a complete MF47 circuit reproduction."
+      ],
+      "coverage_status": "qualitative-operation-and-circuit-class"
+    }
+  ],
+  "pending_model_evidence": {
+    "instrument_identity": "DMM型号未记；指针表仅MF47类，未记厂商/子型号",
+    "manual_title_query": "MF47型万用电表使用说明书（须先确定厂商/子型号/版次）",
+    "queries": [
+      "指针式万用表 欧姆档 中值电阻 调零",
+      "串联式欧姆表 电池电压 刻度",
+      "数字万用表 2000计数 10兆欧 输入阻抗 官方使用说明书"
+    ],
+    "target_equations": [
+      "Rv=S_V U_FS with sensitivity in ohm/V",
+      "I=Eb/(R_int+Rx)",
+      "after short-circuit full scale I/Ig=R_int/(R_int+Rx)",
+      "independent teaching: I/Ig=(Eb/1.5)/(z+Rx/Rb); Rb=1500*multiplier ohm",
+      "q=range/2000; rounding and overrange boundary"
+    ],
+    "uncovered": [
+      "原机型及完整内部网络的定量标定（不作为当前简化教学模型身份）"
+    ],
+    "parameters": {
+      "original": [
+        "MF47 class only",
+        "DMM unidentified",
+        "analog observed ranges 250/10/2.5/1 V"
+      ],
+      "teaching": [
+        "digital input 10 megohm",
+        "2000-count quantizer",
+        "analog 20 kohm/V",
+        "Rb=1500 ohm times multiplier",
+        "battery=1.5 V"
+      ]
+    },
+    "summary": "电压加载已有基础支持；串联欧姆表及表型规格仍缺完整资料。教学2/20/200 V档不冒充原MF47档位。",
+    "experiment_id": "course-03/multimeter",
+    "status": "core-declared-model-supported",
+    "original_docx": "originals/course-03/1万用电表的使用/实验报告-万用电表的使用.docx",
+    "original_docx_sha256": "2154a1993dd96db149eba2230a062cc940518f41f104cc79904586f23846ad23",
+    "original_docx_hash_checked": true,
+    "resolved_core_reference_ids": [
+      "an2015multimeter",
+      "yang2021meter"
+    ]
+  },
+  "core_reference_ids": [
+    "an2015multimeter",
+    "yang2021meter"
+  ],
+  "apparatus_calibration_status": "generic-MF47-operation-only; original-DMM-unidentified",
+  "declared_scope": "simplified series ohmmeter; finite-input voltage loading; independent ideal quantizer"
+}

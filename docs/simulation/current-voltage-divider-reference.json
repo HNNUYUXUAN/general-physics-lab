@@ -1,0 +1,15 @@
+{
+  "experimentId": "course-03/current-voltage-divider",
+  "status": "passed",
+  "method": "independent DC nodal conductance equation",
+  "caseCount": 270,
+  "maxScaledErrors": {
+    "voltage": 3.8857805861880484e-16,
+    "current": 3.9063402718292546e-16,
+    "current_mA": 6.328271240363394e-16
+  },
+  "scaling": "abs(error)/max(1,abs(reference))",
+  "tolerance": 1e-10,
+  "modelSha256": "4d01a6a2cdb39662a3213dac38c758e961f9bbdffc73e9a72a9d1d413189de2d",
+  "numpyVersion": "2.5.4"
+}

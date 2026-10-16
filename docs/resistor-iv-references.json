@@ -1,0 +1,107 @@
+{
+  "experimentId": "course-03/resistor-iv",
+  "model_coverage_status": "complete-for-declared-ideal-model",
+  "references": [
+    {
+      "id": "yang2021meter",
+      "authors": [
+        "杨铁柱",
+        "周帅",
+        "潘峰"
+      ],
+      "title": "基于LabVIEW的电表的改装与校准仿真实验系统开发",
+      "journal": "大学物理实验",
+      "year": 2021,
+      "volume": "34",
+      "issue": "5",
+      "pages": "98–102",
+      "doi": "10.14139/j.cnki.cn22-1228.2021.05.023",
+      "readingStatus": "verified-fulltext",
+      "fulltextSha256": "9f5c10f2db933018242c9f8170c1bd64cce91d57937232b22502c73810663958",
+      "locators": [
+        "p.99 section 1 equations (1)–(4), figures 2–5",
+        "p.100 section 2.2 equations (6), (9)"
+      ],
+      "notes": [
+        "Read all five PDF pages; equations inspected in rendered pp.99–100.",
+        "Paper 1 ohm/100 ohm/11 megohm values and 2 percent random error are separate simulation settings."
+      ],
+      "application": "p.99图3、式(3)描述串联电阻的总压降，可作为本项目内接支路$U=I(R_x+R_A)$的基础欧姆关系；其中本项目$R_A$的身份是电流表内阻，原文串联臂的身份是扩程电阻，两种装置用途分别标明。",
+      "coverage_status": "partial-apparatus-coverage"
+    },
+    {
+      "id": "mei2022ivrange",
+      "authors": [
+        "梅诗雨",
+        "刘瑞琪",
+        "吴超浩",
+        "赵颖"
+      ],
+      "title": "伏安法测电阻实验中量程转换对测量精度的影响",
+      "journal": "大学物理实验",
+      "year": 2022,
+      "volume": "35",
+      "issue": "5",
+      "pages": "121–124",
+      "doi": "10.14139/j.cnki.cn22-1228.2022.05.027",
+      "readingStatus": "verified-fulltext",
+      "fulltextSha256": "4ed0c7165c0ce203fbf80863fe549a8d32a41541bcadffd801047c80111ea154",
+      "locators": [
+        "p.122 section 1 figure 1 equations (1)–(2), inner ammeter loading",
+        "p.122 section 2 equations (5)–(6), known range-specific resistance correction",
+        "p.124 equation (9), separate measured apparatus example"
+      ],
+      "notes": [
+        "All four PDF pages read; rendered pp.122 and 124 inspected.",
+        "Paper only treats inner ammeter topology; external loading uses the separately read Yang2021 circuit and explicit KCL derivation.",
+        "Printed least-squares equations (3)–(4) have incorrect denominators/numerators; not adopted.",
+        "Printed piecewise current intervals overlap and selected range is not determined by current alone; project keeps explicit resistance parameter groups.",
+        "Paper source SPS3203D, meter ranges 25/50/100 mA and 30 mV burden are not FB321 calibration inputs."
+      ],
+      "coverage_status": "inner-topology-and-range-conditions"
+    }
+  ],
+  "pending_model_evidence": {
+    "instrument_identity": "FB321电阻元件特性实验仪；厂商与版次未记",
+    "manual_title_query": "FB321电阻元件特性实验仪使用说明书",
+    "queries": [
+      "伏安法 测电阻 内接 外接 系统误差",
+      "伏安法 电流表内阻 电压表内阻 选择判据"
+    ],
+    "target_equations": [
+      "R_internal=Rx+RA",
+      "R_external=Rx RV/(Rx+RV)",
+      "relative_internal=RA/Rx; relative_external=-Rx/(Rx+RV)",
+      "exact equality: Rx=[RA+sqrt(RA^2+4 RA RV)]/2"
+    ],
+    "uncovered": [
+      "原仪器未记录参数的厂家/校准信息（不用于替换独立教学场景）"
+    ],
+    "parameters": {
+      "original": [
+        "voltage range 2 V",
+        "current ranges 20 mA and 2 mA"
+      ],
+      "teaching": [
+        "Rx=1000 ohm",
+        "RA=1 ohm",
+        "RV=1 megohm"
+      ]
+    },
+    "summary": "原DOCX与课件同记FB321；两接法完整专项证据尚缺，现有Yang2021支持串并联基础。",
+    "experiment_id": "course-03/resistor-iv",
+    "status": "core-declared-model-supported",
+    "original_docx": "originals/course-03/6电阻伏安特性的测定/实验报告-电阻伏安特性的测定.docx",
+    "original_docx_sha256": "b93ef442fed10291f25227b6f184dba4a09629000dde8aac3a86c71cdb0b893d",
+    "original_docx_hash_checked": true,
+    "resolved_core_reference_ids": [
+      "mei2022ivrange",
+      "yang2021meter"
+    ]
+  },
+  "core_reference_ids": [
+    "mei2022ivrange",
+    "yang2021meter"
+  ],
+  "apparatus_calibration_status": "original-instrument-parameters-unconfirmed"
+}

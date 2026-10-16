@@ -1,6 +1,14 @@
 {
   "status": "passed",
-  "source_record_sha256": "457b1e21afc6afa880cfd6bfa5be364c6f3abcb2dcea6d875c22d9b10c327e45",
+  "source_hashes": {
+    "simulations/single-slit-diffraction/app.mjs": "b9e28f388b81249a5957cda8524510799cbda9a95d831b4a14c069eb8252348a",
+    "simulations/single-slit-diffraction/chart.mjs": "3f923dc9a51225ff63c7e6379aab231e5586654f7e43d67fe11530e21f893f07",
+    "simulations/single-slit-diffraction/index.html": "6de4752dbdff86923f656a2a9cbe7c4ab7c2fc5ff245b41c5b446d70146b6718",
+    "simulations/single-slit-diffraction/lab.css": "cb522360179f29fdbe39c933213bc377b0ab4c2b577adb5d498706173c40f321",
+    "simulations/single-slit-diffraction/model.mjs": "792ee087eead4fc751640f2045be4ee029810d685d556c0e5802b31a8b7e5e86",
+    "simulations/single-slit-diffraction/observations.json": "773815a80d13c803abae6942257894e6cc8e884db627c1c971cb4e6a0992dbfd"
+  },
+  "source_record_sha256": "e1ad5051abe288b8ffb41c87bb4c29c209c31a0bacc908f0e1284e52ae74eb9b",
   "interaction_checks": 5,
   "visual_status": "passed",
   "exports_status": "passed",
@@ -107,7 +115,7 @@
   "experiment_id": "course-04/single-slit-diffraction",
   "numerical": {
     "status": "passed",
-    "reference_sha256": "b8da7fe5958d1e0ded3c02c95f66db2a268d08c95a9ce28e9c83f0b9ac168602",
+    "reference_sha256": "d31d4b1a8195c1a713ab9a23c8d20f64afa9c1cfaec06c834f4327a5bf11c0a5",
     "source_files": {
       "simulations/single-slit-diffraction/index.html": "6de4752dbdff86923f656a2a9cbe7c4ab7c2fc5ff245b41c5b446d70146b6718",
       "simulations/single-slit-diffraction/model.mjs": "792ee087eead4fc751640f2045be4ee029810d685d556c0e5802b31a8b7e5e86",
@@ -162,13 +170,5 @@
         ]
       }
     ]
-  },
-  "source_hashes": {
-    "simulations/single-slit-diffraction/app.mjs": "b9e28f388b81249a5957cda8524510799cbda9a95d831b4a14c069eb8252348a",
-    "simulations/single-slit-diffraction/chart.mjs": "3f923dc9a51225ff63c7e6379aab231e5586654f7e43d67fe11530e21f893f07",
-    "simulations/single-slit-diffraction/index.html": "6de4752dbdff86923f656a2a9cbe7c4ab7c2fc5ff245b41c5b446d70146b6718",
-    "simulations/single-slit-diffraction/lab.css": "cb522360179f29fdbe39c933213bc377b0ab4c2b577adb5d498706173c40f321",
-    "simulations/single-slit-diffraction/model.mjs": "792ee087eead4fc751640f2045be4ee029810d685d556c0e5802b31a8b7e5e86",
-    "simulations/single-slit-diffraction/observations.json": "773815a80d13c803abae6942257894e6cc8e884db627c1c971cb4e6a0992dbfd"
   }
 }

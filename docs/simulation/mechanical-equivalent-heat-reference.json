@@ -1,0 +1,2517 @@
+{
+  "schema_version": 1,
+  "experiment": "course-01/mechanical-equivalent-heat",
+  "model_sha256": "8b52b7154a5e1425a8d3527d04c8d4c0364a68f16c06c9c8a422bf1dbaaa8f73",
+  "validator_sha256": "af38b63a9171b4e13920bbf2f15711d5039c9178a8d27a93cbff678fda143e02",
+  "environment": {
+    "python": "3.14.7",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1"
+  },
+  "method": "DOP853 integrates temperature and signed environmental heat as separate state variables; heating and independent power-off conditions",
+  "case_count": 192,
+  "tolerances": {
+    "absolute": 2e-08
+  },
+  "max_absolute_error": 2.6284396881237626e-10,
+  "status": "passed",
+  "failures": [],
+  "cases": [
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 100,
+        "voltage": 5,
+        "current": 0.1,
+        "heatTransfer": 0,
+        "ambientTemperature": 285,
+        "initialTemperature": 285
+      },
+      "heating": true,
+      "max_absolute_error": 8.185452315956354e-12
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 100,
+        "voltage": 5,
+        "current": 0.1,
+        "heatTransfer": 0,
+        "ambientTemperature": 285,
+        "initialTemperature": 285
+      },
+      "heating": false,
+      "max_absolute_error": 0.0
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 100,
+        "voltage": 5,
+        "current": 0.1,
+        "heatTransfer": 0,
+        "ambientTemperature": 285,
+        "initialTemperature": 305
+      },
+      "heating": true,
+      "max_absolute_error": 8.185452315956354e-12
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 100,
+        "voltage": 5,
+        "current": 0.1,
+        "heatTransfer": 0,
+        "ambientTemperature": 285,
+        "initialTemperature": 305
+      },
+      "heating": false,
+      "max_absolute_error": 0.0
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 100,
+        "voltage": 5,
+        "current": 0.1,
+        "heatTransfer": 0,
+        "ambientTemperature": 305,
+        "initialTemperature": 285
+      },
+      "heating": true,
+      "max_absolute_error": 8.185452315956354e-12
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 100,
+        "voltage": 5,
+        "current": 0.1,
+        "heatTransfer": 0,
+        "ambientTemperature": 305,
+        "initialTemperature": 285
+      },
+      "heating": false,
+      "max_absolute_error": 0.0
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 100,
+        "voltage": 5,
+        "current": 0.1,
+        "heatTransfer": 0,
+        "ambientTemperature": 305,
+        "initialTemperature": 305
+      },
+      "heating": true,
+      "max_absolute_error": 8.185452315956354e-12
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 100,
+        "voltage": 5,
+        "current": 0.1,
+        "heatTransfer": 0,
+        "ambientTemperature": 305,
+        "initialTemperature": 305
+      },
+      "heating": false,
+      "max_absolute_error": 0.0
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 100,
+        "voltage": 5,
+        "current": 0.1,
+        "heatTransfer": 0.05,
+        "ambientTemperature": 285,
+        "initialTemperature": 285
+      },
+      "heating": true,
+      "max_absolute_error": 1.2065015653206501e-11
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 100,
+        "voltage": 5,
+        "current": 0.1,
+        "heatTransfer": 0.05,
+        "ambientTemperature": 285,
+        "initialTemperature": 285
+      },
+      "heating": false,
+      "max_absolute_error": 0.0
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 100,
+        "voltage": 5,
+        "current": 0.1,
+        "heatTransfer": 0.05,
+        "ambientTemperature": 285,
+        "initialTemperature": 305
+      },
+      "heating": true,
+      "max_absolute_error": 7.482015007553855e-12
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 100,
+        "voltage": 5,
+        "current": 0.1,
+        "heatTransfer": 0.05,
+        "ambientTemperature": 285,
+        "initialTemperature": 305
+      },
+      "heating": false,
+      "max_absolute_error": 1.1823431123048067e-11
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 100,
+        "voltage": 5,
+        "current": 0.1,
+        "heatTransfer": 0.05,
+        "ambientTemperature": 305,
+        "initialTemperature": 285
+      },
+      "heating": true,
+      "max_absolute_error": 1.5575096767861396e-11
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 100,
+        "voltage": 5,
+        "current": 0.1,
+        "heatTransfer": 0.05,
+        "ambientTemperature": 305,
+        "initialTemperature": 285
+      },
+      "heating": false,
+      "max_absolute_error": 1.1368683772161603e-11
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 100,
+        "voltage": 5,
+        "current": 0.1,
+        "heatTransfer": 0.05,
+        "ambientTemperature": 305,
+        "initialTemperature": 305
+      },
+      "heating": true,
+      "max_absolute_error": 8.48347780912917e-12
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 100,
+        "voltage": 5,
+        "current": 0.1,
+        "heatTransfer": 0.05,
+        "ambientTemperature": 305,
+        "initialTemperature": 305
+      },
+      "heating": false,
+      "max_absolute_error": 0.0
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 100,
+        "voltage": 5,
+        "current": 0.1,
+        "heatTransfer": 0.1,
+        "ambientTemperature": 285,
+        "initialTemperature": 285
+      },
+      "heating": true,
+      "max_absolute_error": 2.665956344571896e-11
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 100,
+        "voltage": 5,
+        "current": 0.1,
+        "heatTransfer": 0.1,
+        "ambientTemperature": 285,
+        "initialTemperature": 285
+      },
+      "heating": false,
+      "max_absolute_error": 0.0
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 100,
+        "voltage": 5,
+        "current": 0.1,
+        "heatTransfer": 0.1,
+        "ambientTemperature": 285,
+        "initialTemperature": 305
+      },
+      "heating": true,
+      "max_absolute_error": 2.091837814077735e-11
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 100,
+        "voltage": 5,
+        "current": 0.1,
+        "heatTransfer": 0.1,
+        "ambientTemperature": 285,
+        "initialTemperature": 305
+      },
+      "heating": false,
+      "max_absolute_error": 2.1827872842550278e-11
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 100,
+        "voltage": 5,
+        "current": 0.1,
+        "heatTransfer": 0.1,
+        "ambientTemperature": 305,
+        "initialTemperature": 285
+      },
+      "heating": true,
+      "max_absolute_error": 1.2278178473934531e-11
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 100,
+        "voltage": 5,
+        "current": 0.1,
+        "heatTransfer": 0.1,
+        "ambientTemperature": 305,
+        "initialTemperature": 285
+      },
+      "heating": false,
+      "max_absolute_error": 1.9986146071460098e-10
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 100,
+        "voltage": 5,
+        "current": 0.1,
+        "heatTransfer": 0.1,
+        "ambientTemperature": 305,
+        "initialTemperature": 305
+      },
+      "heating": true,
+      "max_absolute_error": 2.319211489520967e-11
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 100,
+        "voltage": 5,
+        "current": 0.1,
+        "heatTransfer": 0.1,
+        "ambientTemperature": 305,
+        "initialTemperature": 305
+      },
+      "heating": false,
+      "max_absolute_error": 0.0
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 100,
+        "voltage": 5,
+        "current": 0.5,
+        "heatTransfer": 0,
+        "ambientTemperature": 285,
+        "initialTemperature": 285
+      },
+      "heating": true,
+      "max_absolute_error": 9.29389898374211e-12
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 100,
+        "voltage": 5,
+        "current": 0.5,
+        "heatTransfer": 0,
+        "ambientTemperature": 285,
+        "initialTemperature": 285
+      },
+      "heating": false,
+      "max_absolute_error": 0.0
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 100,
+        "voltage": 5,
+        "current": 0.5,
+        "heatTransfer": 0,
+        "ambientTemperature": 285,
+        "initialTemperature": 305
+      },
+      "heating": true,
+      "max_absolute_error": 9.29389898374211e-12
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 100,
+        "voltage": 5,
+        "current": 0.5,
+        "heatTransfer": 0,
+        "ambientTemperature": 285,
+        "initialTemperature": 305
+      },
+      "heating": false,
+      "max_absolute_error": 0.0
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 100,
+        "voltage": 5,
+        "current": 0.5,
+        "heatTransfer": 0,
+        "ambientTemperature": 305,
+        "initialTemperature": 285
+      },
+      "heating": true,
+      "max_absolute_error": 9.29389898374211e-12
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 100,
+        "voltage": 5,
+        "current": 0.5,
+        "heatTransfer": 0,
+        "ambientTemperature": 305,
+        "initialTemperature": 285
+      },
+      "heating": false,
+      "max_absolute_error": 0.0
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 100,
+        "voltage": 5,
+        "current": 0.5,
+        "heatTransfer": 0,
+        "ambientTemperature": 305,
+        "initialTemperature": 305
+      },
+      "heating": true,
+      "max_absolute_error": 9.29389898374211e-12
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 100,
+        "voltage": 5,
+        "current": 0.5,
+        "heatTransfer": 0,
+        "ambientTemperature": 305,
+        "initialTemperature": 305
+      },
+      "heating": false,
+      "max_absolute_error": 0.0
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 100,
+        "voltage": 5,
+        "current": 0.5,
+        "heatTransfer": 0.05,
+        "ambientTemperature": 285,
+        "initialTemperature": 285
+      },
+      "heating": true,
+      "max_absolute_error": 9.777068044058979e-12
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 100,
+        "voltage": 5,
+        "current": 0.5,
+        "heatTransfer": 0.05,
+        "ambientTemperature": 285,
+        "initialTemperature": 285
+      },
+      "heating": false,
+      "max_absolute_error": 0.0
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 100,
+        "voltage": 5,
+        "current": 0.5,
+        "heatTransfer": 0.05,
+        "ambientTemperature": 285,
+        "initialTemperature": 305
+      },
+      "heating": true,
+      "max_absolute_error": 1.5916157281026244e-11
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 100,
+        "voltage": 5,
+        "current": 0.5,
+        "heatTransfer": 0.05,
+        "ambientTemperature": 285,
+        "initialTemperature": 305
+      },
+      "heating": false,
+      "max_absolute_error": 1.1823431123048067e-11
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 100,
+        "voltage": 5,
+        "current": 0.5,
+        "heatTransfer": 0.05,
+        "ambientTemperature": 305,
+        "initialTemperature": 285
+      },
+      "heating": true,
+      "max_absolute_error": 4.831690603168681e-11
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 100,
+        "voltage": 5,
+        "current": 0.5,
+        "heatTransfer": 0.05,
+        "ambientTemperature": 305,
+        "initialTemperature": 285
+      },
+      "heating": false,
+      "max_absolute_error": 1.1368683772161603e-11
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 100,
+        "voltage": 5,
+        "current": 0.5,
+        "heatTransfer": 0.05,
+        "ambientTemperature": 305,
+        "initialTemperature": 305
+      },
+      "heating": true,
+      "max_absolute_error": 1.4303225270850817e-11
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 100,
+        "voltage": 5,
+        "current": 0.5,
+        "heatTransfer": 0.05,
+        "ambientTemperature": 305,
+        "initialTemperature": 305
+      },
+      "heating": false,
+      "max_absolute_error": 0.0
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 100,
+        "voltage": 5,
+        "current": 0.5,
+        "heatTransfer": 0.1,
+        "ambientTemperature": 285,
+        "initialTemperature": 285
+      },
+      "heating": true,
+      "max_absolute_error": 2.2225776774575934e-11
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 100,
+        "voltage": 5,
+        "current": 0.5,
+        "heatTransfer": 0.1,
+        "ambientTemperature": 285,
+        "initialTemperature": 285
+      },
+      "heating": false,
+      "max_absolute_error": 0.0
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 100,
+        "voltage": 5,
+        "current": 0.5,
+        "heatTransfer": 0.1,
+        "ambientTemperature": 285,
+        "initialTemperature": 305
+      },
+      "heating": true,
+      "max_absolute_error": 1.064108801074326e-10
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 100,
+        "voltage": 5,
+        "current": 0.5,
+        "heatTransfer": 0.1,
+        "ambientTemperature": 285,
+        "initialTemperature": 305
+      },
+      "heating": false,
+      "max_absolute_error": 2.1827872842550278e-11
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 100,
+        "voltage": 5,
+        "current": 0.5,
+        "heatTransfer": 0.1,
+        "ambientTemperature": 305,
+        "initialTemperature": 285
+      },
+      "heating": true,
+      "max_absolute_error": 4.263256414560601e-12
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 100,
+        "voltage": 5,
+        "current": 0.5,
+        "heatTransfer": 0.1,
+        "ambientTemperature": 305,
+        "initialTemperature": 285
+      },
+      "heating": false,
+      "max_absolute_error": 1.9986146071460098e-10
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 100,
+        "voltage": 5,
+        "current": 0.5,
+        "heatTransfer": 0.1,
+        "ambientTemperature": 305,
+        "initialTemperature": 305
+      },
+      "heating": true,
+      "max_absolute_error": 1.460875864722766e-11
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 100,
+        "voltage": 5,
+        "current": 0.5,
+        "heatTransfer": 0.1,
+        "ambientTemperature": 305,
+        "initialTemperature": 305
+      },
+      "heating": false,
+      "max_absolute_error": 0.0
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 100,
+        "voltage": 20,
+        "current": 0.1,
+        "heatTransfer": 0,
+        "ambientTemperature": 285,
+        "initialTemperature": 285
+      },
+      "heating": true,
+      "max_absolute_error": 1.1596057447604835e-11
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 100,
+        "voltage": 20,
+        "current": 0.1,
+        "heatTransfer": 0,
+        "ambientTemperature": 285,
+        "initialTemperature": 285
+      },
+      "heating": false,
+      "max_absolute_error": 0.0
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 100,
+        "voltage": 20,
+        "current": 0.1,
+        "heatTransfer": 0,
+        "ambientTemperature": 285,
+        "initialTemperature": 305
+      },
+      "heating": true,
+      "max_absolute_error": 1.1596057447604835e-11
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 100,
+        "voltage": 20,
+        "current": 0.1,
+        "heatTransfer": 0,
+        "ambientTemperature": 285,
+        "initialTemperature": 305
+      },
+      "heating": false,
+      "max_absolute_error": 0.0
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 100,
+        "voltage": 20,
+        "current": 0.1,
+        "heatTransfer": 0,
+        "ambientTemperature": 305,
+        "initialTemperature": 285
+      },
+      "heating": true,
+      "max_absolute_error": 1.1596057447604835e-11
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 100,
+        "voltage": 20,
+        "current": 0.1,
+        "heatTransfer": 0,
+        "ambientTemperature": 305,
+        "initialTemperature": 285
+      },
+      "heating": false,
+      "max_absolute_error": 0.0
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 100,
+        "voltage": 20,
+        "current": 0.1,
+        "heatTransfer": 0,
+        "ambientTemperature": 305,
+        "initialTemperature": 305
+      },
+      "heating": true,
+      "max_absolute_error": 1.1596057447604835e-11
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 100,
+        "voltage": 20,
+        "current": 0.1,
+        "heatTransfer": 0,
+        "ambientTemperature": 305,
+        "initialTemperature": 305
+      },
+      "heating": false,
+      "max_absolute_error": 0.0
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 100,
+        "voltage": 20,
+        "current": 0.1,
+        "heatTransfer": 0.05,
+        "ambientTemperature": 285,
+        "initialTemperature": 285
+      },
+      "heating": true,
+      "max_absolute_error": 1.0168865749449196e-11
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 100,
+        "voltage": 20,
+        "current": 0.1,
+        "heatTransfer": 0.05,
+        "ambientTemperature": 285,
+        "initialTemperature": 285
+      },
+      "heating": false,
+      "max_absolute_error": 0.0
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 100,
+        "voltage": 20,
+        "current": 0.1,
+        "heatTransfer": 0.05,
+        "ambientTemperature": 285,
+        "initialTemperature": 305
+      },
+      "heating": true,
+      "max_absolute_error": 7.958078640513122e-12
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 100,
+        "voltage": 20,
+        "current": 0.1,
+        "heatTransfer": 0.05,
+        "ambientTemperature": 285,
+        "initialTemperature": 305
+      },
+      "heating": false,
+      "max_absolute_error": 1.1823431123048067e-11
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 100,
+        "voltage": 20,
+        "current": 0.1,
+        "heatTransfer": 0.05,
+        "ambientTemperature": 305,
+        "initialTemperature": 285
+      },
+      "heating": true,
+      "max_absolute_error": 9.28821464185603e-11
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 100,
+        "voltage": 20,
+        "current": 0.1,
+        "heatTransfer": 0.05,
+        "ambientTemperature": 305,
+        "initialTemperature": 285
+      },
+      "heating": false,
+      "max_absolute_error": 1.1368683772161603e-11
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 100,
+        "voltage": 20,
+        "current": 0.1,
+        "heatTransfer": 0.05,
+        "ambientTemperature": 305,
+        "initialTemperature": 305
+      },
+      "heating": true,
+      "max_absolute_error": 1.1311840353300795e-11
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 100,
+        "voltage": 20,
+        "current": 0.1,
+        "heatTransfer": 0.05,
+        "ambientTemperature": 305,
+        "initialTemperature": 305
+      },
+      "heating": false,
+      "max_absolute_error": 0.0
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 100,
+        "voltage": 20,
+        "current": 0.1,
+        "heatTransfer": 0.1,
+        "ambientTemperature": 285,
+        "initialTemperature": 285
+      },
+      "heating": true,
+      "max_absolute_error": 2.9331204132176936e-11
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 100,
+        "voltage": 20,
+        "current": 0.1,
+        "heatTransfer": 0.1,
+        "ambientTemperature": 285,
+        "initialTemperature": 285
+      },
+      "heating": false,
+      "max_absolute_error": 0.0
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 100,
+        "voltage": 20,
+        "current": 0.1,
+        "heatTransfer": 0.1,
+        "ambientTemperature": 285,
+        "initialTemperature": 305
+      },
+      "heating": true,
+      "max_absolute_error": 1.8189894035458565e-12
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 100,
+        "voltage": 20,
+        "current": 0.1,
+        "heatTransfer": 0.1,
+        "ambientTemperature": 285,
+        "initialTemperature": 305
+      },
+      "heating": false,
+      "max_absolute_error": 2.1827872842550278e-11
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 100,
+        "voltage": 20,
+        "current": 0.1,
+        "heatTransfer": 0.1,
+        "ambientTemperature": 305,
+        "initialTemperature": 285
+      },
+      "heating": true,
+      "max_absolute_error": 2.6284396881237626e-10
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 100,
+        "voltage": 20,
+        "current": 0.1,
+        "heatTransfer": 0.1,
+        "ambientTemperature": 305,
+        "initialTemperature": 285
+      },
+      "heating": false,
+      "max_absolute_error": 1.9986146071460098e-10
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 100,
+        "voltage": 20,
+        "current": 0.1,
+        "heatTransfer": 0.1,
+        "ambientTemperature": 305,
+        "initialTemperature": 305
+      },
+      "heating": true,
+      "max_absolute_error": 8.967160347594927e-12
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 100,
+        "voltage": 20,
+        "current": 0.1,
+        "heatTransfer": 0.1,
+        "ambientTemperature": 305,
+        "initialTemperature": 305
+      },
+      "heating": false,
+      "max_absolute_error": 0.0
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 100,
+        "voltage": 20,
+        "current": 0.5,
+        "heatTransfer": 0,
+        "ambientTemperature": 285,
+        "initialTemperature": 285
+      },
+      "heating": true,
+      "max_absolute_error": 1.0345502232667059e-11
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 100,
+        "voltage": 20,
+        "current": 0.5,
+        "heatTransfer": 0,
+        "ambientTemperature": 285,
+        "initialTemperature": 285
+      },
+      "heating": false,
+      "max_absolute_error": 0.0
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 100,
+        "voltage": 20,
+        "current": 0.5,
+        "heatTransfer": 0,
+        "ambientTemperature": 285,
+        "initialTemperature": 305
+      },
+      "heating": true,
+      "max_absolute_error": 1.0345502232667059e-11
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 100,
+        "voltage": 20,
+        "current": 0.5,
+        "heatTransfer": 0,
+        "ambientTemperature": 285,
+        "initialTemperature": 305
+      },
+      "heating": false,
+      "max_absolute_error": 0.0
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 100,
+        "voltage": 20,
+        "current": 0.5,
+        "heatTransfer": 0,
+        "ambientTemperature": 305,
+        "initialTemperature": 285
+      },
+      "heating": true,
+      "max_absolute_error": 1.0345502232667059e-11
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 100,
+        "voltage": 20,
+        "current": 0.5,
+        "heatTransfer": 0,
+        "ambientTemperature": 305,
+        "initialTemperature": 285
+      },
+      "heating": false,
+      "max_absolute_error": 0.0
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 100,
+        "voltage": 20,
+        "current": 0.5,
+        "heatTransfer": 0,
+        "ambientTemperature": 305,
+        "initialTemperature": 305
+      },
+      "heating": true,
+      "max_absolute_error": 1.0345502232667059e-11
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 100,
+        "voltage": 20,
+        "current": 0.5,
+        "heatTransfer": 0,
+        "ambientTemperature": 305,
+        "initialTemperature": 305
+      },
+      "heating": false,
+      "max_absolute_error": 0.0
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 100,
+        "voltage": 20,
+        "current": 0.5,
+        "heatTransfer": 0.05,
+        "ambientTemperature": 285,
+        "initialTemperature": 285
+      },
+      "heating": true,
+      "max_absolute_error": 1.1397105481592007e-11
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 100,
+        "voltage": 20,
+        "current": 0.5,
+        "heatTransfer": 0.05,
+        "ambientTemperature": 285,
+        "initialTemperature": 285
+      },
+      "heating": false,
+      "max_absolute_error": 0.0
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 100,
+        "voltage": 20,
+        "current": 0.5,
+        "heatTransfer": 0.05,
+        "ambientTemperature": 285,
+        "initialTemperature": 305
+      },
+      "heating": true,
+      "max_absolute_error": 2.2737367544323206e-11
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 100,
+        "voltage": 20,
+        "current": 0.5,
+        "heatTransfer": 0.05,
+        "ambientTemperature": 285,
+        "initialTemperature": 305
+      },
+      "heating": false,
+      "max_absolute_error": 1.1823431123048067e-11
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 100,
+        "voltage": 20,
+        "current": 0.5,
+        "heatTransfer": 0.05,
+        "ambientTemperature": 305,
+        "initialTemperature": 285
+      },
+      "heating": true,
+      "max_absolute_error": 5.240963218966499e-11
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 100,
+        "voltage": 20,
+        "current": 0.5,
+        "heatTransfer": 0.05,
+        "ambientTemperature": 305,
+        "initialTemperature": 285
+      },
+      "heating": false,
+      "max_absolute_error": 1.1368683772161603e-11
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 100,
+        "voltage": 20,
+        "current": 0.5,
+        "heatTransfer": 0.05,
+        "ambientTemperature": 305,
+        "initialTemperature": 305
+      },
+      "heating": true,
+      "max_absolute_error": 1.3642420526593924e-11
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 100,
+        "voltage": 20,
+        "current": 0.5,
+        "heatTransfer": 0.05,
+        "ambientTemperature": 305,
+        "initialTemperature": 305
+      },
+      "heating": false,
+      "max_absolute_error": 0.0
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 100,
+        "voltage": 20,
+        "current": 0.5,
+        "heatTransfer": 0.1,
+        "ambientTemperature": 285,
+        "initialTemperature": 285
+      },
+      "heating": true,
+      "max_absolute_error": 4.285993782104924e-11
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 100,
+        "voltage": 20,
+        "current": 0.5,
+        "heatTransfer": 0.1,
+        "ambientTemperature": 285,
+        "initialTemperature": 285
+      },
+      "heating": false,
+      "max_absolute_error": 0.0
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 100,
+        "voltage": 20,
+        "current": 0.5,
+        "heatTransfer": 0.1,
+        "ambientTemperature": 285,
+        "initialTemperature": 305
+      },
+      "heating": true,
+      "max_absolute_error": 1.0984990694851149e-11
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 100,
+        "voltage": 20,
+        "current": 0.5,
+        "heatTransfer": 0.1,
+        "ambientTemperature": 285,
+        "initialTemperature": 305
+      },
+      "heating": false,
+      "max_absolute_error": 2.1827872842550278e-11
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 100,
+        "voltage": 20,
+        "current": 0.5,
+        "heatTransfer": 0.1,
+        "ambientTemperature": 305,
+        "initialTemperature": 285
+      },
+      "heating": true,
+      "max_absolute_error": 1.4495071809506044e-11
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 100,
+        "voltage": 20,
+        "current": 0.5,
+        "heatTransfer": 0.1,
+        "ambientTemperature": 305,
+        "initialTemperature": 285
+      },
+      "heating": false,
+      "max_absolute_error": 1.9986146071460098e-10
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 100,
+        "voltage": 20,
+        "current": 0.5,
+        "heatTransfer": 0.1,
+        "ambientTemperature": 305,
+        "initialTemperature": 305
+      },
+      "heating": true,
+      "max_absolute_error": 7.23048287909478e-11
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 100,
+        "voltage": 20,
+        "current": 0.5,
+        "heatTransfer": 0.1,
+        "ambientTemperature": 305,
+        "initialTemperature": 305
+      },
+      "heating": false,
+      "max_absolute_error": 0.0
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 300,
+        "voltage": 5,
+        "current": 0.1,
+        "heatTransfer": 0,
+        "ambientTemperature": 285,
+        "initialTemperature": 285
+      },
+      "heating": true,
+      "max_absolute_error": 2.6698643296185764e-11
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 300,
+        "voltage": 5,
+        "current": 0.1,
+        "heatTransfer": 0,
+        "ambientTemperature": 285,
+        "initialTemperature": 285
+      },
+      "heating": false,
+      "max_absolute_error": 0.0
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 300,
+        "voltage": 5,
+        "current": 0.1,
+        "heatTransfer": 0,
+        "ambientTemperature": 285,
+        "initialTemperature": 305
+      },
+      "heating": true,
+      "max_absolute_error": 2.6698643296185764e-11
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 300,
+        "voltage": 5,
+        "current": 0.1,
+        "heatTransfer": 0,
+        "ambientTemperature": 285,
+        "initialTemperature": 305
+      },
+      "heating": false,
+      "max_absolute_error": 0.0
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 300,
+        "voltage": 5,
+        "current": 0.1,
+        "heatTransfer": 0,
+        "ambientTemperature": 305,
+        "initialTemperature": 285
+      },
+      "heating": true,
+      "max_absolute_error": 2.6698643296185764e-11
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 300,
+        "voltage": 5,
+        "current": 0.1,
+        "heatTransfer": 0,
+        "ambientTemperature": 305,
+        "initialTemperature": 285
+      },
+      "heating": false,
+      "max_absolute_error": 0.0
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 300,
+        "voltage": 5,
+        "current": 0.1,
+        "heatTransfer": 0,
+        "ambientTemperature": 305,
+        "initialTemperature": 305
+      },
+      "heating": true,
+      "max_absolute_error": 2.6698643296185764e-11
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 300,
+        "voltage": 5,
+        "current": 0.1,
+        "heatTransfer": 0,
+        "ambientTemperature": 305,
+        "initialTemperature": 305
+      },
+      "heating": false,
+      "max_absolute_error": 0.0
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 300,
+        "voltage": 5,
+        "current": 0.1,
+        "heatTransfer": 0.05,
+        "ambientTemperature": 285,
+        "initialTemperature": 285
+      },
+      "heating": true,
+      "max_absolute_error": 1.942979110935994e-11
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 300,
+        "voltage": 5,
+        "current": 0.1,
+        "heatTransfer": 0.05,
+        "ambientTemperature": 285,
+        "initialTemperature": 285
+      },
+      "heating": false,
+      "max_absolute_error": 0.0
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 300,
+        "voltage": 5,
+        "current": 0.1,
+        "heatTransfer": 0.05,
+        "ambientTemperature": 285,
+        "initialTemperature": 305
+      },
+      "heating": true,
+      "max_absolute_error": 2.773958840407431e-11
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 300,
+        "voltage": 5,
+        "current": 0.1,
+        "heatTransfer": 0.05,
+        "ambientTemperature": 285,
+        "initialTemperature": 305
+      },
+      "heating": false,
+      "max_absolute_error": 4.1382008930668235e-11
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 300,
+        "voltage": 5,
+        "current": 0.1,
+        "heatTransfer": 0.05,
+        "ambientTemperature": 305,
+        "initialTemperature": 285
+      },
+      "heating": true,
+      "max_absolute_error": 2.708588908717502e-11
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 300,
+        "voltage": 5,
+        "current": 0.1,
+        "heatTransfer": 0.05,
+        "ambientTemperature": 305,
+        "initialTemperature": 285
+      },
+      "heating": false,
+      "max_absolute_error": 3.387867764104158e-11
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 300,
+        "voltage": 5,
+        "current": 0.1,
+        "heatTransfer": 0.05,
+        "ambientTemperature": 305,
+        "initialTemperature": 305
+      },
+      "heating": true,
+      "max_absolute_error": 1.922373371598951e-11
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 300,
+        "voltage": 5,
+        "current": 0.1,
+        "heatTransfer": 0.05,
+        "ambientTemperature": 305,
+        "initialTemperature": 305
+      },
+      "heating": false,
+      "max_absolute_error": 0.0
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 300,
+        "voltage": 5,
+        "current": 0.1,
+        "heatTransfer": 0.1,
+        "ambientTemperature": 285,
+        "initialTemperature": 285
+      },
+      "heating": true,
+      "max_absolute_error": 3.573674689505424e-11
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 300,
+        "voltage": 5,
+        "current": 0.1,
+        "heatTransfer": 0.1,
+        "ambientTemperature": 285,
+        "initialTemperature": 285
+      },
+      "heating": false,
+      "max_absolute_error": 0.0
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 300,
+        "voltage": 5,
+        "current": 0.1,
+        "heatTransfer": 0.1,
+        "ambientTemperature": 285,
+        "initialTemperature": 305
+      },
+      "heating": true,
+      "max_absolute_error": 2.1827872842550278e-11
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 300,
+        "voltage": 5,
+        "current": 0.1,
+        "heatTransfer": 0.1,
+        "ambientTemperature": 285,
+        "initialTemperature": 305
+      },
+      "heating": false,
+      "max_absolute_error": 3.3651303965598345e-11
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 300,
+        "voltage": 5,
+        "current": 0.1,
+        "heatTransfer": 0.1,
+        "ambientTemperature": 305,
+        "initialTemperature": 285
+      },
+      "heating": true,
+      "max_absolute_error": 2.546585164964199e-11
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 300,
+        "voltage": 5,
+        "current": 0.1,
+        "heatTransfer": 0.1,
+        "ambientTemperature": 305,
+        "initialTemperature": 285
+      },
+      "heating": false,
+      "max_absolute_error": 4.6838977141305804e-11
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 300,
+        "voltage": 5,
+        "current": 0.1,
+        "heatTransfer": 0.1,
+        "ambientTemperature": 305,
+        "initialTemperature": 305
+      },
+      "heating": true,
+      "max_absolute_error": 2.7046809236708214e-11
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 300,
+        "voltage": 5,
+        "current": 0.1,
+        "heatTransfer": 0.1,
+        "ambientTemperature": 305,
+        "initialTemperature": 305
+      },
+      "heating": false,
+      "max_absolute_error": 0.0
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 300,
+        "voltage": 5,
+        "current": 0.5,
+        "heatTransfer": 0,
+        "ambientTemperature": 285,
+        "initialTemperature": 285
+      },
+      "heating": true,
+      "max_absolute_error": 2.1600499167107046e-11
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 300,
+        "voltage": 5,
+        "current": 0.5,
+        "heatTransfer": 0,
+        "ambientTemperature": 285,
+        "initialTemperature": 285
+      },
+      "heating": false,
+      "max_absolute_error": 0.0
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 300,
+        "voltage": 5,
+        "current": 0.5,
+        "heatTransfer": 0,
+        "ambientTemperature": 285,
+        "initialTemperature": 305
+      },
+      "heating": true,
+      "max_absolute_error": 2.1600499167107046e-11
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 300,
+        "voltage": 5,
+        "current": 0.5,
+        "heatTransfer": 0,
+        "ambientTemperature": 285,
+        "initialTemperature": 305
+      },
+      "heating": false,
+      "max_absolute_error": 0.0
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 300,
+        "voltage": 5,
+        "current": 0.5,
+        "heatTransfer": 0,
+        "ambientTemperature": 305,
+        "initialTemperature": 285
+      },
+      "heating": true,
+      "max_absolute_error": 2.1600499167107046e-11
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 300,
+        "voltage": 5,
+        "current": 0.5,
+        "heatTransfer": 0,
+        "ambientTemperature": 305,
+        "initialTemperature": 285
+      },
+      "heating": false,
+      "max_absolute_error": 0.0
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 300,
+        "voltage": 5,
+        "current": 0.5,
+        "heatTransfer": 0,
+        "ambientTemperature": 305,
+        "initialTemperature": 305
+      },
+      "heating": true,
+      "max_absolute_error": 2.1600499167107046e-11
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 300,
+        "voltage": 5,
+        "current": 0.5,
+        "heatTransfer": 0,
+        "ambientTemperature": 305,
+        "initialTemperature": 305
+      },
+      "heating": false,
+      "max_absolute_error": 0.0
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 300,
+        "voltage": 5,
+        "current": 0.5,
+        "heatTransfer": 0.05,
+        "ambientTemperature": 285,
+        "initialTemperature": 285
+      },
+      "heating": true,
+      "max_absolute_error": 2.457350989359952e-11
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 300,
+        "voltage": 5,
+        "current": 0.5,
+        "heatTransfer": 0.05,
+        "ambientTemperature": 285,
+        "initialTemperature": 285
+      },
+      "heating": false,
+      "max_absolute_error": 0.0
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 300,
+        "voltage": 5,
+        "current": 0.5,
+        "heatTransfer": 0.05,
+        "ambientTemperature": 285,
+        "initialTemperature": 305
+      },
+      "heating": true,
+      "max_absolute_error": 2.8251179173821583e-11
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 300,
+        "voltage": 5,
+        "current": 0.5,
+        "heatTransfer": 0.05,
+        "ambientTemperature": 285,
+        "initialTemperature": 305
+      },
+      "heating": false,
+      "max_absolute_error": 4.1382008930668235e-11
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 300,
+        "voltage": 5,
+        "current": 0.5,
+        "heatTransfer": 0.05,
+        "ambientTemperature": 305,
+        "initialTemperature": 285
+      },
+      "heating": true,
+      "max_absolute_error": 3.444711182964966e-11
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 300,
+        "voltage": 5,
+        "current": 0.5,
+        "heatTransfer": 0.05,
+        "ambientTemperature": 305,
+        "initialTemperature": 285
+      },
+      "heating": false,
+      "max_absolute_error": 3.387867764104158e-11
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 300,
+        "voltage": 5,
+        "current": 0.5,
+        "heatTransfer": 0.05,
+        "ambientTemperature": 305,
+        "initialTemperature": 305
+      },
+      "heating": true,
+      "max_absolute_error": 3.382183422218077e-11
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 300,
+        "voltage": 5,
+        "current": 0.5,
+        "heatTransfer": 0.05,
+        "ambientTemperature": 305,
+        "initialTemperature": 305
+      },
+      "heating": false,
+      "max_absolute_error": 0.0
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 300,
+        "voltage": 5,
+        "current": 0.5,
+        "heatTransfer": 0.1,
+        "ambientTemperature": 285,
+        "initialTemperature": 285
+      },
+      "heating": true,
+      "max_absolute_error": 1.2301826224359047e-11
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 300,
+        "voltage": 5,
+        "current": 0.5,
+        "heatTransfer": 0.1,
+        "ambientTemperature": 285,
+        "initialTemperature": 285
+      },
+      "heating": false,
+      "max_absolute_error": 0.0
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 300,
+        "voltage": 5,
+        "current": 0.5,
+        "heatTransfer": 0.1,
+        "ambientTemperature": 285,
+        "initialTemperature": 305
+      },
+      "heating": true,
+      "max_absolute_error": 2.9103830456733704e-11
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 300,
+        "voltage": 5,
+        "current": 0.5,
+        "heatTransfer": 0.1,
+        "ambientTemperature": 285,
+        "initialTemperature": 305
+      },
+      "heating": false,
+      "max_absolute_error": 3.3651303965598345e-11
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 300,
+        "voltage": 5,
+        "current": 0.5,
+        "heatTransfer": 0.1,
+        "ambientTemperature": 305,
+        "initialTemperature": 285
+      },
+      "heating": true,
+      "max_absolute_error": 2.2737367544323206e-11
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 300,
+        "voltage": 5,
+        "current": 0.5,
+        "heatTransfer": 0.1,
+        "ambientTemperature": 305,
+        "initialTemperature": 285
+      },
+      "heating": false,
+      "max_absolute_error": 4.6838977141305804e-11
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 300,
+        "voltage": 5,
+        "current": 0.5,
+        "heatTransfer": 0.1,
+        "ambientTemperature": 305,
+        "initialTemperature": 305
+      },
+      "heating": true,
+      "max_absolute_error": 1.688249540165998e-11
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 300,
+        "voltage": 5,
+        "current": 0.5,
+        "heatTransfer": 0.1,
+        "ambientTemperature": 305,
+        "initialTemperature": 305
+      },
+      "heating": false,
+      "max_absolute_error": 0.0
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 300,
+        "voltage": 20,
+        "current": 0.1,
+        "heatTransfer": 0,
+        "ambientTemperature": 285,
+        "initialTemperature": 285
+      },
+      "heating": true,
+      "max_absolute_error": 3.538502824085299e-11
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 300,
+        "voltage": 20,
+        "current": 0.1,
+        "heatTransfer": 0,
+        "ambientTemperature": 285,
+        "initialTemperature": 285
+      },
+      "heating": false,
+      "max_absolute_error": 0.0
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 300,
+        "voltage": 20,
+        "current": 0.1,
+        "heatTransfer": 0,
+        "ambientTemperature": 285,
+        "initialTemperature": 305
+      },
+      "heating": true,
+      "max_absolute_error": 3.538502824085299e-11
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 300,
+        "voltage": 20,
+        "current": 0.1,
+        "heatTransfer": 0,
+        "ambientTemperature": 285,
+        "initialTemperature": 305
+      },
+      "heating": false,
+      "max_absolute_error": 0.0
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 300,
+        "voltage": 20,
+        "current": 0.1,
+        "heatTransfer": 0,
+        "ambientTemperature": 305,
+        "initialTemperature": 285
+      },
+      "heating": true,
+      "max_absolute_error": 3.538502824085299e-11
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 300,
+        "voltage": 20,
+        "current": 0.1,
+        "heatTransfer": 0,
+        "ambientTemperature": 305,
+        "initialTemperature": 285
+      },
+      "heating": false,
+      "max_absolute_error": 0.0
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 300,
+        "voltage": 20,
+        "current": 0.1,
+        "heatTransfer": 0,
+        "ambientTemperature": 305,
+        "initialTemperature": 305
+      },
+      "heating": true,
+      "max_absolute_error": 3.538502824085299e-11
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 300,
+        "voltage": 20,
+        "current": 0.1,
+        "heatTransfer": 0,
+        "ambientTemperature": 305,
+        "initialTemperature": 305
+      },
+      "heating": false,
+      "max_absolute_error": 0.0
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 300,
+        "voltage": 20,
+        "current": 0.1,
+        "heatTransfer": 0.05,
+        "ambientTemperature": 285,
+        "initialTemperature": 285
+      },
+      "heating": true,
+      "max_absolute_error": 3.3761271556187467e-11
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 300,
+        "voltage": 20,
+        "current": 0.1,
+        "heatTransfer": 0.05,
+        "ambientTemperature": 285,
+        "initialTemperature": 285
+      },
+      "heating": false,
+      "max_absolute_error": 0.0
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 300,
+        "voltage": 20,
+        "current": 0.1,
+        "heatTransfer": 0.05,
+        "ambientTemperature": 285,
+        "initialTemperature": 305
+      },
+      "heating": true,
+      "max_absolute_error": 3.2741809263825417e-11
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 300,
+        "voltage": 20,
+        "current": 0.1,
+        "heatTransfer": 0.05,
+        "ambientTemperature": 285,
+        "initialTemperature": 305
+      },
+      "heating": false,
+      "max_absolute_error": 4.1382008930668235e-11
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 300,
+        "voltage": 20,
+        "current": 0.1,
+        "heatTransfer": 0.05,
+        "ambientTemperature": 305,
+        "initialTemperature": 285
+      },
+      "heating": true,
+      "max_absolute_error": 2.717115421546623e-11
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 300,
+        "voltage": 20,
+        "current": 0.1,
+        "heatTransfer": 0.05,
+        "ambientTemperature": 305,
+        "initialTemperature": 285
+      },
+      "heating": false,
+      "max_absolute_error": 3.387867764104158e-11
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 300,
+        "voltage": 20,
+        "current": 0.1,
+        "heatTransfer": 0.05,
+        "ambientTemperature": 305,
+        "initialTemperature": 305
+      },
+      "heating": true,
+      "max_absolute_error": 3.375394408422494e-11
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 300,
+        "voltage": 20,
+        "current": 0.1,
+        "heatTransfer": 0.05,
+        "ambientTemperature": 305,
+        "initialTemperature": 305
+      },
+      "heating": false,
+      "max_absolute_error": 0.0
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 300,
+        "voltage": 20,
+        "current": 0.1,
+        "heatTransfer": 0.1,
+        "ambientTemperature": 285,
+        "initialTemperature": 285
+      },
+      "heating": true,
+      "max_absolute_error": 7.30402405224595e-11
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 300,
+        "voltage": 20,
+        "current": 0.1,
+        "heatTransfer": 0.1,
+        "ambientTemperature": 285,
+        "initialTemperature": 285
+      },
+      "heating": false,
+      "max_absolute_error": 0.0
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 300,
+        "voltage": 20,
+        "current": 0.1,
+        "heatTransfer": 0.1,
+        "ambientTemperature": 285,
+        "initialTemperature": 305
+      },
+      "heating": true,
+      "max_absolute_error": 1.8189894035458565e-12
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 300,
+        "voltage": 20,
+        "current": 0.1,
+        "heatTransfer": 0.1,
+        "ambientTemperature": 285,
+        "initialTemperature": 305
+      },
+      "heating": false,
+      "max_absolute_error": 3.3651303965598345e-11
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 300,
+        "voltage": 20,
+        "current": 0.1,
+        "heatTransfer": 0.1,
+        "ambientTemperature": 305,
+        "initialTemperature": 285
+      },
+      "heating": true,
+      "max_absolute_error": 1.6370904631912708e-11
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 300,
+        "voltage": 20,
+        "current": 0.1,
+        "heatTransfer": 0.1,
+        "ambientTemperature": 305,
+        "initialTemperature": 285
+      },
+      "heating": false,
+      "max_absolute_error": 4.6838977141305804e-11
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 300,
+        "voltage": 20,
+        "current": 0.1,
+        "heatTransfer": 0.1,
+        "ambientTemperature": 305,
+        "initialTemperature": 305
+      },
+      "heating": true,
+      "max_absolute_error": 7.284839398380427e-11
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 300,
+        "voltage": 20,
+        "current": 0.1,
+        "heatTransfer": 0.1,
+        "ambientTemperature": 305,
+        "initialTemperature": 305
+      },
+      "heating": false,
+      "max_absolute_error": 0.0
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 300,
+        "voltage": 20,
+        "current": 0.5,
+        "heatTransfer": 0,
+        "ambientTemperature": 285,
+        "initialTemperature": 285
+      },
+      "heating": true,
+      "max_absolute_error": 3.4219738154206425e-11
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 300,
+        "voltage": 20,
+        "current": 0.5,
+        "heatTransfer": 0,
+        "ambientTemperature": 285,
+        "initialTemperature": 285
+      },
+      "heating": false,
+      "max_absolute_error": 0.0
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 300,
+        "voltage": 20,
+        "current": 0.5,
+        "heatTransfer": 0,
+        "ambientTemperature": 285,
+        "initialTemperature": 305
+      },
+      "heating": true,
+      "max_absolute_error": 3.4219738154206425e-11
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 300,
+        "voltage": 20,
+        "current": 0.5,
+        "heatTransfer": 0,
+        "ambientTemperature": 285,
+        "initialTemperature": 305
+      },
+      "heating": false,
+      "max_absolute_error": 0.0
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 300,
+        "voltage": 20,
+        "current": 0.5,
+        "heatTransfer": 0,
+        "ambientTemperature": 305,
+        "initialTemperature": 285
+      },
+      "heating": true,
+      "max_absolute_error": 3.4219738154206425e-11
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 300,
+        "voltage": 20,
+        "current": 0.5,
+        "heatTransfer": 0,
+        "ambientTemperature": 305,
+        "initialTemperature": 285
+      },
+      "heating": false,
+      "max_absolute_error": 0.0
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 300,
+        "voltage": 20,
+        "current": 0.5,
+        "heatTransfer": 0,
+        "ambientTemperature": 305,
+        "initialTemperature": 305
+      },
+      "heating": true,
+      "max_absolute_error": 3.4219738154206425e-11
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 300,
+        "voltage": 20,
+        "current": 0.5,
+        "heatTransfer": 0,
+        "ambientTemperature": 305,
+        "initialTemperature": 305
+      },
+      "heating": false,
+      "max_absolute_error": 0.0
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 300,
+        "voltage": 20,
+        "current": 0.5,
+        "heatTransfer": 0.05,
+        "ambientTemperature": 285,
+        "initialTemperature": 285
+      },
+      "heating": true,
+      "max_absolute_error": 2.742661653343248e-11
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 300,
+        "voltage": 20,
+        "current": 0.5,
+        "heatTransfer": 0.05,
+        "ambientTemperature": 285,
+        "initialTemperature": 285
+      },
+      "heating": false,
+      "max_absolute_error": 0.0
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 300,
+        "voltage": 20,
+        "current": 0.5,
+        "heatTransfer": 0.05,
+        "ambientTemperature": 285,
+        "initialTemperature": 305
+      },
+      "heating": true,
+      "max_absolute_error": 2.6830093702301383e-11
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 300,
+        "voltage": 20,
+        "current": 0.5,
+        "heatTransfer": 0.05,
+        "ambientTemperature": 285,
+        "initialTemperature": 305
+      },
+      "heating": false,
+      "max_absolute_error": 4.1382008930668235e-11
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 300,
+        "voltage": 20,
+        "current": 0.5,
+        "heatTransfer": 0.05,
+        "ambientTemperature": 305,
+        "initialTemperature": 285
+      },
+      "heating": true,
+      "max_absolute_error": 3.0809133022557944e-11
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 300,
+        "voltage": 20,
+        "current": 0.5,
+        "heatTransfer": 0.05,
+        "ambientTemperature": 305,
+        "initialTemperature": 285
+      },
+      "heating": false,
+      "max_absolute_error": 3.387867764104158e-11
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 300,
+        "voltage": 20,
+        "current": 0.5,
+        "heatTransfer": 0.05,
+        "ambientTemperature": 305,
+        "initialTemperature": 305
+      },
+      "heating": true,
+      "max_absolute_error": 2.8069102597783058e-11
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 300,
+        "voltage": 20,
+        "current": 0.5,
+        "heatTransfer": 0.05,
+        "ambientTemperature": 305,
+        "initialTemperature": 305
+      },
+      "heating": false,
+      "max_absolute_error": 0.0
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 300,
+        "voltage": 20,
+        "current": 0.5,
+        "heatTransfer": 0.1,
+        "ambientTemperature": 285,
+        "initialTemperature": 285
+      },
+      "heating": true,
+      "max_absolute_error": 2.4840574042173102e-11
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 300,
+        "voltage": 20,
+        "current": 0.5,
+        "heatTransfer": 0.1,
+        "ambientTemperature": 285,
+        "initialTemperature": 285
+      },
+      "heating": false,
+      "max_absolute_error": 0.0
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 300,
+        "voltage": 20,
+        "current": 0.5,
+        "heatTransfer": 0.1,
+        "ambientTemperature": 285,
+        "initialTemperature": 305
+      },
+      "heating": true,
+      "max_absolute_error": 1.9099388737231493e-11
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 300,
+        "voltage": 20,
+        "current": 0.5,
+        "heatTransfer": 0.1,
+        "ambientTemperature": 285,
+        "initialTemperature": 305
+      },
+      "heating": false,
+      "max_absolute_error": 3.3651303965598345e-11
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 300,
+        "voltage": 20,
+        "current": 0.5,
+        "heatTransfer": 0.1,
+        "ambientTemperature": 305,
+        "initialTemperature": 285
+      },
+      "heating": true,
+      "max_absolute_error": 1.0595613275654614e-10
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 300,
+        "voltage": 20,
+        "current": 0.5,
+        "heatTransfer": 0.1,
+        "ambientTemperature": 305,
+        "initialTemperature": 285
+      },
+      "heating": false,
+      "max_absolute_error": 4.6838977141305804e-11
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 300,
+        "voltage": 20,
+        "current": 0.5,
+        "heatTransfer": 0.1,
+        "ambientTemperature": 305,
+        "initialTemperature": 305
+      },
+      "heating": true,
+      "max_absolute_error": 1.872857424700669e-11
+    },
+    {
+      "parameters": {
+        "equivalent": 4.1868,
+        "heatCapacityCal": 300,
+        "voltage": 20,
+        "current": 0.5,
+        "heatTransfer": 0.1,
+        "ambientTemperature": 305,
+        "initialTemperature": 305
+      },
+      "heating": false,
+      "max_absolute_error": 0.0
+    }
+  ]
+}

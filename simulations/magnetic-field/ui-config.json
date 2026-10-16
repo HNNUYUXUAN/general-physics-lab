@@ -1,0 +1,93 @@
+{
+  "slug": "magnetic-field",
+  "title": "磁场描绘",
+  "experimentId": "course-03/magnetic-field",
+  "controls": [
+    {
+      "key": "coils",
+      "type": "select",
+      "label": "线圈配置",
+      "default": "double",
+      "options": [
+        {
+          "value": "single",
+          "label": "单线圈"
+        },
+        {
+          "value": "double",
+          "label": "同向双线圈"
+        }
+      ]
+    },
+    {
+      "key": "current_mA",
+      "type": "number",
+      "label": "各线圈电流 / mA",
+      "default": 300,
+      "min": 100,
+      "max": 800
+    },
+    {
+      "key": "radius_cm",
+      "type": "number",
+      "label": "线圈半径 / cm",
+      "default": 10.5,
+      "min": 8,
+      "max": 15
+    },
+    {
+      "key": "spacingRatio",
+      "type": "number",
+      "label": "双线圈间距 d/R",
+      "default": 1,
+      "min": 0.5,
+      "max": 1.5
+    },
+    {
+      "key": "positionRatio",
+      "type": "number",
+      "label": "探针轴向位置 x/R",
+      "default": 0,
+      "min": -2,
+      "max": 2
+    }
+  ],
+  "columns": [
+    {
+      "key": "position_mm",
+      "label": "轴向位置 / mm",
+      "short": "x / mm"
+    },
+    {
+      "key": "field_mT",
+      "label": "$B_z/\\mathrm{mT}$",
+      "short": "B / mT"
+    },
+    {
+      "key": "normalized",
+      "label": "B(x)/B(0)",
+      "short": "B/B0"
+    },
+    {
+      "key": "relativeDeviationPercent",
+      "label": "相对中心偏差 / %",
+      "short": "偏差%"
+    }
+  ],
+  "units": {
+    "parameters": {
+      "coils": "enum",
+      "current_mA": "mA",
+      "radius_cm": "cm",
+      "spacingRatio": "1",
+      "positionRatio": "1"
+    },
+    "readings": {
+      "position_mm": "mm",
+      "field_mT": "mT",
+      "normalized": "1",
+      "relativeDeviationPercent": "percent",
+      "centerField_mT": "mT"
+    }
+  }
+}

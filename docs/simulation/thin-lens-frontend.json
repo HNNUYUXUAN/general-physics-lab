@@ -1,5 +1,13 @@
 {
   "status": "passed",
+  "source_hashes": {
+    "simulations/thin-lens/model.mjs": "13655a921f9ab0bdf801b28de35f097c2f4d83510f2a86f3fbb44d4aed344814",
+    "simulations/thin-lens/app.mjs": "6edefa8cc6bc8ff210f0349bb91700fd3304822d5b3f54c36ab857856d4c48ec",
+    "simulations/thin-lens/chart.mjs": "e579faefec314cbb328463457b8027c26d3c830da56a483a5d1dba3698e57201",
+    "simulations/thin-lens/lab.css": "48ed8ac294f6e59b5030b86bb1759771c9438cb2eef10227aa86f3e80cc2d07d",
+    "simulations/thin-lens/observations.json": "f0d6bf9a84a75aaadbcac2b0b68186ea84778520fe705dec836f01c118cb882e",
+    "simulations/thin-lens/index.html": "36a41d151e8c69f2633179282b7cb0c7b1c899121eafa629d8002d465cd9a2ba"
+  },
   "source_record_sha256": "5b56c34e327b769790b2a20815dcb7c192ff73b5cc944b5bc4e05322b4584fe3",
   "interaction_checks": 20,
   "visual_status": "passed",
@@ -220,13 +228,5 @@
         ]
       }
     ]
-  },
-  "source_hashes": {
-    "simulations/thin-lens/model.mjs": "13655a921f9ab0bdf801b28de35f097c2f4d83510f2a86f3fbb44d4aed344814",
-    "simulations/thin-lens/app.mjs": "6edefa8cc6bc8ff210f0349bb91700fd3304822d5b3f54c36ab857856d4c48ec",
-    "simulations/thin-lens/chart.mjs": "e579faefec314cbb328463457b8027c26d3c830da56a483a5d1dba3698e57201",
-    "simulations/thin-lens/lab.css": "48ed8ac294f6e59b5030b86bb1759771c9438cb2eef10227aa86f3e80cc2d07d",
-    "simulations/thin-lens/observations.json": "f0d6bf9a84a75aaadbcac2b0b68186ea84778520fe705dec836f01c118cb882e",
-    "simulations/thin-lens/index.html": "36a41d151e8c69f2633179282b7cb0c7b1c899121eafa629d8002d465cd9a2ba"
   }
 }

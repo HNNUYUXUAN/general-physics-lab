@@ -1,0 +1,35 @@
+{
+  "experimentId": "course-03/electrostatic-field",
+  "model_coverage_status": "complete-for-declared-ideal-model",
+  "references": [
+    {
+      "id": "shi2018field",
+      "authors": [
+        "石明吉",
+        "郭新峰",
+        "刘斌",
+        "秦佳琼"
+      ],
+      "title": "模拟法描绘静电场实验的主要误差来源分析",
+      "journal": "南阳理工学院学报",
+      "year": 2018,
+      "volume": "10",
+      "issue": "4",
+      "pages": "22–25",
+      "doi": null,
+      "readingStatus": "verified-fulltext",
+      "fulltextSha256": "9bb0852bacb77d9421444507a8eb88fe52efdd1324d1270b4b69db6518003d36",
+      "locators": [
+        "p.22 section 1 equation (1), homogeneous concentric electrode potential",
+        "pp.23–24 sections 3.1–3.2, medium-dependent deviations"
+      ],
+      "notes": [
+        "Read all four PDF pages and checked rendered p.22 equation (1).",
+        "b is interpreted as the outer electrode inner-surface radius by the equation boundary r=b; the prose calls it an inner diameter.",
+        "Water/film observations and voltage shifts are not project calibration inputs."
+      ],
+      "application": "p.22第1节式(1)给出同心电极间的理想电势：$U(r)=U_0\\ln(b/r)/\\ln(b/a)$。映射$a$为内柱电极半径、$b$为外环电极内表面半径、$r$为离中心的距离，$U_0$为内外电极电压差。原文正文将$b$称作内径，按式(1)边界$U(b)=0$及p.23图3/图5的径向区间，应作半径解释；项目不把直径代入该式。",
+      "coverage_status": "complete-for-declared-ideal-model"
+    }
+  ]
+}

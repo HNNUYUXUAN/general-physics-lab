@@ -1,0 +1,880 @@
+{
+  "experiment_id": "course-04/michelson-interferometer",
+  "status": "passed",
+  "created_at": "2026-10-16T15:26:47.579190+00:00",
+  "environment": {
+    "python": "3.14.7",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1"
+  },
+  "model_sha256": "431b17991ce7f2324c4d3535311dd55b54110a59ffca4c648146e592745a2eee",
+  "input_hashes": {
+    "experiments/course-04/michelson-interferometer/experiment.json": "ef03113480f65ad8ddd9ac2b789bc0afa819eaea7865c519b42c42b6e13de5a1",
+    "experiments/course-04/michelson-interferometer/data/observations-01.csv": "75a4d3ab859f773b9f6c1b5f44864937e709ed35f539605a6c048c32ad6826a8",
+    "experiments/course-04/michelson-interferometer/data/provenance.json": "e6274669a3b12ee1f6dcddd0a6b822db3d01e9aa456f776b5772409b2bbc1498"
+  },
+  "methods": [
+    "direct sum of two complex plane waves",
+    "brentq root of unwrapped accumulated phase for100fringes",
+    "independent source100fringe displacement recalculation"
+  ],
+  "case_count": 27,
+  "cases": [
+    {
+      "parameters": {
+        "wavelength_nm": 400,
+        "tilt_mrad": 0
+      },
+      "start_um": 0,
+      "fringe_count": 100,
+      "end_um": 20.000000000000004,
+      "points": [
+        {
+          "position_mm": -2,
+          "intensity": 1.0
+        },
+        {
+          "position_mm": -1,
+          "intensity": 1.0
+        },
+        {
+          "position_mm": 0,
+          "intensity": 1.0
+        },
+        {
+          "position_mm": 1,
+          "intensity": 1.0
+        },
+        {
+          "position_mm": 2,
+          "intensity": 1.0
+        }
+      ]
+    },
+    {
+      "parameters": {
+        "wavelength_nm": 400,
+        "tilt_mrad": 0
+      },
+      "start_um": 0.1,
+      "fringe_count": 100,
+      "end_um": 20.1,
+      "points": [
+        {
+          "position_mm": -2,
+          "intensity": 3.749399456654644e-33
+        },
+        {
+          "position_mm": -1,
+          "intensity": 3.749399456654644e-33
+        },
+        {
+          "position_mm": 0,
+          "intensity": 3.749399456654644e-33
+        },
+        {
+          "position_mm": 1,
+          "intensity": 3.749399456654644e-33
+        },
+        {
+          "position_mm": 2,
+          "intensity": 3.749399456654644e-33
+        }
+      ]
+    },
+    {
+      "parameters": {
+        "wavelength_nm": 400,
+        "tilt_mrad": 0
+      },
+      "start_um": 1,
+      "fringe_count": 100,
+      "end_um": 21.000000000000004,
+      "points": [
+        {
+          "position_mm": -2,
+          "intensity": 1.0
+        },
+        {
+          "position_mm": -1,
+          "intensity": 1.0
+        },
+        {
+          "position_mm": 0,
+          "intensity": 1.0
+        },
+        {
+          "position_mm": 1,
+          "intensity": 1.0
+        },
+        {
+          "position_mm": 2,
+          "intensity": 1.0
+        }
+      ]
+    },
+    {
+      "parameters": {
+        "wavelength_nm": 400,
+        "tilt_mrad": 0.25
+      },
+      "start_um": 0,
+      "fringe_count": 100,
+      "end_um": 20.000000000000004,
+      "points": [
+        {
+          "position_mm": -2,
+          "intensity": 9.373498641636612e-32
+        },
+        {
+          "position_mm": -1,
+          "intensity": 0.5000000000000001
+        },
+        {
+          "position_mm": 0,
+          "intensity": 1.0
+        },
+        {
+          "position_mm": 1,
+          "intensity": 0.5000000000000001
+        },
+        {
+          "position_mm": 2,
+          "intensity": 9.373498641636612e-32
+        }
+      ]
+    },
+    {
+      "parameters": {
+        "wavelength_nm": 400,
+        "tilt_mrad": 0.25
+      },
+      "start_um": 0.1,
+      "fringe_count": 100,
+      "end_um": 20.1,
+      "points": [
+        {
+          "position_mm": -2,
+          "intensity": 1.0
+        },
+        {
+          "position_mm": -1,
+          "intensity": 0.4999999999999999
+        },
+        {
+          "position_mm": 0,
+          "intensity": 3.749399456654644e-33
+        },
+        {
+          "position_mm": 1,
+          "intensity": 0.4999999999999998
+        },
+        {
+          "position_mm": 2,
+          "intensity": 1.0
+        }
+      ]
+    },
+    {
+      "parameters": {
+        "wavelength_nm": 400,
+        "tilt_mrad": 0.25
+      },
+      "start_um": 1,
+      "fringe_count": 100,
+      "end_um": 21.000000000000004,
+      "points": [
+        {
+          "position_mm": -2,
+          "intensity": 9.373498641636612e-32
+        },
+        {
+          "position_mm": -1,
+          "intensity": 0.49999999999999867
+        },
+        {
+          "position_mm": 0,
+          "intensity": 1.0
+        },
+        {
+          "position_mm": 1,
+          "intensity": 0.5000000000000033
+        },
+        {
+          "position_mm": 2,
+          "intensity": 7.26217307490388e-30
+        }
+      ]
+    },
+    {
+      "parameters": {
+        "wavelength_nm": 400,
+        "tilt_mrad": 2
+      },
+      "start_um": 0,
+      "fringe_count": 100,
+      "end_um": 20.000000000000004,
+      "points": [
+        {
+          "position_mm": -2,
+          "intensity": 1.0
+        },
+        {
+          "position_mm": -1,
+          "intensity": 1.0
+        },
+        {
+          "position_mm": 0,
+          "intensity": 1.0
+        },
+        {
+          "position_mm": 1,
+          "intensity": 1.0
+        },
+        {
+          "position_mm": 2,
+          "intensity": 1.0
+        }
+      ]
+    },
+    {
+      "parameters": {
+        "wavelength_nm": 400,
+        "tilt_mrad": 2
+      },
+      "start_um": 0.1,
+      "fringe_count": 100,
+      "end_um": 20.1,
+      "points": [
+        {
+          "position_mm": -2,
+          "intensity": 1.734237809276436e-29
+        },
+        {
+          "position_mm": -1,
+          "intensity": 8.642255288014922e-30
+        },
+        {
+          "position_mm": 0,
+          "intensity": 3.749399456654644e-33
+        },
+        {
+          "position_mm": 1,
+          "intensity": 4.375755896868578e-29
+        },
+        {
+          "position_mm": 2,
+          "intensity": 4.862223968735338e-28
+        }
+      ]
+    },
+    {
+      "parameters": {
+        "wavelength_nm": 400,
+        "tilt_mrad": 2
+      },
+      "start_um": 1,
+      "fringe_count": 100,
+      "end_um": 21.000000000000004,
+      "points": [
+        {
+          "position_mm": -2,
+          "intensity": 1.0
+        },
+        {
+          "position_mm": -1,
+          "intensity": 1.0
+        },
+        {
+          "position_mm": 0,
+          "intensity": 1.0
+        },
+        {
+          "position_mm": 1,
+          "intensity": 1.0
+        },
+        {
+          "position_mm": 2,
+          "intensity": 1.0
+        }
+      ]
+    },
+    {
+      "parameters": {
+        "wavelength_nm": 632.8,
+        "tilt_mrad": 0
+      },
+      "start_um": 0,
+      "fringe_count": 100,
+      "end_um": 31.64,
+      "points": [
+        {
+          "position_mm": -2,
+          "intensity": 1.0
+        },
+        {
+          "position_mm": -1,
+          "intensity": 1.0
+        },
+        {
+          "position_mm": 0,
+          "intensity": 1.0
+        },
+        {
+          "position_mm": 1,
+          "intensity": 1.0
+        },
+        {
+          "position_mm": 2,
+          "intensity": 1.0
+        }
+      ]
+    },
+    {
+      "parameters": {
+        "wavelength_nm": 632.8,
+        "tilt_mrad": 0
+      },
+      "start_um": 0.1,
+      "fringe_count": 100,
+      "end_um": 31.739999999999995,
+      "points": [
+        {
+          "position_mm": -2,
+          "intensity": 0.29838685278504046
+        },
+        {
+          "position_mm": -1,
+          "intensity": 0.29838685278504046
+        },
+        {
+          "position_mm": 0,
+          "intensity": 0.29838685278504046
+        },
+        {
+          "position_mm": 1,
+          "intensity": 0.29838685278504046
+        },
+        {
+          "position_mm": 2,
+          "intensity": 0.29838685278504046
+        }
+      ]
+    },
+    {
+      "parameters": {
+        "wavelength_nm": 632.8,
+        "tilt_mrad": 0
+      },
+      "start_um": 1,
+      "fringe_count": 100,
+      "end_um": 32.64,
+      "points": [
+        {
+          "position_mm": -2,
+          "intensity": 0.7664362709206511
+        },
+        {
+          "position_mm": -1,
+          "intensity": 0.7664362709206511
+        },
+        {
+          "position_mm": 0,
+          "intensity": 0.7664362709206511
+        },
+        {
+          "position_mm": 1,
+          "intensity": 0.7664362709206511
+        },
+        {
+          "position_mm": 2,
+          "intensity": 0.7664362709206511
+        }
+      ]
+    },
+    {
+      "parameters": {
+        "wavelength_nm": 632.8,
+        "tilt_mrad": 0.25
+      },
+      "start_um": 0,
+      "fringe_count": 100,
+      "end_um": 31.64,
+      "points": [
+        {
+          "position_mm": -2,
+          "intensity": 0.06226826967860466
+        },
+        {
+          "position_mm": -1,
+          "intensity": 0.6247680544837144
+        },
+        {
+          "position_mm": 0,
+          "intensity": 1.0
+        },
+        {
+          "position_mm": 1,
+          "intensity": 0.6247680544837144
+        },
+        {
+          "position_mm": 2,
+          "intensity": 0.06226826967860466
+        }
+      ]
+    },
+    {
+      "parameters": {
+        "wavelength_nm": 632.8,
+        "tilt_mrad": 0.25
+      },
+      "start_um": 0.1,
+      "fringe_count": 100,
+      "end_um": 31.739999999999995,
+      "points": [
+        {
+          "position_mm": -2,
+          "intensity": 0.4553781332452542
+        },
+        {
+          "position_mm": -1,
+          "intensity": 0.006614463556764003
+        },
+        {
+          "position_mm": 0,
+          "intensity": 0.29838685278504046
+        },
+        {
+          "position_mm": 1,
+          "intensity": 0.8927660158978391
+        },
+        {
+          "position_mm": 2,
+          "intensity": 0.8976317538985321
+        }
+      ]
+    },
+    {
+      "parameters": {
+        "wavelength_nm": 632.8,
+        "tilt_mrad": 0.25
+      },
+      "start_um": 1,
+      "fringe_count": 100,
+      "end_um": 32.64,
+      "points": [
+        {
+          "position_mm": -2,
+          "intensity": 0.06226826967860466
+        },
+        {
+          "position_mm": -1,
+          "intensity": 0.15677220000432376
+        },
+        {
+          "position_mm": 0,
+          "intensity": 0.7664362709206511
+        },
+        {
+          "position_mm": 1,
+          "intensity": 0.9761987406623382
+        },
+        {
+          "position_mm": 2,
+          "intensity": 0.47122129075948765
+        }
+      ]
+    },
+    {
+      "parameters": {
+        "wavelength_nm": 632.8,
+        "tilt_mrad": 2
+      },
+      "start_um": 0,
+      "fringe_count": 100,
+      "end_um": 31.64,
+      "points": [
+        {
+          "position_mm": -2,
+          "intensity": 0.18670497275519288
+        },
+        {
+          "position_mm": -1,
+          "intensity": 0.28395314584841047
+        },
+        {
+          "position_mm": 0,
+          "intensity": 1.0
+        },
+        {
+          "position_mm": 1,
+          "intensity": 0.28395314584841047
+        },
+        {
+          "position_mm": 2,
+          "intensity": 0.18670497275519288
+        }
+      ]
+    },
+    {
+      "parameters": {
+        "wavelength_nm": 632.8,
+        "tilt_mrad": 2
+      },
+      "start_um": 0.1,
+      "fringe_count": 100,
+      "end_um": 31.739999999999995,
+      "points": [
+        {
+          "position_mm": -2,
+          "intensity": 0.2697375301219121
+        },
+        {
+          "position_mm": -1,
+          "intensity": 0.9997476343603976
+        },
+        {
+          "position_mm": 0,
+          "intensity": 0.29838685278504046
+        },
+        {
+          "position_mm": 1,
+          "intensity": 0.17448391048517592
+        },
+        {
+          "position_mm": 2,
+          "intensity": 0.982920055676577
+        }
+      ]
+    },
+    {
+      "parameters": {
+        "wavelength_nm": 632.8,
+        "tilt_mrad": 2
+      },
+      "start_um": 1,
+      "fringe_count": 100,
+      "end_um": 32.64,
+      "points": [
+        {
+          "position_mm": -2,
+          "intensity": 0.0033128564221997906
+        },
+        {
+          "position_mm": -1,
+          "intensity": 0.7664362709206511
+        },
+        {
+          "position_mm": 0,
+          "intensity": 0.7664362709206511
+        },
+        {
+          "position_mm": 1,
+          "intensity": 0.0033128564221997906
+        },
+        {
+          "position_mm": 2,
+          "intensity": 0.6627945085494346
+        }
+      ]
+    },
+    {
+      "parameters": {
+        "wavelength_nm": 700,
+        "tilt_mrad": 0
+      },
+      "start_um": 0,
+      "fringe_count": 100,
+      "end_um": 35.00000000000001,
+      "points": [
+        {
+          "position_mm": -2,
+          "intensity": 1.0
+        },
+        {
+          "position_mm": -1,
+          "intensity": 1.0
+        },
+        {
+          "position_mm": 0,
+          "intensity": 1.0
+        },
+        {
+          "position_mm": 1,
+          "intensity": 1.0
+        },
+        {
+          "position_mm": 2,
+          "intensity": 1.0
+        }
+      ]
+    },
+    {
+      "parameters": {
+        "wavelength_nm": 700,
+        "tilt_mrad": 0
+      },
+      "start_um": 0.1,
+      "fringe_count": 100,
+      "end_um": 35.1,
+      "points": [
+        {
+          "position_mm": -2,
+          "intensity": 0.3887395330218429
+        },
+        {
+          "position_mm": -1,
+          "intensity": 0.3887395330218429
+        },
+        {
+          "position_mm": 0,
+          "intensity": 0.3887395330218429
+        },
+        {
+          "position_mm": 1,
+          "intensity": 0.3887395330218429
+        },
+        {
+          "position_mm": 2,
+          "intensity": 0.3887395330218429
+        }
+      ]
+    },
+    {
+      "parameters": {
+        "wavelength_nm": 700,
+        "tilt_mrad": 0
+      },
+      "start_um": 1,
+      "fringe_count": 100,
+      "end_um": 36.00000000000001,
+      "points": [
+        {
+          "position_mm": -2,
+          "intensity": 0.8117449009293664
+        },
+        {
+          "position_mm": -1,
+          "intensity": 0.8117449009293664
+        },
+        {
+          "position_mm": 0,
+          "intensity": 0.8117449009293664
+        },
+        {
+          "position_mm": 1,
+          "intensity": 0.8117449009293664
+        },
+        {
+          "position_mm": 2,
+          "intensity": 0.8117449009293664
+        }
+      ]
+    },
+    {
+      "parameters": {
+        "wavelength_nm": 700,
+        "tilt_mrad": 0.25
+      },
+      "start_um": 0,
+      "fringe_count": 100,
+      "end_um": 35.00000000000001,
+      "points": [
+        {
+          "position_mm": -2,
+          "intensity": 0.04951556604879052
+        },
+        {
+          "position_mm": -1,
+          "intensity": 0.3887395330218427
+        },
+        {
+          "position_mm": 0,
+          "intensity": 1.0
+        },
+        {
+          "position_mm": 1,
+          "intensity": 0.3887395330218427
+        },
+        {
+          "position_mm": 2,
+          "intensity": 0.04951556604879052
+        }
+      ]
+    },
+    {
+      "parameters": {
+        "wavelength_nm": 700,
+        "tilt_mrad": 0.25
+      },
+      "start_um": 0.1,
+      "fringe_count": 100,
+      "end_um": 35.1,
+      "points": [
+        {
+          "position_mm": -2,
+          "intensity": 0.8117449009293672
+        },
+        {
+          "position_mm": -1,
+          "intensity": 0.04951556604879055
+        },
+        {
+          "position_mm": 0,
+          "intensity": 0.3887395330218429
+        },
+        {
+          "position_mm": 1,
+          "intensity": 1.0
+        },
+        {
+          "position_mm": 2,
+          "intensity": 0.3887395330218418
+        }
+      ]
+    },
+    {
+      "parameters": {
+        "wavelength_nm": 700,
+        "tilt_mrad": 0.25
+      },
+      "start_um": 1,
+      "fringe_count": 100,
+      "end_um": 36.00000000000001,
+      "points": [
+        {
+          "position_mm": -2,
+          "intensity": 0.04951556604879052
+        },
+        {
+          "position_mm": -1,
+          "intensity": 0.8117449009293676
+        },
+        {
+          "position_mm": 0,
+          "intensity": 0.8117449009293664
+        },
+        {
+          "position_mm": 1,
+          "intensity": 0.04951556604878948
+        },
+        {
+          "position_mm": 2,
+          "intensity": 0.3887395330218451
+        }
+      ]
+    },
+    {
+      "parameters": {
+        "wavelength_nm": 700,
+        "tilt_mrad": 2
+      },
+      "start_um": 0,
+      "fringe_count": 100,
+      "end_um": 35.00000000000001,
+      "points": [
+        {
+          "position_mm": -2,
+          "intensity": 0.04951556604879104
+        },
+        {
+          "position_mm": -1,
+          "intensity": 0.38873953302184205
+        },
+        {
+          "position_mm": 0,
+          "intensity": 1.0
+        },
+        {
+          "position_mm": 1,
+          "intensity": 0.38873953302184205
+        },
+        {
+          "position_mm": 2,
+          "intensity": 0.04951556604879104
+        }
+      ]
+    },
+    {
+      "parameters": {
+        "wavelength_nm": 700,
+        "tilt_mrad": 2
+      },
+      "start_um": 0.1,
+      "fringe_count": 100,
+      "end_um": 35.1,
+      "points": [
+        {
+          "position_mm": -2,
+          "intensity": 0.8117449009293678
+        },
+        {
+          "position_mm": -1,
+          "intensity": 0.049515566048790725
+        },
+        {
+          "position_mm": 0,
+          "intensity": 0.3887395330218429
+        },
+        {
+          "position_mm": 1,
+          "intensity": 1.0
+        },
+        {
+          "position_mm": 2,
+          "intensity": 0.38873953302183456
+        }
+      ]
+    },
+    {
+      "parameters": {
+        "wavelength_nm": 700,
+        "tilt_mrad": 2
+      },
+      "start_um": 1,
+      "fringe_count": 100,
+      "end_um": 36.00000000000001,
+      "points": [
+        {
+          "position_mm": -2,
+          "intensity": 0.049515566048788456
+        },
+        {
+          "position_mm": -1,
+          "intensity": 0.8117449009293664
+        },
+        {
+          "position_mm": 0,
+          "intensity": 0.8117449009293664
+        },
+        {
+          "position_mm": 1,
+          "intensity": 0.049515566048788456
+        },
+        {
+          "position_mm": 2,
+          "intensity": 0.3887395330218513
+        }
+      ]
+    }
+  ],
+  "maximum_errors": {
+    "intensity": 1.1102230246251565e-16,
+    "mirror_end_um": 7.105427357601002e-15,
+    "wavelength_nm": 1.1368683772161603e-13
+  },
+  "tolerances": {
+    "intensity": 1e-12,
+    "mirror_end_um": 1e-10,
+    "wavelength_nm": 1e-09
+  },
+  "sampling": {
+    "pixels_per_axis": 501,
+    "extent_mm": 2,
+    "maximum_phase_step_rad": 0.5026548245743669
+  },
+  "original_observation_analysis": {
+    "wavelength_mean_nm": 632.5999999999983,
+    "wavelength_type_a_nm": 0.22803508502013867
+  }
+}

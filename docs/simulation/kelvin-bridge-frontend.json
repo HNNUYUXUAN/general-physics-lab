@@ -1,5 +1,15 @@
 {
   "status": "passed",
+  "source_hashes": {
+    "simulations/kelvin-bridge/model.mjs": "9f9841a2ebbac9dfb8ab38fce8a6d563cdaab9c74bb153529a4a529b22b735f6",
+    "simulations/kelvin-bridge/app.mjs": "0f94176f051ec7c545ff17ae04e5e869266628e33e103f6ab30535b8c1c0c098",
+    "simulations/kelvin-bridge/chart.mjs": "7661b7bfc2fe4ac33d2ab50733687b64f47c7110505e27c14c80c42c38df82dd",
+    "simulations/kelvin-bridge/lab.css": "d007905ee689191cb3d99caebe74d1e5e924b6fd068c7a81d2417c75219b6169",
+    "simulations/kelvin-bridge/observations.json": "2ce74f4b689fd2600930a3457b272279b19b610393640fd5d7387dfc03abcd47",
+    "simulations/kelvin-bridge/diagram.mjs": "bcf443792b4e879c069897cdf52998e1e0238ec956833a5fff5d357f939ca640",
+    "simulations/kelvin-bridge/ui-config.json": "ee53820428d5ceaa5b78589965c403529e7c7a2380855e661d323adcfa0564c9",
+    "simulations/kelvin-bridge/index.html": "ab3a9eb820f20dd673591f0b0491ab4ac8ebd32c74644d8bdb5c2bbb04d2bf14"
+  },
   "source_record_sha256": "6c8d02292b5a0766da7ce0f7724f257ac1d77cc02f6d33ac6f66ba608a2e640d",
   "interaction_checks": 20,
   "visual_status": "passed",
@@ -199,6 +209,8 @@
       "docs/kelvin-bridge-references.json": "d345f26541abf98046400df1e90f4ed47b67ef5595ed4a142133d818be5917fd",
       "docs/kelvin-bridge-references.bib": "5945fe329b136772af1ba502ed453253125a36e2aa5f5c7da76a6e210ac052a1",
       "docs/simulation/kelvin-bridge-reference.json": "8412d84f4dd95638d23f63b280b6f22593c33f9b8dd36ca108c0c55d9fe6e947",
+      "simulations/kelvin-bridge/diagram.mjs": "bcf443792b4e879c069897cdf52998e1e0238ec956833a5fff5d357f939ca640",
+      "simulations/kelvin-bridge/ui-config.json": "ee53820428d5ceaa5b78589965c403529e7c7a2380855e661d323adcfa0564c9",
       "scripts/validate_kelvin_bridge_simulation.py": "2551039c75d50097004904cc5f37fe6612c6ab63387c727b4b2d22c1993d3a2c",
       "tests/kelvin-bridge-model.test.mjs": "c611304e91f557f4710d6df2ab405976900629eeb9454f3b8b5c8e29b183f54b"
     }
@@ -220,15 +232,5 @@
         ]
       }
     ]
-  },
-  "source_hashes": {
-    "simulations/kelvin-bridge/model.mjs": "9f9841a2ebbac9dfb8ab38fce8a6d563cdaab9c74bb153529a4a529b22b735f6",
-    "simulations/kelvin-bridge/app.mjs": "0f94176f051ec7c545ff17ae04e5e869266628e33e103f6ab30535b8c1c0c098",
-    "simulations/kelvin-bridge/chart.mjs": "7661b7bfc2fe4ac33d2ab50733687b64f47c7110505e27c14c80c42c38df82dd",
-    "simulations/kelvin-bridge/lab.css": "d007905ee689191cb3d99caebe74d1e5e924b6fd068c7a81d2417c75219b6169",
-    "simulations/kelvin-bridge/observations.json": "2ce74f4b689fd2600930a3457b272279b19b610393640fd5d7387dfc03abcd47",
-    "simulations/kelvin-bridge/diagram.mjs": "bcf443792b4e879c069897cdf52998e1e0238ec956833a5fff5d357f939ca640",
-    "simulations/kelvin-bridge/ui-config.json": "ee53820428d5ceaa5b78589965c403529e7c7a2380855e661d323adcfa0564c9",
-    "simulations/kelvin-bridge/index.html": "ab3a9eb820f20dd673591f0b0491ab4ac8ebd32c74644d8bdb5c2bbb04d2bf14"
   }
 }

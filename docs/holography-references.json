@@ -1,0 +1,151 @@
+{
+  "schema_version": 1,
+  "experiment_id": "course-04/holography",
+  "review_date": "2026-10-17",
+  "access_channel": "刘2020由安徽财经大学WebVPN、朱2007由西南财经大学WebVPN取得全文",
+  "verification_method": "刘文全文12页及关键数学页核看；朱文全文4页及全部数学页逐页渲染核看",
+  "references": [
+    {
+      "id": "Liu2020OffAxisFresnel",
+      "title": "基于深度学习的离轴菲涅耳数字全息非线性重构",
+      "authors": [
+        "刘航",
+        "肖永亮",
+        "田军龙",
+        "李红星",
+        "钟建新"
+      ],
+      "journal": "光子学报",
+      "year": 2020,
+      "volume": "49",
+      "issue": "7",
+      "article_number": "0709001",
+      "pages": "0709001-1–0709001-12",
+      "doi": "10.3788/gzxb20204907.0709001",
+      "url": "https://doi.org/10.3788/gzxb20204907.0709001",
+      "source_pdf": {
+        "filename": "基于深度学习的离轴菲涅耳数字全息非线性重构_刘航.pdf",
+        "pages": 12,
+        "bytes": 2238086,
+        "sha256": "0d495e3d1c8a7ae6a5d3e9093045ea37614ad10cd65da2778dd7b09700cacd66"
+      },
+      "review_status": "full_text_reviewed",
+      "locators": [
+        {
+          "printed_pages": "0709001-2",
+          "pdf_pages": [
+            2
+          ],
+          "location": "第1.1节、式1/3",
+          "role": "传播物场与离轴参考的模平方干涉记录"
+        },
+        {
+          "printed_pages": "0709001-3",
+          "pdf_pages": [
+            3
+          ],
+          "location": "第1.2节、式4-6",
+          "role": "有限窗口、一阶频域选择、零级/共轭项分离及重构；不混同本项目所选交叉项的符号"
+        },
+        {
+          "printed_pages": "0709001-6",
+          "pdf_pages": [
+            6
+          ],
+          "location": "第3.1节",
+          "role": "论文MNIST及波长/传播/网格参数的批次身份，未采用其参考角网格组合"
+        },
+        {
+          "printed_pages": "0709001-11–0709001-12",
+          "pdf_pages": [
+            11,
+            12
+          ],
+          "location": "参考文献7/22/29",
+          "role": "提取后续经典空间滤波和傅里叶光学目标，目标尚未核查"
+        }
+      ],
+      "parameter_identity": "论文MNIST、3.5mm场、27.3um像素、128平方网格与训练性能属其研究批次。本项目两高斯复场、L4mm、256默认、fc10/mm、B3.5/mm为独立教学；lambda632.8nm/300mm来自原报告配置尺度。",
+      "review_findings": [
+        "式2最后一项将先共轭再正向传播替代传播后共轭，通常不成立；采用式1直接模平方及式3正确展开。",
+        "p6参考角若按与x轴方向余弦解释，载频约24.58/mm高于其Nyquist18.315/mm；未提供解混叠论证，不采用该角度/网格组合。",
+        "论文没有给当前频域Fresnel核或完整离散采样判据；物理基础由朱2007补充，具体频域与采样推导独立登记。",
+        "不采用论文DL网络、训练采样、损失或重构指标作为本项目算法认证。"
+      ],
+      "scope": "经典干涉记录、频域一阶选取与衍射再现；传播核物理基础由朱2007另提供，频域核及离散采样为项目逐步独立推导。"
+    },
+    {
+      "id": "ZhuZeng2007Diffraction",
+      "title": "衍射理论公式的诠释与应用",
+      "authors": [
+        "朱湘柱",
+        "曾阳素"
+      ],
+      "journal": "大学物理",
+      "year": 2007,
+      "volume": "26",
+      "issue": "10",
+      "pages": "27-30",
+      "doi": null,
+      "url": null,
+      "source_pdf": {
+        "filename": "衍射理论公式的诠释与应用_朱湘柱 (1).pdf",
+        "pages": 4,
+        "bytes": 320131,
+        "sha256": "10ed1933f69d2080d956a34869605440d8d8415b05442f567fc56bf2a8e2ee71"
+      },
+      "review_status": "full_text_reviewed",
+      "bibliographic_verification": "正文期刊页眉/文章号和连续页码确认题录；全文未给DOI，未猜填。",
+      "locators": [
+        {
+          "printed_pages": "27",
+          "pdf_pages": [
+            1
+          ],
+          "location": "第1.1节、式1及随后条件说明",
+          "role": "均匀介质、单色标量Helmholtz基础；不称该式为本项目频域核"
+        },
+        {
+          "printed_pages": "28-29",
+          "pdf_pages": [
+            2,
+            3
+          ],
+          "location": "第2节例1、式9/10",
+          "role": "Fresnel相位二阶截断与高阶误差条件的原则"
+        },
+        {
+          "printed_pages": "29",
+          "pdf_pages": [
+            3
+          ],
+          "location": "例4、式15-17",
+          "role": "核查空间Kirchhoff核与卷积FT表达，不采用其排印有误式15/17"
+        },
+        {
+          "printed_pages": "30",
+          "pdf_pages": [
+            4
+          ],
+          "location": "参考文献1/4",
+          "role": "可选扩展原始来源目标，目标尚未核查"
+        }
+      ],
+      "parameter_identity": "本文理论综述未提供本项目两高斯物场、4mm场、载频或像素配置。所有这些保持独立教学参数，源报告lambda/距离单列。",
+      "review_findings": [
+        "未直接展示本项目精确角谱或Fresnel频域核；横向FT、前向分支、去共同相位与近轴展开均为项目独立推导。",
+        "式15重复1/(i lambda)因子；式17分母存在-y平方的不对称排印，本项目未采用这些空间核表达。",
+        "末页下半部为另一电磁对称文章续页，未作为当前衍射来源。"
+      ],
+      "scope": "标量Helmholtz物理基础与二阶相位近似原则；具体频域传播/DFT采样由项目独立推导及独立角谱/网格/域检验。"
+    }
+  ],
+  "pending_topics": [],
+  "independent_derivations": [
+    "标量Helmholtz横向二维FT得传播ODE",
+    "选择前向传播分支并去全局载波相位",
+    "平方根近轴展开得Fresnel频域核",
+    "负载频R*U选择与复解调",
+    "DFT采样/整数载频及有限边带泄漏条件"
+  ]
+}

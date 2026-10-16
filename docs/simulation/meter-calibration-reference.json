@@ -1,0 +1,18 @@
+{
+  "experimentId": "course-03/meter-calibration",
+  "status": "passed",
+  "method": "independent ammeter conductance node and voltmeter series-loop matrix",
+  "caseCount": 24,
+  "maxScaledErrors": {
+    "reference": 0,
+    "indicated": 1.5395092608135505e-16,
+    "error": 8.881784197001252e-16,
+    "designResistance": 0,
+    "actualResistance": 0,
+    "headCurrent": 2.168404344971009e-19
+  },
+  "scaling": "abs(error)/max(1,abs(reference))",
+  "tolerance": 1e-10,
+  "modelSha256": "ca9032792fdb05596cf38fb41425eb2d68049810ff0c5942483025e285773ea0",
+  "numpyVersion": "2.5.4"
+}

@@ -1,6 +1,15 @@
 {
   "status": "passed",
-  "source_record_sha256": "5caaf1e36c898abdc12f48516e1f2b1f83afd169646484ad669744bb088b83a0",
+  "source_hashes": {
+    "simulations/transmission-grating/angles.mjs": "b25e2fa4341846209d68acaed83cf06b40c0b3902af9fbdaa94d8cdbb92796eb",
+    "simulations/transmission-grating/app.mjs": "f90fe87d588a225dc626363cce375211f63a0b59b4c40e108a8c088ce594447b",
+    "simulations/transmission-grating/chart.mjs": "53dc5dccd61884835f77d055b64435aaaa7c7e27b41033f59d2b7153f38f9afd",
+    "simulations/transmission-grating/index.html": "8f041680088eb30ea392c8c287401ef1d9048a28537bc9db0450444c198d21ce",
+    "simulations/transmission-grating/lab.css": "6752aacc953e020b61d8d1ebfa1e1f88044684c18da66bdf2083ad2ad2a74e19",
+    "simulations/transmission-grating/model.mjs": "5720e861b60fddbf6a9add47cf3f93e327824db4d82a267cbbdf7869288a0127",
+    "simulations/transmission-grating/observations.json": "ddf823c893831ef6e925c4954be490c962a9faed728ac5fc34aefe653ac89c70"
+  },
+  "source_record_sha256": "708986b4aca266ed343489f5f324f54de37ee3b1d06a1eae47f60f17f5cf91c8",
   "interaction_checks": 5,
   "visual_status": "passed",
   "exports_status": "passed",
@@ -107,7 +116,7 @@
   "experiment_id": "course-04/transmission-grating",
   "numerical": {
     "status": "passed",
-    "reference_sha256": "89d34fc5aff05cdea441b1961ad7bd97806609a0841cc1e5aec1416eab138d23",
+    "reference_sha256": "21ce5faead57bafd921910918c03b363cd23a65a08e6fe275e520d2c5e24de79",
     "source_files": {
       "simulations/transmission-grating/index.html": "8f041680088eb30ea392c8c287401ef1d9048a28537bc9db0450444c198d21ce",
       "simulations/transmission-grating/model.mjs": "5720e861b60fddbf6a9add47cf3f93e327824db4d82a267cbbdf7869288a0127",
@@ -119,6 +128,7 @@
       "docs/transmission-grating-references.json": "2afe8ceccf169c1f3e6298b9d855370067e3ce439c273a3575017f1a7f79d155",
       "docs/transmission-grating-references.bib": "0d202beafc5c1ece08e9f7582abc483bf0772e427f128eb9ef4beb6faa15b74e",
       "docs/simulation/transmission-grating-reference.json": "4e473e2d15199ecbe9f900762b8fd033d9880a7a2f21b28c2ce5331bda8ab65f",
+      "simulations/transmission-grating/angles.mjs": "b25e2fa4341846209d68acaed83cf06b40c0b3902af9fbdaa94d8cdbb92796eb",
       "scripts/validate_transmission_grating_simulation.py": "39b4a2e723271310367e1aa8be931596beb05386ad85005ba6323543ceefd015",
       "tests/transmission-grating-model.test.mjs": "7b75e2af8eb9ac069598675d06f85d0715ecc6490a89fc22a8e16146e6c2755c"
     }
@@ -178,14 +188,5 @@
         ]
       }
     ]
-  },
-  "source_hashes": {
-    "simulations/transmission-grating/angles.mjs": "b25e2fa4341846209d68acaed83cf06b40c0b3902af9fbdaa94d8cdbb92796eb",
-    "simulations/transmission-grating/app.mjs": "f90fe87d588a225dc626363cce375211f63a0b59b4c40e108a8c088ce594447b",
-    "simulations/transmission-grating/chart.mjs": "53dc5dccd61884835f77d055b64435aaaa7c7e27b41033f59d2b7153f38f9afd",
-    "simulations/transmission-grating/index.html": "8f041680088eb30ea392c8c287401ef1d9048a28537bc9db0450444c198d21ce",
-    "simulations/transmission-grating/lab.css": "6752aacc953e020b61d8d1ebfa1e1f88044684c18da66bdf2083ad2ad2a74e19",
-    "simulations/transmission-grating/model.mjs": "5720e861b60fddbf6a9add47cf3f93e327824db4d82a267cbbdf7869288a0127",
-    "simulations/transmission-grating/observations.json": "ddf823c893831ef6e925c4954be490c962a9faed728ac5fc34aefe653ac89c70"
   }
 }

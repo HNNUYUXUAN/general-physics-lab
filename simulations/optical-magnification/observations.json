@@ -1,0 +1,150 @@
+{
+  "experiment_id": "course-04/optical-magnification",
+  "source": "original-report",
+  "tables": [
+    {
+      "headers": [
+        "次数",
+        "标尺原长 l0/mm",
+        "投影像长 l/mm"
+      ],
+      "rows": [
+        [
+          "1",
+          "5.00",
+          "124.6"
+        ],
+        [
+          "2",
+          "5.00",
+          "125.1"
+        ],
+        [
+          "3",
+          "5.00",
+          "124.8"
+        ],
+        [
+          "4",
+          "5.00",
+          "125.3"
+        ],
+        [
+          "5",
+          "5.00",
+          "124.9"
+        ]
+      ]
+    },
+    {
+      "headers": [
+        "次数",
+        "物长 l1/mm",
+        "望远镜中像长 l2/mm"
+      ],
+      "rows": [
+        [
+          "1",
+          "20.00",
+          "4.05"
+        ],
+        [
+          "2",
+          "20.00",
+          "4.10"
+        ],
+        [
+          "3",
+          "20.00",
+          "4.08"
+        ],
+        [
+          "4",
+          "20.00",
+          "4.12"
+        ],
+        [
+          "5",
+          "20.00",
+          "4.09"
+        ]
+      ]
+    },
+    {
+      "headers": [
+        "次数",
+        "物台测微尺长度/mm",
+        "目镜测微格数 S/格"
+      ],
+      "rows": [
+        [
+          "1",
+          "0.200",
+          "78.5"
+        ],
+        [
+          "2",
+          "0.200",
+          "78.3"
+        ],
+        [
+          "3",
+          "0.200",
+          "78.6"
+        ],
+        [
+          "4",
+          "0.200",
+          "78.4"
+        ],
+        [
+          "5",
+          "0.200",
+          "78.5"
+        ]
+      ]
+    },
+    {
+      "headers": [
+        "次数",
+        "细丝宽度/目镜格"
+      ],
+      "rows": [
+        [
+          "1",
+          "27.1"
+        ],
+        [
+          "2",
+          "27.0"
+        ],
+        [
+          "3",
+          "27.3"
+        ],
+        [
+          "4",
+          "27.2"
+        ],
+        [
+          "5",
+          "27.1"
+        ]
+      ]
+    }
+  ],
+  "analysis": {
+    "microscope_magnification": 24.988000000000003,
+    "telescope_magnification": 4.892525130380177,
+    "eyepiece_scale_mm_div": 0.0025490738975742096,
+    "wire_diameter_um": 69.18186558016407
+  },
+  "input_hashes": {
+    "experiments/course-04/optical-magnification/experiment.json": "870a15f86edde443ffc2050290cd93be02fdcb0b8da55fd769ee30e19355e1dc",
+    "experiments/course-04/optical-magnification/data/provenance.json": "c42eb97a2bbc00829334098c77b70aa0c66ecd27614776201f8821d79ddf68a8",
+    "experiments/course-04/optical-magnification/data/observations-01.csv": "2415039af2bc40ecfc6eef74c30b475f9a17e462e582260d265ef8227069b922",
+    "experiments/course-04/optical-magnification/data/observations-02.csv": "019dbb578851c09e83adae2d80c56a5d8c6a15216f97d2e9d471175e8ee776d8",
+    "experiments/course-04/optical-magnification/data/observations-03.csv": "7dfe7134a5466be8a7fef3592524c2a8cee5ba0f15f18dd4daca02aacbef963c",
+    "experiments/course-04/optical-magnification/data/observations-04.csv": "1aae8cae0d373254cb8747fa6bdb3c347ccc525be1dcb0eee07e37e3d35f9acf"
+  }
+}

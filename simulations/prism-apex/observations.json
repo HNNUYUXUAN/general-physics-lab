@@ -1,0 +1,68 @@
+{
+  "experiment_id": "course-04/prism-apex",
+  "source": "original-report",
+  "tables": [
+    {
+      "headers": [
+        "次数",
+        "θ₁（左）",
+        "θ₂（右）",
+        "θ₃（左）",
+        "θ₄（右）"
+      ],
+      "rows": [
+        [
+          "1",
+          "15°20′",
+          "195°18′",
+          "135°25′",
+          "315°23′"
+        ],
+        [
+          "2",
+          "86°45′",
+          "266°43′",
+          "206°48′",
+          "26°46′"
+        ],
+        [
+          "3",
+          "92°18′",
+          "272°16′",
+          "212°20′",
+          "32°18′"
+        ],
+        [
+          "4",
+          "121°16′",
+          "301°14′",
+          "241°19′",
+          "61°17′"
+        ],
+        [
+          "5",
+          "139°52′",
+          "319°54′",
+          "20°02′",
+          "200°04′"
+        ]
+      ]
+    }
+  ],
+  "analysis": {
+    "angle_mean_deg": 60.00500000000001,
+    "type_a_arcmin": 1.3472193585306966,
+    "per_trial_deg": [
+      60.04166666666666,
+      60.02500000000001,
+      60.01666666666668,
+      60.025,
+      59.91666666666667
+    ]
+  },
+  "input_hashes": {
+    "experiments/course-04/prism-apex/experiment.json": "4ae5b97a731bc46ac7e6ea45327560f23d41e9c319be69126c8db1ac64513127",
+    "experiments/course-04/prism-apex/data/observations-01.csv": "1eac243f566064e18338ec3b4551347d934563544eabaad00e78c33c6e27db63",
+    "experiments/course-04/prism-apex/data/provenance.json": "3948fc565378871ee51d63a7ae7870eb095c6ed9b61fcb22b994967fe9d6b118"
+  }
+}

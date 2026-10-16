@@ -1,0 +1,804 @@
+{
+  "schema_version": 1,
+  "experiment": "course-01/density",
+  "model_sha256": "08749c6bad11f2400256c717e8571a34514635d3888ead6f7751a12611659ebf",
+  "validator_sha256": "817f8b1b23910fd1af602dbd8af23883ec37619b225dc2147e8e05c017247178",
+  "environment": {
+    "python": "3.14.7",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1"
+  },
+  "method": "solid: solve force-equilibrium nonlinear equations; liquid: independent volume linear solve; derivatives: symmetric finite differences",
+  "tolerances": {
+    "inverse_relative": 1e-09,
+    "derivative_scaled": 5e-07
+  },
+  "case_count": 54,
+  "status": "passed",
+  "failures": [],
+  "cases": [
+    {
+      "kind": "solid",
+      "inputs": [
+        1.1,
+        0.1100000000000001,
+        0.99
+      ],
+      "reference_density_volume": [
+        1.1,
+        1.0
+      ],
+      "max_inverse_relative_error": 0.0,
+      "max_derivative_scaled_error": 9.647922460011658e-11
+    },
+    {
+      "kind": "solid",
+      "inputs": [
+        1.1,
+        0.10221000000000013,
+        0.99779
+      ],
+      "reference_density_volume": [
+        1.0999999999999999,
+        1.0
+      ],
+      "max_inverse_relative_error": 2.0185873175002848e-16,
+      "max_derivative_scaled_error": 9.536787036946482e-11
+    },
+    {
+      "kind": "solid",
+      "inputs": [
+        1.1,
+        0.0950000000000002,
+        1.005
+      ],
+      "reference_density_volume": [
+        1.1,
+        1.0
+      ],
+      "max_inverse_relative_error": 0.0,
+      "max_derivative_scaled_error": 1.0495722169064753e-10
+    },
+    {
+      "kind": "solid",
+      "inputs": [
+        6.237,
+        0.6237000000000004,
+        0.99
+      ],
+      "reference_density_volume": [
+        1.1,
+        5.67
+      ],
+      "max_inverse_relative_error": 0.0,
+      "max_derivative_scaled_error": 1.343285482864612e-11
+    },
+    {
+      "kind": "solid",
+      "inputs": [
+        6.237,
+        0.5795307000000003,
+        0.99779
+      ],
+      "reference_density_volume": [
+        1.1,
+        5.67
+      ],
+      "max_inverse_relative_error": 0.0,
+      "max_derivative_scaled_error": 9.712203263845254e-12
+    },
+    {
+      "kind": "solid",
+      "inputs": [
+        6.237,
+        0.5386500000000005,
+        1.005
+      ],
+      "reference_density_volume": [
+        1.1,
+        5.67
+      ],
+      "max_inverse_relative_error": 0.0,
+      "max_derivative_scaled_error": 8.914424753925232e-12
+    },
+    {
+      "kind": "solid",
+      "inputs": [
+        22.0,
+        2.1999999999999993,
+        0.99
+      ],
+      "reference_density_volume": [
+        1.0999999999999999,
+        20.0
+      ],
+      "max_inverse_relative_error": 2.0185873175002848e-16,
+      "max_derivative_scaled_error": 4.4011461142190456e-12
+    },
+    {
+      "kind": "solid",
+      "inputs": [
+        22.0,
+        2.0442,
+        0.99779
+      ],
+      "reference_density_volume": [
+        1.0999999999999999,
+        20.000000000000004
+      ],
+      "max_inverse_relative_error": 2.0185873175002848e-16,
+      "max_derivative_scaled_error": 5.338240185275123e-12
+    },
+    {
+      "kind": "solid",
+      "inputs": [
+        22.0,
+        1.9000000000000021,
+        1.005
+      ],
+      "reference_density_volume": [
+        1.1,
+        20.0
+      ],
+      "max_inverse_relative_error": 0.0,
+      "max_derivative_scaled_error": 8.569551129244187e-12
+    },
+    {
+      "kind": "solid",
+      "inputs": [
+        7.9,
+        6.91,
+        0.99
+      ],
+      "reference_density_volume": [
+        7.900000000000003,
+        0.9999999999999996
+      ],
+      "max_inverse_relative_error": 6.661338147750939e-16,
+      "max_derivative_scaled_error": 6.373679731474145e-09
+    },
+    {
+      "kind": "solid",
+      "inputs": [
+        7.9,
+        6.90221,
+        0.99779
+      ],
+      "reference_density_volume": [
+        7.899999999999999,
+        1.0000000000000002
+      ],
+      "max_inverse_relative_error": 0.0,
+      "max_derivative_scaled_error": 6.273653134074032e-09
+    },
+    {
+      "kind": "solid",
+      "inputs": [
+        7.9,
+        6.8950000000000005,
+        1.005
+      ],
+      "reference_density_volume": [
+        7.900000000000002,
+        0.9999999999999998
+      ],
+      "max_inverse_relative_error": 2.248552961266139e-16,
+      "max_derivative_scaled_error": 6.183501465682417e-09
+    },
+    {
+      "kind": "solid",
+      "inputs": [
+        44.793,
+        39.1797,
+        0.99
+      ],
+      "reference_density_volume": [
+        7.899999999999996,
+        5.670000000000003
+      ],
+      "max_inverse_relative_error": 0.0,
+      "max_derivative_scaled_error": 6.368042703335622e-09
+    },
+    {
+      "kind": "solid",
+      "inputs": [
+        44.793,
+        39.1355307,
+        0.99779
+      ],
+      "reference_density_volume": [
+        7.899999999999995,
+        5.669999999999999
+      ],
+      "max_inverse_relative_error": 6.265808957320108e-16,
+      "max_derivative_scaled_error": 6.267965478050994e-09
+    },
+    {
+      "kind": "solid",
+      "inputs": [
+        44.793,
+        39.09465,
+        1.005
+      ],
+      "reference_density_volume": [
+        7.900000000000002,
+        5.669999999999998
+      ],
+      "max_inverse_relative_error": 0.0,
+      "max_derivative_scaled_error": 6.179404258296314e-09
+    },
+    {
+      "kind": "solid",
+      "inputs": [
+        158.0,
+        138.2,
+        0.99
+      ],
+      "reference_density_volume": [
+        7.899999999999994,
+        20.000000000000014
+      ],
+      "max_inverse_relative_error": 2.2485529612661415e-16,
+      "max_derivative_scaled_error": 2.219853134644012e-09
+    },
+    {
+      "kind": "solid",
+      "inputs": [
+        158.0,
+        138.0442,
+        0.99779
+      ],
+      "reference_density_volume": [
+        7.899999999999991,
+        20.000000000000025
+      ],
+      "max_inverse_relative_error": 7.105427357600993e-16,
+      "max_derivative_scaled_error": 2.1659644633409414e-09
+    },
+    {
+      "kind": "solid",
+      "inputs": [
+        158.0,
+        137.9,
+        1.005
+      ],
+      "reference_density_volume": [
+        7.900000000000004,
+        19.99999999999999
+      ],
+      "max_inverse_relative_error": 3.5527136788005026e-16,
+      "max_derivative_scaled_error": 2.117502395648785e-09
+    },
+    {
+      "kind": "solid",
+      "inputs": [
+        12.0,
+        11.01,
+        0.99
+      ],
+      "reference_density_volume": [
+        11.99999999999999,
+        1.0000000000000009
+      ],
+      "max_inverse_relative_error": 7.401486830834383e-16,
+      "max_derivative_scaled_error": 1.4698885859548866e-08
+    },
+    {
+      "kind": "solid",
+      "inputs": [
+        12.0,
+        11.00221,
+        0.99779
+      ],
+      "reference_density_volume": [
+        11.999999999999993,
+        1.0000000000000009
+      ],
+      "max_inverse_relative_error": 6.661338147750933e-16,
+      "max_derivative_scaled_error": 1.447010652439335e-08
+    },
+    {
+      "kind": "solid",
+      "inputs": [
+        12.0,
+        10.995000000000001,
+        1.005
+      ],
+      "reference_density_volume": [
+        12.000000000000025,
+        0.9999999999999978
+      ],
+      "max_inverse_relative_error": 1.3322676295501878e-15,
+      "max_derivative_scaled_error": 1.4264094555610272e-08
+    },
+    {
+      "kind": "solid",
+      "inputs": [
+        68.03999999999999,
+        62.42669999999999,
+        0.99
+      ],
+      "reference_density_volume": [
+        12.000000000000002,
+        5.669999999999993
+      ],
+      "max_inverse_relative_error": 1.7230974632630318e-15,
+      "max_derivative_scaled_error": 1.4682248449405956e-08
+    },
+    {
+      "kind": "solid",
+      "inputs": [
+        68.03999999999999,
+        62.38253069999999,
+        0.99779
+      ],
+      "reference_density_volume": [
+        11.999999999999988,
+        5.670000000000005
+      ],
+      "max_inverse_relative_error": 4.699356717990076e-16,
+      "max_derivative_scaled_error": 1.4453997689534527e-08
+    },
+    {
+      "kind": "solid",
+      "inputs": [
+        68.03999999999999,
+        62.341649999999994,
+        1.005
+      ],
+      "reference_density_volume": [
+        11.999999999999993,
+        5.669999999999998
+      ],
+      "max_inverse_relative_error": 7.401486830834381e-16,
+      "max_derivative_scaled_error": 1.424650637565293e-08
+    },
+    {
+      "kind": "solid",
+      "inputs": [
+        240.0,
+        220.2,
+        0.99
+      ],
+      "reference_density_volume": [
+        11.999999999999998,
+        20.000000000000004
+      ],
+      "max_inverse_relative_error": 4.440892098500627e-16,
+      "max_derivative_scaled_error": 8.168290932530908e-09
+    },
+    {
+      "kind": "solid",
+      "inputs": [
+        240.0,
+        220.0442,
+        0.99779
+      ],
+      "reference_density_volume": [
+        11.999999999999988,
+        20.00000000000002
+      ],
+      "max_inverse_relative_error": 5.329070518200745e-16,
+      "max_derivative_scaled_error": 7.973348092882304e-09
+    },
+    {
+      "kind": "solid",
+      "inputs": [
+        240.0,
+        219.9,
+        1.005
+      ],
+      "reference_density_volume": [
+        12.000000000000014,
+        19.99999999999998
+      ],
+      "max_inverse_relative_error": 1.0362081563168115e-15,
+      "max_derivative_scaled_error": 7.797862688896373e-09
+    },
+    {
+      "kind": "liquid",
+      "inputs": [
+        5.0,
+        9.988949999999999,
+        7.5,
+        0.99779
+      ],
+      "reference_density_volume": [
+        0.5000000000000001,
+        4.999999999999999
+      ],
+      "max_inverse_relative_error": 0.0,
+      "max_derivative_scaled_error": 3.954185590071546e-11
+    },
+    {
+      "kind": "liquid",
+      "inputs": [
+        31.63,
+        36.61895,
+        34.129999999999995,
+        0.99779
+      ],
+      "reference_density_volume": [
+        0.4999999999999994,
+        4.999999999999999
+      ],
+      "max_inverse_relative_error": 0.0,
+      "max_derivative_scaled_error": 5.397404329032796e-10
+    },
+    {
+      "kind": "liquid",
+      "inputs": [
+        100.0,
+        104.98895,
+        102.5,
+        0.99779
+      ],
+      "reference_density_volume": [
+        0.4999999999999997,
+        5.000000000000003
+      ],
+      "max_inverse_relative_error": 0.0,
+      "max_derivative_scaled_error": 4.438021242170187e-09
+    },
+    {
+      "kind": "liquid",
+      "inputs": [
+        5.0,
+        20.96464,
+        13.0,
+        0.99779
+      ],
+      "reference_density_volume": [
+        0.5,
+        16.0
+      ],
+      "max_inverse_relative_error": 0.0,
+      "max_derivative_scaled_error": 5.424098670214761e-12
+    },
+    {
+      "kind": "liquid",
+      "inputs": [
+        31.63,
+        47.59464,
+        39.629999999999995,
+        0.99779
+      ],
+      "reference_density_volume": [
+        0.4999999999999998,
+        16.0
+      ],
+      "max_inverse_relative_error": 0.0,
+      "max_derivative_scaled_error": 2.797354708983235e-11
+    },
+    {
+      "kind": "liquid",
+      "inputs": [
+        100.0,
+        115.96464,
+        108.0,
+        0.99779
+      ],
+      "reference_density_volume": [
+        0.4999999999999999,
+        16.000000000000004
+      ],
+      "max_inverse_relative_error": 0.0,
+      "max_derivative_scaled_error": 1.651475622921339e-10
+    },
+    {
+      "kind": "liquid",
+      "inputs": [
+        5.0,
+        54.8895,
+        30.0,
+        0.99779
+      ],
+      "reference_density_volume": [
+        0.5,
+        50.0
+      ],
+      "max_inverse_relative_error": 0.0,
+      "max_derivative_scaled_error": 2.4227286843370166e-12
+    },
+    {
+      "kind": "liquid",
+      "inputs": [
+        31.63,
+        81.5195,
+        56.629999999999995,
+        0.99779
+      ],
+      "reference_density_volume": [
+        0.49999999999999994,
+        50.0
+      ],
+      "max_inverse_relative_error": 0.0,
+      "max_derivative_scaled_error": 5.1981752235974454e-12
+    },
+    {
+      "kind": "liquid",
+      "inputs": [
+        100.0,
+        149.8895,
+        125.0,
+        0.99779
+      ],
+      "reference_density_volume": [
+        0.5,
+        50.0
+      ],
+      "max_inverse_relative_error": 0.0,
+      "max_derivative_scaled_error": 9.025996963729632e-12
+    },
+    {
+      "kind": "liquid",
+      "inputs": [
+        5.0,
+        9.988949999999999,
+        10.4,
+        0.99779
+      ],
+      "reference_density_volume": [
+        1.0800000000000003,
+        4.999999999999999
+      ],
+      "max_inverse_relative_error": 0.0,
+      "max_derivative_scaled_error": 8.689976516151887e-11
+    },
+    {
+      "kind": "liquid",
+      "inputs": [
+        31.63,
+        36.61895,
+        37.03,
+        0.99779
+      ],
+      "reference_density_volume": [
+        1.0800000000000005,
+        4.999999999999999
+      ],
+      "max_inverse_relative_error": 0.0,
+      "max_derivative_scaled_error": 1.1662088239550172e-09
+    },
+    {
+      "kind": "liquid",
+      "inputs": [
+        100.0,
+        104.98895,
+        105.4,
+        0.99779
+      ],
+      "reference_density_volume": [
+        1.0800000000000005,
+        5.000000000000003
+      ],
+      "max_inverse_relative_error": 0.0,
+      "max_derivative_scaled_error": 9.586100274683318e-09
+    },
+    {
+      "kind": "liquid",
+      "inputs": [
+        5.0,
+        20.96464,
+        22.28,
+        0.99779
+      ],
+      "reference_density_volume": [
+        1.08,
+        16.0
+      ],
+      "max_inverse_relative_error": 0.0,
+      "max_derivative_scaled_error": 1.6527919921844937e-11
+    },
+    {
+      "kind": "liquid",
+      "inputs": [
+        31.63,
+        47.59464,
+        48.91,
+        0.99779
+      ],
+      "reference_density_volume": [
+        1.0799999999999998,
+        16.0
+      ],
+      "max_inverse_relative_error": 0.0,
+      "max_derivative_scaled_error": 6.03948557831302e-11
+    },
+    {
+      "kind": "liquid",
+      "inputs": [
+        100.0,
+        115.96464,
+        117.28,
+        0.99779
+      ],
+      "reference_density_volume": [
+        1.0799999999999998,
+        16.000000000000004
+      ],
+      "max_inverse_relative_error": 0.0,
+      "max_derivative_scaled_error": 3.567895839884372e-10
+    },
+    {
+      "kind": "liquid",
+      "inputs": [
+        5.0,
+        54.8895,
+        59.0,
+        0.99779
+      ],
+      "reference_density_volume": [
+        1.08,
+        50.0
+      ],
+      "max_inverse_relative_error": 0.0,
+      "max_derivative_scaled_error": 6.27079555364132e-12
+    },
+    {
+      "kind": "liquid",
+      "inputs": [
+        31.63,
+        81.5195,
+        85.63,
+        0.99779
+      ],
+      "reference_density_volume": [
+        1.08,
+        50.0
+      ],
+      "max_inverse_relative_error": 0.0,
+      "max_derivative_scaled_error": 6.27079555364132e-12
+    },
+    {
+      "kind": "liquid",
+      "inputs": [
+        100.0,
+        149.8895,
+        154.0,
+        0.99779
+      ],
+      "reference_density_volume": [
+        1.08,
+        50.0
+      ],
+      "max_inverse_relative_error": 0.0,
+      "max_derivative_scaled_error": 1.9448748167505414e-11
+    },
+    {
+      "kind": "liquid",
+      "inputs": [
+        5.0,
+        9.988949999999999,
+        12.5,
+        0.99779
+      ],
+      "reference_density_volume": [
+        1.5000000000000002,
+        4.999999999999999
+      ],
+      "max_inverse_relative_error": 0.0,
+      "max_derivative_scaled_error": 1.2001494242852573e-10
+    },
+    {
+      "kind": "liquid",
+      "inputs": [
+        31.63,
+        36.61895,
+        39.129999999999995,
+        0.99779
+      ],
+      "reference_density_volume": [
+        1.4999999999999996,
+        4.999999999999999
+      ],
+      "max_inverse_relative_error": 0.0,
+      "max_derivative_scaled_error": 1.6194484642184648e-09
+    },
+    {
+      "kind": "liquid",
+      "inputs": [
+        100.0,
+        104.98895,
+        107.5,
+        0.99779
+      ],
+      "reference_density_volume": [
+        1.4999999999999991,
+        5.000000000000003
+      ],
+      "max_inverse_relative_error": 0.0,
+      "max_derivative_scaled_error": 1.3314010838261225e-08
+    },
+    {
+      "kind": "liquid",
+      "inputs": [
+        5.0,
+        20.96464,
+        29.0,
+        0.99779
+      ],
+      "reference_density_volume": [
+        1.5,
+        16.0
+      ],
+      "max_inverse_relative_error": 0.0,
+      "max_derivative_scaled_error": 1.5345544279732337e-11
+    },
+    {
+      "kind": "liquid",
+      "inputs": [
+        31.63,
+        47.59464,
+        55.629999999999995,
+        0.99779
+      ],
+      "reference_density_volume": [
+        1.4999999999999998,
+        16.0
+      ],
+      "max_inverse_relative_error": 0.0,
+      "max_derivative_scaled_error": 8.392060657502753e-11
+    },
+    {
+      "kind": "liquid",
+      "inputs": [
+        100.0,
+        115.96464,
+        124.0,
+        0.99779
+      ],
+      "reference_density_volume": [
+        1.4999999999999998,
+        16.000000000000004
+      ],
+      "max_inverse_relative_error": 0.0,
+      "max_derivative_scaled_error": 4.955144905505193e-10
+    },
+    {
+      "kind": "liquid",
+      "inputs": [
+        5.0,
+        54.8895,
+        80.0,
+        0.99779
+      ],
+      "reference_density_volume": [
+        1.5,
+        50.0
+      ],
+      "max_inverse_relative_error": 0.0,
+      "max_derivative_scaled_error": 6.681178996759359e-12
+    },
+    {
+      "kind": "liquid",
+      "inputs": [
+        31.63,
+        81.5195,
+        106.63,
+        0.99779
+      ],
+      "reference_density_volume": [
+        1.5,
+        50.0
+      ],
+      "max_inverse_relative_error": 0.0,
+      "max_derivative_scaled_error": 8.177732796488257e-12
+    },
+    {
+      "kind": "liquid",
+      "inputs": [
+        100.0,
+        149.8895,
+        175.0,
+        0.99779
+      ],
+      "reference_density_volume": [
+        1.5,
+        50.0
+      ],
+      "max_inverse_relative_error": 0.0,
+      "max_derivative_scaled_error": 2.7040952810253316e-11
+    }
+  ]
+}

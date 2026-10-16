@@ -1,0 +1,90 @@
+{
+  "experimentId": "course-03/oscilloscope",
+  "source": "original-report-observations",
+  "tables": {
+    "lissajous": {
+      "title": "lissajous",
+      "headers": [
+        "standard_Hz",
+        "horizontal_count",
+        "vertical_count"
+      ],
+      "rows": [
+        [
+          "250",
+          "8",
+          "2"
+        ],
+        [
+          "500",
+          "4",
+          "2"
+        ],
+        [
+          "1000",
+          "2",
+          "2"
+        ],
+        [
+          "1500",
+          "4",
+          "6"
+        ],
+        [
+          "2000",
+          "2",
+          "4"
+        ]
+      ]
+    },
+    "waveforms": {
+      "title": "waveforms",
+      "headers": [
+        "waveform",
+        "label",
+        "volts_per_div",
+        "vertical_div",
+        "meter_rms_V",
+        "ms_per_div",
+        "horizontal_div",
+        "source_Hz"
+      ],
+      "rows": [
+        [
+          "sine",
+          "正弦波",
+          "0.2",
+          "5.0",
+          "0.507",
+          "0.2",
+          "5.0",
+          "1000"
+        ],
+        [
+          "triangle",
+          "三角波",
+          "0.2",
+          "5.0",
+          "0.278",
+          "0.2",
+          "5.0",
+          "1000"
+        ],
+        [
+          "square",
+          "方波",
+          "0.2",
+          "5.0",
+          "0.491",
+          "0.2",
+          "5.0",
+          "1000"
+        ]
+      ]
+    }
+  },
+  "sourceHashes": {
+    "lissajous.csv": "5a3438189cf8d125dda8a65972914555880b2370942c97a0b3a555ee5b793260",
+    "waveforms.csv": "811570ac218435ec24f6fcec815c3251a5f7891478df6f57986dee3c23e57d75"
+  }
+}

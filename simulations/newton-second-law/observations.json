@@ -1,0 +1,277 @@
+{
+  "schema_version": 1,
+  "experiment": "course-01/newton-second-law",
+  "source_files": [
+    {
+      "path": "experiments/course-01/newton-second-law/experiment.json",
+      "sha256": "c56bcce64fcbd61cd2a20801e4aa15fa88af83ddc1d7a2af2d1e4e7287646e9b"
+    },
+    {
+      "path": "experiments/course-01/newton-second-law/data/observations.csv",
+      "sha256": "c9da0b469d3d96476dd3b1c3ea9475857e578560bd7191ba49d44b52be67f657"
+    },
+    {
+      "path": "experiments/course-01/newton-second-law/data/provenance.json",
+      "sha256": "208b7b5f1db168ddb26fd981b543302f79bc5d0b2fdf20dbe0eb06863445d63d"
+    }
+  ],
+  "raw": [
+    {
+      "group": 1,
+      "trial": 1,
+      "mode": "direct",
+      "v1_cm_s": null,
+      "v2_cm_s": null,
+      "reported_acceleration_cm_s2": 20.06,
+      "acceleration_cm_s2": 20.06
+    },
+    {
+      "group": 1,
+      "trial": 2,
+      "mode": "direct",
+      "v1_cm_s": null,
+      "v2_cm_s": null,
+      "reported_acceleration_cm_s2": 20.21,
+      "acceleration_cm_s2": 20.21
+    },
+    {
+      "group": 1,
+      "trial": 3,
+      "mode": "direct",
+      "v1_cm_s": null,
+      "v2_cm_s": null,
+      "reported_acceleration_cm_s2": 19.92,
+      "acceleration_cm_s2": 19.92
+    },
+    {
+      "group": 1,
+      "trial": 4,
+      "mode": "direct",
+      "v1_cm_s": null,
+      "v2_cm_s": null,
+      "reported_acceleration_cm_s2": 20.13,
+      "acceleration_cm_s2": 20.13
+    },
+    {
+      "group": 1,
+      "trial": 5,
+      "mode": "direct",
+      "v1_cm_s": null,
+      "v2_cm_s": null,
+      "reported_acceleration_cm_s2": 20.22,
+      "acceleration_cm_s2": 20.22
+    },
+    {
+      "group": 2,
+      "trial": 1,
+      "mode": "velocity",
+      "v1_cm_s": 29.02,
+      "v2_cm_s": 79.81,
+      "reported_acceleration_cm_s2": 55.28,
+      "acceleration_cm_s2": 55.27475700000001
+    },
+    {
+      "group": 2,
+      "trial": 2,
+      "mode": "velocity",
+      "v1_cm_s": 28.69,
+      "v2_cm_s": 79.49,
+      "reported_acceleration_cm_s2": 54.95,
+      "acceleration_cm_s2": 54.95543999999999
+    },
+    {
+      "group": 2,
+      "trial": 3,
+      "mode": "velocity",
+      "v1_cm_s": 28.99,
+      "v2_cm_s": 79.43,
+      "reported_acceleration_cm_s2": 54.68,
+      "acceleration_cm_s2": 54.687048000000004
+    },
+    {
+      "group": 2,
+      "trial": 4,
+      "mode": "velocity",
+      "v1_cm_s": 29.05,
+      "v2_cm_s": 79.81,
+      "reported_acceleration_cm_s2": 55.26,
+      "acceleration_cm_s2": 55.257336
+    },
+    {
+      "group": 2,
+      "trial": 5,
+      "mode": "velocity",
+      "v1_cm_s": 28.34,
+      "v2_cm_s": 79.62,
+      "reported_acceleration_cm_s2": 55.35,
+      "acceleration_cm_s2": 55.36188800000001
+    },
+    {
+      "group": 3,
+      "trial": 1,
+      "mode": "velocity",
+      "v1_cm_s": 35.7,
+      "v2_cm_s": 98.14,
+      "reported_acceleration_cm_s2": 83.56,
+      "acceleration_cm_s2": 83.56969600000001
+    },
+    {
+      "group": 3,
+      "trial": 2,
+      "mode": "velocity",
+      "v1_cm_s": 35.21,
+      "v2_cm_s": 97.85,
+      "reported_acceleration_cm_s2": 83.33,
+      "acceleration_cm_s2": 83.348784
+    },
+    {
+      "group": 3,
+      "trial": 3,
+      "mode": "velocity",
+      "v1_cm_s": 35.42,
+      "v2_cm_s": 97.66,
+      "reported_acceleration_cm_s2": 82.82,
+      "acceleration_cm_s2": 82.828992
+    },
+    {
+      "group": 3,
+      "trial": 4,
+      "mode": "velocity",
+      "v1_cm_s": 35.56,
+      "v2_cm_s": 97.85,
+      "reported_acceleration_cm_s2": 83.08,
+      "acceleration_cm_s2": 83.10108899999999
+    },
+    {
+      "group": 3,
+      "trial": 5,
+      "mode": "velocity",
+      "v1_cm_s": 35.55,
+      "v2_cm_s": 97.85,
+      "reported_acceleration_cm_s2": 83.09,
+      "acceleration_cm_s2": 83.1082
+    },
+    {
+      "group": 4,
+      "trial": 1,
+      "mode": "velocity",
+      "v1_cm_s": 41.12,
+      "v2_cm_s": 113.51,
+      "reported_acceleration_cm_s2": 111.91,
+      "acceleration_cm_s2": 111.93665700000001
+    },
+    {
+      "group": 4,
+      "trial": 2,
+      "mode": "velocity",
+      "v1_cm_s": 40.92,
+      "v2_cm_s": 112.87,
+      "reported_acceleration_cm_s2": 110.66,
+      "acceleration_cm_s2": 110.651905
+    },
+    {
+      "group": 4,
+      "trial": 3,
+      "mode": "velocity",
+      "v1_cm_s": 41.54,
+      "v2_cm_s": 113.9,
+      "reported_acceleration_cm_s2": 112.44,
+      "acceleration_cm_s2": 112.47638400000001
+    },
+    {
+      "group": 4,
+      "trial": 4,
+      "mode": "velocity",
+      "v1_cm_s": 41.42,
+      "v2_cm_s": 114.02,
+      "reported_acceleration_cm_s2": 112.84,
+      "acceleration_cm_s2": 112.84943999999997
+    },
+    {
+      "group": 4,
+      "trial": 5,
+      "mode": "velocity",
+      "v1_cm_s": 40.62,
+      "v2_cm_s": 113.64,
+      "reported_acceleration_cm_s2": 112.65,
+      "acceleration_cm_s2": 112.640652
+    },
+    {
+      "group": 5,
+      "trial": 1,
+      "mode": "velocity",
+      "v1_cm_s": 46.27,
+      "v2_cm_s": 127.88,
+      "reported_acceleration_cm_s2": 142.1,
+      "acceleration_cm_s2": 142.123815
+    },
+    {
+      "group": 5,
+      "trial": 2,
+      "mode": "velocity",
+      "v1_cm_s": 46.06,
+      "v2_cm_s": 126.58,
+      "reported_acceleration_cm_s2": 139.0,
+      "acceleration_cm_s2": 139.009728
+    },
+    {
+      "group": 5,
+      "trial": 3,
+      "mode": "velocity",
+      "v1_cm_s": 46.08,
+      "v2_cm_s": 126.58,
+      "reported_acceleration_cm_s2": 138.99,
+      "acceleration_cm_s2": 138.99130000000002
+    },
+    {
+      "group": 5,
+      "trial": 4,
+      "mode": "velocity",
+      "v1_cm_s": 46.02,
+      "v2_cm_s": 127.88,
+      "reported_acceleration_cm_s2": 142.33,
+      "acceleration_cm_s2": 142.35454
+    },
+    {
+      "group": 5,
+      "trial": 5,
+      "mode": "velocity",
+      "v1_cm_s": 46.1,
+      "v2_cm_s": 127.88,
+      "reported_acceleration_cm_s2": 142.27,
+      "acceleration_cm_s2": 142.280844
+    }
+  ],
+  "groups": [
+    {
+      "group": 1,
+      "hanging_mass_g": 5.0,
+      "mean_acceleration_cm_s2": 20.107999999999997,
+      "count": 5
+    },
+    {
+      "group": 2,
+      "hanging_mass_g": 10.0,
+      "mean_acceleration_cm_s2": 55.1072938,
+      "count": 5
+    },
+    {
+      "group": 3,
+      "hanging_mass_g": 15.0,
+      "mean_acceleration_cm_s2": 83.1913522,
+      "count": 5
+    },
+    {
+      "group": 4,
+      "hanging_mass_g": 20.0,
+      "mean_acceleration_cm_s2": 112.1110076,
+      "count": 5
+    },
+    {
+      "group": 5,
+      "hanging_mass_g": 25.0,
+      "mean_acceleration_cm_s2": 140.95204540000003,
+      "count": 5
+    }
+  ]
+}

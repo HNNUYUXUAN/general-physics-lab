@@ -1,0 +1,1073 @@
+{
+  "schema_version": 1,
+  "experiment": "course-01/collisions",
+  "model_sha256": "a8d8641d062bc2ca3277d9cd79f647b0420c32a36c86d9bf00dd3321205ab6b8",
+  "validator_sha256": "485a9f93aeaad909f024fae0200431830ed3699fcf5c30051f48b10d064d6772",
+  "environment": {
+    "python": "3.14.7",
+    "numpy": "2.5.4"
+  },
+  "method": "independent 3×3 linear solve of two impulse equations and relative separation condition; reduced-mass energy loss identity; photogate roundtrip",
+  "case_count": 81,
+  "tolerances": {
+    "absolute": 1e-12
+  },
+  "max_absolute_error": 4.440892098500626e-16,
+  "status": "passed",
+  "failures": [],
+  "cases": [
+    {
+      "parameters": {
+        "mass1": 0.05,
+        "mass2": 0.05,
+        "incident": 0.1,
+        "restitution": 0.0,
+        "flagLength": 0.02
+      },
+      "reference_v1": 0.05000000000000001,
+      "reference_v2": 0.05000000000000001,
+      "impulse_N_s": 0.0025000000000000005,
+      "max_absolute_error": 6.938893903907228e-18
+    },
+    {
+      "parameters": {
+        "mass1": 0.05,
+        "mass2": 0.05,
+        "incident": 0.1,
+        "restitution": 0.4,
+        "flagLength": 0.02
+      },
+      "reference_v1": 0.030000000000000013,
+      "reference_v2": 0.07000000000000002,
+      "impulse_N_s": 0.003500000000000001,
+      "max_absolute_error": 2.7755575615628914e-17
+    },
+    {
+      "parameters": {
+        "mass1": 0.05,
+        "mass2": 0.05,
+        "incident": 0.1,
+        "restitution": 1.0,
+        "flagLength": 0.02
+      },
+      "reference_v1": 1.3877787807814457e-17,
+      "reference_v2": 0.10000000000000002,
+      "impulse_N_s": 0.005000000000000001,
+      "max_absolute_error": 1.3877787807814457e-17
+    },
+    {
+      "parameters": {
+        "mass1": 0.05,
+        "mass2": 0.05,
+        "incident": 0.7102,
+        "restitution": 0.0,
+        "flagLength": 0.02
+      },
+      "reference_v1": 0.3551,
+      "reference_v2": 0.3551,
+      "impulse_N_s": 0.017755000000000003,
+      "max_absolute_error": 8.673617379884035e-19
+    },
+    {
+      "parameters": {
+        "mass1": 0.05,
+        "mass2": 0.05,
+        "incident": 0.7102,
+        "restitution": 0.4,
+        "flagLength": 0.02
+      },
+      "reference_v1": 0.21306000000000003,
+      "reference_v2": 0.4971400000000001,
+      "impulse_N_s": 0.024857000000000004,
+      "max_absolute_error": 1.6653345369377348e-16
+    },
+    {
+      "parameters": {
+        "mass1": 0.05,
+        "mass2": 0.05,
+        "incident": 0.7102,
+        "restitution": 1.0,
+        "flagLength": 0.02
+      },
+      "reference_v1": -0.0,
+      "reference_v2": 0.7102,
+      "impulse_N_s": 0.03551000000000001,
+      "max_absolute_error": 0.0
+    },
+    {
+      "parameters": {
+        "mass1": 0.05,
+        "mass2": 0.05,
+        "incident": 1.5,
+        "restitution": 0.0,
+        "flagLength": 0.02
+      },
+      "reference_v1": 0.7500000000000001,
+      "reference_v2": 0.7500000000000001,
+      "impulse_N_s": 0.037500000000000006,
+      "max_absolute_error": 1.1102230246251565e-16
+    },
+    {
+      "parameters": {
+        "mass1": 0.05,
+        "mass2": 0.05,
+        "incident": 1.5,
+        "restitution": 0.4,
+        "flagLength": 0.02
+      },
+      "reference_v1": 0.4500000000000002,
+      "reference_v2": 1.0500000000000003,
+      "impulse_N_s": 0.05250000000000001,
+      "max_absolute_error": 4.440892098500626e-16
+    },
+    {
+      "parameters": {
+        "mass1": 0.05,
+        "mass2": 0.05,
+        "incident": 1.5,
+        "restitution": 1.0,
+        "flagLength": 0.02
+      },
+      "reference_v1": 2.220446049250313e-16,
+      "reference_v2": 1.5000000000000002,
+      "impulse_N_s": 0.07500000000000001,
+      "max_absolute_error": 2.220446049250313e-16
+    },
+    {
+      "parameters": {
+        "mass1": 0.05,
+        "mass2": 0.15449,
+        "incident": 0.1,
+        "restitution": 0.0,
+        "flagLength": 0.02
+      },
+      "reference_v1": 0.02445107340212236,
+      "reference_v2": 0.02445107340212236,
+      "impulse_N_s": 0.003777446329893883,
+      "max_absolute_error": 6.938893903907228e-18
+    },
+    {
+      "parameters": {
+        "mass1": 0.05,
+        "mass2": 0.15449,
+        "incident": 0.1,
+        "restitution": 0.4,
+        "flagLength": 0.02
+      },
+      "reference_v1": -0.0057684972370287,
+      "reference_v2": 0.03423150276297131,
+      "impulse_N_s": 0.0052884248618514365,
+      "max_absolute_error": 2.0816681711721685e-17
+    },
+    {
+      "parameters": {
+        "mass1": 0.05,
+        "mass2": 0.15449,
+        "incident": 0.1,
+        "restitution": 1.0,
+        "flagLength": 0.02
+      },
+      "reference_v1": -0.051097853195755286,
+      "reference_v2": 0.04890214680424472,
+      "impulse_N_s": 0.007554892659787766,
+      "max_absolute_error": 1.3877787807814457e-17
+    },
+    {
+      "parameters": {
+        "mass1": 0.05,
+        "mass2": 0.15449,
+        "incident": 0.7102,
+        "restitution": 0.0,
+        "flagLength": 0.02
+      },
+      "reference_v1": 0.173651523301873,
+      "reference_v2": 0.173651523301873,
+      "impulse_N_s": 0.02682742383490636,
+      "max_absolute_error": 2.7755575615628914e-17
+    },
+    {
+      "parameters": {
+        "mass1": 0.05,
+        "mass2": 0.15449,
+        "incident": 0.7102,
+        "restitution": 0.4,
+        "flagLength": 0.02
+      },
+      "reference_v1": -0.0409678673773779,
+      "reference_v2": 0.24311213262262216,
+      "impulse_N_s": 0.037558393368868896,
+      "max_absolute_error": 5.551115123125783e-17
+    },
+    {
+      "parameters": {
+        "mass1": 0.05,
+        "mass2": 0.15449,
+        "incident": 0.7102,
+        "restitution": 1.0,
+        "flagLength": 0.02
+      },
+      "reference_v1": -0.36289695339625405,
+      "reference_v2": 0.347303046603746,
+      "impulse_N_s": 0.05365484766981272,
+      "max_absolute_error": 5.551115123125783e-17
+    },
+    {
+      "parameters": {
+        "mass1": 0.05,
+        "mass2": 0.15449,
+        "incident": 1.5,
+        "restitution": 0.0,
+        "flagLength": 0.02
+      },
+      "reference_v1": 0.3667661010318354,
+      "reference_v2": 0.3667661010318354,
+      "impulse_N_s": 0.056661694948408246,
+      "max_absolute_error": 1.1102230246251565e-16
+    },
+    {
+      "parameters": {
+        "mass1": 0.05,
+        "mass2": 0.15449,
+        "incident": 1.5,
+        "restitution": 0.4,
+        "flagLength": 0.02
+      },
+      "reference_v1": -0.08652745855543054,
+      "reference_v2": 0.5134725414445696,
+      "impulse_N_s": 0.07932637292777155,
+      "max_absolute_error": 2.220446049250313e-16
+    },
+    {
+      "parameters": {
+        "mass1": 0.05,
+        "mass2": 0.15449,
+        "incident": 1.5,
+        "restitution": 1.0,
+        "flagLength": 0.02
+      },
+      "reference_v1": -0.7664677979363292,
+      "reference_v2": 0.7335322020636708,
+      "impulse_N_s": 0.11332338989681649,
+      "max_absolute_error": 2.220446049250313e-16
+    },
+    {
+      "parameters": {
+        "mass1": 0.05,
+        "mass2": 1.0,
+        "incident": 0.1,
+        "restitution": 0.0,
+        "flagLength": 0.02
+      },
+      "reference_v1": 0.004761904761904762,
+      "reference_v2": 0.004761904761904762,
+      "impulse_N_s": 0.004761904761904762,
+      "max_absolute_error": 8.673617379884035e-19
+    },
+    {
+      "parameters": {
+        "mass1": 0.05,
+        "mass2": 1.0,
+        "incident": 0.1,
+        "restitution": 0.4,
+        "flagLength": 0.02
+      },
+      "reference_v1": -0.03333333333333334,
+      "reference_v2": 0.006666666666666668,
+      "impulse_N_s": 0.006666666666666668,
+      "max_absolute_error": 2.6020852139652106e-18
+    },
+    {
+      "parameters": {
+        "mass1": 0.05,
+        "mass2": 1.0,
+        "incident": 0.1,
+        "restitution": 1.0,
+        "flagLength": 0.02
+      },
+      "reference_v1": -0.09047619047619049,
+      "reference_v2": 0.009523809523809525,
+      "impulse_N_s": 0.009523809523809525,
+      "max_absolute_error": 1.3877787807814457e-17
+    },
+    {
+      "parameters": {
+        "mass1": 0.05,
+        "mass2": 1.0,
+        "incident": 0.7102,
+        "restitution": 0.0,
+        "flagLength": 0.02
+      },
+      "reference_v1": 0.033819047619047624,
+      "reference_v2": 0.033819047619047624,
+      "impulse_N_s": 0.033819047619047624,
+      "max_absolute_error": 6.938893903907228e-18
+    },
+    {
+      "parameters": {
+        "mass1": 0.05,
+        "mass2": 1.0,
+        "incident": 0.7102,
+        "restitution": 0.4,
+        "flagLength": 0.02
+      },
+      "reference_v1": -0.23673333333333338,
+      "reference_v2": 0.047346666666666676,
+      "impulse_N_s": 0.047346666666666676,
+      "max_absolute_error": 1.3877787807814457e-17
+    },
+    {
+      "parameters": {
+        "mass1": 0.05,
+        "mass2": 1.0,
+        "incident": 0.7102,
+        "restitution": 1.0,
+        "flagLength": 0.02
+      },
+      "reference_v1": -0.6425619047619048,
+      "reference_v2": 0.06763809523809525,
+      "impulse_N_s": 0.06763809523809525,
+      "max_absolute_error": 1.3877787807814457e-17
+    },
+    {
+      "parameters": {
+        "mass1": 0.05,
+        "mass2": 1.0,
+        "incident": 1.5,
+        "restitution": 0.0,
+        "flagLength": 0.02
+      },
+      "reference_v1": 0.07142857142857144,
+      "reference_v2": 0.07142857142857144,
+      "impulse_N_s": 0.07142857142857144,
+      "max_absolute_error": 1.3877787807814457e-17
+    },
+    {
+      "parameters": {
+        "mass1": 0.05,
+        "mass2": 1.0,
+        "incident": 1.5,
+        "restitution": 0.4,
+        "flagLength": 0.02
+      },
+      "reference_v1": -0.5000000000000001,
+      "reference_v2": 0.10000000000000002,
+      "impulse_N_s": 0.10000000000000002,
+      "max_absolute_error": 1.1102230246251565e-16
+    },
+    {
+      "parameters": {
+        "mass1": 0.05,
+        "mass2": 1.0,
+        "incident": 1.5,
+        "restitution": 1.0,
+        "flagLength": 0.02
+      },
+      "reference_v1": -1.3571428571428572,
+      "reference_v2": 0.14285714285714288,
+      "impulse_N_s": 0.14285714285714288,
+      "max_absolute_error": 2.220446049250313e-16
+    },
+    {
+      "parameters": {
+        "mass1": 0.34175,
+        "mass2": 0.05,
+        "incident": 0.1,
+        "restitution": 0.0,
+        "flagLength": 0.02
+      },
+      "reference_v1": 0.0872367581365667,
+      "reference_v2": 0.0872367581365667,
+      "impulse_N_s": 0.004361837906828335,
+      "max_absolute_error": 0.0
+    },
+    {
+      "parameters": {
+        "mass1": 0.34175,
+        "mass2": 0.05,
+        "incident": 0.1,
+        "restitution": 0.4,
+        "flagLength": 0.02
+      },
+      "reference_v1": 0.08213146139119337,
+      "reference_v2": 0.12213146139119338,
+      "impulse_N_s": 0.00610657306955967,
+      "max_absolute_error": 8.131516293641283e-20
+    },
+    {
+      "parameters": {
+        "mass1": 0.34175,
+        "mass2": 0.05,
+        "incident": 0.1,
+        "restitution": 1.0,
+        "flagLength": 0.02
+      },
+      "reference_v1": 0.0744735162731334,
+      "reference_v2": 0.1744735162731334,
+      "impulse_N_s": 0.00872367581365667,
+      "max_absolute_error": 1.3877787807814457e-17
+    },
+    {
+      "parameters": {
+        "mass1": 0.34175,
+        "mass2": 0.05,
+        "incident": 0.7102,
+        "restitution": 0.0,
+        "flagLength": 0.02
+      },
+      "reference_v1": 0.6195554562858966,
+      "reference_v2": 0.6195554562858966,
+      "impulse_N_s": 0.030977772814294837,
+      "max_absolute_error": 1.1102230246251565e-16
+    },
+    {
+      "parameters": {
+        "mass1": 0.34175,
+        "mass2": 0.05,
+        "incident": 0.7102,
+        "restitution": 0.4,
+        "flagLength": 0.02
+      },
+      "reference_v1": 0.5832976388002553,
+      "reference_v2": 0.8673776388002553,
+      "impulse_N_s": 0.043368881940012774,
+      "max_absolute_error": 1.1102230246251565e-16
+    },
+    {
+      "parameters": {
+        "mass1": 0.34175,
+        "mass2": 0.05,
+        "incident": 0.7102,
+        "restitution": 1.0,
+        "flagLength": 0.02
+      },
+      "reference_v1": 0.5289109125717931,
+      "reference_v2": 1.2391109125717932,
+      "impulse_N_s": 0.061955545628589674,
+      "max_absolute_error": 2.220446049250313e-16
+    },
+    {
+      "parameters": {
+        "mass1": 0.34175,
+        "mass2": 0.05,
+        "incident": 1.5,
+        "restitution": 0.0,
+        "flagLength": 0.02
+      },
+      "reference_v1": 1.3085513720485002,
+      "reference_v2": 1.3085513720485002,
+      "impulse_N_s": 0.06542756860242503,
+      "max_absolute_error": 2.220446049250313e-16
+    },
+    {
+      "parameters": {
+        "mass1": 0.34175,
+        "mass2": 0.05,
+        "incident": 1.5,
+        "restitution": 0.4,
+        "flagLength": 0.02
+      },
+      "reference_v1": 1.2319719208679005,
+      "reference_v2": 1.8319719208679006,
+      "impulse_N_s": 0.09159859604339504,
+      "max_absolute_error": 4.440892098500626e-16
+    },
+    {
+      "parameters": {
+        "mass1": 0.34175,
+        "mass2": 0.05,
+        "incident": 1.5,
+        "restitution": 1.0,
+        "flagLength": 0.02
+      },
+      "reference_v1": 1.1171027440970005,
+      "reference_v2": 2.6171027440970005,
+      "impulse_N_s": 0.13085513720485006,
+      "max_absolute_error": 4.440892098500626e-16
+    },
+    {
+      "parameters": {
+        "mass1": 0.34175,
+        "mass2": 0.15449,
+        "incident": 0.1,
+        "restitution": 0.0,
+        "flagLength": 0.02
+      },
+      "reference_v1": 0.06886788650652911,
+      "reference_v2": 0.06886788650652911,
+      "impulse_N_s": 0.010639399786393682,
+      "max_absolute_error": 1.3877787807814457e-17
+    },
+    {
+      "parameters": {
+        "mass1": 0.34175,
+        "mass2": 0.15449,
+        "incident": 0.1,
+        "restitution": 0.4,
+        "flagLength": 0.02
+      },
+      "reference_v1": 0.05641504110914074,
+      "reference_v2": 0.09641504110914074,
+      "impulse_N_s": 0.014895159700951153,
+      "max_absolute_error": 1.3877787807814457e-17
+    },
+    {
+      "parameters": {
+        "mass1": 0.34175,
+        "mass2": 0.15449,
+        "incident": 0.1,
+        "restitution": 1.0,
+        "flagLength": 0.02
+      },
+      "reference_v1": 0.03773577301305822,
+      "reference_v2": 0.13773577301305823,
+      "impulse_N_s": 0.021278799572787364,
+      "max_absolute_error": 2.7755575615628914e-17
+    },
+    {
+      "parameters": {
+        "mass1": 0.34175,
+        "mass2": 0.15449,
+        "incident": 0.7102,
+        "restitution": 0.0,
+        "flagLength": 0.02
+      },
+      "reference_v1": 0.48909972996936973,
+      "reference_v2": 0.48909972996936973,
+      "impulse_N_s": 0.07556101728296792,
+      "max_absolute_error": 1.1102230246251565e-16
+    },
+    {
+      "parameters": {
+        "mass1": 0.34175,
+        "mass2": 0.15449,
+        "incident": 0.7102,
+        "restitution": 0.4,
+        "flagLength": 0.02
+      },
+      "reference_v1": 0.4006596219571175,
+      "reference_v2": 0.6847396219571176,
+      "impulse_N_s": 0.1057854241961551,
+      "max_absolute_error": 5.551115123125783e-17
+    },
+    {
+      "parameters": {
+        "mass1": 0.34175,
+        "mass2": 0.15449,
+        "incident": 0.7102,
+        "restitution": 1.0,
+        "flagLength": 0.02
+      },
+      "reference_v1": 0.2679994599387394,
+      "reference_v2": 0.9781994599387395,
+      "impulse_N_s": 0.15112203456593584,
+      "max_absolute_error": 2.220446049250313e-16
+    },
+    {
+      "parameters": {
+        "mass1": 0.34175,
+        "mass2": 0.15449,
+        "incident": 1.5,
+        "restitution": 0.0,
+        "flagLength": 0.02
+      },
+      "reference_v1": 1.0330182975979365,
+      "reference_v2": 1.0330182975979365,
+      "impulse_N_s": 0.15959099679590522,
+      "max_absolute_error": 5.551115123125783e-17
+    },
+    {
+      "parameters": {
+        "mass1": 0.34175,
+        "mass2": 0.15449,
+        "incident": 1.5,
+        "restitution": 0.4,
+        "flagLength": 0.02
+      },
+      "reference_v1": 0.8462256166371112,
+      "reference_v2": 1.4462256166371112,
+      "impulse_N_s": 0.2234273955142673,
+      "max_absolute_error": 2.220446049250313e-16
+    },
+    {
+      "parameters": {
+        "mass1": 0.34175,
+        "mass2": 0.15449,
+        "incident": 1.5,
+        "restitution": 1.0,
+        "flagLength": 0.02
+      },
+      "reference_v1": 0.566036595195873,
+      "reference_v2": 2.066036595195873,
+      "impulse_N_s": 0.31918199359181043,
+      "max_absolute_error": 5.551115123125783e-17
+    },
+    {
+      "parameters": {
+        "mass1": 0.34175,
+        "mass2": 1.0,
+        "incident": 0.1,
+        "restitution": 0.0,
+        "flagLength": 0.02
+      },
+      "reference_v1": 0.025470467672815356,
+      "reference_v2": 0.025470467672815356,
+      "impulse_N_s": 0.025470467672815356,
+      "max_absolute_error": 0.0
+    },
+    {
+      "parameters": {
+        "mass1": 0.34175,
+        "mass2": 1.0,
+        "incident": 0.1,
+        "restitution": 0.4,
+        "flagLength": 0.02
+      },
+      "reference_v1": -0.0043413452580585085,
+      "reference_v2": 0.0356586547419415,
+      "impulse_N_s": 0.0356586547419415,
+      "max_absolute_error": 6.938893903907228e-18
+    },
+    {
+      "parameters": {
+        "mass1": 0.34175,
+        "mass2": 1.0,
+        "incident": 0.1,
+        "restitution": 1.0,
+        "flagLength": 0.02
+      },
+      "reference_v1": -0.049059064654369294,
+      "reference_v2": 0.05094093534563071,
+      "impulse_N_s": 0.05094093534563071,
+      "max_absolute_error": 2.168404344971009e-19
+    },
+    {
+      "parameters": {
+        "mass1": 0.34175,
+        "mass2": 1.0,
+        "incident": 0.7102,
+        "restitution": 0.0,
+        "flagLength": 0.02
+      },
+      "reference_v1": 0.18089126141233464,
+      "reference_v2": 0.18089126141233464,
+      "impulse_N_s": 0.18089126141233464,
+      "max_absolute_error": 2.7755575615628914e-17
+    },
+    {
+      "parameters": {
+        "mass1": 0.34175,
+        "mass2": 1.0,
+        "incident": 0.7102,
+        "restitution": 0.4,
+        "flagLength": 0.02
+      },
+      "reference_v1": -0.030832234022731553,
+      "reference_v2": 0.2532477659772685,
+      "impulse_N_s": 0.2532477659772685,
+      "max_absolute_error": 2.7755575615628914e-17
+    },
+    {
+      "parameters": {
+        "mass1": 0.34175,
+        "mass2": 1.0,
+        "incident": 0.7102,
+        "restitution": 1.0,
+        "flagLength": 0.02
+      },
+      "reference_v1": -0.3484174771753308,
+      "reference_v2": 0.3617825228246693,
+      "impulse_N_s": 0.3617825228246693,
+      "max_absolute_error": 5.551115123125783e-17
+    },
+    {
+      "parameters": {
+        "mass1": 0.34175,
+        "mass2": 1.0,
+        "incident": 1.5,
+        "restitution": 0.0,
+        "flagLength": 0.02
+      },
+      "reference_v1": 0.3820570150922303,
+      "reference_v2": 0.3820570150922303,
+      "impulse_N_s": 0.3820570150922303,
+      "max_absolute_error": 1.1102230246251565e-16
+    },
+    {
+      "parameters": {
+        "mass1": 0.34175,
+        "mass2": 1.0,
+        "incident": 1.5,
+        "restitution": 0.4,
+        "flagLength": 0.02
+      },
+      "reference_v1": -0.06512017887087762,
+      "reference_v2": 0.5348798211291225,
+      "impulse_N_s": 0.5348798211291225,
+      "max_absolute_error": 1.1102230246251565e-16
+    },
+    {
+      "parameters": {
+        "mass1": 0.34175,
+        "mass2": 1.0,
+        "incident": 1.5,
+        "restitution": 1.0,
+        "flagLength": 0.02
+      },
+      "reference_v1": -0.7358859698155394,
+      "reference_v2": 0.7641140301844606,
+      "impulse_N_s": 0.7641140301844606,
+      "max_absolute_error": 1.1102230246251565e-16
+    },
+    {
+      "parameters": {
+        "mass1": 1.0,
+        "mass2": 0.05,
+        "incident": 0.1,
+        "restitution": 0.0,
+        "flagLength": 0.02
+      },
+      "reference_v1": 0.09523809523809525,
+      "reference_v2": 0.09523809523809525,
+      "impulse_N_s": 0.004761904761904762,
+      "max_absolute_error": 1.3877787807814457e-17
+    },
+    {
+      "parameters": {
+        "mass1": 1.0,
+        "mass2": 0.05,
+        "incident": 0.1,
+        "restitution": 0.4,
+        "flagLength": 0.02
+      },
+      "reference_v1": 0.09333333333333334,
+      "reference_v2": 0.13333333333333336,
+      "impulse_N_s": 0.006666666666666667,
+      "max_absolute_error": 2.7755575615628914e-17
+    },
+    {
+      "parameters": {
+        "mass1": 1.0,
+        "mass2": 0.05,
+        "incident": 0.1,
+        "restitution": 1.0,
+        "flagLength": 0.02
+      },
+      "reference_v1": 0.09047619047619049,
+      "reference_v2": 0.1904761904761905,
+      "impulse_N_s": 0.009523809523809525,
+      "max_absolute_error": 2.7755575615628914e-17
+    },
+    {
+      "parameters": {
+        "mass1": 1.0,
+        "mass2": 0.05,
+        "incident": 0.7102,
+        "restitution": 0.0,
+        "flagLength": 0.02
+      },
+      "reference_v1": 0.6763809523809524,
+      "reference_v2": 0.6763809523809524,
+      "impulse_N_s": 0.033819047619047624,
+      "max_absolute_error": 0.0
+    },
+    {
+      "parameters": {
+        "mass1": 1.0,
+        "mass2": 0.05,
+        "incident": 0.7102,
+        "restitution": 0.4,
+        "flagLength": 0.02
+      },
+      "reference_v1": 0.6628533333333334,
+      "reference_v2": 0.9469333333333334,
+      "impulse_N_s": 0.047346666666666676,
+      "max_absolute_error": 1.1102230246251565e-16
+    },
+    {
+      "parameters": {
+        "mass1": 1.0,
+        "mass2": 0.05,
+        "incident": 0.7102,
+        "restitution": 1.0,
+        "flagLength": 0.02
+      },
+      "reference_v1": 0.6425619047619048,
+      "reference_v2": 1.3527619047619048,
+      "impulse_N_s": 0.06763809523809525,
+      "max_absolute_error": 0.0
+    },
+    {
+      "parameters": {
+        "mass1": 1.0,
+        "mass2": 0.05,
+        "incident": 1.5,
+        "restitution": 0.0,
+        "flagLength": 0.02
+      },
+      "reference_v1": 1.4285714285714286,
+      "reference_v2": 1.4285714285714286,
+      "impulse_N_s": 0.07142857142857144,
+      "max_absolute_error": 2.5673907444456745e-16
+    },
+    {
+      "parameters": {
+        "mass1": 1.0,
+        "mass2": 0.05,
+        "incident": 1.5,
+        "restitution": 0.4,
+        "flagLength": 0.02
+      },
+      "reference_v1": 1.4,
+      "reference_v2": 2.0,
+      "impulse_N_s": 0.1,
+      "max_absolute_error": 1.5959455978986625e-16
+    },
+    {
+      "parameters": {
+        "mass1": 1.0,
+        "mass2": 0.05,
+        "incident": 1.5,
+        "restitution": 1.0,
+        "flagLength": 0.02
+      },
+      "reference_v1": 1.3571428571428572,
+      "reference_v2": 2.857142857142857,
+      "impulse_N_s": 0.14285714285714288,
+      "max_absolute_error": 4.440892098500626e-16
+    },
+    {
+      "parameters": {
+        "mass1": 1.0,
+        "mass2": 0.15449,
+        "incident": 0.1,
+        "restitution": 0.0,
+        "flagLength": 0.02
+      },
+      "reference_v1": 0.08661833363649751,
+      "reference_v2": 0.08661833363649751,
+      "impulse_N_s": 0.013381666363502498,
+      "max_absolute_error": 7.589415207398531e-19
+    },
+    {
+      "parameters": {
+        "mass1": 1.0,
+        "mass2": 0.15449,
+        "incident": 0.1,
+        "restitution": 0.4,
+        "flagLength": 0.02
+      },
+      "reference_v1": 0.0812656670910965,
+      "reference_v2": 0.12126566709109651,
+      "impulse_N_s": 0.0187343329089035,
+      "max_absolute_error": 1.3877787807814457e-17
+    },
+    {
+      "parameters": {
+        "mass1": 1.0,
+        "mass2": 0.15449,
+        "incident": 0.1,
+        "restitution": 1.0,
+        "flagLength": 0.02
+      },
+      "reference_v1": 0.073236667272995,
+      "reference_v2": 0.17323666727299503,
+      "impulse_N_s": 0.026763332727004995,
+      "max_absolute_error": 0.0
+    },
+    {
+      "parameters": {
+        "mass1": 1.0,
+        "mass2": 0.15449,
+        "incident": 0.7102,
+        "restitution": 0.0,
+        "flagLength": 0.02
+      },
+      "reference_v1": 0.6151634054864052,
+      "reference_v2": 0.6151634054864052,
+      "impulse_N_s": 0.09503659451359475,
+      "max_absolute_error": 1.1102230246251565e-16
+    },
+    {
+      "parameters": {
+        "mass1": 1.0,
+        "mass2": 0.15449,
+        "incident": 0.7102,
+        "restitution": 0.4,
+        "flagLength": 0.02
+      },
+      "reference_v1": 0.5771487676809675,
+      "reference_v2": 0.8612287676809673,
+      "impulse_N_s": 0.13305123231903265,
+      "max_absolute_error": 1.734723475976807e-17
+    },
+    {
+      "parameters": {
+        "mass1": 1.0,
+        "mass2": 0.15449,
+        "incident": 0.7102,
+        "restitution": 1.0,
+        "flagLength": 0.02
+      },
+      "reference_v1": 0.5201268109728105,
+      "reference_v2": 1.2303268109728105,
+      "impulse_N_s": 0.1900731890271895,
+      "max_absolute_error": 2.220446049250313e-16
+    },
+    {
+      "parameters": {
+        "mass1": 1.0,
+        "mass2": 0.15449,
+        "incident": 1.5,
+        "restitution": 0.0,
+        "flagLength": 0.02
+      },
+      "reference_v1": 1.2992750045474626,
+      "reference_v2": 1.2992750045474626,
+      "impulse_N_s": 0.20072499545253744,
+      "max_absolute_error": 5.551115123125783e-17
+    },
+    {
+      "parameters": {
+        "mass1": 1.0,
+        "mass2": 0.15449,
+        "incident": 1.5,
+        "restitution": 0.4,
+        "flagLength": 0.02
+      },
+      "reference_v1": 1.2189850063664476,
+      "reference_v2": 1.8189850063664477,
+      "impulse_N_s": 0.2810149936335524,
+      "max_absolute_error": 2.220446049250313e-16
+    },
+    {
+      "parameters": {
+        "mass1": 1.0,
+        "mass2": 0.15449,
+        "incident": 1.5,
+        "restitution": 1.0,
+        "flagLength": 0.02
+      },
+      "reference_v1": 1.0985500090949252,
+      "reference_v2": 2.598550009094925,
+      "impulse_N_s": 0.4014499909050749,
+      "max_absolute_error": 0.0
+    },
+    {
+      "parameters": {
+        "mass1": 1.0,
+        "mass2": 1.0,
+        "incident": 0.1,
+        "restitution": 0.0,
+        "flagLength": 0.02
+      },
+      "reference_v1": 0.05,
+      "reference_v2": 0.05,
+      "impulse_N_s": 0.05,
+      "max_absolute_error": 0.0
+    },
+    {
+      "parameters": {
+        "mass1": 1.0,
+        "mass2": 1.0,
+        "incident": 0.1,
+        "restitution": 0.4,
+        "flagLength": 0.02
+      },
+      "reference_v1": 0.03,
+      "reference_v2": 0.07,
+      "impulse_N_s": 0.07,
+      "max_absolute_error": 1.3877787807814457e-17
+    },
+    {
+      "parameters": {
+        "mass1": 1.0,
+        "mass2": 1.0,
+        "incident": 0.1,
+        "restitution": 1.0,
+        "flagLength": 0.02
+      },
+      "reference_v1": 0.0,
+      "reference_v2": 0.1,
+      "impulse_N_s": 0.1,
+      "max_absolute_error": 0.0
+    },
+    {
+      "parameters": {
+        "mass1": 1.0,
+        "mass2": 1.0,
+        "incident": 0.7102,
+        "restitution": 0.0,
+        "flagLength": 0.02
+      },
+      "reference_v1": 0.3551,
+      "reference_v2": 0.3551,
+      "impulse_N_s": 0.3551,
+      "max_absolute_error": 0.0
+    },
+    {
+      "parameters": {
+        "mass1": 1.0,
+        "mass2": 1.0,
+        "incident": 0.7102,
+        "restitution": 0.4,
+        "flagLength": 0.02
+      },
+      "reference_v1": 0.21306000000000003,
+      "reference_v2": 0.49714,
+      "impulse_N_s": 0.49714,
+      "max_absolute_error": 2.7755575615628914e-17
+    },
+    {
+      "parameters": {
+        "mass1": 1.0,
+        "mass2": 1.0,
+        "incident": 0.7102,
+        "restitution": 1.0,
+        "flagLength": 0.02
+      },
+      "reference_v1": 0.0,
+      "reference_v2": 0.7102,
+      "impulse_N_s": 0.7102,
+      "max_absolute_error": 0.0
+    },
+    {
+      "parameters": {
+        "mass1": 1.0,
+        "mass2": 1.0,
+        "incident": 1.5,
+        "restitution": 0.0,
+        "flagLength": 0.02
+      },
+      "reference_v1": 0.75,
+      "reference_v2": 0.75,
+      "impulse_N_s": 0.75,
+      "max_absolute_error": 0.0
+    },
+    {
+      "parameters": {
+        "mass1": 1.0,
+        "mass2": 1.0,
+        "incident": 1.5,
+        "restitution": 0.4,
+        "flagLength": 0.02
+      },
+      "reference_v1": 0.44999999999999996,
+      "reference_v2": 1.05,
+      "impulse_N_s": 1.05,
+      "max_absolute_error": 2.7755575615628914e-16
+    },
+    {
+      "parameters": {
+        "mass1": 1.0,
+        "mass2": 1.0,
+        "incident": 1.5,
+        "restitution": 1.0,
+        "flagLength": 0.02
+      },
+      "reference_v1": 0.0,
+      "reference_v2": 1.5,
+      "impulse_N_s": 1.5,
+      "max_absolute_error": 0.0
+    }
+  ]
+}

@@ -1,0 +1,163 @@
+{
+  "status": "passed",
+  "source_hashes": {
+    "simulations/thermal-conductivity/app.mjs": "7e4b81327cfc4db9cb4806ef276459ca4d7b76da0d9ca5d06aa840863fe93627",
+    "simulations/thermal-conductivity/model.mjs": "09a610aa106e9940f38750d167458beadf05c817614494e4afd3cf155eee39cc",
+    "simulations/thermal-conductivity/index.html": "dc8ef7ab9d52790095c5519fd89b3ffda80fc5df22fe947b293444e9843640ca",
+    "simulations/thermal-conductivity/lab.css": "7847737a3f1a320bb8e2f60e992e7b4acf8bb1cb23e97561ac2ed9bc8f7691fa",
+    "simulations/thermal-conductivity/chart.mjs": "d9de3df2659ebe798d162b1aaaa42686654346c822e72edf9c1a515302532942",
+    "simulations/thermal-conductivity/observations.json": "a9dfff8ba7383263eaacc1c013061b8f08dbd368451b004b6c06c51b448d17be"
+  },
+  "source_record_sha256": "0b7335dc24178526666b8167b7ab16518ae3aef0f4350432df3a3c4a54adabc5",
+  "interaction_checks": 5,
+  "visual_status": "passed",
+  "exports_status": "passed",
+  "exports": [
+    {
+      "filename": "thermal-conductivity-export.json",
+      "sha256": "fde3e54bcead3e87fe67ea6ccb0eaae0e1bcbfc805d620813856574f0e040c11",
+      "bytes": 16727
+    },
+    {
+      "filename": "thermal-conductivity-export.csv",
+      "sha256": "5588b6e4783235ded81d8e843ef49b78794d9f34025298ca1317a2ba680a9dc6",
+      "bytes": 3360
+    }
+  ],
+  "fonts": {
+    "body": "\"Times New Roman\", SimSun, \"Songti SC\", serif",
+    "simsun": true,
+    "times": true,
+    "mathjax": 6,
+    "math_errors": []
+  },
+  "browser": "fixed Chromium1243 via playwright-cli isolated rollout-mechanics",
+  "layout": {
+    "mobile": {
+      "viewport": 390,
+      "document": 390,
+      "overflow": false,
+      "svg_text": [
+        {
+          "text": "中心 39.575 ℃",
+          "size": 14.48787733948351
+        },
+        {
+          "text": "加热 44.935 ℃",
+          "size": 14.48787733948351
+        },
+        {
+          "text": "40单元；输出时刻 1680s",
+          "size": 14.487879381796542
+        },
+        {
+          "text": "x=0　至　R=10.0mm",
+          "size": 14.487878632636335
+        }
+      ],
+      "math_errors": []
+    }
+  },
+  "interaction": [
+    {
+      "name": "准稳态连续记录与比热",
+      "status": "passed"
+    },
+    {
+      "name": "初始条件与拒零温差",
+      "status": "passed"
+    },
+    {
+      "name": "细网格与能量",
+      "status": "passed"
+    },
+    {
+      "name": "非法物性拒绝",
+      "status": "passed"
+    },
+    {
+      "name": "操作电势对拒绝",
+      "status": "passed"
+    }
+  ],
+  "background": {
+    "status": "passed",
+    "actual_document_hidden": true,
+    "pause_verified": true,
+    "source_files": {
+      "simulations/thermal-conductivity/app.mjs": "7e4b81327cfc4db9cb4806ef276459ca4d7b76da0d9ca5d06aa840863fe93627",
+      "simulations/thermal-conductivity/model.mjs": "09a610aa106e9940f38750d167458beadf05c817614494e4afd3cf155eee39cc"
+    },
+    "checked_at_utc": "2026-10-16T17:08:53.207Z"
+  },
+  "checked_at_utc": "2026-10-16T16:24:25.480Z",
+  "screenshots": [
+    {
+      "path": "docs/assets/simulations/thermal-conductivity/frontend-01-3d0e85fbe2ba.png",
+      "sha256": "3d0e85fbe2ba019a65f95a024daa9ccba4515c50c3022b7fc29632807e736683"
+    },
+    {
+      "path": "docs/assets/simulations/thermal-conductivity/frontend-02-78d3afeb9b1c.png",
+      "sha256": "78d3afeb9b1cdc49014841a72368b904f83466640d3c875e3e82ca8097454975"
+    },
+    {
+      "path": "docs/assets/simulations/thermal-conductivity/frontend-03-ec704f10e6b3.png",
+      "sha256": "ec704f10e6b3725a0f5bd3259f0318c6b189846e451b39bc5cb71d862353c2a8"
+    },
+    {
+      "path": "docs/assets/simulations/thermal-conductivity/frontend-04-6613901f533f.png",
+      "sha256": "6613901f533f4df8a0bcef869d7ac4c41e99d6aab833eb4be98793fcbf6b23cd"
+    }
+  ],
+  "schema_version": 1,
+  "experiment_id": "course-02/thermal-conductivity",
+  "numerical": {
+    "status": "passed",
+    "reference_sha256": "9a9830942d15eeaf76dde59732ef01d47e992dcacddf09950e55768aa393ec68",
+    "source_files": {
+      "simulations/thermal-conductivity/index.html": "dc8ef7ab9d52790095c5519fd89b3ffda80fc5df22fe947b293444e9843640ca",
+      "simulations/thermal-conductivity/model.mjs": "09a610aa106e9940f38750d167458beadf05c817614494e4afd3cf155eee39cc",
+      "simulations/thermal-conductivity/app.mjs": "7e4b81327cfc4db9cb4806ef276459ca4d7b76da0d9ca5d06aa840863fe93627",
+      "simulations/thermal-conductivity/chart.mjs": "d9de3df2659ebe798d162b1aaaa42686654346c822e72edf9c1a515302532942",
+      "simulations/thermal-conductivity/lab.css": "7847737a3f1a320bb8e2f60e992e7b4acf8bb1cb23e97561ac2ed9bc8f7691fa",
+      "simulations/thermal-conductivity/observations.json": "a9dfff8ba7383263eaacc1c013061b8f08dbd368451b004b6c06c51b448d17be",
+      "docs/thermal-conductivity-model-evidence.md": "6acbe3f2b702a03b5ddd3e276a6031dca6486eed99190ef701ccaff6f5c4c059",
+      "docs/thermal-conductivity-references.json": "81b50f5d91dd4b541f75b22d1bd73e962cf52295de386e861777f6c173fb2cf9",
+      "docs/thermal-conductivity-references.bib": "40ca9e2132e5ee72ec2130c2b3a2b027877470fde98a6cd38c743175742bd506",
+      "docs/simulation/thermal-conductivity-reference.json": "9a9830942d15eeaf76dde59732ef01d47e992dcacddf09950e55768aa393ec68",
+      "scripts/validate_thermal_conductivity_simulation.py": "a4b9e9a23b69004d7048e77b4a75b9eb3518ee51e60225e7e45c2501d402112e",
+      "tests/thermal-conductivity-model.test.mjs": "d90726c064e1470b0f71eaf8d33ffd7881ec091f74764f9519fb0cd0cdaaa894"
+    }
+  },
+  "scientific_evidence": {
+    "status": "verified",
+    "decision_source_files": {
+      "docs/thermal-conductivity-references.json": "81b50f5d91dd4b541f75b22d1bd73e962cf52295de386e861777f6c173fb2cf9",
+      "docs/thermal-conductivity-model-evidence.md": "6acbe3f2b702a03b5ddd3e276a6031dca6486eed99190ef701ccaff6f5c4c059",
+      "simulations/thermal-conductivity/model.mjs": "09a610aa106e9940f38750d167458beadf05c817614494e4afd3cf155eee39cc"
+    },
+    "core_references": [
+      {
+        "id": "zhou2018-quasisteady",
+        "pdf_sha256": "d9b05f60c68134bd532f70d8bace3e2e666861605db7e7ec1401cdb5594a56ac",
+        "locators": [
+          {
+            "page": 17,
+            "location": "式1",
+            "supports": "一维热方程"
+          },
+          {
+            "page": 18,
+            "location": "式3–10",
+            "supports": "对称/均温条件、级数解与准稳态反演"
+          },
+          {
+            "page": 21,
+            "location": "实验参数",
+            "supports": "装置与热电常数，材料身份保留"
+          }
+        ]
+      }
+    ]
+  }
+}

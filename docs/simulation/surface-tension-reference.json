@@ -1,0 +1,1641 @@
+{
+  "schema_version": 1,
+  "experiment": "course-02/surface-tension",
+  "model_sha256": "0ace7c37a725eb73d413df25fdc3b7a298c4f8525255eda91fd3d85c7d5d6e39",
+  "validator_sha256": "21bf169253ef2a181ab1604c5355494cbc369e9a092e3e7cdfb29d65436f3d7b",
+  "environment": {
+    "python": "3.14.7",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1"
+  },
+  "method": "quadrature of vertical tension around inner and outer circles; independent least-squares deadweight calibration",
+  "case_count": 108,
+  "tolerances": {
+    "absolute": 1e-12
+  },
+  "max_absolute_error": 4.163336342344337e-17,
+  "status": "passed",
+  "failures": [],
+  "cases": [
+    {
+      "parameters": {
+        "surfaceTension": 0.02,
+        "innerDiameter": 0.02,
+        "outerDiameter": 0.022,
+        "contactAngle": 0,
+        "filmMass": 0,
+        "conversion": 0.0002,
+        "baseline": 85.6,
+        "gravity": 9.794
+      },
+      "line_integral_force_N": 0.002638937829015426,
+      "reference_apparent_tension_N_m": 0.02,
+      "max_absolute_error": 1.3877787807814457e-17
+    },
+    {
+      "parameters": {
+        "surfaceTension": 0.02,
+        "innerDiameter": 0.02,
+        "outerDiameter": 0.022,
+        "contactAngle": 0,
+        "filmMass": 0,
+        "conversion": 0.0006,
+        "baseline": 85.6,
+        "gravity": 9.794
+      },
+      "line_integral_force_N": 0.002638937829015426,
+      "reference_apparent_tension_N_m": 0.02,
+      "max_absolute_error": 1.3877787807814457e-17
+    },
+    {
+      "parameters": {
+        "surfaceTension": 0.02,
+        "innerDiameter": 0.02,
+        "outerDiameter": 0.022,
+        "contactAngle": 0,
+        "filmMass": 0.0002,
+        "conversion": 0.0002,
+        "baseline": 85.6,
+        "gravity": 9.794
+      },
+      "line_integral_force_N": 0.002638937829015426,
+      "reference_apparent_tension_N_m": 0.034845366787066887,
+      "max_absolute_error": 6.938893903907228e-18
+    },
+    {
+      "parameters": {
+        "surfaceTension": 0.02,
+        "innerDiameter": 0.02,
+        "outerDiameter": 0.022,
+        "contactAngle": 0,
+        "filmMass": 0.0002,
+        "conversion": 0.0006,
+        "baseline": 85.6,
+        "gravity": 9.794
+      },
+      "line_integral_force_N": 0.002638937829015426,
+      "reference_apparent_tension_N_m": 0.034845366787066887,
+      "max_absolute_error": 3.2526065174565133e-19
+    },
+    {
+      "parameters": {
+        "surfaceTension": 0.02,
+        "innerDiameter": 0.02,
+        "outerDiameter": 0.022,
+        "contactAngle": 30,
+        "filmMass": 0,
+        "conversion": 0.0002,
+        "baseline": 85.6,
+        "gravity": 9.794
+      },
+      "line_integral_force_N": 0.0022853871989351147,
+      "reference_apparent_tension_N_m": 0.017320508075688777,
+      "max_absolute_error": 4.336808689942018e-19
+    },
+    {
+      "parameters": {
+        "surfaceTension": 0.02,
+        "innerDiameter": 0.02,
+        "outerDiameter": 0.022,
+        "contactAngle": 30,
+        "filmMass": 0,
+        "conversion": 0.0006,
+        "baseline": 85.6,
+        "gravity": 9.794
+      },
+      "line_integral_force_N": 0.0022853871989351147,
+      "reference_apparent_tension_N_m": 0.017320508075688777,
+      "max_absolute_error": 2.0816681711721685e-17
+    },
+    {
+      "parameters": {
+        "surfaceTension": 0.02,
+        "innerDiameter": 0.02,
+        "outerDiameter": 0.022,
+        "contactAngle": 30,
+        "filmMass": 0.0002,
+        "conversion": 0.0002,
+        "baseline": 85.6,
+        "gravity": 9.794
+      },
+      "line_integral_force_N": 0.0022853871989351147,
+      "reference_apparent_tension_N_m": 0.03216587486275567,
+      "max_absolute_error": 6.938893903907228e-18
+    },
+    {
+      "parameters": {
+        "surfaceTension": 0.02,
+        "innerDiameter": 0.02,
+        "outerDiameter": 0.022,
+        "contactAngle": 30,
+        "filmMass": 0.0002,
+        "conversion": 0.0006,
+        "baseline": 85.6,
+        "gravity": 9.794
+      },
+      "line_integral_force_N": 0.0022853871989351147,
+      "reference_apparent_tension_N_m": 0.03216587486275567,
+      "max_absolute_error": 6.938893903907228e-18
+    },
+    {
+      "parameters": {
+        "surfaceTension": 0.02,
+        "innerDiameter": 0.02,
+        "outerDiameter": 0.022,
+        "contactAngle": 60,
+        "filmMass": 0,
+        "conversion": 0.0002,
+        "baseline": 85.6,
+        "gravity": 9.794
+      },
+      "line_integral_force_N": 0.0013194689145077133,
+      "reference_apparent_tension_N_m": 0.010000000000000004,
+      "max_absolute_error": 1.0408340855860843e-17
+    },
+    {
+      "parameters": {
+        "surfaceTension": 0.02,
+        "innerDiameter": 0.02,
+        "outerDiameter": 0.022,
+        "contactAngle": 60,
+        "filmMass": 0,
+        "conversion": 0.0006,
+        "baseline": 85.6,
+        "gravity": 9.794
+      },
+      "line_integral_force_N": 0.0013194689145077133,
+      "reference_apparent_tension_N_m": 0.010000000000000004,
+      "max_absolute_error": 1.0408340855860843e-17
+    },
+    {
+      "parameters": {
+        "surfaceTension": 0.02,
+        "innerDiameter": 0.02,
+        "outerDiameter": 0.022,
+        "contactAngle": 60,
+        "filmMass": 0.0002,
+        "conversion": 0.0002,
+        "baseline": 85.6,
+        "gravity": 9.794
+      },
+      "line_integral_force_N": 0.0013194689145077133,
+      "reference_apparent_tension_N_m": 0.02484536678706689,
+      "max_absolute_error": 6.938893903907228e-18
+    },
+    {
+      "parameters": {
+        "surfaceTension": 0.02,
+        "innerDiameter": 0.02,
+        "outerDiameter": 0.022,
+        "contactAngle": 60,
+        "filmMass": 0.0002,
+        "conversion": 0.0006,
+        "baseline": 85.6,
+        "gravity": 9.794
+      },
+      "line_integral_force_N": 0.0013194689145077133,
+      "reference_apparent_tension_N_m": 0.02484536678706689,
+      "max_absolute_error": 3.469446951953614e-18
+    },
+    {
+      "parameters": {
+        "surfaceTension": 0.02,
+        "innerDiameter": 0.033008,
+        "outerDiameter": 0.034944,
+        "contactAngle": 0,
+        "filmMass": 0,
+        "conversion": 0.0002,
+        "baseline": 85.6,
+        "gravity": 9.794
+      },
+      "line_integral_force_N": 0.004269550079934672,
+      "reference_apparent_tension_N_m": 0.019999999999999997,
+      "max_absolute_error": 8.673617379884035e-19
+    },
+    {
+      "parameters": {
+        "surfaceTension": 0.02,
+        "innerDiameter": 0.033008,
+        "outerDiameter": 0.034944,
+        "contactAngle": 0,
+        "filmMass": 0,
+        "conversion": 0.0006,
+        "baseline": 85.6,
+        "gravity": 9.794
+      },
+      "line_integral_force_N": 0.004269550079934672,
+      "reference_apparent_tension_N_m": 0.019999999999999997,
+      "max_absolute_error": 6.938893903907228e-18
+    },
+    {
+      "parameters": {
+        "surfaceTension": 0.02,
+        "innerDiameter": 0.033008,
+        "outerDiameter": 0.034944,
+        "contactAngle": 0,
+        "filmMass": 0.0002,
+        "conversion": 0.0002,
+        "baseline": 85.6,
+        "gravity": 9.794
+      },
+      "line_integral_force_N": 0.004269550079934672,
+      "reference_apparent_tension_N_m": 0.029175674079597494,
+      "max_absolute_error": 3.469446951953614e-18
+    },
+    {
+      "parameters": {
+        "surfaceTension": 0.02,
+        "innerDiameter": 0.033008,
+        "outerDiameter": 0.034944,
+        "contactAngle": 0,
+        "filmMass": 0.0002,
+        "conversion": 0.0006,
+        "baseline": 85.6,
+        "gravity": 9.794
+      },
+      "line_integral_force_N": 0.004269550079934672,
+      "reference_apparent_tension_N_m": 0.029175674079597494,
+      "max_absolute_error": 2.0816681711721685e-17
+    },
+    {
+      "parameters": {
+        "surfaceTension": 0.02,
+        "innerDiameter": 0.033008,
+        "outerDiameter": 0.034944,
+        "contactAngle": 30,
+        "filmMass": 0,
+        "conversion": 0.0002,
+        "baseline": 85.6,
+        "gravity": 9.794
+      },
+      "line_integral_force_N": 0.0036975388319533077,
+      "reference_apparent_tension_N_m": 0.017320508075688773,
+      "max_absolute_error": 3.469446951953614e-18
+    },
+    {
+      "parameters": {
+        "surfaceTension": 0.02,
+        "innerDiameter": 0.033008,
+        "outerDiameter": 0.034944,
+        "contactAngle": 30,
+        "filmMass": 0,
+        "conversion": 0.0006,
+        "baseline": 85.6,
+        "gravity": 9.794
+      },
+      "line_integral_force_N": 0.0036975388319533077,
+      "reference_apparent_tension_N_m": 0.017320508075688773,
+      "max_absolute_error": 2.0816681711721685e-17
+    },
+    {
+      "parameters": {
+        "surfaceTension": 0.02,
+        "innerDiameter": 0.033008,
+        "outerDiameter": 0.034944,
+        "contactAngle": 30,
+        "filmMass": 0.0002,
+        "conversion": 0.0002,
+        "baseline": 85.6,
+        "gravity": 9.794
+      },
+      "line_integral_force_N": 0.0036975388319533077,
+      "reference_apparent_tension_N_m": 0.02649618215528627,
+      "max_absolute_error": 1.0408340855860843e-17
+    },
+    {
+      "parameters": {
+        "surfaceTension": 0.02,
+        "innerDiameter": 0.033008,
+        "outerDiameter": 0.034944,
+        "contactAngle": 30,
+        "filmMass": 0.0002,
+        "conversion": 0.0006,
+        "baseline": 85.6,
+        "gravity": 9.794
+      },
+      "line_integral_force_N": 0.0036975388319533077,
+      "reference_apparent_tension_N_m": 0.02649618215528627,
+      "max_absolute_error": 1.0408340855860843e-17
+    },
+    {
+      "parameters": {
+        "surfaceTension": 0.02,
+        "innerDiameter": 0.033008,
+        "outerDiameter": 0.034944,
+        "contactAngle": 60,
+        "filmMass": 0,
+        "conversion": 0.0002,
+        "baseline": 85.6,
+        "gravity": 9.794
+      },
+      "line_integral_force_N": 0.0021347750399673365,
+      "reference_apparent_tension_N_m": 0.01,
+      "max_absolute_error": 3.469446951953614e-18
+    },
+    {
+      "parameters": {
+        "surfaceTension": 0.02,
+        "innerDiameter": 0.033008,
+        "outerDiameter": 0.034944,
+        "contactAngle": 60,
+        "filmMass": 0,
+        "conversion": 0.0006,
+        "baseline": 85.6,
+        "gravity": 9.794
+      },
+      "line_integral_force_N": 0.0021347750399673365,
+      "reference_apparent_tension_N_m": 0.01,
+      "max_absolute_error": 1.734723475976807e-18
+    },
+    {
+      "parameters": {
+        "surfaceTension": 0.02,
+        "innerDiameter": 0.033008,
+        "outerDiameter": 0.034944,
+        "contactAngle": 60,
+        "filmMass": 0.0002,
+        "conversion": 0.0002,
+        "baseline": 85.6,
+        "gravity": 9.794
+      },
+      "line_integral_force_N": 0.0021347750399673365,
+      "reference_apparent_tension_N_m": 0.0191756740795975,
+      "max_absolute_error": 4.336808689942018e-19
+    },
+    {
+      "parameters": {
+        "surfaceTension": 0.02,
+        "innerDiameter": 0.033008,
+        "outerDiameter": 0.034944,
+        "contactAngle": 60,
+        "filmMass": 0.0002,
+        "conversion": 0.0006,
+        "baseline": 85.6,
+        "gravity": 9.794
+      },
+      "line_integral_force_N": 0.0021347750399673365,
+      "reference_apparent_tension_N_m": 0.0191756740795975,
+      "max_absolute_error": 6.938893903907228e-18
+    },
+    {
+      "parameters": {
+        "surfaceTension": 0.02,
+        "innerDiameter": 0.045,
+        "outerDiameter": 0.05,
+        "contactAngle": 0,
+        "filmMass": 0,
+        "conversion": 0.0002,
+        "baseline": 85.6,
+        "gravity": 9.794
+      },
+      "line_integral_force_N": 0.0059690260418206065,
+      "reference_apparent_tension_N_m": 0.02,
+      "max_absolute_error": 5.421010862427522e-20
+    },
+    {
+      "parameters": {
+        "surfaceTension": 0.02,
+        "innerDiameter": 0.045,
+        "outerDiameter": 0.05,
+        "contactAngle": 0,
+        "filmMass": 0,
+        "conversion": 0.0006,
+        "baseline": 85.6,
+        "gravity": 9.794
+      },
+      "line_integral_force_N": 0.0059690260418206065,
+      "reference_apparent_tension_N_m": 0.02,
+      "max_absolute_error": 3.469446951953614e-18
+    },
+    {
+      "parameters": {
+        "surfaceTension": 0.02,
+        "innerDiameter": 0.045,
+        "outerDiameter": 0.05,
+        "contactAngle": 0,
+        "filmMass": 0.0002,
+        "conversion": 0.0002,
+        "baseline": 85.6,
+        "gravity": 9.794
+      },
+      "line_integral_force_N": 0.0059690260418206065,
+      "reference_apparent_tension_N_m": 0.026563214790071676,
+      "max_absolute_error": 5.421010862427522e-20
+    },
+    {
+      "parameters": {
+        "surfaceTension": 0.02,
+        "innerDiameter": 0.045,
+        "outerDiameter": 0.05,
+        "contactAngle": 0,
+        "filmMass": 0.0002,
+        "conversion": 0.0006,
+        "baseline": 85.6,
+        "gravity": 9.794
+      },
+      "line_integral_force_N": 0.0059690260418206065,
+      "reference_apparent_tension_N_m": 0.026563214790071676,
+      "max_absolute_error": 6.938893903907228e-18
+    },
+    {
+      "parameters": {
+        "surfaceTension": 0.02,
+        "innerDiameter": 0.045,
+        "outerDiameter": 0.05,
+        "contactAngle": 30,
+        "filmMass": 0,
+        "conversion": 0.0002,
+        "baseline": 85.6,
+        "gravity": 9.794
+      },
+      "line_integral_force_N": 0.005169328188067521,
+      "reference_apparent_tension_N_m": 0.017320508075688773,
+      "max_absolute_error": 3.469446951953614e-18
+    },
+    {
+      "parameters": {
+        "surfaceTension": 0.02,
+        "innerDiameter": 0.045,
+        "outerDiameter": 0.05,
+        "contactAngle": 30,
+        "filmMass": 0,
+        "conversion": 0.0006,
+        "baseline": 85.6,
+        "gravity": 9.794
+      },
+      "line_integral_force_N": 0.005169328188067521,
+      "reference_apparent_tension_N_m": 0.017320508075688773,
+      "max_absolute_error": 1.3877787807814457e-17
+    },
+    {
+      "parameters": {
+        "surfaceTension": 0.02,
+        "innerDiameter": 0.045,
+        "outerDiameter": 0.05,
+        "contactAngle": 30,
+        "filmMass": 0.0002,
+        "conversion": 0.0002,
+        "baseline": 85.6,
+        "gravity": 9.794
+      },
+      "line_integral_force_N": 0.005169328188067521,
+      "reference_apparent_tension_N_m": 0.023883722865760453,
+      "max_absolute_error": 5.421010862427522e-20
+    },
+    {
+      "parameters": {
+        "surfaceTension": 0.02,
+        "innerDiameter": 0.045,
+        "outerDiameter": 0.05,
+        "contactAngle": 30,
+        "filmMass": 0.0002,
+        "conversion": 0.0006,
+        "baseline": 85.6,
+        "gravity": 9.794
+      },
+      "line_integral_force_N": 0.005169328188067521,
+      "reference_apparent_tension_N_m": 0.023883722865760453,
+      "max_absolute_error": 1.3877787807814457e-17
+    },
+    {
+      "parameters": {
+        "surfaceTension": 0.02,
+        "innerDiameter": 0.045,
+        "outerDiameter": 0.05,
+        "contactAngle": 60,
+        "filmMass": 0,
+        "conversion": 0.0002,
+        "baseline": 85.6,
+        "gravity": 9.794
+      },
+      "line_integral_force_N": 0.002984513020910304,
+      "reference_apparent_tension_N_m": 0.010000000000000004,
+      "max_absolute_error": 1.734723475976807e-18
+    },
+    {
+      "parameters": {
+        "surfaceTension": 0.02,
+        "innerDiameter": 0.045,
+        "outerDiameter": 0.05,
+        "contactAngle": 60,
+        "filmMass": 0,
+        "conversion": 0.0006,
+        "baseline": 85.6,
+        "gravity": 9.794
+      },
+      "line_integral_force_N": 0.002984513020910304,
+      "reference_apparent_tension_N_m": 0.010000000000000004,
+      "max_absolute_error": 8.673617379884035e-18
+    },
+    {
+      "parameters": {
+        "surfaceTension": 0.02,
+        "innerDiameter": 0.045,
+        "outerDiameter": 0.05,
+        "contactAngle": 60,
+        "filmMass": 0.0002,
+        "conversion": 0.0002,
+        "baseline": 85.6,
+        "gravity": 9.794
+      },
+      "line_integral_force_N": 0.002984513020910304,
+      "reference_apparent_tension_N_m": 0.016563214790071678,
+      "max_absolute_error": 5.421010862427522e-20
+    },
+    {
+      "parameters": {
+        "surfaceTension": 0.02,
+        "innerDiameter": 0.045,
+        "outerDiameter": 0.05,
+        "contactAngle": 60,
+        "filmMass": 0.0002,
+        "conversion": 0.0006,
+        "baseline": 85.6,
+        "gravity": 9.794
+      },
+      "line_integral_force_N": 0.002984513020910304,
+      "reference_apparent_tension_N_m": 0.016563214790071678,
+      "max_absolute_error": 1.0408340855860843e-17
+    },
+    {
+      "parameters": {
+        "surfaceTension": 0.0728,
+        "innerDiameter": 0.02,
+        "outerDiameter": 0.022,
+        "contactAngle": 0,
+        "filmMass": 0,
+        "conversion": 0.0002,
+        "baseline": 85.6,
+        "gravity": 9.794
+      },
+      "line_integral_force_N": 0.00960573369761615,
+      "reference_apparent_tension_N_m": 0.0728,
+      "max_absolute_error": 1.3877787807814457e-17
+    },
+    {
+      "parameters": {
+        "surfaceTension": 0.0728,
+        "innerDiameter": 0.02,
+        "outerDiameter": 0.022,
+        "contactAngle": 0,
+        "filmMass": 0,
+        "conversion": 0.0006,
+        "baseline": 85.6,
+        "gravity": 9.794
+      },
+      "line_integral_force_N": 0.00960573369761615,
+      "reference_apparent_tension_N_m": 0.0728,
+      "max_absolute_error": 3.2526065174565133e-19
+    },
+    {
+      "parameters": {
+        "surfaceTension": 0.0728,
+        "innerDiameter": 0.02,
+        "outerDiameter": 0.022,
+        "contactAngle": 0,
+        "filmMass": 0.0002,
+        "conversion": 0.0002,
+        "baseline": 85.6,
+        "gravity": 9.794
+      },
+      "line_integral_force_N": 0.00960573369761615,
+      "reference_apparent_tension_N_m": 0.08764536678706689,
+      "max_absolute_error": 5.421010862427522e-20
+    },
+    {
+      "parameters": {
+        "surfaceTension": 0.0728,
+        "innerDiameter": 0.02,
+        "outerDiameter": 0.022,
+        "contactAngle": 0,
+        "filmMass": 0.0002,
+        "conversion": 0.0006,
+        "baseline": 85.6,
+        "gravity": 9.794
+      },
+      "line_integral_force_N": 0.00960573369761615,
+      "reference_apparent_tension_N_m": 0.08764536678706689,
+      "max_absolute_error": 1.3877787807814457e-17
+    },
+    {
+      "parameters": {
+        "surfaceTension": 0.0728,
+        "innerDiameter": 0.02,
+        "outerDiameter": 0.022,
+        "contactAngle": 30,
+        "filmMass": 0,
+        "conversion": 0.0002,
+        "baseline": 85.6,
+        "gravity": 9.794
+      },
+      "line_integral_force_N": 0.008318809404123816,
+      "reference_apparent_tension_N_m": 0.06304664939550714,
+      "max_absolute_error": 1.3877787807814457e-17
+    },
+    {
+      "parameters": {
+        "surfaceTension": 0.0728,
+        "innerDiameter": 0.02,
+        "outerDiameter": 0.022,
+        "contactAngle": 30,
+        "filmMass": 0,
+        "conversion": 0.0006,
+        "baseline": 85.6,
+        "gravity": 9.794
+      },
+      "line_integral_force_N": 0.008318809404123816,
+      "reference_apparent_tension_N_m": 0.06304664939550714,
+      "max_absolute_error": 1.3877787807814457e-17
+    },
+    {
+      "parameters": {
+        "surfaceTension": 0.0728,
+        "innerDiameter": 0.02,
+        "outerDiameter": 0.022,
+        "contactAngle": 30,
+        "filmMass": 0.0002,
+        "conversion": 0.0002,
+        "baseline": 85.6,
+        "gravity": 9.794
+      },
+      "line_integral_force_N": 0.008318809404123816,
+      "reference_apparent_tension_N_m": 0.07789201618257403,
+      "max_absolute_error": 1.3877787807814457e-17
+    },
+    {
+      "parameters": {
+        "surfaceTension": 0.0728,
+        "innerDiameter": 0.02,
+        "outerDiameter": 0.022,
+        "contactAngle": 30,
+        "filmMass": 0.0002,
+        "conversion": 0.0006,
+        "baseline": 85.6,
+        "gravity": 9.794
+      },
+      "line_integral_force_N": 0.008318809404123816,
+      "reference_apparent_tension_N_m": 0.07789201618257403,
+      "max_absolute_error": 3.2526065174565133e-19
+    },
+    {
+      "parameters": {
+        "surfaceTension": 0.0728,
+        "innerDiameter": 0.02,
+        "outerDiameter": 0.022,
+        "contactAngle": 60,
+        "filmMass": 0,
+        "conversion": 0.0002,
+        "baseline": 85.6,
+        "gravity": 9.794
+      },
+      "line_integral_force_N": 0.004802866848808077,
+      "reference_apparent_tension_N_m": 0.036400000000000016,
+      "max_absolute_error": 8.673617379884035e-19
+    },
+    {
+      "parameters": {
+        "surfaceTension": 0.0728,
+        "innerDiameter": 0.02,
+        "outerDiameter": 0.022,
+        "contactAngle": 60,
+        "filmMass": 0,
+        "conversion": 0.0006,
+        "baseline": 85.6,
+        "gravity": 9.794
+      },
+      "line_integral_force_N": 0.004802866848808077,
+      "reference_apparent_tension_N_m": 0.036400000000000016,
+      "max_absolute_error": 2.0816681711721685e-17
+    },
+    {
+      "parameters": {
+        "surfaceTension": 0.0728,
+        "innerDiameter": 0.02,
+        "outerDiameter": 0.022,
+        "contactAngle": 60,
+        "filmMass": 0.0002,
+        "conversion": 0.0002,
+        "baseline": 85.6,
+        "gravity": 9.794
+      },
+      "line_integral_force_N": 0.004802866848808077,
+      "reference_apparent_tension_N_m": 0.051245366787066905,
+      "max_absolute_error": 6.938893903907228e-18
+    },
+    {
+      "parameters": {
+        "surfaceTension": 0.0728,
+        "innerDiameter": 0.02,
+        "outerDiameter": 0.022,
+        "contactAngle": 60,
+        "filmMass": 0.0002,
+        "conversion": 0.0006,
+        "baseline": 85.6,
+        "gravity": 9.794
+      },
+      "line_integral_force_N": 0.004802866848808077,
+      "reference_apparent_tension_N_m": 0.051245366787066905,
+      "max_absolute_error": 3.469446951953614e-17
+    },
+    {
+      "parameters": {
+        "surfaceTension": 0.0728,
+        "innerDiameter": 0.033008,
+        "outerDiameter": 0.034944,
+        "contactAngle": 0,
+        "filmMass": 0,
+        "conversion": 0.0002,
+        "baseline": 85.6,
+        "gravity": 9.794
+      },
+      "line_integral_force_N": 0.01554116229096221,
+      "reference_apparent_tension_N_m": 0.0728,
+      "max_absolute_error": 1.3877787807814457e-17
+    },
+    {
+      "parameters": {
+        "surfaceTension": 0.0728,
+        "innerDiameter": 0.033008,
+        "outerDiameter": 0.034944,
+        "contactAngle": 0,
+        "filmMass": 0,
+        "conversion": 0.0006,
+        "baseline": 85.6,
+        "gravity": 9.794
+      },
+      "line_integral_force_N": 0.01554116229096221,
+      "reference_apparent_tension_N_m": 0.0728,
+      "max_absolute_error": 1.3877787807814457e-17
+    },
+    {
+      "parameters": {
+        "surfaceTension": 0.0728,
+        "innerDiameter": 0.033008,
+        "outerDiameter": 0.034944,
+        "contactAngle": 0,
+        "filmMass": 0.0002,
+        "conversion": 0.0002,
+        "baseline": 85.6,
+        "gravity": 9.794
+      },
+      "line_integral_force_N": 0.01554116229096221,
+      "reference_apparent_tension_N_m": 0.0819756740795975,
+      "max_absolute_error": 1.3877787807814457e-17
+    },
+    {
+      "parameters": {
+        "surfaceTension": 0.0728,
+        "innerDiameter": 0.033008,
+        "outerDiameter": 0.034944,
+        "contactAngle": 0,
+        "filmMass": 0.0002,
+        "conversion": 0.0006,
+        "baseline": 85.6,
+        "gravity": 9.794
+      },
+      "line_integral_force_N": 0.01554116229096221,
+      "reference_apparent_tension_N_m": 0.0819756740795975,
+      "max_absolute_error": 1.3877787807814457e-17
+    },
+    {
+      "parameters": {
+        "surfaceTension": 0.0728,
+        "innerDiameter": 0.033008,
+        "outerDiameter": 0.034944,
+        "contactAngle": 30,
+        "filmMass": 0,
+        "conversion": 0.0002,
+        "baseline": 85.6,
+        "gravity": 9.794
+      },
+      "line_integral_force_N": 0.013459041348310042,
+      "reference_apparent_tension_N_m": 0.06304664939550715,
+      "max_absolute_error": 1.734723475976807e-18
+    },
+    {
+      "parameters": {
+        "surfaceTension": 0.0728,
+        "innerDiameter": 0.033008,
+        "outerDiameter": 0.034944,
+        "contactAngle": 30,
+        "filmMass": 0,
+        "conversion": 0.0006,
+        "baseline": 85.6,
+        "gravity": 9.794
+      },
+      "line_integral_force_N": 0.013459041348310042,
+      "reference_apparent_tension_N_m": 0.06304664939550715,
+      "max_absolute_error": 1.3877787807814457e-17
+    },
+    {
+      "parameters": {
+        "surfaceTension": 0.0728,
+        "innerDiameter": 0.033008,
+        "outerDiameter": 0.034944,
+        "contactAngle": 30,
+        "filmMass": 0.0002,
+        "conversion": 0.0002,
+        "baseline": 85.6,
+        "gravity": 9.794
+      },
+      "line_integral_force_N": 0.013459041348310042,
+      "reference_apparent_tension_N_m": 0.07222232347510464,
+      "max_absolute_error": 1.3877787807814457e-17
+    },
+    {
+      "parameters": {
+        "surfaceTension": 0.0728,
+        "innerDiameter": 0.033008,
+        "outerDiameter": 0.034944,
+        "contactAngle": 30,
+        "filmMass": 0.0002,
+        "conversion": 0.0006,
+        "baseline": 85.6,
+        "gravity": 9.794
+      },
+      "line_integral_force_N": 0.013459041348310042,
+      "reference_apparent_tension_N_m": 0.07222232347510464,
+      "max_absolute_error": 1.3877787807814457e-17
+    },
+    {
+      "parameters": {
+        "surfaceTension": 0.0728,
+        "innerDiameter": 0.033008,
+        "outerDiameter": 0.034944,
+        "contactAngle": 60,
+        "filmMass": 0,
+        "conversion": 0.0002,
+        "baseline": 85.6,
+        "gravity": 9.794
+      },
+      "line_integral_force_N": 0.007770581145481107,
+      "reference_apparent_tension_N_m": 0.03640000000000001,
+      "max_absolute_error": 6.938893903907228e-18
+    },
+    {
+      "parameters": {
+        "surfaceTension": 0.0728,
+        "innerDiameter": 0.033008,
+        "outerDiameter": 0.034944,
+        "contactAngle": 60,
+        "filmMass": 0,
+        "conversion": 0.0006,
+        "baseline": 85.6,
+        "gravity": 9.794
+      },
+      "line_integral_force_N": 0.007770581145481107,
+      "reference_apparent_tension_N_m": 0.03640000000000001,
+      "max_absolute_error": 1.3877787807814457e-17
+    },
+    {
+      "parameters": {
+        "surfaceTension": 0.0728,
+        "innerDiameter": 0.033008,
+        "outerDiameter": 0.034944,
+        "contactAngle": 60,
+        "filmMass": 0.0002,
+        "conversion": 0.0002,
+        "baseline": 85.6,
+        "gravity": 9.794
+      },
+      "line_integral_force_N": 0.007770581145481107,
+      "reference_apparent_tension_N_m": 0.045575674079597506,
+      "max_absolute_error": 6.938893903907228e-18
+    },
+    {
+      "parameters": {
+        "surfaceTension": 0.0728,
+        "innerDiameter": 0.033008,
+        "outerDiameter": 0.034944,
+        "contactAngle": 60,
+        "filmMass": 0.0002,
+        "conversion": 0.0006,
+        "baseline": 85.6,
+        "gravity": 9.794
+      },
+      "line_integral_force_N": 0.007770581145481107,
+      "reference_apparent_tension_N_m": 0.045575674079597506,
+      "max_absolute_error": 1.3877787807814457e-17
+    },
+    {
+      "parameters": {
+        "surfaceTension": 0.0728,
+        "innerDiameter": 0.045,
+        "outerDiameter": 0.05,
+        "contactAngle": 0,
+        "filmMass": 0,
+        "conversion": 0.0002,
+        "baseline": 85.6,
+        "gravity": 9.794
+      },
+      "line_integral_force_N": 0.021727254792227008,
+      "reference_apparent_tension_N_m": 0.0728,
+      "max_absolute_error": 5.421010862427522e-20
+    },
+    {
+      "parameters": {
+        "surfaceTension": 0.0728,
+        "innerDiameter": 0.045,
+        "outerDiameter": 0.05,
+        "contactAngle": 0,
+        "filmMass": 0,
+        "conversion": 0.0006,
+        "baseline": 85.6,
+        "gravity": 9.794
+      },
+      "line_integral_force_N": 0.021727254792227008,
+      "reference_apparent_tension_N_m": 0.0728,
+      "max_absolute_error": 3.2526065174565133e-19
+    },
+    {
+      "parameters": {
+        "surfaceTension": 0.0728,
+        "innerDiameter": 0.045,
+        "outerDiameter": 0.05,
+        "contactAngle": 0,
+        "filmMass": 0.0002,
+        "conversion": 0.0002,
+        "baseline": 85.6,
+        "gravity": 9.794
+      },
+      "line_integral_force_N": 0.021727254792227008,
+      "reference_apparent_tension_N_m": 0.07936321479007168,
+      "max_absolute_error": 1.3877787807814457e-17
+    },
+    {
+      "parameters": {
+        "surfaceTension": 0.0728,
+        "innerDiameter": 0.045,
+        "outerDiameter": 0.05,
+        "contactAngle": 0,
+        "filmMass": 0.0002,
+        "conversion": 0.0006,
+        "baseline": 85.6,
+        "gravity": 9.794
+      },
+      "line_integral_force_N": 0.021727254792227008,
+      "reference_apparent_tension_N_m": 0.07936321479007168,
+      "max_absolute_error": 3.2526065174565133e-19
+    },
+    {
+      "parameters": {
+        "surfaceTension": 0.0728,
+        "innerDiameter": 0.045,
+        "outerDiameter": 0.05,
+        "contactAngle": 30,
+        "filmMass": 0,
+        "conversion": 0.0002,
+        "baseline": 85.6,
+        "gravity": 9.794
+      },
+      "line_integral_force_N": 0.018816354604565773,
+      "reference_apparent_tension_N_m": 0.06304664939550712,
+      "max_absolute_error": 1.3877787807814457e-17
+    },
+    {
+      "parameters": {
+        "surfaceTension": 0.0728,
+        "innerDiameter": 0.045,
+        "outerDiameter": 0.05,
+        "contactAngle": 30,
+        "filmMass": 0,
+        "conversion": 0.0006,
+        "baseline": 85.6,
+        "gravity": 9.794
+      },
+      "line_integral_force_N": 0.018816354604565773,
+      "reference_apparent_tension_N_m": 0.06304664939550712,
+      "max_absolute_error": 1.3877787807814457e-17
+    },
+    {
+      "parameters": {
+        "surfaceTension": 0.0728,
+        "innerDiameter": 0.045,
+        "outerDiameter": 0.05,
+        "contactAngle": 30,
+        "filmMass": 0.0002,
+        "conversion": 0.0002,
+        "baseline": 85.6,
+        "gravity": 9.794
+      },
+      "line_integral_force_N": 0.018816354604565773,
+      "reference_apparent_tension_N_m": 0.06960986418557881,
+      "max_absolute_error": 1.3877787807814457e-17
+    },
+    {
+      "parameters": {
+        "surfaceTension": 0.0728,
+        "innerDiameter": 0.045,
+        "outerDiameter": 0.05,
+        "contactAngle": 30,
+        "filmMass": 0.0002,
+        "conversion": 0.0006,
+        "baseline": 85.6,
+        "gravity": 9.794
+      },
+      "line_integral_force_N": 0.018816354604565773,
+      "reference_apparent_tension_N_m": 0.06960986418557881,
+      "max_absolute_error": 1.3877787807814457e-17
+    },
+    {
+      "parameters": {
+        "surfaceTension": 0.0728,
+        "innerDiameter": 0.045,
+        "outerDiameter": 0.05,
+        "contactAngle": 60,
+        "filmMass": 0,
+        "conversion": 0.0002,
+        "baseline": 85.6,
+        "gravity": 9.794
+      },
+      "line_integral_force_N": 0.010863627396113507,
+      "reference_apparent_tension_N_m": 0.03640000000000001,
+      "max_absolute_error": 6.938893903907228e-18
+    },
+    {
+      "parameters": {
+        "surfaceTension": 0.0728,
+        "innerDiameter": 0.045,
+        "outerDiameter": 0.05,
+        "contactAngle": 60,
+        "filmMass": 0,
+        "conversion": 0.0006,
+        "baseline": 85.6,
+        "gravity": 9.794
+      },
+      "line_integral_force_N": 0.010863627396113507,
+      "reference_apparent_tension_N_m": 0.03640000000000001,
+      "max_absolute_error": 1.734723475976807e-18
+    },
+    {
+      "parameters": {
+        "surfaceTension": 0.0728,
+        "innerDiameter": 0.045,
+        "outerDiameter": 0.05,
+        "contactAngle": 60,
+        "filmMass": 0.0002,
+        "conversion": 0.0002,
+        "baseline": 85.6,
+        "gravity": 9.794
+      },
+      "line_integral_force_N": 0.010863627396113507,
+      "reference_apparent_tension_N_m": 0.04296321479007169,
+      "max_absolute_error": 6.938893903907228e-18
+    },
+    {
+      "parameters": {
+        "surfaceTension": 0.0728,
+        "innerDiameter": 0.045,
+        "outerDiameter": 0.05,
+        "contactAngle": 60,
+        "filmMass": 0.0002,
+        "conversion": 0.0006,
+        "baseline": 85.6,
+        "gravity": 9.794
+      },
+      "line_integral_force_N": 0.010863627396113507,
+      "reference_apparent_tension_N_m": 0.04296321479007169,
+      "max_absolute_error": 6.938893903907228e-18
+    },
+    {
+      "parameters": {
+        "surfaceTension": 0.08,
+        "innerDiameter": 0.02,
+        "outerDiameter": 0.022,
+        "contactAngle": 0,
+        "filmMass": 0,
+        "conversion": 0.0002,
+        "baseline": 85.6,
+        "gravity": 9.794
+      },
+      "line_integral_force_N": 0.010555751316061703,
+      "reference_apparent_tension_N_m": 0.08,
+      "max_absolute_error": 5.421010862427522e-20
+    },
+    {
+      "parameters": {
+        "surfaceTension": 0.08,
+        "innerDiameter": 0.02,
+        "outerDiameter": 0.022,
+        "contactAngle": 0,
+        "filmMass": 0,
+        "conversion": 0.0006,
+        "baseline": 85.6,
+        "gravity": 9.794
+      },
+      "line_integral_force_N": 0.010555751316061703,
+      "reference_apparent_tension_N_m": 0.08,
+      "max_absolute_error": 3.2526065174565133e-19
+    },
+    {
+      "parameters": {
+        "surfaceTension": 0.08,
+        "innerDiameter": 0.02,
+        "outerDiameter": 0.022,
+        "contactAngle": 0,
+        "filmMass": 0.0002,
+        "conversion": 0.0002,
+        "baseline": 85.6,
+        "gravity": 9.794
+      },
+      "line_integral_force_N": 0.010555751316061703,
+      "reference_apparent_tension_N_m": 0.09484536678706688,
+      "max_absolute_error": 1.3877787807814457e-17
+    },
+    {
+      "parameters": {
+        "surfaceTension": 0.08,
+        "innerDiameter": 0.02,
+        "outerDiameter": 0.022,
+        "contactAngle": 0,
+        "filmMass": 0.0002,
+        "conversion": 0.0006,
+        "baseline": 85.6,
+        "gravity": 9.794
+      },
+      "line_integral_force_N": 0.010555751316061703,
+      "reference_apparent_tension_N_m": 0.09484536678706688,
+      "max_absolute_error": 2.7755575615628914e-17
+    },
+    {
+      "parameters": {
+        "surfaceTension": 0.08,
+        "innerDiameter": 0.02,
+        "outerDiameter": 0.022,
+        "contactAngle": 30,
+        "filmMass": 0,
+        "conversion": 0.0002,
+        "baseline": 85.6,
+        "gravity": 9.794
+      },
+      "line_integral_force_N": 0.009141548795740459,
+      "reference_apparent_tension_N_m": 0.0692820323027551,
+      "max_absolute_error": 2.7755575615628914e-17
+    },
+    {
+      "parameters": {
+        "surfaceTension": 0.08,
+        "innerDiameter": 0.02,
+        "outerDiameter": 0.022,
+        "contactAngle": 30,
+        "filmMass": 0,
+        "conversion": 0.0006,
+        "baseline": 85.6,
+        "gravity": 9.794
+      },
+      "line_integral_force_N": 0.009141548795740459,
+      "reference_apparent_tension_N_m": 0.0692820323027551,
+      "max_absolute_error": 1.3877787807814457e-17
+    },
+    {
+      "parameters": {
+        "surfaceTension": 0.08,
+        "innerDiameter": 0.02,
+        "outerDiameter": 0.022,
+        "contactAngle": 30,
+        "filmMass": 0.0002,
+        "conversion": 0.0002,
+        "baseline": 85.6,
+        "gravity": 9.794
+      },
+      "line_integral_force_N": 0.009141548795740459,
+      "reference_apparent_tension_N_m": 0.084127399089822,
+      "max_absolute_error": 2.7755575615628914e-17
+    },
+    {
+      "parameters": {
+        "surfaceTension": 0.08,
+        "innerDiameter": 0.02,
+        "outerDiameter": 0.022,
+        "contactAngle": 30,
+        "filmMass": 0.0002,
+        "conversion": 0.0006,
+        "baseline": 85.6,
+        "gravity": 9.794
+      },
+      "line_integral_force_N": 0.009141548795740459,
+      "reference_apparent_tension_N_m": 0.084127399089822,
+      "max_absolute_error": 1.3877787807814457e-17
+    },
+    {
+      "parameters": {
+        "surfaceTension": 0.08,
+        "innerDiameter": 0.02,
+        "outerDiameter": 0.022,
+        "contactAngle": 60,
+        "filmMass": 0,
+        "conversion": 0.0002,
+        "baseline": 85.6,
+        "gravity": 9.794
+      },
+      "line_integral_force_N": 0.005277875658030853,
+      "reference_apparent_tension_N_m": 0.040000000000000015,
+      "max_absolute_error": 6.938893903907228e-18
+    },
+    {
+      "parameters": {
+        "surfaceTension": 0.08,
+        "innerDiameter": 0.02,
+        "outerDiameter": 0.022,
+        "contactAngle": 60,
+        "filmMass": 0,
+        "conversion": 0.0006,
+        "baseline": 85.6,
+        "gravity": 9.794
+      },
+      "line_integral_force_N": 0.005277875658030853,
+      "reference_apparent_tension_N_m": 0.040000000000000015,
+      "max_absolute_error": 4.163336342344337e-17
+    },
+    {
+      "parameters": {
+        "surfaceTension": 0.08,
+        "innerDiameter": 0.02,
+        "outerDiameter": 0.022,
+        "contactAngle": 60,
+        "filmMass": 0.0002,
+        "conversion": 0.0002,
+        "baseline": 85.6,
+        "gravity": 9.794
+      },
+      "line_integral_force_N": 0.005277875658030853,
+      "reference_apparent_tension_N_m": 0.054845366787066904,
+      "max_absolute_error": 2.0816681711721685e-17
+    },
+    {
+      "parameters": {
+        "surfaceTension": 0.08,
+        "innerDiameter": 0.02,
+        "outerDiameter": 0.022,
+        "contactAngle": 60,
+        "filmMass": 0.0002,
+        "conversion": 0.0006,
+        "baseline": 85.6,
+        "gravity": 9.794
+      },
+      "line_integral_force_N": 0.005277875658030853,
+      "reference_apparent_tension_N_m": 0.054845366787066904,
+      "max_absolute_error": 2.7755575615628914e-17
+    },
+    {
+      "parameters": {
+        "surfaceTension": 0.08,
+        "innerDiameter": 0.033008,
+        "outerDiameter": 0.034944,
+        "contactAngle": 0,
+        "filmMass": 0,
+        "conversion": 0.0002,
+        "baseline": 85.6,
+        "gravity": 9.794
+      },
+      "line_integral_force_N": 0.01707820031973869,
+      "reference_apparent_tension_N_m": 0.07999999999999999,
+      "max_absolute_error": 1.3877787807814457e-17
+    },
+    {
+      "parameters": {
+        "surfaceTension": 0.08,
+        "innerDiameter": 0.033008,
+        "outerDiameter": 0.034944,
+        "contactAngle": 0,
+        "filmMass": 0,
+        "conversion": 0.0006,
+        "baseline": 85.6,
+        "gravity": 9.794
+      },
+      "line_integral_force_N": 0.01707820031973869,
+      "reference_apparent_tension_N_m": 0.07999999999999999,
+      "max_absolute_error": 2.7755575615628914e-17
+    },
+    {
+      "parameters": {
+        "surfaceTension": 0.08,
+        "innerDiameter": 0.033008,
+        "outerDiameter": 0.034944,
+        "contactAngle": 0,
+        "filmMass": 0.0002,
+        "conversion": 0.0002,
+        "baseline": 85.6,
+        "gravity": 9.794
+      },
+      "line_integral_force_N": 0.01707820031973869,
+      "reference_apparent_tension_N_m": 0.08917567407959748,
+      "max_absolute_error": 3.469446951953614e-18
+    },
+    {
+      "parameters": {
+        "surfaceTension": 0.08,
+        "innerDiameter": 0.033008,
+        "outerDiameter": 0.034944,
+        "contactAngle": 0,
+        "filmMass": 0.0002,
+        "conversion": 0.0006,
+        "baseline": 85.6,
+        "gravity": 9.794
+      },
+      "line_integral_force_N": 0.01707820031973869,
+      "reference_apparent_tension_N_m": 0.08917567407959748,
+      "max_absolute_error": 1.3877787807814457e-17
+    },
+    {
+      "parameters": {
+        "surfaceTension": 0.08,
+        "innerDiameter": 0.033008,
+        "outerDiameter": 0.034944,
+        "contactAngle": 30,
+        "filmMass": 0,
+        "conversion": 0.0002,
+        "baseline": 85.6,
+        "gravity": 9.794
+      },
+      "line_integral_force_N": 0.01479015532781323,
+      "reference_apparent_tension_N_m": 0.06928203230275509,
+      "max_absolute_error": 1.3877787807814457e-17
+    },
+    {
+      "parameters": {
+        "surfaceTension": 0.08,
+        "innerDiameter": 0.033008,
+        "outerDiameter": 0.034944,
+        "contactAngle": 30,
+        "filmMass": 0,
+        "conversion": 0.0006,
+        "baseline": 85.6,
+        "gravity": 9.794
+      },
+      "line_integral_force_N": 0.01479015532781323,
+      "reference_apparent_tension_N_m": 0.06928203230275509,
+      "max_absolute_error": 3.2526065174565133e-19
+    },
+    {
+      "parameters": {
+        "surfaceTension": 0.08,
+        "innerDiameter": 0.033008,
+        "outerDiameter": 0.034944,
+        "contactAngle": 30,
+        "filmMass": 0.0002,
+        "conversion": 0.0002,
+        "baseline": 85.6,
+        "gravity": 9.794
+      },
+      "line_integral_force_N": 0.01479015532781323,
+      "reference_apparent_tension_N_m": 0.0784577063823526,
+      "max_absolute_error": 5.421010862427522e-20
+    },
+    {
+      "parameters": {
+        "surfaceTension": 0.08,
+        "innerDiameter": 0.033008,
+        "outerDiameter": 0.034944,
+        "contactAngle": 30,
+        "filmMass": 0.0002,
+        "conversion": 0.0006,
+        "baseline": 85.6,
+        "gravity": 9.794
+      },
+      "line_integral_force_N": 0.01479015532781323,
+      "reference_apparent_tension_N_m": 0.0784577063823526,
+      "max_absolute_error": 1.3877787807814457e-17
+    },
+    {
+      "parameters": {
+        "surfaceTension": 0.08,
+        "innerDiameter": 0.033008,
+        "outerDiameter": 0.034944,
+        "contactAngle": 60,
+        "filmMass": 0,
+        "conversion": 0.0002,
+        "baseline": 85.6,
+        "gravity": 9.794
+      },
+      "line_integral_force_N": 0.008539100159869346,
+      "reference_apparent_tension_N_m": 0.04,
+      "max_absolute_error": 1.3877787807814457e-17
+    },
+    {
+      "parameters": {
+        "surfaceTension": 0.08,
+        "innerDiameter": 0.033008,
+        "outerDiameter": 0.034944,
+        "contactAngle": 60,
+        "filmMass": 0,
+        "conversion": 0.0006,
+        "baseline": 85.6,
+        "gravity": 9.794
+      },
+      "line_integral_force_N": 0.008539100159869346,
+      "reference_apparent_tension_N_m": 0.04,
+      "max_absolute_error": 6.938893903907228e-18
+    },
+    {
+      "parameters": {
+        "surfaceTension": 0.08,
+        "innerDiameter": 0.033008,
+        "outerDiameter": 0.034944,
+        "contactAngle": 60,
+        "filmMass": 0.0002,
+        "conversion": 0.0002,
+        "baseline": 85.6,
+        "gravity": 9.794
+      },
+      "line_integral_force_N": 0.008539100159869346,
+      "reference_apparent_tension_N_m": 0.0491756740795975,
+      "max_absolute_error": 1.734723475976807e-18
+    },
+    {
+      "parameters": {
+        "surfaceTension": 0.08,
+        "innerDiameter": 0.033008,
+        "outerDiameter": 0.034944,
+        "contactAngle": 60,
+        "filmMass": 0.0002,
+        "conversion": 0.0006,
+        "baseline": 85.6,
+        "gravity": 9.794
+      },
+      "line_integral_force_N": 0.008539100159869346,
+      "reference_apparent_tension_N_m": 0.0491756740795975,
+      "max_absolute_error": 2.0816681711721685e-17
+    },
+    {
+      "parameters": {
+        "surfaceTension": 0.08,
+        "innerDiameter": 0.045,
+        "outerDiameter": 0.05,
+        "contactAngle": 0,
+        "filmMass": 0,
+        "conversion": 0.0002,
+        "baseline": 85.6,
+        "gravity": 9.794
+      },
+      "line_integral_force_N": 0.023876104167282426,
+      "reference_apparent_tension_N_m": 0.08,
+      "max_absolute_error": 5.421010862427522e-20
+    },
+    {
+      "parameters": {
+        "surfaceTension": 0.08,
+        "innerDiameter": 0.045,
+        "outerDiameter": 0.05,
+        "contactAngle": 0,
+        "filmMass": 0,
+        "conversion": 0.0006,
+        "baseline": 85.6,
+        "gravity": 9.794
+      },
+      "line_integral_force_N": 0.023876104167282426,
+      "reference_apparent_tension_N_m": 0.08,
+      "max_absolute_error": 1.3877787807814457e-17
+    },
+    {
+      "parameters": {
+        "surfaceTension": 0.08,
+        "innerDiameter": 0.045,
+        "outerDiameter": 0.05,
+        "contactAngle": 0,
+        "filmMass": 0.0002,
+        "conversion": 0.0002,
+        "baseline": 85.6,
+        "gravity": 9.794
+      },
+      "line_integral_force_N": 0.023876104167282426,
+      "reference_apparent_tension_N_m": 0.08656321479007167,
+      "max_absolute_error": 1.3877787807814457e-17
+    },
+    {
+      "parameters": {
+        "surfaceTension": 0.08,
+        "innerDiameter": 0.045,
+        "outerDiameter": 0.05,
+        "contactAngle": 0,
+        "filmMass": 0.0002,
+        "conversion": 0.0006,
+        "baseline": 85.6,
+        "gravity": 9.794
+      },
+      "line_integral_force_N": 0.023876104167282426,
+      "reference_apparent_tension_N_m": 0.08656321479007167,
+      "max_absolute_error": 3.2526065174565133e-19
+    },
+    {
+      "parameters": {
+        "surfaceTension": 0.08,
+        "innerDiameter": 0.045,
+        "outerDiameter": 0.05,
+        "contactAngle": 30,
+        "filmMass": 0,
+        "conversion": 0.0002,
+        "baseline": 85.6,
+        "gravity": 9.794
+      },
+      "line_integral_force_N": 0.020677312752270083,
+      "reference_apparent_tension_N_m": 0.06928203230275509,
+      "max_absolute_error": 5.421010862427522e-20
+    },
+    {
+      "parameters": {
+        "surfaceTension": 0.08,
+        "innerDiameter": 0.045,
+        "outerDiameter": 0.05,
+        "contactAngle": 30,
+        "filmMass": 0,
+        "conversion": 0.0006,
+        "baseline": 85.6,
+        "gravity": 9.794
+      },
+      "line_integral_force_N": 0.020677312752270083,
+      "reference_apparent_tension_N_m": 0.06928203230275509,
+      "max_absolute_error": 3.2526065174565133e-19
+    },
+    {
+      "parameters": {
+        "surfaceTension": 0.08,
+        "innerDiameter": 0.045,
+        "outerDiameter": 0.05,
+        "contactAngle": 30,
+        "filmMass": 0.0002,
+        "conversion": 0.0002,
+        "baseline": 85.6,
+        "gravity": 9.794
+      },
+      "line_integral_force_N": 0.020677312752270083,
+      "reference_apparent_tension_N_m": 0.07584524709282678,
+      "max_absolute_error": 5.421010862427522e-20
+    },
+    {
+      "parameters": {
+        "surfaceTension": 0.08,
+        "innerDiameter": 0.045,
+        "outerDiameter": 0.05,
+        "contactAngle": 30,
+        "filmMass": 0.0002,
+        "conversion": 0.0006,
+        "baseline": 85.6,
+        "gravity": 9.794
+      },
+      "line_integral_force_N": 0.020677312752270083,
+      "reference_apparent_tension_N_m": 0.07584524709282678,
+      "max_absolute_error": 1.3877787807814457e-17
+    },
+    {
+      "parameters": {
+        "surfaceTension": 0.08,
+        "innerDiameter": 0.045,
+        "outerDiameter": 0.05,
+        "contactAngle": 60,
+        "filmMass": 0,
+        "conversion": 0.0002,
+        "baseline": 85.6,
+        "gravity": 9.794
+      },
+      "line_integral_force_N": 0.011938052083641217,
+      "reference_apparent_tension_N_m": 0.040000000000000015,
+      "max_absolute_error": 1.3877787807814457e-17
+    },
+    {
+      "parameters": {
+        "surfaceTension": 0.08,
+        "innerDiameter": 0.045,
+        "outerDiameter": 0.05,
+        "contactAngle": 60,
+        "filmMass": 0,
+        "conversion": 0.0006,
+        "baseline": 85.6,
+        "gravity": 9.794
+      },
+      "line_integral_force_N": 0.011938052083641217,
+      "reference_apparent_tension_N_m": 0.040000000000000015,
+      "max_absolute_error": 2.0816681711721685e-17
+    },
+    {
+      "parameters": {
+        "surfaceTension": 0.08,
+        "innerDiameter": 0.045,
+        "outerDiameter": 0.05,
+        "contactAngle": 60,
+        "filmMass": 0.0002,
+        "conversion": 0.0002,
+        "baseline": 85.6,
+        "gravity": 9.794
+      },
+      "line_integral_force_N": 0.011938052083641217,
+      "reference_apparent_tension_N_m": 0.04656321479007169,
+      "max_absolute_error": 5.421010862427522e-20
+    },
+    {
+      "parameters": {
+        "surfaceTension": 0.08,
+        "innerDiameter": 0.045,
+        "outerDiameter": 0.05,
+        "contactAngle": 60,
+        "filmMass": 0.0002,
+        "conversion": 0.0006,
+        "baseline": 85.6,
+        "gravity": 9.794
+      },
+      "line_integral_force_N": 0.011938052083641217,
+      "reference_apparent_tension_N_m": 0.04656321479007169,
+      "max_absolute_error": 6.938893903907228e-18
+    }
+  ]
+}

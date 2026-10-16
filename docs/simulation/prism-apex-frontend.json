@@ -1,0 +1,200 @@
+{
+  "status": "passed",
+  "source_hashes": {
+    "simulations/prism-apex/angles.mjs": "b25e2fa4341846209d68acaed83cf06b40c0b3902af9fbdaa94d8cdbb92796eb",
+    "simulations/prism-apex/app.mjs": "ca0545855a658438a65a123c5920ebe746e9a1144d21fb151ab64ba8dd2ea7ca",
+    "simulations/prism-apex/chart.mjs": "2cf283ea545418aed75f6175e6feb7c82983f7ed523e6b0ffb0e0723fcf1b5d7",
+    "simulations/prism-apex/index.html": "f890dc2724d897f0de1ad728c0d93f6c12513efbe9ac5a1773bef559b7713e51",
+    "simulations/prism-apex/lab.css": "f09f3aa9916b0574f112d367ac0e713575f0e59ad9f239ee81e452953681e20c",
+    "simulations/prism-apex/model.mjs": "352b74e91b7aee7996355f22806249bb9040c010ebf305881cc7d4b994bb7df1",
+    "simulations/prism-apex/observations.json": "aae96c31e86190407abd4e66cf52979285f835a71ad2ab0b5ea06167fcfa5a95"
+  },
+  "source_record_sha256": "9a118132647588fcb5c4f064b21485601c2a6fad38a3e3df27f91be1ef31ffac",
+  "interaction_checks": 4,
+  "visual_status": "passed",
+  "exports_status": "passed",
+  "exports": [
+    {
+      "filename": "prism-apex-prism-apex-experiment.json",
+      "sha256": "3e63d1170ee3aad32fe5ac7665bbb40ccd26c2c2c9ab0b850d7ea88127d70fbf",
+      "bytes": 4281
+    },
+    {
+      "filename": "prism-apex-prism-apex-records.csv",
+      "sha256": "2101f1edd01eef650b3fd988112213d1797faa716d4a17ef412498663440cea1",
+      "bytes": 783
+    }
+  ],
+  "fonts": {
+    "h1": {
+      "fonts": [
+        {
+          "familyName": "SimSun",
+          "postScriptName": "SimSun",
+          "isCustomFont": false,
+          "glyphCount": 8
+        }
+      ]
+    },
+    "#count": {
+      "fonts": [
+        {
+          "familyName": "Times New Roman",
+          "postScriptName": "TimesNewRomanPSMT",
+          "isCustomFont": false,
+          "glyphCount": 1
+        }
+      ]
+    }
+  },
+  "browser": null,
+  "layout": {
+    "mobile": {
+      "width": 390,
+      "scrollWidth": 390,
+      "mathErrors": 0,
+      "mathObjects": 4
+    }
+  },
+  "interaction": [
+    {
+      "name": "两反射夹角顶角反演",
+      "status": "passed"
+    },
+    {
+      "name": "顶角变更",
+      "status": "passed"
+    },
+    {
+      "name": "跨零与偏心抵消",
+      "status": "passed"
+    },
+    {
+      "name": "真实双格式导出与刷新恢复",
+      "status": "passed"
+    }
+  ],
+  "background": {
+    "status": "not-applicable"
+  },
+  "checked_at_utc": null,
+  "screenshots": [
+    {
+      "path": "docs/assets/simulations/prism-apex/frontend-01-044cc115e677.png",
+      "sha256": "044cc115e6772730dcb56e6e7c17a1e2ebd1e4c58f0cf598b95ba0ac4c0557d1"
+    },
+    {
+      "path": "docs/assets/simulations/prism-apex/frontend-02-d428aa311bed.png",
+      "sha256": "d428aa311bed26bcac2974c3baa6344434a07bcf9d84d71dc0a81a5ff00ff7a4"
+    },
+    {
+      "path": "docs/assets/simulations/prism-apex/frontend-03-8bfcad95b7f6.png",
+      "sha256": "8bfcad95b7f6aacd800e1e4dcaea7c283cc7dde1f4a10614797e042647934617"
+    },
+    {
+      "path": "docs/assets/simulations/prism-apex/frontend-04-4933f3b17b32.png",
+      "sha256": "4933f3b17b321600c891bdba1277eeb8e6c828b4d5869fddd5bb4793741e83a8"
+    },
+    {
+      "path": "docs/assets/simulations/prism-apex/frontend-05-1e6c7d75d076.png",
+      "sha256": "1e6c7d75d0766a2b140050b33acaa7149d13bbe53e8844f31014e33a68d133e4"
+    },
+    {
+      "path": "docs/assets/simulations/prism-apex/frontend-06-aa66a521a72f.png",
+      "sha256": "aa66a521a72f6f09b6ba03f76925c012e56b6296b5c77f6d2f9571c56e09142b"
+    }
+  ],
+  "schema_version": 1,
+  "experiment_id": "course-04/prism-apex",
+  "numerical": {
+    "status": "passed",
+    "reference_sha256": "e35a5b954c02daa01a61e1f6122dbdffe5facd439a96f5e47304f42531aecce6",
+    "source_files": {
+      "simulations/prism-apex/index.html": "f890dc2724d897f0de1ad728c0d93f6c12513efbe9ac5a1773bef559b7713e51",
+      "simulations/prism-apex/model.mjs": "352b74e91b7aee7996355f22806249bb9040c010ebf305881cc7d4b994bb7df1",
+      "simulations/prism-apex/app.mjs": "ca0545855a658438a65a123c5920ebe746e9a1144d21fb151ab64ba8dd2ea7ca",
+      "simulations/prism-apex/chart.mjs": "2cf283ea545418aed75f6175e6feb7c82983f7ed523e6b0ffb0e0723fcf1b5d7",
+      "simulations/prism-apex/lab.css": "f09f3aa9916b0574f112d367ac0e713575f0e59ad9f239ee81e452953681e20c",
+      "simulations/prism-apex/observations.json": "aae96c31e86190407abd4e66cf52979285f835a71ad2ab0b5ea06167fcfa5a95",
+      "docs/prism-apex-model-evidence.md": "a3a34251c74e85059bfb9ca99d652079b1779c98da0eddb4c41ef94196a640f9",
+      "docs/prism-apex-references.json": "8f3c410c88a2a0828937e4ba6c31add78b0003ca8f410413eef020c99642625c",
+      "docs/prism-apex-references.bib": "78e68c9698ae68fb02d22a09ae598da3931e5824d51489023e3d5997a3270308",
+      "docs/simulation/prism-apex-reference.json": "f4b7f638a32e8268016f317074d6017505390bc054046ddf52cdec7c73669ae6",
+      "simulations/prism-apex/angles.mjs": "b25e2fa4341846209d68acaed83cf06b40c0b3902af9fbdaa94d8cdbb92796eb",
+      "scripts/validate_prism_apex_simulation.py": "ff90ca0e9aed8572e32b5ff3db81d604217a53a5b9ff18f2d54bbd36bc9458f8",
+      "tests/prism-apex-model.test.mjs": "619f4bcbd2fcb64cf4c551b841ad4ee8554dbb2409bec4b7f6253c20e12bfd1a"
+    }
+  },
+  "scientific_evidence": {
+    "status": "verified",
+    "decision_source_files": {
+      "docs/prism-apex-references.json": "8f3c410c88a2a0828937e4ba6c31add78b0003ca8f410413eef020c99642625c",
+      "docs/prism-apex-model-evidence.md": "a3a34251c74e85059bfb9ca99d652079b1779c98da0eddb4c41ef94196a640f9",
+      "simulations/prism-apex/model.mjs": "352b74e91b7aee7996355f22806249bb9040c010ebf305881cc7d4b994bb7df1"
+    },
+    "core_references": [
+      {
+        "id": "Liu2023PrismReflection",
+        "pdf_sha256": "2748aeae8ba44315befccfa12327d144396d1b455fdd1c566a53a2e3547a430f",
+        "locators": [
+          {
+            "printed_pages": "77",
+            "pdf_pages": [
+              1
+            ],
+            "location": "引言",
+            "role": "区分自准直法与反射法"
+          },
+          {
+            "printed_pages": "78-79",
+            "pdf_pages": [
+              2,
+              3
+            ],
+            "location": "第2节、图2及其讨论",
+            "role": "同一平行入射束照射两个棱镜面，分别观察反射狭缝像；顶角近平台中心的放置条件"
+          },
+          {
+            "printed_pages": "78",
+            "pdf_pages": [
+              2
+            ],
+            "location": "第1节、图1",
+            "role": "实物调节及轴线/视场说明，未纳入本页二维模型"
+          }
+        ]
+      },
+      {
+        "id": "Xu2009GrazingLiquid",
+        "pdf_sha256": "83cc52f7c48626a224c2e0320391e91f8b414678a3e5706fe3ee4ac711d49b21",
+        "locators": [
+          {
+            "printed_pages": "9-10",
+            "pdf_pages": [
+              1,
+              2
+            ],
+            "location": "第1节、图1-2、式1-3",
+            "role": "液体至已知棱镜再出射空气的掠射光路与两面折射关系"
+          },
+          {
+            "printed_pages": "11",
+            "pdf_pages": [
+              3
+            ],
+            "location": "式4-7及直角特例",
+            "role": "一般顶角两支向与90度极限；核查式7漏根"
+          },
+          {
+            "printed_pages": "11",
+            "pdf_pages": [
+              3
+            ],
+            "location": "第2节步骤3-4、式8",
+            "role": "分别测出射边界/法线两游标，以两个方位差平均求出射角"
+          }
+        ]
+      }
+    ]
+  }
+}

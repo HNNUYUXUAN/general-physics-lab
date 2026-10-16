@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "experiment": "course-02/moment-of-inertia",
+  "source_files": [
+    {
+      "path": "experiments/course-02/moment-of-inertia/experiment.json",
+      "sha256": "d28e05a04330c09b19b005b1ddba09bb73d79277f63f755c8a628bd09d5ebdcb"
+    },
+    {
+      "path": "experiments/course-02/moment-of-inertia/data/geometry.csv",
+      "sha256": "cea47a12417539715cff60fa5fabece68ecb2bea5fd9fb2d10b2ce3bac4f1dda"
+    },
+    {
+      "path": "experiments/course-02/moment-of-inertia/data/provenance.json",
+      "sha256": "df6383ad6944f2bcf5b7c20ad8b6d939981a3096921e693120fea32f34d07c76"
+    }
+  ],
+  "beta_rows": [
+    {
+      "label": "平台减速",
+      "values": [
+        -0.1094,
+        -0.0907,
+        -0.1292,
+        -0.1014
+      ],
+      "mean": -0.107675
+    },
+    {
+      "label": "平台加速",
+      "values": [
+        1.7936,
+        2.1754,
+        2.1719,
+        2.1643
+      ],
+      "mean": 2.0763
+    },
+    {
+      "label": "平台＋环减速",
+      "values": [
+        -0.1169,
+        -0.0776,
+        -0.0719,
+        -0.0725
+      ],
+      "mean": -0.08472500000000001
+    },
+    {
+      "label": "平台＋环加速",
+      "values": [
+        1.163,
+        1.168,
+        1.1703,
+        1.1695
+      ],
+      "mean": 1.1677
+    },
+    {
+      "label": "平台＋两柱减速",
+      "values": [
+        -0.0911,
+        -0.0807,
+        -0.0749,
+        -0.0757
+      ],
+      "mean": -0.0806
+    },
+    {
+      "label": "平台＋两柱加速",
+      "values": [
+        1.3803,
+        1.3813,
+        1.3794,
+        1.3722
+      ],
+      "mean": 1.3783
+    }
+  ],
+  "ring_from_reported": 0.0042060000000000005,
+  "ring_geometry": 0.005542649999999999,
+  "cylinder_from_reported": 0.0014050000000000004,
+  "cylinder_geometry": 0.0016786750000000003,
+  "identity": "source intermediate beta and reported total inertia; raw timestamps and hanging mass absent"
+}

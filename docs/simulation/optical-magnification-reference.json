@@ -1,0 +1,498 @@
+{
+  "experiment_id": "course-04/optical-magnification",
+  "status": "passed",
+  "created_at": "2026-10-16T14:41:55.289082+00:00",
+  "environment": {
+    "python": "3.14.7",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1"
+  },
+  "model_sha256": "243764caac58dd1e774fe6c029e93391a1b5be53f1b58eb5b547f666fd860f33",
+  "input_hashes": {
+    "experiments/course-04/optical-magnification/experiment.json": "870a15f86edde443ffc2050290cd93be02fdcb0b8da55fd769ee30e19355e1dc",
+    "experiments/course-04/optical-magnification/data/provenance.json": "c42eb97a2bbc00829334098c77b70aa0c66ecd27614776201f8821d79ddf68a8",
+    "experiments/course-04/optical-magnification/data/observations-01.csv": "2415039af2bc40ecfc6eef74c30b475f9a17e462e582260d265ef8227069b922",
+    "experiments/course-04/optical-magnification/data/observations-02.csv": "019dbb578851c09e83adae2d80c56a5d8c6a15216f97d2e9d471175e8ee776d8",
+    "experiments/course-04/optical-magnification/data/observations-03.csv": "7dfe7134a5466be8a7fef3592524c2a8cee5ba0f15f18dd4daca02aacbef963c",
+    "experiments/course-04/optical-magnification/data/observations-04.csv": "1aae8cae0d373254cb8747fa6bdb3c347ccc525be1dcb0eee07e37e3d35f9acf"
+  },
+  "methods": [
+    "ABCD ray-transfer matrix B=0 solved by brentq",
+    "image magnification from independent ABCD A element",
+    "afocal two-lens telescope angular magnification from ABCD D element",
+    "original L/S calibration followed by common mean scale propagation"
+  ],
+  "case_count": 36,
+  "cases": [
+    {
+      "parameters": {
+        "focal_mm": 10,
+        "object_ratio": 1.1,
+        "eyepiece_pitch_mm": 0.05,
+        "wire_width_mm": 0.05,
+        "telescope_objective_mm": 200,
+        "telescope_eyepiece_mm": 40
+      },
+      "image_distance_mm": 110.0,
+      "magnification": 10.0,
+      "scale_mm_div": 0.005
+    },
+    {
+      "parameters": {
+        "focal_mm": 10,
+        "object_ratio": 1.1,
+        "eyepiece_pitch_mm": 0.1,
+        "wire_width_mm": 0.05,
+        "telescope_objective_mm": 200,
+        "telescope_eyepiece_mm": 40
+      },
+      "image_distance_mm": 110.0,
+      "magnification": 10.0,
+      "scale_mm_div": 0.01
+    },
+    {
+      "parameters": {
+        "focal_mm": 10,
+        "object_ratio": 1.1,
+        "eyepiece_pitch_mm": 0.2,
+        "wire_width_mm": 0.05,
+        "telescope_objective_mm": 200,
+        "telescope_eyepiece_mm": 40
+      },
+      "image_distance_mm": 110.0,
+      "magnification": 10.0,
+      "scale_mm_div": 0.02
+    },
+    {
+      "parameters": {
+        "focal_mm": 10,
+        "object_ratio": 1.2,
+        "eyepiece_pitch_mm": 0.05,
+        "wire_width_mm": 0.05,
+        "telescope_objective_mm": 200,
+        "telescope_eyepiece_mm": 40
+      },
+      "image_distance_mm": 60.0,
+      "magnification": 5.0,
+      "scale_mm_div": 0.01
+    },
+    {
+      "parameters": {
+        "focal_mm": 10,
+        "object_ratio": 1.2,
+        "eyepiece_pitch_mm": 0.1,
+        "wire_width_mm": 0.05,
+        "telescope_objective_mm": 200,
+        "telescope_eyepiece_mm": 40
+      },
+      "image_distance_mm": 60.0,
+      "magnification": 5.0,
+      "scale_mm_div": 0.02
+    },
+    {
+      "parameters": {
+        "focal_mm": 10,
+        "object_ratio": 1.2,
+        "eyepiece_pitch_mm": 0.2,
+        "wire_width_mm": 0.05,
+        "telescope_objective_mm": 200,
+        "telescope_eyepiece_mm": 40
+      },
+      "image_distance_mm": 60.0,
+      "magnification": 5.0,
+      "scale_mm_div": 0.04
+    },
+    {
+      "parameters": {
+        "focal_mm": 10,
+        "object_ratio": 1.5,
+        "eyepiece_pitch_mm": 0.05,
+        "wire_width_mm": 0.05,
+        "telescope_objective_mm": 200,
+        "telescope_eyepiece_mm": 40
+      },
+      "image_distance_mm": 30.0,
+      "magnification": 2.0,
+      "scale_mm_div": 0.025
+    },
+    {
+      "parameters": {
+        "focal_mm": 10,
+        "object_ratio": 1.5,
+        "eyepiece_pitch_mm": 0.1,
+        "wire_width_mm": 0.05,
+        "telescope_objective_mm": 200,
+        "telescope_eyepiece_mm": 40
+      },
+      "image_distance_mm": 30.0,
+      "magnification": 2.0,
+      "scale_mm_div": 0.05
+    },
+    {
+      "parameters": {
+        "focal_mm": 10,
+        "object_ratio": 1.5,
+        "eyepiece_pitch_mm": 0.2,
+        "wire_width_mm": 0.05,
+        "telescope_objective_mm": 200,
+        "telescope_eyepiece_mm": 40
+      },
+      "image_distance_mm": 30.0,
+      "magnification": 2.0,
+      "scale_mm_div": 0.1
+    },
+    {
+      "parameters": {
+        "focal_mm": 20,
+        "object_ratio": 1.1,
+        "eyepiece_pitch_mm": 0.05,
+        "wire_width_mm": 0.05,
+        "telescope_objective_mm": 200,
+        "telescope_eyepiece_mm": 40
+      },
+      "image_distance_mm": 220.0,
+      "magnification": 10.0,
+      "scale_mm_div": 0.005
+    },
+    {
+      "parameters": {
+        "focal_mm": 20,
+        "object_ratio": 1.1,
+        "eyepiece_pitch_mm": 0.1,
+        "wire_width_mm": 0.05,
+        "telescope_objective_mm": 200,
+        "telescope_eyepiece_mm": 40
+      },
+      "image_distance_mm": 220.0,
+      "magnification": 10.0,
+      "scale_mm_div": 0.01
+    },
+    {
+      "parameters": {
+        "focal_mm": 20,
+        "object_ratio": 1.1,
+        "eyepiece_pitch_mm": 0.2,
+        "wire_width_mm": 0.05,
+        "telescope_objective_mm": 200,
+        "telescope_eyepiece_mm": 40
+      },
+      "image_distance_mm": 220.0,
+      "magnification": 10.0,
+      "scale_mm_div": 0.02
+    },
+    {
+      "parameters": {
+        "focal_mm": 20,
+        "object_ratio": 1.2,
+        "eyepiece_pitch_mm": 0.05,
+        "wire_width_mm": 0.05,
+        "telescope_objective_mm": 200,
+        "telescope_eyepiece_mm": 40
+      },
+      "image_distance_mm": 120.0,
+      "magnification": 5.0,
+      "scale_mm_div": 0.01
+    },
+    {
+      "parameters": {
+        "focal_mm": 20,
+        "object_ratio": 1.2,
+        "eyepiece_pitch_mm": 0.1,
+        "wire_width_mm": 0.05,
+        "telescope_objective_mm": 200,
+        "telescope_eyepiece_mm": 40
+      },
+      "image_distance_mm": 120.0,
+      "magnification": 5.0,
+      "scale_mm_div": 0.02
+    },
+    {
+      "parameters": {
+        "focal_mm": 20,
+        "object_ratio": 1.2,
+        "eyepiece_pitch_mm": 0.2,
+        "wire_width_mm": 0.05,
+        "telescope_objective_mm": 200,
+        "telescope_eyepiece_mm": 40
+      },
+      "image_distance_mm": 120.0,
+      "magnification": 5.0,
+      "scale_mm_div": 0.04
+    },
+    {
+      "parameters": {
+        "focal_mm": 20,
+        "object_ratio": 1.5,
+        "eyepiece_pitch_mm": 0.05,
+        "wire_width_mm": 0.05,
+        "telescope_objective_mm": 200,
+        "telescope_eyepiece_mm": 40
+      },
+      "image_distance_mm": 60.0,
+      "magnification": 2.0,
+      "scale_mm_div": 0.025
+    },
+    {
+      "parameters": {
+        "focal_mm": 20,
+        "object_ratio": 1.5,
+        "eyepiece_pitch_mm": 0.1,
+        "wire_width_mm": 0.05,
+        "telescope_objective_mm": 200,
+        "telescope_eyepiece_mm": 40
+      },
+      "image_distance_mm": 60.0,
+      "magnification": 2.0,
+      "scale_mm_div": 0.05
+    },
+    {
+      "parameters": {
+        "focal_mm": 20,
+        "object_ratio": 1.5,
+        "eyepiece_pitch_mm": 0.2,
+        "wire_width_mm": 0.05,
+        "telescope_objective_mm": 200,
+        "telescope_eyepiece_mm": 40
+      },
+      "image_distance_mm": 60.0,
+      "magnification": 2.0,
+      "scale_mm_div": 0.1
+    },
+    {
+      "parameters": {
+        "focal_mm": 30,
+        "object_ratio": 1.1,
+        "eyepiece_pitch_mm": 0.05,
+        "wire_width_mm": 0.05,
+        "telescope_objective_mm": 200,
+        "telescope_eyepiece_mm": 40
+      },
+      "image_distance_mm": 330.0,
+      "magnification": 10.0,
+      "scale_mm_div": 0.005
+    },
+    {
+      "parameters": {
+        "focal_mm": 30,
+        "object_ratio": 1.1,
+        "eyepiece_pitch_mm": 0.1,
+        "wire_width_mm": 0.05,
+        "telescope_objective_mm": 200,
+        "telescope_eyepiece_mm": 40
+      },
+      "image_distance_mm": 330.0,
+      "magnification": 10.0,
+      "scale_mm_div": 0.01
+    },
+    {
+      "parameters": {
+        "focal_mm": 30,
+        "object_ratio": 1.1,
+        "eyepiece_pitch_mm": 0.2,
+        "wire_width_mm": 0.05,
+        "telescope_objective_mm": 200,
+        "telescope_eyepiece_mm": 40
+      },
+      "image_distance_mm": 330.0,
+      "magnification": 10.0,
+      "scale_mm_div": 0.02
+    },
+    {
+      "parameters": {
+        "focal_mm": 30,
+        "object_ratio": 1.2,
+        "eyepiece_pitch_mm": 0.05,
+        "wire_width_mm": 0.05,
+        "telescope_objective_mm": 200,
+        "telescope_eyepiece_mm": 40
+      },
+      "image_distance_mm": 180.0,
+      "magnification": 5.0,
+      "scale_mm_div": 0.01
+    },
+    {
+      "parameters": {
+        "focal_mm": 30,
+        "object_ratio": 1.2,
+        "eyepiece_pitch_mm": 0.1,
+        "wire_width_mm": 0.05,
+        "telescope_objective_mm": 200,
+        "telescope_eyepiece_mm": 40
+      },
+      "image_distance_mm": 180.0,
+      "magnification": 5.0,
+      "scale_mm_div": 0.02
+    },
+    {
+      "parameters": {
+        "focal_mm": 30,
+        "object_ratio": 1.2,
+        "eyepiece_pitch_mm": 0.2,
+        "wire_width_mm": 0.05,
+        "telescope_objective_mm": 200,
+        "telescope_eyepiece_mm": 40
+      },
+      "image_distance_mm": 180.0,
+      "magnification": 5.0,
+      "scale_mm_div": 0.04
+    },
+    {
+      "parameters": {
+        "focal_mm": 30,
+        "object_ratio": 1.5,
+        "eyepiece_pitch_mm": 0.05,
+        "wire_width_mm": 0.05,
+        "telescope_objective_mm": 200,
+        "telescope_eyepiece_mm": 40
+      },
+      "image_distance_mm": 90.0,
+      "magnification": 2.0,
+      "scale_mm_div": 0.025
+    },
+    {
+      "parameters": {
+        "focal_mm": 30,
+        "object_ratio": 1.5,
+        "eyepiece_pitch_mm": 0.1,
+        "wire_width_mm": 0.05,
+        "telescope_objective_mm": 200,
+        "telescope_eyepiece_mm": 40
+      },
+      "image_distance_mm": 90.0,
+      "magnification": 2.0,
+      "scale_mm_div": 0.05
+    },
+    {
+      "parameters": {
+        "focal_mm": 30,
+        "object_ratio": 1.5,
+        "eyepiece_pitch_mm": 0.2,
+        "wire_width_mm": 0.05,
+        "telescope_objective_mm": 200,
+        "telescope_eyepiece_mm": 40
+      },
+      "image_distance_mm": 90.0,
+      "magnification": 2.0,
+      "scale_mm_div": 0.1
+    }
+  ],
+  "telescopes": [
+    {
+      "parameters": {
+        "focal_mm": 10,
+        "object_ratio": 1.1,
+        "eyepiece_pitch_mm": 0.05,
+        "wire_width_mm": 0.05,
+        "telescope_objective_mm": 100,
+        "telescope_eyepiece_mm": 20
+      },
+      "angular_magnification": -5.0
+    },
+    {
+      "parameters": {
+        "focal_mm": 10,
+        "object_ratio": 1.1,
+        "eyepiece_pitch_mm": 0.05,
+        "wire_width_mm": 0.05,
+        "telescope_objective_mm": 100,
+        "telescope_eyepiece_mm": 40
+      },
+      "angular_magnification": -2.5
+    },
+    {
+      "parameters": {
+        "focal_mm": 10,
+        "object_ratio": 1.1,
+        "eyepiece_pitch_mm": 0.05,
+        "wire_width_mm": 0.05,
+        "telescope_objective_mm": 100,
+        "telescope_eyepiece_mm": 50
+      },
+      "angular_magnification": -2.0
+    },
+    {
+      "parameters": {
+        "focal_mm": 10,
+        "object_ratio": 1.1,
+        "eyepiece_pitch_mm": 0.05,
+        "wire_width_mm": 0.05,
+        "telescope_objective_mm": 200,
+        "telescope_eyepiece_mm": 20
+      },
+      "angular_magnification": -10.0
+    },
+    {
+      "parameters": {
+        "focal_mm": 10,
+        "object_ratio": 1.1,
+        "eyepiece_pitch_mm": 0.05,
+        "wire_width_mm": 0.05,
+        "telescope_objective_mm": 200,
+        "telescope_eyepiece_mm": 40
+      },
+      "angular_magnification": -5.0
+    },
+    {
+      "parameters": {
+        "focal_mm": 10,
+        "object_ratio": 1.1,
+        "eyepiece_pitch_mm": 0.05,
+        "wire_width_mm": 0.05,
+        "telescope_objective_mm": 200,
+        "telescope_eyepiece_mm": 50
+      },
+      "angular_magnification": -4.0
+    },
+    {
+      "parameters": {
+        "focal_mm": 10,
+        "object_ratio": 1.1,
+        "eyepiece_pitch_mm": 0.05,
+        "wire_width_mm": 0.05,
+        "telescope_objective_mm": 300,
+        "telescope_eyepiece_mm": 20
+      },
+      "angular_magnification": -15.0
+    },
+    {
+      "parameters": {
+        "focal_mm": 10,
+        "object_ratio": 1.1,
+        "eyepiece_pitch_mm": 0.05,
+        "wire_width_mm": 0.05,
+        "telescope_objective_mm": 300,
+        "telescope_eyepiece_mm": 40
+      },
+      "angular_magnification": -7.5
+    },
+    {
+      "parameters": {
+        "focal_mm": 10,
+        "object_ratio": 1.1,
+        "eyepiece_pitch_mm": 0.05,
+        "wire_width_mm": 0.05,
+        "telescope_objective_mm": 300,
+        "telescope_eyepiece_mm": 50
+      },
+      "angular_magnification": -6.0
+    }
+  ],
+  "maximum_errors": {
+    "image_distance_mm": 0.0,
+    "scale_mm_div": 0.0,
+    "wire_diameter_mm": 0.0,
+    "telescope_magnification": 0.0
+  },
+  "tolerances": {
+    "image_distance_mm": 1e-08,
+    "scale_mm_div": 1e-10,
+    "wire_diameter_mm": 1e-10,
+    "telescope_magnification": 1e-12
+  },
+  "original_observation_analysis": {
+    "microscope_magnification": 24.988000000000003,
+    "telescope_magnification": 4.892525130380177,
+    "eyepiece_scale_mm_div": 0.0025490738975742096,
+    "wire_diameter_um": 69.18186558016407
+  }
+}

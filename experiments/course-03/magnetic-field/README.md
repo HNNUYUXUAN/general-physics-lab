@@ -1,5 +1,8 @@
 [普通物理实验 3](../README.md) · [项目首页](../../../README.md) · [使用指南](../../../docs/usage.md)
 
+<!-- virtual-laboratory-entry -->
+[在线虚拟实验](https://hnnuyuxuan.github.io/general-physics-lab/simulations/magnetic-field/) · [模型依据与参数来源](../../../docs/magnetic-field-model-evidence.md)
+
 # 磁场的描绘
 
 **叠加两只圆线圈，看看中心附近为什么更均匀。**

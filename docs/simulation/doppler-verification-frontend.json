@@ -1,0 +1,216 @@
+{
+  "status": "passed",
+  "source_hashes": {
+    "simulations/doppler-verification/model.mjs": "7cef71f0bc35dfd392e4de60b1ba0dc8e264dd4080343297d48adb54cd381342",
+    "simulations/doppler-verification/app.mjs": "40787712cd146c6a8412e2db62443c725f0e7458d98558cedf6e59d8b340c32e",
+    "simulations/doppler-verification/chart.mjs": "f9a0b66185555009bbd44fb2a89dd9ef4f13fc7297798a4a3f9691290588704c",
+    "simulations/doppler-verification/lab.css": "cf56841e0acc54d25ded1a850c7b7d0930cf7406dd500934f04a8e68f11dd097",
+    "simulations/doppler-verification/observations.json": "3129fde75173aa667e1a0c8337dd44ffba430486caa6175950736362e00fe19d",
+    "simulations/doppler-verification/index.html": "2bf2b08577d09a29c07bbb442f99ee28ffa6caedc3289a5c12988fd6eaaac82e"
+  },
+  "source_record_sha256": "ff0bea95cff4e8ee085000be4eff153ff63932b3aa04d6ba374d40d3f71a5c91",
+  "interaction_checks": 14,
+  "visual_status": "passed",
+  "exports_status": "passed",
+  "exports": [
+    {
+      "filename": "1-doppler-verification-records.json",
+      "sha256": "5b2fb980210b2c868d88156f2ef1f392ad4ad0f7c48a7217073a9521d9cfc4b8",
+      "bytes": 1785
+    },
+    {
+      "filename": "2-doppler-verification-records.csv",
+      "sha256": "e205a99d00f6031f073cbce84b286ec26827189c822a97b8af4c8dd3630016e1",
+      "bytes": 1018
+    }
+  ],
+  "fonts": {
+    "h1": [
+      {
+        "familyName": "SimSun",
+        "postScriptName": "SimSun",
+        "isCustomFont": false,
+        "glyphCount": 9
+      }
+    ],
+    "#summary": [
+      {
+        "familyName": "Times New Roman",
+        "postScriptName": "TimesNewRomanPSMT",
+        "isCustomFont": false,
+        "glyphCount": 50
+      },
+      {
+        "familyName": "SimSun",
+        "postScriptName": "SimSun",
+        "isCustomFont": false,
+        "glyphCount": 4
+      }
+    ]
+  },
+  "browser": "fixed Playwright Chromium 1243",
+  "layout": {
+    "wide": {
+      "width": 1280,
+      "scrollWidth": 1280,
+      "math": 14,
+      "mathErrors": 0
+    },
+    "narrow": {
+      "width": 390,
+      "scrollWidth": 390,
+      "math": 14,
+      "mathErrors": 0
+    }
+  },
+  "interaction": [
+    {
+      "name": "velocity=Home",
+      "status": "passed"
+    },
+    {
+      "name": "velocity=End",
+      "status": "passed"
+    },
+    {
+      "name": "temperature=Home",
+      "status": "passed"
+    },
+    {
+      "name": "temperature=End",
+      "status": "passed"
+    },
+    {
+      "name": "frequency=20000",
+      "status": "passed"
+    },
+    {
+      "name": "frequency=60000",
+      "status": "passed"
+    },
+    {
+      "name": "fit-source=automatic-doppler-model",
+      "status": "passed"
+    },
+    {
+      "name": "fit-source=wavefront-arrival-interval",
+      "status": "passed"
+    },
+    {
+      "name": "正负速度频移",
+      "status": "passed"
+    },
+    {
+      "name": "两来源独立记录",
+      "status": "passed"
+    },
+    {
+      "name": "非法源频率拒绝保存",
+      "status": "passed"
+    },
+    {
+      "name": "移动复位与导出",
+      "status": "passed"
+    },
+    {
+      "name": "删除清空与恢复",
+      "status": "passed"
+    },
+    {
+      "name": "restore",
+      "status": "passed"
+    }
+  ],
+  "background": {
+    "status": "passed",
+    "actual_document_hidden": true,
+    "pause_verified": true,
+    "source_files": {
+      "simulations/doppler-verification/app.mjs": "40787712cd146c6a8412e2db62443c725f0e7458d98558cedf6e59d8b340c32e",
+      "simulations/doppler-verification/model.mjs": "7cef71f0bc35dfd392e4de60b1ba0dc8e264dd4080343297d48adb54cd381342"
+    },
+    "checked_at_utc": "2026-10-16T17:06:43.815Z"
+  },
+  "checked_at_utc": "2026-10-16T16:12:27.583Z",
+  "screenshots": [
+    {
+      "path": "docs/assets/simulations/doppler-verification/frontend-01-9573117f954b.png",
+      "sha256": "9573117f954b538be7930654cece7b82309f61d71e5c2faa90f5139b939f21ff"
+    },
+    {
+      "path": "docs/assets/simulations/doppler-verification/frontend-02-d5f58c42f7b7.png",
+      "sha256": "d5f58c42f7b745c0166934c3d8bb0573b3a95f7125021fbc394a52ec87e647bb"
+    },
+    {
+      "path": "docs/assets/simulations/doppler-verification/frontend-03-f195b130e4a2.png",
+      "sha256": "f195b130e4a2d470d50c030ede2b9b67e2411f3d73d9070210c2a5acbbeaf4b6"
+    },
+    {
+      "path": "docs/assets/simulations/doppler-verification/frontend-04-66d3b988809f.png",
+      "sha256": "66d3b988809f7256bc39d1110ed3ee25a6ee12f1ba328718824a27c25d4845df"
+    },
+    {
+      "path": "docs/assets/simulations/doppler-verification/frontend-05-1e8140ed7b5b.png",
+      "sha256": "1e8140ed7b5b121359a1a4d763d197f9038b381549f48d686e84925f737cca33"
+    },
+    {
+      "path": "docs/assets/simulations/doppler-verification/frontend-06-e0d00ec4f767.png",
+      "sha256": "e0d00ec4f767dc5da3f6e61ccda464fd69730ad252578a1030b23c4c9f520805"
+    },
+    {
+      "path": "docs/assets/simulations/doppler-verification/frontend-07-740a19737b13.png",
+      "sha256": "740a19737b1323d2ac532e4295e7244a3bbe37f6710adf4ff35992f32117640a"
+    },
+    {
+      "path": "docs/assets/simulations/doppler-verification/frontend-08-4a973ab53006.png",
+      "sha256": "4a973ab53006ade2b044b6e8503b767ca1814b8adb56c9141be88ae07aa291f6"
+    },
+    {
+      "path": "docs/assets/simulations/doppler-verification/frontend-09-c6b5668be7b6.png",
+      "sha256": "c6b5668be7b66bc3bd6f515b1e79496c5b8a8c7b35f1e63b2a6fc9590556512d"
+    },
+    {
+      "path": "docs/assets/simulations/doppler-verification/frontend-10-1d23a65f3e06.png",
+      "sha256": "1d23a65f3e065653e3515d6e499777bd938fba2af9bdfee1d105d214686b5782"
+    }
+  ],
+  "schema_version": 1,
+  "experiment_id": "course-01/doppler-verification",
+  "numerical": {
+    "status": "passed",
+    "reference_sha256": "82fb3c258340e87d4050c91d90c04d19b2999f78321440724de77f8217e33652",
+    "source_files": {
+      "simulations/doppler-verification/index.html": "2bf2b08577d09a29c07bbb442f99ee28ffa6caedc3289a5c12988fd6eaaac82e",
+      "simulations/doppler-verification/model.mjs": "7cef71f0bc35dfd392e4de60b1ba0dc8e264dd4080343297d48adb54cd381342",
+      "simulations/doppler-verification/app.mjs": "40787712cd146c6a8412e2db62443c725f0e7458d98558cedf6e59d8b340c32e",
+      "simulations/doppler-verification/chart.mjs": "f9a0b66185555009bbd44fb2a89dd9ef4f13fc7297798a4a3f9691290588704c",
+      "simulations/doppler-verification/lab.css": "cf56841e0acc54d25ded1a850c7b7d0930cf7406dd500934f04a8e68f11dd097",
+      "simulations/doppler-verification/observations.json": "3129fde75173aa667e1a0c8337dd44ffba430486caa6175950736362e00fe19d",
+      "docs/doppler-verification-model-evidence.md": "5a3a51ba1311c96e2fb6d62e80c1e8ea79baf1ae035e976ba0bfeecd59118caf",
+      "docs/doppler-verification-references.json": "df128e6d15c366a1823aa34b8348417a91f8f57bf9ceda61eaf456801fd25c0f",
+      "docs/doppler-verification-references.bib": "786e688e4570296e79aba0f175b36e47cad3d6a41985752d8a2e0f32bf970194",
+      "docs/simulation/doppler-verification-reference.json": "82fb3c258340e87d4050c91d90c04d19b2999f78321440724de77f8217e33652",
+      "scripts/validate_doppler_verification_simulation.py": "bcff32d88fdc9f955d88a56bb75b64c01b926f1103fc0f41cbfecbed9aaea17a",
+      "tests/doppler-verification-model.test.mjs": "38341b58690cc7505783e18db714ca91029bbd1b3aaa5da1f3f989980040d0b7"
+    }
+  },
+  "scientific_evidence": {
+    "status": "verified",
+    "decision_source_files": {
+      "docs/doppler-verification-references.json": "df128e6d15c366a1823aa34b8348417a91f8f57bf9ceda61eaf456801fd25c0f",
+      "docs/doppler-verification-model-evidence.md": "5a3a51ba1311c96e2fb6d62e80c1e8ea79baf1ae035e976ba0bfeecd59118caf",
+      "simulations/doppler-verification/model.mjs": "7cef71f0bc35dfd392e4de60b1ba0dc8e264dd4080343297d48adb54cd381342"
+    },
+    "core_references": [
+      {
+        "id": "song2023",
+        "pdf_sha256": "ca7d931e281cf66533394960182b87d52a48d93c101aee73462e91a68101d8b1",
+        "locators": [
+          "p.91 equation (1)",
+          "p.92 equation (2)",
+          "p.93 section 3.3"
+        ]
+      }
+    ]
+  }
+}

@@ -1,5 +1,8 @@
 [普通物理实验 4](../README.md) · [项目首页](../../../README.md) · [使用指南](../../../docs/usage.md)
 
+<!-- virtual-laboratory-entry -->
+[在线虚拟实验](https://hnnuyuxuan.github.io/general-physics-lab/simulations/holography/) · [模型依据与参数来源](../../../docs/holography-model-evidence.md)
+
 # 全息照相
 
 **把光的相位写进干涉条纹，再由再现像读出尺寸关系。**

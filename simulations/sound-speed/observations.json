@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "experiment": "course-02/sound-speed",
+  "source_files": [
+    {
+      "path": "experiments/course-02/sound-speed/experiment.json",
+      "sha256": "f01d93ad250e07c8193f5ef088c58043b12648faac88a28ea9c21f2a79126f81"
+    },
+    {
+      "path": "experiments/course-02/sound-speed/data/wavelengths.csv",
+      "sha256": "0b371cfa5323a42b39727125df48dfda685be10b74928493e89a07de102bb7e9"
+    },
+    {
+      "path": "experiments/course-02/sound-speed/data/provenance.json",
+      "sha256": "4029939511bef35530c041d73799cea267d0b2f038987c8cff154fc4818fe8e7"
+    }
+  ],
+  "rows": [
+    {
+      "trial": 1,
+      "standing_mm": 10.0,
+      "phase_mm": 9.94
+    },
+    {
+      "trial": 2,
+      "standing_mm": 9.34,
+      "phase_mm": 9.9
+    },
+    {
+      "trial": 3,
+      "standing_mm": 9.66,
+      "phase_mm": 9.74
+    },
+    {
+      "trial": 4,
+      "standing_mm": 9.8,
+      "phase_mm": 9.96
+    },
+    {
+      "trial": 5,
+      "standing_mm": 9.7,
+      "phase_mm": 9.94
+    },
+    {
+      "trial": 6,
+      "standing_mm": 9.6,
+      "phase_mm": 9.84
+    },
+    {
+      "trial": 7,
+      "standing_mm": 10.02,
+      "phase_mm": 10.0
+    },
+    {
+      "trial": 8,
+      "standing_mm": 9.84,
+      "phase_mm": 9.98
+    },
+    {
+      "trial": 9,
+      "standing_mm": 9.74,
+      "phase_mm": 9.9
+    },
+    {
+      "trial": 10,
+      "standing_mm": 9.72,
+      "phase_mm": 9.92
+    }
+  ],
+  "standing_speed_m_s": 350.85812999999996,
+  "phase_speed_m_s": 356.9806800000001,
+  "identity": "source already-converted wavelengths; raw positions absent"
+}

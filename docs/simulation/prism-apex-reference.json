@@ -1,0 +1,167 @@
+{
+  "experiment_id": "course-04/prism-apex",
+  "status": "passed",
+  "created_at": "2026-10-16T14:19:07.714912+00:00",
+  "environment": {
+    "python": "3.14.7",
+    "numpy": "2.5.4"
+  },
+  "model_sha256": "352b74e91b7aee7996355f22806249bb9040c010ebf305881cc7d4b994bb7df1",
+  "input_hashes": {
+    "experiments/course-04/prism-apex/experiment.json": "4ae5b97a731bc46ac7e6ea45327560f23d41e9c319be69126c8db1ac64513127",
+    "experiments/course-04/prism-apex/data/observations-01.csv": "1eac243f566064e18338ec3b4551347d934563544eabaad00e78c33c6e27db63",
+    "experiments/course-04/prism-apex/data/provenance.json": "3948fc565378871ee51d63a7ae7870eb095c6ed9b61fcb22b994967fe9d6b118"
+  },
+  "method": "independent mirror-normal vector reflection, and unit complex-number quotient phase",
+  "case_count": 27,
+  "cases": [
+    {
+      "apex_deg": 40,
+      "zero_deg": 0,
+      "eccentricity_arcmin": 0
+    },
+    {
+      "apex_deg": 40,
+      "zero_deg": 0,
+      "eccentricity_arcmin": 5
+    },
+    {
+      "apex_deg": 40,
+      "zero_deg": 0,
+      "eccentricity_arcmin": 10
+    },
+    {
+      "apex_deg": 40,
+      "zero_deg": 180,
+      "eccentricity_arcmin": 0
+    },
+    {
+      "apex_deg": 40,
+      "zero_deg": 180,
+      "eccentricity_arcmin": 5
+    },
+    {
+      "apex_deg": 40,
+      "zero_deg": 180,
+      "eccentricity_arcmin": 10
+    },
+    {
+      "apex_deg": 40,
+      "zero_deg": 359.9,
+      "eccentricity_arcmin": 0
+    },
+    {
+      "apex_deg": 40,
+      "zero_deg": 359.9,
+      "eccentricity_arcmin": 5
+    },
+    {
+      "apex_deg": 40,
+      "zero_deg": 359.9,
+      "eccentricity_arcmin": 10
+    },
+    {
+      "apex_deg": 60,
+      "zero_deg": 0,
+      "eccentricity_arcmin": 0
+    },
+    {
+      "apex_deg": 60,
+      "zero_deg": 0,
+      "eccentricity_arcmin": 5
+    },
+    {
+      "apex_deg": 60,
+      "zero_deg": 0,
+      "eccentricity_arcmin": 10
+    },
+    {
+      "apex_deg": 60,
+      "zero_deg": 180,
+      "eccentricity_arcmin": 0
+    },
+    {
+      "apex_deg": 60,
+      "zero_deg": 180,
+      "eccentricity_arcmin": 5
+    },
+    {
+      "apex_deg": 60,
+      "zero_deg": 180,
+      "eccentricity_arcmin": 10
+    },
+    {
+      "apex_deg": 60,
+      "zero_deg": 359.9,
+      "eccentricity_arcmin": 0
+    },
+    {
+      "apex_deg": 60,
+      "zero_deg": 359.9,
+      "eccentricity_arcmin": 5
+    },
+    {
+      "apex_deg": 60,
+      "zero_deg": 359.9,
+      "eccentricity_arcmin": 10
+    },
+    {
+      "apex_deg": 80,
+      "zero_deg": 0,
+      "eccentricity_arcmin": 0
+    },
+    {
+      "apex_deg": 80,
+      "zero_deg": 0,
+      "eccentricity_arcmin": 5
+    },
+    {
+      "apex_deg": 80,
+      "zero_deg": 0,
+      "eccentricity_arcmin": 10
+    },
+    {
+      "apex_deg": 80,
+      "zero_deg": 180,
+      "eccentricity_arcmin": 0
+    },
+    {
+      "apex_deg": 80,
+      "zero_deg": 180,
+      "eccentricity_arcmin": 5
+    },
+    {
+      "apex_deg": 80,
+      "zero_deg": 180,
+      "eccentricity_arcmin": 10
+    },
+    {
+      "apex_deg": 80,
+      "zero_deg": 359.9,
+      "eccentricity_arcmin": 0
+    },
+    {
+      "apex_deg": 80,
+      "zero_deg": 359.9,
+      "eccentricity_arcmin": 5
+    },
+    {
+      "apex_deg": 80,
+      "zero_deg": 359.9,
+      "eccentricity_arcmin": 10
+    }
+  ],
+  "maximum_error_deg": 3.552713678800501e-14,
+  "tolerance_deg": 1e-09,
+  "original_observation_analysis": {
+    "angle_mean_deg": 60.00500000000001,
+    "type_a_arcmin": 1.3472193585306966,
+    "per_trial_deg": [
+      60.04166666666666,
+      60.02500000000001,
+      60.01666666666668,
+      60.025,
+      59.91666666666667
+    ]
+  }
+}

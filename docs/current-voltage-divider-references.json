@@ -1,0 +1,105 @@
+{
+  "experimentId": "course-03/current-voltage-divider",
+  "model_coverage_status": "complete-for-declared-ideal-model",
+  "references": [
+    {
+      "id": "yang2021meter",
+      "authors": [
+        "杨铁柱",
+        "周帅",
+        "潘峰"
+      ],
+      "title": "基于LabVIEW的电表的改装与校准仿真实验系统开发",
+      "journal": "大学物理实验",
+      "year": 2021,
+      "volume": "34",
+      "issue": "5",
+      "pages": "98–102",
+      "doi": "10.14139/j.cnki.cn22-1228.2021.05.023",
+      "readingStatus": "verified-fulltext",
+      "fulltextSha256": "9f5c10f2db933018242c9f8170c1bd64cce91d57937232b22502c73810663958",
+      "locators": [
+        "p.99 section 1 equations (1)–(4), figures 2–5",
+        "p.100 section 2.2 equations (6), (9)"
+      ],
+      "notes": [
+        "Read all five PDF pages; equations inspected in rendered pp.99–100.",
+        "Paper 1 ohm/100 ohm/11 megohm values and 2 percent random error are separate simulation settings."
+      ],
+      "application": "p.100式(6)是含标准表、源内阻和可调电阻的串联欧姆关系。它支持本项目制流支路$ I=E/(R_L+XR_0)$的基础串联关系：将固定串联臂合为$R_L$、可调臂记为$XR_0$，并明确理想电源及读数端条件。这个映射不是对文中电表改装装置的复现。",
+      "coverage_status": "partial-apparatus-coverage"
+    },
+    {
+      "id": "xie2023divider",
+      "authors": [
+        "谢钊洋",
+        "皮飞鹏",
+        "陈自强",
+        "陈译",
+        "陈欣"
+      ],
+      "title": "可视化视角深度探究滑动变阻器接法中的两个疑点",
+      "journal": "物理教学",
+      "year": 2023,
+      "volume": "45",
+      "issue": "9",
+      "pages": "17–20,11",
+      "doi": null,
+      "readingStatus": "verified-fulltext",
+      "fulltextSha256": "faa389c55066dad4c209ae2de33774b55e6db7f96226e4f180213265d15727f2",
+      "locators": [
+        "p.18 section 3.1 figure 1 equations (1)–(2), loaded potential divider",
+        "p.19 section 3.2 figure 4 equations (3)–(4), series current limiting and reversed slider coordinate",
+        "p.20 section 3.3 table 1, contextual connection choices"
+      ],
+      "notes": [
+        "All five PDF pages of the article including continuation p.11 read; rendered pp.17–19 inspected.",
+        "For divider u=X,v=1/K; for limiting circuit u=1-X,v=1/K.",
+        "Paper E=10 V is a separate teaching choice, not project source voltage."
+      ],
+      "coverage_status": "complete-for-declared-ideal-model"
+    }
+  ],
+  "pending_model_evidence": {
+    "instrument_identity": "原报告未记型号",
+    "queries": [
+      "制流 分压 电路",
+      "滑动变阻器 分压 负载效应",
+      "滑线变阻器 调节特性"
+    ],
+    "target_equations": [
+      "R_AC=X R0; R_BC=(1-X)R0; RL=K R0",
+      "I=E/(RL+X R0)",
+      "U/E=K X/[K+X(1-X)]",
+      "Thevenin: E_th=X E; R_th=X(1-X)R0"
+    ],
+    "uncovered": [
+      "原仪器未记录参数的厂家/校准信息（不用于替换独立教学场景）"
+    ],
+    "parameters": {
+      "original": [
+        "K",
+        "X",
+        "source readings without confirmed I/U units"
+      ],
+      "teaching": [
+        "E=5 V",
+        "R0=1000 ohm",
+        "independent software open ranges"
+      ]
+    },
+    "summary": "三端分压器与负载的节点关系仍需专项全文定位；制流串联关系已有Yang2021基础支持。",
+    "experiment_id": "course-03/current-voltage-divider",
+    "status": "core-declared-model-supported",
+    "original_docx": "originals/course-03/2制流分压电路/实验报告-制流分压电.docx",
+    "original_docx_sha256": "d2d27e063e505d26f4420bad9131782394c3fb6be6206bc69cafd22f02105005",
+    "original_docx_hash_checked": true,
+    "resolved_core_reference_ids": [
+      "xie2023divider"
+    ]
+  },
+  "core_reference_ids": [
+    "xie2023divider"
+  ],
+  "apparatus_calibration_status": "original-instrument-parameters-unconfirmed"
+}

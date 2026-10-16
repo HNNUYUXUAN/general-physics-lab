@@ -1,5 +1,8 @@
 [普通物理实验 1](../README.md) · [项目首页](../../../README.md) · [使用指南](../../../docs/usage.md)
 
+<!-- virtual-laboratory-entry -->
+[在线虚拟实验](https://hnnuyuxuan.github.io/general-physics-lab/simulations/density/) · [模型依据与参数来源](../../../docs/density-model-evidence.md)
+
 # 物质密度的测量
 
 **用浮力测固体，用同一容积比较液体。**

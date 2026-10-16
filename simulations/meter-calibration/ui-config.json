@@ -1,0 +1,141 @@
+{
+  "slug": "meter-calibration",
+  "title": "电表改装与校准",
+  "experimentId": "course-03/meter-calibration",
+  "controls": [
+    {
+      "key": "mode",
+      "type": "select",
+      "label": "改装功能",
+      "default": "current",
+      "options": [
+        {
+          "value": "current",
+          "label": "电流表"
+        },
+        {
+          "value": "voltage",
+          "label": "电压表"
+        }
+      ]
+    },
+    {
+      "key": "currentRange_mA",
+      "type": "number",
+      "label": "目标电流量程 / mA",
+      "default": 5,
+      "min": 2,
+      "max": 10
+    },
+    {
+      "key": "voltageRange",
+      "type": "number",
+      "label": "目标电压量程 / V",
+      "default": 1.5,
+      "min": 0.1,
+      "max": 5
+    },
+    {
+      "key": "inputFraction",
+      "type": "number",
+      "label": "标准输入 / 目标量程",
+      "default": 0.5,
+      "min": 0,
+      "max": 1.2
+    },
+    {
+      "key": "trim",
+      "type": "number",
+      "label": "实际附加电阻 / 设计值",
+      "default": 1,
+      "min": 0.8,
+      "max": 1.2
+    },
+    {
+      "key": "direction",
+      "type": "select",
+      "label": "校准方向",
+      "default": "up",
+      "options": [
+        {
+          "value": "up",
+          "label": "上行"
+        },
+        {
+          "value": "down",
+          "label": "下行"
+        }
+      ]
+    },
+    {
+      "key": "R3",
+      "type": "select",
+      "label": "欧姆表限流设计 / Ω",
+      "default": 1100,
+      "options": [
+        {
+          "value": 1000,
+          "label": "1000（原设计）"
+        },
+        {
+          "value": 1100,
+          "label": "1100（改进设计）"
+        }
+      ]
+    }
+  ],
+  "columns": [
+    {
+      "key": "mode",
+      "label": "功能",
+      "short": "功能"
+    },
+    {
+      "key": "reference",
+      "label": "标准输入（mA或V）",
+      "short": "标准输入"
+    },
+    {
+      "key": "indicated",
+      "label": "改装示值（mA或V）",
+      "short": "改装示值"
+    },
+    {
+      "key": "error",
+      "label": "示值−标准（mA或V）",
+      "short": "示值差"
+    },
+    {
+      "key": "designResistance",
+      "label": "附加电阻设计 / Ω",
+      "short": "设计Ω"
+    },
+    {
+      "key": "direction",
+      "label": "方向",
+      "short": "方向"
+    }
+  ],
+  "units": {
+    "parameters": {
+      "mode": "enum",
+      "currentRange_mA": "mA",
+      "voltageRange": "V",
+      "inputFraction": "1",
+      "trim": "1",
+      "direction": "enum",
+      "R3": "ohm"
+    },
+    "readings": {
+      "mode": "enum",
+      "reference": "mA when mode=current; V when mode=voltage",
+      "indicated": "mA when mode=current; V when mode=voltage",
+      "error": "mA when mode=current; V when mode=voltage",
+      "designResistance": "ohm",
+      "actualResistance": "ohm",
+      "direction": "enum",
+      "headCurrent": "A",
+      "overrange": "bool"
+    }
+  }
+}

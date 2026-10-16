@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "experiment": "course-01/density",
+  "references": [
+    {
+      "id": "yu2015-density-error",
+      "title": "固体和液体密度的测定的实验误差分析",
+      "authors": [
+        "喻爱伦",
+        "黄津梨"
+      ],
+      "journal": "大众科技",
+      "year": 2015,
+      "volume": 17,
+      "issue": 6,
+      "pages": "162–164",
+      "article_number": "1008-1151(2015)06-0162-03",
+      "cnki_filename": "DZJI201506064",
+      "doi": null,
+      "full_text_status": "obtained_and_read",
+      "pdf_sha256": "eb5d1e22883303b8a117e01d30f819f8af100da9543174cf47f07accfd9d312a",
+      "locators": [
+        {
+          "page": 162,
+          "location": "表1",
+          "supports": "阿基米德称衡原理"
+        },
+        {
+          "page": 163,
+          "location": "§2.2",
+          "supports": "ρ=ρw*m_air/(m_air−m_submerged)"
+        },
+        {
+          "page": 163,
+          "location": "§2.4",
+          "supports": "未完全浸没造成正偏差"
+        },
+        {
+          "page": 163,
+          "location": "§2.5",
+          "supports": "比重瓶空瓶/水/待测液体称量"
+        },
+        {
+          "page": 164,
+          "location": "§3.3",
+          "supports": "需匹配水密度的温度条件"
+        }
+      ],
+      "excluded_numerical_errors": [
+        "表2 .055/.06应为.55/.60",
+        "表3红酸木枝比值.6应为2/3"
+      ]
+    }
+  ]
+}

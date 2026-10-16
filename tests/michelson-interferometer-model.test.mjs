@@ -1,0 +1,7 @@
+import test from'node:test';import assert from'node:assert/strict';import{DEFAULTS,intensity,intensityField,measurement,autoMeasurement}from'../simulations/michelson-interferometer/model.mjs';const close=(a,b,t=1e-10)=>assert.ok(Math.abs(a-b)<t);
+test('round-trip path gives half-wave mirror period',()=>{close(intensity(0,0,DEFAULTS),1);close(intensity(0,DEFAULTS.wavelength_nm*.001/4,DEFAULTS),0);close(intensity(0,DEFAULTS.wavelength_nm*.001/2,DEFAULTS),1);});
+test('automatic100fringe positive travel recovers wavelength',()=>{const r=autoMeasurement(DEFAULTS,0,100);close(r.mirror_end_um,31.64);close(r.wavelength_estimate_nm,632.8);});
+test('zero tilt is a uniform phase field',()=>{const p={...DEFAULTS,tilt_mrad:0};close(intensity(-2,.1,p),intensity(2,.1,p));});
+test('grayscale row invariance in the transverse direction',()=>{const f=intensityField(0,DEFAULTS,21);assert.equal(f[0],f[4*20*21]);assert.equal(f[3],255);});
+test('manual count errors are retained rather than silently repaired',()=>{const r=measurement(DEFAULTS,0,31.64,99);assert.ok(r.wavelength_estimate_nm>632.8);assert.equal(r.fringe_count,99);});
+test('reversed and zero travel, invalid count and exceeding travel fail',()=>{assert.throws(()=>measurement(DEFAULTS,0,1,3,'manual-count',true));assert.throws(()=>measurement(DEFAULTS,0,0,1));assert.throws(()=>autoMeasurement(DEFAULTS,39,100));assert.throws(()=>autoMeasurement(DEFAULTS,0,0));});

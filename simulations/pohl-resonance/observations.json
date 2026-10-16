@@ -1,0 +1,195 @@
+{
+  "schema_version": 1,
+  "experiment": "course-02/pohl-resonance",
+  "source_files": [
+    {
+      "path": "experiments/course-02/pohl-resonance/experiment.json",
+      "sha256": "a62f83461c772b4282b134baaab4e09df2cfb19bd8e3afba2fd41c43269ce978"
+    },
+    {
+      "path": "experiments/course-02/pohl-resonance/data/provenance.json",
+      "sha256": "9199b0ba30a8aab8db901dfe9dbae404f8491010bd6887ee9576c1e44dfe95a4"
+    },
+    {
+      "path": "experiments/course-02/pohl-resonance/data/observations-01.csv",
+      "sha256": "820cc3aa754797f2a1bc7110f0b012cca024c3777c9141557c8a15976eaf5a5c"
+    },
+    {
+      "path": "experiments/course-02/pohl-resonance/data/observations-02.csv",
+      "sha256": "ba92120aa47caa3d45054231aa104f38148594c1cefdaf528939036147f136dc"
+    },
+    {
+      "path": "experiments/course-02/pohl-resonance/data/observations-03.csv",
+      "sha256": "8baafb502a79faefacc2f17342c99191470785dde328938736fc511d9746f2d3"
+    }
+  ],
+  "free": [
+    {
+      "amplitude_deg": 160.5,
+      "period": 1.6287
+    },
+    {
+      "amplitude_deg": 150.5,
+      "period": 1.6291
+    },
+    {
+      "amplitude_deg": 140.5,
+      "period": 1.6292
+    },
+    {
+      "amplitude_deg": 130.5,
+      "period": 1.6297
+    },
+    {
+      "amplitude_deg": 119.5,
+      "period": 1.6294
+    },
+    {
+      "amplitude_deg": 110.5,
+      "period": 1.6291
+    },
+    {
+      "amplitude_deg": 100.5,
+      "period": 1.6286
+    },
+    {
+      "amplitude_deg": 90.5,
+      "period": 1.628
+    },
+    {
+      "amplitude_deg": 80.5,
+      "period": 1.6274
+    },
+    {
+      "amplitude_deg": 70.5,
+      "period": 1.6266
+    },
+    {
+      "amplitude_deg": 60.5,
+      "period": 1.6259
+    },
+    {
+      "amplitude_deg": 50.5,
+      "period": 1.6252
+    }
+  ],
+  "decay": [
+    {
+      "time": 0.0,
+      "amplitude_deg": 141.0,
+      "period": 1.6289
+    },
+    {
+      "time": 1.6289,
+      "amplitude_deg": 128.5,
+      "period": 1.6288
+    },
+    {
+      "time": 3.2577,
+      "amplitude_deg": 117.5,
+      "period": 1.6283
+    },
+    {
+      "time": 4.886,
+      "amplitude_deg": 106.5,
+      "period": 1.6277
+    },
+    {
+      "time": 6.5137,
+      "amplitude_deg": 97.0,
+      "period": 1.6271
+    },
+    {
+      "time": 8.1408,
+      "amplitude_deg": 88.5,
+      "period": 1.6265
+    },
+    {
+      "time": 9.7673,
+      "amplitude_deg": 80.5,
+      "period": 1.6259
+    },
+    {
+      "time": 11.3932,
+      "amplitude_deg": 73.5,
+      "period": 1.6252
+    },
+    {
+      "time": 13.0184,
+      "amplitude_deg": 67.0,
+      "period": 1.6246
+    },
+    {
+      "time": 14.643,
+      "amplitude_deg": 61.0,
+      "period": 1.6239
+    }
+  ],
+  "forced": [
+    {
+      "period": 1.71,
+      "amplitude_deg": 44.6,
+      "phase_deg": -18.9,
+      "reference_period": 1.6249
+    },
+    {
+      "period": 1.69,
+      "amplitude_deg": 58.0,
+      "phase_deg": -22.7,
+      "reference_period": 1.6258
+    },
+    {
+      "period": 1.67,
+      "amplitude_deg": 101.0,
+      "phase_deg": -23.4,
+      "reference_period": 1.6286
+    },
+    {
+      "period": 1.65,
+      "amplitude_deg": 141.9,
+      "phase_deg": -64.2,
+      "reference_period": 1.6292
+    },
+    {
+      "period": 1.63,
+      "amplitude_deg": 132.1,
+      "phase_deg": -101.2,
+      "reference_period": 1.6297
+    },
+    {
+      "period": 1.61,
+      "amplitude_deg": 100.4,
+      "phase_deg": -128.1,
+      "reference_period": 1.6286
+    },
+    {
+      "period": 1.59,
+      "amplitude_deg": 80.3,
+      "phase_deg": -143.4,
+      "reference_period": 1.6274
+    },
+    {
+      "period": 1.57,
+      "amplitude_deg": 60.9,
+      "phase_deg": -156.9,
+      "reference_period": 1.626
+    },
+    {
+      "period": 1.55,
+      "amplitude_deg": 46.9,
+      "phase_deg": -165.7,
+      "reference_period": 1.625
+    },
+    {
+      "period": 1.53,
+      "amplitude_deg": 34.6,
+      "phase_deg": -171.1,
+      "reference_period": 1.6238
+    }
+  ],
+  "decay_beta": 0.057277281112376094,
+  "free_period_min": 1.6252,
+  "free_period_max": 1.6297,
+  "forced_peak_deg": 141.9,
+  "identity": "source large-amplitude records; no small-angle material calibration inferred"
+}

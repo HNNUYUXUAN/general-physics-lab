@@ -1,0 +1,45 @@
+{
+  "experimentId": "course-03/hall-effect",
+  "model_coverage_status": "complete-for-declared-ideal-model",
+  "references": [
+    {
+      "id": "chen2025hall",
+      "authors": [
+        "陈浪",
+        "尹航",
+        "李楚涵",
+        "李春辉",
+        "吕梦雪",
+        "张宇飏",
+        "邢家林",
+        "何学敏"
+      ],
+      "title": "基于LabVIEW的霍尔效应测量磁场仿真实验平台",
+      "journal": "大学物理实验",
+      "year": 2025,
+      "volume": "38",
+      "issue": "4",
+      "pages": "115–124",
+      "doi": "10.14139/j.cnki.cn22-1228.2025.04.019",
+      "readingStatus": "verified-fulltext",
+      "fulltextSha256": "cef8c52a2edd0215e28ce99f9ebdcc6db05d1306102d71101316e2278ba655d6",
+      "acquisition": "AUFE WebVPN",
+      "locators": [
+        "p.116 section 1.1 equations (1)–(3), Hall sensitivity and its units",
+        "p.116 section 1.2 equations (4)–(8), four polarities and same-parity residual",
+        "p.120 section 3.1, actual switching sequence",
+        "pp.120–122 sections 3.1–3.2, separate simulation parameters"
+      ],
+      "notes": [
+        "All ten pages read; rendered pp.116–117 inspected.",
+        "Equation (6) switching label is printed +Is,+Im but its signs and section 3.1 imply -Is,-Im.",
+        "Equation (2) uses d after defining h; both mean Hall plate thickness.",
+        "The same-parity Ettingshausen voltage remains in equation (8); its magnitude is not established as zero.",
+        "The duplicated denominator term in equation (11) and off-axis formulas are not used by this project.",
+        "Printed equations (4)–(7) give UO, UN and UR the same current-odd sign pattern; project independent field-odd and common bases are abstract teaching perturbations, not identified material effects."
+      ],
+      "coverage_status": "complete-for-declared-ideal-model",
+      "application": "p.116式(1)–(3)支持线性霍尔关系$V_H=K_HIB$。$R_H$是材料霍尔系数，量纲$\\mathrm{m^3/C}$；$K_H=R_H/h$是片厚相关灵敏度，量纲$\\mathrm{V/(A\\,T)}$。论文先以$h$定义厚度，式(2)换成$d$，这里统一视为同一片厚。论文以正的$e$书写电压大小，项目符号由换向顺序约定，不由这些幅值式反推载流子类型。"
+    }
+  ]
+}

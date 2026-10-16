@@ -1,0 +1,176 @@
+{
+  "status": "passed",
+  "source_hashes": {
+    "simulations/liquid-viscosity/app.mjs": "f4ab0cf0e0f5ee0dcab21c7b205aa0b09c9e75996a8efbcda904c59f4cd9c0a7",
+    "simulations/liquid-viscosity/model.mjs": "1218e0837e898dadcd58604c06d7e5d7993a532bff0ed0bed51d002c0784a141",
+    "simulations/liquid-viscosity/index.html": "9a4e86d41de0da3a2339598bb4cc155e5b64a5fdaa7b28557b71a64ef826cd49",
+    "simulations/liquid-viscosity/lab.css": "f3d39a8870750ed022902ea90f1f4bf3d1365a0a631609dd18b3fc72d06088c3",
+    "simulations/liquid-viscosity/chart.mjs": "d9de3df2659ebe798d162b1aaaa42686654346c822e72edf9c1a515302532942",
+    "simulations/liquid-viscosity/observations.json": "58b75239566b9f55ef1fc3ccc9be16b94e467cd059326b331f74890711dd6be2"
+  },
+  "source_record_sha256": "40f00dcb2ff80160bfc22dd9872e7813f8d1abbb857fde4a918a8a65be61991b",
+  "interaction_checks": 5,
+  "visual_status": "passed",
+  "exports_status": "passed",
+  "exports": [
+    {
+      "filename": "liquid-viscosity-export.json",
+      "sha256": "d853187fdac42de60d086e12da85d428b3e139a8702a1b8d9bdde0cc67b7e9b2",
+      "bytes": 3137
+    },
+    {
+      "filename": "liquid-viscosity-export.csv",
+      "sha256": "3ac3273a87d1d75234d1e0647b3416b3b95c426c28c2332f16f72bfd156390c1",
+      "bytes": 813
+    }
+  ],
+  "fonts": {
+    "body": "\"Times New Roman\", SimSun, \"Songti SC\", serif",
+    "simsun": true,
+    "times": true,
+    "mathjax": 9,
+    "math_errors": []
+  },
+  "browser": "fixed Chromium1243 via playwright-cli isolated rollout-mechanics",
+  "layout": {
+    "mobile": {
+      "viewport": 390,
+      "document": 390,
+      "overflow": false,
+      "svg_text": [
+        {
+          "text": "第一标线",
+          "size": 14.48816143566356
+        },
+        {
+          "text": "第二标线",
+          "size": 14.48816143566356
+        },
+        {
+          "text": "释放点",
+          "size": 14.488160119760352
+        },
+        {
+          "text": "x = 0",
+          "size": 14.488158180471034
+        },
+        {
+          "text": "s = 0.200 m",
+          "size": 14.4881608898125
+        },
+        {
+          "text": "管径 20.0 mm",
+          "size": 14.488155516806232
+        }
+      ],
+      "math_errors": []
+    }
+  },
+  "interaction": [
+    {
+      "name": "理想标线计时反演",
+      "status": "passed"
+    },
+    {
+      "name": "管壁效应",
+      "status": "passed"
+    },
+    {
+      "name": "高Re组合拒绝",
+      "status": "passed"
+    },
+    {
+      "name": "手动计时与暂停",
+      "status": "passed"
+    },
+    {
+      "name": "复位失效计时",
+      "status": "passed"
+    }
+  ],
+  "background": {
+    "status": "passed",
+    "actual_document_hidden": true,
+    "pause_verified": true,
+    "source_files": {
+      "simulations/liquid-viscosity/app.mjs": "f4ab0cf0e0f5ee0dcab21c7b205aa0b09c9e75996a8efbcda904c59f4cd9c0a7",
+      "simulations/liquid-viscosity/model.mjs": "1218e0837e898dadcd58604c06d7e5d7993a532bff0ed0bed51d002c0784a141"
+    },
+    "checked_at_utc": "2026-10-16T17:08:49.376Z"
+  },
+  "checked_at_utc": "2026-10-16T16:21:16.199Z",
+  "screenshots": [
+    {
+      "path": "docs/assets/simulations/liquid-viscosity/frontend-01-9a2565c0fba9.png",
+      "sha256": "9a2565c0fba9400e1399ce63ec9c28803d1836452a2e9e6f992d181e3d8d8c5e"
+    },
+    {
+      "path": "docs/assets/simulations/liquid-viscosity/frontend-02-e57ff8fb3e34.png",
+      "sha256": "e57ff8fb3e34cf2822b1afce2d2c7263629a7a3f3d388c74a45da6a2f3fddfea"
+    },
+    {
+      "path": "docs/assets/simulations/liquid-viscosity/frontend-03-fa74adf8849a.png",
+      "sha256": "fa74adf8849aa0e5c5b9a8af3e147a7a49e7dbb3c732ec99d810ece6aa0e020f"
+    },
+    {
+      "path": "docs/assets/simulations/liquid-viscosity/frontend-04-21683dbf11ea.png",
+      "sha256": "21683dbf11eaef2478e0ab8b361082e61aaf5a809b699daa228f61dde45bdd0a"
+    }
+  ],
+  "schema_version": 1,
+  "experiment_id": "course-02/liquid-viscosity",
+  "numerical": {
+    "status": "passed",
+    "reference_sha256": "6458fea19a64b1e8e5988ec49befff2b73cbea8be26114146cd88246bc9c44b6",
+    "source_files": {
+      "simulations/liquid-viscosity/index.html": "9a4e86d41de0da3a2339598bb4cc155e5b64a5fdaa7b28557b71a64ef826cd49",
+      "simulations/liquid-viscosity/model.mjs": "1218e0837e898dadcd58604c06d7e5d7993a532bff0ed0bed51d002c0784a141",
+      "simulations/liquid-viscosity/app.mjs": "f4ab0cf0e0f5ee0dcab21c7b205aa0b09c9e75996a8efbcda904c59f4cd9c0a7",
+      "simulations/liquid-viscosity/chart.mjs": "d9de3df2659ebe798d162b1aaaa42686654346c822e72edf9c1a515302532942",
+      "simulations/liquid-viscosity/lab.css": "f3d39a8870750ed022902ea90f1f4bf3d1365a0a631609dd18b3fc72d06088c3",
+      "simulations/liquid-viscosity/observations.json": "58b75239566b9f55ef1fc3ccc9be16b94e467cd059326b331f74890711dd6be2",
+      "docs/liquid-viscosity-model-evidence.md": "07800923fa0182b4d1497fa2f38f42a5ef1e4e87814f781cec28bb34e13300aa",
+      "docs/liquid-viscosity-references.json": "ef0fa1c3fc5d237a53e66c5b2347e5a6c77e72888e213680eaa10a132f271379",
+      "docs/liquid-viscosity-references.bib": "463d173fc868e0336c11daca7efe42ff28b63ddd7321b57253b33a905ec6884f",
+      "docs/simulation/liquid-viscosity-reference.json": "6458fea19a64b1e8e5988ec49befff2b73cbea8be26114146cd88246bc9c44b6",
+      "scripts/validate_liquid_viscosity_simulation.py": "1545fc9f3d75645f278be97e9ba5116fc8f082c3b625749788ebecbad85a2477",
+      "tests/liquid-viscosity-model.test.mjs": "525a340dd92ab9929008f176dee0656dab76e80840fa7eaa06810dd76cfcdbe6"
+    }
+  },
+  "scientific_evidence": {
+    "status": "verified",
+    "decision_source_files": {
+      "docs/liquid-viscosity-references.json": "ef0fa1c3fc5d237a53e66c5b2347e5a6c77e72888e213680eaa10a132f271379",
+      "docs/liquid-viscosity-model-evidence.md": "07800923fa0182b4d1497fa2f38f42a5ef1e4e87814f781cec28bb34e13300aa",
+      "simulations/liquid-viscosity/model.mjs": "1218e0837e898dadcd58604c06d7e5d7993a532bff0ed0bed51d002c0784a141"
+    },
+    "core_references": [
+      {
+        "id": "dai2014-falling-sphere",
+        "pdf_sha256": "9674763196bebe3140560ca3d5e64d8e9664f7ea33d13d24d0cd025ec46dd0d8",
+        "locators": [
+          {
+            "page": 20,
+            "location": "引言、式1",
+            "supports": "Stokes条件、Re及壁面/端部修正"
+          },
+          {
+            "page": 21,
+            "location": "§1",
+            "supports": "忽略端部项须独立满足条件"
+          },
+          {
+            "page": 22,
+            "location": "§4式5",
+            "supports": "低Re零初速动力学和指数终速"
+          },
+          {
+            "page": 23,
+            "location": "计时距离讨论",
+            "supports": "5cm仅为该文场景建议"
+          }
+        ]
+      }
+    ]
+  }
+}

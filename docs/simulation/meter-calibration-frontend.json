@@ -1,0 +1,252 @@
+{
+  "status": "passed",
+  "source_hashes": {
+    "simulations/meter-calibration/model.mjs": "ca9032792fdb05596cf38fb41425eb2d68049810ff0c5942483025e285773ea0",
+    "simulations/meter-calibration/app.mjs": "5c4b32f2b1c869b67f7fd0c343c536940a7388adbd3a2fdc512309f5109aa727",
+    "simulations/meter-calibration/chart.mjs": "7661b7bfc2fe4ac33d2ab50733687b64f47c7110505e27c14c80c42c38df82dd",
+    "simulations/meter-calibration/lab.css": "d007905ee689191cb3d99caebe74d1e5e924b6fd068c7a81d2417c75219b6169",
+    "simulations/meter-calibration/observations.json": "f098c3cf7fd5a39c41b0ae32fa326c4f928dff7c12800f4e0c038b912dbe4b8a",
+    "simulations/meter-calibration/diagram.mjs": "8689695e282fdde53954d11e106dad386686b2df310426c6942304fd2193a9d6",
+    "simulations/meter-calibration/ui-config.json": "d341060f1daa14083ea8e39a473e0c8bad9b50e05ca0f0aeba3936a1e3dccf3b",
+    "simulations/meter-calibration/index.html": "bef7852e5be91a83d6b30b4c7273aa117427b40c7b088bda1c7c3eb2217fc37e"
+  },
+  "source_record_sha256": "2cb0c98360daf82a0a2620528acfacbdea2b67c42d8f52e6e8dda19028ce44e1",
+  "interaction_checks": 22,
+  "visual_status": "passed",
+  "exports_status": "passed",
+  "exports": [
+    {
+      "filename": "1-meter-calibration-records.csv",
+      "sha256": "f76158ac7e9c35cf4ce819b7c8bf499e3d67b859169a4232398698ad60fd1cdc",
+      "bytes": 1078
+    },
+    {
+      "filename": "2-meter-calibration-records.json",
+      "sha256": "730a3d7e1d37641d72018d20542a4d7c0ec9a85f1c879ba8a71a76a6691d450a",
+      "bytes": 3247
+    }
+  ],
+  "fonts": {
+    "h1": [
+      {
+        "familyName": "SimSun",
+        "postScriptName": "SimSun",
+        "isCustomFont": false,
+        "glyphCount": 11
+      }
+    ],
+    "#summary": [
+      {
+        "familyName": "Times New Roman",
+        "postScriptName": "TimesNewRomanPSMT",
+        "isCustomFont": false,
+        "glyphCount": 22
+      },
+      {
+        "familyName": "SimSun",
+        "postScriptName": "SimSun",
+        "isCustomFont": false,
+        "glyphCount": 13
+      }
+    ]
+  },
+  "browser": "fixed Playwright Chromium 1243",
+  "layout": {
+    "wide": {
+      "width": 1280,
+      "scrollWidth": 1280,
+      "math": 1,
+      "mathErrors": 0
+    },
+    "narrow": {
+      "width": 390,
+      "scrollWidth": 390,
+      "math": 1,
+      "mathErrors": 0
+    }
+  },
+  "interaction": [
+    {
+      "name": "mode=current",
+      "status": "passed"
+    },
+    {
+      "name": "mode=voltage",
+      "status": "passed"
+    },
+    {
+      "name": "currentRange_mA=2",
+      "status": "passed"
+    },
+    {
+      "name": "currentRange_mA=10",
+      "status": "passed"
+    },
+    {
+      "name": "voltageRange=0.1",
+      "status": "passed"
+    },
+    {
+      "name": "voltageRange=5",
+      "status": "passed"
+    },
+    {
+      "name": "inputFraction=0",
+      "status": "passed"
+    },
+    {
+      "name": "inputFraction=1.2",
+      "status": "passed"
+    },
+    {
+      "name": "trim=0.8",
+      "status": "passed"
+    },
+    {
+      "name": "trim=1.2",
+      "status": "passed"
+    },
+    {
+      "name": "direction=up",
+      "status": "passed"
+    },
+    {
+      "name": "direction=down",
+      "status": "passed"
+    },
+    {
+      "name": "R3=1000",
+      "status": "passed"
+    },
+    {
+      "name": "R3=1100",
+      "status": "passed"
+    },
+    {
+      "name": "原表 current",
+      "status": "passed"
+    },
+    {
+      "name": "原表 voltage",
+      "status": "passed"
+    },
+    {
+      "name": "默认设置读数与记录",
+      "status": "passed"
+    },
+    {
+      "name": "测量闭环与同组分析",
+      "status": "passed"
+    },
+    {
+      "name": "非法编辑blur后不得记录",
+      "status": "passed"
+    },
+    {
+      "name": "恢复删除与清空",
+      "status": "passed"
+    },
+    {
+      "name": "真实CSV/JSON导出与元数据",
+      "status": "passed"
+    },
+    {
+      "name": "restore",
+      "status": "passed"
+    }
+  ],
+  "background": {
+    "status": "not-applicable"
+  },
+  "checked_at_utc": "2026-10-16T16:13:17.037Z",
+  "screenshots": [
+    {
+      "path": "docs/assets/simulations/meter-calibration/frontend-01-9a182b00e2d1.png",
+      "sha256": "9a182b00e2d1babdc0d23acec440e7b137876483b1271303de574f4450794c8a"
+    },
+    {
+      "path": "docs/assets/simulations/meter-calibration/frontend-02-ad2020f9a884.png",
+      "sha256": "ad2020f9a884d9901f7f17e7eb5483f6adcb384299d38c94f8eb5101e96ec5da"
+    },
+    {
+      "path": "docs/assets/simulations/meter-calibration/frontend-03-88b7a951492c.png",
+      "sha256": "88b7a951492c31aedbfb1baf3f52eab6aaa3a370d807d4a4fef7dfd7a7a22a2f"
+    },
+    {
+      "path": "docs/assets/simulations/meter-calibration/frontend-04-f649d9ebd6c9.png",
+      "sha256": "f649d9ebd6c9f32415bca4f529679f7cc57c7678e5d10a60674d37c07dd7778d"
+    },
+    {
+      "path": "docs/assets/simulations/meter-calibration/frontend-05-ee31729719cd.png",
+      "sha256": "ee31729719cda7807fd8e77aad0f99e37d8fbc259be606366acce32e810b02c3"
+    },
+    {
+      "path": "docs/assets/simulations/meter-calibration/frontend-06-ded66081dc39.png",
+      "sha256": "ded66081dc39e636d00c4052b55831a3eb6e6d9fc6702cb9d3a01c4b9f94e96a"
+    },
+    {
+      "path": "docs/assets/simulations/meter-calibration/frontend-07-dc27d8e45c1c.png",
+      "sha256": "dc27d8e45c1ceb301aa2f761684f8317f38f4ad038baab5fd84cc65d33d21b12"
+    },
+    {
+      "path": "docs/assets/simulations/meter-calibration/frontend-08-806903c6e706.png",
+      "sha256": "806903c6e70688af0f7e2cb3fd2d9607c7132d9659ee16ddacbd0a91b27338be"
+    },
+    {
+      "path": "docs/assets/simulations/meter-calibration/frontend-09-ca786446b8d9.png",
+      "sha256": "ca786446b8d90c815a758464d7a9f0d1467cd8456d91170d70bc46a7cd9b1c6f"
+    },
+    {
+      "path": "docs/assets/simulations/meter-calibration/frontend-10-48c180d25cd0.png",
+      "sha256": "48c180d25cd0b3b8b6d917c34229bdd88f914853eab5c1ba0b049d720b1b8f43"
+    },
+    {
+      "path": "docs/assets/simulations/meter-calibration/frontend-11-edf50f03cdb4.png",
+      "sha256": "edf50f03cdb4fbe95c20ae3d52d5848aef2947f515f04b2925f7def78f8cc4b1"
+    },
+    {
+      "path": "docs/assets/simulations/meter-calibration/frontend-12-f3f346f5ce7e.png",
+      "sha256": "f3f346f5ce7ef8bb17f67c6b51cd0caea92f5f78bcb67ec2100c0be14a6d5a41"
+    }
+  ],
+  "schema_version": 1,
+  "experiment_id": "course-03/meter-calibration",
+  "numerical": {
+    "status": "passed",
+    "reference_sha256": "cd43cfa50d3d5c19777c9613486137283afdccc58fcb65b9fe8bdcd67d63df53",
+    "source_files": {
+      "simulations/meter-calibration/index.html": "bef7852e5be91a83d6b30b4c7273aa117427b40c7b088bda1c7c3eb2217fc37e",
+      "simulations/meter-calibration/model.mjs": "ca9032792fdb05596cf38fb41425eb2d68049810ff0c5942483025e285773ea0",
+      "simulations/meter-calibration/app.mjs": "5c4b32f2b1c869b67f7fd0c343c536940a7388adbd3a2fdc512309f5109aa727",
+      "simulations/meter-calibration/chart.mjs": "7661b7bfc2fe4ac33d2ab50733687b64f47c7110505e27c14c80c42c38df82dd",
+      "simulations/meter-calibration/lab.css": "d007905ee689191cb3d99caebe74d1e5e924b6fd068c7a81d2417c75219b6169",
+      "simulations/meter-calibration/observations.json": "f098c3cf7fd5a39c41b0ae32fa326c4f928dff7c12800f4e0c038b912dbe4b8a",
+      "docs/meter-calibration-model-evidence.md": "c36626e312719191016e5bc35b4b16ccd3a2ebb371b5e257c3d3690e1997203c",
+      "docs/meter-calibration-references.json": "3da9a3a6023d097da7c56545d5456df59a81c464fc4c7b39a0e288d68a32523a",
+      "docs/meter-calibration-references.bib": "c31cc87844421d805ed4fcbc3ce1aeb2535ca57bd93501c57849be8499ea2ccf",
+      "docs/simulation/meter-calibration-reference.json": "cd43cfa50d3d5c19777c9613486137283afdccc58fcb65b9fe8bdcd67d63df53",
+      "simulations/meter-calibration/diagram.mjs": "8689695e282fdde53954d11e106dad386686b2df310426c6942304fd2193a9d6",
+      "simulations/meter-calibration/ui-config.json": "d341060f1daa14083ea8e39a473e0c8bad9b50e05ca0f0aeba3936a1e3dccf3b",
+      "scripts/validate_meter_calibration_simulation.py": "c803ff884d4a200e1b0e447a55d12ba46023e48a8cd79a28a61cad31fccfbc01",
+      "tests/meter-calibration-model.test.mjs": "38e066af538c5cc178c439bbe31a9b32496983a8d7b226630fa2ad6b03fc2c03"
+    }
+  },
+  "scientific_evidence": {
+    "status": "verified",
+    "decision_source_files": {
+      "docs/meter-calibration-references.json": "3da9a3a6023d097da7c56545d5456df59a81c464fc4c7b39a0e288d68a32523a",
+      "docs/meter-calibration-model-evidence.md": "c36626e312719191016e5bc35b4b16ccd3a2ebb371b5e257c3d3690e1997203c",
+      "simulations/meter-calibration/model.mjs": "ca9032792fdb05596cf38fb41425eb2d68049810ff0c5942483025e285773ea0"
+    },
+    "core_references": [
+      {
+        "id": "yang2021meter",
+        "pdf_sha256": "9f5c10f2db933018242c9f8170c1bd64cce91d57937232b22502c73810663958",
+        "locators": [
+          "p.99 section 1 equations (1)–(4), figures 2–5",
+          "p.100 section 2.2 equations (6), (9)"
+        ]
+      }
+    ]
+  }
+}

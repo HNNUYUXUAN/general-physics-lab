@@ -1,0 +1,37 @@
+{
+  "experimentId": "course-03/magnetic-field",
+  "model_coverage_status": "complete-for-declared-ideal-model",
+  "references": [
+    {
+      "id": "zhang2026magnetic",
+      "authors": [
+        "张敬芳",
+        "王明超",
+        "李泽朋",
+        "齐雪莲"
+      ],
+      "title": "基于三维磁场自动化测量实验装置的亥姆霍兹线圈磁场分布研究",
+      "journal": "大学物理实验",
+      "year": 2026,
+      "volume": "39",
+      "issue": "2",
+      "pages": "29–36",
+      "doi": "10.14139/j.cnki.cn22-1228.2026.02.006",
+      "readingStatus": "verified-fulltext",
+      "fulltextSha256": "b07d262db0bf2bd801262f0129b38a0650a652dfadebda46d9fefcacad85fc4d",
+      "acquisition": "AUFE WebVPN",
+      "locators": [
+        "p.30 section 1.1 equations (3)–(5), circular coil axial field and two-coil superposition",
+        "p.31 sections 1.2–1.3, independent apparatus dimensions and D=2R measurement scenario",
+        "p.35 section 2.4, apparatus-dependent measurement errors"
+      ],
+      "notes": [
+        "All eight pages read; rendered p.30 equations (3)–(5) inspected.",
+        "The paper studies D=2R and D=4R configurations; the Helmholtz uniformity condition D=R is independently differentiated from equation (4).",
+        "Paper average diameter 112.5 mm and 400 turns are not project parameters."
+      ],
+      "coverage_status": "complete-for-declared-ideal-model",
+      "application": "p.30式(3)给出理想薄圆线圈轴向磁感应强度，式(4)将中心位于$\\pm D/2$的两个同向线圈叠加，式(5)为中点值。项目将论文轴向$B$记作$B_z$，坐标$x$仍表示沿公共轴线的位移，$D$映射为$d$、每个线圈匝数为$N$："
+    }
+  ]
+}

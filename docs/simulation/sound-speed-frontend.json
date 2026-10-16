@@ -1,0 +1,179 @@
+{
+  "status": "passed",
+  "source_hashes": {
+    "simulations/sound-speed/app.mjs": "e597e76fbb24289ad84137e15afdd73e6431e31ffab70a28478e15ee0db2802a",
+    "simulations/sound-speed/model.mjs": "f993f74b0f149a43088fb08f99771ac50333545b36a436fcc4292e1a49d90944",
+    "simulations/sound-speed/index.html": "54858d77a0b7c8b2e6204b7a50b15afac3c5629f3a21045b18253ad079b188ad",
+    "simulations/sound-speed/lab.css": "43caec74c3dc9ff7972cd6b1e0868ce9931878c41627c0337cbd04512b771b21",
+    "simulations/sound-speed/chart.mjs": "d9de3df2659ebe798d162b1aaaa42686654346c822e72edf9c1a515302532942",
+    "simulations/sound-speed/observations.json": "3119d080025a9ba6df0de3d3c5fd4df7bd07f842b90f10744c66bda0f1388ddd"
+  },
+  "source_record_sha256": "80aefd2d5125189a55989326270552f6204d72f165719bad3dce1a42b15814e8",
+  "interaction_checks": 5,
+  "visual_status": "passed",
+  "exports_status": "passed",
+  "exports": [
+    {
+      "filename": "sound-speed-export.json",
+      "sha256": "ac5e1050cc116957ffdc27837c09771f100b497c5912c448da5850e9b5921aaa",
+      "bytes": 7008
+    },
+    {
+      "filename": "sound-speed-export.csv",
+      "sha256": "1d2674164f48fdcd4ce9cdd67ae4afca5e4f151b135b6267de3d36c5c837cc8d",
+      "bytes": 1309
+    }
+  ],
+  "fonts": {
+    "body": "\"Times New Roman\", SimSun, \"Songti SC\", serif",
+    "simsun": true,
+    "times": true,
+    "mathjax": 2,
+    "math_errors": []
+  },
+  "browser": "fixed Chromium1243 via playwright-cli isolated rollout-mechanics",
+  "layout": {
+    "mobile": {
+      "viewport": 390,
+      "document": 390,
+      "overflow": false,
+      "svg_text": [
+        {
+          "text": "发射",
+          "size": 14.48870979860115
+        },
+        {
+          "text": "接收",
+          "size": 14.48870979860115
+        },
+        {
+          "text": "50",
+          "size": 14.488717011850028
+        },
+        {
+          "text": "70",
+          "size": 14.488694116817253
+        },
+        {
+          "text": "90",
+          "size": 14.488694116817253
+        },
+        {
+          "text": "110",
+          "size": 14.488710278426513
+        },
+        {
+          "text": "130",
+          "size": 14.488699203912754
+        },
+        {
+          "text": "150",
+          "size": 14.488709375825227
+        },
+        {
+          "text": "接收端距发射端 / mm",
+          "size": 14.488706747833362
+        }
+      ],
+      "math_errors": []
+    }
+  },
+  "interaction": [
+    {
+      "name": "驻波五位置",
+      "status": "passed"
+    },
+    {
+      "name": "相位复现五位置",
+      "status": "passed"
+    },
+    {
+      "name": "人工定位记录",
+      "status": "passed"
+    },
+    {
+      "name": "标尺比例共同偏差",
+      "status": "passed"
+    },
+    {
+      "name": "非法频率拒绝",
+      "status": "passed"
+    }
+  ],
+  "background": {
+    "status": "not-applicable"
+  },
+  "checked_at_utc": "2026-10-16T16:50:12.312Z",
+  "screenshots": [
+    {
+      "path": "docs/assets/simulations/sound-speed/frontend-01-625d12971577.png",
+      "sha256": "625d12971577c222ad4535ef65ed0ba4679b0a4ae892e1f70234e3fa556cec60"
+    },
+    {
+      "path": "docs/assets/simulations/sound-speed/frontend-02-5533b4f39150.png",
+      "sha256": "5533b4f39150a24a90cb087dd0fe89509e4d50d00cdafaa67c31b2edc999eb83"
+    },
+    {
+      "path": "docs/assets/simulations/sound-speed/frontend-03-d37a688e7850.png",
+      "sha256": "d37a688e785095ddef019cd6d760aafaf486c41d4be2d4279a1dcaf140723cba"
+    },
+    {
+      "path": "docs/assets/simulations/sound-speed/frontend-04-e4f63f61bef6.png",
+      "sha256": "e4f63f61bef620e2cbf884996bc6e74ba3d6bd47132f8daeae3ea7f18f99e6fd"
+    }
+  ],
+  "schema_version": 1,
+  "experiment_id": "course-02/sound-speed",
+  "numerical": {
+    "status": "passed",
+    "reference_sha256": "61e145ce2a2fbf6c1bad5a4467d21664ea608cda5516d04c59f346382abebcf7",
+    "source_files": {
+      "simulations/sound-speed/index.html": "54858d77a0b7c8b2e6204b7a50b15afac3c5629f3a21045b18253ad079b188ad",
+      "simulations/sound-speed/model.mjs": "f993f74b0f149a43088fb08f99771ac50333545b36a436fcc4292e1a49d90944",
+      "simulations/sound-speed/app.mjs": "e597e76fbb24289ad84137e15afdd73e6431e31ffab70a28478e15ee0db2802a",
+      "simulations/sound-speed/chart.mjs": "d9de3df2659ebe798d162b1aaaa42686654346c822e72edf9c1a515302532942",
+      "simulations/sound-speed/lab.css": "43caec74c3dc9ff7972cd6b1e0868ce9931878c41627c0337cbd04512b771b21",
+      "simulations/sound-speed/observations.json": "3119d080025a9ba6df0de3d3c5fd4df7bd07f842b90f10744c66bda0f1388ddd",
+      "docs/sound-speed-model-evidence.md": "f055fcc2211d1bb9d5f4c80a5ea282412bc2eab16619c612b1fda5aa9e49b028",
+      "docs/sound-speed-references.json": "4f6ebedf38517e3ba38d66d2d887c4c02c02068d51ef7083886638216f5788df",
+      "docs/sound-speed-references.bib": "f59b7bf24f9d00995cda224cbcac653e54d42213a4229b4239fc718db0e97e33",
+      "docs/simulation/sound-speed-reference.json": "61e145ce2a2fbf6c1bad5a4467d21664ea608cda5516d04c59f346382abebcf7",
+      "scripts/validate_sound_speed_simulation.py": "11d648d71a792c916768b914584fe6c77f6aced2d2880bca21d22a6ed5f27949",
+      "tests/sound-speed-model.test.mjs": "b0d9966d01e32c30d4526199267a6840f8afb884b8c29c3c9fb7f235508cbab7"
+    }
+  },
+  "scientific_evidence": {
+    "status": "verified",
+    "decision_source_files": {
+      "docs/sound-speed-references.json": "4f6ebedf38517e3ba38d66d2d887c4c02c02068d51ef7083886638216f5788df",
+      "docs/sound-speed-model-evidence.md": "f055fcc2211d1bb9d5f4c80a5ea282412bc2eab16619c612b1fda5aa9e49b028",
+      "simulations/sound-speed/model.mjs": "f993f74b0f149a43088fb08f99771ac50333545b36a436fcc4292e1a49d90944"
+    },
+    "core_references": [
+      {
+        "id": "li2018-acoustic-multipath",
+        "pdf_sha256": "12739b0cfbad4fcba99feafb399ac101d5dd62263ad8c01a50c945a61b886c45",
+        "locators": [
+          {
+            "page": 47,
+            "location": "引言",
+            "supports": "驻波腹λ/2与相位重复λ"
+          },
+          {
+            "page": 48,
+            "location": "式1–5",
+            "supports": "多次往返、声压/位移和XY通道"
+          },
+          {
+            "pages": [
+              49,
+              50
+            ],
+            "location": "§2.2–2.4",
+            "supports": "近距离多解与反射/衰减边界"
+          }
+        ]
+      }
+    ]
+  }
+}

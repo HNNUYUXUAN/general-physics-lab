@@ -1,0 +1,183 @@
+{
+  "status": "passed",
+  "source_hashes": {
+    "simulations/spectrometer/angles.mjs": "b25e2fa4341846209d68acaed83cf06b40c0b3902af9fbdaa94d8cdbb92796eb",
+    "simulations/spectrometer/app.mjs": "2ff14e45cbe7046be1389ecad9addd141693b7ebec5a66db76d67a3a6d0efc3e",
+    "simulations/spectrometer/chart.mjs": "3c7d1ee785ab0a9af179c711141fcdab2c271064d87b0cdf435515f5371adbc5",
+    "simulations/spectrometer/index.html": "ac4e7f2daf168ea8061d59c504c16e3f2f5dfe85cb9efdd9b10004ed70bc5347",
+    "simulations/spectrometer/lab.css": "f09f3aa9916b0574f112d367ac0e713575f0e59ad9f239ee81e452953681e20c",
+    "simulations/spectrometer/model.mjs": "139753e2f75fa828b83645aa60f9bdd92f477114cf45c0a61779f19c51ea33a8",
+    "simulations/spectrometer/observations.json": "b71fcc1e3d390b89afaa7563ec7ca66981114f650725c897336f76159f4955e6"
+  },
+  "source_record_sha256": "43ba736e681bd51a1f0c0b6e047d05065eb1a65121302c2c3367bfdae2294ec5",
+  "interaction_checks": 4,
+  "visual_status": "passed",
+  "exports_status": "passed",
+  "exports": [
+    {
+      "filename": "spectrometer-spectrometer-experiment.json",
+      "sha256": "6f40685eace8eb56f97c253fa745cae52e54e28d2c2d118c1e262d1f9b1d6c85",
+      "bytes": 5346
+    },
+    {
+      "filename": "spectrometer-spectrometer-records.csv",
+      "sha256": "df72da499754db75f0c2e454d756c42703a49cfb80609486daa0abc9d5aa2100",
+      "bytes": 850
+    }
+  ],
+  "fonts": {
+    "h1": {
+      "fonts": [
+        {
+          "familyName": "SimSun",
+          "postScriptName": "SimSun",
+          "isCustomFont": false,
+          "glyphCount": 7
+        }
+      ]
+    },
+    "#count": {
+      "fonts": [
+        {
+          "familyName": "Times New Roman",
+          "postScriptName": "TimesNewRomanPSMT",
+          "isCustomFont": false,
+          "glyphCount": 1
+        }
+      ]
+    }
+  },
+  "browser": null,
+  "layout": {
+    "mobile": {
+      "width": 390,
+      "scrollWidth": 390,
+      "mathErrors": 0,
+      "mathObjects": 3
+    }
+  },
+  "interaction": [
+    {
+      "name": "理想对准与双游标",
+      "status": "passed"
+    },
+    {
+      "name": "改变偏心与跨零零点",
+      "status": "passed"
+    },
+    {
+      "name": "望远镜手动方向记录",
+      "status": "passed"
+    },
+    {
+      "name": "真实双格式导出与刷新恢复",
+      "status": "passed"
+    }
+  ],
+  "background": {
+    "status": "not-applicable"
+  },
+  "checked_at_utc": null,
+  "screenshots": [
+    {
+      "path": "docs/assets/simulations/spectrometer/frontend-01-bbdc7bd960f1.png",
+      "sha256": "bbdc7bd960f1b42375326756b664f706507ed743d85d8aeac9f10e29a58af5a8"
+    },
+    {
+      "path": "docs/assets/simulations/spectrometer/frontend-02-3b55ae981331.png",
+      "sha256": "3b55ae98133164252e9d2a6d2a97e1715578362e77cd3fafceca3a27c748cc3f"
+    },
+    {
+      "path": "docs/assets/simulations/spectrometer/frontend-03-037ad9c74b40.png",
+      "sha256": "037ad9c74b4019487ccb61036e1d4c3da4d10a4a11b9cb3c1de670aa1895e82a"
+    },
+    {
+      "path": "docs/assets/simulations/spectrometer/frontend-04-21ef2cc42aae.png",
+      "sha256": "21ef2cc42aae2ae1b0b8f4e794e9a3a4dd852ee2f014a1e16fe50319cfbce9f9"
+    },
+    {
+      "path": "docs/assets/simulations/spectrometer/frontend-05-9b32e5d8837a.png",
+      "sha256": "9b32e5d8837af003121d88d6c9ef4b058dd5f0a0eb283009da8cc69a0343180b"
+    },
+    {
+      "path": "docs/assets/simulations/spectrometer/frontend-06-aff5a44b0c66.png",
+      "sha256": "aff5a44b0c664508127ec2029b674261da0b34f35c45dc1948893fc88f702f26"
+    }
+  ],
+  "schema_version": 1,
+  "experiment_id": "course-04/spectrometer",
+  "numerical": {
+    "status": "passed",
+    "reference_sha256": "b8061cc6102e2de55b846463fd5835e8820e9b80af050a23829707bb77eb43ad",
+    "source_files": {
+      "simulations/spectrometer/index.html": "ac4e7f2daf168ea8061d59c504c16e3f2f5dfe85cb9efdd9b10004ed70bc5347",
+      "simulations/spectrometer/model.mjs": "139753e2f75fa828b83645aa60f9bdd92f477114cf45c0a61779f19c51ea33a8",
+      "simulations/spectrometer/app.mjs": "2ff14e45cbe7046be1389ecad9addd141693b7ebec5a66db76d67a3a6d0efc3e",
+      "simulations/spectrometer/chart.mjs": "3c7d1ee785ab0a9af179c711141fcdab2c271064d87b0cdf435515f5371adbc5",
+      "simulations/spectrometer/lab.css": "f09f3aa9916b0574f112d367ac0e713575f0e59ad9f239ee81e452953681e20c",
+      "simulations/spectrometer/observations.json": "b71fcc1e3d390b89afaa7563ec7ca66981114f650725c897336f76159f4955e6",
+      "docs/spectrometer-model-evidence.md": "7d8b45f2618ea5348de22c8b98f532c6f2611b228fad5214e6d9f3bdf6873ae9",
+      "docs/spectrometer-references.json": "7540c43e5ce58682b39700810f3f9ea0c241938d263949d09112d045780ef424",
+      "docs/spectrometer-references.bib": "78e68c9698ae68fb02d22a09ae598da3931e5824d51489023e3d5997a3270308",
+      "docs/simulation/spectrometer-reference.json": "a39cf92ac653cc7907f3c5cd81c130982eb00ae04e33ec6dd0c277692dccda64",
+      "simulations/spectrometer/angles.mjs": "b25e2fa4341846209d68acaed83cf06b40c0b3902af9fbdaa94d8cdbb92796eb",
+      "scripts/validate_spectrometer_simulation.py": "783d5dcdfeef1ac4ecf318c1f042900d3a60ae42e56d149a0828c34949d18529",
+      "tests/spectrometer-model.test.mjs": "e658b2990106627ab4c04c2d2d28ce949674c5d257fc29c0e18c03ec43b59317"
+    }
+  },
+  "scientific_evidence": {
+    "status": "verified",
+    "decision_source_files": {
+      "docs/spectrometer-references.json": "7540c43e5ce58682b39700810f3f9ea0c241938d263949d09112d045780ef424",
+      "docs/spectrometer-model-evidence.md": "7d8b45f2618ea5348de22c8b98f532c6f2611b228fad5214e6d9f3bdf6873ae9",
+      "simulations/spectrometer/model.mjs": "139753e2f75fa828b83645aa60f9bdd92f477114cf45c0a61779f19c51ea33a8"
+    },
+    "core_references": [
+      {
+        "id": "Xu2009GrazingLiquid",
+        "pdf_sha256": "83cc52f7c48626a224c2e0320391e91f8b414678a3e5706fe3ee4ac711d49b21",
+        "locators": [
+          {
+            "printed_pages": "11",
+            "pdf_pages": [
+              3
+            ],
+            "location": "第2节步骤3-4、式8",
+            "role": "分别测出射边界/法线两游标，以两个方位差平均求出射角"
+          }
+        ]
+      },
+      {
+        "id": "Liu2023PrismReflection",
+        "pdf_sha256": "2748aeae8ba44315befccfa12327d144396d1b455fdd1c566a53a2e3547a430f",
+        "locators": [
+          {
+            "printed_pages": "77",
+            "pdf_pages": [
+              1
+            ],
+            "location": "引言",
+            "role": "区分自准直法与反射法"
+          },
+          {
+            "printed_pages": "78-79",
+            "pdf_pages": [
+              2,
+              3
+            ],
+            "location": "第2节、图2及其讨论",
+            "role": "同一平行入射束照射两个棱镜面，分别观察反射狭缝像；顶角近平台中心的放置条件"
+          },
+          {
+            "printed_pages": "78",
+            "pdf_pages": [
+              2
+            ],
+            "location": "第1节、图1",
+            "role": "实物调节及轴线/视场说明，未纳入本页二维模型"
+          }
+        ]
+      }
+    ]
+  }
+}

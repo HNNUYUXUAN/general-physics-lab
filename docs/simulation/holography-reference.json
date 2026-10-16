@@ -1,0 +1,327 @@
+{
+  "experiment_id": "course-04/holography",
+  "status": "passed",
+  "created_at": "2026-10-16T15:06:43.833522+00:00",
+  "environment": {
+    "python": "3.14.7",
+    "numpy": "2.5.4"
+  },
+  "model_sha256": "212bc532f76e6c85ad0d326c6475d384960dd06b83982f5f7ded73f8cc40da1c",
+  "fft_sha256": "9617a6ca4a9598de3c3abaeb6f290f51c1377c8ac2878bde97f4e50a37eac7aa",
+  "input_hashes": {
+    "experiments/course-04/holography/experiment.json": "f4341cc8612ae33e045eab8318f88f0ed5d91a57a57938a8ddfe451a10360d40",
+    "experiments/course-04/holography/data/observations-01.csv": "9d933f50b74f23400ec113d577e0faed335944235ad31ebd645f002adacde9b5",
+    "experiments/course-04/holography/data/observations-02.csv": "2e7a55b9be9662469b7da77ff64ac32f80aed646619c3810f311081ec8b8af88",
+    "experiments/course-04/holography/data/provenance.json": "b3b3175d84c3bab38f3ffec9232b66ac5b590f62099208907246bcd24fcff078"
+  },
+  "methods": [
+    "NumPy FFT2 Fresnel propagation and direct coherent intensity recording",
+    "independently selected negative carrier sideband and complex demodulation",
+    "full pointwise complex-field and hologram comparison",
+    "grid doubling128to256 at common sample positions",
+    "exact scalar angular-spectrum propagation vs paraxial Fresnel",
+    "domain doubling4to8mm at fixed pixel spacing"
+  ],
+  "case_count": 27,
+  "cases": [
+    {
+      "wavelength_nm": 500,
+      "recording_distance_mm": 100,
+      "reconstruction_distance_mm": 100,
+      "reference_amplitude": 0.5,
+      "field_length_mm": 4,
+      "grid_size": 128,
+      "carrier_per_mm": 10,
+      "sideband_radius_per_mm": 3.5
+    },
+    {
+      "wavelength_nm": 500,
+      "recording_distance_mm": 100,
+      "reconstruction_distance_mm": 100,
+      "reference_amplitude": 1,
+      "field_length_mm": 4,
+      "grid_size": 128,
+      "carrier_per_mm": 10,
+      "sideband_radius_per_mm": 3.5
+    },
+    {
+      "wavelength_nm": 500,
+      "recording_distance_mm": 100,
+      "reconstruction_distance_mm": 100,
+      "reference_amplitude": 2,
+      "field_length_mm": 4,
+      "grid_size": 128,
+      "carrier_per_mm": 10,
+      "sideband_radius_per_mm": 3.5
+    },
+    {
+      "wavelength_nm": 500,
+      "recording_distance_mm": 300,
+      "reconstruction_distance_mm": 300,
+      "reference_amplitude": 0.5,
+      "field_length_mm": 4,
+      "grid_size": 128,
+      "carrier_per_mm": 10,
+      "sideband_radius_per_mm": 3.5
+    },
+    {
+      "wavelength_nm": 500,
+      "recording_distance_mm": 300,
+      "reconstruction_distance_mm": 300,
+      "reference_amplitude": 1,
+      "field_length_mm": 4,
+      "grid_size": 128,
+      "carrier_per_mm": 10,
+      "sideband_radius_per_mm": 3.5
+    },
+    {
+      "wavelength_nm": 500,
+      "recording_distance_mm": 300,
+      "reconstruction_distance_mm": 300,
+      "reference_amplitude": 2,
+      "field_length_mm": 4,
+      "grid_size": 128,
+      "carrier_per_mm": 10,
+      "sideband_radius_per_mm": 3.5
+    },
+    {
+      "wavelength_nm": 500,
+      "recording_distance_mm": 500,
+      "reconstruction_distance_mm": 500,
+      "reference_amplitude": 0.5,
+      "field_length_mm": 4,
+      "grid_size": 128,
+      "carrier_per_mm": 10,
+      "sideband_radius_per_mm": 3.5
+    },
+    {
+      "wavelength_nm": 500,
+      "recording_distance_mm": 500,
+      "reconstruction_distance_mm": 500,
+      "reference_amplitude": 1,
+      "field_length_mm": 4,
+      "grid_size": 128,
+      "carrier_per_mm": 10,
+      "sideband_radius_per_mm": 3.5
+    },
+    {
+      "wavelength_nm": 500,
+      "recording_distance_mm": 500,
+      "reconstruction_distance_mm": 500,
+      "reference_amplitude": 2,
+      "field_length_mm": 4,
+      "grid_size": 128,
+      "carrier_per_mm": 10,
+      "sideband_radius_per_mm": 3.5
+    },
+    {
+      "wavelength_nm": 632.8,
+      "recording_distance_mm": 100,
+      "reconstruction_distance_mm": 100,
+      "reference_amplitude": 0.5,
+      "field_length_mm": 4,
+      "grid_size": 128,
+      "carrier_per_mm": 10,
+      "sideband_radius_per_mm": 3.5
+    },
+    {
+      "wavelength_nm": 632.8,
+      "recording_distance_mm": 100,
+      "reconstruction_distance_mm": 100,
+      "reference_amplitude": 1,
+      "field_length_mm": 4,
+      "grid_size": 128,
+      "carrier_per_mm": 10,
+      "sideband_radius_per_mm": 3.5
+    },
+    {
+      "wavelength_nm": 632.8,
+      "recording_distance_mm": 100,
+      "reconstruction_distance_mm": 100,
+      "reference_amplitude": 2,
+      "field_length_mm": 4,
+      "grid_size": 128,
+      "carrier_per_mm": 10,
+      "sideband_radius_per_mm": 3.5
+    },
+    {
+      "wavelength_nm": 632.8,
+      "recording_distance_mm": 300,
+      "reconstruction_distance_mm": 300,
+      "reference_amplitude": 0.5,
+      "field_length_mm": 4,
+      "grid_size": 128,
+      "carrier_per_mm": 10,
+      "sideband_radius_per_mm": 3.5
+    },
+    {
+      "wavelength_nm": 632.8,
+      "recording_distance_mm": 300,
+      "reconstruction_distance_mm": 300,
+      "reference_amplitude": 1,
+      "field_length_mm": 4,
+      "grid_size": 128,
+      "carrier_per_mm": 10,
+      "sideband_radius_per_mm": 3.5
+    },
+    {
+      "wavelength_nm": 632.8,
+      "recording_distance_mm": 300,
+      "reconstruction_distance_mm": 300,
+      "reference_amplitude": 2,
+      "field_length_mm": 4,
+      "grid_size": 128,
+      "carrier_per_mm": 10,
+      "sideband_radius_per_mm": 3.5
+    },
+    {
+      "wavelength_nm": 632.8,
+      "recording_distance_mm": 500,
+      "reconstruction_distance_mm": 500,
+      "reference_amplitude": 0.5,
+      "field_length_mm": 4,
+      "grid_size": 128,
+      "carrier_per_mm": 10,
+      "sideband_radius_per_mm": 3.5
+    },
+    {
+      "wavelength_nm": 632.8,
+      "recording_distance_mm": 500,
+      "reconstruction_distance_mm": 500,
+      "reference_amplitude": 1,
+      "field_length_mm": 4,
+      "grid_size": 128,
+      "carrier_per_mm": 10,
+      "sideband_radius_per_mm": 3.5
+    },
+    {
+      "wavelength_nm": 632.8,
+      "recording_distance_mm": 500,
+      "reconstruction_distance_mm": 500,
+      "reference_amplitude": 2,
+      "field_length_mm": 4,
+      "grid_size": 128,
+      "carrier_per_mm": 10,
+      "sideband_radius_per_mm": 3.5
+    },
+    {
+      "wavelength_nm": 700,
+      "recording_distance_mm": 100,
+      "reconstruction_distance_mm": 100,
+      "reference_amplitude": 0.5,
+      "field_length_mm": 4,
+      "grid_size": 128,
+      "carrier_per_mm": 10,
+      "sideband_radius_per_mm": 3.5
+    },
+    {
+      "wavelength_nm": 700,
+      "recording_distance_mm": 100,
+      "reconstruction_distance_mm": 100,
+      "reference_amplitude": 1,
+      "field_length_mm": 4,
+      "grid_size": 128,
+      "carrier_per_mm": 10,
+      "sideband_radius_per_mm": 3.5
+    },
+    {
+      "wavelength_nm": 700,
+      "recording_distance_mm": 100,
+      "reconstruction_distance_mm": 100,
+      "reference_amplitude": 2,
+      "field_length_mm": 4,
+      "grid_size": 128,
+      "carrier_per_mm": 10,
+      "sideband_radius_per_mm": 3.5
+    },
+    {
+      "wavelength_nm": 700,
+      "recording_distance_mm": 300,
+      "reconstruction_distance_mm": 300,
+      "reference_amplitude": 0.5,
+      "field_length_mm": 4,
+      "grid_size": 128,
+      "carrier_per_mm": 10,
+      "sideband_radius_per_mm": 3.5
+    },
+    {
+      "wavelength_nm": 700,
+      "recording_distance_mm": 300,
+      "reconstruction_distance_mm": 300,
+      "reference_amplitude": 1,
+      "field_length_mm": 4,
+      "grid_size": 128,
+      "carrier_per_mm": 10,
+      "sideband_radius_per_mm": 3.5
+    },
+    {
+      "wavelength_nm": 700,
+      "recording_distance_mm": 300,
+      "reconstruction_distance_mm": 300,
+      "reference_amplitude": 2,
+      "field_length_mm": 4,
+      "grid_size": 128,
+      "carrier_per_mm": 10,
+      "sideband_radius_per_mm": 3.5
+    },
+    {
+      "wavelength_nm": 700,
+      "recording_distance_mm": 500,
+      "reconstruction_distance_mm": 500,
+      "reference_amplitude": 0.5,
+      "field_length_mm": 4,
+      "grid_size": 128,
+      "carrier_per_mm": 10,
+      "sideband_radius_per_mm": 3.5
+    },
+    {
+      "wavelength_nm": 700,
+      "recording_distance_mm": 500,
+      "reconstruction_distance_mm": 500,
+      "reference_amplitude": 1,
+      "field_length_mm": 4,
+      "grid_size": 128,
+      "carrier_per_mm": 10,
+      "sideband_radius_per_mm": 3.5
+    },
+    {
+      "wavelength_nm": 700,
+      "recording_distance_mm": 500,
+      "reconstruction_distance_mm": 500,
+      "reference_amplitude": 2,
+      "field_length_mm": 4,
+      "grid_size": 128,
+      "carrier_per_mm": 10,
+      "sideband_radius_per_mm": 3.5
+    }
+  ],
+  "maximum_errors": {
+    "complex_reconstruction": 3.664298162666753e-15,
+    "hologram_intensity": 7.993605777301127e-15,
+    "grid_doubling_complex_field": 3.0478511455745234e-11,
+    "paraxial_vs_exact_spectrum_relative": 3.2928344784424706e-07,
+    "domain_doubling_sensor_relative": 2.5949278678074983e-05,
+    "matched_distance_reconstruction_relative": 0.00032779560323332416
+  },
+  "tolerances": {
+    "complex_reconstruction": 1e-10,
+    "hologram_intensity": 1e-10,
+    "grid_doubling_complex_field": 1e-08,
+    "paraxial_vs_exact_spectrum_relative": 0.0001,
+    "domain_doubling_sensor_relative": 0.0005,
+    "matched_distance_reconstruction_relative": 0.01
+  },
+  "sampling": {
+    "L_mm": 4,
+    "minimum_N": 128,
+    "nyquist_per_mm": 16,
+    "carrier_per_mm": 10,
+    "sideband_radius_per_mm": 3.5,
+    "carrier_plus_radius_per_mm": 13.5
+  },
+  "original_observation_analysis": {
+    "fringe_spacing_um": 1.222475725751445,
+    "intensity_ratio": 1.820872694556905,
+    "magnification": 1.0083333333333335
+  }
+}

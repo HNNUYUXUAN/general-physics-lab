@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "experiment": "course-02/surface-tension",
+  "references": [
+    {
+      "id": "he2022-surface-error",
+      "title": "拉脱法测量液体表面张力系数的误差分析",
+      "authors": [
+        "赫文豪",
+        "李帅霖",
+        "付楷涵",
+        "李懂文"
+      ],
+      "journal": "大学物理实验",
+      "year": 2022,
+      "volume": 35,
+      "issue": 1,
+      "pages": "104–109",
+      "doi": "10.14139/j.cnki.cn22-1228.2022.01.023",
+      "url": "https://doi.org/10.14139/j.cnki.cn22-1228.2022.01.023",
+      "full_text_status": "obtained_and_read",
+      "pdf_sha256": "c2af1147ab1de860daa321a2b2c2c29b011b75f732d19b071a9224bfc616f379",
+      "locators": [
+        {
+          "page": 105,
+          "location": "§1.2式1–6",
+          "supports": "吊环内外周界、润湿余弦、线性传感器及差分"
+        },
+        {
+          "page": 106,
+          "location": "表2",
+          "supports": "温度依赖转引数据，非精确校准"
+        }
+      ],
+      "symbol_mapping": "project K_lab in N/mV is inverse of paper voltage/force sensitivity",
+      "verification_notes": [
+        "p108 circumference error prose contradicts equation6 sensitivity",
+        "wet-ring prose signs not adopted as reference"
+      ]
+    }
+  ]
+}

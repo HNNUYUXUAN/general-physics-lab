@@ -1,0 +1,7 @@
+import test from'node:test';import assert from'node:assert/strict';import{DEFAULT_PARAMETERS as P,properties,motion,inferPeriod,staticRecord,validateParameters}from'../simulations/doppler-application/model.mjs';const near=(a,b,t=1e-10)=>assert.ok(Math.abs(a-b)<t);
+test('spring energy and period',()=>{const q=properties(P);for(const t of[0,.1,.4,q.period])near(motion(P,t).energy,.5*P.stiffness*P.amplitude**2);near(motion(P,q.period).position,P.amplitude);});
+test('stationary source moving receiver is single-pass frequency',()=>{const q=properties(P),m=motion(P,q.period/4);near(m.frequency/P.carrier,1+m.velocity/P.soundSpeed);near(m.frequencyShift,-q.maxShift,1e-9);});
+test('acoustic phase derivative yields signed shift',()=>{const t=.1,h=1e-6;near((motion(P,t+h).phaseDifference-motion(P,t-h).phaseDifference)/(2*h)/(2*Math.PI),motion(P,t).frequencyShift,1e-7);});
+test('spring mass raises inferred k at fixed period',()=>{const p={...P,springMass:.03},r=inferPeriod(p,properties(p).period);near(r.stiffnessWithEffectiveMass,p.stiffness);assert.ok(r.stiffnessIgnoringSpring<p.stiffness);});
+test('static force extension inversion and offset',()=>{near(staticRecord(P,properties(P).staticPosition,'ideal-model').derived.stiffness,P.stiffness);const p={...P,staticOffset:.005};assert.ok(staticRecord(p,properties(p).staticPosition,'ideal-model').derived.stiffness<p.stiffness);});
+test('invalid input rejected',()=>{assert.throws(()=>validateParameters({...P,amplitude:0}));assert.throws(()=>inferPeriod(P,0));});

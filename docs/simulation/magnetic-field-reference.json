@@ -1,0 +1,17 @@
+{
+  "experimentId": "course-03/magnetic-field",
+  "status": "passed",
+  "method": "independent vector Biot-Savart line quadrature around each circular loop",
+  "caseCount": 270,
+  "maxScaledErrors": {
+    "position_mm": 0,
+    "field_mT": 3.9510758188375647e-16,
+    "normalized": 4.3928377050604364e-16,
+    "relativeDeviationPercent": 4.059590988007992e-14,
+    "centerField_mT": 3.9510758188375647e-16
+  },
+  "scaling": "abs(error)/max(1,abs(reference))",
+  "tolerance": 1e-10,
+  "modelSha256": "803df9763e72bf9ed772c54c3e481d6aed37e69b0f42fe3c3364b21f1b74ad3d",
+  "numpyVersion": "2.5.4"
+}

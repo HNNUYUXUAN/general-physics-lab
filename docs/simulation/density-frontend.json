@@ -1,0 +1,162 @@
+{
+  "status": "passed",
+  "source_hashes": {
+    "simulations/density/app.mjs": "8c28592cbea8bf0597e98feabe75cdee46aace9fd9496bdf7bf0438520f49f5c",
+    "simulations/density/model.mjs": "08749c6bad11f2400256c717e8571a34514635d3888ead6f7751a12611659ebf",
+    "simulations/density/index.html": "34e8b25fe5a504f6362c6274d60775e438ad066a353febdd1bcc4c3197cf4247",
+    "simulations/density/lab.css": "76a8d2af1c1b9d6a2b9d5dd4bef88e1455ddad05cf1d93435d94a5825a01d82f",
+    "simulations/density/chart.mjs": "c82ef793891457129411c144904f8fd2a61d67ac297f107beaf922bdf2934964",
+    "simulations/density/observations.json": "4c7bd685dd0fb9b23e227e9c6d7eac4b16cad75a4246b899971482118dd6e98f"
+  },
+  "source_record_sha256": "178725477f35fcd4a401da707dc073e01c551e9623904cbd60a301655c7e13b0",
+  "interaction_checks": 5,
+  "visual_status": "passed",
+  "exports_status": "passed",
+  "exports": [
+    {
+      "filename": "density-export.json",
+      "sha256": "8673a81231d07fcf2d98636a49c92ee771eccab936773d83364216121e062c52",
+      "bytes": 5757
+    },
+    {
+      "filename": "density-export.csv",
+      "sha256": "fced1cdfbb2897ebbb51f4067d427fc8ab24dbb35e945b8764bd3a419dddb897",
+      "bytes": 982
+    }
+  ],
+  "fonts": {
+    "body": "\"Times New Roman\", SimSun, \"Songti SC\", serif",
+    "simsun": true,
+    "times": true,
+    "mathjax": 11,
+    "math_errors": []
+  },
+  "browser": "fixed Chromium1243 via playwright-cli isolated rollout-mechanics",
+  "layout": {
+    "mobile": {
+      "viewport": 390,
+      "document": 390,
+      "overflow": false,
+      "svg_text": [
+        {
+          "text": "40.000 g",
+          "size": 14.487804561839203
+        },
+        {
+          "text": "固体空气中",
+          "size": 14.487806760386293
+        },
+        {
+          "text": "被测物",
+          "size": 14.48780742554328
+        }
+      ],
+      "math_errors": []
+    }
+  },
+  "interaction": [
+    {
+      "name": "五种称量反演",
+      "status": "passed"
+    },
+    {
+      "name": "部分浸没身份",
+      "status": "passed"
+    },
+    {
+      "name": "参数场景分组",
+      "status": "passed"
+    },
+    {
+      "name": "非法固体体积",
+      "status": "passed"
+    },
+    {
+      "name": "原始记录完整",
+      "status": "passed"
+    }
+  ],
+  "background": {
+    "status": "not-applicable"
+  },
+  "checked_at_utc": "2026-10-16T16:32:24.500Z",
+  "screenshots": [
+    {
+      "path": "docs/assets/simulations/density/frontend-01-56ef3f115796.png",
+      "sha256": "56ef3f1157961071d0561ceba59c1b85e02ca343cbdd19569a4767333f3dec42"
+    },
+    {
+      "path": "docs/assets/simulations/density/frontend-02-0fd4eae92e16.png",
+      "sha256": "0fd4eae92e1685ec12b030303cf8020c47993748b2fcd9ee853d02bc271da286"
+    },
+    {
+      "path": "docs/assets/simulations/density/frontend-03-68def7d23d62.png",
+      "sha256": "68def7d23d62c3218adad53cca2d55a2da330fa49164cbc781fdec611b51fa79"
+    },
+    {
+      "path": "docs/assets/simulations/density/frontend-04-633d7b1db18f.png",
+      "sha256": "633d7b1db18ff1cbbedfc27dc7c3fa88581af5de3700c64dcabf331794780833"
+    }
+  ],
+  "schema_version": 1,
+  "experiment_id": "course-01/density",
+  "numerical": {
+    "status": "passed",
+    "reference_sha256": "e03dabeaf15fe8438a76392416fa778ceb3e769b092b32b7aa49ea5525b4efec",
+    "source_files": {
+      "simulations/density/index.html": "34e8b25fe5a504f6362c6274d60775e438ad066a353febdd1bcc4c3197cf4247",
+      "simulations/density/model.mjs": "08749c6bad11f2400256c717e8571a34514635d3888ead6f7751a12611659ebf",
+      "simulations/density/app.mjs": "8c28592cbea8bf0597e98feabe75cdee46aace9fd9496bdf7bf0438520f49f5c",
+      "simulations/density/chart.mjs": "c82ef793891457129411c144904f8fd2a61d67ac297f107beaf922bdf2934964",
+      "simulations/density/lab.css": "76a8d2af1c1b9d6a2b9d5dd4bef88e1455ddad05cf1d93435d94a5825a01d82f",
+      "simulations/density/observations.json": "4c7bd685dd0fb9b23e227e9c6d7eac4b16cad75a4246b899971482118dd6e98f",
+      "docs/density-model-evidence.md": "069c1b439d3e3d356b80f31ab212cad838721da85eaddeb6ed3ca7b45e84233b",
+      "docs/density-references.json": "8f62aaa8b29b0725970431695d74c782b88225fdab6699b0e29393af06cec423",
+      "docs/density-references.bib": "271b9f26a8f616b132c0a353ea0387c7bd3c441d4139fb0d043b18c54e5e47cf",
+      "docs/simulation/density-reference.json": "e03dabeaf15fe8438a76392416fa778ceb3e769b092b32b7aa49ea5525b4efec",
+      "scripts/validate_density_simulation.py": "817f8b1b23910fd1af602dbd8af23883ec37619b225dc2147e8e05c017247178",
+      "tests/density-model.test.mjs": "3cd19323b8451941fbc5befcd8d50d86f82f3344d005235677455b9781243f57"
+    }
+  },
+  "scientific_evidence": {
+    "status": "verified",
+    "decision_source_files": {
+      "docs/density-references.json": "8f62aaa8b29b0725970431695d74c782b88225fdab6699b0e29393af06cec423",
+      "docs/density-model-evidence.md": "069c1b439d3e3d356b80f31ab212cad838721da85eaddeb6ed3ca7b45e84233b",
+      "simulations/density/model.mjs": "08749c6bad11f2400256c717e8571a34514635d3888ead6f7751a12611659ebf"
+    },
+    "core_references": [
+      {
+        "id": "yu2015-density-error",
+        "pdf_sha256": "eb5d1e22883303b8a117e01d30f819f8af100da9543174cf47f07accfd9d312a",
+        "locators": [
+          {
+            "page": 162,
+            "location": "表1",
+            "supports": "阿基米德称衡原理"
+          },
+          {
+            "page": 163,
+            "location": "§2.2",
+            "supports": "ρ=ρw*m_air/(m_air−m_submerged)"
+          },
+          {
+            "page": 163,
+            "location": "§2.4",
+            "supports": "未完全浸没造成正偏差"
+          },
+          {
+            "page": 163,
+            "location": "§2.5",
+            "supports": "比重瓶空瓶/水/待测液体称量"
+          },
+          {
+            "page": 164,
+            "location": "§3.3",
+            "supports": "需匹配水密度的温度条件"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,5 +1,15 @@
 {
   "status": "passed",
+  "source_hashes": {
+    "simulations/ac-bridge/model.mjs": "a4e3aeaca0ddc292dae3f7155f23bd61150a1d6020059feb9889ee8fde06a2c3",
+    "simulations/ac-bridge/app.mjs": "fc58c5a9e3648bcbf7896f7025281a623681df7f01bcb607ceca7701030f78b6",
+    "simulations/ac-bridge/chart.mjs": "7661b7bfc2fe4ac33d2ab50733687b64f47c7110505e27c14c80c42c38df82dd",
+    "simulations/ac-bridge/lab.css": "d007905ee689191cb3d99caebe74d1e5e924b6fd068c7a81d2417c75219b6169",
+    "simulations/ac-bridge/observations.json": "09f66ecd3b476bb9fb2d0d07667997e8e09857f8789ee54d63f388fee5a6f189",
+    "simulations/ac-bridge/diagram.mjs": "5fe1bc64e35481644953e48a0ad9c7d0bb9e4d09c894fd42575dbe4aac9fd784",
+    "simulations/ac-bridge/ui-config.json": "58288e1e417f0ecb7eca7d4e3e0da06332d207132d20cf7ab92309ac8846ff00",
+    "simulations/ac-bridge/index.html": "7d030a6bf1d49cf8db78f81e0bb38b0f4f5888d37816c89029180b087b71c27c"
+  },
   "source_record_sha256": "fcafea0884b00d7dfdefff38435aab071b78c5e8f4d05b6bdbd637f6a385598e",
   "interaction_checks": 18,
   "visual_status": "passed",
@@ -191,6 +201,8 @@
       "docs/ac-bridge-references.json": "946f11660285a84a6eea75c5031f6dc90b6e243ee6859612231a1fc157ea2a70",
       "docs/ac-bridge-references.bib": "6a98400211e2afced59db2ca1eda35c4290d1a8be58403b7297d312bcebbb503",
       "docs/simulation/ac-bridge-reference.json": "be16da8997b97311b56c3704f280b34986f091fd911b1c98ff66142cfaaf8890",
+      "simulations/ac-bridge/diagram.mjs": "5fe1bc64e35481644953e48a0ad9c7d0bb9e4d09c894fd42575dbe4aac9fd784",
+      "simulations/ac-bridge/ui-config.json": "58288e1e417f0ecb7eca7d4e3e0da06332d207132d20cf7ab92309ac8846ff00",
       "scripts/validate_ac_bridge_simulation.py": "6de9bad394738df660c35d1003be1caa684ecdb6cd18e8ebc08d7e590bc8c377",
       "tests/ac-bridge-model.test.mjs": "1023b752aca2d92f6f3f0823faecc2876fab843877c5949b6b53451b59397362"
     }
@@ -212,15 +224,5 @@
         ]
       }
     ]
-  },
-  "source_hashes": {
-    "simulations/ac-bridge/model.mjs": "a4e3aeaca0ddc292dae3f7155f23bd61150a1d6020059feb9889ee8fde06a2c3",
-    "simulations/ac-bridge/app.mjs": "fc58c5a9e3648bcbf7896f7025281a623681df7f01bcb607ceca7701030f78b6",
-    "simulations/ac-bridge/chart.mjs": "7661b7bfc2fe4ac33d2ab50733687b64f47c7110505e27c14c80c42c38df82dd",
-    "simulations/ac-bridge/lab.css": "d007905ee689191cb3d99caebe74d1e5e924b6fd068c7a81d2417c75219b6169",
-    "simulations/ac-bridge/observations.json": "09f66ecd3b476bb9fb2d0d07667997e8e09857f8789ee54d63f388fee5a6f189",
-    "simulations/ac-bridge/diagram.mjs": "5fe1bc64e35481644953e48a0ad9c7d0bb9e4d09c894fd42575dbe4aac9fd784",
-    "simulations/ac-bridge/ui-config.json": "58288e1e417f0ecb7eca7d4e3e0da06332d207132d20cf7ab92309ac8846ff00",
-    "simulations/ac-bridge/index.html": "7d030a6bf1d49cf8db78f81e0bb38b0f4f5888d37816c89029180b087b71c27c"
   }
 }

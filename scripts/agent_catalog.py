@@ -20,7 +20,7 @@ def simulation_resources(root=ROOT):
     path=root/'simulations/registry.json'
     if not path.is_file():return {}
     entries=json.loads(path.read_text(encoding='utf-8'))['simulations']
-    return {e['experiment_id']:e['resources'] for e in entries if e['status'] in {'validated','published'}}
+    return {e['experiment_id']:{**e['resources'],**({'simulation_frontend_validation':e['frontend_validation']} if e.get('frontend_validation') else {})} for e in entries if e['status'] in {'validated','published'}}
 
 SIMULATION_RESOURCES = simulation_resources()
 
@@ -223,9 +223,9 @@ def documents(catalog, root=ROOT):
             '- ' + link('运行环境 / Setup', 'docs/usage.md') + ': Python、Wolfram、字体与HTML阅读。', '',
             '## 虚拟实验 / Virtual laboratories', '',
             '- [虚拟实验目录 / Virtual laboratories](' + PAGES.rstrip('/') + '/simulations/): 按课程进入已验收的操作、测量和分析页面。',
-            '- ' + link('单摆模型与文献依据', 'docs/pendulum-model-evidence.md') + ': 方程、参数身份、适用范围及独立验证。',
+            '- ' + link('系列科学依据与书目', 'docs/series-scientific-guide.md') + ': 逐实验模型、参数身份、适用范围及独立验证。',
             '- ' + link('虚拟实验接手与复现', 'docs/virtual-lab-agent-guide.md') + ': WebVPN检索、全文归档、模型接口与发布验收。',
-            '- ' + link('系列平台开发方案', 'docs/virtual-lab-development.md') + ': 首例功能、分层架构和扩展顺序。', '',
+            '- ' + link('系列平台开发方案', 'docs/virtual-lab-development.md') + ': 测量流程、分层架构和登记接口。', '',
             '## 检索目录', '',
             '- ' + link('45项实验检索目录 / Experiment index', 'docs/experiment-index.md') + ': 中英文名、常用别名、主题、方法和三稿入口。',
             '- ' + link('机器目录 / Machine catalog', 'docs/experiments.json') + ': 路径、raw URL、哈希、数据表、指标和实际接口。',

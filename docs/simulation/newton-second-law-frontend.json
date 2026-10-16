@@ -1,0 +1,170 @@
+{
+  "status": "passed",
+  "source_hashes": {
+    "simulations/newton-second-law/app.mjs": "f10f165eb90aed15b310cdfe7f0d468bfe7ba5d65910b29dbc832f3d042b852f",
+    "simulations/newton-second-law/model.mjs": "eb53140817a489ceaedd03493629a17bc872c57f9644669acf0bb68c1fd21089",
+    "simulations/newton-second-law/index.html": "fe10007191e4735a94b82ffc675b8a308bac9ca02586074716bb5a7123b2928f",
+    "simulations/newton-second-law/lab.css": "2923d50518506aea46e2fe615c95f6d7d428b2d1975e8fb997f0f7d84dfbd7dc",
+    "simulations/newton-second-law/chart.mjs": "d9de3df2659ebe798d162b1aaaa42686654346c822e72edf9c1a515302532942",
+    "simulations/newton-second-law/observations.json": "0c66d19bcd8d1318fe187f030b3262506c758f2688839c3b76ffe589fdb73d9d"
+  },
+  "source_record_sha256": "4b1851079fda4e887067219f01d94318cadb0888103571bd67cd561da51296ee",
+  "interaction_checks": 6,
+  "visual_status": "passed",
+  "exports_status": "passed",
+  "exports": [
+    {
+      "filename": "newton-second-law-export.json",
+      "sha256": "2423ff7ad2b9495e4770ee02c2885deb71ba6e4ef8db1b4de77c202772babee8",
+      "bytes": 4882
+    },
+    {
+      "filename": "newton-second-law-export.csv",
+      "sha256": "4feaa865a84275704697f0f3f7db5699d798b80e0a605d060318b581bd3cdd13",
+      "bytes": 1170
+    }
+  ],
+  "fonts": {
+    "body": "\"Times New Roman\", SimSun, \"Songti SC\", serif",
+    "simsun": true,
+    "times": true,
+    "mathjax": 17,
+    "math_errors": []
+  },
+  "browser": "fixed Chromium1243 via playwright-cli isolated rollout-mechanics",
+  "layout": {
+    "mobile": {
+      "viewport": 390,
+      "document": 390,
+      "overflow": false,
+      "svg_text": [
+        {
+          "text": "门1",
+          "size": 14.488460585945022
+        },
+        {
+          "text": "门2",
+          "size": 14.488460585945022
+        },
+        {
+          "text": "15 g",
+          "size": 14.488461298890488
+        },
+        {
+          "text": "滑块与配重质量 165 g",
+          "size": 14.488460940909677
+        },
+        {
+          "text": "x = 0.000 m；v = 0.200 m/s",
+          "size": 14.488462656058788
+        },
+        {
+          "text": "S = 0.500 m",
+          "size": 14.488460933516881
+        }
+      ],
+      "math_errors": []
+    }
+  },
+  "interaction": [
+    {
+      "name": "恒质量五力回归",
+      "status": "passed"
+    },
+    {
+      "name": "有限挡光片来源",
+      "status": "passed"
+    },
+    {
+      "name": "非法门时间",
+      "status": "passed"
+    },
+    {
+      "name": "质量转移",
+      "status": "passed"
+    },
+    {
+      "name": "原观测模式敏感性",
+      "status": "passed"
+    },
+    {
+      "name": "非法总质量",
+      "status": "passed"
+    }
+  ],
+  "background": {
+    "status": "passed",
+    "actual_document_hidden": true,
+    "pause_verified": true,
+    "source_files": {
+      "simulations/newton-second-law/app.mjs": "f10f165eb90aed15b310cdfe7f0d468bfe7ba5d65910b29dbc832f3d042b852f",
+      "simulations/newton-second-law/model.mjs": "eb53140817a489ceaedd03493629a17bc872c57f9644669acf0bb68c1fd21089"
+    },
+    "checked_at_utc": "2026-10-16T17:08:45.497Z"
+  },
+  "checked_at_utc": "2026-10-16T16:14:02.811Z",
+  "screenshots": [
+    {
+      "path": "docs/assets/simulations/newton-second-law/frontend-01-95402575ae06.png",
+      "sha256": "95402575ae069e91ed42e9f21c20765be19952912d343bc33e2cf48e5aec5c90"
+    },
+    {
+      "path": "docs/assets/simulations/newton-second-law/frontend-02-f45ba555a382.png",
+      "sha256": "f45ba555a3827d581a789b6c7625f98465744df20ac3992bc4f4d78e2839aea5"
+    },
+    {
+      "path": "docs/assets/simulations/newton-second-law/frontend-03-fb3d261c5a4f.png",
+      "sha256": "fb3d261c5a4faf45f9858b39caa56ef515255431331eb83e9e5c44715b867c62"
+    },
+    {
+      "path": "docs/assets/simulations/newton-second-law/frontend-04-18f558bea88e.png",
+      "sha256": "18f558bea88e1c8acadb2b19a36d1d9c257a3fef8627e20134f6e0e77e6d05ee"
+    }
+  ],
+  "schema_version": 1,
+  "experiment_id": "course-01/newton-second-law",
+  "numerical": {
+    "status": "passed",
+    "reference_sha256": "c2562a055c6cfdd668a7dfae36d67c771b7dd945f66d4e95cf7e1ba38a39ac29",
+    "source_files": {
+      "simulations/newton-second-law/index.html": "fe10007191e4735a94b82ffc675b8a308bac9ca02586074716bb5a7123b2928f",
+      "simulations/newton-second-law/model.mjs": "eb53140817a489ceaedd03493629a17bc872c57f9644669acf0bb68c1fd21089",
+      "simulations/newton-second-law/app.mjs": "f10f165eb90aed15b310cdfe7f0d468bfe7ba5d65910b29dbc832f3d042b852f",
+      "simulations/newton-second-law/chart.mjs": "d9de3df2659ebe798d162b1aaaa42686654346c822e72edf9c1a515302532942",
+      "simulations/newton-second-law/lab.css": "2923d50518506aea46e2fe615c95f6d7d428b2d1975e8fb997f0f7d84dfbd7dc",
+      "simulations/newton-second-law/observations.json": "0c66d19bcd8d1318fe187f030b3262506c758f2688839c3b76ffe589fdb73d9d",
+      "docs/newton-second-law-model-evidence.md": "78c114687adc2d35f0136895d076bbee54c223f2c552ac8f7e0dde1c7b598c78",
+      "docs/newton-second-law-references.json": "905410ab9513a1a141461f3bc9c8402d3aec95b8a50ed86599506130887c8492",
+      "docs/newton-second-law-references.bib": "e6ee1ef43d20c967732d72c4107a7c040d2ecf2623b28f1544ed1506ae88a0c3",
+      "docs/simulation/newton-second-law-reference.json": "c2562a055c6cfdd668a7dfae36d67c771b7dd945f66d4e95cf7e1ba38a39ac29",
+      "scripts/validate_newton_second_law_simulation.py": "bb07eb4f7a2a853087b3760fb7a8e5f6805e8cf57c1a2f422101dc9dccf1de08",
+      "tests/newton-second-law-model.test.mjs": "c30012152aa4468a717faab25ee49284f876268d71c939e7de1982a897bbe40b"
+    }
+  },
+  "scientific_evidence": {
+    "status": "verified",
+    "decision_source_files": {
+      "docs/newton-second-law-references.json": "905410ab9513a1a141461f3bc9c8402d3aec95b8a50ed86599506130887c8492",
+      "docs/newton-second-law-model-evidence.md": "78c114687adc2d35f0136895d076bbee54c223f2c552ac8f7e0dde1c7b598c78",
+      "simulations/newton-second-law/model.mjs": "eb53140817a489ceaedd03493629a17bc872c57f9644669acf0bb68c1fd21089"
+    },
+    "core_references": [
+      {
+        "id": "shao2025-photogate-systematic",
+        "pdf_sha256": "c1886f22f87f035ebc507254e8c508d4066e4aaed338fa8a54696b9e129eac08",
+        "locators": [
+          {
+            "page": 244,
+            "location": "式1–2",
+            "supports": "挡光片长度/过门时间及两门加速度"
+          },
+          {
+            "page": 246,
+            "location": "式18–23",
+            "supports": "有限挡片时长、严格偏差与加速度偏大"
+          }
+        ]
+      }
+    ]
+  }
+}

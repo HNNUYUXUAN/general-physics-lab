@@ -1,0 +1,17 @@
+{
+  "experimentId": "course-03/multimeter",
+  "status": "passed",
+  "method": "independent voltage nodal loading and ohmmeter loop solve",
+  "caseCount": 81,
+  "maxScaledErrors": {
+    "digitalVoltage": 0,
+    "analogVoltage": 0,
+    "fraction": 3.469446951953614e-18,
+    "indicatedResistance": 3.1075160981497453e-16,
+    "inputLoadedVoltage": 0
+  },
+  "scaling": "abs(error)/max(1,abs(reference))",
+  "tolerance": 1e-10,
+  "modelSha256": "5d93851f71924577dc21fdf44e4838a8de67cabe162ad1a496d8477c563efbe8",
+  "numpyVersion": "2.5.4"
+}

@@ -1,0 +1,159 @@
+{
+  "status": "passed",
+  "source_hashes": {
+    "simulations/pohl-resonance/app.mjs": "7e7997e9f7331e4f69fa8f3f34caf8cbf07c46a5212c004f2af835b9c34360b7",
+    "simulations/pohl-resonance/model.mjs": "dd17fef4235b83c8a068204012e736b952e5ac9ef409d6514795c3dea3165e6e",
+    "simulations/pohl-resonance/index.html": "ad7b45d015243103fc97b800ed98f24598765a88d57d8dc06e6831ebeb919893",
+    "simulations/pohl-resonance/lab.css": "8758670120e01748193138cf832cc963f0d9003195ff1f80358556663dca5c62",
+    "simulations/pohl-resonance/chart.mjs": "d9de3df2659ebe798d162b1aaaa42686654346c822e72edf9c1a515302532942",
+    "simulations/pohl-resonance/observations.json": "d58752d0cb41722e1c5e25ea571bb4653898bb1d6218ec0f4cdf9ff7e53f0a14"
+  },
+  "source_record_sha256": "5c2d08f181699e6a7a282b4665826a2d7b4835aa9f67d339ca2bc674c0782820",
+  "interaction_checks": 5,
+  "visual_status": "passed",
+  "exports_status": "passed",
+  "exports": [
+    {
+      "filename": "pohl-resonance-export.json",
+      "sha256": "f9c82c82b2a086d2fe1c3df649b080f1faed97371bbe06fa085b25ad94e26ab1",
+      "bytes": 26703
+    },
+    {
+      "filename": "pohl-resonance-export.csv",
+      "sha256": "c3125cfb9eb15260fa9bb9fbe9311b4f3d3e6d88ce1350d6ed1fccd7cf2741b2",
+      "bytes": 5252
+    }
+  ],
+  "fonts": {
+    "body": "\"Times New Roman\", SimSun, \"Songti SC\", serif",
+    "simsun": true,
+    "times": true,
+    "mathjax": 2,
+    "math_errors": []
+  },
+  "browser": "fixed Chromium1243 via playwright-cli isolated rollout-mechanics",
+  "layout": {
+    "mobile": {
+      "viewport": 390,
+      "document": 390,
+      "overflow": false,
+      "svg_text": [
+        {
+          "text": "周期力矩驱动",
+          "size": 17.204833926565627
+        },
+        {
+          "text": "θ=2.000°",
+          "size": 17.20482989490784
+        },
+        {
+          "text": "θ̇=0.00000 rad/s",
+          "size": 14.488283320053851
+        }
+      ],
+      "math_errors": []
+    }
+  },
+  "interaction": [
+    {
+      "name": "自由衰减十峰拟合",
+      "status": "passed"
+    },
+    {
+      "name": "稳态扫频幅相",
+      "status": "passed"
+    },
+    {
+      "name": "稳态读数与来源隔离",
+      "status": "passed"
+    },
+    {
+      "name": "参数变化",
+      "status": "passed"
+    },
+    {
+      "name": "非法参数拒写及复位",
+      "status": "passed"
+    }
+  ],
+  "background": {
+    "status": "passed",
+    "actual_document_hidden": true,
+    "pause_verified": true,
+    "source_files": {
+      "simulations/pohl-resonance/app.mjs": "7e7997e9f7331e4f69fa8f3f34caf8cbf07c46a5212c004f2af835b9c34360b7",
+      "simulations/pohl-resonance/model.mjs": "dd17fef4235b83c8a068204012e736b952e5ac9ef409d6514795c3dea3165e6e"
+    },
+    "checked_at_utc": "2026-10-16T17:08:59.026Z"
+  },
+  "checked_at_utc": "2026-10-16T16:32:14.294Z",
+  "screenshots": [
+    {
+      "path": "docs/assets/simulations/pohl-resonance/frontend-01-cb65e0f62124.png",
+      "sha256": "cb65e0f621242e7377dfc1ef8e340c9ae470f75b3b87b6b22097ba19fe526fc1"
+    },
+    {
+      "path": "docs/assets/simulations/pohl-resonance/frontend-02-22fdb5753a70.png",
+      "sha256": "22fdb5753a70cd5bd2d7e257bb6faa306226b57e9421d4dd9264aaf31d53f2f3"
+    },
+    {
+      "path": "docs/assets/simulations/pohl-resonance/frontend-03-100f52387cf9.png",
+      "sha256": "100f52387cf975b85470ebe966e69df58600692a1ba751e96a6beaa39ef42b3b"
+    },
+    {
+      "path": "docs/assets/simulations/pohl-resonance/frontend-04-f6fccb66cbb3.png",
+      "sha256": "f6fccb66cbb3854f444ed1d7037b9d3ca8d663ee2bdc42fdfadd8c8c4b6476e0"
+    }
+  ],
+  "schema_version": 1,
+  "experiment_id": "course-02/pohl-resonance",
+  "numerical": {
+    "status": "passed",
+    "reference_sha256": "43f6bb2171e1d65ef89888d943e851d97b3119f27c216fd8b3ebad4f21a51a43",
+    "source_files": {
+      "simulations/pohl-resonance/index.html": "ad7b45d015243103fc97b800ed98f24598765a88d57d8dc06e6831ebeb919893",
+      "simulations/pohl-resonance/model.mjs": "dd17fef4235b83c8a068204012e736b952e5ac9ef409d6514795c3dea3165e6e",
+      "simulations/pohl-resonance/app.mjs": "7e7997e9f7331e4f69fa8f3f34caf8cbf07c46a5212c004f2af835b9c34360b7",
+      "simulations/pohl-resonance/chart.mjs": "d9de3df2659ebe798d162b1aaaa42686654346c822e72edf9c1a515302532942",
+      "simulations/pohl-resonance/lab.css": "8758670120e01748193138cf832cc963f0d9003195ff1f80358556663dca5c62",
+      "simulations/pohl-resonance/observations.json": "d58752d0cb41722e1c5e25ea571bb4653898bb1d6218ec0f4cdf9ff7e53f0a14",
+      "docs/pohl-resonance-model-evidence.md": "27084ca363d1f265bcf3ba5d44d0d26ed7424e9d804ed606ac8563c7e53849d2",
+      "docs/pohl-resonance-references.json": "9a48550af5ad3b39a33d18a4142f9059b7a840ff183756ce97b409a1ee914826",
+      "docs/pohl-resonance-references.bib": "668db34df66adc954aa43842acba0af5db4495c14cb1f7c4fe6df2645329999c",
+      "docs/simulation/pohl-resonance-reference.json": "43f6bb2171e1d65ef89888d943e851d97b3119f27c216fd8b3ebad4f21a51a43",
+      "scripts/validate_pohl_resonance_simulation.py": "9a1daf404037a468b47e7d4c7eed0c8464633ff9e8186695a60e2448102e190f",
+      "tests/pohl-resonance-model.test.mjs": "aae18baa7012a0d8fd5770eda44776dbe6be8f8670b75eb791e83034cede74ab"
+    }
+  },
+  "scientific_evidence": {
+    "status": "verified",
+    "decision_source_files": {
+      "docs/pohl-resonance-references.json": "9a48550af5ad3b39a33d18a4142f9059b7a840ff183756ce97b409a1ee914826",
+      "docs/pohl-resonance-model-evidence.md": "27084ca363d1f265bcf3ba5d44d0d26ed7424e9d804ed606ac8563c7e53849d2",
+      "simulations/pohl-resonance/model.mjs": "dd17fef4235b83c8a068204012e736b952e5ac9ef409d6514795c3dea3165e6e"
+    },
+    "core_references": [
+      {
+        "id": "zhu2011-pohl",
+        "pdf_sha256": "56693d96c0a7b2d9fb125896bfc36b9b054b5974877c9f334762246d595c80ca",
+        "locators": [
+          {
+            "page": 57,
+            "location": "式1–2",
+            "supports": "归一化线性扭振方程"
+          },
+          {
+            "page": 58,
+            "location": "式4–7、§3.1",
+            "supports": "稳态幅相、峰频和衰减逐差"
+          },
+          {
+            "page": 59,
+            "location": "§3.3",
+            "supports": "大角弹簧刚度依赖的适用性"
+          }
+        ]
+      }
+    ]
+  }
+}

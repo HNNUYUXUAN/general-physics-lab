@@ -1,0 +1,168 @@
+{
+  "status": "passed",
+  "source_hashes": {
+    "simulations/vaporization-heat/index.html": "1da20fba46167a58961e6b2d437c8a006d21bf41b60127cd7e623cc083b9d9cb",
+    "simulations/vaporization-heat/app.mjs": "1abac1b826f9c2cc173d015b10b17be302210758c1238f44eece6c57e74c1205",
+    "simulations/vaporization-heat/model.mjs": "a02f72de7b5d7b4d300f831d9e54937e2151aaf84ac81524f44da0f52c26674e",
+    "simulations/vaporization-heat/lab.css": "61f67764e9a822b526dca998efc210b46874b3d1ec7ef4f9ad309aa318888e75",
+    "simulations/vaporization-heat/chart.mjs": "d9de3df2659ebe798d162b1aaaa42686654346c822e72edf9c1a515302532942",
+    "simulations/vaporization-heat/observations.json": "6bcaf135af496f037fe42da0c33e4fe38160b3f184bf9a5dad0c1ee54a015ca3"
+  },
+  "source_record_sha256": "8ec44ecff56a4a1e283be44d6cbb72b5f6f534bdfb57457ef71c7b580606b344",
+  "interaction_checks": 5,
+  "visual_status": "passed",
+  "exports_status": "passed",
+  "exports": [
+    {
+      "filename": "vaporization-heat-export.json",
+      "sha256": "d40b3a20ac185a1a224d5103cefb0da2adb1552b601f1e70c33903059e6f513d",
+      "bytes": 5653
+    },
+    {
+      "filename": "vaporization-heat-export.csv",
+      "sha256": "09b89044c3248dd20e78671ff6059f26e6af649fe3b05fe09931ab53d7aa9967",
+      "bytes": 822
+    }
+  ],
+  "fonts": {
+    "body": "\"Times New Roman\", SimSun, \"Songti SC\", serif",
+    "simsun": true,
+    "times": true,
+    "mathjax": 5,
+    "math_errors": []
+  },
+  "browser": "fixed Chromium1243 via playwright-cli isolated rollout-mechanics",
+  "layout": {
+    "mobile": {
+      "viewport": 390,
+      "document": 390,
+      "overflow": false,
+      "svg_text": [
+        {
+          "text": "蒸汽发生器",
+          "size": 14.488890634741773
+        },
+        {
+          "text": "量热器与凝结水",
+          "size": 14.488892805465033
+        },
+        {
+          "text": "混合末温 48.998 ℃",
+          "size": 14.48889031417041
+        },
+        {
+          "text": "温度探头",
+          "size": 14.488888548930074
+        },
+        {
+          "text": "100℃蒸汽/液滴",
+          "size": 14.488888125835187
+        }
+      ],
+      "math_errors": []
+    }
+  },
+  "interaction": [
+    {
+      "name": "量热闭环反演",
+      "status": "passed"
+    },
+    {
+      "name": "末态构成歧义",
+      "status": "passed"
+    },
+    {
+      "name": "湿蒸汽偏差",
+      "status": "passed"
+    },
+    {
+      "name": "非法质量读数拒绝",
+      "status": "passed"
+    },
+    {
+      "name": "非法情景参数拒绝",
+      "status": "passed"
+    }
+  ],
+  "background": {
+    "status": "not-applicable"
+  },
+  "checked_at_utc": "2026-10-16T16:35:32.381Z",
+  "screenshots": [
+    {
+      "path": "docs/assets/simulations/vaporization-heat/frontend-01-045243a7d918.png",
+      "sha256": "045243a7d918de8c58b90c759651f0d6c750fc2ad96c3db9a6135fc97ba757f7"
+    },
+    {
+      "path": "docs/assets/simulations/vaporization-heat/frontend-02-1665e6786374.png",
+      "sha256": "1665e678637435d9e8e8168a7f71e2a19426a38a3fa350fee29e3271f0b1ee63"
+    },
+    {
+      "path": "docs/assets/simulations/vaporization-heat/frontend-03-465a857433cd.png",
+      "sha256": "465a857433cd937d6cc05122c91f5b87bc15980b3de69a6e7e6ef4f562752d7f"
+    },
+    {
+      "path": "docs/assets/simulations/vaporization-heat/frontend-04-636a5f79e9b3.png",
+      "sha256": "636a5f79e9b391a7e1e624827ebfe713ae7eaca8e0fbf141ec94f9f8539f1654"
+    },
+    {
+      "path": "docs/assets/simulations/vaporization-heat/frontend-05-68c9743cf871.png",
+      "sha256": "68c9743cf8717930af7259851f0eabe56f0f293fb4aaf10e78b665bb6f4375a7"
+    },
+    {
+      "path": "docs/assets/simulations/vaporization-heat/frontend-06-aff6e1dc9868.png",
+      "sha256": "aff6e1dc986862e7bedb0846949ccaa2aeee86378743031c10dbff4dfe829715"
+    }
+  ],
+  "schema_version": 1,
+  "experiment_id": "course-01/vaporization-heat",
+  "numerical": {
+    "status": "passed",
+    "reference_sha256": "826e205a8e8f6b9883a33a9a27c77627b3291ef5ee1f821e7b43f9dcf1587cdd",
+    "source_files": {
+      "simulations/vaporization-heat/index.html": "1da20fba46167a58961e6b2d437c8a006d21bf41b60127cd7e623cc083b9d9cb",
+      "simulations/vaporization-heat/model.mjs": "a02f72de7b5d7b4d300f831d9e54937e2151aaf84ac81524f44da0f52c26674e",
+      "simulations/vaporization-heat/app.mjs": "1abac1b826f9c2cc173d015b10b17be302210758c1238f44eece6c57e74c1205",
+      "simulations/vaporization-heat/chart.mjs": "d9de3df2659ebe798d162b1aaaa42686654346c822e72edf9c1a515302532942",
+      "simulations/vaporization-heat/lab.css": "61f67764e9a822b526dca998efc210b46874b3d1ec7ef4f9ad309aa318888e75",
+      "simulations/vaporization-heat/observations.json": "6bcaf135af496f037fe42da0c33e4fe38160b3f184bf9a5dad0c1ee54a015ca3",
+      "docs/vaporization-heat-model-evidence.md": "c89473deb4cb7d2cfd015ba073a32c76c0db59667cf3385f872ddc3830974292",
+      "docs/vaporization-heat-references.json": "2d465f934bbea6af40d89d70ddbe77b29981f0bec882138fd7249f4bc17825e7",
+      "docs/vaporization-heat-references.bib": "98a5c43eb6809a603c5eaa07f174927d8c9fe97802e372bd9b7ecbd574b22284",
+      "docs/simulation/vaporization-heat-reference.json": "826e205a8e8f6b9883a33a9a27c77627b3291ef5ee1f821e7b43f9dcf1587cdd",
+      "scripts/validate_vaporization_heat_simulation.py": "8e558899fef2433ad0de3cba99663cd9346ff2ca71b6f846029f473d0a659ce2",
+      "tests/vaporization-heat-model.test.mjs": "58ec3b6ba3c37996eae8fdb92c4e34f52fa9ca74647051d363a8ccd321eb5f9f"
+    }
+  },
+  "scientific_evidence": {
+    "status": "verified",
+    "decision_source_files": {
+      "docs/vaporization-heat-references.json": "2d465f934bbea6af40d89d70ddbe77b29981f0bec882138fd7249f4bc17825e7",
+      "docs/vaporization-heat-model-evidence.md": "c89473deb4cb7d2cfd015ba073a32c76c0db59667cf3385f872ddc3830974292",
+      "simulations/vaporization-heat/model.mjs": "a02f72de7b5d7b4d300f831d9e54937e2151aaf84ac81524f44da0f52c26674e"
+    },
+    "core_references": [
+      {
+        "id": "li2022-vaporization",
+        "pdf_sha256": "e7938cd2915e00f81088d2312ce649e1e3f719fc9a311d2edfa4c0097db96ad6",
+        "locators": [
+          {
+            "page": 23,
+            "location": "§1式1、式3",
+            "supports": "混合量热能量平衡与比汽化热反演"
+          },
+          {
+            "page": 24,
+            "location": "§2–3",
+            "supports": "湿蒸汽、传输温度及固定称量构成"
+          },
+          {
+            "page": 25,
+            "location": "讨论",
+            "supports": "入口蒸汽温度与残余液滴的实验限制"
+          }
+        ]
+      }
+    ]
+  }
+}

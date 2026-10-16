@@ -1,0 +1,441 @@
+{
+  "schema_version": 1,
+  "experiment": "course-02/liquid-viscosity",
+  "model_sha256": "1218e0837e898dadcd58604c06d7e5d7993a532bff0ed0bed51d002c0784a141",
+  "validator_sha256": "1545fc9f3d75645f278be97e9ba5116fc8f082c3b625749788ebecbad85a2477",
+  "environment": {
+    "python": "3.14.7",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1"
+  },
+  "method": "Radau integration of buoyancy-minus-linear-drag ODE with both measuring-mark events; compare transient positions/velocities",
+  "case_count": 30,
+  "tolerances": {
+    "absolute": 2e-08
+  },
+  "max_absolute_error": 2.2737367544323206e-13,
+  "status": "passed",
+  "failures": [],
+  "cases": [
+    {
+      "parameters": {
+        "viscosity": 0.2,
+        "diameter": 0.0005,
+        "tubeDiameter": 0.02,
+        "distance": 0.1,
+        "entryDistance": 0.02,
+        "sphereDensity": 7800,
+        "liquidDensity": 950,
+        "gravity": 9.8
+      },
+      "reference_interval_s": 22.73797110084913,
+      "max_absolute_error": 2.1316282072803006e-14
+    },
+    {
+      "parameters": {
+        "viscosity": 0.2,
+        "diameter": 0.0005,
+        "tubeDiameter": 0.02,
+        "distance": 0.3,
+        "entryDistance": 0.02,
+        "sphereDensity": 7800,
+        "liquidDensity": 950,
+        "gravity": 9.8
+      },
+      "reference_interval_s": 68.21391330254734,
+      "max_absolute_error": 2.842170943040401e-14
+    },
+    {
+      "parameters": {
+        "viscosity": 0.2,
+        "diameter": 0.0005,
+        "tubeDiameter": 0.04,
+        "distance": 0.1,
+        "entryDistance": 0.02,
+        "sphereDensity": 7800,
+        "liquidDensity": 950,
+        "gravity": 9.8
+      },
+      "reference_interval_s": 22.094443616862833,
+      "max_absolute_error": 2.842170943040401e-14
+    },
+    {
+      "parameters": {
+        "viscosity": 0.2,
+        "diameter": 0.0005,
+        "tubeDiameter": 0.04,
+        "distance": 0.3,
+        "entryDistance": 0.02,
+        "sphereDensity": 7800,
+        "liquidDensity": 950,
+        "gravity": 9.8
+      },
+      "reference_interval_s": 66.28333085058846,
+      "max_absolute_error": 1.4210854715202004e-14
+    },
+    {
+      "parameters": {
+        "viscosity": 0.2,
+        "diameter": 0.00099,
+        "tubeDiameter": 0.02,
+        "distance": 0.1,
+        "entryDistance": 0.02,
+        "sphereDensity": 7800,
+        "liquidDensity": 950,
+        "gravity": 9.8
+      },
+      "reference_interval_s": 6.121641916503995,
+      "max_absolute_error": 2.5196858488563123e-14
+    },
+    {
+      "parameters": {
+        "viscosity": 0.2,
+        "diameter": 0.00099,
+        "tubeDiameter": 0.02,
+        "distance": 0.3,
+        "entryDistance": 0.02,
+        "sphereDensity": 7800,
+        "liquidDensity": 950,
+        "gravity": 9.8
+      },
+      "reference_interval_s": 18.36492574951197,
+      "max_absolute_error": 2.5196858488563123e-14
+    },
+    {
+      "parameters": {
+        "viscosity": 0.2,
+        "diameter": 0.00099,
+        "tubeDiameter": 0.04,
+        "distance": 0.1,
+        "entryDistance": 0.02,
+        "sphereDensity": 7800,
+        "liquidDensity": 950,
+        "gravity": 9.8
+      },
+      "reference_interval_s": 5.796628035702835,
+      "max_absolute_error": 2.7297608617971036e-14
+    },
+    {
+      "parameters": {
+        "viscosity": 0.2,
+        "diameter": 0.00099,
+        "tubeDiameter": 0.04,
+        "distance": 0.3,
+        "entryDistance": 0.02,
+        "sphereDensity": 7800,
+        "liquidDensity": 950,
+        "gravity": 9.8
+      },
+      "reference_interval_s": 17.389884107108507,
+      "max_absolute_error": 2.7297608617971036e-14
+    },
+    {
+      "parameters": {
+        "viscosity": 0.5,
+        "diameter": 0.0005,
+        "tubeDiameter": 0.02,
+        "distance": 0.1,
+        "entryDistance": 0.02,
+        "sphereDensity": 7800,
+        "liquidDensity": 950,
+        "gravity": 9.8
+      },
+      "reference_interval_s": 56.844927752122786,
+      "max_absolute_error": 1.4210854715202004e-14
+    },
+    {
+      "parameters": {
+        "viscosity": 0.5,
+        "diameter": 0.0005,
+        "tubeDiameter": 0.02,
+        "distance": 0.3,
+        "entryDistance": 0.02,
+        "sphereDensity": 7800,
+        "liquidDensity": 950,
+        "gravity": 9.8
+      },
+      "reference_interval_s": 170.5347832563684,
+      "max_absolute_error": 1.1368683772161603e-13
+    },
+    {
+      "parameters": {
+        "viscosity": 0.5,
+        "diameter": 0.0005,
+        "tubeDiameter": 0.04,
+        "distance": 0.1,
+        "entryDistance": 0.02,
+        "sphereDensity": 7800,
+        "liquidDensity": 950,
+        "gravity": 9.8
+      },
+      "reference_interval_s": 55.23610904215704,
+      "max_absolute_error": 2.842170943040401e-14
+    },
+    {
+      "parameters": {
+        "viscosity": 0.5,
+        "diameter": 0.0005,
+        "tubeDiameter": 0.04,
+        "distance": 0.3,
+        "entryDistance": 0.02,
+        "sphereDensity": 7800,
+        "liquidDensity": 950,
+        "gravity": 9.8
+      },
+      "reference_interval_s": 165.70832712647112,
+      "max_absolute_error": 8.526512829121202e-14
+    },
+    {
+      "parameters": {
+        "viscosity": 0.5,
+        "diameter": 0.00099,
+        "tubeDiameter": 0.02,
+        "distance": 0.1,
+        "entryDistance": 0.02,
+        "sphereDensity": 7800,
+        "liquidDensity": 950,
+        "gravity": 9.8
+      },
+      "reference_interval_s": 15.30410479125999,
+      "max_absolute_error": 1.5987211554602254e-14
+    },
+    {
+      "parameters": {
+        "viscosity": 0.5,
+        "diameter": 0.00099,
+        "tubeDiameter": 0.02,
+        "distance": 0.3,
+        "entryDistance": 0.02,
+        "sphereDensity": 7800,
+        "liquidDensity": 950,
+        "gravity": 9.8
+      },
+      "reference_interval_s": 45.91231437377994,
+      "max_absolute_error": 1.5100767858378106e-14
+    },
+    {
+      "parameters": {
+        "viscosity": 0.5,
+        "diameter": 0.00099,
+        "tubeDiameter": 0.04,
+        "distance": 0.1,
+        "entryDistance": 0.02,
+        "sphereDensity": 7800,
+        "liquidDensity": 950,
+        "gravity": 9.8
+      },
+      "reference_interval_s": 14.491570089257088,
+      "max_absolute_error": 1.4210854715202004e-14
+    },
+    {
+      "parameters": {
+        "viscosity": 0.5,
+        "diameter": 0.00099,
+        "tubeDiameter": 0.04,
+        "distance": 0.3,
+        "entryDistance": 0.02,
+        "sphereDensity": 7800,
+        "liquidDensity": 950,
+        "gravity": 9.8
+      },
+      "reference_interval_s": 43.474710267771215,
+      "max_absolute_error": 9.255617106074254e-15
+    },
+    {
+      "parameters": {
+        "viscosity": 0.5,
+        "diameter": 0.002,
+        "tubeDiameter": 0.02,
+        "distance": 0.1,
+        "entryDistance": 0.02,
+        "sphereDensity": 7800,
+        "liquidDensity": 950,
+        "gravity": 9.8
+      },
+      "reference_interval_s": 4.156115000744825,
+      "max_absolute_error": 2.632269402447207e-14
+    },
+    {
+      "parameters": {
+        "viscosity": 0.5,
+        "diameter": 0.002,
+        "tubeDiameter": 0.02,
+        "distance": 0.3,
+        "entryDistance": 0.02,
+        "sphereDensity": 7800,
+        "liquidDensity": 950,
+        "gravity": 9.8
+      },
+      "reference_interval_s": 12.468345002234479,
+      "max_absolute_error": 2.632269402447207e-14
+    },
+    {
+      "parameters": {
+        "viscosity": 1.2,
+        "diameter": 0.0005,
+        "tubeDiameter": 0.02,
+        "distance": 0.1,
+        "entryDistance": 0.02,
+        "sphereDensity": 7800,
+        "liquidDensity": 950,
+        "gravity": 9.8
+      },
+      "reference_interval_s": 136.42782660509465,
+      "max_absolute_error": 8.526512829121202e-14
+    },
+    {
+      "parameters": {
+        "viscosity": 1.2,
+        "diameter": 0.0005,
+        "tubeDiameter": 0.02,
+        "distance": 0.3,
+        "entryDistance": 0.02,
+        "sphereDensity": 7800,
+        "liquidDensity": 950,
+        "gravity": 9.8
+      },
+      "reference_interval_s": 409.28347981528395,
+      "max_absolute_error": 2.2737367544323206e-13
+    },
+    {
+      "parameters": {
+        "viscosity": 1.2,
+        "diameter": 0.0005,
+        "tubeDiameter": 0.04,
+        "distance": 0.1,
+        "entryDistance": 0.02,
+        "sphereDensity": 7800,
+        "liquidDensity": 950,
+        "gravity": 9.8
+      },
+      "reference_interval_s": 132.56666170117686,
+      "max_absolute_error": 1.7812357491764352e-15
+    },
+    {
+      "parameters": {
+        "viscosity": 1.2,
+        "diameter": 0.0005,
+        "tubeDiameter": 0.04,
+        "distance": 0.3,
+        "entryDistance": 0.02,
+        "sphereDensity": 7800,
+        "liquidDensity": 950,
+        "gravity": 9.8
+      },
+      "reference_interval_s": 397.6999851035307,
+      "max_absolute_error": 2.2737367544323206e-13
+    },
+    {
+      "parameters": {
+        "viscosity": 1.2,
+        "diameter": 0.00099,
+        "tubeDiameter": 0.02,
+        "distance": 0.1,
+        "entryDistance": 0.02,
+        "sphereDensity": 7800,
+        "liquidDensity": 950,
+        "gravity": 9.8
+      },
+      "reference_interval_s": 36.72985149902396,
+      "max_absolute_error": 2.842170943040401e-14
+    },
+    {
+      "parameters": {
+        "viscosity": 1.2,
+        "diameter": 0.00099,
+        "tubeDiameter": 0.02,
+        "distance": 0.3,
+        "entryDistance": 0.02,
+        "sphereDensity": 7800,
+        "liquidDensity": 950,
+        "gravity": 9.8
+      },
+      "reference_interval_s": 110.18955449707182,
+      "max_absolute_error": 2.842170943040401e-14
+    },
+    {
+      "parameters": {
+        "viscosity": 1.2,
+        "diameter": 0.00099,
+        "tubeDiameter": 0.04,
+        "distance": 0.1,
+        "entryDistance": 0.02,
+        "sphereDensity": 7800,
+        "liquidDensity": 950,
+        "gravity": 9.8
+      },
+      "reference_interval_s": 34.77976821421701,
+      "max_absolute_error": 4.263256414560601e-14
+    },
+    {
+      "parameters": {
+        "viscosity": 1.2,
+        "diameter": 0.00099,
+        "tubeDiameter": 0.04,
+        "distance": 0.3,
+        "entryDistance": 0.02,
+        "sphereDensity": 7800,
+        "liquidDensity": 950,
+        "gravity": 9.8
+      },
+      "reference_interval_s": 104.33930464265094,
+      "max_absolute_error": 4.263256414560601e-14
+    },
+    {
+      "parameters": {
+        "viscosity": 1.2,
+        "diameter": 0.002,
+        "tubeDiameter": 0.02,
+        "distance": 0.1,
+        "entryDistance": 0.02,
+        "sphereDensity": 7800,
+        "liquidDensity": 950,
+        "gravity": 9.8
+      },
+      "reference_interval_s": 9.974676001787575,
+      "max_absolute_error": 1.3666151543745286e-14
+    },
+    {
+      "parameters": {
+        "viscosity": 1.2,
+        "diameter": 0.002,
+        "tubeDiameter": 0.02,
+        "distance": 0.3,
+        "entryDistance": 0.02,
+        "sphereDensity": 7800,
+        "liquidDensity": 950,
+        "gravity": 9.8
+      },
+      "reference_interval_s": 29.924028005362757,
+      "max_absolute_error": 2.1316282072803006e-14
+    },
+    {
+      "parameters": {
+        "viscosity": 1.2,
+        "diameter": 0.002,
+        "tubeDiameter": 0.04,
+        "distance": 0.1,
+        "entryDistance": 0.02,
+        "sphereDensity": 7800,
+        "liquidDensity": 950,
+        "gravity": 9.8
+      },
+      "reference_interval_s": 9.009384775808133,
+      "max_absolute_error": 2.0429838376578857e-14
+    },
+    {
+      "parameters": {
+        "viscosity": 1.2,
+        "diameter": 0.002,
+        "tubeDiameter": 0.04,
+        "distance": 0.3,
+        "entryDistance": 0.02,
+        "sphereDensity": 7800,
+        "liquidDensity": 950,
+        "gravity": 9.8
+      },
+      "reference_interval_s": 27.028154327424414,
+      "max_absolute_error": 2.0429838376578857e-14
+    }
+  ]
+}

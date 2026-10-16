@@ -1,0 +1,16 @@
+{
+  "experimentId": "course-03/resistor-iv",
+  "status": "passed",
+  "method": "independent resistor branch nodal matrix including meter loading",
+  "caseCount": 162,
+  "maxScaledErrors": {
+    "voltage": 0,
+    "current_mA": 2.2226664952995627e-16,
+    "apparentResistance": 2.351589500904083e-16,
+    "errorPercent": 2.3203661214665772e-14
+  },
+  "scaling": "abs(error)/max(1,abs(reference))",
+  "tolerance": 1e-10,
+  "modelSha256": "5fc0acf17358b9f629cf549acc1f484fcda4b03111eab6500a88aef58ab048ee",
+  "numpyVersion": "2.5.4"
+}

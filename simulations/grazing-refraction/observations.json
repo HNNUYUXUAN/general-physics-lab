@@ -1,0 +1,69 @@
+{
+  "experiment_id": "course-04/grazing-refraction",
+  "source": "original-report",
+  "tables": [
+    {
+      "headers": [
+        "次数",
+        "θ₁",
+        "θ₂",
+        "θ₃",
+        "θ₄"
+      ],
+      "rows": [
+        [
+          "1",
+          "100°55′",
+          "280°58′",
+          "62°12′",
+          "242°13′"
+        ],
+        [
+          "2",
+          "90°59′",
+          "271°01′",
+          "51°10′",
+          "231°11′"
+        ],
+        [
+          "3",
+          "329°12′",
+          "149°12′",
+          "288°47′",
+          "108°46′"
+        ],
+        [
+          "4",
+          "208°18′",
+          "28°21′",
+          "168°13′",
+          "348°16′"
+        ],
+        [
+          "5",
+          "269°26′",
+          "89°25′",
+          "229°27′",
+          "49°27′"
+        ]
+      ]
+    }
+  ],
+  "analysis": {
+    "angle_mean_deg": 39.80833333333334,
+    "type_a_arcmin": 17.179202542609556,
+    "liquid_index": 1.4033612379344735,
+    "per_trial_deg": [
+      38.73333333333332,
+      39.82499999999999,
+      40.424999999999976,
+      40.08333333333336,
+      39.97500000000001
+    ]
+  },
+  "input_hashes": {
+    "experiments/course-04/grazing-refraction/experiment.json": "87dde9f177607481abc051eacd3aa0e6335b6c93c9b562912a1aaf219c3e8f74",
+    "experiments/course-04/grazing-refraction/data/observations-01.csv": "f13068bbe04d8987b920eda4e9dc5020bd19b1fe25a80564964daab5cdb9dbe3",
+    "experiments/course-04/grazing-refraction/data/provenance.json": "5efcf4f68ef5687b23f58c8f91b1f39b34ea9786a0030c6cf21cf730535e5c92"
+  }
+}

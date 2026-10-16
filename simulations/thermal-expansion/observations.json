@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "experiment": "course-02/thermal-expansion",
+  "identity": "report-identical-to-lecture-example",
+  "source_files": [
+    {
+      "path": "experiments/course-02/thermal-expansion/experiment.json",
+      "sha256": "4a6b57b129ad2e185923fb3ab80aface2103c009d4b011e50a27218ab72c4f5a"
+    },
+    {
+      "path": "experiments/course-02/thermal-expansion/data/observations-01.csv",
+      "sha256": "beb525c45edb2ddd888de68e32cd8702e022b73df39aa87a75a8abc769da6f2e"
+    },
+    {
+      "path": "experiments/course-02/thermal-expansion/data/observations-02.csv",
+      "sha256": "d7f714707830489149e19c8103b596559a2296d483dc9b990c40c66c57b23bb1"
+    },
+    {
+      "path": "experiments/course-02/thermal-expansion/data/provenance.json",
+      "sha256": "478b230d8481310faac6566df848b0ba3bd4aa79ef3059614f170ddb3ce70c69"
+    }
+  ],
+  "rows": [
+    {
+      "index": 1,
+      "temperature_c": 30.0,
+      "dial_um": 45.0
+    },
+    {
+      "index": 2,
+      "temperature_c": 40.0,
+      "dial_um": 69.5
+    },
+    {
+      "index": 3,
+      "temperature_c": 50.0,
+      "dial_um": 92.5
+    },
+    {
+      "index": 4,
+      "temperature_c": 60.0,
+      "dial_um": 116.2
+    },
+    {
+      "index": 5,
+      "temperature_c": 70.0,
+      "dial_um": 139.5
+    },
+    {
+      "index": 6,
+      "temperature_c": 80.0,
+      "dial_um": 161.2
+    },
+    {
+      "index": 7,
+      "temperature_c": 90.0,
+      "dial_um": 184.0
+    },
+    {
+      "index": 8,
+      "temperature_c": 100.0,
+      "dial_um": 205.0
+    }
+  ],
+  "alpha_fit_per_k": 1.5253174603174603e-05,
+  "alpha_difference_per_k": 1.5270833333333333e-05
+}

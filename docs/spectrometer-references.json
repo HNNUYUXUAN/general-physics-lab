@@ -1,0 +1,105 @@
+{
+  "schema_version": 1,
+  "experiment_id": "course-04/spectrometer",
+  "review_date": "2026-10-17",
+  "access_channel": "两校机构数据库交叉检索，徐文由西南财经大学会话、刘文由安徽财经大学会话取得全文",
+  "references": [
+    {
+      "id": "Liu2023PrismReflection",
+      "title": "改进反射法测三棱镜顶角实验的思考",
+      "authors": [
+        "刘文晶",
+        "杨文革",
+        "金武",
+        "王心华",
+        "张水合"
+      ],
+      "journal": "大学物理实验",
+      "year": 2023,
+      "volume": "36",
+      "issue": "2",
+      "pages": "77-80",
+      "doi": "10.14139/j.cnki.cn22-1228.2023.02.017",
+      "url": "https://doi.org/10.14139/j.cnki.cn22-1228.2023.02.017",
+      "review_status": "full_text_reviewed",
+      "source_pdf": {
+        "filename": "改进反射法测三棱镜顶角实验的思考_刘文晶.pdf",
+        "pages": 4,
+        "bytes": 1080918,
+        "sha256": "2748aeae8ba44315befccfa12327d144396d1b455fdd1c566a53a2e3547a430f"
+      },
+      "locators": [
+        {
+          "printed_pages": "77",
+          "pdf_pages": [
+            1
+          ],
+          "location": "引言",
+          "role": "区分自准直法与反射法"
+        },
+        {
+          "printed_pages": "78-79",
+          "pdf_pages": [
+            2,
+            3
+          ],
+          "location": "第2节、图2及其讨论",
+          "role": "同一平行入射束照射两个棱镜面，分别观察反射狭缝像；顶角近平台中心的放置条件"
+        },
+        {
+          "printed_pages": "78",
+          "pdf_pages": [
+            2
+          ],
+          "location": "第1节、图1",
+          "role": "实物调节及轴线/视场说明，未纳入本页二维模型"
+        }
+      ],
+      "review_findings": [
+        "图2没有直接标出Delta=2A，亦无该关系的编号公式；夹角倍角使用独立向量反射推导并以Python验证。",
+        "该文不提供双游标角差平均公式；读数程序另映射徐2009 p11式8，跨零和一阶偏心处理保留独立教学身份。"
+      ],
+      "scope": "真实分光计调节与装置的背景范围；本页不实现机械视准/水平/视场，也不将论文视为具体一阶谐波校准式来源。",
+      "parameter_identity": "本页通用方向角独立设定，未迁入刘文棱镜顶角及位置。"
+    },
+    {
+      "id": "Xu2009GrazingLiquid",
+      "title": "用掠入射法测量透明介质折射率的探讨",
+      "authors": [
+        "徐崇"
+      ],
+      "journal": "大学物理实验",
+      "year": 2009,
+      "volume": "22",
+      "issue": "1",
+      "pages": "9-13",
+      "doi": "10.14139/j.cnki.cn22-1228.2009.01.005",
+      "url": "https://doi.org/10.14139/j.cnki.cn22-1228.2009.01.005",
+      "review_status": "full_text_reviewed",
+      "source_pdf": {
+        "filename": "用掠入射法测量透明介质折射率的探讨_徐崇.pdf",
+        "pages": 5,
+        "bytes": 450792,
+        "sha256": "83cc52f7c48626a224c2e0320391e91f8b414678a3e5706fe3ee4ac711d49b21"
+      },
+      "parameter_identity": "本页43.25度/零点10度/偏心5角分为独立教学，与徐文液体实验参数和数据无关。",
+      "review_findings": [
+        "p11式7遗漏平方根；使用式4/6的90度极限和逐界面Snell独立推导的正根。",
+        "式8为两游标差平均的操作依据；反号一阶偏心消除与跨零处理是本项目明确假设下的独立推导，不能等同完整仪器校准。"
+      ],
+      "locators": [
+        {
+          "printed_pages": "11",
+          "pdf_pages": [
+            3
+          ],
+          "location": "第2节步骤3-4、式8",
+          "role": "分别测出射边界/法线两游标，以两个方位差平均求出射角"
+        }
+      ],
+      "scope": "仅引用两定位方位分别读取两游标并平均角差的通用程序；不迁入液体几何、样品或式7。"
+    }
+  ],
+  "verification_method": "全文实际核读；徐文p10-12数学与光路、刘文p78-79及图2高分辨率渲染核看。公式与装置映射仅到真实覆盖部分。",
+  "current_scope": "二维转角与双游标程序演示；一阶反号扰动为独立教学模型，非完整仪器校准。"
+}

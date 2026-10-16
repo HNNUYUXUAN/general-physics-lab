@@ -1,5 +1,8 @@
 [普通物理实验 1](../README.md) · [项目首页](../../../README.md) · [使用指南](../../../docs/usage.md)
 
+<!-- virtual-laboratory-entry -->
+[在线虚拟实验](https://hnnuyuxuan.github.io/general-physics-lab/simulations/doppler-application/) · [模型依据与参数来源](../../../docs/doppler-application-model-evidence.md)
+
 # 多普勒效应的应用
 
 **把非接触测速用于弹簧振子，对照动态与静态劲度。**

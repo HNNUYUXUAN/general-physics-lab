@@ -1,0 +1,22 @@
+"""Independent vertical line-force quadrature and deadweight calibration."""
+from pathlib import Path
+import argparse,hashlib,json,platform,shutil,subprocess
+import numpy as np
+from scipy.integrate import quad
+import scipy
+def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
+def run(repo_root,output_root,model):
+    exp=repo_root/'experiments/course-02/surface-tension';cfg=json.loads((exp/'experiment.json').read_text(encoding='utf8'));g=cfg['parameters']['gravity_m_s2'];c=np.genfromtxt(exp/'data/calibration.csv',delimiter=',',names=True);a=np.genfromtxt(exp/'data/pulls.csv',delimiter=',',names=True);d=np.genfromtxt(exp/'data/diameters.csv',delimiter=',',names=True);voltage=(c['loading_mv']+c['unloading_mv'])/2;K=.002*g/np.mean(voltage[4:]-voltage[:4]);L=np.pi*(d['inner_mm'].mean()+d['outer_mm'].mean())/1000
+    obs={'schema_version':1,'experiment':'course-02/surface-tension','source_files':[{'path':z.relative_to(repo_root).as_posix(),'sha256':sha(z)}for z in[exp/'experiment.json',exp/'data/calibration.csv',exp/'data/pulls.csv',exp/'data/diameters.csv',exp/'data/provenance.json']],'calibration':[{'mass_mg':float(r['mass_mg']),'loading_mv':float(r['loading_mv']),'unloading_mv':float(r['unloading_mv']),'mean_mv':float(voltage[i])}for i,r in enumerate(c)],'pulls':[{'trial':int(r['trial']),'before_mv':float(r['before_mv']),'after_mv':float(r['after_mv']),'difference_mv':float(r['before_mv']-r['after_mv'])}for r in a],'inner_readings_mm':d['inner_mm'].tolist(),'outer_readings_mm':d['outer_mm'].tolist(),'conversion_difference_N_mV':float(K),'surface_tension_N_m':float(K*np.mean(a['before_mv']-a['after_mv'])/L)}
+    cases=[{'surfaceTension':alpha,'innerDiameter':di,'outerDiameter':do,'contactAngle':angle,'filmMass':film,'conversion':K,'baseline':85.6,'gravity':9.794}for alpha in[.02,.0728,.08]for di,do in[(.02,.022),(.033008,.034944),(.045,.05)]for angle in[0,30,60]for film in[0,.0002]for K in[.0002,.0006]]
+    js=f"import{{properties,calibrationSweep,calibrate,inferSurface}}from {json.dumps(model.resolve().as_uri())};const cases={json.dumps(cases)};console.log(JSON.stringify(cases.map(p=>{{const q=properties(p);return{{...q,fit:calibrate(calibrationSweep(p),p,'ideal-model'),inverse:inferSurface(p,q.before,q.after,p.conversion)}}}})));"
+    vals=json.loads(subprocess.check_output([shutil.which('node')or r'C:\Program Files\nodejs\node.exe','--input-type=module','-e',js],text=True));checks=[];fail=[]
+    for p,q in zip(cases,vals):
+        force=sum(quad(lambda phi:p['surfaceTension']*radius*np.cos(np.deg2rad(p['contactAngle'])),0,2*np.pi,epsabs=1e-13)[0]for radius in[p['innerDiameter']/2,p['outerDiameter']/2]);total=force+p['filmMass']*p['gravity'];reference=total/(np.pi*(p['innerDiameter']+p['outerDiameter']));masses=np.arange(8)*.0005;V=p['baseline']+masses*p['gravity']/p['conversion'];k=np.linalg.lstsq(np.column_stack([V,np.ones(8)]),masses*p['gravity'],rcond=None)[0][0];error=max(abs(force-q['surfaceForce']),abs(total-q['force']),abs(reference-q['inverse']),abs(k-q['fit']['slope']));checks.append({'parameters':p,'line_integral_force_N':force,'reference_apparent_tension_N_m':reference,'max_absolute_error':error})
+        if error>1e-12:fail.append(p)
+    report={'schema_version':1,'experiment':'course-02/surface-tension','model_sha256':sha(model),'validator_sha256':sha(Path(__file__)),'environment':{'python':platform.python_version(),'numpy':np.__version__,'scipy':scipy.__version__},'method':'quadrature of vertical tension around inner and outer circles; independent least-squares deadweight calibration','case_count':len(cases),'tolerances':{'absolute':1e-12},'max_absolute_error':max(c['max_absolute_error']for c in checks),'status':'passed'if not fail else'failed','failures':fail,'cases':checks}
+    for path,data in[(output_root/'simulations/surface-tension/observations.json',obs),(output_root/'docs/simulation/surface-tension-reference.json',report)]:path.parent.mkdir(parents=True,exist_ok=True);path.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n',encoding='utf8')
+    print(json.dumps({k:report[k]for k in['status','case_count','max_absolute_error']}))
+    if fail:raise SystemExit(1)
+if __name__=='__main__':
+    ap=argparse.ArgumentParser();ap.add_argument('--repo-root',type=Path,default=Path(__file__).resolve().parents[1]);ap.add_argument('--output-root',type=Path);ap.add_argument('--model',type=Path);a=ap.parse_args();run(a.repo_root,a.output_root or a.repo_root,a.model or a.repo_root/'simulations/surface-tension/model.mjs')

@@ -1,0 +1,233 @@
+{
+  "status": "passed",
+  "source_hashes": {
+    "simulations/current-voltage-divider/model.mjs": "4d01a6a2cdb39662a3213dac38c758e961f9bbdffc73e9a72a9d1d413189de2d",
+    "simulations/current-voltage-divider/app.mjs": "5c4b32f2b1c869b67f7fd0c343c536940a7388adbd3a2fdc512309f5109aa727",
+    "simulations/current-voltage-divider/chart.mjs": "7661b7bfc2fe4ac33d2ab50733687b64f47c7110505e27c14c80c42c38df82dd",
+    "simulations/current-voltage-divider/lab.css": "d007905ee689191cb3d99caebe74d1e5e924b6fd068c7a81d2417c75219b6169",
+    "simulations/current-voltage-divider/observations.json": "d3b46756a7985da13e5defe4df56f0f9aaa2d2537da0a06c7f3887cd8eee3e03",
+    "simulations/current-voltage-divider/diagram.mjs": "9ab68efa69fb2ec8c76918176eba48407647c8056d2f57831ab013ef7acde09a",
+    "simulations/current-voltage-divider/ui-config.json": "9e5ce302a6d7a1e5f4e85738989a88003cb0680f2c26843a603dc4c5408bb4a7",
+    "simulations/current-voltage-divider/index.html": "965f4f51afb541fc14721ebcf0e3d0f6c338c7d6240d723093d23ddfd7c53efd"
+  },
+  "source_record_sha256": "e28adabca7725574fa4d9676368414c74da704b7c16e231b9868146cd7ed80f7",
+  "interaction_checks": 17,
+  "visual_status": "passed",
+  "exports_status": "passed",
+  "exports": [
+    {
+      "filename": "1-current-voltage-divider-records.csv",
+      "sha256": "33bf05533d439476bd47a9436f3d0ae544b74e2c00626bf6cb5fb55598c76a0c",
+      "bytes": 628
+    },
+    {
+      "filename": "2-current-voltage-divider-records.json",
+      "sha256": "0378d75526aae9654435b3569f58d1a40c783149e5175e6268a276e996d1aa06",
+      "bytes": 2027
+    }
+  ],
+  "fonts": {
+    "h1": [
+      {
+        "familyName": "SimSun",
+        "postScriptName": "SimSun",
+        "isCustomFont": false,
+        "glyphCount": 8
+      }
+    ],
+    "#summary": [
+      {
+        "familyName": "Times New Roman",
+        "postScriptName": "TimesNewRomanPSMT",
+        "isCustomFont": false,
+        "glyphCount": 32
+      },
+      {
+        "familyName": "SimSun",
+        "postScriptName": "SimSun",
+        "isCustomFont": false,
+        "glyphCount": 2
+      }
+    ]
+  },
+  "browser": "fixed Playwright Chromium 1243",
+  "layout": {
+    "wide": {
+      "width": 1280,
+      "scrollWidth": 1280,
+      "math": 8,
+      "mathErrors": 0
+    },
+    "narrow": {
+      "width": 390,
+      "scrollWidth": 390,
+      "math": 8,
+      "mathErrors": 0
+    }
+  },
+  "interaction": [
+    {
+      "name": "mode=voltage",
+      "status": "passed"
+    },
+    {
+      "name": "mode=current",
+      "status": "passed"
+    },
+    {
+      "name": "E=0.1",
+      "status": "passed"
+    },
+    {
+      "name": "E=12",
+      "status": "passed"
+    },
+    {
+      "name": "R0=50",
+      "status": "passed"
+    },
+    {
+      "name": "R0=5000",
+      "status": "passed"
+    },
+    {
+      "name": "K=0.1",
+      "status": "passed"
+    },
+    {
+      "name": "K=10",
+      "status": "passed"
+    },
+    {
+      "name": "X=0",
+      "status": "passed"
+    },
+    {
+      "name": "X=1",
+      "status": "passed"
+    },
+    {
+      "name": "原表 observations",
+      "status": "passed"
+    },
+    {
+      "name": "默认设置读数与记录",
+      "status": "passed"
+    },
+    {
+      "name": "测量闭环与同组分析",
+      "status": "passed"
+    },
+    {
+      "name": "非法编辑blur后不得记录",
+      "status": "passed"
+    },
+    {
+      "name": "恢复删除与清空",
+      "status": "passed"
+    },
+    {
+      "name": "真实CSV/JSON导出与元数据",
+      "status": "passed"
+    },
+    {
+      "name": "restore",
+      "status": "passed"
+    }
+  ],
+  "background": {
+    "status": "not-applicable"
+  },
+  "checked_at_utc": "2026-10-16T16:12:36.223Z",
+  "screenshots": [
+    {
+      "path": "docs/assets/simulations/current-voltage-divider/frontend-01-f69944b5dbf6.png",
+      "sha256": "f69944b5dbf6170b79ec9e5df53f14ff49702a295d699bab9d81e140058b7f26"
+    },
+    {
+      "path": "docs/assets/simulations/current-voltage-divider/frontend-02-53fc6215e49c.png",
+      "sha256": "53fc6215e49cc40a7dadea6fdead17c933f9d630847ed5148a61f215293247be"
+    },
+    {
+      "path": "docs/assets/simulations/current-voltage-divider/frontend-03-bb4369878b13.png",
+      "sha256": "bb4369878b13cf3e1a6875b42d366f4177d7bd2662951e8db95717ecd1f7811f"
+    },
+    {
+      "path": "docs/assets/simulations/current-voltage-divider/frontend-04-843914fe7244.png",
+      "sha256": "843914fe724438acae83eae0fbb2f6609a21f3606fa405c00c52b17bf3aaa1be"
+    },
+    {
+      "path": "docs/assets/simulations/current-voltage-divider/frontend-05-e3e02e6343da.png",
+      "sha256": "e3e02e6343da709c9a4e657293fd0bdbc302196f0d0f79938180d1d769e7eb75"
+    },
+    {
+      "path": "docs/assets/simulations/current-voltage-divider/frontend-06-877357e2148c.png",
+      "sha256": "877357e2148c94ebe8ac900a4ca7bf774858d78ca875ff07712a0351e29f7026"
+    },
+    {
+      "path": "docs/assets/simulations/current-voltage-divider/frontend-07-2ab2ac358468.png",
+      "sha256": "2ab2ac3584686a4fb9257aaf545ec0c59ab14f8e5a2d55456e0f3e826499168b"
+    },
+    {
+      "path": "docs/assets/simulations/current-voltage-divider/frontend-08-37648874b171.png",
+      "sha256": "37648874b171cdafc0291e6db18c4ae710b1bb792a4ecd24b201fe82de6ca44b"
+    },
+    {
+      "path": "docs/assets/simulations/current-voltage-divider/frontend-09-647afa479b39.png",
+      "sha256": "647afa479b391f9cd08390926365e7588fc7a2b82971490b492c74f036dd8487"
+    },
+    {
+      "path": "docs/assets/simulations/current-voltage-divider/frontend-10-405248e49501.png",
+      "sha256": "405248e49501c9941f93465642ceb1a19c2aa6fd2751e57c2a9b5203ccf312fb"
+    },
+    {
+      "path": "docs/assets/simulations/current-voltage-divider/frontend-11-6a02b37eedee.png",
+      "sha256": "6a02b37eedee650d5c00eac87435479056aa887dab4dd03b26ce94f7cabd7db0"
+    },
+    {
+      "path": "docs/assets/simulations/current-voltage-divider/frontend-12-c538790f8ce1.png",
+      "sha256": "c538790f8ce1b999c89e2d80fc285e394e93dcb1f4393556372019b92803c029"
+    }
+  ],
+  "schema_version": 1,
+  "experiment_id": "course-03/current-voltage-divider",
+  "numerical": {
+    "status": "passed",
+    "reference_sha256": "1b407e55ca747910763ba98b589fcae44d5e19e786f60d8e7377bd7eb3b5ead4",
+    "source_files": {
+      "simulations/current-voltage-divider/index.html": "965f4f51afb541fc14721ebcf0e3d0f6c338c7d6240d723093d23ddfd7c53efd",
+      "simulations/current-voltage-divider/model.mjs": "4d01a6a2cdb39662a3213dac38c758e961f9bbdffc73e9a72a9d1d413189de2d",
+      "simulations/current-voltage-divider/app.mjs": "5c4b32f2b1c869b67f7fd0c343c536940a7388adbd3a2fdc512309f5109aa727",
+      "simulations/current-voltage-divider/chart.mjs": "7661b7bfc2fe4ac33d2ab50733687b64f47c7110505e27c14c80c42c38df82dd",
+      "simulations/current-voltage-divider/lab.css": "d007905ee689191cb3d99caebe74d1e5e924b6fd068c7a81d2417c75219b6169",
+      "simulations/current-voltage-divider/observations.json": "d3b46756a7985da13e5defe4df56f0f9aaa2d2537da0a06c7f3887cd8eee3e03",
+      "docs/current-voltage-divider-model-evidence.md": "c492b1ae52b47ad4bf0c5f1a0205da2a36ee121fbf47c372d24af49890e20fa7",
+      "docs/current-voltage-divider-references.json": "f7b307fb900244e666e8c53bf406845a94be668a977c9802d2aa2d263a32bc09",
+      "docs/current-voltage-divider-references.bib": "054615d2eac740faf2350548a50910887537fb54f5b97c17040c04b3a4c0cae8",
+      "docs/simulation/current-voltage-divider-reference.json": "1b407e55ca747910763ba98b589fcae44d5e19e786f60d8e7377bd7eb3b5ead4",
+      "simulations/current-voltage-divider/diagram.mjs": "9ab68efa69fb2ec8c76918176eba48407647c8056d2f57831ab013ef7acde09a",
+      "simulations/current-voltage-divider/ui-config.json": "9e5ce302a6d7a1e5f4e85738989a88003cb0680f2c26843a603dc4c5408bb4a7",
+      "scripts/validate_current_voltage_divider_simulation.py": "6ad793daa371ec6c7e6be0a9713b1c7dd077fabf86b8a51df549a49169871597",
+      "tests/current-voltage-divider-model.test.mjs": "c5df4f1c9815df0586cd9aed7bba746469dbca152d4852b9f56a7ca050bbd45d"
+    }
+  },
+  "scientific_evidence": {
+    "status": "verified",
+    "decision_source_files": {
+      "docs/current-voltage-divider-references.json": "f7b307fb900244e666e8c53bf406845a94be668a977c9802d2aa2d263a32bc09",
+      "docs/current-voltage-divider-model-evidence.md": "c492b1ae52b47ad4bf0c5f1a0205da2a36ee121fbf47c372d24af49890e20fa7",
+      "simulations/current-voltage-divider/model.mjs": "4d01a6a2cdb39662a3213dac38c758e961f9bbdffc73e9a72a9d1d413189de2d"
+    },
+    "core_references": [
+      {
+        "id": "xie2023divider",
+        "pdf_sha256": "faa389c55066dad4c209ae2de33774b55e6db7f96226e4f180213265d15727f2",
+        "locators": [
+          "p.18 section 3.1 figure 1 equations (1)–(2), loaded potential divider",
+          "p.19 section 3.2 figure 4 equations (3)–(4), series current limiting and reversed slider coordinate",
+          "p.20 section 3.3 table 1, contextual connection choices"
+        ]
+      }
+    ]
+  }
+}

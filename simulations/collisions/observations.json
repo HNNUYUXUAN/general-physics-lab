@@ -1,0 +1,102 @@
+{
+  "schema_version": 1,
+  "experiment": "course-01/collisions",
+  "source_files": [
+    {
+      "path": "experiments/course-01/collisions/experiment.json",
+      "sha256": "0320e0c972f5792872a21a7e7e3c9af2d94991e2cf3ec4a00f07963661a8b9b5"
+    },
+    {
+      "path": "experiments/course-01/collisions/data/inelastic.csv",
+      "sha256": "014b046e1677b4436125c43523728a2fc5a86ab9ee9bce69d3d9b7dc587187d5"
+    },
+    {
+      "path": "experiments/course-01/collisions/data/elastic.csv",
+      "sha256": "9a117f24398d3dc22df9d614f253eae3fdf5e4702aa123d852ac07091eba6810"
+    },
+    {
+      "path": "experiments/course-01/collisions/data/provenance.json",
+      "sha256": "40b242ad4a28e5e7ad78676d731106fd9e87ba08399da89d8071bd4f16ac275b"
+    }
+  ],
+  "mass1_kg": 0.34175,
+  "mass2_kg": 0.15449000000000002,
+  "inelastic": [
+    {
+      "trial": 1,
+      "incident_cm_s": 71.02,
+      "common_cm_s": 48.31,
+      "momentum_difference": -0.002977305999999985,
+      "energy_loss": 0.028278985281799986
+    },
+    {
+      "trial": 2,
+      "incident_cm_s": 90.33,
+      "common_cm_s": 59.7,
+      "momentum_difference": -0.012447494999999975,
+      "energy_loss": 0.05099340724875001
+    },
+    {
+      "trial": 3,
+      "incident_cm_s": 86.21,
+      "common_cm_s": 57.27,
+      "momentum_difference": -0.010426026999999949,
+      "energy_loss": 0.045617393903949977
+    },
+    {
+      "trial": 4,
+      "incident_cm_s": 100.0,
+      "common_cm_s": 65.57,
+      "momentum_difference": -0.016365432000000013,
+      "energy_loss": 0.0641976693812
+    },
+    {
+      "trial": 5,
+      "incident_cm_s": 92.51,
+      "common_cm_s": 62.19,
+      "momentum_difference": -0.007541269000000017,
+      "energy_loss": 0.05027374102555
+    }
+  ],
+  "elastic": [
+    {
+      "trial": 1,
+      "v1_first_cm_s": 28.02,
+      "v2_cm_s": 98.17,
+      "v1_second_cm_s": 28.64,
+      "velocity_ratio": 3.46523120367102
+    },
+    {
+      "trial": 2,
+      "v1_first_cm_s": 18.76,
+      "v2_cm_s": 63.01,
+      "v1_second_cm_s": 20.21,
+      "velocity_ratio": 3.2337695663330766
+    },
+    {
+      "trial": 3,
+      "v1_first_cm_s": 33.42,
+      "v2_cm_s": 97.09,
+      "v1_second_cm_s": 30.6,
+      "velocity_ratio": 3.0331146516713523
+    },
+    {
+      "trial": 4,
+      "v1_first_cm_s": 25.03,
+      "v2_cm_s": 88.18,
+      "v1_second_cm_s": 25.9,
+      "velocity_ratio": 3.462792067543688
+    },
+    {
+      "trial": 5,
+      "v1_first_cm_s": 26.5,
+      "v2_cm_s": 92.68,
+      "v1_second_cm_s": 27.02,
+      "velocity_ratio": 3.463378176382661
+    }
+  ],
+  "notes": [
+    "弹性组缺碰前速度，不进行该组动量能量独立验证。",
+    "原始观测未包含轻撞重；网页质量交换是独立教学情景。"
+  ]
+}

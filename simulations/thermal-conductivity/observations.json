@@ -1,0 +1,123 @@
+{
+  "schema_version": 1,
+  "experiment": "course-02/thermal-conductivity",
+  "source_files": [
+    {
+      "path": "experiments/course-02/thermal-conductivity/experiment.json",
+      "sha256": "ff78108715ca3622c6316b8e72935f9db707e35a782518dbd0b45e02596d94f4"
+    },
+    {
+      "path": "experiments/course-02/thermal-conductivity/data/observations-01.csv",
+      "sha256": "2a52be343b885e4a985766af96a94c62248fb65068dd98d1745690fa578ce180"
+    },
+    {
+      "path": "experiments/course-02/thermal-conductivity/data/observations-02.csv",
+      "sha256": "7fde5817a5fce7c809bae94cbfbcbd37d90e147e3b6997793fd2ce893ca3b7b9"
+    },
+    {
+      "path": "experiments/course-02/thermal-conductivity/data/provenance.json",
+      "sha256": "fd2562c2af4aa756f7bede73bc5df5d3a8e4ab2c914e203b1351b8deca8324ab"
+    }
+  ],
+  "rows": [
+    {
+      "time_min": 13.0,
+      "center_uV": 238.0,
+      "heater_uV": 403.0,
+      "difference_uV": 165.0
+    },
+    {
+      "time_min": 14.0,
+      "center_uV": 262.0,
+      "heater_uV": 428.0,
+      "difference_uV": 166.0
+    },
+    {
+      "time_min": 15.0,
+      "center_uV": 286.0,
+      "heater_uV": 454.0,
+      "difference_uV": 168.0
+    },
+    {
+      "time_min": 16.0,
+      "center_uV": 310.0,
+      "heater_uV": 479.0,
+      "difference_uV": 169.0
+    },
+    {
+      "time_min": 17.0,
+      "center_uV": 334.0,
+      "heater_uV": 504.0,
+      "difference_uV": 170.0
+    },
+    {
+      "time_min": 18.0,
+      "center_uV": 357.0,
+      "heater_uV": 528.0,
+      "difference_uV": 171.0
+    },
+    {
+      "time_min": 19.0,
+      "center_uV": 381.0,
+      "heater_uV": 553.0,
+      "difference_uV": 172.0
+    },
+    {
+      "time_min": 20.0,
+      "center_uV": 403.0,
+      "heater_uV": 577.0,
+      "difference_uV": 174.0
+    },
+    {
+      "time_min": 21.0,
+      "center_uV": 427.0,
+      "heater_uV": 601.0,
+      "difference_uV": 174.0
+    },
+    {
+      "time_min": 22.0,
+      "center_uV": 449.0,
+      "heater_uV": 625.0,
+      "difference_uV": 176.0
+    },
+    {
+      "time_min": 23.0,
+      "center_uV": 472.0,
+      "heater_uV": 649.0,
+      "difference_uV": 177.0
+    },
+    {
+      "time_min": 24.0,
+      "center_uV": 493.0,
+      "heater_uV": 672.0,
+      "difference_uV": 179.0
+    },
+    {
+      "time_min": 25.0,
+      "center_uV": 515.0,
+      "heater_uV": 696.0,
+      "difference_uV": 181.0
+    },
+    {
+      "time_min": 26.0,
+      "center_uV": 537.0,
+      "heater_uV": 719.0,
+      "difference_uV": 182.0
+    },
+    {
+      "time_min": 27.0,
+      "center_uV": 559.0,
+      "heater_uV": 742.0,
+      "difference_uV": 183.0
+    },
+    {
+      "time_min": 28.0,
+      "center_uV": 580.0,
+      "heater_uV": 764.0,
+      "difference_uV": 184.0
+    }
+  ],
+  "conductivity_endpoint_W_mK": 0.23302103157175622,
+  "conductivity_mean_W_mK": 0.24579502577830534,
+  "difference_drift_percent": 11.515151515151523
+}

@@ -1,5 +1,8 @@
 [普通物理实验 1](../README.md) · [项目首页](../../../README.md) · [使用指南](../../../docs/usage.md)
 
+<!-- virtual-laboratory-entry -->
+[在线虚拟实验](https://hnnuyuxuan.github.io/general-physics-lab/simulations/newton-second-law/) · [模型依据与参数来源](../../../docs/newton-second-law-model-evidence.md)
+
 # 牛顿第二定律的验证
 
 **转移砝码而保持总质量，让加速度响应驱动力。**

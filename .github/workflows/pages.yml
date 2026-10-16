@@ -27,6 +27,7 @@ jobs:
         run: |
           python scripts/validate_simulations.py --all --output-root .build/simulation-check
           python -m pytest
+          python scripts/build_simulation_scientific_index.py --require-all-ready --check
           python scripts/agent_catalog.py build --check
           python scripts/check_agent_docs.py
       - name: Build static reading and interaction pages

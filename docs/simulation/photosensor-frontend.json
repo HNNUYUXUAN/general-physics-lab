@@ -1,6 +1,14 @@
 {
   "status": "passed",
-  "source_record_sha256": "8d6558ccf0ba7a51ccb5e82262bfff7d312ecf24cbd9f857c9fdd5920f6c58ec",
+  "source_hashes": {
+    "simulations/photosensor/app.mjs": "48794a846bef9db545df878983faf89a3aa7c9843a18bf7182bee1f4395ccea7",
+    "simulations/photosensor/chart.mjs": "a46884a1989da9c768b9cd95a7e520f8da9a7d28a2d75efb2461c40187488ccb",
+    "simulations/photosensor/index.html": "682ae3a925cc107bb3d016b13c3e2b4aa38494a9aa9ae599790087cf8f0a4194",
+    "simulations/photosensor/lab.css": "6560b500d0e36d2653215f08fa18b24e225af5dc105213b04ccb3c79edcf1f68",
+    "simulations/photosensor/model.mjs": "9a397e57c10304451297496e71b2319597c19ad0ef23e83f42ae7b68b787ab6c",
+    "simulations/photosensor/observations.json": "0f8319d36a9bb3749ac1679beb8b5863949644363c86ad93152be35928c52c6e"
+  },
+  "source_record_sha256": "c67e02b37bd737c641abb8b040e6cd4c21cca71df95bc2b012aae714ba999abc",
   "interaction_checks": 4,
   "visual_status": "passed",
   "exports_status": "passed",
@@ -99,7 +107,7 @@
   "experiment_id": "course-03/photosensor",
   "numerical": {
     "status": "passed",
-    "reference_sha256": "b1090f0dd1de41b1f2566d5eb65fab8bd722ffaa45c95ba7696661bc41f01e27",
+    "reference_sha256": "40ddbe7ec9078ef68ca536d5c4ff10abc74f8f91efe95d31e6bbfea3332484bb",
     "source_files": {
       "simulations/photosensor/index.html": "682ae3a925cc107bb3d016b13c3e2b4aa38494a9aa9ae599790087cf8f0a4194",
       "simulations/photosensor/model.mjs": "9a397e57c10304451297496e71b2319597c19ad0ef23e83f42ae7b68b787ab6c",
@@ -158,13 +166,5 @@
         ]
       }
     ]
-  },
-  "source_hashes": {
-    "simulations/photosensor/app.mjs": "48794a846bef9db545df878983faf89a3aa7c9843a18bf7182bee1f4395ccea7",
-    "simulations/photosensor/chart.mjs": "a46884a1989da9c768b9cd95a7e520f8da9a7d28a2d75efb2461c40187488ccb",
-    "simulations/photosensor/index.html": "682ae3a925cc107bb3d016b13c3e2b4aa38494a9aa9ae599790087cf8f0a4194",
-    "simulations/photosensor/lab.css": "6560b500d0e36d2653215f08fa18b24e225af5dc105213b04ccb3c79edcf1f68",
-    "simulations/photosensor/model.mjs": "9a397e57c10304451297496e71b2319597c19ad0ef23e83f42ae7b68b787ab6c",
-    "simulations/photosensor/observations.json": "0f8319d36a9bb3749ac1679beb8b5863949644363c86ad93152be35928c52c6e"
   }
 }

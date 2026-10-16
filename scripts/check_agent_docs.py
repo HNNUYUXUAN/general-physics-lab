@@ -81,6 +81,11 @@ def validate():
             identity=observations.get('experiment_id',observations.get('experimentId',observations.get('experiment')))
             assert identity == entry['id'], ('Simulation observation identity', entry['id'])
             sources=next((observations[k] for k in ('source_files','sourceFiles','sourceHashes','input_hashes') if observations.get(k)),observations.get('provenance',{}).get('input_hashes'))
+            if not sources and observations.get('sourceSha256'):
+                expected=observations['sourceSha256']
+                sources=[{'path':d['resource']['path'],'sha256':expected}
+                         for d in entry['data_files']
+                         if hashlib.sha256((ROOT/d['resource']['path']).read_bytes()).hexdigest()==expected]
             assert sources, ('Observation source hashes missing',entry['id'])
             if isinstance(sources,dict):sources=[{'path':key,'sha256':value} for key,value in sources.items()]
             for source in sources:

@@ -1,0 +1,1941 @@
+{
+  "schema_version": 1,
+  "experiment": "course-01/newton-second-law",
+  "model_sha256": "eb53140817a489ceaedd03493629a17bc872c57f9644669acf0bb68c1fd21089",
+  "validator_sha256": "bb07eb4f7a2a853087b3760fb7a8e5f6805e8cf57c1a2f422101dc9dccf1de08",
+  "environment": {
+    "python": "3.14.7",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1"
+  },
+  "method": "DOP853 dynamics with second-gate event; edge velocities give independent finite-width times; five-force least squares recovers inertial mass and resistance; Shao2025 p246 eq23 independent relative-bias check",
+  "case_count": 96,
+  "tolerances": {
+    "absolute": 2e-10
+  },
+  "max_absolute_error": 2.535333054609623e-12,
+  "status": "passed",
+  "failures": [],
+  "cases": [
+    {
+      "parameters": {
+        "totalMass": 0.08,
+        "hangingMass": 0.005,
+        "resistance": 0.0,
+        "gravity": 9.8,
+        "gateSpacing": 0.2,
+        "initialSpeed": 0.2,
+        "flagLength": 0.001
+      },
+      "reference_arrival_s": 0.5450676124107193,
+      "reference_final_speed_m_s": 0.5338539126015657,
+      "reference_gate_durations_s": [
+        0.0050001465604451786,
+        0.0018731727046247418
+      ],
+      "paper_relative_bias": 8.227670254545849e-06,
+      "paper_bias_error": 5.551115123125783e-16,
+      "max_absolute_error": 1.4499512701604544e-13
+    },
+    {
+      "parameters": {
+        "totalMass": 0.08,
+        "hangingMass": 0.005,
+        "resistance": 0.0,
+        "gravity": 9.8,
+        "gateSpacing": 0.2,
+        "initialSpeed": 0.2,
+        "flagLength": 0.005
+      },
+      "reference_arrival_s": 0.5450676124107193,
+      "reference_final_speed_m_s": 0.5338539126015657,
+      "reference_gate_durations_s": [
+        0.02501836531697246,
+        0.009365993305018328
+      ],
+      "paper_relative_bias": 0.00020602845198947062,
+      "paper_bias_error": 7.771561172376096e-16,
+      "max_absolute_error": 4.773959005888173e-15
+    },
+    {
+      "parameters": {
+        "totalMass": 0.08,
+        "hangingMass": 0.005,
+        "resistance": 0.0,
+        "gravity": 9.8,
+        "gateSpacing": 0.2,
+        "initialSpeed": 0.5,
+        "flagLength": 0.001
+      },
+      "reference_arrival_s": 0.33234671669145216,
+      "reference_final_speed_m_s": 0.7035623639735145,
+      "reference_gate_durations_s": [
+        0.002000001500628879,
+        0.0014213383810627604
+      ],
+      "paper_relative_bias": 7.57893415914701e-07,
+      "paper_bias_error": 3.3306690738754696e-16,
+      "max_absolute_error": 7.327471962526033e-14
+    },
+    {
+      "parameters": {
+        "totalMass": 0.08,
+        "hangingMass": 0.005,
+        "resistance": 0.0,
+        "gravity": 9.8,
+        "gateSpacing": 0.2,
+        "initialSpeed": 0.5,
+        "flagLength": 0.005
+      },
+      "reference_arrival_s": 0.33234671669145216,
+      "reference_final_speed_m_s": 0.7035623639735145,
+      "reference_gate_durations_s": [
+        0.010000187590441035,
+        0.0071067245489115595
+      ],
+      "paper_relative_bias": 1.8948536589458165e-05,
+      "paper_bias_error": 1.1102230246251565e-16,
+      "max_absolute_error": 4.6407322429331543e-14
+    },
+    {
+      "parameters": {
+        "totalMass": 0.08,
+        "hangingMass": 0.005,
+        "resistance": 0.0,
+        "gravity": 9.8,
+        "gateSpacing": 0.6,
+        "initialSpeed": 0.2,
+        "flagLength": 0.001
+      },
+      "reference_arrival_s": 1.1107605601354298,
+      "reference_final_speed_m_s": 0.8803408430829507,
+      "reference_gate_durations_s": [
+        0.0050001465604451786,
+        0.0011359237571826285
+      ],
+      "paper_relative_bias": 3.0256406233775124e-06,
+      "paper_bias_error": 6.661338147750939e-16,
+      "max_absolute_error": 1.7685852782278744e-13
+    },
+    {
+      "parameters": {
+        "totalMass": 0.08,
+        "hangingMass": 0.005,
+        "resistance": 0.0,
+        "gravity": 9.8,
+        "gateSpacing": 0.6,
+        "initialSpeed": 0.2,
+        "flagLength": 0.005
+      },
+      "reference_arrival_s": 1.1107605601354298,
+      "reference_final_speed_m_s": 0.8803408430829507,
+      "reference_gate_durations_s": [
+        0.02501836531697246,
+        0.0056796294286248885
+      ],
+      "paper_relative_bias": 7.575354224387265e-05,
+      "paper_bias_error": 1.1102230246251565e-16,
+      "max_absolute_error": 3.597122599785507e-14
+    },
+    {
+      "parameters": {
+        "totalMass": 0.08,
+        "hangingMass": 0.005,
+        "resistance": 0.0,
+        "gravity": 9.8,
+        "gateSpacing": 0.6,
+        "initialSpeed": 0.5,
+        "flagLength": 0.001
+      },
+      "reference_arrival_s": 0.8040353666350374,
+      "reference_final_speed_m_s": 0.9924716620639603,
+      "reference_gate_durations_s": [
+        0.002000001500628879,
+        0.0010075854924201592
+      ],
+      "paper_relative_bias": 3.8087004283759995e-07,
+      "paper_bias_error": 2.220446049250313e-16,
+      "max_absolute_error": 1.6897594434794883e-13
+    },
+    {
+      "parameters": {
+        "totalMass": 0.08,
+        "hangingMass": 0.005,
+        "resistance": 0.0,
+        "gravity": 9.8,
+        "gateSpacing": 0.6,
+        "initialSpeed": 0.5,
+        "flagLength": 0.005
+      },
+      "reference_arrival_s": 0.8040353666350374,
+      "reference_final_speed_m_s": 0.9924716620639603,
+      "reference_gate_durations_s": [
+        0.010000187590441035,
+        0.005037933306161632
+      ],
+      "paper_relative_bias": 9.522203157530384e-06,
+      "paper_bias_error": 2.220446049250313e-16,
+      "max_absolute_error": 6.694644838489694e-14
+    },
+    {
+      "parameters": {
+        "totalMass": 0.08,
+        "hangingMass": 0.005,
+        "resistance": 0.04,
+        "gravity": 9.8,
+        "gateSpacing": 0.2,
+        "initialSpeed": 0.2,
+        "flagLength": 0.001
+      },
+      "reference_arrival_s": 0.8137563977090232,
+      "reference_final_speed_m_s": 0.29154759474226505,
+      "reference_gate_durations_s": [
+        0.005000004943864766,
+        0.003429972453898619
+      ],
+      "paper_relative_bias": 9.306097314976114e-07,
+      "paper_bias_error": 2.220446049250313e-16,
+      "max_absolute_error": 2.7172708527700706e-14
+    },
+    {
+      "parameters": {
+        "totalMass": 0.08,
+        "hangingMass": 0.005,
+        "resistance": 0.04,
+        "gravity": 9.8,
+        "gateSpacing": 0.2,
+        "initialSpeed": 0.2,
+        "flagLength": 0.005
+      },
+      "reference_arrival_s": 0.8137563977090232,
+      "reference_final_speed_m_s": 0.29154759474226505,
+      "reference_gate_durations_s": [
+        0.02500061803442927,
+        0.01714995239706023
+      ],
+      "paper_relative_bias": 2.3267111827429687e-05,
+      "paper_bias_error": 4.440892098500626e-16,
+      "max_absolute_error": 3.316791286067655e-15
+    },
+    {
+      "parameters": {
+        "totalMass": 0.08,
+        "hangingMass": 0.005,
+        "resistance": 0.04,
+        "gravity": 9.8,
+        "gateSpacing": 0.2,
+        "initialSpeed": 0.5,
+        "flagLength": 0.001
+      },
+      "reference_arrival_s": 0.3834579960889853,
+      "reference_final_speed_m_s": 0.543139024560011,
+      "reference_gate_durations_s": [
+        0.0020000000506249626,
+        0.001841149269267027
+      ],
+      "paper_relative_bias": 4.2902548069712054e-08,
+      "paper_bias_error": 7.771561172376096e-16,
+      "max_absolute_error": 6.328271240363392e-14
+    },
+    {
+      "parameters": {
+        "totalMass": 0.08,
+        "hangingMass": 0.005,
+        "resistance": 0.04,
+        "gravity": 9.8,
+        "gateSpacing": 0.2,
+        "initialSpeed": 0.5,
+        "flagLength": 0.005
+      },
+      "reference_arrival_s": 0.3834579960889853,
+      "reference_final_speed_m_s": 0.543139024560011,
+      "reference_gate_durations_s": [
+        0.010000006328138885,
+        0.009205750362780582
+      ],
+      "paper_relative_bias": 1.0725670422928602e-06,
+      "paper_bias_error": 2.886579864025407e-15,
+      "max_absolute_error": 1.0894063429134349e-13
+    },
+    {
+      "parameters": {
+        "totalMass": 0.08,
+        "hangingMass": 0.005,
+        "resistance": 0.04,
+        "gravity": 9.8,
+        "gateSpacing": 0.6,
+        "initialSpeed": 0.2,
+        "flagLength": 0.001
+      },
+      "reference_arrival_s": 1.9407112290403357,
+      "reference_final_speed_m_s": 0.41833001326703784,
+      "reference_gate_durations_s": [
+        0.005000004943864766,
+        0.002390457342155273
+      ],
+      "paper_relative_bias": 4.520100735927457e-07,
+      "paper_bias_error": 2.220446049250313e-16,
+      "max_absolute_error": 2.0219936835985663e-14
+    },
+    {
+      "parameters": {
+        "totalMass": 0.08,
+        "hangingMass": 0.005,
+        "resistance": 0.04,
+        "gravity": 9.8,
+        "gateSpacing": 0.6,
+        "initialSpeed": 0.2,
+        "flagLength": 0.005
+      },
+      "reference_arrival_s": 1.9407112290403357,
+      "reference_final_speed_m_s": 0.41833001326703784,
+      "reference_gate_durations_s": [
+        0.02500061803442927,
+        0.011952301529242326
+      ],
+      "paper_relative_bias": 1.1300938834168939e-05,
+      "paper_bias_error": 1.1102230246251565e-16,
+      "max_absolute_error": 8.604228440844963e-16
+    },
+    {
+      "parameters": {
+        "totalMass": 0.08,
+        "hangingMass": 0.005,
+        "resistance": 0.04,
+        "gravity": 9.8,
+        "gateSpacing": 0.6,
+        "initialSpeed": 0.5,
+        "flagLength": 0.001
+      },
+      "reference_arrival_s": 1.0709660648848247,
+      "reference_final_speed_m_s": 0.620483682299543,
+      "reference_gate_durations_s": [
+        0.0020000000506249626,
+        0.0016116459452517357
+      ],
+      "paper_relative_bias": 3.2873380018116904e-08,
+      "paper_bias_error": 4.440892098500626e-16,
+      "max_absolute_error": 1.5172585410283546e-13
+    },
+    {
+      "parameters": {
+        "totalMass": 0.08,
+        "hangingMass": 0.005,
+        "resistance": 0.04,
+        "gravity": 9.8,
+        "gateSpacing": 0.6,
+        "initialSpeed": 0.5,
+        "flagLength": 0.005
+      },
+      "reference_arrival_s": 1.0709660648848247,
+      "reference_final_speed_m_s": 0.620483682299543,
+      "reference_gate_durations_s": [
+        0.010000006328138885,
+        0.008058231790428748
+      ],
+      "paper_relative_bias": 8.218365696865959e-07,
+      "paper_bias_error": 8.881784197001252e-16,
+      "max_absolute_error": 6.245004513516506e-14
+    },
+    {
+      "parameters": {
+        "totalMass": 0.08,
+        "hangingMass": 0.025,
+        "resistance": 0.0,
+        "gravity": 9.8,
+        "gateSpacing": 0.2,
+        "initialSpeed": 0.2,
+        "flagLength": 0.001
+      },
+      "reference_arrival_s": 0.30195010217802404,
+      "reference_final_speed_m_s": 1.1247221879201985,
+      "reference_gate_durations_s": [
+        0.005003673063394492,
+        0.0008891091003326583
+      ],
+      "paper_relative_bias": 4.640879795003716e-05,
+      "paper_bias_error": 1.1102230246251565e-16,
+      "max_absolute_error": 2.1316282072803006e-14
+    },
+    {
+      "parameters": {
+        "totalMass": 0.08,
+        "hangingMass": 0.025,
+        "resistance": 0.0,
+        "gravity": 9.8,
+        "gateSpacing": 0.2,
+        "initialSpeed": 0.2,
+        "flagLength": 0.005
+      },
+      "reference_arrival_s": 0.30195010217802404,
+      "reference_final_speed_m_s": 1.1247221879201985,
+      "reference_gate_durations_s": [
+        0.02549013319285814,
+        0.0044456236727403045
+      ],
+      "paper_relative_bias": 0.001205827449107466,
+      "paper_bias_error": 1.1102230246251565e-16,
+      "max_absolute_error": 4.796163466380676e-14
+    },
+    {
+      "parameters": {
+        "totalMass": 0.08,
+        "hangingMass": 0.025,
+        "resistance": 0.0,
+        "gravity": 9.8,
+        "gateSpacing": 0.2,
+        "initialSpeed": 0.5,
+        "flagLength": 0.001
+      },
+      "reference_arrival_s": 0.23330474453848546,
+      "reference_final_speed_m_s": 1.2144957801491114,
+      "reference_gate_durations_s": [
+        0.002000037518088207,
+        0.0008233874132860229
+      ],
+      "paper_relative_bias": 6.358866360467452e-06,
+      "paper_bias_error": 1.1102230246251565e-16,
+      "max_absolute_error": 2.5757174171303632e-14
+    },
+    {
+      "parameters": {
+        "totalMass": 0.08,
+        "hangingMass": 0.025,
+        "resistance": 0.0,
+        "gravity": 9.8,
+        "gateSpacing": 0.2,
+        "initialSpeed": 0.5,
+        "flagLength": 0.005
+      },
+      "reference_arrival_s": 0.23330474453848546,
+      "reference_final_speed_m_s": 1.2144957801491114,
+      "reference_gate_durations_s": [
+        0.010004697167023794,
+        0.004116990312149676
+      ],
+      "paper_relative_bias": 0.00015914349423840068,
+      "paper_bias_error": 1.1102230246251565e-16,
+      "max_absolute_error": 4.3520742565306136e-14
+    },
+    {
+      "parameters": {
+        "totalMass": 0.08,
+        "hangingMass": 0.025,
+        "resistance": 0.0,
+        "gravity": 9.8,
+        "gateSpacing": 0.6,
+        "initialSpeed": 0.2,
+        "flagLength": 0.001
+      },
+      "reference_arrival_s": 0.5640599270986568,
+      "reference_final_speed_m_s": 1.9274335267396365,
+      "reference_gate_durations_s": [
+        0.005003673063394492,
+        0.0005188246811487761
+      ],
+      "paper_relative_bias": 1.5802222509186947e-05,
+      "paper_bias_error": 2.220446049250313e-16,
+      "max_absolute_error": 1.1861622795095172e-12
+    },
+    {
+      "parameters": {
+        "totalMass": 0.08,
+        "hangingMass": 0.025,
+        "resistance": 0.0,
+        "gravity": 9.8,
+        "gateSpacing": 0.6,
+        "initialSpeed": 0.2,
+        "flagLength": 0.005
+      },
+      "reference_arrival_s": 0.5640599270986568,
+      "reference_final_speed_m_s": 1.9274335267396365,
+      "reference_gate_durations_s": [
+        0.02549013319285814,
+        0.0025941286944544837
+      ],
+      "paper_relative_bias": 0.00041025848878650795,
+      "paper_bias_error": 3.3306690738754696e-16,
+      "max_absolute_error": 9.947598300641403e-14
+    },
+    {
+      "parameters": {
+        "totalMass": 0.08,
+        "hangingMass": 0.025,
+        "resistance": 0.0,
+        "gravity": 9.8,
+        "gateSpacing": 0.6,
+        "initialSpeed": 0.5,
+        "flagLength": 0.001
+      },
+      "reference_arrival_s": 0.483644498160292,
+      "reference_final_speed_m_s": 1.981161275615894,
+      "reference_gate_durations_s": [
+        0.002000037518088207,
+        0.0005047545035367016
+      ],
+      "paper_relative_bias": 2.389625980203647e-06,
+      "paper_bias_error": 0.0,
+      "max_absolute_error": 4.600764214046649e-13
+    },
+    {
+      "parameters": {
+        "totalMass": 0.08,
+        "hangingMass": 0.025,
+        "resistance": 0.0,
+        "gravity": 9.8,
+        "gateSpacing": 0.6,
+        "initialSpeed": 0.5,
+        "flagLength": 0.005
+      },
+      "reference_arrival_s": 0.483644498160292,
+      "reference_final_speed_m_s": 1.981161275615894,
+      "reference_gate_durations_s": [
+        0.010004697167023794,
+        0.0025237771271145308
+      ],
+      "paper_relative_bias": 5.9798192791782334e-05,
+      "paper_bias_error": 3.3306690738754696e-16,
+      "max_absolute_error": 1.3589129821411916e-13
+    },
+    {
+      "parameters": {
+        "totalMass": 0.08,
+        "hangingMass": 0.025,
+        "resistance": 0.04,
+        "gravity": 9.8,
+        "gateSpacing": 0.2,
+        "initialSpeed": 0.2,
+        "flagLength": 0.001
+      },
+      "reference_arrival_s": 0.3246783890839081,
+      "reference_final_speed_m_s": 1.0319883720275138,
+      "reference_gate_durations_s": [
+        0.00500256961907672,
+        0.0009690038674600518
+      ],
+      "paper_relative_bias": 3.857641040005966e-05,
+      "paper_bias_error": 0.0,
+      "max_absolute_error": 1.7763568394002505e-14
+    },
+    {
+      "parameters": {
+        "totalMass": 0.08,
+        "hangingMass": 0.025,
+        "resistance": 0.04,
+        "gravity": 9.8,
+        "gateSpacing": 0.2,
+        "initialSpeed": 0.2,
+        "flagLength": 0.005
+      },
+      "reference_arrival_s": 0.3246783890839081,
+      "reference_final_speed_m_s": 1.0319883720275138,
+      "reference_gate_durations_s": [
+        0.025335952939401545,
+        0.004845103491072729
+      ],
+      "paper_relative_bias": 0.0009904630790564806,
+      "paper_bias_error": 0.0,
+      "max_absolute_error": 8.215650382226158e-14
+    },
+    {
+      "parameters": {
+        "totalMass": 0.08,
+        "hangingMass": 0.025,
+        "resistance": 0.04,
+        "gravity": 9.8,
+        "gateSpacing": 0.2,
+        "initialSpeed": 0.5,
+        "flagLength": 0.001
+      },
+      "reference_arrival_s": 0.24552545524433989,
+      "reference_final_speed_m_s": 1.129158979063621,
+      "reference_gate_durations_s": [
+        0.002000026266832391,
+        0.0008856153327002057
+      ],
+      "paper_relative_bias": 5.150289553501608e-06,
+      "paper_bias_error": 2.220446049250313e-16,
+      "max_absolute_error": 1.0125233984581428e-13
+    },
+    {
+      "parameters": {
+        "totalMass": 0.08,
+        "hangingMass": 0.025,
+        "resistance": 0.04,
+        "gravity": 9.8,
+        "gateSpacing": 0.2,
+        "initialSpeed": 0.5,
+        "flagLength": 0.005
+      },
+      "reference_arrival_s": 0.24552545524433989,
+      "reference_final_speed_m_s": 1.129158979063621,
+      "reference_gate_durations_s": [
+        0.010003286981772882,
+        0.004428130325086642
+      ],
+      "paper_relative_bias": 0.00012885757432867795,
+      "paper_bias_error": 1.1102230246251565e-16,
+      "max_absolute_error": 2.708944180085382e-14
+    },
+    {
+      "parameters": {
+        "totalMass": 0.08,
+        "hangingMass": 0.025,
+        "resistance": 0.04,
+        "gravity": 9.8,
+        "gateSpacing": 0.6,
+        "initialSpeed": 0.2,
+        "flagLength": 0.001
+      },
+      "reference_arrival_s": 0.6107068329647918,
+      "reference_final_speed_m_s": 1.7649362594722793,
+      "reference_gate_durations_s": [
+        0.00500256961907672,
+        0.0005665927475983882
+      ],
+      "paper_relative_bias": 1.3188693926191597e-05,
+      "paper_bias_error": 1.1102230246251565e-16,
+      "max_absolute_error": 6.106226635438361e-13
+    },
+    {
+      "parameters": {
+        "totalMass": 0.08,
+        "hangingMass": 0.025,
+        "resistance": 0.04,
+        "gravity": 9.8,
+        "gateSpacing": 0.6,
+        "initialSpeed": 0.2,
+        "flagLength": 0.005
+      },
+      "reference_arrival_s": 0.6107068329647918,
+      "reference_final_speed_m_s": 1.7649362594722793,
+      "reference_gate_durations_s": [
+        0.025335952939401545,
+        0.002832969489440516
+      ],
+      "paper_relative_bias": 0.00033840203911461586,
+      "paper_bias_error": 2.220446049250313e-16,
+      "max_absolute_error": 1.687538997430238e-13
+    },
+    {
+      "parameters": {
+        "totalMass": 0.08,
+        "hangingMass": 0.025,
+        "resistance": 0.04,
+        "gravity": 9.8,
+        "gateSpacing": 0.6,
+        "initialSpeed": 0.5,
+        "flagLength": 0.001
+      },
+      "reference_arrival_s": 0.5164715133194332,
+      "reference_final_speed_m_s": 1.8234582528810463,
+      "reference_gate_durations_s": [
+        0.002000026266832391,
+        0.0005484085378224101
+      ],
+      "paper_relative_bias": 1.9749150897974133e-06,
+      "paper_bias_error": 5.551115123125783e-16,
+      "max_absolute_error": 7.713829575095588e-13
+    },
+    {
+      "parameters": {
+        "totalMass": 0.08,
+        "hangingMass": 0.025,
+        "resistance": 0.04,
+        "gravity": 9.8,
+        "gateSpacing": 0.6,
+        "initialSpeed": 0.5,
+        "flagLength": 0.005
+      },
+      "reference_arrival_s": 0.5164715133194332,
+      "reference_final_speed_m_s": 1.8234582528810463,
+      "reference_gate_durations_s": [
+        0.010003286981772882,
+        0.0027420475749925424
+      ],
+      "paper_relative_bias": 4.940656180985048e-05,
+      "paper_bias_error": 3.3306690738754696e-16,
+      "max_absolute_error": 2.495781359357352e-13
+    },
+    {
+      "parameters": {
+        "totalMass": 0.18,
+        "hangingMass": 0.005,
+        "resistance": 0.0,
+        "gravity": 9.8,
+        "gateSpacing": 0.2,
+        "initialSpeed": 0.2,
+        "flagLength": 0.001
+      },
+      "reference_arrival_s": 0.6827555391171711,
+      "reference_final_speed_m_s": 0.38586123009300727,
+      "reference_gate_durations_s": [
+        0.005000028947828141,
+        0.002591606359678337
+      ],
+      "paper_relative_bias": 3.110796638172708e-06,
+      "paper_bias_error": 7.771561172376096e-16,
+      "max_absolute_error": 9.381384558082573e-15
+    },
+    {
+      "parameters": {
+        "totalMass": 0.18,
+        "hangingMass": 0.005,
+        "resistance": 0.0,
+        "gravity": 9.8,
+        "gateSpacing": 0.2,
+        "initialSpeed": 0.2,
+        "flagLength": 0.005
+      },
+      "reference_arrival_s": 0.6827555391171711,
+      "reference_final_speed_m_s": 0.38586123009300727,
+      "reference_gate_durations_s": [
+        0.025003620239440603,
+        0.012958161755249002
+      ],
+      "paper_relative_bias": 7.779891104564562e-05,
+      "paper_bias_error": 0.0,
+      "max_absolute_error": 2.9976021664879227e-15
+    },
+    {
+      "parameters": {
+        "totalMass": 0.18,
+        "hangingMass": 0.005,
+        "resistance": 0.0,
+        "gravity": 9.8,
+        "gateSpacing": 0.2,
+        "initialSpeed": 0.5,
+        "flagLength": 0.001
+      },
+      "reference_arrival_s": 0.36394294966670515,
+      "reference_final_speed_m_s": 0.5990733585203809,
+      "reference_gate_durations_s": [
+        0.002000000296420083,
+        0.0016692447722727155
+      ],
+      "paper_relative_bias": 2.0648448162408073e-07,
+      "paper_bias_error": 5.551115123125783e-16,
+      "max_absolute_error": 3.0531133177191805e-15
+    },
+    {
+      "parameters": {
+        "totalMass": 0.18,
+        "hangingMass": 0.005,
+        "resistance": 0.0,
+        "gravity": 9.8,
+        "gateSpacing": 0.2,
+        "initialSpeed": 0.5,
+        "flagLength": 0.005
+      },
+      "reference_arrival_s": 0.36394294966670515,
+      "reference_final_speed_m_s": 0.5990733585203809,
+      "reference_gate_durations_s": [
+        0.010000037052949537,
+        0.008346238267290234
+      ],
+      "paper_relative_bias": 5.162192168284285e-06,
+      "paper_bias_error": 1.1102230246251565e-16,
+      "max_absolute_error": 1.1934897514720433e-14
+    },
+    {
+      "parameters": {
+        "totalMass": 0.18,
+        "hangingMass": 0.005,
+        "resistance": 0.0,
+        "gravity": 9.8,
+        "gateSpacing": 0.6,
+        "initialSpeed": 0.2,
+        "flagLength": 0.001
+      },
+      "reference_arrival_s": 1.4897023009695847,
+      "reference_final_speed_m_s": 0.6055300708194975,
+      "reference_gate_durations_s": [
+        0.005000028947828141,
+        0.0016514457614727868
+      ],
+      "paper_relative_bias": 1.263168752818622e-06,
+      "paper_bias_error": 5.551115123125783e-16,
+      "max_absolute_error": 3.6637359812630166e-14
+    },
+    {
+      "parameters": {
+        "totalMass": 0.18,
+        "hangingMass": 0.005,
+        "resistance": 0.0,
+        "gravity": 9.8,
+        "gateSpacing": 0.6,
+        "initialSpeed": 0.2,
+        "flagLength": 0.005
+      },
+      "reference_arrival_s": 1.4897023009695847,
+      "reference_final_speed_m_s": 0.6055300708194975,
+      "reference_gate_durations_s": [
+        0.025003620239440603,
+        0.008257242461447512
+      ],
+      "paper_relative_bias": 3.158906207012535e-05,
+      "paper_bias_error": 6.661338147750939e-16,
+      "max_absolute_error": 3.341771304121721e-14
+    },
+    {
+      "parameters": {
+        "totalMass": 0.18,
+        "hangingMass": 0.005,
+        "resistance": 0.0,
+        "gravity": 9.8,
+        "gateSpacing": 0.6,
+        "initialSpeed": 0.5,
+        "flagLength": 0.001
+      },
+      "reference_arrival_s": 0.9528454897700863,
+      "reference_final_speed_m_s": 0.7593857166596345,
+      "reference_gate_durations_s": [
+        0.002000000296420083,
+        0.0013168538806000631
+      ],
+      "paper_relative_bias": 1.2850573527511955e-07,
+      "paper_bias_error": 3.3306690738754696e-16,
+      "max_absolute_error": 1.7563728249569976e-13
+    },
+    {
+      "parameters": {
+        "totalMass": 0.18,
+        "hangingMass": 0.005,
+        "resistance": 0.0,
+        "gravity": 9.8,
+        "gateSpacing": 0.6,
+        "initialSpeed": 0.5,
+        "flagLength": 0.005
+      },
+      "reference_arrival_s": 0.9528454897700863,
+      "reference_final_speed_m_s": 0.7593857166596345,
+      "reference_gate_durations_s": [
+        0.010000037052949537,
+        0.006584273804769061
+      ],
+      "paper_relative_bias": 3.212680436126547e-06,
+      "paper_bias_error": 6.661338147750939e-16,
+      "max_absolute_error": 2.8976820942716586e-14
+    },
+    {
+      "parameters": {
+        "totalMass": 0.18,
+        "hangingMass": 0.005,
+        "resistance": 0.04,
+        "gravity": 9.8,
+        "gateSpacing": 0.2,
+        "initialSpeed": 0.2,
+        "flagLength": 0.001
+      },
+      "reference_arrival_s": 0.8989794855663563,
+      "reference_final_speed_m_s": 0.2449489742783178,
+      "reference_gate_durations_s": [
+        0.005000000976563278,
+        0.0040824832590208296
+      ],
+      "paper_relative_bias": 2.6041688161448917e-07,
+      "paper_bias_error": 4.440892098500626e-16,
+      "max_absolute_error": 1.2094492074510299e-14
+    },
+    {
+      "parameters": {
+        "totalMass": 0.18,
+        "hangingMass": 0.005,
+        "resistance": 0.04,
+        "gravity": 9.8,
+        "gateSpacing": 0.2,
+        "initialSpeed": 0.2,
+        "flagLength": 0.005
+      },
+      "reference_arrival_s": 0.8989794855663563,
+      "reference_final_speed_m_s": 0.2449489742783178,
+      "reference_gate_durations_s": [
+        0.02500012207239832,
+        0.020412458821304488
+      ],
+      "paper_relative_bias": 6.5105508910701104e-06,
+      "paper_bias_error": 6.661338147750939e-16,
+      "max_absolute_error": 7.507883204027621e-15
+    },
+    {
+      "parameters": {
+        "totalMass": 0.18,
+        "hangingMass": 0.005,
+        "resistance": 0.04,
+        "gravity": 9.8,
+        "gateSpacing": 0.2,
+        "initialSpeed": 0.5,
+        "flagLength": 0.001
+      },
+      "reference_arrival_s": 0.39230484541326427,
+      "reference_final_speed_m_s": 0.5196152422706632,
+      "reference_gate_durations_s": [
+        0.002000000009998448,
+        0.0019245009055479652
+      ],
+      "paper_relative_bias": 9.25925935923999e-09,
+      "paper_bias_error": 9.769962616701378e-15,
+      "max_absolute_error": 5.959122084675528e-13
+    },
+    {
+      "parameters": {
+        "totalMass": 0.18,
+        "hangingMass": 0.005,
+        "resistance": 0.04,
+        "gravity": 9.8,
+        "gateSpacing": 0.2,
+        "initialSpeed": 0.5,
+        "flagLength": 0.005
+      },
+      "reference_arrival_s": 0.39230484541326427,
+      "reference_final_speed_m_s": 0.5196152422706632,
+      "reference_gate_durations_s": [
+        0.01000000125000011,
+        0.009622505517712375
+      ],
+      "paper_relative_bias": 2.314816431869815e-07,
+      "paper_bias_error": 1.1102230246251565e-15,
+      "max_absolute_error": 3.9690473130349346e-14
+    },
+    {
+      "parameters": {
+        "totalMass": 0.18,
+        "hangingMass": 0.005,
+        "resistance": 0.04,
+        "gravity": 9.8,
+        "gateSpacing": 0.6,
+        "initialSpeed": 0.2,
+        "flagLength": 0.001
+      },
+      "reference_arrival_s": 2.324555320336759,
+      "reference_final_speed_m_s": 0.316227766016838,
+      "reference_gate_durations_s": [
+        0.005000000976563278,
+        0.003162277758989029
+      ],
+      "paper_relative_bias": 1.562500951957091e-07,
+      "paper_bias_error": 1.1102230246251565e-16,
+      "max_absolute_error": 2.983724378680108e-14
+    },
+    {
+      "parameters": {
+        "totalMass": 0.18,
+        "hangingMass": 0.005,
+        "resistance": 0.04,
+        "gravity": 9.8,
+        "gateSpacing": 0.6,
+        "initialSpeed": 0.2,
+        "flagLength": 0.005
+      },
+      "reference_arrival_s": 2.324555320336759,
+      "reference_final_speed_m_s": 0.316227766016838,
+      "reference_gate_durations_s": [
+        0.02500012207239832,
+        0.015811400653522597
+      ],
+      "paper_relative_bias": 3.906309510526285e-06,
+      "paper_bias_error": 0.0,
+      "max_absolute_error": 9.159339953157541e-16
+    },
+    {
+      "parameters": {
+        "totalMass": 0.18,
+        "hangingMass": 0.005,
+        "resistance": 0.04,
+        "gravity": 9.8,
+        "gateSpacing": 0.6,
+        "initialSpeed": 0.5,
+        "flagLength": 0.001
+      },
+      "reference_arrival_s": 1.1355287256600461,
+      "reference_final_speed_m_s": 0.5567764362830023,
+      "reference_gate_durations_s": [
+        0.002000000009998448,
+        0.0017960530261085235
+      ],
+      "paper_relative_bias": 8.064516610062356e-09,
+      "paper_bias_error": 2.6645352591003757e-15,
+      "max_absolute_error": 4.1887326940326375e-13
+    },
+    {
+      "parameters": {
+        "totalMass": 0.18,
+        "hangingMass": 0.005,
+        "resistance": 0.04,
+        "gravity": 9.8,
+        "gateSpacing": 0.6,
+        "initialSpeed": 0.5,
+        "flagLength": 0.005
+      },
+      "reference_arrival_s": 1.1355287256600461,
+      "reference_final_speed_m_s": 0.5567764362830023,
+      "reference_gate_durations_s": [
+        0.01000000125000011,
+        0.008980265831393107
+      ],
+      "paper_relative_bias": 2.0161302716203977e-07,
+      "paper_bias_error": 1.5543122344752192e-15,
+      "max_absolute_error": 5.195149865855342e-14
+    },
+    {
+      "parameters": {
+        "totalMass": 0.18,
+        "hangingMass": 0.025,
+        "resistance": 0.0,
+        "gravity": 9.8,
+        "gateSpacing": 0.2,
+        "initialSpeed": 0.2,
+        "flagLength": 0.001
+      },
+      "reference_arrival_s": 0.41472709915982275,
+      "reference_final_speed_m_s": 0.7644896627453148,
+      "reference_gate_durations_s": [
+        0.00500072404788812,
+        0.0013080630474202194
+      ],
+      "paper_relative_bias": 1.9817958182177797e-05,
+      "paper_bias_error": 3.3306690738754696e-16,
+      "max_absolute_error": 2.0095036745715333e-13
+    },
+    {
+      "parameters": {
+        "totalMass": 0.18,
+        "hangingMass": 0.025,
+        "resistance": 0.0,
+        "gravity": 9.8,
+        "gateSpacing": 0.2,
+        "initialSpeed": 0.2,
+        "flagLength": 0.005
+      },
+      "reference_arrival_s": 0.41472709915982275,
+      "reference_final_speed_m_s": 0.7644896627453148,
+      "reference_gate_durations_s": [
+        0.02509162568827894,
+        0.006540421662951188
+      ],
+      "paper_relative_bias": 0.0004991981882538354,
+      "paper_bias_error": 0.0,
+      "max_absolute_error": 2.220446049250313e-15
+    },
+    {
+      "parameters": {
+        "totalMass": 0.18,
+        "hangingMass": 0.025,
+        "resistance": 0.0,
+        "gravity": 9.8,
+        "gateSpacing": 0.2,
+        "initialSpeed": 0.5,
+        "flagLength": 0.001
+      },
+      "reference_arrival_s": 0.28749756524673975,
+      "reference_final_speed_m_s": 0.8913161304747295,
+      "reference_gate_durations_s": [
+        0.0020000074105899074,
+        0.0011219367996703538
+      ],
+      "paper_relative_bias": 2.3319980128055917e-06,
+      "paper_bias_error": 1.1102230246251565e-16,
+      "max_absolute_error": 2.5979218776228663e-14
+    },
+    {
+      "parameters": {
+        "totalMass": 0.18,
+        "hangingMass": 0.025,
+        "resistance": 0.0,
+        "gravity": 9.8,
+        "gateSpacing": 0.2,
+        "initialSpeed": 0.5,
+        "flagLength": 0.005
+      },
+      "reference_arrival_s": 0.28749756524673975,
+      "reference_final_speed_m_s": 0.8913161304747295,
+      "reference_gate_durations_s": [
+        0.010000926612178345,
+        0.005609733399163863
+      ],
+      "paper_relative_bias": 5.8314614415522215e-05,
+      "paper_bias_error": 0.0,
+      "max_absolute_error": 2.0872192862952943e-14
+    },
+    {
+      "parameters": {
+        "totalMass": 0.18,
+        "hangingMass": 0.025,
+        "resistance": 0.0,
+        "gravity": 9.8,
+        "gateSpacing": 0.6,
+        "initialSpeed": 0.2,
+        "flagLength": 0.001
+      },
+      "reference_arrival_s": 0.8034420201762743,
+      "reference_final_speed_m_s": 1.2935738607954852,
+      "reference_gate_durations_s": [
+        0.00500072404788812,
+        0.0007730521719803671
+      ],
+      "paper_relative_bias": 6.921712591201334e-06,
+      "paper_bias_error": 1.1102230246251565e-16,
+      "max_absolute_error": 3.8413716652030416e-13
+    },
+    {
+      "parameters": {
+        "totalMass": 0.18,
+        "hangingMass": 0.025,
+        "resistance": 0.0,
+        "gravity": 9.8,
+        "gateSpacing": 0.6,
+        "initialSpeed": 0.2,
+        "flagLength": 0.005
+      },
+      "reference_arrival_s": 0.8034420201762743,
+      "reference_final_speed_m_s": 1.2935738607954852,
+      "reference_gate_durations_s": [
+        0.02509162568827894,
+        0.003865268532201366
+      ],
+      "paper_relative_bias": 0.00017429293729087636,
+      "paper_bias_error": 1.1102230246251565e-16,
+      "max_absolute_error": 1.3589129821411916e-13
+    },
+    {
+      "parameters": {
+        "totalMass": 0.18,
+        "hangingMass": 0.025,
+        "resistance": 0.0,
+        "gravity": 9.8,
+        "gateSpacing": 0.6,
+        "initialSpeed": 0.5,
+        "flagLength": 0.001
+      },
+      "reference_arrival_s": 0.640907208991293,
+      "reference_final_speed_m_s": 1.372345923349261,
+      "reference_gate_durations_s": [
+        0.0020000074105899074,
+        0.0007286792989109069
+      ],
+      "paper_relative_bias": 9.837022567626974e-07,
+      "paper_bias_error": 2.220446049250313e-16,
+      "max_absolute_error": 1.5543122344752192e-13
+    },
+    {
+      "parameters": {
+        "totalMass": 0.18,
+        "hangingMass": 0.025,
+        "resistance": 0.0,
+        "gravity": 9.8,
+        "gateSpacing": 0.6,
+        "initialSpeed": 0.5,
+        "flagLength": 0.005
+      },
+      "reference_arrival_s": 0.640907208991293,
+      "reference_final_speed_m_s": 1.372345923349261,
+      "reference_gate_durations_s": [
+        0.010000926612178345,
+        0.0036434022035938163
+      ],
+      "paper_relative_bias": 2.4597589819319587e-05,
+      "paper_bias_error": 1.1102230246251565e-16,
+      "max_absolute_error": 2.042810365310288e-14
+    },
+    {
+      "parameters": {
+        "totalMass": 0.18,
+        "hangingMass": 0.025,
+        "resistance": 0.04,
+        "gravity": 9.8,
+        "gateSpacing": 0.2,
+        "initialSpeed": 0.2,
+        "flagLength": 0.001
+      },
+      "reference_arrival_s": 0.4424988902032062,
+      "reference_final_speed_m_s": 0.7039570693980963,
+      "reference_gate_durations_s": [
+        0.005000506846932937,
+        0.001420542109301588
+      ],
+      "paper_relative_bias": 1.6362366015987284e-05,
+      "paper_bias_error": 1.1102230246251565e-16,
+      "max_absolute_error": 5.329070518200751e-15
+    },
+    {
+      "parameters": {
+        "totalMass": 0.18,
+        "hangingMass": 0.025,
+        "resistance": 0.04,
+        "gravity": 9.8,
+        "gateSpacing": 0.2,
+        "initialSpeed": 0.2,
+        "flagLength": 0.005
+      },
+      "reference_arrival_s": 0.4424988902032062,
+      "reference_final_speed_m_s": 0.7039570693980963,
+      "reference_gate_durations_s": [
+        0.025063901750256967,
+        0.007102823097464788
+      ],
+      "paper_relative_bias": 0.00041124500129685604,
+      "paper_bias_error": 3.3306690738754696e-16,
+      "max_absolute_error": 1.7763568394002505e-15
+    },
+    {
+      "parameters": {
+        "totalMass": 0.18,
+        "hangingMass": 0.025,
+        "resistance": 0.04,
+        "gravity": 9.8,
+        "gateSpacing": 0.2,
+        "initialSpeed": 0.5,
+        "flagLength": 0.001
+      },
+      "reference_arrival_s": 0.29851335619634073,
+      "reference_final_speed_m_s": 0.8399735445569441,
+      "reference_gate_durations_s": [
+        0.0020000051883186922,
+        0.001190514072942943
+      ],
+      "paper_relative_bias": 1.838378069662916e-06,
+      "paper_bias_error": 1.1102230246251565e-16,
+      "max_absolute_error": 1.3589129821411916e-13
+    },
+    {
+      "parameters": {
+        "totalMass": 0.18,
+        "hangingMass": 0.025,
+        "resistance": 0.04,
+        "gravity": 9.8,
+        "gateSpacing": 0.2,
+        "initialSpeed": 0.5,
+        "flagLength": 0.005
+      },
+      "reference_arrival_s": 0.29851335619634073,
+      "reference_final_speed_m_s": 0.8399735445569441,
+      "reference_gate_durations_s": [
+        0.010000648681204314,
+        0.005952616895330661
+      ],
+      "paper_relative_bias": 4.5967923122058885e-05,
+      "paper_bias_error": 9.992007221626409e-16,
+      "max_absolute_error": 1.1546319456101628e-14
+    },
+    {
+      "parameters": {
+        "totalMass": 0.18,
+        "hangingMass": 0.025,
+        "resistance": 0.04,
+        "gravity": 9.8,
+        "gateSpacing": 0.6,
+        "initialSpeed": 0.2,
+        "flagLength": 0.001
+      },
+      "reference_arrival_s": 0.8657822560774942,
+      "reference_final_speed_m_s": 1.186029791643814,
+      "reference_gate_durations_s": [
+        0.005000506846932937,
+        0.0008431492100656446
+      ],
+      "paper_relative_bias": 5.764241282291138e-06,
+      "paper_bias_error": 4.440892098500626e-16,
+      "max_absolute_error": 3.745892485085278e-13
+    },
+    {
+      "parameters": {
+        "totalMass": 0.18,
+        "hangingMass": 0.025,
+        "resistance": 0.04,
+        "gravity": 9.8,
+        "gateSpacing": 0.6,
+        "initialSpeed": 0.2,
+        "flagLength": 0.005
+      },
+      "reference_arrival_s": 0.8657822560774942,
+      "reference_final_speed_m_s": 1.186029791643814,
+      "reference_gate_durations_s": [
+        0.025063901750256967,
+        0.004215754340800142
+      ],
+      "paper_relative_bias": 0.00014483501179196612,
+      "paper_bias_error": 1.1102230246251565e-16,
+      "max_absolute_error": 1.3988810110276972e-14
+    },
+    {
+      "parameters": {
+        "totalMass": 0.18,
+        "hangingMass": 0.025,
+        "resistance": 0.04,
+        "gravity": 9.8,
+        "gateSpacing": 0.6,
+        "initialSpeed": 0.5,
+        "flagLength": 0.001
+      },
+      "reference_arrival_s": 0.6773988949908674,
+      "reference_final_speed_m_s": 1.271482074850711,
+      "reference_gate_durations_s": [
+        0.0020000051883186922,
+        0.0007864838064285801
+      ],
+      "paper_relative_bias": 8.023149478120217e-07,
+      "paper_bias_error": 2.220446049250313e-16,
+      "max_absolute_error": 4.440892098500626e-15
+    },
+    {
+      "parameters": {
+        "totalMass": 0.18,
+        "hangingMass": 0.025,
+        "resistance": 0.04,
+        "gravity": 9.8,
+        "gateSpacing": 0.6,
+        "initialSpeed": 0.5,
+        "flagLength": 0.005
+      },
+      "reference_arrival_s": 0.6773988949908674,
+      "reference_final_speed_m_s": 1.271482074850711,
+      "reference_gate_durations_s": [
+        0.010000648681204314,
+        0.0039324248868504484
+      ],
+      "paper_relative_bias": 2.0060818001876868e-05,
+      "paper_bias_error": 0.0,
+      "max_absolute_error": 5.995204332975845e-14
+    },
+    {
+      "parameters": {
+        "totalMass": 0.5,
+        "hangingMass": 0.005,
+        "resistance": 0.0,
+        "gravity": 9.8,
+        "gateSpacing": 0.2,
+        "initialSpeed": 0.2,
+        "flagLength": 0.001
+      },
+      "reference_arrival_s": 0.8308667917286323,
+      "reference_final_speed_m_s": 0.2814249455894059,
+      "reference_gate_durations_s": [
+        0.005000003751572368,
+        0.0035533459526573543
+      ],
+      "paper_relative_bias": 7.578934160257234e-07,
+      "paper_bias_error": 0.0,
+      "max_absolute_error": 3.191891195797325e-14
+    },
+    {
+      "parameters": {
+        "totalMass": 0.5,
+        "hangingMass": 0.005,
+        "resistance": 0.0,
+        "gravity": 9.8,
+        "gateSpacing": 0.2,
+        "initialSpeed": 0.2,
+        "flagLength": 0.005
+      },
+      "reference_arrival_s": 0.8308667917286323,
+      "reference_final_speed_m_s": 0.2814249455894059,
+      "reference_gate_durations_s": [
+        0.02500046897610236,
+        0.017766811372279014
+      ],
+      "paper_relative_bias": 1.894853658968021e-05,
+      "paper_bias_error": 1.1102230246251565e-16,
+      "max_absolute_error": 1.1837753000065732e-14
+    },
+    {
+      "parameters": {
+        "totalMass": 0.5,
+        "hangingMass": 0.005,
+        "resistance": 0.0,
+        "gravity": 9.8,
+        "gateSpacing": 0.2,
+        "initialSpeed": 0.5,
+        "flagLength": 0.001
+      },
+      "reference_arrival_s": 0.38544067744846977,
+      "reference_final_speed_m_s": 0.5377731863899499,
+      "reference_gate_durations_s": [
+        0.0020000000384162832,
+        0.0018595200349547545
+      ],
+      "paper_relative_bias": 3.3208855554356376e-08,
+      "paper_bias_error": 2.1094237467877974e-15,
+      "max_absolute_error": 4.468647674116255e-13
+    },
+    {
+      "parameters": {
+        "totalMass": 0.5,
+        "hangingMass": 0.005,
+        "resistance": 0.0,
+        "gravity": 9.8,
+        "gateSpacing": 0.2,
+        "initialSpeed": 0.5,
+        "flagLength": 0.005
+      },
+      "reference_arrival_s": 0.38544067744846977,
+      "reference_final_speed_m_s": 0.5377731863899499,
+      "reference_gate_durations_s": [
+        0.010000004802007802,
+        0.009297603377710554
+      ],
+      "paper_relative_bias": 8.302233821533278e-07,
+      "paper_bias_error": 1.887379141862766e-15,
+      "max_absolute_error": 1.1129985821867194e-13
+    },
+    {
+      "parameters": {
+        "totalMass": 0.5,
+        "hangingMass": 0.005,
+        "resistance": 0.0,
+        "gravity": 9.8,
+        "gateSpacing": 0.6,
+        "initialSpeed": 0.2,
+        "flagLength": 0.001
+      },
+      "reference_arrival_s": 2.0100884165875934,
+      "reference_final_speed_m_s": 0.39698866482558404,
+      "reference_gate_durations_s": [
+        0.005000003751572368,
+        0.0025189637310497185
+      ],
+      "paper_relative_bias": 3.8087004272657765e-07,
+      "paper_bias_error": 3.3306690738754696e-16,
+      "max_absolute_error": 4.608813330975181e-14
+    },
+    {
+      "parameters": {
+        "totalMass": 0.5,
+        "hangingMass": 0.005,
+        "resistance": 0.0,
+        "gravity": 9.8,
+        "gateSpacing": 0.6,
+        "initialSpeed": 0.2,
+        "flagLength": 0.005
+      },
+      "reference_arrival_s": 2.0100884165875934,
+      "reference_final_speed_m_s": 0.39698866482558404,
+      "reference_gate_durations_s": [
+        0.02500046897610236,
+        0.01259483326540408
+      ],
+      "paper_relative_bias": 9.522203157530384e-06,
+      "paper_bias_error": 4.440892098500626e-16,
+      "max_absolute_error": 1.0075273948473296e-14
+    },
+    {
+      "parameters": {
+        "totalMass": 0.5,
+        "hangingMass": 0.005,
+        "resistance": 0.0,
+        "gravity": 9.8,
+        "gateSpacing": 0.6,
+        "initialSpeed": 0.5,
+        "flagLength": 0.001
+      },
+      "reference_arrival_s": 1.0846964862139257,
+      "reference_final_speed_m_s": 0.6063002556489645,
+      "reference_gate_durations_s": [
+        0.0020000000384162832,
+        0.0016493478265378059
+      ],
+      "paper_relative_bias": 2.612622662656605e-08,
+      "paper_bias_error": 5.551115123125783e-16,
+      "max_absolute_error": 1.305483499081106e-13
+    },
+    {
+      "parameters": {
+        "totalMass": 0.5,
+        "hangingMass": 0.005,
+        "resistance": 0.0,
+        "gravity": 9.8,
+        "gateSpacing": 0.6,
+        "initialSpeed": 0.5,
+        "flagLength": 0.005
+      },
+      "reference_arrival_s": 1.0846964862139257,
+      "reference_final_speed_m_s": 0.6063002556489645,
+      "reference_gate_durations_s": [
+        0.010000004802007802,
+        0.008246740891038731
+      ],
+      "paper_relative_bias": 6.53156948082767e-07,
+      "paper_bias_error": 4.440892098500626e-16,
+      "max_absolute_error": 1.3600232051658168e-14
+    },
+    {
+      "parameters": {
+        "totalMass": 0.5,
+        "hangingMass": 0.005,
+        "resistance": 0.04,
+        "gravity": 9.8,
+        "gateSpacing": 0.2,
+        "initialSpeed": 0.2,
+        "flagLength": 0.001
+      },
+      "reference_arrival_s": 0.9586449902224649,
+      "reference_final_speed_m_s": 0.21725560982400438,
+      "reference_gate_durations_s": [
+        0.005000000126561173,
+        0.004602873173166642
+      ],
+      "paper_relative_bias": 4.2902548069712054e-08,
+      "paper_bias_error": 3.3306690738754696e-16,
+      "max_absolute_error": 1.2021633688519273e-14
+    },
+    {
+      "parameters": {
+        "totalMass": 0.5,
+        "hangingMass": 0.005,
+        "resistance": 0.04,
+        "gravity": 9.8,
+        "gateSpacing": 0.2,
+        "initialSpeed": 0.2,
+        "flagLength": 0.005
+      },
+      "reference_arrival_s": 0.9586449902224649,
+      "reference_final_speed_m_s": 0.21725560982400438,
+      "reference_gate_durations_s": [
+        0.025000015820346902,
+        0.023014375906953922
+      ],
+      "paper_relative_bias": 1.0725670417377486e-06,
+      "paper_bias_error": 7.771561172376096e-16,
+      "max_absolute_error": 1.0304257447302234e-14
+    },
+    {
+      "parameters": {
+        "totalMass": 0.5,
+        "hangingMass": 0.005,
+        "resistance": 0.04,
+        "gravity": 9.8,
+        "gateSpacing": 0.2,
+        "initialSpeed": 0.5,
+        "flagLength": 0.001
+      },
+      "reference_arrival_s": 0.3971607402354806,
+      "reference_final_speed_m_s": 0.5071488933242386,
+      "reference_gate_durations_s": [
+        0.00200000000129726,
+        0.001971807518017263
+      ],
+      "paper_relative_bias": 1.2597216603182915e-09,
+      "paper_bias_error": 6.439293542825908e-15,
+      "max_absolute_error": 2.535333054609623e-12
+    },
+    {
+      "parameters": {
+        "totalMass": 0.5,
+        "hangingMass": 0.005,
+        "resistance": 0.04,
+        "gravity": 9.8,
+        "gateSpacing": 0.2,
+        "initialSpeed": 0.5,
+        "flagLength": 0.005
+      },
+      "reference_arrival_s": 0.3971607402354806,
+      "reference_final_speed_m_s": 0.5071488933242386,
+      "reference_gate_durations_s": [
+        0.010000000161997707,
+        0.009859037734964252
+      ],
+      "paper_relative_bias": 3.149300642490971e-08,
+      "paper_bias_error": 1.5543122344752192e-15,
+      "max_absolute_error": 4.27158308724529e-13
+    },
+    {
+      "parameters": {
+        "totalMass": 0.5,
+        "hangingMass": 0.005,
+        "resistance": 0.04,
+        "gravity": 9.8,
+        "gateSpacing": 0.6,
+        "initialSpeed": 0.2,
+        "flagLength": 0.001
+      },
+      "reference_arrival_s": 2.6774151622120645,
+      "reference_final_speed_m_s": 0.2481934729198172,
+      "reference_gate_durations_s": [
+        0.005000000126561173,
+        0.004029114863129339
+      ],
+      "paper_relative_bias": 3.287338024016151e-08,
+      "paper_bias_error": 8.881784197001252e-16,
+      "max_absolute_error": 7.86176679312689e-15
+    },
+    {
+      "parameters": {
+        "totalMass": 0.5,
+        "hangingMass": 0.005,
+        "resistance": 0.04,
+        "gravity": 9.8,
+        "gateSpacing": 0.6,
+        "initialSpeed": 0.2,
+        "flagLength": 0.005
+      },
+      "reference_arrival_s": 2.6774151622120645,
+      "reference_final_speed_m_s": 0.2481934729198172,
+      "reference_gate_durations_s": [
+        0.025000015820346902,
+        0.02014557947606971
+      ],
+      "paper_relative_bias": 8.218365697976182e-07,
+      "paper_bias_error": 5.551115123125783e-16,
+      "max_absolute_error": 1.7763568394002505e-15
+    },
+    {
+      "parameters": {
+        "totalMass": 0.5,
+        "hangingMass": 0.005,
+        "resistance": 0.04,
+        "gravity": 9.8,
+        "gateSpacing": 0.6,
+        "initialSpeed": 0.5,
+        "flagLength": 0.001
+      },
+      "reference_arrival_s": 1.175142712878628,
+      "reference_final_speed_m_s": 0.5211525688318153,
+      "reference_gate_durations_s": [
+        0.00200000000129726,
+        0.0019188238921910262
+      ],
+      "paper_relative_bias": 1.192930643156842e-09,
+      "paper_bias_error": 8.881784197001252e-16,
+      "max_absolute_error": 7.271024060617748e-13
+    },
+    {
+      "parameters": {
+        "totalMass": 0.5,
+        "hangingMass": 0.005,
+        "resistance": 0.04,
+        "gravity": 9.8,
+        "gateSpacing": 0.6,
+        "initialSpeed": 0.5,
+        "flagLength": 0.005
+      },
+      "reference_arrival_s": 1.175142712878628,
+      "reference_final_speed_m_s": 0.5211525688318153,
+      "reference_gate_durations_s": [
+        0.010000000161997707,
+        0.009594119587347854
+      ],
+      "paper_relative_bias": 2.9823272518214594e-08,
+      "paper_bias_error": 1.3322676295501878e-15,
+      "max_absolute_error": 1.4775333734284857e-13
+    },
+    {
+      "parameters": {
+        "totalMass": 0.5,
+        "hangingMass": 0.025,
+        "resistance": 0.0,
+        "gravity": 9.8,
+        "gateSpacing": 0.2,
+        "initialSpeed": 0.2,
+        "flagLength": 0.001
+      },
+      "reference_arrival_s": 0.583261861346214,
+      "reference_final_speed_m_s": 0.48579831205964497,
+      "reference_gate_durations_s": [
+        0.005000093795220472,
+        0.00205846853321508
+      ],
+      "paper_relative_bias": 6.358866360467452e-06,
+      "paper_bias_error": 3.3306690738754696e-16,
+      "max_absolute_error": 1.0824674490095276e-14
+    },
+    {
+      "parameters": {
+        "totalMass": 0.5,
+        "hangingMass": 0.025,
+        "resistance": 0.0,
+        "gravity": 9.8,
+        "gateSpacing": 0.2,
+        "initialSpeed": 0.2,
+        "flagLength": 0.005
+      },
+      "reference_arrival_s": 0.583261861346214,
+      "reference_final_speed_m_s": 0.48579831205964497,
+      "reference_gate_durations_s": [
+        0.025011742917559452,
+        0.010292475780374122
+      ],
+      "paper_relative_bias": 0.00015914349423840068,
+      "paper_bias_error": 3.3306690738754696e-16,
+      "max_absolute_error": 7.771561172376096e-16
+    },
+    {
+      "parameters": {
+        "totalMass": 0.5,
+        "hangingMass": 0.025,
+        "resistance": 0.0,
+        "gravity": 9.8,
+        "gateSpacing": 0.2,
+        "initialSpeed": 0.5,
+        "flagLength": 0.001
+      },
+      "reference_arrival_s": 0.34251492710726505,
+      "reference_final_speed_m_s": 0.66783231428256,
+      "reference_gate_durations_s": [
+        0.0020000009604015604,
+        0.0014973820965142562
+      ],
+      "paper_relative_bias": 5.383417763793474e-07,
+      "paper_bias_error": 1.1102230246251565e-16,
+      "max_absolute_error": 1.1518563880486e-13
+    },
+    {
+      "parameters": {
+        "totalMass": 0.5,
+        "hangingMass": 0.025,
+        "resistance": 0.0,
+        "gravity": 9.8,
+        "gateSpacing": 0.2,
+        "initialSpeed": 0.5,
+        "flagLength": 0.005
+      },
+      "reference_arrival_s": 0.34251492710726505,
+      "reference_final_speed_m_s": 0.66783231428256,
+      "reference_gate_durations_s": [
+        0.010000120055044508,
+        0.007486937593989154
+      ],
+      "paper_relative_bias": 1.3459126014692124e-05,
+      "paper_bias_error": 7.771561172376096e-16,
+      "max_absolute_error": 2.6645352591003757e-15
+    },
+    {
+      "parameters": {
+        "totalMass": 0.5,
+        "hangingMass": 0.025,
+        "resistance": 0.0,
+        "gravity": 9.8,
+        "gateSpacing": 0.6,
+        "initialSpeed": 0.2,
+        "flagLength": 0.001
+      },
+      "reference_arrival_s": 1.2091112454007307,
+      "reference_final_speed_m_s": 0.792464510246358,
+      "reference_gate_durations_s": [
+        0.005000093795220472,
+        0.001261886258841618
+      ],
+      "paper_relative_bias": 2.389625980203647e-06,
+      "paper_bias_error": 2.220446049250313e-16,
+      "max_absolute_error": 1.8596235662471372e-13
+    },
+    {
+      "parameters": {
+        "totalMass": 0.5,
+        "hangingMass": 0.025,
+        "resistance": 0.0,
+        "gravity": 9.8,
+        "gateSpacing": 0.6,
+        "initialSpeed": 0.2,
+        "flagLength": 0.005
+      },
+      "reference_arrival_s": 1.2091112454007307,
+      "reference_final_speed_m_s": 0.792464510246358,
+      "reference_gate_durations_s": [
+        0.025011742917559452,
+        0.0063094428177863275
+      ],
+      "paper_relative_bias": 5.9798192791782334e-05,
+      "paper_bias_error": 1.1102230246251565e-16,
+      "max_absolute_error": 2.1871393585115584e-14
+    },
+    {
+      "parameters": {
+        "totalMass": 0.5,
+        "hangingMass": 0.025,
+        "resistance": 0.0,
+        "gravity": 9.8,
+        "gateSpacing": 0.6,
+        "initialSpeed": 0.5,
+        "flagLength": 0.001
+      },
+      "reference_arrival_s": 0.8478028557299273,
+      "reference_final_speed_m_s": 0.9154233993076647,
+      "reference_gate_durations_s": [
+        0.0020000009604015604,
+        0.0010923907379844148
+      ],
+      "paper_relative_bias": 2.865158947873425e-07,
+      "paper_bias_error": 0.0,
+      "max_absolute_error": 1.272870697732742e-13
+    },
+    {
+      "parameters": {
+        "totalMass": 0.5,
+        "hangingMass": 0.025,
+        "resistance": 0.0,
+        "gravity": 9.8,
+        "gateSpacing": 0.6,
+        "initialSpeed": 0.5,
+        "flagLength": 0.005
+      },
+      "reference_arrival_s": 0.8478028557299273,
+      "reference_final_speed_m_s": 0.9154233993076647,
+      "reference_gate_durations_s": [
+        0.010000120055044508,
+        0.005461959292334712
+      ],
+      "paper_relative_bias": 7.16312643411765e-06,
+      "paper_bias_error": 1.1102230246251565e-16,
+      "max_absolute_error": 3.58046925441613e-14
+    },
+    {
+      "parameters": {
+        "totalMass": 0.5,
+        "hangingMass": 0.025,
+        "resistance": 0.04,
+        "gravity": 9.8,
+        "gateSpacing": 0.2,
+        "initialSpeed": 0.2,
+        "flagLength": 0.001
+      },
+      "reference_arrival_s": 0.6138136381108497,
+      "reference_final_speed_m_s": 0.4516635916254481,
+      "reference_gate_durations_s": [
+        0.00500006566708091,
+        0.0022140383317506224
+      ],
+      "paper_relative_bias": 5.15028955361263e-06,
+      "paper_bias_error": 1.1102230246251565e-16,
+      "max_absolute_error": 3.6359804056473877e-14
+    },
+    {
+      "parameters": {
+        "totalMass": 0.5,
+        "hangingMass": 0.025,
+        "resistance": 0.04,
+        "gravity": 9.8,
+        "gateSpacing": 0.2,
+        "initialSpeed": 0.2,
+        "flagLength": 0.005
+      },
+      "reference_arrival_s": 0.6138136381108497,
+      "reference_final_speed_m_s": 0.4516635916254481,
+      "reference_gate_durations_s": [
+        0.025008217454432245,
+        0.011070325812716659
+      ],
+      "paper_relative_bias": 0.00012885757432867795,
+      "paper_bias_error": 1.1102230246251565e-16,
+      "max_absolute_error": 8.715250743307479e-15
+    },
+    {
+      "parameters": {
+        "totalMass": 0.5,
+        "hangingMass": 0.025,
+        "resistance": 0.04,
+        "gravity": 9.8,
+        "gateSpacing": 0.2,
+        "initialSpeed": 0.5,
+        "flagLength": 0.001
+      },
+      "reference_arrival_s": 0.34982516508735767,
+      "reference_final_speed_m_s": 0.6434283176858165,
+      "reference_gate_durations_s": [
+        0.002000000672400722,
+        0.0015541748709365182
+      ],
+      "paper_relative_bias": 4.060391849414202e-07,
+      "paper_bias_error": 2.220446049250313e-16,
+      "max_absolute_error": 2.7200464103316335e-14
+    },
+    {
+      "parameters": {
+        "totalMass": 0.5,
+        "hangingMass": 0.025,
+        "resistance": 0.04,
+        "gravity": 9.8,
+        "gateSpacing": 0.2,
+        "initialSpeed": 0.5,
+        "flagLength": 0.005
+      },
+      "reference_arrival_s": 0.34982516508735767,
+      "reference_final_speed_m_s": 0.6434283176858165,
+      "reference_gate_durations_s": [
+        0.010000084052472552,
+        0.007770897219248658
+      ],
+      "paper_relative_bias": 1.0151302100247506e-05,
+      "paper_bias_error": 6.661338147750939e-16,
+      "max_absolute_error": 2.220446049250313e-14
+    },
+    {
+      "parameters": {
+        "totalMass": 0.5,
+        "hangingMass": 0.025,
+        "resistance": 0.04,
+        "gravity": 9.8,
+        "gateSpacing": 0.6,
+        "initialSpeed": 0.2,
+        "flagLength": 0.001
+      },
+      "reference_arrival_s": 1.291178783298585,
+      "reference_final_speed_m_s": 0.7293833011524193,
+      "reference_gate_durations_s": [
+        0.00500006566708091,
+        0.0013710213445560795
+      ],
+      "paper_relative_bias": 1.9749150897974133e-06,
+      "paper_bias_error": 1.1102230246251565e-16,
+      "max_absolute_error": 8.743006318923108e-14
+    },
+    {
+      "parameters": {
+        "totalMass": 0.5,
+        "hangingMass": 0.025,
+        "resistance": 0.04,
+        "gravity": 9.8,
+        "gateSpacing": 0.6,
+        "initialSpeed": 0.2,
+        "flagLength": 0.005
+      },
+      "reference_arrival_s": 1.291178783298585,
+      "reference_final_speed_m_s": 0.7293833011524193,
+      "reference_gate_durations_s": [
+        0.025008217454432245,
+        0.006855118937481734
+      ],
+      "paper_relative_bias": 4.940656180985048e-05,
+      "paper_bias_error": 1.1102230246251565e-16,
+      "max_absolute_error": 9.103828801926284e-15
+    },
+    {
+      "parameters": {
+        "totalMass": 0.5,
+        "hangingMass": 0.025,
+        "resistance": 0.04,
+        "gravity": 9.8,
+        "gateSpacing": 0.6,
+        "initialSpeed": 0.5,
+        "flagLength": 0.001
+      },
+      "reference_arrival_s": 0.8814493138885877,
+      "reference_final_speed_m_s": 0.8613942186943204,
+      "reference_gate_durations_s": [
+        0.002000000672400722,
+        0.0011609086948378537
+      ],
+      "paper_relative_bias": 2.2655008613536864e-07,
+      "paper_bias_error": 7.771561172376096e-16,
+      "max_absolute_error": 1.295075158225245e-13
+    },
+    {
+      "parameters": {
+        "totalMass": 0.5,
+        "hangingMass": 0.025,
+        "resistance": 0.04,
+        "gravity": 9.8,
+        "gateSpacing": 0.6,
+        "initialSpeed": 0.5,
+        "flagLength": 0.005
+      },
+      "reference_arrival_s": 0.8814493138885877,
+      "reference_final_speed_m_s": 0.8613942186943204,
+      "reference_gate_durations_s": [
+        0.010000084052472552,
+        0.00580454879099453
+      ],
+      "paper_relative_bias": 5.6638847291123895e-06,
+      "paper_bias_error": 3.3306690738754696e-16,
+      "max_absolute_error": 4.624078897563777e-14
+    }
+  ]
+}

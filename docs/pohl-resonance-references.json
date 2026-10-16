@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "experiment": "course-02/pohl-resonance",
+  "references": [
+    {
+      "id": "zhu2011-pohl",
+      "title": "用波尔共振仪研究受迫振动特性",
+      "authors": [
+        "朱华泽"
+      ],
+      "journal": "大学物理实验",
+      "year": 2011,
+      "volume": 24,
+      "issue": 3,
+      "pages": "57–60",
+      "doi": "10.14139/j.cnki.cn22-1228.2011.03.018",
+      "url": "https://doi.org/10.14139/j.cnki.cn22-1228.2011.03.018",
+      "full_text_status": "obtained_and_read",
+      "pdf_sha256": "56693d96c0a7b2d9fb125896bfc36b9b054b5974877c9f334762246d595c80ca",
+      "locators": [
+        {
+          "page": 57,
+          "location": "式1–2",
+          "supports": "归一化线性扭振方程"
+        },
+        {
+          "page": 58,
+          "location": "式4–7、§3.1",
+          "supports": "稳态幅相、峰频和衰减逐差"
+        },
+        {
+          "page": 59,
+          "location": "§3.3",
+          "supports": "大角弹簧刚度依赖的适用性"
+        }
+      ],
+      "phase_mapping": "positive lag delta uses cos(omega*t-delta); project negative phi=-delta uses cos(omega*t+phi); atan2 handles quadrants",
+      "peak_note": "90deg at omega0 is distinct from finite-damping amplitude peak omega_r"
+    }
+  ]
+}

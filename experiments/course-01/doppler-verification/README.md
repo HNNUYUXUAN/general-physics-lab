@@ -1,5 +1,8 @@
 [普通物理实验 1](../README.md) · [项目首页](../../../README.md) · [使用指南](../../../docs/usage.md)
 
+<!-- virtual-laboratory-entry -->
+[在线虚拟实验](https://hnnuyuxuan.github.io/general-physics-lab/simulations/doppler-verification/) · [模型依据与参数来源](../../../docs/doppler-verification-model-evidence.md)
+
 # 多普勒效应的验证
 
 **让运动改变频率，从频率的斜率读出声速。**

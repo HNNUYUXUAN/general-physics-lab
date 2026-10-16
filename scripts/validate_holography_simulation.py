@@ -1,0 +1,33 @@
+"""Independent NumPy off-axis holography plus angular-spectrum/padding checks."""
+import argparse,csv,hashlib,json,math,platform,shutil,subprocess
+from datetime import datetime,timezone
+from pathlib import Path
+import numpy as np
+def main():
+ parser=argparse.ArgumentParser();parser.add_argument('--repo-root',type=Path,default=Path(__file__).resolve().parents[1]);parser.add_argument('--output-root',type=Path);parser.add_argument('--model',type=Path);a=parser.parse_args();repo=a.repo_root.resolve();out=(a.output_root or repo).resolve();model=(a.model or repo/'simulations/holography/model.mjs').resolve();exp=repo/'experiments/course-04/holography';cases=[]
+ for wave in[500,632.8,700]:
+  for distance in[100,300,500]:
+   for R in[.5,1,2]:cases.append({'wavelength_nm':wave,'recording_distance_mm':distance,'reconstruction_distance_mm':distance,'reference_amplitude':R,'field_length_mm':4,'grid_size':128,'carrier_per_mm':10,'sideband_radius_per_mm':3.5})
+ def object_field(n,L):
+  x=(np.arange(n)/n-.5)*L;xx,yy=np.meshgrid(x,x);obj=.7*np.exp(-((xx+.5)**2+yy*yy)/(2*.18**2))+.4*np.exp(1j*np.pi/3)*np.exp(-((xx-.45)**2+(yy-.25)**2)/(2*.24**2));return xx,yy,obj
+ def propagate(obj,z,wave,L,exact=False):
+  n=obj.shape[0];freq=np.fft.fftfreq(n,d=L/n);fx,fy=np.meshgrid(freq,freq);q=fx*fx+fy*fy;lam=wave*1e-6
+  phase=-2*np.pi*z*q/(np.sqrt(1/lam**2-q)+1/lam)if exact else -np.pi*lam*z*q
+  return np.fft.ifft2(np.fft.fft2(obj)*np.exp(1j*phase))
+ def reference(p):
+  n=p['grid_size'];xx,yy,obj=object_field(n,4);sensor=propagate(obj,p['recording_distance_mm'],p['wavelength_nm'],4);carrier=np.exp(2j*np.pi*p['carrier_per_mm']*xx);h=abs(sensor+p['reference_amplitude']*carrier)**2;freq=np.fft.fftfreq(n,d=4/n);fx,fy=np.meshgrid(freq,freq);mask=np.hypot(fx+p['carrier_per_mm'],fy)<=p['sideband_radius_per_mm'];cross=np.fft.ifft2(np.fft.fft2(h)*mask);u=cross*carrier/p['reference_amplitude'];return obj,sensor,h,propagate(u,-p['reconstruction_distance_mm'],p['wavelength_nm'],4)
+ script="""import fs from'node:fs';const m=await import(process.argv[1]),d=JSON.parse(fs.readFileSync(0,'utf8'));console.log(JSON.stringify(d.map((p,i)=>{const a=m.analyze(p);let fine=null;if([0,13,26].includes(i)){const b=m.analyze({...p,grid_size:256}),re=[],im=[];for(let j=0;j<128;j++)for(let k=0;k<128;k++){re.push(b.reconstruction.re[j*2*256+k*2]);im.push(b.reconstruction.im[j*2*256+k*2]);}fine={re,im};}return{re:[...a.reconstruction.re],im:[...a.reconstruction.im],hologram:[...a.hologram],metrics:a.metrics,fine};})));""";node=shutil.which('node')or r'C:\Program Files\nodejs\node.exe';result=json.loads(subprocess.run([node,'--input-type=module','-e',script,model.as_uri()],input=json.dumps(cases),text=True,capture_output=True,check=True).stdout);field_error=0;h_error=0;convergence=0;paraxial=0;padding=0;reconstruction_relative_error=0
+ for p,r in zip(cases,result):
+  obj,sensor,h,image=reference(p);actual=np.array(r['re'])+1j*np.array(r['im']);field_error=max(field_error,float(np.max(abs(actual-image.ravel()))));h_error=max(h_error,float(np.max(abs(np.array(r['hologram'])-h.ravel()))));reconstruction_relative_error=max(reconstruction_relative_error,r['metrics']['relative_complex_error'])
+  if r['fine']is not None:convergence=max(convergence,float(np.max(abs(actual-(np.array(r['fine']['re'])+1j*np.array(r['fine']['im']))))))
+  exact=propagate(obj,p['recording_distance_mm'],p['wavelength_nm'],4,exact=True);paraxial=max(paraxial,float(np.linalg.norm(sensor-exact)/np.linalg.norm(exact)));xx,yy,padded=object_field(256,8);padded_sensor=propagate(padded,p['recording_distance_mm'],p['wavelength_nm'],8)[64:192,64:192];padding=max(padding,float(np.linalg.norm(sensor-padded_sensor)/np.linalg.norm(padded_sensor)))
+ assert field_error<1e-10 and h_error<1e-10 and convergence<1e-8 and paraxial<1e-4 and padding<5e-4 and reconstruction_relative_error<.01,(field_error,h_error,convergence,paraxial,padding,reconstruction_relative_error)
+ tables=[];values=[]
+ for i in[1,2]:
+  with(exp/f'data/observations-{i:02d}.csv').open(encoding='utf-8-sig',newline='')as f:raw=list(csv.reader(f))
+  tables.append({'headers':raw[0],'rows':raw[1:]});values.append(np.array([[float(v)for v in row]for row in raw[1:]]))
+ setup,image=values;analysis={'fringe_spacing_um':float(np.mean(.6328/(2*np.sin(np.radians(setup[:,3])/2)))),'intensity_ratio':float(np.mean(setup[:,5]/setup[:,4])),'magnification':float(np.mean(image[:,4]/image[:,3]))};paths=[exp/'experiment.json',exp/'data/observations-01.csv',exp/'data/observations-02.csv',exp/'data/provenance.json'];hashes={str(p.relative_to(repo)).replace('\\','/'):hashlib.sha256(p.read_bytes()).hexdigest()for p in paths};obs={'experiment_id':'course-04/holography','source':'original-report','tables':tables,'analysis':analysis,'input_hashes':hashes};record={'experiment_id':obs['experiment_id'],'status':'passed','created_at':datetime.now(timezone.utc).isoformat(),'environment':{'python':platform.python_version(),'numpy':np.__version__},'model_sha256':hashlib.sha256(model.read_bytes()).hexdigest(),'fft_sha256':hashlib.sha256((model.parent/'fft.mjs').read_bytes()).hexdigest(),'input_hashes':hashes,'methods':['NumPy FFT2 Fresnel propagation and direct coherent intensity recording','independently selected negative carrier sideband and complex demodulation','full pointwise complex-field and hologram comparison','grid doubling128to256 at common sample positions','exact scalar angular-spectrum propagation vs paraxial Fresnel','domain doubling4to8mm at fixed pixel spacing'],'case_count':len(cases),'cases':cases,'maximum_errors':{'complex_reconstruction':field_error,'hologram_intensity':h_error,'grid_doubling_complex_field':convergence,'paraxial_vs_exact_spectrum_relative':paraxial,'domain_doubling_sensor_relative':padding,'matched_distance_reconstruction_relative':reconstruction_relative_error},'tolerances':{'complex_reconstruction':1e-10,'hologram_intensity':1e-10,'grid_doubling_complex_field':1e-8,'paraxial_vs_exact_spectrum_relative':1e-4,'domain_doubling_sensor_relative':5e-4,'matched_distance_reconstruction_relative':.01},'sampling':{'L_mm':4,'minimum_N':128,'nyquist_per_mm':16,'carrier_per_mm':10,'sideband_radius_per_mm':3.5,'carrier_plus_radius_per_mm':13.5},'original_observation_analysis':analysis}
+ for rel,data in[('simulations/holography/observations.json',obs),('docs/simulation/holography-reference.json',record)]:
+  path=out/rel;path.parent.mkdir(parents=True,exist_ok=True);path.write_text(json.dumps(data,ensure_ascii=False,indent=2,allow_nan=False)+'\n',encoding='utf-8')
+ print(json.dumps({'status':'passed','case_count':len(cases),'maximum_errors':record['maximum_errors']}))
+if __name__=='__main__':main()

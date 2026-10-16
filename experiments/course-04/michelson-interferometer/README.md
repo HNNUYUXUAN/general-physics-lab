@@ -1,5 +1,8 @@
 [普通物理实验 4](../README.md) · [项目首页](../../../README.md) · [使用指南](../../../docs/usage.md)
 
+<!-- virtual-laboratory-entry -->
+[在线虚拟实验](https://hnnuyuxuan.github.io/general-physics-lab/simulations/michelson-interferometer/) · [模型依据与参数来源](../../../docs/michelson-interferometer-model-evidence.md)
+
 # 迈克尔逊干涉仪的调节和使用
 
 **数过一百条条纹，让动镜位移给出激光波长。**

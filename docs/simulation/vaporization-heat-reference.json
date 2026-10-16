@@ -1,0 +1,1275 @@
+{
+  "schema_version": 1,
+  "experiment": "course-01/vaporization-heat",
+  "model_sha256": "a02f72de7b5d7b4d300f831d9e54937e2151aaf84ac81524f44da0f52c26674e",
+  "validator_sha256": "8e558899fef2433ad0de3cba99663cd9346ff2ca71b6f846029f473d0a659ce2",
+  "environment": {
+    "python": "3.14.7",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1"
+  },
+  "method": "brentq energy residual root plus independent wet-steam/heat-loss apparent-heat identity; same/extra-stirrer matched inventory inversion",
+  "case_count": 66,
+  "tolerances": {
+    "scaled": 1e-10
+  },
+  "max_scaled_error": 2.651682330502404e-14,
+  "status": "passed",
+  "failures": [],
+  "cases": [
+    {
+      "parameters": {
+        "latentHeat": 2000000.0,
+        "waterMass": 0.08,
+        "steamMass": 0.001,
+        "initialTemperature": 0.0,
+        "steamTemperature": 100,
+        "innerMass": 0.02952,
+        "stirrerMass": 0.00384,
+        "waterHeat": 4180,
+        "innerHeat": 897,
+        "stirrerHeat": 390,
+        "moistureFraction": 0.0,
+        "heatLossFraction": 0.0
+      },
+      "reference_final_temperature_C": 6.596517693399086,
+      "reference_apparent_latent_heat_J_kg": 2000000.0,
+      "max_scaled_error": 8.881784197001252e-15
+    },
+    {
+      "parameters": {
+        "latentHeat": 2000000.0,
+        "waterMass": 0.08,
+        "steamMass": 0.001,
+        "initialTemperature": 0.0,
+        "steamTemperature": 100,
+        "innerMass": 0.02952,
+        "stirrerMass": 0.00384,
+        "waterHeat": 4180,
+        "innerHeat": 897,
+        "stirrerHeat": 390,
+        "moistureFraction": 0.1,
+        "heatLossFraction": 0.1
+      },
+      "reference_final_temperature_C": 5.505282342960861,
+      "reference_apparent_latent_heat_J_kg": 1600000.0,
+      "max_scaled_error": 5.329070518200751e-15
+    },
+    {
+      "parameters": {
+        "latentHeat": 2000000.0,
+        "waterMass": 0.08,
+        "steamMass": 0.001,
+        "initialTemperature": 30.0,
+        "steamTemperature": 100,
+        "innerMass": 0.02952,
+        "stirrerMass": 0.00384,
+        "waterHeat": 4180,
+        "innerHeat": 897,
+        "stirrerHeat": 390,
+        "moistureFraction": 0.0,
+        "heatLossFraction": 0.0
+      },
+      "reference_final_temperature_C": 36.25441541103671,
+      "reference_apparent_latent_heat_J_kg": 2000000.0,
+      "max_scaled_error": 4.7730281949043274e-15
+    },
+    {
+      "parameters": {
+        "latentHeat": 2000000.0,
+        "waterMass": 0.08,
+        "steamMass": 0.001,
+        "initialTemperature": 30.0,
+        "steamTemperature": 100,
+        "innerMass": 0.02952,
+        "stirrerMass": 0.00384,
+        "waterHeat": 4180,
+        "innerHeat": 897,
+        "stirrerHeat": 390,
+        "moistureFraction": 0.1,
+        "heatLossFraction": 0.1
+      },
+      "reference_final_temperature_C": 35.16318006059848,
+      "reference_apparent_latent_heat_J_kg": 1600000.0,
+      "max_scaled_error": 9.313225746154786e-15
+    },
+    {
+      "parameters": {
+        "latentHeat": 2000000.0,
+        "waterMass": 0.08,
+        "steamMass": 0.0078,
+        "initialTemperature": 0.0,
+        "steamTemperature": 100,
+        "innerMass": 0.02952,
+        "stirrerMass": 0.00384,
+        "waterHeat": 4180,
+        "innerHeat": 897,
+        "stirrerHeat": 390,
+        "moistureFraction": 0.0,
+        "heatLossFraction": 0.0
+      },
+      "reference_final_temperature_C": 47.75014010799101,
+      "reference_apparent_latent_heat_J_kg": 2000000.0,
+      "max_scaled_error": 1.0039208905430964e-14
+    },
+    {
+      "parameters": {
+        "latentHeat": 2000000.0,
+        "waterMass": 0.08,
+        "steamMass": 0.0078,
+        "initialTemperature": 0.0,
+        "steamTemperature": 100,
+        "innerMass": 0.02952,
+        "stirrerMass": 0.00384,
+        "waterHeat": 4180,
+        "innerHeat": 897,
+        "stirrerHeat": 390,
+        "moistureFraction": 0.1,
+        "heatLossFraction": 0.1
+      },
+      "reference_final_temperature_C": 39.851026773335754,
+      "reference_apparent_latent_heat_J_kg": 1600000.0,
+      "max_scaled_error": 1.1641532182693482e-15
+    },
+    {
+      "parameters": {
+        "latentHeat": 2000000.0,
+        "waterMass": 0.08,
+        "steamMass": 0.0078,
+        "initialTemperature": 30.0,
+        "steamTemperature": 100,
+        "innerMass": 0.02952,
+        "stirrerMass": 0.00384,
+        "waterHeat": 4180,
+        "innerHeat": 897,
+        "stirrerHeat": 390,
+        "moistureFraction": 0.0,
+        "heatLossFraction": 0.0
+      },
+      "reference_final_temperature_C": 75.27376807757659,
+      "reference_apparent_latent_heat_J_kg": 2000000.0,
+      "max_scaled_error": 2.007841781086193e-14
+    },
+    {
+      "parameters": {
+        "latentHeat": 2000000.0,
+        "waterMass": 0.08,
+        "steamMass": 0.0078,
+        "initialTemperature": 30.0,
+        "steamTemperature": 100,
+        "innerMass": 0.02952,
+        "stirrerMass": 0.00384,
+        "waterHeat": 4180,
+        "innerHeat": 897,
+        "stirrerHeat": 390,
+        "moistureFraction": 0.1,
+        "heatLossFraction": 0.1
+      },
+      "reference_final_temperature_C": 67.37465474292134,
+      "reference_apparent_latent_heat_J_kg": 1600000.0,
+      "max_scaled_error": 1.5058813358146445e-14
+    },
+    {
+      "parameters": {
+        "latentHeat": 2000000.0,
+        "waterMass": 0.08,
+        "steamMass": 0.015,
+        "initialTemperature": 0.0,
+        "steamTemperature": 100,
+        "innerMass": 0.02952,
+        "stirrerMass": 0.00384,
+        "waterHeat": 4180,
+        "innerHeat": 897,
+        "stirrerHeat": 390,
+        "moistureFraction": 0.0,
+        "heatLossFraction": 0.0
+      },
+      "reference_final_temperature_C": 85.32570942904843,
+      "reference_apparent_latent_heat_J_kg": 2000000.0,
+      "max_scaled_error": 3.4924596548080445e-16
+    },
+    {
+      "parameters": {
+        "latentHeat": 2000000.0,
+        "waterMass": 0.08,
+        "steamMass": 0.015,
+        "initialTemperature": 0.0,
+        "steamTemperature": 100,
+        "innerMass": 0.02952,
+        "stirrerMass": 0.00384,
+        "waterHeat": 4180,
+        "innerHeat": 897,
+        "stirrerHeat": 390,
+        "moistureFraction": 0.1,
+        "heatLossFraction": 0.1
+      },
+      "reference_final_temperature_C": 71.2106210206037,
+      "reference_apparent_latent_heat_J_kg": 1600000.0,
+      "max_scaled_error": 1.0039208905430964e-14
+    },
+    {
+      "parameters": {
+        "latentHeat": 2000000.0,
+        "waterMass": 0.08,
+        "steamMass": 0.015,
+        "initialTemperature": 30.0,
+        "steamTemperature": 100,
+        "innerMass": 0.02952,
+        "stirrerMass": 0.00384,
+        "waterHeat": 4180,
+        "innerHeat": 897,
+        "stirrerHeat": 390,
+        "moistureFraction": 0.1,
+        "heatLossFraction": 0.1
+      },
+      "reference_final_temperature_C": 96.78554080455628,
+      "reference_apparent_latent_heat_J_kg": 1600000.0,
+      "max_scaled_error": 1.4210854715202004e-14
+    },
+    {
+      "parameters": {
+        "latentHeat": 2000000.0,
+        "waterMass": 0.2,
+        "steamMass": 0.001,
+        "initialTemperature": 0.0,
+        "steamTemperature": 100,
+        "innerMass": 0.02952,
+        "stirrerMass": 0.00384,
+        "waterHeat": 4180,
+        "innerHeat": 897,
+        "stirrerHeat": 390,
+        "moistureFraction": 0.0,
+        "heatLossFraction": 0.0
+      },
+      "reference_final_temperature_C": 2.7852103808315576,
+      "reference_apparent_latent_heat_J_kg": 2000000.0,
+      "max_scaled_error": 1.0244548320770263e-14
+    },
+    {
+      "parameters": {
+        "latentHeat": 2000000.0,
+        "waterMass": 0.2,
+        "steamMass": 0.001,
+        "initialTemperature": 0.0,
+        "steamTemperature": 100,
+        "innerMass": 0.02952,
+        "stirrerMass": 0.00384,
+        "waterHeat": 4180,
+        "innerHeat": 897,
+        "stirrerHeat": 390,
+        "moistureFraction": 0.1,
+        "heatLossFraction": 0.1
+      },
+      "reference_final_temperature_C": 2.324464246698959,
+      "reference_apparent_latent_heat_J_kg": 1600000.0,
+      "max_scaled_error": 2.648448571562767e-14
+    },
+    {
+      "parameters": {
+        "latentHeat": 2000000.0,
+        "waterMass": 0.2,
+        "steamMass": 0.001,
+        "initialTemperature": 30.0,
+        "steamTemperature": 100,
+        "innerMass": 0.02952,
+        "stirrerMass": 0.00384,
+        "waterHeat": 4180,
+        "innerHeat": 897,
+        "stirrerHeat": 390,
+        "moistureFraction": 0.0,
+        "heatLossFraction": 0.0
+      },
+      "reference_final_temperature_C": 32.64076646778099,
+      "reference_apparent_latent_heat_J_kg": 2000000.0,
+      "max_scaled_error": 2.4097971618175505e-14
+    },
+    {
+      "parameters": {
+        "latentHeat": 2000000.0,
+        "waterMass": 0.2,
+        "steamMass": 0.001,
+        "initialTemperature": 30.0,
+        "steamTemperature": 100,
+        "innerMass": 0.02952,
+        "stirrerMass": 0.00384,
+        "waterHeat": 4180,
+        "innerHeat": 897,
+        "stirrerHeat": 390,
+        "moistureFraction": 0.1,
+        "heatLossFraction": 0.1
+      },
+      "reference_final_temperature_C": 32.180020333648386,
+      "reference_apparent_latent_heat_J_kg": 1600000.0,
+      "max_scaled_error": 2.35741026699543e-14
+    },
+    {
+      "parameters": {
+        "latentHeat": 2000000.0,
+        "waterMass": 0.2,
+        "steamMass": 0.0078,
+        "initialTemperature": 0.0,
+        "steamTemperature": 100,
+        "innerMass": 0.02952,
+        "stirrerMass": 0.00384,
+        "waterHeat": 4180,
+        "innerHeat": 897,
+        "stirrerHeat": 390,
+        "moistureFraction": 0.0,
+        "heatLossFraction": 0.0
+      },
+      "reference_final_temperature_C": 21.035912158035373,
+      "reference_apparent_latent_heat_J_kg": 2000000.0,
+      "max_scaled_error": 4.210735515716613e-15
+    },
+    {
+      "parameters": {
+        "latentHeat": 2000000.0,
+        "waterMass": 0.2,
+        "steamMass": 0.0078,
+        "initialTemperature": 0.0,
+        "steamTemperature": 100,
+        "innerMass": 0.02952,
+        "stirrerMass": 0.00384,
+        "waterHeat": 4180,
+        "innerHeat": 897,
+        "stirrerHeat": 390,
+        "moistureFraction": 0.1,
+        "heatLossFraction": 0.1
+      },
+      "reference_final_temperature_C": 17.556025944960865,
+      "reference_apparent_latent_heat_J_kg": 1600000.0,
+      "max_scaled_error": 7.105427357601002e-15
+    },
+    {
+      "parameters": {
+        "latentHeat": 2000000.0,
+        "waterMass": 0.2,
+        "steamMass": 0.0078,
+        "initialTemperature": 30.0,
+        "steamTemperature": 100,
+        "innerMass": 0.02952,
+        "stirrerMass": 0.00384,
+        "waterHeat": 4180,
+        "innerHeat": 897,
+        "stirrerHeat": 390,
+        "moistureFraction": 0.0,
+        "heatLossFraction": 0.0
+      },
+      "reference_final_temperature_C": 49.944967830236514,
+      "reference_apparent_latent_heat_J_kg": 2000000.0,
+      "max_scaled_error": 1.5133991837501525e-15
+    },
+    {
+      "parameters": {
+        "latentHeat": 2000000.0,
+        "waterMass": 0.2,
+        "steamMass": 0.0078,
+        "initialTemperature": 30.0,
+        "steamTemperature": 100,
+        "innerMass": 0.02952,
+        "stirrerMass": 0.00384,
+        "waterHeat": 4180,
+        "innerHeat": 897,
+        "stirrerHeat": 390,
+        "moistureFraction": 0.1,
+        "heatLossFraction": 0.1
+      },
+      "reference_final_temperature_C": 46.46508161716201,
+      "reference_apparent_latent_heat_J_kg": 1600000.0,
+      "max_scaled_error": 8.421471031433227e-15
+    },
+    {
+      "parameters": {
+        "latentHeat": 2000000.0,
+        "waterMass": 0.2,
+        "steamMass": 0.015,
+        "initialTemperature": 0.0,
+        "steamTemperature": 100,
+        "innerMass": 0.02952,
+        "stirrerMass": 0.00384,
+        "waterHeat": 4180,
+        "innerHeat": 897,
+        "stirrerHeat": 390,
+        "moistureFraction": 0.0,
+        "heatLossFraction": 0.0
+      },
+      "reference_final_temperature_C": 39.13984962873365,
+      "reference_apparent_latent_heat_J_kg": 2000000.0,
+      "max_scaled_error": 1.7462298274040223e-15
+    },
+    {
+      "parameters": {
+        "latentHeat": 2000000.0,
+        "waterMass": 0.2,
+        "steamMass": 0.015,
+        "initialTemperature": 0.0,
+        "steamTemperature": 100,
+        "innerMass": 0.02952,
+        "stirrerMass": 0.00384,
+        "waterHeat": 4180,
+        "innerHeat": 897,
+        "stirrerHeat": 390,
+        "moistureFraction": 0.1,
+        "heatLossFraction": 0.1
+      },
+      "reference_final_temperature_C": 32.66510196475785,
+      "reference_apparent_latent_heat_J_kg": 1600000.0,
+      "max_scaled_error": 7.105427357601002e-15
+    },
+    {
+      "parameters": {
+        "latentHeat": 2000000.0,
+        "waterMass": 0.2,
+        "steamMass": 0.015,
+        "initialTemperature": 30.0,
+        "steamTemperature": 100,
+        "innerMass": 0.02952,
+        "stirrerMass": 0.00384,
+        "waterHeat": 4180,
+        "innerHeat": 897,
+        "stirrerHeat": 390,
+        "moistureFraction": 0.0,
+        "heatLossFraction": 0.0
+      },
+      "reference_final_temperature_C": 67.11001623607723,
+      "reference_apparent_latent_heat_J_kg": 2000000.0,
+      "max_scaled_error": 1.4210854715202004e-14
+    },
+    {
+      "parameters": {
+        "latentHeat": 2000000.0,
+        "waterMass": 0.2,
+        "steamMass": 0.015,
+        "initialTemperature": 30.0,
+        "steamTemperature": 100,
+        "innerMass": 0.02952,
+        "stirrerMass": 0.00384,
+        "waterHeat": 4180,
+        "innerHeat": 897,
+        "stirrerHeat": 390,
+        "moistureFraction": 0.1,
+        "heatLossFraction": 0.1
+      },
+      "reference_final_temperature_C": 60.635268572101445,
+      "reference_apparent_latent_heat_J_kg": 1600000.0,
+      "max_scaled_error": 4.210735515716613e-15
+    },
+    {
+      "parameters": {
+        "latentHeat": 2250000.0,
+        "waterMass": 0.08,
+        "steamMass": 0.001,
+        "initialTemperature": 0.0,
+        "steamTemperature": 100,
+        "innerMass": 0.02952,
+        "stirrerMass": 0.00384,
+        "waterHeat": 4180,
+        "innerHeat": 897,
+        "stirrerHeat": 390,
+        "moistureFraction": 0.0,
+        "heatLossFraction": 0.0
+      },
+      "reference_final_temperature_C": 7.278539787422979,
+      "reference_apparent_latent_heat_J_kg": 2250000.0,
+      "max_scaled_error": 9.769962616701378e-15
+    },
+    {
+      "parameters": {
+        "latentHeat": 2250000.0,
+        "waterMass": 0.08,
+        "steamMass": 0.001,
+        "initialTemperature": 0.0,
+        "steamTemperature": 100,
+        "innerMass": 0.02952,
+        "stirrerMass": 0.00384,
+        "waterHeat": 4180,
+        "innerHeat": 897,
+        "stirrerHeat": 390,
+        "moistureFraction": 0.1,
+        "heatLossFraction": 0.1
+      },
+      "reference_final_temperature_C": 6.0509000181799735,
+      "reference_apparent_latent_heat_J_kg": 1800000.0,
+      "max_scaled_error": 7.105427357601002e-15
+    },
+    {
+      "parameters": {
+        "latentHeat": 2250000.0,
+        "waterMass": 0.08,
+        "steamMass": 0.001,
+        "initialTemperature": 30.0,
+        "steamTemperature": 100,
+        "innerMass": 0.02952,
+        "stirrerMass": 0.00384,
+        "waterHeat": 4180,
+        "innerHeat": 897,
+        "stirrerHeat": 390,
+        "moistureFraction": 0.0,
+        "heatLossFraction": 0.0
+      },
+      "reference_final_temperature_C": 36.9364375050606,
+      "reference_apparent_latent_heat_J_kg": 2250000.0,
+      "max_scaled_error": 4.346172014872233e-15
+    },
+    {
+      "parameters": {
+        "latentHeat": 2250000.0,
+        "waterMass": 0.08,
+        "steamMass": 0.001,
+        "initialTemperature": 30.0,
+        "steamTemperature": 100,
+        "innerMass": 0.02952,
+        "stirrerMass": 0.00384,
+        "waterHeat": 4180,
+        "innerHeat": 897,
+        "stirrerHeat": 390,
+        "moistureFraction": 0.1,
+        "heatLossFraction": 0.1
+      },
+      "reference_final_temperature_C": 35.7087977358176,
+      "reference_apparent_latent_heat_J_kg": 1800000.0,
+      "max_scaled_error": 7.105427357601002e-15
+    },
+    {
+      "parameters": {
+        "latentHeat": 2250000.0,
+        "waterMass": 0.08,
+        "steamMass": 0.0078,
+        "initialTemperature": 0.0,
+        "steamTemperature": 100,
+        "innerMass": 0.02952,
+        "stirrerMass": 0.00384,
+        "waterHeat": 4180,
+        "innerHeat": 897,
+        "stirrerHeat": 390,
+        "moistureFraction": 0.0,
+        "heatLossFraction": 0.0
+      },
+      "reference_final_temperature_C": 52.68708594215054,
+      "reference_apparent_latent_heat_J_kg": 2250000.0,
+      "max_scaled_error": 2.007841781086193e-14
+    },
+    {
+      "parameters": {
+        "latentHeat": 2250000.0,
+        "waterMass": 0.08,
+        "steamMass": 0.0078,
+        "initialTemperature": 0.0,
+        "steamTemperature": 100,
+        "innerMass": 0.02952,
+        "stirrerMass": 0.00384,
+        "waterHeat": 4180,
+        "innerHeat": 897,
+        "stirrerHeat": 390,
+        "moistureFraction": 0.1,
+        "heatLossFraction": 0.1
+      },
+      "reference_final_temperature_C": 43.80058344066338,
+      "reference_apparent_latent_heat_J_kg": 1800000.0,
+      "max_scaled_error": 1.0039208905430964e-14
+    },
+    {
+      "parameters": {
+        "latentHeat": 2250000.0,
+        "waterMass": 0.08,
+        "steamMass": 0.0078,
+        "initialTemperature": 30.0,
+        "steamTemperature": 100,
+        "innerMass": 0.02952,
+        "stirrerMass": 0.00384,
+        "waterHeat": 4180,
+        "innerHeat": 897,
+        "stirrerHeat": 390,
+        "moistureFraction": 0.0,
+        "heatLossFraction": 0.0
+      },
+      "reference_final_temperature_C": 80.21071391173612,
+      "reference_apparent_latent_heat_J_kg": 2250000.0,
+      "max_scaled_error": 1.0039208905430964e-14
+    },
+    {
+      "parameters": {
+        "latentHeat": 2250000.0,
+        "waterMass": 0.08,
+        "steamMass": 0.0078,
+        "initialTemperature": 30.0,
+        "steamTemperature": 100,
+        "innerMass": 0.02952,
+        "stirrerMass": 0.00384,
+        "waterHeat": 4180,
+        "innerHeat": 897,
+        "stirrerHeat": 390,
+        "moistureFraction": 0.1,
+        "heatLossFraction": 0.1
+      },
+      "reference_final_temperature_C": 71.32421141024895,
+      "reference_apparent_latent_heat_J_kg": 1800000.0,
+      "max_scaled_error": 1.5058813358146445e-14
+    },
+    {
+      "parameters": {
+        "latentHeat": 2250000.0,
+        "waterMass": 0.08,
+        "steamMass": 0.015,
+        "initialTemperature": 0.0,
+        "steamTemperature": 100,
+        "innerMass": 0.02952,
+        "stirrerMass": 0.00384,
+        "waterHeat": 4180,
+        "innerHeat": 897,
+        "stirrerHeat": 390,
+        "moistureFraction": 0.0,
+        "heatLossFraction": 0.0
+      },
+      "reference_final_temperature_C": 94.14763968432639,
+      "reference_apparent_latent_heat_J_kg": 2250000.0,
+      "max_scaled_error": 4.13921144273546e-16
+    },
+    {
+      "parameters": {
+        "latentHeat": 2250000.0,
+        "waterMass": 0.08,
+        "steamMass": 0.015,
+        "initialTemperature": 0.0,
+        "steamTemperature": 100,
+        "innerMass": 0.02952,
+        "stirrerMass": 0.00384,
+        "waterHeat": 4180,
+        "innerHeat": 897,
+        "stirrerHeat": 390,
+        "moistureFraction": 0.1,
+        "heatLossFraction": 0.1
+      },
+      "reference_final_temperature_C": 78.26816522482606,
+      "reference_apparent_latent_heat_J_kg": 1800000.0,
+      "max_scaled_error": 1.0039208905430964e-14
+    },
+    {
+      "parameters": {
+        "latentHeat": 2250000.0,
+        "waterMass": 0.2,
+        "steamMass": 0.001,
+        "initialTemperature": 0.0,
+        "steamTemperature": 100,
+        "innerMass": 0.02952,
+        "stirrerMass": 0.00384,
+        "waterHeat": 4180,
+        "innerHeat": 897,
+        "stirrerHeat": 390,
+        "moistureFraction": 0.0,
+        "heatLossFraction": 0.0
+      },
+      "reference_final_temperature_C": 3.0731767146644344,
+      "reference_apparent_latent_heat_J_kg": 2250000.0,
+      "max_scaled_error": 1.0141068034701878e-14
+    },
+    {
+      "parameters": {
+        "latentHeat": 2250000.0,
+        "waterMass": 0.2,
+        "steamMass": 0.001,
+        "initialTemperature": 0.0,
+        "steamTemperature": 100,
+        "innerMass": 0.02952,
+        "stirrerMass": 0.00384,
+        "waterHeat": 4180,
+        "innerHeat": 897,
+        "stirrerHeat": 390,
+        "moistureFraction": 0.1,
+        "heatLossFraction": 0.1
+      },
+      "reference_final_temperature_C": 2.554837313765262,
+      "reference_apparent_latent_heat_J_kg": 1800000.0,
+      "max_scaled_error": 2.651682330502404e-14
+    },
+    {
+      "parameters": {
+        "latentHeat": 2250000.0,
+        "waterMass": 0.2,
+        "steamMass": 0.001,
+        "initialTemperature": 30.0,
+        "steamTemperature": 100,
+        "innerMass": 0.02952,
+        "stirrerMass": 0.00384,
+        "waterHeat": 4180,
+        "innerHeat": 897,
+        "stirrerHeat": 390,
+        "moistureFraction": 0.0,
+        "heatLossFraction": 0.0
+      },
+      "reference_final_temperature_C": 32.92873280161386,
+      "reference_apparent_latent_heat_J_kg": 2250000.0,
+      "max_scaled_error": 8.071462313334147e-15
+    },
+    {
+      "parameters": {
+        "latentHeat": 2250000.0,
+        "waterMass": 0.2,
+        "steamMass": 0.001,
+        "initialTemperature": 30.0,
+        "steamTemperature": 100,
+        "innerMass": 0.02952,
+        "stirrerMass": 0.00384,
+        "waterHeat": 4180,
+        "innerHeat": 897,
+        "stirrerHeat": 390,
+        "moistureFraction": 0.1,
+        "heatLossFraction": 0.1
+      },
+      "reference_final_temperature_C": 32.410393400714696,
+      "reference_apparent_latent_heat_J_kg": 1800000.0,
+      "max_scaled_error": 1.5133991837501525e-14
+    },
+    {
+      "parameters": {
+        "latentHeat": 2250000.0,
+        "waterMass": 0.2,
+        "steamMass": 0.0078,
+        "initialTemperature": 0.0,
+        "steamTemperature": 100,
+        "innerMass": 0.02952,
+        "stirrerMass": 0.00384,
+        "waterHeat": 4180,
+        "innerHeat": 897,
+        "stirrerHeat": 390,
+        "moistureFraction": 0.0,
+        "heatLossFraction": 0.0
+      },
+      "reference_final_temperature_C": 23.210841041206933,
+      "reference_apparent_latent_heat_J_kg": 2250000.0,
+      "max_scaled_error": 7.105427357601002e-15
+    },
+    {
+      "parameters": {
+        "latentHeat": 2250000.0,
+        "waterMass": 0.2,
+        "steamMass": 0.0078,
+        "initialTemperature": 0.0,
+        "steamTemperature": 100,
+        "innerMass": 0.02952,
+        "stirrerMass": 0.00384,
+        "waterHeat": 4180,
+        "innerHeat": 897,
+        "stirrerHeat": 390,
+        "moistureFraction": 0.1,
+        "heatLossFraction": 0.1
+      },
+      "reference_final_temperature_C": 19.29596905149812,
+      "reference_apparent_latent_heat_J_kg": 1800000.0,
+      "max_scaled_error": 3.552713678800501e-15
+    },
+    {
+      "parameters": {
+        "latentHeat": 2250000.0,
+        "waterMass": 0.2,
+        "steamMass": 0.0078,
+        "initialTemperature": 30.0,
+        "steamTemperature": 100,
+        "innerMass": 0.02952,
+        "stirrerMass": 0.00384,
+        "waterHeat": 4180,
+        "innerHeat": 897,
+        "stirrerHeat": 390,
+        "moistureFraction": 0.0,
+        "heatLossFraction": 0.0
+      },
+      "reference_final_temperature_C": 52.11989671340808,
+      "reference_apparent_latent_heat_J_kg": 2250000.0,
+      "max_scaled_error": 7.105427357601002e-15
+    },
+    {
+      "parameters": {
+        "latentHeat": 2250000.0,
+        "waterMass": 0.2,
+        "steamMass": 0.0078,
+        "initialTemperature": 30.0,
+        "steamTemperature": 100,
+        "innerMass": 0.02952,
+        "stirrerMass": 0.00384,
+        "waterHeat": 4180,
+        "innerHeat": 897,
+        "stirrerHeat": 390,
+        "moistureFraction": 0.1,
+        "heatLossFraction": 0.1
+      },
+      "reference_final_temperature_C": 48.20502472369926,
+      "reference_apparent_latent_heat_J_kg": 1800000.0,
+      "max_scaled_error": 6.31610327357492e-15
+    },
+    {
+      "parameters": {
+        "latentHeat": 2250000.0,
+        "waterMass": 0.2,
+        "steamMass": 0.015,
+        "initialTemperature": 0.0,
+        "steamTemperature": 100,
+        "innerMass": 0.02952,
+        "stirrerMass": 0.00384,
+        "waterHeat": 4180,
+        "innerHeat": 897,
+        "stirrerHeat": 390,
+        "moistureFraction": 0.0,
+        "heatLossFraction": 0.0
+      },
+      "reference_final_temperature_C": 43.18656691871852,
+      "reference_apparent_latent_heat_J_kg": 2250000.0,
+      "max_scaled_error": 1.241763432820638e-15
+    },
+    {
+      "parameters": {
+        "latentHeat": 2250000.0,
+        "waterMass": 0.2,
+        "steamMass": 0.015,
+        "initialTemperature": 0.0,
+        "steamTemperature": 100,
+        "innerMass": 0.02952,
+        "stirrerMass": 0.00384,
+        "waterHeat": 4180,
+        "innerHeat": 897,
+        "stirrerHeat": 390,
+        "moistureFraction": 0.1,
+        "heatLossFraction": 0.1
+      },
+      "reference_final_temperature_C": 35.90247579674575,
+      "reference_apparent_latent_heat_J_kg": 1800000.0,
+      "max_scaled_error": 7.105427357601002e-15
+    },
+    {
+      "parameters": {
+        "latentHeat": 2250000.0,
+        "waterMass": 0.2,
+        "steamMass": 0.015,
+        "initialTemperature": 30.0,
+        "steamTemperature": 100,
+        "innerMass": 0.02952,
+        "stirrerMass": 0.00384,
+        "waterHeat": 4180,
+        "innerHeat": 897,
+        "stirrerHeat": 390,
+        "moistureFraction": 0.0,
+        "heatLossFraction": 0.0
+      },
+      "reference_final_temperature_C": 71.15673352606211,
+      "reference_apparent_latent_heat_J_kg": 2250000.0,
+      "max_scaled_error": 1.4210854715202004e-14
+    },
+    {
+      "parameters": {
+        "latentHeat": 2250000.0,
+        "waterMass": 0.2,
+        "steamMass": 0.015,
+        "initialTemperature": 30.0,
+        "steamTemperature": 100,
+        "innerMass": 0.02952,
+        "stirrerMass": 0.00384,
+        "waterHeat": 4180,
+        "innerHeat": 897,
+        "stirrerHeat": 390,
+        "moistureFraction": 0.1,
+        "heatLossFraction": 0.1
+      },
+      "reference_final_temperature_C": 63.87264240408934,
+      "reference_apparent_latent_heat_J_kg": 1800000.0,
+      "max_scaled_error": 8.421471031433227e-15
+    },
+    {
+      "parameters": {
+        "latentHeat": 2500000.0,
+        "waterMass": 0.08,
+        "steamMass": 0.001,
+        "initialTemperature": 0.0,
+        "steamTemperature": 100,
+        "innerMass": 0.02952,
+        "stirrerMass": 0.00384,
+        "waterHeat": 4180,
+        "innerHeat": 897,
+        "stirrerHeat": 390,
+        "moistureFraction": 0.0,
+        "heatLossFraction": 0.0
+      },
+      "reference_final_temperature_C": 7.960561881446878,
+      "reference_apparent_latent_heat_J_kg": 2500000.0,
+      "max_scaled_error": 5.2154064178466795e-15
+    },
+    {
+      "parameters": {
+        "latentHeat": 2500000.0,
+        "waterMass": 0.08,
+        "steamMass": 0.001,
+        "initialTemperature": 0.0,
+        "steamTemperature": 100,
+        "innerMass": 0.02952,
+        "stirrerMass": 0.00384,
+        "waterHeat": 4180,
+        "innerHeat": 897,
+        "stirrerHeat": 390,
+        "moistureFraction": 0.1,
+        "heatLossFraction": 0.1
+      },
+      "reference_final_temperature_C": 6.596517693399086,
+      "reference_apparent_latent_heat_J_kg": 2000000.0,
+      "max_scaled_error": 8.881784197001252e-15
+    },
+    {
+      "parameters": {
+        "latentHeat": 2500000.0,
+        "waterMass": 0.08,
+        "steamMass": 0.001,
+        "initialTemperature": 30.0,
+        "steamTemperature": 100,
+        "innerMass": 0.02952,
+        "stirrerMass": 0.00384,
+        "waterHeat": 4180,
+        "innerHeat": 897,
+        "stirrerHeat": 390,
+        "moistureFraction": 0.0,
+        "heatLossFraction": 0.0
+      },
+      "reference_final_temperature_C": 37.618459599084495,
+      "reference_apparent_latent_heat_J_kg": 2500000.0,
+      "max_scaled_error": 4.097819328308106e-15
+    },
+    {
+      "parameters": {
+        "latentHeat": 2500000.0,
+        "waterMass": 0.08,
+        "steamMass": 0.001,
+        "initialTemperature": 30.0,
+        "steamTemperature": 100,
+        "innerMass": 0.02952,
+        "stirrerMass": 0.00384,
+        "waterHeat": 4180,
+        "innerHeat": 897,
+        "stirrerHeat": 390,
+        "moistureFraction": 0.1,
+        "heatLossFraction": 0.1
+      },
+      "reference_final_temperature_C": 36.25441541103671,
+      "reference_apparent_latent_heat_J_kg": 2000000.0,
+      "max_scaled_error": 4.7730281949043274e-15
+    },
+    {
+      "parameters": {
+        "latentHeat": 2500000.0,
+        "waterMass": 0.08,
+        "steamMass": 0.0078,
+        "initialTemperature": 0.0,
+        "steamTemperature": 100,
+        "innerMass": 0.02952,
+        "stirrerMass": 0.00384,
+        "waterHeat": 4180,
+        "innerHeat": 897,
+        "stirrerHeat": 390,
+        "moistureFraction": 0.0,
+        "heatLossFraction": 0.0
+      },
+      "reference_final_temperature_C": 57.62403177631007,
+      "reference_apparent_latent_heat_J_kg": 2500000.0,
+      "max_scaled_error": 2.007841781086193e-14
+    },
+    {
+      "parameters": {
+        "latentHeat": 2500000.0,
+        "waterMass": 0.08,
+        "steamMass": 0.0078,
+        "initialTemperature": 0.0,
+        "steamTemperature": 100,
+        "innerMass": 0.02952,
+        "stirrerMass": 0.00384,
+        "waterHeat": 4180,
+        "innerHeat": 897,
+        "stirrerHeat": 390,
+        "moistureFraction": 0.1,
+        "heatLossFraction": 0.1
+      },
+      "reference_final_temperature_C": 47.75014010799101,
+      "reference_apparent_latent_heat_J_kg": 2000000.0,
+      "max_scaled_error": 1.0039208905430964e-14
+    },
+    {
+      "parameters": {
+        "latentHeat": 2500000.0,
+        "waterMass": 0.08,
+        "steamMass": 0.0078,
+        "initialTemperature": 30.0,
+        "steamTemperature": 100,
+        "innerMass": 0.02952,
+        "stirrerMass": 0.00384,
+        "waterHeat": 4180,
+        "innerHeat": 897,
+        "stirrerHeat": 390,
+        "moistureFraction": 0.0,
+        "heatLossFraction": 0.0
+      },
+      "reference_final_temperature_C": 85.14765974589565,
+      "reference_apparent_latent_heat_J_kg": 2500000.0,
+      "max_scaled_error": 1.4210854715202004e-14
+    },
+    {
+      "parameters": {
+        "latentHeat": 2500000.0,
+        "waterMass": 0.08,
+        "steamMass": 0.0078,
+        "initialTemperature": 30.0,
+        "steamTemperature": 100,
+        "innerMass": 0.02952,
+        "stirrerMass": 0.00384,
+        "waterHeat": 4180,
+        "innerHeat": 897,
+        "stirrerHeat": 390,
+        "moistureFraction": 0.1,
+        "heatLossFraction": 0.1
+      },
+      "reference_final_temperature_C": 75.27376807757659,
+      "reference_apparent_latent_heat_J_kg": 2000000.0,
+      "max_scaled_error": 2.007841781086193e-14
+    },
+    {
+      "parameters": {
+        "latentHeat": 2500000.0,
+        "waterMass": 0.08,
+        "steamMass": 0.015,
+        "initialTemperature": 0.0,
+        "steamTemperature": 100,
+        "innerMass": 0.02952,
+        "stirrerMass": 0.00384,
+        "waterHeat": 4180,
+        "innerHeat": 897,
+        "stirrerHeat": 390,
+        "moistureFraction": 0.1,
+        "heatLossFraction": 0.1
+      },
+      "reference_final_temperature_C": 85.32570942904843,
+      "reference_apparent_latent_heat_J_kg": 2000000.0,
+      "max_scaled_error": 1.0039208905430964e-14
+    },
+    {
+      "parameters": {
+        "latentHeat": 2500000.0,
+        "waterMass": 0.2,
+        "steamMass": 0.001,
+        "initialTemperature": 0.0,
+        "steamTemperature": 100,
+        "innerMass": 0.02952,
+        "stirrerMass": 0.00384,
+        "waterHeat": 4180,
+        "innerHeat": 897,
+        "stirrerHeat": 390,
+        "moistureFraction": 0.0,
+        "heatLossFraction": 0.0
+      },
+      "reference_final_temperature_C": 3.3611430484973113,
+      "reference_apparent_latent_heat_J_kg": 2500000.0,
+      "max_scaled_error": 1.6763806343078614e-14
+    },
+    {
+      "parameters": {
+        "latentHeat": 2500000.0,
+        "waterMass": 0.2,
+        "steamMass": 0.001,
+        "initialTemperature": 0.0,
+        "steamTemperature": 100,
+        "innerMass": 0.02952,
+        "stirrerMass": 0.00384,
+        "waterHeat": 4180,
+        "innerHeat": 897,
+        "stirrerHeat": 390,
+        "moistureFraction": 0.1,
+        "heatLossFraction": 0.1
+      },
+      "reference_final_temperature_C": 2.7852103808315576,
+      "reference_apparent_latent_heat_J_kg": 2000000.0,
+      "max_scaled_error": 1.0244548320770263e-14
+    },
+    {
+      "parameters": {
+        "latentHeat": 2500000.0,
+        "waterMass": 0.2,
+        "steamMass": 0.001,
+        "initialTemperature": 30.0,
+        "steamTemperature": 100,
+        "innerMass": 0.02952,
+        "stirrerMass": 0.00384,
+        "waterHeat": 4180,
+        "innerHeat": 897,
+        "stirrerHeat": 390,
+        "moistureFraction": 0.0,
+        "heatLossFraction": 0.0
+      },
+      "reference_final_temperature_C": 33.21669913544673,
+      "reference_apparent_latent_heat_J_kg": 2500000.0,
+      "max_scaled_error": 1.4714896678924562e-14
+    },
+    {
+      "parameters": {
+        "latentHeat": 2500000.0,
+        "waterMass": 0.2,
+        "steamMass": 0.001,
+        "initialTemperature": 30.0,
+        "steamTemperature": 100,
+        "innerMass": 0.02952,
+        "stirrerMass": 0.00384,
+        "waterHeat": 4180,
+        "innerHeat": 897,
+        "stirrerHeat": 390,
+        "moistureFraction": 0.1,
+        "heatLossFraction": 0.1
+      },
+      "reference_final_temperature_C": 32.64076646778099,
+      "reference_apparent_latent_heat_J_kg": 2000000.0,
+      "max_scaled_error": 2.4097971618175505e-14
+    },
+    {
+      "parameters": {
+        "latentHeat": 2500000.0,
+        "waterMass": 0.2,
+        "steamMass": 0.0078,
+        "initialTemperature": 0.0,
+        "steamTemperature": 100,
+        "innerMass": 0.02952,
+        "stirrerMass": 0.00384,
+        "waterHeat": 4180,
+        "innerHeat": 897,
+        "stirrerHeat": 390,
+        "moistureFraction": 0.0,
+        "heatLossFraction": 0.0
+      },
+      "reference_final_temperature_C": 25.385769924378494,
+      "reference_apparent_latent_heat_J_kg": 2500000.0,
+      "max_scaled_error": 1.0658141036401503e-14
+    },
+    {
+      "parameters": {
+        "latentHeat": 2500000.0,
+        "waterMass": 0.2,
+        "steamMass": 0.0078,
+        "initialTemperature": 0.0,
+        "steamTemperature": 100,
+        "innerMass": 0.02952,
+        "stirrerMass": 0.00384,
+        "waterHeat": 4180,
+        "innerHeat": 897,
+        "stirrerHeat": 390,
+        "moistureFraction": 0.1,
+        "heatLossFraction": 0.1
+      },
+      "reference_final_temperature_C": 21.035912158035373,
+      "reference_apparent_latent_heat_J_kg": 2000000.0,
+      "max_scaled_error": 4.210735515716613e-15
+    },
+    {
+      "parameters": {
+        "latentHeat": 2500000.0,
+        "waterMass": 0.2,
+        "steamMass": 0.0078,
+        "initialTemperature": 30.0,
+        "steamTemperature": 100,
+        "innerMass": 0.02952,
+        "stirrerMass": 0.00384,
+        "waterHeat": 4180,
+        "innerHeat": 897,
+        "stirrerHeat": 390,
+        "moistureFraction": 0.0,
+        "heatLossFraction": 0.0
+      },
+      "reference_final_temperature_C": 54.29482559657964,
+      "reference_apparent_latent_heat_J_kg": 2500000.0,
+      "max_scaled_error": 4.210735515716613e-15
+    },
+    {
+      "parameters": {
+        "latentHeat": 2500000.0,
+        "waterMass": 0.2,
+        "steamMass": 0.0078,
+        "initialTemperature": 30.0,
+        "steamTemperature": 100,
+        "innerMass": 0.02952,
+        "stirrerMass": 0.00384,
+        "waterHeat": 4180,
+        "innerHeat": 897,
+        "stirrerHeat": 390,
+        "moistureFraction": 0.1,
+        "heatLossFraction": 0.1
+      },
+      "reference_final_temperature_C": 49.944967830236514,
+      "reference_apparent_latent_heat_J_kg": 2000000.0,
+      "max_scaled_error": 1.5133991837501525e-15
+    },
+    {
+      "parameters": {
+        "latentHeat": 2500000.0,
+        "waterMass": 0.2,
+        "steamMass": 0.015,
+        "initialTemperature": 0.0,
+        "steamTemperature": 100,
+        "innerMass": 0.02952,
+        "stirrerMass": 0.00384,
+        "waterHeat": 4180,
+        "innerHeat": 897,
+        "stirrerHeat": 390,
+        "moistureFraction": 0.0,
+        "heatLossFraction": 0.0
+      },
+      "reference_final_temperature_C": 47.23328420870339,
+      "reference_apparent_latent_heat_J_kg": 2500000.0,
+      "max_scaled_error": 8.421471031433227e-15
+    },
+    {
+      "parameters": {
+        "latentHeat": 2500000.0,
+        "waterMass": 0.2,
+        "steamMass": 0.015,
+        "initialTemperature": 0.0,
+        "steamTemperature": 100,
+        "innerMass": 0.02952,
+        "stirrerMass": 0.00384,
+        "waterHeat": 4180,
+        "innerHeat": 897,
+        "stirrerHeat": 390,
+        "moistureFraction": 0.1,
+        "heatLossFraction": 0.1
+      },
+      "reference_final_temperature_C": 39.13984962873365,
+      "reference_apparent_latent_heat_J_kg": 2000000.0,
+      "max_scaled_error": 1.7462298274040223e-15
+    },
+    {
+      "parameters": {
+        "latentHeat": 2500000.0,
+        "waterMass": 0.2,
+        "steamMass": 0.015,
+        "initialTemperature": 30.0,
+        "steamTemperature": 100,
+        "innerMass": 0.02952,
+        "stirrerMass": 0.00384,
+        "waterHeat": 4180,
+        "innerHeat": 897,
+        "stirrerHeat": 390,
+        "moistureFraction": 0.0,
+        "heatLossFraction": 0.0
+      },
+      "reference_final_temperature_C": 75.20345081604697,
+      "reference_apparent_latent_heat_J_kg": 2500000.0,
+      "max_scaled_error": 1.6842942062866453e-14
+    },
+    {
+      "parameters": {
+        "latentHeat": 2500000.0,
+        "waterMass": 0.2,
+        "steamMass": 0.015,
+        "initialTemperature": 30.0,
+        "steamTemperature": 100,
+        "innerMass": 0.02952,
+        "stirrerMass": 0.00384,
+        "waterHeat": 4180,
+        "innerHeat": 897,
+        "stirrerHeat": 390,
+        "moistureFraction": 0.1,
+        "heatLossFraction": 0.1
+      },
+      "reference_final_temperature_C": 67.11001623607723,
+      "reference_apparent_latent_heat_J_kg": 2000000.0,
+      "max_scaled_error": 1.4210854715202004e-14
+    }
+  ]
+}

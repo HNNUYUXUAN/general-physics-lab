@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "experiment": "course-02/sound-speed",
+  "references": [
+    {
+      "id": "li2018-acoustic-multipath",
+      "title": "声波多次往返叠加对相位比较法测量声速的影响",
+      "authors": [
+        "李轩",
+        "方锦江",
+        "单桂晔",
+        "高志华"
+      ],
+      "journal": "物理实验",
+      "year": 2018,
+      "volume": 38,
+      "issue": 4,
+      "pages": "47–51",
+      "doi": "10.19655/j.cnki.1005-4642.2018.04.011",
+      "url": "https://doi.org/10.19655/j.cnki.1005-4642.2018.04.011",
+      "full_text_status": "obtained_and_read",
+      "pdf_sha256": "12739b0cfbad4fcba99feafb399ac101d5dd62263ad8c01a50c945a61b886c45",
+      "locators": [
+        {
+          "page": 47,
+          "location": "引言",
+          "supports": "驻波腹λ/2与相位重复λ"
+        },
+        {
+          "page": 48,
+          "location": "式1–5",
+          "supports": "多次往返、声压/位移和XY通道"
+        },
+        {
+          "pages": [
+            49,
+            50
+          ],
+          "location": "§2.2–2.4",
+          "supports": "近距离多解与反射/衰减边界"
+        }
+      ],
+      "parameter_mapping": "q is effective round-trip amplitude retention, independent teaching value; not single-face beta",
+      "implementation_scope": "infinite geometric port sum with constant q; ideal single-pass phase mode; not finite-N distance-dependent attenuation reconstruction"
+    }
+  ]
+}

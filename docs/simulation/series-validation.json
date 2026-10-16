@@ -1,0 +1,2153 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "checked_at_utc": "2026-10-16T18:01:04.920696+00:00",
+  "experiment_count": 45,
+  "registered_runtime_files": 153,
+  "registry_sha256": "7da6777b04f7bf694a4c66d7dbc6c01451cbe056586575b92730146716de65a7",
+  "manuscript_regression": {
+    "status": "passed",
+    "baseline_file_count": 1477,
+    "changed_files": 0
+  },
+  "experiments": [
+    {
+      "experiment_id": "course-01/pendulum",
+      "title": "单摆测重力加速度",
+      "slug": "pendulum",
+      "model_version": "1.0.0",
+      "status": "passed",
+      "evidence_status": "verified",
+      "frontend_status": "passed",
+      "checks": [
+        {
+          "name": "runtime_syntax",
+          "status": "passed",
+          "exit_code": 0
+        },
+        {
+          "name": "model_tests",
+          "status": "passed",
+          "exit_code": 0
+        },
+        {
+          "name": "independent_reference",
+          "status": "passed",
+          "exit_code": 0
+        }
+      ],
+      "source_hashes": {
+        "simulations/pendulum/index.html": "4ddf704cc67c2a6d2874b87a3488d97e3e6c9d1598db93200993a08f7d6d66c7",
+        "simulations/pendulum/model.mjs": "c6f9abf87da6ed6716227bdf690f9a2c1af4316489308ec9d756fa1ff7c0aaee",
+        "simulations/pendulum/app.mjs": "a23570bab007ba715e5bb27c84770c26effd6d73f462a9406c7cd7e79d577e5f",
+        "simulations/pendulum/chart.mjs": "35b3acfdedc7cca02a05e05f388a102f938a2abf9277ce74e145e0d023e661bf",
+        "simulations/pendulum/lab.css": "1da437b9154adaf04e754c6409b7762850e20b2eefab137f3b2c7f0baf4c61e9",
+        "simulations/pendulum/observations.json": "8b2aace51023b2588f94ff4ef3870733d488d40b6ba022c02de0f91ed0be7e4c",
+        "docs/pendulum-model-evidence.md": "d6dfe674d44c82f8d5beb03485a064566b40d89300c7b43746816e059a8cfd11",
+        "docs/pendulum-references.json": "c3ca6854e3d0233fff4fb30c6e0176e57e3c0f6e7ca8a98f39bed110b8db6dcb",
+        "docs/pendulum-references.bib": "68c60d2e3a04a5c459e1d4c5700d985c3f1727f97e76d650e0afae31487fe576",
+        "docs/simulation/pendulum-reference.json": "762a814bc4e61bee81f2fd3c2b8a700052b512b9686119a3f9cb6a659c28980a",
+        "scripts/validate_pendulum_simulation.py": "d7bce6928a7057820aa59da4545e2d25171698ee0bc58bf3df9d86ead692cbc9",
+        "tests/pendulum-model.test.mjs": "96b9c5114656dd8aab095f66f5df62e96b1f1b156f8f83c99969d5744e3a0737"
+      },
+      "reference": "docs/simulation/pendulum-reference.json",
+      "reference_sha256": "762a814bc4e61bee81f2fd3c2b8a700052b512b9686119a3f9cb6a659c28980a",
+      "actual_background_verification": {
+        "capture_method": "actual-browser-tab-switch",
+        "actual_document_hidden": true,
+        "pause_verified": true,
+        "checked_at_utc": "2026-10-16T17:06:45.470Z",
+        "source_hashes": {
+          "app.mjs": "a23570bab007ba715e5bb27c84770c26effd6d73f462a9406c7cd7e79d577e5f",
+          "model.mjs": "c6f9abf87da6ed6716227bdf690f9a2c1af4316489308ec9d756fa1ff7c0aaee"
+        }
+      }
+    },
+    {
+      "experiment_id": "course-03/rlc-resonance",
+      "title": "RLC串联电路谐振特性的研究",
+      "slug": "rlc-resonance",
+      "model_version": "1.0.0",
+      "status": "passed",
+      "evidence_status": "verified",
+      "frontend_status": "passed",
+      "checks": [
+        {
+          "name": "runtime_syntax",
+          "status": "passed",
+          "exit_code": 0
+        },
+        {
+          "name": "model_tests",
+          "status": "passed",
+          "exit_code": 0
+        },
+        {
+          "name": "independent_reference",
+          "status": "passed",
+          "exit_code": 0
+        }
+      ],
+      "source_hashes": {
+        "simulations/rlc-resonance/index.html": "7b00687e30afa2f4a5c28252b7849673e21a4a30821bee50bdcf6546231b822f",
+        "simulations/rlc-resonance/model.mjs": "062174065348d336a5ee701514d32801f1118b3073d8eb93944e3867be4e61f8",
+        "simulations/rlc-resonance/app.mjs": "0bdfb307ec5e3966332d83a7af9c54aa1ee02a88f423f362b70fa19105c857d5",
+        "simulations/rlc-resonance/chart.mjs": "c249b50b2e5d611eb32d23c7ded7da2c3d2e50967112443b51dfc0aa1fd594b2",
+        "simulations/rlc-resonance/lab.css": "e437cc4bea179e80dbe87acbf93a77c46df9d44d89c51287eb6f7ffb34df42ec",
+        "simulations/rlc-resonance/observations.json": "1a3f099e84a5f36f71dd5610a180d59d21eda034150c7a3f6bb37fddef8ddb7f",
+        "docs/rlc-resonance-model-evidence.md": "356b7cd70c2539516900e935684c53f3edd49dd06842a3094bfcf3100457d1d8",
+        "docs/rlc-resonance-references.json": "4ed0ea5be6f47c4da682fece507d89ecfd9f4e12e245bb892252121451b3949f",
+        "docs/rlc-resonance-references.bib": "c56088943d95ed28fb8b17503987e37b4f6b0dd16cc1c7fc6e57e9a13047687a",
+        "docs/simulation/rlc-resonance-reference.json": "9e5efa8293cd532a88074e0a33e6ecbab7b9ed1f59e6e872d3b9fb5074f3cff3",
+        "simulations/rlc-resonance/model-spec.json": "6c7c3a0d57b721f87a0905b92d4fbc2cba6b04a4c0f810d863a160b82ebe7027",
+        "scripts/validate_rlc_resonance_simulation.py": "b9a9afaaf2233df6fa2395da9fc9ec32ab5724f3cec612a051ea42b07525194f",
+        "tests/rlc-resonance-model.test.mjs": "46894a7aacecf9d23887e06bf236bff803613a211bb043b29cff688168a8ef37"
+      },
+      "reference": "docs/simulation/rlc-resonance-reference.json",
+      "reference_sha256": "9e5efa8293cd532a88074e0a33e6ecbab7b9ed1f59e6e872d3b9fb5074f3cff3",
+      "frontend_validation": "docs/simulation/rlc-resonance-frontend.json",
+      "frontend_sha256": "2769eff0e7c71e7f37c9748acc24668970c987783949b2661c82037a67cf0580"
+    },
+    {
+      "experiment_id": "course-04/newton-rings",
+      "title": "牛顿环实验",
+      "slug": "newton-rings",
+      "model_version": "1.0.0",
+      "status": "passed",
+      "evidence_status": "verified",
+      "frontend_status": "passed",
+      "checks": [
+        {
+          "name": "runtime_syntax",
+          "status": "passed",
+          "exit_code": 0
+        },
+        {
+          "name": "model_tests",
+          "status": "passed",
+          "exit_code": 0
+        },
+        {
+          "name": "independent_reference",
+          "status": "passed",
+          "exit_code": 0
+        }
+      ],
+      "source_hashes": {
+        "simulations/newton-rings/index.html": "398b69bf9b429dca641c1a280bd97d83100413a6ebc6f19b794d50bfb18898b0",
+        "simulations/newton-rings/model.mjs": "7f69cdd69e76ce40bf4ed2ef60858edf75461b0a1ad62ff7f199a237ee9230ee",
+        "simulations/newton-rings/app.mjs": "aa687617ef93d42aea6d4ceb33a3c74ab07e8b93a1a534d1cf8caecf06888670",
+        "simulations/newton-rings/chart.mjs": "64a2c6372011f18a5b10856f98abfe0093836be70db3a4362bddc69619a263dc",
+        "simulations/newton-rings/lab.css": "04c47b596897607b8f14bc77ccf802bfd7354dc93c90a3fac325e1336c9da586",
+        "simulations/newton-rings/observations.json": "5b866d7cf18d86ad1fa85aea06b72996457b01507fee39acc343e18c6b0a60d9",
+        "docs/newton-rings-model-evidence.md": "6fc2117bf90179704e0d387dfaae4a79f18d453027a62cad6458bde438cd5dd6",
+        "docs/newton-rings-references.json": "d6f701bd38731ae94eb476f6b9afdbdf49ba996d6eab01723c0ee89c3c9a9188",
+        "docs/newton-rings-references.bib": "2b6ba51b7d9d11f7fcac7abbf5fdf27b9c05d654210c644f5f6a18b3dff5b806",
+        "docs/simulation/newton-rings-reference.json": "c2ed28dcd7f54d6017216eb78a79dbcb129f14d7c4efc8fe6c49b2be224fdfda",
+        "scripts/validate_newton_rings_simulation.py": "65a4fa4d429c3cd9b9e6bfdd4000377075da7ba274edf8b9af73b15d3d6a5672",
+        "tests/newton-rings-model.test.mjs": "32e77075f32022d7799ab8e95128e4454da18f264c11784c206553bd1a8d6a68"
+      },
+      "reference": "docs/simulation/newton-rings-reference.json",
+      "reference_sha256": "c2ed28dcd7f54d6017216eb78a79dbcb129f14d7c4efc8fe6c49b2be224fdfda",
+      "frontend_validation": "docs/simulation/newton-rings-frontend.json",
+      "frontend_sha256": "e4a7d620380f0cb10bebda843b1c6fec0d16de65378e038a5ced6f48a8a4154d"
+    },
+    {
+      "experiment_id": "course-02/string-vibration",
+      "title": "弦振动的研究",
+      "slug": "string-vibration",
+      "model_version": "1.0.0",
+      "status": "passed",
+      "evidence_status": "verified",
+      "frontend_status": "passed",
+      "checks": [
+        {
+          "name": "runtime_syntax",
+          "status": "passed",
+          "exit_code": 0
+        },
+        {
+          "name": "model_tests",
+          "status": "passed",
+          "exit_code": 0
+        },
+        {
+          "name": "independent_reference",
+          "status": "passed",
+          "exit_code": 0
+        }
+      ],
+      "source_hashes": {
+        "simulations/string-vibration/index.html": "c07236fe49ca164f86e1540197d17dc61bea295b34c4aebc072330661f791822",
+        "simulations/string-vibration/model.mjs": "693e2b97128c108a3f47f238761105cd92b3a8ca05e28c68fb4f969af5f7c15c",
+        "simulations/string-vibration/app.mjs": "994684ceaac79040baf0d27387883e400dad500a0ac94286af56eb619a39c9cb",
+        "simulations/string-vibration/chart.mjs": "c82ef793891457129411c144904f8fd2a61d67ac297f107beaf922bdf2934964",
+        "simulations/string-vibration/lab.css": "8a82b872776aeb4b23a981fede4d6f8ddd3eb15c661cefd9219669b91372ad16",
+        "simulations/string-vibration/observations.json": "25ff31943c00eedf731aff8e1a90ab205b0afdce184539ad8e58636237d22ed3",
+        "docs/string-vibration-model-evidence.md": "2ddedb6b835fca5d4a6383a85a6722cf61a574375c6bdc1df417c959bb958011",
+        "docs/string-vibration-references.json": "77a7f44e5dd745bc7278a32fa3c3787b17456f18cf07f3290606cf046e8c875e",
+        "docs/string-vibration-references.bib": "00d9d103971fe52d93ab9c300a920360ff8847f9cc449407e4347ea471cb3af9",
+        "docs/simulation/string-vibration-reference.json": "d236b485c019098c737e91f8e33598f0df6b889b20dc439f1ffaf01278802d34",
+        "scripts/validate_string_vibration_simulation.py": "cce78c49d2f7293781f78d1e13780a159a22fa968501d00080f802de8bf1bc34",
+        "tests/string-vibration-model.test.mjs": "791de27a41e5df34013fbcc6b7e41210f51abb88f9937138f41783b60bd9c564"
+      },
+      "reference": "docs/simulation/string-vibration-reference.json",
+      "reference_sha256": "d236b485c019098c737e91f8e33598f0df6b889b20dc439f1ffaf01278802d34",
+      "frontend_validation": "docs/simulation/string-vibration-frontend.json",
+      "frontend_sha256": "480dba11c60b14580c645f2ed2d32828c3deb4ea7e07d8da0917ce9ecee25bfd",
+      "actual_background_verification": {
+        "capture_method": "actual-browser-tab-switch",
+        "actual_document_hidden": true,
+        "pause_verified": true,
+        "checked_at_utc": "2026-10-16T17:09:01.016Z",
+        "source_hashes": {
+          "app.mjs": "994684ceaac79040baf0d27387883e400dad500a0ac94286af56eb619a39c9cb",
+          "model.mjs": "693e2b97128c108a3f47f238761105cd92b3a8ca05e28c68fb4f969af5f7c15c"
+        }
+      }
+    },
+    {
+      "experiment_id": "course-01/density",
+      "title": "物质密度的测量",
+      "slug": "density",
+      "model_version": "1.0.0",
+      "status": "passed",
+      "evidence_status": "verified",
+      "frontend_status": "passed",
+      "checks": [
+        {
+          "name": "runtime_syntax",
+          "status": "passed",
+          "exit_code": 0
+        },
+        {
+          "name": "model_tests",
+          "status": "passed",
+          "exit_code": 0
+        },
+        {
+          "name": "independent_reference",
+          "status": "passed",
+          "exit_code": 0
+        }
+      ],
+      "source_hashes": {
+        "simulations/density/index.html": "34e8b25fe5a504f6362c6274d60775e438ad066a353febdd1bcc4c3197cf4247",
+        "simulations/density/model.mjs": "08749c6bad11f2400256c717e8571a34514635d3888ead6f7751a12611659ebf",
+        "simulations/density/app.mjs": "8c28592cbea8bf0597e98feabe75cdee46aace9fd9496bdf7bf0438520f49f5c",
+        "simulations/density/chart.mjs": "c82ef793891457129411c144904f8fd2a61d67ac297f107beaf922bdf2934964",
+        "simulations/density/lab.css": "76a8d2af1c1b9d6a2b9d5dd4bef88e1455ddad05cf1d93435d94a5825a01d82f",
+        "simulations/density/observations.json": "4c7bd685dd0fb9b23e227e9c6d7eac4b16cad75a4246b899971482118dd6e98f",
+        "docs/density-model-evidence.md": "069c1b439d3e3d356b80f31ab212cad838721da85eaddeb6ed3ca7b45e84233b",
+        "docs/density-references.json": "8f62aaa8b29b0725970431695d74c782b88225fdab6699b0e29393af06cec423",
+        "docs/density-references.bib": "271b9f26a8f616b132c0a353ea0387c7bd3c441d4139fb0d043b18c54e5e47cf",
+        "docs/simulation/density-reference.json": "e03dabeaf15fe8438a76392416fa778ceb3e769b092b32b7aa49ea5525b4efec",
+        "scripts/validate_density_simulation.py": "817f8b1b23910fd1af602dbd8af23883ec37619b225dc2147e8e05c017247178",
+        "tests/density-model.test.mjs": "3cd19323b8451941fbc5befcd8d50d86f82f3344d005235677455b9781243f57"
+      },
+      "reference": "docs/simulation/density-reference.json",
+      "reference_sha256": "e03dabeaf15fe8438a76392416fa778ceb3e769b092b32b7aa49ea5525b4efec",
+      "frontend_validation": "docs/simulation/density-frontend.json",
+      "frontend_sha256": "bc68bba8b6dc0e533e02be39c3985b7a3975b1442fcd242f5be46a03544600a3"
+    },
+    {
+      "experiment_id": "course-01/collisions",
+      "title": "碰撞规律的研究",
+      "slug": "collisions",
+      "model_version": "1.0.0",
+      "status": "passed",
+      "evidence_status": "verified",
+      "frontend_status": "passed",
+      "checks": [
+        {
+          "name": "runtime_syntax",
+          "status": "passed",
+          "exit_code": 0
+        },
+        {
+          "name": "model_tests",
+          "status": "passed",
+          "exit_code": 0
+        },
+        {
+          "name": "independent_reference",
+          "status": "passed",
+          "exit_code": 0
+        }
+      ],
+      "source_hashes": {
+        "simulations/collisions/index.html": "bedda72fe61d14f676c3a67d071bed99f982bb915fc6b3a2103a8c1dc6709b99",
+        "simulations/collisions/model.mjs": "a8d8641d062bc2ca3277d9cd79f647b0420c32a36c86d9bf00dd3321205ab6b8",
+        "simulations/collisions/app.mjs": "948ef033a82e85798f0316628897b3b96a9a6e5d34972eb626b3d160bc5c9c54",
+        "simulations/collisions/chart.mjs": "c82ef793891457129411c144904f8fd2a61d67ac297f107beaf922bdf2934964",
+        "simulations/collisions/lab.css": "72d31d1a5021ce40610483f0cfc6a4da8262b10552e14731cb61d339efb2f5e0",
+        "simulations/collisions/observations.json": "10514f6b8bfbbb2800f3cfcb85cfb737392447b6d9d52aeda65237f9d9273ef5",
+        "docs/collisions-model-evidence.md": "196526e665caa7c4f6a94b2c5239b5ceaad83aa1e8d06d9867a2100edf96e8e1",
+        "docs/collisions-references.json": "5d3b1d9310fac99b791ce0f7c293d60f3d3e4232ab632471a2fde93bb9cd6aa3",
+        "docs/collisions-references.bib": "35d6c0b3e565d06aa293b0c28442440cebbeb051f674f00fd9fd0d8f1fab4a07",
+        "docs/simulation/collisions-reference.json": "cf2746a38cbedb3ced667192510cd5603b57bb1844f6aac1ee8b68c3c1166664",
+        "scripts/validate_collisions_simulation.py": "485a9f93aeaad909f024fae0200431830ed3699fcf5c30051f48b10d064d6772",
+        "tests/collisions-model.test.mjs": "9c95f674a0937e4c65759e039c3c6bc16c4a9e7a4a023d1a583d0c9700d677af"
+      },
+      "reference": "docs/simulation/collisions-reference.json",
+      "reference_sha256": "cf2746a38cbedb3ced667192510cd5603b57bb1844f6aac1ee8b68c3c1166664",
+      "frontend_validation": "docs/simulation/collisions-frontend.json",
+      "frontend_sha256": "5d2da3e8fdc51899c487ad434c2f06eac8ca1dc0df2579ddbbade318ab216ed8",
+      "actual_background_verification": {
+        "capture_method": "actual-browser-tab-switch",
+        "actual_document_hidden": true,
+        "pause_verified": true,
+        "checked_at_utc": "2026-10-16T17:08:43.533Z",
+        "source_hashes": {
+          "app.mjs": "948ef033a82e85798f0316628897b3b96a9a6e5d34972eb626b3d160bc5c9c54",
+          "model.mjs": "a8d8641d062bc2ca3277d9cd79f647b0420c32a36c86d9bf00dd3321205ab6b8"
+        }
+      }
+    },
+    {
+      "experiment_id": "course-01/newton-second-law",
+      "title": "牛顿第二定律的验证",
+      "slug": "newton-second-law",
+      "model_version": "1.0.0",
+      "status": "passed",
+      "evidence_status": "verified",
+      "frontend_status": "passed",
+      "checks": [
+        {
+          "name": "runtime_syntax",
+          "status": "passed",
+          "exit_code": 0
+        },
+        {
+          "name": "model_tests",
+          "status": "passed",
+          "exit_code": 0
+        },
+        {
+          "name": "independent_reference",
+          "status": "passed",
+          "exit_code": 0
+        }
+      ],
+      "source_hashes": {
+        "simulations/newton-second-law/index.html": "fe10007191e4735a94b82ffc675b8a308bac9ca02586074716bb5a7123b2928f",
+        "simulations/newton-second-law/model.mjs": "eb53140817a489ceaedd03493629a17bc872c57f9644669acf0bb68c1fd21089",
+        "simulations/newton-second-law/app.mjs": "f10f165eb90aed15b310cdfe7f0d468bfe7ba5d65910b29dbc832f3d042b852f",
+        "simulations/newton-second-law/chart.mjs": "d9de3df2659ebe798d162b1aaaa42686654346c822e72edf9c1a515302532942",
+        "simulations/newton-second-law/lab.css": "2923d50518506aea46e2fe615c95f6d7d428b2d1975e8fb997f0f7d84dfbd7dc",
+        "simulations/newton-second-law/observations.json": "0c66d19bcd8d1318fe187f030b3262506c758f2688839c3b76ffe589fdb73d9d",
+        "docs/newton-second-law-model-evidence.md": "78c114687adc2d35f0136895d076bbee54c223f2c552ac8f7e0dde1c7b598c78",
+        "docs/newton-second-law-references.json": "905410ab9513a1a141461f3bc9c8402d3aec95b8a50ed86599506130887c8492",
+        "docs/newton-second-law-references.bib": "e6ee1ef43d20c967732d72c4107a7c040d2ecf2623b28f1544ed1506ae88a0c3",
+        "docs/simulation/newton-second-law-reference.json": "c2562a055c6cfdd668a7dfae36d67c771b7dd945f66d4e95cf7e1ba38a39ac29",
+        "scripts/validate_newton_second_law_simulation.py": "bb07eb4f7a2a853087b3760fb7a8e5f6805e8cf57c1a2f422101dc9dccf1de08",
+        "tests/newton-second-law-model.test.mjs": "c30012152aa4468a717faab25ee49284f876268d71c939e7de1982a897bbe40b"
+      },
+      "reference": "docs/simulation/newton-second-law-reference.json",
+      "reference_sha256": "c2562a055c6cfdd668a7dfae36d67c771b7dd945f66d4e95cf7e1ba38a39ac29",
+      "frontend_validation": "docs/simulation/newton-second-law-frontend.json",
+      "frontend_sha256": "78bb566456860954fdeffcb9a0cb6f07a896671b22b8e6901e1644aea1ab3ebf",
+      "actual_background_verification": {
+        "capture_method": "actual-browser-tab-switch",
+        "actual_document_hidden": true,
+        "pause_verified": true,
+        "checked_at_utc": "2026-10-16T17:08:45.497Z",
+        "source_hashes": {
+          "app.mjs": "f10f165eb90aed15b310cdfe7f0d468bfe7ba5d65910b29dbc832f3d042b852f",
+          "model.mjs": "eb53140817a489ceaedd03493629a17bc872c57f9644669acf0bb68c1fd21089"
+        }
+      }
+    },
+    {
+      "experiment_id": "course-01/doppler-verification",
+      "title": "多普勒效应的验证",
+      "slug": "doppler-verification",
+      "model_version": "1.0.0",
+      "status": "passed",
+      "evidence_status": "verified",
+      "frontend_status": "passed",
+      "checks": [
+        {
+          "name": "runtime_syntax",
+          "status": "passed",
+          "exit_code": 0
+        },
+        {
+          "name": "model_tests",
+          "status": "passed",
+          "exit_code": 0
+        },
+        {
+          "name": "independent_reference",
+          "status": "passed",
+          "exit_code": 0
+        }
+      ],
+      "source_hashes": {
+        "simulations/doppler-verification/index.html": "2bf2b08577d09a29c07bbb442f99ee28ffa6caedc3289a5c12988fd6eaaac82e",
+        "simulations/doppler-verification/model.mjs": "7cef71f0bc35dfd392e4de60b1ba0dc8e264dd4080343297d48adb54cd381342",
+        "simulations/doppler-verification/app.mjs": "40787712cd146c6a8412e2db62443c725f0e7458d98558cedf6e59d8b340c32e",
+        "simulations/doppler-verification/chart.mjs": "f9a0b66185555009bbd44fb2a89dd9ef4f13fc7297798a4a3f9691290588704c",
+        "simulations/doppler-verification/lab.css": "cf56841e0acc54d25ded1a850c7b7d0930cf7406dd500934f04a8e68f11dd097",
+        "simulations/doppler-verification/observations.json": "3129fde75173aa667e1a0c8337dd44ffba430486caa6175950736362e00fe19d",
+        "docs/doppler-verification-model-evidence.md": "5a3a51ba1311c96e2fb6d62e80c1e8ea79baf1ae035e976ba0bfeecd59118caf",
+        "docs/doppler-verification-references.json": "df128e6d15c366a1823aa34b8348417a91f8f57bf9ceda61eaf456801fd25c0f",
+        "docs/doppler-verification-references.bib": "786e688e4570296e79aba0f175b36e47cad3d6a41985752d8a2e0f32bf970194",
+        "docs/simulation/doppler-verification-reference.json": "82fb3c258340e87d4050c91d90c04d19b2999f78321440724de77f8217e33652",
+        "scripts/validate_doppler_verification_simulation.py": "bcff32d88fdc9f955d88a56bb75b64c01b926f1103fc0f41cbfecbed9aaea17a",
+        "tests/doppler-verification-model.test.mjs": "38341b58690cc7505783e18db714ca91029bbd1b3aaa5da1f3f989980040d0b7"
+      },
+      "reference": "docs/simulation/doppler-verification-reference.json",
+      "reference_sha256": "82fb3c258340e87d4050c91d90c04d19b2999f78321440724de77f8217e33652",
+      "frontend_validation": "docs/simulation/doppler-verification-frontend.json",
+      "frontend_sha256": "cb2980b2a9f78346ef33a2d8b258681eff7106d192f720c9fdd9f089073ad736",
+      "actual_background_verification": {
+        "capture_method": "actual-browser-tab-switch",
+        "actual_document_hidden": true,
+        "pause_verified": true,
+        "checked_at_utc": "2026-10-16T17:06:43.815Z",
+        "source_hashes": {
+          "app.mjs": "40787712cd146c6a8412e2db62443c725f0e7458d98558cedf6e59d8b340c32e",
+          "model.mjs": "7cef71f0bc35dfd392e4de60b1ba0dc8e264dd4080343297d48adb54cd381342"
+        }
+      }
+    },
+    {
+      "experiment_id": "course-02/inertial-balance",
+      "title": "惯性秤的应用",
+      "slug": "inertial-balance",
+      "model_version": "1.0.0",
+      "status": "passed",
+      "evidence_status": "verified",
+      "frontend_status": "passed",
+      "checks": [
+        {
+          "name": "runtime_syntax",
+          "status": "passed",
+          "exit_code": 0
+        },
+        {
+          "name": "model_tests",
+          "status": "passed",
+          "exit_code": 0
+        },
+        {
+          "name": "independent_reference",
+          "status": "passed",
+          "exit_code": 0
+        }
+      ],
+      "source_hashes": {
+        "simulations/inertial-balance/index.html": "a3059598ae35fb15df4d98957d508549b45c55b38322067915bd6c5dffe0023a",
+        "simulations/inertial-balance/model.mjs": "a9cf6dffa08bab8f2e0fcf20a9b3b2fa68f070b5eb8893a82373e3f2ef6b072b",
+        "simulations/inertial-balance/app.mjs": "5ac405e97f015e83023290cd2d80bd8a3765a3f86ba5a8e0dc6955da9e826df9",
+        "simulations/inertial-balance/chart.mjs": "edb906f670c86c36474f145dd4e4040a1c5c1b0efe973662961cd42bc15fc50e",
+        "simulations/inertial-balance/lab.css": "cf56841e0acc54d25ded1a850c7b7d0930cf7406dd500934f04a8e68f11dd097",
+        "simulations/inertial-balance/observations.json": "c8a2aee59dce52447b3ee85225ff3781f4c0f575f3d5f93257e287140a4e6c41",
+        "docs/inertial-balance-model-evidence.md": "5adcae5a2fd34012e21a26155d5b7e9c799f09c1cd41e9de012cecfc99a4a060",
+        "docs/inertial-balance-references.json": "e06ed534c42028436215b1a8f6ef3624f7c02d7478e81e9a0f152f83d1c457b8",
+        "docs/inertial-balance-references.bib": "1f58814c56536edd984bcc95a8b8e73acbf1808f7ee00a22958a761a4d8abb04",
+        "docs/simulation/inertial-balance-reference.json": "67c95280f466d0b05d60224d168d603cbbb765292c0893b4e31cc2ab98d86d72",
+        "scripts/validate_inertial_balance_simulation.py": "124a57e37780737818ae78e5ab9a9edff28d47783e472cd6e2fe53b412952d53",
+        "tests/inertial-balance-model.test.mjs": "4c44063fbae884bab36f15242473f692a3c4709dd8d160d21f8bd24336171f0c"
+      },
+      "reference": "docs/simulation/inertial-balance-reference.json",
+      "reference_sha256": "67c95280f466d0b05d60224d168d603cbbb765292c0893b4e31cc2ab98d86d72",
+      "frontend_validation": "docs/simulation/inertial-balance-frontend.json",
+      "frontend_sha256": "3cd315ac817af52b7f32bf104e092a1f9665f0efb2c071bc2f26abb6b93ac311",
+      "actual_background_verification": {
+        "capture_method": "actual-browser-tab-switch",
+        "actual_document_hidden": true,
+        "pause_verified": true,
+        "checked_at_utc": "2026-10-16T17:06:42.248Z",
+        "source_hashes": {
+          "app.mjs": "5ac405e97f015e83023290cd2d80bd8a3765a3f86ba5a8e0dc6955da9e826df9",
+          "model.mjs": "a9cf6dffa08bab8f2e0fcf20a9b3b2fa68f070b5eb8893a82373e3f2ef6b072b"
+        }
+      }
+    },
+    {
+      "experiment_id": "course-04/thin-lens",
+      "title": "薄透镜焦距的测定",
+      "slug": "thin-lens",
+      "model_version": "1.0.0",
+      "status": "passed",
+      "evidence_status": "verified",
+      "frontend_status": "passed",
+      "checks": [
+        {
+          "name": "runtime_syntax",
+          "status": "passed",
+          "exit_code": 0
+        },
+        {
+          "name": "model_tests",
+          "status": "passed",
+          "exit_code": 0
+        },
+        {
+          "name": "independent_reference",
+          "status": "passed",
+          "exit_code": 0
+        }
+      ],
+      "source_hashes": {
+        "simulations/thin-lens/index.html": "36a41d151e8c69f2633179282b7cb0c7b1c899121eafa629d8002d465cd9a2ba",
+        "simulations/thin-lens/model.mjs": "13655a921f9ab0bdf801b28de35f097c2f4d83510f2a86f3fbb44d4aed344814",
+        "simulations/thin-lens/app.mjs": "6edefa8cc6bc8ff210f0349bb91700fd3304822d5b3f54c36ab857856d4c48ec",
+        "simulations/thin-lens/chart.mjs": "e579faefec314cbb328463457b8027c26d3c830da56a483a5d1dba3698e57201",
+        "simulations/thin-lens/lab.css": "48ed8ac294f6e59b5030b86bb1759771c9438cb2eef10227aa86f3e80cc2d07d",
+        "simulations/thin-lens/observations.json": "f0d6bf9a84a75aaadbcac2b0b68186ea84778520fe705dec836f01c118cb882e",
+        "docs/thin-lens-model-evidence.md": "760b24aee22c2c2731af64065a8a1309f86a8089d3f8cc6e74e01e3698f5d455",
+        "docs/thin-lens-references.json": "0ec521fc14a929bb79e4e0b0120039cb123530e1a5bebc18582d48c7f53bfaec",
+        "docs/thin-lens-references.bib": "7955d8c9bc8fec01421164b8ef9fe5d18ec40b9796808877c3a53632c28be34c",
+        "docs/simulation/thin-lens-reference.json": "8cbc1eef9545da7827d66842338feb9f175ebb2464aae22685cbf484e3c460e5",
+        "scripts/validate_thin_lens_simulation.py": "2ec971ca333287fc844ff23c3a2d80414231c970e42451f064a0cab1b1f59706",
+        "tests/thin-lens-model.test.mjs": "77c391e5f6841897880b74e1d761b9e08c78d4028f4d38949aec911d6c5272b7"
+      },
+      "reference": "docs/simulation/thin-lens-reference.json",
+      "reference_sha256": "8cbc1eef9545da7827d66842338feb9f175ebb2464aae22685cbf484e3c460e5",
+      "frontend_validation": "docs/simulation/thin-lens-frontend.json",
+      "frontend_sha256": "e0a32e5736d30fab511cb5d1cf09f0c9179113505217d41c74e02f8414cdc730"
+    },
+    {
+      "experiment_id": "course-04/single-slit-diffraction",
+      "title": "单缝衍射光强分布研究",
+      "slug": "single-slit-diffraction",
+      "model_version": "1.0.0",
+      "status": "passed",
+      "evidence_status": "verified",
+      "frontend_status": "passed",
+      "checks": [
+        {
+          "name": "runtime_syntax",
+          "status": "passed",
+          "exit_code": 0
+        },
+        {
+          "name": "model_tests",
+          "status": "passed",
+          "exit_code": 0
+        },
+        {
+          "name": "independent_reference",
+          "status": "passed",
+          "exit_code": 0
+        }
+      ],
+      "source_hashes": {
+        "simulations/single-slit-diffraction/index.html": "6de4752dbdff86923f656a2a9cbe7c4ab7c2fc5ff245b41c5b446d70146b6718",
+        "simulations/single-slit-diffraction/model.mjs": "792ee087eead4fc751640f2045be4ee029810d685d556c0e5802b31a8b7e5e86",
+        "simulations/single-slit-diffraction/app.mjs": "b9e28f388b81249a5957cda8524510799cbda9a95d831b4a14c069eb8252348a",
+        "simulations/single-slit-diffraction/chart.mjs": "3f923dc9a51225ff63c7e6379aab231e5586654f7e43d67fe11530e21f893f07",
+        "simulations/single-slit-diffraction/lab.css": "cb522360179f29fdbe39c933213bc377b0ab4c2b577adb5d498706173c40f321",
+        "simulations/single-slit-diffraction/observations.json": "773815a80d13c803abae6942257894e6cc8e884db627c1c971cb4e6a0992dbfd",
+        "docs/single-slit-diffraction-model-evidence.md": "3182e89e95d7f0a3153ada5c76378f847c1a9676646b4beb67708cb5169c4545",
+        "docs/single-slit-diffraction-references.json": "deb98ebed698c14e4666cc007728216ce0417968349ccd30a6e830cb88326aeb",
+        "docs/single-slit-diffraction-references.bib": "1673c9a54645062d5c79b4fcab006d3add9b859c1bc512664a358ebe3237d1f9",
+        "docs/simulation/single-slit-diffraction-reference.json": "938d24baaf094f649dcf0c111cea9ef3ab7d8ad04d678e3f6b53e4aa98c410b5",
+        "scripts/validate_single_slit_diffraction_simulation.py": "f3edfd242c5859df683600deb6890dc9bc26632d8f8d83a8fcf387f4286cd2eb",
+        "tests/single-slit-diffraction-model.test.mjs": "18718590d156164fae59370ae0db4ccb8c36fc01381309223f9f927c8638cbe3"
+      },
+      "reference": "docs/simulation/single-slit-diffraction-reference.json",
+      "reference_sha256": "938d24baaf094f649dcf0c111cea9ef3ab7d8ad04d678e3f6b53e4aa98c410b5",
+      "frontend_validation": "docs/simulation/single-slit-diffraction-frontend.json",
+      "frontend_sha256": "22fdba773c0c7967b08a3cf360c79fb5d36a4e71dfc1daf7e5f360357758c1c6"
+    },
+    {
+      "experiment_id": "course-04/polarization",
+      "title": "偏振光的观察与分析",
+      "slug": "polarization",
+      "model_version": "1.0.0",
+      "status": "passed",
+      "evidence_status": "verified",
+      "frontend_status": "passed",
+      "checks": [
+        {
+          "name": "runtime_syntax",
+          "status": "passed",
+          "exit_code": 0
+        },
+        {
+          "name": "model_tests",
+          "status": "passed",
+          "exit_code": 0
+        },
+        {
+          "name": "independent_reference",
+          "status": "passed",
+          "exit_code": 0
+        }
+      ],
+      "source_hashes": {
+        "simulations/polarization/index.html": "2b2869d6b90d30ef04f2239831d2275aa37d987049053927db6d17fe4eaf0125",
+        "simulations/polarization/model.mjs": "e0e0c9a71ea742242a3593c0403db9823e3026a35184a20cebde227012f31298",
+        "simulations/polarization/app.mjs": "6cf5c3419cee65ea185e36fdf8093b72c6f56ccd3ae6babcda6f91374ead0905",
+        "simulations/polarization/chart.mjs": "d8ede33d60f3aa0fc4b0fe4f52ee4151d369927b1abb08b44507cde65135d90f",
+        "simulations/polarization/lab.css": "44775a742344aa00b5998f2697a5cf4129789e42174cc33a3346d4cd646f5428",
+        "simulations/polarization/observations.json": "a9048b3d478f79d9161f7761dc93ebee1186e6707b39fe91ccb917a0c993c984",
+        "docs/polarization-model-evidence.md": "9ba3c15afbbd9b00b21c84f45c6dbe03ea88a3f2671ad747f12f94a4ac7c1920",
+        "docs/polarization-references.json": "25e0b77b66b3c8baa884f98b08a4cc8971baf6cb492b6fc911fb12318f506161",
+        "docs/polarization-references.bib": "3f9fb9312b26c5308b02bcaad9130ffd85f703310cfc8c1b9f5eb539059456ad",
+        "docs/simulation/polarization-reference.json": "dc6c0e54f537d477b73a33347f225be5421dc95314c8a766ed92526ebc226ccf",
+        "scripts/validate_polarization_simulation.py": "9e188c646d6da956e1931692de0788fbfb61558dfc966d51cbd94150e7cfcb34",
+        "tests/polarization-model.test.mjs": "a20dd48a01ae80331990336c0827db944a2e4bcd4de026d5b465ae699ebed68b"
+      },
+      "reference": "docs/simulation/polarization-reference.json",
+      "reference_sha256": "dc6c0e54f537d477b73a33347f225be5421dc95314c8a766ed92526ebc226ccf",
+      "frontend_validation": "docs/simulation/polarization-frontend.json",
+      "frontend_sha256": "19effc7da5adaa423c5a59c91af6d3fb73d155ef863a5f68f72c9b92a5678cee"
+    },
+    {
+      "experiment_id": "course-03/current-voltage-divider",
+      "title": "制流分压电路",
+      "slug": "current-voltage-divider",
+      "model_version": "1.0.0",
+      "status": "passed",
+      "evidence_status": "verified",
+      "frontend_status": "passed",
+      "checks": [
+        {
+          "name": "runtime_syntax",
+          "status": "passed",
+          "exit_code": 0
+        },
+        {
+          "name": "model_tests",
+          "status": "passed",
+          "exit_code": 0
+        },
+        {
+          "name": "independent_reference",
+          "status": "passed",
+          "exit_code": 0
+        }
+      ],
+      "source_hashes": {
+        "simulations/current-voltage-divider/index.html": "965f4f51afb541fc14721ebcf0e3d0f6c338c7d6240d723093d23ddfd7c53efd",
+        "simulations/current-voltage-divider/model.mjs": "4d01a6a2cdb39662a3213dac38c758e961f9bbdffc73e9a72a9d1d413189de2d",
+        "simulations/current-voltage-divider/app.mjs": "5c4b32f2b1c869b67f7fd0c343c536940a7388adbd3a2fdc512309f5109aa727",
+        "simulations/current-voltage-divider/chart.mjs": "7661b7bfc2fe4ac33d2ab50733687b64f47c7110505e27c14c80c42c38df82dd",
+        "simulations/current-voltage-divider/lab.css": "d007905ee689191cb3d99caebe74d1e5e924b6fd068c7a81d2417c75219b6169",
+        "simulations/current-voltage-divider/observations.json": "d3b46756a7985da13e5defe4df56f0f9aaa2d2537da0a06c7f3887cd8eee3e03",
+        "docs/current-voltage-divider-model-evidence.md": "c492b1ae52b47ad4bf0c5f1a0205da2a36ee121fbf47c372d24af49890e20fa7",
+        "docs/current-voltage-divider-references.json": "f7b307fb900244e666e8c53bf406845a94be668a977c9802d2aa2d263a32bc09",
+        "docs/current-voltage-divider-references.bib": "054615d2eac740faf2350548a50910887537fb54f5b97c17040c04b3a4c0cae8",
+        "docs/simulation/current-voltage-divider-reference.json": "1b407e55ca747910763ba98b589fcae44d5e19e786f60d8e7377bd7eb3b5ead4",
+        "simulations/current-voltage-divider/diagram.mjs": "9ab68efa69fb2ec8c76918176eba48407647c8056d2f57831ab013ef7acde09a",
+        "simulations/current-voltage-divider/ui-config.json": "9e5ce302a6d7a1e5f4e85738989a88003cb0680f2c26843a603dc4c5408bb4a7",
+        "scripts/validate_current_voltage_divider_simulation.py": "6ad793daa371ec6c7e6be0a9713b1c7dd077fabf86b8a51df549a49169871597",
+        "tests/current-voltage-divider-model.test.mjs": "c5df4f1c9815df0586cd9aed7bba746469dbca152d4852b9f56a7ca050bbd45d"
+      },
+      "reference": "docs/simulation/current-voltage-divider-reference.json",
+      "reference_sha256": "1b407e55ca747910763ba98b589fcae44d5e19e786f60d8e7377bd7eb3b5ead4",
+      "frontend_validation": "docs/simulation/current-voltage-divider-frontend.json",
+      "frontend_sha256": "940de351b18795fc75d2448e238e03267f9e21dc11119d6fedf7dd9e94e5cc7e"
+    },
+    {
+      "experiment_id": "course-03/resistor-iv",
+      "title": "电阻伏安特性的测定",
+      "slug": "resistor-iv",
+      "model_version": "1.0.0",
+      "status": "passed",
+      "evidence_status": "verified",
+      "frontend_status": "passed",
+      "checks": [
+        {
+          "name": "runtime_syntax",
+          "status": "passed",
+          "exit_code": 0
+        },
+        {
+          "name": "model_tests",
+          "status": "passed",
+          "exit_code": 0
+        },
+        {
+          "name": "independent_reference",
+          "status": "passed",
+          "exit_code": 0
+        }
+      ],
+      "source_hashes": {
+        "simulations/resistor-iv/index.html": "05ae2ca3b50e4b75873e57696766c23d6afacd988d0a62bd983d0fcb0fb1eae7",
+        "simulations/resistor-iv/model.mjs": "5fc0acf17358b9f629cf549acc1f484fcda4b03111eab6500a88aef58ab048ee",
+        "simulations/resistor-iv/app.mjs": "5c4b32f2b1c869b67f7fd0c343c536940a7388adbd3a2fdc512309f5109aa727",
+        "simulations/resistor-iv/chart.mjs": "7661b7bfc2fe4ac33d2ab50733687b64f47c7110505e27c14c80c42c38df82dd",
+        "simulations/resistor-iv/lab.css": "d007905ee689191cb3d99caebe74d1e5e924b6fd068c7a81d2417c75219b6169",
+        "simulations/resistor-iv/observations.json": "593f0990399a5a58ef67eeae63f6f2d6f6f9ce1f99d9f47c3d3723f30cabbd2d",
+        "docs/resistor-iv-model-evidence.md": "0ed588be3cdd3dab170383f838e071cd42656b43b7f073bdf443db544b800920",
+        "docs/resistor-iv-references.json": "24d62c230fe12e4f3cbe50e441f1548e905bd3c2d722c4ac465a69cfd92f26af",
+        "docs/resistor-iv-references.bib": "9bce22a567e382841150754fe3a57d88951de2d5b7a9c27771831a0a96320af8",
+        "docs/simulation/resistor-iv-reference.json": "fc0ac1c3335ade454333c2c6acc128f39d153f6eb57af2ecc42cc23ef4c74c0b",
+        "simulations/resistor-iv/diagram.mjs": "b3ff40b865451bf82be27d1be24802922600a4caa178a28151aa17bc4c098570",
+        "simulations/resistor-iv/ui-config.json": "d10c4474ad117c96375aa0b2712fe9f5595fdeba12fe80ddf25d5dedb8589b6f",
+        "scripts/validate_resistor_iv_simulation.py": "e6004e7de11c6187334c5235e1d6e5fe0e6025b0601baff5bf3b59921e430fa1",
+        "tests/resistor-iv-model.test.mjs": "41cfdbea754ad4645d3c190ca2d6438d37c3719c7808cca08732019b4164be77"
+      },
+      "reference": "docs/simulation/resistor-iv-reference.json",
+      "reference_sha256": "fc0ac1c3335ade454333c2c6acc128f39d153f6eb57af2ecc42cc23ef4c74c0b",
+      "frontend_validation": "docs/simulation/resistor-iv-frontend.json",
+      "frontend_sha256": "a985444454b58531d5ddc1ed0eaabbfb3a20c220a0163f6d7ea9d66e9f53b7be"
+    },
+    {
+      "experiment_id": "course-03/wheatstone-bridge",
+      "title": "单臂电桥测电阻",
+      "slug": "wheatstone-bridge",
+      "model_version": "1.0.0",
+      "status": "passed",
+      "evidence_status": "verified",
+      "frontend_status": "passed",
+      "checks": [
+        {
+          "name": "runtime_syntax",
+          "status": "passed",
+          "exit_code": 0
+        },
+        {
+          "name": "model_tests",
+          "status": "passed",
+          "exit_code": 0
+        },
+        {
+          "name": "independent_reference",
+          "status": "passed",
+          "exit_code": 0
+        }
+      ],
+      "source_hashes": {
+        "simulations/wheatstone-bridge/index.html": "616ae811ab025e2ccc9b950da9446e70f7b502a12436f5cf167937bf5d0416fa",
+        "simulations/wheatstone-bridge/model.mjs": "b5696b34a71627a1b27678ba79e89699d30f0364a5a31abd797a912894544dbb",
+        "simulations/wheatstone-bridge/app.mjs": "ad789f021fb8766918acf476eee23262ee89a0af7580acbc7a80221c461b4afa",
+        "simulations/wheatstone-bridge/chart.mjs": "7661b7bfc2fe4ac33d2ab50733687b64f47c7110505e27c14c80c42c38df82dd",
+        "simulations/wheatstone-bridge/lab.css": "d007905ee689191cb3d99caebe74d1e5e924b6fd068c7a81d2417c75219b6169",
+        "simulations/wheatstone-bridge/observations.json": "38fae7738ee2db78830b7c5f6b99abb5d6d1a9351ffe67d302cd43cf42e404b4",
+        "docs/wheatstone-bridge-model-evidence.md": "5ab73c59fbf97e701da69711a6131f2cdb9bfe1ceff3f4465ca27d29b4e5a542",
+        "docs/wheatstone-bridge-references.json": "7d7ec5939c1617db76768f23f5d175dac957adef2f5b050220ebe3f870e24bbe",
+        "docs/wheatstone-bridge-references.bib": "5945fe329b136772af1ba502ed453253125a36e2aa5f5c7da76a6e210ac052a1",
+        "docs/simulation/wheatstone-bridge-reference.json": "73c8376ffb39faf5c5fc8214f028a8a757f73a5b3dacd8387aba4144f3a57451",
+        "simulations/wheatstone-bridge/diagram.mjs": "5e71ba9c102e229339bdb858e52924b6927a83c25e04e9016fcf133388b5fa90",
+        "simulations/wheatstone-bridge/ui-config.json": "e151af16afee5b1b1e0910823557b895d0faf5b68322363daed7ee7d1db6a87c",
+        "scripts/validate_wheatstone_bridge_simulation.py": "f45385809bb21b6f34a8ab5b92abe9454b5afbdef83b901c51e15b9ec0370459",
+        "tests/wheatstone-bridge-model.test.mjs": "5366f9dccf4eefde0e25ac0b0c4e1f79967832be0ce884b3b19df4103068fe02"
+      },
+      "reference": "docs/simulation/wheatstone-bridge-reference.json",
+      "reference_sha256": "73c8376ffb39faf5c5fc8214f028a8a757f73a5b3dacd8387aba4144f3a57451",
+      "frontend_validation": "docs/simulation/wheatstone-bridge-frontend.json",
+      "frontend_sha256": "2ea3587a2b4f5c1c3391a253223d4945b14bdf0684ba9bdb7c64a971620be985"
+    },
+    {
+      "experiment_id": "course-03/ac-bridge",
+      "title": "交流电桥",
+      "slug": "ac-bridge",
+      "model_version": "1.0.0",
+      "status": "passed",
+      "evidence_status": "verified",
+      "frontend_status": "passed",
+      "checks": [
+        {
+          "name": "runtime_syntax",
+          "status": "passed",
+          "exit_code": 0
+        },
+        {
+          "name": "model_tests",
+          "status": "passed",
+          "exit_code": 0
+        },
+        {
+          "name": "independent_reference",
+          "status": "passed",
+          "exit_code": 0
+        }
+      ],
+      "source_hashes": {
+        "simulations/ac-bridge/index.html": "7d030a6bf1d49cf8db78f81e0bb38b0f4f5888d37816c89029180b087b71c27c",
+        "simulations/ac-bridge/model.mjs": "a4e3aeaca0ddc292dae3f7155f23bd61150a1d6020059feb9889ee8fde06a2c3",
+        "simulations/ac-bridge/app.mjs": "fc58c5a9e3648bcbf7896f7025281a623681df7f01bcb607ceca7701030f78b6",
+        "simulations/ac-bridge/chart.mjs": "7661b7bfc2fe4ac33d2ab50733687b64f47c7110505e27c14c80c42c38df82dd",
+        "simulations/ac-bridge/lab.css": "d007905ee689191cb3d99caebe74d1e5e924b6fd068c7a81d2417c75219b6169",
+        "simulations/ac-bridge/observations.json": "09f66ecd3b476bb9fb2d0d07667997e8e09857f8789ee54d63f388fee5a6f189",
+        "docs/ac-bridge-model-evidence.md": "98a7c188cfd227004b0b652289044c7161a29cce98ee888a7d71c4319c9fdd7e",
+        "docs/ac-bridge-references.json": "946f11660285a84a6eea75c5031f6dc90b6e243ee6859612231a1fc157ea2a70",
+        "docs/ac-bridge-references.bib": "6a98400211e2afced59db2ca1eda35c4290d1a8be58403b7297d312bcebbb503",
+        "docs/simulation/ac-bridge-reference.json": "be16da8997b97311b56c3704f280b34986f091fd911b1c98ff66142cfaaf8890",
+        "simulations/ac-bridge/diagram.mjs": "5fe1bc64e35481644953e48a0ad9c7d0bb9e4d09c894fd42575dbe4aac9fd784",
+        "simulations/ac-bridge/ui-config.json": "58288e1e417f0ecb7eca7d4e3e0da06332d207132d20cf7ab92309ac8846ff00",
+        "scripts/validate_ac_bridge_simulation.py": "6de9bad394738df660c35d1003be1caa684ecdb6cd18e8ebc08d7e590bc8c377",
+        "tests/ac-bridge-model.test.mjs": "1023b752aca2d92f6f3f0823faecc2876fab843877c5949b6b53451b59397362"
+      },
+      "reference": "docs/simulation/ac-bridge-reference.json",
+      "reference_sha256": "be16da8997b97311b56c3704f280b34986f091fd911b1c98ff66142cfaaf8890",
+      "frontend_validation": "docs/simulation/ac-bridge-frontend.json",
+      "frontend_sha256": "9b6af5d543bee2bd6258eecae3dc7a3b20429c2e41993578b738ccbc74d658b7"
+    },
+    {
+      "experiment_id": "course-03/oscilloscope",
+      "title": "示波器的调节与使用",
+      "slug": "oscilloscope",
+      "model_version": "1.0.0",
+      "status": "passed",
+      "evidence_status": "verified",
+      "frontend_status": "passed",
+      "checks": [
+        {
+          "name": "runtime_syntax",
+          "status": "passed",
+          "exit_code": 0
+        },
+        {
+          "name": "model_tests",
+          "status": "passed",
+          "exit_code": 0
+        },
+        {
+          "name": "independent_reference",
+          "status": "passed",
+          "exit_code": 0
+        }
+      ],
+      "source_hashes": {
+        "simulations/oscilloscope/index.html": "ee5037181e40681f996c51fe81cab46362af96379b4411465d5aa3999488fb51",
+        "simulations/oscilloscope/model.mjs": "ed81126d23fddc741fa8742c4f4700c01548f4b43b1ac6ea37243a3a457dc62c",
+        "simulations/oscilloscope/app.mjs": "5c4b32f2b1c869b67f7fd0c343c536940a7388adbd3a2fdc512309f5109aa727",
+        "simulations/oscilloscope/chart.mjs": "7661b7bfc2fe4ac33d2ab50733687b64f47c7110505e27c14c80c42c38df82dd",
+        "simulations/oscilloscope/lab.css": "d007905ee689191cb3d99caebe74d1e5e924b6fd068c7a81d2417c75219b6169",
+        "simulations/oscilloscope/observations.json": "9ee28eaafd7812e31d47d186efe884569f80797fb615be6d550d3a92ac337627",
+        "docs/oscilloscope-model-evidence.md": "e48c741f201adb98a27477fa9b4948749f3653cbb9cb17988538423b761128e0",
+        "docs/oscilloscope-references.json": "9100c82b4567a7c7ba7df68651e19bb9f6434cba8e8575c67ab4115c830639f2",
+        "docs/oscilloscope-references.bib": "8956b1f93aaaef3adafb0901c62ade908f428fe2b5748805213ae664b9145fbe",
+        "docs/simulation/oscilloscope-reference.json": "421e5658453d1ae854ff5b94a4d06bd16bd9fcb69f4473c9cfa3c97c58a9c73f",
+        "simulations/oscilloscope/diagram.mjs": "2bab84d0a687d90b1c5c8548a38bd89cb3be30d28de4e23dadf3b978dd0bf0ca",
+        "simulations/oscilloscope/ui-config.json": "87de3b78f7dd5da0b756ad535254c3223afbd62df7f3f173e76f56f1bdee90db",
+        "scripts/validate_oscilloscope_simulation.py": "badd3fe7de5bbcc4439b1aa8634ca627513c29aa7c7f1befe9682295bf2149b1",
+        "tests/oscilloscope-model.test.mjs": "6097a0bf21049f78a0ee8830be85ed8149b4511449dafc9d14aa64ca419eb0b2"
+      },
+      "reference": "docs/simulation/oscilloscope-reference.json",
+      "reference_sha256": "421e5658453d1ae854ff5b94a4d06bd16bd9fcb69f4473c9cfa3c97c58a9c73f",
+      "frontend_validation": "docs/simulation/oscilloscope-frontend.json",
+      "frontend_sha256": "4b0388702844cf3eeb58d0cd42fbb0969e6cebfeeabce4aa7e11000d9e3051d0"
+    },
+    {
+      "experiment_id": "course-03/multimeter",
+      "title": "万用电表的使用",
+      "slug": "multimeter",
+      "model_version": "1.0.0",
+      "status": "passed",
+      "evidence_status": "verified",
+      "frontend_status": "passed",
+      "checks": [
+        {
+          "name": "runtime_syntax",
+          "status": "passed",
+          "exit_code": 0
+        },
+        {
+          "name": "model_tests",
+          "status": "passed",
+          "exit_code": 0
+        },
+        {
+          "name": "independent_reference",
+          "status": "passed",
+          "exit_code": 0
+        }
+      ],
+      "source_hashes": {
+        "simulations/multimeter/index.html": "4dd09ae91ebba43cb4185e9afb907b7ca01909cb67bb6cd8817b9dc0195388f7",
+        "simulations/multimeter/model.mjs": "5d93851f71924577dc21fdf44e4838a8de67cabe162ad1a496d8477c563efbe8",
+        "simulations/multimeter/app.mjs": "5fac93eaaa8dd90b4517321d079ed3905b84b2136ac3a66b80790faefa1a59cf",
+        "simulations/multimeter/chart.mjs": "7661b7bfc2fe4ac33d2ab50733687b64f47c7110505e27c14c80c42c38df82dd",
+        "simulations/multimeter/lab.css": "d007905ee689191cb3d99caebe74d1e5e924b6fd068c7a81d2417c75219b6169",
+        "simulations/multimeter/observations.json": "3cff8526a3147ea6db318fcad2c2d001868b285a5fac056d08606a0a40c3e3b1",
+        "docs/multimeter-model-evidence.md": "6c67c8d252d29ad574c1900e03f4619afdbb14a9b19d7c2f1f146ef774629b82",
+        "docs/multimeter-references.json": "ebc1ed243bdc06ca0bcefd088a09a33bf46a58930541ec2bcdf6a5c40552472e",
+        "docs/multimeter-references.bib": "c8d945aa8589752043215068a6de6767628bd8e45932ed43ca32c2a6ea90f842",
+        "docs/simulation/multimeter-reference.json": "7e0b6a0f70ae49ba9e43e6333638d85ffb0493c7f2e05b0e1aa077078a544e84",
+        "simulations/multimeter/diagram.mjs": "e5dd8281803dd7209105a5b3ab973d1f071013bcdefe6692aecfd52bc8eecd49",
+        "simulations/multimeter/ui-config.json": "5ccf4d8b9b6996fc3d2b9728f0b965226bc9d7b2cec8a054cb23c1bed81687db",
+        "scripts/validate_multimeter_simulation.py": "5cc003a8a045ae1c2bd2c1e46679464397bb80372429e6210f8b010f455c5163",
+        "tests/multimeter-model.test.mjs": "83c3c1a67318ef29874a1a1757607b308539d0ace37648601429f8af418e295a"
+      },
+      "reference": "docs/simulation/multimeter-reference.json",
+      "reference_sha256": "7e0b6a0f70ae49ba9e43e6333638d85ffb0493c7f2e05b0e1aa077078a544e84",
+      "frontend_validation": "docs/simulation/multimeter-frontend.json",
+      "frontend_sha256": "9b64226adacee6ccafc95eee1a95c1c22fe44fb27c0507f1b40e2582bf5cd630"
+    },
+    {
+      "experiment_id": "course-03/meter-calibration",
+      "title": "电表的改装与校准",
+      "slug": "meter-calibration",
+      "model_version": "1.0.0",
+      "status": "passed",
+      "evidence_status": "verified",
+      "frontend_status": "passed",
+      "checks": [
+        {
+          "name": "runtime_syntax",
+          "status": "passed",
+          "exit_code": 0
+        },
+        {
+          "name": "model_tests",
+          "status": "passed",
+          "exit_code": 0
+        },
+        {
+          "name": "independent_reference",
+          "status": "passed",
+          "exit_code": 0
+        }
+      ],
+      "source_hashes": {
+        "simulations/meter-calibration/index.html": "bef7852e5be91a83d6b30b4c7273aa117427b40c7b088bda1c7c3eb2217fc37e",
+        "simulations/meter-calibration/model.mjs": "ca9032792fdb05596cf38fb41425eb2d68049810ff0c5942483025e285773ea0",
+        "simulations/meter-calibration/app.mjs": "5c4b32f2b1c869b67f7fd0c343c536940a7388adbd3a2fdc512309f5109aa727",
+        "simulations/meter-calibration/chart.mjs": "7661b7bfc2fe4ac33d2ab50733687b64f47c7110505e27c14c80c42c38df82dd",
+        "simulations/meter-calibration/lab.css": "d007905ee689191cb3d99caebe74d1e5e924b6fd068c7a81d2417c75219b6169",
+        "simulations/meter-calibration/observations.json": "f098c3cf7fd5a39c41b0ae32fa326c4f928dff7c12800f4e0c038b912dbe4b8a",
+        "docs/meter-calibration-model-evidence.md": "c36626e312719191016e5bc35b4b16ccd3a2ebb371b5e257c3d3690e1997203c",
+        "docs/meter-calibration-references.json": "3da9a3a6023d097da7c56545d5456df59a81c464fc4c7b39a0e288d68a32523a",
+        "docs/meter-calibration-references.bib": "c31cc87844421d805ed4fcbc3ce1aeb2535ca57bd93501c57849be8499ea2ccf",
+        "docs/simulation/meter-calibration-reference.json": "cd43cfa50d3d5c19777c9613486137283afdccc58fcb65b9fe8bdcd67d63df53",
+        "simulations/meter-calibration/diagram.mjs": "8689695e282fdde53954d11e106dad386686b2df310426c6942304fd2193a9d6",
+        "simulations/meter-calibration/ui-config.json": "d341060f1daa14083ea8e39a473e0c8bad9b50e05ca0f0aeba3936a1e3dccf3b",
+        "scripts/validate_meter_calibration_simulation.py": "c803ff884d4a200e1b0e447a55d12ba46023e48a8cd79a28a61cad31fccfbc01",
+        "tests/meter-calibration-model.test.mjs": "38e066af538c5cc178c439bbe31a9b32496983a8d7b226630fa2ad6b03fc2c03"
+      },
+      "reference": "docs/simulation/meter-calibration-reference.json",
+      "reference_sha256": "cd43cfa50d3d5c19777c9613486137283afdccc58fcb65b9fe8bdcd67d63df53",
+      "frontend_validation": "docs/simulation/meter-calibration-frontend.json",
+      "frontend_sha256": "893320c125e85afe18f52fa5eb539c15f2df2225581fccfaaccc8277d5a8e1c0"
+    },
+    {
+      "experiment_id": "course-03/kelvin-bridge",
+      "title": "用直流双臂电桥测低电阻",
+      "slug": "kelvin-bridge",
+      "model_version": "1.0.0",
+      "status": "passed",
+      "evidence_status": "verified",
+      "frontend_status": "passed",
+      "checks": [
+        {
+          "name": "runtime_syntax",
+          "status": "passed",
+          "exit_code": 0
+        },
+        {
+          "name": "model_tests",
+          "status": "passed",
+          "exit_code": 0
+        },
+        {
+          "name": "independent_reference",
+          "status": "passed",
+          "exit_code": 0
+        }
+      ],
+      "source_hashes": {
+        "simulations/kelvin-bridge/index.html": "ab3a9eb820f20dd673591f0b0491ab4ac8ebd32c74644d8bdb5c2bbb04d2bf14",
+        "simulations/kelvin-bridge/model.mjs": "9f9841a2ebbac9dfb8ab38fce8a6d563cdaab9c74bb153529a4a529b22b735f6",
+        "simulations/kelvin-bridge/app.mjs": "0f94176f051ec7c545ff17ae04e5e869266628e33e103f6ab30535b8c1c0c098",
+        "simulations/kelvin-bridge/chart.mjs": "7661b7bfc2fe4ac33d2ab50733687b64f47c7110505e27c14c80c42c38df82dd",
+        "simulations/kelvin-bridge/lab.css": "d007905ee689191cb3d99caebe74d1e5e924b6fd068c7a81d2417c75219b6169",
+        "simulations/kelvin-bridge/observations.json": "2ce74f4b689fd2600930a3457b272279b19b610393640fd5d7387dfc03abcd47",
+        "docs/kelvin-bridge-model-evidence.md": "9232a7a978add201aa84998c519164390fac402cf84d7caf6e83e335a75e54f2",
+        "docs/kelvin-bridge-references.json": "d345f26541abf98046400df1e90f4ed47b67ef5595ed4a142133d818be5917fd",
+        "docs/kelvin-bridge-references.bib": "5945fe329b136772af1ba502ed453253125a36e2aa5f5c7da76a6e210ac052a1",
+        "docs/simulation/kelvin-bridge-reference.json": "8412d84f4dd95638d23f63b280b6f22593c33f9b8dd36ca108c0c55d9fe6e947",
+        "simulations/kelvin-bridge/diagram.mjs": "bcf443792b4e879c069897cdf52998e1e0238ec956833a5fff5d357f939ca640",
+        "simulations/kelvin-bridge/ui-config.json": "ee53820428d5ceaa5b78589965c403529e7c7a2380855e661d323adcfa0564c9",
+        "scripts/validate_kelvin_bridge_simulation.py": "2551039c75d50097004904cc5f37fe6612c6ab63387c727b4b2d22c1993d3a2c",
+        "tests/kelvin-bridge-model.test.mjs": "c611304e91f557f4710d6df2ab405976900629eeb9454f3b8b5c8e29b183f54b"
+      },
+      "reference": "docs/simulation/kelvin-bridge-reference.json",
+      "reference_sha256": "8412d84f4dd95638d23f63b280b6f22593c33f9b8dd36ca108c0c55d9fe6e947",
+      "frontend_validation": "docs/simulation/kelvin-bridge-frontend.json",
+      "frontend_sha256": "eb8ed3731c57e5cca02a8953e26d856d5492f7f85908b531b62b8d74896778c2"
+    },
+    {
+      "experiment_id": "course-04/spectrometer",
+      "title": "分光计的调节与使用",
+      "slug": "spectrometer",
+      "model_version": "1.0.0",
+      "status": "passed",
+      "evidence_status": "verified",
+      "frontend_status": "passed",
+      "checks": [
+        {
+          "name": "runtime_syntax",
+          "status": "passed",
+          "exit_code": 0
+        },
+        {
+          "name": "model_tests",
+          "status": "passed",
+          "exit_code": 0
+        },
+        {
+          "name": "independent_reference",
+          "status": "passed",
+          "exit_code": 0
+        }
+      ],
+      "source_hashes": {
+        "simulations/spectrometer/index.html": "ac4e7f2daf168ea8061d59c504c16e3f2f5dfe85cb9efdd9b10004ed70bc5347",
+        "simulations/spectrometer/model.mjs": "139753e2f75fa828b83645aa60f9bdd92f477114cf45c0a61779f19c51ea33a8",
+        "simulations/spectrometer/app.mjs": "2ff14e45cbe7046be1389ecad9addd141693b7ebec5a66db76d67a3a6d0efc3e",
+        "simulations/spectrometer/chart.mjs": "3c7d1ee785ab0a9af179c711141fcdab2c271064d87b0cdf435515f5371adbc5",
+        "simulations/spectrometer/lab.css": "f09f3aa9916b0574f112d367ac0e713575f0e59ad9f239ee81e452953681e20c",
+        "simulations/spectrometer/observations.json": "b71fcc1e3d390b89afaa7563ec7ca66981114f650725c897336f76159f4955e6",
+        "docs/spectrometer-model-evidence.md": "7d8b45f2618ea5348de22c8b98f532c6f2611b228fad5214e6d9f3bdf6873ae9",
+        "docs/spectrometer-references.json": "7540c43e5ce58682b39700810f3f9ea0c241938d263949d09112d045780ef424",
+        "docs/spectrometer-references.bib": "78e68c9698ae68fb02d22a09ae598da3931e5824d51489023e3d5997a3270308",
+        "docs/simulation/spectrometer-reference.json": "a39cf92ac653cc7907f3c5cd81c130982eb00ae04e33ec6dd0c277692dccda64",
+        "simulations/spectrometer/angles.mjs": "b25e2fa4341846209d68acaed83cf06b40c0b3902af9fbdaa94d8cdbb92796eb",
+        "scripts/validate_spectrometer_simulation.py": "783d5dcdfeef1ac4ecf318c1f042900d3a60ae42e56d149a0828c34949d18529",
+        "tests/spectrometer-model.test.mjs": "e658b2990106627ab4c04c2d2d28ce949674c5d257fc29c0e18c03ec43b59317"
+      },
+      "reference": "docs/simulation/spectrometer-reference.json",
+      "reference_sha256": "a39cf92ac653cc7907f3c5cd81c130982eb00ae04e33ec6dd0c277692dccda64",
+      "frontend_validation": "docs/simulation/spectrometer-frontend.json",
+      "frontend_sha256": "47e816df44eb86f3168fe78d5cc6cf7167f6d3b72559cfc89b7906e967faf3a0"
+    },
+    {
+      "experiment_id": "course-04/prism-apex",
+      "title": "用分光计测三棱镜的顶角",
+      "slug": "prism-apex",
+      "model_version": "1.0.0",
+      "status": "passed",
+      "evidence_status": "verified",
+      "frontend_status": "passed",
+      "checks": [
+        {
+          "name": "runtime_syntax",
+          "status": "passed",
+          "exit_code": 0
+        },
+        {
+          "name": "model_tests",
+          "status": "passed",
+          "exit_code": 0
+        },
+        {
+          "name": "independent_reference",
+          "status": "passed",
+          "exit_code": 0
+        }
+      ],
+      "source_hashes": {
+        "simulations/prism-apex/index.html": "f890dc2724d897f0de1ad728c0d93f6c12513efbe9ac5a1773bef559b7713e51",
+        "simulations/prism-apex/model.mjs": "352b74e91b7aee7996355f22806249bb9040c010ebf305881cc7d4b994bb7df1",
+        "simulations/prism-apex/app.mjs": "ca0545855a658438a65a123c5920ebe746e9a1144d21fb151ab64ba8dd2ea7ca",
+        "simulations/prism-apex/chart.mjs": "2cf283ea545418aed75f6175e6feb7c82983f7ed523e6b0ffb0e0723fcf1b5d7",
+        "simulations/prism-apex/lab.css": "f09f3aa9916b0574f112d367ac0e713575f0e59ad9f239ee81e452953681e20c",
+        "simulations/prism-apex/observations.json": "aae96c31e86190407abd4e66cf52979285f835a71ad2ab0b5ea06167fcfa5a95",
+        "docs/prism-apex-model-evidence.md": "a3a34251c74e85059bfb9ca99d652079b1779c98da0eddb4c41ef94196a640f9",
+        "docs/prism-apex-references.json": "8f3c410c88a2a0828937e4ba6c31add78b0003ca8f410413eef020c99642625c",
+        "docs/prism-apex-references.bib": "78e68c9698ae68fb02d22a09ae598da3931e5824d51489023e3d5997a3270308",
+        "docs/simulation/prism-apex-reference.json": "f4b7f638a32e8268016f317074d6017505390bc054046ddf52cdec7c73669ae6",
+        "simulations/prism-apex/angles.mjs": "b25e2fa4341846209d68acaed83cf06b40c0b3902af9fbdaa94d8cdbb92796eb",
+        "scripts/validate_prism_apex_simulation.py": "ff90ca0e9aed8572e32b5ff3db81d604217a53a5b9ff18f2d54bbd36bc9458f8",
+        "tests/prism-apex-model.test.mjs": "619f4bcbd2fcb64cf4c551b841ad4ee8554dbb2409bec4b7f6253c20e12bfd1a"
+      },
+      "reference": "docs/simulation/prism-apex-reference.json",
+      "reference_sha256": "f4b7f638a32e8268016f317074d6017505390bc054046ddf52cdec7c73669ae6",
+      "frontend_validation": "docs/simulation/prism-apex-frontend.json",
+      "frontend_sha256": "c13d8012ea43050859f66ab336a60e2dd1f8bc33bfdc15222265612cd4d74612"
+    },
+    {
+      "experiment_id": "course-04/prism-refractive-index",
+      "title": "三棱镜折射率的测定",
+      "slug": "prism-refractive-index",
+      "model_version": "1.0.0",
+      "status": "passed",
+      "evidence_status": "verified",
+      "frontend_status": "passed",
+      "checks": [
+        {
+          "name": "runtime_syntax",
+          "status": "passed",
+          "exit_code": 0
+        },
+        {
+          "name": "model_tests",
+          "status": "passed",
+          "exit_code": 0
+        },
+        {
+          "name": "independent_reference",
+          "status": "passed",
+          "exit_code": 0
+        }
+      ],
+      "source_hashes": {
+        "simulations/prism-refractive-index/index.html": "1f0246ebe405408416f47d946efa31b27c626ab31ca85f2cdf50db071b31c98e",
+        "simulations/prism-refractive-index/model.mjs": "6d816752f0bef9b74f47be30cabac8d95c41d837bedd536ee09cef457065c0e2",
+        "simulations/prism-refractive-index/app.mjs": "563cb13387ba4ad884fdb77ed731e86e33a08c262a7743325a70118b2bbe1817",
+        "simulations/prism-refractive-index/chart.mjs": "2cf283ea545418aed75f6175e6feb7c82983f7ed523e6b0ffb0e0723fcf1b5d7",
+        "simulations/prism-refractive-index/lab.css": "f09f3aa9916b0574f112d367ac0e713575f0e59ad9f239ee81e452953681e20c",
+        "simulations/prism-refractive-index/observations.json": "d6d6c8b41af519a665eec21ea98b42bbc7e6554ff4251025929489490eb3b98e",
+        "docs/prism-refractive-index-model-evidence.md": "73943403e9247d8fa7917aed703be7ee08afd265919ab0ef5d52d3d231c48746",
+        "docs/prism-refractive-index-references.json": "2d8f6271ce11f8f99003735025c7a08ea4bad526ee348e164166392d548995a3",
+        "docs/prism-refractive-index-references.bib": "2d716d8b38a5883f6bee3ea6205b26fc2cb047326d3bca882bd2a0906a45e81f",
+        "docs/simulation/prism-refractive-index-reference.json": "af14c449eee657a6ff2ac4ee2fd78d2ebc969809e821ca5fc8e342024f20c4e5",
+        "simulations/prism-refractive-index/angles.mjs": "b25e2fa4341846209d68acaed83cf06b40c0b3902af9fbdaa94d8cdbb92796eb",
+        "scripts/validate_prism_refractive_index_simulation.py": "4fff81f7957870bceee7d6a9ce1e20ee83bd49faaa8a045bffe267a618f99203",
+        "tests/prism-refractive-index-model.test.mjs": "38d689f1b5bcd788ca8fd972b9c9bd2173cd0eb37e6ac819bbd535f8ba52bc7e"
+      },
+      "reference": "docs/simulation/prism-refractive-index-reference.json",
+      "reference_sha256": "af14c449eee657a6ff2ac4ee2fd78d2ebc969809e821ca5fc8e342024f20c4e5",
+      "frontend_validation": "docs/simulation/prism-refractive-index-frontend.json",
+      "frontend_sha256": "0306bde8048ebb3ca1eacced8cfb446bed5238766386433f083772d80f201c85"
+    },
+    {
+      "experiment_id": "course-04/grazing-refraction",
+      "title": "用掠射法测定透明介质的折射率",
+      "slug": "grazing-refraction",
+      "model_version": "1.0.0",
+      "status": "passed",
+      "evidence_status": "verified",
+      "frontend_status": "passed",
+      "checks": [
+        {
+          "name": "runtime_syntax",
+          "status": "passed",
+          "exit_code": 0
+        },
+        {
+          "name": "model_tests",
+          "status": "passed",
+          "exit_code": 0
+        },
+        {
+          "name": "independent_reference",
+          "status": "passed",
+          "exit_code": 0
+        }
+      ],
+      "source_hashes": {
+        "simulations/grazing-refraction/index.html": "fc6637106a5ea2741f0e6332bec114efc333a3608cdb1060aa3011e9492cb78e",
+        "simulations/grazing-refraction/model.mjs": "91612d2b5da3404b04fb142cccc2c952f935c1aac8a55c65ae317e7babb820d2",
+        "simulations/grazing-refraction/app.mjs": "47ea61fd5a04cfeff004685b6d678fc73fe9be54cd66f967b0234450cd6daf94",
+        "simulations/grazing-refraction/chart.mjs": "2cf283ea545418aed75f6175e6feb7c82983f7ed523e6b0ffb0e0723fcf1b5d7",
+        "simulations/grazing-refraction/lab.css": "f09f3aa9916b0574f112d367ac0e713575f0e59ad9f239ee81e452953681e20c",
+        "simulations/grazing-refraction/observations.json": "4a2089c696bd737f929405c83cea4063146ef7aa15cedafc239bc89da332b597",
+        "docs/grazing-refraction-model-evidence.md": "04f98fc3b214c7e4f8cebaca520e2e1862c40b4ccfcecde4f7cc1a9b44b474c6",
+        "docs/grazing-refraction-references.json": "19dbfb8c7f533fc38065bef07ace8b12780efbafa471327cb495658ddfc508f1",
+        "docs/grazing-refraction-references.bib": "e4fee46b6d69ee09e884a12e21ae59cdbae644c1079a2511f9992577a56f5dc1",
+        "docs/simulation/grazing-refraction-reference.json": "b1f894909c2b38435e101119d277a8bf86c259803eaf4e63bb49d5c774e96cf3",
+        "simulations/grazing-refraction/angles.mjs": "b25e2fa4341846209d68acaed83cf06b40c0b3902af9fbdaa94d8cdbb92796eb",
+        "scripts/validate_grazing_refraction_simulation.py": "2e454e28103441306bbbc2dc65757b88be5119f1f10cc1d8a91a90ac648efce1",
+        "tests/grazing-refraction-model.test.mjs": "f913c616a45cee870f1c5445ced8d9a09bb6e3c02db2f58eea19669428b46621"
+      },
+      "reference": "docs/simulation/grazing-refraction-reference.json",
+      "reference_sha256": "b1f894909c2b38435e101119d277a8bf86c259803eaf4e63bb49d5c774e96cf3",
+      "frontend_validation": "docs/simulation/grazing-refraction-frontend.json",
+      "frontend_sha256": "2459fa43571bdb1fd5465fae2a68a2b227d29a90ee9a179c90dd9578ca87657b"
+    },
+    {
+      "experiment_id": "course-04/transmission-grating",
+      "title": "用透射光栅测定光波波长",
+      "slug": "transmission-grating",
+      "model_version": "1.0.0",
+      "status": "passed",
+      "evidence_status": "verified",
+      "frontend_status": "passed",
+      "checks": [
+        {
+          "name": "runtime_syntax",
+          "status": "passed",
+          "exit_code": 0
+        },
+        {
+          "name": "model_tests",
+          "status": "passed",
+          "exit_code": 0
+        },
+        {
+          "name": "independent_reference",
+          "status": "passed",
+          "exit_code": 0
+        }
+      ],
+      "source_hashes": {
+        "simulations/transmission-grating/index.html": "8f041680088eb30ea392c8c287401ef1d9048a28537bc9db0450444c198d21ce",
+        "simulations/transmission-grating/model.mjs": "5720e861b60fddbf6a9add47cf3f93e327824db4d82a267cbbdf7869288a0127",
+        "simulations/transmission-grating/app.mjs": "f90fe87d588a225dc626363cce375211f63a0b59b4c40e108a8c088ce594447b",
+        "simulations/transmission-grating/chart.mjs": "53dc5dccd61884835f77d055b64435aaaa7c7e27b41033f59d2b7153f38f9afd",
+        "simulations/transmission-grating/lab.css": "6752aacc953e020b61d8d1ebfa1e1f88044684c18da66bdf2083ad2ad2a74e19",
+        "simulations/transmission-grating/observations.json": "ddf823c893831ef6e925c4954be490c962a9faed728ac5fc34aefe653ac89c70",
+        "docs/transmission-grating-model-evidence.md": "4d8186bd21f13434d0aad7312717587af257c247c284328e499d37b08570c82a",
+        "docs/transmission-grating-references.json": "2afe8ceccf169c1f3e6298b9d855370067e3ce439c273a3575017f1a7f79d155",
+        "docs/transmission-grating-references.bib": "0d202beafc5c1ece08e9f7582abc483bf0772e427f128eb9ef4beb6faa15b74e",
+        "docs/simulation/transmission-grating-reference.json": "4e473e2d15199ecbe9f900762b8fd033d9880a7a2f21b28c2ce5331bda8ab65f",
+        "simulations/transmission-grating/angles.mjs": "b25e2fa4341846209d68acaed83cf06b40c0b3902af9fbdaa94d8cdbb92796eb",
+        "scripts/validate_transmission_grating_simulation.py": "39b4a2e723271310367e1aa8be931596beb05386ad85005ba6323543ceefd015",
+        "tests/transmission-grating-model.test.mjs": "7b75e2af8eb9ac069598675d06f85d0715ecc6490a89fc22a8e16146e6c2755c"
+      },
+      "reference": "docs/simulation/transmission-grating-reference.json",
+      "reference_sha256": "4e473e2d15199ecbe9f900762b8fd033d9880a7a2f21b28c2ce5331bda8ab65f",
+      "frontend_validation": "docs/simulation/transmission-grating-frontend.json",
+      "frontend_sha256": "93b7f987719e632dd982aa4305a35fbb2179d3ca0d34cf9efae155994378fd8e"
+    },
+    {
+      "experiment_id": "course-04/optical-magnification",
+      "title": "用光学仪器测量放大率和微小长度",
+      "slug": "optical-magnification",
+      "model_version": "1.0.0",
+      "status": "passed",
+      "evidence_status": "verified",
+      "frontend_status": "passed",
+      "checks": [
+        {
+          "name": "runtime_syntax",
+          "status": "passed",
+          "exit_code": 0
+        },
+        {
+          "name": "model_tests",
+          "status": "passed",
+          "exit_code": 0
+        },
+        {
+          "name": "independent_reference",
+          "status": "passed",
+          "exit_code": 0
+        }
+      ],
+      "source_hashes": {
+        "simulations/optical-magnification/index.html": "3ac4b5280a5b7fd3f8d8b8bd8f84328aac3e2848a9d270a393fb68914e93dcc1",
+        "simulations/optical-magnification/model.mjs": "243764caac58dd1e774fe6c029e93391a1b5be53f1b58eb5b547f666fd860f33",
+        "simulations/optical-magnification/app.mjs": "b9a61f50ef90a77112f8b876b3e4eb684e8f9363e870903a86ec59f477156d18",
+        "simulations/optical-magnification/chart.mjs": "9136d2179a339c4d0f9a128f4fcb16d012516b580c7f03e857a628a542ef4ae6",
+        "simulations/optical-magnification/lab.css": "7b715f3e4500a5604b1661170877b50fab8b8ecefa55d9dbccae57ebe7284726",
+        "simulations/optical-magnification/observations.json": "784df51887f92e367d430c6b0f71d0633767ef8053828f49bd7197e58c250bfd",
+        "docs/optical-magnification-model-evidence.md": "b31bfc9d69e93837863d7cdd6d816234b13708a9ff082b511a81432131ac0948",
+        "docs/optical-magnification-references.json": "f310b56ba0e218a055a72964d5b7f45385313ad7f860c17645a0c5bf6d598219",
+        "docs/optical-magnification-references.bib": "b58f19baec70afaa0a0daf08ebf00a3ae9fd6da1d2b3dca85d7f9350c9cb8bf4",
+        "docs/simulation/optical-magnification-reference.json": "3f25d9bc98d5e132abee527973f9e35b47322b45656aff2ca0f3efa12f8b7242",
+        "scripts/validate_optical_magnification_simulation.py": "65a665fde481e57eff6df829b6da59e8e5bdff5861c4f98a350db23ecfcaae28",
+        "tests/optical-magnification-model.test.mjs": "5c12f3b1e10e0a7f74de1733ce0ff1633834f0d449a396cafe54c205d44685fe"
+      },
+      "reference": "docs/simulation/optical-magnification-reference.json",
+      "reference_sha256": "3f25d9bc98d5e132abee527973f9e35b47322b45656aff2ca0f3efa12f8b7242",
+      "frontend_validation": "docs/simulation/optical-magnification-frontend.json",
+      "frontend_sha256": "4703200ed6a7e1b0977d104e586f74d0d28cc56da1919a23d843ec797abe1242"
+    },
+    {
+      "experiment_id": "course-04/optical-rotation",
+      "title": "用旋光仪测定旋光性溶液的旋光率和浓度",
+      "slug": "optical-rotation",
+      "model_version": "1.0.0",
+      "status": "passed",
+      "evidence_status": "verified",
+      "frontend_status": "passed",
+      "checks": [
+        {
+          "name": "runtime_syntax",
+          "status": "passed",
+          "exit_code": 0
+        },
+        {
+          "name": "model_tests",
+          "status": "passed",
+          "exit_code": 0
+        },
+        {
+          "name": "independent_reference",
+          "status": "passed",
+          "exit_code": 0
+        }
+      ],
+      "source_hashes": {
+        "simulations/optical-rotation/index.html": "d5d2ddb1e7fa6b5b742026f21638a52ddbee1fd95d1863cf264590784d5dab2a",
+        "simulations/optical-rotation/model.mjs": "cbbeabbf083e5c01ffa33f3670767fda882f07ac8bc71752606747da9bb37ae1",
+        "simulations/optical-rotation/app.mjs": "a9bd8c76e1c38f2fcc08a5d9b2451da4ede66e9a59c8023fb5cfb12e51563232",
+        "simulations/optical-rotation/chart.mjs": "4b6b62b126df5dc0c9f0f1de88c252a3eaf606fd73f84f81c2a6ef98e3227a1a",
+        "simulations/optical-rotation/lab.css": "d49a0441c85d1c723605c901a2a6e8a38d85bfac1ff3d70ca145783c1a603e30",
+        "simulations/optical-rotation/observations.json": "dc43bc38027b33b4c6035cd72042ff7c299e6e71143ef8263a0146ffc417fded",
+        "docs/optical-rotation-model-evidence.md": "46e5effdb06e3797eac3a749e2dd3e26f0338b0a0ea3ee72bbb025834f3a30b2",
+        "docs/optical-rotation-references.json": "2e7b01c6f0dd60f3cab623323e1ff507d7d0553443b64a92024b671dc5196085",
+        "docs/optical-rotation-references.bib": "ebc9a260de361d888dadf8a150d1aabc6a6c5750721c17a6b92532bc6615f958",
+        "docs/simulation/optical-rotation-reference.json": "71b5510a9d9606b26b2cce82e59d9f50be910bfd3664cfbe1f1da76325769cc1",
+        "scripts/validate_optical_rotation_simulation.py": "f0d5521efa531fdfb8f3bc9b9ba696e7eb96e156010b9658709f46c78c7921a4",
+        "tests/optical-rotation-model.test.mjs": "41e8dc94c5faa1ae7512870e9f3a5c0f435e95e36a67bb5bdb046d15513e43f4"
+      },
+      "reference": "docs/simulation/optical-rotation-reference.json",
+      "reference_sha256": "71b5510a9d9606b26b2cce82e59d9f50be910bfd3664cfbe1f1da76325769cc1",
+      "frontend_validation": "docs/simulation/optical-rotation-frontend.json",
+      "frontend_sha256": "9589d401c3771d7ba1f1c728e6f2043ddafd6621f0cfad59e04fd5ae45bfb218"
+    },
+    {
+      "experiment_id": "course-04/michelson-interferometer",
+      "title": "迈克尔逊干涉仪的调节和使用",
+      "slug": "michelson-interferometer",
+      "model_version": "1.0.0",
+      "status": "passed",
+      "evidence_status": "verified",
+      "frontend_status": "passed",
+      "checks": [
+        {
+          "name": "runtime_syntax",
+          "status": "passed",
+          "exit_code": 0
+        },
+        {
+          "name": "model_tests",
+          "status": "passed",
+          "exit_code": 0
+        },
+        {
+          "name": "independent_reference",
+          "status": "passed",
+          "exit_code": 0
+        }
+      ],
+      "source_hashes": {
+        "simulations/michelson-interferometer/index.html": "5c9140e9bf97f8b918eac7b3305dd4af70927476b3333f2976b67d9048ebe79e",
+        "simulations/michelson-interferometer/model.mjs": "431b17991ce7f2324c4d3535311dd55b54110a59ffca4c648146e592745a2eee",
+        "simulations/michelson-interferometer/app.mjs": "9ab967160ebd5abe875790439f99d0dfbc4cd9265697bab126de851928d60694",
+        "simulations/michelson-interferometer/chart.mjs": "749c2ac73739c15955a77acfea0d24a5358ce3a607c165eeaf525cc23d24dfc6",
+        "simulations/michelson-interferometer/lab.css": "563b5c59678bccbd142ae8ed2702da7e32a2a80acf5806434cf7cecc2d0b8927",
+        "simulations/michelson-interferometer/observations.json": "f710ad2baf55913bf490c41c02c6c72d3383e02eddce58c8b21204629568f25f",
+        "docs/michelson-interferometer-model-evidence.md": "086686183ed73b4bf10e674b861dace617b478bb29d8c7df1eeba7fab607d617",
+        "docs/michelson-interferometer-references.json": "06d591797f083b7a35853a6c3f1dd5001cb97bdb57c9335ebf56a0d71edc1ffc",
+        "docs/michelson-interferometer-references.bib": "4c27668646b851fb7a7ff428cfbdafdef63657afca18d056198ad55f5235767b",
+        "docs/simulation/michelson-interferometer-reference.json": "788e4ba9694b1a9da68d649c021f1b8a3ef13c892b2f64eb888436739851c1bf",
+        "scripts/validate_michelson_interferometer_simulation.py": "9647f78a4639f9c4cbd5e9aa0de6a17a1b20d6c2f031042c767806f50ae3a469",
+        "tests/michelson-interferometer-model.test.mjs": "57e650432363ec9ecc75d77a80dcfb8da21704a26af269157dc59d0bc3f30c99"
+      },
+      "reference": "docs/simulation/michelson-interferometer-reference.json",
+      "reference_sha256": "788e4ba9694b1a9da68d649c021f1b8a3ef13c892b2f64eb888436739851c1bf",
+      "frontend_validation": "docs/simulation/michelson-interferometer-frontend.json",
+      "frontend_sha256": "bcc120b89c70efa484ebd08bf1d61f9f6fe60ddfe9160a915f185d1f74efa85d"
+    },
+    {
+      "experiment_id": "course-01/doppler-application",
+      "title": "多普勒效应的应用",
+      "slug": "doppler-application",
+      "model_version": "1.0.0",
+      "status": "passed",
+      "evidence_status": "verified",
+      "frontend_status": "passed",
+      "checks": [
+        {
+          "name": "runtime_syntax",
+          "status": "passed",
+          "exit_code": 0
+        },
+        {
+          "name": "model_tests",
+          "status": "passed",
+          "exit_code": 0
+        },
+        {
+          "name": "independent_reference",
+          "status": "passed",
+          "exit_code": 0
+        }
+      ],
+      "source_hashes": {
+        "simulations/doppler-application/index.html": "14aee1181db26157e0a317aba660224958c0f9a5712f7a106124db2ed94584a1",
+        "simulations/doppler-application/model.mjs": "61df11205a04373f4ee9d64b89c9be45af382c42e75dd30b475dc212409403e6",
+        "simulations/doppler-application/app.mjs": "571313b99530a4c5ba84b8378b15cf3017e15f51a33b1d10b0e9f32bb5aa0e02",
+        "simulations/doppler-application/chart.mjs": "d9de3df2659ebe798d162b1aaaa42686654346c822e72edf9c1a515302532942",
+        "simulations/doppler-application/lab.css": "ae5bb75f91e0dae6ea97aea7324ddde9936b991be8b8bd236d495b4f9303a66e",
+        "simulations/doppler-application/observations.json": "fb95af9a68ca9dfb6090e68462735eeedb0ffe782f6b30e7a266da8a44fe78a5",
+        "docs/doppler-application-model-evidence.md": "fc453b06cd3c76f994df85ae00abad7061769f12026d92a4caf2147857d9318c",
+        "docs/doppler-application-references.json": "d8334a86ff7e44e862381f95df3bac1517b33811af19d585f68fe79a1deecd12",
+        "docs/doppler-application-references.bib": "213a3426fe44a444dde9ce121de6ad70723c69fb25c1a2c703e238abc8cae10e",
+        "docs/simulation/doppler-application-reference.json": "c911b0e23f39e7c3f99bbc46aacb2f34a651f237d2fc13fbd81ef580202a94db",
+        "scripts/validate_doppler_application_simulation.py": "27749aacb16455bac7ba49a0666d5bda6ce51cf457318b6fc6123a79c471814a",
+        "tests/doppler-application-model.test.mjs": "1ed0c512c14ad4d0af87ab43b860e787ced0cf6c5e60dccc3ddcf7503410b0e9"
+      },
+      "reference": "docs/simulation/doppler-application-reference.json",
+      "reference_sha256": "c911b0e23f39e7c3f99bbc46aacb2f34a651f237d2fc13fbd81ef580202a94db",
+      "frontend_validation": "docs/simulation/doppler-application-frontend.json",
+      "frontend_sha256": "3bf0f6ec08a58a113f5eda267f20683461aa4a943a3bb224a930a48898579e45",
+      "actual_background_verification": {
+        "capture_method": "actual-browser-tab-switch",
+        "actual_document_hidden": true,
+        "pause_verified": true,
+        "checked_at_utc": "2026-10-16T17:08:55.138Z",
+        "source_hashes": {
+          "app.mjs": "571313b99530a4c5ba84b8378b15cf3017e15f51a33b1d10b0e9f32bb5aa0e02",
+          "model.mjs": "61df11205a04373f4ee9d64b89c9be45af382c42e75dd30b475dc212409403e6"
+        }
+      }
+    },
+    {
+      "experiment_id": "course-02/sound-speed",
+      "title": "声速的测量",
+      "slug": "sound-speed",
+      "model_version": "1.0.0",
+      "status": "passed",
+      "evidence_status": "verified",
+      "frontend_status": "passed",
+      "checks": [
+        {
+          "name": "runtime_syntax",
+          "status": "passed",
+          "exit_code": 0
+        },
+        {
+          "name": "model_tests",
+          "status": "passed",
+          "exit_code": 0
+        },
+        {
+          "name": "independent_reference",
+          "status": "passed",
+          "exit_code": 0
+        }
+      ],
+      "source_hashes": {
+        "simulations/sound-speed/index.html": "54858d77a0b7c8b2e6204b7a50b15afac3c5629f3a21045b18253ad079b188ad",
+        "simulations/sound-speed/model.mjs": "f993f74b0f149a43088fb08f99771ac50333545b36a436fcc4292e1a49d90944",
+        "simulations/sound-speed/app.mjs": "e597e76fbb24289ad84137e15afdd73e6431e31ffab70a28478e15ee0db2802a",
+        "simulations/sound-speed/chart.mjs": "d9de3df2659ebe798d162b1aaaa42686654346c822e72edf9c1a515302532942",
+        "simulations/sound-speed/lab.css": "43caec74c3dc9ff7972cd6b1e0868ce9931878c41627c0337cbd04512b771b21",
+        "simulations/sound-speed/observations.json": "3119d080025a9ba6df0de3d3c5fd4df7bd07f842b90f10744c66bda0f1388ddd",
+        "docs/sound-speed-model-evidence.md": "f055fcc2211d1bb9d5f4c80a5ea282412bc2eab16619c612b1fda5aa9e49b028",
+        "docs/sound-speed-references.json": "4f6ebedf38517e3ba38d66d2d887c4c02c02068d51ef7083886638216f5788df",
+        "docs/sound-speed-references.bib": "f59b7bf24f9d00995cda224cbcac653e54d42213a4229b4239fc718db0e97e33",
+        "docs/simulation/sound-speed-reference.json": "61e145ce2a2fbf6c1bad5a4467d21664ea608cda5516d04c59f346382abebcf7",
+        "scripts/validate_sound_speed_simulation.py": "11d648d71a792c916768b914584fe6c77f6aced2d2880bca21d22a6ed5f27949",
+        "tests/sound-speed-model.test.mjs": "b0d9966d01e32c30d4526199267a6840f8afb884b8c29c3c9fb7f235508cbab7"
+      },
+      "reference": "docs/simulation/sound-speed-reference.json",
+      "reference_sha256": "61e145ce2a2fbf6c1bad5a4467d21664ea608cda5516d04c59f346382abebcf7",
+      "frontend_validation": "docs/simulation/sound-speed-frontend.json",
+      "frontend_sha256": "3c4890ad928607f7a10e7cd24b2684a546f7eb2919f8dbfdde475defc8180700"
+    },
+    {
+      "experiment_id": "course-02/moment-of-inertia",
+      "title": "刚体转动惯量",
+      "slug": "moment-of-inertia",
+      "model_version": "1.0.0",
+      "status": "passed",
+      "evidence_status": "verified",
+      "frontend_status": "passed",
+      "checks": [
+        {
+          "name": "runtime_syntax",
+          "status": "passed",
+          "exit_code": 0
+        },
+        {
+          "name": "model_tests",
+          "status": "passed",
+          "exit_code": 0
+        },
+        {
+          "name": "independent_reference",
+          "status": "passed",
+          "exit_code": 0
+        }
+      ],
+      "source_hashes": {
+        "simulations/moment-of-inertia/index.html": "1aab52126a734bce032e0a8b5eadb3a6f380b8d573bf380683892d8d51a7c3b4",
+        "simulations/moment-of-inertia/model.mjs": "d8c5e749c968b9e312f813b275aa5007ba26ca838ebe56537198e0bbab2622c5",
+        "simulations/moment-of-inertia/app.mjs": "c803b200b80a5ae2c26c728192f73fa28328d649fc8547a3549be93b24db447b",
+        "simulations/moment-of-inertia/chart.mjs": "8a8b914f78368b6412fc0c4a262ded19c7c487425e18762a932550fd70687a21",
+        "simulations/moment-of-inertia/lab.css": "5dca8d65eef37213b6fb7e74d15a19e18a38584d271d0a1d309dfb2a5128f0bf",
+        "simulations/moment-of-inertia/observations.json": "7149a0120e5fe8e825ce20f654eb9eccec3076a1672154f73d7ec4f736e7c166",
+        "docs/moment-of-inertia-model-evidence.md": "79d11b9cfdcaf0cf46b382d23a4c4a7c1ffa3b200cb9631a301446bdc083fa1e",
+        "docs/moment-of-inertia-references.json": "8b7879a74b7e82743a7690b47d75fc445293721dd3fabcd26ceed698cb1b01c8",
+        "docs/moment-of-inertia-references.bib": "46105bd6196452b444239667d6f7516756c2b41aa0864d6fb28932da40a1072a",
+        "docs/simulation/moment-of-inertia-reference.json": "797e1095c0e607f30bb1f10586899539034cb9757bc0d6c1b9b0810a0c1a1c12",
+        "scripts/validate_moment_of_inertia_simulation.py": "1c23b016cb4f70a449594b6cacbc8c2d881fb9e169057afbcdf4165596642f98",
+        "tests/moment-of-inertia-model.test.mjs": "034899bc8b93ffd0a696adb3bf955e71c66caf1b4cdfc9fb26f27ccf668eeeda"
+      },
+      "reference": "docs/simulation/moment-of-inertia-reference.json",
+      "reference_sha256": "797e1095c0e607f30bb1f10586899539034cb9757bc0d6c1b9b0810a0c1a1c12",
+      "frontend_validation": "docs/simulation/moment-of-inertia-frontend.json",
+      "frontend_sha256": "5e54ceecada0ceb4f12355906f2837f770c9fe97b47422d5d995419fbe4c93a2",
+      "actual_background_verification": {
+        "capture_method": "actual-browser-tab-switch",
+        "actual_document_hidden": true,
+        "pause_verified": true,
+        "checked_at_utc": "2026-10-16T17:08:57.094Z",
+        "source_hashes": {
+          "app.mjs": "c803b200b80a5ae2c26c728192f73fa28328d649fc8547a3549be93b24db447b",
+          "model.mjs": "d8c5e749c968b9e312f813b275aa5007ba26ca838ebe56537198e0bbab2622c5"
+        }
+      }
+    },
+    {
+      "experiment_id": "course-02/pohl-resonance",
+      "title": "波尔共振实验",
+      "slug": "pohl-resonance",
+      "model_version": "1.0.0",
+      "status": "passed",
+      "evidence_status": "verified",
+      "frontend_status": "passed",
+      "checks": [
+        {
+          "name": "runtime_syntax",
+          "status": "passed",
+          "exit_code": 0
+        },
+        {
+          "name": "model_tests",
+          "status": "passed",
+          "exit_code": 0
+        },
+        {
+          "name": "independent_reference",
+          "status": "passed",
+          "exit_code": 0
+        }
+      ],
+      "source_hashes": {
+        "simulations/pohl-resonance/index.html": "ad7b45d015243103fc97b800ed98f24598765a88d57d8dc06e6831ebeb919893",
+        "simulations/pohl-resonance/model.mjs": "dd17fef4235b83c8a068204012e736b952e5ac9ef409d6514795c3dea3165e6e",
+        "simulations/pohl-resonance/app.mjs": "7e7997e9f7331e4f69fa8f3f34caf8cbf07c46a5212c004f2af835b9c34360b7",
+        "simulations/pohl-resonance/chart.mjs": "d9de3df2659ebe798d162b1aaaa42686654346c822e72edf9c1a515302532942",
+        "simulations/pohl-resonance/lab.css": "8758670120e01748193138cf832cc963f0d9003195ff1f80358556663dca5c62",
+        "simulations/pohl-resonance/observations.json": "d58752d0cb41722e1c5e25ea571bb4653898bb1d6218ec0f4cdf9ff7e53f0a14",
+        "docs/pohl-resonance-model-evidence.md": "27084ca363d1f265bcf3ba5d44d0d26ed7424e9d804ed606ac8563c7e53849d2",
+        "docs/pohl-resonance-references.json": "9a48550af5ad3b39a33d18a4142f9059b7a840ff183756ce97b409a1ee914826",
+        "docs/pohl-resonance-references.bib": "668db34df66adc954aa43842acba0af5db4495c14cb1f7c4fe6df2645329999c",
+        "docs/simulation/pohl-resonance-reference.json": "43f6bb2171e1d65ef89888d943e851d97b3119f27c216fd8b3ebad4f21a51a43",
+        "scripts/validate_pohl_resonance_simulation.py": "9a1daf404037a468b47e7d4c7eed0c8464633ff9e8186695a60e2448102e190f",
+        "tests/pohl-resonance-model.test.mjs": "aae18baa7012a0d8fd5770eda44776dbe6be8f8670b75eb791e83034cede74ab"
+      },
+      "reference": "docs/simulation/pohl-resonance-reference.json",
+      "reference_sha256": "43f6bb2171e1d65ef89888d943e851d97b3119f27c216fd8b3ebad4f21a51a43",
+      "frontend_validation": "docs/simulation/pohl-resonance-frontend.json",
+      "frontend_sha256": "a3083b516e8dad776d486cb4e3b044cdd4846b90274e00c3779e9b9119187537",
+      "actual_background_verification": {
+        "capture_method": "actual-browser-tab-switch",
+        "actual_document_hidden": true,
+        "pause_verified": true,
+        "checked_at_utc": "2026-10-16T17:08:59.026Z",
+        "source_hashes": {
+          "app.mjs": "7e7997e9f7331e4f69fa8f3f34caf8cbf07c46a5212c004f2af835b9c34360b7",
+          "model.mjs": "dd17fef4235b83c8a068204012e736b952e5ac9ef409d6514795c3dea3165e6e"
+        }
+      }
+    },
+    {
+      "experiment_id": "course-03/electrostatic-field",
+      "title": "用稳恒电场模拟静电场",
+      "slug": "electrostatic-field",
+      "model_version": "1.0.0",
+      "status": "passed",
+      "evidence_status": "verified",
+      "frontend_status": "passed",
+      "checks": [
+        {
+          "name": "runtime_syntax",
+          "status": "passed",
+          "exit_code": 0
+        },
+        {
+          "name": "model_tests",
+          "status": "passed",
+          "exit_code": 0
+        },
+        {
+          "name": "independent_reference",
+          "status": "passed",
+          "exit_code": 0
+        }
+      ],
+      "source_hashes": {
+        "simulations/electrostatic-field/index.html": "dfa2ccb1486955f9e10124473a0af7f6bca0e149ebe66a8b250152fcc4ad9d3b",
+        "simulations/electrostatic-field/model.mjs": "220ec3cbdc2ca3f6729fea1f780f25f3cdddf87908888bf348b76b6bc2e72a92",
+        "simulations/electrostatic-field/app.mjs": "5c4b32f2b1c869b67f7fd0c343c536940a7388adbd3a2fdc512309f5109aa727",
+        "simulations/electrostatic-field/chart.mjs": "701c38c99d6db1df0ac90500005477498abd4cb0449c77311e3dd39ebf9d5849",
+        "simulations/electrostatic-field/lab.css": "d007905ee689191cb3d99caebe74d1e5e924b6fd068c7a81d2417c75219b6169",
+        "simulations/electrostatic-field/observations.json": "7a7d37d1b49d0e228c456024d753e6bdc462a9a4039d7e3a92769311fb92e420",
+        "docs/electrostatic-field-model-evidence.md": "22715185827cd95c15a5423c97eddd71164b0ee9accc58ae5b89f2dc9166bb16",
+        "docs/electrostatic-field-references.json": "bd684ba859cd8f108501d33df8faf7acf1568ea088102ca8dc2b53f933f3b586",
+        "docs/electrostatic-field-references.bib": "d7f43f1da15d6a3356c2bca59722b01e6e221ee5bb4311ab0b982580a42683af",
+        "docs/simulation/electrostatic-field-reference.json": "080e9cb5468283c7e96bff7256397521d12a6d3017711888d582e55356d25ff8",
+        "simulations/electrostatic-field/diagram.mjs": "2b5181d291c16759388c54f8450e1d3d626e0a424569d711cc42f383c2700513",
+        "simulations/electrostatic-field/ui-config.json": "3334100593490482d26d543e18ec2bdb6d08613a592e9770c9ef6eb0473a9050",
+        "scripts/validate_electrostatic_field_simulation.py": "8b3b641373003c0a7d558071deb7bd804490d2f2382e59985b1d7660a894f857",
+        "tests/electrostatic-field-model.test.mjs": "2b5e86d503c67ed69a9bc511634d2b11a244fa548b14b8c52096ce212f09f51b"
+      },
+      "reference": "docs/simulation/electrostatic-field-reference.json",
+      "reference_sha256": "080e9cb5468283c7e96bff7256397521d12a6d3017711888d582e55356d25ff8",
+      "frontend_validation": "docs/simulation/electrostatic-field-frontend.json",
+      "frontend_sha256": "daa6aac987f6a5ea3b3b455e6b99a9c34fa3598439243c9112d9b5a7c5d646e5"
+    },
+    {
+      "experiment_id": "course-03/magnetic-field",
+      "title": "磁场的描绘",
+      "slug": "magnetic-field",
+      "model_version": "1.0.0",
+      "status": "passed",
+      "evidence_status": "verified",
+      "frontend_status": "passed",
+      "checks": [
+        {
+          "name": "runtime_syntax",
+          "status": "passed",
+          "exit_code": 0
+        },
+        {
+          "name": "model_tests",
+          "status": "passed",
+          "exit_code": 0
+        },
+        {
+          "name": "independent_reference",
+          "status": "passed",
+          "exit_code": 0
+        }
+      ],
+      "source_hashes": {
+        "simulations/magnetic-field/index.html": "44cb3d97c2fe738dd66de88a2c6fee91124c1176fbb729aa4799c65baed152a6",
+        "simulations/magnetic-field/model.mjs": "803df9763e72bf9ed772c54c3e481d6aed37e69b0f42fe3c3364b21f1b74ad3d",
+        "simulations/magnetic-field/app.mjs": "5c4b32f2b1c869b67f7fd0c343c536940a7388adbd3a2fdc512309f5109aa727",
+        "simulations/magnetic-field/chart.mjs": "701c38c99d6db1df0ac90500005477498abd4cb0449c77311e3dd39ebf9d5849",
+        "simulations/magnetic-field/lab.css": "d007905ee689191cb3d99caebe74d1e5e924b6fd068c7a81d2417c75219b6169",
+        "simulations/magnetic-field/observations.json": "f9d94c355bb726e160673d2447a425caf2dd15fc83c6e5434611cb63a7e58afe",
+        "docs/magnetic-field-model-evidence.md": "8984c4c4d4e00d7f091fd1be78b26e7e9bc89fe6d6f5d36cc406ca31b2daf8ca",
+        "docs/magnetic-field-references.json": "7c62d11b386261802da0db58cfa9eafcba2cba16fe6c42e190053102a18a8fc9",
+        "docs/magnetic-field-references.bib": "539ef158a2310e883eaf5f5c0ff4e9d7f08a74c5ef5cde4167835615370c4a2f",
+        "docs/simulation/magnetic-field-reference.json": "883f1b37b2ba57660c66de564f29f77ce85d3087aaaf01fd1333811f20e50ceb",
+        "simulations/magnetic-field/diagram.mjs": "d3ce9acf4a65ff772d0bc54758c07a79fde9f83a5d5d05caa0010c91c1e785fe",
+        "simulations/magnetic-field/ui-config.json": "2d38e26b8910822438d175f0c7eb7cfd7025400dc80ec085ef358a04e384fc4f",
+        "scripts/validate_magnetic_field_simulation.py": "7b55c82d84ad8431c4cea6b0afcb43a6df18e21ad481d36c6896a4db6dba4473",
+        "tests/magnetic-field-model.test.mjs": "f624764098bb43f791b2abe7fc9957ada1275e8344bacd91c7e13311506f1485"
+      },
+      "reference": "docs/simulation/magnetic-field-reference.json",
+      "reference_sha256": "883f1b37b2ba57660c66de564f29f77ce85d3087aaaf01fd1333811f20e50ceb",
+      "frontend_validation": "docs/simulation/magnetic-field-frontend.json",
+      "frontend_sha256": "58d03223a4d14b5294b3471672d8ad47f732379ff25e11c7f0a2be83c2b53393"
+    },
+    {
+      "experiment_id": "course-03/hall-effect",
+      "title": "霍尔效应的实验研究",
+      "slug": "hall-effect",
+      "model_version": "1.0.0",
+      "status": "passed",
+      "evidence_status": "verified",
+      "frontend_status": "passed",
+      "checks": [
+        {
+          "name": "runtime_syntax",
+          "status": "passed",
+          "exit_code": 0
+        },
+        {
+          "name": "model_tests",
+          "status": "passed",
+          "exit_code": 0
+        },
+        {
+          "name": "independent_reference",
+          "status": "passed",
+          "exit_code": 0
+        }
+      ],
+      "source_hashes": {
+        "simulations/hall-effect/index.html": "5dcef6071a7d1250449733bd7d9f3f26c9fec70bd87f50bcb0a59b1ef490fdcf",
+        "simulations/hall-effect/model.mjs": "b13a0fa41d3f296de093a980c80e3b8fbce6fba2c4ea038a6e86c8d002a8bde0",
+        "simulations/hall-effect/app.mjs": "5c4b32f2b1c869b67f7fd0c343c536940a7388adbd3a2fdc512309f5109aa727",
+        "simulations/hall-effect/chart.mjs": "701c38c99d6db1df0ac90500005477498abd4cb0449c77311e3dd39ebf9d5849",
+        "simulations/hall-effect/lab.css": "d007905ee689191cb3d99caebe74d1e5e924b6fd068c7a81d2417c75219b6169",
+        "simulations/hall-effect/observations.json": "0a9b24a976629c2fd4a42add76a6e19b295d478011bddb457907fcbb7328bc9f",
+        "docs/hall-effect-model-evidence.md": "f0820843598757caf4e26e6573668ead2ce4d24092e521963609de1f1ae461d2",
+        "docs/hall-effect-references.json": "9f24c5e21313c6225226f8ffb55cbc0580797954be054e072059fc72c3f3ddd7",
+        "docs/hall-effect-references.bib": "0de53c293d6297bf8e8d7d6153084a1c4140815dce8d8c6c14bcae7fad0a6ec2",
+        "docs/simulation/hall-effect-reference.json": "257e4009d5b57afe9db1e0f216419b92e0bb2cbe4a6d29db94d288075cae4c30",
+        "simulations/hall-effect/diagram.mjs": "17967749611da22e59bb681190c9326a41fbe7f8d74a51ad133d1b7349c2ac63",
+        "simulations/hall-effect/ui-config.json": "35130cf835d134341eb25173526567d2b488643e49b36e79a0c67d51aa58c9bd",
+        "scripts/validate_hall_effect_simulation.py": "7bae76e80a2145c779320a410a26339378010a4f5815d3aad821e382da214f1f",
+        "tests/hall-effect-model.test.mjs": "02b0e824bb24792a5bf076e517628323994191ad5a4765d2538cbaf20ce477ff"
+      },
+      "reference": "docs/simulation/hall-effect-reference.json",
+      "reference_sha256": "257e4009d5b57afe9db1e0f216419b92e0bb2cbe4a6d29db94d288075cae4c30",
+      "frontend_validation": "docs/simulation/hall-effect-frontend.json",
+      "frontend_sha256": "e1c525c792a7145176a0406444f427485a66a8f8e163a20cfa81752a51d4e13f"
+    },
+    {
+      "experiment_id": "course-02/young-modulus",
+      "title": "杨氏模量的测量",
+      "slug": "young-modulus",
+      "model_version": "1.0.0",
+      "status": "passed",
+      "evidence_status": "verified",
+      "frontend_status": "passed",
+      "checks": [
+        {
+          "name": "runtime_syntax",
+          "status": "passed",
+          "exit_code": 0
+        },
+        {
+          "name": "model_tests",
+          "status": "passed",
+          "exit_code": 0
+        },
+        {
+          "name": "independent_reference",
+          "status": "passed",
+          "exit_code": 0
+        }
+      ],
+      "source_hashes": {
+        "simulations/young-modulus/index.html": "4de6f2fe19592f581ee968ee144500e41cd1fd392506beb0d226ff8682120450",
+        "simulations/young-modulus/model.mjs": "342f0998f21586cd54fca9198ebcfc33355062986696d875d8a83dc6d217ca01",
+        "simulations/young-modulus/app.mjs": "26d9fd0b9ab627855a2cdf26aad649f9e358f4e5e14c6bdbe0ea322ab60273bb",
+        "simulations/young-modulus/chart.mjs": "d9de3df2659ebe798d162b1aaaa42686654346c822e72edf9c1a515302532942",
+        "simulations/young-modulus/lab.css": "f7cf64cf269d459e3a70dd4fa9f51571cf5015331cd1807c6ccf0bc0fd66f1b7",
+        "simulations/young-modulus/observations.json": "ded8817355b80e3f93083ffb7e3a6b6b33735c18aca9d368e0a6ae70546fcc4f",
+        "docs/young-modulus-model-evidence.md": "fbb97a9a21d3f933f2f6458746465821441590eaf67c859593f4cd93ffe70516",
+        "docs/young-modulus-references.json": "f8191e42ca184c4c483d2e5533448fa730fc0830d11805d73daad4e5572863ac",
+        "docs/young-modulus-references.bib": "c75e83e199ad6d576bfaf0ec2969843085ba1bb6cd10fca702bdbf58afc73c67",
+        "docs/simulation/young-modulus-reference.json": "e85dfc4f2c0a6ae4476b696f75fecf2fd5c40877e80812c6a72dfc62d890fc70",
+        "scripts/validate_young_modulus_simulation.py": "585d73d32235074c9b3755937dbbe61250c20978647d87386ed0a1418400152d",
+        "tests/young-modulus-model.test.mjs": "123d1a507f4426ba4bb6a978068ec9379a153f4c1e4b777070aa86b1f59f0365"
+      },
+      "reference": "docs/simulation/young-modulus-reference.json",
+      "reference_sha256": "e85dfc4f2c0a6ae4476b696f75fecf2fd5c40877e80812c6a72dfc62d890fc70",
+      "frontend_validation": "docs/simulation/young-modulus-frontend.json",
+      "frontend_sha256": "345d807fa5fa64ea4fff27fd0d33c400245813d07b389c4ba11c6d70cdbe7403"
+    },
+    {
+      "experiment_id": "course-02/surface-tension",
+      "title": "表面张力系数的测定(拉脱法)",
+      "slug": "surface-tension",
+      "model_version": "1.0.0",
+      "status": "passed",
+      "evidence_status": "verified",
+      "frontend_status": "passed",
+      "checks": [
+        {
+          "name": "runtime_syntax",
+          "status": "passed",
+          "exit_code": 0
+        },
+        {
+          "name": "model_tests",
+          "status": "passed",
+          "exit_code": 0
+        },
+        {
+          "name": "independent_reference",
+          "status": "passed",
+          "exit_code": 0
+        }
+      ],
+      "source_hashes": {
+        "simulations/surface-tension/index.html": "e8ddd84829b4cf65a7b4b03abbb57663efadbb574fddfdd8291c24b6f7f3bb96",
+        "simulations/surface-tension/model.mjs": "0ace7c37a725eb73d413df25fdc3b7a298c4f8525255eda91fd3d85c7d5d6e39",
+        "simulations/surface-tension/app.mjs": "0501f9b55f9d5b555379c9a784f0a857f7d14d0ced02945eafc65dea2fc992ea",
+        "simulations/surface-tension/chart.mjs": "d9de3df2659ebe798d162b1aaaa42686654346c822e72edf9c1a515302532942",
+        "simulations/surface-tension/lab.css": "2c5b746ab06a64988cbe2bd6ab693c8d00fd28562847716f828b43ef067b4238",
+        "simulations/surface-tension/observations.json": "c87dceda9238d239b03cfd8111bc1bfc32969440d6cb44ceedbfae7592c23a1a",
+        "docs/surface-tension-model-evidence.md": "07af54ab524bd4ed087f90130b94914eaa547a95bc959b991f6656ca0565173e",
+        "docs/surface-tension-references.json": "7c3fee765bd211c519b72ca83c05d986ad6ffa7d0a3bafb378583ed3e2dde7aa",
+        "docs/surface-tension-references.bib": "131c26fb799890e854eb7ef14748562697ccc3e9c163b8f45cc356eaad5bfcbd",
+        "docs/simulation/surface-tension-reference.json": "ed924acbb93503c4ca5355e3f5452309bdb0bed4419c123f2e9e1f8f5e167fff",
+        "scripts/validate_surface_tension_simulation.py": "21bf169253ef2a181ab1604c5355494cbc369e9a092e3e7cdfb29d65436f3d7b",
+        "tests/surface-tension-model.test.mjs": "b15760edf2faa09772a04dfacad9ec0d77894fb9dca434b962592dcbf54753aa"
+      },
+      "reference": "docs/simulation/surface-tension-reference.json",
+      "reference_sha256": "ed924acbb93503c4ca5355e3f5452309bdb0bed4419c123f2e9e1f8f5e167fff",
+      "frontend_validation": "docs/simulation/surface-tension-frontend.json",
+      "frontend_sha256": "985a637c68b04821d7532fcf060a123b887b710b2a567c1cfcb545c5ddde8cc1"
+    },
+    {
+      "experiment_id": "course-02/thermal-expansion",
+      "title": "金属线膨胀系数的测量",
+      "slug": "thermal-expansion",
+      "model_version": "1.0.0",
+      "status": "passed",
+      "evidence_status": "verified",
+      "frontend_status": "passed",
+      "checks": [
+        {
+          "name": "runtime_syntax",
+          "status": "passed",
+          "exit_code": 0
+        },
+        {
+          "name": "model_tests",
+          "status": "passed",
+          "exit_code": 0
+        },
+        {
+          "name": "independent_reference",
+          "status": "passed",
+          "exit_code": 0
+        }
+      ],
+      "source_hashes": {
+        "simulations/thermal-expansion/index.html": "de8baf86a93446d5a6df535aae337b7ec8f3694ee6231f825a3778d30850266b",
+        "simulations/thermal-expansion/model.mjs": "aab64c7c4565fdc8ee7fd6edc6dfbe2b5406095fa90e5bf726d343058701a58c",
+        "simulations/thermal-expansion/app.mjs": "9e74f0b9440631f365d983af569fd67c9ba4c5f25e788b9a138977349bc139fa",
+        "simulations/thermal-expansion/chart.mjs": "d9de3df2659ebe798d162b1aaaa42686654346c822e72edf9c1a515302532942",
+        "simulations/thermal-expansion/lab.css": "f0a82e1e5c0a440fbb08cbf95828d94b1078a126f242301e43de65d763bca229",
+        "simulations/thermal-expansion/observations.json": "23a72b36461859cc9a1812127875847ac9279ea3cac58ea8eacc151191f9772f",
+        "docs/thermal-expansion-model-evidence.md": "54496c9712bcf5b6cc6199f20241032b4d17fdc8a18c13c91cb7491e4740be63",
+        "docs/thermal-expansion-references.json": "2cc5bdceeca0c1127a562fb6c71a34e1f3a1ebae92b7e0fd4df296e8d49e2fae",
+        "docs/thermal-expansion-references.bib": "d48eb3a297eb8bc9fd3a3fdd20b09db91355499c8a24a394d82d7b58d721b9b9",
+        "docs/simulation/thermal-expansion-reference.json": "4a267596ea3ad55b05cdf4bd5bdc7f76e163188859d82fa03d3bf9136939e879",
+        "scripts/validate_thermal_expansion_simulation.py": "2116cb38d0cb8333bd1e895590b9e98ba6c479e3523ed4dd81e7b03b8205f799",
+        "tests/thermal-expansion-model.test.mjs": "9ddce673f4fb932975465eb328e3b134c119df2183ea3082f2c27387a2bdff4f"
+      },
+      "reference": "docs/simulation/thermal-expansion-reference.json",
+      "reference_sha256": "4a267596ea3ad55b05cdf4bd5bdc7f76e163188859d82fa03d3bf9136939e879",
+      "frontend_validation": "docs/simulation/thermal-expansion-frontend.json",
+      "frontend_sha256": "0c79dde786cc2920d14fbd2469eceaf8568dcc16404f3bd4842d86fde577bdb3",
+      "actual_background_verification": {
+        "capture_method": "actual-browser-tab-switch",
+        "actual_document_hidden": true,
+        "pause_verified": true,
+        "checked_at_utc": "2026-10-16T17:08:47.454Z",
+        "source_hashes": {
+          "app.mjs": "9e74f0b9440631f365d983af569fd67c9ba4c5f25e788b9a138977349bc139fa",
+          "model.mjs": "aab64c7c4565fdc8ee7fd6edc6dfbe2b5406095fa90e5bf726d343058701a58c"
+        }
+      }
+    },
+    {
+      "experiment_id": "course-02/liquid-viscosity",
+      "title": "液体粘度系数的测量",
+      "slug": "liquid-viscosity",
+      "model_version": "1.0.0",
+      "status": "passed",
+      "evidence_status": "verified",
+      "frontend_status": "passed",
+      "checks": [
+        {
+          "name": "runtime_syntax",
+          "status": "passed",
+          "exit_code": 0
+        },
+        {
+          "name": "model_tests",
+          "status": "passed",
+          "exit_code": 0
+        },
+        {
+          "name": "independent_reference",
+          "status": "passed",
+          "exit_code": 0
+        }
+      ],
+      "source_hashes": {
+        "simulations/liquid-viscosity/index.html": "9a4e86d41de0da3a2339598bb4cc155e5b64a5fdaa7b28557b71a64ef826cd49",
+        "simulations/liquid-viscosity/model.mjs": "1218e0837e898dadcd58604c06d7e5d7993a532bff0ed0bed51d002c0784a141",
+        "simulations/liquid-viscosity/app.mjs": "f4ab0cf0e0f5ee0dcab21c7b205aa0b09c9e75996a8efbcda904c59f4cd9c0a7",
+        "simulations/liquid-viscosity/chart.mjs": "d9de3df2659ebe798d162b1aaaa42686654346c822e72edf9c1a515302532942",
+        "simulations/liquid-viscosity/lab.css": "f3d39a8870750ed022902ea90f1f4bf3d1365a0a631609dd18b3fc72d06088c3",
+        "simulations/liquid-viscosity/observations.json": "58b75239566b9f55ef1fc3ccc9be16b94e467cd059326b331f74890711dd6be2",
+        "docs/liquid-viscosity-model-evidence.md": "07800923fa0182b4d1497fa2f38f42a5ef1e4e87814f781cec28bb34e13300aa",
+        "docs/liquid-viscosity-references.json": "ef0fa1c3fc5d237a53e66c5b2347e5a6c77e72888e213680eaa10a132f271379",
+        "docs/liquid-viscosity-references.bib": "463d173fc868e0336c11daca7efe42ff28b63ddd7321b57253b33a905ec6884f",
+        "docs/simulation/liquid-viscosity-reference.json": "6458fea19a64b1e8e5988ec49befff2b73cbea8be26114146cd88246bc9c44b6",
+        "scripts/validate_liquid_viscosity_simulation.py": "1545fc9f3d75645f278be97e9ba5116fc8f082c3b625749788ebecbad85a2477",
+        "tests/liquid-viscosity-model.test.mjs": "525a340dd92ab9929008f176dee0656dab76e80840fa7eaa06810dd76cfcdbe6"
+      },
+      "reference": "docs/simulation/liquid-viscosity-reference.json",
+      "reference_sha256": "6458fea19a64b1e8e5988ec49befff2b73cbea8be26114146cd88246bc9c44b6",
+      "frontend_validation": "docs/simulation/liquid-viscosity-frontend.json",
+      "frontend_sha256": "513d81bb6b729234de5a1ca96828820a7e5b53925297d7834f628974ceea16e8",
+      "actual_background_verification": {
+        "capture_method": "actual-browser-tab-switch",
+        "actual_document_hidden": true,
+        "pause_verified": true,
+        "checked_at_utc": "2026-10-16T17:08:49.376Z",
+        "source_hashes": {
+          "app.mjs": "f4ab0cf0e0f5ee0dcab21c7b205aa0b09c9e75996a8efbcda904c59f4cd9c0a7",
+          "model.mjs": "1218e0837e898dadcd58604c06d7e5d7993a532bff0ed0bed51d002c0784a141"
+        }
+      }
+    },
+    {
+      "experiment_id": "course-01/vaporization-heat",
+      "title": "液体比汽化热的测量",
+      "slug": "vaporization-heat",
+      "model_version": "1.0.0",
+      "status": "passed",
+      "evidence_status": "verified",
+      "frontend_status": "passed",
+      "checks": [
+        {
+          "name": "runtime_syntax",
+          "status": "passed",
+          "exit_code": 0
+        },
+        {
+          "name": "model_tests",
+          "status": "passed",
+          "exit_code": 0
+        },
+        {
+          "name": "independent_reference",
+          "status": "passed",
+          "exit_code": 0
+        }
+      ],
+      "source_hashes": {
+        "simulations/vaporization-heat/index.html": "1da20fba46167a58961e6b2d437c8a006d21bf41b60127cd7e623cc083b9d9cb",
+        "simulations/vaporization-heat/model.mjs": "a02f72de7b5d7b4d300f831d9e54937e2151aaf84ac81524f44da0f52c26674e",
+        "simulations/vaporization-heat/app.mjs": "1abac1b826f9c2cc173d015b10b17be302210758c1238f44eece6c57e74c1205",
+        "simulations/vaporization-heat/chart.mjs": "d9de3df2659ebe798d162b1aaaa42686654346c822e72edf9c1a515302532942",
+        "simulations/vaporization-heat/lab.css": "61f67764e9a822b526dca998efc210b46874b3d1ec7ef4f9ad309aa318888e75",
+        "simulations/vaporization-heat/observations.json": "6bcaf135af496f037fe42da0c33e4fe38160b3f184bf9a5dad0c1ee54a015ca3",
+        "docs/vaporization-heat-model-evidence.md": "c89473deb4cb7d2cfd015ba073a32c76c0db59667cf3385f872ddc3830974292",
+        "docs/vaporization-heat-references.json": "2d465f934bbea6af40d89d70ddbe77b29981f0bec882138fd7249f4bc17825e7",
+        "docs/vaporization-heat-references.bib": "98a5c43eb6809a603c5eaa07f174927d8c9fe97802e372bd9b7ecbd574b22284",
+        "docs/simulation/vaporization-heat-reference.json": "826e205a8e8f6b9883a33a9a27c77627b3291ef5ee1f821e7b43f9dcf1587cdd",
+        "scripts/validate_vaporization_heat_simulation.py": "8e558899fef2433ad0de3cba99663cd9346ff2ca71b6f846029f473d0a659ce2",
+        "tests/vaporization-heat-model.test.mjs": "58ec3b6ba3c37996eae8fdb92c4e34f52fa9ca74647051d363a8ccd321eb5f9f"
+      },
+      "reference": "docs/simulation/vaporization-heat-reference.json",
+      "reference_sha256": "826e205a8e8f6b9883a33a9a27c77627b3291ef5ee1f821e7b43f9dcf1587cdd",
+      "frontend_validation": "docs/simulation/vaporization-heat-frontend.json",
+      "frontend_sha256": "f6fcfe58f139495cd659513e2914fdb2680202ed5b6617e2e64db476c22d92eb"
+    },
+    {
+      "experiment_id": "course-01/mechanical-equivalent-heat",
+      "title": "热功当量的测量",
+      "slug": "mechanical-equivalent-heat",
+      "model_version": "1.0.0",
+      "status": "passed",
+      "evidence_status": "verified",
+      "frontend_status": "passed",
+      "checks": [
+        {
+          "name": "runtime_syntax",
+          "status": "passed",
+          "exit_code": 0
+        },
+        {
+          "name": "model_tests",
+          "status": "passed",
+          "exit_code": 0
+        },
+        {
+          "name": "independent_reference",
+          "status": "passed",
+          "exit_code": 0
+        }
+      ],
+      "source_hashes": {
+        "simulations/mechanical-equivalent-heat/index.html": "d786f8ae15ef84e44cbf1777d88c605ba0ac2ff7fe0105a4e2292d3c2dae3586",
+        "simulations/mechanical-equivalent-heat/model.mjs": "8b52b7154a5e1425a8d3527d04c8d4c0364a68f16c06c9c8a422bf1dbaaa8f73",
+        "simulations/mechanical-equivalent-heat/app.mjs": "84f6230efd49b71076d9ad8f86f0af04d70e3792e4023944a0f60cb8cc015992",
+        "simulations/mechanical-equivalent-heat/chart.mjs": "d9de3df2659ebe798d162b1aaaa42686654346c822e72edf9c1a515302532942",
+        "simulations/mechanical-equivalent-heat/lab.css": "2a62e4554c59c001dc86d622c5030a2b0984797fe60a53d322ec1cf02d81d3b3",
+        "simulations/mechanical-equivalent-heat/observations.json": "a83539ae033449ca7fa2568a1cbcd3feed5ef13c62a754a4b0599f5510ad338f",
+        "docs/mechanical-equivalent-heat-model-evidence.md": "d64e84ff38960fee58f3087755e7769873756b75eedb918bc8af359efe9c9ebe",
+        "docs/mechanical-equivalent-heat-references.json": "9d2f8c606b538514f5dafd366c90c85c87c901aae8136be435dd2ead5e4632a9",
+        "docs/mechanical-equivalent-heat-references.bib": "f23fa2b39f4f9e8d69284c83367fec1aab0893ccb18b50f0fa4abc0416e8af30",
+        "docs/simulation/mechanical-equivalent-heat-reference.json": "823c1996441ae08e30d605b7e1ba32935d99b1944a97c503786478727ffc7e64",
+        "scripts/validate_mechanical_equivalent_heat_simulation.py": "af38b63a9171b4e13920bbf2f15711d5039c9178a8d27a93cbff678fda143e02",
+        "tests/mechanical-equivalent-heat-model.test.mjs": "6e6c35a948207b1b3162dc1d84031b2bbe8f514f6f2417ead7ceacecc142fdf7"
+      },
+      "reference": "docs/simulation/mechanical-equivalent-heat-reference.json",
+      "reference_sha256": "823c1996441ae08e30d605b7e1ba32935d99b1944a97c503786478727ffc7e64",
+      "frontend_validation": "docs/simulation/mechanical-equivalent-heat-frontend.json",
+      "frontend_sha256": "4de35735c5830c0ebf9b88732039bffb337e4a887bfbe7b912f335a49c027582",
+      "actual_background_verification": {
+        "capture_method": "actual-browser-tab-switch",
+        "actual_document_hidden": true,
+        "pause_verified": true,
+        "checked_at_utc": "2026-10-16T17:08:51.239Z",
+        "source_hashes": {
+          "app.mjs": "84f6230efd49b71076d9ad8f86f0af04d70e3792e4023944a0f60cb8cc015992",
+          "model.mjs": "8b52b7154a5e1425a8d3527d04c8d4c0364a68f16c06c9c8a422bf1dbaaa8f73"
+        }
+      }
+    },
+    {
+      "experiment_id": "course-02/thermal-conductivity",
+      "title": "固体导热系数的测量",
+      "slug": "thermal-conductivity",
+      "model_version": "1.0.0",
+      "status": "passed",
+      "evidence_status": "verified",
+      "frontend_status": "passed",
+      "checks": [
+        {
+          "name": "runtime_syntax",
+          "status": "passed",
+          "exit_code": 0
+        },
+        {
+          "name": "model_tests",
+          "status": "passed",
+          "exit_code": 0
+        },
+        {
+          "name": "independent_reference",
+          "status": "passed",
+          "exit_code": 0
+        }
+      ],
+      "source_hashes": {
+        "simulations/thermal-conductivity/index.html": "dc8ef7ab9d52790095c5519fd89b3ffda80fc5df22fe947b293444e9843640ca",
+        "simulations/thermal-conductivity/model.mjs": "09a610aa106e9940f38750d167458beadf05c817614494e4afd3cf155eee39cc",
+        "simulations/thermal-conductivity/app.mjs": "7e4b81327cfc4db9cb4806ef276459ca4d7b76da0d9ca5d06aa840863fe93627",
+        "simulations/thermal-conductivity/chart.mjs": "d9de3df2659ebe798d162b1aaaa42686654346c822e72edf9c1a515302532942",
+        "simulations/thermal-conductivity/lab.css": "7847737a3f1a320bb8e2f60e992e7b4acf8bb1cb23e97561ac2ed9bc8f7691fa",
+        "simulations/thermal-conductivity/observations.json": "a9dfff8ba7383263eaacc1c013061b8f08dbd368451b004b6c06c51b448d17be",
+        "docs/thermal-conductivity-model-evidence.md": "6acbe3f2b702a03b5ddd3e276a6031dca6486eed99190ef701ccaff6f5c4c059",
+        "docs/thermal-conductivity-references.json": "81b50f5d91dd4b541f75b22d1bd73e962cf52295de386e861777f6c173fb2cf9",
+        "docs/thermal-conductivity-references.bib": "40ca9e2132e5ee72ec2130c2b3a2b027877470fde98a6cd38c743175742bd506",
+        "docs/simulation/thermal-conductivity-reference.json": "9a9830942d15eeaf76dde59732ef01d47e992dcacddf09950e55768aa393ec68",
+        "scripts/validate_thermal_conductivity_simulation.py": "a4b9e9a23b69004d7048e77b4a75b9eb3518ee51e60225e7e45c2501d402112e",
+        "tests/thermal-conductivity-model.test.mjs": "d90726c064e1470b0f71eaf8d33ffd7881ec091f74764f9519fb0cd0cdaaa894"
+      },
+      "reference": "docs/simulation/thermal-conductivity-reference.json",
+      "reference_sha256": "9a9830942d15eeaf76dde59732ef01d47e992dcacddf09950e55768aa393ec68",
+      "frontend_validation": "docs/simulation/thermal-conductivity-frontend.json",
+      "frontend_sha256": "026ed9130aa2a6b8d9db55b4ef8a33c6ed2d1618e2fa1d9036576b81c2c1cde4",
+      "actual_background_verification": {
+        "capture_method": "actual-browser-tab-switch",
+        "actual_document_hidden": true,
+        "pause_verified": true,
+        "checked_at_utc": "2026-10-16T17:08:53.207Z",
+        "source_hashes": {
+          "app.mjs": "7e4b81327cfc4db9cb4806ef276459ca4d7b76da0d9ca5d06aa840863fe93627",
+          "model.mjs": "09a610aa106e9940f38750d167458beadf05c817614494e4afd3cf155eee39cc"
+        }
+      }
+    },
+    {
+      "experiment_id": "course-03/photosensor",
+      "title": "光敏传感器光电特性研究",
+      "slug": "photosensor",
+      "model_version": "1.0.0",
+      "status": "passed",
+      "evidence_status": "verified",
+      "frontend_status": "passed",
+      "checks": [
+        {
+          "name": "runtime_syntax",
+          "status": "passed",
+          "exit_code": 0
+        },
+        {
+          "name": "model_tests",
+          "status": "passed",
+          "exit_code": 0
+        },
+        {
+          "name": "independent_reference",
+          "status": "passed",
+          "exit_code": 0
+        }
+      ],
+      "source_hashes": {
+        "simulations/photosensor/index.html": "682ae3a925cc107bb3d016b13c3e2b4aa38494a9aa9ae599790087cf8f0a4194",
+        "simulations/photosensor/model.mjs": "9a397e57c10304451297496e71b2319597c19ad0ef23e83f42ae7b68b787ab6c",
+        "simulations/photosensor/app.mjs": "48794a846bef9db545df878983faf89a3aa7c9843a18bf7182bee1f4395ccea7",
+        "simulations/photosensor/chart.mjs": "a46884a1989da9c768b9cd95a7e520f8da9a7d28a2d75efb2461c40187488ccb",
+        "simulations/photosensor/lab.css": "6560b500d0e36d2653215f08fa18b24e225af5dc105213b04ccb3c79edcf1f68",
+        "simulations/photosensor/observations.json": "0f8319d36a9bb3749ac1679beb8b5863949644363c86ad93152be35928c52c6e",
+        "docs/photosensor-model-evidence.md": "31684bbef0e0bc05a745fbf9413040c065cc0fa480007ced8bf265374834d196",
+        "docs/photosensor-references.json": "8eb6f84a7c84206968bc3151bbecff996299ab74d8314a27e0edb72295e76884",
+        "docs/photosensor-references.bib": "555ea8817aefb4d85fdf129cf8c07d8d0f56ba6487ee990e5a978ce96fbebd42",
+        "docs/simulation/photosensor-reference.json": "576341de3b9c3d3bdccd99de845225d8498a91ddb6aaf7f48eb73c4658b776fb",
+        "scripts/validate_photosensor_simulation.py": "60ae0722dca6ea483bbbf3f8c1474dccbf0c5bfa758be0b35beae4f0766320c1",
+        "tests/photosensor-model.test.mjs": "95ff5ebc7c627def7185569bc33a8ecb534b215a58370bf4f2acb18bb6a46365"
+      },
+      "reference": "docs/simulation/photosensor-reference.json",
+      "reference_sha256": "576341de3b9c3d3bdccd99de845225d8498a91ddb6aaf7f48eb73c4658b776fb",
+      "frontend_validation": "docs/simulation/photosensor-frontend.json",
+      "frontend_sha256": "c5f3aca7b9954bd96eb7935bffab9051db84a87d054aa4b7d7c35f04ed40852d"
+    },
+    {
+      "experiment_id": "course-04/abbe-imaging",
+      "title": "阿贝成像原理和空间滤波",
+      "slug": "abbe-imaging",
+      "model_version": "1.0.0",
+      "status": "passed",
+      "evidence_status": "verified",
+      "frontend_status": "passed",
+      "checks": [
+        {
+          "name": "runtime_syntax",
+          "status": "passed",
+          "exit_code": 0
+        },
+        {
+          "name": "model_tests",
+          "status": "passed",
+          "exit_code": 0
+        },
+        {
+          "name": "independent_reference",
+          "status": "passed",
+          "exit_code": 0
+        }
+      ],
+      "source_hashes": {
+        "simulations/abbe-imaging/index.html": "1fabad1c945f6c0c29814deca06da4ae6c85ebc988f352c9b62de286b8f4da1f",
+        "simulations/abbe-imaging/model.mjs": "35721b4c58a7e2510877f60b71c07501569b5540bd2d41679587c3d968ba206a",
+        "simulations/abbe-imaging/app.mjs": "20fa5d19d81d38c48611ed5f11683a59ec8c8dbc42d4a5bc8beb12173b4c2895",
+        "simulations/abbe-imaging/chart.mjs": "94c48a43c413d34f5295eaaa84c81f319caf4ff76f707fb743a23e67ee65fa98",
+        "simulations/abbe-imaging/lab.css": "93b317c2056cc0bc32df54083d64ed938cc76691138d4354067d039c9bd78ee8",
+        "simulations/abbe-imaging/observations.json": "9869ddbf237ba47eb34de98284839920a624ac35487f6952f9f286f1f2a891ff",
+        "docs/abbe-imaging-model-evidence.md": "bd86b602771d091e3f018e5d33e24640f73595da714ac94cd1ba24e3d6b8f6c6",
+        "docs/abbe-imaging-references.json": "abeec4ba03bb29e749773a3ae2f713a7649b7441137b5b806cfdfe47f4e8b3c1",
+        "docs/abbe-imaging-references.bib": "4ca1ed8749d9766727a229244498350977928099b63ef7b711261fb20c0a44ae",
+        "docs/simulation/abbe-imaging-reference.json": "96149e1c841749bf7edbce715ca5bc820b45dc04c13097ea3ca2085425d10e2c",
+        "simulations/abbe-imaging/fft.mjs": "9617a6ca4a9598de3c3abaeb6f290f51c1377c8ac2878bde97f4e50a37eac7aa",
+        "scripts/validate_abbe_imaging_simulation.py": "1d4791dba92be0e62f0dba07999f76e1224dde51166edfeea277387c25e40cde",
+        "tests/abbe-imaging-model.test.mjs": "84a905f32a0ac9e6bd5b2aa1443e795b892d9d5cc9b8eb5125dd63a24da23352"
+      },
+      "reference": "docs/simulation/abbe-imaging-reference.json",
+      "reference_sha256": "96149e1c841749bf7edbce715ca5bc820b45dc04c13097ea3ca2085425d10e2c",
+      "frontend_validation": "docs/simulation/abbe-imaging-frontend.json",
+      "frontend_sha256": "e2a1f65ff29e75afcfc4a58ed5abeead27509e2bbffb92ea20bacff9d757fe9c"
+    },
+    {
+      "experiment_id": "course-04/holography",
+      "title": "全息照相",
+      "slug": "holography",
+      "model_version": "1.0.0",
+      "status": "passed",
+      "evidence_status": "verified",
+      "frontend_status": "passed",
+      "checks": [
+        {
+          "name": "runtime_syntax",
+          "status": "passed",
+          "exit_code": 0
+        },
+        {
+          "name": "model_tests",
+          "status": "passed",
+          "exit_code": 0
+        },
+        {
+          "name": "independent_reference",
+          "status": "passed",
+          "exit_code": 0
+        }
+      ],
+      "source_hashes": {
+        "simulations/holography/index.html": "67ddfd2d09b06c954a1e0fdbf6b46d066828bf7345191cdea95b61e5b4be1fab",
+        "simulations/holography/model.mjs": "212bc532f76e6c85ad0d326c6475d384960dd06b83982f5f7ded73f8cc40da1c",
+        "simulations/holography/app.mjs": "7bc2f538a152117ca531fbe37095705975e2fef0662e422fc27e2bc6b0e9586c",
+        "simulations/holography/chart.mjs": "94c48a43c413d34f5295eaaa84c81f319caf4ff76f707fb743a23e67ee65fa98",
+        "simulations/holography/lab.css": "aa021200be8fa774b810042ddd0dba5148d42dce4214d76590f192671d07ec50",
+        "simulations/holography/observations.json": "9f2ec28232cecdea87777e5c8f69839d6a137365e0206fa66078d0b870b22634",
+        "docs/holography-model-evidence.md": "cc4672586413ef215dbf6f190b7af66067b3d8ee1cc4de31faf919802cc142a3",
+        "docs/holography-references.json": "8d7a173afa419618aff4ab982b9f2d205d7312cd1a4fc60dee2d6e1a3f0006ab",
+        "docs/holography-references.bib": "bd77eb685854f46d10bdbea7564e6c404d9c93cf5317020975b22a41e6a8f275",
+        "docs/simulation/holography-reference.json": "2cfa804d1d3b561d0e9306ee1230113dd7aa3972fe94da44770089fd9ffdaa96",
+        "simulations/holography/fft.mjs": "9617a6ca4a9598de3c3abaeb6f290f51c1377c8ac2878bde97f4e50a37eac7aa",
+        "scripts/validate_holography_simulation.py": "6a2f847d252f05991a475fb936dcbfd463857cdc840a614bac7491e8d67f00a9",
+        "tests/holography-model.test.mjs": "d8a5bc3d5842d3718f7a176d17fc215b842106e10e3aca94c6a5808621214ab1"
+      },
+      "reference": "docs/simulation/holography-reference.json",
+      "reference_sha256": "2cfa804d1d3b561d0e9306ee1230113dd7aa3972fe94da44770089fd9ffdaa96",
+      "frontend_validation": "docs/simulation/holography-frontend.json",
+      "frontend_sha256": "8381dcd9e59727dee3876b9cc233befa7075476bd1845f92826c6bfc9c99be9a"
+    }
+  ]
+}

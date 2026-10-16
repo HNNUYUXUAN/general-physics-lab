@@ -1,0 +1,274 @@
+{
+  "status": "passed",
+  "source_hashes": {
+    "simulations/hall-effect/model.mjs": "b13a0fa41d3f296de093a980c80e3b8fbce6fba2c4ea038a6e86c8d002a8bde0",
+    "simulations/hall-effect/app.mjs": "5c4b32f2b1c869b67f7fd0c343c536940a7388adbd3a2fdc512309f5109aa727",
+    "simulations/hall-effect/chart.mjs": "701c38c99d6db1df0ac90500005477498abd4cb0449c77311e3dd39ebf9d5849",
+    "simulations/hall-effect/lab.css": "d007905ee689191cb3d99caebe74d1e5e924b6fd068c7a81d2417c75219b6169",
+    "simulations/hall-effect/observations.json": "0a9b24a976629c2fd4a42add76a6e19b295d478011bddb457907fcbb7328bc9f",
+    "simulations/hall-effect/diagram.mjs": "17967749611da22e59bb681190c9326a41fbe7f8d74a51ad133d1b7349c2ac63",
+    "simulations/hall-effect/ui-config.json": "35130cf835d134341eb25173526567d2b488643e49b36e79a0c67d51aa58c9bd",
+    "simulations/hall-effect/index.html": "5dcef6071a7d1250449733bd7d9f3f26c9fec70bd87f50bcb0a59b1ef490fdcf"
+  },
+  "source_record_sha256": "6e3b5a7f244293c06d19d0ab2e4ca2f0cb3a0b15c96d8030878c66ea21c4ee9d",
+  "interaction_checks": 27,
+  "visual_status": "passed",
+  "exports_status": "passed",
+  "exports": [
+    {
+      "filename": "1-hall-effect-records.csv",
+      "sha256": "694e5d8c5274dc5593c501e61d9a8694ebdfd1ff996af5007c5d9d3e29dc97ad",
+      "bytes": 1054
+    },
+    {
+      "filename": "2-hall-effect-records.json",
+      "sha256": "c12de2ed2ef9a26cb9f4b1119f9f2958207ede8668fe8b97abb14362280634b4",
+      "bytes": 3270
+    }
+  ],
+  "fonts": {
+    "h1": [
+      {
+        "familyName": "SimSun",
+        "postScriptName": "SimSun",
+        "isCustomFont": false,
+        "glyphCount": 8
+      }
+    ],
+    "#summary": [
+      {
+        "familyName": "Times New Roman",
+        "postScriptName": "TimesNewRomanPSMT",
+        "isCustomFont": false,
+        "glyphCount": 17
+      },
+      {
+        "familyName": "SimSun",
+        "postScriptName": "SimSun",
+        "isCustomFont": false,
+        "glyphCount": 8
+      }
+    ]
+  },
+  "browser": "fixed Playwright Chromium 1243",
+  "layout": {
+    "wide": {
+      "width": 1280,
+      "scrollWidth": 1280,
+      "math": 1,
+      "mathErrors": 0
+    },
+    "narrow": {
+      "width": 390,
+      "scrollWidth": 390,
+      "math": 1,
+      "mathErrors": 0
+    }
+  },
+  "interaction": [
+    {
+      "name": "polarity=1",
+      "status": "passed"
+    },
+    {
+      "name": "polarity=2",
+      "status": "passed"
+    },
+    {
+      "name": "polarity=3",
+      "status": "passed"
+    },
+    {
+      "name": "polarity=4",
+      "status": "passed"
+    },
+    {
+      "name": "current_mA=0.1",
+      "status": "passed"
+    },
+    {
+      "name": "current_mA=5",
+      "status": "passed"
+    },
+    {
+      "name": "field_T=0",
+      "status": "passed"
+    },
+    {
+      "name": "field_T=1",
+      "status": "passed"
+    },
+    {
+      "name": "sensitivity=10",
+      "status": "passed"
+    },
+    {
+      "name": "sensitivity=200",
+      "status": "passed"
+    },
+    {
+      "name": "common_mV=-5",
+      "status": "passed"
+    },
+    {
+      "name": "common_mV=5",
+      "status": "passed"
+    },
+    {
+      "name": "currentOdd_mV=-5",
+      "status": "passed"
+    },
+    {
+      "name": "currentOdd_mV=5",
+      "status": "passed"
+    },
+    {
+      "name": "fieldOdd_mV=-5",
+      "status": "passed"
+    },
+    {
+      "name": "fieldOdd_mV=5",
+      "status": "passed"
+    },
+    {
+      "name": "sameParity_mV=-5",
+      "status": "passed"
+    },
+    {
+      "name": "sameParity_mV=5",
+      "status": "passed"
+    },
+    {
+      "name": "原表 magnet_current",
+      "status": "passed"
+    },
+    {
+      "name": "原表 position",
+      "status": "passed"
+    },
+    {
+      "name": "原表 working_current",
+      "status": "passed"
+    },
+    {
+      "name": "默认设置读数与记录",
+      "status": "passed"
+    },
+    {
+      "name": "测量闭环与同组分析",
+      "status": "passed"
+    },
+    {
+      "name": "非法编辑blur后不得记录",
+      "status": "passed"
+    },
+    {
+      "name": "恢复删除与清空",
+      "status": "passed"
+    },
+    {
+      "name": "真实CSV/JSON导出与元数据",
+      "status": "passed"
+    },
+    {
+      "name": "restore",
+      "status": "passed"
+    }
+  ],
+  "background": {
+    "status": "not-applicable"
+  },
+  "checked_at_utc": "2026-10-16T16:13:39.327Z",
+  "screenshots": [
+    {
+      "path": "docs/assets/simulations/hall-effect/frontend-01-031a6a82fada.png",
+      "sha256": "031a6a82fadac1ec86da0bd04dbb092c32ed651fc982e832db208d859f38dfb9"
+    },
+    {
+      "path": "docs/assets/simulations/hall-effect/frontend-02-011717d09388.png",
+      "sha256": "011717d0938879a3e7d6c7e00023c3b56c69c4aff83caa402aee579c9b940820"
+    },
+    {
+      "path": "docs/assets/simulations/hall-effect/frontend-03-38821db04ec0.png",
+      "sha256": "38821db04ec0c9556020cea7001ef93923e9914a64df5ed21c555972aa678feb"
+    },
+    {
+      "path": "docs/assets/simulations/hall-effect/frontend-04-6ea6ee26deb7.png",
+      "sha256": "6ea6ee26deb76f0d79b00e22982aedd3680e986c1f9af04dbdd06b91dd565658"
+    },
+    {
+      "path": "docs/assets/simulations/hall-effect/frontend-05-cae5adbd2a5c.png",
+      "sha256": "cae5adbd2a5c8e3eddf18540fc58364ff506f77765050045f4dd9e6859178b86"
+    },
+    {
+      "path": "docs/assets/simulations/hall-effect/frontend-06-26a7b06f3727.png",
+      "sha256": "26a7b06f3727fba476ad8347f46d897bf6d4310dd476095fbd0c16b057c4b6f7"
+    },
+    {
+      "path": "docs/assets/simulations/hall-effect/frontend-07-35a56b463443.png",
+      "sha256": "35a56b4634437625429024b0f39123e29b91f68d28ff7f0b7ee3b4c26c783e6e"
+    },
+    {
+      "path": "docs/assets/simulations/hall-effect/frontend-08-0ad7045db6b4.png",
+      "sha256": "0ad7045db6b4ad80de5313c41b4206d140c393c24f21ac786859d540f3dde9fd"
+    },
+    {
+      "path": "docs/assets/simulations/hall-effect/frontend-09-f85c8db1e457.png",
+      "sha256": "f85c8db1e4577007fdb18199bb540a79fbc4ca4055d0a9c437d38a74f86750aa"
+    },
+    {
+      "path": "docs/assets/simulations/hall-effect/frontend-10-650a713b2e99.png",
+      "sha256": "650a713b2e99a0034bb472fffe91b8813fdf47c95597ca24565a4ed3c03a5ed7"
+    },
+    {
+      "path": "docs/assets/simulations/hall-effect/frontend-11-b132496a7af9.png",
+      "sha256": "b132496a7af9eaa917a994e5b3fa8b890b9e3f36dfb4f90735f7970c61614316"
+    },
+    {
+      "path": "docs/assets/simulations/hall-effect/frontend-12-c007cd321d84.png",
+      "sha256": "c007cd321d84408ee843afae479e285eaf3cd5d73cfea0648d8bb350d0d12f12"
+    }
+  ],
+  "schema_version": 1,
+  "experiment_id": "course-03/hall-effect",
+  "numerical": {
+    "status": "passed",
+    "reference_sha256": "257e4009d5b57afe9db1e0f216419b92e0bb2cbe4a6d29db94d288075cae4c30",
+    "source_files": {
+      "simulations/hall-effect/index.html": "5dcef6071a7d1250449733bd7d9f3f26c9fec70bd87f50bcb0a59b1ef490fdcf",
+      "simulations/hall-effect/model.mjs": "b13a0fa41d3f296de093a980c80e3b8fbce6fba2c4ea038a6e86c8d002a8bde0",
+      "simulations/hall-effect/app.mjs": "5c4b32f2b1c869b67f7fd0c343c536940a7388adbd3a2fdc512309f5109aa727",
+      "simulations/hall-effect/chart.mjs": "701c38c99d6db1df0ac90500005477498abd4cb0449c77311e3dd39ebf9d5849",
+      "simulations/hall-effect/lab.css": "d007905ee689191cb3d99caebe74d1e5e924b6fd068c7a81d2417c75219b6169",
+      "simulations/hall-effect/observations.json": "0a9b24a976629c2fd4a42add76a6e19b295d478011bddb457907fcbb7328bc9f",
+      "docs/hall-effect-model-evidence.md": "f0820843598757caf4e26e6573668ead2ce4d24092e521963609de1f1ae461d2",
+      "docs/hall-effect-references.json": "9f24c5e21313c6225226f8ffb55cbc0580797954be054e072059fc72c3f3ddd7",
+      "docs/hall-effect-references.bib": "0de53c293d6297bf8e8d7d6153084a1c4140815dce8d8c6c14bcae7fad0a6ec2",
+      "docs/simulation/hall-effect-reference.json": "257e4009d5b57afe9db1e0f216419b92e0bb2cbe4a6d29db94d288075cae4c30",
+      "simulations/hall-effect/diagram.mjs": "17967749611da22e59bb681190c9326a41fbe7f8d74a51ad133d1b7349c2ac63",
+      "simulations/hall-effect/ui-config.json": "35130cf835d134341eb25173526567d2b488643e49b36e79a0c67d51aa58c9bd",
+      "scripts/validate_hall_effect_simulation.py": "7bae76e80a2145c779320a410a26339378010a4f5815d3aad821e382da214f1f",
+      "tests/hall-effect-model.test.mjs": "02b0e824bb24792a5bf076e517628323994191ad5a4765d2538cbaf20ce477ff"
+    }
+  },
+  "scientific_evidence": {
+    "status": "verified",
+    "decision_source_files": {
+      "docs/hall-effect-references.json": "9f24c5e21313c6225226f8ffb55cbc0580797954be054e072059fc72c3f3ddd7",
+      "docs/hall-effect-model-evidence.md": "f0820843598757caf4e26e6573668ead2ce4d24092e521963609de1f1ae461d2",
+      "simulations/hall-effect/model.mjs": "b13a0fa41d3f296de093a980c80e3b8fbce6fba2c4ea038a6e86c8d002a8bde0"
+    },
+    "core_references": [
+      {
+        "id": "chen2025hall",
+        "pdf_sha256": "cef8c52a2edd0215e28ce99f9ebdcc6db05d1306102d71101316e2278ba655d6",
+        "locators": [
+          "p.116 section 1.1 equations (1)–(3), Hall sensitivity and its units",
+          "p.116 section 1.2 equations (4)–(8), four polarities and same-parity residual",
+          "p.120 section 3.1, actual switching sequence",
+          "pp.120–122 sections 3.1–3.2, separate simulation parameters"
+        ]
+      }
+    ]
+  }
+}

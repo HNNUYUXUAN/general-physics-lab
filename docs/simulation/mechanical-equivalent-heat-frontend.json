@@ -1,0 +1,171 @@
+{
+  "status": "passed",
+  "source_hashes": {
+    "simulations/mechanical-equivalent-heat/app.mjs": "84f6230efd49b71076d9ad8f86f0af04d70e3792e4023944a0f60cb8cc015992",
+    "simulations/mechanical-equivalent-heat/model.mjs": "8b52b7154a5e1425a8d3527d04c8d4c0364a68f16c06c9c8a422bf1dbaaa8f73",
+    "simulations/mechanical-equivalent-heat/index.html": "d786f8ae15ef84e44cbf1777d88c605ba0ac2ff7fe0105a4e2292d3c2dae3586",
+    "simulations/mechanical-equivalent-heat/lab.css": "2a62e4554c59c001dc86d622c5030a2b0984797fe60a53d322ec1cf02d81d3b3",
+    "simulations/mechanical-equivalent-heat/chart.mjs": "d9de3df2659ebe798d162b1aaaa42686654346c822e72edf9c1a515302532942",
+    "simulations/mechanical-equivalent-heat/observations.json": "a83539ae033449ca7fa2568a1cbcd3feed5ef13c62a754a4b0599f5510ad338f"
+  },
+  "source_record_sha256": "d4c0dc7f8b789be9037aba11f2952ce6ed2552371d108f4170483bf1780c23d3",
+  "interaction_checks": 5,
+  "visual_status": "passed",
+  "exports_status": "passed",
+  "exports": [
+    {
+      "filename": "mechanical-equivalent-heat-export.json",
+      "sha256": "cb4a7f8c744f4b57e4e5cafd87012c37c7d28d4ba7554f22b7b692b2ef259f32",
+      "bytes": 60039
+    },
+    {
+      "filename": "mechanical-equivalent-heat-export.csv",
+      "sha256": "e49ea1aa000839d0a8a3a7588ec0de5e2a72f176b9f16892ed3edd3fb9440ccc",
+      "bytes": 10893
+    }
+  ],
+  "fonts": {
+    "body": "\"Times New Roman\", SimSun, \"Songti SC\", serif",
+    "simsun": true,
+    "times": true,
+    "mathjax": 4,
+    "math_errors": []
+  },
+  "browser": "fixed Chromium1243 via playwright-cli isolated rollout-mechanics",
+  "layout": {
+    "mobile": {
+      "viewport": 390,
+      "document": 390,
+      "overflow": false,
+      "svg_text": [
+        {
+          "text": "20.0 V",
+          "size": 14.488567259071965
+        },
+        {
+          "text": "0.495 A",
+          "size": 14.48856867408888
+        },
+        {
+          "text": "T = 302.708 K",
+          "size": 14.488570070995332
+        },
+        {
+          "text": "电加热情景",
+          "size": 14.488573177174601
+        },
+        {
+          "text": "环境 293.15 K",
+          "size": 14.488571032229228
+        },
+        {
+          "text": "总热容 125.0 cal/K",
+          "size": 14.48857487997251
+        }
+      ],
+      "math_errors": []
+    }
+  },
+  "interaction": [
+    {
+      "name": "三十点热交换回归",
+      "status": "passed"
+    },
+    {
+      "name": "绝热换算基准",
+      "status": "passed"
+    },
+    {
+      "name": "独立断电响应",
+      "status": "passed"
+    },
+    {
+      "name": "非法热容拒绝",
+      "status": "passed"
+    },
+    {
+      "name": "播放暂停复位",
+      "status": "passed"
+    }
+  ],
+  "background": {
+    "status": "passed",
+    "actual_document_hidden": true,
+    "pause_verified": true,
+    "source_files": {
+      "simulations/mechanical-equivalent-heat/app.mjs": "84f6230efd49b71076d9ad8f86f0af04d70e3792e4023944a0f60cb8cc015992",
+      "simulations/mechanical-equivalent-heat/model.mjs": "8b52b7154a5e1425a8d3527d04c8d4c0364a68f16c06c9c8a422bf1dbaaa8f73"
+    },
+    "checked_at_utc": "2026-10-16T17:08:51.239Z"
+  },
+  "checked_at_utc": "2026-10-16T16:21:37.153Z",
+  "screenshots": [
+    {
+      "path": "docs/assets/simulations/mechanical-equivalent-heat/frontend-01-4ce2bceb9c2d.png",
+      "sha256": "4ce2bceb9c2d1a0cb1528d3ee48ec77141bb224eacee65b6a82cba458f147dcc"
+    },
+    {
+      "path": "docs/assets/simulations/mechanical-equivalent-heat/frontend-02-94db416dc034.png",
+      "sha256": "94db416dc034ba5dc6e399e84f03ceac77c370a80dd686deee8860f1db9b8f35"
+    },
+    {
+      "path": "docs/assets/simulations/mechanical-equivalent-heat/frontend-03-bae8be100ad4.png",
+      "sha256": "bae8be100ad44df32a36898b4f74865249463be7929af0e05a0afd57f88ab012"
+    },
+    {
+      "path": "docs/assets/simulations/mechanical-equivalent-heat/frontend-04-35bb48626887.png",
+      "sha256": "35bb486268877f5df223583ae0adb79d06e57d22caab15f9e77fdf8d6d42b538"
+    }
+  ],
+  "schema_version": 1,
+  "experiment_id": "course-01/mechanical-equivalent-heat",
+  "numerical": {
+    "status": "passed",
+    "reference_sha256": "823c1996441ae08e30d605b7e1ba32935d99b1944a97c503786478727ffc7e64",
+    "source_files": {
+      "simulations/mechanical-equivalent-heat/index.html": "d786f8ae15ef84e44cbf1777d88c605ba0ac2ff7fe0105a4e2292d3c2dae3586",
+      "simulations/mechanical-equivalent-heat/model.mjs": "8b52b7154a5e1425a8d3527d04c8d4c0364a68f16c06c9c8a422bf1dbaaa8f73",
+      "simulations/mechanical-equivalent-heat/app.mjs": "84f6230efd49b71076d9ad8f86f0af04d70e3792e4023944a0f60cb8cc015992",
+      "simulations/mechanical-equivalent-heat/chart.mjs": "d9de3df2659ebe798d162b1aaaa42686654346c822e72edf9c1a515302532942",
+      "simulations/mechanical-equivalent-heat/lab.css": "2a62e4554c59c001dc86d622c5030a2b0984797fe60a53d322ec1cf02d81d3b3",
+      "simulations/mechanical-equivalent-heat/observations.json": "a83539ae033449ca7fa2568a1cbcd3feed5ef13c62a754a4b0599f5510ad338f",
+      "docs/mechanical-equivalent-heat-model-evidence.md": "d64e84ff38960fee58f3087755e7769873756b75eedb918bc8af359efe9c9ebe",
+      "docs/mechanical-equivalent-heat-references.json": "9d2f8c606b538514f5dafd366c90c85c87c901aae8136be435dd2ead5e4632a9",
+      "docs/mechanical-equivalent-heat-references.bib": "f23fa2b39f4f9e8d69284c83367fec1aab0893ccb18b50f0fa4abc0416e8af30",
+      "docs/simulation/mechanical-equivalent-heat-reference.json": "823c1996441ae08e30d605b7e1ba32935d99b1944a97c503786478727ffc7e64",
+      "scripts/validate_mechanical_equivalent_heat_simulation.py": "af38b63a9171b4e13920bbf2f15711d5039c9178a8d27a93cbff678fda143e02",
+      "tests/mechanical-equivalent-heat-model.test.mjs": "6e6c35a948207b1b3162dc1d84031b2bbe8f514f6f2417ead7ceacecc142fdf7"
+    }
+  },
+  "scientific_evidence": {
+    "status": "verified",
+    "decision_source_files": {
+      "docs/mechanical-equivalent-heat-references.json": "9d2f8c606b538514f5dafd366c90c85c87c901aae8136be435dd2ead5e4632a9",
+      "docs/mechanical-equivalent-heat-model-evidence.md": "d64e84ff38960fee58f3087755e7769873756b75eedb918bc8af359efe9c9ebe",
+      "simulations/mechanical-equivalent-heat/model.mjs": "8b52b7154a5e1425a8d3527d04c8d4c0364a68f16c06c9c8a422bf1dbaaa8f73"
+    },
+    "core_references": [
+      {
+        "id": "cai2016-electrothermal",
+        "pdf_sha256": "5b2e2c394806f977ffd62161df0a2d1ea40f17463731632adc2f3055118c17ea",
+        "locators": [
+          {
+            "page": 53,
+            "location": "式1–5",
+            "supports": "均温总热容、电功和牛顿冷却微分方程"
+          },
+          {
+            "page": 54,
+            "location": "式7–8",
+            "supports": "精确指数温度响应与冷却拟合"
+          },
+          {
+            "page": 55,
+            "location": "§2.2",
+            "supports": "SI热容下能量比为无量纲约1"
+          }
+        ]
+      }
+    ]
+  }
+}

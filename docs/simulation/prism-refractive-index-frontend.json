@@ -1,6 +1,15 @@
 {
   "status": "passed",
-  "source_record_sha256": "28114a53b9efd696aef7e661c29a8549c9cecfb9c3cfb75d83cc3b8de84e2443",
+  "source_hashes": {
+    "simulations/prism-refractive-index/angles.mjs": "b25e2fa4341846209d68acaed83cf06b40c0b3902af9fbdaa94d8cdbb92796eb",
+    "simulations/prism-refractive-index/app.mjs": "563cb13387ba4ad884fdb77ed731e86e33a08c262a7743325a70118b2bbe1817",
+    "simulations/prism-refractive-index/chart.mjs": "2cf283ea545418aed75f6175e6feb7c82983f7ed523e6b0ffb0e0723fcf1b5d7",
+    "simulations/prism-refractive-index/index.html": "1f0246ebe405408416f47d946efa31b27c626ab31ca85f2cdf50db071b31c98e",
+    "simulations/prism-refractive-index/lab.css": "f09f3aa9916b0574f112d367ac0e713575f0e59ad9f239ee81e452953681e20c",
+    "simulations/prism-refractive-index/model.mjs": "6d816752f0bef9b74f47be30cabac8d95c41d837bedd536ee09cef457065c0e2",
+    "simulations/prism-refractive-index/observations.json": "d6d6c8b41af519a665eec21ea98b42bbc7e6554ff4251025929489490eb3b98e"
+  },
+  "source_record_sha256": "39e8894ad6c5d5e2630c28415636ba35a2b9e21ee1ef0af7c894286e78b838aa",
   "interaction_checks": 6,
   "visual_status": "passed",
   "exports_status": "passed",
@@ -115,7 +124,7 @@
   "experiment_id": "course-04/prism-refractive-index",
   "numerical": {
     "status": "passed",
-    "reference_sha256": "9724bdbc22659ee16f5487f9ec6e064d7ad2a762f1dabbf7e5cfee241176667a",
+    "reference_sha256": "96f0a90bb3901f5ea675cb7b450ed07dd4158ec4adfb532b220bc30d271f895d",
     "source_files": {
       "simulations/prism-refractive-index/index.html": "1f0246ebe405408416f47d946efa31b27c626ab31ca85f2cdf50db071b31c98e",
       "simulations/prism-refractive-index/model.mjs": "6d816752f0bef9b74f47be30cabac8d95c41d837bedd536ee09cef457065c0e2",
@@ -127,6 +136,7 @@
       "docs/prism-refractive-index-references.json": "2d8f6271ce11f8f99003735025c7a08ea4bad526ee348e164166392d548995a3",
       "docs/prism-refractive-index-references.bib": "2d716d8b38a5883f6bee3ea6205b26fc2cb047326d3bca882bd2a0906a45e81f",
       "docs/simulation/prism-refractive-index-reference.json": "af14c449eee657a6ff2ac4ee2fd78d2ebc969809e821ca5fc8e342024f20c4e5",
+      "simulations/prism-refractive-index/angles.mjs": "b25e2fa4341846209d68acaed83cf06b40c0b3902af9fbdaa94d8cdbb92796eb",
       "scripts/validate_prism_refractive_index_simulation.py": "4fff81f7957870bceee7d6a9ce1e20ee83bd49faaa8a045bffe267a618f99203",
       "tests/prism-refractive-index-model.test.mjs": "38d689f1b5bcd788ca8fd972b9c9bd2173cd0eb37e6ac819bbd535f8ba52bc7e"
     }
@@ -172,14 +182,5 @@
         ]
       }
     ]
-  },
-  "source_hashes": {
-    "simulations/prism-refractive-index/angles.mjs": "b25e2fa4341846209d68acaed83cf06b40c0b3902af9fbdaa94d8cdbb92796eb",
-    "simulations/prism-refractive-index/app.mjs": "563cb13387ba4ad884fdb77ed731e86e33a08c262a7743325a70118b2bbe1817",
-    "simulations/prism-refractive-index/chart.mjs": "2cf283ea545418aed75f6175e6feb7c82983f7ed523e6b0ffb0e0723fcf1b5d7",
-    "simulations/prism-refractive-index/index.html": "1f0246ebe405408416f47d946efa31b27c626ab31ca85f2cdf50db071b31c98e",
-    "simulations/prism-refractive-index/lab.css": "f09f3aa9916b0574f112d367ac0e713575f0e59ad9f239ee81e452953681e20c",
-    "simulations/prism-refractive-index/model.mjs": "6d816752f0bef9b74f47be30cabac8d95c41d837bedd536ee09cef457065c0e2",
-    "simulations/prism-refractive-index/observations.json": "d6d6c8b41af519a665eec21ea98b42bbc7e6554ff4251025929489490eb3b98e"
   }
 }

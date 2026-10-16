@@ -1,0 +1,124 @@
+{
+  "schema_version": 1,
+  "experiment": "course-02/surface-tension",
+  "source_files": [
+    {
+      "path": "experiments/course-02/surface-tension/experiment.json",
+      "sha256": "d53c2e834a5404d10a305babc0ae2305da55732f1d741e279879eec7c5967f31"
+    },
+    {
+      "path": "experiments/course-02/surface-tension/data/calibration.csv",
+      "sha256": "42b3c4731fc43897ee4576a10e22d8c8653d62f076f2ca580b475413b42700d3"
+    },
+    {
+      "path": "experiments/course-02/surface-tension/data/pulls.csv",
+      "sha256": "890e3a9b50707a573c5c458b09ac5f342b96fb8ffb9d6ed4c56da81947b05ab4"
+    },
+    {
+      "path": "experiments/course-02/surface-tension/data/diameters.csv",
+      "sha256": "9aacf24a9ab941c43d143e6703021a48623842ee51bb79c0949d2cedcefc649d"
+    },
+    {
+      "path": "experiments/course-02/surface-tension/data/provenance.json",
+      "sha256": "95355a52ba504708323d39d7ab215c568be90922f1b1b31a8239788c56700d88"
+    }
+  ],
+  "calibration": [
+    {
+      "mass_mg": 0.0,
+      "loading_mv": 90.2,
+      "unloading_mv": 89.9,
+      "mean_mv": 90.05000000000001
+    },
+    {
+      "mass_mg": 500.0,
+      "loading_mv": 103.8,
+      "unloading_mv": 103.4,
+      "mean_mv": 103.6
+    },
+    {
+      "mass_mg": 1000.0,
+      "loading_mv": 117.0,
+      "unloading_mv": 117.0,
+      "mean_mv": 117.0
+    },
+    {
+      "mass_mg": 1500.0,
+      "loading_mv": 131.1,
+      "unloading_mv": 130.6,
+      "mean_mv": 130.85
+    },
+    {
+      "mass_mg": 2000.0,
+      "loading_mv": 144.4,
+      "unloading_mv": 143.0,
+      "mean_mv": 143.7
+    },
+    {
+      "mass_mg": 2500.0,
+      "loading_mv": 156.0,
+      "unloading_mv": 158.4,
+      "mean_mv": 157.2
+    },
+    {
+      "mass_mg": 3000.0,
+      "loading_mv": 172.0,
+      "unloading_mv": 170.4,
+      "mean_mv": 171.2
+    },
+    {
+      "mass_mg": 3500.0,
+      "loading_mv": 184.6,
+      "unloading_mv": 184.1,
+      "mean_mv": 184.35
+    }
+  ],
+  "pulls": [
+    {
+      "trial": 1,
+      "before_mv": 124.4,
+      "after_mv": 85.7,
+      "difference_mv": 38.7
+    },
+    {
+      "trial": 2,
+      "before_mv": 122.3,
+      "after_mv": 85.6,
+      "difference_mv": 36.7
+    },
+    {
+      "trial": 3,
+      "before_mv": 123.3,
+      "after_mv": 85.6,
+      "difference_mv": 37.7
+    },
+    {
+      "trial": 4,
+      "before_mv": 125.0,
+      "after_mv": 84.7,
+      "difference_mv": 40.3
+    },
+    {
+      "trial": 5,
+      "before_mv": 123.1,
+      "after_mv": 85.6,
+      "difference_mv": 37.5
+    }
+  ],
+  "inner_readings_mm": [
+    33.0,
+    33.02,
+    33.02,
+    33.0,
+    33.0
+  ],
+  "outer_readings_mm": [
+    34.94,
+    34.94,
+    34.94,
+    34.96,
+    34.94
+  ],
+  "conversion_difference_N_mV": 0.00036451267736682956,
+  "surface_tension_N_m": 0.06519232125778693
+}

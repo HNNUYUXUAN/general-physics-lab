@@ -1,0 +1,174 @@
+{
+  "schema_version": 1,
+  "experiment": "course-01/mechanical-equivalent-heat",
+  "source_files": [
+    {
+      "path": "experiments/course-01/mechanical-equivalent-heat/experiment.json",
+      "sha256": "4b3a422a7528db6ea49e7a260d4d6041972baf6f7eb67e5518347cc1d880d96f"
+    },
+    {
+      "path": "experiments/course-01/mechanical-equivalent-heat/data/temperatures.csv",
+      "sha256": "dedfe84f572e2239de46dc75ada25fc2384c23549541f00dddfd3e25378c1c34"
+    },
+    {
+      "path": "experiments/course-01/mechanical-equivalent-heat/data/provenance.json",
+      "sha256": "6a5ee96c8d492205c5daf6a21145063f8f0882b813720329fa3e13dd924ee1fb"
+    }
+  ],
+  "rows": [
+    {
+      "index": 1,
+      "time_min": 0.0,
+      "temperature_K": 291.59
+    },
+    {
+      "index": 2,
+      "time_min": 1.0,
+      "temperature_K": 291.82
+    },
+    {
+      "index": 3,
+      "time_min": 2.0,
+      "temperature_K": 292.52
+    },
+    {
+      "index": 4,
+      "time_min": 3.0,
+      "temperature_K": 293.39
+    },
+    {
+      "index": 5,
+      "time_min": 4.0,
+      "temperature_K": 294.09
+    },
+    {
+      "index": 6,
+      "time_min": 5.0,
+      "temperature_K": 294.53
+    },
+    {
+      "index": 7,
+      "time_min": 6.0,
+      "temperature_K": 295.07
+    },
+    {
+      "index": 8,
+      "time_min": 7.0,
+      "temperature_K": 296.02
+    },
+    {
+      "index": 9,
+      "time_min": 8.0,
+      "temperature_K": 296.43
+    },
+    {
+      "index": 10,
+      "time_min": 9.0,
+      "temperature_K": 297.05
+    },
+    {
+      "index": 11,
+      "time_min": 10.0,
+      "temperature_K": 297.88
+    },
+    {
+      "index": 12,
+      "time_min": 11.0,
+      "temperature_K": 298.62
+    },
+    {
+      "index": 13,
+      "time_min": 12.0,
+      "temperature_K": 299.29
+    },
+    {
+      "index": 14,
+      "time_min": 13.0,
+      "temperature_K": 299.76
+    },
+    {
+      "index": 15,
+      "time_min": 14.0,
+      "temperature_K": 300.43
+    },
+    {
+      "index": 16,
+      "time_min": 15.0,
+      "temperature_K": 300.74
+    },
+    {
+      "index": 17,
+      "time_min": 16.0,
+      "temperature_K": 301.61
+    },
+    {
+      "index": 18,
+      "time_min": 17.0,
+      "temperature_K": 302.23
+    },
+    {
+      "index": 19,
+      "time_min": 18.0,
+      "temperature_K": 302.57
+    },
+    {
+      "index": 20,
+      "time_min": 19.0,
+      "temperature_K": 303.19
+    },
+    {
+      "index": 21,
+      "time_min": 20.0,
+      "temperature_K": 303.99
+    },
+    {
+      "index": 22,
+      "time_min": 21.0,
+      "temperature_K": 304.58
+    },
+    {
+      "index": 23,
+      "time_min": 22.0,
+      "temperature_K": 305.18
+    },
+    {
+      "index": 24,
+      "time_min": 23.0,
+      "temperature_K": 305.82
+    },
+    {
+      "index": 25,
+      "time_min": 24.0,
+      "temperature_K": 306.06
+    },
+    {
+      "index": 26,
+      "time_min": 25.0,
+      "temperature_K": 306.65
+    },
+    {
+      "index": 27,
+      "time_min": 26.0,
+      "temperature_K": 307.45
+    },
+    {
+      "index": 28,
+      "time_min": 27.0,
+      "temperature_K": 307.89
+    },
+    {
+      "index": 29,
+      "time_min": 28.0,
+      "temperature_K": 308.51
+    },
+    {
+      "index": 30,
+      "time_min": 29.0,
+      "temperature_K": 308.85
+    }
+  ],
+  "slope_K_s": 0.010159695958472329,
+  "early_slope_K_s": 0.010836904761904277,
+  "late_slope_K_s": 0.0096279761904761,
+  "latent_equivalent_independent_status": "not_computable_missing_measured_power_and_heat_capacity"
+}

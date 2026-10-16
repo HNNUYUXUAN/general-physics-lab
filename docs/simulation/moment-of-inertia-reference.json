@@ -1,0 +1,1103 @@
+{
+  "schema_version": 1,
+  "experiment": "course-02/moment-of-inertia",
+  "model_sha256": "d8c5e749c968b9e312f813b275aa5007ba26ca838ebe56537198e0bbab2622c5",
+  "validator_sha256": "1c23b016cb4f70a449594b6cacbc8c2d881fb9e169057afbcdf4165596642f98",
+  "environment": {
+    "python": "3.14.7",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1"
+  },
+  "method": "radial mass quadrature; independent constrained 3x3 force/torque solve; DOP853 angular trajectory and half-turn root events; paired inversion",
+  "case_count": 54,
+  "tolerances": {
+    "absolute": 1e-10,
+    "gate_time_s": 1e-09
+  },
+  "max_absolute_error": 7.105427357601002e-15,
+  "max_gate_time_error_s": 2.3314683517128287e-14,
+  "status": "passed",
+  "failures": [],
+  "cases": [
+    {
+      "parameters": {
+        "platformInertia": 0.003,
+        "ringMass": 0.436,
+        "ringOuter": 0.12,
+        "ringInner": 0.105,
+        "cylinderMass": 0.166,
+        "cylinderRadius": 0.015,
+        "offset": 0,
+        "hangingMass": 0.02,
+        "towerRadius": 0.015,
+        "frictionTorque": 0.0002,
+        "initialOmega": 5,
+        "gravity": 9.8
+      },
+      "mount": "platform",
+      "reference_inertia": 0.003,
+      "max_absolute_error": 6.106226635438361e-16,
+      "max_gate_time_error_s": 1.7763568394002505e-14
+    },
+    {
+      "parameters": {
+        "platformInertia": 0.003,
+        "ringMass": 0.436,
+        "ringOuter": 0.12,
+        "ringInner": 0.105,
+        "cylinderMass": 0.166,
+        "cylinderRadius": 0.015,
+        "offset": 0,
+        "hangingMass": 0.02,
+        "towerRadius": 0.015,
+        "frictionTorque": 0.0002,
+        "initialOmega": 5,
+        "gravity": 9.8
+      },
+      "mount": "ring",
+      "reference_inertia": 0.008542649999999995,
+      "max_absolute_error": 4.996003610813204e-16,
+      "max_gate_time_error_s": 1.1546319456101628e-14
+    },
+    {
+      "parameters": {
+        "platformInertia": 0.003,
+        "ringMass": 0.436,
+        "ringOuter": 0.12,
+        "ringInner": 0.105,
+        "cylinderMass": 0.166,
+        "cylinderRadius": 0.015,
+        "offset": 0,
+        "hangingMass": 0.02,
+        "towerRadius": 0.015,
+        "frictionTorque": 0.0002,
+        "initialOmega": 5,
+        "gravity": 9.8
+      },
+      "mount": "cylinders",
+      "reference_inertia": 0.00303735,
+      "max_absolute_error": 1.1102230246251565e-16,
+      "max_gate_time_error_s": 2.3314683517128287e-14
+    },
+    {
+      "parameters": {
+        "platformInertia": 0.003,
+        "ringMass": 0.436,
+        "ringOuter": 0.12,
+        "ringInner": 0.105,
+        "cylinderMass": 0.166,
+        "cylinderRadius": 0.015,
+        "offset": 0,
+        "hangingMass": 0.05,
+        "towerRadius": 0.025,
+        "frictionTorque": 0.0005,
+        "initialOmega": 7,
+        "gravity": 9.8
+      },
+      "mount": "platform",
+      "reference_inertia": 0.003,
+      "max_absolute_error": 1.3322676295501878e-15,
+      "max_gate_time_error_s": 1.532107773982716e-14
+    },
+    {
+      "parameters": {
+        "platformInertia": 0.003,
+        "ringMass": 0.436,
+        "ringOuter": 0.12,
+        "ringInner": 0.105,
+        "cylinderMass": 0.166,
+        "cylinderRadius": 0.015,
+        "offset": 0,
+        "hangingMass": 0.05,
+        "towerRadius": 0.025,
+        "frictionTorque": 0.0005,
+        "initialOmega": 7,
+        "gravity": 9.8
+      },
+      "mount": "ring",
+      "reference_inertia": 0.008542649999999995,
+      "max_absolute_error": 2.0122792321330962e-16,
+      "max_gate_time_error_s": 4.440892098500626e-15
+    },
+    {
+      "parameters": {
+        "platformInertia": 0.003,
+        "ringMass": 0.436,
+        "ringOuter": 0.12,
+        "ringInner": 0.105,
+        "cylinderMass": 0.166,
+        "cylinderRadius": 0.015,
+        "offset": 0,
+        "hangingMass": 0.05,
+        "towerRadius": 0.025,
+        "frictionTorque": 0.0005,
+        "initialOmega": 7,
+        "gravity": 9.8
+      },
+      "mount": "cylinders",
+      "reference_inertia": 0.00303735,
+      "max_absolute_error": 2.220446049250313e-15,
+      "max_gate_time_error_s": 2.0872192862952943e-14
+    },
+    {
+      "parameters": {
+        "platformInertia": 0.003,
+        "ringMass": 0.436,
+        "ringOuter": 0.12,
+        "ringInner": 0.105,
+        "cylinderMass": 0.166,
+        "cylinderRadius": 0.015,
+        "offset": 0,
+        "hangingMass": 0.1,
+        "towerRadius": 0.03,
+        "frictionTorque": 0.001,
+        "initialOmega": 10,
+        "gravity": 9.8
+      },
+      "mount": "platform",
+      "reference_inertia": 0.003,
+      "max_absolute_error": 7.105427357601002e-15,
+      "max_gate_time_error_s": 1.0658141036401503e-14
+    },
+    {
+      "parameters": {
+        "platformInertia": 0.003,
+        "ringMass": 0.436,
+        "ringOuter": 0.12,
+        "ringInner": 0.105,
+        "cylinderMass": 0.166,
+        "cylinderRadius": 0.015,
+        "offset": 0,
+        "hangingMass": 0.1,
+        "towerRadius": 0.03,
+        "frictionTorque": 0.001,
+        "initialOmega": 10,
+        "gravity": 9.8
+      },
+      "mount": "ring",
+      "reference_inertia": 0.008542649999999995,
+      "max_absolute_error": 2.220446049250313e-15,
+      "max_gate_time_error_s": 8.659739592076221e-15
+    },
+    {
+      "parameters": {
+        "platformInertia": 0.003,
+        "ringMass": 0.436,
+        "ringOuter": 0.12,
+        "ringInner": 0.105,
+        "cylinderMass": 0.166,
+        "cylinderRadius": 0.015,
+        "offset": 0,
+        "hangingMass": 0.1,
+        "towerRadius": 0.03,
+        "frictionTorque": 0.001,
+        "initialOmega": 10,
+        "gravity": 9.8
+      },
+      "mount": "cylinders",
+      "reference_inertia": 0.00303735,
+      "max_absolute_error": 1.7763568394002505e-15,
+      "max_gate_time_error_s": 1.199040866595169e-14
+    },
+    {
+      "parameters": {
+        "platformInertia": 0.003,
+        "ringMass": 0.436,
+        "ringOuter": 0.12,
+        "ringInner": 0.105,
+        "cylinderMass": 0.166,
+        "cylinderRadius": 0.015,
+        "offset": 0.1,
+        "hangingMass": 0.02,
+        "towerRadius": 0.015,
+        "frictionTorque": 0.0002,
+        "initialOmega": 5,
+        "gravity": 9.8
+      },
+      "mount": "platform",
+      "reference_inertia": 0.003,
+      "max_absolute_error": 6.106226635438361e-16,
+      "max_gate_time_error_s": 1.7763568394002505e-14
+    },
+    {
+      "parameters": {
+        "platformInertia": 0.003,
+        "ringMass": 0.436,
+        "ringOuter": 0.12,
+        "ringInner": 0.105,
+        "cylinderMass": 0.166,
+        "cylinderRadius": 0.015,
+        "offset": 0.1,
+        "hangingMass": 0.02,
+        "towerRadius": 0.015,
+        "frictionTorque": 0.0002,
+        "initialOmega": 5,
+        "gravity": 9.8
+      },
+      "mount": "ring",
+      "reference_inertia": 0.008542649999999995,
+      "max_absolute_error": 4.996003610813204e-16,
+      "max_gate_time_error_s": 1.1546319456101628e-14
+    },
+    {
+      "parameters": {
+        "platformInertia": 0.003,
+        "ringMass": 0.436,
+        "ringOuter": 0.12,
+        "ringInner": 0.105,
+        "cylinderMass": 0.166,
+        "cylinderRadius": 0.015,
+        "offset": 0.1,
+        "hangingMass": 0.02,
+        "towerRadius": 0.015,
+        "frictionTorque": 0.0002,
+        "initialOmega": 5,
+        "gravity": 9.8
+      },
+      "mount": "cylinders",
+      "reference_inertia": 0.00635735,
+      "max_absolute_error": 6.661338147750939e-16,
+      "max_gate_time_error_s": 4.440892098500626e-15
+    },
+    {
+      "parameters": {
+        "platformInertia": 0.003,
+        "ringMass": 0.436,
+        "ringOuter": 0.12,
+        "ringInner": 0.105,
+        "cylinderMass": 0.166,
+        "cylinderRadius": 0.015,
+        "offset": 0.1,
+        "hangingMass": 0.05,
+        "towerRadius": 0.025,
+        "frictionTorque": 0.0005,
+        "initialOmega": 7,
+        "gravity": 9.8
+      },
+      "mount": "platform",
+      "reference_inertia": 0.003,
+      "max_absolute_error": 1.3322676295501878e-15,
+      "max_gate_time_error_s": 1.532107773982716e-14
+    },
+    {
+      "parameters": {
+        "platformInertia": 0.003,
+        "ringMass": 0.436,
+        "ringOuter": 0.12,
+        "ringInner": 0.105,
+        "cylinderMass": 0.166,
+        "cylinderRadius": 0.015,
+        "offset": 0.1,
+        "hangingMass": 0.05,
+        "towerRadius": 0.025,
+        "frictionTorque": 0.0005,
+        "initialOmega": 7,
+        "gravity": 9.8
+      },
+      "mount": "ring",
+      "reference_inertia": 0.008542649999999995,
+      "max_absolute_error": 2.0122792321330962e-16,
+      "max_gate_time_error_s": 4.440892098500626e-15
+    },
+    {
+      "parameters": {
+        "platformInertia": 0.003,
+        "ringMass": 0.436,
+        "ringOuter": 0.12,
+        "ringInner": 0.105,
+        "cylinderMass": 0.166,
+        "cylinderRadius": 0.015,
+        "offset": 0.1,
+        "hangingMass": 0.05,
+        "towerRadius": 0.025,
+        "frictionTorque": 0.0005,
+        "initialOmega": 7,
+        "gravity": 9.8
+      },
+      "mount": "cylinders",
+      "reference_inertia": 0.00635735,
+      "max_absolute_error": 1.3322676295501878e-15,
+      "max_gate_time_error_s": 1.9095836023552692e-14
+    },
+    {
+      "parameters": {
+        "platformInertia": 0.003,
+        "ringMass": 0.436,
+        "ringOuter": 0.12,
+        "ringInner": 0.105,
+        "cylinderMass": 0.166,
+        "cylinderRadius": 0.015,
+        "offset": 0.1,
+        "hangingMass": 0.1,
+        "towerRadius": 0.03,
+        "frictionTorque": 0.001,
+        "initialOmega": 10,
+        "gravity": 9.8
+      },
+      "mount": "platform",
+      "reference_inertia": 0.003,
+      "max_absolute_error": 7.105427357601002e-15,
+      "max_gate_time_error_s": 1.0658141036401503e-14
+    },
+    {
+      "parameters": {
+        "platformInertia": 0.003,
+        "ringMass": 0.436,
+        "ringOuter": 0.12,
+        "ringInner": 0.105,
+        "cylinderMass": 0.166,
+        "cylinderRadius": 0.015,
+        "offset": 0.1,
+        "hangingMass": 0.1,
+        "towerRadius": 0.03,
+        "frictionTorque": 0.001,
+        "initialOmega": 10,
+        "gravity": 9.8
+      },
+      "mount": "ring",
+      "reference_inertia": 0.008542649999999995,
+      "max_absolute_error": 2.220446049250313e-15,
+      "max_gate_time_error_s": 8.659739592076221e-15
+    },
+    {
+      "parameters": {
+        "platformInertia": 0.003,
+        "ringMass": 0.436,
+        "ringOuter": 0.12,
+        "ringInner": 0.105,
+        "cylinderMass": 0.166,
+        "cylinderRadius": 0.015,
+        "offset": 0.1,
+        "hangingMass": 0.1,
+        "towerRadius": 0.03,
+        "frictionTorque": 0.001,
+        "initialOmega": 10,
+        "gravity": 9.8
+      },
+      "mount": "cylinders",
+      "reference_inertia": 0.00635735,
+      "max_absolute_error": 8.881784197001252e-16,
+      "max_gate_time_error_s": 1.9984014443252818e-15
+    },
+    {
+      "parameters": {
+        "platformInertia": 0.003,
+        "ringMass": 0.436,
+        "ringOuter": 0.12,
+        "ringInner": 0.105,
+        "cylinderMass": 0.166,
+        "cylinderRadius": 0.015,
+        "offset": 0.15,
+        "hangingMass": 0.02,
+        "towerRadius": 0.015,
+        "frictionTorque": 0.0002,
+        "initialOmega": 5,
+        "gravity": 9.8
+      },
+      "mount": "platform",
+      "reference_inertia": 0.003,
+      "max_absolute_error": 6.106226635438361e-16,
+      "max_gate_time_error_s": 1.7763568394002505e-14
+    },
+    {
+      "parameters": {
+        "platformInertia": 0.003,
+        "ringMass": 0.436,
+        "ringOuter": 0.12,
+        "ringInner": 0.105,
+        "cylinderMass": 0.166,
+        "cylinderRadius": 0.015,
+        "offset": 0.15,
+        "hangingMass": 0.02,
+        "towerRadius": 0.015,
+        "frictionTorque": 0.0002,
+        "initialOmega": 5,
+        "gravity": 9.8
+      },
+      "mount": "ring",
+      "reference_inertia": 0.008542649999999995,
+      "max_absolute_error": 4.996003610813204e-16,
+      "max_gate_time_error_s": 1.1546319456101628e-14
+    },
+    {
+      "parameters": {
+        "platformInertia": 0.003,
+        "ringMass": 0.436,
+        "ringOuter": 0.12,
+        "ringInner": 0.105,
+        "cylinderMass": 0.166,
+        "cylinderRadius": 0.015,
+        "offset": 0.15,
+        "hangingMass": 0.02,
+        "towerRadius": 0.015,
+        "frictionTorque": 0.0002,
+        "initialOmega": 5,
+        "gravity": 9.8
+      },
+      "mount": "cylinders",
+      "reference_inertia": 0.010507349999999999,
+      "max_absolute_error": 4.440892098500626e-16,
+      "max_gate_time_error_s": 9.769962616701378e-15
+    },
+    {
+      "parameters": {
+        "platformInertia": 0.003,
+        "ringMass": 0.436,
+        "ringOuter": 0.12,
+        "ringInner": 0.105,
+        "cylinderMass": 0.166,
+        "cylinderRadius": 0.015,
+        "offset": 0.15,
+        "hangingMass": 0.05,
+        "towerRadius": 0.025,
+        "frictionTorque": 0.0005,
+        "initialOmega": 7,
+        "gravity": 9.8
+      },
+      "mount": "platform",
+      "reference_inertia": 0.003,
+      "max_absolute_error": 1.3322676295501878e-15,
+      "max_gate_time_error_s": 1.532107773982716e-14
+    },
+    {
+      "parameters": {
+        "platformInertia": 0.003,
+        "ringMass": 0.436,
+        "ringOuter": 0.12,
+        "ringInner": 0.105,
+        "cylinderMass": 0.166,
+        "cylinderRadius": 0.015,
+        "offset": 0.15,
+        "hangingMass": 0.05,
+        "towerRadius": 0.025,
+        "frictionTorque": 0.0005,
+        "initialOmega": 7,
+        "gravity": 9.8
+      },
+      "mount": "ring",
+      "reference_inertia": 0.008542649999999995,
+      "max_absolute_error": 2.0122792321330962e-16,
+      "max_gate_time_error_s": 4.440892098500626e-15
+    },
+    {
+      "parameters": {
+        "platformInertia": 0.003,
+        "ringMass": 0.436,
+        "ringOuter": 0.12,
+        "ringInner": 0.105,
+        "cylinderMass": 0.166,
+        "cylinderRadius": 0.015,
+        "offset": 0.15,
+        "hangingMass": 0.05,
+        "towerRadius": 0.025,
+        "frictionTorque": 0.0005,
+        "initialOmega": 7,
+        "gravity": 9.8
+      },
+      "mount": "cylinders",
+      "reference_inertia": 0.010507349999999999,
+      "max_absolute_error": 8.81239525796218e-16,
+      "max_gate_time_error_s": 3.9968028886505635e-15
+    },
+    {
+      "parameters": {
+        "platformInertia": 0.003,
+        "ringMass": 0.436,
+        "ringOuter": 0.12,
+        "ringInner": 0.105,
+        "cylinderMass": 0.166,
+        "cylinderRadius": 0.015,
+        "offset": 0.15,
+        "hangingMass": 0.1,
+        "towerRadius": 0.03,
+        "frictionTorque": 0.001,
+        "initialOmega": 10,
+        "gravity": 9.8
+      },
+      "mount": "platform",
+      "reference_inertia": 0.003,
+      "max_absolute_error": 7.105427357601002e-15,
+      "max_gate_time_error_s": 1.0658141036401503e-14
+    },
+    {
+      "parameters": {
+        "platformInertia": 0.003,
+        "ringMass": 0.436,
+        "ringOuter": 0.12,
+        "ringInner": 0.105,
+        "cylinderMass": 0.166,
+        "cylinderRadius": 0.015,
+        "offset": 0.15,
+        "hangingMass": 0.1,
+        "towerRadius": 0.03,
+        "frictionTorque": 0.001,
+        "initialOmega": 10,
+        "gravity": 9.8
+      },
+      "mount": "ring",
+      "reference_inertia": 0.008542649999999995,
+      "max_absolute_error": 2.220446049250313e-15,
+      "max_gate_time_error_s": 8.659739592076221e-15
+    },
+    {
+      "parameters": {
+        "platformInertia": 0.003,
+        "ringMass": 0.436,
+        "ringOuter": 0.12,
+        "ringInner": 0.105,
+        "cylinderMass": 0.166,
+        "cylinderRadius": 0.015,
+        "offset": 0.15,
+        "hangingMass": 0.1,
+        "towerRadius": 0.03,
+        "frictionTorque": 0.001,
+        "initialOmega": 10,
+        "gravity": 9.8
+      },
+      "mount": "cylinders",
+      "reference_inertia": 0.010507349999999999,
+      "max_absolute_error": 1.3322676295501878e-15,
+      "max_gate_time_error_s": 7.993605777301127e-15
+    },
+    {
+      "parameters": {
+        "platformInertia": 0.008,
+        "ringMass": 0.436,
+        "ringOuter": 0.12,
+        "ringInner": 0.105,
+        "cylinderMass": 0.166,
+        "cylinderRadius": 0.015,
+        "offset": 0,
+        "hangingMass": 0.02,
+        "towerRadius": 0.015,
+        "frictionTorque": 0.0002,
+        "initialOmega": 5,
+        "gravity": 9.8
+      },
+      "mount": "platform",
+      "reference_inertia": 0.008,
+      "max_absolute_error": 3.885780586188048e-16,
+      "max_gate_time_error_s": 1.3322676295501878e-14
+    },
+    {
+      "parameters": {
+        "platformInertia": 0.008,
+        "ringMass": 0.436,
+        "ringOuter": 0.12,
+        "ringInner": 0.105,
+        "cylinderMass": 0.166,
+        "cylinderRadius": 0.015,
+        "offset": 0,
+        "hangingMass": 0.02,
+        "towerRadius": 0.015,
+        "frictionTorque": 0.0002,
+        "initialOmega": 5,
+        "gravity": 9.8
+      },
+      "mount": "ring",
+      "reference_inertia": 0.013542649999999996,
+      "max_absolute_error": 2.498001805406602e-16,
+      "max_gate_time_error_s": 2.1316282072803006e-14
+    },
+    {
+      "parameters": {
+        "platformInertia": 0.008,
+        "ringMass": 0.436,
+        "ringOuter": 0.12,
+        "ringInner": 0.105,
+        "cylinderMass": 0.166,
+        "cylinderRadius": 0.015,
+        "offset": 0,
+        "hangingMass": 0.02,
+        "towerRadius": 0.015,
+        "frictionTorque": 0.0002,
+        "initialOmega": 5,
+        "gravity": 9.8
+      },
+      "mount": "cylinders",
+      "reference_inertia": 0.00803735,
+      "max_absolute_error": 7.216449660063518e-16,
+      "max_gate_time_error_s": 5.10702591327572e-15
+    },
+    {
+      "parameters": {
+        "platformInertia": 0.008,
+        "ringMass": 0.436,
+        "ringOuter": 0.12,
+        "ringInner": 0.105,
+        "cylinderMass": 0.166,
+        "cylinderRadius": 0.015,
+        "offset": 0,
+        "hangingMass": 0.05,
+        "towerRadius": 0.025,
+        "frictionTorque": 0.0005,
+        "initialOmega": 7,
+        "gravity": 9.8
+      },
+      "mount": "platform",
+      "reference_inertia": 0.008,
+      "max_absolute_error": 1.3322676295501878e-15,
+      "max_gate_time_error_s": 6.217248937900877e-15
+    },
+    {
+      "parameters": {
+        "platformInertia": 0.008,
+        "ringMass": 0.436,
+        "ringOuter": 0.12,
+        "ringInner": 0.105,
+        "cylinderMass": 0.166,
+        "cylinderRadius": 0.015,
+        "offset": 0,
+        "hangingMass": 0.05,
+        "towerRadius": 0.025,
+        "frictionTorque": 0.0005,
+        "initialOmega": 7,
+        "gravity": 9.8
+      },
+      "mount": "ring",
+      "reference_inertia": 0.013542649999999996,
+      "max_absolute_error": 4.0245584642661925e-16,
+      "max_gate_time_error_s": 6.217248937900877e-15
+    },
+    {
+      "parameters": {
+        "platformInertia": 0.008,
+        "ringMass": 0.436,
+        "ringOuter": 0.12,
+        "ringInner": 0.105,
+        "cylinderMass": 0.166,
+        "cylinderRadius": 0.015,
+        "offset": 0,
+        "hangingMass": 0.05,
+        "towerRadius": 0.025,
+        "frictionTorque": 0.0005,
+        "initialOmega": 7,
+        "gravity": 9.8
+      },
+      "mount": "cylinders",
+      "reference_inertia": 0.00803735,
+      "max_absolute_error": 4.85722573273506e-17,
+      "max_gate_time_error_s": 9.325873406851315e-15
+    },
+    {
+      "parameters": {
+        "platformInertia": 0.008,
+        "ringMass": 0.436,
+        "ringOuter": 0.12,
+        "ringInner": 0.105,
+        "cylinderMass": 0.166,
+        "cylinderRadius": 0.015,
+        "offset": 0,
+        "hangingMass": 0.1,
+        "towerRadius": 0.03,
+        "frictionTorque": 0.001,
+        "initialOmega": 10,
+        "gravity": 9.8
+      },
+      "mount": "platform",
+      "reference_inertia": 0.008,
+      "max_absolute_error": 4.440892098500626e-16,
+      "max_gate_time_error_s": 1.2878587085651816e-14
+    },
+    {
+      "parameters": {
+        "platformInertia": 0.008,
+        "ringMass": 0.436,
+        "ringOuter": 0.12,
+        "ringInner": 0.105,
+        "cylinderMass": 0.166,
+        "cylinderRadius": 0.015,
+        "offset": 0,
+        "hangingMass": 0.1,
+        "towerRadius": 0.03,
+        "frictionTorque": 0.001,
+        "initialOmega": 10,
+        "gravity": 9.8
+      },
+      "mount": "ring",
+      "reference_inertia": 0.013542649999999996,
+      "max_absolute_error": 2.123301534595612e-15,
+      "max_gate_time_error_s": 2.6645352591003757e-15
+    },
+    {
+      "parameters": {
+        "platformInertia": 0.008,
+        "ringMass": 0.436,
+        "ringOuter": 0.12,
+        "ringInner": 0.105,
+        "cylinderMass": 0.166,
+        "cylinderRadius": 0.015,
+        "offset": 0,
+        "hangingMass": 0.1,
+        "towerRadius": 0.03,
+        "frictionTorque": 0.001,
+        "initialOmega": 10,
+        "gravity": 9.8
+      },
+      "mount": "cylinders",
+      "reference_inertia": 0.00803735,
+      "max_absolute_error": 1.3322676295501878e-15,
+      "max_gate_time_error_s": 1.3988810110276972e-14
+    },
+    {
+      "parameters": {
+        "platformInertia": 0.008,
+        "ringMass": 0.436,
+        "ringOuter": 0.12,
+        "ringInner": 0.105,
+        "cylinderMass": 0.166,
+        "cylinderRadius": 0.015,
+        "offset": 0.1,
+        "hangingMass": 0.02,
+        "towerRadius": 0.015,
+        "frictionTorque": 0.0002,
+        "initialOmega": 5,
+        "gravity": 9.8
+      },
+      "mount": "platform",
+      "reference_inertia": 0.008,
+      "max_absolute_error": 3.885780586188048e-16,
+      "max_gate_time_error_s": 1.3322676295501878e-14
+    },
+    {
+      "parameters": {
+        "platformInertia": 0.008,
+        "ringMass": 0.436,
+        "ringOuter": 0.12,
+        "ringInner": 0.105,
+        "cylinderMass": 0.166,
+        "cylinderRadius": 0.015,
+        "offset": 0.1,
+        "hangingMass": 0.02,
+        "towerRadius": 0.015,
+        "frictionTorque": 0.0002,
+        "initialOmega": 5,
+        "gravity": 9.8
+      },
+      "mount": "ring",
+      "reference_inertia": 0.013542649999999996,
+      "max_absolute_error": 2.498001805406602e-16,
+      "max_gate_time_error_s": 2.1316282072803006e-14
+    },
+    {
+      "parameters": {
+        "platformInertia": 0.008,
+        "ringMass": 0.436,
+        "ringOuter": 0.12,
+        "ringInner": 0.105,
+        "cylinderMass": 0.166,
+        "cylinderRadius": 0.015,
+        "offset": 0.1,
+        "hangingMass": 0.02,
+        "towerRadius": 0.015,
+        "frictionTorque": 0.0002,
+        "initialOmega": 5,
+        "gravity": 9.8
+      },
+      "mount": "cylinders",
+      "reference_inertia": 0.01135735,
+      "max_absolute_error": 2.498001805406602e-16,
+      "max_gate_time_error_s": 8.43769498715119e-15
+    },
+    {
+      "parameters": {
+        "platformInertia": 0.008,
+        "ringMass": 0.436,
+        "ringOuter": 0.12,
+        "ringInner": 0.105,
+        "cylinderMass": 0.166,
+        "cylinderRadius": 0.015,
+        "offset": 0.1,
+        "hangingMass": 0.05,
+        "towerRadius": 0.025,
+        "frictionTorque": 0.0005,
+        "initialOmega": 7,
+        "gravity": 9.8
+      },
+      "mount": "platform",
+      "reference_inertia": 0.008,
+      "max_absolute_error": 1.3322676295501878e-15,
+      "max_gate_time_error_s": 6.217248937900877e-15
+    },
+    {
+      "parameters": {
+        "platformInertia": 0.008,
+        "ringMass": 0.436,
+        "ringOuter": 0.12,
+        "ringInner": 0.105,
+        "cylinderMass": 0.166,
+        "cylinderRadius": 0.015,
+        "offset": 0.1,
+        "hangingMass": 0.05,
+        "towerRadius": 0.025,
+        "frictionTorque": 0.0005,
+        "initialOmega": 7,
+        "gravity": 9.8
+      },
+      "mount": "ring",
+      "reference_inertia": 0.013542649999999996,
+      "max_absolute_error": 4.0245584642661925e-16,
+      "max_gate_time_error_s": 6.217248937900877e-15
+    },
+    {
+      "parameters": {
+        "platformInertia": 0.008,
+        "ringMass": 0.436,
+        "ringOuter": 0.12,
+        "ringInner": 0.105,
+        "cylinderMass": 0.166,
+        "cylinderRadius": 0.015,
+        "offset": 0.1,
+        "hangingMass": 0.05,
+        "towerRadius": 0.025,
+        "frictionTorque": 0.0005,
+        "initialOmega": 7,
+        "gravity": 9.8
+      },
+      "mount": "cylinders",
+      "reference_inertia": 0.01135735,
+      "max_absolute_error": 1.1102230246251565e-15,
+      "max_gate_time_error_s": 8.43769498715119e-15
+    },
+    {
+      "parameters": {
+        "platformInertia": 0.008,
+        "ringMass": 0.436,
+        "ringOuter": 0.12,
+        "ringInner": 0.105,
+        "cylinderMass": 0.166,
+        "cylinderRadius": 0.015,
+        "offset": 0.1,
+        "hangingMass": 0.1,
+        "towerRadius": 0.03,
+        "frictionTorque": 0.001,
+        "initialOmega": 10,
+        "gravity": 9.8
+      },
+      "mount": "platform",
+      "reference_inertia": 0.008,
+      "max_absolute_error": 4.440892098500626e-16,
+      "max_gate_time_error_s": 1.2878587085651816e-14
+    },
+    {
+      "parameters": {
+        "platformInertia": 0.008,
+        "ringMass": 0.436,
+        "ringOuter": 0.12,
+        "ringInner": 0.105,
+        "cylinderMass": 0.166,
+        "cylinderRadius": 0.015,
+        "offset": 0.1,
+        "hangingMass": 0.1,
+        "towerRadius": 0.03,
+        "frictionTorque": 0.001,
+        "initialOmega": 10,
+        "gravity": 9.8
+      },
+      "mount": "ring",
+      "reference_inertia": 0.013542649999999996,
+      "max_absolute_error": 2.123301534595612e-15,
+      "max_gate_time_error_s": 2.6645352591003757e-15
+    },
+    {
+      "parameters": {
+        "platformInertia": 0.008,
+        "ringMass": 0.436,
+        "ringOuter": 0.12,
+        "ringInner": 0.105,
+        "cylinderMass": 0.166,
+        "cylinderRadius": 0.015,
+        "offset": 0.1,
+        "hangingMass": 0.1,
+        "towerRadius": 0.03,
+        "frictionTorque": 0.001,
+        "initialOmega": 10,
+        "gravity": 9.8
+      },
+      "mount": "cylinders",
+      "reference_inertia": 0.01135735,
+      "max_absolute_error": 1.429412144204889e-15,
+      "max_gate_time_error_s": 3.9968028886505635e-15
+    },
+    {
+      "parameters": {
+        "platformInertia": 0.008,
+        "ringMass": 0.436,
+        "ringOuter": 0.12,
+        "ringInner": 0.105,
+        "cylinderMass": 0.166,
+        "cylinderRadius": 0.015,
+        "offset": 0.15,
+        "hangingMass": 0.02,
+        "towerRadius": 0.015,
+        "frictionTorque": 0.0002,
+        "initialOmega": 5,
+        "gravity": 9.8
+      },
+      "mount": "platform",
+      "reference_inertia": 0.008,
+      "max_absolute_error": 3.885780586188048e-16,
+      "max_gate_time_error_s": 1.3322676295501878e-14
+    },
+    {
+      "parameters": {
+        "platformInertia": 0.008,
+        "ringMass": 0.436,
+        "ringOuter": 0.12,
+        "ringInner": 0.105,
+        "cylinderMass": 0.166,
+        "cylinderRadius": 0.015,
+        "offset": 0.15,
+        "hangingMass": 0.02,
+        "towerRadius": 0.015,
+        "frictionTorque": 0.0002,
+        "initialOmega": 5,
+        "gravity": 9.8
+      },
+      "mount": "ring",
+      "reference_inertia": 0.013542649999999996,
+      "max_absolute_error": 2.498001805406602e-16,
+      "max_gate_time_error_s": 2.1316282072803006e-14
+    },
+    {
+      "parameters": {
+        "platformInertia": 0.008,
+        "ringMass": 0.436,
+        "ringOuter": 0.12,
+        "ringInner": 0.105,
+        "cylinderMass": 0.166,
+        "cylinderRadius": 0.015,
+        "offset": 0.15,
+        "hangingMass": 0.02,
+        "towerRadius": 0.015,
+        "frictionTorque": 0.0002,
+        "initialOmega": 5,
+        "gravity": 9.8
+      },
+      "mount": "cylinders",
+      "reference_inertia": 0.01550735,
+      "max_absolute_error": 1.942890293094024e-16,
+      "max_gate_time_error_s": 2.2426505097428162e-14
+    },
+    {
+      "parameters": {
+        "platformInertia": 0.008,
+        "ringMass": 0.436,
+        "ringOuter": 0.12,
+        "ringInner": 0.105,
+        "cylinderMass": 0.166,
+        "cylinderRadius": 0.015,
+        "offset": 0.15,
+        "hangingMass": 0.05,
+        "towerRadius": 0.025,
+        "frictionTorque": 0.0005,
+        "initialOmega": 7,
+        "gravity": 9.8
+      },
+      "mount": "platform",
+      "reference_inertia": 0.008,
+      "max_absolute_error": 1.3322676295501878e-15,
+      "max_gate_time_error_s": 6.217248937900877e-15
+    },
+    {
+      "parameters": {
+        "platformInertia": 0.008,
+        "ringMass": 0.436,
+        "ringOuter": 0.12,
+        "ringInner": 0.105,
+        "cylinderMass": 0.166,
+        "cylinderRadius": 0.015,
+        "offset": 0.15,
+        "hangingMass": 0.05,
+        "towerRadius": 0.025,
+        "frictionTorque": 0.0005,
+        "initialOmega": 7,
+        "gravity": 9.8
+      },
+      "mount": "ring",
+      "reference_inertia": 0.013542649999999996,
+      "max_absolute_error": 4.0245584642661925e-16,
+      "max_gate_time_error_s": 6.217248937900877e-15
+    },
+    {
+      "parameters": {
+        "platformInertia": 0.008,
+        "ringMass": 0.436,
+        "ringOuter": 0.12,
+        "ringInner": 0.105,
+        "cylinderMass": 0.166,
+        "cylinderRadius": 0.015,
+        "offset": 0.15,
+        "hangingMass": 0.05,
+        "towerRadius": 0.025,
+        "frictionTorque": 0.0005,
+        "initialOmega": 7,
+        "gravity": 9.8
+      },
+      "mount": "cylinders",
+      "reference_inertia": 0.01550735,
+      "max_absolute_error": 6.661338147750939e-16,
+      "max_gate_time_error_s": 4.440892098500626e-15
+    },
+    {
+      "parameters": {
+        "platformInertia": 0.008,
+        "ringMass": 0.436,
+        "ringOuter": 0.12,
+        "ringInner": 0.105,
+        "cylinderMass": 0.166,
+        "cylinderRadius": 0.015,
+        "offset": 0.15,
+        "hangingMass": 0.1,
+        "towerRadius": 0.03,
+        "frictionTorque": 0.001,
+        "initialOmega": 10,
+        "gravity": 9.8
+      },
+      "mount": "platform",
+      "reference_inertia": 0.008,
+      "max_absolute_error": 4.440892098500626e-16,
+      "max_gate_time_error_s": 1.2878587085651816e-14
+    },
+    {
+      "parameters": {
+        "platformInertia": 0.008,
+        "ringMass": 0.436,
+        "ringOuter": 0.12,
+        "ringInner": 0.105,
+        "cylinderMass": 0.166,
+        "cylinderRadius": 0.015,
+        "offset": 0.15,
+        "hangingMass": 0.1,
+        "towerRadius": 0.03,
+        "frictionTorque": 0.001,
+        "initialOmega": 10,
+        "gravity": 9.8
+      },
+      "mount": "ring",
+      "reference_inertia": 0.013542649999999996,
+      "max_absolute_error": 2.123301534595612e-15,
+      "max_gate_time_error_s": 2.6645352591003757e-15
+    },
+    {
+      "parameters": {
+        "platformInertia": 0.008,
+        "ringMass": 0.436,
+        "ringOuter": 0.12,
+        "ringInner": 0.105,
+        "cylinderMass": 0.166,
+        "cylinderRadius": 0.015,
+        "offset": 0.15,
+        "hangingMass": 0.1,
+        "towerRadius": 0.03,
+        "frictionTorque": 0.001,
+        "initialOmega": 10,
+        "gravity": 9.8
+      },
+      "mount": "cylinders",
+      "reference_inertia": 0.01550735,
+      "max_absolute_error": 1.5543122344752192e-15,
+      "max_gate_time_error_s": 1.5765166949677223e-14
+    }
+  ]
+}

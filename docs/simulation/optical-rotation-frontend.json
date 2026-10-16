@@ -1,6 +1,14 @@
 {
   "status": "passed",
-  "source_record_sha256": "ce2c68b6e868b4512940220d4b9254417e70cd1c78009560e1c09da3a8544e26",
+  "source_hashes": {
+    "simulations/optical-rotation/app.mjs": "a9bd8c76e1c38f2fcc08a5d9b2451da4ede66e9a59c8023fb5cfb12e51563232",
+    "simulations/optical-rotation/chart.mjs": "4b6b62b126df5dc0c9f0f1de88c252a3eaf606fd73f84f81c2a6ef98e3227a1a",
+    "simulations/optical-rotation/index.html": "d5d2ddb1e7fa6b5b742026f21638a52ddbee1fd95d1863cf264590784d5dab2a",
+    "simulations/optical-rotation/lab.css": "d49a0441c85d1c723605c901a2a6e8a38d85bfac1ff3d70ca145783c1a603e30",
+    "simulations/optical-rotation/model.mjs": "cbbeabbf083e5c01ffa33f3670767fda882f07ac8bc71752606747da9bb37ae1",
+    "simulations/optical-rotation/observations.json": "dc43bc38027b33b4c6035cd72042ff7c299e6e71143ef8263a0146ffc417fded"
+  },
+  "source_record_sha256": "f675532f20aa8cd87d5e687a6c9a89e12e4b403f981cbd6bdaad57005f2d01f9",
   "interaction_checks": 5,
   "visual_status": "passed",
   "exports_status": "passed",
@@ -107,9 +115,9 @@
   "experiment_id": "course-04/optical-rotation",
   "numerical": {
     "status": "passed",
-    "reference_sha256": "06426b3d8dfd42106ae51868cd8804098d15a935ee271ff5bded28dad56fe70f",
+    "reference_sha256": "205b113c8c7359da5a58521fef310251d75afcbc8c676a5b18c6f6e1da2bd27d",
     "source_files": {
-      "simulations/optical-rotation/index.html": "e141b90ff4a3e7cbeb9e22693115b370fa0c70dc8807e27e31b33cc407eb7084",
+      "simulations/optical-rotation/index.html": "d5d2ddb1e7fa6b5b742026f21638a52ddbee1fd95d1863cf264590784d5dab2a",
       "simulations/optical-rotation/model.mjs": "cbbeabbf083e5c01ffa33f3670767fda882f07ac8bc71752606747da9bb37ae1",
       "simulations/optical-rotation/app.mjs": "a9bd8c76e1c38f2fcc08a5d9b2451da4ede66e9a59c8023fb5cfb12e51563232",
       "simulations/optical-rotation/chart.mjs": "4b6b62b126df5dc0c9f0f1de88c252a3eaf606fd73f84f81c2a6ef98e3227a1a",
@@ -162,13 +170,5 @@
         ]
       }
     ]
-  },
-  "source_hashes": {
-    "simulations/optical-rotation/app.mjs": "a9bd8c76e1c38f2fcc08a5d9b2451da4ede66e9a59c8023fb5cfb12e51563232",
-    "simulations/optical-rotation/chart.mjs": "4b6b62b126df5dc0c9f0f1de88c252a3eaf606fd73f84f81c2a6ef98e3227a1a",
-    "simulations/optical-rotation/index.html": "e141b90ff4a3e7cbeb9e22693115b370fa0c70dc8807e27e31b33cc407eb7084",
-    "simulations/optical-rotation/lab.css": "d49a0441c85d1c723605c901a2a6e8a38d85bfac1ff3d70ca145783c1a603e30",
-    "simulations/optical-rotation/model.mjs": "cbbeabbf083e5c01ffa33f3670767fda882f07ac8bc71752606747da9bb37ae1",
-    "simulations/optical-rotation/observations.json": "dc43bc38027b33b4c6035cd72042ff7c299e6e71143ef8263a0146ffc417fded"
   }
 }

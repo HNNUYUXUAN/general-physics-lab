@@ -1,0 +1,84 @@
+{
+  "experiment_id": "course-04/abbe-imaging",
+  "source": "original-report",
+  "tables": [
+    {
+      "headers": [
+        "衍射级次 k",
+        "频谱面位置 ξ/mm"
+      ],
+      "rows": [
+        [
+          "-2",
+          "-0.948"
+        ],
+        [
+          "-1",
+          "-0.474"
+        ],
+        [
+          "0",
+          "0.000"
+        ],
+        [
+          "1",
+          "0.476"
+        ],
+        [
+          "2",
+          "0.951"
+        ]
+      ]
+    },
+    {
+      "headers": [
+        "滤波方式",
+        "通过的主要频谱成分",
+        "像面现象",
+        "相对可见度"
+      ],
+      "rows": [
+        [
+          "不加空间滤波",
+          "0, ±1, ±2级均通过",
+          "条纹清晰，细节较完整",
+          "0.82"
+        ],
+        [
+          "小孔仅通0级",
+          "仅0级",
+          "像面近似均匀照明，条纹消失",
+          "0.05"
+        ],
+        [
+          "竖缝通0级和±1级",
+          "0, ±1级",
+          "恢复基本周期条纹，细节较少",
+          "0.74"
+        ],
+        [
+          "挡去0级，仅通±1级",
+          "±1级",
+          "出现反相条纹，背景变暗",
+          "0.63"
+        ],
+        [
+          "横向遮挡高频级次",
+          "0级为主，高级次弱",
+          "边缘模糊，分辨率下降",
+          "0.28"
+        ]
+      ]
+    }
+  ],
+  "analysis": {
+    "first_order_mean_abs_mm": 0.475,
+    "period_mm": 0.19983157894736844
+  },
+  "input_hashes": {
+    "experiments/course-04/abbe-imaging/experiment.json": "2b471c66e12083f84247a7854095b6cfad8156d44d1ef359f3f75f6ac03e0306",
+    "experiments/course-04/abbe-imaging/data/observations-01.csv": "40eb18601744225c5f0b881cc3c8ac2c0d944cdd75c843c1d572abd1c00c6fca",
+    "experiments/course-04/abbe-imaging/data/observations-02.csv": "f48b8a58a0a472a9a6b3df10bb2ba09a292dd540af381965503e29bb5854e829",
+    "experiments/course-04/abbe-imaging/data/provenance.json": "fa0c6408e48fcce4106f63e5354811057dffbe98f410b2847e8d78def543facd"
+  }
+}

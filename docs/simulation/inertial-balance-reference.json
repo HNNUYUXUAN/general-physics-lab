@@ -1,0 +1,27 @@
+{
+  "experimentId": "course-02/inertial-balance",
+  "status": "passed",
+  "method": "DOP853 oscillator integration and matrix least squares independent of browser implementation",
+  "caseCount": 18,
+  "samplesPerCase": 65,
+  "maxErrors": {
+    "ode_position_absolute_m": 5.657280199855563e-14,
+    "ode_velocity_absolute_m_s": 1.3841038793082625e-12,
+    "fit_slope_absolute": 0.0,
+    "fit_intercept_absolute": 1.1102230246251565e-16
+  },
+  "tolerances": {
+    "ode_position_absolute_m": 1e-10,
+    "ode_velocity_absolute_m_s": 1e-09,
+    "fit_slope_absolute": 1e-12,
+    "fit_intercept_absolute": 1e-12
+  },
+  "modelSha256": "a9cf6dffa08bab8f2e0fcf20a9b3b2fa68f070b5eb8893a82373e3f2ef6b072b",
+  "scipyVersion": "1.18.1",
+  "calibration": {
+    "slope": 1.955894242420952,
+    "intercept": 0.08516104881939277,
+    "stiffness": 20.18433141635109,
+    "emptyMass": 0.04354072268957792
+  }
+}

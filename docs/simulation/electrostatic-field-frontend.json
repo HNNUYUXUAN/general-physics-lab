@@ -1,0 +1,232 @@
+{
+  "status": "passed",
+  "source_hashes": {
+    "simulations/electrostatic-field/model.mjs": "220ec3cbdc2ca3f6729fea1f780f25f3cdddf87908888bf348b76b6bc2e72a92",
+    "simulations/electrostatic-field/app.mjs": "5c4b32f2b1c869b67f7fd0c343c536940a7388adbd3a2fdc512309f5109aa727",
+    "simulations/electrostatic-field/chart.mjs": "701c38c99d6db1df0ac90500005477498abd4cb0449c77311e3dd39ebf9d5849",
+    "simulations/electrostatic-field/lab.css": "d007905ee689191cb3d99caebe74d1e5e924b6fd068c7a81d2417c75219b6169",
+    "simulations/electrostatic-field/observations.json": "7a7d37d1b49d0e228c456024d753e6bdc462a9a4039d7e3a92769311fb92e420",
+    "simulations/electrostatic-field/diagram.mjs": "2b5181d291c16759388c54f8450e1d3d626e0a424569d711cc42f383c2700513",
+    "simulations/electrostatic-field/ui-config.json": "3334100593490482d26d543e18ec2bdb6d08613a592e9770c9ef6eb0473a9050",
+    "simulations/electrostatic-field/index.html": "dfa2ccb1486955f9e10124473a0af7f6bca0e149ebe66a8b250152fcc4ad9d3b"
+  },
+  "source_record_sha256": "f0ba413151cae560eca26808ca74dc8161823b743f8e270352176a049a5bf0a0",
+  "interaction_checks": 17,
+  "visual_status": "passed",
+  "exports_status": "passed",
+  "exports": [
+    {
+      "filename": "1-electrostatic-field-records.csv",
+      "sha256": "4a2b02a9c8daac1e38acabf0ef27bae71b91d249273950120e32ed5e17e9f4bb",
+      "bytes": 623
+    },
+    {
+      "filename": "2-electrostatic-field-records.json",
+      "sha256": "0d5fdadaabb6e01b31f7a9cc58a3a087ccdbec31f1e696e90543d78c2d1198eb",
+      "bytes": 1821
+    }
+  ],
+  "fonts": {
+    "h1": [
+      {
+        "familyName": "SimSun",
+        "postScriptName": "SimSun",
+        "isCustomFont": false,
+        "glyphCount": 13
+      }
+    ],
+    "#summary": [
+      {
+        "familyName": "Times New Roman",
+        "postScriptName": "TimesNewRomanPSMT",
+        "isCustomFont": false,
+        "glyphCount": 49
+      },
+      {
+        "familyName": "SimSun",
+        "postScriptName": "SimSun",
+        "isCustomFont": false,
+        "glyphCount": 4
+      }
+    ]
+  },
+  "browser": "fixed Playwright Chromium 1243",
+  "layout": {
+    "wide": {
+      "width": 1280,
+      "scrollWidth": 1280,
+      "math": 4,
+      "mathErrors": 0
+    },
+    "narrow": {
+      "width": 390,
+      "scrollWidth": 390,
+      "math": 4,
+      "mathErrors": 0
+    }
+  },
+  "interaction": [
+    {
+      "name": "a_cm=0.5",
+      "status": "passed"
+    },
+    {
+      "name": "a_cm=2",
+      "status": "passed"
+    },
+    {
+      "name": "b_cm=5",
+      "status": "passed"
+    },
+    {
+      "name": "b_cm=10",
+      "status": "passed"
+    },
+    {
+      "name": "voltage=5",
+      "status": "passed"
+    },
+    {
+      "name": "voltage=15",
+      "status": "passed"
+    },
+    {
+      "name": "fraction=0",
+      "status": "passed"
+    },
+    {
+      "name": "fraction=1",
+      "status": "passed"
+    },
+    {
+      "name": "angle=0",
+      "status": "passed"
+    },
+    {
+      "name": "angle=360",
+      "status": "passed"
+    },
+    {
+      "name": "原表 reported_radii",
+      "status": "passed"
+    },
+    {
+      "name": "默认设置读数与记录",
+      "status": "passed"
+    },
+    {
+      "name": "测量闭环与同组分析",
+      "status": "passed"
+    },
+    {
+      "name": "非法编辑blur后不得记录",
+      "status": "passed"
+    },
+    {
+      "name": "恢复删除与清空",
+      "status": "passed"
+    },
+    {
+      "name": "真实CSV/JSON导出与元数据",
+      "status": "passed"
+    },
+    {
+      "name": "restore",
+      "status": "passed"
+    }
+  ],
+  "background": {
+    "status": "not-applicable"
+  },
+  "checked_at_utc": "2026-10-16T16:13:28.756Z",
+  "screenshots": [
+    {
+      "path": "docs/assets/simulations/electrostatic-field/frontend-01-7f9bc144c222.png",
+      "sha256": "7f9bc144c222f38e65acdfd7749eb58743536345bf87d9fa50732acc54ae5711"
+    },
+    {
+      "path": "docs/assets/simulations/electrostatic-field/frontend-02-5b9a0a064edf.png",
+      "sha256": "5b9a0a064edf7bb7faf38da9a70adbb43aeb7d3c193a38b95aa919c37ad5c370"
+    },
+    {
+      "path": "docs/assets/simulations/electrostatic-field/frontend-03-93f34df85a2a.png",
+      "sha256": "93f34df85a2a149c57fa80eee63c5bd01f7b34f5334655f2ebe09daf640943c1"
+    },
+    {
+      "path": "docs/assets/simulations/electrostatic-field/frontend-04-598f25490a1e.png",
+      "sha256": "598f25490a1e2a89d22e068d47d7507b98b409ca8572075c13cff21692a7163b"
+    },
+    {
+      "path": "docs/assets/simulations/electrostatic-field/frontend-05-4e4df7e21445.png",
+      "sha256": "4e4df7e214459517a474a5eb60dd59ca2510515e194936ec23b2986b42f33512"
+    },
+    {
+      "path": "docs/assets/simulations/electrostatic-field/frontend-06-e96593a8de76.png",
+      "sha256": "e96593a8de76551078819c7d1afa6bfd12c60b30ad97c53a151c6149490b17d0"
+    },
+    {
+      "path": "docs/assets/simulations/electrostatic-field/frontend-07-a9858767cab3.png",
+      "sha256": "a9858767cab3df04af2d79293eac2ebae1e9156edcb0dc93b579d530c47b655d"
+    },
+    {
+      "path": "docs/assets/simulations/electrostatic-field/frontend-08-d02c2a4d6bac.png",
+      "sha256": "d02c2a4d6bac89a5bb016937061557bf9a21d98d2e29c978b4fc2fb614c32ade"
+    },
+    {
+      "path": "docs/assets/simulations/electrostatic-field/frontend-09-b284fc355806.png",
+      "sha256": "b284fc3558068e6f16330f53feea6fb886edae45183acfb7bc2fe76eb0ec2541"
+    },
+    {
+      "path": "docs/assets/simulations/electrostatic-field/frontend-10-bfb04ab660f8.png",
+      "sha256": "bfb04ab660f83d07f2be9bd0a2e45fe4249dc3a2036942f17fa2ecec0f6e6103"
+    },
+    {
+      "path": "docs/assets/simulations/electrostatic-field/frontend-11-4f5a3d364186.png",
+      "sha256": "4f5a3d3641863a737243e9c9951fb80a592d0609a68b402dd45e8a9921756453"
+    },
+    {
+      "path": "docs/assets/simulations/electrostatic-field/frontend-12-6beca24be321.png",
+      "sha256": "6beca24be3212f91e98514f3a77ae2e487dfc171c1fe52c50e98cfca9bd81a1a"
+    }
+  ],
+  "schema_version": 1,
+  "experiment_id": "course-03/electrostatic-field",
+  "numerical": {
+    "status": "passed",
+    "reference_sha256": "080e9cb5468283c7e96bff7256397521d12a6d3017711888d582e55356d25ff8",
+    "source_files": {
+      "simulations/electrostatic-field/index.html": "dfa2ccb1486955f9e10124473a0af7f6bca0e149ebe66a8b250152fcc4ad9d3b",
+      "simulations/electrostatic-field/model.mjs": "220ec3cbdc2ca3f6729fea1f780f25f3cdddf87908888bf348b76b6bc2e72a92",
+      "simulations/electrostatic-field/app.mjs": "5c4b32f2b1c869b67f7fd0c343c536940a7388adbd3a2fdc512309f5109aa727",
+      "simulations/electrostatic-field/chart.mjs": "701c38c99d6db1df0ac90500005477498abd4cb0449c77311e3dd39ebf9d5849",
+      "simulations/electrostatic-field/lab.css": "d007905ee689191cb3d99caebe74d1e5e924b6fd068c7a81d2417c75219b6169",
+      "simulations/electrostatic-field/observations.json": "7a7d37d1b49d0e228c456024d753e6bdc462a9a4039d7e3a92769311fb92e420",
+      "docs/electrostatic-field-model-evidence.md": "22715185827cd95c15a5423c97eddd71164b0ee9accc58ae5b89f2dc9166bb16",
+      "docs/electrostatic-field-references.json": "bd684ba859cd8f108501d33df8faf7acf1568ea088102ca8dc2b53f933f3b586",
+      "docs/electrostatic-field-references.bib": "d7f43f1da15d6a3356c2bca59722b01e6e221ee5bb4311ab0b982580a42683af",
+      "docs/simulation/electrostatic-field-reference.json": "080e9cb5468283c7e96bff7256397521d12a6d3017711888d582e55356d25ff8",
+      "simulations/electrostatic-field/diagram.mjs": "2b5181d291c16759388c54f8450e1d3d626e0a424569d711cc42f383c2700513",
+      "simulations/electrostatic-field/ui-config.json": "3334100593490482d26d543e18ec2bdb6d08613a592e9770c9ef6eb0473a9050",
+      "scripts/validate_electrostatic_field_simulation.py": "8b3b641373003c0a7d558071deb7bd804490d2f2382e59985b1d7660a894f857",
+      "tests/electrostatic-field-model.test.mjs": "2b5e86d503c67ed69a9bc511634d2b11a244fa548b14b8c52096ce212f09f51b"
+    }
+  },
+  "scientific_evidence": {
+    "status": "verified",
+    "decision_source_files": {
+      "docs/electrostatic-field-references.json": "bd684ba859cd8f108501d33df8faf7acf1568ea088102ca8dc2b53f933f3b586",
+      "docs/electrostatic-field-model-evidence.md": "22715185827cd95c15a5423c97eddd71164b0ee9accc58ae5b89f2dc9166bb16",
+      "simulations/electrostatic-field/model.mjs": "220ec3cbdc2ca3f6729fea1f780f25f3cdddf87908888bf348b76b6bc2e72a92"
+    },
+    "core_references": [
+      {
+        "id": "shi2018field",
+        "pdf_sha256": "9bb0852bacb77d9421444507a8eb88fe52efdd1324d1270b4b69db6518003d36",
+        "locators": [
+          "p.22 section 1 equation (1), homogeneous concentric electrode potential",
+          "pp.23–24 sections 3.1–3.2, medium-dependent deviations"
+        ]
+      }
+    ]
+  }
+}

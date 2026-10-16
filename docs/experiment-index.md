@@ -29,6 +29,8 @@
 
 [实验入口](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-01/doppler-verification/README.md) · [报告](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-01/doppler-verification/report/report.md) · [Jupyter](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-01/doppler-verification/notebooks/analysis.ipynb) · [Wolfram](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/DopplerVerificationLab/Notebooks/DopplerVerificationLab.nb) · [源PDF](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/pdf/course-01/%E5%A4%9A%E6%99%AE%E5%8B%92%E6%95%88%E5%BA%94%E7%9A%84%E9%AA%8C%E8%AF%81/%E5%A4%9A%E6%99%AE%E5%8B%92%E6%95%88%E5%BA%94%E9%AA%8C%E8%AF%81%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A.pdf)
 
+[虚拟实验](https://hnnuyuxuan.github.io/general-physics-lab/simulations/doppler-verification/index.html) · [模型依据](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/doppler-verification-model-evidence.md) · [浏览器模型](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/doppler-verification/model.mjs) · [观测对照](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/doppler-verification/observations.json) · [文献题录](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/doppler-verification-references.json) · [数值验证](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/simulation/doppler-verification-reference.json)
+
 
 ### 多普勒效应的应用 · Doppler Measurement of Spring Oscillations and Spring Stiffness
 
@@ -39,6 +41,8 @@
 主题：弹簧简谐振动；胡克定律；非接触周期测量；弹簧有效质量。方法：静态加载比值计算；带截距力伸长回归；周期均值动态劲度计算；静态选点敏感性比较；均匀弹簧有效质量模型扫描。
 
 [实验入口](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-01/doppler-application/README.md) · [报告](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-01/doppler-application/report/report.md) · [Jupyter](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-01/doppler-application/notebooks/analysis.ipynb) · [Wolfram](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/DopplerApplicationLab/Notebooks/DopplerApplicationLab.nb) · [源PDF](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/pdf/course-01/%E5%A4%9A%E6%99%AE%E5%8B%92%E6%95%88%E5%BA%94%E7%9A%84%E5%BA%94%E7%94%A8/%E5%A4%9A%E6%99%AE%E5%8B%92%E6%95%88%E5%BA%94%E7%9A%84%E5%BA%94%E7%94%A8-%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A.pdf)
+
+[虚拟实验](https://hnnuyuxuan.github.io/general-physics-lab/simulations/doppler-application/index.html) · [模型依据](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/doppler-application-model-evidence.md) · [浏览器模型](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/doppler-application/model.mjs) · [观测对照](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/doppler-application/observations.json) · [文献题录](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/doppler-application-references.json) · [数值验证](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/simulation/doppler-application-reference.json)
 
 
 ### 牛顿第二定律的验证 · Verification of Newton's Second Law on an Air Track
@@ -51,6 +55,8 @@
 
 [实验入口](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-01/newton-second-law/README.md) · [报告](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-01/newton-second-law/report/report.md) · [Jupyter](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-01/newton-second-law/notebooks/analysis.ipynb) · [Wolfram](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/NewtonSecondLawLab/Notebooks/NewtonSecondLawLab.nb) · [源PDF](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/pdf/course-01/%E7%89%9B%E9%A1%BF%E7%AC%AC%E4%BA%8C%E5%AE%9A%E5%BE%8B%E7%9A%84%E9%AA%8C%E8%AF%81/%E7%89%9B%E9%A1%BF%E7%AC%AC%E4%BA%8C%E8%BF%90%E5%8A%A8%E5%AE%9A%E5%BE%8B%E9%AA%8C%E8%AF%81%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A.pdf)
 
+[虚拟实验](https://hnnuyuxuan.github.io/general-physics-lab/simulations/newton-second-law/index.html) · [模型依据](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/newton-second-law-model-evidence.md) · [浏览器模型](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/newton-second-law/model.mjs) · [观测对照](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/newton-second-law/observations.json) · [文献题录](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/newton-second-law-references.json) · [数值验证](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/simulation/newton-second-law-reference.json)
+
 
 ### 碰撞规律的研究 · Momentum and Energy in One-Dimensional Collisions
 
@@ -61,6 +67,8 @@
 主题：动量守恒；动能耗散；粘合碰撞；恢复系数。方法：碰前后动量与动能计算；动量亏损和动能损失率比较；碰后速度比与质量模型比较；恢复系数碰撞模型扫描。
 
 [实验入口](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-01/collisions/README.md) · [报告](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-01/collisions/report/report.md) · [Jupyter](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-01/collisions/notebooks/analysis.ipynb) · [Wolfram](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/CollisionsLab/Notebooks/CollisionsLab.nb) · [源PDF](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/pdf/course-01/%E7%A2%B0%E6%92%9E%E8%A7%84%E5%BE%8B%E7%9A%84%E7%A0%94%E7%A9%B6/%E7%A2%B0%E6%92%9E%E8%A7%84%E5%BE%8B%E7%A0%94%E7%A9%B6%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A.pdf)
+
+[虚拟实验](https://hnnuyuxuan.github.io/general-physics-lab/simulations/collisions/index.html) · [模型依据](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/collisions-model-evidence.md) · [浏览器模型](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/collisions/model.mjs) · [观测对照](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/collisions/observations.json) · [文献题录](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/collisions-references.json) · [数值验证](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/simulation/collisions-reference.json)
 
 
 ### 热功当量的测量 · Electrical Heating and the Mechanical Equivalent of Heat
@@ -73,6 +81,8 @@
 
 [实验入口](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-01/mechanical-equivalent-heat/README.md) · [报告](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-01/mechanical-equivalent-heat/report/report.md) · [Jupyter](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-01/mechanical-equivalent-heat/notebooks/analysis.ipynb) · [Wolfram](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/MechanicalEquivalentHeatLab/Notebooks/MechanicalEquivalentHeatLab.nb) · [源PDF](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/pdf/course-01/%E7%83%AD%E5%8A%9F%E5%BD%93%E9%87%8F%E7%9A%84%E6%B5%8B%E9%87%8F/%E7%83%AD%E5%8A%9F%E5%BD%93%E9%87%8F%E7%9A%84%E6%B5%8B%E9%87%8F%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A.pdf)
 
+[虚拟实验](https://hnnuyuxuan.github.io/general-physics-lab/simulations/mechanical-equivalent-heat/index.html) · [模型依据](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/mechanical-equivalent-heat-model-evidence.md) · [浏览器模型](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/mechanical-equivalent-heat/model.mjs) · [观测对照](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/mechanical-equivalent-heat/observations.json) · [文献题录](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/mechanical-equivalent-heat-references.json) · [数值验证](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/simulation/mechanical-equivalent-heat-reference.json)
+
 
 ### 物质密度的测量 · Density Measurement by Buoyancy and Pycnometry
 
@@ -84,6 +94,8 @@
 
 [实验入口](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-01/density/README.md) · [报告](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-01/density/report/report.md) · [Jupyter](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-01/density/notebooks/analysis.ipynb) · [Wolfram](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/DensityLab/Notebooks/DensityLab.nb) · [源PDF](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/pdf/course-01/%E7%89%A9%E8%B4%A8%E5%AF%86%E5%BA%A6%E7%9A%84%E6%B5%8B%E9%87%8F/%E7%89%A9%E8%B4%A8%E5%AF%86%E5%BA%A6%E6%B5%8B%E9%87%8F%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A.pdf)
 
+[虚拟实验](https://hnnuyuxuan.github.io/general-physics-lab/simulations/density/index.html) · [模型依据](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/density-model-evidence.md) · [浏览器模型](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/density/model.mjs) · [观测对照](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/density/observations.json) · [文献题录](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/density-references.json) · [数值验证](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/simulation/density-reference.json)
+
 
 ### 液体比汽化热的测量 · Specific Latent Heat of Vaporization of Water by Condensation Calorimetry
 
@@ -94,6 +106,8 @@
 主题：相变潜热；热量守恒；凝结显热；量热器热容。方法：初末称量差求凝结质量；温度电压换算；量热平衡与显热扣除；称量构成条件比较；末温灵敏度扫描。
 
 [实验入口](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-01/vaporization-heat/README.md) · [报告](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-01/vaporization-heat/report/report.md) · [Jupyter](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-01/vaporization-heat/notebooks/analysis.ipynb) · [Wolfram](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/VaporizationHeatLab/Notebooks/VaporizationHeatLab.nb) · [源PDF](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/pdf/course-01/%E6%B6%B2%E4%BD%93%E6%AF%94%E6%B1%BD%E5%8C%96%E7%83%AD%E7%9A%84%E6%B5%8B%E9%87%8F/%E6%B6%B2%E4%BD%93%E6%AF%94%E6%B1%BD%E5%8C%96%E7%83%AD%E6%B5%8B%E9%87%8F%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A.pdf)
+
+[虚拟实验](https://hnnuyuxuan.github.io/general-physics-lab/simulations/vaporization-heat/index.html) · [模型依据](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/vaporization-heat-model-evidence.md) · [浏览器模型](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/vaporization-heat/model.mjs) · [观测对照](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/vaporization-heat/observations.json) · [文献题录](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/vaporization-heat-references.json) · [数值验证](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/simulation/vaporization-heat-reference.json)
 
 
 ## 普通物理实验 2 · 10项
@@ -108,6 +122,8 @@
 
 [实验入口](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-02/surface-tension/README.md) · [报告](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-02/surface-tension/report/report.md) · [Jupyter](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-02/surface-tension/notebooks/analysis.ipynb) · [Wolfram](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/SurfaceTensionLab/Notebooks/SurfaceTensionLab.nb) · [源PDF](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/pdf/course-02/01-%E8%A1%A8%E9%9D%A2%E5%BC%A0%E5%8A%9B%E7%B3%BB%E6%95%B0%E7%9A%84%E6%B5%8B%E5%AE%9A%28%E6%8B%89%E8%84%B1%E6%B3%95%29/%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A-%E8%A1%A8%E9%9D%A2%E5%BC%A0%E5%8A%9B%E7%B3%BB%E6%95%B0%E7%9A%84%E6%B5%8B%E5%AE%9A.pdf)
 
+[虚拟实验](https://hnnuyuxuan.github.io/general-physics-lab/simulations/surface-tension/index.html) · [模型依据](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/surface-tension-model-evidence.md) · [浏览器模型](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/surface-tension/model.mjs) · [观测对照](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/surface-tension/observations.json) · [文献题录](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/surface-tension-references.json) · [数值验证](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/simulation/surface-tension-reference.json)
+
 
 ### 杨氏模量的测量 · Young's Modulus of a Metal Wire by Tensile Loading and an Optical Lever
 
@@ -118,6 +134,8 @@
 主题：弹性形变；轴向拉伸；光杠杆放大；杨氏模量。方法：加减载荷标尺读数平均；测微器正零差修正；逐差与伸长回归比较；光杠杆小角度几何换算；指定标准分量条件传播 / specified uncertainty propagation。
 
 [实验入口](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-02/young-modulus/README.md) · [报告](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-02/young-modulus/report/report.md) · [Jupyter](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-02/young-modulus/notebooks/analysis.ipynb) · [Wolfram](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/YoungModulusLab/Notebooks/YoungModulusLab.nb) · [源PDF](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/pdf/course-02/02-%E6%9D%A8%E6%B0%8F%E6%A8%A1%E9%87%8F%E7%9A%84%E6%B5%8B%E9%87%8F/%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A-%E6%8B%89%E4%BC%B8%E6%B3%95%E6%B5%8B%E9%87%8F%E9%87%91%E5%B1%9E%E6%9D%A8%E6%B0%8F%E6%A8%A1%E9%87%8F.pdf)
+
+[虚拟实验](https://hnnuyuxuan.github.io/general-physics-lab/simulations/young-modulus/index.html) · [模型依据](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/young-modulus-model-evidence.md) · [浏览器模型](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/young-modulus/model.mjs) · [观测对照](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/young-modulus/observations.json) · [文献题录](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/young-modulus-references.json) · [数值验证](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/simulation/young-modulus-reference.json)
 
 
 ### 弦振动的研究 · Standing Waves on a Stretched String
@@ -143,6 +161,8 @@
 
 [实验入口](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-02/sound-speed/README.md) · [报告](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-02/sound-speed/report/report.md) · [Jupyter](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-02/sound-speed/notebooks/analysis.ipynb) · [Wolfram](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/SoundSpeedLab/Notebooks/SoundSpeedLab.nb) · [源PDF](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/pdf/course-02/04-%E5%A3%B0%E9%80%9F%E7%9A%84%E6%B5%8B%E9%87%8F/%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A-%E5%A3%B0%E9%80%9F%E7%9A%84%E6%B5%8B%E9%87%8F.pdf)
 
+[虚拟实验](https://hnnuyuxuan.github.io/general-physics-lab/simulations/sound-speed/index.html) · [模型依据](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/sound-speed-model-evidence.md) · [浏览器模型](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/sound-speed/model.mjs) · [观测对照](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/sound-speed/observations.json) · [文献题录](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/sound-speed-references.json) · [数值验证](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/simulation/sound-speed-reference.json)
+
 
 ### 刚体转动惯量 · Moment of Inertia of Rigid Bodies and the Parallel-Axis Theorem
 
@@ -153,6 +173,8 @@
 主题：质量分布；转动惯量；平行轴定理；圆环与圆柱。方法：已报角加速度均值重算；已报总惯量差分；均匀圆环与圆柱几何计算；圆柱偏轴距离模型扫描。
 
 [实验入口](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-02/moment-of-inertia/README.md) · [报告](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-02/moment-of-inertia/report/report.md) · [Jupyter](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-02/moment-of-inertia/notebooks/analysis.ipynb) · [Wolfram](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/MomentOfInertiaLab/Notebooks/MomentOfInertiaLab.nb) · [源PDF](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/pdf/course-02/05-%E5%88%9A%E4%BD%93%E8%BD%AC%E5%8A%A8%E6%83%AF%E9%87%8F/%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A-%E5%88%9A%E4%BD%93%E8%BD%AC%E5%8A%A8%E6%83%AF%E9%87%8F%E7%9A%84%E6%B5%8B%E5%AE%9A.pdf)
+
+[虚拟实验](https://hnnuyuxuan.github.io/general-physics-lab/simulations/moment-of-inertia/index.html) · [模型依据](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/moment-of-inertia-model-evidence.md) · [浏览器模型](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/moment-of-inertia/model.mjs) · [观测对照](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/moment-of-inertia/observations.json) · [文献题录](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/moment-of-inertia-references.json) · [数值验证](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/simulation/moment-of-inertia-reference.json)
 
 
 ### 金属线膨胀系数的测量 · Linear Thermal Expansion of a Metal Rod
@@ -165,6 +187,8 @@
 
 [实验入口](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-02/thermal-expansion/README.md) · [报告](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-02/thermal-expansion/report/report.md) · [Jupyter](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-02/thermal-expansion/notebooks/analysis.ipynb) · [Wolfram](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/ThermalExpansionLab/Notebooks/ThermalExpansionLab.nb) · [源PDF](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/pdf/course-02/06-%E9%87%91%E5%B1%9E%E7%BA%BF%E8%86%A8%E8%83%80%E7%B3%BB%E6%95%B0%E7%9A%84%E6%B5%8B%E9%87%8F/%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A-%E9%87%91%E5%B1%9E%E7%BA%BF%E8%83%80%E7%B3%BB%E6%95%B0%E7%9A%84%E6%B5%8B%E9%87%8F.pdf)
 
+[虚拟实验](https://hnnuyuxuan.github.io/general-physics-lab/simulations/thermal-expansion/index.html) · [模型依据](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/thermal-expansion-model-evidence.md) · [浏览器模型](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/thermal-expansion/model.mjs) · [观测对照](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/thermal-expansion/observations.json) · [文献题录](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/thermal-expansion-references.json) · [数值验证](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/simulation/thermal-expansion-reference.json)
+
 
 ### 固体导热系数的测量 · Thermal Conductivity and Specific Heat by a Quasi-Steady Heating Method
 
@@ -175,6 +199,8 @@
 主题：傅里叶导热；准稳态热流；比热容；热电偶温差。方法：热电势换算温差；中心面温升线性回归；逐差温升速率比较；给定电阻热流密度计算；末端与平均温差导热估计。
 
 [实验入口](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-02/thermal-conductivity/README.md) · [报告](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-02/thermal-conductivity/report/report.md) · [Jupyter](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-02/thermal-conductivity/notebooks/analysis.ipynb) · [Wolfram](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/ThermalConductivityLab/Notebooks/ThermalConductivityLab.nb) · [源PDF](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/pdf/course-02/07-%E5%9B%BA%E4%BD%93%E5%AF%BC%E7%83%AD%E7%B3%BB%E6%95%B0%E7%9A%84%E6%B5%8B%E9%87%8F/%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A-%E5%9B%BA%E4%BD%93%E5%AF%BC%E7%83%AD%E7%B3%BB%E6%95%B0%E7%9A%84%E6%B5%8B%E9%87%8F.pdf)
+
+[虚拟实验](https://hnnuyuxuan.github.io/general-physics-lab/simulations/thermal-conductivity/index.html) · [模型依据](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/thermal-conductivity-model-evidence.md) · [浏览器模型](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/thermal-conductivity/model.mjs) · [观测对照](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/thermal-conductivity/observations.json) · [文献题录](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/thermal-conductivity-references.json) · [数值验证](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/simulation/thermal-conductivity-reference.json)
 
 
 ### 液体粘度系数的测量 · Liquid Viscosity by the Falling-Sphere Method
@@ -187,6 +213,8 @@
 
 [实验入口](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-02/liquid-viscosity/README.md) · [报告](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-02/liquid-viscosity/report/report.md) · [Jupyter](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-02/liquid-viscosity/notebooks/analysis.ipynb) · [Wolfram](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/LiquidViscosityLab/Notebooks/LiquidViscosityLab.nb) · [源PDF](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/pdf/course-02/08-%E6%B6%B2%E4%BD%93%E7%B2%98%E5%BA%A6%E7%B3%BB%E6%95%B0%E7%9A%84%E6%B5%8B%E9%87%8F/%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A-%E6%B6%B2%E4%BD%93%E7%B2%98%E6%BB%9E%E7%B3%BB%E6%95%B0%E7%9A%84%E6%B5%8B%E9%87%8F.pdf)
 
+[虚拟实验](https://hnnuyuxuan.github.io/general-physics-lab/simulations/liquid-viscosity/index.html) · [模型依据](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/liquid-viscosity-model-evidence.md) · [浏览器模型](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/liquid-viscosity/model.mjs) · [观测对照](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/liquid-viscosity/observations.json) · [文献题录](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/liquid-viscosity-references.json) · [数值验证](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/simulation/liquid-viscosity-reference.json)
+
 
 ### 波尔共振实验 · Pohl Resonance: Free, Damped and Forced Oscillations
 
@@ -198,6 +226,8 @@
 
 [实验入口](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-02/pohl-resonance/README.md) · [报告](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-02/pohl-resonance/report/report.md) · [Jupyter](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-02/pohl-resonance/notebooks/analysis.ipynb) · [Wolfram](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/PohlResonanceLab/Notebooks/PohlResonanceLab.nb) · [源PDF](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/pdf/course-02/%E6%B3%A2%E5%B0%94%E5%85%B1%E6%8C%AF%E5%AE%9E%E9%AA%8C/%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A-%E6%B3%A2%E5%B0%94%E5%85%B1%E6%8C%AF%E5%AE%9E%E9%AA%8C.pdf)
 
+[虚拟实验](https://hnnuyuxuan.github.io/general-physics-lab/simulations/pohl-resonance/index.html) · [模型依据](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/pohl-resonance-model-evidence.md) · [浏览器模型](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/pohl-resonance/model.mjs) · [观测对照](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/pohl-resonance/observations.json) · [文献题录](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/pohl-resonance-references.json) · [数值验证](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/simulation/pohl-resonance-reference.json)
+
 
 ### 惯性秤的应用 · Mass Measurement with an Inertial Balance
 
@@ -208,6 +238,8 @@
 主题：惯性质量；简谐振动；质量定标；空载等效质量。方法：标准质量周期平方回归；逐差定标斜率比较；未知物周期反演质量；定标参数协方差传播 / calibration covariance propagation；等效劲度与空载质量计算。
 
 [实验入口](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-02/inertial-balance/README.md) · [报告](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-02/inertial-balance/report/report.md) · [Jupyter](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-02/inertial-balance/notebooks/analysis.ipynb) · [Wolfram](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/InertialBalanceLab/Notebooks/InertialBalanceLab.nb) · [源PDF](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/pdf/course-02/%E6%83%AF%E6%80%A7%E7%A7%A4%E7%9A%84%E5%BA%94%E7%94%A8/%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A-%E6%83%AF%E6%80%A7%E7%A7%A4%E7%9A%84%E5%BA%94%E7%94%A8.pdf)
+
+[虚拟实验](https://hnnuyuxuan.github.io/general-physics-lab/simulations/inertial-balance/index.html) · [模型依据](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/inertial-balance-model-evidence.md) · [浏览器模型](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/inertial-balance/model.mjs) · [观测对照](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/inertial-balance/observations.json) · [文献题录](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/inertial-balance-references.json) · [数值验证](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/simulation/inertial-balance-reference.json)
 
 
 ## 普通物理实验 3 · 13项
@@ -222,6 +254,8 @@
 
 [实验入口](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/multimeter/README.md) · [报告](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/multimeter/report/report.md) · [Jupyter](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/multimeter/notebooks/analysis.ipynb) · [Wolfram](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/MultimeterLab/Notebooks/MultimeterLab.nb) · [源PDF](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/pdf/course-03/1%E4%B8%87%E7%94%A8%E7%94%B5%E8%A1%A8%E7%9A%84%E4%BD%BF%E7%94%A8/%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A-%E4%B8%87%E7%94%A8%E7%94%B5%E8%A1%A8%E7%9A%84%E4%BD%BF%E7%94%A8.pdf)
 
+[虚拟实验](https://hnnuyuxuan.github.io/general-physics-lab/simulations/multimeter/index.html) · [模型依据](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/multimeter-model-evidence.md) · [浏览器模型](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/multimeter/model.mjs) · [观测对照](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/multimeter/observations.json) · [文献题录](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/multimeter-references.json) · [数值验证](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/simulation/multimeter-reference.json)
+
 
 ### 制流分压电路 · Current-Limiting and Loaded Voltage-Divider Circuits
 
@@ -232,6 +266,8 @@
 主题：直流电阻电路；分压负载效应；调节范围；归一化电路响应。方法：三负载比位置扫描记录比较；固定电路形状单幅度最小二乘；曲线残差计算；无量纲负载比模型扫描。
 
 [实验入口](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/current-voltage-divider/README.md) · [报告](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/current-voltage-divider/report/report.md) · [Jupyter](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/current-voltage-divider/notebooks/analysis.ipynb) · [Wolfram](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/DividerCircuitsLab/Notebooks/DividerCircuitsLab.nb) · [源PDF](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/pdf/course-03/2%E5%88%B6%E6%B5%81%E5%88%86%E5%8E%8B%E7%94%B5%E8%B7%AF/%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A-%E5%88%B6%E6%B5%81%E5%88%86%E5%8E%8B%E7%94%B5.pdf)
+
+[虚拟实验](https://hnnuyuxuan.github.io/general-physics-lab/simulations/current-voltage-divider/index.html) · [模型依据](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/current-voltage-divider-model-evidence.md) · [浏览器模型](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/current-voltage-divider/model.mjs) · [观测对照](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/current-voltage-divider/observations.json) · [文献题录](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/current-voltage-divider-references.json) · [数值验证](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/simulation/current-voltage-divider-reference.json)
 
 
 ### 用稳恒电场模拟静电场 · Simulation of an Electrostatic Field with a Steady Current Field
@@ -244,6 +280,8 @@
 
 [实验入口](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/electrostatic-field/README.md) · [报告](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/electrostatic-field/report/report.md) · [Jupyter](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/electrostatic-field/notebooks/analysis.ipynb) · [Wolfram](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/ElectrostaticFieldLab/Notebooks/ElectrostaticFieldLab.nb) · [源PDF](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/pdf/course-03/3%E7%94%A8%E7%A8%B3%E6%81%92%E7%94%B5%E5%9C%BA%E6%A8%A1%E6%8B%9F%E9%9D%99%E7%94%B5%E5%9C%BA/%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A-%E7%94%A8%E7%A8%B3%E6%81%92%E7%94%B5%E5%9C%BA%E6%A8%A1%E6%8B%9F%E9%9D%99%E7%94%B5%E5%9C%BA.pdf)
 
+[虚拟实验](https://hnnuyuxuan.github.io/general-physics-lab/simulations/electrostatic-field/index.html) · [模型依据](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/electrostatic-field-model-evidence.md) · [浏览器模型](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/electrostatic-field/model.mjs) · [观测对照](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/electrostatic-field/observations.json) · [文献题录](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/electrostatic-field-references.json) · [数值验证](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/simulation/electrostatic-field-reference.json)
+
 
 ### 电表的改装与校准 · Galvanometer Range Extension and Meter Calibration
 
@@ -254,6 +292,8 @@
 主题：表头扩程；示值误差；往返差；欧姆表调零。方法：分流和串联电阻设计计算；标准上下行均值比较；示值误差与往返差分列；校准曲线回归；电池电压调零可行域扫描。
 
 [实验入口](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/meter-calibration/README.md) · [报告](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/meter-calibration/report/report.md) · [Jupyter](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/meter-calibration/notebooks/analysis.ipynb) · [Wolfram](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/MeterCalibrationLab/Notebooks/MeterCalibrationLab.nb) · [源PDF](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/pdf/course-03/4%E7%94%B5%E8%A1%A8%E7%9A%84%E6%94%B9%E8%A3%85%E4%B8%8E%E6%A0%A1%E5%87%86/%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A-%E7%94%B5%E8%A1%A8%E7%9A%84%E6%94%B9%E8%A3%85%E4%B8%8E%E6%A0%A1%E5%87%86.pdf)
+
+[虚拟实验](https://hnnuyuxuan.github.io/general-physics-lab/simulations/meter-calibration/index.html) · [模型依据](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/meter-calibration-model-evidence.md) · [浏览器模型](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/meter-calibration/model.mjs) · [观测对照](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/meter-calibration/observations.json) · [文献题录](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/meter-calibration-references.json) · [数值验证](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/simulation/meter-calibration-reference.json)
 
 
 ### 霍尔效应的实验研究 · Hall Effect and Four-Polarity Signal Decomposition
@@ -266,6 +306,8 @@
 
 [实验入口](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/hall-effect/README.md) · [报告](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/hall-effect/report/report.md) · [Jupyter](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/hall-effect/notebooks/analysis.ipynb) · [Wolfram](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/HallEffectLab/Notebooks/HallEffectLab.nb) · [源PDF](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/pdf/course-03/5%E9%9C%8D%E5%B0%94%E6%95%88%E5%BA%94%E7%9A%84%E5%AE%9E%E9%AA%8C%E7%A0%94%E7%A9%B6/%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A-%E9%9C%8D%E5%B0%94%E6%95%88%E5%BA%94%E7%9A%84%E5%AE%9E%E9%AA%8C%E7%A0%94%E7%A9%B6.pdf)
 
+[虚拟实验](https://hnnuyuxuan.github.io/general-physics-lab/simulations/hall-effect/index.html) · [模型依据](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/hall-effect-model-evidence.md) · [浏览器模型](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/hall-effect/model.mjs) · [观测对照](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/hall-effect/observations.json) · [文献题录](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/hall-effect-references.json) · [数值验证](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/simulation/hall-effect-reference.json)
+
 
 ### 电阻伏安特性的测定 · Volt-Ampere Characteristics and Instrument Loading
 
@@ -276,6 +318,8 @@
 主题：欧姆定律；仪表加载误差；回归区间敏感性；二极管非线性。方法：逐点电阻比值统计；带截距与过原点伏安回归；全点和高电压选点比较；仪表内阻比归一化扫描；二极管指定区间半对数拟合。
 
 [实验入口](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/resistor-iv/README.md) · [报告](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/resistor-iv/report/report.md) · [Jupyter](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/resistor-iv/notebooks/analysis.ipynb) · [Wolfram](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/ResistorIVLab/Notebooks/ResistorIVLab.nb) · [源PDF](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/pdf/course-03/6%E7%94%B5%E9%98%BB%E4%BC%8F%E5%AE%89%E7%89%B9%E6%80%A7%E7%9A%84%E6%B5%8B%E5%AE%9A/%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A-%E7%94%B5%E9%98%BB%E4%BC%8F%E5%AE%89%E7%89%B9%E6%80%A7%E7%9A%84%E6%B5%8B%E5%AE%9A.pdf)
+
+[虚拟实验](https://hnnuyuxuan.github.io/general-physics-lab/simulations/resistor-iv/index.html) · [模型依据](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/resistor-iv-model-evidence.md) · [浏览器模型](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/resistor-iv/model.mjs) · [观测对照](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/resistor-iv/observations.json) · [文献题录](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/resistor-iv-references.json) · [数值验证](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/simulation/resistor-iv-reference.json)
 
 
 ### 磁场的描绘 · Axial Magnetic Fields of Single and Helmholtz Coils
@@ -288,6 +332,8 @@
 
 [实验入口](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/magnetic-field/README.md) · [报告](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/magnetic-field/report/report.md) · [Jupyter](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/magnetic-field/notebooks/analysis.ipynb) · [Wolfram](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/MagneticFieldLab/Notebooks/MagneticFieldLab.nb) · [源PDF](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/pdf/course-03/7%E7%A3%81%E5%9C%BA%E7%9A%84%E6%8F%8F%E7%BB%98/%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A-%E7%A3%81%E5%9C%BA%E7%9A%84%E6%8F%8F%E7%BB%98.pdf)
 
+[虚拟实验](https://hnnuyuxuan.github.io/general-physics-lab/simulations/magnetic-field/index.html) · [模型依据](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/magnetic-field-model-evidence.md) · [浏览器模型](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/magnetic-field/model.mjs) · [观测对照](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/magnetic-field/observations.json) · [文献题录](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/magnetic-field-references.json) · [数值验证](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/simulation/magnetic-field-reference.json)
+
 
 ### 示波器的调节与使用 · Oscilloscope Measurements and Lissajous Figures
 
@@ -298,6 +344,8 @@
 主题：波形峰峰值与有效值；周期频率；李萨如频率比；相位差。方法：电压时间档读格换算；波形平方平均有效值计算；李萨如交点计数换算频率；理想波形比较；频率比与相位轨迹扫描。
 
 [实验入口](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/oscilloscope/README.md) · [报告](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/oscilloscope/report/report.md) · [Jupyter](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/oscilloscope/notebooks/analysis.ipynb) · [Wolfram](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/OscilloscopeLab/Notebooks/OscilloscopeLab.nb) · [源PDF](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/pdf/course-03/8%E7%A4%BA%E6%B3%A2%E5%99%A8%E7%9A%84%E8%B0%83%E8%8A%82%E4%B8%8E%E4%BD%BF%E7%94%A8/%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A-%E7%A4%BA%E6%B3%A2%E5%99%A8%E7%9A%84%E8%B0%83%E8%8A%82%E5%92%8C%E4%BD%BF%E7%94%A8%E5%AE%9E%E9%AA%8C.pdf)
+
+[虚拟实验](https://hnnuyuxuan.github.io/general-physics-lab/simulations/oscilloscope/index.html) · [模型依据](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/oscilloscope-model-evidence.md) · [浏览器模型](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/oscilloscope/model.mjs) · [观测对照](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/oscilloscope/observations.json) · [文献题录](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/oscilloscope-references.json) · [数值验证](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/simulation/oscilloscope-reference.json)
 
 
 ### 单臂电桥测电阻 · Resistance Measurement with a Wheatstone Bridge
@@ -377,6 +425,8 @@
 
 [实验入口](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/spectrometer/README.md) · [报告](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/spectrometer/report/report.md) · [Jupyter](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/spectrometer/notebooks/analysis.ipynb) · [Wolfram](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/SpectrometerLab/Notebooks/SpectrometerLab.nb) · [源PDF](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/pdf/course-04/01_%E5%AE%9E%E9%AA%8C%E4%B8%80_%E5%88%86%E5%85%89%E8%AE%A1%E7%9A%84%E8%B0%83%E8%8A%82%E4%B8%8E%E4%BD%BF%E7%94%A8_%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A.pdf)
 
+[虚拟实验](https://hnnuyuxuan.github.io/general-physics-lab/simulations/spectrometer/index.html) · [模型依据](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/spectrometer-model-evidence.md) · [浏览器模型](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/spectrometer/model.mjs) · [观测对照](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/spectrometer/observations.json) · [文献题录](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/spectrometer-references.json) · [数值验证](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/simulation/spectrometer-reference.json)
+
 
 ### 用分光计测三棱镜的顶角 · Prism Apex Angle by the Reflection Method
 
@@ -387,6 +437,8 @@
 主题：平面反射几何；棱镜顶角；双游标测角；跨零读数。方法：两面反射方向角差计算；双游标平均后顶角换算；圆周跨零修正；五次均值与重复性统计；指定角度分量合成。
 
 [实验入口](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/prism-apex/README.md) · [报告](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/prism-apex/report/report.md) · [Jupyter](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/prism-apex/notebooks/analysis.ipynb) · [Wolfram](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/PrismApexLab/Notebooks/PrismApexLab.nb) · [源PDF](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/pdf/course-04/02_%E5%AE%9E%E9%AA%8C%E4%BA%8C_%E7%94%A8%E5%88%86%E5%85%89%E8%AE%A1%E6%B5%8B%E4%B8%89%E6%A3%B1%E9%95%9C%E7%9A%84%E9%A1%B6%E8%A7%92_%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A_A3%E5%8F%8C%E9%9D%A2%E7%A4%BA%E8%8C%83%E6%A0%BC%E5%BC%8F%E7%89%88.pdf)
+
+[虚拟实验](https://hnnuyuxuan.github.io/general-physics-lab/simulations/prism-apex/index.html) · [模型依据](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/prism-apex-model-evidence.md) · [浏览器模型](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/prism-apex/model.mjs) · [观测对照](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/prism-apex/observations.json) · [文献题录](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/prism-apex-references.json) · [数值验证](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/simulation/prism-apex-reference.json)
 
 
 ### 三棱镜折射率的测定 · Prism Refractive Index by Minimum Deviation
@@ -412,6 +464,8 @@
 
 [实验入口](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/grazing-refraction/README.md) · [报告](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/grazing-refraction/report/report.md) · [Jupyter](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/grazing-refraction/notebooks/analysis.ipynb) · [Wolfram](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/GrazingRefractionLab/Notebooks/GrazingRefractionLab.nb) · [源PDF](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/pdf/course-04/04_%E5%AE%9E%E9%AA%8C%E5%9B%9B_%E7%94%A8%E6%8E%A0%E5%B0%84%E6%B3%95%E6%B5%8B%E5%AE%9A%E9%80%8F%E6%98%8E%E4%BB%8B%E8%B4%A8%E7%9A%84%E6%8A%98%E5%B0%84%E7%8E%87_%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A.pdf)
 
+[虚拟实验](https://hnnuyuxuan.github.io/general-physics-lab/simulations/grazing-refraction/index.html) · [模型依据](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/grazing-refraction-model-evidence.md) · [浏览器模型](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/grazing-refraction/model.mjs) · [观测对照](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/grazing-refraction/observations.json) · [文献题录](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/grazing-refraction-references.json) · [数值验证](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/simulation/grazing-refraction-reference.json)
+
 
 ### 用透射光栅测定光波波长 · Wavelength Measurement with a Transmission Grating
 
@@ -436,6 +490,8 @@
 
 [实验入口](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/optical-magnification/README.md) · [报告](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/optical-magnification/report/report.md) · [Jupyter](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/optical-magnification/notebooks/analysis.ipynb) · [Wolfram](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/OpticalMagnificationLab/Notebooks/OpticalMagnificationLab.nb) · [源PDF](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/pdf/course-04/06_%E5%AE%9E%E9%AA%8C%E5%85%AD_%E7%94%A8%E5%85%89%E5%AD%A6%E4%BB%AA%E5%99%A8%E6%B5%8B%E9%87%8F%E6%94%BE%E5%A4%A7%E7%8E%87%E5%92%8C%E5%BE%AE%E5%B0%8F%E9%95%BF%E5%BA%A6_%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A.pdf)
 
+[虚拟实验](https://hnnuyuxuan.github.io/general-physics-lab/simulations/optical-magnification/index.html) · [模型依据](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/optical-magnification-model-evidence.md) · [浏览器模型](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/optical-magnification/model.mjs) · [观测对照](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/optical-magnification/observations.json) · [文献题录](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/optical-magnification-references.json) · [数值验证](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/simulation/optical-magnification-reference.json)
+
 
 ### 牛顿环实验 · Newton's Rings and Air-Wedge Interference
 
@@ -459,6 +515,8 @@
 主题：分振幅干涉；往返光程差；激光波长；条纹计数。方法：动镜起止位置求位移；往返光程与条纹数换算；五次波长均值和A类统计；指定参考波长相对差比较。
 
 [实验入口](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/michelson-interferometer/README.md) · [报告](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/michelson-interferometer/report/report.md) · [Jupyter](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/michelson-interferometer/notebooks/analysis.ipynb) · [Wolfram](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/MichelsonInterferometerLab/Notebooks/MichelsonInterferometerLab.nb) · [源PDF](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/pdf/course-04/08_%E5%AE%9E%E9%AA%8C%E5%85%AB_%E8%BF%88%E5%85%8B%E5%B0%94%E9%80%8A%E5%B9%B2%E6%B6%89%E4%BB%AA%E7%9A%84%E8%B0%83%E8%8A%82%E5%92%8C%E4%BD%BF%E7%94%A8_%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A.pdf)
+
+[虚拟实验](https://hnnuyuxuan.github.io/general-physics-lab/simulations/michelson-interferometer/index.html) · [模型依据](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/michelson-interferometer-model-evidence.md) · [浏览器模型](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/michelson-interferometer/model.mjs) · [观测对照](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/michelson-interferometer/observations.json) · [文献题录](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/michelson-interferometer-references.json) · [数值验证](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/simulation/michelson-interferometer-reference.json)
 
 
 ### 薄透镜焦距的测定 · Focal Length of Thin Convex and Concave Lenses
@@ -523,6 +581,8 @@
 
 [实验入口](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/abbe-imaging/README.md) · [报告](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/abbe-imaging/report/report.md) · [Jupyter](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/abbe-imaging/notebooks/analysis.ipynb) · [Wolfram](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/AbbeImagingLab/Notebooks/AbbeImagingLab.nb) · [源PDF](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/pdf/course-04/13_%E5%AE%9E%E9%AA%8C%E5%8D%81%E4%B8%89_%E9%98%BF%E8%B4%9D%E6%88%90%E5%83%8F%E5%8E%9F%E7%90%86%E5%92%8C%E7%A9%BA%E9%97%B4%E6%BB%A4%E6%B3%A2.pdf)
 
+[虚拟实验](https://hnnuyuxuan.github.io/general-physics-lab/simulations/abbe-imaging/index.html) · [模型依据](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/abbe-imaging-model-evidence.md) · [浏览器模型](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/abbe-imaging/model.mjs) · [观测对照](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/abbe-imaging/observations.json) · [文献题录](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/abbe-imaging-references.json) · [数值验证](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/simulation/abbe-imaging-reference.json)
+
 
 ### 全息照相 · Holographic Recording Conditions and Reconstruction Magnification
 
@@ -533,3 +593,5 @@
 主题：相干干涉记录；光强平衡；理论条纹间距；再现横向放大率。方法：参考物光光强比计算；双束夹角条纹间距静态推算；理想相干可见度计算；平均总光强曝光量换算；物像尺寸比与重复性统计。
 
 [实验入口](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/holography/README.md) · [报告](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/holography/report/report.md) · [Jupyter](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/holography/notebooks/analysis.ipynb) · [Wolfram](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/HolographyLab/Notebooks/HolographyLab.nb) · [源PDF](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/pdf/course-04/14_%E5%AE%9E%E9%AA%8C%E5%8D%81%E5%9B%9B_%E5%85%A8%E6%81%AF%E7%85%A7%E7%9B%B8_%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A.pdf)
+
+[虚拟实验](https://hnnuyuxuan.github.io/general-physics-lab/simulations/holography/index.html) · [模型依据](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/holography-model-evidence.md) · [浏览器模型](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/holography/model.mjs) · [观测对照](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/holography/observations.json) · [文献题录](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/holography-references.json) · [数值验证](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/simulation/holography-reference.json)

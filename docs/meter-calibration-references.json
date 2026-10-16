@@ -1,0 +1,33 @@
+{
+  "experimentId": "course-03/meter-calibration",
+  "model_coverage_status": "complete-for-declared-ideal-model",
+  "references": [
+    {
+      "id": "yang2021meter",
+      "authors": [
+        "杨铁柱",
+        "周帅",
+        "潘峰"
+      ],
+      "title": "基于LabVIEW的电表的改装与校准仿真实验系统开发",
+      "journal": "大学物理实验",
+      "year": 2021,
+      "volume": "34",
+      "issue": "5",
+      "pages": "98–102",
+      "doi": "10.14139/j.cnki.cn22-1228.2021.05.023",
+      "readingStatus": "verified-fulltext",
+      "fulltextSha256": "9f5c10f2db933018242c9f8170c1bd64cce91d57937232b22502c73810663958",
+      "locators": [
+        "p.99 section 1 equations (1)–(4), figures 2–5",
+        "p.100 section 2.2 equations (6), (9)"
+      ],
+      "notes": [
+        "Read all five PDF pages; equations inspected in rendered pp.99–100.",
+        "Paper 1 ohm/100 ohm/11 megohm values and 2 percent random error are separate simulation settings."
+      ],
+      "application": "p.99式(1)–(2)的并联分流给出$R_p=I_gR_g/(I_m-I_g)$，对应本项目$R_{\\mathrm{sh}}$。式(3)–(4)给出串联扩程$R_s=U_m/I_g-R_g$，对应本项目$R_{\\mathrm{series}}$。$I_g,R_g,I_m,U_m$与项目同名物理量逐一对应；原设计的1 mA、30 Ω、5 mA、1.5 V单独保留来源身份，未换成论文装置参数。",
+      "coverage_status": "complete-for-declared-ideal-model"
+    }
+  ]
+}

@@ -1,0 +1,1208 @@
+{
+  "schema_version": 1,
+  "experiment": "course-02/young-modulus",
+  "model_sha256": "342f0998f21586cd54fca9198ebcfc33355062986696d875d8a83dc6d217ca01",
+  "validator_sha256": "585d73d32235074c9b3755937dbbe61250c20978647d87386ed0a1418400152d",
+  "environment": {
+    "python": "3.14.7",
+    "numpy": "2.5.4"
+  },
+  "method": "8-element axial bar stiffness solve plus vector reflection at rotated mirror; inverse geometric modulus check",
+  "case_count": 66,
+  "tolerances": {
+    "relative": 1e-10
+  },
+  "max_relative_error": 1.2628839651572764e-15,
+  "status": "passed",
+  "failures": [],
+  "cases": [
+    {
+      "parameters": {
+        "youngModulus": 100000000000.0,
+        "wireLength": 0.5,
+        "wireDiameter": 0.0004,
+        "mirrorDistance": 0.5,
+        "leverArm": 0.03,
+        "mass": 1.0,
+        "gravity": 9.8,
+        "scaleOrigin": 0.032,
+        "trueZero": 6.2e-05,
+        "assumedZero": 6.2e-05
+      },
+      "bar_elements": 8,
+      "reference_extension_m": 0.00038992961057514325,
+      "reference_scale_shift_m": 0.013000948468649184,
+      "max_relative_error": 9.73177594310445e-16
+    },
+    {
+      "parameters": {
+        "youngModulus": 100000000000.0,
+        "wireLength": 0.72,
+        "wireDiameter": 0.0004,
+        "mirrorDistance": 0.69,
+        "leverArm": 0.03526,
+        "mass": 1.0,
+        "gravity": 9.8,
+        "scaleOrigin": 0.032,
+        "trueZero": 6.2e-05,
+        "assumedZero": 6.2e-05
+      },
+      "bar_elements": 8,
+      "reference_extension_m": 0.0005614986392282068,
+      "reference_scale_shift_m": 0.021984203463945882,
+      "max_relative_error": 1.5781544951780995e-16
+    },
+    {
+      "parameters": {
+        "youngModulus": 100000000000.0,
+        "wireLength": 1.0,
+        "wireDiameter": 0.0004,
+        "mirrorDistance": 1.5,
+        "leverArm": 0.05,
+        "mass": 1.0,
+        "gravity": 9.8,
+        "scaleOrigin": 0.032,
+        "trueZero": 6.2e-05,
+        "assumedZero": 6.2e-05
+      },
+      "bar_elements": 8,
+      "reference_extension_m": 0.0007798592211502865,
+      "reference_scale_shift_m": 0.04680863585774868,
+      "max_relative_error": 9.73177594310445e-16
+    },
+    {
+      "parameters": {
+        "youngModulus": 100000000000.0,
+        "wireLength": 0.5,
+        "wireDiameter": 0.00052,
+        "mirrorDistance": 0.5,
+        "leverArm": 0.03,
+        "mass": 1.0,
+        "gravity": 9.8,
+        "scaleOrigin": 0.032,
+        "trueZero": 6.2e-05,
+        "assumedZero": 6.2e-05
+      },
+      "bar_elements": 8,
+      "reference_extension_m": 0.0002307275802219784,
+      "reference_scale_shift_m": 0.0076916017976946865,
+      "max_relative_error": 6.766042450988825e-16
+    },
+    {
+      "parameters": {
+        "youngModulus": 100000000000.0,
+        "wireLength": 0.72,
+        "wireDiameter": 0.00052,
+        "mirrorDistance": 0.69,
+        "leverArm": 0.03526,
+        "mass": 1.0,
+        "gravity": 9.8,
+        "scaleOrigin": 0.032,
+        "trueZero": 6.2e-05,
+        "assumedZero": 6.2e-05
+      },
+      "bar_elements": 8,
+      "reference_extension_m": 0.000332247715519649,
+      "reference_scale_shift_m": 0.013005187825397854,
+      "max_relative_error": 2.6677407497169133e-16
+    },
+    {
+      "parameters": {
+        "youngModulus": 100000000000.0,
+        "wireLength": 1.0,
+        "wireDiameter": 0.00052,
+        "mirrorDistance": 1.5,
+        "leverArm": 0.05,
+        "mass": 1.0,
+        "gravity": 9.8,
+        "scaleOrigin": 0.032,
+        "trueZero": 6.2e-05,
+        "assumedZero": 6.2e-05
+      },
+      "bar_elements": 8,
+      "reference_extension_m": 0.0004614551604439568,
+      "reference_scale_shift_m": 0.027690847660039403,
+      "max_relative_error": 7.517531412287602e-16
+    },
+    {
+      "parameters": {
+        "youngModulus": 100000000000.0,
+        "wireLength": 0.5,
+        "wireDiameter": 0.0008,
+        "mirrorDistance": 0.5,
+        "leverArm": 0.03,
+        "mass": 1.0,
+        "gravity": 9.8,
+        "scaleOrigin": 0.032,
+        "trueZero": 6.2e-05,
+        "assumedZero": 6.2e-05
+      },
+      "bar_elements": 8,
+      "reference_extension_m": 9.748240264378581e-05,
+      "reference_scale_shift_m": 0.0032494648868127774,
+      "max_relative_error": 1.0676979357535404e-15
+    },
+    {
+      "parameters": {
+        "youngModulus": 100000000000.0,
+        "wireLength": 0.72,
+        "wireDiameter": 0.0008,
+        "mirrorDistance": 0.69,
+        "leverArm": 0.03526,
+        "mass": 1.0,
+        "gravity": 9.8,
+        "scaleOrigin": 0.032,
+        "trueZero": 6.2e-05,
+        "assumedZero": 6.2e-05
+      },
+      "bar_elements": 8,
+      "reference_extension_m": 0.0001403746598070517,
+      "reference_scale_shift_m": 0.005494090644401761,
+      "max_relative_error": 1.1102230246251565e-16
+    },
+    {
+      "parameters": {
+        "youngModulus": 100000000000.0,
+        "wireLength": 1.0,
+        "wireDiameter": 0.0008,
+        "mirrorDistance": 1.5,
+        "leverArm": 0.05,
+        "mass": 1.0,
+        "gravity": 9.8,
+        "scaleOrigin": 0.032,
+        "trueZero": 6.2e-05,
+        "assumedZero": 6.2e-05
+      },
+      "bar_elements": 8,
+      "reference_extension_m": 0.00019496480528757162,
+      "reference_scale_shift_m": 0.011698155116021309,
+      "max_relative_error": 9.73177594310445e-16
+    },
+    {
+      "parameters": {
+        "youngModulus": 100000000000.0,
+        "wireLength": 0.5,
+        "wireDiameter": 0.00052,
+        "mirrorDistance": 0.5,
+        "leverArm": 0.03,
+        "mass": 5.0,
+        "gravity": 9.8,
+        "scaleOrigin": 0.032,
+        "trueZero": 6.2e-05,
+        "assumedZero": 6.2e-05
+      },
+      "bar_elements": 8,
+      "reference_extension_m": 0.0011536379011098919,
+      "reference_scale_shift_m": 0.038540136618880394,
+      "max_relative_error": 5.638869032175947e-16
+    },
+    {
+      "parameters": {
+        "youngModulus": 100000000000.0,
+        "wireLength": 0.72,
+        "wireDiameter": 0.00052,
+        "mirrorDistance": 0.69,
+        "leverArm": 0.03526,
+        "mass": 5.0,
+        "gravity": 9.8,
+        "scaleOrigin": 0.032,
+        "trueZero": 6.2e-05,
+        "assumedZero": 6.2e-05
+      },
+      "bar_elements": 8,
+      "reference_extension_m": 0.0016612385775982448,
+      "reference_scale_shift_m": 0.06523468432486156,
+      "max_relative_error": 2.6105875148962707e-16
+    },
+    {
+      "parameters": {
+        "youngModulus": 100000000000.0,
+        "wireLength": 1.0,
+        "wireDiameter": 0.00052,
+        "mirrorDistance": 1.5,
+        "leverArm": 0.05,
+        "mass": 5.0,
+        "gravity": 9.8,
+        "scaleOrigin": 0.032,
+        "trueZero": 6.2e-05,
+        "assumedZero": 6.2e-05
+      },
+      "bar_elements": 8,
+      "reference_extension_m": 0.0023072758022197838,
+      "reference_scale_shift_m": 0.1388805424495141,
+      "max_relative_error": 5.638869032175947e-16
+    },
+    {
+      "parameters": {
+        "youngModulus": 100000000000.0,
+        "wireLength": 0.5,
+        "wireDiameter": 0.0008,
+        "mirrorDistance": 0.5,
+        "leverArm": 0.03,
+        "mass": 5.0,
+        "gravity": 9.8,
+        "scaleOrigin": 0.032,
+        "trueZero": 6.2e-05,
+        "assumedZero": 6.2e-05
+      },
+      "bar_elements": 8,
+      "reference_extension_m": 0.00048741201321892905,
+      "reference_scale_shift_m": 0.01625350340267636,
+      "max_relative_error": 8.897623719409783e-16
+    },
+    {
+      "parameters": {
+        "youngModulus": 100000000000.0,
+        "wireLength": 0.72,
+        "wireDiameter": 0.0008,
+        "mirrorDistance": 0.69,
+        "leverArm": 0.03526,
+        "mass": 5.0,
+        "gravity": 9.8,
+        "scaleOrigin": 0.032,
+        "trueZero": 6.2e-05,
+        "assumedZero": 6.2e-05
+      },
+      "bar_elements": 8,
+      "reference_extension_m": 0.0007018732990352585,
+      "reference_scale_shift_m": 0.027486139285551384,
+      "max_relative_error": 1.2622532818850247e-16
+    },
+    {
+      "parameters": {
+        "youngModulus": 100000000000.0,
+        "wireLength": 1.0,
+        "wireDiameter": 0.0008,
+        "mirrorDistance": 1.5,
+        "leverArm": 0.05,
+        "mass": 5.0,
+        "gravity": 9.8,
+        "scaleOrigin": 0.032,
+        "trueZero": 6.2e-05,
+        "assumedZero": 6.2e-05
+      },
+      "bar_elements": 8,
+      "reference_extension_m": 0.0009748240264378581,
+      "reference_scale_shift_m": 0.058522814774853715,
+      "max_relative_error": 9.485386416360487e-16
+    },
+    {
+      "parameters": {
+        "youngModulus": 100000000000.0,
+        "wireLength": 0.5,
+        "wireDiameter": 0.0008,
+        "mirrorDistance": 0.5,
+        "leverArm": 0.03,
+        "mass": 10.0,
+        "gravity": 9.8,
+        "scaleOrigin": 0.032,
+        "trueZero": 6.2e-05,
+        "assumedZero": 6.2e-05
+      },
+      "bar_elements": 8,
+      "reference_extension_m": 0.0009748240264378581,
+      "reference_scale_shift_m": 0.032545702895144406,
+      "max_relative_error": 8.897623719409783e-16
+    },
+    {
+      "parameters": {
+        "youngModulus": 100000000000.0,
+        "wireLength": 0.72,
+        "wireDiameter": 0.0008,
+        "mirrorDistance": 0.69,
+        "leverArm": 0.03526,
+        "mass": 10.0,
+        "gravity": 9.8,
+        "scaleOrigin": 0.032,
+        "trueZero": 6.2e-05,
+        "assumedZero": 6.2e-05
+      },
+      "bar_elements": 8,
+      "reference_extension_m": 0.001403746598070517,
+      "reference_scale_shift_m": 0.05507061224462577,
+      "max_relative_error": 2.5199988237226767e-16
+    },
+    {
+      "parameters": {
+        "youngModulus": 100000000000.0,
+        "wireLength": 1.0,
+        "wireDiameter": 0.0008,
+        "mirrorDistance": 1.5,
+        "leverArm": 0.05,
+        "mass": 10.0,
+        "gravity": 9.8,
+        "scaleOrigin": 0.032,
+        "trueZero": 6.2e-05,
+        "assumedZero": 6.2e-05
+      },
+      "bar_elements": 8,
+      "reference_extension_m": 0.0019496480528757162,
+      "reference_scale_shift_m": 0.11724645399187272,
+      "max_relative_error": 8.897623719409783e-16
+    },
+    {
+      "parameters": {
+        "youngModulus": 200000000000.0,
+        "wireLength": 0.5,
+        "wireDiameter": 0.0004,
+        "mirrorDistance": 0.5,
+        "leverArm": 0.03,
+        "mass": 1.0,
+        "gravity": 9.8,
+        "scaleOrigin": 0.032,
+        "trueZero": 6.2e-05,
+        "assumedZero": 6.2e-05
+      },
+      "bar_elements": 8,
+      "reference_extension_m": 0.00019496480528757162,
+      "reference_scale_shift_m": 0.006499238590743866,
+      "max_relative_error": 9.73177594310445e-16
+    },
+    {
+      "parameters": {
+        "youngModulus": 200000000000.0,
+        "wireLength": 0.72,
+        "wireDiameter": 0.0004,
+        "mirrorDistance": 0.69,
+        "leverArm": 0.03526,
+        "mass": 1.0,
+        "gravity": 9.8,
+        "scaleOrigin": 0.032,
+        "trueZero": 6.2e-05,
+        "assumedZero": 6.2e-05
+      },
+      "bar_elements": 8,
+      "reference_extension_m": 0.0002807493196141034,
+      "reference_scale_shift_m": 0.010988965091568123,
+      "max_relative_error": 1.1102230246251565e-16
+    },
+    {
+      "parameters": {
+        "youngModulus": 200000000000.0,
+        "wireLength": 1.0,
+        "wireDiameter": 0.0004,
+        "mirrorDistance": 1.5,
+        "leverArm": 0.05,
+        "mass": 1.0,
+        "gravity": 9.8,
+        "scaleOrigin": 0.032,
+        "trueZero": 6.2e-05,
+        "assumedZero": 6.2e-05
+      },
+      "bar_elements": 8,
+      "reference_extension_m": 0.00038992961057514325,
+      "reference_scale_shift_m": 0.023397911211268354,
+      "max_relative_error": 1.0379613993910354e-15
+    },
+    {
+      "parameters": {
+        "youngModulus": 200000000000.0,
+        "wireLength": 0.5,
+        "wireDiameter": 0.00052,
+        "mirrorDistance": 0.5,
+        "leverArm": 0.03,
+        "mass": 1.0,
+        "gravity": 9.8,
+        "scaleOrigin": 0.032,
+        "trueZero": 6.2e-05,
+        "assumedZero": 6.2e-05
+      },
+      "bar_elements": 8,
+      "reference_extension_m": 0.0001153637901109892,
+      "reference_scale_shift_m": 0.0038455449702327928,
+      "max_relative_error": 6.766492744480093e-16
+    },
+    {
+      "parameters": {
+        "youngModulus": 200000000000.0,
+        "wireLength": 0.72,
+        "wireDiameter": 0.00052,
+        "mirrorDistance": 0.69,
+        "leverArm": 0.03526,
+        "mass": 1.0,
+        "gravity": 9.8,
+        "scaleOrigin": 0.032,
+        "trueZero": 6.2e-05,
+        "assumedZero": 6.2e-05
+      },
+      "bar_elements": 8,
+      "reference_extension_m": 0.0001661238577598245,
+      "reference_scale_shift_m": 0.0065019443320305905,
+      "max_relative_error": 2.220446049250313e-16
+    },
+    {
+      "parameters": {
+        "youngModulus": 200000000000.0,
+        "wireLength": 1.0,
+        "wireDiameter": 0.00052,
+        "mirrorDistance": 1.5,
+        "leverArm": 0.05,
+        "mass": 1.0,
+        "gravity": 9.8,
+        "scaleOrigin": 0.032,
+        "trueZero": 6.2e-05,
+        "assumedZero": 6.2e-05
+      },
+      "bar_elements": 8,
+      "reference_extension_m": 0.0002307275802219784,
+      "reference_scale_shift_m": 0.013844097013341343,
+      "max_relative_error": 6.265209909700433e-16
+    },
+    {
+      "parameters": {
+        "youngModulus": 200000000000.0,
+        "wireLength": 0.5,
+        "wireDiameter": 0.0008,
+        "mirrorDistance": 0.5,
+        "leverArm": 0.03,
+        "mass": 1.0,
+        "gravity": 9.8,
+        "scaleOrigin": 0.032,
+        "trueZero": 6.2e-05,
+        "assumedZero": 6.2e-05
+      },
+      "bar_elements": 8,
+      "reference_extension_m": 4.8741201321892906e-05,
+      "reference_scale_shift_m": 0.0016247131438012759,
+      "max_relative_error": 1.0677106186992151e-15
+    },
+    {
+      "parameters": {
+        "youngModulus": 200000000000.0,
+        "wireLength": 0.72,
+        "wireDiameter": 0.0008,
+        "mirrorDistance": 0.69,
+        "leverArm": 0.03526,
+        "mass": 1.0,
+        "gravity": 9.8,
+        "scaleOrigin": 0.032,
+        "trueZero": 6.2e-05,
+        "assumedZero": 6.2e-05
+      },
+      "bar_elements": 8,
+      "reference_extension_m": 7.018732990352585e-05,
+      "reference_scale_shift_m": 0.00274699634010872,
+      "max_relative_error": 1.5787457109500104e-16
+    },
+    {
+      "parameters": {
+        "youngModulus": 200000000000.0,
+        "wireLength": 1.0,
+        "wireDiameter": 0.0008,
+        "mirrorDistance": 1.5,
+        "leverArm": 0.05,
+        "mass": 1.0,
+        "gravity": 9.8,
+        "scaleOrigin": 0.032,
+        "trueZero": 6.2e-05,
+        "assumedZero": 6.2e-05
+      },
+      "bar_elements": 8,
+      "reference_extension_m": 9.748240264378581e-05,
+      "reference_scale_shift_m": 0.00584897750774411,
+      "max_relative_error": 9.73177594310445e-16
+    },
+    {
+      "parameters": {
+        "youngModulus": 200000000000.0,
+        "wireLength": 0.5,
+        "wireDiameter": 0.0004,
+        "mirrorDistance": 0.5,
+        "leverArm": 0.03,
+        "mass": 5.0,
+        "gravity": 9.8,
+        "scaleOrigin": 0.032,
+        "trueZero": 6.2e-05,
+        "assumedZero": 6.2e-05
+      },
+      "bar_elements": 8,
+      "reference_extension_m": 0.0009748240264378581,
+      "reference_scale_shift_m": 0.032545702895144406,
+      "max_relative_error": 8.897623719409783e-16
+    },
+    {
+      "parameters": {
+        "youngModulus": 200000000000.0,
+        "wireLength": 0.72,
+        "wireDiameter": 0.0004,
+        "mirrorDistance": 0.69,
+        "leverArm": 0.03526,
+        "mass": 5.0,
+        "gravity": 9.8,
+        "scaleOrigin": 0.032,
+        "trueZero": 6.2e-05,
+        "assumedZero": 6.2e-05
+      },
+      "bar_elements": 8,
+      "reference_extension_m": 0.001403746598070517,
+      "reference_scale_shift_m": 0.05507061224462577,
+      "max_relative_error": 2.5199988237226767e-16
+    },
+    {
+      "parameters": {
+        "youngModulus": 200000000000.0,
+        "wireLength": 1.0,
+        "wireDiameter": 0.0004,
+        "mirrorDistance": 1.5,
+        "leverArm": 0.05,
+        "mass": 5.0,
+        "gravity": 9.8,
+        "scaleOrigin": 0.032,
+        "trueZero": 6.2e-05,
+        "assumedZero": 6.2e-05
+      },
+      "bar_elements": 8,
+      "reference_extension_m": 0.0019496480528757162,
+      "reference_scale_shift_m": 0.11724645399187272,
+      "max_relative_error": 8.897623719409783e-16
+    },
+    {
+      "parameters": {
+        "youngModulus": 200000000000.0,
+        "wireLength": 0.5,
+        "wireDiameter": 0.00052,
+        "mirrorDistance": 0.5,
+        "leverArm": 0.03,
+        "mass": 5.0,
+        "gravity": 9.8,
+        "scaleOrigin": 0.032,
+        "trueZero": 6.2e-05,
+        "assumedZero": 6.2e-05
+      },
+      "bar_elements": 8,
+      "reference_extension_m": 0.0005768189505549459,
+      "reference_scale_shift_m": 0.019237968093374427,
+      "max_relative_error": 7.213749258994758e-16
+    },
+    {
+      "parameters": {
+        "youngModulus": 200000000000.0,
+        "wireLength": 0.72,
+        "wireDiameter": 0.00052,
+        "mirrorDistance": 0.69,
+        "leverArm": 0.03526,
+        "mass": 5.0,
+        "gravity": 9.8,
+        "scaleOrigin": 0.032,
+        "trueZero": 6.2e-05,
+        "assumedZero": 6.2e-05
+      },
+      "bar_elements": 8,
+      "reference_extension_m": 0.0008306192887991224,
+      "reference_scale_shift_m": 0.03253572812700664,
+      "max_relative_error": 2.6105875148962707e-16
+    },
+    {
+      "parameters": {
+        "youngModulus": 200000000000.0,
+        "wireLength": 1.0,
+        "wireDiameter": 0.00052,
+        "mirrorDistance": 1.5,
+        "leverArm": 0.05,
+        "mass": 5.0,
+        "gravity": 9.8,
+        "scaleOrigin": 0.032,
+        "trueZero": 6.2e-05,
+        "assumedZero": 6.2e-05
+      },
+      "bar_elements": 8,
+      "reference_extension_m": 0.0011536379011098919,
+      "reference_scale_shift_m": 0.06927360326998745,
+      "max_relative_error": 6.009989585958333e-16
+    },
+    {
+      "parameters": {
+        "youngModulus": 200000000000.0,
+        "wireLength": 0.5,
+        "wireDiameter": 0.0008,
+        "mirrorDistance": 0.5,
+        "leverArm": 0.03,
+        "mass": 5.0,
+        "gravity": 9.8,
+        "scaleOrigin": 0.032,
+        "trueZero": 6.2e-05,
+        "assumedZero": 6.2e-05
+      },
+      "bar_elements": 8,
+      "reference_extension_m": 0.00024370600660946452,
+      "reference_scale_shift_m": 0.008124337785242517,
+      "max_relative_error": 8.897623719409783e-16
+    },
+    {
+      "parameters": {
+        "youngModulus": 200000000000.0,
+        "wireLength": 0.72,
+        "wireDiameter": 0.0008,
+        "mirrorDistance": 0.69,
+        "leverArm": 0.03526,
+        "mass": 5.0,
+        "gravity": 9.8,
+        "scaleOrigin": 0.032,
+        "trueZero": 6.2e-05,
+        "assumedZero": 6.2e-05
+      },
+      "bar_elements": 8,
+      "reference_extension_m": 0.00035093664951762923,
+      "reference_scale_shift_m": 0.013736941296767188,
+      "max_relative_error": 1.2628164003183532e-16
+    },
+    {
+      "parameters": {
+        "youngModulus": 200000000000.0,
+        "wireLength": 1.0,
+        "wireDiameter": 0.0008,
+        "mirrorDistance": 1.5,
+        "leverArm": 0.05,
+        "mass": 5.0,
+        "gravity": 9.8,
+        "scaleOrigin": 0.032,
+        "trueZero": 6.2e-05,
+        "assumedZero": 6.2e-05
+      },
+      "bar_elements": 8,
+      "reference_extension_m": 0.00048741201321892905,
+      "reference_scale_shift_m": 0.02924889016178735,
+      "max_relative_error": 8.897623719409783e-16
+    },
+    {
+      "parameters": {
+        "youngModulus": 200000000000.0,
+        "wireLength": 0.5,
+        "wireDiameter": 0.00052,
+        "mirrorDistance": 0.5,
+        "leverArm": 0.03,
+        "mass": 10.0,
+        "gravity": 9.8,
+        "scaleOrigin": 0.032,
+        "trueZero": 6.2e-05,
+        "assumedZero": 6.2e-05
+      },
+      "bar_elements": 8,
+      "reference_extension_m": 0.0011536379011098919,
+      "reference_scale_shift_m": 0.038540136618880394,
+      "max_relative_error": 5.638869032175947e-16
+    },
+    {
+      "parameters": {
+        "youngModulus": 200000000000.0,
+        "wireLength": 0.72,
+        "wireDiameter": 0.00052,
+        "mirrorDistance": 0.69,
+        "leverArm": 0.03526,
+        "mass": 10.0,
+        "gravity": 9.8,
+        "scaleOrigin": 0.032,
+        "trueZero": 6.2e-05,
+        "assumedZero": 6.2e-05
+      },
+      "bar_elements": 8,
+      "reference_extension_m": 0.0016612385775982448,
+      "reference_scale_shift_m": 0.06523468432486156,
+      "max_relative_error": 2.6105875148962707e-16
+    },
+    {
+      "parameters": {
+        "youngModulus": 200000000000.0,
+        "wireLength": 1.0,
+        "wireDiameter": 0.00052,
+        "mirrorDistance": 1.5,
+        "leverArm": 0.05,
+        "mass": 10.0,
+        "gravity": 9.8,
+        "scaleOrigin": 0.032,
+        "trueZero": 6.2e-05,
+        "assumedZero": 6.2e-05
+      },
+      "bar_elements": 8,
+      "reference_extension_m": 0.0023072758022197838,
+      "reference_scale_shift_m": 0.1388805424495141,
+      "max_relative_error": 5.638869032175947e-16
+    },
+    {
+      "parameters": {
+        "youngModulus": 200000000000.0,
+        "wireLength": 0.5,
+        "wireDiameter": 0.0008,
+        "mirrorDistance": 0.5,
+        "leverArm": 0.03,
+        "mass": 10.0,
+        "gravity": 9.8,
+        "scaleOrigin": 0.032,
+        "trueZero": 6.2e-05,
+        "assumedZero": 6.2e-05
+      },
+      "bar_elements": 8,
+      "reference_extension_m": 0.00048741201321892905,
+      "reference_scale_shift_m": 0.01625350340267636,
+      "max_relative_error": 8.897623719409783e-16
+    },
+    {
+      "parameters": {
+        "youngModulus": 200000000000.0,
+        "wireLength": 0.72,
+        "wireDiameter": 0.0008,
+        "mirrorDistance": 0.69,
+        "leverArm": 0.03526,
+        "mass": 10.0,
+        "gravity": 9.8,
+        "scaleOrigin": 0.032,
+        "trueZero": 6.2e-05,
+        "assumedZero": 6.2e-05
+      },
+      "bar_elements": 8,
+      "reference_extension_m": 0.0007018732990352585,
+      "reference_scale_shift_m": 0.027486139285551384,
+      "max_relative_error": 1.2622532818850247e-16
+    },
+    {
+      "parameters": {
+        "youngModulus": 200000000000.0,
+        "wireLength": 1.0,
+        "wireDiameter": 0.0008,
+        "mirrorDistance": 1.5,
+        "leverArm": 0.05,
+        "mass": 10.0,
+        "gravity": 9.8,
+        "scaleOrigin": 0.032,
+        "trueZero": 6.2e-05,
+        "assumedZero": 6.2e-05
+      },
+      "bar_elements": 8,
+      "reference_extension_m": 0.0009748240264378581,
+      "reference_scale_shift_m": 0.058522814774853715,
+      "max_relative_error": 9.485386416360487e-16
+    },
+    {
+      "parameters": {
+        "youngModulus": 250000000000.0,
+        "wireLength": 0.5,
+        "wireDiameter": 0.0004,
+        "mirrorDistance": 0.5,
+        "leverArm": 0.03,
+        "mass": 1.0,
+        "gravity": 9.8,
+        "scaleOrigin": 0.032,
+        "trueZero": 6.2e-05,
+        "assumedZero": 6.2e-05
+      },
+      "bar_elements": 8,
+      "reference_extension_m": 0.00015597184423005736,
+      "reference_scale_shift_m": 0.005199272283077643,
+      "max_relative_error": 5.213451398091667e-16
+    },
+    {
+      "parameters": {
+        "youngModulus": 250000000000.0,
+        "wireLength": 0.72,
+        "wireDiameter": 0.0004,
+        "mirrorDistance": 0.69,
+        "leverArm": 0.03526,
+        "mass": 1.0,
+        "gravity": 9.8,
+        "scaleOrigin": 0.032,
+        "trueZero": 6.2e-05,
+        "assumedZero": 6.2e-05
+      },
+      "bar_elements": 8,
+      "reference_extension_m": 0.00022459945569128296,
+      "reference_scale_shift_m": 0.008790871078728321,
+      "max_relative_error": 1.1839942552503572e-15
+    },
+    {
+      "parameters": {
+        "youngModulus": 250000000000.0,
+        "wireLength": 1.0,
+        "wireDiameter": 0.0004,
+        "mirrorDistance": 1.5,
+        "leverArm": 0.05,
+        "mass": 1.0,
+        "gravity": 9.8,
+        "scaleOrigin": 0.032,
+        "trueZero": 6.2e-05,
+        "assumedZero": 6.2e-05
+      },
+      "bar_elements": 8,
+      "reference_extension_m": 0.00031194368846011473,
+      "reference_scale_shift_m": 0.018717714165041092,
+      "max_relative_error": 5.560690137741502e-16
+    },
+    {
+      "parameters": {
+        "youngModulus": 250000000000.0,
+        "wireLength": 0.5,
+        "wireDiameter": 0.00052,
+        "mirrorDistance": 0.5,
+        "leverArm": 0.03,
+        "mass": 1.0,
+        "gravity": 9.8,
+        "scaleOrigin": 0.032,
+        "trueZero": 6.2e-05,
+        "assumedZero": 6.2e-05
+      },
+      "bar_elements": 8,
+      "reference_extension_m": 9.229103208879144e-05,
+      "reference_scale_shift_m": 0.0030764114093790613,
+      "max_relative_error": 4.2290917366127115e-16
+    },
+    {
+      "parameters": {
+        "youngModulus": 250000000000.0,
+        "wireLength": 0.72,
+        "wireDiameter": 0.00052,
+        "mirrorDistance": 0.69,
+        "leverArm": 0.03526,
+        "mass": 1.0,
+        "gravity": 9.8,
+        "scaleOrigin": 0.032,
+        "trueZero": 6.2e-05,
+        "assumedZero": 6.2e-05
+      },
+      "bar_elements": 8,
+      "reference_extension_m": 0.0001328990862078596,
+      "reference_scale_shift_m": 0.005201493114794972,
+      "max_relative_error": 2.0395214960127112e-16
+    },
+    {
+      "parameters": {
+        "youngModulus": 250000000000.0,
+        "wireLength": 1.0,
+        "wireDiameter": 0.00052,
+        "mirrorDistance": 1.5,
+        "leverArm": 0.05,
+        "mass": 1.0,
+        "gravity": 9.8,
+        "scaleOrigin": 0.032,
+        "trueZero": 6.2e-05,
+        "assumedZero": 6.2e-05
+      },
+      "bar_elements": 8,
+      "reference_extension_m": 0.00018458206417758287,
+      "reference_scale_shift_m": 0.0110751502537399,
+      "max_relative_error": 2.9369109542583027e-16
+    },
+    {
+      "parameters": {
+        "youngModulus": 250000000000.0,
+        "wireLength": 0.5,
+        "wireDiameter": 0.0008,
+        "mirrorDistance": 0.5,
+        "leverArm": 0.03,
+        "mass": 1.0,
+        "gravity": 9.8,
+        "scaleOrigin": 0.032,
+        "trueZero": 6.2e-05,
+        "assumedZero": 6.2e-05
+      },
+      "bar_elements": 8,
+      "reference_extension_m": 3.899296105751434e-05,
+      "reference_scale_shift_m": 0.0012997686623104265,
+      "max_relative_error": 6.673200879044195e-16
+    },
+    {
+      "parameters": {
+        "youngModulus": 250000000000.0,
+        "wireLength": 0.72,
+        "wireDiameter": 0.0008,
+        "mirrorDistance": 0.69,
+        "leverArm": 0.03526,
+        "mass": 1.0,
+        "gravity": 9.8,
+        "scaleOrigin": 0.032,
+        "trueZero": 6.2e-05,
+        "assumedZero": 6.2e-05
+      },
+      "bar_elements": 8,
+      "reference_extension_m": 5.614986392282074e-05,
+      "reference_scale_shift_m": 0.0021975923699261222,
+      "max_relative_error": 1.1840618167293174e-15
+    },
+    {
+      "parameters": {
+        "youngModulus": 250000000000.0,
+        "wireLength": 1.0,
+        "wireDiameter": 0.0008,
+        "mirrorDistance": 1.5,
+        "leverArm": 0.05,
+        "mass": 1.0,
+        "gravity": 9.8,
+        "scaleOrigin": 0.032,
+        "trueZero": 6.2e-05,
+        "assumedZero": 6.2e-05
+      },
+      "bar_elements": 8,
+      "reference_extension_m": 7.798592211502868e-05,
+      "reference_scale_shift_m": 0.004679172401604821,
+      "max_relative_error": 5.213451398091667e-16
+    },
+    {
+      "parameters": {
+        "youngModulus": 250000000000.0,
+        "wireLength": 0.5,
+        "wireDiameter": 0.0004,
+        "mirrorDistance": 0.5,
+        "leverArm": 0.03,
+        "mass": 5.0,
+        "gravity": 9.8,
+        "scaleOrigin": 0.032,
+        "trueZero": 6.2e-05,
+        "assumedZero": 6.2e-05
+      },
+      "bar_elements": 8,
+      "reference_extension_m": 0.0007798592211502868,
+      "reference_scale_shift_m": 0.026021691273103022,
+      "max_relative_error": 4.170761118473334e-16
+    },
+    {
+      "parameters": {
+        "youngModulus": 250000000000.0,
+        "wireLength": 0.72,
+        "wireDiameter": 0.0004,
+        "mirrorDistance": 0.69,
+        "leverArm": 0.03526,
+        "mass": 5.0,
+        "gravity": 9.8,
+        "scaleOrigin": 0.032,
+        "trueZero": 6.2e-05,
+        "assumedZero": 6.2e-05
+      },
+      "bar_elements": 8,
+      "reference_extension_m": 0.0011229972784564148,
+      "reference_scale_shift_m": 0.04401868483360476,
+      "max_relative_error": 1.1585447551314799e-15
+    },
+    {
+      "parameters": {
+        "youngModulus": 250000000000.0,
+        "wireLength": 1.0,
+        "wireDiameter": 0.0004,
+        "mirrorDistance": 1.5,
+        "leverArm": 0.05,
+        "mass": 5.0,
+        "gravity": 9.8,
+        "scaleOrigin": 0.032,
+        "trueZero": 6.2e-05,
+        "assumedZero": 6.2e-05
+      },
+      "bar_elements": 8,
+      "reference_extension_m": 0.0015597184423005736,
+      "reference_scale_shift_m": 0.09371995878250777,
+      "max_relative_error": 4.442315592568737e-16
+    },
+    {
+      "parameters": {
+        "youngModulus": 250000000000.0,
+        "wireLength": 0.5,
+        "wireDiameter": 0.00052,
+        "mirrorDistance": 0.5,
+        "leverArm": 0.03,
+        "mass": 5.0,
+        "gravity": 9.8,
+        "scaleOrigin": 0.032,
+        "trueZero": 6.2e-05,
+        "assumedZero": 6.2e-05
+      },
+      "bar_elements": 8,
+      "reference_extension_m": 0.00046145516044395716,
+      "reference_scale_shift_m": 0.015387300194942846,
+      "max_relative_error": 3.382120555262067e-16
+    },
+    {
+      "parameters": {
+        "youngModulus": 250000000000.0,
+        "wireLength": 0.72,
+        "wireDiameter": 0.00052,
+        "mirrorDistance": 0.69,
+        "leverArm": 0.03526,
+        "mass": 5.0,
+        "gravity": 9.8,
+        "scaleOrigin": 0.032,
+        "trueZero": 6.2e-05,
+        "assumedZero": 6.2e-05
+      },
+      "bar_elements": 8,
+      "reference_extension_m": 0.0006644954310392981,
+      "reference_scale_shift_m": 0.02602077557889736,
+      "max_relative_error": 2.220446049250313e-16
+    },
+    {
+      "parameters": {
+        "youngModulus": 250000000000.0,
+        "wireLength": 1.0,
+        "wireDiameter": 0.00052,
+        "mirrorDistance": 1.5,
+        "leverArm": 0.05,
+        "mass": 5.0,
+        "gravity": 9.8,
+        "scaleOrigin": 0.032,
+        "trueZero": 6.2e-05,
+        "assumedZero": 6.2e-05
+      },
+      "bar_elements": 8,
+      "reference_extension_m": 0.0009229103208879143,
+      "reference_scale_shift_m": 0.05540293739232416,
+      "max_relative_error": 2.504883037074703e-16
+    },
+    {
+      "parameters": {
+        "youngModulus": 250000000000.0,
+        "wireLength": 0.5,
+        "wireDiameter": 0.0008,
+        "mirrorDistance": 0.5,
+        "leverArm": 0.03,
+        "mass": 5.0,
+        "gravity": 9.8,
+        "scaleOrigin": 0.032,
+        "trueZero": 6.2e-05,
+        "assumedZero": 6.2e-05
+      },
+      "bar_elements": 8,
+      "reference_extension_m": 0.0001949648052875717,
+      "reference_scale_shift_m": 0.006499238590743869,
+      "max_relative_error": 4.170761118473334e-16
+    },
+    {
+      "parameters": {
+        "youngModulus": 250000000000.0,
+        "wireLength": 0.72,
+        "wireDiameter": 0.0008,
+        "mirrorDistance": 0.69,
+        "leverArm": 0.03526,
+        "mass": 5.0,
+        "gravity": 9.8,
+        "scaleOrigin": 0.032,
+        "trueZero": 6.2e-05,
+        "assumedZero": 6.2e-05
+      },
+      "bar_elements": 8,
+      "reference_extension_m": 0.0002807493196141037,
+      "reference_scale_shift_m": 0.010988965091568133,
+      "max_relative_error": 1.2628839651572764e-15
+    },
+    {
+      "parameters": {
+        "youngModulus": 250000000000.0,
+        "wireLength": 1.0,
+        "wireDiameter": 0.0008,
+        "mirrorDistance": 1.5,
+        "leverArm": 0.05,
+        "mass": 5.0,
+        "gravity": 9.8,
+        "scaleOrigin": 0.032,
+        "trueZero": 6.2e-05,
+        "assumedZero": 6.2e-05
+      },
+      "bar_elements": 8,
+      "reference_extension_m": 0.0003899296105751434,
+      "reference_scale_shift_m": 0.023397911211268368,
+      "max_relative_error": 4.170761118473334e-16
+    },
+    {
+      "parameters": {
+        "youngModulus": 250000000000.0,
+        "wireLength": 0.5,
+        "wireDiameter": 0.00052,
+        "mirrorDistance": 0.5,
+        "leverArm": 0.03,
+        "mass": 10.0,
+        "gravity": 9.8,
+        "scaleOrigin": 0.032,
+        "trueZero": 6.2e-05,
+        "assumedZero": 6.2e-05
+      },
+      "bar_elements": 8,
+      "reference_extension_m": 0.0009229103208879143,
+      "reference_scale_shift_m": 0.030807429024287358,
+      "max_relative_error": 2.3495287634066425e-16
+    },
+    {
+      "parameters": {
+        "youngModulus": 250000000000.0,
+        "wireLength": 0.72,
+        "wireDiameter": 0.00052,
+        "mirrorDistance": 0.69,
+        "leverArm": 0.03526,
+        "mass": 10.0,
+        "gravity": 9.8,
+        "scaleOrigin": 0.032,
+        "trueZero": 6.2e-05,
+        "assumedZero": 6.2e-05
+      },
+      "bar_elements": 8,
+      "reference_extension_m": 0.0013289908620785962,
+      "reference_scale_shift_m": 0.05212496356893242,
+      "max_relative_error": 2.662407195635128e-16
+    },
+    {
+      "parameters": {
+        "youngModulus": 250000000000.0,
+        "wireLength": 1.0,
+        "wireDiameter": 0.00052,
+        "mirrorDistance": 1.5,
+        "leverArm": 0.05,
+        "mass": 10.0,
+        "gravity": 9.8,
+        "scaleOrigin": 0.032,
+        "trueZero": 6.2e-05,
+        "assumedZero": 6.2e-05
+      },
+      "bar_elements": 8,
+      "reference_extension_m": 0.0018458206417758286,
+      "reference_scale_shift_m": 0.11097622864263355,
+      "max_relative_error": 2.501037920923373e-16
+    },
+    {
+      "parameters": {
+        "youngModulus": 250000000000.0,
+        "wireLength": 0.5,
+        "wireDiameter": 0.0008,
+        "mirrorDistance": 0.5,
+        "leverArm": 0.03,
+        "mass": 10.0,
+        "gravity": 9.8,
+        "scaleOrigin": 0.032,
+        "trueZero": 6.2e-05,
+        "assumedZero": 6.2e-05
+      },
+      "bar_elements": 8,
+      "reference_extension_m": 0.0003899296105751434,
+      "reference_scale_shift_m": 0.013000948468649189,
+      "max_relative_error": 4.170761118473334e-16
+    },
+    {
+      "parameters": {
+        "youngModulus": 250000000000.0,
+        "wireLength": 0.72,
+        "wireDiameter": 0.0008,
+        "mirrorDistance": 0.69,
+        "leverArm": 0.03526,
+        "mass": 10.0,
+        "gravity": 9.8,
+        "scaleOrigin": 0.032,
+        "trueZero": 6.2e-05,
+        "assumedZero": 6.2e-05
+      },
+      "bar_elements": 8,
+      "reference_extension_m": 0.0005614986392282074,
+      "reference_scale_shift_m": 0.0219842034639459,
+      "max_relative_error": 1.1585447551314799e-15
+    },
+    {
+      "parameters": {
+        "youngModulus": 250000000000.0,
+        "wireLength": 1.0,
+        "wireDiameter": 0.0008,
+        "mirrorDistance": 1.5,
+        "leverArm": 0.05,
+        "mass": 10.0,
+        "gravity": 9.8,
+        "scaleOrigin": 0.032,
+        "trueZero": 6.2e-05,
+        "assumedZero": 6.2e-05
+      },
+      "bar_elements": 8,
+      "reference_extension_m": 0.0007798592211502868,
+      "reference_scale_shift_m": 0.0468086358577487,
+      "max_relative_error": 4.170761118473334e-16
+    }
+  ]
+}

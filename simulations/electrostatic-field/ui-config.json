@@ -1,0 +1,84 @@
+{
+  "slug": "electrostatic-field",
+  "title": "稳恒电场模拟静电场",
+  "experimentId": "course-03/electrostatic-field",
+  "controls": [
+    {
+      "key": "a_cm",
+      "type": "number",
+      "label": "内电极半径 / cm",
+      "default": 1.05,
+      "min": 0.5,
+      "max": 2
+    },
+    {
+      "key": "b_cm",
+      "type": "number",
+      "label": "外电极半径 / cm",
+      "default": 6.94,
+      "min": 5,
+      "max": 10
+    },
+    {
+      "key": "voltage",
+      "type": "number",
+      "label": "内电极电压 / V",
+      "default": 10,
+      "min": 5,
+      "max": 15
+    },
+    {
+      "key": "fraction",
+      "type": "number",
+      "label": "径向探针位置比例",
+      "default": 0.5,
+      "min": 0,
+      "max": 1
+    },
+    {
+      "key": "angle",
+      "type": "number",
+      "label": "探针方位角 / °",
+      "default": 0,
+      "min": 0,
+      "max": 360
+    }
+  ],
+  "columns": [
+    {
+      "key": "radius_cm",
+      "label": "$r/\\mathrm{cm}$",
+      "short": "r / cm"
+    },
+    {
+      "key": "potential",
+      "label": "$\\varphi/\\mathrm V$",
+      "short": "电势V"
+    },
+    {
+      "key": "field",
+      "label": "$E_r/(\\mathrm{V/m})$",
+      "short": "Er / (V/m)"
+    },
+    {
+      "key": "angle",
+      "label": "方位 / °",
+      "short": "方位"
+    }
+  ],
+  "units": {
+    "parameters": {
+      "a_cm": "cm",
+      "b_cm": "cm",
+      "voltage": "V",
+      "fraction": "1",
+      "angle": "deg"
+    },
+    "readings": {
+      "radius_cm": "cm",
+      "potential": "V",
+      "field": "V/m",
+      "angle": "deg"
+    }
+  }
+}

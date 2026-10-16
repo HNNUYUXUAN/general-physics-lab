@@ -1,0 +1,95 @@
+{
+  "slug": "current-voltage-divider",
+  "title": "制流分压",
+  "experimentId": "course-03/current-voltage-divider",
+  "controls": [
+    {
+      "key": "mode",
+      "type": "select",
+      "label": "接法",
+      "default": "voltage",
+      "options": [
+        {
+          "value": "voltage",
+          "label": "分压"
+        },
+        {
+          "value": "current",
+          "label": "制流"
+        }
+      ]
+    },
+    {
+      "key": "E",
+      "type": "number",
+      "label": "电源 $E/\\mathrm V$",
+      "default": 5,
+      "min": 0.1,
+      "max": 12
+    },
+    {
+      "key": "R0",
+      "type": "number",
+      "label": "变阻器总阻 $R_0/\\Omega$",
+      "default": 1000,
+      "min": 50,
+      "max": 5000
+    },
+    {
+      "key": "K",
+      "type": "number",
+      "label": "负载比 $K=R_L/R_0$",
+      "default": 1,
+      "min": 0.1,
+      "max": 10
+    },
+    {
+      "key": "X",
+      "type": "number",
+      "label": "滑片位置 $X$",
+      "default": 0.5,
+      "min": 0,
+      "max": 1
+    }
+  ],
+  "columns": [
+    {
+      "key": "mode",
+      "label": "接法",
+      "short": "接法"
+    },
+    {
+      "key": "X",
+      "label": "$X$",
+      "short": "X"
+    },
+    {
+      "key": "voltage",
+      "label": "$U_L/\\mathrm V$",
+      "short": "U / V"
+    },
+    {
+      "key": "current_mA",
+      "label": "$I_L/\\mathrm{mA}$",
+      "short": "I / mA"
+    }
+  ],
+  "units": {
+    "parameters": {
+      "mode": "enum",
+      "E": "V",
+      "R0": "ohm",
+      "K": "1",
+      "X": "1"
+    },
+    "readings": {
+      "mode": "enum",
+      "X": "1",
+      "voltage": "V",
+      "current_mA": "mA",
+      "current": "A",
+      "load": "ohm",
+      "normalized": "1"
+    }
+  }
+}

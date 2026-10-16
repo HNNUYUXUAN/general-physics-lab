@@ -1,0 +1,158 @@
+{
+  "status": "passed",
+  "source_hashes": {
+    "simulations/doppler-application/app.mjs": "571313b99530a4c5ba84b8378b15cf3017e15f51a33b1d10b0e9f32bb5aa0e02",
+    "simulations/doppler-application/model.mjs": "61df11205a04373f4ee9d64b89c9be45af382c42e75dd30b475dc212409403e6",
+    "simulations/doppler-application/index.html": "14aee1181db26157e0a317aba660224958c0f9a5712f7a106124db2ed94584a1",
+    "simulations/doppler-application/lab.css": "ae5bb75f91e0dae6ea97aea7324ddde9936b991be8b8bd236d495b4f9303a66e",
+    "simulations/doppler-application/chart.mjs": "d9de3df2659ebe798d162b1aaaa42686654346c822e72edf9c1a515302532942",
+    "simulations/doppler-application/observations.json": "fb95af9a68ca9dfb6090e68462735eeedb0ffe782f6b30e7a266da8a44fe78a5"
+  },
+  "source_record_sha256": "07ba82fb7c417d242c4651682642812312947869bbde7fee969d2a5e7026b175",
+  "interaction_checks": 5,
+  "visual_status": "passed",
+  "exports_status": "passed",
+  "exports": [
+    {
+      "filename": "doppler-application-export.json",
+      "sha256": "668e7239006bb5564fedb3a7d2caaf30dd0262f625d8ccaceae63281709122f6",
+      "bytes": 4539
+    },
+    {
+      "filename": "doppler-application-export.csv",
+      "sha256": "4d7cb877078534f9d8ba9f2968026bc08f11c481cb75bc991a283be67b2da77b",
+      "bytes": 1019
+    }
+  ],
+  "fonts": {
+    "body": "\"Times New Roman\", SimSun, \"Songti SC\", serif",
+    "simsun": true,
+    "times": true,
+    "mathjax": 3,
+    "math_errors": []
+  },
+  "browser": "fixed Chromium1243 via playwright-cli isolated rollout-mechanics",
+  "layout": {
+    "mobile": {
+      "viewport": 390,
+      "document": 390,
+      "overflow": false,
+      "svg_text": [
+        {
+          "text": "固定声源",
+          "size": 14.488570376406335
+        },
+        {
+          "text": "接收频率 40000.000 Hz",
+          "size": 14.488573021723207
+        },
+        {
+          "text": "有向速度 0.0000 m/s",
+          "size": 14.488572980765822
+        },
+        {
+          "text": "接收器质量 103.2 g",
+          "size": 14.48856927326699
+        }
+      ],
+      "math_errors": []
+    }
+  },
+  "interaction": [
+    {
+      "name": "动态静态共同k",
+      "status": "passed"
+    },
+    {
+      "name": "弹簧有效质量",
+      "status": "passed"
+    },
+    {
+      "name": "两峰测标",
+      "status": "passed"
+    },
+    {
+      "name": "源点选用敏感性",
+      "status": "passed"
+    },
+    {
+      "name": "非法载频拒绝",
+      "status": "passed"
+    }
+  ],
+  "background": {
+    "status": "passed",
+    "actual_document_hidden": true,
+    "pause_verified": true,
+    "source_files": {
+      "simulations/doppler-application/app.mjs": "571313b99530a4c5ba84b8378b15cf3017e15f51a33b1d10b0e9f32bb5aa0e02",
+      "simulations/doppler-application/model.mjs": "61df11205a04373f4ee9d64b89c9be45af382c42e75dd30b475dc212409403e6"
+    },
+    "checked_at_utc": "2026-10-16T17:08:55.138Z"
+  },
+  "checked_at_utc": "2026-10-16T16:50:22.477Z",
+  "screenshots": [
+    {
+      "path": "docs/assets/simulations/doppler-application/frontend-01-3d5253188252.png",
+      "sha256": "3d5253188252bf505aff8e0176bad527479f160ccd092bce2315ee44d6ca6817"
+    },
+    {
+      "path": "docs/assets/simulations/doppler-application/frontend-02-840451800dad.png",
+      "sha256": "840451800dad125f4bcb5faf3439863254a68a7224527656d5dd5979274c2ee5"
+    },
+    {
+      "path": "docs/assets/simulations/doppler-application/frontend-03-df052b39fb17.png",
+      "sha256": "df052b39fb17feaf61134421d22fd6af3edf31d8b5d6d2679be0d865897e0701"
+    },
+    {
+      "path": "docs/assets/simulations/doppler-application/frontend-04-70eb4c8eaaad.png",
+      "sha256": "70eb4c8eaaad8fdf36dd8f7f765f2eddbccae3cf3494487110269e562e78cee3"
+    }
+  ],
+  "schema_version": 1,
+  "experiment_id": "course-01/doppler-application",
+  "numerical": {
+    "status": "passed",
+    "reference_sha256": "c911b0e23f39e7c3f99bbc46aacb2f34a651f237d2fc13fbd81ef580202a94db",
+    "source_files": {
+      "simulations/doppler-application/index.html": "14aee1181db26157e0a317aba660224958c0f9a5712f7a106124db2ed94584a1",
+      "simulations/doppler-application/model.mjs": "61df11205a04373f4ee9d64b89c9be45af382c42e75dd30b475dc212409403e6",
+      "simulations/doppler-application/app.mjs": "571313b99530a4c5ba84b8378b15cf3017e15f51a33b1d10b0e9f32bb5aa0e02",
+      "simulations/doppler-application/chart.mjs": "d9de3df2659ebe798d162b1aaaa42686654346c822e72edf9c1a515302532942",
+      "simulations/doppler-application/lab.css": "ae5bb75f91e0dae6ea97aea7324ddde9936b991be8b8bd236d495b4f9303a66e",
+      "simulations/doppler-application/observations.json": "fb95af9a68ca9dfb6090e68462735eeedb0ffe782f6b30e7a266da8a44fe78a5",
+      "docs/doppler-application-model-evidence.md": "fc453b06cd3c76f994df85ae00abad7061769f12026d92a4caf2147857d9318c",
+      "docs/doppler-application-references.json": "d8334a86ff7e44e862381f95df3bac1517b33811af19d585f68fe79a1deecd12",
+      "docs/doppler-application-references.bib": "213a3426fe44a444dde9ce121de6ad70723c69fb25c1a2c703e238abc8cae10e",
+      "docs/simulation/doppler-application-reference.json": "c911b0e23f39e7c3f99bbc46aacb2f34a651f237d2fc13fbd81ef580202a94db",
+      "scripts/validate_doppler_application_simulation.py": "27749aacb16455bac7ba49a0666d5bda6ce51cf457318b6fc6123a79c471814a",
+      "tests/doppler-application-model.test.mjs": "1ed0c512c14ad4d0af87ab43b860e787ced0cf6c5e60dccc3ddcf7503410b0e9"
+    }
+  },
+  "scientific_evidence": {
+    "status": "verified",
+    "decision_source_files": {
+      "docs/doppler-application-references.json": "d8334a86ff7e44e862381f95df3bac1517b33811af19d585f68fe79a1deecd12",
+      "docs/doppler-application-model-evidence.md": "fc453b06cd3c76f994df85ae00abad7061769f12026d92a4caf2147857d9318c",
+      "simulations/doppler-application/model.mjs": "61df11205a04373f4ee9d64b89c9be45af382c42e75dd30b475dc212409403e6"
+    },
+    "core_references": [
+      {
+        "id": "song2023-doppler",
+        "pdf_sha256": "ca7d931e281cf66533394960182b87d52a48d93c101aee73462e91a68101d8b1",
+        "locators": [
+          {
+            "page": 91,
+            "location": "式1",
+            "supports": "有向接收器与声源速度的频移"
+          },
+          {
+            "page": 92,
+            "location": "式2",
+            "supports": "固定声源、沿连线运动接收器单程关系"
+          }
+        ]
+      }
+    ]
+  }
+}

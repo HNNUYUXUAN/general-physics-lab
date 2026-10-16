@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "experiment": "course-01/doppler-application",
+  "source_files": [
+    {
+      "path": "experiments/course-01/doppler-application/experiment.json",
+      "sha256": "8f4b195a1f2fa90c2aaa8bafffb8bc612c2c4eab81b26d23a67d2d3e8d1a2159"
+    },
+    {
+      "path": "experiments/course-01/doppler-application/data/static.csv",
+      "sha256": "ac683d59d6a0e2eb57b068db6d1333de41205693503974df0c1869d8abdc49d9"
+    },
+    {
+      "path": "experiments/course-01/doppler-application/data/periods.csv",
+      "sha256": "0a08266029742ccc8ad39db9b8525d4fc38ba53906e76514210b6c810811e54a"
+    },
+    {
+      "path": "experiments/course-01/doppler-application/data/provenance.json",
+      "sha256": "30c117f94432e4dd1c052785ff166bd7f35c96a2ca628e9fb6bd9d07cd522675"
+    }
+  ],
+  "static": [
+    {
+      "trial": 1,
+      "mass_g": 12.3,
+      "position_cm": 26.8,
+      "included": false,
+      "stiffness": 6.344210526315783
+    },
+    {
+      "trial": 2,
+      "mass_g": 61.2,
+      "position_cm": 41.61,
+      "included": true,
+      "stiffness": 3.589228007181329
+    },
+    {
+      "trial": 3,
+      "mass_g": 108.78,
+      "position_cm": 56.0,
+      "included": true,
+      "stiffness": 3.4277942122186493
+    },
+    {
+      "trial": 4,
+      "mass_g": 48.9,
+      "position_cm": 37.62,
+      "included": true,
+      "stiffness": 3.76745283018868
+    },
+    {
+      "trial": 5,
+      "mass_g": 47.58,
+      "position_cm": 37.04,
+      "included": true,
+      "stiffness": 3.8408896210873147
+    }
+  ],
+  "periods_s": [
+    0.91,
+    0.93,
+    0.89,
+    0.89,
+    0.91,
+    0.87,
+    0.89,
+    0.89,
+    0.86,
+    0.87,
+    0.87,
+    0.84,
+    0.86
+  ],
+  "mean_period_s": 0.8830769230769229,
+  "dynamic_stiffness": 5.224471477088448
+}

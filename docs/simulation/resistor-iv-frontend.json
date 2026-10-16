@@ -1,0 +1,245 @@
+{
+  "status": "passed",
+  "source_hashes": {
+    "simulations/resistor-iv/model.mjs": "5fc0acf17358b9f629cf549acc1f484fcda4b03111eab6500a88aef58ab048ee",
+    "simulations/resistor-iv/app.mjs": "5c4b32f2b1c869b67f7fd0c343c536940a7388adbd3a2fdc512309f5109aa727",
+    "simulations/resistor-iv/chart.mjs": "7661b7bfc2fe4ac33d2ab50733687b64f47c7110505e27c14c80c42c38df82dd",
+    "simulations/resistor-iv/lab.css": "d007905ee689191cb3d99caebe74d1e5e924b6fd068c7a81d2417c75219b6169",
+    "simulations/resistor-iv/observations.json": "593f0990399a5a58ef67eeae63f6f2d6f6f9ce1f99d9f47c3d3723f30cabbd2d",
+    "simulations/resistor-iv/diagram.mjs": "b3ff40b865451bf82be27d1be24802922600a4caa178a28151aa17bc4c098570",
+    "simulations/resistor-iv/ui-config.json": "d10c4474ad117c96375aa0b2712fe9f5595fdeba12fe80ddf25d5dedb8589b6f",
+    "simulations/resistor-iv/index.html": "05ae2ca3b50e4b75873e57696766c23d6afacd988d0a62bd983d0fcb0fb1eae7"
+  },
+  "source_record_sha256": "29f1a653acb33350971e012a6975de6748b54a5267245509b9982bfea5f242c8",
+  "interaction_checks": 18,
+  "visual_status": "passed",
+  "exports_status": "passed",
+  "exports": [
+    {
+      "filename": "1-resistor-iv-records.csv",
+      "sha256": "6680baf4c8b48950bf3b063636ea61982b1fc4d92897933b5a761c1317361c93",
+      "bytes": 678
+    },
+    {
+      "filename": "2-resistor-iv-records.json",
+      "sha256": "5f7066823aae1bb1ef9ffa1235842029247989ee32a47b7f0979671a3628cee2",
+      "bytes": 2039
+    }
+  ],
+  "fonts": {
+    "h1": [
+      {
+        "familyName": "SimSun",
+        "postScriptName": "SimSun",
+        "isCustomFont": false,
+        "glyphCount": 10
+      }
+    ],
+    "#summary": [
+      {
+        "familyName": "Times New Roman",
+        "postScriptName": "TimesNewRomanPSMT",
+        "isCustomFont": false,
+        "glyphCount": 47
+      },
+      {
+        "familyName": "SimSun",
+        "postScriptName": "SimSun",
+        "isCustomFont": false,
+        "glyphCount": 2
+      }
+    ]
+  },
+  "browser": "fixed Playwright Chromium 1243",
+  "layout": {
+    "wide": {
+      "width": 1280,
+      "scrollWidth": 1280,
+      "math": 8,
+      "mathErrors": 0
+    },
+    "narrow": {
+      "width": 390,
+      "scrollWidth": 390,
+      "math": 8,
+      "mathErrors": 0
+    }
+  },
+  "interaction": [
+    {
+      "name": "mode=internal",
+      "status": "passed"
+    },
+    {
+      "name": "mode=external",
+      "status": "passed"
+    },
+    {
+      "name": "U=0.05",
+      "status": "passed"
+    },
+    {
+      "name": "U=2",
+      "status": "passed"
+    },
+    {
+      "name": "R=10",
+      "status": "passed"
+    },
+    {
+      "name": "R=1000000",
+      "status": "passed"
+    },
+    {
+      "name": "RA=0.1",
+      "status": "passed"
+    },
+    {
+      "name": "RA=100",
+      "status": "passed"
+    },
+    {
+      "name": "RV=10000",
+      "status": "passed"
+    },
+    {
+      "name": "RV=100000000",
+      "status": "passed"
+    },
+    {
+      "name": "原表 diode",
+      "status": "passed"
+    },
+    {
+      "name": "原表 resistors",
+      "status": "passed"
+    },
+    {
+      "name": "默认设置读数与记录",
+      "status": "passed"
+    },
+    {
+      "name": "测量闭环与同组分析",
+      "status": "passed"
+    },
+    {
+      "name": "非法编辑blur后不得记录",
+      "status": "passed"
+    },
+    {
+      "name": "恢复删除与清空",
+      "status": "passed"
+    },
+    {
+      "name": "真实CSV/JSON导出与元数据",
+      "status": "passed"
+    },
+    {
+      "name": "restore",
+      "status": "passed"
+    }
+  ],
+  "background": {
+    "status": "not-applicable"
+  },
+  "checked_at_utc": "2026-10-16T16:12:41.930Z",
+  "screenshots": [
+    {
+      "path": "docs/assets/simulations/resistor-iv/frontend-01-ad923fc030cb.png",
+      "sha256": "ad923fc030cbb1296df598409bb5cc02e8c28ae542467e82253731d57741bf17"
+    },
+    {
+      "path": "docs/assets/simulations/resistor-iv/frontend-02-26d1f79fcf0e.png",
+      "sha256": "26d1f79fcf0e166683d8a755edb912a58789ba3b298e487708cbe9efe41cc22b"
+    },
+    {
+      "path": "docs/assets/simulations/resistor-iv/frontend-03-a6ed1b516133.png",
+      "sha256": "a6ed1b516133d8e64602d86debb360f05ba7fd665b7e7bfd2436d758de58e11a"
+    },
+    {
+      "path": "docs/assets/simulations/resistor-iv/frontend-04-a12b689bf9ba.png",
+      "sha256": "a12b689bf9ba9be6963f58d86847603d83e862d2cd281a287e5c5d6d1905d7b0"
+    },
+    {
+      "path": "docs/assets/simulations/resistor-iv/frontend-05-84c3b1496bf0.png",
+      "sha256": "84c3b1496bf0e021ccaf9821e8a238ef183825062d73186f876a528ae8e503c2"
+    },
+    {
+      "path": "docs/assets/simulations/resistor-iv/frontend-06-8635fa97ce9d.png",
+      "sha256": "8635fa97ce9d69a2ca5e3201a12737ca5bc573c9260a93b561f8fda6873c1c72"
+    },
+    {
+      "path": "docs/assets/simulations/resistor-iv/frontend-07-38f46cd20281.png",
+      "sha256": "38f46cd202814a06967131c56acb5772960e6857406a55b9959a675bd6bea58d"
+    },
+    {
+      "path": "docs/assets/simulations/resistor-iv/frontend-08-f6770d3bb9f2.png",
+      "sha256": "f6770d3bb9f2635612ab58276215e077b3ffbe9f995a9e7e281b021f379c6f15"
+    },
+    {
+      "path": "docs/assets/simulations/resistor-iv/frontend-09-55412d721162.png",
+      "sha256": "55412d721162c81067026e2c39e54bcc2062ecf6455d81bd8e79116498f358df"
+    },
+    {
+      "path": "docs/assets/simulations/resistor-iv/frontend-10-524ff70717f7.png",
+      "sha256": "524ff70717f76516f9b4b83542feb32a7bcc50fc9ec3e8fc4f7b0939f0764f4e"
+    },
+    {
+      "path": "docs/assets/simulations/resistor-iv/frontend-11-e5444917bf7c.png",
+      "sha256": "e5444917bf7c1fe6d7be8b1b349f9832a3c2fbf0d0c681444ec317a5d84ff7b8"
+    },
+    {
+      "path": "docs/assets/simulations/resistor-iv/frontend-12-cc4f53d3bf67.png",
+      "sha256": "cc4f53d3bf6783ac609c913839cb795e76435dd3a0252e5adcf447565a029dae"
+    }
+  ],
+  "schema_version": 1,
+  "experiment_id": "course-03/resistor-iv",
+  "numerical": {
+    "status": "passed",
+    "reference_sha256": "fc0ac1c3335ade454333c2c6acc128f39d153f6eb57af2ecc42cc23ef4c74c0b",
+    "source_files": {
+      "simulations/resistor-iv/index.html": "05ae2ca3b50e4b75873e57696766c23d6afacd988d0a62bd983d0fcb0fb1eae7",
+      "simulations/resistor-iv/model.mjs": "5fc0acf17358b9f629cf549acc1f484fcda4b03111eab6500a88aef58ab048ee",
+      "simulations/resistor-iv/app.mjs": "5c4b32f2b1c869b67f7fd0c343c536940a7388adbd3a2fdc512309f5109aa727",
+      "simulations/resistor-iv/chart.mjs": "7661b7bfc2fe4ac33d2ab50733687b64f47c7110505e27c14c80c42c38df82dd",
+      "simulations/resistor-iv/lab.css": "d007905ee689191cb3d99caebe74d1e5e924b6fd068c7a81d2417c75219b6169",
+      "simulations/resistor-iv/observations.json": "593f0990399a5a58ef67eeae63f6f2d6f6f9ce1f99d9f47c3d3723f30cabbd2d",
+      "docs/resistor-iv-model-evidence.md": "0ed588be3cdd3dab170383f838e071cd42656b43b7f073bdf443db544b800920",
+      "docs/resistor-iv-references.json": "24d62c230fe12e4f3cbe50e441f1548e905bd3c2d722c4ac465a69cfd92f26af",
+      "docs/resistor-iv-references.bib": "9bce22a567e382841150754fe3a57d88951de2d5b7a9c27771831a0a96320af8",
+      "docs/simulation/resistor-iv-reference.json": "fc0ac1c3335ade454333c2c6acc128f39d153f6eb57af2ecc42cc23ef4c74c0b",
+      "simulations/resistor-iv/diagram.mjs": "b3ff40b865451bf82be27d1be24802922600a4caa178a28151aa17bc4c098570",
+      "simulations/resistor-iv/ui-config.json": "d10c4474ad117c96375aa0b2712fe9f5595fdeba12fe80ddf25d5dedb8589b6f",
+      "scripts/validate_resistor_iv_simulation.py": "e6004e7de11c6187334c5235e1d6e5fe0e6025b0601baff5bf3b59921e430fa1",
+      "tests/resistor-iv-model.test.mjs": "41cfdbea754ad4645d3c190ca2d6438d37c3719c7808cca08732019b4164be77"
+    }
+  },
+  "scientific_evidence": {
+    "status": "verified",
+    "decision_source_files": {
+      "docs/resistor-iv-references.json": "24d62c230fe12e4f3cbe50e441f1548e905bd3c2d722c4ac465a69cfd92f26af",
+      "docs/resistor-iv-model-evidence.md": "0ed588be3cdd3dab170383f838e071cd42656b43b7f073bdf443db544b800920",
+      "simulations/resistor-iv/model.mjs": "5fc0acf17358b9f629cf549acc1f484fcda4b03111eab6500a88aef58ab048ee"
+    },
+    "core_references": [
+      {
+        "id": "mei2022ivrange",
+        "pdf_sha256": "4ed0c7165c0ce203fbf80863fe549a8d32a41541bcadffd801047c80111ea154",
+        "locators": [
+          "p.122 section 1 figure 1 equations (1)–(2), inner ammeter loading",
+          "p.122 section 2 equations (5)–(6), known range-specific resistance correction",
+          "p.124 equation (9), separate measured apparatus example"
+        ]
+      },
+      {
+        "id": "yang2021meter",
+        "pdf_sha256": "9f5c10f2db933018242c9f8170c1bd64cce91d57937232b22502c73810663958",
+        "locators": [
+          "p.99 section 1 equations (1)–(4), figures 2–5",
+          "p.100 section 2.2 equations (6), (9)"
+        ]
+      }
+    ]
+  }
+}

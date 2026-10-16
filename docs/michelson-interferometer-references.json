@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "experiment_id": "course-04/michelson-interferometer",
+  "review_date": "2026-10-17",
+  "access_channel": "西南财经大学WebVPN取得全文",
+  "verification_method": "全文5页实际核读，p119/120/122/123渲染核看",
+  "references": [
+    {
+      "id": "Zhang2023MichelsonPlatform",
+      "title": "迈克尔逊干涉仿真平台的设计与应用",
+      "authors": [
+        "张兴坊",
+        "刘凤收",
+        "梁兰菊"
+      ],
+      "journal": "大学物理实验",
+      "year": 2023,
+      "volume": "36",
+      "issue": "1",
+      "pages": "119-123",
+      "doi": "10.14139/j.cnki.cn22-1228.2023.01.025",
+      "url": "https://doi.org/10.14139/j.cnki.cn22-1228.2023.01.025",
+      "source_pdf": {
+        "filename": "迈克尔逊干涉仿真平台的设计与应用_张兴坊.pdf",
+        "pages": 5,
+        "bytes": 404525,
+        "sha256": "603ee518c55f5ef58c0cb20aa60ac6d56a56431f489e632a3a27b7d425b97d9c"
+      },
+      "review_status": "full_text_reviewed",
+      "locators": [
+        {
+          "printed_pages": "119-120",
+          "pdf_pages": [
+            1,
+            2
+          ],
+          "location": "第1节、图1及未编号光程/强度关系",
+          "role": "虚拟空气膜、往返光程及相干cos平方强度"
+        },
+        {
+          "printed_pages": "122",
+          "pdf_pages": [
+            4
+          ],
+          "location": "第3节，近轴等厚限讨论",
+          "role": "角度相关项可忽略时的近似直条纹，区别完整非定域图样"
+        },
+        {
+          "printed_pages": "123",
+          "pdf_pages": [
+            5
+          ],
+          "location": "参考文献7/14/15",
+          "role": "更完整波长计数与条纹几何的后续候选，目标尚未核查"
+        }
+      ],
+      "parameter_identity": "论文630nm/膜厚0.63mm/L250mm/50mm窗口为其场景，未迁入当前独立近轴平面波；当前632.8nm源指定参考、alpha.25mrad独立教学。",
+      "review_findings": [
+        "p122厚度示例349um有1000倍单位错误：25mm*tan(.0008deg)=.000349mm=.349um。",
+        "p120示例代码波长与厚度均读取edit2，光强变量i/I大小写不一致；本项目不复制该代码。",
+        "论文含cos入射角及有限观察几何；本页仅近轴等厚线性相位，不声称重现全部椭圆/双曲/等倾环。"
+      ],
+      "scope": "相干强度、往返光程与小角近似等厚限；固定点计数反演另以相位周期性独立推导并求根验证。"
+    }
+  ]
+}

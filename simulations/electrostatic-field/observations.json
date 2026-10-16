@@ -1,0 +1,58 @@
+{
+  "experimentId": "course-03/electrostatic-field",
+  "source": "original-report-observations",
+  "tables": {
+    "reported_radii": {
+      "title": "reported_radii",
+      "headers": [
+        "voltage_V",
+        "radius_cm"
+      ],
+      "rows": [
+        [
+          "1.0",
+          "5.74"
+        ],
+        [
+          "2.0",
+          "4.75"
+        ],
+        [
+          "3.0",
+          "3.94"
+        ],
+        [
+          "4.0",
+          "3.27"
+        ],
+        [
+          "5.0",
+          "2.7"
+        ],
+        [
+          "6.0",
+          "2.23"
+        ],
+        [
+          "7.0",
+          "1.85"
+        ],
+        [
+          "8.0",
+          "1.54"
+        ],
+        [
+          "10.0",
+          "1.05"
+        ],
+        [
+          "0.0",
+          "6.94"
+        ]
+      ]
+    }
+  },
+  "sourceHashes": {
+    "reported_radii.csv": "cd1490db3a896d43b1d6b019dff70966145ae918f91aae84bfd7864ee34eaab8"
+  }
+}

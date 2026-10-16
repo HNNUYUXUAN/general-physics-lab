@@ -1,0 +1,231 @@
+{
+  "status": "passed",
+  "source_hashes": {
+    "simulations/inertial-balance/model.mjs": "a9cf6dffa08bab8f2e0fcf20a9b3b2fa68f070b5eb8893a82373e3f2ef6b072b",
+    "simulations/inertial-balance/app.mjs": "5ac405e97f015e83023290cd2d80bd8a3765a3f86ba5a8e0dc6955da9e826df9",
+    "simulations/inertial-balance/chart.mjs": "edb906f670c86c36474f145dd4e4040a1c5c1b0efe973662961cd42bc15fc50e",
+    "simulations/inertial-balance/lab.css": "cf56841e0acc54d25ded1a850c7b7d0930cf7406dd500934f04a8e68f11dd097",
+    "simulations/inertial-balance/observations.json": "c8a2aee59dce52447b3ee85225ff3781f4c0f575f3d5f93257e287140a4e6c41",
+    "simulations/inertial-balance/index.html": "a3059598ae35fb15df4d98957d508549b45c55b38322067915bd6c5dffe0023a"
+  },
+  "source_record_sha256": "15122fd377c1fa40d8fbbd02ee193115aa4e41a01700a7585964d4788bf6a919",
+  "interaction_checks": 18,
+  "visual_status": "passed",
+  "exports_status": "passed",
+  "exports": [
+    {
+      "filename": "1-inertial-balance-records.json",
+      "sha256": "b5a003da1cce9749c089bc370694f17db3817a38961dbdb0873ce6c0fdcaa5f2",
+      "bytes": 3825
+    },
+    {
+      "filename": "2-inertial-balance-records.csv",
+      "sha256": "74d7e203eb4ad336749d5d451d9d3101c5d162086f6ea1a733da269e9b69053c",
+      "bytes": 2269
+    }
+  ],
+  "fonts": {
+    "h1": [
+      {
+        "familyName": "SimSun",
+        "postScriptName": "SimSun",
+        "isCustomFont": false,
+        "glyphCount": 7
+      }
+    ],
+    "#summary": [
+      {
+        "familyName": "Times New Roman",
+        "postScriptName": "TimesNewRomanPSMT",
+        "isCustomFont": false,
+        "glyphCount": 45
+      },
+      {
+        "familyName": "SimSun",
+        "postScriptName": "SimSun",
+        "isCustomFont": false,
+        "glyphCount": 4
+      }
+    ]
+  },
+  "browser": "fixed Playwright Chromium 1243",
+  "layout": {
+    "wide": {
+      "width": 1280,
+      "scrollWidth": 1280,
+      "math": 17,
+      "mathErrors": 0
+    },
+    "narrow": {
+      "width": 390,
+      "scrollWidth": 390,
+      "math": 17,
+      "mathErrors": 0
+    }
+  },
+  "interaction": [
+    {
+      "name": "mass=Home",
+      "status": "passed"
+    },
+    {
+      "name": "mass=End",
+      "status": "passed"
+    },
+    {
+      "name": "amplitude=Home",
+      "status": "passed"
+    },
+    {
+      "name": "amplitude=End",
+      "status": "passed"
+    },
+    {
+      "name": "stiffness=10",
+      "status": "passed"
+    },
+    {
+      "name": "stiffness=40",
+      "status": "passed"
+    },
+    {
+      "name": "cycles=1",
+      "status": "passed"
+    },
+    {
+      "name": "cycles=100",
+      "status": "passed"
+    },
+    {
+      "name": "unknown-period=0.1",
+      "status": "passed"
+    },
+    {
+      "name": "unknown-period=2",
+      "status": "passed"
+    },
+    {
+      "name": "fit-source=automatic-ideal-period",
+      "status": "passed"
+    },
+    {
+      "name": "fit-source=user-simulation-timing",
+      "status": "passed"
+    },
+    {
+      "name": "原定标未知质量",
+      "status": "passed"
+    },
+    {
+      "name": "多质量定标",
+      "status": "passed"
+    },
+    {
+      "name": "非法劲度不保存",
+      "status": "passed"
+    },
+    {
+      "name": "手动计时与导出",
+      "status": "passed"
+    },
+    {
+      "name": "删除清空与恢复",
+      "status": "passed"
+    },
+    {
+      "name": "restore",
+      "status": "passed"
+    }
+  ],
+  "background": {
+    "status": "passed",
+    "actual_document_hidden": true,
+    "pause_verified": true,
+    "source_files": {
+      "simulations/inertial-balance/app.mjs": "5ac405e97f015e83023290cd2d80bd8a3765a3f86ba5a8e0dc6955da9e826df9",
+      "simulations/inertial-balance/model.mjs": "a9cf6dffa08bab8f2e0fcf20a9b3b2fa68f070b5eb8893a82373e3f2ef6b072b"
+    },
+    "checked_at_utc": "2026-10-16T17:06:42.248Z"
+  },
+  "checked_at_utc": "2026-10-16T16:12:23.720Z",
+  "screenshots": [
+    {
+      "path": "docs/assets/simulations/inertial-balance/frontend-01-56ec482b1757.png",
+      "sha256": "56ec482b1757ef5bfde92888d121a9f40c2cdeb2ab452a352580ca6dea3e4d3d"
+    },
+    {
+      "path": "docs/assets/simulations/inertial-balance/frontend-02-9debc914e78a.png",
+      "sha256": "9debc914e78a17a64256b7c407659fc510082cd491faee697cbf7d97270b715e"
+    },
+    {
+      "path": "docs/assets/simulations/inertial-balance/frontend-03-ed3f9ed6075d.png",
+      "sha256": "ed3f9ed6075d88562a01da978393c1ae2041f3558bef54f6f81f5d1d2cab0078"
+    },
+    {
+      "path": "docs/assets/simulations/inertial-balance/frontend-04-0c0cfb09659f.png",
+      "sha256": "0c0cfb09659f3ef3f650ccdb9db316af4ea09d80d002c2b22b695c6830f5ed8d"
+    },
+    {
+      "path": "docs/assets/simulations/inertial-balance/frontend-05-a4c2f493c251.png",
+      "sha256": "a4c2f493c2510aa3e9d83af3cb53f9280ed12b7b383ad3d6ba573fd124abde3d"
+    },
+    {
+      "path": "docs/assets/simulations/inertial-balance/frontend-06-6d0f92934863.png",
+      "sha256": "6d0f92934863ba426d76c448e3d34085b555e5c3158b23c86b1000fdbd388ca8"
+    },
+    {
+      "path": "docs/assets/simulations/inertial-balance/frontend-07-96f8c0704ad2.png",
+      "sha256": "96f8c0704ad2a0cbce0eacbc01e92c468f95ce0f75b1bc697561ef41745345ff"
+    },
+    {
+      "path": "docs/assets/simulations/inertial-balance/frontend-08-aa2be0b29715.png",
+      "sha256": "aa2be0b29715bf705aace661e61044f70294f1538a5d0a8f4aae57889dff9e7b"
+    },
+    {
+      "path": "docs/assets/simulations/inertial-balance/frontend-09-fa8cd649fbff.png",
+      "sha256": "fa8cd649fbff40cdf53a89df9bc74a5e732b96c03c7c09678073bc1bb6e6a091"
+    },
+    {
+      "path": "docs/assets/simulations/inertial-balance/frontend-10-9b40e8272b70.png",
+      "sha256": "9b40e8272b703d7533ed5098f52541a1587cd64880d9f08f378368f82d28b69f"
+    }
+  ],
+  "schema_version": 1,
+  "experiment_id": "course-02/inertial-balance",
+  "numerical": {
+    "status": "passed",
+    "reference_sha256": "67c95280f466d0b05d60224d168d603cbbb765292c0893b4e31cc2ab98d86d72",
+    "source_files": {
+      "simulations/inertial-balance/index.html": "a3059598ae35fb15df4d98957d508549b45c55b38322067915bd6c5dffe0023a",
+      "simulations/inertial-balance/model.mjs": "a9cf6dffa08bab8f2e0fcf20a9b3b2fa68f070b5eb8893a82373e3f2ef6b072b",
+      "simulations/inertial-balance/app.mjs": "5ac405e97f015e83023290cd2d80bd8a3765a3f86ba5a8e0dc6955da9e826df9",
+      "simulations/inertial-balance/chart.mjs": "edb906f670c86c36474f145dd4e4040a1c5c1b0efe973662961cd42bc15fc50e",
+      "simulations/inertial-balance/lab.css": "cf56841e0acc54d25ded1a850c7b7d0930cf7406dd500934f04a8e68f11dd097",
+      "simulations/inertial-balance/observations.json": "c8a2aee59dce52447b3ee85225ff3781f4c0f575f3d5f93257e287140a4e6c41",
+      "docs/inertial-balance-model-evidence.md": "5adcae5a2fd34012e21a26155d5b7e9c799f09c1cd41e9de012cecfc99a4a060",
+      "docs/inertial-balance-references.json": "e06ed534c42028436215b1a8f6ef3624f7c02d7478e81e9a0f152f83d1c457b8",
+      "docs/inertial-balance-references.bib": "1f58814c56536edd984bcc95a8b8e73acbf1808f7ee00a22958a761a4d8abb04",
+      "docs/simulation/inertial-balance-reference.json": "67c95280f466d0b05d60224d168d603cbbb765292c0893b4e31cc2ab98d86d72",
+      "scripts/validate_inertial_balance_simulation.py": "124a57e37780737818ae78e5ab9a9edff28d47783e472cd6e2fe53b412952d53",
+      "tests/inertial-balance-model.test.mjs": "4c44063fbae884bab36f15242473f692a3c4709dd8d160d21f8bd24336171f0c"
+    }
+  },
+  "scientific_evidence": {
+    "status": "verified",
+    "decision_source_files": {
+      "docs/inertial-balance-references.json": "e06ed534c42028436215b1a8f6ef3624f7c02d7478e81e9a0f152f83d1c457b8",
+      "docs/inertial-balance-model-evidence.md": "5adcae5a2fd34012e21a26155d5b7e9c799f09c1cd41e9de012cecfc99a4a060",
+      "simulations/inertial-balance/model.mjs": "a9cf6dffa08bab8f2e0fcf20a9b3b2fa68f070b5eb8893a82373e3f2ef6b072b"
+    },
+    "core_references": [
+      {
+        "id": "zheng2015",
+        "pdf_sha256": "ede7ba56dd63e142ec2450885c6282a40a5edaac36f52d10f950aee112d4fc8f",
+        "locators": [
+          "p.38 equations (1), (3)",
+          "pp.39–40 empirical quadratic calibration discussion"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "experiment": "course-01/vaporization-heat",
+  "references": [
+    {
+      "id": "li2022-vaporization",
+      "title": "低成本改进一种简易测定水的汽化热实验装置",
+      "authors": [
+        "李金英",
+        "刘霜",
+        "王萌",
+        "杨雨馨"
+      ],
+      "journal": "大学物理",
+      "year": 2022,
+      "volume": 41,
+      "issue": 3,
+      "pages": "23–26",
+      "doi": "10.16854/j.cnki.1000-0712.210215",
+      "url": "https://doi.org/10.16854/j.cnki.1000-0712.210215",
+      "full_text_status": "obtained_and_read",
+      "pdf_sha256": "e7938cd2915e00f81088d2312ce649e1e3f719fc9a311d2edfa4c0097db96ad6",
+      "locators": [
+        {
+          "page": 23,
+          "location": "§1式1、式3",
+          "supports": "混合量热能量平衡与比汽化热反演"
+        },
+        {
+          "page": 24,
+          "location": "§2–3",
+          "supports": "湿蒸汽、传输温度及固定称量构成"
+        },
+        {
+          "page": 25,
+          "location": "讨论",
+          "supports": "入口蒸汽温度与残余液滴的实验限制"
+        }
+      ]
+    }
+  ]
+}

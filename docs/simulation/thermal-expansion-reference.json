@@ -1,0 +1,645 @@
+{
+  "schema_version": 1,
+  "experiment": "course-02/thermal-expansion",
+  "model_sha256": "aab64c7c4565fdc8ee7fd6edc6dfbe2b5406095fa90e5bf726d343058701a58c",
+  "validator_sha256": "2116cb38d0cb8333bd1e895590b9e98ba6c479e3523ed4dd81e7b03b8205f799",
+  "environment": {
+    "python": "3.14.7",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1"
+  },
+  "method": "DOP853 lumped heating trajectory; independent spatial quadrature of thermal strain; linear algebra coefficient recovery",
+  "case_count": 48,
+  "tolerances": {
+    "absolute": 2e-10
+  },
+  "max_absolute_error": 6.757261417078553e-12,
+  "status": "passed",
+  "failures": [],
+  "cases": [
+    {
+      "parameters": {
+        "alpha": 5e-06,
+        "length": 0.1,
+        "referenceTemperature": 20,
+        "targetTemperature": 30,
+        "timeConstant": 5,
+        "temperatureBias": 0,
+        "dialGain": 1,
+        "dialOrigin": 2e-05
+      },
+      "max_absolute_error": 6.757261417078553e-12
+    },
+    {
+      "parameters": {
+        "alpha": 5e-06,
+        "length": 0.1,
+        "referenceTemperature": 20,
+        "targetTemperature": 30,
+        "timeConstant": 5,
+        "temperatureBias": 2,
+        "dialGain": 1.05,
+        "dialOrigin": 2e-05
+      },
+      "max_absolute_error": 6.757261417078553e-12
+    },
+    {
+      "parameters": {
+        "alpha": 5e-06,
+        "length": 0.1,
+        "referenceTemperature": 20,
+        "targetTemperature": 30,
+        "timeConstant": 60,
+        "temperatureBias": 0,
+        "dialGain": 1,
+        "dialOrigin": 2e-05
+      },
+      "max_absolute_error": 6.611600156247732e-12
+    },
+    {
+      "parameters": {
+        "alpha": 5e-06,
+        "length": 0.1,
+        "referenceTemperature": 20,
+        "targetTemperature": 30,
+        "timeConstant": 60,
+        "temperatureBias": 2,
+        "dialGain": 1.05,
+        "dialOrigin": 2e-05
+      },
+      "max_absolute_error": 6.611600156247732e-12
+    },
+    {
+      "parameters": {
+        "alpha": 5e-06,
+        "length": 0.1,
+        "referenceTemperature": 20,
+        "targetTemperature": 110,
+        "timeConstant": 5,
+        "temperatureBias": 0,
+        "dialGain": 1,
+        "dialOrigin": 2e-05
+      },
+      "max_absolute_error": 2.3447910280083306e-12
+    },
+    {
+      "parameters": {
+        "alpha": 5e-06,
+        "length": 0.1,
+        "referenceTemperature": 20,
+        "targetTemperature": 110,
+        "timeConstant": 5,
+        "temperatureBias": 2,
+        "dialGain": 1.05,
+        "dialOrigin": 2e-05
+      },
+      "max_absolute_error": 2.3447910280083306e-12
+    },
+    {
+      "parameters": {
+        "alpha": 5e-06,
+        "length": 0.1,
+        "referenceTemperature": 20,
+        "targetTemperature": 110,
+        "timeConstant": 60,
+        "temperatureBias": 0,
+        "dialGain": 1,
+        "dialOrigin": 2e-05
+      },
+      "max_absolute_error": 2.2026824808563106e-12
+    },
+    {
+      "parameters": {
+        "alpha": 5e-06,
+        "length": 0.1,
+        "referenceTemperature": 20,
+        "targetTemperature": 110,
+        "timeConstant": 60,
+        "temperatureBias": 2,
+        "dialGain": 1.05,
+        "dialOrigin": 2e-05
+      },
+      "max_absolute_error": 2.2026824808563106e-12
+    },
+    {
+      "parameters": {
+        "alpha": 5e-06,
+        "length": 0.3,
+        "referenceTemperature": 20,
+        "targetTemperature": 30,
+        "timeConstant": 5,
+        "temperatureBias": 0,
+        "dialGain": 1,
+        "dialOrigin": 2e-05
+      },
+      "max_absolute_error": 6.757261417078553e-12
+    },
+    {
+      "parameters": {
+        "alpha": 5e-06,
+        "length": 0.3,
+        "referenceTemperature": 20,
+        "targetTemperature": 30,
+        "timeConstant": 5,
+        "temperatureBias": 2,
+        "dialGain": 1.05,
+        "dialOrigin": 2e-05
+      },
+      "max_absolute_error": 6.757261417078553e-12
+    },
+    {
+      "parameters": {
+        "alpha": 5e-06,
+        "length": 0.3,
+        "referenceTemperature": 20,
+        "targetTemperature": 30,
+        "timeConstant": 60,
+        "temperatureBias": 0,
+        "dialGain": 1,
+        "dialOrigin": 2e-05
+      },
+      "max_absolute_error": 6.611600156247732e-12
+    },
+    {
+      "parameters": {
+        "alpha": 5e-06,
+        "length": 0.3,
+        "referenceTemperature": 20,
+        "targetTemperature": 30,
+        "timeConstant": 60,
+        "temperatureBias": 2,
+        "dialGain": 1.05,
+        "dialOrigin": 2e-05
+      },
+      "max_absolute_error": 6.611600156247732e-12
+    },
+    {
+      "parameters": {
+        "alpha": 5e-06,
+        "length": 0.3,
+        "referenceTemperature": 20,
+        "targetTemperature": 110,
+        "timeConstant": 5,
+        "temperatureBias": 0,
+        "dialGain": 1,
+        "dialOrigin": 2e-05
+      },
+      "max_absolute_error": 2.3447910280083306e-12
+    },
+    {
+      "parameters": {
+        "alpha": 5e-06,
+        "length": 0.3,
+        "referenceTemperature": 20,
+        "targetTemperature": 110,
+        "timeConstant": 5,
+        "temperatureBias": 2,
+        "dialGain": 1.05,
+        "dialOrigin": 2e-05
+      },
+      "max_absolute_error": 2.3447910280083306e-12
+    },
+    {
+      "parameters": {
+        "alpha": 5e-06,
+        "length": 0.3,
+        "referenceTemperature": 20,
+        "targetTemperature": 110,
+        "timeConstant": 60,
+        "temperatureBias": 0,
+        "dialGain": 1,
+        "dialOrigin": 2e-05
+      },
+      "max_absolute_error": 2.2026824808563106e-12
+    },
+    {
+      "parameters": {
+        "alpha": 5e-06,
+        "length": 0.3,
+        "referenceTemperature": 20,
+        "targetTemperature": 110,
+        "timeConstant": 60,
+        "temperatureBias": 2,
+        "dialGain": 1.05,
+        "dialOrigin": 2e-05
+      },
+      "max_absolute_error": 2.2026824808563106e-12
+    },
+    {
+      "parameters": {
+        "alpha": 1.725e-05,
+        "length": 0.1,
+        "referenceTemperature": 20,
+        "targetTemperature": 30,
+        "timeConstant": 5,
+        "temperatureBias": 0,
+        "dialGain": 1,
+        "dialOrigin": 2e-05
+      },
+      "max_absolute_error": 6.757261417078553e-12
+    },
+    {
+      "parameters": {
+        "alpha": 1.725e-05,
+        "length": 0.1,
+        "referenceTemperature": 20,
+        "targetTemperature": 30,
+        "timeConstant": 5,
+        "temperatureBias": 2,
+        "dialGain": 1.05,
+        "dialOrigin": 2e-05
+      },
+      "max_absolute_error": 6.757261417078553e-12
+    },
+    {
+      "parameters": {
+        "alpha": 1.725e-05,
+        "length": 0.1,
+        "referenceTemperature": 20,
+        "targetTemperature": 30,
+        "timeConstant": 60,
+        "temperatureBias": 0,
+        "dialGain": 1,
+        "dialOrigin": 2e-05
+      },
+      "max_absolute_error": 6.611600156247732e-12
+    },
+    {
+      "parameters": {
+        "alpha": 1.725e-05,
+        "length": 0.1,
+        "referenceTemperature": 20,
+        "targetTemperature": 30,
+        "timeConstant": 60,
+        "temperatureBias": 2,
+        "dialGain": 1.05,
+        "dialOrigin": 2e-05
+      },
+      "max_absolute_error": 6.611600156247732e-12
+    },
+    {
+      "parameters": {
+        "alpha": 1.725e-05,
+        "length": 0.1,
+        "referenceTemperature": 20,
+        "targetTemperature": 110,
+        "timeConstant": 5,
+        "temperatureBias": 0,
+        "dialGain": 1,
+        "dialOrigin": 2e-05
+      },
+      "max_absolute_error": 2.3447910280083306e-12
+    },
+    {
+      "parameters": {
+        "alpha": 1.725e-05,
+        "length": 0.1,
+        "referenceTemperature": 20,
+        "targetTemperature": 110,
+        "timeConstant": 5,
+        "temperatureBias": 2,
+        "dialGain": 1.05,
+        "dialOrigin": 2e-05
+      },
+      "max_absolute_error": 2.3447910280083306e-12
+    },
+    {
+      "parameters": {
+        "alpha": 1.725e-05,
+        "length": 0.1,
+        "referenceTemperature": 20,
+        "targetTemperature": 110,
+        "timeConstant": 60,
+        "temperatureBias": 0,
+        "dialGain": 1,
+        "dialOrigin": 2e-05
+      },
+      "max_absolute_error": 2.2026824808563106e-12
+    },
+    {
+      "parameters": {
+        "alpha": 1.725e-05,
+        "length": 0.1,
+        "referenceTemperature": 20,
+        "targetTemperature": 110,
+        "timeConstant": 60,
+        "temperatureBias": 2,
+        "dialGain": 1.05,
+        "dialOrigin": 2e-05
+      },
+      "max_absolute_error": 2.2026824808563106e-12
+    },
+    {
+      "parameters": {
+        "alpha": 1.725e-05,
+        "length": 0.3,
+        "referenceTemperature": 20,
+        "targetTemperature": 30,
+        "timeConstant": 5,
+        "temperatureBias": 0,
+        "dialGain": 1,
+        "dialOrigin": 2e-05
+      },
+      "max_absolute_error": 6.757261417078553e-12
+    },
+    {
+      "parameters": {
+        "alpha": 1.725e-05,
+        "length": 0.3,
+        "referenceTemperature": 20,
+        "targetTemperature": 30,
+        "timeConstant": 5,
+        "temperatureBias": 2,
+        "dialGain": 1.05,
+        "dialOrigin": 2e-05
+      },
+      "max_absolute_error": 6.757261417078553e-12
+    },
+    {
+      "parameters": {
+        "alpha": 1.725e-05,
+        "length": 0.3,
+        "referenceTemperature": 20,
+        "targetTemperature": 30,
+        "timeConstant": 60,
+        "temperatureBias": 0,
+        "dialGain": 1,
+        "dialOrigin": 2e-05
+      },
+      "max_absolute_error": 6.611600156247732e-12
+    },
+    {
+      "parameters": {
+        "alpha": 1.725e-05,
+        "length": 0.3,
+        "referenceTemperature": 20,
+        "targetTemperature": 30,
+        "timeConstant": 60,
+        "temperatureBias": 2,
+        "dialGain": 1.05,
+        "dialOrigin": 2e-05
+      },
+      "max_absolute_error": 6.611600156247732e-12
+    },
+    {
+      "parameters": {
+        "alpha": 1.725e-05,
+        "length": 0.3,
+        "referenceTemperature": 20,
+        "targetTemperature": 110,
+        "timeConstant": 5,
+        "temperatureBias": 0,
+        "dialGain": 1,
+        "dialOrigin": 2e-05
+      },
+      "max_absolute_error": 2.3447910280083306e-12
+    },
+    {
+      "parameters": {
+        "alpha": 1.725e-05,
+        "length": 0.3,
+        "referenceTemperature": 20,
+        "targetTemperature": 110,
+        "timeConstant": 5,
+        "temperatureBias": 2,
+        "dialGain": 1.05,
+        "dialOrigin": 2e-05
+      },
+      "max_absolute_error": 2.3447910280083306e-12
+    },
+    {
+      "parameters": {
+        "alpha": 1.725e-05,
+        "length": 0.3,
+        "referenceTemperature": 20,
+        "targetTemperature": 110,
+        "timeConstant": 60,
+        "temperatureBias": 0,
+        "dialGain": 1,
+        "dialOrigin": 2e-05
+      },
+      "max_absolute_error": 2.2026824808563106e-12
+    },
+    {
+      "parameters": {
+        "alpha": 1.725e-05,
+        "length": 0.3,
+        "referenceTemperature": 20,
+        "targetTemperature": 110,
+        "timeConstant": 60,
+        "temperatureBias": 2,
+        "dialGain": 1.05,
+        "dialOrigin": 2e-05
+      },
+      "max_absolute_error": 2.2026824808563106e-12
+    },
+    {
+      "parameters": {
+        "alpha": 3e-05,
+        "length": 0.1,
+        "referenceTemperature": 20,
+        "targetTemperature": 30,
+        "timeConstant": 5,
+        "temperatureBias": 0,
+        "dialGain": 1,
+        "dialOrigin": 2e-05
+      },
+      "max_absolute_error": 6.757261417078553e-12
+    },
+    {
+      "parameters": {
+        "alpha": 3e-05,
+        "length": 0.1,
+        "referenceTemperature": 20,
+        "targetTemperature": 30,
+        "timeConstant": 5,
+        "temperatureBias": 2,
+        "dialGain": 1.05,
+        "dialOrigin": 2e-05
+      },
+      "max_absolute_error": 6.757261417078553e-12
+    },
+    {
+      "parameters": {
+        "alpha": 3e-05,
+        "length": 0.1,
+        "referenceTemperature": 20,
+        "targetTemperature": 30,
+        "timeConstant": 60,
+        "temperatureBias": 0,
+        "dialGain": 1,
+        "dialOrigin": 2e-05
+      },
+      "max_absolute_error": 6.611600156247732e-12
+    },
+    {
+      "parameters": {
+        "alpha": 3e-05,
+        "length": 0.1,
+        "referenceTemperature": 20,
+        "targetTemperature": 30,
+        "timeConstant": 60,
+        "temperatureBias": 2,
+        "dialGain": 1.05,
+        "dialOrigin": 2e-05
+      },
+      "max_absolute_error": 6.611600156247732e-12
+    },
+    {
+      "parameters": {
+        "alpha": 3e-05,
+        "length": 0.1,
+        "referenceTemperature": 20,
+        "targetTemperature": 110,
+        "timeConstant": 5,
+        "temperatureBias": 0,
+        "dialGain": 1,
+        "dialOrigin": 2e-05
+      },
+      "max_absolute_error": 2.3447910280083306e-12
+    },
+    {
+      "parameters": {
+        "alpha": 3e-05,
+        "length": 0.1,
+        "referenceTemperature": 20,
+        "targetTemperature": 110,
+        "timeConstant": 5,
+        "temperatureBias": 2,
+        "dialGain": 1.05,
+        "dialOrigin": 2e-05
+      },
+      "max_absolute_error": 2.3447910280083306e-12
+    },
+    {
+      "parameters": {
+        "alpha": 3e-05,
+        "length": 0.1,
+        "referenceTemperature": 20,
+        "targetTemperature": 110,
+        "timeConstant": 60,
+        "temperatureBias": 0,
+        "dialGain": 1,
+        "dialOrigin": 2e-05
+      },
+      "max_absolute_error": 2.2026824808563106e-12
+    },
+    {
+      "parameters": {
+        "alpha": 3e-05,
+        "length": 0.1,
+        "referenceTemperature": 20,
+        "targetTemperature": 110,
+        "timeConstant": 60,
+        "temperatureBias": 2,
+        "dialGain": 1.05,
+        "dialOrigin": 2e-05
+      },
+      "max_absolute_error": 2.2026824808563106e-12
+    },
+    {
+      "parameters": {
+        "alpha": 3e-05,
+        "length": 0.3,
+        "referenceTemperature": 20,
+        "targetTemperature": 30,
+        "timeConstant": 5,
+        "temperatureBias": 0,
+        "dialGain": 1,
+        "dialOrigin": 2e-05
+      },
+      "max_absolute_error": 6.757261417078553e-12
+    },
+    {
+      "parameters": {
+        "alpha": 3e-05,
+        "length": 0.3,
+        "referenceTemperature": 20,
+        "targetTemperature": 30,
+        "timeConstant": 5,
+        "temperatureBias": 2,
+        "dialGain": 1.05,
+        "dialOrigin": 2e-05
+      },
+      "max_absolute_error": 6.757261417078553e-12
+    },
+    {
+      "parameters": {
+        "alpha": 3e-05,
+        "length": 0.3,
+        "referenceTemperature": 20,
+        "targetTemperature": 30,
+        "timeConstant": 60,
+        "temperatureBias": 0,
+        "dialGain": 1,
+        "dialOrigin": 2e-05
+      },
+      "max_absolute_error": 6.611600156247732e-12
+    },
+    {
+      "parameters": {
+        "alpha": 3e-05,
+        "length": 0.3,
+        "referenceTemperature": 20,
+        "targetTemperature": 30,
+        "timeConstant": 60,
+        "temperatureBias": 2,
+        "dialGain": 1.05,
+        "dialOrigin": 2e-05
+      },
+      "max_absolute_error": 6.611600156247732e-12
+    },
+    {
+      "parameters": {
+        "alpha": 3e-05,
+        "length": 0.3,
+        "referenceTemperature": 20,
+        "targetTemperature": 110,
+        "timeConstant": 5,
+        "temperatureBias": 0,
+        "dialGain": 1,
+        "dialOrigin": 2e-05
+      },
+      "max_absolute_error": 2.3447910280083306e-12
+    },
+    {
+      "parameters": {
+        "alpha": 3e-05,
+        "length": 0.3,
+        "referenceTemperature": 20,
+        "targetTemperature": 110,
+        "timeConstant": 5,
+        "temperatureBias": 2,
+        "dialGain": 1.05,
+        "dialOrigin": 2e-05
+      },
+      "max_absolute_error": 2.3447910280083306e-12
+    },
+    {
+      "parameters": {
+        "alpha": 3e-05,
+        "length": 0.3,
+        "referenceTemperature": 20,
+        "targetTemperature": 110,
+        "timeConstant": 60,
+        "temperatureBias": 0,
+        "dialGain": 1,
+        "dialOrigin": 2e-05
+      },
+      "max_absolute_error": 2.2026824808563106e-12
+    },
+    {
+      "parameters": {
+        "alpha": 3e-05,
+        "length": 0.3,
+        "referenceTemperature": 20,
+        "targetTemperature": 110,
+        "timeConstant": 60,
+        "temperatureBias": 2,
+        "dialGain": 1.05,
+        "dialOrigin": 2e-05
+      },
+      "max_absolute_error": 2.2026824808563106e-12
+    }
+  ]
+}

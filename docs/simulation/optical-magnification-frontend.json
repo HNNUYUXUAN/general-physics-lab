@@ -1,0 +1,197 @@
+{
+  "status": "passed",
+  "source_hashes": {
+    "simulations/optical-magnification/app.mjs": "b9a61f50ef90a77112f8b876b3e4eb684e8f9363e870903a86ec59f477156d18",
+    "simulations/optical-magnification/chart.mjs": "9136d2179a339c4d0f9a128f4fcb16d012516b580c7f03e857a628a542ef4ae6",
+    "simulations/optical-magnification/index.html": "3ac4b5280a5b7fd3f8d8b8bd8f84328aac3e2848a9d270a393fb68914e93dcc1",
+    "simulations/optical-magnification/lab.css": "7b715f3e4500a5604b1661170877b50fab8b8ecefa55d9dbccae57ebe7284726",
+    "simulations/optical-magnification/model.mjs": "243764caac58dd1e774fe6c029e93391a1b5be53f1b58eb5b547f666fd860f33",
+    "simulations/optical-magnification/observations.json": "784df51887f92e367d430c6b0f71d0633767ef8053828f49bd7197e58c250bfd"
+  },
+  "source_record_sha256": "b95462766a0e5953431a98bbe41e93e909802975bf7bce0cf18aa9ac9c259643",
+  "interaction_checks": 5,
+  "visual_status": "passed",
+  "exports_status": "passed",
+  "exports": [
+    {
+      "filename": "optical-magnification-optical-magnification-experiment.json",
+      "sha256": "b06d2a94530763b1b195cbb30f9d6c0b3303b4f969508f737dd8a7c1ff82788c",
+      "bytes": 6063
+    },
+    {
+      "filename": "optical-magnification-optical-magnification-records.csv",
+      "sha256": "00e58da302a43070409069a31419113bd7f9fa7630e6378ef7ff41ed399ba51c",
+      "bytes": 696
+    }
+  ],
+  "fonts": {
+    "h1": {
+      "fonts": [
+        {
+          "familyName": "SimSun",
+          "postScriptName": "SimSun",
+          "isCustomFont": false,
+          "glyphCount": 13
+        }
+      ]
+    },
+    "#count": {
+      "fonts": [
+        {
+          "familyName": "Times New Roman",
+          "postScriptName": "TimesNewRomanPSMT",
+          "isCustomFont": false,
+          "glyphCount": 1
+        }
+      ]
+    }
+  },
+  "browser": null,
+  "layout": {
+    "mobile": {
+      "width": 390,
+      "scrollWidth": 390,
+      "mathErrors": 0,
+      "mathObjects": 3
+    }
+  },
+  "interaction": [
+    {
+      "name": "先标定后测细丝",
+      "status": "passed"
+    },
+    {
+      "name": "物距变化需重新标定",
+      "status": "passed"
+    },
+    {
+      "name": "重新标定及测量",
+      "status": "passed"
+    },
+    {
+      "name": "非法焦距阻止保存",
+      "status": "passed"
+    },
+    {
+      "name": "真实双格式导出与刷新恢复",
+      "status": "passed"
+    }
+  ],
+  "background": {
+    "status": "not-applicable"
+  },
+  "checked_at_utc": null,
+  "screenshots": [
+    {
+      "path": "docs/assets/simulations/optical-magnification/frontend-01-35c106a51f4b.png",
+      "sha256": "35c106a51f4bd249a7069f761de5e737b45064f8c8af2f4a96a54e582840a9fa"
+    },
+    {
+      "path": "docs/assets/simulations/optical-magnification/frontend-02-7ccd850dd663.png",
+      "sha256": "7ccd850dd663dd2be952f0f35a39edcc590dd79067caea0fdca60b9492d34a40"
+    },
+    {
+      "path": "docs/assets/simulations/optical-magnification/frontend-03-4028054dadff.png",
+      "sha256": "4028054dadff345ff585d213e5bb7054a28eb5dbf59cc79238d5906948db540d"
+    },
+    {
+      "path": "docs/assets/simulations/optical-magnification/frontend-04-aa5df6867a5f.png",
+      "sha256": "aa5df6867a5f815d1579323388db62faf0ee55744c522c459dbdee36f10b3d89"
+    },
+    {
+      "path": "docs/assets/simulations/optical-magnification/frontend-05-3079d9956490.png",
+      "sha256": "3079d995649057532f249a6e9298084033fe392472004183fc538092da42767d"
+    },
+    {
+      "path": "docs/assets/simulations/optical-magnification/frontend-06-92cd51f18195.png",
+      "sha256": "92cd51f181957b8478e53c184ebf68c1324d095547ad1a3242649381a2db6a03"
+    },
+    {
+      "path": "docs/assets/simulations/optical-magnification/frontend-07-d2d71be6e07e.png",
+      "sha256": "d2d71be6e07eae4aa55c55a116a9617c075ff7d80bc608c054e240d301a771b5"
+    }
+  ],
+  "schema_version": 1,
+  "experiment_id": "course-04/optical-magnification",
+  "numerical": {
+    "status": "passed",
+    "reference_sha256": "45b0cf945488e667731a4d0bd9b6111ee0340566307703b8d47e306cdf27f47b",
+    "source_files": {
+      "simulations/optical-magnification/index.html": "3ac4b5280a5b7fd3f8d8b8bd8f84328aac3e2848a9d270a393fb68914e93dcc1",
+      "simulations/optical-magnification/model.mjs": "243764caac58dd1e774fe6c029e93391a1b5be53f1b58eb5b547f666fd860f33",
+      "simulations/optical-magnification/app.mjs": "b9a61f50ef90a77112f8b876b3e4eb684e8f9363e870903a86ec59f477156d18",
+      "simulations/optical-magnification/chart.mjs": "9136d2179a339c4d0f9a128f4fcb16d012516b580c7f03e857a628a542ef4ae6",
+      "simulations/optical-magnification/lab.css": "7b715f3e4500a5604b1661170877b50fab8b8ecefa55d9dbccae57ebe7284726",
+      "simulations/optical-magnification/observations.json": "784df51887f92e367d430c6b0f71d0633767ef8053828f49bd7197e58c250bfd",
+      "docs/optical-magnification-model-evidence.md": "b31bfc9d69e93837863d7cdd6d816234b13708a9ff082b511a81432131ac0948",
+      "docs/optical-magnification-references.json": "f310b56ba0e218a055a72964d5b7f45385313ad7f860c17645a0c5bf6d598219",
+      "docs/optical-magnification-references.bib": "b58f19baec70afaa0a0daf08ebf00a3ae9fd6da1d2b3dca85d7f9350c9cb8bf4",
+      "docs/simulation/optical-magnification-reference.json": "3f25d9bc98d5e132abee527973f9e35b47322b45656aff2ca0f3efa12f8b7242",
+      "scripts/validate_optical_magnification_simulation.py": "65a665fde481e57eff6df829b6da59e8e5bdff5861c4f98a350db23ecfcaae28",
+      "tests/optical-magnification-model.test.mjs": "5c12f3b1e10e0a7f74de1733ce0ff1633834f0d449a396cafe54c205d44685fe"
+    }
+  },
+  "scientific_evidence": {
+    "status": "verified",
+    "decision_source_files": {
+      "docs/optical-magnification-references.json": "f310b56ba0e218a055a72964d5b7f45385313ad7f860c17645a0c5bf6d598219",
+      "docs/optical-magnification-model-evidence.md": "b31bfc9d69e93837863d7cdd6d816234b13708a9ff082b511a81432131ac0948",
+      "simulations/optical-magnification/model.mjs": "243764caac58dd1e774fe6c029e93391a1b5be53f1b58eb5b547f666fd860f33"
+    },
+    "core_references": [
+      {
+        "id": "Ma1984MicroscopeMagnification",
+        "pdf_sha256": "ece9259dca8b7061289b57f3e4bf8b53673e9636d11bcbd55739ce6cc1605df4",
+        "locators": [
+          {
+            "printed_pages": "29",
+            "pdf_pages": [
+              1
+            ],
+            "location": "第一节放大倍率的测定方法",
+            "role": "已知物镜标尺与像长比较的校准原理；250mm明视距离的肉眼角倍率身份"
+          },
+          {
+            "printed_pages": "30",
+            "pdf_pages": [
+              2
+            ],
+            "location": "第二节第3项、M=L/1式",
+            "role": "1mm标尺投影像长测倍率的操作及示例"
+          }
+        ]
+      },
+      {
+        "id": "Zhong2022KeplerMagnification",
+        "pdf_sha256": "64284869aba090f46723f5404825ef8044ae9da6fcdf6c4c313783268f9b6d84",
+        "locators": [
+          {
+            "printed_pages": "13",
+            "pdf_pages": [
+              1
+            ],
+            "location": "第1节、图1、式1",
+            "role": "两正透镜共焦、无穷远近轴视角倍率绝对值fo/fe；倒像方向另记符号"
+          },
+          {
+            "printed_pages": "14",
+            "pdf_pages": [
+              2
+            ],
+            "location": "第2-3节、式3/7",
+            "role": "薄透镜近轴高斯公式；有限物距与无穷远倍率的边界"
+          },
+          {
+            "printed_pages": "14-15",
+            "pdf_pages": [
+              2,
+              3
+            ],
+            "location": "式8、表1",
+            "role": "核查有限物距式8排印错误；项目不采用该式或论文测量数据"
+          }
+        ]
+      }
+    ]
+  }
+}

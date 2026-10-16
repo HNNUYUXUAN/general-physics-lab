@@ -1,0 +1,175 @@
+{
+  "status": "passed",
+  "source_hashes": {
+    "simulations/thermal-expansion/app.mjs": "9e74f0b9440631f365d983af569fd67c9ba4c5f25e788b9a138977349bc139fa",
+    "simulations/thermal-expansion/model.mjs": "aab64c7c4565fdc8ee7fd6edc6dfbe2b5406095fa90e5bf726d343058701a58c",
+    "simulations/thermal-expansion/index.html": "de8baf86a93446d5a6df535aae337b7ec8f3694ee6231f825a3778d30850266b",
+    "simulations/thermal-expansion/lab.css": "f0a82e1e5c0a440fbb08cbf95828d94b1078a126f242301e43de65d763bca229",
+    "simulations/thermal-expansion/chart.mjs": "d9de3df2659ebe798d162b1aaaa42686654346c822e72edf9c1a515302532942",
+    "simulations/thermal-expansion/observations.json": "23a72b36461859cc9a1812127875847ac9279ea3cac58ea8eacc151191f9772f"
+  },
+  "source_record_sha256": "3b7c4dc609bc9eba0a92833fc2031b17c2fb185b43f9febbdf1cd62ba1621f8d",
+  "interaction_checks": 5,
+  "visual_status": "passed",
+  "exports_status": "passed",
+  "exports": [
+    {
+      "filename": "thermal-expansion-export.json",
+      "sha256": "327392403da7dc917f00144ae644e730d17bd056f912019be2ac810301778273",
+      "bytes": 7673
+    },
+    {
+      "filename": "thermal-expansion-export.csv",
+      "sha256": "ffcdf967dba5c68acf4a49b5ce85c96c8185383cff6e012be0e97d78de817af6",
+      "bytes": 1469
+    }
+  ],
+  "fonts": {
+    "body": "\"Times New Roman\", SimSun, \"Songti SC\", serif",
+    "simsun": true,
+    "times": true,
+    "mathjax": 5,
+    "math_errors": []
+  },
+  "browser": "fixed Chromium1243 via playwright-cli isolated rollout-mechanics",
+  "layout": {
+    "mobile": {
+      "viewport": 390,
+      "document": 390,
+      "overflow": false,
+      "svg_text": [
+        {
+          "text": "均温杆 T = 20.00 ℃",
+          "size": 14.488572679815094
+        },
+        {
+          "text": "设定温度 100 ℃",
+          "size": 14.488572909400279
+        },
+        {
+          "text": "真实伸长 0.000 μm",
+          "size": 14.488572301420884
+        }
+      ],
+      "math_errors": []
+    }
+  },
+  "interaction": [
+    {
+      "name": "八温度回归",
+      "status": "passed"
+    },
+    {
+      "name": "平衡与操作读数",
+      "status": "passed"
+    },
+    {
+      "name": "增益影响",
+      "status": "passed"
+    },
+    {
+      "name": "非法时间常数拒绝",
+      "status": "passed"
+    },
+    {
+      "name": "动画暂停复位",
+      "status": "passed"
+    }
+  ],
+  "background": {
+    "status": "passed",
+    "actual_document_hidden": true,
+    "pause_verified": true,
+    "source_files": {
+      "simulations/thermal-expansion/app.mjs": "9e74f0b9440631f365d983af569fd67c9ba4c5f25e788b9a138977349bc139fa",
+      "simulations/thermal-expansion/model.mjs": "aab64c7c4565fdc8ee7fd6edc6dfbe2b5406095fa90e5bf726d343058701a58c"
+    },
+    "checked_at_utc": "2026-10-16T17:08:47.454Z"
+  },
+  "checked_at_utc": "2026-10-16T16:35:19.108Z",
+  "screenshots": [
+    {
+      "path": "docs/assets/simulations/thermal-expansion/frontend-01-c666f5410d36.png",
+      "sha256": "c666f5410d3684a1fb21ea1a71fb538744dd804eef4c202b0ff02d273c9921fc"
+    },
+    {
+      "path": "docs/assets/simulations/thermal-expansion/frontend-02-df1ba60aa041.png",
+      "sha256": "df1ba60aa0418f0215fc3a5116a61971e86bb2aa5280a5b38b0078ee25235b99"
+    },
+    {
+      "path": "docs/assets/simulations/thermal-expansion/frontend-03-c13fd306b8d2.png",
+      "sha256": "c13fd306b8d286a87178b41a310f21ce5398b4b6ca49a3891d0bd3874faddb93"
+    },
+    {
+      "path": "docs/assets/simulations/thermal-expansion/frontend-04-052671408e5d.png",
+      "sha256": "052671408e5d6a8c6178453e8a880e45ed86b688059d2d0f6ca3f1e1c6e97cb8"
+    }
+  ],
+  "schema_version": 1,
+  "experiment_id": "course-02/thermal-expansion",
+  "numerical": {
+    "status": "passed",
+    "reference_sha256": "4a267596ea3ad55b05cdf4bd5bdc7f76e163188859d82fa03d3bf9136939e879",
+    "source_files": {
+      "simulations/thermal-expansion/index.html": "de8baf86a93446d5a6df535aae337b7ec8f3694ee6231f825a3778d30850266b",
+      "simulations/thermal-expansion/model.mjs": "aab64c7c4565fdc8ee7fd6edc6dfbe2b5406095fa90e5bf726d343058701a58c",
+      "simulations/thermal-expansion/app.mjs": "9e74f0b9440631f365d983af569fd67c9ba4c5f25e788b9a138977349bc139fa",
+      "simulations/thermal-expansion/chart.mjs": "d9de3df2659ebe798d162b1aaaa42686654346c822e72edf9c1a515302532942",
+      "simulations/thermal-expansion/lab.css": "f0a82e1e5c0a440fbb08cbf95828d94b1078a126f242301e43de65d763bca229",
+      "simulations/thermal-expansion/observations.json": "23a72b36461859cc9a1812127875847ac9279ea3cac58ea8eacc151191f9772f",
+      "docs/thermal-expansion-model-evidence.md": "54496c9712bcf5b6cc6199f20241032b4d17fdc8a18c13c91cb7491e4740be63",
+      "docs/thermal-expansion-references.json": "2cc5bdceeca0c1127a562fb6c71a34e1f3a1ebae92b7e0fd4df296e8d49e2fae",
+      "docs/thermal-expansion-references.bib": "d48eb3a297eb8bc9fd3a3fdd20b09db91355499c8a24a394d82d7b58d721b9b9",
+      "docs/simulation/thermal-expansion-reference.json": "4a267596ea3ad55b05cdf4bd5bdc7f76e163188859d82fa03d3bf9136939e879",
+      "scripts/validate_thermal_expansion_simulation.py": "2116cb38d0cb8333bd1e895590b9e98ba6c479e3523ed4dd81e7b03b8205f799",
+      "tests/thermal-expansion-model.test.mjs": "9ddce673f4fb932975465eb328e3b134c119df2183ea3082f2c27387a2bdff4f"
+    }
+  },
+  "scientific_evidence": {
+    "status": "verified",
+    "decision_source_files": {
+      "docs/thermal-expansion-references.json": "2cc5bdceeca0c1127a562fb6c71a34e1f3a1ebae92b7e0fd4df296e8d49e2fae",
+      "docs/thermal-expansion-model-evidence.md": "54496c9712bcf5b6cc6199f20241032b4d17fdc8a18c13c91cb7491e4740be63",
+      "simulations/thermal-expansion/model.mjs": "aab64c7c4565fdc8ee7fd6edc6dfbe2b5406095fa90e5bf726d343058701a58c"
+    },
+    "core_references": [
+      {
+        "id": "tang2012-thermal-expansion",
+        "pdf_sha256": "48b05526a538a5a16a50e5e62a335d2e42f05b34dfec045aad6409b390572dec",
+        "locators": [
+          {
+            "page": 155,
+            "location": "§1.1式1–4",
+            "supports": "小温区工程线膨胀；光杠杆换算仅作装置区别"
+          },
+          {
+            "page": 156,
+            "location": "图1、§2",
+            "supports": "光杠杆几何、温度斜率法和均温水浴"
+          }
+        ]
+      },
+      {
+        "id": "cai2016-electrothermal",
+        "pdf_sha256": "5b2e2c394806f977ffd62161df0a2d1ea40f17463731632adc2f3055118c17ea",
+        "locators": [
+          {
+            "page": 53,
+            "location": "式1–5",
+            "supports": "均温总热容、电功和牛顿冷却微分方程"
+          },
+          {
+            "page": 54,
+            "location": "式7–8",
+            "supports": "精确指数温度响应与冷却拟合"
+          },
+          {
+            "page": 55,
+            "location": "§2.2",
+            "supports": "SI热容下能量比为无量纲约1"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "schema_version": 1,
+  "experiment_id": "course-04/optical-magnification",
+  "review_date": "2026-10-17",
+  "access_channel": "西南财经大学WebVPN取得全文",
+  "verification_method": "马文2页扫描及钟文4页实际全文阅读/逐页渲染；钟文p14式8另300dpi核看",
+  "references": [
+    {
+      "id": "Ma1984MicroscopeMagnification",
+      "title": "显微镜放大倍率的测定方法",
+      "authors": [
+        "马慧"
+      ],
+      "journal": "冶金分析与测试(冶金物理测试分册)",
+      "year": 1984,
+      "issue": "4",
+      "pages": "29-30",
+      "doi": "10.13228/j.boyuan.issn1001-0777.1984.04.010",
+      "url": "https://doi.org/10.13228/j.boyuan.issn1001-0777.1984.04.010",
+      "source_pdf": {
+        "filename": "显微镜放大倍率的测定方法_马慧.pdf",
+        "pages": 2,
+        "bytes": 597577,
+        "sha256": "ece9259dca8b7061289b57f3e4bf8b53673e9636d11bcbd55739ce6cc1605df4"
+      },
+      "bibliographic_verification": "机构数据库确认历史刊名与1984(04)，题录未给卷号故不填；页码29-30由扫描正文确认。",
+      "review_status": "full_text_reviewed",
+      "locators": [
+        {
+          "printed_pages": "29",
+          "pdf_pages": [
+            1
+          ],
+          "location": "第一节放大倍率的测定方法",
+          "role": "已知物镜标尺与像长比较的校准原理；250mm明视距离的肉眼角倍率身份"
+        },
+        {
+          "printed_pages": "30",
+          "pdf_pages": [
+            2
+          ],
+          "location": "第二节第3项、M=L/1式",
+          "role": "1mm标尺投影像长测倍率的操作及示例"
+        }
+      ],
+      "parameter_identity": "论文1mm标尺、250mm明视距离屏与名义100倍实测为其装置，不替换项目单透镜/像面分划/独立f/u/p值。",
+      "scope": "标尺像长比校准原则；当前k=L/S及d=Ls/S独立消元，薄透镜/开普勒另由钟2022具体正文覆盖。",
+      "review_findings": [
+        "第二PDF页下半部是另文接续，不作为本篇光学校准内容。",
+        "本篇未涉及望远镜或薄透镜，相关模型由钟2022另行提供，不迁移本篇装置身份。"
+      ]
+    },
+    {
+      "id": "Zhong2022KeplerMagnification",
+      "title": "视角直接比较法测自组望远镜放大率方法的改进",
+      "authors": [
+        "钟瑞",
+        "韩建卫",
+        "王拴",
+        "纪纬",
+        "张立彬"
+      ],
+      "journal": "大学物理实验",
+      "year": 2022,
+      "volume": "35",
+      "issue": "1",
+      "pages": "13-15,24",
+      "doi": "10.14139/j.cnki.cn22-1228.2022.01.003",
+      "url": "https://doi.org/10.14139/j.cnki.cn22-1228.2022.01.003",
+      "source_pdf": {
+        "filename": "视角直接比较法测自组望远镜放大率方法的改进_钟瑞.pdf",
+        "pages": 4,
+        "bytes": 266851,
+        "sha256": "64284869aba090f46723f5404825ef8044ae9da6fcdf6c4c313783268f9b6d84"
+      },
+      "review_status": "full_text_reviewed",
+      "locators": [
+        {
+          "printed_pages": "13",
+          "pdf_pages": [
+            1
+          ],
+          "location": "第1节、图1、式1",
+          "role": "两正透镜共焦、无穷远近轴视角倍率绝对值fo/fe；倒像方向另记符号"
+        },
+        {
+          "printed_pages": "14",
+          "pdf_pages": [
+            2
+          ],
+          "location": "第2-3节、式3/7",
+          "role": "薄透镜近轴高斯公式；有限物距与无穷远倍率的边界"
+        },
+        {
+          "printed_pages": "14-15",
+          "pdf_pages": [
+            2,
+            3
+          ],
+          "location": "式8、表1",
+          "role": "核查有限物距式8排印错误；项目不采用该式或论文测量数据"
+        }
+      ],
+      "parameter_identity": "论文225/45mm镜组及有限物距测量保持其批次。项目200/40mm等焦距开放值是独立共焦教学场景。",
+      "review_findings": [
+        "p14式8分母印成因子乘积，量纲不符；独立消元得Gamma=u1f1/[u1(L-f1)-Lf1]并重现表首行6.643，本页不实现该修正。",
+        "PDF第4页上半部为另一热导率论文摘要，只采用下半部本篇英文接续。",
+        "论文无穷远式1给倍率绝对值；本模型负号按倒像的有符号方向，ABCD验证。"
+      ],
+      "scope": "薄透镜近轴高斯关系与开普勒无穷远共焦模型；不把有限物距直接比较测量当该模型参数或验证。"
+    }
+  ],
+  "pending_topics": [],
+  "model_boundaries": [
+    "望远镜只作无穷远共焦近轴演示",
+    "无完整仪器随机误差或协方差传播引擎；源系统误差缺失保持适用边界"
+  ]
+}

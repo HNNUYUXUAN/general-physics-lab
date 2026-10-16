@@ -1,0 +1,17 @@
+{
+  "experimentId": "course-03/oscilloscope",
+  "status": "passed",
+  "method": "independent numerical waveform energy quadrature and cursor scale conversion",
+  "caseCount": 27,
+  "maxScaledErrors": {
+    "trueRMS": 1.922962686383564e-16,
+    "measuredVpp": 0,
+    "measuredPeriodMs": 0,
+    "measuredFrequency": 0,
+    "measuredRMS": 0
+  },
+  "scaling": "abs(error)/max(1,abs(reference))",
+  "tolerance": 1e-10,
+  "modelSha256": "ed81126d23fddc741fa8742c4f4700c01548f4b43b1ac6ea37243a3a457dc62c",
+  "numpyVersion": "2.5.4"
+}

@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "experiment": "course-01/collisions",
+  "references": [
+    {
+      "id": "lv2013-airtrack-collision",
+      "title": "气垫导轨上碰撞实验的研究",
+      "authors": [
+        "吕兵"
+      ],
+      "journal": "贵州师范大学学报(自然科学版)",
+      "year": 2013,
+      "volume": 31,
+      "issue": 4,
+      "pages": "68–70",
+      "doi": "10.16614/j.cnki.issn1004-5570.2013.04.030",
+      "pdf_sha256": "9f23194baa9cefa767f89d59464fc91cacfcd6259ae739e84b47273bc8368c10",
+      "locators": [
+        {
+          "page": 69,
+          "location": "§2式1–3",
+          "supports": "无外力冲量的动量守恒、有向速度"
+        },
+        {
+          "page": 69,
+          "location": "§3.2、§4.2",
+          "supports": "有限挡片平均测速和光电门位置条件"
+        }
+      ],
+      "full_text_status": "obtained_and_read",
+      "visual_formula_status": "checked_by_integration_agent"
+    }
+  ]
+}

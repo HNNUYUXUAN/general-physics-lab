@@ -1,0 +1,169 @@
+{
+  "status": "passed",
+  "source_hashes": {
+    "simulations/grazing-refraction/angles.mjs": "b25e2fa4341846209d68acaed83cf06b40c0b3902af9fbdaa94d8cdbb92796eb",
+    "simulations/grazing-refraction/app.mjs": "47ea61fd5a04cfeff004685b6d678fc73fe9be54cd66f967b0234450cd6daf94",
+    "simulations/grazing-refraction/chart.mjs": "2cf283ea545418aed75f6175e6feb7c82983f7ed523e6b0ffb0e0723fcf1b5d7",
+    "simulations/grazing-refraction/index.html": "fc6637106a5ea2741f0e6332bec114efc333a3608cdb1060aa3011e9492cb78e",
+    "simulations/grazing-refraction/lab.css": "f09f3aa9916b0574f112d367ac0e713575f0e59ad9f239ee81e452953681e20c",
+    "simulations/grazing-refraction/model.mjs": "91612d2b5da3404b04fb142cccc2c952f935c1aac8a55c65ae317e7babb820d2",
+    "simulations/grazing-refraction/observations.json": "4a2089c696bd737f929405c83cea4063146ef7aa15cedafc239bc89da332b597"
+  },
+  "source_record_sha256": "ba1606aa4d9c51b6bfca0bf7c70c1a126ee00d073ff81ad0356ea3d75b268d67",
+  "interaction_checks": 4,
+  "visual_status": "passed",
+  "exports_status": "passed",
+  "exports": [
+    {
+      "filename": "grazing-refraction-grazing-refraction-experiment.json",
+      "sha256": "4e3858d3f6e6531cc659f4d5240be0c592e26752c11923b5e9f705c5fdb580f1",
+      "bytes": 4591
+    },
+    {
+      "filename": "grazing-refraction-grazing-refraction-records.csv",
+      "sha256": "fb212fc7c8343e8cecda3b75007eff82a5c7ea6425e6723e4baad2ff6aa04065",
+      "bytes": 860
+    }
+  ],
+  "fonts": {
+    "h1": {
+      "fonts": [
+        {
+          "familyName": "SimSun",
+          "postScriptName": "SimSun",
+          "isCustomFont": false,
+          "glyphCount": 9
+        }
+      ]
+    },
+    "#count": {
+      "fonts": [
+        {
+          "familyName": "Times New Roman",
+          "postScriptName": "TimesNewRomanPSMT",
+          "isCustomFont": false,
+          "glyphCount": 1
+        }
+      ]
+    }
+  },
+  "browser": null,
+  "layout": {
+    "mobile": {
+      "width": 390,
+      "scrollWidth": 390,
+      "mathErrors": 0,
+      "mathObjects": 8
+    }
+  },
+  "interaction": [
+    {
+      "name": "掠射反演",
+      "status": "passed"
+    },
+    {
+      "name": "液体折射率变更",
+      "status": "passed"
+    },
+    {
+      "name": "棱镜折射率与偏心",
+      "status": "passed"
+    },
+    {
+      "name": "真实双格式导出与刷新恢复",
+      "status": "passed"
+    }
+  ],
+  "background": {
+    "status": "not-applicable"
+  },
+  "checked_at_utc": null,
+  "screenshots": [
+    {
+      "path": "docs/assets/simulations/grazing-refraction/frontend-01-7c5a8d4aa734.png",
+      "sha256": "7c5a8d4aa73424e1810aba07e9bbd2be39df19956736a9220435d3adeb8bd574"
+    },
+    {
+      "path": "docs/assets/simulations/grazing-refraction/frontend-02-dc6b3f10b1fb.png",
+      "sha256": "dc6b3f10b1fbd623a972f1a49b5fa25ec4bf8310dc47ced816f678d0a3ea296c"
+    },
+    {
+      "path": "docs/assets/simulations/grazing-refraction/frontend-03-1b127333d11c.png",
+      "sha256": "1b127333d11c557d272d9d7d27adea722f7f7be2d3425f432d93726352578275"
+    },
+    {
+      "path": "docs/assets/simulations/grazing-refraction/frontend-04-2cde2d65ac7b.png",
+      "sha256": "2cde2d65ac7beb2a8c6ab35e3f32c423980cd266e216f69ce6be4ddb7fc1cc08"
+    },
+    {
+      "path": "docs/assets/simulations/grazing-refraction/frontend-05-36342a537386.png",
+      "sha256": "36342a537386f29862e1ef6ad33499a3830800d86d9c2088e299d2c6888df505"
+    },
+    {
+      "path": "docs/assets/simulations/grazing-refraction/frontend-06-53935c179d92.png",
+      "sha256": "53935c179d92b1b8b9ad3e5062e832400861445ba9fc57e35297d09440b830f3"
+    }
+  ],
+  "schema_version": 1,
+  "experiment_id": "course-04/grazing-refraction",
+  "numerical": {
+    "status": "passed",
+    "reference_sha256": "796c3e9aa78b89d7cafff7ace796ae75ca50d2871605ab2c5d6119cf3c0c3d0d",
+    "source_files": {
+      "simulations/grazing-refraction/index.html": "fc6637106a5ea2741f0e6332bec114efc333a3608cdb1060aa3011e9492cb78e",
+      "simulations/grazing-refraction/model.mjs": "91612d2b5da3404b04fb142cccc2c952f935c1aac8a55c65ae317e7babb820d2",
+      "simulations/grazing-refraction/app.mjs": "47ea61fd5a04cfeff004685b6d678fc73fe9be54cd66f967b0234450cd6daf94",
+      "simulations/grazing-refraction/chart.mjs": "2cf283ea545418aed75f6175e6feb7c82983f7ed523e6b0ffb0e0723fcf1b5d7",
+      "simulations/grazing-refraction/lab.css": "f09f3aa9916b0574f112d367ac0e713575f0e59ad9f239ee81e452953681e20c",
+      "simulations/grazing-refraction/observations.json": "4a2089c696bd737f929405c83cea4063146ef7aa15cedafc239bc89da332b597",
+      "docs/grazing-refraction-model-evidence.md": "04f98fc3b214c7e4f8cebaca520e2e1862c40b4ccfcecde4f7cc1a9b44b474c6",
+      "docs/grazing-refraction-references.json": "19dbfb8c7f533fc38065bef07ace8b12780efbafa471327cb495658ddfc508f1",
+      "docs/grazing-refraction-references.bib": "e4fee46b6d69ee09e884a12e21ae59cdbae644c1079a2511f9992577a56f5dc1",
+      "docs/simulation/grazing-refraction-reference.json": "b1f894909c2b38435e101119d277a8bf86c259803eaf4e63bb49d5c774e96cf3",
+      "simulations/grazing-refraction/angles.mjs": "b25e2fa4341846209d68acaed83cf06b40c0b3902af9fbdaa94d8cdbb92796eb",
+      "scripts/validate_grazing_refraction_simulation.py": "2e454e28103441306bbbc2dc65757b88be5119f1f10cc1d8a91a90ac648efce1",
+      "tests/grazing-refraction-model.test.mjs": "f913c616a45cee870f1c5445ced8d9a09bb6e3c02db2f58eea19669428b46621"
+    }
+  },
+  "scientific_evidence": {
+    "status": "verified",
+    "decision_source_files": {
+      "docs/grazing-refraction-references.json": "19dbfb8c7f533fc38065bef07ace8b12780efbafa471327cb495658ddfc508f1",
+      "docs/grazing-refraction-model-evidence.md": "04f98fc3b214c7e4f8cebaca520e2e1862c40b4ccfcecde4f7cc1a9b44b474c6",
+      "simulations/grazing-refraction/model.mjs": "91612d2b5da3404b04fb142cccc2c952f935c1aac8a55c65ae317e7babb820d2"
+    },
+    "core_references": [
+      {
+        "id": "Xu2009GrazingLiquid",
+        "pdf_sha256": "83cc52f7c48626a224c2e0320391e91f8b414678a3e5706fe3ee4ac711d49b21",
+        "locators": [
+          {
+            "printed_pages": "9-10",
+            "pdf_pages": [
+              1,
+              2
+            ],
+            "location": "第1节、图1-2、式1-3",
+            "role": "液体至已知棱镜再出射空气的掠射光路与两面折射关系"
+          },
+          {
+            "printed_pages": "11",
+            "pdf_pages": [
+              3
+            ],
+            "location": "式4-7及直角特例",
+            "role": "一般顶角两支向与90度极限；核查式7漏根"
+          },
+          {
+            "printed_pages": "11",
+            "pdf_pages": [
+              3
+            ],
+            "location": "第2节步骤3-4、式8",
+            "role": "分别测出射边界/法线两游标，以两个方位差平均求出射角"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "experimentId": "course-03/electrostatic-field",
+  "status": "passed",
+  "method": "independent numerical radial field integration with Dirichlet boundaries",
+  "caseCount": 270,
+  "maxScaledErrors": {
+    "radius_cm": 2.104688198341529e-16,
+    "potential": 7.771561172376096e-16,
+    "field": 4.861275801218565e-16,
+    "angle": 0
+  },
+  "scaling": "abs(error)/max(1,abs(reference))",
+  "tolerance": 1e-10,
+  "modelSha256": "220ec3cbdc2ca3f6729fea1f780f25f3cdddf87908888bf348b76b6bc2e72a92",
+  "numpyVersion": "2.5.4"
+}

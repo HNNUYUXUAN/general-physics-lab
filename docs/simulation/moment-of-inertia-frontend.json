@@ -1,0 +1,167 @@
+{
+  "status": "passed",
+  "source_hashes": {
+    "simulations/moment-of-inertia/index.html": "1aab52126a734bce032e0a8b5eadb3a6f380b8d573bf380683892d8d51a7c3b4",
+    "simulations/moment-of-inertia/app.mjs": "c803b200b80a5ae2c26c728192f73fa28328d649fc8547a3549be93b24db447b",
+    "simulations/moment-of-inertia/model.mjs": "d8c5e749c968b9e312f813b275aa5007ba26ca838ebe56537198e0bbab2622c5",
+    "simulations/moment-of-inertia/lab.css": "5dca8d65eef37213b6fb7e74d15a19e18a38584d271d0a1d309dfb2a5128f0bf",
+    "simulations/moment-of-inertia/chart.mjs": "8a8b914f78368b6412fc0c4a262ded19c7c487425e18762a932550fd70687a21",
+    "simulations/moment-of-inertia/observations.json": "7149a0120e5fe8e825ce20f654eb9eccec3076a1672154f73d7ec4f736e7c166"
+  },
+  "source_record_sha256": "94bdb17690153a85f759e5537c95733fb0a36c9191d51660fad576b1108ef006",
+  "interaction_checks": 5,
+  "visual_status": "passed",
+  "exports_status": "passed",
+  "exports": [
+    {
+      "filename": "moment-of-inertia-export.json",
+      "sha256": "1d9fe3b68060c38599d5fbce765a0b1d44afc3299c6898166f6dc0851be86d98",
+      "bytes": 12823
+    },
+    {
+      "filename": "moment-of-inertia-export.csv",
+      "sha256": "40d2586b3d8de7042e23be3fbe4b418e66a7a333b98448dec5215d992c866e9b",
+      "bytes": 2609
+    }
+  ],
+  "fonts": {
+    "body": "\"Times New Roman\", SimSun, \"Songti SC\", serif",
+    "simsun": true,
+    "times": true,
+    "mathjax": 2,
+    "math_errors": []
+  },
+  "browser": "fixed Chromium1243 via playwright-cli isolated rollout-mechanics",
+  "layout": {
+    "mobile": {
+      "viewport": 390,
+      "document": 390,
+      "overflow": false,
+      "svg_text": [
+        {
+          "text": "50 g",
+          "size": 14.488887859046713
+        },
+        {
+          "text": "平台：砝码驱动",
+          "size": 14.488890549517174
+        },
+        {
+          "text": "角位移 0.000 π",
+          "size": 14.488889429029623
+        }
+      ],
+      "math_errors": []
+    }
+  },
+  "interaction": [
+    {
+      "name": "六过程惯量反演",
+      "status": "passed"
+    },
+    {
+      "name": "圆柱偏轴改变",
+      "status": "passed"
+    },
+    {
+      "name": "来源分组与操作计时",
+      "status": "passed"
+    },
+    {
+      "name": "非法参数不写记录",
+      "status": "passed"
+    },
+    {
+      "name": "八时刻校验",
+      "status": "passed"
+    }
+  ],
+  "background": {
+    "status": "passed",
+    "actual_document_hidden": true,
+    "pause_verified": true,
+    "source_files": {
+      "simulations/moment-of-inertia/app.mjs": "c803b200b80a5ae2c26c728192f73fa28328d649fc8547a3549be93b24db447b",
+      "simulations/moment-of-inertia/model.mjs": "d8c5e749c968b9e312f813b275aa5007ba26ca838ebe56537198e0bbab2622c5"
+    },
+    "checked_at_utc": "2026-10-16T17:08:57.094Z"
+  },
+  "checked_at_utc": "2026-10-16T16:56:40.172Z",
+  "screenshots": [
+    {
+      "path": "docs/assets/simulations/moment-of-inertia/frontend-01-98a162737b58.png",
+      "sha256": "98a162737b588f82a5c63f696f2893a64231034a58ddc77c19c7d496f3efc1d6"
+    },
+    {
+      "path": "docs/assets/simulations/moment-of-inertia/frontend-02-113899d08547.png",
+      "sha256": "113899d08547c8bd3ba93a3b419cd43ccdbf8dfe2b8221290ba5220566b05600"
+    },
+    {
+      "path": "docs/assets/simulations/moment-of-inertia/frontend-03-c8b88886dc9c.png",
+      "sha256": "c8b88886dc9c6404ee5cf7a8c8b2f861bbdbae53ae7590f9ee951b1aa792f5f6"
+    },
+    {
+      "path": "docs/assets/simulations/moment-of-inertia/frontend-04-ebff7602d98a.png",
+      "sha256": "ebff7602d98adb37096cd7acae6ddfc69d681845980eb8e7399eb20b9cb96f32"
+    },
+    {
+      "path": "docs/assets/simulations/moment-of-inertia/frontend-05-965e71a071d1.png",
+      "sha256": "965e71a071d152b42f791a1ec793953cf72baf0d5e0f073e4c59ac0b98e665ce"
+    },
+    {
+      "path": "docs/assets/simulations/moment-of-inertia/frontend-06-147c7010d8db.png",
+      "sha256": "147c7010d8db7fe4856d42d1a2b4eec5891044a8b16241c2d81c54971595f633"
+    }
+  ],
+  "schema_version": 1,
+  "experiment_id": "course-02/moment-of-inertia",
+  "numerical": {
+    "status": "passed",
+    "reference_sha256": "797e1095c0e607f30bb1f10586899539034cb9757bc0d6c1b9b0810a0c1a1c12",
+    "source_files": {
+      "simulations/moment-of-inertia/index.html": "1aab52126a734bce032e0a8b5eadb3a6f380b8d573bf380683892d8d51a7c3b4",
+      "simulations/moment-of-inertia/model.mjs": "d8c5e749c968b9e312f813b275aa5007ba26ca838ebe56537198e0bbab2622c5",
+      "simulations/moment-of-inertia/app.mjs": "c803b200b80a5ae2c26c728192f73fa28328d649fc8547a3549be93b24db447b",
+      "simulations/moment-of-inertia/chart.mjs": "8a8b914f78368b6412fc0c4a262ded19c7c487425e18762a932550fd70687a21",
+      "simulations/moment-of-inertia/lab.css": "5dca8d65eef37213b6fb7e74d15a19e18a38584d271d0a1d309dfb2a5128f0bf",
+      "simulations/moment-of-inertia/observations.json": "7149a0120e5fe8e825ce20f654eb9eccec3076a1672154f73d7ec4f736e7c166",
+      "docs/moment-of-inertia-model-evidence.md": "79d11b9cfdcaf0cf46b382d23a4c4a7c1ffa3b200cb9631a301446bdc083fa1e",
+      "docs/moment-of-inertia-references.json": "8b7879a74b7e82743a7690b47d75fc445293721dd3fabcd26ceed698cb1b01c8",
+      "docs/moment-of-inertia-references.bib": "46105bd6196452b444239667d6f7516756c2b41aa0864d6fb28932da40a1072a",
+      "docs/simulation/moment-of-inertia-reference.json": "797e1095c0e607f30bb1f10586899539034cb9757bc0d6c1b9b0810a0c1a1c12",
+      "scripts/validate_moment_of_inertia_simulation.py": "1c23b016cb4f70a449594b6cacbc8c2d881fb9e169057afbcdf4165596642f98",
+      "tests/moment-of-inertia-model.test.mjs": "034899bc8b93ffd0a696adb3bf955e71c66caf1b4cdfc9fb26f27ccf668eeeda"
+    }
+  },
+  "scientific_evidence": {
+    "status": "verified",
+    "decision_source_files": {
+      "docs/moment-of-inertia-references.json": "8b7879a74b7e82743a7690b47d75fc445293721dd3fabcd26ceed698cb1b01c8",
+      "docs/moment-of-inertia-model-evidence.md": "79d11b9cfdcaf0cf46b382d23a4c4a7c1ffa3b200cb9631a301446bdc083fa1e",
+      "simulations/moment-of-inertia/model.mjs": "d8c5e749c968b9e312f813b275aa5007ba26ca838ebe56537198e0bbab2622c5"
+    },
+    "core_references": [
+      {
+        "id": "chen2020-moment-inertia",
+        "pdf_sha256": "5941cc26b993bb70e176ba70089e4dc11ee4f9cab37aa86dc3a7882443413adc",
+        "locators": [
+          {
+            "page": 55,
+            "location": "§1.1式1、2、4及图1",
+            "supports": "定轴转动、悬挂砝码和绳张力的耦合动力学"
+          },
+          {
+            "page": 56,
+            "location": "§1.2式6–8",
+            "supports": "恒角加速度下区间平均角速度对应中间时刻；式8中点间隔需独立修正"
+          },
+          {
+            "page": 57,
+            "location": "表1及式9",
+            "supports": "表1算例可核查中点间隔；不确定度导数须取绝对值"
+          }
+        ]
+      }
+    ]
+  }
+}

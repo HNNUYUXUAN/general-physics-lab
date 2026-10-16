@@ -1,0 +1,98 @@
+{
+  "slug": "resistor-iv",
+  "title": "电阻伏安特性",
+  "experimentId": "course-03/resistor-iv",
+  "controls": [
+    {
+      "key": "mode",
+      "type": "select",
+      "label": "电流表接法",
+      "default": "internal",
+      "options": [
+        {
+          "value": "internal",
+          "label": "内接"
+        },
+        {
+          "value": "external",
+          "label": "外接"
+        }
+      ]
+    },
+    {
+      "key": "U",
+      "type": "number",
+      "label": "端电压 $U/\\mathrm V$",
+      "default": 1,
+      "min": 0.05,
+      "max": 2
+    },
+    {
+      "key": "R",
+      "type": "number",
+      "label": "待测电阻 $R_x/\\Omega$",
+      "default": 1000,
+      "min": 10,
+      "max": 1000000
+    },
+    {
+      "key": "RA",
+      "type": "number",
+      "label": "电流表内阻 $R_A/\\Omega$",
+      "default": 1,
+      "min": 0.1,
+      "max": 100
+    },
+    {
+      "key": "RV",
+      "type": "number",
+      "label": "电压表内阻 $R_V/\\Omega$",
+      "default": 1000000,
+      "min": 10000,
+      "max": 100000000
+    }
+  ],
+  "columns": [
+    {
+      "key": "mode",
+      "label": "接法",
+      "short": "接法"
+    },
+    {
+      "key": "voltage",
+      "label": "$U/\\mathrm V$",
+      "short": "U / V"
+    },
+    {
+      "key": "current_mA",
+      "label": "$I/\\mathrm{mA}$",
+      "short": "I / mA"
+    },
+    {
+      "key": "apparentResistance",
+      "label": "$U/I\\,/\\,\\Omega$",
+      "short": "U/I / Ω"
+    },
+    {
+      "key": "errorPercent",
+      "label": "相对加载偏差 / %",
+      "short": "偏差 / %"
+    }
+  ],
+  "units": {
+    "parameters": {
+      "mode": "enum",
+      "U": "V",
+      "R": "ohm",
+      "RA": "ohm",
+      "RV": "ohm"
+    },
+    "readings": {
+      "mode": "enum",
+      "voltage": "V",
+      "current_mA": "mA",
+      "apparentResistance": "ohm",
+      "errorPercent": "percent"
+    }
+  }
+}

@@ -1,0 +1,281 @@
+{
+  "status": "passed",
+  "source_hashes": {
+    "simulations/multimeter/model.mjs": "5d93851f71924577dc21fdf44e4838a8de67cabe162ad1a496d8477c563efbe8",
+    "simulations/multimeter/app.mjs": "5fac93eaaa8dd90b4517321d079ed3905b84b2136ac3a66b80790faefa1a59cf",
+    "simulations/multimeter/chart.mjs": "7661b7bfc2fe4ac33d2ab50733687b64f47c7110505e27c14c80c42c38df82dd",
+    "simulations/multimeter/lab.css": "d007905ee689191cb3d99caebe74d1e5e924b6fd068c7a81d2417c75219b6169",
+    "simulations/multimeter/observations.json": "3cff8526a3147ea6db318fcad2c2d001868b285a5fac056d08606a0a40c3e3b1",
+    "simulations/multimeter/diagram.mjs": "e5dd8281803dd7209105a5b3ab973d1f071013bcdefe6692aecfd52bc8eecd49",
+    "simulations/multimeter/ui-config.json": "5ccf4d8b9b6996fc3d2b9728f0b965226bc9d7b2cec8a054cb23c1bed81687db",
+    "simulations/multimeter/index.html": "4dd09ae91ebba43cb4185e9afb907b7ca01909cb67bb6cd8817b9dc0195388f7"
+  },
+  "source_record_sha256": "5d5f7bbd753ddd6c997bbbbd68c280b29bf4d0c33e4cecfac9351bd4a8b77283",
+  "interaction_checks": 27,
+  "visual_status": "passed",
+  "exports_status": "passed",
+  "exports": [
+    {
+      "filename": "1-multimeter-records.csv",
+      "sha256": "17cdc796111b7f2d57adaeec4db38b2ff14e8c8dd9edb8ed628f6bf1baabafdb",
+      "bytes": 1024
+    },
+    {
+      "filename": "2-multimeter-records.json",
+      "sha256": "420152429ca80509e8dfdf68317f73f1d7cacd18b3861d6fbd206b539e6c0f60",
+      "bytes": 3440
+    }
+  ],
+  "fonts": {
+    "h1": [
+      {
+        "familyName": "SimSun",
+        "postScriptName": "SimSun",
+        "isCustomFont": false,
+        "glyphCount": 8
+      }
+    ],
+    "#summary": [
+      {
+        "familyName": "Times New Roman",
+        "postScriptName": "TimesNewRomanPSMT",
+        "isCustomFont": false,
+        "glyphCount": 32
+      },
+      {
+        "familyName": "SimSun",
+        "postScriptName": "SimSun",
+        "isCustomFont": false,
+        "glyphCount": 11
+      }
+    ]
+  },
+  "browser": "fixed Playwright Chromium 1243",
+  "layout": {
+    "wide": {
+      "width": 1280,
+      "scrollWidth": 1280,
+      "math": 4,
+      "mathErrors": 0
+    },
+    "narrow": {
+      "width": 390,
+      "scrollWidth": 390,
+      "math": 4,
+      "mathErrors": 0
+    }
+  },
+  "interaction": [
+    {
+      "name": "mode=voltage",
+      "status": "passed"
+    },
+    {
+      "name": "mode=resistance",
+      "status": "passed"
+    },
+    {
+      "name": "voltage=0",
+      "status": "passed"
+    },
+    {
+      "name": "voltage=200",
+      "status": "passed"
+    },
+    {
+      "name": "sourceResistance=1",
+      "status": "passed"
+    },
+    {
+      "name": "sourceResistance=1000000",
+      "status": "passed"
+    },
+    {
+      "name": "voltageRange=2",
+      "status": "passed"
+    },
+    {
+      "name": "voltageRange=20",
+      "status": "passed"
+    },
+    {
+      "name": "voltageRange=200",
+      "status": "passed"
+    },
+    {
+      "name": "Rx=0",
+      "status": "passed"
+    },
+    {
+      "name": "Rx=1000000",
+      "status": "passed"
+    },
+    {
+      "name": "multiplier=1",
+      "status": "passed"
+    },
+    {
+      "name": "multiplier=10",
+      "status": "passed"
+    },
+    {
+      "name": "multiplier=100",
+      "status": "passed"
+    },
+    {
+      "name": "battery=0.8",
+      "status": "passed"
+    },
+    {
+      "name": "battery=1.6",
+      "status": "passed"
+    },
+    {
+      "name": "zeroFactor=0.5",
+      "status": "passed"
+    },
+    {
+      "name": "zeroFactor=1.2",
+      "status": "passed"
+    },
+    {
+      "name": "原表 resistance",
+      "status": "passed"
+    },
+    {
+      "name": "原表 voltage",
+      "status": "passed"
+    },
+    {
+      "name": "默认设置读数与记录",
+      "status": "passed"
+    },
+    {
+      "name": "测量闭环与同组分析",
+      "status": "passed"
+    },
+    {
+      "name": "调零与平衡操作",
+      "status": "passed"
+    },
+    {
+      "name": "非法编辑blur后不得记录",
+      "status": "passed"
+    },
+    {
+      "name": "恢复删除与清空",
+      "status": "passed"
+    },
+    {
+      "name": "真实CSV/JSON导出与元数据",
+      "status": "passed"
+    },
+    {
+      "name": "restore",
+      "status": "passed"
+    }
+  ],
+  "background": {
+    "status": "not-applicable"
+  },
+  "checked_at_utc": "2026-10-16T16:13:11.318Z",
+  "screenshots": [
+    {
+      "path": "docs/assets/simulations/multimeter/frontend-01-dfa043e9549b.png",
+      "sha256": "dfa043e9549b376fedcef7d693103bbd99ca32624a566188905df2a47d616ef6"
+    },
+    {
+      "path": "docs/assets/simulations/multimeter/frontend-02-5eda12ac12eb.png",
+      "sha256": "5eda12ac12eb3c9e0aed70d26d6d6369bee94a4908bdbfb2196a6fb733281dd7"
+    },
+    {
+      "path": "docs/assets/simulations/multimeter/frontend-03-ad75b1e1e71c.png",
+      "sha256": "ad75b1e1e71c67f5a183f6e7ade45de339f87f95e6881c5880282fc20edc44a3"
+    },
+    {
+      "path": "docs/assets/simulations/multimeter/frontend-04-d6050e89f782.png",
+      "sha256": "d6050e89f7822c09d8954686ae97e3b582a320745a90e57dad71ac32bf443de1"
+    },
+    {
+      "path": "docs/assets/simulations/multimeter/frontend-05-2255cba971b8.png",
+      "sha256": "2255cba971b84b0a00b2de9eaf3069440f622cd79d5a4ecbfa4a156c9ad0c293"
+    },
+    {
+      "path": "docs/assets/simulations/multimeter/frontend-06-110d07da4099.png",
+      "sha256": "110d07da4099d9972032b0bc833b5764165d453d4b94f3b4194b049219df493b"
+    },
+    {
+      "path": "docs/assets/simulations/multimeter/frontend-07-16bade1274fe.png",
+      "sha256": "16bade1274fe1e2488602646e94d81e0032965b833b6282a7a3b791fe61484f5"
+    },
+    {
+      "path": "docs/assets/simulations/multimeter/frontend-08-e6e38667b428.png",
+      "sha256": "e6e38667b4282b533141723850d758fc0ef105ba5a61f54ceacfdebb351101b5"
+    },
+    {
+      "path": "docs/assets/simulations/multimeter/frontend-09-e7d1c50ad6aa.png",
+      "sha256": "e7d1c50ad6aa70ff29d01a08fce3ad79dfe83649e02c02b0de2919121ce76ee2"
+    },
+    {
+      "path": "docs/assets/simulations/multimeter/frontend-10-001a3035fa4e.png",
+      "sha256": "001a3035fa4eaf98e9b804d4399607b967cdc78a04ae1dd198e27ab53df8b963"
+    },
+    {
+      "path": "docs/assets/simulations/multimeter/frontend-11-092c88dc971b.png",
+      "sha256": "092c88dc971bd0697081b28db79d03943fb1da65f440c0a13b071b95da651953"
+    },
+    {
+      "path": "docs/assets/simulations/multimeter/frontend-12-1a250f10ba89.png",
+      "sha256": "1a250f10ba89fa9db051bbf062313268027f0b1b6546082d8b7063c2ded1335d"
+    }
+  ],
+  "schema_version": 1,
+  "experiment_id": "course-03/multimeter",
+  "numerical": {
+    "status": "passed",
+    "reference_sha256": "7e0b6a0f70ae49ba9e43e6333638d85ffb0493c7f2e05b0e1aa077078a544e84",
+    "source_files": {
+      "simulations/multimeter/index.html": "4dd09ae91ebba43cb4185e9afb907b7ca01909cb67bb6cd8817b9dc0195388f7",
+      "simulations/multimeter/model.mjs": "5d93851f71924577dc21fdf44e4838a8de67cabe162ad1a496d8477c563efbe8",
+      "simulations/multimeter/app.mjs": "5fac93eaaa8dd90b4517321d079ed3905b84b2136ac3a66b80790faefa1a59cf",
+      "simulations/multimeter/chart.mjs": "7661b7bfc2fe4ac33d2ab50733687b64f47c7110505e27c14c80c42c38df82dd",
+      "simulations/multimeter/lab.css": "d007905ee689191cb3d99caebe74d1e5e924b6fd068c7a81d2417c75219b6169",
+      "simulations/multimeter/observations.json": "3cff8526a3147ea6db318fcad2c2d001868b285a5fac056d08606a0a40c3e3b1",
+      "docs/multimeter-model-evidence.md": "6c67c8d252d29ad574c1900e03f4619afdbb14a9b19d7c2f1f146ef774629b82",
+      "docs/multimeter-references.json": "ebc1ed243bdc06ca0bcefd088a09a33bf46a58930541ec2bcdf6a5c40552472e",
+      "docs/multimeter-references.bib": "c8d945aa8589752043215068a6de6767628bd8e45932ed43ca32c2a6ea90f842",
+      "docs/simulation/multimeter-reference.json": "7e0b6a0f70ae49ba9e43e6333638d85ffb0493c7f2e05b0e1aa077078a544e84",
+      "simulations/multimeter/diagram.mjs": "e5dd8281803dd7209105a5b3ab973d1f071013bcdefe6692aecfd52bc8eecd49",
+      "simulations/multimeter/ui-config.json": "5ccf4d8b9b6996fc3d2b9728f0b965226bc9d7b2cec8a054cb23c1bed81687db",
+      "scripts/validate_multimeter_simulation.py": "5cc003a8a045ae1c2bd2c1e46679464397bb80372429e6210f8b010f455c5163",
+      "tests/multimeter-model.test.mjs": "83c3c1a67318ef29874a1a1757607b308539d0ace37648601429f8af418e295a"
+    }
+  },
+  "scientific_evidence": {
+    "status": "verified",
+    "decision_source_files": {
+      "docs/multimeter-references.json": "ebc1ed243bdc06ca0bcefd088a09a33bf46a58930541ec2bcdf6a5c40552472e",
+      "docs/multimeter-model-evidence.md": "6c67c8d252d29ad574c1900e03f4619afdbb14a9b19d7c2f1f146ef774629b82",
+      "simulations/multimeter/model.mjs": "5d93851f71924577dc21fdf44e4838a8de67cabe162ad1a496d8477c563efbe8"
+    },
+    "core_references": [
+      {
+        "id": "an2015multimeter",
+        "pdf_sha256": "3dd6ce80b54434c4353798c8920222f9254b7e0b8c4becf6374daf0c636a3358",
+        "locators": [
+          "p.146 section 1, magnetic moving-coil movement, direct-voltage series branch and internal resistance-mode battery",
+          "p.146 section 2.2, short-circuit resistance zeroing, range multiplier and repeated zeroing after range changes",
+          "p.146 section 2.3, direct-voltage range and polarity operation"
+        ]
+      },
+      {
+        "id": "yang2021meter",
+        "pdf_sha256": "9f5c10f2db933018242c9f8170c1bd64cce91d57937232b22502c73810663958",
+        "locators": [
+          "p.99 section 1 equations (1)–(4), figures 2–5",
+          "p.100 section 2.2 equations (6), (9)"
+        ]
+      }
+    ]
+  }
+}

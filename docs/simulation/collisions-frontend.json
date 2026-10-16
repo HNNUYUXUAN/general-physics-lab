@@ -1,0 +1,190 @@
+{
+  "status": "passed",
+  "source_hashes": {
+    "simulations/collisions/app.mjs": "948ef033a82e85798f0316628897b3b96a9a6e5d34972eb626b3d160bc5c9c54",
+    "simulations/collisions/model.mjs": "a8d8641d062bc2ca3277d9cd79f647b0420c32a36c86d9bf00dd3321205ab6b8",
+    "simulations/collisions/index.html": "bedda72fe61d14f676c3a67d071bed99f982bb915fc6b3a2103a8c1dc6709b99",
+    "simulations/collisions/lab.css": "72d31d1a5021ce40610483f0cfc6a4da8262b10552e14731cb61d339efb2f5e0",
+    "simulations/collisions/chart.mjs": "c82ef793891457129411c144904f8fd2a61d67ac297f107beaf922bdf2934964",
+    "simulations/collisions/observations.json": "10514f6b8bfbbb2800f3cfcb85cfb737392447b6d9d52aeda65237f9d9273ef5"
+  },
+  "source_record_sha256": "2a1a7967543e0e68e75171592f45ec4e51e8c9ef6ab5b88a342d8e353801609e",
+  "interaction_checks": 5,
+  "visual_status": "passed",
+  "exports_status": "passed",
+  "exports": [
+    {
+      "filename": "collisions-export.json",
+      "sha256": "6b1bff70b580ac83462f9a87685132c57a26358a08c7835f79ec321ba8bb6cef",
+      "bytes": 3545
+    },
+    {
+      "filename": "collisions-export.csv",
+      "sha256": "258014b30d1463d204f646cb653083e4cdda0966b6da69f10fb815d3ee71f970",
+      "bytes": 934
+    }
+  ],
+  "fonts": {
+    "body": "\"Times New Roman\", SimSun, \"Songti SC\", serif",
+    "simsun": true,
+    "times": true,
+    "mathjax": 16,
+    "math_errors": []
+  },
+  "browser": "fixed Chromium1243 via playwright-cli isolated rollout-mechanics",
+  "layout": {
+    "mobile": {
+      "viewport": 390,
+      "document": 390,
+      "overflow": false,
+      "svg_text": [
+        {
+          "text": "0.00",
+          "size": 14.488575260344275
+        },
+        {
+          "text": "0.55",
+          "size": 14.488570898755182
+        },
+        {
+          "text": "1.11",
+          "size": 14.488570209818093
+        },
+        {
+          "text": "1.66",
+          "size": 14.488579621933368
+        },
+        {
+          "text": "2.21",
+          "size": 14.488570898755182
+        },
+        {
+          "text": "2.77",
+          "size": 14.488570898755182
+        },
+        {
+          "text": "位置 x / m",
+          "size": 14.488571125687345
+        },
+        {
+          "text": "滑块 1：341.75 g",
+          "size": 14.488572663851956
+        },
+        {
+          "text": "0.710 m/s",
+          "size": 14.488572728752587
+        },
+        {
+          "text": "滑块 2：154.49 g",
+          "size": 14.488571596325574
+        },
+        {
+          "text": "0.000 m/s",
+          "size": 14.48857465164034
+        },
+        {
+          "text": "碰前运动",
+          "size": 14.488566428584207
+        }
+      ],
+      "math_errors": []
+    }
+  },
+  "interaction": [
+    {
+      "name": "理想碰撞记录",
+      "status": "passed"
+    },
+    {
+      "name": "粘合条件",
+      "status": "passed"
+    },
+    {
+      "name": "轻撞重方向和光电门",
+      "status": "passed"
+    },
+    {
+      "name": "非法时长",
+      "status": "passed"
+    },
+    {
+      "name": "动画复位",
+      "status": "passed"
+    }
+  ],
+  "background": {
+    "status": "passed",
+    "actual_document_hidden": true,
+    "pause_verified": true,
+    "source_files": {
+      "simulations/collisions/app.mjs": "948ef033a82e85798f0316628897b3b96a9a6e5d34972eb626b3d160bc5c9c54",
+      "simulations/collisions/model.mjs": "a8d8641d062bc2ca3277d9cd79f647b0420c32a36c86d9bf00dd3321205ab6b8"
+    },
+    "checked_at_utc": "2026-10-16T17:08:43.533Z"
+  },
+  "checked_at_utc": "2026-10-16T16:13:48.036Z",
+  "screenshots": [
+    {
+      "path": "docs/assets/simulations/collisions/frontend-01-f4424c46577a.png",
+      "sha256": "f4424c46577a0456732639e4c8711299afca787424576ff15b39a8cbaa27aef9"
+    },
+    {
+      "path": "docs/assets/simulations/collisions/frontend-02-07267436f0e9.png",
+      "sha256": "07267436f0e9e5ac57981be3caebf8785f480dd1c055e9153cf7f489a78451e2"
+    },
+    {
+      "path": "docs/assets/simulations/collisions/frontend-03-dbca355562e2.png",
+      "sha256": "dbca355562e2dc1345f52a46993a13a0997074658d2744b22d2a80d9901e9ebc"
+    },
+    {
+      "path": "docs/assets/simulations/collisions/frontend-04-07490de015f3.png",
+      "sha256": "07490de015f3c5b15e7dad579434c5b3049012a1aef6ae15b63270f3e5327c97"
+    }
+  ],
+  "schema_version": 1,
+  "experiment_id": "course-01/collisions",
+  "numerical": {
+    "status": "passed",
+    "reference_sha256": "cf2746a38cbedb3ced667192510cd5603b57bb1844f6aac1ee8b68c3c1166664",
+    "source_files": {
+      "simulations/collisions/index.html": "bedda72fe61d14f676c3a67d071bed99f982bb915fc6b3a2103a8c1dc6709b99",
+      "simulations/collisions/model.mjs": "a8d8641d062bc2ca3277d9cd79f647b0420c32a36c86d9bf00dd3321205ab6b8",
+      "simulations/collisions/app.mjs": "948ef033a82e85798f0316628897b3b96a9a6e5d34972eb626b3d160bc5c9c54",
+      "simulations/collisions/chart.mjs": "c82ef793891457129411c144904f8fd2a61d67ac297f107beaf922bdf2934964",
+      "simulations/collisions/lab.css": "72d31d1a5021ce40610483f0cfc6a4da8262b10552e14731cb61d339efb2f5e0",
+      "simulations/collisions/observations.json": "10514f6b8bfbbb2800f3cfcb85cfb737392447b6d9d52aeda65237f9d9273ef5",
+      "docs/collisions-model-evidence.md": "196526e665caa7c4f6a94b2c5239b5ceaad83aa1e8d06d9867a2100edf96e8e1",
+      "docs/collisions-references.json": "5d3b1d9310fac99b791ce0f7c293d60f3d3e4232ab632471a2fde93bb9cd6aa3",
+      "docs/collisions-references.bib": "35d6c0b3e565d06aa293b0c28442440cebbeb051f674f00fd9fd0d8f1fab4a07",
+      "docs/simulation/collisions-reference.json": "cf2746a38cbedb3ced667192510cd5603b57bb1844f6aac1ee8b68c3c1166664",
+      "scripts/validate_collisions_simulation.py": "485a9f93aeaad909f024fae0200431830ed3699fcf5c30051f48b10d064d6772",
+      "tests/collisions-model.test.mjs": "9c95f674a0937e4c65759e039c3c6bc16c4a9e7a4a023d1a583d0c9700d677af"
+    }
+  },
+  "scientific_evidence": {
+    "status": "verified",
+    "decision_source_files": {
+      "docs/collisions-references.json": "5d3b1d9310fac99b791ce0f7c293d60f3d3e4232ab632471a2fde93bb9cd6aa3",
+      "docs/collisions-model-evidence.md": "196526e665caa7c4f6a94b2c5239b5ceaad83aa1e8d06d9867a2100edf96e8e1",
+      "simulations/collisions/model.mjs": "a8d8641d062bc2ca3277d9cd79f647b0420c32a36c86d9bf00dd3321205ab6b8"
+    },
+    "core_references": [
+      {
+        "id": "lv2013-airtrack-collision",
+        "pdf_sha256": "9f23194baa9cefa767f89d59464fc91cacfcd6259ae739e84b47273bc8368c10",
+        "locators": [
+          {
+            "page": 69,
+            "location": "§2式1–3",
+            "supports": "无外力冲量的动量守恒、有向速度"
+          },
+          {
+            "page": 69,
+            "location": "§3.2、§4.2",
+            "supports": "有限挡片平均测速和光电门位置条件"
+          }
+        ]
+      }
+    ]
+  }
+}

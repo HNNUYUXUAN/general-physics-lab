@@ -1,5 +1,8 @@
 [普通物理实验 1](../README.md) · [项目首页](../../../README.md) · [使用指南](../../../docs/usage.md)
 
+<!-- virtual-laboratory-entry -->
+[在线虚拟实验](https://hnnuyuxuan.github.io/general-physics-lab/simulations/mechanical-equivalent-heat/) · [模型依据与参数来源](../../../docs/mechanical-equivalent-heat-model-evidence.md)
+
 # 热功当量的测量
 
 **沿着升温曲线，理解电功如何转化为热量。**

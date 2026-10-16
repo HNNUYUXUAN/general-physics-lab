@@ -1,5 +1,8 @@
 [普通物理实验 1](../README.md) · [项目首页](../../../README.md) · [使用指南](../../../docs/usage.md)
 
+<!-- virtual-laboratory-entry -->
+[在线虚拟实验](https://hnnuyuxuan.github.io/general-physics-lab/simulations/vaporization-heat/) · [模型依据与参数来源](../../../docs/vaporization-heat-model-evidence.md)
+
 # 液体比汽化热的测量
 
 **从蒸汽凝结的热平衡中，分离潜热与显热。**

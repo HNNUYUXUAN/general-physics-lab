@@ -1,0 +1,25 @@
+import{DEFAULTS,MODEL_VERSION,validateParameters,response,plots,analyzeRecords}from'./model.mjs';
+import{renderDiagram}from'./diagram.mjs';import{renderPlot}from'./chart.mjs';
+const $=id=>document.getElementById(id);const config=await fetch('./ui-config.json').then(r=>r.json());const store='physicslab.'+config.slug+'.v1';let p={...DEFAULTS},rows=[],source=null;
+try{const s=JSON.parse(localStorage.getItem(store)||'null');if(s?.version===MODEL_VERSION&&Array.isArray(s.records))rows=s.records.filter(r=>r.experimentId===config.experimentId&&r.parameters&&r.readings&&Object.values(r.readings).every(x=>typeof x!=='number'||Number.isFinite(x)));}catch{}
+function save(){try{localStorage.setItem(store,JSON.stringify({version:MODEL_VERSION,records:rows}));}catch{$('status').textContent='浏览器保存失败，请导出记录。';}}
+function cell(tr,t){const d=document.createElement('td');d.textContent=t;tr.append(d);return d;}
+const fmt=x=>typeof x==='number'?String(Number(x.toPrecision(8))):String(x??'—');
+function read(){try{const n={...p};for(const c of config.controls)n[c.key]=c.type==='select'&&typeof c.default==='string'?$(c.key).value:Number($(c.key).value);p=validateParameters(n);return true;}catch(e){$('status').textContent='参数无效：'+e.message+'；请按输入范围设置。';return false;}}
+function records(){$('records').replaceChildren();$('count').textContent=rows.length;rows.forEach((r,i)=>{const tr=document.createElement('tr');for(const c of config.columns)cell(tr,fmt(r.readings[c.key]??r.parameters[c.key]));const b=document.createElement('button');b.type='button';b.textContent='删除';b.onclick=()=>{rows.splice(i,1);save();records();};cell(tr,'').append(b);$('records').append(tr);});if(!rows.length){const tr=document.createElement('tr');cell(tr,'改变设置并记录当前读数。').colSpan=config.columns.length+1;$('records').append(tr);}try{$('analysis-result').textContent=analyzeRecords(rows,p);}catch(e){$('analysis-result').textContent=e.message;}}
+function render(){const r=response(p);renderDiagram($('apparatus'),p,r);$('summary').replaceChildren();for(const c of config.columns.slice(0,4)){const span=document.createElement('span');span.textContent=c.short+': '+fmt(r[c.key]??p[c.key]);$('summary').append(span);}const ps=plots(p);for(let i=0;i<2;i++){renderPlot($(i?'plot-b':'plot-a'),ps[i]);$(i?'caption-b':'caption-a').textContent='图 '+(i+2)+'　'+ps[i].caption;}records();}
+for(const c of config.controls)$(c.key).addEventListener('change',()=>{if(read()){render();$('status').textContent='已更新教学情景，可记录当前读数。';}});
+$('record').onclick=()=>{if(!read())return;try{const r=response(p);rows.push({experimentId:config.experimentId,modelVersion:MODEL_VERSION,source:'ideal-teaching-model',recorded_at:new Date().toISOString(),units:config.units,parameters:{...p},readings:r});save();render();$('status').textContent='已保存当前教学情景读数。';}catch(e){$('status').textContent=e.message;}};
+$('reset').onclick=()=>{p={...DEFAULTS};for(const c of config.controls)$(c.key).value=p[c.key];render();$('status').textContent='已恢复默认情景，记录保留。';};
+$('clear').onclick=()=>{rows=[];save();records();};
+function download(text,type,name){const u=URL.createObjectURL(new Blob([text],{type})),a=document.createElement('a');a.href=u;a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(u),1000);}
+$('export-json').onclick=()=>download(JSON.stringify({experimentId:config.experimentId,modelVersion:MODEL_VERSION,parameterDefinitions:config.controls,parameters:p,records:rows},null,2),'application/json',config.slug+'-records.json');
+$('export-csv').onclick=()=>{const keys=['experimentId','modelVersion','recorded_at','source','parameters','units','readings',...config.columns.map(c=>c.key)];download('\uFEFF'+keys.join(',')+'\n'+rows.map(r=>keys.map(k=>{const v=r[k]??r.readings[k]??r.parameters[k];return '"'+String(typeof v==='object'?JSON.stringify(v):v??'').replaceAll('"','""')+'"';}).join(',')).join('\n'),'text/csv;charset=utf-8',config.slug+'-records.csv');};
+function showSource(){if(!source)return;const s=source.tables[$('source-table-choice').value];$('source-head').replaceChildren();$('source-body').replaceChildren();const tr=document.createElement('tr');s.headers.forEach(h=>{const th=document.createElement('th');th.textContent=h;tr.append(th);});$('source-head').append(tr);s.rows.forEach(r=>{const tr=document.createElement('tr');r.forEach(x=>cell(tr,x));$('source-body').append(tr);});$('source-note').textContent=s.note||source.note||'';}
+$('source-table-choice').onchange=showSource;
+fetch('./observations.json').then(r=>{if(!r.ok)throw Error();return r.json();}).then(d=>{source=d;for(const[k,v]of Object.entries(d.tables)){const o=document.createElement('option');o.value=k;o.textContent=v.title||k;$('source-table-choice').append(o);}showSource();}).catch(()=>{$('source-note').textContent='原报告记录尚未加载，请通过项目 HTTP 页面打开。';});
+render();
+
+$('short-zero').onclick=()=>{if(!read())return;p.Rx=0;p.zeroFactor=p.battery/1.5;$('Rx').value=0;$('zeroFactor').value=p.zeroFactor;render();$('status').textContent='已短接调零；改填待测电阻，注意电池变化导致中点移动。';};
+
+window.addEventListener("resize",()=>render());

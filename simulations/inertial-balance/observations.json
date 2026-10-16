@@ -1,0 +1,50 @@
+{
+  "experimentId": "course-02/inertial-balance",
+  "source": "original-report-observations",
+  "sourceSha256": "d06b91f83f26219408b111c7953cab59d67961820666053e7e4d3e410ecb1613",
+  "calibration": [
+    {
+      "mass": 0.025,
+      "period": 0.372956
+    },
+    {
+      "mass": 0.05,
+      "period": 0.42954
+    },
+    {
+      "mass": 0.075,
+      "period": 0.477866
+    },
+    {
+      "mass": 0.1,
+      "period": 0.525413
+    },
+    {
+      "mass": 0.125,
+      "period": 0.573683
+    },
+    {
+      "mass": 0.15,
+      "period": 0.612982
+    },
+    {
+      "mass": 0.17500000000000002,
+      "period": 0.652948
+    },
+    {
+      "mass": 0.2,
+      "period": 0.694534
+    }
+  ],
+  "unknown": {
+    "nominalMass": 0.1905,
+    "period": 0.681051
+  },
+  "calibrationScenario": {
+    "slope": 1.955894242420952,
+    "intercept": 0.08516104881939277,
+    "stiffness": 20.18433141635109,
+    "emptyMass": 0.04354072268957792
+  },
+  "scenarioIdentity": "fitted-from-original-calibration; not independent validation of observed apparatus"
+}

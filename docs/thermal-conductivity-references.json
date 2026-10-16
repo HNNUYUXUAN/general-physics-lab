@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "experiment": "course-02/thermal-conductivity",
+  "references": [
+    {
+      "id": "zhou2018-quasisteady",
+      "title": "基于准稳态实验方法研究橡胶材料的热传导性质",
+      "authors": [
+        "周厚兵",
+        "唐耿",
+        "张欣蕊",
+        "赵子珍",
+        "卢慧金",
+        "王乐乐"
+      ],
+      "journal": "物理实验",
+      "year": 2018,
+      "volume": 38,
+      "issue": 7,
+      "pages": "17–22",
+      "doi": "10.19655/j.cnki.1005-4642.2018.07.005",
+      "url": "https://doi.org/10.19655/j.cnki.1005-4642.2018.07.005",
+      "full_text_status": "obtained_and_read",
+      "pdf_sha256": "d9b05f60c68134bd532f70d8bace3e2e666861605db7e7ec1401cdb5594a56ac",
+      "locators": [
+        {
+          "page": 17,
+          "location": "式1",
+          "supports": "一维热方程"
+        },
+        {
+          "page": 18,
+          "location": "式3–10",
+          "supports": "对称/均温条件、级数解与准稳态反演"
+        },
+        {
+          "page": 21,
+          "location": "实验参数",
+          "supports": "装置与热电常数，材料身份保留"
+        }
+      ],
+      "formula_corrections": [
+        {
+          "page": 17,
+          "equation": 2,
+          "printed": "time derivative=q/λ",
+          "used": "spatial derivative=q/λ",
+          "basis": "Fourier boundary flux dimensions and integrated energy conservation"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "experiment": "course-02/young-modulus",
+  "references": [
+    {
+      "id": "zhang2022-optical-lever",
+      "title": "光杠杆法测杨氏模量实验的一种改进方法",
+      "authors": [
+        "张莉",
+        "荣振宇",
+        "王晗语",
+        "姜恒钧",
+        "韩玉晶",
+        "陈小艺"
+      ],
+      "journal": "大学物理",
+      "year": 2022,
+      "volume": 41,
+      "issue": 10,
+      "pages": "29–32,79",
+      "doi": "10.16854/j.cnki.1000-0712.210606",
+      "url": "https://doi.org/10.16854/j.cnki.1000-0712.210606",
+      "full_text_status": "obtained_and_read",
+      "pdf_sha256": "6eee6207bf9144990c07d8441244f3cef382cd137f62290540343fdbdb2a9208",
+      "locators": [
+        {
+          "page": 29,
+          "location": "式1–3",
+          "supports": "轴向线弹性和传统光杠杆小角反演"
+        },
+        {
+          "page": 30,
+          "location": "式4",
+          "supports": "含小角近似的几何关系"
+        },
+        {
+          "page": 31,
+          "location": "操作讨论",
+          "supports": "预拉伸和加载卸载"
+        },
+        {
+          "page": 32,
+          "location": "式7–8",
+          "supports": "逐差和斜率处理"
+        }
+      ]
+    }
+  ]
+}
