@@ -16,6 +16,20 @@ RAW = 'https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/'
 PAGES = 'https://hnnuyuxuan.github.io/general-physics-lab/'
 GENERATED = ('docs/experiments.json', 'docs/experiment-index.md',
              'llms.txt', 'llm.txt', 'llms-full.txt')
+SIMULATION_RESOURCES = {
+    'course-01/pendulum': {
+        'simulation_html': 'simulations/pendulum/index.html',
+        'simulation_model': 'simulations/pendulum/model.mjs',
+        'simulation_controller': 'simulations/pendulum/app.mjs',
+        'simulation_charts': 'simulations/pendulum/chart.mjs',
+        'simulation_styles': 'simulations/pendulum/lab.css',
+        'simulation_observations': 'simulations/pendulum/observations.json',
+        'model_evidence': 'docs/pendulum-model-evidence.md',
+        'references_json': 'docs/pendulum-references.json',
+        'references_bibtex': 'docs/pendulum-references.bib',
+        'simulation_validation': 'docs/simulation/pendulum-reference.json',
+    },
+}
 
 
 def read_json(path):
@@ -32,7 +46,7 @@ def resource(path, root=ROOT):
         path = root / path
     relative = path.resolve().relative_to(root.resolve()).as_posix()
     content = path.read_bytes()
-    text_resource = path.suffix.lower() in {'.md', '.json', '.csv', '.py', '.wl', '.ipynb', '.html'}
+    text_resource = path.suffix.lower() in {'.md', '.json', '.csv', '.py', '.wl', '.ipynb', '.html', '.mjs', '.css', '.bib'}
     if text_resource:
         content = content.decode('utf-8').replace('\r\n', '\n').encode('utf-8')
     descriptor = {'path': relative, 'url': REPO + '/blob/main/' + quote(relative, safe='/'),
@@ -92,6 +106,10 @@ def compile_catalog(root=ROOT):
             candidate = base / 'results' / (name + '.json')
             if candidate.exists():
                 paths[name.replace('-', '_')] = candidate
+        for name, relative in SIMULATION_RESOURCES.get(identity, {}).items():
+            candidate = root / relative
+            if candidate.is_file():
+                paths[name] = candidate
         resources = {key: resource(path, root) for key, path in paths.items()}
         resources['source_pdf'] = pdf_resource
         data_files = []
@@ -158,6 +176,12 @@ def card(experiment, compact=False):
     navigation = [('实验入口', 'readme'), ('报告', 'report'), ('Jupyter', 'jupyter_notebook'),
                   ('Wolfram', 'wolfram_notebook'), ('源PDF', 'source_pdf')]
     text += [' · '.join(link(label, e['resources'][key]['path']) for label, key in navigation), '']
+    if 'simulation_html' in e['resources']:
+        text += ['[虚拟实验](' + e['resources']['simulation_html']['online_url'] + ') · ' +
+                 ' · '.join(link(label, e['resources'][key]['path']) for label, key in
+                            [('模型依据', 'model_evidence'), ('浏览器模型', 'simulation_model'),
+                             ('观测对照', 'simulation_observations'), ('文献题录', 'references_json'),
+                             ('数值验证', 'simulation_validation')] if key in e['resources']), '']
     if not compact:
         text += ['章节：' + ' → '.join(e['sections']) + '。', '',
                  ' | '.join(link(label, e['resources'][key]['path']) for label, key in
@@ -203,6 +227,11 @@ def documents(catalog, root=ROOT):
             '- ' + link('Agent复现指南 / Reproduction', 'docs/agent-reproduction.md') + ': 新内核执行、双端重建、Paclet与验收。',
             '- ' + link('仓库工作约定 / AGENTS.md', 'AGENTS.md') + ': 修改范围、数据和排版规则。',
             '- ' + link('运行环境 / Setup', 'docs/usage.md') + ': Python、Wolfram、字体与HTML阅读。', '',
+            '## 虚拟实验 / Virtual laboratories', '',
+            '- [单摆虚拟实验 / Pendulum simulation](' + PAGES.rstrip('/') + '/simulations/pendulum/): 调参、计时、拟合和实验记录导出。',
+            '- ' + link('单摆模型与文献依据', 'docs/pendulum-model-evidence.md') + ': 方程、参数身份、适用范围及独立验证。',
+            '- ' + link('虚拟实验接手与复现', 'docs/virtual-lab-agent-guide.md') + ': WebVPN检索、全文归档、模型接口与发布验收。',
+            '- ' + link('系列平台开发方案', 'docs/virtual-lab-development.md') + ': 首例功能、分层架构和扩展顺序。', '',
             '## 检索目录', '',
             '- ' + link('45项实验检索目录 / Experiment index', 'docs/experiment-index.md') + ': 中英文名、常用别名、主题、方法和三稿入口。',
             '- ' + link('机器目录 / Machine catalog', 'docs/experiments.json') + ': 路径、raw URL、哈希、数据表、指标和实际接口。',
@@ -229,7 +258,7 @@ def documents(catalog, root=ROOT):
             '> General Physics Lab: reading, reproduction and 45 experiment cards.', '',
             '本文件汇集阅读与复现说明及全部实验卡片。报告、原始读数和完整精度结果通过各卡片链接按需读取。', '',
             '项目：' + REPO, '', link('简短导览', 'llms.txt') + ' · ' + link('机器目录', 'docs/experiments.json'), '']
-    for source_name in ('docs/agent-guide.md', 'docs/agent-reproduction.md', 'docs/agent-catalog.md'):
+    for source_name in ('docs/agent-guide.md', 'docs/agent-reproduction.md', 'docs/agent-catalog.md', 'docs/virtual-lab-agent-guide.md'):
         source = root / source_name
         text = absolute_links(source.read_text(encoding='utf-8'), source)
         # Keep a single H1 in the assembled guide and preserve the inner hierarchy.

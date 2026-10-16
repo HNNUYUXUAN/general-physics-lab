@@ -10,6 +10,7 @@ ROOT=Path(__file__).resolve().parents[1]
 DEFAULT_URL='https://hnnuyuxuan.github.io/general-physics-lab'
 REPOSITORY='https://github.com/HNNUYUXUAN/general-physics-lab'
 FORBIDDEN={'.git','.venv','venv','archive','__pycache__','.pytest_cache'}
+SIMULATION='simulations/pendulum'
 
 def sha(path):return hashlib.sha256(path.read_bytes()).hexdigest()
 def load(path):return json.loads(path.read_text(encoding='utf-8'))
@@ -25,6 +26,7 @@ class Builder:
         if parsed.scheme not in ('http','https') or not parsed.netloc or parsed.query or parsed.fragment:raise ValueError('base-url must be an absolute HTTP(S) site URL')
         self.prefix=parsed.path.rstrip('/');self.mapping={};self.pages=[];self.copied={};self.source_html=[];self.plot_math_labels=[]
         self.entries=load(self.root/'experiments/registry.json')['experiments']
+        self.simulation_files=[]
 
     def url(self,path):return self.prefix+'/'+quote(str(path).replace('\\','/'),safe='/')
     def canonical(self,path):return self.base_url+'/'+quote(path,safe='/')
@@ -38,6 +40,22 @@ class Builder:
         if any(p in FORBIDDEN for p in Path(relative).parts):raise ValueError('Forbidden copy '+relative)
         self.write(relative,path.read_bytes());self.copied[relative]=sha(path)
         return relative
+    def register_simulation(self):
+        folder=self.root/SIMULATION
+        if not (folder/'index.html').is_file():raise FileNotFoundError(folder/'index.html')
+        # Publish the browser module's direct resources; research downloads and tests stay outside this list.
+        self.simulation_files=[p for p in sorted(folder.iterdir()) if p.is_file() and
+            (p.name=='index.html' or p.suffix.lower() in {'.mjs','.css','.json'}) and not p.name.endswith('.test.mjs')]
+        for path in self.simulation_files:
+            relative=path.relative_to(self.root).as_posix()
+            self.mapping[relative]=relative
+    def build_simulation(self):
+        for path in self.simulation_files:
+            relative=path.relative_to(self.root).as_posix()
+            if path.name!='index.html':self.copy(path);continue
+            self.source_html.append({'path':relative,'sha256':sha(path)})
+            entry=next(e for e in self.entries if e['id']=='course-01/pendulum')
+            self.transform(path.read_text(encoding='utf-8'),path,relative,'单摆虚拟实验',entry)
     def asset(self,path):
         path=path.resolve();relative=path.relative_to(self.root).as_posix()
         allowed=(relative.startswith('docs/assets/') or (relative.startswith('experiments/') and ('/assets/' in relative or '/results/figures/' in relative)))
@@ -65,7 +83,7 @@ class Builder:
         if not path.is_file():raise FileNotFoundError((source,target))
         return REPOSITORY+'/blob/main/'+quote(relative,safe='/')+fragment
     def chrome(self,destination,experiment=None):
-        links=[('首页','index.html'),('课程','experiments/index.html'),('实验检索','docs/experiment-index.html'),('使用指南','docs/usage.html'),('许可与来源','licensing.html'),('GitHub',None)]
+        links=[('首页','index.html'),('课程','experiments/index.html'),('虚拟实验',SIMULATION+'/index.html'),('实验检索','docs/experiment-index.html'),('使用指南','docs/usage.html'),('许可与来源','licensing.html'),('GitHub',None)]
         nav='<nav class="site-nav" aria-label="站点导航"><a class="site-brand" href="'+self.url('index.html')+'">普通物理实验</a>'
         nav+=''.join('<a href="'+(REPOSITORY if p is None else self.url(p))+'">'+label+'</a>' for label,p in links)
         if experiment:
@@ -181,7 +199,9 @@ class Builder:
         for e in self.entries:markdown_files[self.root/'experiments'/e['id']/'README.md']='experiments/'+e['id']+'/index.html'
         self.mapping={p.relative_to(self.root).as_posix():v for p,v in markdown_files.items()}
         for e in self.entries:self.mapping['experiments/'+e['id']+'/report/report.md']='experiments/'+e['id']+'/report/report.html'
+        self.register_simulation()
         for source,destination in markdown_files.items():self.markdown_page(source,destination)
+        self.build_simulation()
         for e in self.entries:
             for ending,label in [('notebooks/analysis.html','计算与探索'),('report/report.html','实验报告')]:
                 rel='experiments/'+e['id']+'/'+ending;p=self.root/rel

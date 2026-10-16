@@ -38,6 +38,12 @@ python scripts/check_agent_docs.py
 
 完整重建使用 `python scripts/pipeline.py all --experiment course-03/rlc-resonance`。单摆使用 `python scripts/pipeline.py all`，其 Python 结果结构和 Wolfram `PL*` 接口单独定义。`pipeline.py all --all` 构建其余 44 项；`execute_notebooks.py --all` 与 `check_delivery.py --all` 覆盖全部 45 项。
 
+## 虚拟实验与学术资料
+
+- 浏览器仿真代码位于 `simulations/`，物理模型、参数来源、适用范围及验证见 `docs/pendulum-model-evidence.md`。接手前阅读 `docs/virtual-lab-agent-guide.md`。
+- 学术检索延续维护者在 Chrome 中打开的两校 WebVPN 会话，交叉检索各库；均未取得全文时使用读秀学术搜索文献传递，记录申请与接收状态。全文归档于本地 `archive/literature/`，公开书目使用稳定 DOI 与正文定位。
+- 数值内核与原报告观测、自动模型记录、手动交互记录分别核验。网页迭代保留正式三稿哈希基线。
+
 ## 文档与索引维护
 
 - 新增或变更实验时同步 `experiments/registry.json`、`docs/experiment-topics.json` 和实验文稿，再运行 `python scripts/agent_catalog.py build` 更新生成入口。

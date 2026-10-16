@@ -1,0 +1,229 @@
+{
+  "schema_version": 1,
+  "experiment_id": "course-01/pendulum",
+  "review_date": "2026-10-16",
+  "access_channel": "机构学术数据库",
+  "verification_method": "下载原文，提取文本，逐页渲染核对公式和页码；关键数值另行复算。",
+  "references": [
+    {
+      "id": "JuZhang2007Pendulum",
+      "title": "基于MATLAB的单摆周期近似解的比较",
+      "authors": [
+        "鞠衍清",
+        "张风雷"
+      ],
+      "journal": "大学物理",
+      "year": 2007,
+      "volume": "26",
+      "issue": "3",
+      "pages": "6-9",
+      "doi": "10.16854/j.cnki.1000-0712.2007.03.002",
+      "url": "https://doi.org/10.16854/j.cnki.1000-0712.2007.03.002",
+      "source_pdf": {
+        "sha256": "29605a561b2d9b6da8a2ec2f7c7282019587e7f5b4da4d6c528165819a6fee02",
+        "pages": 4,
+        "bytes": 238940
+      },
+      "locators": [
+        {
+          "printed_pages": "6",
+          "pdf_pages": [
+            1
+          ],
+          "location": "左栏首个未编号公式",
+          "role": "无阻尼有限摆角的周期积分及小角度周期定义"
+        },
+        {
+          "printed_pages": "6-7",
+          "pdf_pages": [
+            1,
+            2
+          ],
+          "location": "第1节与第2.1节",
+          "role": "0.5度至90度角度网格和逐点差、平方误差和比较"
+        },
+        {
+          "printed_pages": "8",
+          "pdf_pages": [
+            3
+          ],
+          "location": "表1",
+          "role": "所列近似公式在文章网格上的比较结果"
+        }
+      ],
+      "application": "采用周期积分作为模型依据，并用独立积分及ODE生成验证参考。",
+      "scope": "理想无阻尼周期；文章数值扫描为0.5度至90度。",
+      "review_findings": [
+        "p.7部分印出参考值与同一椭圆积分独立计算有约1e-6至1e-5差异。",
+        "其最小二乘偏差代码计算固定近似曲线的平方误差和。"
+      ],
+      "review_status": "full_text_reviewed"
+    },
+    {
+      "id": "ChaiEtAl2020Pendulum",
+      "title": "大摆角单摆“周期”变化的解析解及其实验应用",
+      "authors": [
+        "柴聪聪",
+        "凤飞龙",
+        "王公正",
+        "卫芬芬"
+      ],
+      "journal": "物理实验",
+      "year": 2020,
+      "volume": "40",
+      "issue": "3",
+      "pages": "48-50",
+      "doi": "10.19655/j.cnki.1005-4642.2020.03.010",
+      "url": "https://doi.org/10.19655/j.cnki.1005-4642.2020.03.010",
+      "source_pdf": {
+        "sha256": "49498dd9eee84efd4fa06f664ae52c09461caa01dd1eb2f6ea127b4090fd327c",
+        "pages": 3,
+        "bytes": 430974
+      },
+      "locators": [
+        {
+          "printed_pages": "48",
+          "pdf_pages": [
+            1
+          ],
+          "location": "式(1)、式(2)",
+          "role": "含线性阻尼的非线性运动方程；首版取阻尼为零"
+        },
+        {
+          "printed_pages": "48-49",
+          "pdf_pages": [
+            1,
+            2
+          ],
+          "location": "式(6)、式(7)及累计时间定义",
+          "role": "区分累计时间、平均周期与相邻周期"
+        },
+        {
+          "printed_pages": "50",
+          "pdf_pages": [
+            3
+          ],
+          "location": "式(10)后段落",
+          "role": "累计计时方式与系统修正的条件说明"
+        }
+      ],
+      "application": "用式(1)、式(2)建立首版无阻尼ODE，按周期定义设计后续阻尼扩展。",
+      "scope": "原解析近似采用线性弱阻尼及正弦五阶截断；首版采用完整正弦项并设置beta=0。",
+      "review_findings": [
+        "式(5)指数符号与后文不一致，式(9)印式与表值不合。",
+        "累计时间与平均周期按定义区分；本版依据运动方程直接积分。"
+      ],
+      "review_status": "full_text_reviewed"
+    },
+    {
+      "id": "QianEtAl2009Uncertainty",
+      "title": "不确定度理论在单摆实验教学中的应用",
+      "authors": [
+        "钱钧",
+        "张春玲",
+        "王槿"
+      ],
+      "journal": "大学物理实验",
+      "year": 2009,
+      "volume": "22",
+      "issue": "3",
+      "pages": "78-81",
+      "doi": "10.14139/j.cnki.cn22-1228.2009.03.013",
+      "url": "https://doi.org/10.14139/j.cnki.cn22-1228.2009.03.013",
+      "source_pdf": {
+        "sha256": "375808002a4ce0b2242798484491c59df01ead297afa7745ef7c359bf2d5cefb",
+        "pages": 4,
+        "bytes": 216839
+      },
+      "locators": [
+        {
+          "printed_pages": "78",
+          "pdf_pages": [
+            1
+          ],
+          "location": "第1节",
+          "role": "A类、B类不确定度评定方式"
+        },
+        {
+          "printed_pages": "79",
+          "pdf_pages": [
+            2
+          ],
+          "location": "式(3)、式(7)、式(10)",
+          "role": "测量关系传播、累计计时传播、重复均值A类标准不确定度"
+        },
+        {
+          "printed_pages": "80",
+          "pdf_pages": [
+            3
+          ],
+          "location": "第3节",
+          "role": "给定仪器与目标不确定度下设计计时周期数"
+        }
+      ],
+      "application": "解释重复性分量和多周期计时的条件；仪器分量按本项目实际来源确定。",
+      "scope": "小角度直接测g预算；50周期为其特定目标和仪器假设的算例。",
+      "review_findings": [
+        "该文长度量到球底；本项目量到球顶，沿本项目来源采用加半径。",
+        "均匀分布除数和末尾相对不确定度印值经算术核对后按定义使用。"
+      ],
+      "review_status": "full_text_reviewed"
+    },
+    {
+      "id": "WangEtAl2026JupyterPendulum",
+      "title": "Jupyter Notebook在单摆测重力加速度实验中的应用",
+      "authors": [
+        "王震委",
+        "张磊",
+        "王美雅"
+      ],
+      "journal": "湖北师范大学学报（自然科学版）",
+      "year": 2026,
+      "volume": "46",
+      "issue": "2",
+      "pages": "25-30",
+      "doi": "10.3969/j.issn.2096-3149.2026.02.004",
+      "url": "https://doi.org/10.3969/j.issn.2096-3149.2026.02.004",
+      "source_pdf": {
+        "sha256": "427862f5fff492d820e1c00e67430b31459b1bbe3c767e2440b4d2d701c3b559",
+        "pages": 6,
+        "bytes": 282412
+      },
+      "locators": [
+        {
+          "printed_pages": "27",
+          "pdf_pages": [
+            3
+          ],
+          "location": "第2.2节式(4)、式(7)至式(11)",
+          "role": "含截距OLS、相关系数和回归标准误"
+        },
+        {
+          "printed_pages": "28-29",
+          "pdf_pages": [
+            4,
+            5
+          ],
+          "location": "第2.4节、图3、表2",
+          "role": "SciPy拟合及文字、代码、图形结合的计算实例"
+        },
+        {
+          "printed_pages": "29-30",
+          "pdf_pages": [
+            5,
+            6
+          ],
+          "location": "第3节",
+          "role": "调参、可视化观察与任务组织的教学设计参考"
+        }
+      ],
+      "application": "采用含截距拟合及可执行说明的组织思路；学习效果另行评价。",
+      "scope": "八组30周期的独立文献实例与教学讨论；与项目观测数据分别保存。",
+      "review_findings": [
+        "式(4)前周期平方关系缺少摆长，公开公式保留完整因子。",
+        "文章未给出受控教学效果评价；软件对照仅支持该计算实例的一致性。"
+      ],
+      "review_status": "full_text_reviewed"
+    }
+  ]
+}

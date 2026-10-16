@@ -6,7 +6,7 @@
 
 改变摆长、重复计时，将周期平方与有效摆长联系起来，求出重力加速度。再从小角度近似走向非线性单摆，观察摆幅如何改变周期与测量结果。
 
-[读实验报告](report/report.md) · [浏览器交互](https://hnnuyuxuan.github.io/general-physics-lab/experiments/course-01/pendulum/notebooks/analysis.html) · [Python 笔记本](notebooks/analysis.ipynb) · [Wolfram 笔记本](../../../notebook/paclets/PendulumLab/Notebooks/Pendulum.nb)
+[进入虚拟实验](https://hnnuyuxuan.github.io/general-physics-lab/simulations/pendulum/) · [读实验报告](report/report.md) · [浏览器交互](https://hnnuyuxuan.github.io/general-physics-lab/experiments/course-01/pendulum/notebooks/analysis.html) · [Python 笔记本](notebooks/analysis.ipynb) · [Wolfram 笔记本](../../../notebook/paclets/PendulumLab/Notebooks/Pendulum.nb)
 
 ![单摆有效摆长、摆球直径及周期平方拟合的关系](assets/pendulum-overview.svg)
 
@@ -16,6 +16,7 @@
 
 |用途|入口|打开方式|
 |---|---|---|
+|操作装置、计时、拟合并导出自己的记录|[单摆虚拟实验](https://hnnuyuxuan.github.io/general-physics-lab/simulations/pendulum/)|浏览器实时运行；[模型与文献依据](../../../docs/pendulum-model-evidence.md)|
 |阅读原理、测量记录和实验结论|[完整实验报告](report/report.md) · [排版阅读版](https://hnnuyuxuan.github.io/general-physics-lab/experiments/course-01/pendulum/report/report.html)|GitHub、Markdown 阅读器或本地浏览器|
 |筛选数据、改变摆角、播放运动|[HTML 交互阅读版](https://hnnuyuxuan.github.io/general-physics-lab/experiments/course-01/pendulum/notebooks/analysis.html)|直接在线打开，也可下载到本机|
 |逐步运行和修改 Python 计算|[Jupyter Notebook](notebooks/analysis.ipynb)|JupyterLab 或 VS Code|

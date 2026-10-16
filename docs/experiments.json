@@ -71,8 +71,8 @@
           "path": "experiments/course-01/pendulum/README.md",
           "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/experiments/course-01/pendulum/README.md",
           "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-01/pendulum/README.md",
-          "sha256": "9ada9c667baa398caf9e2b3eb9a71806b9ea2935e9575c4ce4de25714ad65249",
-          "bytes": 6338,
+          "sha256": "8631eafa32c234bef2c63e4b45e2ad0c9e89e785c91e65393936839a87cfb0ad",
+          "bytes": 6674,
           "hash_basis": "utf8-lf"
         },
         "report": {
@@ -211,6 +211,87 @@
           "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-01/pendulum/results/wolfram-tests.json",
           "sha256": "5d57ef606bdff4b62bbf6ba1c3b1bc200050903197772221b496cef482f77538",
           "bytes": 225,
+          "hash_basis": "utf8-lf"
+        },
+        "simulation_html": {
+          "path": "simulations/pendulum/index.html",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/simulations/pendulum/index.html",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/pendulum/index.html",
+          "sha256": "1e5dafe18fb0d679a2cac76f1bf89ac1434ed14b0e64d12fa7510a1e7a498ac2",
+          "bytes": 9282,
+          "hash_basis": "utf8-lf",
+          "online_url": "https://hnnuyuxuan.github.io/general-physics-lab/simulations/pendulum/index.html"
+        },
+        "simulation_model": {
+          "path": "simulations/pendulum/model.mjs",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/simulations/pendulum/model.mjs",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/pendulum/model.mjs",
+          "sha256": "c6f9abf87da6ed6716227bdf690f9a2c1af4316489308ec9d756fa1ff7c0aaee",
+          "bytes": 10666,
+          "hash_basis": "utf8-lf"
+        },
+        "simulation_controller": {
+          "path": "simulations/pendulum/app.mjs",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/simulations/pendulum/app.mjs",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/pendulum/app.mjs",
+          "sha256": "a23570bab007ba715e5bb27c84770c26effd6d73f462a9406c7cd7e79d577e5f",
+          "bytes": 23339,
+          "hash_basis": "utf8-lf"
+        },
+        "simulation_charts": {
+          "path": "simulations/pendulum/chart.mjs",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/simulations/pendulum/chart.mjs",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/pendulum/chart.mjs",
+          "sha256": "35b3acfdedc7cca02a05e05f388a102f938a2abf9277ce74e145e0d023e661bf",
+          "bytes": 11314,
+          "hash_basis": "utf8-lf"
+        },
+        "simulation_styles": {
+          "path": "simulations/pendulum/lab.css",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/simulations/pendulum/lab.css",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/pendulum/lab.css",
+          "sha256": "9510f0ed8e1348fd7e849ea840f2f0f01f8d9f5634a1d4033e054c25f2f0c7e8",
+          "bytes": 7465,
+          "hash_basis": "utf8-lf"
+        },
+        "simulation_observations": {
+          "path": "simulations/pendulum/observations.json",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/simulations/pendulum/observations.json",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/pendulum/observations.json",
+          "sha256": "0c88145128c76ca62181dbea594f16a1fa63229a92f1c7be7b399fc70dfab9b4",
+          "bytes": 16618,
+          "hash_basis": "utf8-lf"
+        },
+        "model_evidence": {
+          "path": "docs/pendulum-model-evidence.md",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/docs/pendulum-model-evidence.md",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/pendulum-model-evidence.md",
+          "sha256": "cd374aad3851104dab328b353b7237a68f6675f9dbc03b0a83b317e12ecd03f1",
+          "bytes": 13446,
+          "hash_basis": "utf8-lf"
+        },
+        "references_json": {
+          "path": "docs/pendulum-references.json",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/docs/pendulum-references.json",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/pendulum-references.json",
+          "sha256": "c3ca6854e3d0233fff4fb30c6e0176e57e3c0f6e7ca8a98f39bed110b8db6dcb",
+          "bytes": 7616,
+          "hash_basis": "utf8-lf"
+        },
+        "references_bibtex": {
+          "path": "docs/pendulum-references.bib",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/docs/pendulum-references.bib",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/pendulum-references.bib",
+          "sha256": "68c60d2e3a04a5c459e1d4c5700d985c3f1727f97e76d650e0afae31487fe576",
+          "bytes": 1991,
+          "hash_basis": "utf8-lf"
+        },
+        "simulation_validation": {
+          "path": "docs/simulation/pendulum-reference.json",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/docs/simulation/pendulum-reference.json",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/simulation/pendulum-reference.json",
+          "sha256": "53614b0e718855f86e5155fdbe5643f3a22fb0d9e142c9d52aa5d08098c40ad8",
+          "bytes": 627811,
           "hash_basis": "utf8-lf"
         },
         "source_pdf": {

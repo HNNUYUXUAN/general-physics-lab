@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>单摆虚拟实验</title><meta name="description" content="有文献依据的单摆虚拟实验：非线性运动、周期计时、重力加速度拟合与原报告观测对照。"><link rel="stylesheet" href="./lab.css"><script type="module" src="./app.mjs"></script></head>
+<body class="virtual-lab">
+<main class="lab-shell">
+<header class="lab-heading">
+<h1>单摆虚拟实验</h1>
+<p>调节摆长与初始角度，记录周期，估计重力加速度。</p><nav aria-label="实验章节" class="lab-nav"><a href="#operation">实验操作</a><a href="#analysis">数据分析</a><a href="#evidence">模型依据</a></nav></header>
+<section id="operation" class="workbench" aria-label="单摆装置与参数">
+<div class="instrument"><svg id="pendulum" viewBox="0 0 700 360" role="img" aria-label="单摆运动示意，摆长为悬点到质点摆球的距离"></svg>
+<div class="playback">
+<button id="play" type="button">开始</button>
+<button id="reset" type="button">复位</button><span>时间 <i>t</i> = <output id="clock">0.00</output> s</span></div>
+<p class="caption">图 1　理想单摆；长度按统一比例绘制，摆球作为质点显示</p></div>
+<aside class="parameters">
+<h2>实验参数</h2>
+<label for="length">摆长 $L/\mathrm{m}$ <output id="length-value" for="length">1.00</output></label>
+<input id="length" type="range" min="0.2" max="1.2" step="0.01" value="1">
+<p class="range-ends"><span>0.20 m</span><span>1.20 m</span></p>
+<label for="angle">初始摆角 $\theta_0/{}^\circ$ <output id="angle-value" for="angle">20</output></label>
+<input id="angle" type="range" min="1" max="60" step="1" value="20">
+<p class="range-ends"><span>1°</span><span>60°</span></p>
+<div class="field-row">
+<label for="gravity">重力加速度 $g/(\mathrm{m}\,\mathrm{s}^{-2})$</label>
+<input id="gravity" type="number" min="1" max="20" step="any" value="9.81"></div>
+<p class="help">9.81 为教学情景比较值。<button class="text-button" id="source-gravity" type="button">采用原报告拟合值</button></p>
+<div class="field-row">
+<label for="cycles">计数周期数 $N$</label>
+<input id="cycles" type="number" min="1" max="100" step="1" value="20"></div>
+<button id="record" type="button" class="wide">记录 20 个周期</button>
+<p class="help">自动记录采用完整非线性周期，保存理想模型的 $NT$。下方可自行计时。</p>
+<label class="checkbox">
+<input id="compare-linear" type="checkbox" checked> 同时显示小角度解</label>
+<p id="status" role="status" aria-live="polite">调节参数后，点击开始观察运动。</p></aside>
+</section>
+<section class="timer-section" aria-labelledby="timer-heading">
+<div>
+<h2 id="timer-heading">手动计时</h2>
+<p>摆球经过同一位置、沿同一方向运动时开始计时，数满 $N$ 个周期后停止。仿真时钟随暂停冻结。多周期计时的误差传播讨论见文献 [3]。</p></div>
+<div class="timer-controls"><output id="timer-value">0.000 s</output>
+<button type="button" id="timer-start">开始计时</button>
+<button type="button" id="timer-stop" disabled>停止计时</button>
+<button type="button" id="timer-record" disabled>保存计时</button></div>
+<p id="timer-status" role="status">先开始摆球运动，再选择计时起点。</p></section>
+<section id="analysis" aria-labelledby="analysis-heading">
+<h2 id="analysis-heading">数据分析</h2>
+<div class="analysis-grid">
+<figure><svg id="trajectory" viewBox="0 0 560 320" role="img" aria-label="非线性单摆与小角度解的摆角时间曲线"></svg><figcaption>图 2　摆角随时间变化；实线为非线性解，灰色虚线为小角度解</figcaption>
+<div id="summary" class="summary" aria-live="polite"></div></figure>
+<div class="record-panel">
+<p class="table-title" id="records-title">表 1　虚拟测量记录（<output id="record-count">0</output> 组）</p>
+<div class="table-scroll">
+<table aria-labelledby="records-title">
+<thead>
+<tr><th>来源</th><th>$L/\mathrm m$</th><th>$\theta_0/{}^\circ$</th><th>$g/(\mathrm{m}\,\mathrm{s}^{-2})$</th><th>$N$</th><th>$t/\mathrm s$</th><th>$T/\mathrm s$</th><th>操作</th></tr></thead>
+<tbody id="records">
+<tr><td colspan="8">改变摆长后记录至少三组数据，进行含截距拟合。</td></tr></tbody></table></div>
+<div class="record-actions">
+<button type="button" id="export-csv">导出 CSV</button>
+<button type="button" id="export-json">导出实验 JSON</button>
+<button type="button" id="clear">清空虚拟记录</button></div>
+<p class="help">记录保存在当前浏览器；导出保留完整数值、数据来源与参数。</p></div></div>
+<div class="analysis-grid lower-analysis">
+<figure>
+<div class="fit-filter">
+<label for="fit-source">拟合数据</label><select id="fit-source"><option value="ideal-model">自动计时</option><option value="manual-timing">手动计时</option></select></div><svg id="fit-chart" viewBox="0 0 560 320" role="img" aria-label="周期平方与摆长的拟合"></svg><figcaption>图 3　当前重力与初始摆角下的 $T^2$–$L$ 关系</figcaption>
+<p id="fit-result" role="status">需要至少三组、两个不同摆长的数据。</p></figure>
+<figure><div class="fit-filter"><span>摆角与周期</span></div><svg id="scan-chart" viewBox="0 0 560 320" role="img" aria-label="初始摆角与周期增量的关系"></svg><figcaption>图 4　有限摆角相对于小角度周期的增量</figcaption>
+<p class="help">拟合采用含截距的线性模型 [4]。固定初始摆角时，周期平方仍随摆长线性变化；用小角度公式反算的 $g$ 会偏低。</p></figure></div></section>
+<section class="observation-section" aria-labelledby="observation-heading">
+<h2 id="observation-heading">与原报告观测对照</h2>
+<p>原报告包含六组摆长，每组重复计时三次、每次 20 个周期。有效摆长等于悬点到球顶的长度加平均球半径；下表保留三次计时读数，并列出周期及周期平方。</p>
+<p class="table-title" id="observations-title">表 2　原报告观测数据的处理结果</p>
+<div class="table-scroll">
+<table aria-labelledby="observations-title">
+<thead>
+<tr><th>组次</th><th>有效摆长 / m</th><th>$t_1/\mathrm s$</th><th>$t_2/\mathrm s$</th><th>$t_3/\mathrm s$</th><th>$T/\mathrm s$</th><th>$T^2/\mathrm s^2$</th></tr></thead>
+<tbody id="source-table"></tbody></table></div>
+<p id="source-fit" role="status">正在读取观测数据。</p>
+<p class="help">原始测量摆角及仪器误差限未记录，观测拟合用于对照数据处理；其残差不能单独确定阻尼或计时误差。</p></section>
+<section id="evidence" class="evidence-section">
+<h2>模型依据</h2>
+<p>摆球视为质点，摆线无质量且不可伸长，悬点固定；在均匀重力场内作平面运动。初始角速度为零，忽略阻尼与驱动力。运动方程对应文献 [2] 的零阻尼情形。</p>
+<div class="equation">$$\ddot\theta+\frac{g}{L}\sin\theta=0,\qquad \theta(0)=\theta_0,\quad\dot\theta(0)=0.$$</div>
+<p>周期按文献 [1] 给出的第一类完全椭圆积分关系计算。这里 $k$ 为模数，$m=k^2$ 为部分计算库采用的参数。</p>
+<div class="equation">$$T=4\sqrt{\frac Lg}\,K(k),\qquad k=\sin\frac{\theta_0}{2},\qquad K(k)=\int_0^{\pi/2}\frac{\mathrm d\phi}{\sqrt{1-k^2\sin^2\phi}}.$$</div>
+<div class="equation">$$T_0=2\pi\sqrt{\frac Lg},\qquad T^2=aL+b,\qquad g_{\mathrm{fit}}=\frac{4\pi^2}{a}.$$</div>
+<p>周期比较和数值验证见<a href="../../docs/pendulum-model-evidence.md">模型、参数与文献依据</a>；后续模块组织见<a href="../../docs/virtual-lab-development.md">平台开发方案</a>。数值运动采用四阶 Runge–Kutta 方法，步长不大于 $1/240\ \mathrm s$；周期采用算术几何平均算法独立计算。</p>
+<p>本页面开放 $0.20\le L\le1.20\ \mathrm m$、$1^\circ\le\theta_0\le60^\circ$、$1\le g\le20\ \mathrm{m\,s^{-2}}$ 的教学参数域。角度上限用于保持柔性摆线张紧；数值检验覆盖该域的边界与代表点。</p>
+<div id="references">
+<h3>参考文献</h3><ol><li>鞠衍清，张风雷. 基于 MATLAB 的单摆周期近似解的比较. 大学物理，2007，26(3): 6–9. <a href="https://doi.org/10.16854/j.cnki.1000-0712.2007.03.002">DOI</a>。</li><li>柴聪聪，凤飞龙，王公正，卫芬芬. 大摆角单摆“周期”变化的解析解及其实验应用. 物理实验，2020，40(3): 48–50. <a href="https://doi.org/10.19655/j.cnki.1005-4642.2020.03.010">DOI</a>。</li><li>钱钧，张春玲，王槿. 不确定度理论在单摆实验教学中的应用. 大学物理实验，2009，22(3): 78–81. <a href="https://doi.org/10.14139/j.cnki.cn22-1228.2009.03.013">DOI</a>。</li><li>王震委，张磊，王美雅. Jupyter Notebook 在单摆测重力加速度实验中的应用. 湖北师范大学学报（自然科学版），2026，46(2): 25–30. <a href="https://doi.org/10.3969/j.issn.2096-3149.2026.02.004">DOI</a>。</li></ol></div>
+<p class="help">实验记录身份：自动计时为理想模型生成值，手动计时为交互操作结果，原报告观测为独立测量批次。</p></section>
+</main></body></html>

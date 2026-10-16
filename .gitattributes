@@ -19,3 +19,12 @@ site/vendor/** -text
 **/LICENSING.md text eol=lf
 **/THIRD_PARTY_NOTICES.md text eol=lf
 **/LICENSES/*.txt text eol=lf
+
+# Browser models and their reference generator use byte hashes in validation records.
+simulations/**/*.mjs text eol=lf
+simulations/**/*.css text eol=lf
+simulations/**/*.html text eol=lf
+simulations/**/*.json text eol=lf
+docs/simulation/*.json text eol=lf
+scripts/validate_pendulum_simulation.py text eol=lf
+tests/pendulum-model.test.mjs text eol=lf

@@ -14,6 +14,13 @@ Reproducible general physics laboratory experiments in mechanics, thermodynamics
 - [仓库工作约定 / AGENTS.md](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/AGENTS.md): 修改范围、数据和排版规则。
 - [运行环境 / Setup](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/usage.md): Python、Wolfram、字体与HTML阅读。
 
+## 虚拟实验 / Virtual laboratories
+
+- [单摆虚拟实验 / Pendulum simulation](https://hnnuyuxuan.github.io/general-physics-lab/simulations/pendulum/): 调参、计时、拟合和实验记录导出。
+- [单摆模型与文献依据](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/pendulum-model-evidence.md): 方程、参数身份、适用范围及独立验证。
+- [虚拟实验接手与复现](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/virtual-lab-agent-guide.md): WebVPN检索、全文归档、模型接口与发布验收。
+- [系列平台开发方案](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/virtual-lab-development.md): 首例功能、分层架构和扩展顺序。
+
 ## 检索目录
 
 - [45项实验检索目录 / Experiment index](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/experiment-index.md): 中英文名、常用别名、主题、方法和三稿入口。

@@ -1,5 +1,6 @@
 """Validate discovery metadata, local links and catalog/source consistency."""
 import json
+import hashlib
 from pathlib import Path
 import re
 import sys
@@ -14,7 +15,8 @@ import yaml
 from agent_catalog import ROOT, REPO, RAW, GENERATED, compile_catalog, documents, read_json, resource
 
 MANUAL = ('AGENTS.md', 'docs/agent-guide.md', 'docs/agent-reproduction.md',
-          'docs/agent-catalog.md', 'docs/discovery.md')
+          'docs/agent-catalog.md', 'docs/discovery.md', 'docs/virtual-lab-development.md',
+          'docs/virtual-lab-agent-guide.md', 'docs/pendulum-model-evidence.md')
 
 
 def target_for_url(url, source):
@@ -66,6 +68,17 @@ def validate():
         for metric in entry['key_results']:
             assert {key: value for key, value in metric.items() if key not in ('key', 'result_pointer', 'description')} == result['metrics'][metric['key']]
             metrics += 1
+        if 'simulation_validation' in entry['resources']:
+            reference = read_json(ROOT / entry['resources']['simulation_validation']['path'])
+            assert reference['experiment_id'] == entry['id'], ('Simulation reference identity', entry['id'])
+            if 'simulation_model' in entry['resources']:
+                model = ROOT / entry['resources']['simulation_model']['path']
+                assert hashlib.sha256(model.read_bytes()).hexdigest() == reference['browser_verification']['model_sha256'], ('Stale simulation model verification', model)
+        if 'simulation_observations' in entry['resources']:
+            observations = read_json(ROOT / entry['resources']['simulation_observations']['path'])
+            assert observations['experiment_id'] == entry['id'], ('Simulation observation identity', entry['id'])
+            for source in observations['source_files']:
+                assert hashlib.sha256((ROOT / source['path']).read_bytes()).hexdigest() == source['sha256'], ('Stale simulation observation source', source['path'])
     citation = yaml.safe_load((ROOT / 'CITATION.cff').read_text(encoding='utf-8'))
     assert citation['cff-version'] == '1.2.0' and citation['type'] == 'software'
     assert citation['repository-code'] == REPO and citation['url'] == REPO

@@ -1,0 +1,547 @@
+{
+  "schema_version": 1,
+  "experiment_id": "course-01/pendulum",
+  "source_identity": {
+    "label": "源实验报告观测记录",
+    "data_version": "1.0.0",
+    "measurement_date": "2025-11-13",
+    "nature": "源实验报告中记录的观测值；本项目未独立重新测量",
+    "primary_document": {
+      "archive_relative_path": "originals/course-01/单摆测重力加速度/牛顿第二运动定律测重力加速度实验报告.docx",
+      "sha256": "f67986dc775724ada8e57e89b62cb65b0ecb2f8ed5d7a7da2f0104c1d875972f"
+    },
+    "pdf_url": "../../pdf/course-01/单摆测重力加速度/牛顿第二运动定律测重力加速度实验报告.pdf"
+  },
+  "source_files": [
+    {
+      "path": "experiments/course-01/pendulum/experiment.json",
+      "sha256": "13efde7fbe369696f15c0aa18c7a4581f47df342eb169b5185ba4ced5139318b"
+    },
+    {
+      "path": "experiments/course-01/pendulum/data/diameters.csv",
+      "sha256": "d334a3b2dba6a1d4443a31340dc4e13f074b49995f68bee22e4e1fc0a01ef0ae"
+    },
+    {
+      "path": "experiments/course-01/pendulum/data/measurements.csv",
+      "sha256": "6f29a04aeb32d3497a7cf0681266a07d061d13a6a2091e8c56106ee6b53e40ed"
+    },
+    {
+      "path": "experiments/course-01/pendulum/data/provenance.json",
+      "sha256": "27de6bc59f7db65a96362edd914b63a12b1be00b162928a27a61383f825f4b57"
+    },
+    {
+      "path": "experiments/course-01/pendulum/results/python.json",
+      "sha256": "b01916fecc765763bd4c034d17b388690eeb115d1550bf1ba1147b19050e2ea3"
+    },
+    {
+      "path": "src/physicslab/experiments/pendulum.py",
+      "sha256": "16b762c35dfd36e3b5f812fe4bae2568ebdf0f18d02fc3fd7fd521f93a9e8d6a"
+    }
+  ],
+  "parameters": {
+    "oscillations_per_reading": 20,
+    "units": {
+      "string_length_cm": "cm",
+      "diameter_cm": "cm",
+      "elapsed_time_s": "s",
+      "oscillations": "1"
+    },
+    "length_definition": "悬点至球顶的长度；有效摆长加平均球直径的一半",
+    "reference_gravity_m_s2": 9.81,
+    "reference_gravity_status": "源报告给定的比较值，未获得当地独立标定证据",
+    "measured_initial_angle_deg": null,
+    "instrument_error_limits": {
+      "length_error_limit_m": null,
+      "diameter_error_limit_m": null,
+      "stopwatch_error_limit_s": null
+    },
+    "uncertainty_scope": "重复测量均值的A类标准不确定度；OLS残差估计的回归标准误。仪器B类和完整合成不确定度未确定。"
+  },
+  "raw": {
+    "diameters": [
+      {
+        "repeat_id": 1,
+        "diameter_cm": 2.002,
+        "as_recorded": {
+          "repeat_id": "1",
+          "diameter_cm": "2.002"
+        }
+      },
+      {
+        "repeat_id": 2,
+        "diameter_cm": 1.998,
+        "as_recorded": {
+          "repeat_id": "2",
+          "diameter_cm": "1.998"
+        }
+      },
+      {
+        "repeat_id": 3,
+        "diameter_cm": 2.0,
+        "as_recorded": {
+          "repeat_id": "3",
+          "diameter_cm": "2.000"
+        }
+      },
+      {
+        "repeat_id": 4,
+        "diameter_cm": 2.004,
+        "as_recorded": {
+          "repeat_id": "4",
+          "diameter_cm": "2.004"
+        }
+      },
+      {
+        "repeat_id": 5,
+        "diameter_cm": 1.996,
+        "as_recorded": {
+          "repeat_id": "5",
+          "diameter_cm": "1.996"
+        }
+      },
+      {
+        "repeat_id": 6,
+        "diameter_cm": 2.0,
+        "as_recorded": {
+          "repeat_id": "6",
+          "diameter_cm": "2.000"
+        }
+      }
+    ],
+    "measurements": [
+      {
+        "run_id": 1,
+        "repeat_id": 1,
+        "string_length_cm": 50.5,
+        "oscillations": 20,
+        "elapsed_time_s": 28.78,
+        "as_recorded": {
+          "run_id": "1",
+          "repeat_id": "1",
+          "string_length_cm": "50.50",
+          "oscillations": "20",
+          "elapsed_time_s": "28.78"
+        }
+      },
+      {
+        "run_id": 1,
+        "repeat_id": 2,
+        "string_length_cm": 50.5,
+        "oscillations": 20,
+        "elapsed_time_s": 28.74,
+        "as_recorded": {
+          "run_id": "1",
+          "repeat_id": "2",
+          "string_length_cm": "50.50",
+          "oscillations": "20",
+          "elapsed_time_s": "28.74"
+        }
+      },
+      {
+        "run_id": 1,
+        "repeat_id": 3,
+        "string_length_cm": 50.5,
+        "oscillations": 20,
+        "elapsed_time_s": 28.76,
+        "as_recorded": {
+          "run_id": "1",
+          "repeat_id": "3",
+          "string_length_cm": "50.50",
+          "oscillations": "20",
+          "elapsed_time_s": "28.76"
+        }
+      },
+      {
+        "run_id": 2,
+        "repeat_id": 1,
+        "string_length_cm": 60.2,
+        "oscillations": 20,
+        "elapsed_time_s": 31.4,
+        "as_recorded": {
+          "run_id": "2",
+          "repeat_id": "1",
+          "string_length_cm": "60.20",
+          "oscillations": "20",
+          "elapsed_time_s": "31.40"
+        }
+      },
+      {
+        "run_id": 2,
+        "repeat_id": 2,
+        "string_length_cm": 60.2,
+        "oscillations": 20,
+        "elapsed_time_s": 31.38,
+        "as_recorded": {
+          "run_id": "2",
+          "repeat_id": "2",
+          "string_length_cm": "60.20",
+          "oscillations": "20",
+          "elapsed_time_s": "31.38"
+        }
+      },
+      {
+        "run_id": 2,
+        "repeat_id": 3,
+        "string_length_cm": 60.2,
+        "oscillations": 20,
+        "elapsed_time_s": 31.43,
+        "as_recorded": {
+          "run_id": "2",
+          "repeat_id": "3",
+          "string_length_cm": "60.20",
+          "oscillations": "20",
+          "elapsed_time_s": "31.43"
+        }
+      },
+      {
+        "run_id": 3,
+        "repeat_id": 1,
+        "string_length_cm": 70.1,
+        "oscillations": 20,
+        "elapsed_time_s": 33.85,
+        "as_recorded": {
+          "run_id": "3",
+          "repeat_id": "1",
+          "string_length_cm": "70.10",
+          "oscillations": "20",
+          "elapsed_time_s": "33.85"
+        }
+      },
+      {
+        "run_id": 3,
+        "repeat_id": 2,
+        "string_length_cm": 70.1,
+        "oscillations": 20,
+        "elapsed_time_s": 33.88,
+        "as_recorded": {
+          "run_id": "3",
+          "repeat_id": "2",
+          "string_length_cm": "70.10",
+          "oscillations": "20",
+          "elapsed_time_s": "33.88"
+        }
+      },
+      {
+        "run_id": 3,
+        "repeat_id": 3,
+        "string_length_cm": 70.1,
+        "oscillations": 20,
+        "elapsed_time_s": 33.82,
+        "as_recorded": {
+          "run_id": "3",
+          "repeat_id": "3",
+          "string_length_cm": "70.10",
+          "oscillations": "20",
+          "elapsed_time_s": "33.82"
+        }
+      },
+      {
+        "run_id": 4,
+        "repeat_id": 1,
+        "string_length_cm": 80.05,
+        "oscillations": 20,
+        "elapsed_time_s": 36.16,
+        "as_recorded": {
+          "run_id": "4",
+          "repeat_id": "1",
+          "string_length_cm": "80.05",
+          "oscillations": "20",
+          "elapsed_time_s": "36.16"
+        }
+      },
+      {
+        "run_id": 4,
+        "repeat_id": 2,
+        "string_length_cm": 80.05,
+        "oscillations": 20,
+        "elapsed_time_s": 36.19,
+        "as_recorded": {
+          "run_id": "4",
+          "repeat_id": "2",
+          "string_length_cm": "80.05",
+          "oscillations": "20",
+          "elapsed_time_s": "36.19"
+        }
+      },
+      {
+        "run_id": 4,
+        "repeat_id": 3,
+        "string_length_cm": 80.05,
+        "oscillations": 20,
+        "elapsed_time_s": 36.14,
+        "as_recorded": {
+          "run_id": "4",
+          "repeat_id": "3",
+          "string_length_cm": "80.05",
+          "oscillations": "20",
+          "elapsed_time_s": "36.14"
+        }
+      },
+      {
+        "run_id": 5,
+        "repeat_id": 1,
+        "string_length_cm": 90.3,
+        "oscillations": 20,
+        "elapsed_time_s": 38.38,
+        "as_recorded": {
+          "run_id": "5",
+          "repeat_id": "1",
+          "string_length_cm": "90.30",
+          "oscillations": "20",
+          "elapsed_time_s": "38.38"
+        }
+      },
+      {
+        "run_id": 5,
+        "repeat_id": 2,
+        "string_length_cm": 90.3,
+        "oscillations": 20,
+        "elapsed_time_s": 38.41,
+        "as_recorded": {
+          "run_id": "5",
+          "repeat_id": "2",
+          "string_length_cm": "90.30",
+          "oscillations": "20",
+          "elapsed_time_s": "38.41"
+        }
+      },
+      {
+        "run_id": 5,
+        "repeat_id": 3,
+        "string_length_cm": 90.3,
+        "oscillations": 20,
+        "elapsed_time_s": 38.35,
+        "as_recorded": {
+          "run_id": "5",
+          "repeat_id": "3",
+          "string_length_cm": "90.30",
+          "oscillations": "20",
+          "elapsed_time_s": "38.35"
+        }
+      },
+      {
+        "run_id": 6,
+        "repeat_id": 1,
+        "string_length_cm": 100.1,
+        "oscillations": 20,
+        "elapsed_time_s": 40.4,
+        "as_recorded": {
+          "run_id": "6",
+          "repeat_id": "1",
+          "string_length_cm": "100.10",
+          "oscillations": "20",
+          "elapsed_time_s": "40.40"
+        }
+      },
+      {
+        "run_id": 6,
+        "repeat_id": 2,
+        "string_length_cm": 100.1,
+        "oscillations": 20,
+        "elapsed_time_s": 40.43,
+        "as_recorded": {
+          "run_id": "6",
+          "repeat_id": "2",
+          "string_length_cm": "100.10",
+          "oscillations": "20",
+          "elapsed_time_s": "40.43"
+        }
+      },
+      {
+        "run_id": 6,
+        "repeat_id": 3,
+        "string_length_cm": 100.1,
+        "oscillations": 20,
+        "elapsed_time_s": 40.38,
+        "as_recorded": {
+          "run_id": "6",
+          "repeat_id": "3",
+          "string_length_cm": "100.10",
+          "oscillations": "20",
+          "elapsed_time_s": "40.38"
+        }
+      }
+    ]
+  },
+  "derived": {
+    "method": "原始读数转换为 SI 单位，重复计时取均值；含截距普通最小二乘拟合 T² 对有效摆长。",
+    "diameter": {
+      "mean_m": 0.02,
+      "mean_u_a_m": 1.1547005383792246e-05
+    },
+    "groups": [
+      {
+        "run_id": 1,
+        "source_repeat_ids": [
+          1,
+          2,
+          3
+        ],
+        "string_length_m": 0.505,
+        "effective_length_m": 0.515,
+        "mean_elapsed_time_s": 28.76,
+        "time_mean_u_a_s": 0.011547005383793295,
+        "period_s": 1.4380000000000002,
+        "period_u_a_s": 0.0005773502691896647,
+        "period_squared_s2": 2.0678440000000005,
+        "period_squared_u_a_s2": 0.0016604593741894758,
+        "gravity_individual_m_s2": 9.832165804695167,
+        "residual_s2": -0.0020003892469708795
+      },
+      {
+        "run_id": 2,
+        "source_repeat_ids": [
+          1,
+          2,
+          3
+        ],
+        "string_length_m": 0.602,
+        "effective_length_m": 0.612,
+        "mean_elapsed_time_s": 31.403333333333336,
+        "time_mean_u_a_s": 0.014529663145135811,
+        "period_s": 1.5701666666666667,
+        "period_u_a_s": 0.0007264831572567906,
+        "period_squared_s2": 2.465423361111111,
+        "period_squared_u_a_s2": 0.0022813992748387415,
+        "gravity_individual_m_s2": 9.79985504922693,
+        "residual_s2": 0.0022229798743058637
+      },
+      {
+        "run_id": 3,
+        "source_repeat_ids": [
+          1,
+          2,
+          3
+        ],
+        "string_length_m": 0.701,
+        "effective_length_m": 0.711,
+        "mean_elapsed_time_s": 33.85,
+        "time_mean_u_a_s": 0.01732050807568943,
+        "period_s": 1.6925000000000001,
+        "period_u_a_s": 0.0008660254037844714,
+        "period_squared_s2": 2.8645562500000006,
+        "period_squared_u_a_s2": 0.002931495991810436,
+        "gravity_individual_m_s2": 9.798779450289421,
+        "residual_s2": -0.00011055605117205047
+      },
+      {
+        "run_id": 4,
+        "source_repeat_ids": [
+          1,
+          2,
+          3
+        ],
+        "string_length_m": 0.8005,
+        "effective_length_m": 0.8105,
+        "mean_elapsed_time_s": 36.163333333333334,
+        "time_mean_u_a_s": 0.014529663145134862,
+        "period_s": 1.8081666666666667,
+        "period_u_a_s": 0.0007264831572567431,
+        "period_squared_s2": 3.2694666944444446,
+        "period_squared_u_a_s2": 0.002627205257692802,
+        "gravity_individual_m_s2": 9.786690142065737,
+        "residual_s2": 0.0013058553727716138
+      },
+      {
+        "run_id": 5,
+        "source_repeat_ids": [
+          1,
+          2,
+          3
+        ],
+        "string_length_m": 0.903,
+        "effective_length_m": 0.913,
+        "mean_elapsed_time_s": 38.379999999999995,
+        "time_mean_u_a_s": 0.01732050807568738,
+        "period_s": 1.9189999999999998,
+        "period_u_a_s": 0.0008660254037843689,
+        "period_squared_s2": 3.6825609999999993,
+        "period_squared_u_a_s2": 0.0033238054997244072,
+        "gravity_individual_m_s2": 9.787698091838356,
+        "residual_s2": -0.0012595213289730012
+      },
+      {
+        "run_id": 6,
+        "source_repeat_ids": [
+          1,
+          2,
+          3
+        ],
+        "string_length_m": 1.001,
+        "effective_length_m": 1.011,
+        "mean_elapsed_time_s": 40.403333333333336,
+        "time_mean_u_a_s": 0.014529663145134862,
+        "period_s": 2.020166666666667,
+        "period_u_a_s": 0.0007264831572567431,
+        "period_squared_s2": 4.081073361111112,
+        "period_squared_u_a_s2": 0.0029352341163696614,
+        "gravity_individual_m_s2": 9.779946760657777,
+        "residual_s2": -0.0001583686199611023
+      }
+    ],
+    "fit": {
+      "method": "ordinary_least_squares_with_intercept",
+      "slope_s2_m": 4.055216412266335,
+      "intercept_s2": -0.018592063070191234,
+      "slope_standard_error_s2_m": 0.004208002029701256,
+      "r_squared": 0.9999956929299988,
+      "gravity_m_s2": 9.73521844233565,
+      "gravity_regression_standard_error_m_s2": 0.01010200561455091,
+      "gravity_individual_mean_m_s2": 9.797522549795564,
+      "uncertainty_definition": "OLS 残差估计的回归标准误，不包含仪器与完整系统误差预算。"
+    }
+  },
+  "provenance": {
+    "schema_version": 1,
+    "verified_against": "DOCX document.xml tables and converted CSV numeric cells",
+    "sources": [
+      {
+        "archive_relative_path": "originals/course-01/单摆测重力加速度/牛顿第二运动定律测重力加速度实验报告.docx",
+        "sha256": "f67986dc775724ada8e57e89b62cb65b0ecb2f8ed5d7a7da2f0104c1d875972f"
+      },
+      {
+        "archive_relative_path": "processed/courses-01-03-04/普通物理实验1/单摆测重力加速度/牛顿第二运动定律测重力加速度实验报告_docx/正文.md",
+        "sha256": "c1a7652f5e3d5138c90fb08656d6064f757f150bbc3f22d836c40af2ddb5e52b"
+      },
+      {
+        "archive_relative_path": "processed/courses-01-03-04/普通物理实验1/单摆测重力加速度/牛顿第二运动定律测重力加速度实验报告_docx/数据/表001.csv",
+        "sha256": "69307d59162106cdf385827df42012f9f0ab7b376b566fe0cbb7f5f37c2efd5d"
+      },
+      {
+        "archive_relative_path": "processed/courses-01-03-04/普通物理实验1/单摆测重力加速度/牛顿第二运动定律测重力加速度实验报告_docx/数据/表002.csv",
+        "sha256": "9c156641ae60337eae41b6586fd18d021e538ebe0b5e4ad28088532de030b959"
+      }
+    ],
+    "column_mapping": {
+      "diameters.csv": "DOCX表1，第2行，6次独立直径记录；排除平均值列",
+      "measurements.csv": "DOCX表2，第2至7行；使用组号、长度及t1/t2/t3；每条记录20次全振动"
+    },
+    "transformations": [
+      "保留源记录的cm和s及小数位；计算时显式换算SI单位",
+      "宽表计时记录转换为每行一次重复测量",
+      "源表均值、周期、周期平方和源报告拟合结果均不作为计算输入"
+    ],
+    "issues": [
+      {
+        "id": "P01",
+        "status": "corrected_in_authored_outputs",
+        "detail": "源报告标题和实验名称混入牛顿第二定律；按原理、步骤和数据统一为单摆测重力加速度。"
+      },
+      {
+        "id": "P02",
+        "status": "corrected_in_authored_outputs",
+        "detail": "源公式把T²关系与g公式串联，输出中分别排版。"
+      },
+      {
+        "id": "P03",
+        "status": "recompute",
+        "detail": "源报告拟合斜率与g须由未修约计时记录重新计算。"
+      },
+      {
+        "id": "P04",
+        "status": "unresolved",
+        "detail": "仪器型号、误差限和当地g标定证据未提供；不填造B类不确定度。"
+      }
+    ]
+  }
+}

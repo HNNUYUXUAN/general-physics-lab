@@ -40,6 +40,20 @@ python scripts/agent_catalog.py show course-03/rlc-resonance --json
 
 `verification` 描述随仓库保存的记录。重新执行产生的新记录按[复现指南](agent-reproduction.md)处理。模型条件、不确定度定义与来源细节分别读取 `experiment.json`、原始结果及 `data/provenance.json`。
 
+提供虚拟实验的条目在 `resources` 中增加以下可选键；目前由 `course-01/pendulum` 提供。各资源沿用相同的路径、URL、哈希和字节数字段，HTML 的 `online_url` 直接指向运行页面。
+
+|资源键|内容|
+|---|---|
+|`simulation_html`|虚拟实验页面|
+|`simulation_model`|浏览器物理模型|
+|`simulation_controller`、`simulation_charts`、`simulation_styles`|操作状态、SVG 绘图和样式|
+|`simulation_observations`|原报告观测与派生量，以及源文件哈希|
+|`model_evidence`|模型方程、参数来源、适用范围与验证方法|
+|`references_json`、`references_bibtex`|可核查题录、引用定位与文献管理格式|
+|`simulation_validation`|独立参考计算、参数网格、容差、环境和模型验证记录|
+
+ES modules、CSS、BibTeX 与其他文本资源统一采用 `utf8-lf` 内容哈希。数值验证记录中的模型和观测源哈希继续按原字节核验，相关源文件通过 `.gitattributes` 固定行尾。
+
 CSV表头按位置原样列出，同名和空白列保留原表结构；参与计算的表和列由计算模块确定。指标的 `label` 沿用保存结果；提供 `description` 的指标附有检索释义，结合指标键与单位阅读。
 
 ## 更新目录

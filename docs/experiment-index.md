@@ -16,6 +16,8 @@
 
 [实验入口](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-01/pendulum/README.md) · [报告](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-01/pendulum/report/report.md) · [Jupyter](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-01/pendulum/notebooks/analysis.ipynb) · [Wolfram](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/PendulumLab/Notebooks/Pendulum.nb) · [源PDF](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/pdf/course-01/%E5%8D%95%E6%91%86%E6%B5%8B%E9%87%8D%E5%8A%9B%E5%8A%A0%E9%80%9F%E5%BA%A6/%E7%89%9B%E9%A1%BF%E7%AC%AC%E4%BA%8C%E8%BF%90%E5%8A%A8%E5%AE%9A%E5%BE%8B%E6%B5%8B%E9%87%8D%E5%8A%9B%E5%8A%A0%E9%80%9F%E5%BA%A6%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A.pdf)
 
+[虚拟实验](https://hnnuyuxuan.github.io/general-physics-lab/simulations/pendulum/index.html) · [模型依据](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/pendulum-model-evidence.md) · [浏览器模型](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/pendulum/model.mjs) · [观测对照](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/pendulum/observations.json) · [文献题录](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/pendulum-references.json) · [数值验证](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/simulation/pendulum-reference.json)
+
 
 ### 多普勒效应的验证 · Verification of the Acoustic Doppler Effect
 
