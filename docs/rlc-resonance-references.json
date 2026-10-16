@@ -1,0 +1,64 @@
+{
+  "experimentId": "course-03/rlc-resonance",
+  "references": [
+    {
+      "id": "wang2012",
+      "authors": [
+        "汪艳",
+        "夏雪琴"
+      ],
+      "title": "RC、RL及RLC串联电路幅频和相频特性的研究",
+      "journal": "大学物理实验",
+      "year": 2012,
+      "volume": "25",
+      "issue": "5",
+      "pages": "55–60",
+      "doi": "10.14139/j.cnki.cn22-1228.2012.05.005",
+      "fulltextSha256": "386a9960a2f20543ebda2c30a0d581e3c4cf72fc3a2523ea0b3442fa2225d909",
+      "readingStatus": "verified-fulltext",
+      "locators": [
+        "p.57, §1.3, equations (18)–(22)"
+      ],
+      "uses": [
+        "Series RLC steady-state current, resistor/inductor/capacitor voltages, phase, resonance frequency"
+      ],
+      "notes": [
+        "Source phase is voltage minus current; simulation uses current minus voltage, so signs are opposite.",
+        "Frequency-direction typo in inductive regime resolved using equation and limiting behavior."
+      ]
+    },
+    {
+      "id": "chen2025",
+      "authors": [
+        "陈悦华",
+        "冯卓宏",
+        "庄滟彤",
+        "王哲哲",
+        "林鹤",
+        "郑卫峰",
+        "姚胡蓉",
+        "王丽丽"
+      ],
+      "title": "RC、RL和RLC串联电路幅频及相频特性实验优化研究",
+      "journal": "实验室科学",
+      "year": 2025,
+      "volume": "28",
+      "issue": "4",
+      "pages": "188–192",
+      "doi": "10.3969/j.issn.1672-4305.2025.04.036",
+      "fulltextSha256": "5a43aa819d83ddef3d2d0db1b004fce3e8df6da799fa61a859fe8c09c73775e5",
+      "readingStatus": "verified-fulltext",
+      "locators": [
+        "p.189 instrument impedance and source loading discussion",
+        "pp.191–192, §2.2.2 RLC phase and resonance"
+      ],
+      "uses": [
+        "Instrument impedance and frequency response define apparatus-specific applicability"
+      ],
+      "notes": [
+        "The printed 1 Mohm signal-generator output impedance needs instrument-level confirmation; no numerical default is taken from it.",
+        "Table 1 values are not used as numerical validation fixtures."
+      ]
+    }
+  ]
+}

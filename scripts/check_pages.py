@@ -43,6 +43,14 @@ def check(site):
     for e in registry:
         for path in ['index.html','notebooks/analysis.html','report/report.html']:
             assert (site/'experiments'/e['id']/path).is_file(),(e['id'],path)
+    for simulation in manifest.get('simulations',[]):
+        page=simulation['page']
+        if page not in pages:errors.append([page,'simulation page not registered'])
+        for name,relative in simulation['resources'].items():
+            if name in {'simulation_html','simulation_model','simulation_controller','simulation_charts','simulation_styles','simulation_observations','references_json','references_bibtex','simulation_validation'} and not (site/relative).is_file():
+                errors.append([relative,'missing registered simulation resource'])
+            if name=='model_evidence' and not (site/Path(relative).with_suffix('.html')).is_file():
+                errors.append([relative,'model evidence page missing'])
     for source in manifest['source_html']:
         if sha(ROOT/source['path'])!=source['sha256']:errors.append([source['path'],'source changed during build'])
         # Inline Plotly bytes are retained by the HTML parser; their signatures remain accessible.

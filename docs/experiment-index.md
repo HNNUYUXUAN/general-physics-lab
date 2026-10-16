@@ -130,6 +130,8 @@
 
 [实验入口](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-02/string-vibration/README.md) · [报告](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-02/string-vibration/report/report.md) · [Jupyter](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-02/string-vibration/notebooks/analysis.ipynb) · [Wolfram](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/StringVibrationLab/Notebooks/StringVibrationLab.nb) · [源PDF](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/pdf/course-02/03-%E5%BC%A6%E6%8C%AF%E5%8A%A8%E7%9A%84%E7%A0%94%E7%A9%B6/%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A-%E5%BC%A6%E6%8C%AF%E5%8A%A8%E7%9A%84%E7%A0%94%E7%A9%B6.pdf)
 
+[虚拟实验](https://hnnuyuxuan.github.io/general-physics-lab/simulations/string-vibration/index.html) · [模型依据](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/string-vibration-model-evidence.md) · [浏览器模型](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/string-vibration/model.mjs) · [观测对照](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/string-vibration/observations.json) · [文献题录](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/string-vibration-references.json) · [数值验证](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/simulation/string-vibration-reference.json)
+
 
 ### 声速的测量 · Speed of Sound by Standing-Wave and Phase-Comparison Methods
 
@@ -330,6 +332,8 @@
 
 [实验入口](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/rlc-resonance/README.md) · [报告](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/rlc-resonance/report/report.md) · [Jupyter](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/rlc-resonance/notebooks/analysis.ipynb) · [Wolfram](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/RLCResonanceLab/Notebooks/RLCResonanceLab.nb) · [源PDF](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/pdf/course-03/11RLC%E4%B8%B2%E8%81%94%E7%94%B5%E8%B7%AF%E8%B0%90%E6%8C%AF%E7%89%B9%E6%80%A7%E7%9A%84%E7%A0%94%E7%A9%B6/%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A-RLC%E4%B8%B2%E8%81%94%E7%94%B5%E8%B7%AF%E8%B0%90%E6%8C%AF%E7%89%B9%E6%80%A7%E7%9A%84%E7%A0%94%E7%A9%B6%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A.pdf)
 
+[虚拟实验](https://hnnuyuxuan.github.io/general-physics-lab/simulations/rlc-resonance/index.html) · [模型依据](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/rlc-resonance-model-evidence.md) · [浏览器模型](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/rlc-resonance/model.mjs) · [观测对照](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/rlc-resonance/observations.json) · [文献题录](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/rlc-resonance-references.json) · [数值验证](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/simulation/rlc-resonance-reference.json)
+
 
 ### 交流电桥 · Capacitance and Dielectric Loss with an AC Bridge
 
@@ -430,6 +434,8 @@
 主题：等厚干涉；反射半波损失；曲率半径；劈尖厚度。方法：暗环左右位置求直径；隔级直径平方差计算；全环级含截距拟合与残差；劈尖条纹间隔换算厚度；环级选择和中心间隙模型扫描。
 
 [实验入口](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/newton-rings/README.md) · [报告](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/newton-rings/report/report.md) · [Jupyter](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/newton-rings/notebooks/analysis.ipynb) · [Wolfram](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/NewtonRingsLab/Notebooks/NewtonRingsLab.nb) · [源PDF](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/pdf/course-04/07_%E5%AE%9E%E9%AA%8C%E4%B8%83_%E7%89%9B%E9%A1%BF%E7%8E%AF%E5%AE%9E%E9%AA%8C_%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A.pdf)
+
+[虚拟实验](https://hnnuyuxuan.github.io/general-physics-lab/simulations/newton-rings/index.html) · [模型依据](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/newton-rings-model-evidence.md) · [浏览器模型](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/newton-rings/model.mjs) · [观测对照](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/newton-rings/observations.json) · [文献题录](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/newton-rings-references.json) · [数值验证](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/simulation/newton-rings-reference.json)
 
 
 ### 迈克尔逊干涉仪的调节和使用 · Laser Wavelength Measurement with a Michelson Interferometer

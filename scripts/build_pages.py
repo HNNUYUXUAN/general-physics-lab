@@ -27,6 +27,12 @@ class Builder:
         self.prefix=parsed.path.rstrip('/');self.mapping={};self.pages=[];self.copied={};self.source_html=[];self.plot_math_labels=[]
         self.entries=load(self.root/'experiments/registry.json')['experiments']
         self.simulation_files=[]
+        registry=self.root/'simulations/registry.json'
+        self.simulation_registry=load(registry)['simulations'] if registry.is_file() else []
+        self.simulation_entries=[e for e in self.simulation_registry if e['status'] in {'validated','published'}]
+        self.simulation_pages={}
+        self.unpublished_resources={rel for e in self.simulation_registry if e['status'] not in {'validated','published'} for rel in e['resources'].values()}
+        self.has_simulation_registry=registry.is_file()
 
     def url(self,path):return self.prefix+'/'+quote(str(path).replace('\\','/'),safe='/')
     def canonical(self,path):return self.base_url+'/'+quote(path,safe='/')
@@ -41,21 +47,52 @@ class Builder:
         self.write(relative,path.read_bytes());self.copied[relative]=sha(path)
         return relative
     def register_simulation(self):
-        folder=self.root/SIMULATION
-        if not (folder/'index.html').is_file():raise FileNotFoundError(folder/'index.html')
-        # Publish the browser module's direct resources; research downloads and tests stay outside this list.
-        self.simulation_files=[p for p in sorted(folder.iterdir()) if p.is_file() and
-            (p.name=='index.html' or p.suffix.lower() in {'.mjs','.css','.json'}) and not p.name.endswith('.test.mjs')]
-        for path in self.simulation_files:
-            relative=path.relative_to(self.root).as_posix()
-            self.mapping[relative]=relative
+        entries=self.simulation_entries
+        if not self.has_simulation_registry:
+            entries=[{'experiment_id':'course-01/pendulum','title':'单摆虚拟实验',
+                'resources':{'simulation_html':SIMULATION+'/index.html'}}]
+        files={}
+        for item in entries:
+            if self.has_simulation_registry and (item['evidence_status']!='verified' or item['frontend_status']!='passed'):
+                raise ValueError('Simulation acceptance is incomplete: '+item['experiment_id'])
+            frontend=item.get('frontend_validation')
+            if frontend:
+                evidence=load(self.root/frontend)
+                if evidence.get('status')!='passed':raise ValueError('Frontend acceptance failed: '+item['experiment_id'])
+                for rel,expected in evidence['source_hashes'].items():
+                    if not (self.root/rel).is_file() or sha(self.root/rel)!=expected:
+                        raise ValueError('Frontend acceptance is stale: '+rel)
+                files[frontend]=self.root/frontend
+            reference=item['resources'].get('simulation_validation')
+            if reference and item['experiment_id']!='course-01/pendulum':
+                evidence=load(self.root/reference)
+                if evidence.get('status')!='passed' or evidence.get('model_sha256',evidence.get('modelSha256'))!=sha(self.root/item['resources']['simulation_model']):
+                    raise ValueError('Numerical acceptance is stale: '+item['experiment_id'])
+            page=item['resources']['simulation_html'];folder=self.root/Path(page).parent
+            if not (self.root/page).is_file():raise FileNotFoundError(page)
+            self.simulation_pages[page]=item
+            for path in sorted(folder.iterdir()):
+                if path.is_file() and (path.name=='index.html' or path.suffix.lower() in {'.mjs','.css','.json'}) and not path.name.endswith('.test.mjs'):
+                    files[path.relative_to(self.root).as_posix()]=path
+            for rel in item.get('public_assets',[]):
+                path=(self.root/rel).resolve()
+                if not path.is_relative_to(self.root/'simulations') or path.suffix.lower() not in {'.mjs','.css','.json','.svg','.png','.jpg','.webp'}:
+                    raise ValueError('Invalid simulation public asset: '+rel)
+                if not path.is_file():raise FileNotFoundError(path)
+                files[rel]=path
+            for name,rel in item['resources'].items():
+                if rel.startswith('docs/') and (self.root/rel).is_file() and Path(rel).suffix in {'.json','.bib'}:files[rel]=self.root/rel
+        self.simulation_files=list(files.values())
+        for relative in files:self.mapping[relative]=relative
+        if self.has_simulation_registry:self.mapping['simulations/README.md']='simulations/index.html'
     def build_simulation(self):
         for path in self.simulation_files:
             relative=path.relative_to(self.root).as_posix()
-            if path.name!='index.html':self.copy(path);continue
+            if relative not in self.simulation_pages:self.copy(path);continue
             self.source_html.append({'path':relative,'sha256':sha(path)})
-            entry=next(e for e in self.entries if e['id']=='course-01/pendulum')
-            self.transform(path.read_text(encoding='utf-8'),path,relative,'单摆虚拟实验',entry)
+            item=self.simulation_pages[relative]
+            entry=next(e for e in self.entries if e['id']==item['experiment_id'])
+            self.transform(path.read_text(encoding='utf-8'),path,relative,item['title']+' · 虚拟实验',entry)
     def asset(self,path):
         path=path.resolve();relative=path.relative_to(self.root).as_posix()
         allowed=(relative.startswith('docs/assets/') or (relative.startswith('experiments/') and ('/assets/' in relative or '/results/figures/' in relative)))
@@ -83,7 +120,7 @@ class Builder:
         if not path.is_file():raise FileNotFoundError((source,target))
         return REPOSITORY+'/blob/main/'+quote(relative,safe='/')+fragment
     def chrome(self,destination,experiment=None):
-        links=[('首页','index.html'),('课程','experiments/index.html'),('虚拟实验',SIMULATION+'/index.html'),('实验检索','docs/experiment-index.html'),('使用指南','docs/usage.html'),('许可与来源','licensing.html'),('GitHub',None)]
+        links=[('首页','index.html'),('课程','experiments/index.html'),('虚拟实验','simulations/index.html' if self.has_simulation_registry else SIMULATION+'/index.html'),('实验检索','docs/experiment-index.html'),('使用指南','docs/usage.html'),('许可与来源','licensing.html'),('GitHub',None)]
         nav='<nav class="site-nav" aria-label="站点导航"><a class="site-brand" href="'+self.url('index.html')+'">普通物理实验</a>'
         nav+=''.join('<a href="'+(REPOSITORY if p is None else self.url(p))+'">'+label+'</a>' for label,p in links)
         if experiment:
@@ -193,13 +230,15 @@ class Builder:
         self.output.mkdir(parents=True,exist_ok=True)
         self.write('.pages-generated','general-physics-lab-pages-v1')
         markdown_files={self.root/'README.md':'index.html',self.root/'LICENSING.md':'licensing.html',self.root/'THIRD_PARTY_NOTICES.md':'third-party-notices.html'}
-        for p in sorted((self.root/'docs').glob('*.md')):markdown_files[p]=p.relative_to(self.root).with_suffix('.html').as_posix()
+        for p in sorted((self.root/'docs').glob('*.md')):
+            if p.relative_to(self.root).as_posix() not in self.unpublished_resources:markdown_files[p]=p.relative_to(self.root).with_suffix('.html').as_posix()
         markdown_files[self.root/'pdf/README.md']='pdf/index.html'
         for course in range(1,5):markdown_files[self.root/f'experiments/course-{course:02}/README.md']=f'experiments/course-{course:02}/index.html'
         for e in self.entries:markdown_files[self.root/'experiments'/e['id']/'README.md']='experiments/'+e['id']+'/index.html'
         self.mapping={p.relative_to(self.root).as_posix():v for p,v in markdown_files.items()}
         for e in self.entries:self.mapping['experiments/'+e['id']+'/report/report.md']='experiments/'+e['id']+'/report/report.html'
         self.register_simulation()
+        if self.has_simulation_registry:markdown_files[self.root/'simulations/README.md']='simulations/index.html'
         for source,destination in markdown_files.items():self.markdown_page(source,destination)
         self.build_simulation()
         for e in self.entries:
@@ -214,7 +253,7 @@ class Builder:
         for folder,patterns in [('docs',['*.md','*.json','*.txt','schemas/*.json']),('pdf',['**/*.pdf','manifest.csv','verification.json']),('LICENSES',['**/*'])]:
             for pattern in patterns:
                 for p in sorted((self.root/folder).glob(pattern)):
-                    if p.is_file():self.copy(p)
+                    if p.is_file() and p.relative_to(self.root).as_posix() not in self.unpublished_resources:self.copy(p)
         self.write('assets/site.css',(self.root/'site/assets/site.css').read_bytes())
         self.write('assets/favicon.svg',(self.root/'site/assets/favicon.svg').read_bytes())
         self.write('assets/pendulum-animation.js',(self.root/'site/assets/pendulum-animation.js').read_bytes())
@@ -233,7 +272,7 @@ class Builder:
         self.write('sitemap.xml',sitemap);self.write('robots.txt','User-agent: *\nAllow: /\nSitemap: '+self.base_url+'/sitemap.xml\n')
         size=sum(p.stat().st_size for p in self.output.rglob('*')if p.is_file())
         if size>=1_000_000_000:raise ValueError('Pages site exceeds 1GB')
-        record={'status':'built','base_url':self.base_url,'experiment_count':len(self.entries),'html_pages':len(self.pages),'pdf_count':len(list((self.output/'pdf').rglob('*.pdf'))),'bytes':size,'copied_source_files':self.copied,'source_html':self.source_html,'pages':sorted(self.pages),'vendor_files':len(vendor_files),'plot_math_labels':self.plot_math_labels}
+        record={'status':'built','base_url':self.base_url,'experiment_count':len(self.entries),'html_pages':len(self.pages),'pdf_count':len(list((self.output/'pdf').rglob('*.pdf'))),'bytes':size,'copied_source_files':self.copied,'source_html':self.source_html,'pages':sorted(self.pages),'vendor_files':len(vendor_files),'plot_math_labels':self.plot_math_labels,'simulations':[{'experiment_id':e['experiment_id'],'page':e['resources']['simulation_html'],'resources':e['resources']} for e in self.simulation_entries]}
         self.write('build-manifest.json',json.dumps(record,ensure_ascii=False,indent=2)+'\n')
         print(json.dumps({k:record[k]for k in ['status','experiment_count','html_pages','pdf_count','bytes','vendor_files']},ensure_ascii=False))
 

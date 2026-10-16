@@ -70,15 +70,23 @@ def validate():
             metrics += 1
         if 'simulation_validation' in entry['resources']:
             reference = read_json(ROOT / entry['resources']['simulation_validation']['path'])
-            assert reference['experiment_id'] == entry['id'], ('Simulation reference identity', entry['id'])
+            identity=reference.get('experiment_id',reference.get('experimentId',reference.get('experiment')))
+            assert identity == entry['id'], ('Simulation reference identity', entry['id'])
             if 'simulation_model' in entry['resources']:
                 model = ROOT / entry['resources']['simulation_model']['path']
-                assert hashlib.sha256(model.read_bytes()).hexdigest() == reference['browser_verification']['model_sha256'], ('Stale simulation model verification', model)
+                expected_hash=reference.get('model_sha256',reference.get('modelSha256',reference.get('browser_verification',{}).get('model_sha256')))
+                assert hashlib.sha256(model.read_bytes()).hexdigest() == expected_hash, ('Stale simulation model verification', model)
         if 'simulation_observations' in entry['resources']:
             observations = read_json(ROOT / entry['resources']['simulation_observations']['path'])
-            assert observations['experiment_id'] == entry['id'], ('Simulation observation identity', entry['id'])
-            for source in observations['source_files']:
-                assert hashlib.sha256((ROOT / source['path']).read_bytes()).hexdigest() == source['sha256'], ('Stale simulation observation source', source['path'])
+            identity=observations.get('experiment_id',observations.get('experimentId',observations.get('experiment')))
+            assert identity == entry['id'], ('Simulation observation identity', entry['id'])
+            sources=observations.get('source_files',observations.get('sourceFiles',observations.get('provenance',{}).get('input_hashes')))
+            assert sources, ('Observation source hashes missing',entry['id'])
+            if isinstance(sources,dict):sources=[{'path':key,'sha256':value} for key,value in sources.items()]
+            for source in sources:
+                candidates=[ROOT/source['path'],ROOT/'experiments'/entry['id']/'data'/source['path'],ROOT/'experiments'/entry['id']/source['path']]
+                source_path=next((p for p in candidates if p.is_file()),None)
+                assert source_path and hashlib.sha256(source_path.read_bytes()).hexdigest() == source['sha256'], ('Stale simulation observation source', source['path'])
     citation = yaml.safe_load((ROOT / 'CITATION.cff').read_text(encoding='utf-8'))
     assert citation['cff-version'] == '1.2.0' and citation['type'] == 'software'
     assert citation['repository-code'] == REPO and citation['url'] == REPO

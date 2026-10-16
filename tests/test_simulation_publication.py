@@ -80,7 +80,7 @@ def test_pendulum_runtime_imports_and_data_assets_are_published(tmp_path):
     builder.register_simulation()
     runtime = [path for path in builder.simulation_files if path.suffix == '.mjs']
     assert runtime, 'The simulation must provide an executable browser module'
-    source_folder = (ROOT / PAGES.SIMULATION).resolve()
+    source_folder = (ROOT / 'simulations').resolve()
     for path in builder.simulation_files:
         if path.name != 'index.html':
             builder.copy(path)
@@ -88,10 +88,48 @@ def test_pendulum_runtime_imports_and_data_assets_are_published(tmp_path):
         for reference in _module_references(path.read_text(encoding='utf-8')):
             parsed = urlsplit(reference)
             assert not parsed.scheme and not parsed.netloc, (path.name, 'external module/asset', reference)
-            assert reference.startswith('./'), (path.name, 'asset must be module relative', reference)
+            assert reference.startswith(('./','../')), (path.name, 'asset must be module relative', reference)
             target = (path.parent / unquote(parsed.path)).resolve()
             assert target.is_relative_to(source_folder), (path.name, 'asset escapes module', reference)
             relative = target.relative_to(ROOT).as_posix()
             assert relative in builder.mapping, (path.name, 'unpublished module asset', reference)
             assert (builder.output / relative).is_file(), (path.name, 'missing published module asset', reference)
             assert (builder.output / relative).read_bytes() == target.read_bytes()
+
+
+def test_registry_covers_existing_experiments_once():
+    registry=json.loads((ROOT/'simulations/registry.json').read_text(encoding='utf-8'))
+    original=json.loads((ROOT/'experiments/registry.json').read_text(encoding='utf-8'))
+    entries=registry['simulations']
+    assert len(entries)==registry['experiment_count']==45
+    assert len({e['experiment_id'] for e in entries})==45
+    assert {e['experiment_id'] for e in entries}=={e['id'] for e in original['experiments']}
+    assert len({e['resources']['simulation_html'] for e in entries})==45
+    assert [sum(e['group']==g for e in entries) for g in range(8)]==[1,3,8,8,8,7,7,3]
+    for e in entries:
+        assert e['status'] in {'queued','research','implemented','validated','published'}
+        for rel in [*e['resources'].values(),e['validator'],*e['tests']]:
+            assert not Path(rel).is_absolute() and '..' not in Path(rel).parts
+
+def test_acceptance_gate_and_multiple_simulation_routes(tmp_path):
+    root=tmp_path/'root';root.mkdir();_fixture(root)
+    (root/'simulations/registry.json').write_text(json.dumps({'simulations':[
+        {'experiment_id':'course-01/pendulum','title':'单摆','status':'published',
+         'evidence_status':'pending','frontend_status':'passed',
+         'resources':{'simulation_html':PAGES.SIMULATION+'/index.html'}}]}),encoding='utf-8')
+    builder=PAGES.Builder(root,tmp_path/'site','https://example.test/project')
+    with pytest.raises(ValueError,match='acceptance'):builder.register_simulation()
+
+
+def test_frontend_acceptance_rejects_changed_runtime(tmp_path):
+    root=tmp_path/'root';root.mkdir();folder=_fixture(root)
+    runtime=folder/'app.mjs'
+    evidence=root/'docs/frontend.json';evidence.parent.mkdir()
+    evidence.write_text(json.dumps({'status':'passed','source_hashes':{runtime.relative_to(root).as_posix():PAGES.sha(runtime)}}),encoding='utf-8')
+    (root/'simulations/registry.json').write_text(json.dumps({'simulations':[
+      {'experiment_id':'course-01/pendulum','title':'单摆','status':'validated',
+       'evidence_status':'verified','frontend_status':'passed','frontend_validation':'docs/frontend.json',
+       'resources':{'simulation_html':PAGES.SIMULATION+'/index.html'}}]}),encoding='utf-8')
+    runtime.write_text('throw new Error("changed runtime");',encoding='utf-8')
+    builder=PAGES.Builder(root,tmp_path/'site','https://example.test/project')
+    with pytest.raises(ValueError,match='Frontend acceptance is stale'):builder.register_simulation()

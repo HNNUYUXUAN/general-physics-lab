@@ -1,0 +1,171 @@
+{
+  "experiment_id": "course-02/string-vibration",
+  "status": "passed",
+  "checked_at_utc": "2026-10-16T16:01:36.093934+00:00",
+  "browser": "Chromium 1243; Playwright 1.63.0-alpha-2026-08-31",
+  "viewports": [
+    {
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "width": 390,
+      "height": 844
+    }
+  ],
+  "interaction": {
+    "slug": "string-vibration",
+    "status": "passed",
+    "title": "弦振动的研究 · 虚拟实验 · 普通物理实验",
+    "flows": [
+      {
+        "name": "张力扫描与幂律",
+        "status": "passed",
+        "actual": [
+          {
+            "selector": "#record-count",
+            "text": "0",
+            "value": "0"
+          },
+          {
+            "selector": "#record-count",
+            "text": "7",
+            "value": "7"
+          },
+          {
+            "selector": "#fit-result",
+            "text": "幂指数 k = 0.500000，回归标准误差 9.98e-17；理论值 0.5。",
+            "value": null
+          }
+        ]
+      },
+      {
+        "name": "频率扫描",
+        "status": "passed",
+        "actual": [
+          {
+            "selector": "#fit-result",
+            "text": "幂指数 k = -1.000000，回归标准误差 1.40e-15；理论值 −1。",
+            "value": null
+          }
+        ]
+      },
+      {
+        "name": "标线测量闭环",
+        "status": "passed",
+        "actual": [
+          {
+            "selector": "#fit-result",
+            "text": "幂指数 k = 0.499869，回归标准误差 1.91e-4；理论值 0.5。",
+            "value": null
+          }
+        ]
+      },
+      {
+        "name": "非法线密度",
+        "status": "passed",
+        "actual": [
+          {
+            "selector": "#status",
+            "text": "请输入范围内的有限数值；线密度须为 0.05–1.00 g/m。",
+            "value": null
+          },
+          {
+            "selector": "#status",
+            "text": "请输入范围内的有限数值；线密度须为 0.05–1.00 g/m。",
+            "value": null
+          }
+        ]
+      },
+      {
+        "name": "原始冲突敏感性",
+        "status": "passed",
+        "actual": [
+          {
+            "selector": "#original-result",
+            "text": "张力系列：k = 0.426494（6 点）；频率系列：k = -0.983041（7 点）。",
+            "value": null
+          }
+        ]
+      },
+      {
+        "name": "刷新恢复与双格式导出",
+        "status": "passed",
+        "actual": [
+          {
+            "record_count": "3"
+          }
+        ]
+      }
+    ],
+    "errors": [],
+    "mobile": {
+      "width": 390,
+      "scrollWidth": 390,
+      "mathErrors": 0,
+      "mathObjects": 28
+    },
+    "downloads": [
+      "string-vibration-records.json",
+      "string-vibration-records.csv"
+    ]
+  },
+  "additional_controls": {
+    "slug": "string-vibration",
+    "status": "passed",
+    "checks": [
+      {
+        "name": "mode length mass controls",
+        "text": "张力 F\n2.9382 N\n波速 v\n71.796 m/s\n固有频率 f\n538.474 Hz\n波长 λ\n0.1333 m"
+      },
+      {
+        "name": "animation play pause and background return",
+        "status": "passed"
+      }
+    ],
+    "fonts": [
+      {
+        "familyName": "SimSun",
+        "postScriptName": "SimSun",
+        "isCustomFont": false,
+        "glyphCount": 7
+      }
+    ]
+  },
+  "export_validation": {
+    "json_record_count": 3,
+    "csv_record_count": 3,
+    "identity_timestamp_parameters_source": "passed"
+  },
+  "source_hashes": {
+    "simulations/string-vibration/app.mjs": "994684ceaac79040baf0d27387883e400dad500a0ac94286af56eb619a39c9cb",
+    "simulations/string-vibration/chart.mjs": "c82ef793891457129411c144904f8fd2a61d67ac297f107beaf922bdf2934964",
+    "simulations/string-vibration/index.html": "c07236fe49ca164f86e1540197d17dc61bea295b34c4aebc072330661f791822",
+    "simulations/string-vibration/lab.css": "8a82b872776aeb4b23a981fede4d6f8ddd3eb15c661cefd9219669b91372ad16",
+    "simulations/string-vibration/model.mjs": "693e2b97128c108a3f47f238761105cd92b3a8ca05e28c68fb4f969af5f7c15c",
+    "simulations/string-vibration/observations.json": "25ff31943c00eedf731aff8e1a90ab205b0afdce184539ad8e58636237d22ed3"
+  },
+  "screenshots": [
+    {
+      "path": "docs/assets/simulations/string-vibration-desktop.png",
+      "sha256": "11599becb67972d7b4151696c695913d705b7068e2d4da8e9febc726211e9569",
+      "state": "desktop"
+    },
+    {
+      "path": "docs/assets/simulations/string-vibration-mobile.png",
+      "sha256": "1644fbb9cb9833dc23ac3fac3020dd2e3109a0f25de4df2fd6d63de3edddf979",
+      "state": "mobile"
+    },
+    {
+      "path": "docs/assets/simulations/string-vibration-changed.png",
+      "sha256": "390e1bde38d63cbfbd65dffd0fc837d16a08572153ebf52fb92e9aa86787ec12",
+      "state": "changed"
+    },
+    {
+      "path": "docs/assets/simulations/string-vibration-operation.png",
+      "sha256": "89e3bb14f981ded44d62343d1a665a4a83c4084d6cf8d7054801518da9dafd95",
+      "state": "operation"
+    }
+  ],
+  "visual_review": "passed: typography, local LaTeX, figure/table caption placement, responsive diagram labels and line/text separation"
+}

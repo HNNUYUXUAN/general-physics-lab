@@ -28,3 +28,13 @@ simulations/**/*.json text eol=lf
 docs/simulation/*.json text eol=lf
 scripts/validate_pendulum_simulation.py text eol=lf
 tests/pendulum-model.test.mjs text eol=lf
+
+# Preserve virtual-laboratory evidence hashes across operating systems.
+simulations/** -text
+docs/*-model-evidence.md -text
+docs/*-references.json -text
+docs/*-references.bib -text
+docs/simulation/** -text
+scripts/validate_*_simulation.py -text
+scripts/export_*_reference_cases.mjs -text
+tests/*-model.test.mjs -text

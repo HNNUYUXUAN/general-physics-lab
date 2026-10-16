@@ -1,0 +1,1224 @@
+{
+  "schema_version": 1,
+  "experiment_count": 45,
+  "simulations": [
+    {
+      "experiment_id": "course-01/pendulum",
+      "title": "单摆测重力加速度",
+      "slug": "pendulum",
+      "group": 0,
+      "priority": 0,
+      "status": "published",
+      "model_version": "1.0.0",
+      "resources": {
+        "simulation_html": "simulations/pendulum/index.html",
+        "simulation_model": "simulations/pendulum/model.mjs",
+        "simulation_controller": "simulations/pendulum/app.mjs",
+        "simulation_charts": "simulations/pendulum/chart.mjs",
+        "simulation_styles": "simulations/pendulum/lab.css",
+        "simulation_observations": "simulations/pendulum/observations.json",
+        "model_evidence": "docs/pendulum-model-evidence.md",
+        "references_json": "docs/pendulum-references.json",
+        "references_bibtex": "docs/pendulum-references.bib",
+        "simulation_validation": "docs/simulation/pendulum-reference.json"
+      },
+      "tests": [
+        "tests/pendulum-model.test.mjs"
+      ],
+      "validator": "scripts/validate_pendulum_simulation.py",
+      "evidence_status": "verified",
+      "frontend_status": "passed"
+    },
+    {
+      "experiment_id": "course-03/rlc-resonance",
+      "title": "RLC串联电路谐振特性的研究",
+      "slug": "rlc-resonance",
+      "group": 1,
+      "priority": 1,
+      "status": "validated",
+      "model_version": "1.0.0",
+      "resources": {
+        "simulation_html": "simulations/rlc-resonance/index.html",
+        "simulation_model": "simulations/rlc-resonance/model.mjs",
+        "simulation_controller": "simulations/rlc-resonance/app.mjs",
+        "simulation_charts": "simulations/rlc-resonance/chart.mjs",
+        "simulation_styles": "simulations/rlc-resonance/lab.css",
+        "simulation_observations": "simulations/rlc-resonance/observations.json",
+        "model_evidence": "docs/rlc-resonance-model-evidence.md",
+        "references_json": "docs/rlc-resonance-references.json",
+        "references_bibtex": "docs/rlc-resonance-references.bib",
+        "simulation_validation": "docs/simulation/rlc-resonance-reference.json"
+      },
+      "tests": [
+        "tests/rlc-resonance-model.test.mjs"
+      ],
+      "validator": "scripts/validate_rlc_resonance_simulation.py",
+      "evidence_status": "verified",
+      "frontend_status": "passed",
+      "frontend_validation": "docs/simulation/rlc-resonance-frontend.json"
+    },
+    {
+      "experiment_id": "course-04/newton-rings",
+      "title": "牛顿环实验",
+      "slug": "newton-rings",
+      "group": 1,
+      "priority": 2,
+      "status": "validated",
+      "model_version": "1.0.0",
+      "resources": {
+        "simulation_html": "simulations/newton-rings/index.html",
+        "simulation_model": "simulations/newton-rings/model.mjs",
+        "simulation_controller": "simulations/newton-rings/app.mjs",
+        "simulation_charts": "simulations/newton-rings/chart.mjs",
+        "simulation_styles": "simulations/newton-rings/lab.css",
+        "simulation_observations": "simulations/newton-rings/observations.json",
+        "model_evidence": "docs/newton-rings-model-evidence.md",
+        "references_json": "docs/newton-rings-references.json",
+        "references_bibtex": "docs/newton-rings-references.bib",
+        "simulation_validation": "docs/simulation/newton-rings-reference.json"
+      },
+      "tests": [
+        "tests/newton-rings-model.test.mjs"
+      ],
+      "validator": "scripts/validate_newton_rings_simulation.py",
+      "evidence_status": "verified",
+      "frontend_status": "passed",
+      "frontend_validation": "docs/simulation/newton-rings-frontend.json"
+    },
+    {
+      "experiment_id": "course-02/string-vibration",
+      "title": "弦振动的研究",
+      "slug": "string-vibration",
+      "group": 1,
+      "priority": 3,
+      "status": "validated",
+      "model_version": "1.0.0",
+      "resources": {
+        "simulation_html": "simulations/string-vibration/index.html",
+        "simulation_model": "simulations/string-vibration/model.mjs",
+        "simulation_controller": "simulations/string-vibration/app.mjs",
+        "simulation_charts": "simulations/string-vibration/chart.mjs",
+        "simulation_styles": "simulations/string-vibration/lab.css",
+        "simulation_observations": "simulations/string-vibration/observations.json",
+        "model_evidence": "docs/string-vibration-model-evidence.md",
+        "references_json": "docs/string-vibration-references.json",
+        "references_bibtex": "docs/string-vibration-references.bib",
+        "simulation_validation": "docs/simulation/string-vibration-reference.json"
+      },
+      "tests": [
+        "tests/string-vibration-model.test.mjs"
+      ],
+      "validator": "scripts/validate_string_vibration_simulation.py",
+      "evidence_status": "verified",
+      "frontend_status": "passed",
+      "frontend_validation": "docs/simulation/string-vibration-frontend.json"
+    },
+    {
+      "experiment_id": "course-01/density",
+      "title": "物质密度的测量",
+      "slug": "density",
+      "group": 2,
+      "priority": 1,
+      "status": "research",
+      "model_version": "1.0.0",
+      "resources": {
+        "simulation_html": "simulations/density/index.html",
+        "simulation_model": "simulations/density/model.mjs",
+        "simulation_controller": "simulations/density/app.mjs",
+        "simulation_charts": "simulations/density/chart.mjs",
+        "simulation_styles": "simulations/density/lab.css",
+        "simulation_observations": "simulations/density/observations.json",
+        "model_evidence": "docs/density-model-evidence.md",
+        "references_json": "docs/density-references.json",
+        "references_bibtex": "docs/density-references.bib",
+        "simulation_validation": "docs/simulation/density-reference.json"
+      },
+      "tests": [
+        "tests/density-model.test.mjs"
+      ],
+      "validator": "scripts/validate_density_simulation.py",
+      "evidence_status": "pending",
+      "frontend_status": "not_run"
+    },
+    {
+      "experiment_id": "course-01/collisions",
+      "title": "碰撞规律的研究",
+      "slug": "collisions",
+      "group": 2,
+      "priority": 2,
+      "status": "research",
+      "model_version": "1.0.0",
+      "resources": {
+        "simulation_html": "simulations/collisions/index.html",
+        "simulation_model": "simulations/collisions/model.mjs",
+        "simulation_controller": "simulations/collisions/app.mjs",
+        "simulation_charts": "simulations/collisions/chart.mjs",
+        "simulation_styles": "simulations/collisions/lab.css",
+        "simulation_observations": "simulations/collisions/observations.json",
+        "model_evidence": "docs/collisions-model-evidence.md",
+        "references_json": "docs/collisions-references.json",
+        "references_bibtex": "docs/collisions-references.bib",
+        "simulation_validation": "docs/simulation/collisions-reference.json"
+      },
+      "tests": [
+        "tests/collisions-model.test.mjs"
+      ],
+      "validator": "scripts/validate_collisions_simulation.py",
+      "evidence_status": "pending",
+      "frontend_status": "not_run"
+    },
+    {
+      "experiment_id": "course-01/newton-second-law",
+      "title": "牛顿第二定律的验证",
+      "slug": "newton-second-law",
+      "group": 2,
+      "priority": 3,
+      "status": "research",
+      "model_version": "1.0.0",
+      "resources": {
+        "simulation_html": "simulations/newton-second-law/index.html",
+        "simulation_model": "simulations/newton-second-law/model.mjs",
+        "simulation_controller": "simulations/newton-second-law/app.mjs",
+        "simulation_charts": "simulations/newton-second-law/chart.mjs",
+        "simulation_styles": "simulations/newton-second-law/lab.css",
+        "simulation_observations": "simulations/newton-second-law/observations.json",
+        "model_evidence": "docs/newton-second-law-model-evidence.md",
+        "references_json": "docs/newton-second-law-references.json",
+        "references_bibtex": "docs/newton-second-law-references.bib",
+        "simulation_validation": "docs/simulation/newton-second-law-reference.json"
+      },
+      "tests": [
+        "tests/newton-second-law-model.test.mjs"
+      ],
+      "validator": "scripts/validate_newton_second_law_simulation.py",
+      "evidence_status": "pending",
+      "frontend_status": "not_run"
+    },
+    {
+      "experiment_id": "course-01/doppler-verification",
+      "title": "多普勒效应的验证",
+      "slug": "doppler-verification",
+      "group": 2,
+      "priority": 4,
+      "status": "research",
+      "model_version": "1.0.0",
+      "resources": {
+        "simulation_html": "simulations/doppler-verification/index.html",
+        "simulation_model": "simulations/doppler-verification/model.mjs",
+        "simulation_controller": "simulations/doppler-verification/app.mjs",
+        "simulation_charts": "simulations/doppler-verification/chart.mjs",
+        "simulation_styles": "simulations/doppler-verification/lab.css",
+        "simulation_observations": "simulations/doppler-verification/observations.json",
+        "model_evidence": "docs/doppler-verification-model-evidence.md",
+        "references_json": "docs/doppler-verification-references.json",
+        "references_bibtex": "docs/doppler-verification-references.bib",
+        "simulation_validation": "docs/simulation/doppler-verification-reference.json"
+      },
+      "tests": [
+        "tests/doppler-verification-model.test.mjs"
+      ],
+      "validator": "scripts/validate_doppler_verification_simulation.py",
+      "evidence_status": "pending",
+      "frontend_status": "not_run"
+    },
+    {
+      "experiment_id": "course-02/inertial-balance",
+      "title": "惯性秤的应用",
+      "slug": "inertial-balance",
+      "group": 2,
+      "priority": 5,
+      "status": "research",
+      "model_version": "1.0.0",
+      "resources": {
+        "simulation_html": "simulations/inertial-balance/index.html",
+        "simulation_model": "simulations/inertial-balance/model.mjs",
+        "simulation_controller": "simulations/inertial-balance/app.mjs",
+        "simulation_charts": "simulations/inertial-balance/chart.mjs",
+        "simulation_styles": "simulations/inertial-balance/lab.css",
+        "simulation_observations": "simulations/inertial-balance/observations.json",
+        "model_evidence": "docs/inertial-balance-model-evidence.md",
+        "references_json": "docs/inertial-balance-references.json",
+        "references_bibtex": "docs/inertial-balance-references.bib",
+        "simulation_validation": "docs/simulation/inertial-balance-reference.json"
+      },
+      "tests": [
+        "tests/inertial-balance-model.test.mjs"
+      ],
+      "validator": "scripts/validate_inertial_balance_simulation.py",
+      "evidence_status": "pending",
+      "frontend_status": "not_run"
+    },
+    {
+      "experiment_id": "course-04/thin-lens",
+      "title": "薄透镜焦距的测定",
+      "slug": "thin-lens",
+      "group": 2,
+      "priority": 6,
+      "status": "research",
+      "model_version": "1.0.0",
+      "resources": {
+        "simulation_html": "simulations/thin-lens/index.html",
+        "simulation_model": "simulations/thin-lens/model.mjs",
+        "simulation_controller": "simulations/thin-lens/app.mjs",
+        "simulation_charts": "simulations/thin-lens/chart.mjs",
+        "simulation_styles": "simulations/thin-lens/lab.css",
+        "simulation_observations": "simulations/thin-lens/observations.json",
+        "model_evidence": "docs/thin-lens-model-evidence.md",
+        "references_json": "docs/thin-lens-references.json",
+        "references_bibtex": "docs/thin-lens-references.bib",
+        "simulation_validation": "docs/simulation/thin-lens-reference.json"
+      },
+      "tests": [
+        "tests/thin-lens-model.test.mjs"
+      ],
+      "validator": "scripts/validate_thin_lens_simulation.py",
+      "evidence_status": "pending",
+      "frontend_status": "not_run"
+    },
+    {
+      "experiment_id": "course-04/single-slit-diffraction",
+      "title": "单缝衍射光强分布研究",
+      "slug": "single-slit-diffraction",
+      "group": 2,
+      "priority": 7,
+      "status": "research",
+      "model_version": "1.0.0",
+      "resources": {
+        "simulation_html": "simulations/single-slit-diffraction/index.html",
+        "simulation_model": "simulations/single-slit-diffraction/model.mjs",
+        "simulation_controller": "simulations/single-slit-diffraction/app.mjs",
+        "simulation_charts": "simulations/single-slit-diffraction/chart.mjs",
+        "simulation_styles": "simulations/single-slit-diffraction/lab.css",
+        "simulation_observations": "simulations/single-slit-diffraction/observations.json",
+        "model_evidence": "docs/single-slit-diffraction-model-evidence.md",
+        "references_json": "docs/single-slit-diffraction-references.json",
+        "references_bibtex": "docs/single-slit-diffraction-references.bib",
+        "simulation_validation": "docs/simulation/single-slit-diffraction-reference.json"
+      },
+      "tests": [
+        "tests/single-slit-diffraction-model.test.mjs"
+      ],
+      "validator": "scripts/validate_single_slit_diffraction_simulation.py",
+      "evidence_status": "pending",
+      "frontend_status": "not_run"
+    },
+    {
+      "experiment_id": "course-04/polarization",
+      "title": "偏振光的观察与分析",
+      "slug": "polarization",
+      "group": 2,
+      "priority": 8,
+      "status": "research",
+      "model_version": "1.0.0",
+      "resources": {
+        "simulation_html": "simulations/polarization/index.html",
+        "simulation_model": "simulations/polarization/model.mjs",
+        "simulation_controller": "simulations/polarization/app.mjs",
+        "simulation_charts": "simulations/polarization/chart.mjs",
+        "simulation_styles": "simulations/polarization/lab.css",
+        "simulation_observations": "simulations/polarization/observations.json",
+        "model_evidence": "docs/polarization-model-evidence.md",
+        "references_json": "docs/polarization-references.json",
+        "references_bibtex": "docs/polarization-references.bib",
+        "simulation_validation": "docs/simulation/polarization-reference.json"
+      },
+      "tests": [
+        "tests/polarization-model.test.mjs"
+      ],
+      "validator": "scripts/validate_polarization_simulation.py",
+      "evidence_status": "pending",
+      "frontend_status": "not_run"
+    },
+    {
+      "experiment_id": "course-03/current-voltage-divider",
+      "title": "制流分压电路",
+      "slug": "current-voltage-divider",
+      "group": 3,
+      "priority": 1,
+      "status": "research",
+      "model_version": "1.0.0",
+      "resources": {
+        "simulation_html": "simulations/current-voltage-divider/index.html",
+        "simulation_model": "simulations/current-voltage-divider/model.mjs",
+        "simulation_controller": "simulations/current-voltage-divider/app.mjs",
+        "simulation_charts": "simulations/current-voltage-divider/chart.mjs",
+        "simulation_styles": "simulations/current-voltage-divider/lab.css",
+        "simulation_observations": "simulations/current-voltage-divider/observations.json",
+        "model_evidence": "docs/current-voltage-divider-model-evidence.md",
+        "references_json": "docs/current-voltage-divider-references.json",
+        "references_bibtex": "docs/current-voltage-divider-references.bib",
+        "simulation_validation": "docs/simulation/current-voltage-divider-reference.json"
+      },
+      "tests": [
+        "tests/current-voltage-divider-model.test.mjs"
+      ],
+      "validator": "scripts/validate_current_voltage_divider_simulation.py",
+      "evidence_status": "pending",
+      "frontend_status": "not_run"
+    },
+    {
+      "experiment_id": "course-03/resistor-iv",
+      "title": "电阻伏安特性的测定",
+      "slug": "resistor-iv",
+      "group": 3,
+      "priority": 2,
+      "status": "research",
+      "model_version": "1.0.0",
+      "resources": {
+        "simulation_html": "simulations/resistor-iv/index.html",
+        "simulation_model": "simulations/resistor-iv/model.mjs",
+        "simulation_controller": "simulations/resistor-iv/app.mjs",
+        "simulation_charts": "simulations/resistor-iv/chart.mjs",
+        "simulation_styles": "simulations/resistor-iv/lab.css",
+        "simulation_observations": "simulations/resistor-iv/observations.json",
+        "model_evidence": "docs/resistor-iv-model-evidence.md",
+        "references_json": "docs/resistor-iv-references.json",
+        "references_bibtex": "docs/resistor-iv-references.bib",
+        "simulation_validation": "docs/simulation/resistor-iv-reference.json"
+      },
+      "tests": [
+        "tests/resistor-iv-model.test.mjs"
+      ],
+      "validator": "scripts/validate_resistor_iv_simulation.py",
+      "evidence_status": "pending",
+      "frontend_status": "not_run"
+    },
+    {
+      "experiment_id": "course-03/wheatstone-bridge",
+      "title": "单臂电桥测电阻",
+      "slug": "wheatstone-bridge",
+      "group": 3,
+      "priority": 3,
+      "status": "research",
+      "model_version": "1.0.0",
+      "resources": {
+        "simulation_html": "simulations/wheatstone-bridge/index.html",
+        "simulation_model": "simulations/wheatstone-bridge/model.mjs",
+        "simulation_controller": "simulations/wheatstone-bridge/app.mjs",
+        "simulation_charts": "simulations/wheatstone-bridge/chart.mjs",
+        "simulation_styles": "simulations/wheatstone-bridge/lab.css",
+        "simulation_observations": "simulations/wheatstone-bridge/observations.json",
+        "model_evidence": "docs/wheatstone-bridge-model-evidence.md",
+        "references_json": "docs/wheatstone-bridge-references.json",
+        "references_bibtex": "docs/wheatstone-bridge-references.bib",
+        "simulation_validation": "docs/simulation/wheatstone-bridge-reference.json"
+      },
+      "tests": [
+        "tests/wheatstone-bridge-model.test.mjs"
+      ],
+      "validator": "scripts/validate_wheatstone_bridge_simulation.py",
+      "evidence_status": "pending",
+      "frontend_status": "not_run"
+    },
+    {
+      "experiment_id": "course-03/ac-bridge",
+      "title": "交流电桥",
+      "slug": "ac-bridge",
+      "group": 3,
+      "priority": 4,
+      "status": "research",
+      "model_version": "1.0.0",
+      "resources": {
+        "simulation_html": "simulations/ac-bridge/index.html",
+        "simulation_model": "simulations/ac-bridge/model.mjs",
+        "simulation_controller": "simulations/ac-bridge/app.mjs",
+        "simulation_charts": "simulations/ac-bridge/chart.mjs",
+        "simulation_styles": "simulations/ac-bridge/lab.css",
+        "simulation_observations": "simulations/ac-bridge/observations.json",
+        "model_evidence": "docs/ac-bridge-model-evidence.md",
+        "references_json": "docs/ac-bridge-references.json",
+        "references_bibtex": "docs/ac-bridge-references.bib",
+        "simulation_validation": "docs/simulation/ac-bridge-reference.json"
+      },
+      "tests": [
+        "tests/ac-bridge-model.test.mjs"
+      ],
+      "validator": "scripts/validate_ac_bridge_simulation.py",
+      "evidence_status": "pending",
+      "frontend_status": "not_run"
+    },
+    {
+      "experiment_id": "course-03/oscilloscope",
+      "title": "示波器的调节与使用",
+      "slug": "oscilloscope",
+      "group": 3,
+      "priority": 5,
+      "status": "research",
+      "model_version": "1.0.0",
+      "resources": {
+        "simulation_html": "simulations/oscilloscope/index.html",
+        "simulation_model": "simulations/oscilloscope/model.mjs",
+        "simulation_controller": "simulations/oscilloscope/app.mjs",
+        "simulation_charts": "simulations/oscilloscope/chart.mjs",
+        "simulation_styles": "simulations/oscilloscope/lab.css",
+        "simulation_observations": "simulations/oscilloscope/observations.json",
+        "model_evidence": "docs/oscilloscope-model-evidence.md",
+        "references_json": "docs/oscilloscope-references.json",
+        "references_bibtex": "docs/oscilloscope-references.bib",
+        "simulation_validation": "docs/simulation/oscilloscope-reference.json"
+      },
+      "tests": [
+        "tests/oscilloscope-model.test.mjs"
+      ],
+      "validator": "scripts/validate_oscilloscope_simulation.py",
+      "evidence_status": "pending",
+      "frontend_status": "not_run"
+    },
+    {
+      "experiment_id": "course-03/multimeter",
+      "title": "万用电表的使用",
+      "slug": "multimeter",
+      "group": 3,
+      "priority": 6,
+      "status": "research",
+      "model_version": "1.0.0",
+      "resources": {
+        "simulation_html": "simulations/multimeter/index.html",
+        "simulation_model": "simulations/multimeter/model.mjs",
+        "simulation_controller": "simulations/multimeter/app.mjs",
+        "simulation_charts": "simulations/multimeter/chart.mjs",
+        "simulation_styles": "simulations/multimeter/lab.css",
+        "simulation_observations": "simulations/multimeter/observations.json",
+        "model_evidence": "docs/multimeter-model-evidence.md",
+        "references_json": "docs/multimeter-references.json",
+        "references_bibtex": "docs/multimeter-references.bib",
+        "simulation_validation": "docs/simulation/multimeter-reference.json"
+      },
+      "tests": [
+        "tests/multimeter-model.test.mjs"
+      ],
+      "validator": "scripts/validate_multimeter_simulation.py",
+      "evidence_status": "pending",
+      "frontend_status": "not_run"
+    },
+    {
+      "experiment_id": "course-03/meter-calibration",
+      "title": "电表的改装与校准",
+      "slug": "meter-calibration",
+      "group": 3,
+      "priority": 7,
+      "status": "research",
+      "model_version": "1.0.0",
+      "resources": {
+        "simulation_html": "simulations/meter-calibration/index.html",
+        "simulation_model": "simulations/meter-calibration/model.mjs",
+        "simulation_controller": "simulations/meter-calibration/app.mjs",
+        "simulation_charts": "simulations/meter-calibration/chart.mjs",
+        "simulation_styles": "simulations/meter-calibration/lab.css",
+        "simulation_observations": "simulations/meter-calibration/observations.json",
+        "model_evidence": "docs/meter-calibration-model-evidence.md",
+        "references_json": "docs/meter-calibration-references.json",
+        "references_bibtex": "docs/meter-calibration-references.bib",
+        "simulation_validation": "docs/simulation/meter-calibration-reference.json"
+      },
+      "tests": [
+        "tests/meter-calibration-model.test.mjs"
+      ],
+      "validator": "scripts/validate_meter_calibration_simulation.py",
+      "evidence_status": "pending",
+      "frontend_status": "not_run"
+    },
+    {
+      "experiment_id": "course-03/kelvin-bridge",
+      "title": "用直流双臂电桥测低电阻",
+      "slug": "kelvin-bridge",
+      "group": 3,
+      "priority": 8,
+      "status": "research",
+      "model_version": "1.0.0",
+      "resources": {
+        "simulation_html": "simulations/kelvin-bridge/index.html",
+        "simulation_model": "simulations/kelvin-bridge/model.mjs",
+        "simulation_controller": "simulations/kelvin-bridge/app.mjs",
+        "simulation_charts": "simulations/kelvin-bridge/chart.mjs",
+        "simulation_styles": "simulations/kelvin-bridge/lab.css",
+        "simulation_observations": "simulations/kelvin-bridge/observations.json",
+        "model_evidence": "docs/kelvin-bridge-model-evidence.md",
+        "references_json": "docs/kelvin-bridge-references.json",
+        "references_bibtex": "docs/kelvin-bridge-references.bib",
+        "simulation_validation": "docs/simulation/kelvin-bridge-reference.json"
+      },
+      "tests": [
+        "tests/kelvin-bridge-model.test.mjs"
+      ],
+      "validator": "scripts/validate_kelvin_bridge_simulation.py",
+      "evidence_status": "pending",
+      "frontend_status": "not_run"
+    },
+    {
+      "experiment_id": "course-04/spectrometer",
+      "title": "分光计的调节与使用",
+      "slug": "spectrometer",
+      "group": 4,
+      "priority": 1,
+      "status": "research",
+      "model_version": "1.0.0",
+      "resources": {
+        "simulation_html": "simulations/spectrometer/index.html",
+        "simulation_model": "simulations/spectrometer/model.mjs",
+        "simulation_controller": "simulations/spectrometer/app.mjs",
+        "simulation_charts": "simulations/spectrometer/chart.mjs",
+        "simulation_styles": "simulations/spectrometer/lab.css",
+        "simulation_observations": "simulations/spectrometer/observations.json",
+        "model_evidence": "docs/spectrometer-model-evidence.md",
+        "references_json": "docs/spectrometer-references.json",
+        "references_bibtex": "docs/spectrometer-references.bib",
+        "simulation_validation": "docs/simulation/spectrometer-reference.json"
+      },
+      "tests": [
+        "tests/spectrometer-model.test.mjs"
+      ],
+      "validator": "scripts/validate_spectrometer_simulation.py",
+      "evidence_status": "pending",
+      "frontend_status": "not_run"
+    },
+    {
+      "experiment_id": "course-04/prism-apex",
+      "title": "用分光计测三棱镜的顶角",
+      "slug": "prism-apex",
+      "group": 4,
+      "priority": 2,
+      "status": "research",
+      "model_version": "1.0.0",
+      "resources": {
+        "simulation_html": "simulations/prism-apex/index.html",
+        "simulation_model": "simulations/prism-apex/model.mjs",
+        "simulation_controller": "simulations/prism-apex/app.mjs",
+        "simulation_charts": "simulations/prism-apex/chart.mjs",
+        "simulation_styles": "simulations/prism-apex/lab.css",
+        "simulation_observations": "simulations/prism-apex/observations.json",
+        "model_evidence": "docs/prism-apex-model-evidence.md",
+        "references_json": "docs/prism-apex-references.json",
+        "references_bibtex": "docs/prism-apex-references.bib",
+        "simulation_validation": "docs/simulation/prism-apex-reference.json"
+      },
+      "tests": [
+        "tests/prism-apex-model.test.mjs"
+      ],
+      "validator": "scripts/validate_prism_apex_simulation.py",
+      "evidence_status": "pending",
+      "frontend_status": "not_run"
+    },
+    {
+      "experiment_id": "course-04/prism-refractive-index",
+      "title": "三棱镜折射率的测定",
+      "slug": "prism-refractive-index",
+      "group": 4,
+      "priority": 3,
+      "status": "research",
+      "model_version": "1.0.0",
+      "resources": {
+        "simulation_html": "simulations/prism-refractive-index/index.html",
+        "simulation_model": "simulations/prism-refractive-index/model.mjs",
+        "simulation_controller": "simulations/prism-refractive-index/app.mjs",
+        "simulation_charts": "simulations/prism-refractive-index/chart.mjs",
+        "simulation_styles": "simulations/prism-refractive-index/lab.css",
+        "simulation_observations": "simulations/prism-refractive-index/observations.json",
+        "model_evidence": "docs/prism-refractive-index-model-evidence.md",
+        "references_json": "docs/prism-refractive-index-references.json",
+        "references_bibtex": "docs/prism-refractive-index-references.bib",
+        "simulation_validation": "docs/simulation/prism-refractive-index-reference.json"
+      },
+      "tests": [
+        "tests/prism-refractive-index-model.test.mjs"
+      ],
+      "validator": "scripts/validate_prism_refractive_index_simulation.py",
+      "evidence_status": "pending",
+      "frontend_status": "not_run"
+    },
+    {
+      "experiment_id": "course-04/grazing-refraction",
+      "title": "用掠射法测定透明介质的折射率",
+      "slug": "grazing-refraction",
+      "group": 4,
+      "priority": 4,
+      "status": "research",
+      "model_version": "1.0.0",
+      "resources": {
+        "simulation_html": "simulations/grazing-refraction/index.html",
+        "simulation_model": "simulations/grazing-refraction/model.mjs",
+        "simulation_controller": "simulations/grazing-refraction/app.mjs",
+        "simulation_charts": "simulations/grazing-refraction/chart.mjs",
+        "simulation_styles": "simulations/grazing-refraction/lab.css",
+        "simulation_observations": "simulations/grazing-refraction/observations.json",
+        "model_evidence": "docs/grazing-refraction-model-evidence.md",
+        "references_json": "docs/grazing-refraction-references.json",
+        "references_bibtex": "docs/grazing-refraction-references.bib",
+        "simulation_validation": "docs/simulation/grazing-refraction-reference.json"
+      },
+      "tests": [
+        "tests/grazing-refraction-model.test.mjs"
+      ],
+      "validator": "scripts/validate_grazing_refraction_simulation.py",
+      "evidence_status": "pending",
+      "frontend_status": "not_run"
+    },
+    {
+      "experiment_id": "course-04/transmission-grating",
+      "title": "用透射光栅测定光波波长",
+      "slug": "transmission-grating",
+      "group": 4,
+      "priority": 5,
+      "status": "research",
+      "model_version": "1.0.0",
+      "resources": {
+        "simulation_html": "simulations/transmission-grating/index.html",
+        "simulation_model": "simulations/transmission-grating/model.mjs",
+        "simulation_controller": "simulations/transmission-grating/app.mjs",
+        "simulation_charts": "simulations/transmission-grating/chart.mjs",
+        "simulation_styles": "simulations/transmission-grating/lab.css",
+        "simulation_observations": "simulations/transmission-grating/observations.json",
+        "model_evidence": "docs/transmission-grating-model-evidence.md",
+        "references_json": "docs/transmission-grating-references.json",
+        "references_bibtex": "docs/transmission-grating-references.bib",
+        "simulation_validation": "docs/simulation/transmission-grating-reference.json"
+      },
+      "tests": [
+        "tests/transmission-grating-model.test.mjs"
+      ],
+      "validator": "scripts/validate_transmission_grating_simulation.py",
+      "evidence_status": "pending",
+      "frontend_status": "not_run"
+    },
+    {
+      "experiment_id": "course-04/optical-magnification",
+      "title": "用光学仪器测量放大率和微小长度",
+      "slug": "optical-magnification",
+      "group": 4,
+      "priority": 6,
+      "status": "research",
+      "model_version": "1.0.0",
+      "resources": {
+        "simulation_html": "simulations/optical-magnification/index.html",
+        "simulation_model": "simulations/optical-magnification/model.mjs",
+        "simulation_controller": "simulations/optical-magnification/app.mjs",
+        "simulation_charts": "simulations/optical-magnification/chart.mjs",
+        "simulation_styles": "simulations/optical-magnification/lab.css",
+        "simulation_observations": "simulations/optical-magnification/observations.json",
+        "model_evidence": "docs/optical-magnification-model-evidence.md",
+        "references_json": "docs/optical-magnification-references.json",
+        "references_bibtex": "docs/optical-magnification-references.bib",
+        "simulation_validation": "docs/simulation/optical-magnification-reference.json"
+      },
+      "tests": [
+        "tests/optical-magnification-model.test.mjs"
+      ],
+      "validator": "scripts/validate_optical_magnification_simulation.py",
+      "evidence_status": "pending",
+      "frontend_status": "not_run"
+    },
+    {
+      "experiment_id": "course-04/optical-rotation",
+      "title": "用旋光仪测定旋光性溶液的旋光率和浓度",
+      "slug": "optical-rotation",
+      "group": 4,
+      "priority": 7,
+      "status": "research",
+      "model_version": "1.0.0",
+      "resources": {
+        "simulation_html": "simulations/optical-rotation/index.html",
+        "simulation_model": "simulations/optical-rotation/model.mjs",
+        "simulation_controller": "simulations/optical-rotation/app.mjs",
+        "simulation_charts": "simulations/optical-rotation/chart.mjs",
+        "simulation_styles": "simulations/optical-rotation/lab.css",
+        "simulation_observations": "simulations/optical-rotation/observations.json",
+        "model_evidence": "docs/optical-rotation-model-evidence.md",
+        "references_json": "docs/optical-rotation-references.json",
+        "references_bibtex": "docs/optical-rotation-references.bib",
+        "simulation_validation": "docs/simulation/optical-rotation-reference.json"
+      },
+      "tests": [
+        "tests/optical-rotation-model.test.mjs"
+      ],
+      "validator": "scripts/validate_optical_rotation_simulation.py",
+      "evidence_status": "pending",
+      "frontend_status": "not_run"
+    },
+    {
+      "experiment_id": "course-04/michelson-interferometer",
+      "title": "迈克尔逊干涉仪的调节和使用",
+      "slug": "michelson-interferometer",
+      "group": 4,
+      "priority": 8,
+      "status": "research",
+      "model_version": "1.0.0",
+      "resources": {
+        "simulation_html": "simulations/michelson-interferometer/index.html",
+        "simulation_model": "simulations/michelson-interferometer/model.mjs",
+        "simulation_controller": "simulations/michelson-interferometer/app.mjs",
+        "simulation_charts": "simulations/michelson-interferometer/chart.mjs",
+        "simulation_styles": "simulations/michelson-interferometer/lab.css",
+        "simulation_observations": "simulations/michelson-interferometer/observations.json",
+        "model_evidence": "docs/michelson-interferometer-model-evidence.md",
+        "references_json": "docs/michelson-interferometer-references.json",
+        "references_bibtex": "docs/michelson-interferometer-references.bib",
+        "simulation_validation": "docs/simulation/michelson-interferometer-reference.json"
+      },
+      "tests": [
+        "tests/michelson-interferometer-model.test.mjs"
+      ],
+      "validator": "scripts/validate_michelson_interferometer_simulation.py",
+      "evidence_status": "pending",
+      "frontend_status": "not_run"
+    },
+    {
+      "experiment_id": "course-01/doppler-application",
+      "title": "多普勒效应的应用",
+      "slug": "doppler-application",
+      "group": 5,
+      "priority": 1,
+      "status": "research",
+      "model_version": "1.0.0",
+      "resources": {
+        "simulation_html": "simulations/doppler-application/index.html",
+        "simulation_model": "simulations/doppler-application/model.mjs",
+        "simulation_controller": "simulations/doppler-application/app.mjs",
+        "simulation_charts": "simulations/doppler-application/chart.mjs",
+        "simulation_styles": "simulations/doppler-application/lab.css",
+        "simulation_observations": "simulations/doppler-application/observations.json",
+        "model_evidence": "docs/doppler-application-model-evidence.md",
+        "references_json": "docs/doppler-application-references.json",
+        "references_bibtex": "docs/doppler-application-references.bib",
+        "simulation_validation": "docs/simulation/doppler-application-reference.json"
+      },
+      "tests": [
+        "tests/doppler-application-model.test.mjs"
+      ],
+      "validator": "scripts/validate_doppler_application_simulation.py",
+      "evidence_status": "pending",
+      "frontend_status": "not_run"
+    },
+    {
+      "experiment_id": "course-02/sound-speed",
+      "title": "声速的测量",
+      "slug": "sound-speed",
+      "group": 5,
+      "priority": 2,
+      "status": "research",
+      "model_version": "1.0.0",
+      "resources": {
+        "simulation_html": "simulations/sound-speed/index.html",
+        "simulation_model": "simulations/sound-speed/model.mjs",
+        "simulation_controller": "simulations/sound-speed/app.mjs",
+        "simulation_charts": "simulations/sound-speed/chart.mjs",
+        "simulation_styles": "simulations/sound-speed/lab.css",
+        "simulation_observations": "simulations/sound-speed/observations.json",
+        "model_evidence": "docs/sound-speed-model-evidence.md",
+        "references_json": "docs/sound-speed-references.json",
+        "references_bibtex": "docs/sound-speed-references.bib",
+        "simulation_validation": "docs/simulation/sound-speed-reference.json"
+      },
+      "tests": [
+        "tests/sound-speed-model.test.mjs"
+      ],
+      "validator": "scripts/validate_sound_speed_simulation.py",
+      "evidence_status": "pending",
+      "frontend_status": "not_run"
+    },
+    {
+      "experiment_id": "course-02/moment-of-inertia",
+      "title": "刚体转动惯量",
+      "slug": "moment-of-inertia",
+      "group": 5,
+      "priority": 3,
+      "status": "research",
+      "model_version": "1.0.0",
+      "resources": {
+        "simulation_html": "simulations/moment-of-inertia/index.html",
+        "simulation_model": "simulations/moment-of-inertia/model.mjs",
+        "simulation_controller": "simulations/moment-of-inertia/app.mjs",
+        "simulation_charts": "simulations/moment-of-inertia/chart.mjs",
+        "simulation_styles": "simulations/moment-of-inertia/lab.css",
+        "simulation_observations": "simulations/moment-of-inertia/observations.json",
+        "model_evidence": "docs/moment-of-inertia-model-evidence.md",
+        "references_json": "docs/moment-of-inertia-references.json",
+        "references_bibtex": "docs/moment-of-inertia-references.bib",
+        "simulation_validation": "docs/simulation/moment-of-inertia-reference.json"
+      },
+      "tests": [
+        "tests/moment-of-inertia-model.test.mjs"
+      ],
+      "validator": "scripts/validate_moment_of_inertia_simulation.py",
+      "evidence_status": "pending",
+      "frontend_status": "not_run"
+    },
+    {
+      "experiment_id": "course-02/pohl-resonance",
+      "title": "波尔共振实验",
+      "slug": "pohl-resonance",
+      "group": 5,
+      "priority": 4,
+      "status": "research",
+      "model_version": "1.0.0",
+      "resources": {
+        "simulation_html": "simulations/pohl-resonance/index.html",
+        "simulation_model": "simulations/pohl-resonance/model.mjs",
+        "simulation_controller": "simulations/pohl-resonance/app.mjs",
+        "simulation_charts": "simulations/pohl-resonance/chart.mjs",
+        "simulation_styles": "simulations/pohl-resonance/lab.css",
+        "simulation_observations": "simulations/pohl-resonance/observations.json",
+        "model_evidence": "docs/pohl-resonance-model-evidence.md",
+        "references_json": "docs/pohl-resonance-references.json",
+        "references_bibtex": "docs/pohl-resonance-references.bib",
+        "simulation_validation": "docs/simulation/pohl-resonance-reference.json"
+      },
+      "tests": [
+        "tests/pohl-resonance-model.test.mjs"
+      ],
+      "validator": "scripts/validate_pohl_resonance_simulation.py",
+      "evidence_status": "pending",
+      "frontend_status": "not_run"
+    },
+    {
+      "experiment_id": "course-03/electrostatic-field",
+      "title": "用稳恒电场模拟静电场",
+      "slug": "electrostatic-field",
+      "group": 5,
+      "priority": 5,
+      "status": "research",
+      "model_version": "1.0.0",
+      "resources": {
+        "simulation_html": "simulations/electrostatic-field/index.html",
+        "simulation_model": "simulations/electrostatic-field/model.mjs",
+        "simulation_controller": "simulations/electrostatic-field/app.mjs",
+        "simulation_charts": "simulations/electrostatic-field/chart.mjs",
+        "simulation_styles": "simulations/electrostatic-field/lab.css",
+        "simulation_observations": "simulations/electrostatic-field/observations.json",
+        "model_evidence": "docs/electrostatic-field-model-evidence.md",
+        "references_json": "docs/electrostatic-field-references.json",
+        "references_bibtex": "docs/electrostatic-field-references.bib",
+        "simulation_validation": "docs/simulation/electrostatic-field-reference.json"
+      },
+      "tests": [
+        "tests/electrostatic-field-model.test.mjs"
+      ],
+      "validator": "scripts/validate_electrostatic_field_simulation.py",
+      "evidence_status": "pending",
+      "frontend_status": "not_run"
+    },
+    {
+      "experiment_id": "course-03/magnetic-field",
+      "title": "磁场的描绘",
+      "slug": "magnetic-field",
+      "group": 5,
+      "priority": 6,
+      "status": "research",
+      "model_version": "1.0.0",
+      "resources": {
+        "simulation_html": "simulations/magnetic-field/index.html",
+        "simulation_model": "simulations/magnetic-field/model.mjs",
+        "simulation_controller": "simulations/magnetic-field/app.mjs",
+        "simulation_charts": "simulations/magnetic-field/chart.mjs",
+        "simulation_styles": "simulations/magnetic-field/lab.css",
+        "simulation_observations": "simulations/magnetic-field/observations.json",
+        "model_evidence": "docs/magnetic-field-model-evidence.md",
+        "references_json": "docs/magnetic-field-references.json",
+        "references_bibtex": "docs/magnetic-field-references.bib",
+        "simulation_validation": "docs/simulation/magnetic-field-reference.json"
+      },
+      "tests": [
+        "tests/magnetic-field-model.test.mjs"
+      ],
+      "validator": "scripts/validate_magnetic_field_simulation.py",
+      "evidence_status": "pending",
+      "frontend_status": "not_run"
+    },
+    {
+      "experiment_id": "course-03/hall-effect",
+      "title": "霍尔效应的实验研究",
+      "slug": "hall-effect",
+      "group": 5,
+      "priority": 7,
+      "status": "research",
+      "model_version": "1.0.0",
+      "resources": {
+        "simulation_html": "simulations/hall-effect/index.html",
+        "simulation_model": "simulations/hall-effect/model.mjs",
+        "simulation_controller": "simulations/hall-effect/app.mjs",
+        "simulation_charts": "simulations/hall-effect/chart.mjs",
+        "simulation_styles": "simulations/hall-effect/lab.css",
+        "simulation_observations": "simulations/hall-effect/observations.json",
+        "model_evidence": "docs/hall-effect-model-evidence.md",
+        "references_json": "docs/hall-effect-references.json",
+        "references_bibtex": "docs/hall-effect-references.bib",
+        "simulation_validation": "docs/simulation/hall-effect-reference.json"
+      },
+      "tests": [
+        "tests/hall-effect-model.test.mjs"
+      ],
+      "validator": "scripts/validate_hall_effect_simulation.py",
+      "evidence_status": "pending",
+      "frontend_status": "not_run"
+    },
+    {
+      "experiment_id": "course-02/young-modulus",
+      "title": "杨氏模量的测量",
+      "slug": "young-modulus",
+      "group": 6,
+      "priority": 1,
+      "status": "research",
+      "model_version": "1.0.0",
+      "resources": {
+        "simulation_html": "simulations/young-modulus/index.html",
+        "simulation_model": "simulations/young-modulus/model.mjs",
+        "simulation_controller": "simulations/young-modulus/app.mjs",
+        "simulation_charts": "simulations/young-modulus/chart.mjs",
+        "simulation_styles": "simulations/young-modulus/lab.css",
+        "simulation_observations": "simulations/young-modulus/observations.json",
+        "model_evidence": "docs/young-modulus-model-evidence.md",
+        "references_json": "docs/young-modulus-references.json",
+        "references_bibtex": "docs/young-modulus-references.bib",
+        "simulation_validation": "docs/simulation/young-modulus-reference.json"
+      },
+      "tests": [
+        "tests/young-modulus-model.test.mjs"
+      ],
+      "validator": "scripts/validate_young_modulus_simulation.py",
+      "evidence_status": "pending",
+      "frontend_status": "not_run"
+    },
+    {
+      "experiment_id": "course-02/surface-tension",
+      "title": "表面张力系数的测定(拉脱法)",
+      "slug": "surface-tension",
+      "group": 6,
+      "priority": 2,
+      "status": "research",
+      "model_version": "1.0.0",
+      "resources": {
+        "simulation_html": "simulations/surface-tension/index.html",
+        "simulation_model": "simulations/surface-tension/model.mjs",
+        "simulation_controller": "simulations/surface-tension/app.mjs",
+        "simulation_charts": "simulations/surface-tension/chart.mjs",
+        "simulation_styles": "simulations/surface-tension/lab.css",
+        "simulation_observations": "simulations/surface-tension/observations.json",
+        "model_evidence": "docs/surface-tension-model-evidence.md",
+        "references_json": "docs/surface-tension-references.json",
+        "references_bibtex": "docs/surface-tension-references.bib",
+        "simulation_validation": "docs/simulation/surface-tension-reference.json"
+      },
+      "tests": [
+        "tests/surface-tension-model.test.mjs"
+      ],
+      "validator": "scripts/validate_surface_tension_simulation.py",
+      "evidence_status": "pending",
+      "frontend_status": "not_run"
+    },
+    {
+      "experiment_id": "course-02/thermal-expansion",
+      "title": "金属线膨胀系数的测量",
+      "slug": "thermal-expansion",
+      "group": 6,
+      "priority": 3,
+      "status": "research",
+      "model_version": "1.0.0",
+      "resources": {
+        "simulation_html": "simulations/thermal-expansion/index.html",
+        "simulation_model": "simulations/thermal-expansion/model.mjs",
+        "simulation_controller": "simulations/thermal-expansion/app.mjs",
+        "simulation_charts": "simulations/thermal-expansion/chart.mjs",
+        "simulation_styles": "simulations/thermal-expansion/lab.css",
+        "simulation_observations": "simulations/thermal-expansion/observations.json",
+        "model_evidence": "docs/thermal-expansion-model-evidence.md",
+        "references_json": "docs/thermal-expansion-references.json",
+        "references_bibtex": "docs/thermal-expansion-references.bib",
+        "simulation_validation": "docs/simulation/thermal-expansion-reference.json"
+      },
+      "tests": [
+        "tests/thermal-expansion-model.test.mjs"
+      ],
+      "validator": "scripts/validate_thermal_expansion_simulation.py",
+      "evidence_status": "pending",
+      "frontend_status": "not_run"
+    },
+    {
+      "experiment_id": "course-02/liquid-viscosity",
+      "title": "液体粘度系数的测量",
+      "slug": "liquid-viscosity",
+      "group": 6,
+      "priority": 4,
+      "status": "research",
+      "model_version": "1.0.0",
+      "resources": {
+        "simulation_html": "simulations/liquid-viscosity/index.html",
+        "simulation_model": "simulations/liquid-viscosity/model.mjs",
+        "simulation_controller": "simulations/liquid-viscosity/app.mjs",
+        "simulation_charts": "simulations/liquid-viscosity/chart.mjs",
+        "simulation_styles": "simulations/liquid-viscosity/lab.css",
+        "simulation_observations": "simulations/liquid-viscosity/observations.json",
+        "model_evidence": "docs/liquid-viscosity-model-evidence.md",
+        "references_json": "docs/liquid-viscosity-references.json",
+        "references_bibtex": "docs/liquid-viscosity-references.bib",
+        "simulation_validation": "docs/simulation/liquid-viscosity-reference.json"
+      },
+      "tests": [
+        "tests/liquid-viscosity-model.test.mjs"
+      ],
+      "validator": "scripts/validate_liquid_viscosity_simulation.py",
+      "evidence_status": "pending",
+      "frontend_status": "not_run"
+    },
+    {
+      "experiment_id": "course-01/vaporization-heat",
+      "title": "液体比汽化热的测量",
+      "slug": "vaporization-heat",
+      "group": 6,
+      "priority": 5,
+      "status": "research",
+      "model_version": "1.0.0",
+      "resources": {
+        "simulation_html": "simulations/vaporization-heat/index.html",
+        "simulation_model": "simulations/vaporization-heat/model.mjs",
+        "simulation_controller": "simulations/vaporization-heat/app.mjs",
+        "simulation_charts": "simulations/vaporization-heat/chart.mjs",
+        "simulation_styles": "simulations/vaporization-heat/lab.css",
+        "simulation_observations": "simulations/vaporization-heat/observations.json",
+        "model_evidence": "docs/vaporization-heat-model-evidence.md",
+        "references_json": "docs/vaporization-heat-references.json",
+        "references_bibtex": "docs/vaporization-heat-references.bib",
+        "simulation_validation": "docs/simulation/vaporization-heat-reference.json"
+      },
+      "tests": [
+        "tests/vaporization-heat-model.test.mjs"
+      ],
+      "validator": "scripts/validate_vaporization_heat_simulation.py",
+      "evidence_status": "pending",
+      "frontend_status": "not_run"
+    },
+    {
+      "experiment_id": "course-01/mechanical-equivalent-heat",
+      "title": "热功当量的测量",
+      "slug": "mechanical-equivalent-heat",
+      "group": 6,
+      "priority": 6,
+      "status": "research",
+      "model_version": "1.0.0",
+      "resources": {
+        "simulation_html": "simulations/mechanical-equivalent-heat/index.html",
+        "simulation_model": "simulations/mechanical-equivalent-heat/model.mjs",
+        "simulation_controller": "simulations/mechanical-equivalent-heat/app.mjs",
+        "simulation_charts": "simulations/mechanical-equivalent-heat/chart.mjs",
+        "simulation_styles": "simulations/mechanical-equivalent-heat/lab.css",
+        "simulation_observations": "simulations/mechanical-equivalent-heat/observations.json",
+        "model_evidence": "docs/mechanical-equivalent-heat-model-evidence.md",
+        "references_json": "docs/mechanical-equivalent-heat-references.json",
+        "references_bibtex": "docs/mechanical-equivalent-heat-references.bib",
+        "simulation_validation": "docs/simulation/mechanical-equivalent-heat-reference.json"
+      },
+      "tests": [
+        "tests/mechanical-equivalent-heat-model.test.mjs"
+      ],
+      "validator": "scripts/validate_mechanical_equivalent_heat_simulation.py",
+      "evidence_status": "pending",
+      "frontend_status": "not_run"
+    },
+    {
+      "experiment_id": "course-02/thermal-conductivity",
+      "title": "固体导热系数的测量",
+      "slug": "thermal-conductivity",
+      "group": 6,
+      "priority": 7,
+      "status": "research",
+      "model_version": "1.0.0",
+      "resources": {
+        "simulation_html": "simulations/thermal-conductivity/index.html",
+        "simulation_model": "simulations/thermal-conductivity/model.mjs",
+        "simulation_controller": "simulations/thermal-conductivity/app.mjs",
+        "simulation_charts": "simulations/thermal-conductivity/chart.mjs",
+        "simulation_styles": "simulations/thermal-conductivity/lab.css",
+        "simulation_observations": "simulations/thermal-conductivity/observations.json",
+        "model_evidence": "docs/thermal-conductivity-model-evidence.md",
+        "references_json": "docs/thermal-conductivity-references.json",
+        "references_bibtex": "docs/thermal-conductivity-references.bib",
+        "simulation_validation": "docs/simulation/thermal-conductivity-reference.json"
+      },
+      "tests": [
+        "tests/thermal-conductivity-model.test.mjs"
+      ],
+      "validator": "scripts/validate_thermal_conductivity_simulation.py",
+      "evidence_status": "pending",
+      "frontend_status": "not_run"
+    },
+    {
+      "experiment_id": "course-03/photosensor",
+      "title": "光敏传感器光电特性研究",
+      "slug": "photosensor",
+      "group": 7,
+      "priority": 1,
+      "status": "research",
+      "model_version": "1.0.0",
+      "resources": {
+        "simulation_html": "simulations/photosensor/index.html",
+        "simulation_model": "simulations/photosensor/model.mjs",
+        "simulation_controller": "simulations/photosensor/app.mjs",
+        "simulation_charts": "simulations/photosensor/chart.mjs",
+        "simulation_styles": "simulations/photosensor/lab.css",
+        "simulation_observations": "simulations/photosensor/observations.json",
+        "model_evidence": "docs/photosensor-model-evidence.md",
+        "references_json": "docs/photosensor-references.json",
+        "references_bibtex": "docs/photosensor-references.bib",
+        "simulation_validation": "docs/simulation/photosensor-reference.json"
+      },
+      "tests": [
+        "tests/photosensor-model.test.mjs"
+      ],
+      "validator": "scripts/validate_photosensor_simulation.py",
+      "evidence_status": "pending",
+      "frontend_status": "not_run"
+    },
+    {
+      "experiment_id": "course-04/abbe-imaging",
+      "title": "阿贝成像原理和空间滤波",
+      "slug": "abbe-imaging",
+      "group": 7,
+      "priority": 2,
+      "status": "research",
+      "model_version": "1.0.0",
+      "resources": {
+        "simulation_html": "simulations/abbe-imaging/index.html",
+        "simulation_model": "simulations/abbe-imaging/model.mjs",
+        "simulation_controller": "simulations/abbe-imaging/app.mjs",
+        "simulation_charts": "simulations/abbe-imaging/chart.mjs",
+        "simulation_styles": "simulations/abbe-imaging/lab.css",
+        "simulation_observations": "simulations/abbe-imaging/observations.json",
+        "model_evidence": "docs/abbe-imaging-model-evidence.md",
+        "references_json": "docs/abbe-imaging-references.json",
+        "references_bibtex": "docs/abbe-imaging-references.bib",
+        "simulation_validation": "docs/simulation/abbe-imaging-reference.json"
+      },
+      "tests": [
+        "tests/abbe-imaging-model.test.mjs"
+      ],
+      "validator": "scripts/validate_abbe_imaging_simulation.py",
+      "evidence_status": "pending",
+      "frontend_status": "not_run"
+    },
+    {
+      "experiment_id": "course-04/holography",
+      "title": "全息照相",
+      "slug": "holography",
+      "group": 7,
+      "priority": 3,
+      "status": "research",
+      "model_version": "1.0.0",
+      "resources": {
+        "simulation_html": "simulations/holography/index.html",
+        "simulation_model": "simulations/holography/model.mjs",
+        "simulation_controller": "simulations/holography/app.mjs",
+        "simulation_charts": "simulations/holography/chart.mjs",
+        "simulation_styles": "simulations/holography/lab.css",
+        "simulation_observations": "simulations/holography/observations.json",
+        "model_evidence": "docs/holography-model-evidence.md",
+        "references_json": "docs/holography-references.json",
+        "references_bibtex": "docs/holography-references.bib",
+        "simulation_validation": "docs/simulation/holography-reference.json"
+      },
+      "tests": [
+        "tests/holography-model.test.mjs"
+      ],
+      "validator": "scripts/validate_holography_simulation.py",
+      "evidence_status": "pending",
+      "frontend_status": "not_run"
+    }
+  ]
+}

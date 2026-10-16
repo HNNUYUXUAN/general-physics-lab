@@ -1,0 +1,216 @@
+{
+  "experiment_id": "course-03/rlc-resonance",
+  "status": "passed",
+  "checked_at_utc": "2026-10-16T16:01:36.020573+00:00",
+  "browser": "Chromium 1243; Playwright 1.63.0-alpha-2026-08-31",
+  "viewports": [
+    {
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "width": 390,
+      "height": 844
+    }
+  ],
+  "interaction": {
+    "slug": "rlc-resonance",
+    "status": "passed",
+    "title": "RLC串联电路谐振特性的研究 · 虚拟实验 · 普通物理实验",
+    "flows": [
+      {
+        "name": "自动定位与半功率反演",
+        "status": "passed",
+        "actual": [
+          {
+            "selector": "#record-count",
+            "text": "3",
+            "value": "3"
+          },
+          {
+            "selector": "#inference",
+            "text": "交点反演：f₀ = 1125.3954 Hz，B = 140.6744 Hz，Q = 8.00000；两侧相对峰值比 0.707107、0.707107（目标 1/√2 = 0.707107），条件偏差 -7.772e-16、-7.772e-16；峰值比 U峰/U = 1.000000（目标1），偏差 0.000e+0。",
+            "value": null
+          }
+        ]
+      },
+      {
+        "name": "用户选频来源隔离",
+        "status": "passed",
+        "actual": [
+          {
+            "selector": "#inference",
+            "text": "同组电路各记录一个低频半功率点、谐振峰和高频半功率点后反演。",
+            "value": null
+          }
+        ]
+      },
+      {
+        "name": "非法源电压拒绝保存",
+        "status": "passed",
+        "actual": [
+          {
+            "selector": "#status",
+            "text": "源电压请输入 0.10–5.00 V 范围内的有限数值。",
+            "value": null
+          },
+          {
+            "selector": "#record-count",
+            "text": "3",
+            "value": "3"
+          }
+        ]
+      },
+      {
+        "name": "恢复与导出",
+        "status": "passed",
+        "actual": [
+          {
+            "selector": "#source-voltage",
+            "text": "",
+            "value": "1"
+          }
+        ]
+      },
+      {
+        "name": "删除清空与恢复",
+        "status": "passed",
+        "actual": [
+          {
+            "selector": "#record-count",
+            "text": "0",
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "name": "实际改变参数清除旧自动定位身份",
+        "status": "passed",
+        "actual": [
+          {
+            "selector": "#role",
+            "text": "普通扫频点低频半功率点谐振峰高频半功率点",
+            "value": "sample"
+          },
+          {
+            "selector": "#records",
+            "text": "用户选频扫频点1057.2540.976452.441112.460删除",
+            "value": null
+          }
+        ]
+      },
+      {
+        "name": "恢复后真实记录闭环",
+        "status": "passed",
+        "actual": [
+          {
+            "selector": "#capacitance",
+            "text": "0.200.10",
+            "value": "0.0000002"
+          },
+          {
+            "selector": "#record-count",
+            "text": "1",
+            "value": "1"
+          },
+          {
+            "selector": "#status",
+            "text": "已保存当前选频读数。",
+            "value": null
+          }
+        ]
+      },
+      {
+        "name": "刷新恢复与双格式导出",
+        "status": "passed",
+        "actual": [
+          {
+            "record_count": "1"
+          }
+        ]
+      }
+    ],
+    "errors": [],
+    "mobile": {
+      "width": 390,
+      "scrollWidth": 390,
+      "mathErrors": 0,
+      "mathObjects": 29
+    },
+    "downloads": [
+      "rlc-resonance-records.json",
+      "rlc-resonance-records.csv",
+      "rlc-resonance-records.json",
+      "rlc-resonance-records.csv"
+    ]
+  },
+  "additional_controls": {
+    "slug": "rlc-resonance",
+    "status": "passed",
+    "checks": [
+      {
+        "name": "LC reciprocal and resistance controls",
+        "text": "谐振频率\n1125.395 Hz\n品质因数\n3.5355\n半功率带宽\n318.310 Hz\n电流相位\n0.00°"
+      },
+      {
+        "name": "frequency endpoint",
+        "text": "2813.488"
+      },
+      {
+        "name": "arbitrary user points keep candidate identity and condition residuals",
+        "text": "候选反演：f₀ = 795.7747 Hz，B = 2588.4094 Hz，Q = 0.30744；两侧相对峰值比 0.026036、0.059426（目标 1/√2 = 0.707107），条件偏差 -6.811e-1、-6.477e-1；峰值比 U峰/U = 0.999872（目标1），偏差 -1.278e-4。选点须接近左右半功率电压和谐振峰；这些候选值尚需按条件偏差判断。"
+      }
+    ],
+    "fonts": [
+      {
+        "familyName": "Times New Roman",
+        "postScriptName": "TimesNewRomanPS-BoldMT",
+        "isCustomFont": false,
+        "glyphCount": 4
+      },
+      {
+        "familyName": "SimSun",
+        "postScriptName": "SimSun",
+        "isCustomFont": false,
+        "glyphCount": 6
+      }
+    ]
+  },
+  "export_validation": {
+    "json_record_count": 1,
+    "csv_record_count": 1,
+    "identity_timestamp_parameters_source": "passed"
+  },
+  "source_hashes": {
+    "simulations/rlc-resonance/app.mjs": "0bdfb307ec5e3966332d83a7af9c54aa1ee02a88f423f362b70fa19105c857d5",
+    "simulations/rlc-resonance/chart.mjs": "c249b50b2e5d611eb32d23c7ded7da2c3d2e50967112443b51dfc0aa1fd594b2",
+    "simulations/rlc-resonance/index.html": "7b00687e30afa2f4a5c28252b7849673e21a4a30821bee50bdcf6546231b822f",
+    "simulations/rlc-resonance/lab.css": "e437cc4bea179e80dbe87acbf93a77c46df9d44d89c51287eb6f7ffb34df42ec",
+    "simulations/rlc-resonance/model-spec.json": "6c7c3a0d57b721f87a0905b92d4fbc2cba6b04a4c0f810d863a160b82ebe7027",
+    "simulations/rlc-resonance/model.mjs": "062174065348d336a5ee701514d32801f1118b3073d8eb93944e3867be4e61f8",
+    "simulations/rlc-resonance/observations.json": "1a3f099e84a5f36f71dd5610a180d59d21eda034150c7a3f6bb37fddef8ddb7f"
+  },
+  "screenshots": [
+    {
+      "path": "docs/assets/simulations/rlc-resonance-desktop.png",
+      "sha256": "72476546ac6d59686f86b2c4495a4ae716678b64cc6a91cb1294c19f847a6227",
+      "state": "desktop"
+    },
+    {
+      "path": "docs/assets/simulations/rlc-resonance-mobile.png",
+      "sha256": "e799fdba471293159df516657de22655ea3fe04e3735c6ff30e7dac13a4eb793",
+      "state": "mobile"
+    },
+    {
+      "path": "docs/assets/simulations/rlc-resonance-changed.png",
+      "sha256": "62c97db8ca3ac670dbfafbe847c279d80549e7b88d9cf77981cb86f9217f5c9d",
+      "state": "changed"
+    },
+    {
+      "path": "docs/assets/simulations/rlc-resonance-operation.png",
+      "sha256": "80b7c1e2c960ca278729292e4a951f4e7b9ebd5d00560fd2ad28aaebe120bfd1",
+      "state": "operation"
+    }
+  ],
+  "visual_review": "passed: typography, local LaTeX, figure/table caption placement, responsive diagram labels and line/text separation"
+}

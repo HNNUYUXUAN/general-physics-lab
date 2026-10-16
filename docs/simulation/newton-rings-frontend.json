@@ -1,0 +1,168 @@
+{
+  "experiment_id": "course-04/newton-rings",
+  "status": "passed",
+  "checked_at_utc": "2026-10-16T16:01:36.055277+00:00",
+  "browser": "Chromium 1243; Playwright 1.63.0-alpha-2026-08-31",
+  "viewports": [
+    {
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "width": 390,
+      "height": 844
+    }
+  ],
+  "interaction": {
+    "slug": "newton-rings",
+    "status": "passed",
+    "title": "牛顿环实验 · 虚拟实验 · 普通物理实验",
+    "flows": [
+      {
+        "name": "超出显微镜视场不保存",
+        "status": "passed",
+        "actual": [
+          {
+            "selector": "#status",
+            "text": "该级超出显微镜视场20–30mm，请调低级次或改变参数后记录。",
+            "value": null
+          },
+          {
+            "selector": "#record-count",
+            "text": "0",
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "name": "默认光场及参数改变",
+        "status": "passed",
+        "actual": [
+          {
+            "selector": "#radius-value",
+            "text": "1500",
+            "value": "1500"
+          }
+        ]
+      },
+      {
+        "name": "自动暗环记录",
+        "status": "passed",
+        "actual": [
+          {
+            "selector": "#record-count",
+            "text": "1",
+            "value": "1"
+          }
+        ]
+      },
+      {
+        "name": "含截距拟合",
+        "status": "passed",
+        "actual": [
+          {
+            "selector": "#fit-result",
+            "text": "R = 1500.000 mm；残差标准误差 3.69e-13 mm；截距 b = -0.000000 mm²。截距对应间隙 0.00 nm。",
+            "value": null
+          },
+          {
+            "selector": "#pair-summary",
+            "text": "隔级差 2 组，半径均值 1500.000 mm。",
+            "value": null
+          }
+        ]
+      },
+      {
+        "name": "显微镜左右读数",
+        "status": "passed",
+        "actual": [
+          {
+            "selector": "#status",
+            "text": "已记录第 25 级显微镜操作直径 10.000 mm。",
+            "value": null
+          }
+        ]
+      },
+      {
+        "name": "刷新恢复与双格式导出",
+        "status": "passed",
+        "actual": [
+          {
+            "record_count": "4"
+          }
+        ]
+      }
+    ],
+    "errors": [],
+    "mobile": {
+      "width": 390,
+      "scrollWidth": 390,
+      "mathErrors": 0,
+      "mathObjects": 30
+    },
+    "downloads": [
+      "newton-rings-experiment.json",
+      "newton-rings-records.csv"
+    ]
+  },
+  "additional_controls": {
+    "slug": "newton-rings",
+    "status": "passed",
+    "checks": [
+      {
+        "name": "central half-wave dark/quarter-wave bright and wavelength control",
+        "gap": "0.50",
+        "dark": "测微线处中心截面相对强度：0.000",
+        "intensity": "测微线处中心截面相对强度：1.000",
+        "wavelength": "400.0"
+      },
+      {
+        "name": "invalid ring order rejected"
+      }
+    ],
+    "fonts": [
+      {
+        "familyName": "SimSun",
+        "postScriptName": "SimSun",
+        "isCustomFont": false,
+        "glyphCount": 7
+      }
+    ]
+  },
+  "export_validation": {
+    "json_record_count": 4,
+    "csv_record_count": 4,
+    "identity_timestamp_parameters_source": "passed"
+  },
+  "source_hashes": {
+    "simulations/newton-rings/app.mjs": "aa687617ef93d42aea6d4ceb33a3c74ab07e8b93a1a534d1cf8caecf06888670",
+    "simulations/newton-rings/chart.mjs": "64a2c6372011f18a5b10856f98abfe0093836be70db3a4362bddc69619a263dc",
+    "simulations/newton-rings/index.html": "398b69bf9b429dca641c1a280bd97d83100413a6ebc6f19b794d50bfb18898b0",
+    "simulations/newton-rings/lab.css": "04c47b596897607b8f14bc77ccf802bfd7354dc93c90a3fac325e1336c9da586",
+    "simulations/newton-rings/model.mjs": "7f69cdd69e76ce40bf4ed2ef60858edf75461b0a1ad62ff7f199a237ee9230ee",
+    "simulations/newton-rings/observations.json": "5b866d7cf18d86ad1fa85aea06b72996457b01507fee39acc343e18c6b0a60d9"
+  },
+  "screenshots": [
+    {
+      "path": "docs/assets/simulations/newton-rings-desktop.png",
+      "sha256": "4a68350d6ae112408b1c7786254a0a95f3f8a4e79352dd96b42784c57146382e",
+      "state": "desktop"
+    },
+    {
+      "path": "docs/assets/simulations/newton-rings-mobile.png",
+      "sha256": "07dcc4830dfa39dab7b2c0f3cf0fe0f7a164f7f8afb261cf0aa460c78fe0659f",
+      "state": "mobile"
+    },
+    {
+      "path": "docs/assets/simulations/newton-rings-changed.png",
+      "sha256": "67930d3c30ad682a04bc207b8875352c38bf2c1e824e72bc441c07e4d7a5c210",
+      "state": "changed"
+    },
+    {
+      "path": "docs/assets/simulations/newton-rings-operation.png",
+      "sha256": "9592947596e756afe6a96e294e161e2a792b2b24d6ce12144531a753c4ebb158",
+      "state": "operation"
+    }
+  ],
+  "visual_review": "passed: typography, local LaTeX, figure/table caption placement, responsive diagram labels and line/text separation"
+}

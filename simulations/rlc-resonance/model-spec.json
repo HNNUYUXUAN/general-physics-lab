@@ -1,0 +1,79 @@
+{
+  "experimentId": "course-03/rlc-resonance",
+  "modelVersion": "1.0.0",
+  "title": "RLC 谐振虚拟实验",
+  "model": "linear lumped constant-amplitude sinusoidal steady-state series RLC",
+  "voltageConvention": "RMS",
+  "phaseConvention": "current relative to source; positive leads",
+  "defaults": {
+    "inductance": 0.1,
+    "capacitance": 2e-07,
+    "resistance": 88.38834764831844,
+    "sourceVoltage": 1
+  },
+  "parameters": {
+    "inductance": {
+      "unit": "H",
+      "range": [
+        0.05,
+        0.2
+      ],
+      "defaultSource": "original-report-nominal",
+      "rangeSource": "teaching-choice"
+    },
+    "capacitance": {
+      "unit": "F",
+      "choices": [
+        1e-07,
+        2e-07
+      ],
+      "defaultSource": "original-report-nominal"
+    },
+    "resistance": {
+      "unit": "ohm",
+      "range": [
+        20,
+        400
+      ],
+      "defaultSource": "teaching-choice-Q8",
+      "meaning": "total series dissipation"
+    },
+    "sourceVoltage": {
+      "unit": "V",
+      "range": [
+        0.1,
+        5
+      ],
+      "defaultSource": "teaching-choice",
+      "meaning": "constant ideal RMS source amplitude"
+    }
+  },
+  "recordSources": [
+    "automatic-steady-state-model",
+    "user-frequency-selection",
+    "original-report-observations"
+  ],
+  "api": [
+    "validateParameters",
+    "characteristics",
+    "response",
+    "sweep",
+    "parameterKey",
+    "makeRecord",
+    "inferHalfPower",
+    "observedHalfPower"
+  ],
+  "validation": {
+    "nodeTest": "tests/rlc-resonance-model.test.mjs",
+    "referenceScript": "scripts/validate_rlc_resonance_simulation.py",
+    "referenceRecord": "docs/simulation/rlc-resonance-reference.json",
+    "independentMethod": "complex nodal admittance matrix solved with NumPy",
+    "caseCount": 270
+  },
+  "literatureStatus": "verified-fulltext",
+  "frontendStatus": "awaiting-browser-acceptance",
+  "references": [
+    "wang2012",
+    "chen2025"
+  ]
+}

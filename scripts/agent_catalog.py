@@ -16,20 +16,14 @@ RAW = 'https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/'
 PAGES = 'https://hnnuyuxuan.github.io/general-physics-lab/'
 GENERATED = ('docs/experiments.json', 'docs/experiment-index.md',
              'llms.txt', 'llm.txt', 'llms-full.txt')
-SIMULATION_RESOURCES = {
-    'course-01/pendulum': {
-        'simulation_html': 'simulations/pendulum/index.html',
-        'simulation_model': 'simulations/pendulum/model.mjs',
-        'simulation_controller': 'simulations/pendulum/app.mjs',
-        'simulation_charts': 'simulations/pendulum/chart.mjs',
-        'simulation_styles': 'simulations/pendulum/lab.css',
-        'simulation_observations': 'simulations/pendulum/observations.json',
-        'model_evidence': 'docs/pendulum-model-evidence.md',
-        'references_json': 'docs/pendulum-references.json',
-        'references_bibtex': 'docs/pendulum-references.bib',
-        'simulation_validation': 'docs/simulation/pendulum-reference.json',
-    },
-}
+def simulation_resources(root=ROOT):
+    path=root/'simulations/registry.json'
+    if not path.is_file():return {}
+    entries=json.loads(path.read_text(encoding='utf-8'))['simulations']
+    return {e['experiment_id']:e['resources'] for e in entries if e['status'] in {'validated','published'}}
+
+SIMULATION_RESOURCES = simulation_resources()
+
 
 
 def read_json(path):
@@ -106,7 +100,7 @@ def compile_catalog(root=ROOT):
             candidate = base / 'results' / (name + '.json')
             if candidate.exists():
                 paths[name.replace('-', '_')] = candidate
-        for name, relative in SIMULATION_RESOURCES.get(identity, {}).items():
+        for name, relative in simulation_resources(root).get(identity, {}).items():
             candidate = root / relative
             if candidate.is_file():
                 paths[name] = candidate
@@ -228,7 +222,7 @@ def documents(catalog, root=ROOT):
             '- ' + link('仓库工作约定 / AGENTS.md', 'AGENTS.md') + ': 修改范围、数据和排版规则。',
             '- ' + link('运行环境 / Setup', 'docs/usage.md') + ': Python、Wolfram、字体与HTML阅读。', '',
             '## 虚拟实验 / Virtual laboratories', '',
-            '- [单摆虚拟实验 / Pendulum simulation](' + PAGES.rstrip('/') + '/simulations/pendulum/): 调参、计时、拟合和实验记录导出。',
+            '- [虚拟实验目录 / Virtual laboratories](' + PAGES.rstrip('/') + '/simulations/): 按课程进入已验收的操作、测量和分析页面。',
             '- ' + link('单摆模型与文献依据', 'docs/pendulum-model-evidence.md') + ': 方程、参数身份、适用范围及独立验证。',
             '- ' + link('虚拟实验接手与复现', 'docs/virtual-lab-agent-guide.md') + ': WebVPN检索、全文归档、模型接口与发布验收。',
             '- ' + link('系列平台开发方案', 'docs/virtual-lab-development.md') + ': 首例功能、分层架构和扩展顺序。', '',

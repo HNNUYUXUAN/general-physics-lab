@@ -3889,6 +3889,87 @@
           "bytes": 1075,
           "hash_basis": "utf8-lf"
         },
+        "simulation_html": {
+          "path": "simulations/string-vibration/index.html",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/simulations/string-vibration/index.html",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/string-vibration/index.html",
+          "sha256": "2c46d6c5eddc2b7fa163873b79bba2a926d51f25fe75a3e9eacb60cdd0736e48",
+          "bytes": 7960,
+          "hash_basis": "utf8-lf",
+          "online_url": "https://hnnuyuxuan.github.io/general-physics-lab/simulations/string-vibration/index.html"
+        },
+        "simulation_model": {
+          "path": "simulations/string-vibration/model.mjs",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/simulations/string-vibration/model.mjs",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/string-vibration/model.mjs",
+          "sha256": "1ba28215b88d13548661cbbfaab6629b8bd1b33da46c3950a8502a32f51e4b4a",
+          "bytes": 3533,
+          "hash_basis": "utf8-lf"
+        },
+        "simulation_controller": {
+          "path": "simulations/string-vibration/app.mjs",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/simulations/string-vibration/app.mjs",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/string-vibration/app.mjs",
+          "sha256": "f18dcffbb57b9eec4dd1b1782628413821b0ce7f6a7a1c16d82f945e3d485068",
+          "bytes": 11334,
+          "hash_basis": "utf8-lf"
+        },
+        "simulation_charts": {
+          "path": "simulations/string-vibration/chart.mjs",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/simulations/string-vibration/chart.mjs",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/string-vibration/chart.mjs",
+          "sha256": "c82ef793891457129411c144904f8fd2a61d67ac297f107beaf922bdf2934964",
+          "bytes": 1702,
+          "hash_basis": "utf8-lf"
+        },
+        "simulation_styles": {
+          "path": "simulations/string-vibration/lab.css",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/simulations/string-vibration/lab.css",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/string-vibration/lab.css",
+          "sha256": "959f1e16faf3e8a438fa950daf5f547bb13fdbe881771e08b3440feb9ec71228",
+          "bytes": 8570,
+          "hash_basis": "utf8-lf"
+        },
+        "simulation_observations": {
+          "path": "simulations/string-vibration/observations.json",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/simulations/string-vibration/observations.json",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/string-vibration/observations.json",
+          "sha256": "49fa14f52366be7c32c4bc3a10c3ddc7d83ed784b2d56a01d9d4b8bd6b0a25d7",
+          "bytes": 4643,
+          "hash_basis": "utf8-lf"
+        },
+        "model_evidence": {
+          "path": "docs/string-vibration-model-evidence.md",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/docs/string-vibration-model-evidence.md",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/string-vibration-model-evidence.md",
+          "sha256": "c97094e4cea25e6b8a752f5293dc4927d5a7ca2470f09ca81a9f4c991a9965a1",
+          "bytes": 3900,
+          "hash_basis": "utf8-lf"
+        },
+        "references_json": {
+          "path": "docs/string-vibration-references.json",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/docs/string-vibration-references.json",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/string-vibration-references.json",
+          "sha256": "89d9cf7fe4291f2b137dadd0fec74b807c211d4b7e3da14ce923bb77a6db84ad",
+          "bytes": 1060,
+          "hash_basis": "utf8-lf"
+        },
+        "references_bibtex": {
+          "path": "docs/string-vibration-references.bib",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/docs/string-vibration-references.bib",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/string-vibration-references.bib",
+          "sha256": "4ceeebe536f64c7f334f82add66ec59f491e0a73a26073e6adbcaf79f5882ad2",
+          "bytes": 341,
+          "hash_basis": "utf8-lf"
+        },
+        "simulation_validation": {
+          "path": "docs/simulation/string-vibration-reference.json",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/docs/simulation/string-vibration-reference.json",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/simulation/string-vibration-reference.json",
+          "sha256": "da9ff8afaf35e56ddf653d4c8665764e505c7d23c473a88252df603e4c1066a2",
+          "bytes": 54193,
+          "hash_basis": "utf8-lf"
+        },
         "source_pdf": {
           "path": "pdf/course-02/03-弦振动的研究/实验报告-弦振动的研究.pdf",
           "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/pdf/course-02/03-%E5%BC%A6%E6%8C%AF%E5%8A%A8%E7%9A%84%E7%A0%94%E7%A9%B6/%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A-%E5%BC%A6%E6%8C%AF%E5%8A%A8%E7%9A%84%E7%A0%94%E7%A9%B6.pdf",
@@ -11550,6 +11631,87 @@
           "bytes": 1113,
           "hash_basis": "utf8-lf"
         },
+        "simulation_html": {
+          "path": "simulations/rlc-resonance/index.html",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/simulations/rlc-resonance/index.html",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/rlc-resonance/index.html",
+          "sha256": "7b00687e30afa2f4a5c28252b7849673e21a4a30821bee50bdcf6546231b822f",
+          "bytes": 7889,
+          "hash_basis": "utf8-lf",
+          "online_url": "https://hnnuyuxuan.github.io/general-physics-lab/simulations/rlc-resonance/index.html"
+        },
+        "simulation_model": {
+          "path": "simulations/rlc-resonance/model.mjs",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/simulations/rlc-resonance/model.mjs",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/rlc-resonance/model.mjs",
+          "sha256": "062174065348d336a5ee701514d32801f1118b3073d8eb93944e3867be4e61f8",
+          "bytes": 4622,
+          "hash_basis": "utf8-lf"
+        },
+        "simulation_controller": {
+          "path": "simulations/rlc-resonance/app.mjs",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/simulations/rlc-resonance/app.mjs",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/rlc-resonance/app.mjs",
+          "sha256": "0bdfb307ec5e3966332d83a7af9c54aa1ee02a88f423f362b70fa19105c857d5",
+          "bytes": 8358,
+          "hash_basis": "utf8-lf"
+        },
+        "simulation_charts": {
+          "path": "simulations/rlc-resonance/chart.mjs",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/simulations/rlc-resonance/chart.mjs",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/rlc-resonance/chart.mjs",
+          "sha256": "c249b50b2e5d611eb32d23c7ded7da2c3d2e50967112443b51dfc0aa1fd594b2",
+          "bytes": 5751,
+          "hash_basis": "utf8-lf"
+        },
+        "simulation_styles": {
+          "path": "simulations/rlc-resonance/lab.css",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/simulations/rlc-resonance/lab.css",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/rlc-resonance/lab.css",
+          "sha256": "c061ec7b52a8c119679d445ebf064b4c605ab3fdd90b1ec3c2bafc47fedab1db",
+          "bytes": 8065,
+          "hash_basis": "utf8-lf"
+        },
+        "simulation_observations": {
+          "path": "simulations/rlc-resonance/observations.json",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/simulations/rlc-resonance/observations.json",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/rlc-resonance/observations.json",
+          "sha256": "44dff8e778eb81dc7e015c0ce3e8abd851e63c8131935c09db7744204c3463e8",
+          "bytes": 4760,
+          "hash_basis": "utf8-lf"
+        },
+        "model_evidence": {
+          "path": "docs/rlc-resonance-model-evidence.md",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/docs/rlc-resonance-model-evidence.md",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/rlc-resonance-model-evidence.md",
+          "sha256": "f77110a97387380a1defb1aae07b80bd2dc561cf1f2873b01f06ba3b736dfacf",
+          "bytes": 5590,
+          "hash_basis": "utf8-lf"
+        },
+        "references_json": {
+          "path": "docs/rlc-resonance-references.json",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/docs/rlc-resonance-references.json",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/rlc-resonance-references.json",
+          "sha256": "4ed0ea5be6f47c4da682fece507d89ecfd9f4e12e245bb892252121451b3949f",
+          "bytes": 2146,
+          "hash_basis": "utf8-lf"
+        },
+        "references_bibtex": {
+          "path": "docs/rlc-resonance-references.bib",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/docs/rlc-resonance-references.bib",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/rlc-resonance-references.bib",
+          "sha256": "c56088943d95ed28fb8b17503987e37b4f6b0dd16cc1c7fc6e57e9a13047687a",
+          "bytes": 646,
+          "hash_basis": "utf8-lf"
+        },
+        "simulation_validation": {
+          "path": "docs/simulation/rlc-resonance-reference.json",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/docs/simulation/rlc-resonance-reference.json",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/simulation/rlc-resonance-reference.json",
+          "sha256": "2a70a548b0aa0a5cfc93e5857a4871c8488a58755cd22e59a6ab4e93178d0f3c",
+          "bytes": 1021,
+          "hash_basis": "utf8-lf"
+        },
         "source_pdf": {
           "path": "pdf/course-03/11RLC串联电路谐振特性的研究/实验报告-RLC串联电路谐振特性的研究实验报告.pdf",
           "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/pdf/course-03/11RLC%E4%B8%B2%E8%81%94%E7%94%B5%E8%B7%AF%E8%B0%90%E6%8C%AF%E7%89%B9%E6%80%A7%E7%9A%84%E7%A0%94%E7%A9%B6/%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A-RLC%E4%B8%B2%E8%81%94%E7%94%B5%E8%B7%AF%E8%B0%90%E6%8C%AF%E7%89%B9%E6%80%A7%E7%9A%84%E7%A0%94%E7%A9%B6%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A.pdf",
@@ -15033,6 +15195,87 @@
           "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/newton-rings/results/presentation-validation.json",
           "sha256": "9fd77effe0135074fc3014fb9495121816c079120135640d52e4b712e6f4d3c5",
           "bytes": 1154,
+          "hash_basis": "utf8-lf"
+        },
+        "simulation_html": {
+          "path": "simulations/newton-rings/index.html",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/simulations/newton-rings/index.html",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/newton-rings/index.html",
+          "sha256": "d6965f5c6683df23ca2534668128fde38d5c21a80d4d93d4af1abf73e2b6d848",
+          "bytes": 8792,
+          "hash_basis": "utf8-lf",
+          "online_url": "https://hnnuyuxuan.github.io/general-physics-lab/simulations/newton-rings/index.html"
+        },
+        "simulation_model": {
+          "path": "simulations/newton-rings/model.mjs",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/simulations/newton-rings/model.mjs",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/newton-rings/model.mjs",
+          "sha256": "7f69cdd69e76ce40bf4ed2ef60858edf75461b0a1ad62ff7f199a237ee9230ee",
+          "bytes": 4914,
+          "hash_basis": "utf8-lf"
+        },
+        "simulation_controller": {
+          "path": "simulations/newton-rings/app.mjs",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/simulations/newton-rings/app.mjs",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/newton-rings/app.mjs",
+          "sha256": "4944024913cf19de3bc4e16db4b42a8c4383a49e1a35ec48b78ff12a199efe70",
+          "bytes": 8959,
+          "hash_basis": "utf8-lf"
+        },
+        "simulation_charts": {
+          "path": "simulations/newton-rings/chart.mjs",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/simulations/newton-rings/chart.mjs",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/newton-rings/chart.mjs",
+          "sha256": "64a2c6372011f18a5b10856f98abfe0093836be70db3a4362bddc69619a263dc",
+          "bytes": 2653,
+          "hash_basis": "utf8-lf"
+        },
+        "simulation_styles": {
+          "path": "simulations/newton-rings/lab.css",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/simulations/newton-rings/lab.css",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/newton-rings/lab.css",
+          "sha256": "a58a0b6b31226103588a796aa7513ada5a3b6d973520159f53bcbdebad2d2e7c",
+          "bytes": 8854,
+          "hash_basis": "utf8-lf"
+        },
+        "simulation_observations": {
+          "path": "simulations/newton-rings/observations.json",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/simulations/newton-rings/observations.json",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/newton-rings/observations.json",
+          "sha256": "bd5dd5653e9abb7e6fa1c4012dcad7788fb98cfda383f292b6ba270968fdfe02",
+          "bytes": 1897,
+          "hash_basis": "utf8-lf"
+        },
+        "model_evidence": {
+          "path": "docs/newton-rings-model-evidence.md",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/docs/newton-rings-model-evidence.md",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/newton-rings-model-evidence.md",
+          "sha256": "1838643cf0c4bc56a3b8ea068f0e6d359eb886a74d8c3e764fa9fa7493478c56",
+          "bytes": 7341,
+          "hash_basis": "utf8-lf"
+        },
+        "references_json": {
+          "path": "docs/newton-rings-references.json",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/docs/newton-rings-references.json",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/newton-rings-references.json",
+          "sha256": "d6f701bd38731ae94eb476f6b9afdbdf49ba996d6eab01723c0ee89c3c9a9188",
+          "bytes": 1709,
+          "hash_basis": "utf8-lf"
+        },
+        "references_bibtex": {
+          "path": "docs/newton-rings-references.bib",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/docs/newton-rings-references.bib",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/newton-rings-references.bib",
+          "sha256": "2b6ba51b7d9d11f7fcac7abbf5fdf27b9c05d654210c644f5f6a18b3dff5b806",
+          "bytes": 376,
+          "hash_basis": "utf8-lf"
+        },
+        "simulation_validation": {
+          "path": "docs/simulation/newton-rings-reference.json",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/docs/simulation/newton-rings-reference.json",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/simulation/newton-rings-reference.json",
+          "sha256": "4226d3834ba1614e666980404692cd7333d13fb994046d568e7a2207d7a936e6",
+          "bytes": 29931,
           "hash_basis": "utf8-lf"
         },
         "source_pdf": {

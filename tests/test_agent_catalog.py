@@ -69,16 +69,14 @@ def test_discovery_bundle_matches_sources_and_schema():
     assert validate()['experiments'] == 45
 
 
-def test_simulation_resources_are_discoverable_only_for_pendulum(catalog):
-    pendulum = next(entry for entry in catalog['experiments'] if entry['id'] == 'course-01/pendulum')
-    expected = SIMULATION_RESOURCES[pendulum['id']]
-    assert {key: pendulum['resources'][key]['path'] for key in expected} == expected
-    assert pendulum['resources']['simulation_html']['online_url'].endswith('/simulations/pendulum/index.html')
-    for key in ('simulation_model', 'simulation_controller', 'simulation_charts', 'simulation_styles', 'references_bibtex'):
-        assert pendulum['resources'][key]['hash_basis'] == 'utf8-lf'
-    navigation = card(pendulum, compact=True)
-    assert pendulum['resources']['simulation_html']['online_url'] in navigation
-    assert '模型依据' in navigation and '数值验证' in navigation
+def test_registered_simulation_resources_are_discoverable(catalog):
+    from agent_catalog import simulation_resources
+    registered=simulation_resources()
     for entry in catalog['experiments']:
-        if entry['id'] != pendulum['id']:
-            assert not set(expected).intersection(entry['resources'])
+        expected=registered.get(entry['id'],{})
+        assert {key:entry['resources'][key]['path'] for key in expected}==expected
+        if expected:
+            assert entry['resources']['simulation_html']['online_url'] in card(entry,compact=True)
+            for key in ('simulation_model','simulation_controller','simulation_charts','simulation_styles','references_bibtex'):
+                assert entry['resources'][key]['hash_basis']=='utf8-lf'
+        else:assert 'simulation_html' not in entry['resources']

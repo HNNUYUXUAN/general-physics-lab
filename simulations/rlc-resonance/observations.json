@@ -1,0 +1,269 @@
+{
+  "experimentId": "course-03/rlc-resonance",
+  "source": "original-report-observations",
+  "sourceFiles": {
+    "response.csv": "b5699c20e190f7deb1564b1fd1c72d4937abbf65d867c95e65692d179abf2ea1"
+  },
+  "units": {
+    "frequency": "Hz",
+    "voltage": "V"
+  },
+  "curves": {
+    "C02_R1": [
+      {
+        "frequency": 850.0,
+        "voltage": 0.052
+      },
+      {
+        "frequency": 900.0,
+        "voltage": 0.066
+      },
+      {
+        "frequency": 950.0,
+        "voltage": 0.09
+      },
+      {
+        "frequency": 1000.0,
+        "voltage": 0.128
+      },
+      {
+        "frequency": 1025.0,
+        "voltage": 0.168
+      },
+      {
+        "frequency": 1050.0,
+        "voltage": 0.234
+      },
+      {
+        "frequency": 1075.0,
+        "voltage": 0.343
+      },
+      {
+        "frequency": 1100.0,
+        "voltage": 0.429
+      },
+      {
+        "frequency": 1120.0,
+        "voltage": 0.386
+      },
+      {
+        "frequency": 1125.0,
+        "voltage": 0.362
+      },
+      {
+        "frequency": 1130.0,
+        "voltage": 0.336
+      },
+      {
+        "frequency": 1140.0,
+        "voltage": 0.296
+      },
+      {
+        "frequency": 1150.0,
+        "voltage": 0.257
+      },
+      {
+        "frequency": 1175.0,
+        "voltage": 0.194
+      },
+      {
+        "frequency": 1200.0,
+        "voltage": 0.151
+      },
+      {
+        "frequency": 1250.0,
+        "voltage": 0.101
+      },
+      {
+        "frequency": 1300.0,
+        "voltage": 0.087
+      },
+      {
+        "frequency": 1350.0,
+        "voltage": 0.07
+      },
+      {
+        "frequency": 1400.0,
+        "voltage": 0.059
+      },
+      {
+        "frequency": 1450.0,
+        "voltage": 0.051
+      }
+    ],
+    "C02_R2": [
+      {
+        "frequency": 850.0,
+        "voltage": 0.103
+      },
+      {
+        "frequency": 900.0,
+        "voltage": 0.131
+      },
+      {
+        "frequency": 950.0,
+        "voltage": 0.176
+      },
+      {
+        "frequency": 1000.0,
+        "voltage": 0.251
+      },
+      {
+        "frequency": 1025.0,
+        "voltage": 0.318
+      },
+      {
+        "frequency": 1050.0,
+        "voltage": 0.414
+      },
+      {
+        "frequency": 1075.0,
+        "voltage": 0.539
+      },
+      {
+        "frequency": 1100.0,
+        "voltage": 0.612
+      },
+      {
+        "frequency": 1120.0,
+        "voltage": 0.574
+      },
+      {
+        "frequency": 1125.0,
+        "voltage": 0.558
+      },
+      {
+        "frequency": 1130.0,
+        "voltage": 0.535
+      },
+      {
+        "frequency": 1140.0,
+        "voltage": 0.492
+      },
+      {
+        "frequency": 1150.0,
+        "voltage": 0.447
+      },
+      {
+        "frequency": 1175.0,
+        "voltage": 0.361
+      },
+      {
+        "frequency": 1200.0,
+        "voltage": 0.292
+      },
+      {
+        "frequency": 1250.0,
+        "voltage": 0.204
+      },
+      {
+        "frequency": 1300.0,
+        "voltage": 0.171
+      },
+      {
+        "frequency": 1350.0,
+        "voltage": 0.14
+      },
+      {
+        "frequency": 1400.0,
+        "voltage": 0.118
+      },
+      {
+        "frequency": 1450.0,
+        "voltage": 0.103
+      }
+    ],
+    "C01_R1": [
+      {
+        "frequency": 1180.0,
+        "voltage": 0.034
+      },
+      {
+        "frequency": 1280.0,
+        "voltage": 0.048
+      },
+      {
+        "frequency": 1380.0,
+        "voltage": 0.078
+      },
+      {
+        "frequency": 1480.0,
+        "voltage": 0.159
+      },
+      {
+        "frequency": 1580.0,
+        "voltage": 0.337
+      },
+      {
+        "frequency": 1590.0,
+        "voltage": 0.304
+      },
+      {
+        "frequency": 1600.0,
+        "voltage": 0.267
+      },
+      {
+        "frequency": 1700.0,
+        "voltage": 0.102
+      },
+      {
+        "frequency": 1800.0,
+        "voltage": 0.07
+      },
+      {
+        "frequency": 1900.0,
+        "voltage": 0.051
+      },
+      {
+        "frequency": 2000.0,
+        "voltage": 0.039
+      }
+    ],
+    "C01_R2": [
+      {
+        "frequency": 1180.0,
+        "voltage": 0.069
+      },
+      {
+        "frequency": 1280.0,
+        "voltage": 0.097
+      },
+      {
+        "frequency": 1380.0,
+        "voltage": 0.154
+      },
+      {
+        "frequency": 1480.0,
+        "voltage": 0.304
+      },
+      {
+        "frequency": 1580.0,
+        "voltage": 0.53
+      },
+      {
+        "frequency": 1590.0,
+        "voltage": 0.498
+      },
+      {
+        "frequency": 1600.0,
+        "voltage": 0.458
+      },
+      {
+        "frequency": 1700.0,
+        "voltage": 0.209
+      },
+      {
+        "frequency": 1800.0,
+        "voltage": 0.124
+      },
+      {
+        "frequency": 1900.0,
+        "voltage": 0.103
+      },
+      {
+        "frequency": 2000.0,
+        "voltage": 0.081
+      }
+    ]
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "experiment_id": "course-04/newton-rings",
+  "source": "original-report",
+  "data_version": "1.0.0",
+  "wavelength_nm": 589.3,
+  "rings": [
+    {
+      "order": 5,
+      "left_mm": 23.466,
+      "right_mm": 26.531
+    },
+    {
+      "order": 10,
+      "left_mm": 22.818,
+      "right_mm": 27.183
+    },
+    {
+      "order": 15,
+      "left_mm": 22.334,
+      "right_mm": 27.667
+    },
+    {
+      "order": 20,
+      "left_mm": 21.915,
+      "right_mm": 28.084
+    },
+    {
+      "order": 25,
+      "left_mm": 21.56,
+      "right_mm": 28.439
+    },
+    {
+      "order": 30,
+      "left_mm": 21.225,
+      "right_mm": 28.778
+    }
+  ],
+  "wedge": [
+    {
+      "trial": 1,
+      "intervals": 20,
+      "fringe_length_mm": 14.75,
+      "wedge_length_mm": 50.0
+    },
+    {
+      "trial": 2,
+      "intervals": 20,
+      "fringe_length_mm": 14.82,
+      "wedge_length_mm": 50.0
+    },
+    {
+      "trial": 3,
+      "intervals": 20,
+      "fringe_length_mm": 14.78,
+      "wedge_length_mm": 50.0
+    },
+    {
+      "trial": 4,
+      "intervals": 20,
+      "fringe_length_mm": 14.8,
+      "wedge_length_mm": 50.0
+    },
+    {
+      "trial": 5,
+      "intervals": 20,
+      "fringe_length_mm": 14.77,
+      "wedge_length_mm": 50.0
+    }
+  ],
+  "provenance": {
+    "primary_source": "originals/course-04/07_实验七_牛顿环实验_实验报告.docx",
+    "input_hashes": {
+      "experiments/course-04/newton-rings/experiment.json": "8702f4acd2331177b64f4e728939864a75dd499ca209f512951b2ffb0c604eb5",
+      "experiments/course-04/newton-rings/data/rings.csv": "8e7508d7693ff654dc281d90c6081242c60d88847e6121b2f0befe19da0da447",
+      "experiments/course-04/newton-rings/data/wedge.csv": "84b995fd6537cec7aed67939339cb0905a5827e36f2c75285dbf275a0d4436bc",
+      "experiments/course-04/newton-rings/data/provenance.json": "10701de8883ce087b84649a81353e16c3421a32ad995112682998b4415ee77e2"
+    }
+  }
+}

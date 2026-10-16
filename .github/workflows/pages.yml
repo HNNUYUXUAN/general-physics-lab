@@ -25,8 +25,7 @@ jobs:
         run: python -m pip install -e '.[test]'
       - name: Numerical and documentation checks
         run: |
-          node --test tests/pendulum-model.test.mjs
-          python scripts/validate_pendulum_simulation.py --output-root .build/simulation-check --model simulations/pendulum/model.mjs
+          python scripts/validate_simulations.py --all --output-root .build/simulation-check
           python -m pytest
           python scripts/agent_catalog.py build --check
           python scripts/check_agent_docs.py

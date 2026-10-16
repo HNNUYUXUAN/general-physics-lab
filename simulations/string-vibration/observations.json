@@ -1,0 +1,172 @@
+{
+  "schema_version": 1,
+  "experiment": "course-02/string-vibration",
+  "source_files": [
+    {
+      "path": "experiments/course-02/string-vibration/experiment.json",
+      "sha256": "c978cea80954cdeb8c5cc46c5b84a6ec9148c2db81c3469ffb94cdaa323e5a8c"
+    },
+    {
+      "path": "experiments/course-02/string-vibration/data/tension.csv",
+      "sha256": "028fc3ae672f7cd25e1426bfeaa66182f413c3f88ac2e324e17c8894171671ba"
+    },
+    {
+      "path": "experiments/course-02/string-vibration/data/frequency.csv",
+      "sha256": "d3140abc909bfc28b8f5273d610347cc37418017d18e17b111fcb98fedcd2a89"
+    },
+    {
+      "path": "experiments/course-02/string-vibration/data/provenance.json",
+      "sha256": "83fd611a3722d5b5b6b2f9b7552e35160dd8cf1fd741c4c2958bacbcd0b51491"
+    }
+  ],
+  "series": {
+    "tension": [
+      {
+        "mass_g": 60.0,
+        "frequency_hz": 60.0,
+        "length_cm": 99.1,
+        "half_waves": 2,
+        "wavelength_cm": 99.1,
+        "tension_N": 0.5876399999999999,
+        "source": "original-observation",
+        "conflict": false
+      },
+      {
+        "mass_g": 80.0,
+        "frequency_hz": 60.0,
+        "length_cm": 118.4,
+        "half_waves": 2,
+        "wavelength_cm": 118.4,
+        "tension_N": 0.78352,
+        "source": "original-observation",
+        "conflict": false
+      },
+      {
+        "mass_g": 100.0,
+        "frequency_hz": 60.0,
+        "length_cm": 119.1,
+        "half_waves": 2,
+        "wavelength_cm": 119.1,
+        "tension_N": 0.9794,
+        "source": "original-observation",
+        "conflict": false
+      },
+      {
+        "mass_g": 120.0,
+        "frequency_hz": 60.0,
+        "length_cm": 67.5,
+        "half_waves": 1,
+        "wavelength_cm": 135.0,
+        "tension_N": 1.1752799999999999,
+        "source": "original-observation",
+        "conflict": false
+      },
+      {
+        "mass_g": 140.0,
+        "frequency_hz": 60.0,
+        "length_cm": 71.4,
+        "half_waves": 1,
+        "wavelength_cm": 142.8,
+        "tension_N": 1.3711600000000002,
+        "source": "original-observation",
+        "conflict": false
+      },
+      {
+        "mass_g": 160.0,
+        "frequency_hz": 60.0,
+        "length_cm": 77.1,
+        "half_waves": 1,
+        "wavelength_cm": 154.2,
+        "tension_N": 1.56704,
+        "source": "original-observation",
+        "conflict": false
+      },
+      {
+        "mass_g": 180.0,
+        "frequency_hz": 60.0,
+        "length_cm": 63.3,
+        "half_waves": 1,
+        "wavelength_cm": 126.6,
+        "tension_N": 1.76292,
+        "source": "original-observation",
+        "conflict": true
+      }
+    ],
+    "frequency": [
+      {
+        "mass_g": 100.0,
+        "frequency_hz": 60.0,
+        "length_cm": 122.0,
+        "half_waves": 2,
+        "wavelength_cm": 122.0,
+        "tension_N": 0.9794,
+        "source": "original-observation",
+        "conflict": false
+      },
+      {
+        "mass_g": 100.0,
+        "frequency_hz": 70.0,
+        "length_cm": 117.8,
+        "half_waves": 2,
+        "wavelength_cm": 117.8,
+        "tension_N": 0.9794,
+        "source": "original-observation",
+        "conflict": false
+      },
+      {
+        "mass_g": 100.0,
+        "frequency_hz": 80.0,
+        "length_cm": 96.2,
+        "half_waves": 2,
+        "wavelength_cm": 96.2,
+        "tension_N": 0.9794,
+        "source": "original-observation",
+        "conflict": false
+      },
+      {
+        "mass_g": 100.0,
+        "frequency_hz": 90.0,
+        "length_cm": 84.4,
+        "half_waves": 2,
+        "wavelength_cm": 84.4,
+        "tension_N": 0.9794,
+        "source": "original-observation",
+        "conflict": false
+      },
+      {
+        "mass_g": 100.0,
+        "frequency_hz": 100.0,
+        "length_cm": 76.1,
+        "half_waves": 2,
+        "wavelength_cm": 76.1,
+        "tension_N": 0.9794,
+        "source": "original-observation",
+        "conflict": false
+      },
+      {
+        "mass_g": 100.0,
+        "frequency_hz": 110.0,
+        "length_cm": 109.0,
+        "half_waves": 3,
+        "wavelength_cm": 72.66666666666667,
+        "tension_N": 0.9794,
+        "source": "original-observation",
+        "conflict": false
+      },
+      {
+        "mass_g": 100.0,
+        "frequency_hz": 120.0,
+        "length_cm": 95.0,
+        "half_waves": 3,
+        "wavelength_cm": 63.333333333333336,
+        "tension_N": 0.9794,
+        "source": "original-observation",
+        "conflict": false
+      }
+    ]
+  },
+  "notes": [
+    "原报告线密度缺失，网页教学输入不用于改写原始观测。",
+    "张力系列第7点L63.30cm,n1推得126.60cm；源报告派生166.60cm冲突保留。"
+  ]
+}
