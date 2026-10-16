@@ -1,0 +1,40 @@
+{
+  "overview": [
+    {
+      "label": "标准质量片逐级加载",
+      "formula": "T^2=Am+B",
+      "detail": "八组周期建立定标直线"
+    },
+    {
+      "label": "由圆柱周期反推质量",
+      "formula": "m_x=(T_x^2-B)/A",
+      "detail": "未知物不参与定标"
+    },
+    {
+      "label": "解释等效系统参数",
+      "formula": "k=4\\pi^2/A",
+      "detail": "截距对应空载等效质量"
+    }
+  ],
+  "figures": [
+    {
+      "key": "balance-calibration",
+      "caption": "八组标准质量的周期平方定标及拟合残差；圆柱标称值作为比较输入",
+      "label": "标准质量观测"
+    }
+  ],
+  "result_checks": [
+    {
+      "metric": "unknown_mass_g",
+      "display": "193.60424"
+    },
+    {
+      "metric": "relative_nominal_difference_percent",
+      "display": "1.6295216"
+    },
+    {
+      "metric": "effective_stiffness_n_m",
+      "display": "20.184331"
+    }
+  ]
+}

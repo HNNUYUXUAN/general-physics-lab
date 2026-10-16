@@ -1,0 +1,43 @@
+{
+  "overview": [
+    {
+      "label": "砝码定标力敏传感器",
+      "formula": "F=K V+b",
+      "detail": "逐差和回归两种转换系数"
+    },
+    {
+      "label": "记录液膜拉断电压差",
+      "formula": "\\Delta V=V_1-V_2",
+      "detail": "五次缓慢拉脱测量"
+    },
+    {
+      "label": "按内外接触线换算",
+      "formula": "\\alpha=K\\Delta V/l",
+      "detail": "内外周长共同参与"
+    }
+  ],
+  "figures": [
+    {
+      "key": "calibration",
+      "caption": "八个实际载荷等级的平均电压与重力定标及线性拟合"
+    },
+    {
+      "key": "pull_sequence",
+      "caption": "五次实际拉脱前后电压差，展示重复测量离散"
+    }
+  ],
+  "result_checks": [
+    {
+      "metric": "surface_tension",
+      "display": "0.065192321"
+    },
+    {
+      "metric": "surface_tension_regression",
+      "display": "0.065012968"
+    },
+    {
+      "metric": "conditional_uncertainty",
+      "display": "0.0010736136"
+    }
+  ]
+}

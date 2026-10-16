@@ -1,5 +1,16 @@
 # 开发与复现
 
+## 实验入口插图
+
+各实验的 `assets/readme-plan.json` 定义入口图的三个物理步骤、结果序列及题注。插图读取该实验 `results/python.json` 中的计算结果，图例放在绘图区外，题注写在 README 图片下方。
+
+```text
+python scripts/build_readme_assets.py --experiment course-03/rlc-resonance
+python scripts/build_readme_assets.py --all
+```
+
+图表导出为 `assets/readme-*.svg` 与 `assets/readme-*.png`。单摆的几何示意图另由本实验 `assets/build_illustration.py` 绘制。
+
 ## 成稿组织
 
 Markdown 报告以归档 DOCX 为内容与结构依据，保留各自已有的抬头、学生信息、章节与内容顺序。原始记录表沿用 DOCX 的列序；公式及计算结果使用已核对的表达和重新计算的数值。模板中只维护叙述，数据与结果占位符由构建流程替换。

@@ -1,0 +1,40 @@
+{
+  "overview": [
+    {
+      "label": "逐级升温记录微位移",
+      "formula": "\\Delta L=\\alpha L\\Delta T",
+      "detail": "八组温度与微位移数据"
+    },
+    {
+      "label": "逐差与回归求斜率",
+      "formula": "S=a+kT",
+      "detail": "比较四对逐差与全组拟合"
+    },
+    {
+      "label": "由标称长度换算系数",
+      "formula": "\\alpha=k/L",
+      "detail": "长度与位移统一单位"
+    }
+  ],
+  "figures": [
+    {
+      "key": "expansion-fit",
+      "caption": "与讲义示例同值的八组温度—读数数据及线性拟合和残差",
+      "label": "讲义示例数据"
+    }
+  ],
+  "result_checks": [
+    {
+      "metric": "alpha_difference_per_k",
+      "display": "$1.5270833\\times10^{-5}$"
+    },
+    {
+      "metric": "alpha_fit_per_k",
+      "display": "$1.5253175\\times10^{-5}$"
+    },
+    {
+      "metric": "reference_difference_percent",
+      "display": "11.575799"
+    }
+  ]
+}

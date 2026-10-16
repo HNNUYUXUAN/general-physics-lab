@@ -1,0 +1,47 @@
+{
+  "overview": [
+    {
+      "label": "记录四种方法长度",
+      "formula": "u,v,D,d",
+      "detail": "各方法五次读数"
+    },
+    {
+      "label": "分别求得凸凹焦距",
+      "formula": "f=uv/(u+v)",
+      "detail": "统一实物实像符号"
+    },
+    {
+      "label": "改变物距观察成像",
+      "formula": "M=-v/u",
+      "detail": "近轴光线与双像条件"
+    }
+  ],
+  "figures": [
+    {
+      "key": "conjugates-repeat",
+      "caption": "物距像距法逐次凸透镜焦距；不同物像距离代入同一近轴公式"
+    },
+    {
+      "key": "concave-repeat",
+      "caption": "辅助成像法逐次凹透镜焦距；虚物距约定使焦距为负"
+    }
+  ],
+  "result_checks": [
+    {
+      "metric": "autocollimation_mean_cm",
+      "display": "$10.020000\\ \\mathrm{cm}$"
+    },
+    {
+      "metric": "conjugates_mean_cm",
+      "display": "$10.008428\\ \\mathrm{cm}$"
+    },
+    {
+      "metric": "bessel_mean_cm",
+      "display": "$9.9952271\\ \\mathrm{cm}$"
+    },
+    {
+      "metric": "concave_mean_cm",
+      "display": "$-16.423821\\ \\mathrm{cm}$"
+    }
+  ]
+}

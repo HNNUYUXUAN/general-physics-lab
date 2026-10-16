@@ -1,0 +1,47 @@
+{
+  "overview": [
+    {
+      "label": "移动探头记录轴场",
+      "formula": "B_c\\propto I",
+      "detail": "单线圈与双线圈各两电流"
+    },
+    {
+      "label": "叠加圆线圈理论场",
+      "formula": "B=B_1+B_2",
+      "detail": "按明确几何与坐标计算"
+    },
+    {
+      "label": "比较中心场均匀性",
+      "formula": "d/R=1",
+      "detail": "扫描间距比观察平台"
+    }
+  ],
+  "figures": [
+    {
+      "key": "single_300",
+      "caption": "单线圈 300 mA 的七点轴向观测，纵轴为原记录单位"
+    },
+    {
+      "key": "double_300",
+      "caption": "双线圈 300 mA 的七点轴向观测，纵轴为原记录单位"
+    },
+    {
+      "key": "spacing_1",
+      "caption": "d/R=1 的理想亥姆霍兹双线圈归一化轴向场"
+    }
+  ],
+  "result_checks": [
+    {
+      "metric": "single_300_peak_position",
+      "display": "-52"
+    },
+    {
+      "metric": "single_current_ratio_max_deviation",
+      "display": "0.827068"
+    },
+    {
+      "metric": "double_current_ratio_max_deviation",
+      "display": "1.003460"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "overview": [
+    {
+      "label": "读取四级暗纹位置",
+      "formula": "x_k\\approx k\\lambda D/d",
+      "detail": "屏距八百毫米"
+    },
+    {
+      "label": "反推各级狭缝宽度",
+      "formula": "d=k\\lambda D/x_k",
+      "detail": "逐级计算与拟合比较"
+    },
+    {
+      "label": "对照归一化光强形状",
+      "formula": "I/I_0=(\\sin\\beta/\\beta)^2",
+      "detail": "缝宽扫描与理想模型"
+    }
+  ],
+  "figures": [
+    {
+      "key": "dark-fit",
+      "caption": "暗纹中心距对级数的带截距拟合及残差，用于检查中心定位"
+    },
+    {
+      "key": "scan-observed",
+      "caption": "记录中的归一化光强扫描；对称位置保留其原始记录身份"
+    },
+    {
+      "key": "scan-model",
+      "caption": "由暗纹平均缝宽生成的理想单缝衍射曲线"
+    }
+  ],
+  "result_checks": [
+    {
+      "metric": "slit_width_mean_mm",
+      "display": "$0.19993115\\ \\mathrm{mm}$"
+    },
+    {
+      "metric": "slit_width_origin_fit_mm",
+      "display": "$0.20020037\\ \\mathrm{mm}$"
+    },
+    {
+      "metric": "scan_model_rmse",
+      "display": "$0.01608620$"
+    }
+  ]
+}

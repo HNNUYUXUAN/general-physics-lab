@@ -1,0 +1,43 @@
+{
+  "overview": [
+    {
+      "label": "记录碰撞前后速度",
+      "formula": "p=mv",
+      "detail": "两类碰撞分别整理"
+    },
+    {
+      "label": "核算动量与动能",
+      "formula": "E=mv^2/2",
+      "detail": "区分外力冲量与内耗"
+    },
+    {
+      "label": "扫描恢复系数模型",
+      "formula": "e=(v_2-v_1)/v_{10}",
+      "detail": "连接粘合与理想弹性极限"
+    }
+  ],
+  "figures": [
+    {
+      "key": "momentum_deviation",
+      "caption": "五组粘合碰撞观测换算的动量相对亏损"
+    },
+    {
+      "key": "velocity_ratio",
+      "caption": "弹性附件组实测碰后速度比；滑块 1 采用同组两读数平均"
+    }
+  ],
+  "result_checks": [
+    {
+      "metric": "mean_momentum_deviation",
+      "display": "3.1943386"
+    },
+    {
+      "metric": "mean_energy_loss",
+      "display": "35.450723"
+    },
+    {
+      "metric": "theoretical_energy_loss",
+      "display": "31.132113"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "overview": [
+    {
+      "label": "加载并读取标尺像",
+      "formula": "\\Delta L=D\\Delta x/(2H)",
+      "detail": "光杠杆放大微小伸长"
+    },
+    {
+      "label": "修正金属丝直径",
+      "formula": "d=d_{app}-d_0",
+      "detail": "六次测微器读数"
+    },
+    {
+      "label": "换算应力应变比",
+      "formula": "E=FL/(S\\Delta L)",
+      "detail": "逐差与回归并列比较"
+    }
+  ],
+  "figures": [
+    {
+      "key": "loading_fit",
+      "caption": "十个载荷等级的加减载平均标尺读数及线性拟合"
+    },
+    {
+      "key": "diameter_sequence",
+      "caption": "六次直径读数经同一正零差修正后的序列"
+    }
+  ],
+  "result_checks": [
+    {
+      "metric": "mean_corrected_diameter",
+      "display": "0.52"
+    },
+    {
+      "metric": "young_modulus_difference",
+      "display": "$3.0755572\\times10^{11}$"
+    },
+    {
+      "metric": "young_modulus_regression",
+      "display": "$3.0818302\\times10^{11}$"
+    }
+  ]
+}

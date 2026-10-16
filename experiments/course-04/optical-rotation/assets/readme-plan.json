@@ -1,0 +1,39 @@
+{
+  "overview": [
+    {
+      "label": "记录样品前后平衡",
+      "formula": "\\Delta\\theta_1,\\Delta\\theta_2",
+      "detail": "双游标五组读数"
+    },
+    {
+      "label": "求平均旋光角大小",
+      "formula": "|\\varphi|=(|\\Delta\\theta_1|+|\\Delta\\theta_2|)/2",
+      "detail": "按圆周最短角差处理"
+    },
+    {
+      "label": "给定比旋光率求浓度",
+      "formula": "c=|\\varphi|/([\\alpha]l)",
+      "detail": "蔗糖参考、两分米管长"
+    }
+  ],
+  "figures": [
+    {
+      "key": "rotation-repeat",
+      "caption": "五次双游标旋光角绝对值；从样品前后的方向差计算"
+    }
+  ],
+  "result_checks": [
+    {
+      "metric": "rotation_magnitude_deg",
+      "display": "$8.1566667^\\circ$"
+    },
+    {
+      "metric": "conditional_concentration_g_ml",
+      "display": "$0.061365232\\ \\mathrm{g/mL}$"
+    },
+    {
+      "metric": "concentration_type_a_g_ml",
+      "display": "$0.001434646\\ \\mathrm{g/mL}$"
+    }
+  ]
+}

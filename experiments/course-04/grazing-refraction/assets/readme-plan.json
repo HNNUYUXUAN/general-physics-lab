@@ -1,0 +1,39 @@
+{
+  "overview": [
+    {
+      "label": "瞄准出射明暗边界",
+      "formula": "\\varphi",
+      "detail": "液体与直角棱镜接触"
+    },
+    {
+      "label": "平均双游标出射角",
+      "formula": "\\bar\\varphi",
+      "detail": "五组方向读数求角差"
+    },
+    {
+      "label": "利用棱镜参数反演",
+      "formula": "n=\\sqrt{n_1^2-\\sin^2\\varphi}",
+      "detail": "折射率小于棱镜参数"
+    }
+  ],
+  "figures": [
+    {
+      "key": "angle-repeat",
+      "caption": "五次明暗分界线出射角；第 1 组与其余记录的差异进入重复性统计"
+    }
+  ],
+  "result_checks": [
+    {
+      "metric": "angle_mean_deg",
+      "display": "$39.808333^\\circ$"
+    },
+    {
+      "metric": "liquid_refractive_index",
+      "display": "$1.4033612$"
+    },
+    {
+      "metric": "liquid_standard_uncertainty",
+      "display": "$0.0018723$"
+    }
+  ]
+}

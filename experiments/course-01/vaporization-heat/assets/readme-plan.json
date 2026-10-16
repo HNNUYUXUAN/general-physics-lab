@@ -1,0 +1,41 @@
+{
+  "overview": [
+    {
+      "label": "称量并换算温度",
+      "formula": "M=m_f-m_i",
+      "detail": "主计算保持初末称量构成相同"
+    },
+    {
+      "label": "分别核算两类热量",
+      "formula": "Q_L=Q_{abs}-Q_{sens}",
+      "detail": "潜热与凝结水显热分开"
+    },
+    {
+      "label": "求单位质量汽化热",
+      "formula": "L=Q_L/M",
+      "detail": "检查末温与称量构成影响"
+    }
+  ],
+  "figures": [
+    {
+      "key": "temperature_sensitivity",
+      "caption": "固定质量、初温和蒸汽温度时，假设末温偏移对应的比汽化热模型响应",
+      "model": true,
+      "label": "理论模型"
+    }
+  ],
+  "result_checks": [
+    {
+      "metric": "latent_heat",
+      "display": "1973118"
+    },
+    {
+      "metric": "alternative_latent_heat",
+      "display": "4108769.9"
+    },
+    {
+      "metric": "final_temperature_sensitivity",
+      "display": "71945.877"
+    }
+  ]
+}

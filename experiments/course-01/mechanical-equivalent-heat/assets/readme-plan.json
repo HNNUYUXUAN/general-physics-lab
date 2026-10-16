@@ -1,0 +1,39 @@
+{
+  "overview": [
+    {
+      "label": "记录电热升温过程",
+      "formula": "W=VIt",
+      "detail": "0–29 min 的温度表"
+    },
+    {
+      "label": "拟合温度时间直线",
+      "formula": "T=at+b",
+      "detail": "比较不同区间的升温速率"
+    },
+    {
+      "label": "联系系统能量平衡",
+      "formula": "J=VI/(aC)",
+      "detail": "热容以 cal/K 为基准"
+    }
+  ],
+  "figures": [
+    {
+      "key": "heating_curve",
+      "caption": "30 个实际温度记录与全区间线性拟合及残差"
+    }
+  ],
+  "result_checks": [
+    {
+      "metric": "heating_slope",
+      "display": "0.010159696"
+    },
+    {
+      "metric": "early_slope",
+      "display": "0.010836905"
+    },
+    {
+      "metric": "late_slope",
+      "display": "0.0096279762"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "overview": [
+    {
+      "label": "寻找反射最暗位置",
+      "formula": "n=\\tan\\alpha_B",
+      "detail": "五次布儒斯特角"
+    },
+    {
+      "label": "读取十个方向电流",
+      "formula": "x=\\cos^2\\theta",
+      "detail": "角度零至九十度"
+    },
+    {
+      "label": "拟合幅度与背景项",
+      "formula": "I=I_0x+I_b",
+      "detail": "检查残差与零点偏移"
+    }
+  ],
+  "figures": [
+    {
+      "key": "malus-fit",
+      "caption": "光电流对方向余弦平方的带背景拟合及残差；十组数据共同求幅度和背景"
+    }
+  ],
+  "result_checks": [
+    {
+      "metric": "glass_refractive_index",
+      "display": "$1.4900288$"
+    },
+    {
+      "metric": "malus_amplitude_ma",
+      "display": "$1.1820845\\ \\mathrm{mA}$"
+    },
+    {
+      "metric": "malus_background_ma",
+      "display": "$0.024557761\\ \\mathrm{mA}$"
+    },
+    {
+      "metric": "malus_r_squared",
+      "display": "$0.99990929$"
+    }
+  ]
+}

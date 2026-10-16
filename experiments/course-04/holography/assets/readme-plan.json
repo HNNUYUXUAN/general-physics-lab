@@ -1,0 +1,47 @@
+{
+  "overview": [
+    {
+      "label": "记录两束光强与曝光",
+      "formula": "K=I_r/I_o",
+      "detail": "三组光强和曝光记录"
+    },
+    {
+      "label": "由夹角估计条纹间距",
+      "formula": "\\Lambda=\\lambda/[2\\sin(\\theta/2)]",
+      "detail": "理想同偏振平面波"
+    },
+    {
+      "label": "比较物像尺寸与调制度",
+      "formula": "M=\\Delta x_i/\\Delta x_p",
+      "detail": "再现测量与模型分开"
+    }
+  ],
+  "figures": [
+    {
+      "key": "hologram-ratio",
+      "caption": "三组记录光强计算的参考光与物光之比"
+    },
+    {
+      "key": "hologram-magnification",
+      "caption": "三组记录物像宽度计算的再现横向放大率"
+    }
+  ],
+  "result_checks": [
+    {
+      "metric": "mean_intensity_ratio",
+      "display": "$1.8208727$"
+    },
+    {
+      "metric": "fringe_spacing_um",
+      "display": "$1.2224757\\ \\mu\\mathrm m$"
+    },
+    {
+      "metric": "mean_magnification",
+      "display": "$1.0083333$"
+    },
+    {
+      "metric": "mean_total_exposure_mj_cm2",
+      "display": "$5.500000\\ \\mathrm{mJ}/\\mathrm{cm}^2$"
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "overview": [
+    {
+      "label": "读取电压时间格数",
+      "formula": "U_{pp}=k_Vy",
+      "detail": "三波形保留同一幅度读格"
+    },
+    {
+      "label": "换算有效值与周期",
+      "formula": "f=(k_tx)^{-1}",
+      "detail": "分别使用波形对应系数"
+    },
+    {
+      "label": "观察李萨如频率比",
+      "formula": "f_y/f_x=N_x/N_y",
+      "detail": "将轨迹形状与相位联系"
+    }
+  ],
+  "figures": [
+    {
+      "key": "sine_wave",
+      "caption": "峰值 0.5 V、频率 1000 Hz 的理想正弦波模型"
+    },
+    {
+      "key": "triangle_wave",
+      "caption": "相同峰值与频率的理想三角波模型"
+    },
+    {
+      "key": "lissajous_2",
+      "caption": "频率比 fy:fx=1000:500、相位 π/4 的理想李萨如轨迹"
+    }
+  ],
+  "result_checks": [
+    {
+      "metric": "sine_U_rms",
+      "display": "0.353553"
+    },
+    {
+      "metric": "triangle_U_rms",
+      "display": "0.288675"
+    },
+    {
+      "metric": "square_U_rms",
+      "display": "0.5"
+    },
+    {
+      "metric": "lissajous_mean_frequency",
+      "display": "1000"
+    }
+  ]
+}

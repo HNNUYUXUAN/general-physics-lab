@@ -1,0 +1,49 @@
+{
+  "overview": [
+    {
+      "label": "称量空气与浸水质量",
+      "formula": "\\Delta m=m-m_s",
+      "detail": "浮力给出排水质量"
+    },
+    {
+      "label": "比较同容积净质量",
+      "formula": "\\rho_b/\\rho_w=(m_b-m_0)/(m_w-m_0)",
+      "detail": "空瓶质量共用同一输入"
+    },
+    {
+      "label": "传播质量测量影响",
+      "formula": "u^2(\\rho)=\\sum_j c_j^2u_j^2",
+      "detail": "灵敏系数由模型求导"
+    }
+  ],
+  "figures": [
+    {
+      "key": "solid_repeat",
+      "caption": "三次实际称量代入浮力模型得到的合金密度"
+    },
+    {
+      "key": "liquid_repeat",
+      "caption": "三次实际称量代入同容积模型得到的盐水密度"
+    },
+    {
+      "key": "apparent_bias",
+      "caption": "固定其余均值后，假设水中视质量偏移对合金密度的模型响应",
+      "model": true,
+      "label": "理论模型"
+    }
+  ],
+  "result_checks": [
+    {
+      "metric": "solid_density",
+      "display": "7.9012275"
+    },
+    {
+      "metric": "liquid_density",
+      "display": "1.0838494"
+    },
+    {
+      "metric": "bottle_volume",
+      "display": "16.035438"
+    }
+  ]
+}

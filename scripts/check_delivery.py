@@ -2,6 +2,9 @@
 from pathlib import Path
 import argparse,hashlib,json,re,sys
 import nbformat
+import markdown
+from bs4 import BeautifulSoup
+from urllib.parse import unquote,urlsplit
 ROOT=Path(__file__).resolve().parents[1]
 sys.path[:0]=[str(ROOT/'src'),str(ROOT/'scripts')]
 from physicslab.common.io import read_json,sha256
@@ -22,9 +25,11 @@ def audit(entry):
     assert all(x.is_file() and x.stat().st_size for x in required), 'missing deliverable'
     links=0
     for path in [exp/'README.md',exp/'report/report.md']:
-        for target in re.findall(r'\[[^\]]*\]\(([^)]+)\)',path.read_text(encoding='utf-8')):
-            if re.match(r'^[a-zA-Z]+:',target) or target.startswith('#'):continue
-            assert (path.parent/target.split('#')[0]).exists(), (path,target)
+        rendered=markdown.markdown(path.read_text(encoding='utf-8'),extensions=['tables','fenced_code'])
+        for node in BeautifulSoup(rendered,'html.parser').select('a[href],img[src]'):
+            target=node.get('href',node.get('src'));parsed=urlsplit(target)
+            if parsed.scheme or parsed.netloc or not parsed.path:continue
+            assert (path.parent/unquote(parsed.path)).exists(), (path,target)
             links+=1
     v=read_json(exp/'results/verification.json');assert v['status']=='passed'
     record={'id':entry['id'],'status':'passed','code_cells':len(code),'cross_language_checks':len(v['checks']),'links_checked':links}

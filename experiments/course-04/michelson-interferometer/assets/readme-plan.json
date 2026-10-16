@@ -1,0 +1,39 @@
+{
+  "overview": [
+    {
+      "label": "单向移动干涉动镜",
+      "formula": "\\Delta d",
+      "detail": "避免手轮机械空程"
+    },
+    {
+      "label": "累计一百条纹变化",
+      "formula": "N=100",
+      "detail": "五次记录各自计数"
+    },
+    {
+      "label": "由往返光程求波长",
+      "formula": "\\lambda=2\\Delta d/N",
+      "detail": "位移毫米换算纳米"
+    }
+  ],
+  "figures": [
+    {
+      "key": "wavelength-repeat",
+      "caption": "每次累计 100 条条纹所得波长；五次位移分别计算"
+    }
+  ],
+  "result_checks": [
+    {
+      "metric": "wavelength_mean_nm",
+      "display": "$632.60000\\ \\mathrm{nm}$"
+    },
+    {
+      "metric": "wavelength_type_a_nm",
+      "display": "$0.228035\\ \\mathrm{nm}$"
+    },
+    {
+      "metric": "relative_reference_difference_percent",
+      "display": "$0.03160556\\%$"
+    }
+  ]
+}

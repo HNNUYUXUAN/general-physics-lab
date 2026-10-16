@@ -1,0 +1,39 @@
+{
+  "overview": [
+    {
+      "label": "寻找谱线偏向转折",
+      "formula": "\\delta_{\\min}",
+      "detail": "跟踪同一条单色谱线"
+    },
+    {
+      "label": "计算五次最小偏向",
+      "formula": "\\bar\\delta_{\\min}",
+      "detail": "双游标角差先平均"
+    },
+    {
+      "label": "联立顶角求折射率",
+      "formula": "n=\\sin[(A+\\delta)/2]/\\sin(A/2)",
+      "detail": "固定顶角六十度"
+    }
+  ],
+  "figures": [
+    {
+      "key": "angle-repeat",
+      "caption": "五次最小偏向角；两游标结果平均后用于折射率计算"
+    }
+  ],
+  "result_checks": [
+    {
+      "metric": "angle_mean_deg",
+      "display": "$40.940000^\\circ$"
+    },
+    {
+      "metric": "refractive_index",
+      "display": "$1.5425829$"
+    },
+    {
+      "metric": "refractive_index_standard_uncertainty",
+      "display": "$0.0005730$"
+    }
+  ]
+}

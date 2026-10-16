@@ -1,0 +1,45 @@
+{
+  "overview": [
+    {
+      "label": "记录两面热电势",
+      "formula": "\\Delta T=(V_h-V_c)/z_T",
+      "detail": "统一微伏与温差单位"
+    },
+    {
+      "label": "由电功率换算热流",
+      "formula": "q_c=U^2/(2Fr)",
+      "detail": "电阻采用给定近似值"
+    },
+    {
+      "label": "分别估计导热和比热",
+      "formula": "\\lambda=q_cR/(2\\Delta T)",
+      "detail": "同时检查温差是否稳定"
+    }
+  ],
+  "figures": [
+    {
+      "key": "center-fit",
+      "caption": "十六组实际中心面热电势及其时间回归和残差",
+      "label": "中心面观测"
+    },
+    {
+      "key": "thermal-difference",
+      "caption": "同组加热面与中心面读数之差，展示准稳态近似中的漂移",
+      "label": "热电势差"
+    }
+  ],
+  "result_checks": [
+    {
+      "metric": "thermal_conductivity_endpoint",
+      "display": "0.23302103"
+    },
+    {
+      "metric": "specific_heat_j_kg_k",
+      "display": "2006.5085"
+    },
+    {
+      "metric": "delta_drift_percent",
+      "display": "11.515152"
+    }
+  ]
+}

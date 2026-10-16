@@ -1,0 +1,43 @@
+{
+  "overview": [
+    {
+      "label": "修正球径并统一计时",
+      "formula": "d=d_{app}-d_0",
+      "detail": "分秒百分秒统一为秒"
+    },
+    {
+      "label": "拟合累计下落时间",
+      "formula": "T_i=ti+b",
+      "detail": "斜率给出平均区间耗时"
+    },
+    {
+      "label": "加入有限管径修正",
+      "formula": "\\eta\\propto d^2t/(1+2.4d/D)",
+      "detail": "检查低雷诺数近似"
+    }
+  ],
+  "figures": [
+    {
+      "key": "cumulative-fit",
+      "caption": "六个实际累计时间与序号的带截距拟合及残差"
+    },
+    {
+      "key": "single-time",
+      "caption": "六个累计读数的相邻差，观察单次计时的离散"
+    }
+  ],
+  "result_checks": [
+    {
+      "metric": "fall_time_fit_s",
+      "display": "31.655143"
+    },
+    {
+      "metric": "viscosity_pa_s",
+      "display": "0.51710216"
+    },
+    {
+      "metric": "reynolds_number",
+      "display": "0.011491274"
+    }
+  ]
+}

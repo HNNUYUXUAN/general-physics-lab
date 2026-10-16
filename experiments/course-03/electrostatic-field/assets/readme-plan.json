@@ -1,0 +1,47 @@
+{
+  "overview": [
+    {
+      "label": "确定同轴边界参数",
+      "formula": "a\\leq r\\leq b",
+      "detail": "内外电极保持等电位"
+    },
+    {
+      "label": "线性化半径电位",
+      "formula": "\\ln r=c+m(U/U_0)",
+      "detail": "八个内点进行直线拟合"
+    },
+    {
+      "label": "计算径向场强分布",
+      "formula": "E_r=U_0/[r\\ln(b/a)]",
+      "detail": "连接等位线与电场线"
+    }
+  ],
+  "figures": [
+    {
+      "key": "linearized",
+      "caption": "八内点汇总半径的对数线性拟合与残差"
+    },
+    {
+      "key": "potential_profile",
+      "caption": "a=1.05 cm、b=6.94 cm、U₀=10 V 的理想径向电位"
+    },
+    {
+      "key": "field_profile",
+      "caption": "同一边界参数下的理想径向场强，半径换算为米"
+    }
+  ],
+  "result_checks": [
+    {
+      "metric": "lnr_slope",
+      "display": "-1.883763"
+    },
+    {
+      "metric": "theory_slope",
+      "display": "-1.888512"
+    },
+    {
+      "metric": "max_voltage_difference",
+      "display": "0.028011"
+    }
+  ]
+}

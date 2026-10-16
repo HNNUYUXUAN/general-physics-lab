@@ -1,0 +1,43 @@
+{
+  "overview": [
+    {
+      "label": "形成稳定驻波模式",
+      "formula": "L=n\\lambda/2",
+      "detail": "记录弦长与半波数"
+    },
+    {
+      "label": "分别扫描张力频率",
+      "formula": "v=\\sqrt{F_T/\\mu}",
+      "detail": "每组波长由几何复算"
+    },
+    {
+      "label": "拟合两个幂律指数",
+      "formula": "\\lambda\\propto F_T^{1/2}/\\nu",
+      "detail": "对照理论指数 0.5 与 −1"
+    }
+  ],
+  "figures": [
+    {
+      "key": "tension_log",
+      "caption": "固定频率时七组观测复算的张力—波长双对数关系及拟合"
+    },
+    {
+      "key": "frequency_log",
+      "caption": "固定张力时七组观测复算的频率—波长双对数关系及拟合"
+    }
+  ],
+  "result_checks": [
+    {
+      "metric": "tension_exponent",
+      "display": "0.30785476"
+    },
+    {
+      "metric": "frequency_exponent",
+      "display": "-0.98304059"
+    },
+    {
+      "metric": "baseline_wave_speed",
+      "display": "59.46"
+    }
+  ]
+}

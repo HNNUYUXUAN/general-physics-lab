@@ -1,0 +1,47 @@
+{
+  "overview": [
+    {
+      "label": "定位后焦面各级频谱",
+      "formula": "\\xi_k=k\\lambda F/d",
+      "detail": "五个频谱级次"
+    },
+    {
+      "label": "拟合位置求光栅周期",
+      "formula": "d=\\lambda F/a",
+      "detail": "斜率与中心截距分开"
+    },
+    {
+      "label": "选择频谱观察像结构",
+      "formula": "I=|\\mathcal{F}^{-1}(HG)|^2",
+      "detail": "相干振幅滤波后取强度"
+    }
+  ],
+  "figures": [
+    {
+      "key": "spectrum-fit",
+      "caption": "五级后焦面频谱位置的拟合及残差，斜率换算光栅周期"
+    },
+    {
+      "key": "filter-visibility",
+      "caption": "不同滤波方式的记录相对可见度，序号对应报告观察表"
+    }
+  ],
+  "result_checks": [
+    {
+      "metric": "grating_period_mm",
+      "display": "$0.19983158\\ \\mathrm{mm}$"
+    },
+    {
+      "metric": "period_fit_mm",
+      "display": "$0.19991575\\ \\mathrm{mm}$"
+    },
+    {
+      "metric": "visibility_zero_only",
+      "display": "$0.05$"
+    },
+    {
+      "metric": "visibility_unfiltered",
+      "display": "$0.82$"
+    }
+  ]
+}

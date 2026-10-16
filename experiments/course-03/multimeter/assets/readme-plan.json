@@ -1,0 +1,47 @@
+{
+  "overview": [
+    {
+      "label": "选择量程读取示值",
+      "formula": "x_{\\mathrm{read}}",
+      "detail": "保留两台表的档位与读数"
+    },
+    {
+      "label": "比较相对标称偏差",
+      "formula": "D=|x/x_0-1|",
+      "detail": "区分电压与电阻的标称参照"
+    },
+    {
+      "label": "理解欧姆刻度疏密",
+      "formula": "I/I_0=(1+r)^{-1}",
+      "detail": "用电阻比观察非线性偏转"
+    }
+  ],
+  "figures": [
+    {
+      "key": "resistance_digital_deviation",
+      "caption": "五个电阻的数字表读数相对标称偏差绝对值"
+    },
+    {
+      "key": "resistance_analog_deviation",
+      "caption": "同五个电阻的指针表读数相对标称偏差绝对值"
+    },
+    {
+      "key": "ohm_scale",
+      "caption": "理想串联欧姆表的归一化刻度曲线"
+    }
+  ],
+  "result_checks": [
+    {
+      "metric": "resistance_1_digital_deviation",
+      "display": "26.6667"
+    },
+    {
+      "metric": "resistance_2_digital_deviation",
+      "display": "0.851064"
+    },
+    {
+      "metric": "voltage_5_digital_deviation",
+      "display": "74.2"
+    }
+  ]
+}

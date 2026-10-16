@@ -1,0 +1,39 @@
+{
+  "overview": [
+    {
+      "label": "调节三处光学轴线",
+      "formula": "\\alpha=0",
+      "detail": "自准直、平行光与调平"
+    },
+    {
+      "label": "求取两侧游标角差",
+      "formula": "\\Delta\\theta_i",
+      "detail": "圆周最短差处理跨零"
+    },
+    {
+      "label": "平均得到光线偏向",
+      "formula": "\\delta=(\\Delta\\theta_1+\\Delta\\theta_2)/2",
+      "detail": "五次结果比较重复性"
+    }
+  ],
+  "figures": [
+    {
+      "key": "angle-repeat",
+      "caption": "五次双游标偏向角；各点由同组入射与偏折方向读数计算"
+    }
+  ],
+  "result_checks": [
+    {
+      "metric": "angle_mean_deg",
+      "display": "$43.261667^\\circ$"
+    },
+    {
+      "metric": "angle_type_a_arcmin",
+      "display": "$0.30000^\\prime$"
+    },
+    {
+      "metric": "angle_combined_arcmin",
+      "display": "$0.65064^\\prime$"
+    }
+  ]
+}

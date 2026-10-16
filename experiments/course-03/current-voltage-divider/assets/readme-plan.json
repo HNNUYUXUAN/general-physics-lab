@@ -1,0 +1,47 @@
+{
+  "overview": [
+    {
+      "label": "记录滑块负载比例",
+      "formula": "K=R_Z/R_0",
+      "detail": "三种负载比与十个位置"
+    },
+    {
+      "label": "比较两种调节曲线",
+      "formula": "X=R_{AC}/R_0",
+      "detail": "分别连接制流与分压回路"
+    },
+    {
+      "label": "扫描归一化模型",
+      "formula": "U/E=KX/[K+X(1-X)]",
+      "detail": "观察轻负载时的线性趋势"
+    }
+  ],
+  "figures": [
+    {
+      "key": "current_K0p1",
+      "caption": "K=0.1 的制流电流观测，标度沿用源记录"
+    },
+    {
+      "key": "voltage_K0p1",
+      "caption": "K=0.1 的分压电压观测，标度沿用源记录"
+    },
+    {
+      "key": "model_voltage_K10p0",
+      "caption": "K=10 时的理想分压归一化模型"
+    }
+  ],
+  "result_checks": [
+    {
+      "metric": "current_K0p1_rmse",
+      "display": "1.637172"
+    },
+    {
+      "metric": "current_K1p0_rmse",
+      "display": "0.118407"
+    },
+    {
+      "metric": "model_K1p0_voltage_mid",
+      "display": "0.4"
+    }
+  ]
+}

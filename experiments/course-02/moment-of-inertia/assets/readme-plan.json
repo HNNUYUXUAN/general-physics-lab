@@ -1,0 +1,41 @@
+{
+  "overview": [
+    {
+      "label": "整理平台与试样配置",
+      "formula": "J_s=J_{total}-J_{platform}",
+      "detail": "使用报告保存的总惯量"
+    },
+    {
+      "label": "计算均匀体几何惯量",
+      "formula": "J_0=mR^2/2",
+      "detail": "圆柱中心轴作为基线"
+    },
+    {
+      "label": "改变平行转轴位置",
+      "formula": "J=J_0+md^2",
+      "detail": "比较偏轴附加项"
+    }
+  ],
+  "figures": [
+    {
+      "key": "parallel_axis",
+      "caption": "单柱平行轴定理的理论扫描：偏轴距离 0–0.15 m 对应的惯量",
+      "model": true,
+      "label": "理论模型"
+    }
+  ],
+  "result_checks": [
+    {
+      "metric": "ring_inertia_from_reported_totals",
+      "display": "0.004206"
+    },
+    {
+      "metric": "ring_inertia_theory",
+      "display": "0.00554265"
+    },
+    {
+      "metric": "cylinder_offset_inertia_theory",
+      "display": "0.001678675"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "overview": [
+    {
+      "label": "读取暗环两侧位置",
+      "formula": "D_m=x_R-x_L",
+      "detail": "六个环级求直径"
+    },
+    {
+      "label": "由隔级差与斜率求曲率",
+      "formula": "R=a/(4\\lambda)",
+      "detail": "带截距拟合与隔级差"
+    },
+    {
+      "label": "由劈尖条纹求厚度",
+      "formula": "h=N\\lambda L/(2l_N)",
+      "detail": "五次长度与间隔计数"
+    }
+  ],
+  "figures": [
+    {
+      "key": "ring-fit",
+      "caption": "暗环直径平方的带截距拟合及残差；全六组观测用于正式曲率估计"
+    },
+    {
+      "key": "wire-repeat",
+      "caption": "空气劈尖法五次细丝直径；条纹间隔数和劈尖长度按记录采用"
+    }
+  ],
+  "result_checks": [
+    {
+      "metric": "radius_pair_mean_mm",
+      "display": "$805.20321\\ \\mathrm{mm}$"
+    },
+    {
+      "metric": "radius_fit_mm",
+      "display": "$806.49158\\ \\mathrm{mm}$"
+    },
+    {
+      "metric": "wire_diameter_um",
+      "display": "$19.930383\\ \\mu\\mathrm m$"
+    }
+  ]
+}

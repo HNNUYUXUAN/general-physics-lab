@@ -1,0 +1,43 @@
+{
+  "overview": [
+    {
+      "label": "比较物像标尺长度",
+      "formula": "M=l/l_0",
+      "detail": "显微镜与望远镜分组"
+    },
+    {
+      "label": "标定测微目镜每格",
+      "formula": "k=L/S",
+      "detail": "五次标定取均值"
+    },
+    {
+      "label": "将细丝格数换长度",
+      "formula": "d=\\bar k s",
+      "detail": "各次宽度共用标定"
+    }
+  ],
+  "figures": [
+    {
+      "key": "wire-repeat",
+      "caption": "共用测微目镜标定均值后的五次细丝直径"
+    }
+  ],
+  "result_checks": [
+    {
+      "metric": "microscope_magnification",
+      "display": "$24.988000$"
+    },
+    {
+      "metric": "telescope_magnification",
+      "display": "$4.8925251$"
+    },
+    {
+      "metric": "eyepiece_scale_mm",
+      "display": "$0.002549074\\ \\mathrm{mm}/\\text{格}$"
+    },
+    {
+      "metric": "wire_diameter_um",
+      "display": "$69.181866\\ \\mu\\mathrm m$"
+    }
+  ]
+}

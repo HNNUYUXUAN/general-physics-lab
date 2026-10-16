@@ -1,0 +1,50 @@
+{
+  "overview": [
+    {
+      "label": "记录自由与阻尼运动",
+      "formula": "\\theta_{env}=\\theta_0e^{-\\beta t}",
+      "detail": "周期逐个累计为时间轴"
+    },
+    {
+      "label": "拟合振幅包络衰减率",
+      "formula": "\\ln\\theta=a-\\beta t",
+      "detail": "对数拟合与逐差比较"
+    },
+    {
+      "label": "比较受迫振幅与相位",
+      "formula": "q=\\omega/\\omega_0",
+      "detail": "围绕共振区域观察响应"
+    }
+  ],
+  "figures": [
+    {
+      "key": "decay-fit",
+      "caption": "十组阻尼振幅经弧度和累计时间换算后的对数衰减拟合",
+      "label": "阻尼振幅数据"
+    },
+    {
+      "key": "forced-amplitude",
+      "caption": "十个实际受迫测点的幅频响应，横轴采用逐点指定参考周期",
+      "label": "受迫振幅观测"
+    },
+    {
+      "key": "forced-phase",
+      "caption": "十个实际受迫测点的相频响应，展示共振区域的相位转变",
+      "label": "受迫相位观测"
+    }
+  ],
+  "result_checks": [
+    {
+      "metric": "damping_fit_per_s",
+      "display": "0.057277281"
+    },
+    {
+      "metric": "forced_peak_ratio",
+      "display": "0.98739394"
+    },
+    {
+      "metric": "forced_peak_amplitude_deg",
+      "display": "141.9"
+    }
+  ]
+}

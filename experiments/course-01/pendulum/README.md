@@ -49,7 +49,7 @@ $$
 
 ## 让拟合与残差一起说话
 
-![周期平方与有效摆长的拟合及残差](results/figures/fit.png)
+![周期平方与有效摆长的拟合及残差](assets/readme-fit.png)
 
 图 2　周期平方与有效摆长的含截距线性拟合及残差；误差条表示重复计时传播得到的 A 类标准不确定度
 
@@ -68,10 +68,10 @@ $$
 <table>
   <tr>
     <td width="50%" align="center" valign="top">
-      <a href="results/figures/trajectory.png"><img src="results/figures/trajectory.png" width="410" alt="非线性单摆与小角度解的摆角比较，以及角速度随时间的变化"></a>
+      <a href="assets/readme-trajectory.png"><img src="assets/readme-trajectory.png" width="410" alt="非线性单摆与小角度解的摆角比较，以及角速度随时间的变化"></a>
     </td>
     <td width="50%" align="center" valign="top">
-      <a href="results/figures/amplitude-scan.png"><img src="results/figures/amplitude-scan.png" width="410" alt="初始摆角对周期增量与重力估计偏差的影响"></a>
+      <a href="assets/readme-amplitude-scan.png"><img src="assets/readme-amplitude-scan.png" width="410" alt="初始摆角对周期增量与重力估计偏差的影响"></a>
     </td>
   </tr>
   <tr>

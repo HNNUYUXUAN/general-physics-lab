@@ -1,0 +1,47 @@
+{
+  "overview": [
+    {
+      "label": "交替调节两个桥臂",
+      "formula": "Z_1Z_3=Z_2Z_4",
+      "detail": "复桥输出实虚部同时归零"
+    },
+    {
+      "label": "分离电容与损耗",
+      "formula": "C_x=(R_3/R_4)C_n",
+      "detail": "三组比率臂分别计算"
+    },
+    {
+      "label": "比较串联等效参数",
+      "formula": "\\tan\\delta=\\omega C_xR_x",
+      "detail": "连接损耗电阻与损耗角"
+    }
+  ],
+  "figures": [
+    {
+      "key": "capacitance",
+      "caption": "三种比率臂设置分别计算的电容量"
+    },
+    {
+      "key": "loss_resistance",
+      "caption": "相同三组设置分别计算的串联损耗电阻"
+    }
+  ],
+  "result_checks": [
+    {
+      "metric": "Cx_mean",
+      "display": "1.0319983\\times10^{-7}"
+    },
+    {
+      "metric": "Rx_mean",
+      "display": "218.631"
+    },
+    {
+      "metric": "loss_mean",
+      "display": "0.141791"
+    },
+    {
+      "metric": "capacitance_spread_percent",
+      "display": "0.619197"
+    }
+  ]
+}

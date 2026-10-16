@@ -1,0 +1,51 @@
+{
+  "overview": [
+    {
+      "label": "扫描频率记录电压",
+      "formula": "f_0=(2\\pi\\sqrt{LC})^{-1}",
+      "detail": "两种电容各两电阻设置"
+    },
+    {
+      "label": "定位半功率交点",
+      "formula": "U_{half}=U_{max}/\\sqrt{2}",
+      "detail": "相邻观测线性插值"
+    },
+    {
+      "label": "由带宽比较选择性",
+      "formula": "Q_B=f_{peak}/(f_2-f_1)",
+      "detail": "结合幅频与相频模型"
+    }
+  ],
+  "figures": [
+    {
+      "key": "C02_R1",
+      "caption": "0.2 μF、R₁ 设置下的电阻电压频响观测"
+    },
+    {
+      "key": "C02_R2",
+      "caption": "0.2 μF、R₂ 设置下的电阻电压频响观测"
+    },
+    {
+      "key": "model_Q15",
+      "caption": "Q=15 的理想串联 RLC 归一化幅频模型"
+    }
+  ],
+  "result_checks": [
+    {
+      "metric": "C02_R1_f_peak",
+      "display": "1100"
+    },
+    {
+      "metric": "C01_R1_f_peak",
+      "display": "1580"
+    },
+    {
+      "metric": "C02_R1_Q_bandwidth",
+      "display": "15.223416"
+    },
+    {
+      "metric": "C02_R2_Q_bandwidth",
+      "display": "10.956965"
+    }
+  ]
+}

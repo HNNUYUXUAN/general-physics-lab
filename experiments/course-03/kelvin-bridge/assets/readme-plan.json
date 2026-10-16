@@ -1,0 +1,43 @@
+{
+  "overview": [
+    {
+      "label": "采用四端低阻接法",
+      "formula": "R_x=(S/M)R",
+      "detail": "区分电流端与电位端"
+    },
+    {
+      "label": "测量不同导体长度",
+      "formula": "R_x=aL+b",
+      "detail": "五个长度比较比例趋势"
+    },
+    {
+      "label": "由截面积求电阻率",
+      "formula": "\\rho=R_x\\pi D^2/(4L)",
+      "detail": "扫描直径的平方敏感性"
+    }
+  ],
+  "figures": [
+    {
+      "key": "R_length",
+      "caption": "五个长度平衡电阻的含截距直线拟合与残差"
+    },
+    {
+      "key": "rho_length",
+      "caption": "使用直径 4.00 mm 分别计算的五个长度电阻率"
+    }
+  ],
+  "result_checks": [
+    {
+      "metric": "rho_mean",
+      "display": "7.3364025\\times10^{-8}"
+    },
+    {
+      "metric": "rho_from_slope",
+      "display": "7.5146896\\times10^{-8}"
+    },
+    {
+      "metric": "resistance_slope",
+      "display": "0.00598"
+    }
+  ]
+}

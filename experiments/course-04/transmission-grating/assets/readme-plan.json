@@ -1,0 +1,43 @@
+{
+  "overview": [
+    {
+      "label": "配对左右一级谱线",
+      "formula": "\\varphi=(\\Delta V_1+\\Delta V_2)/4",
+      "detail": "每条谱线五组观测"
+    },
+    {
+      "label": "采用绿线标定光栅",
+      "formula": "d=\\lambda_0/\\sin\\varphi_0",
+      "detail": "指定绿线波长"
+    },
+    {
+      "label": "换算各条谱线波长",
+      "formula": "\\lambda=d\\sin\\varphi",
+      "detail": "比较双黄线角间隔"
+    }
+  ],
+  "figures": [
+    {
+      "key": "grating-angles",
+      "caption": "紫、绿、黄 1、黄 2 的平均一级衍射角；绿线承担光栅标定"
+    }
+  ],
+  "result_checks": [
+    {
+      "metric": "grating_spacing_nm",
+      "display": "$2486.4163\\ \\mathrm{nm}$"
+    },
+    {
+      "metric": "violet_wavelength_nm",
+      "display": "$436.35512\\ \\mathrm{nm}$"
+    },
+    {
+      "metric": "yellow_1_wavelength_nm",
+      "display": "$569.64119\\ \\mathrm{nm}$"
+    },
+    {
+      "metric": "yellow_2_wavelength_nm",
+      "display": "$579.28188\\ \\mathrm{nm}$"
+    }
+  ]
+}

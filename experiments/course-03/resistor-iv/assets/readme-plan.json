@@ -1,0 +1,47 @@
+{
+  "overview": [
+    {
+      "label": "比较内外接伏安法",
+      "formula": "R=U/I",
+      "detail": "两电阻各有七点记录"
+    },
+    {
+      "label": "检视拟合线与残差",
+      "formula": "U=aI+b",
+      "detail": "比较三种电阻估计量"
+    },
+    {
+      "label": "探索加载和非线性",
+      "formula": "\\varepsilon_{out}=t/(t+k)",
+      "detail": "联系仪表内阻与二极管"
+    }
+  ],
+  "figures": [
+    {
+      "key": "internal_R1",
+      "caption": "R₁ 内接法的电压–电流观测、含截距拟合与残差"
+    },
+    {
+      "key": "external_R1",
+      "caption": "R₁ 外接法的电压–电流观测、含截距拟合与残差"
+    },
+    {
+      "key": "diode_log",
+      "caption": "二极管 0.40–0.60 V 正向记录的半对数拟合与残差"
+    }
+  ],
+  "result_checks": [
+    {
+      "metric": "internal_R1_R_mean",
+      "display": "18.964461"
+    },
+    {
+      "metric": "external_R1_R_mean",
+      "display": "9.126030"
+    },
+    {
+      "metric": "diode_gain_04_06",
+      "display": "286.65625"
+    }
+  ]
+}

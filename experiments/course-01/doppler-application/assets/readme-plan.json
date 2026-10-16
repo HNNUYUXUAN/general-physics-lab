@@ -1,0 +1,43 @@
+{
+  "overview": [
+    {
+      "label": "静态加载记录伸长",
+      "formula": "F=mg",
+      "detail": "比较逐组劲度与截距"
+    },
+    {
+      "label": "超声记录振动周期",
+      "formula": "T=2\\pi\\sqrt{M/k}",
+      "detail": "13 次周期取平均"
+    },
+    {
+      "label": "对照两种劲度估计",
+      "formula": "k=4\\pi^2M/T^2",
+      "detail": "讨论振动系统有效质量"
+    }
+  ],
+  "figures": [
+    {
+      "key": "static_force",
+      "caption": "五组静态力—伸长观测与全组线性拟合诊断"
+    },
+    {
+      "key": "period_sequence",
+      "caption": "13 次实际周期记录，展示测量次序中的变化"
+    }
+  ],
+  "result_checks": [
+    {
+      "metric": "static_stiffness",
+      "display": "3.6563412"
+    },
+    {
+      "metric": "mean_period",
+      "display": "0.88307692"
+    },
+    {
+      "metric": "dynamic_stiffness",
+      "display": "5.2244715"
+    }
+  ]
+}

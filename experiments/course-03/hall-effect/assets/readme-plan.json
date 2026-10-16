@@ -1,0 +1,47 @@
+{
+  "overview": [
+    {
+      "label": "记录电流磁场换向",
+      "formula": "V_1,V_2,V_3,V_4",
+      "detail": "每点保留四极性原电压"
+    },
+    {
+      "label": "提取双奇霍尔分量",
+      "formula": "V_H=(V_1-V_2+V_3-V_4)/4",
+      "detail": "与共模和单奇分量比较"
+    },
+    {
+      "label": "描绘位置相对场",
+      "formula": "B/B_0=V_H/V_{H0}",
+      "detail": "固定探头条件下归一化"
+    }
+  ],
+  "figures": [
+    {
+      "key": "working_current",
+      "caption": "工作电流扫描的四极性霍尔投影拟合与残差"
+    },
+    {
+      "key": "magnet_current",
+      "caption": "励磁电流扫描中重算的霍尔投影及残差"
+    },
+    {
+      "key": "relative_field",
+      "caption": "固定探头条件下以 2 mm 位置归一化的相对场投影"
+    }
+  ],
+  "result_checks": [
+    {
+      "metric": "working_current_slope",
+      "display": "32.007727"
+    },
+    {
+      "metric": "field_end_ratio",
+      "display": "0.489152"
+    },
+    {
+      "metric": "field_inner_spread_percent",
+      "display": "0.407454"
+    }
+  ]
+}

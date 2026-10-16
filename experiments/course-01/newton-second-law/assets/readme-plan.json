@@ -1,0 +1,43 @@
+{
+  "overview": [
+    {
+      "label": "光电门测量运动",
+      "formula": "a=(v_2^2-v_1^2)/(2S)",
+      "detail": "首组采用直接加速度"
+    },
+    {
+      "label": "保持总质量改变力",
+      "formula": "m_0=Ka+C",
+      "detail": "25 次记录形成五组均值"
+    },
+    {
+      "label": "解释斜率与截距",
+      "formula": "M=Kg",
+      "detail": "单位统一后换算系统参数"
+    }
+  ],
+  "figures": [
+    {
+      "key": "force_acceleration",
+      "caption": "五组悬挂质量与平均加速度观测及等权线性拟合"
+    },
+    {
+      "key": "force_residual",
+      "caption": "五组质量拟合残差，显示低受力端对直线的影响"
+    }
+  ],
+  "result_checks": [
+    {
+      "metric": "correlation",
+      "display": "0.99915137"
+    },
+    {
+      "metric": "inferred_system_mass",
+      "display": "163.77038"
+    },
+    {
+      "metric": "equivalent_resistance",
+      "display": "0.012226903"
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "overview": [
+    {
+      "label": "设计表头扩程电阻",
+      "formula": "R_s=R_g/(n-1)",
+      "detail": "并联分流与串联分压"
+    },
+    {
+      "label": "重算上下行校准量",
+      "formula": "\\Delta x=x-\\bar{x}_{std}",
+      "detail": "区分示值误差与往返差"
+    },
+    {
+      "label": "检查电池调零范围",
+      "formula": "R_W=E/I_g-R_g-R_3",
+      "detail": "比较两种限流电阻方案"
+    }
+  ],
+  "figures": [
+    {
+      "key": "current_error",
+      "caption": "十个校准点重算的电流表示值误差"
+    },
+    {
+      "key": "voltage_error",
+      "caption": "十个校准点重算的电压表示值误差，包含 1.25 V 原记录行"
+    },
+    {
+      "key": "ohm_model",
+      "caption": "中值电阻 1500 Ω、E=1.5 V 的理想欧姆刻度模型"
+    }
+  ],
+  "result_checks": [
+    {
+      "metric": "shunt_resistance",
+      "display": "7.5"
+    },
+    {
+      "metric": "series_resistance",
+      "display": "1470"
+    },
+    {
+      "metric": "current_max_error",
+      "display": "0.105"
+    },
+    {
+      "metric": "voltage_max_error",
+      "display": "0.0805"
+    }
+  ]
+}

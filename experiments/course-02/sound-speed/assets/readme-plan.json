@@ -1,0 +1,43 @@
+{
+  "overview": [
+    {
+      "label": "定位极大或同相状态",
+      "formula": "\\Delta L=\\lambda/2\\quad\\mathrm{or}\\quad\\lambda",
+      "detail": "两种方法各十次记录"
+    },
+    {
+      "label": "用波长与频率求声速",
+      "formula": "v=f\\lambda",
+      "detail": "工作频率保持不变"
+    },
+    {
+      "label": "联系空气热学性质",
+      "formula": "\\gamma=Mv^2/(RT)",
+      "detail": "由声速条件估算比热容比"
+    }
+  ],
+  "figures": [
+    {
+      "key": "standing_sequence",
+      "caption": "驻波法十次已记录波长，展示定位重复性"
+    },
+    {
+      "key": "phase_sequence",
+      "caption": "相位比较法十次已记录波长，与驻波法独立统计"
+    }
+  ],
+  "result_checks": [
+    {
+      "metric": "standing_speed",
+      "display": "350.85813"
+    },
+    {
+      "metric": "phase_speed",
+      "display": "356.98068"
+    },
+    {
+      "metric": "arithmetic_mean_speed",
+      "display": "353.91941"
+    }
+  ]
+}

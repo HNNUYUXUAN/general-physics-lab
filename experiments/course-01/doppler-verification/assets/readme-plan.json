@@ -1,0 +1,39 @@
+{
+  "overview": [
+    {
+      "label": "同步测量速度频率",
+      "formula": "f=f_0(1+v/u)",
+      "detail": "固定声源，接收器接近"
+    },
+    {
+      "label": "拟合频率速度关系",
+      "formula": "f=B+kv",
+      "detail": "斜率与截距一起求解"
+    },
+    {
+      "label": "由斜率换算声速",
+      "formula": "u=f_0/k",
+      "detail": "对照温度模型声速"
+    }
+  ],
+  "figures": [
+    {
+      "key": "doppler_fit",
+      "caption": "五组速度—频率观测及带截距线性拟合；残差用于检查线性关系"
+    }
+  ],
+  "result_checks": [
+    {
+      "metric": "sound_speed",
+      "display": "340.74148"
+    },
+    {
+      "metric": "theoretical_speed",
+      "display": "345.18078"
+    },
+    {
+      "metric": "relative_deviation",
+      "display": "1.2860796"
+    }
+  ]
+}

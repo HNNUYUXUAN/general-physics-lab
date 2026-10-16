@@ -1,0 +1,39 @@
+{
+  "overview": [
+    {
+      "label": "对准两面反射狭缝",
+      "formula": "2A",
+      "detail": "平行光照明、棱边竖直"
+    },
+    {
+      "label": "求取双游标方向差",
+      "formula": "\\Delta\\theta_1,\\Delta\\theta_2",
+      "detail": "跨零读数按圆周处理"
+    },
+    {
+      "label": "反推三棱镜的顶角",
+      "formula": "A=(\\Delta\\theta_1+\\Delta\\theta_2)/4",
+      "detail": "五组读数分别求值"
+    }
+  ],
+  "figures": [
+    {
+      "key": "angle-repeat",
+      "caption": "反射法五次顶角估计；左右游标角差平均后换算为顶角"
+    }
+  ],
+  "result_checks": [
+    {
+      "metric": "angle_mean_deg",
+      "display": "$60.005000^\\circ$"
+    },
+    {
+      "metric": "angle_type_a_arcmin",
+      "display": "$1.34722^\\prime$"
+    },
+    {
+      "metric": "angle_combined_arcmin",
+      "display": "$1.46572^\\prime$"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "overview": [
+    {
+      "label": "记录负载取样压降",
+      "formula": "R_1=10\\ \\Omega",
+      "detail": "四个位置各十四个负载"
+    },
+    {
+      "label": "换算电流检查回路",
+      "formula": "\\Delta U=U_o-I(R_n+R_1)",
+      "detail": "结合端电压与负载标记"
+    },
+    {
+      "label": "探索光电池模型形状",
+      "formula": "I=I_{ph}-I_d",
+      "detail": "改变无量纲指数参数"
+    }
+  ],
+  "figures": [
+    {
+      "key": "current_distance_common_load",
+      "caption": "共同 1 kΩ 标记负载下的取样换算电流与灯杆刻度"
+    },
+    {
+      "key": "L0_circuit_difference",
+      "caption": "近位置十四个负载的端电压记录减串联回路预测"
+    },
+    {
+      "key": "ideal_a10",
+      "caption": "a=10 的理想单二极管归一化电流–电压模型"
+    }
+  ],
+  "result_checks": [
+    {
+      "metric": "L0_maximum_recorded_current",
+      "display": "0.23"
+    },
+    {
+      "metric": "L3_maximum_recorded_current",
+      "display": "0.08"
+    },
+    {
+      "metric": "L0_max_circuit_relative_difference",
+      "display": "70.378788"
+    }
+  ]
+}
