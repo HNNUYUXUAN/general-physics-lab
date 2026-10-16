@@ -1,0 +1,1 @@
+PacletObject[<|"Name"->"MultimeterLab","Version"->"0.1.0","WolframVersion"->"14.0+","Description"->"\:4e07\:7528\:7535\:8868\:7684\:4f7f\:7528","Creator"->"Physics Lab Contributors","Extensions"->{{"Kernel","Root"->"Kernel","Context"->{"MultimeterLab`"}},{"Resource","Root"->".","Resources"->{"Notebooks","data","assets"}}}|>]

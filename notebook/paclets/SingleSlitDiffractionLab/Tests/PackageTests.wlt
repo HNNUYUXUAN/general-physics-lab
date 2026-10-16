@@ -1,0 +1,7 @@
+VerificationTest[NumberQ[SingleSlitDiffractionLab`Analyze[]["metrics"]["slit_width_mean_mm"]["value"]],True,TestID->"finite-slit_width_mean_mm"]
+VerificationTest[NumberQ[SingleSlitDiffractionLab`Analyze[]["metrics"]["slit_width_spread_sem_mm"]["value"]],True,TestID->"finite-slit_width_spread_sem_mm"]
+VerificationTest[NumberQ[SingleSlitDiffractionLab`Analyze[]["metrics"]["slit_width_origin_fit_mm"]["value"]],True,TestID->"finite-slit_width_origin_fit_mm"]
+VerificationTest[NumberQ[SingleSlitDiffractionLab`Analyze[]["metrics"]["maximum_small_angle_correction_mm"]["value"]],True,TestID->"finite-maximum_small_angle_correction_mm"]
+VerificationTest[NumberQ[SingleSlitDiffractionLab`Analyze[]["metrics"]["scan_model_rmse"]["value"]],True,TestID->"finite-scan_model_rmse"]
+VerificationTest[FileExistsQ[SingleSlitDiffractionLab`LabNotebookPath[]],True,TestID->"notebook-entry"]
+VerificationTest[FileNameTake[SingleSlitDiffractionLab`LabNotebookPath[]],"SingleSlitDiffractionLab.nb",TestID->"notebook-name"]

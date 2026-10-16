@@ -1,0 +1,49 @@
+{
+  "status": "python-executed-awaiting-wolfram",
+  "checks": [
+    "five source rows",
+    "zero-velocity model limit",
+    "negative-velocity frequency direction",
+    "interactive default/changed states"
+  ],
+  "metrics": {
+    "slope": {
+      "value": 117.3969205332231,
+      "unit": "Hz/(m/s)",
+      "label": "频率速度拟合斜率",
+      "uncertainty": 0.20570454931701596
+    },
+    "intercept": {
+      "value": 40000.90797767904,
+      "unit": "Hz",
+      "label": "拟合截距",
+      "uncertainty": 0.19417245551697007
+    },
+    "correlation": {
+      "value": 0.999995394649994,
+      "unit": "1",
+      "label": "相关系数"
+    },
+    "sound_speed": {
+      "value": 340.74147616742226,
+      "unit": "m/s",
+      "label": "实验声速",
+      "uncertainty": 0.5970520476199238
+    },
+    "theoretical_speed": {
+      "value": 345.1807757542445,
+      "unit": "m/s",
+      "label": "温度模型声速"
+    },
+    "relative_deviation": {
+      "value": 1.2860796135364316,
+      "unit": "%",
+      "label": "声速相对差异"
+    },
+    "intercept_offset": {
+      "value": -1.092022320961405,
+      "unit": "Hz",
+      "label": "截距与声源频率差"
+    }
+  }
+}

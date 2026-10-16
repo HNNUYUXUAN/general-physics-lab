@@ -1,0 +1,43 @@
+{
+  "status": "authored-python-validated",
+  "title": "迈克尔逊干涉仪的调节和使用",
+  "course": "course-04",
+  "slug": "michelson-interferometer",
+  "module": "michelson_interferometer",
+  "paclet": "MichelsonInterferometerLab",
+  "source_docx": "originals/course-04/08_实验八_迈克尔逊干涉仪的调节和使用_实验报告.docx",
+  "source_converted": "processed/courses-01-03-04/普通物理实验4/08_实验八_迈克尔逊干涉仪的调节和使用_实验报告_docx/正文.md",
+  "sections": [
+    "实验名称",
+    "实验目的",
+    "实验原理",
+    "主要仪器设备",
+    "实验步骤",
+    "原始数据记录",
+    "数据处理",
+    "实验结果与讨论"
+  ],
+  "comparison": [
+    "wavelength_mean_nm",
+    "wavelength_type_a_nm",
+    "relative_reference_difference_percent"
+  ],
+  "expansions": [
+    {
+      "section": "数据处理",
+      "title": "逐组计算与结果核验",
+      "prose": "读取观测并逐组计算，再形成最终指标；修约只作用于显示。",
+      "python": "metrics_display(result)",
+      "wolfram": "metricView[r]"
+    }
+  ],
+  "limitations": [
+    "缺位移标尺和条纹计数不确定度。",
+    "632.8nm仅是指定常用参考值。"
+  ],
+  "python_checks": [
+    "assert abs(result['metrics']['wavelength_mean_nm']['value']-(632.5999999999983)) < 6.325999999999984e-07",
+    "assert abs(result['metrics']['wavelength_type_a_nm']['value']-(0.22803508502013867)) < 2.280350850201387e-10",
+    "assert abs(result['metrics']['relative_reference_difference_percent']['value']-(0.03160556257927261)) < 1e-10"
+  ]
+}

@@ -1,0 +1,191 @@
+{
+  "checks": {
+    "finite_json": true,
+    "low_resistance_bias": true,
+    "conditional_FS": true,
+    "midpoint": true,
+    "interactive_states": true
+  },
+  "metrics": {
+    "voltage_1_digital_deviation": {
+      "value": 18.636363636363637,
+      "unit": "%",
+      "label": "照明电路 数字表与标称偏差"
+    },
+    "voltage_1_analog_deviation": {
+      "value": 9.090909090909092,
+      "unit": "%",
+      "label": "照明电路 指针表与标称偏差"
+    },
+    "voltage_1_analog_one_division_uB": {
+      "value": 2.886751345948129,
+      "unit": "V",
+      "label": "照明电路 假定±一分度的标准不确定度"
+    },
+    "voltage_1_conditional_limit": {
+      "value": 7.5,
+      "unit": "V",
+      "label": "照明电路 假定3%FS示值限差"
+    },
+    "voltage_2_digital_deviation": {
+      "value": 7.555555555555553,
+      "unit": "%",
+      "label": "方块电池 数字表与标称偏差"
+    },
+    "voltage_2_analog_deviation": {
+      "value": 6.6666666666666625,
+      "unit": "%",
+      "label": "方块电池 指针表与标称偏差"
+    },
+    "voltage_2_analog_one_division_uB": {
+      "value": 0.11547005383792516,
+      "unit": "V",
+      "label": "方块电池 假定±一分度的标准不确定度"
+    },
+    "voltage_2_conditional_limit": {
+      "value": 0.3,
+      "unit": "V",
+      "label": "方块电池 假定3%FS示值限差"
+    },
+    "voltage_3_digital_deviation": {
+      "value": 5.666666666666664,
+      "unit": "%",
+      "label": "1号电池 数字表与标称偏差"
+    },
+    "voltage_3_analog_deviation": {
+      "value": 3.333333333333336,
+      "unit": "%",
+      "label": "1号电池 指针表与标称偏差"
+    },
+    "voltage_3_analog_one_division_uB": {
+      "value": 0.02886751345948129,
+      "unit": "V",
+      "label": "1号电池 假定±一分度的标准不确定度"
+    },
+    "voltage_3_conditional_limit": {
+      "value": 0.075,
+      "unit": "V",
+      "label": "1号电池 假定3%FS示值限差"
+    },
+    "voltage_4_digital_deviation": {
+      "value": 6.133333333333338,
+      "unit": "%",
+      "label": "甲号电池 数字表与标称偏差"
+    },
+    "voltage_4_analog_deviation": {
+      "value": 9.999999999999993,
+      "unit": "%",
+      "label": "甲号电池 指针表与标称偏差"
+    },
+    "voltage_4_analog_one_division_uB": {
+      "value": 0.02886751345948129,
+      "unit": "V",
+      "label": "甲号电池 假定±一分度的标准不确定度"
+    },
+    "voltage_4_conditional_limit": {
+      "value": 0.075,
+      "unit": "V",
+      "label": "甲号电池 假定3%FS示值限差"
+    },
+    "voltage_5_digital_deviation": {
+      "value": 74.2,
+      "unit": "%",
+      "label": "七号电池 数字表与标称偏差"
+    },
+    "voltage_5_analog_deviation": {
+      "value": 83.33333333333334,
+      "unit": "%",
+      "label": "七号电池 指针表与标称偏差"
+    },
+    "voltage_5_analog_one_division_uB": {
+      "value": 0.011547005383792516,
+      "unit": "V",
+      "label": "七号电池 假定±一分度的标准不确定度"
+    },
+    "voltage_5_conditional_limit": {
+      "value": 0.03,
+      "unit": "V",
+      "label": "七号电池 假定3%FS示值限差"
+    },
+    "resistance_1_digital_deviation": {
+      "value": 26.66666666666666,
+      "unit": "%",
+      "label": "3 Ω 数字表与标称偏差"
+    },
+    "resistance_1_analog_deviation": {
+      "value": 13.33333333333333,
+      "unit": "%",
+      "label": "3 Ω 指针表与标称偏差"
+    },
+    "resistance_1_analog_one_division_uB": {
+      "value": 0.11547005383792516,
+      "unit": "Ω",
+      "label": "3 Ω 假定±一分度的标准不确定度"
+    },
+    "resistance_2_digital_deviation": {
+      "value": 0.8510638297872309,
+      "unit": "%",
+      "label": "47 Ω 数字表与标称偏差"
+    },
+    "resistance_2_analog_deviation": {
+      "value": 2.127659574468085,
+      "unit": "%",
+      "label": "47 Ω 指针表与标称偏差"
+    },
+    "resistance_2_analog_one_division_uB": {
+      "value": 0.11547005383792516,
+      "unit": "Ω",
+      "label": "47 Ω 假定±一分度的标准不确定度"
+    },
+    "resistance_3_digital_deviation": {
+      "value": 0.5,
+      "unit": "%",
+      "label": "200 Ω 数字表与标称偏差"
+    },
+    "resistance_3_analog_deviation": {
+      "value": 0.0,
+      "unit": "%",
+      "label": "200 Ω 指针表与标称偏差"
+    },
+    "resistance_3_analog_one_division_uB": {
+      "value": 1.1547005383792517,
+      "unit": "Ω",
+      "label": "200 Ω 假定±一分度的标准不确定度"
+    },
+    "resistance_4_digital_deviation": {
+      "value": 1.0,
+      "unit": "%",
+      "label": "2 kΩ 数字表与标称偏差"
+    },
+    "resistance_4_analog_deviation": {
+      "value": 0.0,
+      "unit": "%",
+      "label": "2 kΩ 指针表与标称偏差"
+    },
+    "resistance_4_analog_one_division_uB": {
+      "value": 11.547005383792516,
+      "unit": "Ω",
+      "label": "2 kΩ 假定±一分度的标准不确定度"
+    },
+    "resistance_5_digital_deviation": {
+      "value": 0.0,
+      "unit": "%",
+      "label": "20 kΩ 数字表与标称偏差"
+    },
+    "resistance_5_analog_deviation": {
+      "value": 0.0,
+      "unit": "%",
+      "label": "20 kΩ 指针表与标称偏差"
+    },
+    "resistance_5_analog_one_division_uB": {
+      "value": 115.47005383792516,
+      "unit": "Ω",
+      "label": "20 kΩ 假定±一分度的标准不确定度"
+    },
+    "ohm_scale_midpoint": {
+      "value": 0.5,
+      "unit": "1",
+      "label": "等内阻时的归一化指针偏转"
+    }
+  }
+}

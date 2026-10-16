@@ -1,0 +1,12 @@
+{
+  "id": "course-04/spectrometer",
+  "status": "passed",
+  "paclet_sha256": "4394259039840ca6cee82a711ee8450b1657c786effff0f6c35c981b5120fb6d",
+  "canonical_inputs_checked": [
+    "data/observations-01.csv",
+    "data/observations-02.csv",
+    "data/provenance.json",
+    "experiment.json"
+  ],
+  "kernel_and_notebook_match_source": true
+}

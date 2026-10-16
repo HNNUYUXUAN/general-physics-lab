@@ -1,0 +1,1 @@
+PacletObject[<|"Name"->"NewtonRingsLab","Version"->"0.1.0","WolframVersion"->"14.0+","Description"->"\:725b\:987f\:73af\:5b9e\:9a8c","Creator"->"Physics Lab Contributors","Extensions"->{{"Kernel","Root"->"Kernel","Context"->{"NewtonRingsLab`"}},{"Resource","Root"->".","Resources"->{"Notebooks","data","assets"}}}|>]

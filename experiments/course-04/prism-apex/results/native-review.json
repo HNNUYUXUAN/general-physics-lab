@@ -1,0 +1,155 @@
+{
+  "experiment": "course-04/prism-apex",
+  "status": "passed",
+  "reviewed_at": "2026-10-16T01:08:24.123139+08:00",
+  "build_run": "C:\\Users\\yuxua\\.codex\\visualizations\\2026\\10\\15\\01a13f56-4554-7500-ab99-dad08368b735\\rollout\\project\\.build\\course-04\\prism-apex\\20261016_010641_907557",
+  "notebook": "C:\\Users\\yuxua\\.codex\\visualizations\\2026\\10\\15\\01a13f56-4554-7500-ab99-dad08368b735\\rollout\\project\\notebook\\paclets\\PrismApexLab\\Notebooks\\PrismApexLab.nb",
+  "notebook_sha256": "4f20eec0123d621a82888231ba432f214981fa0d618e58683e77a10b27d91487",
+  "method": "Actual view_image inspection of every fresh native QA panel without rescaling; long sections split with overlapping crops. Review covers mathematical typesetting, units, Chinese glyphs, centering, clipping and captions. Native controls visually inspected at saved default state; changing-state calculation validation is recorded by root serialized pipeline separately.",
+  "section_coverage": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "inspected_images": [
+    {
+      "path": "C:\\Users\\yuxua\\.codex\\visualizations\\2026\\10\\15\\01a13f56-4554-7500-ab99-dad08368b735\\rollout\\qa\\PrismApexLab\\review-01.png",
+      "sha256": "fe3edac1d78f701209606503a9894157594462e256421b5e15ee3ecf9d396be3",
+      "source_spans": [
+        {
+          "source": "section-01.png",
+          "top": 0,
+          "bottom": 246
+        },
+        {
+          "source": "section-02.png",
+          "top": 0,
+          "bottom": 215
+        },
+        {
+          "source": "section-03.png",
+          "top": 0,
+          "bottom": 458
+        },
+        {
+          "source": "section-04.png",
+          "top": 0,
+          "bottom": 143
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\yuxua\\.codex\\visualizations\\2026\\10\\15\\01a13f56-4554-7500-ab99-dad08368b735\\rollout\\qa\\PrismApexLab\\review-02.png",
+      "sha256": "4027cf5913644e18c7071c84e46ba3d9f1b5618c03154585f4b856b39fb76ab9",
+      "source_spans": [
+        {
+          "source": "section-05.png",
+          "top": 0,
+          "bottom": 291
+        },
+        {
+          "source": "section-06.png",
+          "top": 0,
+          "bottom": 405
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\yuxua\\.codex\\visualizations\\2026\\10\\15\\01a13f56-4554-7500-ab99-dad08368b735\\rollout\\qa\\PrismApexLab\\review-03.png",
+      "sha256": "4763db4d527bd8fc0d27394a46a26e9b616f34cc81285bec4387cabd22b8098c",
+      "source_spans": [
+        {
+          "source": "section-07.png",
+          "top": 0,
+          "bottom": 1150
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\yuxua\\.codex\\visualizations\\2026\\10\\15\\01a13f56-4554-7500-ab99-dad08368b735\\rollout\\qa\\PrismApexLab\\review-04.png",
+      "sha256": "329707f39dba2e3b0a28d5dc54e0156bfc08e4ca4c111133a25d9d05383db653",
+      "source_spans": [
+        {
+          "source": "section-07.png",
+          "top": 1050,
+          "bottom": 1591
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\yuxua\\.codex\\visualizations\\2026\\10\\15\\01a13f56-4554-7500-ab99-dad08368b735\\rollout\\qa\\PrismApexLab\\review-05.png",
+      "sha256": "d8edb452cb008cde718a06e1a597d91e6c709c3f1640bb85d07a31a5c96f8cfa",
+      "source_spans": [
+        {
+          "source": "section-08.png",
+          "top": 0,
+          "bottom": 262
+        }
+      ]
+    }
+  ],
+  "source_png_hashes": {
+    "section-01.png": {
+      "sha256": "59dd683ef3871255a3123b1c4e4bc883f90e138a9b214fb287df870b9b3de16b",
+      "size": [
+        1200,
+        246
+      ]
+    },
+    "section-02.png": {
+      "sha256": "b349bbc638647109da14977ce8cf67a66bf79f600512244049bed7f2d34d35d4",
+      "size": [
+        1200,
+        215
+      ]
+    },
+    "section-03.png": {
+      "sha256": "dc7c28e3ce5f1dec461bfa9baa5e1497d1ec8fe7a7fb2750d3e10acb28dd1121",
+      "size": [
+        1200,
+        458
+      ]
+    },
+    "section-04.png": {
+      "sha256": "bda646f6632c958469c6efb08077f01c7936d6b6ef2b6e010335f6802afe8189",
+      "size": [
+        1200,
+        143
+      ]
+    },
+    "section-05.png": {
+      "sha256": "e5cfabc7488fc503d8dddffd636814c6260c26a77acd56fe94bb3d15d989592e",
+      "size": [
+        1200,
+        291
+      ]
+    },
+    "section-06.png": {
+      "sha256": "1bc1f97fe67d7994a4fd1900cf96ba7d05e2fd0e21ab5bda80c59df47dea58f1",
+      "size": [
+        1200,
+        405
+      ]
+    },
+    "section-07.png": {
+      "sha256": "5ee1eb57cb2051c19940fe24735ac82d1e32f74a828bb3ad94a4bbd4453282e3",
+      "size": [
+        1200,
+        1591
+      ]
+    },
+    "section-08.png": {
+      "sha256": "1d49d039ccf3a327ae45777e89671d4acc07214e982b0e044b89feef8a31e055",
+      "size": [
+        1200,
+        262
+      ]
+    }
+  },
+  "issues": []
+}

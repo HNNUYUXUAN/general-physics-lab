@@ -1,0 +1,184 @@
+{
+  "status": "python-validated-wolfram-pending",
+  "checks": [
+    "finite JSON",
+    "known linear slope and intercept",
+    "mA to A conversion",
+    "R2 original conclusion corrected",
+    "unverified overrange retained",
+    "diode fit excludes overrange",
+    "exact error crossover 1000",
+    "exact error crossover 10000",
+    "exact error crossover 1000000",
+    "fit default trace count",
+    "fit all model states",
+    "fit finite trace values",
+    "loading default trace count",
+    "loading all model states",
+    "loading finite trace values",
+    "valid circuit SVG"
+  ],
+  "metric_count": 32,
+  "metrics": {
+    "internal_R1_R_mean": {
+      "value": 18.96446134683244,
+      "unit": "Ω",
+      "label": "内接 R1 逐点电阻均值"
+    },
+    "internal_R1_R_origin": {
+      "value": 19.013562521157965,
+      "unit": "Ω",
+      "label": "内接 R1 过原点拟合电阻"
+    },
+    "internal_R1_R_slope": {
+      "value": 19.112055575285734,
+      "unit": "Ω",
+      "label": "内接 R1 含截距拟合电阻"
+    },
+    "internal_R1_U_intercept": {
+      "value": -0.0003001999804984404,
+      "unit": "V",
+      "label": "内接 R1 电压拟合截距"
+    },
+    "internal_R1_fit_R2": {
+      "value": 0.9999700506354856,
+      "unit": "1",
+      "label": "内接 R1 拟合决定系数"
+    },
+    "internal_R1_fit_rmse": {
+      "value": 0.00010945202513314723,
+      "unit": "V",
+      "label": "内接 R1 电压拟合均方根残差"
+    },
+    "internal_R2_R_mean": {
+      "value": 12976.190476190477,
+      "unit": "Ω",
+      "label": "内接 R2 逐点电阻均值"
+    },
+    "internal_R2_R_origin": {
+      "value": 10558.659217877095,
+      "unit": "Ω",
+      "label": "内接 R2 过原点拟合电阻"
+    },
+    "internal_R2_R_slope": {
+      "value": 8150.68493150685,
+      "unit": "Ω",
+      "label": "内接 R2 含截距拟合电阻"
+    },
+    "internal_R2_U_intercept": {
+      "value": 0.013904109589041092,
+      "unit": "V",
+      "label": "内接 R2 电压拟合截距"
+    },
+    "internal_R2_fit_R2": {
+      "value": 0.9897260273972602,
+      "unit": "1",
+      "label": "内接 R2 拟合决定系数"
+    },
+    "internal_R2_fit_rmse": {
+      "value": 0.00202721213519846,
+      "unit": "V",
+      "label": "内接 R2 电压拟合均方根残差"
+    },
+    "external_R1_R_mean": {
+      "value": 9.126030476528426,
+      "unit": "Ω",
+      "label": "外接 R1 逐点电阻均值"
+    },
+    "external_R1_R_origin": {
+      "value": 9.137735730743168,
+      "unit": "Ω",
+      "label": "外接 R1 过原点拟合电阻"
+    },
+    "external_R1_R_slope": {
+      "value": 9.168214372871322,
+      "unit": "Ω",
+      "label": "外接 R1 含截距拟合电阻"
+    },
+    "external_R1_U_intercept": {
+      "value": -0.00019335420164966893,
+      "unit": "V",
+      "label": "外接 R1 电压拟合截距"
+    },
+    "external_R1_fit_R2": {
+      "value": 0.9999902390981791,
+      "unit": "1",
+      "label": "外接 R1 拟合决定系数"
+    },
+    "external_R1_fit_rmse": {
+      "value": 6.248488399883668e-05,
+      "unit": "V",
+      "label": "外接 R1 电压拟合均方根残差"
+    },
+    "external_R2_R_mean": {
+      "value": 13261.904761904763,
+      "unit": "Ω",
+      "label": "外接 R2 逐点电阻均值"
+    },
+    "external_R2_R_origin": {
+      "value": 10892.857142857143,
+      "unit": "Ω",
+      "label": "外接 R2 过原点拟合电阻"
+    },
+    "external_R2_R_slope": {
+      "value": 8369.565217391304,
+      "unit": "Ω",
+      "label": "外接 R2 含截距拟合电阻"
+    },
+    "external_R2_U_intercept": {
+      "value": 0.014130434782608704,
+      "unit": "V",
+      "label": "外接 R2 电压拟合截距"
+    },
+    "external_R2_fit_R2": {
+      "value": 0.9864130434782609,
+      "unit": "1",
+      "label": "外接 R2 拟合决定系数"
+    },
+    "external_R2_fit_rmse": {
+      "value": 0.002331262020600782,
+      "unit": "V",
+      "label": "外接 R2 电压拟合均方根残差"
+    },
+    "diode_current_06": {
+      "value": 0.9173,
+      "unit": "mA",
+      "label": "0.60 V时记录电流"
+    },
+    "diode_current_065": {
+      "value": 4.511,
+      "unit": "mA",
+      "label": "0.65 V时记录电流（量程待核）"
+    },
+    "diode_gain_04_06": {
+      "value": 286.65625,
+      "unit": "1",
+      "label": "0.40–0.60 V电流增大倍数"
+    },
+    "diode_log_slope_04_06": {
+      "value": 28.288790454126136,
+      "unit": "1/V",
+      "label": "0.40–0.60 V半对数斜率"
+    },
+    "diode_log_R2_04_06": {
+      "value": 0.9984932473021533,
+      "unit": "1",
+      "label": "0.40–0.60 V半对数决定系数"
+    },
+    "model_k1000_crossover": {
+      "value": 32.126729201736936,
+      "unit": "1",
+      "label": "等相对误差时的模型Rx/RA"
+    },
+    "model_k10000_crossover": {
+      "value": 100.5012499921876,
+      "unit": "1",
+      "label": "等相对误差时的模型Rx/RA"
+    },
+    "model_k1000000_crossover": {
+      "value": 1000.5001249999922,
+      "unit": "1",
+      "label": "等相对误差时的模型Rx/RA"
+    }
+  }
+}

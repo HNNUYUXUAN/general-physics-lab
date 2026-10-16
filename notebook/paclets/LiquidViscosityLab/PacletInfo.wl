@@ -1,0 +1,1 @@
+PacletObject[<|"Name"->"LiquidViscosityLab","Version"->"0.1.0","WolframVersion"->"14.0+","Description"->"\:6db2\:4f53\:7c98\:5ea6\:7cfb\:6570\:7684\:6d4b\:91cf","Creator"->"Physics Lab Contributors","Extensions"->{{"Kernel","Root"->"Kernel","Context"->{"LiquidViscosityLab`"}},{"Resource","Root"->".","Resources"->{"Notebooks","data","assets"}}}|>]

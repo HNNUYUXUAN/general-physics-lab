@@ -1,0 +1,706 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "metric": "wavelength_nm",
+      "python": 589.3,
+      "wolfram": 589.3,
+      "unit": "nm",
+      "passed": true
+    },
+    {
+      "metric": "radius_pair_mean_mm",
+      "python": 805.2032071949772,
+      "wolfram": 805.2032071949772,
+      "unit": "mm",
+      "passed": true
+    },
+    {
+      "metric": "radius_pair_sd_mm",
+      "python": 3.0161867714180994,
+      "wolfram": 3.0161867714181,
+      "unit": "mm",
+      "passed": true
+    },
+    {
+      "metric": "radius_fit_mm",
+      "python": 806.4915759617949,
+      "wolfram": 806.4915759617948,
+      "unit": "mm",
+      "passed": true
+    },
+    {
+      "metric": "radius_fit_standard_error_mm",
+      "python": 2.2418482093396634,
+      "wolfram": 2.241848209339668,
+      "unit": "mm",
+      "passed": true
+    },
+    {
+      "metric": "diameter_squared_slope_mm2",
+      "python": 1.9010619428571427,
+      "wolfram": 1.9010619428571425,
+      "unit": "mm^2",
+      "passed": true
+    },
+    {
+      "metric": "diameter_squared_intercept_mm2",
+      "python": -0.04969233333333989,
+      "wolfram": -0.04969233333333278,
+      "unit": "mm^2",
+      "passed": true
+    },
+    {
+      "metric": "fit_r_squared",
+      "python": 0.9999690928253889,
+      "wolfram": 0.9999690928253889,
+      "unit": "1",
+      "passed": true
+    },
+    {
+      "metric": "wire_diameter_um",
+      "python": 19.93038332910275,
+      "wolfram": 19.930383329102753,
+      "unit": "um",
+      "passed": true
+    },
+    {
+      "metric": "wire_diameter_type_a_um",
+      "python": 0.016286007555371525,
+      "wolfram": 0.01628600755537138,
+      "unit": "um",
+      "passed": true
+    },
+    {
+      "metric": "wedge_angle_urad",
+      "python": 398.60766658205495,
+      "wolfram": 398.60766658205495,
+      "unit": "urad",
+      "passed": true
+    },
+    {
+      "table": "rings",
+      "row": 0,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "rings",
+      "row": 0,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "rings",
+      "row": 0,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "rings",
+      "row": 0,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "rings",
+      "row": 1,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "rings",
+      "row": 1,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "rings",
+      "row": 1,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "rings",
+      "row": 1,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "rings",
+      "row": 2,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "rings",
+      "row": 2,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "rings",
+      "row": 2,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "rings",
+      "row": 2,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "rings",
+      "row": 3,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "rings",
+      "row": 3,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "rings",
+      "row": 3,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "rings",
+      "row": 3,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "rings",
+      "row": 4,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "rings",
+      "row": 4,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "rings",
+      "row": 4,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "rings",
+      "row": 4,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "rings",
+      "row": 5,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "rings",
+      "row": 5,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "rings",
+      "row": 5,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "rings",
+      "row": 5,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "wedge",
+      "row": 0,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "wedge",
+      "row": 0,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "wedge",
+      "row": 0,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "wedge",
+      "row": 0,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "wedge",
+      "row": 1,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "wedge",
+      "row": 1,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "wedge",
+      "row": 1,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "wedge",
+      "row": 1,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "wedge",
+      "row": 2,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "wedge",
+      "row": 2,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "wedge",
+      "row": 2,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "wedge",
+      "row": 2,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "wedge",
+      "row": 3,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "wedge",
+      "row": 3,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "wedge",
+      "row": 3,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "wedge",
+      "row": 3,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "wedge",
+      "row": 4,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "wedge",
+      "row": 4,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "wedge",
+      "row": 4,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "wedge",
+      "row": 4,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "pairs",
+      "row": 0,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "pairs",
+      "row": 0,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "pairs",
+      "row": 0,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "pairs",
+      "row": 0,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "pairs",
+      "row": 0,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "pairs",
+      "row": 1,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "pairs",
+      "row": 1,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "pairs",
+      "row": 1,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "pairs",
+      "row": 1,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "pairs",
+      "row": 1,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "pairs",
+      "row": 2,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "pairs",
+      "row": 2,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "pairs",
+      "row": 2,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "pairs",
+      "row": 2,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "pairs",
+      "row": 2,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "pairs",
+      "row": 3,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "pairs",
+      "row": 3,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "pairs",
+      "row": 3,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "pairs",
+      "row": 3,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "pairs",
+      "row": 3,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "thickness",
+      "row": 0,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "thickness",
+      "row": 0,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "thickness",
+      "row": 0,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "thickness",
+      "row": 1,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "thickness",
+      "row": 1,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "thickness",
+      "row": 1,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "thickness",
+      "row": 2,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "thickness",
+      "row": 2,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "thickness",
+      "row": 2,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "thickness",
+      "row": 3,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "thickness",
+      "row": 3,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "thickness",
+      "row": 3,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "thickness",
+      "row": 4,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "thickness",
+      "row": 4,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "thickness",
+      "row": 4,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "fit",
+      "row": 0,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "fit",
+      "row": 0,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "fit",
+      "row": 0,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "fit",
+      "row": 0,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "fit",
+      "row": 1,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "fit",
+      "row": 1,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "fit",
+      "row": 1,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "fit",
+      "row": 1,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "fit",
+      "row": 2,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "fit",
+      "row": 2,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "fit",
+      "row": 2,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "fit",
+      "row": 2,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "fit",
+      "row": 3,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "fit",
+      "row": 3,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "fit",
+      "row": 3,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "fit",
+      "row": 3,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "fit",
+      "row": 4,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "fit",
+      "row": 4,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "fit",
+      "row": 4,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "fit",
+      "row": 4,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "fit",
+      "row": 5,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "fit",
+      "row": 5,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "fit",
+      "row": 5,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "fit",
+      "row": 5,
+      "column": 3,
+      "passed": true
+    }
+  ],
+  "input_hashes": {
+    "data/provenance.json": "10701de8883ce087b84649a81353e16c3421a32ad995112682998b4415ee77e2",
+    "data/rings.csv": "8e7508d7693ff654dc281d90c6081242c60d88847e6121b2f0befe19da0da447",
+    "data/wedge.csv": "84b995fd6537cec7aed67939339cb0905a5827e36f2c75285dbf275a0d4436bc",
+    "experiment.json": "8702f4acd2331177b64f4e728939864a75dd499ca209f512951b2ffb0c604eb5"
+  }
+}

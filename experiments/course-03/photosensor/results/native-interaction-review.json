@@ -1,0 +1,100 @@
+{
+  "experiment": "course-03/photosensor",
+  "paclet": "PhotosensorLab",
+  "status": "passed",
+  "source_hashes": {
+    "analysis.wl": "5779246346c312a931f911892e3a462d7031461d02876adc0b40de560fe5ffba",
+    "authoring.json": "ff790bca43c11d7bb09355c1771df7c23683db69dcc381bda0f6c293d887b874"
+  },
+  "input_hashes": {
+    "data/label-repair-validation.json": "0a136da77a343d6d7aab3d8199010dc2d5491b5fe48e51c4296b0d3061c4094c",
+    "data/measurements.csv": "1fd3331271a283d9934211553c759ad09a79a5f48cabe595ffd40b20b435e628",
+    "data/provenance.json": "4170d8dbb3940428d32f5035e62d12e43e26a2a6e6092680c48d4e9c7a00e65e",
+    "data/python-author-validation.json": "60117de2f6bbcb2504c86e09a7980d3de8d1d51e8cfdadcf6fac1e3e9088190e",
+    "experiment.json": "b6b18c06c6dc8ba0179c27a2db77e369b76f0f90267b1d53b73c2b556ebf0d6b"
+  },
+  "models": [
+    {
+      "key": "ideal",
+      "capture_messages": [],
+      "status": "passed",
+      "held_body_sha256": "d2368eeac0c9455125864bf32735c5d9a6df494aeba3fb42841ebe925fed4764",
+      "default_evaluation": {
+        "status": "evaluated",
+        "output_head": "Graphics",
+        "response_sha256": "45770682130e6d9858d499afd348c92ccbb8763a74f12285f80d1876854286f1",
+        "graphics_count": 1,
+        "messages": [],
+        "unresolved_heads": []
+      },
+      "default_repeat": {
+        "status": "evaluated",
+        "output_head": "Graphics",
+        "response_sha256": "45770682130e6d9858d499afd348c92ccbb8763a74f12285f80d1876854286f1",
+        "graphics_count": 1,
+        "messages": [],
+        "unresolved_heads": []
+      },
+      "default_deterministic": true,
+      "controls": [
+        {
+          "name": "PhotosensorLab`Private`a",
+          "default": 10,
+          "changed": 5,
+          "specification_sha256": "6227f3976336ecbe0033fd8fdfcbacc489832a4d71703fd1476af5f65a71f66a",
+          "evaluation": {
+            "status": "evaluated",
+            "output_head": "Graphics",
+            "response_sha256": "f7da7debb3efdeb27377fd3371d8b9332c707e54d9043fc7516ca8412d086599",
+            "graphics_count": 1,
+            "messages": [],
+            "unresolved_heads": []
+          },
+          "response_changed": true,
+          "status": "passed"
+        }
+      ]
+    },
+    {
+      "key": "records",
+      "capture_messages": [],
+      "status": "passed",
+      "held_body_sha256": "ec570beeaac94272af5298b4c1c25d69eaf3832127147d576c7357549ed982a3",
+      "default_evaluation": {
+        "status": "evaluated",
+        "output_head": "Graphics",
+        "response_sha256": "f0e66e8438da523e9f53a8bcd9aa4b6c06fcbaa3165825232b1f686c62b02b90",
+        "graphics_count": 3,
+        "messages": [],
+        "unresolved_heads": []
+      },
+      "default_repeat": {
+        "status": "evaluated",
+        "output_head": "Graphics",
+        "response_sha256": "f0e66e8438da523e9f53a8bcd9aa4b6c06fcbaa3165825232b1f686c62b02b90",
+        "graphics_count": 3,
+        "messages": [],
+        "unresolved_heads": []
+      },
+      "default_deterministic": true,
+      "controls": [
+        {
+          "name": "PhotosensorLab`Private`pos",
+          "default": 0,
+          "changed": 3,
+          "specification_sha256": "da14d59689aee5ca7bf438c42ad4629ee3dc3fe5d9e8fa4dc09b442858a059d4",
+          "evaluation": {
+            "status": "evaluated",
+            "output_head": "Graphics",
+            "response_sha256": "e5abf8f523170bb560378dfac59855209764533eda8b23553249a1ace08b5047",
+            "graphics_count": 3,
+            "messages": [],
+            "unresolved_heads": []
+          },
+          "response_changed": true,
+          "status": "passed"
+        }
+      ]
+    }
+  ]
+}

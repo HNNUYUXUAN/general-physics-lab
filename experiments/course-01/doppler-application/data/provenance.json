@@ -1,0 +1,49 @@
+{
+  "primary_source": {
+    "path": "originals/course-01/多普勒效应的应用/多普勒效应的应用-实验报告.docx",
+    "sha256": "59c10c692fe2e949c680084b814614796f42962d4412947c31f7d6d9e5e9ea60"
+  },
+  "converted_source": {
+    "path": "processed/courses-01-03-04/普通物理实验1/多普勒效应的应用/多普勒效应的应用-实验报告_docx/正文.md",
+    "sha256": "cd36602745119c4d51e4cae0a10c1576e87a5627780284a91f8cc914651e57df"
+  },
+  "mappings": [
+    {
+      "csv": "static.csv",
+      "source_table": 1,
+      "source_rows": "2–6",
+      "columns": {
+        "trial": 1,
+        "combination": 2,
+        "mass_g": 3,
+        "position_cm": 4,
+        "included_in_source_mean": "第1组源文字“剔除”"
+      }
+    },
+    {
+      "csv": "periods.csv",
+      "source_table": 2,
+      "source_rows": "周期行2和4",
+      "source_cells": "第2–8列T1–7，第2–7列T8–13"
+    }
+  ],
+  "transformations": [
+    "将双行横排13个周期转为逐次观测，不新增周期。",
+    "第12周期0.84直接取DOCX表内数字，未对嵌图OCR。",
+    "以未修约伸长量和力计算每次劲度系数，再平均源保留的四组。"
+  ],
+  "corrections": [
+    "纠正弹簧质量修正方向：固定观测周期时，计入正的弹簧有效质量使反算k增大；忽略弹簧质量使反算k偏小，不能解释本次动态值较大。",
+    "动态k由未修约平均周期和Pi计算，替换源近似5.23。"
+  ],
+  "issues": [
+    {
+      "status": "limitation",
+      "detail": "源报告只标第1静态组剔除，未给定量剔除规则；保留主选择同时报告全组敏感性。"
+    },
+    {
+      "status": "limitation",
+      "detail": "未提供弹簧质量、计时及称量误差限，也没有振动时序；不能确认差异的具体成因或生成实测速度时序。"
+    }
+  ]
+}

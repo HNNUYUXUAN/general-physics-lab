@@ -1,0 +1,162 @@
+{
+  "metrics": {
+    "angle_mean_deg": {
+      "value": 60.00500000000001,
+      "unit": "deg",
+      "label": "顶角均值"
+    },
+    "angle_type_a_arcmin": {
+      "value": 1.3472193585306587,
+      "unit": "arcmin",
+      "label": "角度均值A类分量"
+    },
+    "angle_type_b_arcmin": {
+      "value": 0.5773502691896257,
+      "unit": "arcmin",
+      "label": "指定误差限B类分量"
+    },
+    "angle_combined_arcmin": {
+      "value": 1.465719391061295,
+      "unit": "arcmin",
+      "label": "两分量合成标准不确定度"
+    }
+  },
+  "tables": {
+    "table1": {
+      "headers": [
+        "次数",
+        "$\\theta_1$（左）",
+        "$\\theta_2$（右）",
+        "$\\theta_3$（左）",
+        "$\\theta_4$（右）"
+      ],
+      "rows": [
+        [
+          "1",
+          "$15^{\\circ}20^{\\prime}$",
+          "$195^{\\circ}18^{\\prime}$",
+          "$135^{\\circ}25^{\\prime}$",
+          "$315^{\\circ}23^{\\prime}$"
+        ],
+        [
+          "2",
+          "$86^{\\circ}45^{\\prime}$",
+          "$266^{\\circ}43^{\\prime}$",
+          "$206^{\\circ}48^{\\prime}$",
+          "$26^{\\circ}46^{\\prime}$"
+        ],
+        [
+          "3",
+          "$92^{\\circ}18^{\\prime}$",
+          "$272^{\\circ}16^{\\prime}$",
+          "$212^{\\circ}20^{\\prime}$",
+          "$32^{\\circ}18^{\\prime}$"
+        ],
+        [
+          "4",
+          "$121^{\\circ}16^{\\prime}$",
+          "$301^{\\circ}14^{\\prime}$",
+          "$241^{\\circ}19^{\\prime}$",
+          "$61^{\\circ}17^{\\prime}$"
+        ],
+        [
+          "5",
+          "$139^{\\circ}52^{\\prime}$",
+          "$319^{\\circ}54^{\\prime}$",
+          "$20^{\\circ}02^{\\prime}$",
+          "$200^{\\circ}04^{\\prime}$"
+        ]
+      ]
+    },
+    "table2": {
+      "headers": [
+        "次数",
+        "左游标角差 / °",
+        "右游标角差 / °",
+        "顶角 / °"
+      ],
+      "rows": [
+        [
+          1,
+          120.08333333,
+          120.08333333,
+          60.04166667
+        ],
+        [
+          2,
+          120.05,
+          120.05,
+          60.025
+        ],
+        [
+          3,
+          120.03333333,
+          120.03333333,
+          60.01666667
+        ],
+        [
+          4,
+          120.05,
+          120.05,
+          60.025
+        ],
+        [
+          5,
+          119.83333333,
+          119.83333333,
+          59.91666667
+        ]
+      ]
+    }
+  },
+  "series": {
+    "angle-repeat": {
+      "x": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "y": [
+        60.04166666666666,
+        60.025000000000006,
+        60.01666666666668,
+        60.02499999999999,
+        59.91666666666667
+      ],
+      "x_label": "测量次数",
+      "y_label": "顶角 / °",
+      "label": "双游标结果"
+    }
+  },
+  "notes": [
+    "圆周最短角差处理跨零读数。",
+    "误差限1角分按最终角度估计的均匀分布限值采用；未含全部校准系统分量。"
+  ],
+  "experiment_id": "course-04/prism-apex",
+  "engine": "python",
+  "input_hashes": {
+    "data/observations-01.csv": "1eac243f566064e18338ec3b4551347d934563544eabaad00e78c33c6e27db63",
+    "data/provenance.json": "3948fc565378871ee51d63a7ae7870eb095c6ed9b61fcb22b994967fe9d6b118",
+    "experiment.json": "4ae5b97a731bc46ac7e6ea45327560f23d41e9c319be69126c8db1ac64513127"
+  },
+  "code_hashes": {
+    "src/physicslab/common/__init__.py": "7cc50d4a8325535fb401e04aed51f6a04ad3ca7f40c4b972624547491c83e1a2",
+    "src/physicslab/common/io.py": "5135c2253071c4e3885dec26db357a7777c1a13c7a83559f5152007abb986541",
+    "src/physicslab/common/manuscripts.py": "847e4bade7e617d524e0b484db6e17ee82097687e37b84bb0ac3796dbe06ed10",
+    "src/physicslab/common/plots.py": "37825a8c2a8f5dd8ca7f01968dd343a8dd6cb6139d2ef67275ff745b04e9b907",
+    "src/physicslab/common/tex_boxes.py": "0e2b226fce4c79bba37cc2ba6b6153802a5cb6dbda9dfee95d1a98e5894f9554",
+    "src/physicslab/common/theme.py": "ee8592a54efb71efd91ccdc55b66c7d8bda14a32454dfd75aa34ef606269a01c",
+    "src/physicslab/experiments/prism_apex.py": "987765cb22b91f48593a6e5d96ca8c8638db38a06db11daca337803e8931b964"
+  },
+  "environment": {
+    "python": "3.14.7",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "matplotlib": "3.11.2",
+    "nbclient": "0.11.0",
+    "nbformat": "5.11.1",
+    "plotly": "7.1.0"
+  }
+}

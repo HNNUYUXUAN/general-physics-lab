@@ -1,0 +1,155 @@
+{
+  "experiment": "course-04/optical-rotation",
+  "status": "passed",
+  "reviewed_at": "2026-10-16T01:13:19.158561+08:00",
+  "build_run": "C:\\Users\\yuxua\\.codex\\visualizations\\2026\\10\\15\\01a13f56-4554-7500-ab99-dad08368b735\\rollout\\project\\.build\\course-04\\optical-rotation\\20261016_011106_277939",
+  "notebook": "C:\\Users\\yuxua\\.codex\\visualizations\\2026\\10\\15\\01a13f56-4554-7500-ab99-dad08368b735\\rollout\\project\\notebook\\paclets\\OpticalRotationLab\\Notebooks\\OpticalRotationLab.nb",
+  "notebook_sha256": "f9f39da6e7096976167dee2d1d63521d6a9c8dc9577641675ffe71c345ccfe83",
+  "method": "Actual view_image inspection of every fresh native QA panel without rescaling; long sections split with overlapping crops. Review covers mathematical typesetting, units, Chinese glyphs, centering, clipping and captions. Native controls visually inspected at saved default state; changing-state calculation validation is recorded by root serialized pipeline separately.",
+  "section_coverage": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "inspected_images": [
+    {
+      "path": "C:\\Users\\yuxua\\.codex\\visualizations\\2026\\10\\15\\01a13f56-4554-7500-ab99-dad08368b735\\rollout\\qa\\OpticalRotationLab\\review-01.png",
+      "sha256": "12d726249ba2164f77ef29fb4e4e528bf9ceac40b52b6b08d2367154ce55b8d7",
+      "source_spans": [
+        {
+          "source": "section-01.png",
+          "top": 0,
+          "bottom": 246
+        },
+        {
+          "source": "section-02.png",
+          "top": 0,
+          "bottom": 215
+        },
+        {
+          "source": "section-03.png",
+          "top": 0,
+          "bottom": 365
+        },
+        {
+          "source": "section-04.png",
+          "top": 0,
+          "bottom": 141
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\yuxua\\.codex\\visualizations\\2026\\10\\15\\01a13f56-4554-7500-ab99-dad08368b735\\rollout\\qa\\OpticalRotationLab\\review-02.png",
+      "sha256": "8a14377a0ef02592c2fb482aad792d76511010236ba823788113223ddb330b58",
+      "source_spans": [
+        {
+          "source": "section-05.png",
+          "top": 0,
+          "bottom": 286
+        },
+        {
+          "source": "section-06.png",
+          "top": 0,
+          "bottom": 442
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\yuxua\\.codex\\visualizations\\2026\\10\\15\\01a13f56-4554-7500-ab99-dad08368b735\\rollout\\qa\\OpticalRotationLab\\review-03.png",
+      "sha256": "6f92351341615303d48d971266008e2653d5ef9743be31ca432e12e7795eadf1",
+      "source_spans": [
+        {
+          "source": "section-07.png",
+          "top": 0,
+          "bottom": 1150
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\yuxua\\.codex\\visualizations\\2026\\10\\15\\01a13f56-4554-7500-ab99-dad08368b735\\rollout\\qa\\OpticalRotationLab\\review-04.png",
+      "sha256": "6b9ba83288b2297a3791c747059e9824f4e2b2a145a4dfbc40590b78b3ed147d",
+      "source_spans": [
+        {
+          "source": "section-07.png",
+          "top": 1050,
+          "bottom": 1590
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\yuxua\\.codex\\visualizations\\2026\\10\\15\\01a13f56-4554-7500-ab99-dad08368b735\\rollout\\qa\\OpticalRotationLab\\review-05.png",
+      "sha256": "74ea8e5b5452fd3b7023d3ea448387007ea87f2e9289526d51ae95388d4b17c2",
+      "source_spans": [
+        {
+          "source": "section-08.png",
+          "top": 0,
+          "bottom": 259
+        }
+      ]
+    }
+  ],
+  "source_png_hashes": {
+    "section-01.png": {
+      "sha256": "d07a3b847efe108a3312fcc1cd78e041a1ae13da512c6d0ec6e0b4b53a258f9a",
+      "size": [
+        1200,
+        246
+      ]
+    },
+    "section-02.png": {
+      "sha256": "c9a7cec7a51b3a45b2f7f8da812f70f7b50da1975d307054bd5ba68e873bad92",
+      "size": [
+        1200,
+        215
+      ]
+    },
+    "section-03.png": {
+      "sha256": "ef158b849b8283406a24e3d857820c69b08dcb7db6861233003903f2bd9b2981",
+      "size": [
+        1200,
+        365
+      ]
+    },
+    "section-04.png": {
+      "sha256": "bc27cf5344d3bb5866be31391fdd1ed0bcc7773d6bd7b6073c4733d907978434",
+      "size": [
+        1200,
+        141
+      ]
+    },
+    "section-05.png": {
+      "sha256": "d584191dbb988388822130de1b9d10d9271c2e0990a5c23b83feb748dcc30208",
+      "size": [
+        1200,
+        286
+      ]
+    },
+    "section-06.png": {
+      "sha256": "4456ed44418d21479d19bafd1f1afeec1e8e8baaa5f9779d243bc3f020269fad",
+      "size": [
+        1200,
+        442
+      ]
+    },
+    "section-07.png": {
+      "sha256": "2808fb8717f9dd8fdc8857f8ddf66db10e22451c3a9f5d3e4a24bf0085fff74b",
+      "size": [
+        1200,
+        1590
+      ]
+    },
+    "section-08.png": {
+      "sha256": "4b0f11ab1e51f697f842660ffa44f742f0adcadcffcf74ffb2847b06efbf428c",
+      "size": [
+        1200,
+        259
+      ]
+    }
+  },
+  "issues": []
+}

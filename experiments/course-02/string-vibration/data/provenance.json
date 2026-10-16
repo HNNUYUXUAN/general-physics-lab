@@ -1,0 +1,41 @@
+{
+  "primary_source": {
+    "path": "originals/course-02/03-弦振动的研究/实验报告-弦振动的研究.docx",
+    "sha256": "58d60f756383da2c02c78b0a8865ed052cd6dc1581fa1ad8503bdad3df97b8f1"
+  },
+  "converted_source": {
+    "path": "processed/course-02/03-弦振动的研究/实验报告-弦振动的研究/正文.md",
+    "sha256": "b5f790c0579f8687de61a4b3354cf6c19e4cc2def4a425e7807a5ed5343401bf"
+  },
+  "mappings": [
+    {
+      "csv": "tension.csv",
+      "source_table": 1,
+      "source_rows": "m、L、n横排各7列"
+    },
+    {
+      "csv": "frequency.csv",
+      "source_table": 2,
+      "source_rows": "频率、L、n横排各7列"
+    }
+  ],
+  "transformations": [
+    "只将原始m/频率、L、n作为观测；张力、波长及对数重新计算。",
+    "原始表横排布局保留于成稿。"
+  ],
+  "corrections": [
+    "表1第7点L63.30cm,n1推得126.60cm，与源派生166.60cm不一致；保留原始L和n，不逆改L以迎合派生值。",
+    "重算幂指数与结论，源张力指数.447不作为当前主结果。",
+    "改用满足两端波节边界的归一化sin驻波形状，说明坐标起点。"
+  ],
+  "issues": [
+    {
+      "status": "limitation",
+      "detail": "第7点是L录入错误还是源派生计算错误无法判断；主计算按原始L,n，需回查原始测量才能解决事实冲突。"
+    },
+    {
+      "status": "limitation",
+      "detail": "缺弦线密度和仪器精度，回归标准误差非完整测量不确定度。"
+    }
+  ]
+}

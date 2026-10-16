@@ -1,0 +1,59 @@
+{
+  "experiment": "course-03/ac-bridge",
+  "paclet": "ACBridgeLab",
+  "status": "passed",
+  "source_hashes": {
+    "analysis.wl": "42295e7a4c09179522223ed5c7849016c8f4f9facf03f8e4a53f1c595b74ee67",
+    "authoring.json": "e6dfbd71dbfcc2353904899a4a219955e05a293c519c67c144c4928dd5972c49"
+  },
+  "input_hashes": {
+    "data/balance.csv": "55e36a00001977373629242a29e564661ee5cad24e6e97243f1b75df7ffb10bf",
+    "data/label-repair-validation.json": "4378f0085362948086694361c4e4da9b7f145f90e8a76f2285352bdaf08de651",
+    "data/provenance.json": "5ab38c49b7a0d193fc652b9fe409c6d218e277792bbbbf1a3a707fddee76fcf6",
+    "data/python-author-validation.json": "127d1b0b2eeea1786581d5a10927529e40cac1aef48593a1c64b27c87fd0a606",
+    "experiment.json": "8c4d5869fa6d8a34a1542ca3156db939567441021a01861c25c37f688f302e74"
+  },
+  "models": [
+    {
+      "key": "complex-balance",
+      "capture_messages": [],
+      "status": "passed",
+      "held_body_sha256": "5f9420e4b6be08aa9d2fad6ea383150e470b69083a24472827dc812c29fdbcd8",
+      "default_evaluation": {
+        "status": "evaluated",
+        "output_head": "Graphics",
+        "response_sha256": "9e9a71ca67dcb317e001b6c94ad9263bcbc2f7ec80db6c96f3561fd382528604",
+        "graphics_count": 1,
+        "messages": [],
+        "unresolved_heads": []
+      },
+      "default_repeat": {
+        "status": "evaluated",
+        "output_head": "Graphics",
+        "response_sha256": "9e9a71ca67dcb317e001b6c94ad9263bcbc2f7ec80db6c96f3561fd382528604",
+        "graphics_count": 1,
+        "messages": [],
+        "unresolved_heads": []
+      },
+      "default_deterministic": true,
+      "controls": [
+        {
+          "name": "ACBridgeLab`Private`scale",
+          "default": 1,
+          "changed": 0.95,
+          "specification_sha256": "b1ebfd62ec35e4cec1de919c63933e84b690451e0c9cf9416aca7ee818fd596a",
+          "evaluation": {
+            "status": "evaluated",
+            "output_head": "Graphics",
+            "response_sha256": "bb31c7cbbc40eb07d59ff1d2b52d02db8c6d1ed20f8b8b46d0dc76992c5001d9",
+            "graphics_count": 1,
+            "messages": [],
+            "unresolved_heads": []
+          },
+          "response_changed": true,
+          "status": "passed"
+        }
+      ]
+    }
+  ]
+}

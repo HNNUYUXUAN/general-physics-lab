@@ -1,0 +1,59 @@
+{
+  "experiment": "course-02/string-vibration",
+  "paclet": "StringVibrationLab",
+  "status": "passed",
+  "source_hashes": {
+    "analysis.wl": "229681fbcc377c59c174d9270003c5a694d427d221dfbd6a5e28b1129d2e9311",
+    "authoring.json": "27064b1bf85c062eb5e68dc73548608bb98268b1319113c3d513977af5fc6610"
+  },
+  "input_hashes": {
+    "data/author-verification.json": "0b790eb86e72f603cc18a2953a7ec550a29c1397357f3386ec2ad242da290b4b",
+    "data/frequency.csv": "d3140abc909bfc28b8f5273d610347cc37418017d18e17b111fcb98fedcd2a89",
+    "data/provenance.json": "83fd611a3722d5b5b6b2f9b7552e35160dd8cf1fd741c4c2958bacbcd0b51491",
+    "data/tension.csv": "028fc3ae672f7cd25e1426bfeaa66182f413c3f88ac2e324e17c8894171671ba",
+    "experiment.json": "c978cea80954cdeb8c5cc46c5b84a6ec9148c2db81c3469ffb94cdaa323e5a8c"
+  },
+  "models": [
+    {
+      "key": "standing-mode",
+      "capture_messages": [],
+      "status": "passed",
+      "held_body_sha256": "e501e16565836cc98554a77fd6eb6e6d13bfc40ab976eb18518b8cfdfe81e1d6",
+      "default_evaluation": {
+        "status": "evaluated",
+        "output_head": "Column",
+        "response_sha256": "bd9234e9b243f419483da3beafeaf06b40a5177e795a509ee1f43964eec444aa",
+        "graphics_count": 1,
+        "messages": [],
+        "unresolved_heads": []
+      },
+      "default_repeat": {
+        "status": "evaluated",
+        "output_head": "Column",
+        "response_sha256": "bd9234e9b243f419483da3beafeaf06b40a5177e795a509ee1f43964eec444aa",
+        "graphics_count": 1,
+        "messages": [],
+        "unresolved_heads": []
+      },
+      "default_deterministic": true,
+      "controls": [
+        {
+          "name": "StringVibrationLab`Private`n",
+          "default": 2,
+          "changed": 3,
+          "specification_sha256": "435fe6f3963c445cc3d3c5f4f39622d0205726b144d47fb24ef75205584e6ade",
+          "evaluation": {
+            "status": "evaluated",
+            "output_head": "Column",
+            "response_sha256": "ccefaf30f31736a0abff74612969ab8143ef9143df9cab605c66bcc5b6c91a57",
+            "graphics_count": 1,
+            "messages": [],
+            "unresolved_heads": []
+          },
+          "response_changed": true,
+          "status": "passed"
+        }
+      ]
+    }
+  ]
+}

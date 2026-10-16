@@ -1,0 +1,1 @@
+PacletObject[<|"Name"->"PrismApexLab","Version"->"0.1.0","WolframVersion"->"14.0+","Description"->"\:7528\:5206\:5149\:8ba1\:6d4b\:4e09\:68f1\:955c\:7684\:9876\:89d2","Creator"->"Physics Lab Contributors","Extensions"->{{"Kernel","Root"->"Kernel","Context"->{"PrismApexLab`"}},{"Resource","Root"->".","Resources"->{"Notebooks","data","assets"}}}|>]

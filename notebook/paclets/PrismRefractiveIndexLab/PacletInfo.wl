@@ -1,0 +1,1 @@
+PacletObject[<|"Name"->"PrismRefractiveIndexLab","Version"->"0.1.0","WolframVersion"->"14.0+","Description"->"\:4e09\:68f1\:955c\:6298\:5c04\:7387\:7684\:6d4b\:5b9a","Creator"->"Physics Lab Contributors","Extensions"->{{"Kernel","Root"->"Kernel","Context"->{"PrismRefractiveIndexLab`"}},{"Resource","Root"->".","Resources"->{"Notebooks","data","assets"}}}|>]

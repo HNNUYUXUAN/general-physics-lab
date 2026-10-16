@@ -1,0 +1,26 @@
+{
+  "primary_source": "originals/course-02/惯性秤的应用/实验报告-惯性秤的应用.docx",
+  "primary_sha256": "4e65cc5ddcbc6c7b855f996b74862634f3b427caf703aed1c82484a5d0feded0",
+  "converted_source": "processed/course-02/惯性秤的应用/实验报告-惯性秤的应用/正文.md",
+  "verification": "直接从主DOCX XML逐单元格提取观测，规范CSV完整保留读数；源计算表不作为观测输入。",
+  "table_mappings": [
+    {
+      "file": "observations-01.csv",
+      "source_table": 1,
+      "mapping": "行列顺序及单元格文本原样保存"
+    }
+  ],
+  "transformations": [
+    "使用原表单位，派生结果从未修约观测重新计算。"
+  ],
+  "issues": [
+    {
+      "status": "documented",
+      "detail": "圆柱标称质量不是校准真值。"
+    },
+    {
+      "status": "documented",
+      "detail": "未知周期与标准质量误差缺失；只计算定标参数协方差分量。"
+    }
+  ]
+}

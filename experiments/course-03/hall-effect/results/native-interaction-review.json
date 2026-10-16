@@ -1,0 +1,76 @@
+{
+  "experiment": "course-03/hall-effect",
+  "paclet": "HallEffectLab",
+  "status": "passed",
+  "source_hashes": {
+    "analysis.wl": "63038f5d718b037d2e23e1b09cd9ae092aee3a0bb3b5e1b4b683c7eae8e8c26a",
+    "authoring.json": "2097e93fa1ef1169aec87d8e88a606839b48828953fe3f2d89225d0f3f45fb2f"
+  },
+  "input_hashes": {
+    "data/magnet_current.csv": "8e085837868cc98e09c04e516f50fdbaad34e2e61d7953865867b00f1be1a671",
+    "data/position.csv": "a834533bdcfe771e7a23f86ada3c624da2facb8228e701b6eeb2cb5993410fdc",
+    "data/provenance.json": "2c2ad9dc17753d8cbe26ec1e2288be8ca9fe0c641c89de03fc9fa68da992aa50",
+    "data/python-author-validation.json": "e9aaa6845eecde771f45de0f55d881462360411ec70219bb815e2ade48dd70a1",
+    "data/working_current.csv": "adf8fbd253176f7c33350deb54523df3c14264e7e39d81db0665a2a7864bf1dd",
+    "experiment.json": "116f9a24ac9c9cda6e87d41448c7b278b96ff3bb01375ac2e9092a409e520ff4"
+  },
+  "models": [
+    {
+      "key": "parity",
+      "capture_messages": [],
+      "status": "passed",
+      "held_body_sha256": "7f7dbe02563a962003ffb8023f0728af05f716953bd8763118c0fd8d9d18576e",
+      "default_evaluation": {
+        "status": "evaluated",
+        "output_head": "Graphics",
+        "response_sha256": "19cc82df295cb72746f2109b0bfc7e3e6e8b0103ae2879b23a6235e9d1136a5d",
+        "graphics_count": 3,
+        "messages": [],
+        "unresolved_heads": []
+      },
+      "default_repeat": {
+        "status": "evaluated",
+        "output_head": "Graphics",
+        "response_sha256": "19cc82df295cb72746f2109b0bfc7e3e6e8b0103ae2879b23a6235e9d1136a5d",
+        "graphics_count": 3,
+        "messages": [],
+        "unresolved_heads": []
+      },
+      "default_deterministic": true,
+      "controls": [
+        {
+          "name": "HallEffectLab`Private`key",
+          "default": "working_current",
+          "changed": "magnet_current",
+          "specification_sha256": "14b3e3dfbbb3fdd9c9e21b0f642baddd8d92a5b9565c493c58ff80b3c8b806f5",
+          "evaluation": {
+            "status": "evaluated",
+            "output_head": "Graphics",
+            "response_sha256": "99499af728a8d50af144c4a3132add42b271198d48d513ecd31b6c7da3fac5f1",
+            "graphics_count": 3,
+            "messages": [],
+            "unresolved_heads": []
+          },
+          "response_changed": true,
+          "status": "passed"
+        },
+        {
+          "name": "HallEffectLab`Private`index",
+          "default": 1,
+          "changed": 2,
+          "specification_sha256": "319563d205d21d64332f9f69713ab1916fd4a4d64bc61a4249b0fe2564ef8399",
+          "evaluation": {
+            "status": "evaluated",
+            "output_head": "Graphics",
+            "response_sha256": "def10bb8bf6663ac08410f2528baeca4ac048a79b66628fcb86173c3232623c6",
+            "graphics_count": 3,
+            "messages": [],
+            "unresolved_heads": []
+          },
+          "response_changed": true,
+          "status": "passed"
+        }
+      ]
+    }
+  ]
+}

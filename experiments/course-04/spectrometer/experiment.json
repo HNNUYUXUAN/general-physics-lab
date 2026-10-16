@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "id": "course-04/spectrometer",
+  "title": "分光计的调节与使用",
+  "parameters": {
+    "angle_error_bound_arcmin": 1
+  },
+  "models": {
+    "angle": "双游标角差平均；圆周最短差，角差小于180度。"
+  },
+  "source_docx": "originals/course-04/01_实验一_分光计的调节与使用_实验报告.docx",
+  "data_version": "1.0.0"
+}

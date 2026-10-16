@@ -1,0 +1,42 @@
+{
+  "primary_source": {
+    "path": "originals/course-01/液体比汽化热的测量/液体比汽化热测量实验报告.docx",
+    "sha256": "b338f7becc42eb09cc51cfb2fe41883e367eee4ae0d63a44d383f98a1199fce1"
+  },
+  "converted_source": {
+    "path": "processed/courses-01-03-04/普通物理实验1/液体比汽化热的测量/液体比汽化热测量实验报告_docx/正文.md",
+    "sha256": "fd576746aa9c415c85ee3305b13755a6053c0011217785e6c5e3e99af0cd5d15"
+  },
+  "mappings": [
+    {
+      "csv": "observations.csv",
+      "source_table": 1,
+      "source_rows": "2–8",
+      "columns": {
+        "quantity": 1,
+        "value": 3,
+        "unit": 4,
+        "note": 5
+      }
+    }
+  ],
+  "transformations": [
+    "质量数值保留g，最终J/g乘1000转为J/kg。",
+    "主模型采用源明确100℃蒸汽温度；373.2mV是理论圆整值，不作实测100.05℃。",
+    "初态总质量明确不含搅拌器，冷水质量为149.28-29.52；末态构成不明，保留两种情形。"
+  ],
+  "corrections": [
+    "以未修约热容和热量重新计算比汽化热和相对差异。",
+    "抵偿法只近似减小热交换，初末温度对称不保证精确抵消。"
+  ],
+  "issues": [
+    {
+      "status": "limitation",
+      "detail": "末态总质量是否含搅拌器未注明；主结果是假定初末称量构成相同的条件结果。"
+    },
+    {
+      "status": "limitation",
+      "detail": "AD590增益与零点实际标定、天平/电压误差限、气压和冷却过程缺失，无法给出完整合成不确定度。"
+    }
+  ]
+}

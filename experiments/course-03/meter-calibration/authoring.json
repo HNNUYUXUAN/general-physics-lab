@@ -1,0 +1,60 @@
+{
+  "title": "电表的改装与校准",
+  "course": "course-03",
+  "slug": "meter-calibration",
+  "module": "meter_calibration",
+  "paclet": "MeterCalibrationLab",
+  "source_docx": "originals/course-03/4电表的改装与校准/实验报告-电表的改装与校准.docx",
+  "source_converted": "processed/courses-01-03-04/普通物理实验3/4电表的改装与校准/实验报告-电表的改装与校准_docx/正文.md",
+  "sections": [
+    "一、实验名称",
+    "二、实验目的",
+    "三、实验原理",
+    "四、主要仪器设备",
+    "五、实验步骤",
+    "六、原始数据记录",
+    "七、数据处理",
+    "八、实验结果与讨论"
+  ],
+  "comparison": [
+    "current_max_error",
+    "current_FS_error_percent",
+    "current_max_hysteresis",
+    "current_correction_slope",
+    "current_correction_intercept",
+    "voltage_max_error",
+    "voltage_FS_error_percent",
+    "voltage_max_hysteresis",
+    "voltage_correction_slope",
+    "voltage_correction_intercept",
+    "shunt_resistance",
+    "series_resistance",
+    "original_Rw_at_16",
+    "improved_Rw_at_13",
+    "improved_Rw_at_16"
+  ],
+  "expansions": [
+    {
+      "section": "七、数据处理",
+      "title": "电池变化与调零可行域",
+      "prose": "条件采用 $R_g=30\\,\\Omega,I_g=1\\,\\mathrm{mA}$，比较两个限流电阻设计。水平虚线为电位器 $0$–$470\\,\\Omega$ 的范围；模型曲线超出范围即不能调零。",
+      "python": "display_plotly(adapter.explore(\"zero-design\",result))",
+      "wolfram": "exploreView[\"zero-design\"]",
+      "caption": "图 4　串联式欧姆表的调零可行性"
+    },
+    {
+      "section": "八、实验结果与讨论",
+      "title": "多点校准关系",
+      "prose": "全部原记录点拟合标准均值与改装示值关系，异常电压行仍保留。拟合仅用于诊断校准形状，不代替读数复核或等级检定。",
+      "python": "series_plot(result,\"current_correction\")\nseries_plot(result,\"voltage_correction\")",
+      "wolfram": "Column[{plotView[r,\"current_correction\"],plotView[r,\"voltage_correction\"]},Alignment->Center]",
+      "caption": "图 5　改装表示值与标准均值的线性校准诊断"
+    }
+  ],
+  "limitations": [
+    "缺少表头内阻独立实测与标准表不确定度。",
+    "电压1.25V行与参考均值1.3305V存在疑点，保留不擅改。",
+    "欧姆表前四个表头不可辨识、格数非单调，不能标定未知电阻。"
+  ],
+  "status": "python-validated-wolfram-pending"
+}

@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "id": "course-02/surface-tension",
+  "title": "表面张力系数的测定",
+  "data_version": "1.0.0",
+  "parameters": {
+    "gravity_m_s2": 9.794,
+    "temperature_c": 20,
+    "voltage_resolution_mv": 0.1,
+    "diameter_resolution_mm": 0.02,
+    "reference_n_m": 0.0728
+  },
+  "assumptions": [
+    "薄膜附着液体重量忽略、内外接触周界充分润湿",
+    "独立量化读数误差半宽等于半分辨力，均匀分布",
+    "砝码、g及模型系统误差未计入，标准不确定度为条件预算"
+  ]
+}

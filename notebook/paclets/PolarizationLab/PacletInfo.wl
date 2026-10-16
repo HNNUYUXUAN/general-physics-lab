@@ -1,0 +1,1 @@
+PacletObject[<|"Name"->"PolarizationLab","Version"->"0.1.0","WolframVersion"->"14.0+","Description"->"\:504f\:632f\:5149\:7684\:89c2\:5bdf\:4e0e\:5206\:6790","Creator"->"Physics Lab Contributors","Extensions"->{{"Kernel","Root"->"Kernel","Context"->{"PolarizationLab`"}},{"Resource","Root"->".","Resources"->{"Notebooks","data","assets"}}}|>]

@@ -1,0 +1,30 @@
+{
+  "primary_source": "originals/course-04/04_实验四_用掠射法测定透明介质的折射率_实验报告.docx",
+  "primary_sha256": "9d967710c9189c131e9213e8eeb5c322d74e8d2f707f56aa2dd40f173998fe1c",
+  "converted_source": "processed/courses-01-03-04/普通物理实验4/04_实验四_用掠射法测定透明介质的折射率_实验报告_docx/正文.md",
+  "verification": "直接从主DOCX XML逐单元格提取观测，规范CSV完整保留读数；源计算表不作为观测输入。",
+  "table_mappings": [
+    {
+      "file": "observations-01.csv",
+      "source_table": 1,
+      "mapping": "行列顺序及单元格文本原样保存"
+    }
+  ],
+  "transformations": [
+    "角度度分读数按未修约的小数度计算；跨零角差使用圆周最短差，逐组计算后再取均值。"
+  ],
+  "issues": [
+    {
+      "status": "documented",
+      "detail": "圆周最短角差处理跨零读数。"
+    },
+    {
+      "status": "documented",
+      "detail": "误差限1角分按最终角度估计的均匀分布限值采用；未含全部校准系统分量。"
+    },
+    {
+      "status": "documented",
+      "detail": "液体名称、温度和棱镜波长条件未记录。"
+    }
+  ]
+}

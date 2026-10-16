@@ -1,0 +1,326 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "metric": "R1_measured",
+      "python": 3.0660000000000003,
+      "wolfram": 3.0660000000000003,
+      "unit": "Ω",
+      "passed": true
+    },
+    {
+      "metric": "R1_nominal_deviation",
+      "python": 2.200000000000009,
+      "wolfram": 2.200000000000009,
+      "unit": "%",
+      "passed": true
+    },
+    {
+      "metric": "R2_measured",
+      "python": 46.594,
+      "wolfram": 46.594,
+      "unit": "Ω",
+      "passed": true
+    },
+    {
+      "metric": "R2_nominal_deviation",
+      "python": -0.8638297872340401,
+      "wolfram": -0.8638297872340399,
+      "unit": "%",
+      "passed": true
+    },
+    {
+      "metric": "R3_measured",
+      "python": 200.2,
+      "wolfram": 200.2,
+      "unit": "Ω",
+      "passed": true
+    },
+    {
+      "metric": "R3_nominal_deviation",
+      "python": 0.09999999999999432,
+      "wolfram": 0.09999999999999432,
+      "unit": "%",
+      "passed": true
+    },
+    {
+      "metric": "R4_measured",
+      "python": 1979.7,
+      "wolfram": 1979.7,
+      "unit": "Ω",
+      "passed": true
+    },
+    {
+      "metric": "R4_nominal_deviation",
+      "python": -1.0149999999999977,
+      "wolfram": -1.0149999999999977,
+      "unit": "%",
+      "passed": true
+    },
+    {
+      "metric": "R5_measured",
+      "python": 20421.0,
+      "wolfram": 20421.0,
+      "unit": "Ω",
+      "passed": true
+    },
+    {
+      "metric": "R5_nominal_deviation",
+      "python": 2.105,
+      "wolfram": 2.1050000000000004,
+      "unit": "%",
+      "passed": true
+    },
+    {
+      "metric": "source_example_limit_arithmetic",
+      "python": 0.006533,
+      "wolfram": 0.006533,
+      "unit": "Ω",
+      "passed": true
+    },
+    {
+      "metric": "model_M0p1_balance",
+      "python": 0.0,
+      "wolfram": 0.0,
+      "unit": "1",
+      "passed": true
+    },
+    {
+      "metric": "model_M1_balance",
+      "python": 0.0,
+      "wolfram": 0.0,
+      "unit": "1",
+      "passed": true
+    },
+    {
+      "metric": "model_M10_balance",
+      "python": 0.0,
+      "wolfram": 0.0,
+      "unit": "1",
+      "passed": true
+    },
+    {
+      "metric": "model_M100_balance",
+      "python": 0.0,
+      "wolfram": 0.0,
+      "unit": "1",
+      "passed": true
+    },
+    {
+      "table": "balance",
+      "row": 0,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "balance",
+      "row": 0,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "balance",
+      "row": 0,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "balance",
+      "row": 1,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "balance",
+      "row": 1,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "balance",
+      "row": 1,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "balance",
+      "row": 2,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "balance",
+      "row": 2,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "balance",
+      "row": 2,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "balance",
+      "row": 3,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "balance",
+      "row": 3,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "balance",
+      "row": 3,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "balance",
+      "row": 4,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "balance",
+      "row": 4,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "balance",
+      "row": 4,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "results",
+      "row": 0,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "results",
+      "row": 0,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "results",
+      "row": 0,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "results",
+      "row": 0,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "results",
+      "row": 1,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "results",
+      "row": 1,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "results",
+      "row": 1,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "results",
+      "row": 1,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "results",
+      "row": 2,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "results",
+      "row": 2,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "results",
+      "row": 2,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "results",
+      "row": 2,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "results",
+      "row": 3,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "results",
+      "row": 3,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "results",
+      "row": 3,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "results",
+      "row": 3,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "results",
+      "row": 4,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "results",
+      "row": 4,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "results",
+      "row": 4,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "results",
+      "row": 4,
+      "column": 3,
+      "passed": true
+    }
+  ],
+  "input_hashes": {
+    "data/balance.csv": "d47f01d43ec454057a92bf203bfcd13712d57233f4112a63d855060e4bd73690",
+    "data/provenance.json": "734ff3cf3d4a5b783292b7115e8fd9ea10ff00756db69410961f20bf8708853c",
+    "data/python-author-validation.json": "5d717710b86046bfc98f005619c3bb509bdd5f2d4e0e9c8e14d5700fa2720b7b",
+    "experiment.json": "de7ca9849581bac3a53f3bc7d392834570b523bcaeda63b7719b284a6d2ba7f3"
+  }
+}

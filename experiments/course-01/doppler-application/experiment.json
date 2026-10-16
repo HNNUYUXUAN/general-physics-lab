@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "id": "course-01/doppler-application",
+  "title": "多普勒效应的应用",
+  "data_version": "1.0.0",
+  "parameters": {
+    "initial_position_cm": 24.9,
+    "gravity_m_s2": 9.8,
+    "oscillator_mass_g": 103.2
+  },
+  "units": {
+    "mass": "g",
+    "position": "cm",
+    "period": "s",
+    "stiffness": "N/m"
+  },
+  "assumptions": [
+    "静态法沿用源报告排除第1组的选用状态，但保留全部原始记录",
+    "简谐模型忽略弹簧质量和阻尼",
+    "弹簧有效质量m_s/3只用于均匀弹簧模型敏感性"
+  ]
+}

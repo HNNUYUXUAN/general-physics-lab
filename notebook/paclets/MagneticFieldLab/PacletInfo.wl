@@ -1,0 +1,1 @@
+PacletObject[<|"Name"->"MagneticFieldLab","Version"->"0.1.0","WolframVersion"->"14.0+","Description"->"\:78c1\:573a\:7684\:63cf\:7ed8","Creator"->"Physics Lab Contributors","Extensions"->{{"Kernel","Root"->"Kernel","Context"->{"MagneticFieldLab`"}},{"Resource","Root"->".","Resources"->{"Notebooks","data","assets"}}}|>]

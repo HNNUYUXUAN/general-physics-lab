@@ -1,0 +1,1 @@
+PacletObject[<|"Name"->"StringVibrationLab","Version"->"0.1.0","WolframVersion"->"14.0+","Description"->"\:5f26\:632f\:52a8\:7684\:7814\:7a76","Creator"->"Physics Lab Contributors","Extensions"->{{"Kernel","Root"->"Kernel","Context"->{"StringVibrationLab`"}},{"Resource","Root"->".","Resources"->{"Notebooks","data","assets"}}}|>]

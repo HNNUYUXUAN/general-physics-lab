@@ -1,0 +1,60 @@
+{
+  "experiment": "course-02/surface-tension",
+  "paclet": "SurfaceTensionLab",
+  "status": "passed",
+  "source_hashes": {
+    "analysis.wl": "14f0d8f002cb38888fe0bce414d954d37cccf4b9f98c2f056ca11b2741de0ef4",
+    "authoring.json": "84643ae8ca26890330b36caff57fcd77e5be563ac1792730ef7c9fdf6cb4fc89"
+  },
+  "input_hashes": {
+    "data/author-verification.json": "5776703720133e2d6345a8b2ffc2276feda4859cb0d1e1e0b91939c37d5f0a4f",
+    "data/calibration.csv": "42b3c4731fc43897ee4576a10e22d8c8653d62f076f2ca580b475413b42700d3",
+    "data/diameters.csv": "9aacf24a9ab941c43d143e6703021a48623842ee51bb79c0949d2cedcefc649d",
+    "data/provenance.json": "95355a52ba504708323d39d7ab215c568be90922f1b1b31a8239788c56700d88",
+    "data/pulls.csv": "890e3a9b50707a573c5c458b09ac5f342b96fb8ffb9d6ed4c56da81947b05ab4",
+    "experiment.json": "d53c2e834a5404d10a305babc0ae2305da55732f1d741e279879eec7c5967f31"
+  },
+  "models": [
+    {
+      "key": "calibration-method",
+      "capture_messages": [],
+      "status": "passed",
+      "held_body_sha256": "3286ceb31e8c8dadaebb7043ef7aafddf8ae13441ec52dfc6455aff485c00956",
+      "default_evaluation": {
+        "status": "evaluated",
+        "output_head": "Graphics",
+        "response_sha256": "2cc49eca7764707ce1e4983257f09098fd5d47da90040f617cd21dfaedb5abe6",
+        "graphics_count": 1,
+        "messages": [],
+        "unresolved_heads": []
+      },
+      "default_repeat": {
+        "status": "evaluated",
+        "output_head": "Graphics",
+        "response_sha256": "2cc49eca7764707ce1e4983257f09098fd5d47da90040f617cd21dfaedb5abe6",
+        "graphics_count": 1,
+        "messages": [],
+        "unresolved_heads": []
+      },
+      "default_deterministic": true,
+      "controls": [
+        {
+          "name": "SurfaceTensionLab`Private`method",
+          "default": 1,
+          "changed": 2,
+          "specification_sha256": "7a31830ed2b80c3a335bbd9326190115266b5e40083c1ebcad06f2c17ffe38ad",
+          "evaluation": {
+            "status": "evaluated",
+            "output_head": "Graphics",
+            "response_sha256": "206091222943517b5aa0404b9c5eedf83976cfcd36087b302996c3a5b19bce61",
+            "graphics_count": 1,
+            "messages": [],
+            "unresolved_heads": []
+          },
+          "response_changed": true,
+          "status": "passed"
+        }
+      ]
+    }
+  ]
+}

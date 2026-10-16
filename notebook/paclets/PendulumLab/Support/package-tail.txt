@@ -1,0 +1,14 @@
+(* Stage only distributable resources, keeping build outputs out of the archive. *)
+stage=FileNameJoin[{root,"dist","package-source","PendulumLab"}];
+If[ExpandFileName[stage]=!=FileNameJoin[{ExpandFileName[root],"dist","package-source","PendulumLab"}],Exit[1]];
+If[DirectoryQ[stage]&&!FileExistsQ[FileNameJoin[{stage,"PacletInfo.wl"}]],Print["Unexpected package staging contents"];Exit[1]];
+If[DirectoryQ[stage],DeleteDirectory[stage,DeleteContents->True]];
+CreateDirectory[stage,CreateIntermediateDirectories->True];
+CopyFile[FileNameJoin[{root,"PacletInfo.wl"}],FileNameJoin[{stage,"PacletInfo.wl"}]];
+Scan[CopyDirectory[FileNameJoin[{root,#}],FileNameJoin[{stage,#}]]&, {"Kernel","Notebooks","data","Tests"}];
+Needs["PacletTools`"];
+archive=FileNameJoin[{root,"dist","PendulumLab-0.1.0.paclet"}];
+If[FileExistsQ[archive],DeleteFile[archive]];
+packed=CreatePacletArchive[stage,FileNameJoin[{root,"dist"}]];
+If[!FileExistsQ[archive],Print[packed];Exit[1]];
+Print["PACLET_BUILD_OK"];

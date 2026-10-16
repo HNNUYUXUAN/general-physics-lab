@@ -1,0 +1,1 @@
+PacletObject[<|"Name"->"DensityLab","Version"->"0.1.0","WolframVersion"->"14.0+","Description"->"\:7269\:8d28\:5bc6\:5ea6\:7684\:6d4b\:91cf","Creator"->"Physics Lab Contributors","Extensions"->{{"Kernel","Root"->"Kernel","Context"->{"DensityLab`"}},{"Resource","Root"->".","Resources"->{"Notebooks","data","assets"}}}|>]

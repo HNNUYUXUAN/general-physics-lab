@@ -1,0 +1,77 @@
+{
+  "status": "python-executed-awaiting-wolfram",
+  "checks": [
+    "8calibration/5pull/5diameter source rows",
+    "38.18mV mean",
+    "four disjoint difference pairs",
+    "two calibration interactive states"
+  ],
+  "metrics": {
+    "calibration_difference": {
+      "value": 53.73749999999999,
+      "unit": "mV",
+      "label": "四组逐差平均"
+    },
+    "conversion_difference": {
+      "value": 0.00036451267736682956,
+      "unit": "N/mV",
+      "label": "逐差转换系数"
+    },
+    "conversion_regression": {
+      "value": 0.0003635098506681102,
+      "unit": "N/mV",
+      "label": "最小二乘转换系数"
+    },
+    "calibration_intercept": {
+      "value": -0.03274995506763144,
+      "unit": "N",
+      "label": "标定拟合截距"
+    },
+    "calibration_correlation": {
+      "value": 0.9999775996444561,
+      "unit": "1",
+      "label": "标定相关系数"
+    },
+    "mean_pull_difference": {
+      "value": 38.18,
+      "unit": "mV",
+      "label": "拉脱读数差平均"
+    },
+    "mean_inner_diameter": {
+      "value": 33.008,
+      "unit": "mm",
+      "label": "平均内径"
+    },
+    "mean_outer_diameter": {
+      "value": 34.944,
+      "unit": "mm",
+      "label": "平均外径"
+    },
+    "contact_length": {
+      "value": 0.21347750399673363,
+      "unit": "m",
+      "label": "接触线总长度"
+    },
+    "surface_tension": {
+      "value": 0.06519232125778693,
+      "unit": "N/m",
+      "label": "逐差法表面张力系数",
+      "uncertainty": 0.0010736135692195822
+    },
+    "surface_tension_regression": {
+      "value": 0.06501296782409824,
+      "unit": "N/m",
+      "label": "回归标定表面张力系数"
+    },
+    "conditional_uncertainty": {
+      "value": 0.0010736135692195822,
+      "unit": "N/m",
+      "label": "条件标准不确定度"
+    },
+    "relative_deviation": {
+      "value": 10.450108162380598,
+      "unit": "%",
+      "label": "相对参考值差异"
+    }
+  }
+}

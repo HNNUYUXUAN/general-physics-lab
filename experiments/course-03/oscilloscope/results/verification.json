@@ -1,0 +1,516 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "metric": "sine_U_pp",
+      "python": 1.0,
+      "wolfram": 1.0,
+      "unit": "V",
+      "passed": true
+    },
+    {
+      "metric": "sine_U_peak",
+      "python": 0.5,
+      "wolfram": 0.5,
+      "unit": "V",
+      "passed": true
+    },
+    {
+      "metric": "sine_U_rms",
+      "python": 0.35355339059327373,
+      "wolfram": 0.35355339059327373,
+      "unit": "V",
+      "passed": true
+    },
+    {
+      "metric": "sine_meter_deviation_percent",
+      "python": 43.40125522463185,
+      "wolfram": 43.40125522463185,
+      "unit": "%",
+      "passed": true
+    },
+    {
+      "metric": "sine_period",
+      "python": 0.001,
+      "wolfram": 0.001,
+      "unit": "s",
+      "passed": true
+    },
+    {
+      "metric": "sine_frequency",
+      "python": 1000.0,
+      "wolfram": 1000.0,
+      "unit": "Hz",
+      "passed": true
+    },
+    {
+      "metric": "triangle_U_pp",
+      "python": 1.0,
+      "wolfram": 1.0,
+      "unit": "V",
+      "passed": true
+    },
+    {
+      "metric": "triangle_U_peak",
+      "python": 0.5,
+      "wolfram": 0.5,
+      "unit": "V",
+      "passed": true
+    },
+    {
+      "metric": "triangle_U_rms",
+      "python": 0.2886751345948129,
+      "wolfram": 0.2886751345948129,
+      "unit": "V",
+      "passed": true
+    },
+    {
+      "metric": "triangle_meter_deviation_percent",
+      "python": -3.6979750991704265,
+      "wolfram": -3.6979750991704265,
+      "unit": "%",
+      "passed": true
+    },
+    {
+      "metric": "triangle_period",
+      "python": 0.001,
+      "wolfram": 0.001,
+      "unit": "s",
+      "passed": true
+    },
+    {
+      "metric": "triangle_frequency",
+      "python": 1000.0,
+      "wolfram": 1000.0,
+      "unit": "Hz",
+      "passed": true
+    },
+    {
+      "metric": "square_U_pp",
+      "python": 1.0,
+      "wolfram": 1.0,
+      "unit": "V",
+      "passed": true
+    },
+    {
+      "metric": "square_U_peak",
+      "python": 0.5,
+      "wolfram": 0.5,
+      "unit": "V",
+      "passed": true
+    },
+    {
+      "metric": "square_U_rms",
+      "python": 0.5,
+      "wolfram": 0.5,
+      "unit": "V",
+      "passed": true
+    },
+    {
+      "metric": "square_meter_deviation_percent",
+      "python": -1.8000000000000016,
+      "wolfram": -1.8000000000000016,
+      "unit": "%",
+      "passed": true
+    },
+    {
+      "metric": "square_period",
+      "python": 0.001,
+      "wolfram": 0.001,
+      "unit": "s",
+      "passed": true
+    },
+    {
+      "metric": "square_frequency",
+      "python": 1000.0,
+      "wolfram": 1000.0,
+      "unit": "Hz",
+      "passed": true
+    },
+    {
+      "metric": "lissajous_1_frequency",
+      "python": 1000.0,
+      "wolfram": 1000.0,
+      "unit": "Hz",
+      "passed": true
+    },
+    {
+      "metric": "lissajous_2_frequency",
+      "python": 1000.0,
+      "wolfram": 1000.0,
+      "unit": "Hz",
+      "passed": true
+    },
+    {
+      "metric": "lissajous_3_frequency",
+      "python": 1000.0,
+      "wolfram": 1000.0,
+      "unit": "Hz",
+      "passed": true
+    },
+    {
+      "metric": "lissajous_4_frequency",
+      "python": 1000.0,
+      "wolfram": 1000.0,
+      "unit": "Hz",
+      "passed": true
+    },
+    {
+      "metric": "lissajous_5_frequency",
+      "python": 1000.0,
+      "wolfram": 1000.0,
+      "unit": "Hz",
+      "passed": true
+    },
+    {
+      "metric": "lissajous_mean_frequency",
+      "python": 1000.0,
+      "wolfram": 1000.0,
+      "unit": "Hz",
+      "passed": true
+    },
+    {
+      "table": "voltage",
+      "row": 0,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "voltage",
+      "row": 0,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "voltage",
+      "row": 0,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "voltage",
+      "row": 0,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "voltage",
+      "row": 0,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "voltage",
+      "row": 0,
+      "column": 6,
+      "passed": true
+    },
+    {
+      "table": "voltage",
+      "row": 0,
+      "column": 7,
+      "passed": true
+    },
+    {
+      "table": "voltage",
+      "row": 1,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "voltage",
+      "row": 1,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "voltage",
+      "row": 1,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "voltage",
+      "row": 1,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "voltage",
+      "row": 1,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "voltage",
+      "row": 1,
+      "column": 6,
+      "passed": true
+    },
+    {
+      "table": "voltage",
+      "row": 1,
+      "column": 7,
+      "passed": true
+    },
+    {
+      "table": "voltage",
+      "row": 2,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "voltage",
+      "row": 2,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "voltage",
+      "row": 2,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "voltage",
+      "row": 2,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "voltage",
+      "row": 2,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "voltage",
+      "row": 2,
+      "column": 6,
+      "passed": true
+    },
+    {
+      "table": "voltage",
+      "row": 2,
+      "column": 7,
+      "passed": true
+    },
+    {
+      "table": "period",
+      "row": 0,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "period",
+      "row": 0,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "period",
+      "row": 0,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "period",
+      "row": 0,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "period",
+      "row": 0,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "period",
+      "row": 1,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "period",
+      "row": 1,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "period",
+      "row": 1,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "period",
+      "row": 1,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "period",
+      "row": 1,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "period",
+      "row": 2,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "period",
+      "row": 2,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "period",
+      "row": 2,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "period",
+      "row": 2,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "period",
+      "row": 2,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "lissajous",
+      "row": 0,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "lissajous",
+      "row": 0,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "lissajous",
+      "row": 0,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "lissajous",
+      "row": 0,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "lissajous",
+      "row": 1,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "lissajous",
+      "row": 1,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "lissajous",
+      "row": 1,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "lissajous",
+      "row": 1,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "lissajous",
+      "row": 2,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "lissajous",
+      "row": 2,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "lissajous",
+      "row": 2,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "lissajous",
+      "row": 2,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "lissajous",
+      "row": 3,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "lissajous",
+      "row": 3,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "lissajous",
+      "row": 3,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "lissajous",
+      "row": 3,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "lissajous",
+      "row": 4,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "lissajous",
+      "row": 4,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "lissajous",
+      "row": 4,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "lissajous",
+      "row": 4,
+      "column": 3,
+      "passed": true
+    }
+  ],
+  "input_hashes": {
+    "data/lissajous.csv": "5a3438189cf8d125dda8a65972914555880b2370942c97a0b3a555ee5b793260",
+    "data/provenance.json": "7eb6797da28120893c936a8f5bcb3bba4b54fba02426f43999017f6fd4ef4130",
+    "data/python-author-validation.json": "49e0b4674582448831d32e31d77b5c213e33f8d27d47c3d3579f8f83e2af5d0b",
+    "data/waveforms.csv": "811570ac218435ec24f6fcec815c3251a5f7891478df6f57986dee3c23e57d75",
+    "experiment.json": "8094d5d48454bccd2b112ec4650c1333300ebe226bc516ba59db03051426c44b"
+  }
+}

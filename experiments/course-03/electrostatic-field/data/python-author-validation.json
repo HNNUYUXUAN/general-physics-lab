@@ -1,0 +1,57 @@
+{
+  "checks": {
+    "finite_json": true,
+    "eight_fit_points": true,
+    "inner_boundary": true,
+    "outer_boundary": true,
+    "inverse_radius_field": true,
+    "three_voltage_states": true
+  },
+  "metrics": {
+    "lnr_slope": {
+      "value": -1.8837628663732697,
+      "unit": "1",
+      "label": "内点线性化斜率"
+    },
+    "lnr_intercept": {
+      "value": 1.9356677836923604,
+      "unit": "1",
+      "label": "内点线性化截距"
+    },
+    "fit_R2": {
+      "value": 0.9999778445863324,
+      "unit": "1",
+      "label": "线性化决定系数"
+    },
+    "theory_slope": {
+      "value": -1.8885116103492812,
+      "unit": "1",
+      "label": "同轴理论斜率"
+    },
+    "theory_intercept": {
+      "value": 1.937301774518713,
+      "unit": "1",
+      "label": "同轴理论截距"
+    },
+    "max_voltage_difference": {
+      "value": 0.0280111075688394,
+      "unit": "V",
+      "label": "八内点最大电压差绝对值"
+    },
+    "voltage_rmse": {
+      "value": 0.012490882113198766,
+      "unit": "V",
+      "label": "八内点电压均方根差"
+    },
+    "inner_field": {
+      "value": 504.30240786542424,
+      "unit": "V/m",
+      "label": "内边界理想电场"
+    },
+    "outer_field": {
+      "value": 76.29935565687255,
+      "unit": "V/m",
+      "label": "外边界理想电场"
+    }
+  }
+}

@@ -1,0 +1,172 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "metric": "angle_mean_deg",
+      "python": 39.80833333333334,
+      "wolfram": 39.80833333333333,
+      "unit": "deg",
+      "passed": true
+    },
+    {
+      "metric": "angle_type_a_arcmin",
+      "python": 17.179202542609602,
+      "wolfram": 17.17920254260948,
+      "unit": "arcmin",
+      "passed": true
+    },
+    {
+      "metric": "angle_type_b_arcmin",
+      "python": 0.5773502691896257,
+      "wolfram": 0.5773502691896258,
+      "unit": "arcmin",
+      "passed": true
+    },
+    {
+      "metric": "angle_combined_arcmin",
+      "python": 17.18890145801463,
+      "wolfram": 17.18890145801451,
+      "unit": "arcmin",
+      "passed": true
+    },
+    {
+      "metric": "liquid_refractive_index",
+      "python": 1.4033612379344735,
+      "wolfram": 1.4033612379344735,
+      "unit": "1",
+      "passed": true
+    },
+    {
+      "metric": "liquid_standard_uncertainty",
+      "python": 0.001872275275662419,
+      "wolfram": 0.0018722752756624072,
+      "unit": "1",
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 0,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 0,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 0,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 0,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 1,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 1,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 1,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 1,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 2,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 2,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 2,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 2,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 3,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 3,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 3,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 3,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 4,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 4,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 4,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 4,
+      "column": 3,
+      "passed": true
+    }
+  ],
+  "input_hashes": {
+    "data/observations-01.csv": "f13068bbe04d8987b920eda4e9dc5020bd19b1fe25a80564964daab5cdb9dbe3",
+    "data/provenance.json": "5efcf4f68ef5687b23f58c8f91b1f39b34ea9786a0030c6cf21cf730535e5c92",
+    "experiment.json": "87dde9f177607481abc051eacd3aa0e6335b6c93c9b562912a1aaf219c3e8f74"
+  }
+}

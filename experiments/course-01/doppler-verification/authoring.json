@@ -1,0 +1,49 @@
+{
+  "title": "多普勒效应的验证",
+  "course": "course-01",
+  "slug": "doppler-verification",
+  "module": "doppler_verification",
+  "paclet": "DopplerVerificationLab",
+  "source_docx": "originals/course-01/多普勒效应的验证/多普勒效应验证实验报告.docx",
+  "source_converted": "processed/courses-01-03-04/普通物理实验1/多普勒效应的验证/多普勒效应验证实验报告_docx/正文.md",
+  "sections": [
+    "一、实验名称",
+    "二、实验目的",
+    "三、实验原理",
+    "四、主要仪器设备",
+    "五、实验步骤",
+    "六、原始数据记录",
+    "七、数据处理",
+    "八、实验结果与讨论"
+  ],
+  "comparison": [
+    "slope",
+    "intercept",
+    "correlation",
+    "sound_speed",
+    "theoretical_speed",
+    "relative_deviation",
+    "intercept_offset"
+  ],
+  "status": "authored-python-verified",
+  "expansions": [
+    {
+      "section": "七、数据处理",
+      "title": "回归输出与声速换算",
+      "prose": "以五个实际记录执行等权回归，保留未修约参数参与声速换算。",
+      "python": "metrics_display(result)",
+      "wolfram": "metricView[r]"
+    },
+    {
+      "section": "八、实验结果与讨论",
+      "title": "接近与远离的频率变化",
+      "prose": "固定声源40002 $\\mathrm{Hz}$及23.1 ${}^{\\circ}\\mathrm{C}$温度模型声速，扫描接收器速度−1.5至1.5 $\\mathrm{m\\,s^{-1}}$。默认速度0，正值朝向声源；该范围为模型演示。",
+      "python": "display_plotly(adapter.explore(\"receiver-speed\",result))",
+      "wolfram": "exploreView[\"receiver-speed\"]",
+      "caption": "图 2　移动接收器速度与频移的模型探索"
+    }
+  ],
+  "limitations": [
+    "缺少仪器误差限，回归标准误差不是完整测量不确定度。"
+  ]
+}

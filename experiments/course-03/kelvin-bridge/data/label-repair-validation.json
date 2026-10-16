@@ -1,0 +1,102 @@
+{
+  "checks": {
+    "finite_json": true,
+    "metrics_unchanged": true,
+    "all_static_series_rendered": true,
+    "ratio_factor": true,
+    "area": true,
+    "matched_shift_zero": true,
+    "diameter_square_scaling": true
+  },
+  "metrics": {
+    "cross_section": {
+      "value": 1.2566370614359172e-05,
+      "unit": "m²",
+      "label": "导体横截面积"
+    },
+    "rho_mean": {
+      "value": 7.336402471087488e-08,
+      "unit": "Ω·m",
+      "label": "五长度电阻率均值"
+    },
+    "rho_sd_descriptive": {
+      "value": 2.3105018129045877e-10,
+      "unit": "Ω·m",
+      "label": "五长度电阻率描述性标准差"
+    },
+    "rho_from_slope": {
+      "value": 7.514689627386785e-08,
+      "unit": "Ω·m",
+      "label": "含截距R–L拟合电阻率"
+    },
+    "resistance_slope": {
+      "value": 0.00598,
+      "unit": "Ω/m",
+      "label": "R–L斜率"
+    },
+    "resistance_intercept": {
+      "value": -5.179999999999985e-05,
+      "unit": "Ω",
+      "label": "R–L截距"
+    },
+    "model_matched_contact_shift": {
+      "value": 0,
+      "unit": "Ω",
+      "label": "比率匹配时接触电阻修正项"
+    },
+    "R1": {
+      "value": 0.001802,
+      "unit": "Ω",
+      "label": "第1长度平衡电阻"
+    },
+    "rho1": {
+      "value": 7.304709628088782e-08,
+      "unit": "Ω·m",
+      "label": "第1长度电阻率"
+    },
+    "R2": {
+      "value": 0.0019820000000000003,
+      "unit": "Ω",
+      "label": "第2长度平衡电阻"
+    },
+    "rho2": {
+      "value": 7.325454869899964e-08,
+      "unit": "Ω·m",
+      "label": "第2长度电阻率"
+    },
+    "R3": {
+      "value": 0.00216,
+      "unit": "Ω",
+      "label": "第3长度平衡电阻"
+    },
+    "rho3": {
+      "value": 7.336043385679949e-08,
+      "unit": "Ω·m",
+      "label": "第3长度电阻率"
+    },
+    "R4": {
+      "value": 0.00234,
+      "unit": "Ω",
+      "label": "第4长度平衡电阻"
+    },
+    "rho4": {
+      "value": 7.351326809400116e-08,
+      "unit": "Ω·m",
+      "label": "第4长度电阻率"
+    },
+    "R5": {
+      "value": 0.00252,
+      "unit": "Ω",
+      "label": "第5长度平衡电阻"
+    },
+    "rho5": {
+      "value": 7.364477662368631e-08,
+      "unit": "Ω·m",
+      "label": "第5长度电阻率"
+    }
+  },
+  "series_rendered": [
+    "R_length",
+    "rho_length"
+  ]
+}

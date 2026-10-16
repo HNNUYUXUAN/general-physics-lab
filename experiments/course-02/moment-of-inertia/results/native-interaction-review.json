@@ -1,0 +1,58 @@
+{
+  "experiment": "course-02/moment-of-inertia",
+  "paclet": "MomentOfInertiaLab",
+  "status": "passed",
+  "source_hashes": {
+    "analysis.wl": "f4e2c2a7f03fb18b20bdc180a0110f263c7e8242b119d3a819c8c42bbdf66250",
+    "authoring.json": "4930a5cabd2ea99eb432204e6bb4a503a50b616d458818660e0c8f9e17566e92"
+  },
+  "input_hashes": {
+    "data/author-verification.json": "478c645e186920e23a25d9769f576e5fd274439af300769d4abb2909feb72077",
+    "data/geometry.csv": "cea47a12417539715cff60fa5fabece68ecb2bea5fd9fb2d10b2ce3bac4f1dda",
+    "data/provenance.json": "df6383ad6944f2bcf5b7c20ad8b6d939981a3096921e693120fea32f34d07c76",
+    "experiment.json": "d28e05a04330c09b19b005b1ddba09bb73d79277f63f755c8a628bd09d5ebdcb"
+  },
+  "models": [
+    {
+      "key": "parallel-axis",
+      "capture_messages": [],
+      "status": "passed",
+      "held_body_sha256": "e7b2cf2f59c21bacdc2c7a339526cb8df629e3d02ab89e24bde8bc8321d8da8e",
+      "default_evaluation": {
+        "status": "evaluated",
+        "output_head": "Graphics",
+        "response_sha256": "22c54db55bbe470ce9e65d53324168a751ff94728defc80e14be24ed7f157495",
+        "graphics_count": 1,
+        "messages": [],
+        "unresolved_heads": []
+      },
+      "default_repeat": {
+        "status": "evaluated",
+        "output_head": "Graphics",
+        "response_sha256": "22c54db55bbe470ce9e65d53324168a751ff94728defc80e14be24ed7f157495",
+        "graphics_count": 1,
+        "messages": [],
+        "unresolved_heads": []
+      },
+      "default_deterministic": true,
+      "controls": [
+        {
+          "name": "MomentOfInertiaLab`Private`distance",
+          "default": 0.1,
+          "changed": 0.101,
+          "specification_sha256": "73979836f245edf556e1bc4fcfdedcff641f1d3d33cc68f045f45d5d2fbccbfa",
+          "evaluation": {
+            "status": "evaluated",
+            "output_head": "Graphics",
+            "response_sha256": "ed9286731a879595a285690ec9569c704249bbeb4e99975b13c3aca5abccd997",
+            "graphics_count": 1,
+            "messages": [],
+            "unresolved_heads": []
+          },
+          "response_changed": true,
+          "status": "passed"
+        }
+      ]
+    }
+  ]
+}

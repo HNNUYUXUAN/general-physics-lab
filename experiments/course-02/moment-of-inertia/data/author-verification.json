@@ -1,0 +1,82 @@
+{
+  "status": "python-executed-awaiting-wolfram",
+  "checks": [
+    "six reported beta rows averaged",
+    "ring geometry.00554265kgm2",
+    "parallel-axis additive identity",
+    "zero-offset center-axis limit",
+    "default.100m and changed state"
+  ],
+  "metrics": {
+    "beta_mean_1": {
+      "value": -0.107675,
+      "unit": "rad/s^2",
+      "label": "第1组已报角加速度平均"
+    },
+    "beta_mean_2": {
+      "value": 2.0763,
+      "unit": "rad/s^2",
+      "label": "第2组已报角加速度平均"
+    },
+    "beta_mean_3": {
+      "value": -0.08472500000000001,
+      "unit": "rad/s^2",
+      "label": "第3组已报角加速度平均"
+    },
+    "beta_mean_4": {
+      "value": 1.1677,
+      "unit": "rad/s^2",
+      "label": "第4组已报角加速度平均"
+    },
+    "beta_mean_5": {
+      "value": -0.0806,
+      "unit": "rad/s^2",
+      "label": "第5组已报角加速度平均"
+    },
+    "beta_mean_6": {
+      "value": 1.3783,
+      "unit": "rad/s^2",
+      "label": "第6组已报角加速度平均"
+    },
+    "ring_inertia_from_reported_totals": {
+      "value": 0.0042060000000000005,
+      "unit": "kg m^2",
+      "label": "已报总惯量之差所得圆环惯量"
+    },
+    "cylinder_inertia_from_reported_totals": {
+      "value": 0.0014050000000000004,
+      "unit": "kg m^2",
+      "label": "已报总惯量之差所得单柱惯量"
+    },
+    "ring_inertia_theory": {
+      "value": 0.005542649999999999,
+      "unit": "kg m^2",
+      "label": "几何模型圆环惯量"
+    },
+    "cylinder_center_inertia": {
+      "value": 1.8675e-05,
+      "unit": "kg m^2",
+      "label": "几何模型单柱中心轴惯量"
+    },
+    "cylinder_offset_inertia_theory": {
+      "value": 0.0016786750000000003,
+      "unit": "kg m^2",
+      "label": "几何模型单柱偏轴惯量"
+    },
+    "ring_relative_deviation": {
+      "value": -24.115720819463586,
+      "unit": "%",
+      "label": "圆环已报结果相对几何差异"
+    },
+    "cylinder_relative_deviation": {
+      "value": -16.303036621144646,
+      "unit": "%",
+      "label": "单柱已报结果相对几何差异"
+    },
+    "parallel_axis_contribution": {
+      "value": 0.0016600000000000005,
+      "unit": "kg m^2",
+      "label": "单柱平行轴附加项"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "primary_source": "originals/course-03/1万用电表的使用/实验报告-万用电表的使用.docx",
+  "primary_sha256": "2154a1993dd96db149eba2230a062cc940518f41f104cc79904586f23846ad23",
+  "converted_source": "processed/courses-01-03-04/普通物理实验3/1万用电表的使用/实验报告-万用电表的使用_docx/正文.md",
+  "table_mapping": {
+    "resistance.csv": "DOCX表1列3–7，行1标称、行2/3数字量程/读数、行4/5指针量程/读数",
+    "voltage.csv": "DOCX表2列3–7，同表1行约定；标称参考来自第七项逐条代入式"
+  },
+  "transformations": [
+    "kΩ换算Ω。",
+    "以标称值计算相对偏差，不视为校准误差。",
+    "沿用原文±一分度估计界限u=a/sqrt(3)，区别于均匀舍入模型q/(2sqrt(3))。"
+  ],
+  "issues": [
+    {
+      "type": "unsupported_specification",
+      "resolution": "3%FS未获得本台仪表精度等级佐证，所有限差条件化。"
+    },
+    {
+      "type": "incorrect_conclusion",
+      "resolution": "240V与220V差20V，超过假定7.5V界限；不能称在界限内。"
+    },
+    {
+      "type": "incomplete_battery_information",
+      "resolution": "七号电池端电压低不能单凭一次测量确认剩余容量、内阻或极化。"
+    }
+  ]
+}

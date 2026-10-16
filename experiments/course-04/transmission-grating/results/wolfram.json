@@ -1,0 +1,368 @@
+{
+  "metrics": {
+    "grating_spacing_nm": {
+      "value": 2486.416334436462,
+      "unit": "nm",
+      "label": "光栅常数"
+    },
+    "grating_spacing_type_a_nm": {
+      "value": 8.11556041081755,
+      "unit": "nm",
+      "label": "标定角重复性传播分量"
+    },
+    "grating_lines_per_mm": {
+      "value": 402.185260026715,
+      "unit": "1/mm",
+      "label": "每毫米刻线数"
+    },
+    "violet_wavelength_nm": {
+      "value": 436.3551159046279,
+      "unit": "nm",
+      "label": "紫线波长"
+    },
+    "violet_type_a_nm": {
+      "value": 1.8461221032757598,
+      "unit": "nm",
+      "label": "紫线指定重复性传播分量"
+    },
+    "green_wavelength_nm": {
+      "value": 546.1,
+      "unit": "nm",
+      "label": "绿线（标定）波长"
+    },
+    "green_type_a_nm": {
+      "value": 0.0,
+      "unit": "nm",
+      "label": "绿线（标定）指定重复性传播分量"
+    },
+    "yellow_1_wavelength_nm": {
+      "value": 569.641187564627,
+      "unit": "nm",
+      "label": "黄线1波长"
+    },
+    "yellow_1_type_a_nm": {
+      "value": 5.699102061644783,
+      "unit": "nm",
+      "label": "黄线1指定重复性传播分量"
+    },
+    "yellow_2_wavelength_nm": {
+      "value": 579.281878483565,
+      "unit": "nm",
+      "label": "黄线2波长"
+    },
+    "yellow_2_type_a_nm": {
+      "value": 7.471461811588419,
+      "unit": "nm",
+      "label": "黄线2指定重复性传播分量"
+    },
+    "yellow_angle_gap_arcmin": {
+      "value": 13.7,
+      "unit": "arcmin",
+      "label": "双黄线平均角间隔"
+    },
+    "dispersion_empirical_rad_per_nm": {
+      "value": 0.001934547795495333,
+      "unit": "rad/nm",
+      "label": "指定波长差下实验色散"
+    },
+    "dispersion_theoretical_rad_per_nm": {
+      "value": 0.0004133693171076651,
+      "unit": "rad/nm",
+      "label": "光栅方程一级局部色散"
+    },
+    "maximum_vernier_gap_arcmin": {
+      "value": 121.0,
+      "unit": "arcmin",
+      "label": "两游标测得双侧角差最大不一致"
+    }
+  },
+  "tables": {
+    "table1": {
+      "headers": [
+        "次数",
+        "$V_1$",
+        "$V_1^{\\prime}$",
+        "$V_2$",
+        "$V_2^{\\prime}$",
+        "$\\varphi_i$ / °"
+      ],
+      "rows": [
+        [
+          1,
+          "$75^{\\circ}15^{\\prime}$",
+          "$55^{\\circ}12^{\\prime}$",
+          "$258^{\\circ}45^{\\prime}$",
+          "$238^{\\circ}06^{\\prime}$",
+          10.175
+        ],
+        [
+          2,
+          "$50^{\\circ}20^{\\prime}$",
+          "$30^{\\circ}19^{\\prime}$",
+          "$230^{\\circ}21^{\\prime}$",
+          "$210^{\\circ}09^{\\prime}$",
+          10.05416667
+        ],
+        [
+          3,
+          "$50^{\\circ}30^{\\prime}$",
+          "$30^{\\circ}29^{\\prime}$",
+          "$230^{\\circ}35^{\\prime}$",
+          "$210^{\\circ}24^{\\prime}$",
+          10.05
+        ],
+        [
+          4,
+          "$82^{\\circ}13^{\\prime}$",
+          "$61^{\\circ}56^{\\prime}$",
+          "$262^{\\circ}20^{\\prime}$",
+          "$241^{\\circ}56^{\\prime}$",
+          10.17083333
+        ],
+        [
+          5,
+          "$144^{\\circ}41^{\\prime}$",
+          "$124^{\\circ}31^{\\prime}$",
+          "$324^{\\circ}42^{\\prime}$",
+          "$304^{\\circ}31^{\\prime}$",
+          10.0875
+        ]
+      ]
+    },
+    "table2": {
+      "headers": [
+        "次数",
+        "$V_1$",
+        "$V_1^{\\prime}$",
+        "$V_2$",
+        "$V_2^{\\prime}$",
+        "$\\varphi_i$ / °"
+      ],
+      "rows": [
+        [
+          1,
+          "$77^{\\circ}52^{\\prime}$",
+          "$52^{\\circ}40^{\\prime}$",
+          "$257^{\\circ}52^{\\prime}$",
+          "$232^{\\circ}35^{\\prime}$",
+          12.62083333
+        ],
+        [
+          2,
+          "$52^{\\circ}55^{\\prime}$",
+          "$27^{\\circ}41^{\\prime}$",
+          "$232^{\\circ}54^{\\prime}$",
+          "$207^{\\circ}35^{\\prime}$",
+          12.6375
+        ],
+        [
+          3,
+          "$53^{\\circ}14^{\\prime}$",
+          "$27^{\\circ}50^{\\prime}$",
+          "$233^{\\circ}10^{\\prime}$",
+          "$207^{\\circ}49^{\\prime}$",
+          12.6875
+        ],
+        [
+          4,
+          "$81^{\\circ}47^{\\prime}$",
+          "$56^{\\circ}05^{\\prime}$",
+          "$261^{\\circ}44^{\\prime}$",
+          "$236^{\\circ}02^{\\prime}$",
+          12.85
+        ],
+        [
+          5,
+          "$147^{\\circ}20^{\\prime}$",
+          "$122^{\\circ}02^{\\prime}$",
+          "$327^{\\circ}21^{\\prime}$",
+          "$302^{\\circ}05^{\\prime}$",
+          12.64166667
+        ]
+      ]
+    },
+    "table3": {
+      "headers": [
+        "次数",
+        "$V_1$",
+        "$V_1^{\\prime}$",
+        "$V_2$",
+        "$V_2^{\\prime}$",
+        "$\\varphi_i$ / °"
+      ],
+      "rows": [
+        [
+          1,
+          "$78^{\\circ}34^{\\prime}$",
+          "$53^{\\circ}55^{\\prime}$",
+          "$258^{\\circ}30^{\\prime}$",
+          "$231^{\\circ}50^{\\prime}$",
+          12.82916667
+        ],
+        [
+          2,
+          "$53^{\\circ}40^{\\prime}$",
+          "$26^{\\circ}49^{\\prime}$",
+          "$233^{\\circ}35^{\\prime}$",
+          "$206^{\\circ}51^{\\prime}$",
+          13.39583333
+        ],
+        [
+          3,
+          "$54^{\\circ}27^{\\prime}$",
+          "$27^{\\circ}04^{\\prime}$",
+          "$233^{\\circ}57^{\\prime}$",
+          "$207^{\\circ}05^{\\prime}$",
+          13.5625
+        ],
+        [
+          4,
+          "$82^{\\circ}19^{\\prime}$",
+          "$56^{\\circ}15^{\\prime}$",
+          "$262^{\\circ}17^{\\prime}$",
+          "$235^{\\circ}57^{\\prime}$",
+          13.1
+        ],
+        [
+          5,
+          "$148^{\\circ}08^{\\prime}$",
+          "$121^{\\circ}24^{\\prime}$",
+          "$328^{\\circ}01^{\\prime}$",
+          "$301^{\\circ}25^{\\prime}$",
+          13.33333333
+        ]
+      ]
+    },
+    "table4": {
+      "headers": [
+        "次数",
+        "$V_1$",
+        "$V_1^{\\prime}$",
+        "$V_2$",
+        "$V_2^{\\prime}$",
+        "$\\varphi_i$ / °"
+      ],
+      "rows": [
+        [
+          1,
+          "$78^{\\circ}40^{\\prime}$",
+          "$51^{\\circ}45^{\\prime}$",
+          "$258^{\\circ}41^{\\prime}$",
+          "$231^{\\circ}40^{\\prime}$",
+          13.48333333
+        ],
+        [
+          2,
+          "$55^{\\circ}42^{\\prime}$",
+          "$26^{\\circ}53^{\\prime}$",
+          "$233^{\\circ}37^{\\prime}$",
+          "$206^{\\circ}49^{\\prime}$",
+          13.90416667
+        ],
+        [
+          3,
+          "$54^{\\circ}29^{\\prime}$",
+          "$26^{\\circ}45^{\\prime}$",
+          "$233^{\\circ}59^{\\prime}$",
+          "$207^{\\circ}01^{\\prime}$",
+          13.675
+        ],
+        [
+          4,
+          "$80^{\\circ}36^{\\prime}$",
+          "$55^{\\circ}50^{\\prime}$",
+          "$260^{\\circ}34^{\\prime}$",
+          "$233^{\\circ}50^{\\prime}$",
+          12.875
+        ],
+        [
+          5,
+          "$148^{\\circ}10^{\\prime}$",
+          "$121^{\\circ}20^{\\prime}$",
+          "$328^{\\circ}12^{\\prime}$",
+          "$301^{\\circ}20^{\\prime}$",
+          13.425
+        ]
+      ]
+    },
+    "table5": {
+      "headers": [
+        "谱线",
+        "平均衍射角 / °",
+        "角度均值A类 / ′",
+        "波长 / nm",
+        "指定A类传播分量 / nm"
+      ],
+      "rows": [
+        [
+          "紫线",
+          10.1075,
+          1.64962,
+          436.35512,
+          1.84612
+        ],
+        [
+          "绿线（标定）",
+          12.6875,
+          2.52611,
+          546.1,
+          0
+        ],
+        [
+          "黄线1",
+          13.24416667,
+          7.65204,
+          569.64119,
+          5.6991
+        ],
+        [
+          "黄线2",
+          13.4725,
+          10.27667,
+          579.28188,
+          7.47146
+        ]
+      ]
+    }
+  },
+  "series": {
+    "grating-angles": {
+      "x": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "y": [
+        10.1075,
+        12.6875,
+        13.244166666666667,
+        13.4725
+      ],
+      "x_label": "谱线序号（紫、绿、黄1、黄2）",
+      "y_label": "平均衍射角 $\\varphi$ / °",
+      "label": "一级衍射角"
+    }
+  },
+  "notes": [
+    "绿线用作标定，计算回代标准值是恒等关系，不是独立波长验证。",
+    "缺标准波长、仪器分度和定位系统误差；传播只包含重复性分量。",
+    "部分两游标双侧角差明显不一致，数据保留但限制谱线识别和色散结论。"
+  ],
+  "code_hashes": {
+    "Kernel/analysis.wl": "be2e365e5cbde216a33da43ea56e6d0a670234a9225b82cf456248bd5b118625"
+  },
+  "input_hashes": {
+    "data/observations-01.csv": "1c2ef41401dce686dfc0bb6d2a9622df27b5b3edd50d7be257ce2904e90159b6",
+    "data/observations-02.csv": "5bced39f153b7430337ee0d296aaea7b0edc456ef505d7c1f1c5618964f46dca",
+    "data/observations-03.csv": "5e3e8431cfa3cac8e47c6b3dc75d8e003c511c30c35c4bb69d9c7f70dc7eac37",
+    "data/observations-04.csv": "df5485fca350c2b5b357c978398bf308c97ba46dae39d0a8551833df1967c26a",
+    "data/provenance.json": "8f2c120282158fdb71439610c52724b8189cf50ded8a07e9bb51a5af0aeb8cac",
+    "experiment.json": "d9da783a321aea7a81813572faa19dac564ee53440a5f54b1abc9e117d9d2792"
+  },
+  "environment": {
+    "wolfram": "15.0.1 for Microsoft Windows (64-bit) (July 2, 2026)"
+  },
+  "engine": "wolfram",
+  "experiment_id": "course-04/transmission-grating"
+}

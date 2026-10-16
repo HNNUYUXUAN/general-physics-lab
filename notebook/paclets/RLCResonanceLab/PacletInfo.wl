@@ -1,0 +1,1 @@
+PacletObject[<|"Name"->"RLCResonanceLab","Version"->"0.1.0","WolframVersion"->"14.0+","Description"->"RLC \:4e32\:8054\:7535\:8def\:8c10\:632f\:7279\:6027\:7684\:7814\:7a76","Creator"->"Physics Lab Contributors","Extensions"->{{"Kernel","Root"->"Kernel","Context"->{"RLCResonanceLab`"}},{"Resource","Root"->".","Resources"->{"Notebooks","data","assets"}}}|>]

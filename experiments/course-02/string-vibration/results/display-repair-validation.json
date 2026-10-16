@@ -1,0 +1,69 @@
+{
+  "checked_at": "2026-10-16T07:19:05.474152+08:00",
+  "status": "passed-python-and-source-checks",
+  "metric_checks": 149,
+  "display_and_interaction_checks": 8,
+  "experiments": [
+    {
+      "experiment": "course-01/density",
+      "metrics_checked": 15,
+      "status": "numeric, uncertainty, unit and canonical input hashes unchanged"
+    },
+    {
+      "experiment": "course-01/newton-second-law",
+      "metrics_checked": 15,
+      "status": "numeric, uncertainty, unit and canonical input hashes unchanged"
+    },
+    {
+      "experiment": "course-01/doppler-verification",
+      "metrics_checked": 7,
+      "status": "numeric, uncertainty, unit and canonical input hashes unchanged"
+    },
+    {
+      "experiment": "course-01/doppler-application",
+      "metrics_checked": 8,
+      "status": "numeric, uncertainty, unit and canonical input hashes unchanged"
+    },
+    {
+      "experiment": "course-01/collisions",
+      "metrics_checked": 9,
+      "status": "numeric, uncertainty, unit and canonical input hashes unchanged"
+    },
+    {
+      "experiment": "course-01/mechanical-equivalent-heat",
+      "metrics_checked": 8,
+      "status": "numeric, uncertainty, unit and canonical input hashes unchanged"
+    },
+    {
+      "experiment": "course-01/vaporization-heat",
+      "metrics_checked": 15,
+      "status": "numeric, uncertainty, unit and canonical input hashes unchanged"
+    },
+    {
+      "experiment": "course-02/surface-tension",
+      "metrics_checked": 13,
+      "status": "numeric, uncertainty, unit and canonical input hashes unchanged"
+    },
+    {
+      "experiment": "course-02/young-modulus",
+      "metrics_checked": 12,
+      "status": "numeric, uncertainty, unit and canonical input hashes unchanged"
+    },
+    {
+      "experiment": "course-02/string-vibration",
+      "metrics_checked": 12,
+      "status": "numeric, uncertainty, unit and canonical input hashes unchanged"
+    },
+    {
+      "experiment": "course-02/sound-speed",
+      "metrics_checked": 21,
+      "status": "numeric, uncertainty, unit and canonical input hashes unchanged"
+    },
+    {
+      "experiment": "course-02/moment-of-inertia",
+      "metrics_checked": 14,
+      "status": "numeric, uncertainty, unit and canonical input hashes unchanged"
+    }
+  ],
+  "scope": "Wolfram source delimiters checked separately; no kernel or frontend launched by author."
+}

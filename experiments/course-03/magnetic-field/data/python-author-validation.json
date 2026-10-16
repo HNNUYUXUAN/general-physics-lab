@@ -1,0 +1,77 @@
+{
+  "checks": {
+    "finite_json": true,
+    "known_single_center": true,
+    "superposition": true,
+    "linear_current": true,
+    "helmholtz_curvature": true,
+    "states": true
+  },
+  "metrics": {
+    "single_300_peak_position": {
+      "value": -52.0,
+      "unit": "mm",
+      "label": "single_300 记录峰值位置"
+    },
+    "single_300_theory_at_minus52": {
+      "value": 0.8975673713501592,
+      "unit": "mT",
+      "label": "single_300 −52mm理论场"
+    },
+    "single_500_peak_position": {
+      "value": -52.0,
+      "unit": "mm",
+      "label": "single_500 记录峰值位置"
+    },
+    "single_500_theory_at_minus52": {
+      "value": 1.495945618916932,
+      "unit": "mT",
+      "label": "single_500 −52mm理论场"
+    },
+    "single_current_ratio_max_deviation": {
+      "value": 0.8270676691729095,
+      "unit": "%",
+      "label": "single 500/300mA响应比例相对偏差最大值"
+    },
+    "double_300_peak_position": {
+      "value": -52.0,
+      "unit": "mm",
+      "label": "double_300 记录峰值位置"
+    },
+    "double_300_theory_at_minus52": {
+      "value": 1.217191035939319,
+      "unit": "mT",
+      "label": "double_300 −52mm理论场"
+    },
+    "double_500_peak_position": {
+      "value": -42.0,
+      "unit": "mm",
+      "label": "double_500 记录峰值位置"
+    },
+    "double_500_theory_at_minus52": {
+      "value": 2.0286517265655317,
+      "unit": "mT",
+      "label": "double_500 −52mm理论场"
+    },
+    "double_current_ratio_max_deviation": {
+      "value": 1.003460207612461,
+      "unit": "%",
+      "label": "double 500/300mA响应比例相对偏差最大值"
+    },
+    "spacing_0p5_curvature": {
+      "value": -1.9930795847750864,
+      "unit": "1",
+      "label": "间距比0.5的中心归一化二阶导数"
+    },
+    "spacing_1_curvature": {
+      "value": 0.0,
+      "unit": "1",
+      "label": "间距比1的中心归一化二阶导数"
+    },
+    "spacing_1p5_curvature": {
+      "value": 1.536,
+      "unit": "1",
+      "label": "间距比1.5的中心归一化二阶导数"
+    }
+  }
+}

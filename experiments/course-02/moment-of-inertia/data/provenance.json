@@ -1,0 +1,50 @@
+{
+  "primary_source": {
+    "path": "originals/course-02/05-刚体转动惯量/实验报告-刚体转动惯量的测定.docx",
+    "sha256": "e2503d9512e00721553e7d41bce339662d422b2b469e555c04fc89f095fa5cc6"
+  },
+  "converted_source": {
+    "path": "processed/course-02/05-刚体转动惯量/实验报告-刚体转动惯量的测定/正文.md",
+    "sha256": "2083e3babbb65198ece6698513cff0b05488d7fa572409a32128cf9e4de60e18"
+  },
+  "mappings": [
+    {
+      "csv": "geometry.csv",
+      "source": "结果讨论圆环436g外120mm内105mm、单柱166g半径15mm、偏轴100mm；误差分析塔轮标称25mm"
+    },
+    {
+      "json": "experiment.json/source_intermediates",
+      "source_table": 3,
+      "source_rows": "6行4个已报逐差β；不是原始计时"
+    },
+    {
+      "json": "experiment.json/source_reported_inertia_kg_m2",
+      "source_table": 4,
+      "source_rows": "平台、平台+环、平台+两柱的已报总惯量"
+    }
+  ],
+  "transformations": [
+    "质量g变kg，半径mm变m。",
+    "六组已报β各四个数重新求均值，保持派生量身份。",
+    "圆环和单柱实验结果仅从已报总惯量作差，不声称由缺失计时独立计算。"
+  ],
+  "corrections": [
+    "原始记录误插有机玻璃导热参数和热电势表，不纳入转动实验数据。",
+    "按几何重新算理论J、按已报总J相减后算差异。",
+    "单一偏轴点与缺失中心轴实验不足以定量验证平行轴定理，改为模型一致性与数据限制讨论。"
+  ],
+  "issues": [
+    {
+      "status": "limitation",
+      "detail": "无k-t原始计时表，无法核验逐差β公式输出；无悬挂砝码质量，不能独立重算动力学总J。"
+    },
+    {
+      "status": "limitation",
+      "detail": "源只有100mm偏轴点，没有多d扫描或同一圆柱中心轴实测，不能定量验证md²关系。"
+    },
+    {
+      "status": "limitation",
+      "detail": "缺几何、计时及摩擦不确定度指标，不给合成预算。"
+    }
+  ]
+}

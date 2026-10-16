@@ -1,0 +1,270 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "metric": "slope",
+      "python": 117.3969205332231,
+      "wolfram": 117.39692053322312,
+      "unit": "Hz/(m/s)",
+      "passed": true
+    },
+    {
+      "metric": "intercept",
+      "python": 40000.90797767904,
+      "wolfram": 40000.90797767904,
+      "unit": "Hz",
+      "passed": true
+    },
+    {
+      "metric": "correlation",
+      "python": 0.999995394649994,
+      "wolfram": 0.9999953946499942,
+      "unit": "1",
+      "passed": true
+    },
+    {
+      "metric": "sound_speed",
+      "python": 340.74147616742226,
+      "wolfram": 340.7414761674222,
+      "unit": "m/s",
+      "passed": true
+    },
+    {
+      "metric": "theoretical_speed",
+      "python": 345.1807757542445,
+      "wolfram": 345.1807757542445,
+      "unit": "m/s",
+      "passed": true
+    },
+    {
+      "metric": "relative_deviation",
+      "python": 1.2860796135364316,
+      "wolfram": 1.286079613536448,
+      "unit": "%",
+      "passed": true
+    },
+    {
+      "metric": "intercept_offset",
+      "python": -1.092022320961405,
+      "wolfram": -1.092022320961405,
+      "unit": "Hz",
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 0,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 0,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 0,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 1,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 1,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 1,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 2,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 2,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 2,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 3,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 3,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 3,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 4,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 4,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 4,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "processed",
+      "row": 0,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "processed",
+      "row": 0,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "processed",
+      "row": 0,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "processed",
+      "row": 0,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "processed",
+      "row": 1,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "processed",
+      "row": 1,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "processed",
+      "row": 1,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "processed",
+      "row": 1,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "processed",
+      "row": 2,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "processed",
+      "row": 2,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "processed",
+      "row": 2,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "processed",
+      "row": 2,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "processed",
+      "row": 3,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "processed",
+      "row": 3,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "processed",
+      "row": 3,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "processed",
+      "row": 3,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "processed",
+      "row": 4,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "processed",
+      "row": 4,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "processed",
+      "row": 4,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "processed",
+      "row": 4,
+      "column": 3,
+      "passed": true
+    }
+  ],
+  "input_hashes": {
+    "data/author-verification.json": "6cbdc6d375da8f4b3fbbd97962e4a4ae11d0fa659bab8e1679e8ed9b24400a2a",
+    "data/observations.csv": "6c82fae6f91efaad98b9d96e4ab1e0b649f02c6fb933ff4c6aaa185a4f45255d",
+    "data/provenance.json": "481b8e603044e73f36889df45985cf4a6391d1793f932983d3d60664dd0c2334",
+    "experiment.json": "9787f2afce6c4cbaab2b4fee76a7df3a08a180f41a912e5b0e91713d656c7efa"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "id": "course-02/sound-speed",
+  "title": "声速的测量",
+  "data_version": "1.0.0",
+  "parameters": {
+    "frequency_hz": 36015,
+    "temperature_c": 26.5,
+    "reference_speed_m_s": 347.21,
+    "air_molar_mass_kg_mol": 0.02896,
+    "gas_constant_j_molk": 8.31,
+    "reference_gamma": 1.402,
+    "wavelength_error_limit_mm": 0.005,
+    "frequency_error_limit_hz": 0.5
+  },
+  "assumptions": [
+    "波长为原始表已由极值/同相位置换算值，未保存位置差量",
+    "B类限按源给定数值、均匀分布",
+    "比热容比条件不确定度只传播v，未计T和空气组成"
+  ]
+}

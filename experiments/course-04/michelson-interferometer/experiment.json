@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "id": "course-04/michelson-interferometer",
+  "title": "迈克尔逊干涉仪的调节和使用",
+  "parameters": {
+    "reference_wavelength_nm": 632.8
+  },
+  "models": {
+    "interference": "动镜往返光程差2Δd=Nλ，计数方向单向。"
+  },
+  "source_docx": "originals/course-04/08_实验八_迈克尔逊干涉仪的调节和使用_实验报告.docx",
+  "data_version": "1.0.0"
+}

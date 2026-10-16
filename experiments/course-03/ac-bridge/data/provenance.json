@@ -1,0 +1,25 @@
+{
+  "primary_source": "originals/course-03/12交流电桥/实验报告-交流电桥.docx",
+  "primary_sha256": "04d19275919b86b84a0a6197a4521a9933ab905a16ba030a166117e4f342662e",
+  "converted_source": "processed/courses-01-03-04/普通物理实验3/12交流电桥/实验报告-交流电桥_docx/正文.md",
+  "table_mapping": "DOCX表1数据行2–4，列2Rn、列3Cn(μF)、列4R3、列5R4、列6增益。",
+  "transformations": [
+    "CnμF→F，omega用2π×1000未先修约。",
+    "复平衡实虚部分离独立求Rx/Cx，验证omegaRxCx=omegaRnCn。",
+    "三组分别计算后平均，未以平均R和平均C的乘积代替平均损耗因数。"
+  ],
+  "issues": [
+    {
+      "type": "formula_layout",
+      "resolution": "原理段Rx=...Cx=...连写，拆分为两个独立平衡式。"
+    },
+    {
+      "type": "precision_claim",
+      "resolution": "电容小散布不代表已校准高准确度，未给仪表标准误差时只描述稳定程度。"
+    },
+    {
+      "type": "conversion_artifact",
+      "resolution": "第三组增益29前转换图片去除，保留DOCX文本29。"
+    }
+  ]
+}

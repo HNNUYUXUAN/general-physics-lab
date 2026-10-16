@@ -1,0 +1,101 @@
+{
+  "experiment": "course-04/thin-lens",
+  "paclet": "ThinLensLab",
+  "status": "passed",
+  "source_hashes": {
+    "analysis.wl": "ecd2d1f9d151ce28c5ae8aa8ad5a832646ae68c18b0d9488de69ef17eff94079",
+    "authoring.json": "d36a6d2643100817770a489517310b6c6fc1c03af2b973c9cea3a706ab3151f9"
+  },
+  "input_hashes": {
+    "data/autocollimation.csv": "efa26abb813ad4f533a83db9acb816b193bd1d48d24a28a2fa59de5269524963",
+    "data/bessel.csv": "218ef1a0970fc42a4a12ca4f9ce7dc83993c87cb25663748642bf89dbe267eeb",
+    "data/concave.csv": "d31431dbbbe8c25f7b13fa6eebed8ce6a4c223fa2297eca43491e3fd14674aaa",
+    "data/conjugates.csv": "a0735038e8126ac0de03fb280fc7a590bed86b70ea8e4b53eb86bc072de9c455",
+    "data/provenance.json": "730934b9bdf30fd20385018f809d39d5d716910ad1d18aa3804308e2ed6db364",
+    "experiment.json": "19af99e8619bd65de71d137b1b5543048486713874ad02b8787e1d4b49e996a3"
+  },
+  "models": [
+    {
+      "key": "ray-geometry",
+      "capture_messages": [],
+      "status": "passed",
+      "held_body_sha256": "d972f23f8211c30bee097c963bd277526848ffa4989c0772a4ebc3d5793a3e16",
+      "default_evaluation": {
+        "status": "evaluated",
+        "output_head": "Column",
+        "response_sha256": "2f98ec81f2ef1572271663f6fdb032cf77870f22b0b9a78d47ecfdf688afd8ae",
+        "graphics_count": 1,
+        "messages": [],
+        "unresolved_heads": []
+      },
+      "default_repeat": {
+        "status": "evaluated",
+        "output_head": "Column",
+        "response_sha256": "2f98ec81f2ef1572271663f6fdb032cf77870f22b0b9a78d47ecfdf688afd8ae",
+        "graphics_count": 1,
+        "messages": [],
+        "unresolved_heads": []
+      },
+      "default_deterministic": true,
+      "controls": [
+        {
+          "name": "ThinLensLab`Private`q",
+          "default": 2,
+          "changed": 2.2,
+          "specification_sha256": "984d741f56fa63aab81f42afa6b2fdf358257a3ff8069641a2a213c020e26fe2",
+          "evaluation": {
+            "status": "evaluated",
+            "output_head": "Column",
+            "response_sha256": "59e2fb2d09dc961a45babe38e6fb3ca910a57e8763631784277a78c6acd79874",
+            "graphics_count": 1,
+            "messages": [],
+            "unresolved_heads": []
+          },
+          "response_changed": true,
+          "status": "passed"
+        }
+      ]
+    },
+    {
+      "key": "bessel-branches",
+      "capture_messages": [],
+      "status": "passed",
+      "held_body_sha256": "56f3b9db422d77da0c0c25e61403b5b38ca7c5448f5a55f84fc233d81b1d7e4b",
+      "default_evaluation": {
+        "status": "evaluated",
+        "output_head": "Graphics",
+        "response_sha256": "5ebaaec3a1b245efb31e4573c0b4b1c6e171d99639b8de0c1c55ec687752b7b6",
+        "graphics_count": 2,
+        "messages": [],
+        "unresolved_heads": []
+      },
+      "default_repeat": {
+        "status": "evaluated",
+        "output_head": "Graphics",
+        "response_sha256": "5ebaaec3a1b245efb31e4573c0b4b1c6e171d99639b8de0c1c55ec687752b7b6",
+        "graphics_count": 2,
+        "messages": [],
+        "unresolved_heads": []
+      },
+      "default_deterministic": true,
+      "controls": [
+        {
+          "name": "ThinLensLab`Private`q",
+          "default": 5,
+          "changed": 5.2,
+          "specification_sha256": "fda4f73c76a200f1fee78717f6b2504fd6007925fcaa5ec5d667784c229c52b5",
+          "evaluation": {
+            "status": "evaluated",
+            "output_head": "Graphics",
+            "response_sha256": "20852b87ca5d66ad7aa75036d163c9a02537bc021c891119d6d733f5dd537e0d",
+            "graphics_count": 2,
+            "messages": [],
+            "unresolved_heads": []
+          },
+          "response_changed": true,
+          "status": "passed"
+        }
+      ]
+    }
+  ]
+}

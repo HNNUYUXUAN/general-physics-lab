@@ -1,0 +1,57 @@
+{
+  "status": "python-executed-awaiting-wolfram",
+  "checks": [
+    "ten source rows",
+    "e0 sticking limit",
+    "e1 energy conservation",
+    "momentum conservation at e0/e1",
+    "interactive default/changed"
+  ],
+  "metrics": {
+    "mass_total": {
+      "value": 0.49624,
+      "unit": "kg",
+      "label": "系统总质量"
+    },
+    "mean_momentum_deviation": {
+      "value": 3.1943386091990007,
+      "unit": "%",
+      "label": "非弹性动量平均相对亏损"
+    },
+    "max_momentum_deviation": {
+      "value": 4.788714557425022,
+      "unit": "%",
+      "label": "非弹性动量最大相对亏损"
+    },
+    "mean_energy_loss": {
+      "value": 35.45072332806467,
+      "unit": "%",
+      "label": "非弹性动能平均损失率"
+    },
+    "theoretical_energy_loss": {
+      "value": 31.132113493470904,
+      "unit": "%",
+      "label": "理想粘合碰撞动能损失率"
+    },
+    "theoretical_velocity_ratio": {
+      "value": 3.65000534016875,
+      "unit": "1",
+      "label": "理想弹性碰撞后速度比"
+    },
+    "mean_velocity_ratio": {
+      "value": 3.33165713312036,
+      "unit": "1",
+      "label": "测得碰后速度比平均"
+    },
+    "mean_absolute_ratio_deviation": {
+      "value": 8.721855925659332,
+      "unit": "%",
+      "label": "速度比平均相对差异"
+    },
+    "mean_conditional_restitution": {
+      "value": 0.9291009580068457,
+      "unit": "1",
+      "label": "假定动量守恒的恢复系数平均"
+    }
+  }
+}

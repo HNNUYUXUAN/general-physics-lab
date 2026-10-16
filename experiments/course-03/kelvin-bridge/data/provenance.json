@@ -1,0 +1,33 @@
+{
+  "primary_source": "originals/course-03/10用直流双臂电桥测低电阻/实验报告-直流双臂电桥测低电阻.docx",
+  "primary_sha256": "a2e4a828a8cd3252fb7ad26aab2c2a2bd24e12e9af63004c08f70cd12cb85c63",
+  "converted_source": "processed/courses-01-03-04/普通物理实验3/10用直流双臂电桥测低电阻/实验报告-直流双臂电桥测低电阻_docx/正文.md",
+  "corroborating_manual": {
+    "path": "originals/course-03/10用直流双臂电桥测低电阻/QJ47型直流单双臂电桥使用说明书.docx",
+    "sha256": "0ec85e2f9444220aa4d1ba87a0b8c528b72f5b77a20bdbf3a99e64d960506f20"
+  },
+  "table_mapping": "DOCX表1列2–6，行1长度、行2S/M、行3比较臂；行4错误源Rx保留JSON；直径由正文4.00mm。",
+  "transformations": [
+    "S/M=.01/1000=10^-5，重算Rx。",
+    "mm→m，面积πD²/4，独立重算rho。",
+    "R–L含截距拟合用于诊断长度比例与端点偏移，非强行消除偏差。"
+  ],
+  "issues": [
+    {
+      "type": "factor_1000_error",
+      "resolution": "原表Rx列1.802等应为.001802Ω；数据处理表数量级正确。"
+    },
+    {
+      "type": "formula_dimension",
+      "resolution": "双臂未匹配修正项正确为r(M Rb′−Ra′)/(Ra′+Rb′+r)，源额外Rb量纲有误。"
+    },
+    {
+      "type": "specification_correction",
+      "resolution": "说明书最低区间.001–.01Ω等级0.5%，源写0.2%；说明书公式RN/10+X，源RN+X不沿用。"
+    },
+    {
+      "type": "insufficient_uncertainty",
+      "resolution": "缺RN/温度/直径限差，不编造允许误差或完整不确定度。"
+    }
+  ]
+}

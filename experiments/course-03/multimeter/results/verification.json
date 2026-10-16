@@ -1,0 +1,714 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "metric": "voltage_1_digital_deviation",
+      "python": 18.636363636363637,
+      "wolfram": 18.636363636363633,
+      "unit": "%",
+      "passed": true
+    },
+    {
+      "metric": "voltage_1_analog_deviation",
+      "python": 9.090909090909092,
+      "wolfram": 9.090909090909092,
+      "unit": "%",
+      "passed": true
+    },
+    {
+      "metric": "voltage_1_analog_one_division_uB",
+      "python": 2.886751345948129,
+      "wolfram": 2.886751345948129,
+      "unit": "V",
+      "passed": true
+    },
+    {
+      "metric": "voltage_1_conditional_limit",
+      "python": 7.5,
+      "wolfram": 7.5,
+      "unit": "V",
+      "passed": true
+    },
+    {
+      "metric": "voltage_2_digital_deviation",
+      "python": 7.555555555555553,
+      "wolfram": 7.555555555555552,
+      "unit": "%",
+      "passed": true
+    },
+    {
+      "metric": "voltage_2_analog_deviation",
+      "python": 6.6666666666666625,
+      "wolfram": 6.6666666666666625,
+      "unit": "%",
+      "passed": true
+    },
+    {
+      "metric": "voltage_2_analog_one_division_uB",
+      "python": 0.11547005383792516,
+      "wolfram": 0.11547005383792518,
+      "unit": "V",
+      "passed": true
+    },
+    {
+      "metric": "voltage_2_conditional_limit",
+      "python": 0.3,
+      "wolfram": 0.3,
+      "unit": "V",
+      "passed": true
+    },
+    {
+      "metric": "voltage_3_digital_deviation",
+      "python": 5.666666666666664,
+      "wolfram": 5.666666666666664,
+      "unit": "%",
+      "passed": true
+    },
+    {
+      "metric": "voltage_3_analog_deviation",
+      "python": 3.333333333333336,
+      "wolfram": 3.333333333333336,
+      "unit": "%",
+      "passed": true
+    },
+    {
+      "metric": "voltage_3_analog_one_division_uB",
+      "python": 0.02886751345948129,
+      "wolfram": 0.028867513459481294,
+      "unit": "V",
+      "passed": true
+    },
+    {
+      "metric": "voltage_3_conditional_limit",
+      "python": 0.075,
+      "wolfram": 0.075,
+      "unit": "V",
+      "passed": true
+    },
+    {
+      "metric": "voltage_4_digital_deviation",
+      "python": 6.133333333333338,
+      "wolfram": 6.133333333333338,
+      "unit": "%",
+      "passed": true
+    },
+    {
+      "metric": "voltage_4_analog_deviation",
+      "python": 9.999999999999993,
+      "wolfram": 9.999999999999993,
+      "unit": "%",
+      "passed": true
+    },
+    {
+      "metric": "voltage_4_analog_one_division_uB",
+      "python": 0.02886751345948129,
+      "wolfram": 0.028867513459481294,
+      "unit": "V",
+      "passed": true
+    },
+    {
+      "metric": "voltage_4_conditional_limit",
+      "python": 0.075,
+      "wolfram": 0.075,
+      "unit": "V",
+      "passed": true
+    },
+    {
+      "metric": "voltage_5_digital_deviation",
+      "python": 74.2,
+      "wolfram": 74.2,
+      "unit": "%",
+      "passed": true
+    },
+    {
+      "metric": "voltage_5_analog_deviation",
+      "python": 83.33333333333334,
+      "wolfram": 83.33333333333333,
+      "unit": "%",
+      "passed": true
+    },
+    {
+      "metric": "voltage_5_analog_one_division_uB",
+      "python": 0.011547005383792516,
+      "wolfram": 0.011547005383792518,
+      "unit": "V",
+      "passed": true
+    },
+    {
+      "metric": "voltage_5_conditional_limit",
+      "python": 0.03,
+      "wolfram": 0.03,
+      "unit": "V",
+      "passed": true
+    },
+    {
+      "metric": "resistance_1_digital_deviation",
+      "python": 26.66666666666666,
+      "wolfram": 26.66666666666666,
+      "unit": "%",
+      "passed": true
+    },
+    {
+      "metric": "resistance_1_analog_deviation",
+      "python": 13.33333333333333,
+      "wolfram": 13.33333333333333,
+      "unit": "%",
+      "passed": true
+    },
+    {
+      "metric": "resistance_1_analog_one_division_uB",
+      "python": 0.11547005383792516,
+      "wolfram": 0.11547005383792518,
+      "unit": "Ω",
+      "passed": true
+    },
+    {
+      "metric": "resistance_2_digital_deviation",
+      "python": 0.8510638297872309,
+      "wolfram": 0.8510638297872309,
+      "unit": "%",
+      "passed": true
+    },
+    {
+      "metric": "resistance_2_analog_deviation",
+      "python": 2.127659574468085,
+      "wolfram": 2.127659574468085,
+      "unit": "%",
+      "passed": true
+    },
+    {
+      "metric": "resistance_2_analog_one_division_uB",
+      "python": 0.11547005383792516,
+      "wolfram": 0.11547005383792518,
+      "unit": "Ω",
+      "passed": true
+    },
+    {
+      "metric": "resistance_3_digital_deviation",
+      "python": 0.5,
+      "wolfram": 0.5,
+      "unit": "%",
+      "passed": true
+    },
+    {
+      "metric": "resistance_3_analog_deviation",
+      "python": 0.0,
+      "wolfram": 0.0,
+      "unit": "%",
+      "passed": true
+    },
+    {
+      "metric": "resistance_3_analog_one_division_uB",
+      "python": 1.1547005383792517,
+      "wolfram": 1.1547005383792517,
+      "unit": "Ω",
+      "passed": true
+    },
+    {
+      "metric": "resistance_4_digital_deviation",
+      "python": 1.0,
+      "wolfram": 1.0,
+      "unit": "%",
+      "passed": true
+    },
+    {
+      "metric": "resistance_4_analog_deviation",
+      "python": 0.0,
+      "wolfram": 0.0,
+      "unit": "%",
+      "passed": true
+    },
+    {
+      "metric": "resistance_4_analog_one_division_uB",
+      "python": 11.547005383792516,
+      "wolfram": 11.547005383792516,
+      "unit": "Ω",
+      "passed": true
+    },
+    {
+      "metric": "resistance_5_digital_deviation",
+      "python": 0.0,
+      "wolfram": 0.0,
+      "unit": "%",
+      "passed": true
+    },
+    {
+      "metric": "resistance_5_analog_deviation",
+      "python": 0.0,
+      "wolfram": 0.0,
+      "unit": "%",
+      "passed": true
+    },
+    {
+      "metric": "resistance_5_analog_one_division_uB",
+      "python": 115.47005383792516,
+      "wolfram": 115.47005383792516,
+      "unit": "Ω",
+      "passed": true
+    },
+    {
+      "metric": "ohm_scale_midpoint",
+      "python": 0.5,
+      "wolfram": 0.5,
+      "unit": "1",
+      "passed": true
+    },
+    {
+      "table": "voltage_observations",
+      "row": 0,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "voltage_observations",
+      "row": 0,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "voltage_observations",
+      "row": 0,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "voltage_observations",
+      "row": 1,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "voltage_observations",
+      "row": 1,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "voltage_observations",
+      "row": 1,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "voltage_observations",
+      "row": 2,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "voltage_observations",
+      "row": 2,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "voltage_observations",
+      "row": 2,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "voltage_observations",
+      "row": 3,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "voltage_observations",
+      "row": 3,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "voltage_observations",
+      "row": 3,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "voltage_observations",
+      "row": 4,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "voltage_observations",
+      "row": 4,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "voltage_observations",
+      "row": 4,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "voltage_analysis",
+      "row": 0,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "voltage_analysis",
+      "row": 0,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "voltage_analysis",
+      "row": 0,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "voltage_analysis",
+      "row": 0,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "voltage_analysis",
+      "row": 0,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "voltage_analysis",
+      "row": 1,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "voltage_analysis",
+      "row": 1,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "voltage_analysis",
+      "row": 1,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "voltage_analysis",
+      "row": 1,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "voltage_analysis",
+      "row": 1,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "voltage_analysis",
+      "row": 2,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "voltage_analysis",
+      "row": 2,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "voltage_analysis",
+      "row": 2,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "voltage_analysis",
+      "row": 2,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "voltage_analysis",
+      "row": 2,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "voltage_analysis",
+      "row": 3,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "voltage_analysis",
+      "row": 3,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "voltage_analysis",
+      "row": 3,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "voltage_analysis",
+      "row": 3,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "voltage_analysis",
+      "row": 3,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "voltage_analysis",
+      "row": 4,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "voltage_analysis",
+      "row": 4,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "voltage_analysis",
+      "row": 4,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "voltage_analysis",
+      "row": 4,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "voltage_analysis",
+      "row": 4,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "resistance_observations",
+      "row": 0,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "resistance_observations",
+      "row": 0,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "resistance_observations",
+      "row": 0,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "resistance_observations",
+      "row": 1,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "resistance_observations",
+      "row": 1,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "resistance_observations",
+      "row": 1,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "resistance_observations",
+      "row": 2,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "resistance_observations",
+      "row": 2,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "resistance_observations",
+      "row": 2,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "resistance_observations",
+      "row": 3,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "resistance_observations",
+      "row": 3,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "resistance_observations",
+      "row": 3,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "resistance_observations",
+      "row": 4,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "resistance_observations",
+      "row": 4,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "resistance_observations",
+      "row": 4,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "resistance_analysis",
+      "row": 0,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "resistance_analysis",
+      "row": 0,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "resistance_analysis",
+      "row": 0,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "resistance_analysis",
+      "row": 0,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "resistance_analysis",
+      "row": 1,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "resistance_analysis",
+      "row": 1,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "resistance_analysis",
+      "row": 1,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "resistance_analysis",
+      "row": 1,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "resistance_analysis",
+      "row": 2,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "resistance_analysis",
+      "row": 2,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "resistance_analysis",
+      "row": 2,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "resistance_analysis",
+      "row": 2,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "resistance_analysis",
+      "row": 3,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "resistance_analysis",
+      "row": 3,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "resistance_analysis",
+      "row": 3,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "resistance_analysis",
+      "row": 3,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "resistance_analysis",
+      "row": 4,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "resistance_analysis",
+      "row": 4,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "resistance_analysis",
+      "row": 4,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "resistance_analysis",
+      "row": 4,
+      "column": 4,
+      "passed": true
+    }
+  ],
+  "input_hashes": {
+    "data/provenance.json": "21263b6de3b22225d46baa3c93ee6abb439011ffebb66d54c51a7e1e69810af1",
+    "data/python-author-validation.json": "25bbcec10d02455f63d67882056f6a61a1f854dd5f9e3e1ec23509ec9d30482b",
+    "data/resistance.csv": "aa4767e012b528192c69725d70c05a894df0732832987a36a5dba0a27ebf8118",
+    "data/voltage.csv": "b30280a5ce689958cc1cd1421715b42b4528b0524d8ff3803bb869e9ef8742b7",
+    "experiment.json": "4cbda94be6a67cac861df863b50f8ee71f3ea6f6d8658f1fd6e4714eebbd085f"
+  }
+}

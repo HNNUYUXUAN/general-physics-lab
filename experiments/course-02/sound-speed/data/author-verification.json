@@ -1,0 +1,120 @@
+{
+  "status": "python-executed-awaiting-wolfram",
+  "checks": [
+    "20 table-image values visually read",
+    "means9.742/9.912mm match source",
+    "frequency SI conversion",
+    "length-scale default and changed"
+  ],
+  "metrics": {
+    "standing_wavelength": {
+      "value": 9.741999999999999,
+      "unit": "mm",
+      "label": "驻波法平均波长"
+    },
+    "standing_sample_sd": {
+      "value": 0.196514065088934,
+      "unit": "mm",
+      "label": "驻波法波长样本标准差"
+    },
+    "standing_wavelength_uncertainty_a": {
+      "value": 0.06214320379396107,
+      "unit": "mm",
+      "label": "驻波法波长均值A类不确定度"
+    },
+    "standing_wavelength_uncertainty": {
+      "value": 0.062210217095836524,
+      "unit": "mm",
+      "label": "驻波法波长条件标准不确定度"
+    },
+    "standing_speed": {
+      "value": 350.85812999999996,
+      "unit": "m/s",
+      "label": "驻波法声速",
+      "uncertainty": 2.2405027336861996
+    },
+    "standing_speed_uncertainty": {
+      "value": 2.2405027336861996,
+      "unit": "m/s",
+      "label": "驻波法声速条件标准不确定度"
+    },
+    "standing_relative_deviation": {
+      "value": 1.0506984245845399,
+      "unit": "%",
+      "label": "驻波法声速相对参考差异"
+    },
+    "standing_gamma": {
+      "value": 1.4316812603594387,
+      "unit": "1",
+      "label": "驻波法空气比热容比",
+      "uncertainty": 0.018284802336503512
+    },
+    "standing_gamma_uncertainty": {
+      "value": 0.018284802336503512,
+      "unit": "1",
+      "label": "驻波法比热容比条件标准不确定度"
+    },
+    "standing_gamma_deviation": {
+      "value": 2.1170656461796535,
+      "unit": "%",
+      "label": "驻波法比热容比相对理论差异"
+    },
+    "phase_wavelength": {
+      "value": 9.912000000000003,
+      "unit": "mm",
+      "label": "相位比较法平均波长"
+    },
+    "phase_sample_sd": {
+      "value": 0.07554248252914825,
+      "unit": "mm",
+      "label": "相位比较法波长样本标准差"
+    },
+    "phase_wavelength_uncertainty_a": {
+      "value": 0.023888630489558558,
+      "unit": "mm",
+      "label": "相位比较法波长均值A类不确定度"
+    },
+    "phase_wavelength_uncertainty": {
+      "value": 0.02406241883103193,
+      "unit": "mm",
+      "label": "相位比较法波长条件标准不确定度"
+    },
+    "phase_speed": {
+      "value": 356.9806800000001,
+      "unit": "m/s",
+      "label": "相位比较法声速",
+      "uncertainty": 0.866612737955657
+    },
+    "phase_speed_uncertainty": {
+      "value": 0.866612737955657,
+      "unit": "m/s",
+      "label": "相位比较法声速条件标准不确定度"
+    },
+    "phase_relative_deviation": {
+      "value": 2.8140548947323354,
+      "unit": "%",
+      "label": "相位比较法声速相对参考差异"
+    },
+    "phase_gamma": {
+      "value": 1.4820835148703901,
+      "unit": "1",
+      "label": "相位比较法空气比热容比",
+      "uncertainty": 0.00719586534879575
+    },
+    "phase_gamma_uncertainty": {
+      "value": 0.00719586534879575,
+      "unit": "1",
+      "label": "相位比较法比热容比条件标准不确定度"
+    },
+    "phase_gamma_deviation": {
+      "value": 5.712090932267491,
+      "unit": "%",
+      "label": "相位比较法比热容比相对理论差异"
+    },
+    "arithmetic_mean_speed": {
+      "value": 353.91940500000004,
+      "unit": "m/s",
+      "label": "两法声速算术平均（描述量）"
+    }
+  }
+}

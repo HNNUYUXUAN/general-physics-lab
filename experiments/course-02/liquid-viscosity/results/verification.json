@@ -1,0 +1,276 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "metric": "diameter_corrected_mm",
+      "python": 0.9900000000000002,
+      "wolfram": 0.9900000000000002,
+      "unit": "mm",
+      "passed": true
+    },
+    {
+      "metric": "diameter_type_b_mm",
+      "python": 0.0028867513459481294,
+      "wolfram": 0.00288675134594813,
+      "unit": "mm",
+      "passed": true
+    },
+    {
+      "metric": "fall_time_fit_s",
+      "python": 31.65514285714286,
+      "wolfram": 31.655142857142852,
+      "unit": "s",
+      "passed": true
+    },
+    {
+      "metric": "fall_time_pair_s",
+      "python": 31.638888888888886,
+      "wolfram": 31.638888888888886,
+      "unit": "s",
+      "passed": true
+    },
+    {
+      "metric": "time_fit_residual_se_s",
+      "python": 0.02708113282531042,
+      "wolfram": 0.027081132825310276,
+      "unit": "s",
+      "passed": true
+    },
+    {
+      "metric": "time_specified_combined_s",
+      "python": 0.02768972893394659,
+      "wolfram": 0.027689728933946448,
+      "unit": "s",
+      "passed": true
+    },
+    {
+      "metric": "time_intercept_s",
+      "python": -0.2680000000000149,
+      "wolfram": -0.26799999999998647,
+      "unit": "s",
+      "passed": true
+    },
+    {
+      "metric": "terminal_speed_m_s",
+      "python": 0.0063180886879134965,
+      "wolfram": 0.006318088687913498,
+      "unit": "m/s",
+      "passed": true
+    },
+    {
+      "metric": "wall_factor",
+      "python": 1.1188,
+      "wolfram": 1.1188,
+      "unit": "1",
+      "passed": true
+    },
+    {
+      "metric": "viscosity_pa_s",
+      "python": 0.5171021645647124,
+      "wolfram": 0.5171021645647124,
+      "unit": "Pa s",
+      "passed": true
+    },
+    {
+      "metric": "specified_viscosity_uncertainty_pa_s",
+      "python": 0.002891141493899636,
+      "wolfram": 0.002891141493899636,
+      "unit": "Pa s",
+      "passed": true
+    },
+    {
+      "metric": "reynolds_number",
+      "python": 0.011491273520358697,
+      "wolfram": 0.011491273520358702,
+      "unit": "1",
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 1,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 1,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 1,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 1,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 1,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 1,
+      "column": 6,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 2,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 2,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 2,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 2,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 2,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 2,
+      "column": 6,
+      "passed": true
+    },
+    {
+      "table": "table3",
+      "row": 1,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "table3",
+      "row": 1,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "table3",
+      "row": 1,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "table3",
+      "row": 1,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "table3",
+      "row": 1,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "table3",
+      "row": 1,
+      "column": 6,
+      "passed": true
+    },
+    {
+      "table": "table3",
+      "row": 2,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "table3",
+      "row": 2,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "table3",
+      "row": 2,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "table3",
+      "row": 2,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "table3",
+      "row": 2,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "table3",
+      "row": 2,
+      "column": 6,
+      "passed": true
+    },
+    {
+      "table": "table4",
+      "row": 0,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "table4",
+      "row": 0,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "table4",
+      "row": 0,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "table4",
+      "row": 1,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "table4",
+      "row": 1,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "table4",
+      "row": 1,
+      "column": 3,
+      "passed": true
+    }
+  ],
+  "input_hashes": {
+    "data/observations-01.csv": "5b0fe73156efef75637b3dbb38c4bb3107200b8d01a4fd62ae5a7828f2b97385",
+    "data/observations-02.csv": "f34707b32c39cc6cebe056e288051fb37137b912d10c0bb9437548d5a25561fc",
+    "data/observations-03.csv": "76f53046a67ea15d0fbd37c4253d5594f8f642fdfede61214634c4f75c50cb1d",
+    "data/provenance.json": "2910e9a09300ef1c8faee4281d6d7a0d405d013237731df8c1b18c89db3fd6b8",
+    "experiment.json": "2e5b0360584ae5a00639b3e8f628772ad3de28d06ef516d512d6d2f728375d7d"
+  }
+}

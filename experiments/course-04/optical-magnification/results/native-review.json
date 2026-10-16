@@ -1,0 +1,211 @@
+{
+  "experiment": "course-04/optical-magnification",
+  "status": "passed",
+  "reviewed_at": "2026-10-16T01:10:11.994768+08:00",
+  "build_run": "C:\\Users\\yuxua\\.codex\\visualizations\\2026\\10\\15\\01a13f56-4554-7500-ab99-dad08368b735\\rollout\\project\\.build\\course-04\\optical-magnification\\20261016_010909_190768",
+  "notebook": "C:\\Users\\yuxua\\.codex\\visualizations\\2026\\10\\15\\01a13f56-4554-7500-ab99-dad08368b735\\rollout\\project\\notebook\\paclets\\OpticalMagnificationLab\\Notebooks\\OpticalMagnificationLab.nb",
+  "notebook_sha256": "a7bc3ae708b54d3cdf2c3816bd5239a1d11069e4f71ffa03e3472a9e1e459f5b",
+  "method": "Actual view_image inspection of every fresh native QA panel without rescaling; long sections split with overlapping crops. Review covers mathematical typesetting, units, Chinese glyphs, centering, clipping and captions. Native controls visually inspected at saved default state; changing-state calculation validation is recorded by root serialized pipeline separately.",
+  "section_coverage": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "inspected_images": [
+    {
+      "path": "C:\\Users\\yuxua\\.codex\\visualizations\\2026\\10\\15\\01a13f56-4554-7500-ab99-dad08368b735\\rollout\\qa\\OpticalMagnificationLab\\review-01.png",
+      "sha256": "95f1afecf284c257a44762e8e0c5af078a4f9d44dbd696bbb69754fba7e22602",
+      "source_spans": [
+        {
+          "source": "section-01.png",
+          "top": 0,
+          "bottom": 246
+        },
+        {
+          "source": "section-02.png",
+          "top": 0,
+          "bottom": 215
+        },
+        {
+          "source": "section-03.png",
+          "top": 0,
+          "bottom": 562
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\yuxua\\.codex\\visualizations\\2026\\10\\15\\01a13f56-4554-7500-ab99-dad08368b735\\rollout\\qa\\OpticalMagnificationLab\\review-02.png",
+      "sha256": "979492349b4f5f0487a891d4dfb3c968e72c80e07ee7a8c1b5baea82e5eb6313",
+      "source_spans": [
+        {
+          "source": "section-04.png",
+          "top": 0,
+          "bottom": 141
+        },
+        {
+          "source": "section-05.png",
+          "top": 0,
+          "bottom": 96
+        },
+        {
+          "source": "section-06.png",
+          "top": 0,
+          "bottom": 217
+        },
+        {
+          "source": "section-07.png",
+          "top": 0,
+          "bottom": 217
+        },
+        {
+          "source": "section-08.png",
+          "top": 0,
+          "bottom": 217
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\yuxua\\.codex\\visualizations\\2026\\10\\15\\01a13f56-4554-7500-ab99-dad08368b735\\rollout\\qa\\OpticalMagnificationLab\\review-03.png",
+      "sha256": "f591c943323595b2ca9c25b131e0eb164a1bc9adc9d29f97775794782c32e2b9",
+      "source_spans": [
+        {
+          "source": "section-09.png",
+          "top": 0,
+          "bottom": 1150
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\yuxua\\.codex\\visualizations\\2026\\10\\15\\01a13f56-4554-7500-ab99-dad08368b735\\rollout\\qa\\OpticalMagnificationLab\\review-04.png",
+      "sha256": "82516ad1d6d485bfd62ef410b403fb9a3621e265a26e086b117cff2d583b271d",
+      "source_spans": [
+        {
+          "source": "section-09.png",
+          "top": 1050,
+          "bottom": 1154
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\yuxua\\.codex\\visualizations\\2026\\10\\15\\01a13f56-4554-7500-ab99-dad08368b735\\rollout\\qa\\OpticalMagnificationLab\\review-05.png",
+      "sha256": "991ad8ca9aa031c68a92d853ef3dbe9e3a4d198541335f591138a2b29cafc0a3",
+      "source_spans": [
+        {
+          "source": "section-10.png",
+          "top": 0,
+          "bottom": 1150
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\yuxua\\.codex\\visualizations\\2026\\10\\15\\01a13f56-4554-7500-ab99-dad08368b735\\rollout\\qa\\OpticalMagnificationLab\\review-06.png",
+      "sha256": "d59d7a58614578b14ee8555ae8b8363af5774aebe230dea57cebea24c8582a4d",
+      "source_spans": [
+        {
+          "source": "section-10.png",
+          "top": 1050,
+          "bottom": 1546
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\yuxua\\.codex\\visualizations\\2026\\10\\15\\01a13f56-4554-7500-ab99-dad08368b735\\rollout\\qa\\OpticalMagnificationLab\\review-07.png",
+      "sha256": "af04d920de7107f63c3196a2141bd78f70472d478f26aa2c3bdb4f3c0c0dc95d",
+      "source_spans": [
+        {
+          "source": "section-11.png",
+          "top": 0,
+          "bottom": 296
+        }
+      ]
+    }
+  ],
+  "source_png_hashes": {
+    "section-01.png": {
+      "sha256": "848f29156378d9c36a23a797a7cd736b11d49bf295697a3f715330ffb3ed0d02",
+      "size": [
+        1200,
+        246
+      ]
+    },
+    "section-02.png": {
+      "sha256": "5c68336740ece62d8f0aeca22bdddcc5d0fcbb89df940874be6814f38cfba4ee",
+      "size": [
+        1200,
+        215
+      ]
+    },
+    "section-03.png": {
+      "sha256": "3e9cbb19e46089ea770535b4bf913fb8845e775651b75771b4ae2283202e204f",
+      "size": [
+        1200,
+        562
+      ]
+    },
+    "section-04.png": {
+      "sha256": "5ff7b05e06bd572b01041bea64aa308faa54424a473e9ec0dd6fb273fddc4573",
+      "size": [
+        1200,
+        141
+      ]
+    },
+    "section-05.png": {
+      "sha256": "b3097db9daa6b26f722cbd666a1b151703d6db6ce15a5ca98ad3cc0f08cd856b",
+      "size": [
+        1200,
+        96
+      ]
+    },
+    "section-06.png": {
+      "sha256": "767582232a4d5bfcf3ed37cffb7a8ff1c546b519837a3359e02afd809414566f",
+      "size": [
+        1200,
+        217
+      ]
+    },
+    "section-07.png": {
+      "sha256": "d69e2297c02d572a46b2d59488be514ed71ae053a580434d67f9b9229e3c1640",
+      "size": [
+        1200,
+        217
+      ]
+    },
+    "section-08.png": {
+      "sha256": "c4c3307f769483c04f8459e9679b84ac06e91e7b001c226a97bc79585e881960",
+      "size": [
+        1200,
+        217
+      ]
+    },
+    "section-09.png": {
+      "sha256": "22433b31bb911fb58423ed5d8e049032d583c22dca88514bee2e2ab99597706a",
+      "size": [
+        1200,
+        1154
+      ]
+    },
+    "section-10.png": {
+      "sha256": "d7b4a0f321ca9d27407a7856916187c2b642d18974f0a2e0ea1eb346ac07f60f",
+      "size": [
+        1200,
+        1546
+      ]
+    },
+    "section-11.png": {
+      "sha256": "266fd571994a3abf8f4702b9ccbd9617da248b38041eb24ec105c6f5f2709b47",
+      "size": [
+        1200,
+        296
+      ]
+    }
+  },
+  "issues": []
+}

@@ -1,0 +1,1 @@
+PacletObject[<|"Name"->"SpectrometerLab","Version"->"0.1.0","WolframVersion"->"14.0+","Description"->"\:5206\:5149\:8ba1\:7684\:8c03\:8282\:4e0e\:4f7f\:7528","Creator"->"Physics Lab Contributors","Extensions"->{{"Kernel","Root"->"Kernel","Context"->{"SpectrometerLab`"}},{"Resource","Root"->".","Resources"->{"Notebooks","data","assets"}}}|>]

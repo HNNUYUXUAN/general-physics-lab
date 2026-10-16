@@ -1,0 +1,151 @@
+{
+  "metrics": {
+    "wavelength_mean_nm": {
+      "value": 632.5999999999983,
+      "unit": "nm",
+      "label": "激光波长均值"
+    },
+    "wavelength_type_a_nm": {
+      "value": 0.22803508502013867,
+      "unit": "nm",
+      "label": "波长均值A类分量"
+    },
+    "relative_reference_difference_percent": {
+      "value": 0.03160556257927261,
+      "unit": "%",
+      "label": "相对指定632.8nm的差异"
+    }
+  },
+  "tables": {
+    "table1": {
+      "headers": [
+        "次数",
+        "条纹数 $N$",
+        "$d_1$ / mm",
+        "$d_2$ / mm",
+        "$\\Delta d$ / mm"
+      ],
+      "rows": [
+        [
+          1,
+          100,
+          3.2142,
+          3.2458,
+          0.0316
+        ],
+        [
+          2,
+          100,
+          3.351,
+          3.38266,
+          0.03166
+        ],
+        [
+          3,
+          100,
+          3.4895,
+          3.52113,
+          0.03163
+        ],
+        [
+          4,
+          100,
+          3.628,
+          3.65965,
+          0.03165
+        ],
+        [
+          5,
+          100,
+          3.7724,
+          3.80401,
+          0.03161
+        ]
+      ]
+    },
+    "table2": {
+      "headers": [
+        "次数",
+        "$\\Delta d$ / mm",
+        "$\\lambda$ / nm"
+      ],
+      "rows": [
+        [
+          1,
+          0.0316,
+          632.0
+        ],
+        [
+          2,
+          0.03166,
+          633.2
+        ],
+        [
+          3,
+          0.03163,
+          632.6
+        ],
+        [
+          4,
+          0.03165,
+          633.0
+        ],
+        [
+          5,
+          0.03161,
+          632.2
+        ]
+      ]
+    }
+  },
+  "series": {
+    "wavelength-repeat": {
+      "x": [
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0
+      ],
+      "y": [
+        632.0000000000015,
+        633.2000000000004,
+        632.5999999999965,
+        632.9999999999991,
+        632.1999999999939
+      ],
+      "x_label": "测量次数",
+      "y_label": "激光波长 $\\lambda$ / nm",
+      "label": "五次100条纹计数"
+    }
+  },
+  "notes": [
+    "632.8nm是指定常用参考值，未附本激光器校准证书。",
+    "只有重复性A类分量，缺仪器与计数系统误差。"
+  ],
+  "experiment_id": "course-04/michelson-interferometer",
+  "engine": "python",
+  "input_hashes": {
+    "data/observations-01.csv": "75a4d3ab859f773b9f6c1b5f44864937e709ed35f539605a6c048c32ad6826a8",
+    "data/provenance.json": "e6274669a3b12ee1f6dcddd0a6b822db3d01e9aa456f776b5772409b2bbc1498",
+    "experiment.json": "ef03113480f65ad8ddd9ac2b789bc0afa819eaea7865c519b42c42b6e13de5a1"
+  },
+  "code_hashes": {
+    "src/physicslab/common/__init__.py": "7cc50d4a8325535fb401e04aed51f6a04ad3ca7f40c4b972624547491c83e1a2",
+    "src/physicslab/common/io.py": "5135c2253071c4e3885dec26db357a7777c1a13c7a83559f5152007abb986541",
+    "src/physicslab/common/manuscripts.py": "847e4bade7e617d524e0b484db6e17ee82097687e37b84bb0ac3796dbe06ed10",
+    "src/physicslab/common/plots.py": "37825a8c2a8f5dd8ca7f01968dd343a8dd6cb6139d2ef67275ff745b04e9b907",
+    "src/physicslab/common/tex_boxes.py": "0e2b226fce4c79bba37cc2ba6b6153802a5cb6dbda9dfee95d1a98e5894f9554",
+    "src/physicslab/common/theme.py": "ee8592a54efb71efd91ccdc55b66c7d8bda14a32454dfd75aa34ef606269a01c",
+    "src/physicslab/experiments/michelson_interferometer.py": "9801241a2c0147bddff7f80747e88e4261d083a5b656fbda5d2c456aba18229e"
+  },
+  "environment": {
+    "python": "3.14.7",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "matplotlib": "3.11.2",
+    "nbclient": "0.11.0",
+    "nbformat": "5.11.1",
+    "plotly": "7.1.0"
+  }
+}

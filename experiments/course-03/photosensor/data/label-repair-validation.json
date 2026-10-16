@@ -1,0 +1,145 @@
+{
+  "checks": {
+    "finite_json": true,
+    "metrics_unchanged": true,
+    "all_static_series_rendered": true,
+    "fiftysix_observations": true,
+    "sampling_units": true,
+    "source_point6_retained": true,
+    "series_circuit_check": true,
+    "ideal_short_open": true,
+    "record_states": true,
+    "model_states": true
+  },
+  "metrics": {
+    "L0_maximum_recorded_current": {
+      "value": 0.22999999999999998,
+      "unit": "mA",
+      "label": "L=0cm 最大记录负载电流（非短路）"
+    },
+    "L0_minimum_recorded_voltage": {
+      "value": 0.394,
+      "unit": "V",
+      "label": "L=0cm 最小记录端电压"
+    },
+    "L0_maximum_recorded_voltage": {
+      "value": 0.396,
+      "unit": "V",
+      "label": "L=0cm 最大记录端电压（非开路）"
+    },
+    "L0_max_circuit_relative_difference": {
+      "value": 70.37878787878788,
+      "unit": "%",
+      "label": "L=0cm 回路相对差最大值"
+    },
+    "L0_mean_circuit_relative_difference": {
+      "value": 22.88399719002752,
+      "unit": "%",
+      "label": "L=0cm 回路相对差均值"
+    },
+    "L3_maximum_recorded_current": {
+      "value": 0.08,
+      "unit": "mA",
+      "label": "L=3cm 最大记录负载电流（非短路）"
+    },
+    "L3_minimum_recorded_voltage": {
+      "value": 0.398,
+      "unit": "V",
+      "label": "L=3cm 最小记录端电压"
+    },
+    "L3_maximum_recorded_voltage": {
+      "value": 0.402,
+      "unit": "V",
+      "label": "L=3cm 最大记录端电压（非开路）"
+    },
+    "L3_max_circuit_relative_difference": {
+      "value": 89.74874371859296,
+      "unit": "%",
+      "label": "L=3cm 回路相对差最大值"
+    },
+    "L3_mean_circuit_relative_difference": {
+      "value": 40.82960109717029,
+      "unit": "%",
+      "label": "L=3cm 回路相对差均值"
+    },
+    "L6_maximum_recorded_current": {
+      "value": 0.05,
+      "unit": "mA",
+      "label": "L=6cm 最大记录负载电流（非短路）"
+    },
+    "L6_minimum_recorded_voltage": {
+      "value": 0.401,
+      "unit": "V",
+      "label": "L=6cm 最小记录端电压"
+    },
+    "L6_maximum_recorded_voltage": {
+      "value": 0.403,
+      "unit": "V",
+      "label": "L=6cm 最大记录端电压（非开路）"
+    },
+    "L6_max_circuit_relative_difference": {
+      "value": 93.64089775561096,
+      "unit": "%",
+      "label": "L=6cm 回路相对差最大值"
+    },
+    "L6_mean_circuit_relative_difference": {
+      "value": 55.743935093142724,
+      "unit": "%",
+      "label": "L=6cm 回路相对差均值"
+    },
+    "L9_maximum_recorded_current": {
+      "value": 0.05,
+      "unit": "mA",
+      "label": "L=9cm 最大记录负载电流（非短路）"
+    },
+    "L9_minimum_recorded_voltage": {
+      "value": 0.403,
+      "unit": "V",
+      "label": "L=9cm 最小记录端电压"
+    },
+    "L9_maximum_recorded_voltage": {
+      "value": 0.404,
+      "unit": "V",
+      "label": "L=9cm 最大记录端电压（非开路）"
+    },
+    "L9_max_circuit_relative_difference": {
+      "value": 92.4317617866005,
+      "unit": "%",
+      "label": "L=9cm 回路相对差最大值"
+    },
+    "L9_mean_circuit_relative_difference": {
+      "value": 57.72312325170837,
+      "unit": "%",
+      "label": "L=9cm 回路相对差均值"
+    },
+    "model_a5_midpoint": {
+      "value": 0.9241418199787564,
+      "unit": "1",
+      "label": "理想模型a=5半开路电压处电流"
+    },
+    "model_a10_midpoint": {
+      "value": 0.9933071490757152,
+      "unit": "1",
+      "label": "理想模型a=10半开路电压处电流"
+    },
+    "model_a15_midpoint": {
+      "value": 0.9994472213630764,
+      "unit": "1",
+      "label": "理想模型a=15半开路电压处电流"
+    }
+  },
+  "series_rendered": [
+    "L0_IV",
+    "L0_circuit_difference",
+    "L3_IV",
+    "L3_circuit_difference",
+    "L6_IV",
+    "L6_circuit_difference",
+    "L9_IV",
+    "L9_circuit_difference",
+    "current_distance_common_load",
+    "ideal_a5",
+    "ideal_a10",
+    "ideal_a15"
+  ]
+}

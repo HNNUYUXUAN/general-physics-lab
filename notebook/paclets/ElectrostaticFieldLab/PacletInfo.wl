@@ -1,0 +1,1 @@
+PacletObject[<|"Name"->"ElectrostaticFieldLab","Version"->"0.1.0","WolframVersion"->"14.0+","Description"->"\:7528\:7a33\:6052\:7535\:573a\:6a21\:62df\:9759\:7535\:573a","Creator"->"Physics Lab Contributors","Extensions"->{{"Kernel","Root"->"Kernel","Context"->{"ElectrostaticFieldLab`"}},{"Resource","Root"->".","Resources"->{"Notebooks","data","assets"}}}|>]

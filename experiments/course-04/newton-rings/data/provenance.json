@@ -1,0 +1,54 @@
+{
+  "primary_source": "originals/course-04/07_实验七_牛顿环实验_实验报告.docx",
+  "primary_sha256": "e0e27df88c105ae59bd2b2db50112c0f057f4b3924cf0bdbd4fb6408dbd11e26",
+  "converted_source": "processed/courses-01-03-04/普通物理实验4/07_实验七_牛顿环实验_实验报告_docx/正文.md",
+  "verification": "已从 DOCX word/document.xml 直接读取 4 张表，与转换正文逐项比对。",
+  "tables": [
+    {
+      "file": "rings.csv",
+      "source_table": 1,
+      "source_rows": "2–7",
+      "mapping": {
+        "order": "第1列",
+        "left_mm": "第2列",
+        "right_mm": "第3列"
+      },
+      "excluded_derived_column": "第4列 Dm 从左右读数重新相减，不作为独立观测。"
+    },
+    {
+      "file": "wedge.csv",
+      "source_table": 2,
+      "source_rows": "2–6",
+      "mapping": {
+        "trial": "第1列",
+        "fringe_intervals": "第2列",
+        "fringe_length_mm": "第3列",
+        "wedge_length_mm": "第4列"
+      }
+    }
+  ],
+  "transformations": [
+    "波长 589.3 nm 转换为 0.0005893 mm。",
+    "D=右读数−左读数；原报告表3、表4仅用于核对，不作为输入。",
+    "原报告 4 组 R 为 807.9、806.3、801.2、806.0 mm；按原读数和所列波长重算为 808.020703、806.182590、800.939759、805.669778 mm；均值从805.3修订为805.203207 mm。",
+    "原报告 1.5 mm 等于近似将4组结果视作独立样本时的均值标准误；第5/15和15/25、第10/20和20/30共享读数，故不将其作为完整不确定度。",
+    "原报告细丝均值与重算一致；保留19.9 μm的展示精度。"
+  ],
+  "issues": [
+    {
+      "id": "NR-01",
+      "status": "documented",
+      "detail": "读数显微镜分度、校准、仪器误差和波长不确定度未记录，不能合成完整标准不确定度。"
+    },
+    {
+      "id": "NR-02",
+      "status": "documented",
+      "detail": "源报告使用N=20条纹的措辞，公式要求N个间隔；沿用其公式及记录计数，未另行假定端点计数。"
+    },
+    {
+      "id": "NR-03",
+      "status": "documented",
+      "detail": "没有独立重复暗环读数，不能从每级一次读数直接估计其A类不确定度。"
+    }
+  ]
+}

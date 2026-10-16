@@ -1,0 +1,92 @@
+{
+  "experiment_id": "course-03/hall-effect",
+  "title": "霍尔效应的实验研究",
+  "data_version": 1,
+  "source_hall_columns": {
+    "working_current": [
+      9.7075,
+      19.43,
+      28.89,
+      38.5825,
+      48.2625,
+      57.87,
+      66.215,
+      77.075,
+      86.7175,
+      96.3675
+    ],
+    "magnet_current": [
+      0.0,
+      0.025,
+      0.025,
+      0.025,
+      0.05,
+      0.075,
+      0.075,
+      0.1,
+      0.1,
+      0.1
+    ],
+    "position": [
+      96.33,
+      96.28,
+      96.2225,
+      96.17,
+      96.115,
+      96.0325,
+      95.9375,
+      95.3325,
+      84.57,
+      47.12
+    ]
+  },
+  "conditions": {
+    "working_current": {
+      "fixed_IM_mA": 500,
+      "x_unit": "mA"
+    },
+    "magnet_current": {
+      "fixed_IS_mA": 3,
+      "x_unit": "mA"
+    },
+    "position": {
+      "fixed_IM_mA": 500,
+      "fixed_IS_mA": 3,
+      "x_unit": "mm"
+    }
+  },
+  "polarity_order": [
+    [
+      1,
+      1
+    ],
+    [
+      -1,
+      1
+    ],
+    [
+      -1,
+      -1
+    ],
+    [
+      1,
+      -1
+    ]
+  ],
+  "unknown_parameters": [
+    "KH",
+    "d",
+    "B calibration"
+  ],
+  "units": {
+    "V1_mV": "mV",
+    "V2_mV": "mV",
+    "V3_mV": "mV",
+    "V4_mV": "mV"
+  },
+  "limitations": [
+    "三组数据同设置投影存在严重不一致，不能联合验证电流比例系数。",
+    "缺少灵敏度、独立磁场、厚度和仪器误差。",
+    "步骤中的1000mA/10mA为计划，实际表头500mA/3mA为记录条件。"
+  ]
+}

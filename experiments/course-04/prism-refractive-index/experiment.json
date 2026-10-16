@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "id": "course-04/prism-refractive-index",
+  "title": "三棱镜折射率的测定",
+  "parameters": {
+    "angle_error_bound_arcmin": 1,
+    "apex_deg": 60,
+    "apex_standard_uncertainty_arcmin": 1.47
+  },
+  "models": {
+    "minimum_deviation": "空气至棱镜，最小偏向对称光路，n=sin((A+d)/2)/sin(A/2)。"
+  },
+  "source_docx": "originals/course-04/03_实验三_三棱镜折射率的测定_实验报告.docx",
+  "data_version": "1.0.0"
+}

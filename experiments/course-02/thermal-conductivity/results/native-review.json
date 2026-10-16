@@ -1,0 +1,222 @@
+{
+  "experiment": "course-02/thermal-conductivity",
+  "status": "passed",
+  "reviewed_at": "2026-10-16T00:58:19.263638+08:00",
+  "build_run": "C:\\Users\\yuxua\\.codex\\visualizations\\2026\\10\\15\\01a13f56-4554-7500-ab99-dad08368b735\\rollout\\project\\.build\\course-02\\thermal-conductivity\\20261016_005632_868499",
+  "notebook": "C:\\Users\\yuxua\\.codex\\visualizations\\2026\\10\\15\\01a13f56-4554-7500-ab99-dad08368b735\\rollout\\project\\notebook\\paclets\\ThermalConductivityLab\\Notebooks\\ThermalConductivityLab.nb",
+  "notebook_sha256": "9b27706687163cf1125b95716a1957ffb8171f5fde72a4772be39601613e7bc3",
+  "method": "Actual view_image inspection of every fresh native QA panel without rescaling; long sections split with overlapping crops. Review covers mathematical typesetting, units, Chinese glyphs, centering, clipping and captions. Native controls visually inspected at saved default state; changing-state calculation validation is recorded by root serialized pipeline separately.",
+  "section_coverage": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "inspected_images": [
+    {
+      "path": "C:\\Users\\yuxua\\.codex\\visualizations\\2026\\10\\15\\01a13f56-4554-7500-ab99-dad08368b735\\rollout\\qa\\ThermalConductivityLab\\review-01.png",
+      "sha256": "55913d5e4f6d97992efb4a23111e5dbc872faede7febdba299e2e96abb02d8d6",
+      "source_spans": [
+        {
+          "source": "section-01.png",
+          "top": 0,
+          "bottom": 244
+        },
+        {
+          "source": "section-02.png",
+          "top": 0,
+          "bottom": 238
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\yuxua\\.codex\\visualizations\\2026\\10\\15\\01a13f56-4554-7500-ab99-dad08368b735\\rollout\\qa\\ThermalConductivityLab\\review-02.png",
+      "sha256": "31645bb88fbe0a558f3cb1355308dc4ff73e3bfb7027119b9903fb7bc1b4dcd8",
+      "source_spans": [
+        {
+          "source": "section-03.png",
+          "top": 0,
+          "bottom": 1150
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\yuxua\\.codex\\visualizations\\2026\\10\\15\\01a13f56-4554-7500-ab99-dad08368b735\\rollout\\qa\\ThermalConductivityLab\\review-03.png",
+      "sha256": "fb6078ef00cf2e1bb8c1c9563e78cc09473b50838a713abeca5d1a7a2302e0f6",
+      "source_spans": [
+        {
+          "source": "section-03.png",
+          "top": 1050,
+          "bottom": 1255
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\yuxua\\.codex\\visualizations\\2026\\10\\15\\01a13f56-4554-7500-ab99-dad08368b735\\rollout\\qa\\ThermalConductivityLab\\review-04.png",
+      "sha256": "34658df44dc033c2c5f442e24fc7878134b132787587f6b1f526b001942de092",
+      "source_spans": [
+        {
+          "source": "section-04.png",
+          "top": 0,
+          "bottom": 143
+        },
+        {
+          "source": "section-05.png",
+          "top": 0,
+          "bottom": 546
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\yuxua\\.codex\\visualizations\\2026\\10\\15\\01a13f56-4554-7500-ab99-dad08368b735\\rollout\\qa\\ThermalConductivityLab\\review-05.png",
+      "sha256": "c5f06e9daaafbe7c57f5654919933526000e4dc68727405819b5654d4ca7d4f4",
+      "source_spans": [
+        {
+          "source": "section-06.png",
+          "top": 0,
+          "bottom": 1150
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\yuxua\\.codex\\visualizations\\2026\\10\\15\\01a13f56-4554-7500-ab99-dad08368b735\\rollout\\qa\\ThermalConductivityLab\\review-06.png",
+      "sha256": "bdf3bf55ba9bb11b8df4deafafb47b004e127166151f74e9b3e582d125b9ce21",
+      "source_spans": [
+        {
+          "source": "section-06.png",
+          "top": 1050,
+          "bottom": 1286
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\yuxua\\.codex\\visualizations\\2026\\10\\15\\01a13f56-4554-7500-ab99-dad08368b735\\rollout\\qa\\ThermalConductivityLab\\review-07.png",
+      "sha256": "42eb84a896bdc8aa86b479e7fcb5270836f3a732dd73fd09b9ec522cb7efd7e3",
+      "source_spans": [
+        {
+          "source": "section-07.png",
+          "top": 0,
+          "bottom": 1150
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\yuxua\\.codex\\visualizations\\2026\\10\\15\\01a13f56-4554-7500-ab99-dad08368b735\\rollout\\qa\\ThermalConductivityLab\\review-08.png",
+      "sha256": "3a809d10313183c2fc8042743637f6d8be6b3d76eb4c7f8d0f0fa07310ba0b38",
+      "source_spans": [
+        {
+          "source": "section-07.png",
+          "top": 1050,
+          "bottom": 2200
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\yuxua\\.codex\\visualizations\\2026\\10\\15\\01a13f56-4554-7500-ab99-dad08368b735\\rollout\\qa\\ThermalConductivityLab\\review-09.png",
+      "sha256": "c8916c466a3636748fcc9d48c3bfae9e4b84076a825b318dc85c5c50a2ac1404",
+      "source_spans": [
+        {
+          "source": "section-07.png",
+          "top": 2100,
+          "bottom": 3250
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\yuxua\\.codex\\visualizations\\2026\\10\\15\\01a13f56-4554-7500-ab99-dad08368b735\\rollout\\qa\\ThermalConductivityLab\\review-10.png",
+      "sha256": "4e2d096e259295c85c9076c15de3ab68267725ff005eb8837169cfdf06cc15c0",
+      "source_spans": [
+        {
+          "source": "section-07.png",
+          "top": 3150,
+          "bottom": 4269
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\yuxua\\.codex\\visualizations\\2026\\10\\15\\01a13f56-4554-7500-ab99-dad08368b735\\rollout\\qa\\ThermalConductivityLab\\review-11.png",
+      "sha256": "2ed5ab1f25ae6572e79187295a507d3ace1653c94e98f81f5896d82f450f058d",
+      "source_spans": [
+        {
+          "source": "section-07.png",
+          "top": 4200,
+          "bottom": 4269
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\yuxua\\.codex\\visualizations\\2026\\10\\15\\01a13f56-4554-7500-ab99-dad08368b735\\rollout\\qa\\ThermalConductivityLab\\review-12.png",
+      "sha256": "f7fd6f2bb120b7d9717166c51ea344e09ecf22339ad9f52fcec568e2d57db1f2",
+      "source_spans": [
+        {
+          "source": "section-08.png",
+          "top": 0,
+          "bottom": 750
+        }
+      ]
+    }
+  ],
+  "source_png_hashes": {
+    "section-01.png": {
+      "sha256": "dcfffd149ef463932b32067f1978816fba68ea96699fc7dcd230883710ce1cbd",
+      "size": [
+        1200,
+        244
+      ]
+    },
+    "section-02.png": {
+      "sha256": "f11d86c6ebc60d532fe892e6895799a2db88d0d4754fc6163097b8240db864d4",
+      "size": [
+        1200,
+        238
+      ]
+    },
+    "section-03.png": {
+      "sha256": "47b833a082b0735ee0afb2e7243ab3297c658cf3acb52385a0aa08636beb32f7",
+      "size": [
+        1200,
+        1255
+      ]
+    },
+    "section-04.png": {
+      "sha256": "e11b6cbef8fab988aff0bb169d6f491b7f416a8398499a54868c55747e0af4ed",
+      "size": [
+        1200,
+        143
+      ]
+    },
+    "section-05.png": {
+      "sha256": "11c1d4d9cb81b5f3c247aa30e9f000ea31ea02e6a0b40129cff1392f6dea5a89",
+      "size": [
+        1200,
+        546
+      ]
+    },
+    "section-06.png": {
+      "sha256": "cf0073bad61da0802b85cf1362eaa8ac933a68094103993d88b2745772bd3965",
+      "size": [
+        1200,
+        1286
+      ]
+    },
+    "section-07.png": {
+      "sha256": "a47821d47d4d433326840e12a8c366ed40fb981b1ffdcaeafef1db233c4ad753",
+      "size": [
+        1200,
+        4269
+      ]
+    },
+    "section-08.png": {
+      "sha256": "07a620059075b54e1320d44158f8c247c906f30d7403e3b751c4e231d89831ee",
+      "size": [
+        1200,
+        750
+      ]
+    }
+  },
+  "issues": []
+}

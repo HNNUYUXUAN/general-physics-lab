@@ -1,0 +1,13 @@
+{
+  "id": "course-03/photosensor",
+  "status": "passed",
+  "paclet_sha256": "332c8d3415a3d392871bcd1fec102acbc956501174d6ec41de51d1cd8687aa32",
+  "canonical_inputs_checked": [
+    "data/label-repair-validation.json",
+    "data/measurements.csv",
+    "data/provenance.json",
+    "data/python-author-validation.json",
+    "experiment.json"
+  ],
+  "kernel_and_notebook_match_source": true
+}

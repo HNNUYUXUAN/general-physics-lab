@@ -1,0 +1,45 @@
+name: Python notebook validation
+on: [push, pull_request]
+jobs:
+  python:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.14'
+      - name: Install dependencies
+        run: python -m pip install -e '.[test]'
+      - name: Numerical tests
+        run: python -m pytest
+      - name: Check manuscript fonts and execute notebook when available
+        shell: python
+        run: |
+          from pathlib import Path
+          import json, os, subprocess, sys
+          from matplotlib.font_manager import findfont
+          missing = []
+          for family in ('SimSun', 'Times New Roman'):
+              try:
+                  findfont(family, fallback_to_default=False)
+              except ValueError:
+                  missing.append(family)
+          if not missing:
+              subprocess.run([sys.executable, 'scripts/execute_notebooks.py', '--all'], check=True)
+          else:
+              Path('.build').mkdir(exist_ok=True)
+              Path('.build/ci-status.json').write_text(json.dumps({
+                  'python_tests': 'passed', 'notebook': 'not_run_missing_required_fonts',
+                  'missing_fonts': missing, 'wolfram': 'not_run', 'cross_language': 'not_run'
+              }, indent=2))
+          with open(os.environ['GITHUB_STEP_SUMMARY'], 'a') as summary:
+              summary.write('Numerical tests passed. ' + (
+                  'Notebook execution requires locally installed SimSun and Times New Roman; skipped on this runner. '
+                  if missing else 'All registered Python notebooks executed in fresh kernels. '
+              ) + 'Wolfram and cross-language checks were not run on this runner. Fonts are not redistributed.\n')
+      - uses: actions/upload-artifact@v4
+        with:
+          name: python-validation
+          path: |
+            .build/ci-status.json
+            .build/notebook-checks/**/execution.json

@@ -1,0 +1,35 @@
+{
+  "primary_source": {
+    "path": "originals/course-01/多普勒效应的验证/多普勒效应验证实验报告.docx",
+    "sha256": "d5e5a06f095fc2fe7ac5c544ccf4231f32f8361914efea6ab5bc6af01ba7f8da"
+  },
+  "converted_source": {
+    "path": "processed/courses-01-03-04/普通物理实验1/多普勒效应的验证/多普勒效应验证实验报告_docx/正文.md",
+    "sha256": "8d05732e2828dcadf0007a8d5dc34519e33ed245fd05827fc19ba3a15672d699"
+  },
+  "mappings": [
+    {
+      "csv": "observations.csv",
+      "source_table": 1,
+      "source_rows": "2–6",
+      "columns": {
+        "trial": 1,
+        "velocity_m_s": 2,
+        "frequency_hz": 3
+      }
+    }
+  ],
+  "transformations": [
+    "第5组频率数字40150直接来自DOCX表内可提取文字，未凭图片OCR补数。",
+    "以表头m/s为统一速度单位，修正源数据处理段误写的cm/s。"
+  ],
+  "corrections": [
+    "以五组未修约数据重新计算回归系数、声速和相对偏差。"
+  ],
+  "issues": [
+    {
+      "status": "limitation",
+      "detail": "未提供测速、频率和温度仪器误差限，回归参数标准误差不代表完整实验不确定度。"
+    }
+  ]
+}

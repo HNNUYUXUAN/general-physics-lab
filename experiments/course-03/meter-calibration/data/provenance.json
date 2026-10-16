@@ -1,0 +1,34 @@
+{
+  "primary_source": "originals/course-03/4电表的改装与校准/实验报告-电表的改装与校准.docx",
+  "primary_sha256": "5f6330cd880d4350169a6ae155bfa8b09dfc453f4ab5a70a87d7b9225bbdbed4",
+  "converted_source": "processed/courses-01-03-04/普通物理实验3/4电表的改装与校准/实验报告-电表的改装与校准_docx/正文.md",
+  "table_mapping": {
+    "current.csv": "表1数据行3–12，第1列改装示值，第2列下行、第3列上行；均值/误差源列保留JSON。",
+    "voltage.csv": "表2数据行3–12，第1列示值，第2列上行、第3列下行。",
+    "ohm_record": "表3唯一偏转行，前四个阻值图片不可辨识，未补造阻值。"
+  },
+  "transformations": [
+    "示值误差重新按改装值−标准上/下行均值定义。",
+    "往返差与示值误差分别计算。",
+    "全部原记录点参与正式误差统计，异常点未擅改删除。",
+    "设计Rg=30Ω标记为反推条件值，未视为半电流法实测结果。"
+  ],
+  "issues": [
+    {
+      "type": "error_definition",
+      "resolution": "源误差列接近上/下行差，不能作为示值误差判等级。"
+    },
+    {
+      "type": "ambiguous_voltage_row",
+      "resolution": "1.25V对应1.333/1.328V；可能误录1.35V，但无证据故保留1.25。"
+    },
+    {
+      "type": "incomplete_ohm_calibration",
+      "resolution": "对应阻值不全，偏转格数非单调，不声称完成欧姆标定或未知电阻读数。"
+    },
+    {
+      "type": "design_feasibility",
+      "resolution": "原1000Ω+470Ω调零范围不能覆盖1.6V；条件改进1100Ω+470Ω覆盖1.3–1.6V。"
+    }
+  ]
+}

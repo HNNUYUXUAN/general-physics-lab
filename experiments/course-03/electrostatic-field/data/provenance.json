@@ -1,0 +1,29 @@
+{
+  "primary_source": "originals/course-03/3用稳恒电场模拟静电场/实验报告-用稳恒电场模拟静电场.docx",
+  "primary_sha256": "19f9cef2b0f2b0a6ba34f92ed8824aaedfca022ac2b540798f54a77047dabb9d",
+  "converted_source": "processed/courses-01-03-04/普通物理实验3/3用稳恒电场模拟静电场/实验报告-用稳恒电场模拟静电场_docx/正文.md",
+  "table_mapping": "第七项唯一汇总表，数据行2–11；电压取列1，半径取列4；列2/3/5保留source_summary，不作为独立观测。",
+  "transformations": [
+    "依据带单位r(cm)列重算ln[r/(1cm)]。",
+    "八个内部等位点用于线性拟合，两个边界只用于定义同轴模型。",
+    "cm换算m计算电场强度。"
+  ],
+  "issues": [
+    {
+      "type": "missing_raw_measurements",
+      "resolution": "源第六项无数表，八方向原始坐标及六次电极尺寸未提供，不能把汇总看成独立重复数据。"
+    },
+    {
+      "type": "ambiguous_header",
+      "resolution": "源第三列(r)数值与ln(r/cm)相近，报告保留“源表对数列”并独立重算。"
+    },
+    {
+      "type": "derived_column_rounding",
+      "resolution": "部分D(mm)与2r(cm)因修约略异；不混用两列以提高精度。"
+    },
+    {
+      "type": "field_equation_condition",
+      "resolution": "J无旋仅在均匀标量电导率条件下由E无旋推出，明确条件。"
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+PacletObject[<|"Name"->"ThinLensLab","Version"->"0.1.0","WolframVersion"->"14.0+","Description"->"\:8584\:900f\:955c\:7126\:8ddd\:7684\:6d4b\:5b9a","Creator"->"Physics Lab Contributors","Extensions"->{{"Kernel","Root"->"Kernel","Context"->{"ThinLensLab`"}},{"Resource","Root"->".","Resources"->{"Notebooks","data","assets"}}}|>]

@@ -1,0 +1,1 @@
+PacletObject[<|"Name"->"NewtonSecondLawLab","Version"->"0.1.0","WolframVersion"->"14.0+","Description"->"\:725b\:987f\:7b2c\:4e8c\:8fd0\:52a8\:5b9a\:5f8b\:7684\:9a8c\:8bc1","Creator"->"Physics Lab Contributors","Extensions"->{{"Kernel","Root"->"Kernel","Context"->{"NewtonSecondLawLab`"}},{"Resource","Root"->".","Resources"->{"Notebooks","data","assets"}}}|>]

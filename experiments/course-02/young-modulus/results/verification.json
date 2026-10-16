@@ -1,0 +1,504 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "metric": "mean_apparent_diameter",
+      "python": 0.582,
+      "wolfram": 0.582,
+      "unit": "mm",
+      "passed": true
+    },
+    {
+      "metric": "mean_corrected_diameter",
+      "python": 0.52,
+      "wolfram": 0.52,
+      "unit": "mm",
+      "passed": true
+    },
+    {
+      "metric": "diameter_uncertainty_a",
+      "python": 0.005066228051190209,
+      "wolfram": 0.00506622805119021,
+      "unit": "mm",
+      "passed": true
+    },
+    {
+      "metric": "mean_extension_difference",
+      "python": 21.14,
+      "wolfram": 21.14,
+      "unit": "mm",
+      "passed": true
+    },
+    {
+      "metric": "fit_slope",
+      "python": 4.219393939393939,
+      "wolfram": 4.219393939393939,
+      "unit": "mm/kg",
+      "passed": true
+    },
+    {
+      "metric": "fit_intercept",
+      "python": 32.083333333333336,
+      "wolfram": 32.083333333333336,
+      "unit": "mm",
+      "passed": true
+    },
+    {
+      "metric": "correlation",
+      "python": 0.9999394209439023,
+      "wolfram": 0.9999394209439023,
+      "unit": "1",
+      "passed": true
+    },
+    {
+      "metric": "slope_uncertainty",
+      "python": 0.01642105526495476,
+      "wolfram": 0.01642105526495476,
+      "unit": "mm/kg",
+      "passed": true
+    },
+    {
+      "metric": "young_modulus_difference",
+      "python": 307555716271.98334,
+      "wolfram": 307555716271.9833,
+      "unit": "Pa",
+      "passed": true
+    },
+    {
+      "metric": "young_modulus_regression",
+      "python": 308183020375.84174,
+      "wolfram": 308183020375.8418,
+      "unit": "Pa",
+      "passed": true
+    },
+    {
+      "metric": "conditional_uncertainty_difference",
+      "python": 7938637626.791675,
+      "wolfram": 7938637626.791673,
+      "unit": "Pa",
+      "passed": true
+    },
+    {
+      "metric": "conditional_uncertainty_regression",
+      "python": 6756804961.33268,
+      "wolfram": 6756804961.332681,
+      "unit": "Pa",
+      "passed": true
+    },
+    {
+      "table": "geometry",
+      "row": 0,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "geometry",
+      "row": 0,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "geometry",
+      "row": 0,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "diameters",
+      "row": 0,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "diameters",
+      "row": 0,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "diameters",
+      "row": 0,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "diameters",
+      "row": 0,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "diameters",
+      "row": 0,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "diameters",
+      "row": 0,
+      "column": 6,
+      "passed": true
+    },
+    {
+      "table": "diameters",
+      "row": 0,
+      "column": 7,
+      "passed": true
+    },
+    {
+      "table": "diameters",
+      "row": 1,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "diameters",
+      "row": 1,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "diameters",
+      "row": 1,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "diameters",
+      "row": 1,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "diameters",
+      "row": 1,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "diameters",
+      "row": 1,
+      "column": 6,
+      "passed": true
+    },
+    {
+      "table": "diameters",
+      "row": 1,
+      "column": 7,
+      "passed": true
+    },
+    {
+      "table": "loading_first",
+      "row": 0,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "loading_first",
+      "row": 0,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "loading_first",
+      "row": 0,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "loading_first",
+      "row": 0,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "loading_first",
+      "row": 0,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "loading_first",
+      "row": 1,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "loading_first",
+      "row": 1,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "loading_first",
+      "row": 1,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "loading_first",
+      "row": 1,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "loading_first",
+      "row": 1,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "loading_first",
+      "row": 2,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "loading_first",
+      "row": 2,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "loading_first",
+      "row": 2,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "loading_first",
+      "row": 2,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "loading_first",
+      "row": 2,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "loading_first",
+      "row": 3,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "loading_first",
+      "row": 3,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "loading_first",
+      "row": 3,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "loading_first",
+      "row": 3,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "loading_first",
+      "row": 3,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "loading_second",
+      "row": 0,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "loading_second",
+      "row": 0,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "loading_second",
+      "row": 0,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "loading_second",
+      "row": 0,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "loading_second",
+      "row": 0,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "loading_second",
+      "row": 1,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "loading_second",
+      "row": 1,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "loading_second",
+      "row": 1,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "loading_second",
+      "row": 1,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "loading_second",
+      "row": 1,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "loading_second",
+      "row": 2,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "loading_second",
+      "row": 2,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "loading_second",
+      "row": 2,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "loading_second",
+      "row": 2,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "loading_second",
+      "row": 2,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "loading_second",
+      "row": 3,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "loading_second",
+      "row": 3,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "loading_second",
+      "row": 3,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "loading_second",
+      "row": 3,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "loading_second",
+      "row": 3,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "loading_second",
+      "row": 4,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "loading_second",
+      "row": 4,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "loading_second",
+      "row": 4,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "loading_second",
+      "row": 4,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "loading_second",
+      "row": 4,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "uncertainty",
+      "row": 0,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "uncertainty",
+      "row": 0,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "uncertainty",
+      "row": 1,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "uncertainty",
+      "row": 1,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "uncertainty",
+      "row": 2,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "uncertainty",
+      "row": 2,
+      "column": 3,
+      "passed": true
+    }
+  ],
+  "input_hashes": {
+    "data/author-verification.json": "24e99499f86bdf517534b8e3d8a932a20bdf8976f92f08582735ad24ce459786",
+    "data/diameters.csv": "5e1867cd1d9da89bea7980cbc8d9c51c0f26301d7e55958e058d45c8e8ba1b83",
+    "data/loading.csv": "554d9bae0377fca4770372f7123f8619aefc34fc70bb28f6e9c859a1b42901c8",
+    "data/provenance.json": "c29beb07ad28a4ff74825eb5f01d5b10c9f6234d2e54a098edced97f52600b9b",
+    "experiment.json": "567180663443e3d13bffd78b425de04b753ee38ddb52656b4788d73e8337760c"
+  }
+}

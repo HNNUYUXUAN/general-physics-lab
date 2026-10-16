@@ -1,0 +1,33 @@
+{
+  "primary_source": "originals/course-03/9单臂电桥测电阻/实验报告-单臂电桥测电阻.docx",
+  "primary_sha256": "ad6ac494f06b7d574b2cbc5bfbce52e7ae0431e94e3d5c6d8fe7b3491340b848",
+  "converted_source": "processed/courses-01-03-04/普通物理实验3/9单臂电桥测电阻/实验报告-单臂电桥测电阻_docx/正文.md",
+  "corroborating_manual": {
+    "path": "originals/course-03/9单臂电桥测电阻/QJ47型直流单双臂电桥使用说明书.docx",
+    "sha256": "0ec85e2f9444220aa4d1ba87a0b8c528b72f5b77a20bdbf3a99e64d960506f20"
+  },
+  "table_mapping": "DOCX表1列2–6，行2比率M、行3比较臂R；行4源Rx保存JSON；表2源限差表达保存JSON。",
+  "transformations": [
+    "100/100作为设定标识保留，数值比率取1。",
+    "用M乘比较臂重新计算Rx及标称偏差。",
+    "源限差与不确定度分开，不将来源不充分的±值推广。"
+  ],
+  "issues": [
+    {
+      "type": "out_of_effective_range",
+      "resolution": "3Ω低于单桥10Ω下限，不能按0.05%档保证准确度。"
+    },
+    {
+      "type": "grade_varies",
+      "resolution": "20kΩ属于0.1%等级区间，不统一0.05%。"
+    },
+    {
+      "type": "limit_definition",
+      "resolution": "说明书X为标度盘示值，源示例用测量Rx；RN及适用条件待核，±值仅保留源处理身份。"
+    },
+    {
+      "type": "conversion_artifact",
+      "resolution": "源1979.7前图片标记去除，DOCX文本值核对保留。"
+    }
+  ]
+}

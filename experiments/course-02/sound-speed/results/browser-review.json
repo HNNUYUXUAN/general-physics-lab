@@ -1,0 +1,25 @@
+{
+  "status": "passed",
+  "reviewed_at": "2026-10-16T08:11:06.718698+08:00",
+  "method": "Actual local HTTP browser DOM, formula renderer and changed slider geometry after screenshot stabilization.",
+  "controls_checked": 1,
+  "controls_status": "passed",
+  "report": {
+    "sha256": "9ed07a1f39376e538e27c424e7931c01757d41b36622ac682303c5403c066ab0",
+    "math_sources": 42,
+    "math_rendered": 42,
+    "errors": [],
+    "raw_formula": false,
+    "overflow": false,
+    "font": "Times New Roman, SimSun, serif"
+  },
+  "notebook": {
+    "sha256": "24d990de8af39da5c5a5030d94b6620c5a63e426c5e74bd26826475452393400",
+    "math_sources": 64,
+    "math_rendered": 64,
+    "errors": [],
+    "raw_formula": false,
+    "overflow": false,
+    "font": "Times New Roman, SimSun, serif"
+  }
+}

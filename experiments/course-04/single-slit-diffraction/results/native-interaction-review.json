@@ -1,0 +1,58 @@
+{
+  "experiment": "course-04/single-slit-diffraction",
+  "paclet": "SingleSlitDiffractionLab",
+  "status": "passed",
+  "source_hashes": {
+    "analysis.wl": "b1184804b9d7530eacaecd50358020658277c47d4296abbba6341df4ad73335c",
+    "authoring.json": "5b72d8b36be8d5e8dd66b5ee7b9f6ddfa28d0ff27fcb920ab6866557714b421e"
+  },
+  "input_hashes": {
+    "data/observations-01.csv": "bca33c140d782a3d024c5b75650a11d1f45fc7402116d79e6ba9a6f8dd7722eb",
+    "data/observations-02.csv": "d681e1be8568f563df7cf23ebee9cd9b9556021ff88864b5f78074a2a4ab244c",
+    "data/provenance.json": "c45b8db5210096bb0375ea98bc11ca58ade03035555e0b118ffbb83f927e28e4",
+    "experiment.json": "778b2ec0910c751ace34d904f197861ce19816cd1c2d2a02a410e0f2c5de86d4"
+  },
+  "models": [
+    {
+      "key": "slit-width",
+      "capture_messages": [],
+      "status": "passed",
+      "held_body_sha256": "e5c8dfa16946b21ecfbda0829e3961a4164cf379d75682a7feefaff4a4fe2a22",
+      "default_evaluation": {
+        "status": "evaluated",
+        "output_head": "Graphics",
+        "response_sha256": "1be17bace6b8061a6074e8450c74a43807a3b40fd08ab53fdfc27957fab25581",
+        "graphics_count": 2,
+        "messages": [],
+        "unresolved_heads": []
+      },
+      "default_repeat": {
+        "status": "evaluated",
+        "output_head": "Graphics",
+        "response_sha256": "1be17bace6b8061a6074e8450c74a43807a3b40fd08ab53fdfc27957fab25581",
+        "graphics_count": 2,
+        "messages": [],
+        "unresolved_heads": []
+      },
+      "default_deterministic": true,
+      "controls": [
+        {
+          "name": "SingleSlitDiffractionLab`Private`factor",
+          "default": 1,
+          "changed": 1.05,
+          "specification_sha256": "eedfe8d29fdce16bad4e9f1ebca557b24523685413b876daf4dd2c2eb9ee3651",
+          "evaluation": {
+            "status": "evaluated",
+            "output_head": "Graphics",
+            "response_sha256": "bb7d623239a92c83b5d645d553758e961599078d5bb1751cc723a5986b027ede",
+            "graphics_count": 2,
+            "messages": [],
+            "unresolved_heads": []
+          },
+          "response_changed": true,
+          "status": "passed"
+        }
+      ]
+    }
+  ]
+}

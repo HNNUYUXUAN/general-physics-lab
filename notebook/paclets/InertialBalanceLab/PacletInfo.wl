@@ -1,0 +1,1 @@
+PacletObject[<|"Name"->"InertialBalanceLab","Version"->"0.1.0","WolframVersion"->"14.0+","Description"->"\:60ef\:6027\:79e4\:7684\:5e94\:7528","Creator"->"Physics Lab Contributors","Extensions"->{{"Kernel","Root"->"Kernel","Context"->{"InertialBalanceLab`"}},{"Resource","Root"->".","Resources"->{"Notebooks","data","assets"}}}|>]

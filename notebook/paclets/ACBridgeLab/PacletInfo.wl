@@ -1,0 +1,1 @@
+PacletObject[<|"Name"->"ACBridgeLab","Version"->"0.1.0","WolframVersion"->"14.0+","Description"->"\:4ea4\:6d41\:7535\:6865","Creator"->"Physics Lab Contributors","Extensions"->{{"Kernel","Root"->"Kernel","Context"->{"ACBridgeLab`"}},{"Resource","Root"->".","Resources"->{"Notebooks","data","assets"}}}|>]

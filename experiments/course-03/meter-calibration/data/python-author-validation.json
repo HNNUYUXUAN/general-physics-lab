@@ -1,0 +1,87 @@
+{
+  "checks": {
+    "finite_json": true,
+    "proper_current_error": true,
+    "ambiguous_voltage_preserved": true,
+    "original_design_exceeds_range": true,
+    "improved_design_feasible": true,
+    "two_design_states": true
+  },
+  "metrics": {
+    "current_max_error": {
+      "value": 0.10500000000000043,
+      "unit": "mA",
+      "label": "电流"
+    },
+    "current_FS_error_percent": {
+      "value": 2.1000000000000085,
+      "unit": "%",
+      "label": "current 相对满量程最大误差"
+    },
+    "current_max_hysteresis": {
+      "value": 0.03000000000000025,
+      "unit": "mA",
+      "label": "current 最大往返读数差"
+    },
+    "current_correction_slope": {
+      "value": 0.9767272727272727,
+      "unit": "1",
+      "label": "current 标准均值对改装示值拟合斜率"
+    },
+    "current_correction_intercept": {
+      "value": 0.01499999999999968,
+      "unit": "mA",
+      "label": "current 校准拟合截距"
+    },
+    "voltage_max_error": {
+      "value": 0.08050000000000002,
+      "unit": "V",
+      "label": "电压 最大示值误差绝对值"
+    },
+    "voltage_FS_error_percent": {
+      "value": 5.366666666666667,
+      "unit": "%",
+      "label": "voltage 相对满量程最大误差"
+    },
+    "voltage_max_hysteresis": {
+      "value": 0.01100000000000012,
+      "unit": "V",
+      "label": "voltage 最大往返读数差"
+    },
+    "voltage_correction_slope": {
+      "value": 1.0090768356767503,
+      "unit": "1",
+      "label": "voltage 标准均值对改装示值拟合斜率"
+    },
+    "voltage_correction_intercept": {
+      "value": -0.003747621076551466,
+      "unit": "V",
+      "label": "voltage 校准拟合截距"
+    },
+    "shunt_resistance": {
+      "value": 7.5,
+      "unit": "Ω",
+      "label": "5 mA设计分流电阻"
+    },
+    "series_resistance": {
+      "value": 1470.0,
+      "unit": "Ω",
+      "label": "1.5 V设计串联电阻"
+    },
+    "original_Rw_at_16": {
+      "value": 570.0,
+      "unit": "Ω",
+      "label": "原限流电阻设计在1.6 V所需调零电阻"
+    },
+    "improved_Rw_at_13": {
+      "value": 170.0,
+      "unit": "Ω",
+      "label": "改进设计在1.3 V所需调零电阻"
+    },
+    "improved_Rw_at_16": {
+      "value": 470.0,
+      "unit": "Ω",
+      "label": "改进设计在1.6 V所需调零电阻"
+    }
+  }
+}

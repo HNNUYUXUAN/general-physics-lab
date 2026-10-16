@@ -1,0 +1,160 @@
+{
+  "metrics": {
+    "angle_mean_deg": {
+      "value": 39.80833333333333,
+      "unit": "deg",
+      "label": "出射角均值"
+    },
+    "angle_type_a_arcmin": {
+      "value": 17.17920254260948,
+      "unit": "arcmin",
+      "label": "角度均值A类分量"
+    },
+    "angle_type_b_arcmin": {
+      "value": 0.5773502691896258,
+      "unit": "arcmin",
+      "label": "指定误差限B类分量"
+    },
+    "angle_combined_arcmin": {
+      "value": 17.18890145801451,
+      "unit": "arcmin",
+      "label": "两分量合成标准不确定度"
+    },
+    "liquid_refractive_index": {
+      "value": 1.4033612379344735,
+      "unit": "1",
+      "label": "透明液体折射率"
+    },
+    "liquid_standard_uncertainty": {
+      "value": 0.0018722752756624072,
+      "unit": "1",
+      "label": "指定分量传播不确定度"
+    }
+  },
+  "tables": {
+    "table1": {
+      "headers": [
+        "次数",
+        "$\\theta_1$",
+        "$\\theta_2$",
+        "$\\theta_3$",
+        "$\\theta_4$"
+      ],
+      "rows": [
+        [
+          "1",
+          "$100^{\\circ}55^{\\prime}$",
+          "$280^{\\circ}58^{\\prime}$",
+          "$62^{\\circ}12^{\\prime}$",
+          "$242^{\\circ}13^{\\prime}$"
+        ],
+        [
+          "2",
+          "$90^{\\circ}59^{\\prime}$",
+          "$271^{\\circ}01^{\\prime}$",
+          "$51^{\\circ}10^{\\prime}$",
+          "$231^{\\circ}11^{\\prime}$"
+        ],
+        [
+          "3",
+          "$329^{\\circ}12^{\\prime}$",
+          "$149^{\\circ}12^{\\prime}$",
+          "$288^{\\circ}47^{\\prime}$",
+          "$108^{\\circ}46^{\\prime}$"
+        ],
+        [
+          "4",
+          "$208^{\\circ}18^{\\prime}$",
+          "$28^{\\circ}21^{\\prime}$",
+          "$168^{\\circ}13^{\\prime}$",
+          "$348^{\\circ}16^{\\prime}$"
+        ],
+        [
+          "5",
+          "$269^{\\circ}26^{\\prime}$",
+          "$89^{\\circ}25^{\\prime}$",
+          "$229^{\\circ}27^{\\prime}$",
+          "$49^{\\circ}27^{\\prime}$"
+        ]
+      ]
+    },
+    "table2": {
+      "headers": [
+        "次数",
+        "左游标角差 / °",
+        "右游标角差 / °",
+        "出射角 / °"
+      ],
+      "rows": [
+        [
+          1,
+          38.71666667,
+          38.75,
+          38.73333333
+        ],
+        [
+          2,
+          39.81666667,
+          39.83333333,
+          39.825
+        ],
+        [
+          3,
+          40.41666667,
+          40.43333333,
+          40.425
+        ],
+        [
+          4,
+          40.08333333,
+          40.08333333,
+          40.08333333
+        ],
+        [
+          5,
+          39.98333333,
+          39.96666667,
+          39.975
+        ]
+      ]
+    }
+  },
+  "series": {
+    "angle-repeat": {
+      "x": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "y": [
+        38.733333333333334,
+        39.825,
+        40.425,
+        40.083333333333336,
+        39.975
+      ],
+      "x_label": "测量次数",
+      "y_label": "出射角 / °",
+      "label": "双游标结果"
+    }
+  },
+  "notes": [
+    "圆周最短角差处理跨零读数。",
+    "误差限1角分按最终角度估计的均匀分布限值采用；未含全部校准系统分量。"
+  ],
+  "code_hashes": {
+    "Kernel/analysis.wl": "0262fdb0f9bf1d7099daad7f8c6c991e1f3fd84747c5c01b58fa5c1bfedee3da"
+  },
+  "input_hashes": {
+    "data/observations-01.csv": "f13068bbe04d8987b920eda4e9dc5020bd19b1fe25a80564964daab5cdb9dbe3",
+    "data/provenance.json": "5efcf4f68ef5687b23f58c8f91b1f39b34ea9786a0030c6cf21cf730535e5c92",
+    "experiment.json": "87dde9f177607481abc051eacd3aa0e6335b6c93c9b562912a1aaf219c3e8f74"
+  },
+  "environment": {
+    "wolfram": "15.0.1 for Microsoft Windows (64-bit) (July 2, 2026)"
+  },
+  "engine": "wolfram",
+  "experiment_id": "course-04/grazing-refraction"
+}

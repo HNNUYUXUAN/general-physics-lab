@@ -1,0 +1,57 @@
+{
+  "primary_source": {
+    "path": "originals/course-01/碰撞规律的研究/碰撞规律研究实验报告.docx",
+    "sha256": "99717e9b823c9184f57df4fa0218bf4fd0e6f4f0c37356ce6be7d7104ae19ad1"
+  },
+  "converted_source": {
+    "path": "processed/courses-01-03-04/普通物理实验1/碰撞规律的研究/碰撞规律研究实验报告_docx/正文.md",
+    "sha256": "8725cc0fb17dd9219ab3397b08c34467984ea14b2055efc2eeb5ab1dc353ff2c"
+  },
+  "mappings": [
+    {
+      "csv": "inelastic.csv",
+      "source_table": 1,
+      "source_rows": "2–6",
+      "columns": {
+        "trial": 1,
+        "incident_cm_s": 2,
+        "common_cm_s": 3
+      }
+    },
+    {
+      "csv": "elastic.csv",
+      "source_table": 2,
+      "source_rows": "2–6",
+      "columns": {
+        "trial": 1,
+        "v1_first_cm_s": 2,
+        "v2_cm_s": 3,
+        "v1_second_cm_s": 4
+      }
+    }
+  ],
+  "transformations": [
+    "质量g转换kg、速度cm/s转换m/s，动量及能量统一SI。",
+    "弹性组滑块1两次速度按源方法取平均，未提前修约。",
+    "原报告数据处理两张表为派生量，程序重新生成，不当作新观测。"
+  ],
+  "corrections": [
+    "不采用小于5%即符合的无来源阈值；动量差异须结合未给出的仪器不确定度评定。",
+    "内部形变导致动能耗散，并不直接导致孤立系统总动量损失；动量偏差另讨论外力冲量及测速偏置。",
+    "缺少弹性组碰前速度，恢复系数只能在假定动量守恒下作条件反推。"
+  ],
+  "issues": [
+    {
+      "status": "limitation",
+      "detail": "步骤提及轻撞重，但主报告没有对应观测，不能补造第二套碰撞数据。"
+    },
+    {
+      "status": "limitation",
+      "detail": "弹性组未记录碰前速度，无法独立检验该组动量及动能守恒。"
+    },
+    {
+      "status": "limitation",
+      "detail": "缺质量和速度仪器精度、测量时刻及外力冲量信息，无法给出完整不确定度。"
+    }
+  ]
+}

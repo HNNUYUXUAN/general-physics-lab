@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "id": "course-02/liquid-viscosity",
+  "title": "液体粘度系数的测量",
+  "parameters": {
+    "sphere_density_kg_m3": 7800,
+    "liquid_density_kg_m3": 950,
+    "gravity_m_s2": 9.8,
+    "distance_m": 0.2,
+    "tube_diameter_m": 0.02,
+    "micrometer_zero_mm": 0.005,
+    "diameter_error_bound_mm": 0.005,
+    "time_error_bound_s": 0.01
+  },
+  "models": {
+    "viscosity": "Stokes低Re、轴向收尾运动、有限管径一阶修正，主报告计时组。"
+  },
+  "source_docx": "originals/course-02/08-液体粘度系数的测量/实验报告-液体粘滞系数的测量.docx",
+  "data_version": "1.0.0"
+}

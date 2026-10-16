@@ -1,0 +1,31 @@
+{
+  "primary_source": "originals/course-04/13_实验十三_阿贝成像原理和空间滤波.docx",
+  "primary_sha256": "b4cdd85d2553a3c14f9431fc48e230515928ad00f916d8c1a6c49456cd28b43a",
+  "converted_source": "processed/courses-01-03-04/普通物理实验4/13_实验十三_阿贝成像原理和空间滤波_docx/正文.md",
+  "verification": "直接从主DOCX XML逐单元格提取观测，规范CSV完整保留读数；源计算表不作为观测输入。",
+  "table_mappings": [
+    {
+      "file": "observations-01.csv",
+      "source_table": 1,
+      "mapping": "行列顺序及单元格文本原样保存"
+    },
+    {
+      "file": "observations-02.csv",
+      "source_table": 2,
+      "mapping": "行列顺序及单元格文本原样保存"
+    }
+  ],
+  "transformations": [
+    "使用原表单位，派生结果从未修约观测重新计算。"
+  ],
+  "issues": [
+    {
+      "status": "documented",
+      "detail": "只记录可见度结果，没有明暗光强及频谱复振幅。"
+    },
+    {
+      "status": "documented",
+      "detail": "光阑尺寸与实际物体透过率未记录，不重建实际物像。"
+    }
+  ]
+}

@@ -1,0 +1,135 @@
+{
+  "checks": {
+    "finite_json": true,
+    "sine_rms": true,
+    "all_liss_1000": true,
+    "period_ms_to_s": true,
+    "wave_selection": true,
+    "phase_frequency_states": true,
+    "sine_numerical_rms": true,
+    "triangle_numerical_rms": true,
+    "square_numerical_rms": true
+  },
+  "metrics": {
+    "sine_U_pp": {
+      "value": 1.0,
+      "unit": "V",
+      "label": "正弦波 峰峰值"
+    },
+    "sine_U_peak": {
+      "value": 0.5,
+      "unit": "V",
+      "label": "正弦波 峰值"
+    },
+    "sine_U_rms": {
+      "value": 0.35355339059327373,
+      "unit": "V",
+      "label": "正弦波 几何波形有效值"
+    },
+    "sine_meter_deviation_percent": {
+      "value": 43.40125522463185,
+      "unit": "%",
+      "label": "正弦波 毫伏表与波形有效值偏差"
+    },
+    "sine_period": {
+      "value": 0.001,
+      "unit": "s",
+      "label": "正弦波 周期"
+    },
+    "sine_frequency": {
+      "value": 1000.0,
+      "unit": "Hz",
+      "label": "正弦波 周期法频率"
+    },
+    "triangle_U_pp": {
+      "value": 1.0,
+      "unit": "V",
+      "label": "三角波 峰峰值"
+    },
+    "triangle_U_peak": {
+      "value": 0.5,
+      "unit": "V",
+      "label": "三角波 峰值"
+    },
+    "triangle_U_rms": {
+      "value": 0.2886751345948129,
+      "unit": "V",
+      "label": "三角波 几何波形有效值"
+    },
+    "triangle_meter_deviation_percent": {
+      "value": -3.6979750991704265,
+      "unit": "%",
+      "label": "三角波 毫伏表与波形有效值偏差"
+    },
+    "triangle_period": {
+      "value": 0.001,
+      "unit": "s",
+      "label": "三角波 周期"
+    },
+    "triangle_frequency": {
+      "value": 1000.0,
+      "unit": "Hz",
+      "label": "三角波 周期法频率"
+    },
+    "square_U_pp": {
+      "value": 1.0,
+      "unit": "V",
+      "label": "方波 峰峰值"
+    },
+    "square_U_peak": {
+      "value": 0.5,
+      "unit": "V",
+      "label": "方波 峰值"
+    },
+    "square_U_rms": {
+      "value": 0.5,
+      "unit": "V",
+      "label": "方波 几何波形有效值"
+    },
+    "square_meter_deviation_percent": {
+      "value": -1.8000000000000016,
+      "unit": "%",
+      "label": "方波 毫伏表与波形有效值偏差"
+    },
+    "square_period": {
+      "value": 0.001,
+      "unit": "s",
+      "label": "方波 周期"
+    },
+    "square_frequency": {
+      "value": 1000.0,
+      "unit": "Hz",
+      "label": "方波 周期法频率"
+    },
+    "lissajous_1_frequency": {
+      "value": 1000.0,
+      "unit": "Hz",
+      "label": "李萨如第1组频率"
+    },
+    "lissajous_2_frequency": {
+      "value": 1000.0,
+      "unit": "Hz",
+      "label": "李萨如第2组频率"
+    },
+    "lissajous_3_frequency": {
+      "value": 1000.0,
+      "unit": "Hz",
+      "label": "李萨如第3组频率"
+    },
+    "lissajous_4_frequency": {
+      "value": 1000.0,
+      "unit": "Hz",
+      "label": "李萨如第4组频率"
+    },
+    "lissajous_5_frequency": {
+      "value": 1000.0,
+      "unit": "Hz",
+      "label": "李萨如第5组频率"
+    },
+    "lissajous_mean_frequency": {
+      "value": 1000.0,
+      "unit": "Hz",
+      "label": "李萨如频率均值"
+    }
+  }
+}

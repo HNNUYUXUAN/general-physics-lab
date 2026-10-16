@@ -1,0 +1,243 @@
+{
+  "metrics": {
+    "static_stiffness": {
+      "value": 3.6563411676689928,
+      "unit": "N/m",
+      "label": "静态逐组劲度系数平均"
+    },
+    "static_stiffness_all": {
+      "value": 4.193915039398352,
+      "unit": "N/m",
+      "label": "全部五组静态比值平均"
+    },
+    "static_fit_slope": {
+      "value": 3.18267909267944,
+      "unit": "N/m",
+      "label": "源保留组静态拟合斜率"
+    },
+    "static_fit_intercept": {
+      "value": 0.07461377583746287,
+      "unit": "N",
+      "label": "源保留组静态拟合截距"
+    },
+    "mean_period": {
+      "value": 0.8830769230769229,
+      "unit": "s",
+      "label": "平均周期",
+      "uncertainty": 0.006829856718906265
+    },
+    "period_sum": {
+      "value": 11.479999999999997,
+      "unit": "s",
+      "label": "周期总和"
+    },
+    "dynamic_stiffness": {
+      "value": 5.224471477088448,
+      "unit": "N/m",
+      "label": "动态劲度系数",
+      "uncertainty": 0.08081377893150642
+    },
+    "relative_difference": {
+      "value": 42.887964703227546,
+      "unit": "%",
+      "label": "动静态相对差异"
+    }
+  },
+  "tables": {
+    "static": {
+      "headers": [
+        "序号",
+        "组合",
+        "$m / \\mathrm{g}$",
+        "$x / \\mathrm{cm}$",
+        "$\\Delta x / \\mathrm{m}$",
+        "$F / \\mathrm{N}$",
+        "$k / (\\mathrm{N\\,m^{-1}})$",
+        "源报告平均值选用"
+      ],
+      "rows": [
+        [
+          1,
+          "$m_1$",
+          12.3,
+          26.8,
+          0.01900000000000002,
+          0.12054000000000002,
+          6.344210526315784,
+          "剔除"
+        ],
+        [
+          2,
+          "$m_1+m_2$",
+          61.2,
+          41.61,
+          0.1671,
+          0.5997600000000001,
+          3.589228007181329,
+          "保留"
+        ],
+        [
+          3,
+          "$m_1+m_2+m_3$",
+          108.78,
+          56.0,
+          0.311,
+          1.066044,
+          3.4277942122186493,
+          "保留"
+        ],
+        [
+          4,
+          "$m_2$",
+          48.9,
+          37.62,
+          0.12719999999999998,
+          0.47922000000000003,
+          3.76745283018868,
+          "保留"
+        ],
+        [
+          5,
+          "$m_3$",
+          47.58,
+          37.04,
+          0.12140000000000001,
+          0.466284,
+          3.8408896210873142,
+          "保留"
+        ]
+      ]
+    },
+    "periods": {
+      "headers": [
+        "序号",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "rows": [
+        [
+          "$T / \\mathrm{s}$",
+          0.91,
+          0.93,
+          0.89,
+          0.89,
+          0.91,
+          0.87,
+          0.89
+        ],
+        [
+          "序号",
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          "—"
+        ],
+        [
+          "$T / \\mathrm{s}$",
+          0.89,
+          0.86,
+          0.87,
+          0.87,
+          0.84,
+          0.86,
+          "—"
+        ]
+      ]
+    }
+  },
+  "series": {
+    "static_force": {
+      "x": [
+        0.01900000000000002,
+        0.1671,
+        0.311,
+        0.12719999999999998,
+        0.12140000000000001
+      ],
+      "y": [
+        0.12054000000000002,
+        0.5997600000000001,
+        1.066044,
+        0.47922000000000003,
+        0.466284
+      ],
+      "x_label": "伸长量 / m",
+      "y_label": "载荷重力 / N",
+      "fit": true
+    },
+    "period_sequence": {
+      "x": [
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        6.0,
+        7.0,
+        8.0,
+        9.0,
+        10.0,
+        11.0,
+        12.0,
+        13.0
+      ],
+      "y": [
+        0.91,
+        0.93,
+        0.89,
+        0.89,
+        0.91,
+        0.87,
+        0.89,
+        0.89,
+        0.86,
+        0.87,
+        0.87,
+        0.84,
+        0.86
+      ],
+      "x_label": "测量序号",
+      "y_label": "周期 / s"
+    }
+  },
+  "notes": [
+    "静态主结果沿用源报告明确剔除第1组的选择，但保留该观测及全组平均作敏感性比较。",
+    "动态公式未计弹簧质量；周期A类及动态k不确定度未含质量和计时器系统误差。",
+    "静态散点图的全五组拟合仅供残差诊断；源保留组拟合参数另行计算。"
+  ],
+  "experiment_id": "course-01/doppler-application",
+  "engine": "python",
+  "input_hashes": {
+    "data/author-verification.json": "ed46e348245101ce42b7b136ae0bb7e9b56b61dad7877522d6de5d88600d7911",
+    "data/periods.csv": "0a08266029742ccc8ad39db9b8525d4fc38ba53906e76514210b6c810811e54a",
+    "data/provenance.json": "30c117f94432e4dd1c052785ff166bd7f35c96a2ca628e9fb6bd9d07cd522675",
+    "data/static.csv": "ac683d59d6a0e2eb57b068db6d1333de41205693503974df0c1869d8abdc49d9",
+    "experiment.json": "8f4b195a1f2fa90c2aaa8bafffb8bc612c2c4eab81b26d23a67d2d3e8d1a2159"
+  },
+  "code_hashes": {
+    "src/physicslab/common/__init__.py": "7cc50d4a8325535fb401e04aed51f6a04ad3ca7f40c4b972624547491c83e1a2",
+    "src/physicslab/common/io.py": "5135c2253071c4e3885dec26db357a7777c1a13c7a83559f5152007abb986541",
+    "src/physicslab/common/manuscripts.py": "847e4bade7e617d524e0b484db6e17ee82097687e37b84bb0ac3796dbe06ed10",
+    "src/physicslab/common/plots.py": "37825a8c2a8f5dd8ca7f01968dd343a8dd6cb6139d2ef67275ff745b04e9b907",
+    "src/physicslab/common/tex_boxes.py": "0e2b226fce4c79bba37cc2ba6b6153802a5cb6dbda9dfee95d1a98e5894f9554",
+    "src/physicslab/common/theme.py": "ee8592a54efb71efd91ccdc55b66c7d8bda14a32454dfd75aa34ef606269a01c",
+    "src/physicslab/experiments/doppler_application.py": "42b6a4d64f93ba345331bb143b6b0d13725cde5900a8d06e4bcdfce7697b531b"
+  },
+  "environment": {
+    "python": "3.14.7",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "matplotlib": "3.11.2",
+    "nbclient": "0.11.0",
+    "nbformat": "5.11.1",
+    "plotly": "7.1.0"
+  }
+}

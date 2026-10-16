@@ -1,0 +1,1 @@
+PacletObject[<|"Name"->"YoungModulusLab","Version"->"0.1.0","WolframVersion"->"14.0+","Description"->"\:62c9\:4f38\:6cd5\:6d4b\:91cf\:91d1\:5c5e\:6768\:6c0f\:6a21\:91cf","Creator"->"Physics Lab Contributors","Extensions"->{{"Kernel","Root"->"Kernel","Context"->{"YoungModulusLab`"}},{"Resource","Root"->".","Resources"->{"Notebooks","data","assets"}}}|>]

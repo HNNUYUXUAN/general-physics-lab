@@ -1,0 +1,50 @@
+{
+  "primary_source": {
+    "path": "originals/course-01/牛顿第二定律的验证/牛顿第二运动定律验证实验报告.docx",
+    "sha256": "eea64310106cb77baa1eb7b394b12a6fd9beb53bd34aca2f65a0b5a3bc28cd31"
+  },
+  "converted_source": {
+    "path": "processed/courses-01-03-04/普通物理实验1/牛顿第二定律的验证/牛顿第二运动定律验证实验报告_docx/正文.md",
+    "sha256": "b6ea1b646d45e0402250ef49f091ea5e5140d0ccc0de6889e3f12c64cebec006"
+  },
+  "mappings": [
+    {
+      "csv": "observations.csv",
+      "source_table": 1,
+      "source_rows": "2–26",
+      "columns": {
+        "group": 1,
+        "hanging_mass_g": 2,
+        "trial": 3,
+        "v1_cm_s": 4,
+        "v2_cm_s": 5,
+        "reported_acceleration_cm_s2": 6
+      }
+    }
+  ],
+  "transformations": [
+    "表中合并单元格的组别与悬挂质量向下补齐，不新增测量。",
+    "F1数据1按报告说明记录直接加速度，v1/v2保持缺失；F2-F5将数据1/数据2作为速度。",
+    "速度cm/s按a=(v2²-v1²)/(2S)统一重算，S=50cm；保留原报告计算列以供差值核对。",
+    "质量以g、加速度以cm/s²拟合m0=K a+C；系统质量为100gK、等效阻力为gC/1000（g取9.80m/s²）。"
+  ],
+  "corrections": [
+    "重算F2-F5加速度及全组平均值，未采用源报告已修约均值。",
+    "重算斜率、截距及相关系数，替换源0.1654、1.39及r=.9999。",
+    "线性关系与过原点比例关系分开讨论，截距不单独归因于滑动摩擦。"
+  ],
+  "issues": [
+    {
+      "status": "limitation",
+      "detail": "未提供独立称量系统总质量，不能将斜率推算值与实测值比较。"
+    },
+    {
+      "status": "limitation",
+      "detail": "F1采用直接加速度、其他组采用速度重算，测量模式差异可能影响线性拟合。"
+    },
+    {
+      "status": "limitation",
+      "detail": "缺挡光片宽度、计时分辨率、测距及砝码误差限，无法完整传播仪器不确定度。"
+    }
+  ]
+}

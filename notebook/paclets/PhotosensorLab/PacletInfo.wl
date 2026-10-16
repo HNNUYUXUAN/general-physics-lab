@@ -1,0 +1,1 @@
+PacletObject[<|"Name"->"PhotosensorLab","Version"->"0.1.0","WolframVersion"->"14.0+","Description"->"\:5149\:654f\:4f20\:611f\:5668\:5149\:7535\:7279\:6027\:7814\:7a76","Creator"->"Physics Lab Contributors","Extensions"->{{"Kernel","Root"->"Kernel","Context"->{"PhotosensorLab`"}},{"Resource","Root"->".","Resources"->{"Notebooks","data","assets"}}}|>]

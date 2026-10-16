@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "id": "course-01/doppler-verification",
+  "title": "多普勒效应的验证",
+  "data_version": "1.0.0",
+  "parameters": {
+    "source_frequency_hz": 40002,
+    "temperature_c": 23.1
+  },
+  "units": {
+    "velocity": "m/s",
+    "frequency": "Hz"
+  },
+  "assumptions": [
+    "声源静止、接收器沿声源方向运动",
+    "空气静止，声速按温度模型估计",
+    "线性回归等权；未提供仪器不确定度"
+  ]
+}

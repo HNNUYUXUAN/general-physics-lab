@@ -1,0 +1,1 @@
+PacletObject[<|"Name"->"PohlResonanceLab","Version"->"0.1.0","WolframVersion"->"14.0+","Description"->"\:6ce2\:5c14\:5171\:632f\:5b9e\:9a8c","Creator"->"Physics Lab Contributors","Extensions"->{{"Kernel","Root"->"Kernel","Context"->{"PohlResonanceLab`"}},{"Resource","Root"->".","Resources"->{"Notebooks","data","assets"}}}|>]

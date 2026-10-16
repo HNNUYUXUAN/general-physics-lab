@@ -1,0 +1,526 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "metric": "microscope_magnification",
+      "python": 24.988000000000003,
+      "wolfram": 24.988000000000003,
+      "unit": "1",
+      "passed": true
+    },
+    {
+      "metric": "microscope_type_a",
+      "python": 0.02416609194718913,
+      "wolfram": 0.0241660919471891,
+      "unit": "1",
+      "passed": true
+    },
+    {
+      "metric": "telescope_magnification",
+      "python": 4.892525130380177,
+      "wolfram": 4.892525130380177,
+      "unit": "1",
+      "passed": true
+    },
+    {
+      "metric": "telescope_type_a",
+      "python": 0.01388115996091462,
+      "wolfram": 0.01388115996091459,
+      "unit": "1",
+      "passed": true
+    },
+    {
+      "metric": "eyepiece_scale_mm",
+      "python": 0.0025490738975742096,
+      "wolfram": 0.0025490738975742096,
+      "unit": "mm/div",
+      "passed": true
+    },
+    {
+      "metric": "eyepiece_scale_type_a_mm",
+      "python": 1.6572005817678215e-06,
+      "wolfram": 1.6572005817678217e-06,
+      "unit": "mm/div",
+      "passed": true
+    },
+    {
+      "metric": "wire_diameter_um",
+      "python": 69.18186558016407,
+      "wolfram": 69.18186558016407,
+      "unit": "um",
+      "passed": true
+    },
+    {
+      "metric": "wire_repeat_type_a_um",
+      "python": 0.12997777545320832,
+      "wolfram": 0.12997777545320832,
+      "unit": "um",
+      "passed": true
+    },
+    {
+      "metric": "wire_random_combined_um",
+      "python": 0.1375394518261165,
+      "wolfram": 0.1375394518261165,
+      "unit": "um",
+      "passed": true
+    },
+    {
+      "table": "table1",
+      "row": 0,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "table1",
+      "row": 0,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "table1",
+      "row": 0,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "table1",
+      "row": 0,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "table1",
+      "row": 1,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "table1",
+      "row": 1,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "table1",
+      "row": 1,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "table1",
+      "row": 1,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "table1",
+      "row": 2,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "table1",
+      "row": 2,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "table1",
+      "row": 2,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "table1",
+      "row": 2,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "table1",
+      "row": 3,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "table1",
+      "row": 3,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "table1",
+      "row": 3,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "table1",
+      "row": 3,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "table1",
+      "row": 4,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "table1",
+      "row": 4,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "table1",
+      "row": 4,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "table1",
+      "row": 4,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 0,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 0,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 0,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 0,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 1,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 1,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 1,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 1,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 2,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 2,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 2,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 2,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 3,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 3,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 3,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 3,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 4,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 4,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 4,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 4,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "table3",
+      "row": 0,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "table3",
+      "row": 0,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "table3",
+      "row": 0,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "table3",
+      "row": 0,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "table3",
+      "row": 1,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "table3",
+      "row": 1,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "table3",
+      "row": 1,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "table3",
+      "row": 1,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "table3",
+      "row": 2,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "table3",
+      "row": 2,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "table3",
+      "row": 2,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "table3",
+      "row": 2,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "table3",
+      "row": 3,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "table3",
+      "row": 3,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "table3",
+      "row": 3,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "table3",
+      "row": 3,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "table3",
+      "row": 4,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "table3",
+      "row": 4,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "table3",
+      "row": 4,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "table3",
+      "row": 4,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "table4",
+      "row": 0,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "table4",
+      "row": 0,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "table4",
+      "row": 0,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "table4",
+      "row": 1,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "table4",
+      "row": 1,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "table4",
+      "row": 1,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "table4",
+      "row": 2,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "table4",
+      "row": 2,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "table4",
+      "row": 2,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "table4",
+      "row": 3,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "table4",
+      "row": 3,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "table4",
+      "row": 3,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "table4",
+      "row": 4,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "table4",
+      "row": 4,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "table4",
+      "row": 4,
+      "column": 2,
+      "passed": true
+    }
+  ],
+  "input_hashes": {
+    "data/observations-01.csv": "2415039af2bc40ecfc6eef74c30b475f9a17e462e582260d265ef8227069b922",
+    "data/observations-02.csv": "019dbb578851c09e83adae2d80c56a5d8c6a15216f97d2e9d471175e8ee776d8",
+    "data/observations-03.csv": "7dfe7134a5466be8a7fef3592524c2a8cee5ba0f15f18dd4daca02aacbef963c",
+    "data/observations-04.csv": "1aae8cae0d373254cb8747fa6bdb3c347ccc525be1dcb0eee07e37e3d35f9acf",
+    "data/provenance.json": "c42eb97a2bbc00829334098c77b70aa0c66ecd27614776201f8821d79ddf68a8",
+    "experiment.json": "870a15f86edde443ffc2050290cd93be02fdcb0b8da55fd769ee30e19355e1dc"
+  }
+}

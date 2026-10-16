@@ -1,0 +1,26 @@
+{
+  "experiment": "course-02/moment-of-inertia",
+  "status": "passed-source-review",
+  "reviewed_at": "2026-10-16T00:33:51.200472+08:00",
+  "checks": [
+    "physical variables and units in Markdown and expansion prose use standard LaTeX",
+    "figure captions follow images",
+    "table captions precede data tables",
+    "expansion table captions before and figure captions after",
+    "no non-image links or cross-manuscript dependencies in reader text",
+    "display and inline math delimiters balanced"
+  ],
+  "changes": [
+    "Reader prose physical units converted to standard LaTeX; applicable bare beta, k, e, n and d converted to math. No data or algorithm changes."
+  ],
+  "source_hashes": {
+    "report\\report.template.md": "80e7ed33552401610c29a5bbde486541e407cdd23bce1176845b425e48f1a57c",
+    "authoring.json": "4930a5cabd2ea99eb432204e6bb4a503a50b616d458818660e0c8f9e17566e92"
+  },
+  "issues": [],
+  "scope": "Source text review only; rebuilt Jupyter/Wolfram rendering is checked separately.",
+  "reviewed_files": [
+    "report/report.template.md",
+    "authoring.json"
+  ]
+}

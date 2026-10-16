@@ -1,0 +1,316 @@
+{
+  "metrics": {
+    "standing_wavelength": {
+      "value": 9.742,
+      "unit": "mm",
+      "label": "驻波法平均波长"
+    },
+    "standing_sample_sd": {
+      "value": 0.196514065088934,
+      "unit": "mm",
+      "label": "驻波法波长样本标准差"
+    },
+    "standing_wavelength_uncertainty_a": {
+      "value": 0.06214320379396108,
+      "unit": "mm",
+      "label": "驻波法波长均值A类不确定度"
+    },
+    "standing_wavelength_uncertainty": {
+      "value": 0.06221021709583653,
+      "unit": "mm",
+      "label": "驻波法波长条件标准不确定度"
+    },
+    "standing_speed": {
+      "value": 350.85813,
+      "unit": "m/s",
+      "label": "驻波法声速",
+      "uncertainty": 2.2405027336861996
+    },
+    "standing_speed_uncertainty": {
+      "value": 2.2405027336861996,
+      "unit": "m/s",
+      "label": "驻波法声速条件标准不确定度"
+    },
+    "standing_relative_deviation": {
+      "value": 1.050698424584556,
+      "unit": "%",
+      "label": "驻波法声速相对参考差异"
+    },
+    "standing_gamma": {
+      "value": 1.431681260359439,
+      "unit": "1",
+      "label": "驻波法空气比热容比",
+      "uncertainty": 0.018284802336503512
+    },
+    "standing_gamma_uncertainty": {
+      "value": 0.018284802336503512,
+      "unit": "1",
+      "label": "驻波法比热容比条件标准不确定度"
+    },
+    "standing_gamma_deviation": {
+      "value": 2.1170656461796855,
+      "unit": "%",
+      "label": "驻波法比热容比相对理论差异"
+    },
+    "phase_wavelength": {
+      "value": 9.912,
+      "unit": "mm",
+      "label": "相位比较法平均波长"
+    },
+    "phase_sample_sd": {
+      "value": 0.07554248252914825,
+      "unit": "mm",
+      "label": "相位比较法波长样本标准差"
+    },
+    "phase_wavelength_uncertainty_a": {
+      "value": 0.02388863048955856,
+      "unit": "mm",
+      "label": "相位比较法波长均值A类不确定度"
+    },
+    "phase_wavelength_uncertainty": {
+      "value": 0.024062418831031936,
+      "unit": "mm",
+      "label": "相位比较法波长条件标准不确定度"
+    },
+    "phase_speed": {
+      "value": 356.98068,
+      "unit": "m/s",
+      "label": "相位比较法声速",
+      "uncertainty": 0.8666127379556572
+    },
+    "phase_speed_uncertainty": {
+      "value": 0.8666127379556572,
+      "unit": "m/s",
+      "label": "相位比较法声速条件标准不确定度"
+    },
+    "phase_relative_deviation": {
+      "value": 2.8140548947323025,
+      "unit": "%",
+      "label": "相位比较法声速相对参考差异"
+    },
+    "phase_gamma": {
+      "value": 1.482083514870389,
+      "unit": "1",
+      "label": "相位比较法空气比热容比",
+      "uncertainty": 0.0071958653487957484
+    },
+    "phase_gamma_uncertainty": {
+      "value": 0.0071958653487957484,
+      "unit": "1",
+      "label": "相位比较法比热容比条件标准不确定度"
+    },
+    "phase_gamma_deviation": {
+      "value": 5.7120909322674125,
+      "unit": "%",
+      "label": "相位比较法比热容比相对理论差异"
+    },
+    "arithmetic_mean_speed": {
+      "value": 353.919405,
+      "unit": "m/s",
+      "label": "两法声速算术平均（描述量）"
+    }
+  },
+  "tables": {
+    "standing": {
+      "headers": [
+        "测量次数",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "平均值 / mm"
+      ],
+      "rows": [
+        [
+          "$\\lambda_1 / \\mathrm{mm}$",
+          10.0,
+          9.34,
+          9.66,
+          9.8,
+          9.7,
+          9.6,
+          10.02,
+          9.84,
+          9.74,
+          9.72,
+          9.742
+        ]
+      ]
+    },
+    "phase": {
+      "headers": [
+        "测量次数",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "平均值 / mm"
+      ],
+      "rows": [
+        [
+          "$\\lambda_2 / \\mathrm{mm}$",
+          9.94,
+          9.9,
+          9.74,
+          9.96,
+          9.94,
+          9.84,
+          10.0,
+          9.98,
+          9.9,
+          9.92,
+          9.912
+        ]
+      ]
+    },
+    "results": {
+      "headers": [
+        "方法",
+        "平均波长 / mm",
+        "声速 / (m s⁻¹)",
+        "参考声速 / (m s⁻¹)",
+        "声速差异 / %",
+        "比热容比",
+        "比热容比差异 / %"
+      ],
+      "rows": [
+        [
+          "驻波法",
+          9.742,
+          350.85813,
+          347.21,
+          1.050698424584556,
+          1.431681260359439,
+          2.1170656461796855
+        ],
+        [
+          "相位比较法",
+          9.912,
+          356.98068,
+          347.21,
+          2.8140548947323025,
+          1.482083514870389,
+          5.7120909322674125
+        ]
+      ]
+    },
+    "uncertainty": {
+      "headers": [
+        "方法",
+        "波长样本标准差 / mm",
+        "波长均值A类 / mm",
+        "波长条件合成 / mm",
+        "声速标准不确定度 / (m s⁻¹)",
+        "比热容比标准不确定度"
+      ],
+      "rows": [
+        [
+          "驻波法",
+          0.196514065088934,
+          0.06214320379396108,
+          0.06221021709583653,
+          2.2405027336861996,
+          0.018284802336503512
+        ],
+        [
+          "相位比较法",
+          0.07554248252914825,
+          0.02388863048955856,
+          0.024062418831031936,
+          0.8666127379556572,
+          0.0071958653487957484
+        ]
+      ]
+    }
+  },
+  "series": {
+    "standing_sequence": {
+      "x": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "y": [
+        10.0,
+        9.34,
+        9.66,
+        9.8,
+        9.7,
+        9.6,
+        10.02,
+        9.84,
+        9.74,
+        9.72
+      ],
+      "x_label": "测量序号",
+      "y_label": "驻波法波长 / mm"
+    },
+    "phase_sequence": {
+      "x": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "y": [
+        9.94,
+        9.9,
+        9.74,
+        9.96,
+        9.94,
+        9.84,
+        10.0,
+        9.98,
+        9.9,
+        9.92
+      ],
+      "x_label": "测量序号",
+      "y_label": "相位比较法波长 / mm"
+    }
+  },
+  "notes": [
+    "原始位移位置未给出，波长是原记录已转换的观察量。",
+    "波长B类限沿用源.005mm；频率B类限.5Hz，均匀分布。",
+    "gamma标准不确定度只传播声速，未计温度、摩尔质量和R。",
+    "两法共享频率与部分系统因素，算术平均不作独立加权合并估计。"
+  ],
+  "code_hashes": {
+    "Kernel/analysis.wl": "122005287afb4a2115b05bf9615aec94b0803a98304c5b90337e6562f57a27d7"
+  },
+  "input_hashes": {
+    "data/author-verification.json": "e477df6d33780f512307e876d2b113e623272c39edf0460d4a07b7d4a3005ff5",
+    "data/provenance.json": "4029939511bef35530c041d73799cea267d0b2f038987c8cff154fc4818fe8e7",
+    "data/wavelengths.csv": "0b371cfa5323a42b39727125df48dfda685be10b74928493e89a07de102bb7e9",
+    "experiment.json": "f01d93ad250e07c8193f5ef088c58043b12648faac88a28ea9c21f2a79126f81"
+  },
+  "environment": {
+    "wolfram": "15.0.1 for Microsoft Windows (64-bit) (July 2, 2026)"
+  },
+  "engine": "wolfram",
+  "experiment_id": "course-02/sound-speed"
+}

@@ -1,0 +1,690 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "metric": "tension_exponent",
+      "python": 0.3078547635664914,
+      "wolfram": 0.3078547635664911,
+      "unit": "1",
+      "passed": true
+    },
+    {
+      "metric": "tension_intercept",
+      "python": 2.089677244350785,
+      "wolfram": 2.0896772443507845,
+      "unit": "1",
+      "passed": true
+    },
+    {
+      "metric": "tension_correlation",
+      "python": 0.833833969432504,
+      "wolfram": 0.8338339694325028,
+      "unit": "1",
+      "passed": true
+    },
+    {
+      "metric": "tension_slope_uncertainty",
+      "python": 0.0911449101906881,
+      "wolfram": 0.09114491019068845,
+      "unit": "1",
+      "passed": true
+    },
+    {
+      "metric": "tension_exponent_deviation",
+      "python": 38.429047286701724,
+      "wolfram": 38.42904728670178,
+      "unit": "%",
+      "passed": true
+    },
+    {
+      "metric": "frequency_exponent",
+      "python": -0.9830405903265617,
+      "wolfram": -0.9830405903265601,
+      "unit": "1",
+      "passed": true
+    },
+    {
+      "metric": "frequency_intercept",
+      "python": 3.85455186112266,
+      "wolfram": 3.8545518611226557,
+      "unit": "1",
+      "passed": true
+    },
+    {
+      "metric": "frequency_correlation",
+      "python": -0.987673727539698,
+      "wolfram": -0.9876737275396981,
+      "unit": "1",
+      "passed": true
+    },
+    {
+      "metric": "frequency_slope_uncertainty",
+      "python": 0.06967249724117791,
+      "wolfram": 0.0696724972411777,
+      "unit": "1",
+      "passed": true
+    },
+    {
+      "metric": "frequency_exponent_deviation",
+      "python": 1.6959409673438341,
+      "wolfram": 1.6959409673439896,
+      "unit": "%",
+      "passed": true
+    },
+    {
+      "metric": "last_tension_wavelength",
+      "python": 126.6,
+      "wolfram": 126.6,
+      "unit": "cm",
+      "passed": true
+    },
+    {
+      "metric": "baseline_wave_speed",
+      "python": 59.46,
+      "wolfram": 59.459999999999994,
+      "unit": "m/s",
+      "passed": true
+    },
+    {
+      "table": "tension",
+      "row": 0,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "tension",
+      "row": 0,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "tension",
+      "row": 0,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "tension",
+      "row": 0,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "tension",
+      "row": 0,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "tension",
+      "row": 0,
+      "column": 6,
+      "passed": true
+    },
+    {
+      "table": "tension",
+      "row": 0,
+      "column": 7,
+      "passed": true
+    },
+    {
+      "table": "tension",
+      "row": 1,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "tension",
+      "row": 1,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "tension",
+      "row": 1,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "tension",
+      "row": 1,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "tension",
+      "row": 1,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "tension",
+      "row": 1,
+      "column": 6,
+      "passed": true
+    },
+    {
+      "table": "tension",
+      "row": 1,
+      "column": 7,
+      "passed": true
+    },
+    {
+      "table": "tension",
+      "row": 2,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "tension",
+      "row": 2,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "tension",
+      "row": 2,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "tension",
+      "row": 2,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "tension",
+      "row": 2,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "tension",
+      "row": 2,
+      "column": 6,
+      "passed": true
+    },
+    {
+      "table": "tension",
+      "row": 2,
+      "column": 7,
+      "passed": true
+    },
+    {
+      "table": "tension",
+      "row": 3,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "tension",
+      "row": 3,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "tension",
+      "row": 3,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "tension",
+      "row": 3,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "tension",
+      "row": 3,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "tension",
+      "row": 3,
+      "column": 6,
+      "passed": true
+    },
+    {
+      "table": "tension",
+      "row": 3,
+      "column": 7,
+      "passed": true
+    },
+    {
+      "table": "tension",
+      "row": 4,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "tension",
+      "row": 4,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "tension",
+      "row": 4,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "tension",
+      "row": 4,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "tension",
+      "row": 4,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "tension",
+      "row": 4,
+      "column": 6,
+      "passed": true
+    },
+    {
+      "table": "tension",
+      "row": 4,
+      "column": 7,
+      "passed": true
+    },
+    {
+      "table": "tension",
+      "row": 5,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "tension",
+      "row": 5,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "tension",
+      "row": 5,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "tension",
+      "row": 5,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "tension",
+      "row": 5,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "tension",
+      "row": 5,
+      "column": 6,
+      "passed": true
+    },
+    {
+      "table": "tension",
+      "row": 5,
+      "column": 7,
+      "passed": true
+    },
+    {
+      "table": "tension",
+      "row": 6,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "tension",
+      "row": 6,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "tension",
+      "row": 6,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "tension",
+      "row": 6,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "tension",
+      "row": 6,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "tension",
+      "row": 6,
+      "column": 6,
+      "passed": true
+    },
+    {
+      "table": "tension",
+      "row": 6,
+      "column": 7,
+      "passed": true
+    },
+    {
+      "table": "frequency",
+      "row": 0,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "frequency",
+      "row": 0,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "frequency",
+      "row": 0,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "frequency",
+      "row": 0,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "frequency",
+      "row": 0,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "frequency",
+      "row": 0,
+      "column": 6,
+      "passed": true
+    },
+    {
+      "table": "frequency",
+      "row": 0,
+      "column": 7,
+      "passed": true
+    },
+    {
+      "table": "frequency",
+      "row": 1,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "frequency",
+      "row": 1,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "frequency",
+      "row": 1,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "frequency",
+      "row": 1,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "frequency",
+      "row": 1,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "frequency",
+      "row": 1,
+      "column": 6,
+      "passed": true
+    },
+    {
+      "table": "frequency",
+      "row": 1,
+      "column": 7,
+      "passed": true
+    },
+    {
+      "table": "frequency",
+      "row": 2,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "frequency",
+      "row": 2,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "frequency",
+      "row": 2,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "frequency",
+      "row": 2,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "frequency",
+      "row": 2,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "frequency",
+      "row": 2,
+      "column": 6,
+      "passed": true
+    },
+    {
+      "table": "frequency",
+      "row": 2,
+      "column": 7,
+      "passed": true
+    },
+    {
+      "table": "frequency",
+      "row": 3,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "frequency",
+      "row": 3,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "frequency",
+      "row": 3,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "frequency",
+      "row": 3,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "frequency",
+      "row": 3,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "frequency",
+      "row": 3,
+      "column": 6,
+      "passed": true
+    },
+    {
+      "table": "frequency",
+      "row": 3,
+      "column": 7,
+      "passed": true
+    },
+    {
+      "table": "frequency",
+      "row": 4,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "frequency",
+      "row": 4,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "frequency",
+      "row": 4,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "frequency",
+      "row": 4,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "frequency",
+      "row": 4,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "frequency",
+      "row": 4,
+      "column": 6,
+      "passed": true
+    },
+    {
+      "table": "frequency",
+      "row": 4,
+      "column": 7,
+      "passed": true
+    },
+    {
+      "table": "frequency",
+      "row": 5,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "frequency",
+      "row": 5,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "frequency",
+      "row": 5,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "frequency",
+      "row": 5,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "frequency",
+      "row": 5,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "frequency",
+      "row": 5,
+      "column": 6,
+      "passed": true
+    },
+    {
+      "table": "frequency",
+      "row": 5,
+      "column": 7,
+      "passed": true
+    },
+    {
+      "table": "fit_results",
+      "row": 0,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "fit_results",
+      "row": 0,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "fit_results",
+      "row": 0,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "fit_results",
+      "row": 0,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "fit_results",
+      "row": 1,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "fit_results",
+      "row": 1,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "fit_results",
+      "row": 1,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "fit_results",
+      "row": 1,
+      "column": 4,
+      "passed": true
+    }
+  ],
+  "input_hashes": {
+    "data/author-verification.json": "0b790eb86e72f603cc18a2953a7ec550a29c1397357f3386ec2ad242da290b4b",
+    "data/frequency.csv": "d3140abc909bfc28b8f5273d610347cc37418017d18e17b111fcb98fedcd2a89",
+    "data/provenance.json": "83fd611a3722d5b5b6b2f9b7552e35160dd8cf1fd741c4c2958bacbcd0b51491",
+    "data/tension.csv": "028fc3ae672f7cd25e1426bfeaa66182f413c3f88ac2e324e17c8894171671ba",
+    "experiment.json": "c978cea80954cdeb8c5cc46c5b84a6ec9148c2db81c3469ffb94cdaa323e5a8c"
+  }
+}

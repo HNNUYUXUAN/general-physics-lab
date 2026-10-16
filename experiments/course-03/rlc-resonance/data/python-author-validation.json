@@ -1,0 +1,234 @@
+{
+  "status": "python-validated-wolfram-pending",
+  "checks": [
+    "finite JSON",
+    "31 frequency points",
+    "theoretical resonance",
+    "C02 narrower R1",
+    "C01 narrower R1",
+    "analytic half-power Q2",
+    "analytic half-power Q8",
+    "analytic half-power Q15",
+    "default parameter trace",
+    "all parameter states",
+    "resonance amplitude",
+    "resonance phase",
+    "changed Q response",
+    "C changes frequency"
+  ],
+  "metric_count": 42,
+  "metrics": {
+    "C02_f_theory": {
+      "value": 1125.3953951963827,
+      "unit": "Hz",
+      "label": "C02 理论谐振频率"
+    },
+    "C02_R1_f_peak": {
+      "value": 1100.0,
+      "unit": "Hz",
+      "label": "C02_R1 观测峰值频率"
+    },
+    "C02_R1_U_peak": {
+      "value": 0.429,
+      "unit": "V",
+      "label": "C02_R1 观测峰值电压"
+    },
+    "C02_R1_f_low": {
+      "value": 1065.9056901672084,
+      "unit": "Hz",
+      "label": "C02_R1 低频半功率交点"
+    },
+    "C02_R1_f_high": {
+      "value": 1138.1627977177427,
+      "unit": "Hz",
+      "label": "C02_R1 高频半功率交点"
+    },
+    "C02_R1_bandwidth": {
+      "value": 72.25710755053433,
+      "unit": "Hz",
+      "label": "C02_R1 半功率带宽"
+    },
+    "C02_R1_Q_bandwidth": {
+      "value": 15.223415900376235,
+      "unit": "1",
+      "label": "C02_R1_Q 半功率带宽"
+    },
+    "C02_R2_f_peak": {
+      "value": 1100.0,
+      "unit": "Hz",
+      "label": "C02_R2 观测峰值频率"
+    },
+    "C02_R2_U_peak": {
+      "value": 0.612,
+      "unit": "V",
+      "label": "C02_R2 观测峰值电压"
+    },
+    "C02_R2_f_low": {
+      "value": 1053.7498700172334,
+      "unit": "Hz",
+      "label": "C02_R2 低频半功率交点"
+    },
+    "C02_R2_f_high": {
+      "value": 1154.1426307889049,
+      "unit": "Hz",
+      "label": "C02_R2 高频半功率交点"
+    },
+    "C02_R2_bandwidth": {
+      "value": 100.39276077167142,
+      "unit": "Hz",
+      "label": "C02_R2 半功率带宽"
+    },
+    "C02_R2_Q_bandwidth": {
+      "value": 10.956965338385189,
+      "unit": "1",
+      "label": "C02_R2_Q 半功率带宽"
+    },
+    "C02_relative_error_percent": {
+      "value": -2.2565753605159484,
+      "unit": "%",
+      "label": "C02 峰值频率相对偏差"
+    },
+    "C01_f_theory": {
+      "value": 1591.5494309189535,
+      "unit": "Hz",
+      "label": "C01 理论谐振频率"
+    },
+    "C01_R1_f_peak": {
+      "value": 1580.0,
+      "unit": "Hz",
+      "label": "C01_R1 观测峰值频率"
+    },
+    "C01_R1_U_peak": {
+      "value": 0.337,
+      "unit": "V",
+      "label": "C01_R1 观测峰值电压"
+    },
+    "C01_R1_f_low": {
+      "value": 1524.5477445280148,
+      "unit": "Hz",
+      "label": "C01_R1 低频半功率交点"
+    },
+    "C01_R1_f_high": {
+      "value": 1617.396978630384,
+      "unit": "Hz",
+      "label": "C01_R1 高频半功率交点"
+    },
+    "C01_R1_bandwidth": {
+      "value": 92.84923410236911,
+      "unit": "Hz",
+      "label": "C01_R1 半功率带宽"
+    },
+    "C01_R1_Q_bandwidth": {
+      "value": 17.016833959642597,
+      "unit": "1",
+      "label": "C01_R1_Q 半功率带宽"
+    },
+    "C01_R2_f_peak": {
+      "value": 1580.0,
+      "unit": "Hz",
+      "label": "C01_R2 观测峰值频率"
+    },
+    "C01_R2_U_peak": {
+      "value": 0.53,
+      "unit": "V",
+      "label": "C01_R2 观测峰值电压"
+    },
+    "C01_R2_f_low": {
+      "value": 1511.312652225164,
+      "unit": "Hz",
+      "label": "C01_R2 低频半功率交点"
+    },
+    "C01_R2_f_high": {
+      "value": 1633.4270706711366,
+      "unit": "Hz",
+      "label": "C01_R2 高频半功率交点"
+    },
+    "C01_R2_bandwidth": {
+      "value": 122.11441844597266,
+      "unit": "Hz",
+      "label": "C01_R2 半功率带宽"
+    },
+    "C01_R2_Q_bandwidth": {
+      "value": 12.93868504724561,
+      "unit": "1",
+      "label": "C01_R2_Q 半功率带宽"
+    },
+    "C01_relative_error_percent": {
+      "value": -0.7256721465625411,
+      "unit": "%",
+      "label": "C01 峰值频率相对偏差"
+    },
+    "C02_R1_Q_voltage": {
+      "value": 15.585,
+      "unit": "1",
+      "label": "C02_R1 条件电压比品质因数"
+    },
+    "C02_R1_voltage_asymmetry_percent": {
+      "value": 0.32082130253448143,
+      "unit": "%",
+      "label": "C02_R1 电感电容电压相对差"
+    },
+    "C02_R2_Q_voltage": {
+      "value": 11.05,
+      "unit": "1",
+      "label": "C02_R2 条件电压比品质因数"
+    },
+    "C02_R2_voltage_asymmetry_percent": {
+      "value": 0.18099547511313438,
+      "unit": "%",
+      "label": "C02_R2 电感电容电压相对差"
+    },
+    "C01_R1_Q_voltage": {
+      "value": 17.895,
+      "unit": "1",
+      "label": "C01_R1 条件电压比品质因数"
+    },
+    "C01_R1_voltage_asymmetry_percent": {
+      "value": 2.9617211511595483,
+      "unit": "%",
+      "label": "C01_R1 电感电容电压相对差"
+    },
+    "C01_R2_Q_voltage": {
+      "value": 13.825,
+      "unit": "1",
+      "label": "C01_R2 条件电压比品质因数"
+    },
+    "C01_R2_voltage_asymmetry_percent": {
+      "value": 2.676311030741405,
+      "unit": "%",
+      "label": "C01_R2 电感电容电压相对差"
+    },
+    "model_Q2_response_09": {
+      "value": 0.9212495614113857,
+      "unit": "1",
+      "label": "model_Q2 频率比0.9时模型幅值"
+    },
+    "model_Q2_peak": {
+      "value": 1.0,
+      "unit": "1",
+      "label": "model_Q2 模型归一化峰值"
+    },
+    "model_Q8_response_09": {
+      "value": 0.5094920066677705,
+      "unit": "1",
+      "label": "model_Q8 频率比0.9时模型幅值"
+    },
+    "model_Q8_peak": {
+      "value": 1.0,
+      "unit": "1",
+      "label": "model_Q8 模型归一化峰值"
+    },
+    "model_Q15_response_09": {
+      "value": 0.3011313679370973,
+      "unit": "1",
+      "label": "model_Q15 频率比0.9时模型幅值"
+    },
+    "model_Q15_peak": {
+      "value": 1.0,
+      "unit": "1",
+      "label": "model_Q15 模型归一化峰值"
+    }
+  },
+  "response_rows": 31,
+  "model_interaction_traces": 20
+}

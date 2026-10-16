@@ -1,0 +1,158 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "metric": "angle_mean_deg",
+      "python": 60.00500000000001,
+      "wolfram": 60.005,
+      "unit": "deg",
+      "passed": true
+    },
+    {
+      "metric": "angle_type_a_arcmin",
+      "python": 1.3472193585306587,
+      "wolfram": 1.347219358530748,
+      "unit": "arcmin",
+      "passed": true
+    },
+    {
+      "metric": "angle_type_b_arcmin",
+      "python": 0.5773502691896257,
+      "wolfram": 0.5773502691896258,
+      "unit": "arcmin",
+      "passed": true
+    },
+    {
+      "metric": "angle_combined_arcmin",
+      "python": 1.465719391061295,
+      "wolfram": 1.465719391061377,
+      "unit": "arcmin",
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 0,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 0,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 0,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 0,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 1,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 1,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 1,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 1,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 2,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 2,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 2,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 2,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 3,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 3,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 3,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 3,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 4,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 4,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 4,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 4,
+      "column": 3,
+      "passed": true
+    }
+  ],
+  "input_hashes": {
+    "data/observations-01.csv": "1eac243f566064e18338ec3b4551347d934563544eabaad00e78c33c6e27db63",
+    "data/provenance.json": "3948fc565378871ee51d63a7ae7870eb095c6ed9b61fcb22b994967fe9d6b118",
+    "experiment.json": "4ae5b97a731bc46ac7e6ea45327560f23d41e9c319be69126c8db1ac64513127"
+  }
+}

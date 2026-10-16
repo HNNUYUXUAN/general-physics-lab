@@ -1,0 +1,31 @@
+{
+  "experiment_id": "course-03/multimeter",
+  "title": "万用电表的使用",
+  "data_version": 1,
+  "one_division_bounds": {
+    "voltage": [
+      5,
+      0.2,
+      0.05,
+      0.05,
+      0.02
+    ],
+    "resistance": [
+      0.2,
+      0.2,
+      2,
+      20,
+      200
+    ]
+  },
+  "conditional_analog_FS_fraction": 0.03,
+  "assumptions": [
+    "标称值不是可溯源校准标准",
+    "±一分度和3%FS均为报告使用的估计条件，非已核实仪表规格",
+    "没有重复读数，未合成A类不确定度"
+  ],
+  "units": {
+    "voltage": "V",
+    "resistance": "Ω"
+  }
+}

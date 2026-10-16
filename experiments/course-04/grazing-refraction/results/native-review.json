@@ -1,0 +1,155 @@
+{
+  "experiment": "course-04/grazing-refraction",
+  "status": "passed",
+  "reviewed_at": "2026-10-16T01:09:14.865387+08:00",
+  "build_run": "C:\\Users\\yuxua\\.codex\\visualizations\\2026\\10\\15\\01a13f56-4554-7500-ab99-dad08368b735\\rollout\\project\\.build\\course-04\\grazing-refraction\\20261016_010755_058090",
+  "notebook": "C:\\Users\\yuxua\\.codex\\visualizations\\2026\\10\\15\\01a13f56-4554-7500-ab99-dad08368b735\\rollout\\project\\notebook\\paclets\\GrazingRefractionLab\\Notebooks\\GrazingRefractionLab.nb",
+  "notebook_sha256": "0fe7a2f710a027da66c52564ac7d0524c50cf59c0ed88c1206f53794a765a494",
+  "method": "Actual view_image inspection of every fresh native QA panel without rescaling; long sections split with overlapping crops. Review covers mathematical typesetting, units, Chinese glyphs, centering, clipping and captions. Native controls visually inspected at saved default state; changing-state calculation validation is recorded by root serialized pipeline separately.",
+  "section_coverage": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "inspected_images": [
+    {
+      "path": "C:\\Users\\yuxua\\.codex\\visualizations\\2026\\10\\15\\01a13f56-4554-7500-ab99-dad08368b735\\rollout\\qa\\GrazingRefractionLab\\review-01.png",
+      "sha256": "4c00491922edf1d7308bede4bc67bde80fabe828dc8cfcd0662b6a338a31ed79",
+      "source_spans": [
+        {
+          "source": "section-01.png",
+          "top": 0,
+          "bottom": 246
+        },
+        {
+          "source": "section-02.png",
+          "top": 0,
+          "bottom": 215
+        },
+        {
+          "source": "section-03.png",
+          "top": 0,
+          "bottom": 544
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\yuxua\\.codex\\visualizations\\2026\\10\\15\\01a13f56-4554-7500-ab99-dad08368b735\\rollout\\qa\\GrazingRefractionLab\\review-02.png",
+      "sha256": "4904b8d5e514aa27b0a24df4ca2ad81ffa2cce2866ebbd5f888614c0d8c957d0",
+      "source_spans": [
+        {
+          "source": "section-04.png",
+          "top": 0,
+          "bottom": 141
+        },
+        {
+          "source": "section-05.png",
+          "top": 0,
+          "bottom": 289
+        },
+        {
+          "source": "section-06.png",
+          "top": 0,
+          "bottom": 406
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\yuxua\\.codex\\visualizations\\2026\\10\\15\\01a13f56-4554-7500-ab99-dad08368b735\\rollout\\qa\\GrazingRefractionLab\\review-03.png",
+      "sha256": "139febb5ccb2d3f01d11c7e26d64d9e63ff96a034bbfd04072fc5a13bc144017",
+      "source_spans": [
+        {
+          "source": "section-07.png",
+          "top": 0,
+          "bottom": 1150
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\yuxua\\.codex\\visualizations\\2026\\10\\15\\01a13f56-4554-7500-ab99-dad08368b735\\rollout\\qa\\GrazingRefractionLab\\review-04.png",
+      "sha256": "6989b06bde95512ae69ca1a1596a8c01c4bc88b096b6c927dcab66fb63145742",
+      "source_spans": [
+        {
+          "source": "section-07.png",
+          "top": 1050,
+          "bottom": 1855
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\yuxua\\.codex\\visualizations\\2026\\10\\15\\01a13f56-4554-7500-ab99-dad08368b735\\rollout\\qa\\GrazingRefractionLab\\review-05.png",
+      "sha256": "db0c23acbc8ad8a726c4d0446d07b5cb979a2e3ab7cdeeefe03ba5009e14fddf",
+      "source_spans": [
+        {
+          "source": "section-08.png",
+          "top": 0,
+          "bottom": 263
+        }
+      ]
+    }
+  ],
+  "source_png_hashes": {
+    "section-01.png": {
+      "sha256": "ccd868f9454bf3ac5924f9b0f84a408dd2355753fcee11912057dad468dd2031",
+      "size": [
+        1200,
+        246
+      ]
+    },
+    "section-02.png": {
+      "sha256": "1cb2e46223737a096b5cdfd388fcb3db4397940cfeda3bc0df3784bb099e77db",
+      "size": [
+        1200,
+        215
+      ]
+    },
+    "section-03.png": {
+      "sha256": "08d1f527a14506a9c7e01717ce48bc6adab099a9159fddf275039dc466c5b98f",
+      "size": [
+        1200,
+        544
+      ]
+    },
+    "section-04.png": {
+      "sha256": "2e523eb19d10b08a058f5d8a3055fec8dabdb2e4e4876ed81c57cb6b405d7031",
+      "size": [
+        1200,
+        141
+      ]
+    },
+    "section-05.png": {
+      "sha256": "319115fc50fdbabe4412fad2461b5cc30d04f7838e833009009fbea8a2d72370",
+      "size": [
+        1200,
+        289
+      ]
+    },
+    "section-06.png": {
+      "sha256": "bd7f6ecd3f8c913129f79bf2fea38852124dacedf061cb6f6dc4283a8853e706",
+      "size": [
+        1200,
+        406
+      ]
+    },
+    "section-07.png": {
+      "sha256": "9b507a6d05c3acf30d9b852204c0bb0710670aa26a6fcf6adf515c50b1518d0e",
+      "size": [
+        1200,
+        1855
+      ]
+    },
+    "section-08.png": {
+      "sha256": "87b102c77a5ddbb0cc894b9ab3ff0413524d28066e4eed170ba7ca5c13fdb77d",
+      "size": [
+        1200,
+        263
+      ]
+    }
+  },
+  "issues": []
+}

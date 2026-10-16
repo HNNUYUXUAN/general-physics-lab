@@ -1,0 +1,422 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "metric": "standing_wavelength",
+      "python": 9.741999999999999,
+      "wolfram": 9.742,
+      "unit": "mm",
+      "passed": true
+    },
+    {
+      "metric": "standing_sample_sd",
+      "python": 0.196514065088934,
+      "wolfram": 0.196514065088934,
+      "unit": "mm",
+      "passed": true
+    },
+    {
+      "metric": "standing_wavelength_uncertainty_a",
+      "python": 0.06214320379396107,
+      "wolfram": 0.06214320379396108,
+      "unit": "mm",
+      "passed": true
+    },
+    {
+      "metric": "standing_wavelength_uncertainty",
+      "python": 0.062210217095836524,
+      "wolfram": 0.06221021709583653,
+      "unit": "mm",
+      "passed": true
+    },
+    {
+      "metric": "standing_speed",
+      "python": 350.85812999999996,
+      "wolfram": 350.85813,
+      "unit": "m/s",
+      "passed": true
+    },
+    {
+      "metric": "standing_speed_uncertainty",
+      "python": 2.2405027336861996,
+      "wolfram": 2.2405027336861996,
+      "unit": "m/s",
+      "passed": true
+    },
+    {
+      "metric": "standing_relative_deviation",
+      "python": 1.0506984245845399,
+      "wolfram": 1.050698424584556,
+      "unit": "%",
+      "passed": true
+    },
+    {
+      "metric": "standing_gamma",
+      "python": 1.4316812603594387,
+      "wolfram": 1.431681260359439,
+      "unit": "1",
+      "passed": true
+    },
+    {
+      "metric": "standing_gamma_uncertainty",
+      "python": 0.018284802336503512,
+      "wolfram": 0.018284802336503512,
+      "unit": "1",
+      "passed": true
+    },
+    {
+      "metric": "standing_gamma_deviation",
+      "python": 2.1170656461796535,
+      "wolfram": 2.1170656461796855,
+      "unit": "%",
+      "passed": true
+    },
+    {
+      "metric": "phase_wavelength",
+      "python": 9.912000000000003,
+      "wolfram": 9.912,
+      "unit": "mm",
+      "passed": true
+    },
+    {
+      "metric": "phase_sample_sd",
+      "python": 0.07554248252914825,
+      "wolfram": 0.07554248252914825,
+      "unit": "mm",
+      "passed": true
+    },
+    {
+      "metric": "phase_wavelength_uncertainty_a",
+      "python": 0.023888630489558558,
+      "wolfram": 0.02388863048955856,
+      "unit": "mm",
+      "passed": true
+    },
+    {
+      "metric": "phase_wavelength_uncertainty",
+      "python": 0.02406241883103193,
+      "wolfram": 0.024062418831031936,
+      "unit": "mm",
+      "passed": true
+    },
+    {
+      "metric": "phase_speed",
+      "python": 356.9806800000001,
+      "wolfram": 356.98068,
+      "unit": "m/s",
+      "passed": true
+    },
+    {
+      "metric": "phase_speed_uncertainty",
+      "python": 0.866612737955657,
+      "wolfram": 0.8666127379556572,
+      "unit": "m/s",
+      "passed": true
+    },
+    {
+      "metric": "phase_relative_deviation",
+      "python": 2.8140548947323354,
+      "wolfram": 2.8140548947323025,
+      "unit": "%",
+      "passed": true
+    },
+    {
+      "metric": "phase_gamma",
+      "python": 1.4820835148703901,
+      "wolfram": 1.482083514870389,
+      "unit": "1",
+      "passed": true
+    },
+    {
+      "metric": "phase_gamma_uncertainty",
+      "python": 0.00719586534879575,
+      "wolfram": 0.0071958653487957484,
+      "unit": "1",
+      "passed": true
+    },
+    {
+      "metric": "phase_gamma_deviation",
+      "python": 5.712090932267491,
+      "wolfram": 5.7120909322674125,
+      "unit": "%",
+      "passed": true
+    },
+    {
+      "metric": "arithmetic_mean_speed",
+      "python": 353.91940500000004,
+      "wolfram": 353.919405,
+      "unit": "m/s",
+      "passed": true
+    },
+    {
+      "table": "standing",
+      "row": 0,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "standing",
+      "row": 0,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "standing",
+      "row": 0,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "standing",
+      "row": 0,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "standing",
+      "row": 0,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "standing",
+      "row": 0,
+      "column": 6,
+      "passed": true
+    },
+    {
+      "table": "standing",
+      "row": 0,
+      "column": 7,
+      "passed": true
+    },
+    {
+      "table": "standing",
+      "row": 0,
+      "column": 8,
+      "passed": true
+    },
+    {
+      "table": "standing",
+      "row": 0,
+      "column": 9,
+      "passed": true
+    },
+    {
+      "table": "standing",
+      "row": 0,
+      "column": 10,
+      "passed": true
+    },
+    {
+      "table": "standing",
+      "row": 0,
+      "column": 11,
+      "passed": true
+    },
+    {
+      "table": "phase",
+      "row": 0,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "phase",
+      "row": 0,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "phase",
+      "row": 0,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "phase",
+      "row": 0,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "phase",
+      "row": 0,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "phase",
+      "row": 0,
+      "column": 6,
+      "passed": true
+    },
+    {
+      "table": "phase",
+      "row": 0,
+      "column": 7,
+      "passed": true
+    },
+    {
+      "table": "phase",
+      "row": 0,
+      "column": 8,
+      "passed": true
+    },
+    {
+      "table": "phase",
+      "row": 0,
+      "column": 9,
+      "passed": true
+    },
+    {
+      "table": "phase",
+      "row": 0,
+      "column": 10,
+      "passed": true
+    },
+    {
+      "table": "phase",
+      "row": 0,
+      "column": 11,
+      "passed": true
+    },
+    {
+      "table": "results",
+      "row": 0,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "results",
+      "row": 0,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "results",
+      "row": 0,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "results",
+      "row": 0,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "results",
+      "row": 0,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "results",
+      "row": 0,
+      "column": 6,
+      "passed": true
+    },
+    {
+      "table": "results",
+      "row": 1,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "results",
+      "row": 1,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "results",
+      "row": 1,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "results",
+      "row": 1,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "results",
+      "row": 1,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "results",
+      "row": 1,
+      "column": 6,
+      "passed": true
+    },
+    {
+      "table": "uncertainty",
+      "row": 0,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "uncertainty",
+      "row": 0,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "uncertainty",
+      "row": 0,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "uncertainty",
+      "row": 0,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "uncertainty",
+      "row": 0,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "uncertainty",
+      "row": 1,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "uncertainty",
+      "row": 1,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "uncertainty",
+      "row": 1,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "uncertainty",
+      "row": 1,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "uncertainty",
+      "row": 1,
+      "column": 5,
+      "passed": true
+    }
+  ],
+  "input_hashes": {
+    "data/author-verification.json": "e477df6d33780f512307e876d2b113e623272c39edf0460d4a07b7d4a3005ff5",
+    "data/provenance.json": "4029939511bef35530c041d73799cea267d0b2f038987c8cff154fc4818fe8e7",
+    "data/wavelengths.csv": "0b371cfa5323a42b39727125df48dfda685be10b74928493e89a07de102bb7e9",
+    "experiment.json": "f01d93ad250e07c8193f5ef088c58043b12648faac88a28ea9c21f2a79126f81"
+  }
+}

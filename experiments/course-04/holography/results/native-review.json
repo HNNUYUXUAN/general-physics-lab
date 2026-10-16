@@ -1,0 +1,188 @@
+{
+  "experiment": "course-04/holography",
+  "status": "passed",
+  "reviewed_at": "2026-10-16T08:40:45.998565+08:00",
+  "build_run": "C:\\Users\\yuxua\\.codex\\visualizations\\2026\\10\\15\\01a13f56-4554-7500-ab99-dad08368b735\\rollout\\project\\.build\\course-04\\holography\\20261016_083836_895378",
+  "notebook": "C:\\Users\\yuxua\\.codex\\visualizations\\2026\\10\\15\\01a13f56-4554-7500-ab99-dad08368b735\\rollout\\project\\notebook\\paclets\\HolographyLab\\Notebooks\\HolographyLab.nb",
+  "notebook_sha256": "9f06fa0fca8d0f0523c01f54aadaaa6d8905dead4a36921cd6fa72b3494ab954",
+  "method": "Actual view_image inspection of every fresh native QA panel without rescaling; long sections split with overlapping crops. Review covers mathematical typesetting, units, Chinese glyphs, centering, clipping and captions. Native controls visually inspected at saved default state; changing-state calculation validation is recorded by root serialized pipeline separately.",
+  "section_coverage": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "inspected_images": [
+    {
+      "path": "C:\\Users\\yuxua\\.codex\\visualizations\\2026\\10\\15\\01a13f56-4554-7500-ab99-dad08368b735\\rollout\\qa\\HolographyLab\\review-01.png",
+      "sha256": "e2860f83851d30659c306dab515215b6641806f6dec91a225b7e9edd9489b861",
+      "source_spans": [
+        {
+          "source": "section-01.png",
+          "top": 0,
+          "bottom": 246
+        },
+        {
+          "source": "section-02.png",
+          "top": 0,
+          "bottom": 215
+        },
+        {
+          "source": "section-03.png",
+          "top": 0,
+          "bottom": 461
+        },
+        {
+          "source": "section-04.png",
+          "top": 0,
+          "bottom": 141
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\yuxua\\.codex\\visualizations\\2026\\10\\15\\01a13f56-4554-7500-ab99-dad08368b735\\rollout\\qa\\HolographyLab\\review-02.png",
+      "sha256": "700b0d1f94d0f80ee979afa38105abca3537abe9e8700ddd6ff58d52f2cee138",
+      "source_spans": [
+        {
+          "source": "section-05.png",
+          "top": 0,
+          "bottom": 360
+        },
+        {
+          "source": "section-06.png",
+          "top": 0,
+          "bottom": 541
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\yuxua\\.codex\\visualizations\\2026\\10\\15\\01a13f56-4554-7500-ab99-dad08368b735\\rollout\\qa\\HolographyLab\\review-03.png",
+      "sha256": "def8f0ab21c0dbee1fdbf334f8153557ee25ad1c18fa803ff98be7222fb25790",
+      "source_spans": [
+        {
+          "source": "section-07.png",
+          "top": 0,
+          "bottom": 1150
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\yuxua\\.codex\\visualizations\\2026\\10\\15\\01a13f56-4554-7500-ab99-dad08368b735\\rollout\\qa\\HolographyLab\\review-04.png",
+      "sha256": "def2f14cfa75fc683424f0374ce4a2a86c4768d667880a83137d1bf5fe38e02e",
+      "source_spans": [
+        {
+          "source": "section-07.png",
+          "top": 1050,
+          "bottom": 2200
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\yuxua\\.codex\\visualizations\\2026\\10\\15\\01a13f56-4554-7500-ab99-dad08368b735\\rollout\\qa\\HolographyLab\\review-05.png",
+      "sha256": "0244f94c25759b56bd81aeec86a74033b6a375e6d011c3e16b63ec21e87bdd32",
+      "source_spans": [
+        {
+          "source": "section-07.png",
+          "top": 2100,
+          "bottom": 2518
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\yuxua\\.codex\\visualizations\\2026\\10\\15\\01a13f56-4554-7500-ab99-dad08368b735\\rollout\\qa\\HolographyLab\\review-06.png",
+      "sha256": "4036cf46c0d6c267b2f5f2d76b7858177e2628c329a17ef46cf4070fa3a4c7b8",
+      "source_spans": [
+        {
+          "source": "section-08.png",
+          "top": 0,
+          "bottom": 1150
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\yuxua\\.codex\\visualizations\\2026\\10\\15\\01a13f56-4554-7500-ab99-dad08368b735\\rollout\\qa\\HolographyLab\\review-07.png",
+      "sha256": "f27152ecd374a3273c13dab313a1ccfe1c970e4d34d4b45aca5574c7c40f6f06",
+      "source_spans": [
+        {
+          "source": "section-08.png",
+          "top": 1050,
+          "bottom": 2112
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\yuxua\\.codex\\visualizations\\2026\\10\\15\\01a13f56-4554-7500-ab99-dad08368b735\\rollout\\qa\\HolographyLab\\review-08.png",
+      "sha256": "93f7402186ab1ea14f6c9c608c8560ecc8eea57f1abf0d3a242cc999748f417f",
+      "source_spans": [
+        {
+          "source": "section-08.png",
+          "top": 2100,
+          "bottom": 2112
+        }
+      ]
+    }
+  ],
+  "source_png_hashes": {
+    "section-01.png": {
+      "sha256": "baf6a70050cc7c3ec3b670918c6bcefc71360b9b30c025c10a3e59ca3631f885",
+      "size": [
+        1200,
+        246
+      ]
+    },
+    "section-02.png": {
+      "sha256": "e92e637956b617481636a4fa2daab950f82445789ca19e02e930d6d78b6d15da",
+      "size": [
+        1200,
+        215
+      ]
+    },
+    "section-03.png": {
+      "sha256": "6f6a2c5233b170ee8fec8ab248bd801196c45ad8b5f2fb9b90912ac3e7fecfd4",
+      "size": [
+        1200,
+        461
+      ]
+    },
+    "section-04.png": {
+      "sha256": "cac394e014b4305dadb7bfa654f6759206a2d9e7a7227d3af5af91b1b9d0cc1e",
+      "size": [
+        1200,
+        141
+      ]
+    },
+    "section-05.png": {
+      "sha256": "bda69f2999218a9a15e0ef5573459d46cbf920826435c0fa40e4838735083807",
+      "size": [
+        1200,
+        360
+      ]
+    },
+    "section-06.png": {
+      "sha256": "928fcc89c66eb5b64161320095479c2c2f85857094f91ee6a011347a34294990",
+      "size": [
+        1200,
+        541
+      ]
+    },
+    "section-07.png": {
+      "sha256": "d0460376d91a8243bfd14fb9b0342a38345850d1a77e7895d7f40d349d209649",
+      "size": [
+        1200,
+        2518
+      ]
+    },
+    "section-08.png": {
+      "sha256": "a82356760c11e549174e8871005f68b9467cb64e97ecffe2f45482a39c9cb5bf",
+      "size": [
+        1200,
+        2112
+      ]
+    }
+  },
+  "issues": []
+}

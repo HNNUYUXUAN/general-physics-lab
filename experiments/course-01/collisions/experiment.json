@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "id": "course-01/collisions",
+  "title": "碰撞规律的研究",
+  "data_version": "1.0.0",
+  "parameters": {
+    "mass1_g": 341.75,
+    "mass2_g": 154.49
+  },
+  "units": {
+    "source_velocity": "cm/s",
+    "calculated_velocity": "m/s",
+    "mass": "g"
+  },
+  "assumptions": [
+    "重滑块为入射块，轻滑块碰前静止",
+    "各记录速度取沿入射方向为正；未记录反向运动",
+    "完全非弹性组碰后粘合",
+    "弹性组两次滑块1速度均值沿用源解释，具体测量时刻未明确"
+  ]
+}

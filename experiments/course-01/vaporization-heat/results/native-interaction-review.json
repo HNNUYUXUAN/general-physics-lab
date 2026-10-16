@@ -1,0 +1,58 @@
+{
+  "experiment": "course-01/vaporization-heat",
+  "paclet": "VaporizationHeatLab",
+  "status": "passed",
+  "source_hashes": {
+    "analysis.wl": "3394063736de3894084bbeed24923e410a2b8625b50c0bf5e61cdc84a92517bf",
+    "authoring.json": "c22f555277c84b1d8d6431094417a18ede41e0dec7fe08c2a63591779e5f7913"
+  },
+  "input_hashes": {
+    "data/author-verification.json": "98697446b3cdc77bd6bf83a4dde5bf0cf00e8fdd45c4f747b5e817b10532aaa1",
+    "data/observations.csv": "37468cf162ffae188e79b52c00f0219f258f2c18dee016ab00f34adf400d5236",
+    "data/provenance.json": "a32026efe19a962abcc60fd596d7496929c48c031137ca1358065042ae5ae326",
+    "experiment.json": "c9076b69918f27af1efb1bba345bbddd2cc5d785dadefb06b671daaf0e4ad776"
+  },
+  "models": [
+    {
+      "key": "temperature-shift",
+      "capture_messages": [],
+      "status": "passed",
+      "held_body_sha256": "fee79c5c46391373146e4e7de73a511d70c2adc4f54f5925af232a965d29e347",
+      "default_evaluation": {
+        "status": "evaluated",
+        "output_head": "Graphics",
+        "response_sha256": "432599026288b7b1dac2382d7ac78ef60679a97ee81b8bde2aa1fb157af2e712",
+        "graphics_count": 1,
+        "messages": [],
+        "unresolved_heads": []
+      },
+      "default_repeat": {
+        "status": "evaluated",
+        "output_head": "Graphics",
+        "response_sha256": "432599026288b7b1dac2382d7ac78ef60679a97ee81b8bde2aa1fb157af2e712",
+        "graphics_count": 1,
+        "messages": [],
+        "unresolved_heads": []
+      },
+      "default_deterministic": true,
+      "controls": [
+        {
+          "name": "VaporizationHeatLab`Private`shift",
+          "default": 0,
+          "changed": 0.04,
+          "specification_sha256": "6d5cb97159458d15ac5eff524889e83f83579003d3d11bafed1f2d61e62fc3c8",
+          "evaluation": {
+            "status": "evaluated",
+            "output_head": "Graphics",
+            "response_sha256": "49f8e83f7f57199882bcb1ae882bcd64dd5be4558cf2861b7de2d5f0e796373e",
+            "graphics_count": 1,
+            "messages": [],
+            "unresolved_heads": []
+          },
+          "response_changed": true,
+          "status": "passed"
+        }
+      ]
+    }
+  ]
+}

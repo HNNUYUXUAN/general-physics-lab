@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "id": "course-01/mechanical-equivalent-heat",
+  "title": "热功当量的测量",
+  "data_version": "1.0.0",
+  "parameters": {
+    "time_conversion_s_per_min": 60
+  },
+  "source_reported": {
+    "voltage_setting_v": 20.0,
+    "current_limit_setting_a": 0.495,
+    "slope_k_s": 0.009605,
+    "intercept_k": 291.6,
+    "mechanical_equivalent_j_cal": 4.21,
+    "reference_equivalent_j_cal": 4.1868
+  },
+  "units": {
+    "time": "min",
+    "temperature": "K"
+  },
+  "assumptions": [
+    "T-t回归为等权模型，未引入环境温度和冷却参数",
+    "电学设定值与源仪器计算值仅记录身份，不冒充实际测量或独立复算"
+  ]
+}

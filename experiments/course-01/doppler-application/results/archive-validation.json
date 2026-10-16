@@ -1,0 +1,13 @@
+{
+  "id": "course-01/doppler-application",
+  "status": "passed",
+  "paclet_sha256": "af0a533daeacbdafec5336764e5e649b02dc623bb2ae7bf6f40d4871b42d4b7f",
+  "canonical_inputs_checked": [
+    "data/author-verification.json",
+    "data/periods.csv",
+    "data/provenance.json",
+    "data/static.csv",
+    "experiment.json"
+  ],
+  "kernel_and_notebook_match_source": true
+}

@@ -1,0 +1,13 @@
+{
+  "id": "course-03/ac-bridge",
+  "status": "passed",
+  "paclet_sha256": "74d86d39c42feffa3951f69b7947b823cd94f920b71742210818cf008775e9b1",
+  "canonical_inputs_checked": [
+    "data/balance.csv",
+    "data/label-repair-validation.json",
+    "data/provenance.json",
+    "data/python-author-validation.json",
+    "experiment.json"
+  ],
+  "kernel_and_notebook_match_source": true
+}

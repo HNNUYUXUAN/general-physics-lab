@@ -1,0 +1,1 @@
+PacletObject[<|"Name"->"AbbeImagingLab","Version"->"0.1.0","WolframVersion"->"14.0+","Description"->"\:963f\:8d1d\:6210\:50cf\:539f\:7406\:548c\:7a7a\:95f4\:6ee4\:6ce2","Creator"->"Physics Lab Contributors","Extensions"->{{"Kernel","Root"->"Kernel","Context"->{"AbbeImagingLab`"}},{"Resource","Root"->".","Resources"->{"Notebooks","data","assets"}}}|>]

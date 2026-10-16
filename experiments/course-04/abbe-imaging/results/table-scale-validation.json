@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "numeric_cells": 10,
+  "rtol": 1e-07,
+  "atol": 1e-14,
+  "input_hashes": {
+    "data/observations-01.csv": "40eb18601744225c5f0b881cc3c8ac2c0d944cdd75c843c1d572abd1c00c6fca",
+    "data/observations-02.csv": "f48b8a58a0a472a9a6b3df10bb2ba09a292dd540af381965503e29bb5854e829",
+    "data/provenance.json": "fa0c6408e48fcce4106f63e5354811057dffbe98f410b2847e8d78def543facd",
+    "experiment.json": "2b471c66e12083f84247a7854095b6cfad8156d44d1ef359f3f75f6ac03e0306"
+  },
+  "differences": []
+}

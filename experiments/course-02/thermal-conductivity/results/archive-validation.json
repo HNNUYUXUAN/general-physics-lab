@@ -1,0 +1,12 @@
+{
+  "id": "course-02/thermal-conductivity",
+  "status": "passed",
+  "paclet_sha256": "a7abf94e496c4db2181a4a95ce81f950f58b4ca02b4fa24832402194cb3d86e2",
+  "canonical_inputs_checked": [
+    "data/observations-01.csv",
+    "data/observations-02.csv",
+    "data/provenance.json",
+    "experiment.json"
+  ],
+  "kernel_and_notebook_match_source": true
+}

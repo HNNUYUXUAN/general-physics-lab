@@ -1,0 +1,116 @@
+{
+  "experiment": "course-03/resistor-iv",
+  "paclet": "ResistorIVLab",
+  "status": "passed",
+  "source_hashes": {
+    "analysis.wl": "b0fc383a74f6aff223ebe9dc95f284cf44f75a3eb15948a6aacc847668d14230",
+    "authoring.json": "605bc76e38419718812d4778f951da0533d4c4960344bd82335ab3bdbc855d3c"
+  },
+  "input_hashes": {
+    "data/diode.csv": "405809227ba629ba7563d6fc93f262e92fced8da7b1cc2f1f20c22f21d10e4bf",
+    "data/provenance.json": "e4caeff3c860e32fd55276cc13e51367984d45a53c76e025e26091eab0441224",
+    "data/python-author-validation.json": "077bc9858104aa2fea1123d538c26b980bf92af54ad0bbf5ef06adbc5bb781eb",
+    "data/resistors.csv": "54fce18fb45687395814dcc1628fdb39273d9e881fe5d896220ff308473e8ddf",
+    "experiment.json": "893a7dad9fc2dc42efd5d4d414ead8dc765430a0f20cb38e7d8aee98201af5f0"
+  },
+  "models": [
+    {
+      "key": "loading",
+      "capture_messages": [],
+      "status": "passed",
+      "held_body_sha256": "ab82f8c147bf7cfbfe5a73c3d74aeaee47d826bac78c09888fa5bac11e9d3686",
+      "default_evaluation": {
+        "status": "evaluated",
+        "output_head": "Legended",
+        "response_sha256": "8aa90e5eb49ad4b1e18e3afb6ba5083c809da17f5e40dc7167ef907342cba8e3",
+        "graphics_count": 1,
+        "messages": [],
+        "unresolved_heads": []
+      },
+      "default_repeat": {
+        "status": "evaluated",
+        "output_head": "Legended",
+        "response_sha256": "8aa90e5eb49ad4b1e18e3afb6ba5083c809da17f5e40dc7167ef907342cba8e3",
+        "graphics_count": 1,
+        "messages": [],
+        "unresolved_heads": []
+      },
+      "default_deterministic": true,
+      "controls": [
+        {
+          "name": "ResistorIVLab`Private`k",
+          "default": 10000,
+          "changed": 1000,
+          "specification_sha256": "c75ab96559d960747e1013cf2821a80475f91b17ec93fdcb6c640604261f1d58",
+          "evaluation": {
+            "status": "evaluated",
+            "output_head": "Legended",
+            "response_sha256": "a20dce520d9b3c377838d136aa4263c9c834326d6fd8bf5e76273b9e8cfbe13a",
+            "graphics_count": 1,
+            "messages": [],
+            "unresolved_heads": []
+          },
+          "response_changed": true,
+          "status": "passed"
+        }
+      ]
+    },
+    {
+      "key": "fit",
+      "capture_messages": [],
+      "status": "passed",
+      "held_body_sha256": "0a7e5970eb2b8a71fc98f7ff60dd07c5666975aed69ba21622fcc76170cb4ff3",
+      "default_evaluation": {
+        "status": "evaluated",
+        "output_head": "Column",
+        "response_sha256": "d20a16f3c3750e108f80e9a2126dc87892d4f89ed8225577f336da4b0195fc51",
+        "graphics_count": 3,
+        "messages": [],
+        "unresolved_heads": []
+      },
+      "default_repeat": {
+        "status": "evaluated",
+        "output_head": "Column",
+        "response_sha256": "d20a16f3c3750e108f80e9a2126dc87892d4f89ed8225577f336da4b0195fc51",
+        "graphics_count": 3,
+        "messages": [],
+        "unresolved_heads": []
+      },
+      "default_deterministic": true,
+      "controls": [
+        {
+          "name": "ResistorIVLab`Private`key",
+          "default": "internal_R1",
+          "changed": "external_R1",
+          "specification_sha256": "0fa70ce4b6e181087d283c515cbc0a1d21338e8b37480eabb294ed98aaa44bd5",
+          "evaluation": {
+            "status": "evaluated",
+            "output_head": "Column",
+            "response_sha256": "b648e9d93e6ad1fdbc669ab3f292d9a2499709ba565ff54b35701b1dda4300bf",
+            "graphics_count": 3,
+            "messages": [],
+            "unresolved_heads": []
+          },
+          "response_changed": true,
+          "status": "passed"
+        },
+        {
+          "name": "ResistorIVLab`Private`high",
+          "default": false,
+          "changed": true,
+          "specification_sha256": "3f303e77a62a44844a470de724adb6d5aa95f95b504bedcf54aa375f90e28837",
+          "evaluation": {
+            "status": "evaluated",
+            "output_head": "Column",
+            "response_sha256": "9a8c0927f8a633f99067988d4657a791cbe5aac2a98df66a1b416ff1b3bf345c",
+            "graphics_count": 3,
+            "messages": [],
+            "unresolved_heads": []
+          },
+          "response_changed": true,
+          "status": "passed"
+        }
+      ]
+    }
+  ]
+}

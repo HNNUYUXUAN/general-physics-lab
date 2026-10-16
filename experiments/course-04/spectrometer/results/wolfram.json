@@ -1,0 +1,187 @@
+{
+  "metrics": {
+    "angle_mean_deg": {
+      "value": 43.26166666666666,
+      "unit": "deg",
+      "label": "偏向角均值"
+    },
+    "angle_type_a_arcmin": {
+      "value": 0.3,
+      "unit": "arcmin",
+      "label": "角度均值A类分量"
+    },
+    "angle_type_b_arcmin": {
+      "value": 0.5773502691896258,
+      "unit": "arcmin",
+      "label": "指定误差限B类分量"
+    },
+    "angle_combined_arcmin": {
+      "value": 0.6506407098647712,
+      "unit": "arcmin",
+      "label": "两分量合成标准不确定度"
+    }
+  },
+  "tables": {
+    "table1": {
+      "headers": [
+        "序号",
+        "调节或检验项目",
+        "读数位置",
+        "读数一",
+        "读数二",
+        "检验结果"
+      ],
+      "rows": [
+        [
+          "1",
+          "望远镜自准直",
+          "左游标",
+          "$12^{\\circ}16^{\\prime}$",
+          "$192^{\\circ}17^{\\prime}$",
+          "$180^{\\circ}01^{\\prime}$"
+        ],
+        [
+          "2",
+          "平行光管狭缝成像",
+          "右游标",
+          "$103^{\\circ}42^{\\prime}$",
+          "$283^{\\circ}41^{\\prime}$",
+          "$179^{\\circ}59^{\\prime}$"
+        ],
+        [
+          "3",
+          "载物台水平检验",
+          "双游标平均",
+          "—",
+          "—",
+          "反射像高低差≤半格"
+        ]
+      ]
+    },
+    "table2": {
+      "headers": [
+        "次数",
+        "$\\theta_1$（左）",
+        "$\\theta_2$（右）",
+        "$\\theta_3$（左）",
+        "$\\theta_4$（右）"
+      ],
+      "rows": [
+        [
+          "1",
+          "$100^{\\circ}12^{\\prime}$",
+          "$280^{\\circ}11^{\\prime}$",
+          "$143^{\\circ}28^{\\prime}$",
+          "$323^{\\circ}27^{\\prime}$"
+        ],
+        [
+          "2",
+          "$96^{\\circ}34^{\\prime}$",
+          "$276^{\\circ}33^{\\prime}$",
+          "$139^{\\circ}48^{\\prime}$",
+          "$319^{\\circ}49^{\\prime}$"
+        ],
+        [
+          "3",
+          "$118^{\\circ}20^{\\prime}$",
+          "$298^{\\circ}21^{\\prime}$",
+          "$161^{\\circ}37^{\\prime}$",
+          "$341^{\\circ}36^{\\prime}$"
+        ],
+        [
+          "4",
+          "$85^{\\circ}05^{\\prime}$",
+          "$265^{\\circ}04^{\\prime}$",
+          "$128^{\\circ}22^{\\prime}$",
+          "$308^{\\circ}20^{\\prime}$"
+        ],
+        [
+          "5",
+          "$130^{\\circ}40^{\\prime}$",
+          "$310^{\\circ}39^{\\prime}$",
+          "$173^{\\circ}55^{\\prime}$",
+          "$353^{\\circ}54^{\\prime}$"
+        ]
+      ]
+    },
+    "table3": {
+      "headers": [
+        "次数",
+        "左游标角差 / °",
+        "右游标角差 / °",
+        "偏向角 / °"
+      ],
+      "rows": [
+        [
+          1,
+          43.26666667,
+          43.26666667,
+          43.26666667
+        ],
+        [
+          2,
+          43.23333333,
+          43.26666667,
+          43.25
+        ],
+        [
+          3,
+          43.28333333,
+          43.25,
+          43.26666667
+        ],
+        [
+          4,
+          43.28333333,
+          43.26666667,
+          43.275
+        ],
+        [
+          5,
+          43.25,
+          43.25,
+          43.25
+        ]
+      ]
+    }
+  },
+  "series": {
+    "angle-repeat": {
+      "x": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "y": [
+        43.266666666666666,
+        43.25,
+        43.266666666666666,
+        43.275,
+        43.25
+      ],
+      "x_label": "测量次数",
+      "y_label": "偏向角 / °",
+      "label": "双游标结果"
+    }
+  },
+  "notes": [
+    "圆周最短角差处理跨零读数。",
+    "误差限1角分按最终角度估计的均匀分布限值采用；未含全部校准系统分量。"
+  ],
+  "code_hashes": {
+    "Kernel/analysis.wl": "8ad50b7711be616e4b975eeb4f1b598925a3e3608c5b640097ff800fc093f6b2"
+  },
+  "input_hashes": {
+    "data/observations-01.csv": "bb65b9d1c453d7af74ac7aade519bae048751b60d30e89118023a2716126ba68",
+    "data/observations-02.csv": "0bd363d28b245eeb08707bbcc61d2e61c09a577255b6ad51d458a1fa58e5da90",
+    "data/provenance.json": "8f87afdf98e531806cfaf70489cbf9e20347a868594784956db70d276e99a825",
+    "experiment.json": "5a4eb7f3bdd57ed1900157ef288fc79ca7f7749655950fdfa20d753ab8bb458c"
+  },
+  "environment": {
+    "wolfram": "15.0.1 for Microsoft Windows (64-bit) (July 2, 2026)"
+  },
+  "engine": "wolfram",
+  "experiment_id": "course-04/spectrometer"
+}

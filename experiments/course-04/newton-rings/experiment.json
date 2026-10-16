@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "id": "course-04/newton-rings",
+  "title": "牛顿环实验",
+  "parameters": {
+    "wavelength_nm": 589.3,
+    "order_separation": 10
+  },
+  "units": {
+    "order": "1",
+    "left_mm": "mm",
+    "right_mm": "mm",
+    "fringe_intervals": "1",
+    "fringe_length_mm": "mm",
+    "wedge_length_mm": "mm"
+  },
+  "models": {
+    "rings": "空气膜、近轴、反射光一次半波损失；隔级差消除固定厚度截距。",
+    "fit": "D_m²=a m+b，等权普通最小二乘，不强制过原点。",
+    "wedge": "N 按条纹间隔数使用，空气劈尖、小角度。",
+    "intensity": "单色光、两束等振幅、理想空气膜，I/Imax=(1-cos(4πt/λ))/2；理论探索不作为观测数据。"
+  },
+  "interaction_parameters": {
+    "ring_selection": "默认全部六组；可暂排除任一级，正式结果保持全数据。",
+    "contact_gap_fraction": {
+      "default": 0,
+      "minimum": 0,
+      "maximum": 0.5,
+      "step": 0.05
+    },
+    "image_extent_mm": [
+      -4,
+      4
+    ]
+  },
+  "source_docx": "originals/course-04/07_实验七_牛顿环实验_实验报告.docx",
+  "data_version": "1.0.0"
+}

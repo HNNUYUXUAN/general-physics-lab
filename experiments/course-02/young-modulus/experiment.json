@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "id": "course-02/young-modulus",
+  "title": "拉伸法测量金属杨氏模量",
+  "data_version": "1.0.0",
+  "parameters": {
+    "wire_length_mm": 720,
+    "mirror_distance_mm": 690,
+    "lever_constant_mm": 35.26,
+    "zero_offset_mm": 0.062,
+    "gravity_m_s2": 9.8
+  },
+  "source_standard_uncertainties": {
+    "wire_length_mm": 0.462,
+    "mirror_distance_mm": 0.462,
+    "lever_constant_mm": 0.0115,
+    "mass_increment_kg": 0.0041,
+    "diameter_mm": 0.0056,
+    "difference_mm": 0.2995
+  },
+  "assumptions": [
+    "金属丝均匀圆柱且处于弹性限度内",
+    "光杠杆小角度近似，纯轴向拉伸",
+    "源给定标准不确定度作为条件预算输入，缺原始误差限及相关性证明"
+  ]
+}

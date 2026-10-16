@@ -1,0 +1,1 @@
+PacletObject[<|"Name"->"CollisionsLab","Version"->"0.1.0","WolframVersion"->"14.0+","Description"->"\:78b0\:649e\:89c4\:5f8b\:7684\:7814\:7a76","Creator"->"Physics Lab Contributors","Extensions"->{{"Kernel","Root"->"Kernel","Context"->{"CollisionsLab`"}},{"Resource","Root"->".","Resources"->{"Notebooks","data","assets"}}}|>]

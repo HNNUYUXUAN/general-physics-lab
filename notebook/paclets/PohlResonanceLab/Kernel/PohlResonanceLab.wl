@@ -1,0 +1,42 @@
+
+BeginPackage["PohlResonanceLab`"];
+Analyze::usage="Analyze[] independently calculates this experiment from packaged observations.";
+LabNotebookPath::usage="LabNotebookPath[] returns the bundled notebook path.";
+OpenNotebook::usage="OpenNotebook[] opens the bundled notebook.";
+ExecuteBlock::usage="ExecuteBlock[index] evaluates a reproducible analysis block.";
+ResultsTable::usage="ResultsTable[table] displays a computed table.";
+ResultsFigure::usage="ResultsFigure[key] plots this experiment's independently computed series.";
+Explore::usage="Explore[key] opens a model exploration provided by the experiment.";
+Begin["`Private`"];
+$packageRoot=DirectoryName[DirectoryName[$InputFileName]];
+$dataRoot=FileNameJoin[{$packageRoot,"data"}];
+$analysisLoad=Check[Get[FileNameJoin[{$packageRoot,"Kernel","analysis.wl"}]],$Failed];
+If[$analysisLoad===$Failed,Print["ANALYSIS_SOURCE_LOAD_FAILED"];Abort[]];
+$author=Import[FileNameJoin[{$dataRoot,"authoring.json"}],"RawJSON"];
+$math=Import[FileNameJoin[{$dataRoot,"math-map.json"}],"RawJSON"];
+$display=Import[FileNameJoin[{$dataRoot,"display.json"}],"RawJSON"];
+fontRuns[s_String]:=Map[StyleBox[StringJoin[#],FontFamily->If[First[ToCharacterCode[First[#]]]>=16^^2E80,"SimSun","Times New Roman"]]&,SplitBy[Characters[s],First[ToCharacterCode[#]]>=16^^2E80&]];
+mathBoxes[s_String]:=FormBox[StyleBox[ToExpression[Lookup[$math,s,"\"?\""],InputForm],FontFamily->"Times New Roman",AutoSpacing->False,AutoMultiplicationSymbol->False,ShowAutoStyles->False],TraditionalForm];
+textBoxes[s_String]:=Module[{pieces=StringSplit[s,RegularExpression["(\\$[^$]+\\$)"]->"$1"]},RowBox[Flatten[If[StringStartsQ[#,"$"],{mathBoxes[StringTrim[#,"$"]]},fontRuns[#]]&/@pieces,1]]];
+styled[s_String]:=RawBoxes[textBoxes[s]];
+styled[x_]:=If[NumberQ[x],NumberForm[N[x],10],x];
+tableView[t_Association]:=Column[{If[TrueQ[$tableCaptioned],Nothing,styled["\:8868\:3000"<>Lookup[t,"title","\:8ba1\:7b97\:7ed3\:679c"]]],Grid[Map[styled,Prepend[t["rows"],t["headers"]],{2}],Frame->None,Dividers->{None,{1->Black,2->Black,-1->Black}},Alignment->Center,Spacings->{1.1,.8},BaseStyle->{FontFamily->"Times New Roman",FontSize->13}]},Alignment->Center,Spacings->.6];
+unitView[s_String]:=If[KeyExistsQ[$display["units"],s],RawBoxes[FormBox[StyleBox[ToExpression[$display["units"][s],InputForm],FontFamily->"Times New Roman",AutoSpacing->False,ShowAutoStyles->False],TraditionalForm]],styled[s]];
+metricView[r_Association]:=tableView[<|"headers"->{"\:6307\:6807","\:6570\:503c","\:5355\:4f4d"},"rows"->KeyValueMap[{Lookup[$display["metric_labels"],#1,Lookup[#2,"label",#1]],#2["value"],unitView[#2["unit"]]}&,r["metrics"]]|>];
+plotView[r_Association,key_String]:=Module[{s=r["series"][key],pts,k,b,plot,res,fit,x},
+ s=Join[s,Lookup[$display["series"],key,<||>]];
+ pts=Transpose[{s["x"],s["y"]}];
+ plot=ListPlot[pts,PlotStyle->Black,PlotMarkers->If[TrueQ[Lookup[s,"model",False]],None,{Style["\[EmptyCircle]",Black,FontFamily->"Times New Roman"],11}],Joined->(TrueQ[Lookup[s,"connect",False]]||TrueQ[Lookup[s,"model",False]]),AspectRatio->If[TrueQ[Lookup[s,"equal_aspect",False]],1,1/GoldenRatio],Axes->False,Frame->{{True,False},{True,False}},FrameLabel->{styled[s["x_label"]],styled[s["y_label"]]},GridLines->{None,Automatic},GridLinesStyle->Directive[GrayLevel[.9],Thin],ImageSize->720,BaseStyle->{FontFamily->"Times New Roman",FontSize->15},PlotRange->All];
+ If[TrueQ[Lookup[s,"fit",False]]&&Length[pts]>2,
+ fit=LinearModelFit[pts,x,x];plot=Show[plot,Plot[fit[x],{x,Min[s["x"]],Max[s["x"]]},PlotStyle->Black]];
+ res=ListPlot[Transpose[{s["x"],s["y"]-(fit/@s["x"])}],PlotStyle->Black,PlotMarkers->{Style["\[EmptyCircle]",Black,FontFamily->"Times New Roman"],11},Axes->False,Frame->{{True,False},{True,False}},FrameLabel->{styled[s["x_label"]],styled[Lookup[s,"residual_label","\:6b8b\:5dee"]]},GridLines->{None,{0}},GridLinesStyle->GrayLevel[.8],ImageSize->720,BaseStyle->{FontFamily->"Times New Roman",FontSize->15},PlotRange->All];
+ Column[{plot,res},Alignment->Center],plot]];
+exploreView[key_]:=explore[key,r];
+Analyze[]:=Join[compute[$dataRoot],<|"code_hashes"-><|"Kernel/analysis.wl"->IntegerString[FileHash[FileNameJoin[{$packageRoot,"Kernel","analysis.wl"}],"SHA256"],16,64]|>,"input_hashes"->AssociationMap[IntegerString[FileHash[FileNameJoin[{$dataRoot,#}],"SHA256"],16,64]&,Keys[Import[FileNameJoin[{$dataRoot,"input-hashes.json"}],"RawJSON"]]]|>];
+LabNotebookPath[]:=FileNameJoin[{$packageRoot,"Notebooks","PohlResonanceLab.nb"}];
+OpenNotebook[]:=NotebookOpen[LabNotebookPath[]];
+ResultsTable[t_Association]:=tableView[t];
+ResultsFigure[key_String]:=plotView[Analyze[],key];
+Explore[key_String]:=explore[key,Analyze[]];
+ExecuteBlock[index_Integer]:=Block[{r=Analyze[],root=$dataRoot,$tableCaptioned=StringStartsQ[Lookup[$author["expansions"][[index]],"caption",""],"\:8868"]},Block[{$Context="PohlResonanceLab`Private`",$ContextPath={"PohlResonanceLab`Private`","PohlResonanceLab`","System`"}},ToExpression[$author["expansions"][[index]]["wolfram"],InputForm]]];
+End[];EndPackage[];

@@ -1,0 +1,41 @@
+{
+  "primary_source": {
+    "path": "originals/course-02/02-杨氏模量的测量/实验报告-拉伸法测量金属杨氏模量.docx",
+    "sha256": "471cc240c6ad379e0a74c3399531241330ec6b23d2e6e9d3c53bd5693fc90739"
+  },
+  "converted_source": {
+    "path": "processed/course-02/02-杨氏模量的测量/实验报告-拉伸法测量金属杨氏模量/正文.md",
+    "sha256": "abb2ea7a744d5fc135bee18e8ae80fc62dbcf889f24ee3c5514525f72b06ee2d"
+  },
+  "mappings": [
+    {
+      "csv": "diameters.csv",
+      "source_table": 2,
+      "source_rows": "直径视值行1–6列"
+    },
+    {
+      "csv": "loading.csv",
+      "source_table": "3与4",
+      "source_rows": "质量视值、加力、减力；各5列拼成连续10个加载等级"
+    }
+  ],
+  "transformations": [
+    "直径减去正零差.062mm，原始视值保留。",
+    "平均刻度由加减力读数计算，五级逐差由平均刻度重算。",
+    "几何mm转换m，质量视值kg对应重力mg。"
+  ],
+  "corrections": [
+    "未提前修约直径和逐差，复算逐差法及回归法杨氏模量。",
+    "回归标准误差由残差独立计算。"
+  ],
+  "issues": [
+    {
+      "status": "limitation",
+      "detail": "源标准不确定度表作为条件输入；缺具体量程误差限、零差不确定度及相关性。"
+    },
+    {
+      "status": "limitation",
+      "detail": "个人信息及实验日期源模板未填，不补造。"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "primary_source": "originals/course-04/11_实验十一_用旋光仪测定旋光性溶液的旋光率和浓度_实验报告_A3双面示范格式版.docx",
+  "primary_sha256": "b771971985df93d61c9c5c805f3c9c5ea976f077c14b16b61c1375dbd2ee4264",
+  "converted_source": "processed/courses-01-03-04/普通物理实验4/11_实验十一_用旋光仪测定旋光性溶液的旋光率和浓度_实验报告_A3双面示范格式版_docx/正文.md",
+  "verification": "直接从主DOCX XML逐单元格提取观测，规范CSV完整保留读数；源计算表不作为观测输入。",
+  "table_mappings": [
+    {
+      "file": "observations-01.csv",
+      "source_table": 1,
+      "mapping": "行列顺序及单元格文本原样保存"
+    }
+  ],
+  "transformations": [
+    "角度度分读数按未修约的小数度计算；跨零角差使用圆周最短差，逐组计算后再取均值。"
+  ],
+  "issues": [
+    {
+      "status": "documented",
+      "detail": "管长为源作者假定值，非独立测量。"
+    },
+    {
+      "status": "documented",
+      "detail": "温度、溶液身份及标准系列未完整记录；浓度有条件。"
+    }
+  ]
+}

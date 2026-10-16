@@ -1,0 +1,295 @@
+{
+  "metrics": {
+    "cross_section": {
+      "value": 1.2566370614359172e-05,
+      "unit": "m²",
+      "label": "导体横截面积"
+    },
+    "rho_mean": {
+      "value": 7.336402471087488e-08,
+      "unit": "Ω·m",
+      "label": "五长度电阻率均值"
+    },
+    "rho_sd_descriptive": {
+      "value": 2.3105018129045877e-10,
+      "unit": "Ω·m",
+      "label": "五长度电阻率描述性标准差"
+    },
+    "rho_from_slope": {
+      "value": 7.514689627386785e-08,
+      "unit": "Ω·m",
+      "label": "含截距R–L拟合电阻率"
+    },
+    "resistance_slope": {
+      "value": 0.00598,
+      "unit": "Ω/m",
+      "label": "R–L斜率"
+    },
+    "resistance_intercept": {
+      "value": -5.179999999999985e-05,
+      "unit": "Ω",
+      "label": "R–L截距"
+    },
+    "model_matched_contact_shift": {
+      "value": 0,
+      "unit": "Ω",
+      "label": "比率匹配时接触电阻修正项"
+    },
+    "R1": {
+      "value": 0.001802,
+      "unit": "Ω",
+      "label": "第1长度平衡电阻"
+    },
+    "rho1": {
+      "value": 7.304709628088782e-08,
+      "unit": "Ω·m",
+      "label": "第1长度电阻率"
+    },
+    "R2": {
+      "value": 0.0019820000000000003,
+      "unit": "Ω",
+      "label": "第2长度平衡电阻"
+    },
+    "rho2": {
+      "value": 7.325454869899964e-08,
+      "unit": "Ω·m",
+      "label": "第2长度电阻率"
+    },
+    "R3": {
+      "value": 0.00216,
+      "unit": "Ω",
+      "label": "第3长度平衡电阻"
+    },
+    "rho3": {
+      "value": 7.336043385679949e-08,
+      "unit": "Ω·m",
+      "label": "第3长度电阻率"
+    },
+    "R4": {
+      "value": 0.00234,
+      "unit": "Ω",
+      "label": "第4长度平衡电阻"
+    },
+    "rho4": {
+      "value": 7.351326809400116e-08,
+      "unit": "Ω·m",
+      "label": "第4长度电阻率"
+    },
+    "R5": {
+      "value": 0.00252,
+      "unit": "Ω",
+      "label": "第5长度平衡电阻"
+    },
+    "rho5": {
+      "value": 7.364477662368631e-08,
+      "unit": "Ω·m",
+      "label": "第5长度电阻率"
+    }
+  },
+  "tables": {
+    "observations": {
+      "headers": [
+        "长度 / mm",
+        "$S/\\Omega$",
+        "$M/\\Omega$",
+        "比较臂 / Ω",
+        "源原始表Rx列 / Ω",
+        "直径 / mm"
+      ],
+      "rows": [
+        [
+          310.0,
+          0.01,
+          1000.0,
+          180.2,
+          1.802,
+          4
+        ],
+        [
+          340.0,
+          0.01,
+          1000.0,
+          198.2,
+          1.982,
+          4
+        ],
+        [
+          370.0,
+          0.01,
+          1000.0,
+          216.0,
+          2.16,
+          4
+        ],
+        [
+          400.0,
+          0.01,
+          1000.0,
+          234.0,
+          2.34,
+          4
+        ],
+        [
+          430.0,
+          0.01,
+          1000.0,
+          252.0,
+          2.52,
+          4
+        ]
+      ]
+    },
+    "results": {
+      "headers": [
+        "序号",
+        "长度 / m",
+        "平衡电阻 / Ω",
+        "电阻率 / (Ω·m)"
+      ],
+      "rows": [
+        [
+          1,
+          0.31,
+          0.001802,
+          7.304709628088782e-08
+        ],
+        [
+          2,
+          0.34,
+          0.0019820000000000003,
+          7.325454869899964e-08
+        ],
+        [
+          3,
+          0.37,
+          0.00216,
+          7.336043385679949e-08
+        ],
+        [
+          4,
+          0.4,
+          0.00234,
+          7.351326809400116e-08
+        ],
+        [
+          5,
+          0.43,
+          0.00252,
+          7.364477662368631e-08
+        ]
+      ]
+    },
+    "summary": {
+      "headers": [
+        "指标",
+        "数值",
+        "单位"
+      ],
+      "rows": [
+        [
+          "导体横截面积",
+          1.2566370614359172e-05,
+          "m²"
+        ],
+        [
+          "五长度电阻率均值",
+          7.336402471087488e-08,
+          "Ω·m"
+        ],
+        [
+          "五长度电阻率描述性标准差",
+          2.3105018129045877e-10,
+          "Ω·m"
+        ],
+        [
+          "含截距R–L拟合电阻率",
+          7.514689627386785e-08,
+          "Ω·m"
+        ],
+        [
+          "R–L斜率",
+          0.00598,
+          "Ω/m"
+        ],
+        [
+          "R–L截距",
+          -5.179999999999985e-05,
+          "Ω"
+        ]
+      ]
+    }
+  },
+  "series": {
+    "R_length": {
+      "x": [
+        0.31,
+        0.34,
+        0.37,
+        0.4,
+        0.43
+      ],
+      "y": [
+        1.802,
+        1.9820000000000002,
+        2.16,
+        2.34,
+        2.52
+      ],
+      "x_label": "长度 $L\\,/\\,\\mathrm{m}$",
+      "y_label": "电阻 $R_x\\,/\\,\\mathrm{m}\\Omega$",
+      "label": "双臂平衡结果",
+      "fit": true
+    },
+    "rho_length": {
+      "x": [
+        310.0,
+        340.0,
+        370.0,
+        400.0,
+        430.0
+      ],
+      "y": [
+        7.304709628088782,
+        7.325454869899963,
+        7.3360433856799485,
+        7.351326809400116,
+        7.364477662368631
+      ],
+      "x_label": "长度 $L\\,/\\,\\mathrm{mm}$",
+      "y_label": "$\\rho/(10^{-8}\\,\\Omega\\,\\mathrm{m})$",
+      "label": "逐长度电阻率"
+    }
+  },
+  "notes": [
+    "原始表Rx列比S/M计算值大1000倍，统一按实际比率与比较臂重算。",
+    "不同长度得到的rho散布是描述性统计，不代替重复测量A类不确定度。",
+    "说明书最低区间等级0.5%，源0.2%及限差公式未沿用。"
+  ],
+  "experiment_id": "course-03/kelvin-bridge",
+  "engine": "python",
+  "input_hashes": {
+    "data/balance.csv": "992927805056d588844b92f5db7d20b0f7fdfca9f768fe32d036ee2869a3927c",
+    "data/label-repair-validation.json": "8575a0b816cde66202a6f55085748398b5a2580a88ec4a6ca6cb9c5069cee7c6",
+    "data/provenance.json": "b18b93c0b59c33d37833d1767c1f26aac0a77cbde5e97684742acd339683433d",
+    "data/python-author-validation.json": "0c78cb46903475b57789b531e735361a6e49bb60c3c218fea85fef501395b966",
+    "experiment.json": "fdd8cb9ddcbd6b4d8ef98dfd05fa935b2738782e29421e231f632ce7e4c71bc9"
+  },
+  "code_hashes": {
+    "src/physicslab/common/__init__.py": "7cc50d4a8325535fb401e04aed51f6a04ad3ca7f40c4b972624547491c83e1a2",
+    "src/physicslab/common/io.py": "5135c2253071c4e3885dec26db357a7777c1a13c7a83559f5152007abb986541",
+    "src/physicslab/common/manuscripts.py": "847e4bade7e617d524e0b484db6e17ee82097687e37b84bb0ac3796dbe06ed10",
+    "src/physicslab/common/plots.py": "37825a8c2a8f5dd8ca7f01968dd343a8dd6cb6139d2ef67275ff745b04e9b907",
+    "src/physicslab/common/tex_boxes.py": "0e2b226fce4c79bba37cc2ba6b6153802a5cb6dbda9dfee95d1a98e5894f9554",
+    "src/physicslab/common/theme.py": "ee8592a54efb71efd91ccdc55b66c7d8bda14a32454dfd75aa34ef606269a01c",
+    "src/physicslab/experiments/kelvin_bridge.py": "ce40227fd42a6b46ff0a161939838bb0d3f78a4ce8306d5cdb93d9ee01bbfa25"
+  },
+  "environment": {
+    "python": "3.14.7",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "matplotlib": "3.11.2",
+    "nbclient": "0.11.0",
+    "nbformat": "5.11.1",
+    "plotly": "7.1.0"
+  }
+}

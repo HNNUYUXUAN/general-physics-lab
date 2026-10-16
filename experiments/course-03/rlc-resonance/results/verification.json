@@ -1,0 +1,1152 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "metric": "C02_f_theory",
+      "python": 1125.3953951963827,
+      "wolfram": 1125.3953951963827,
+      "unit": "Hz",
+      "passed": true
+    },
+    {
+      "metric": "C02_R1_f_peak",
+      "python": 1100.0,
+      "wolfram": 1100.0,
+      "unit": "Hz",
+      "passed": true
+    },
+    {
+      "metric": "C02_R1_U_peak",
+      "python": 0.429,
+      "wolfram": 0.429,
+      "unit": "V",
+      "passed": true
+    },
+    {
+      "metric": "C02_R1_f_low",
+      "python": 1065.9056901672084,
+      "wolfram": 1065.9056901672084,
+      "unit": "Hz",
+      "passed": true
+    },
+    {
+      "metric": "C02_R1_f_high",
+      "python": 1138.1627977177427,
+      "wolfram": 1138.1627977177427,
+      "unit": "Hz",
+      "passed": true
+    },
+    {
+      "metric": "C02_R1_bandwidth",
+      "python": 72.25710755053433,
+      "wolfram": 72.25710755053433,
+      "unit": "Hz",
+      "passed": true
+    },
+    {
+      "metric": "C02_R1_Q_bandwidth",
+      "python": 15.223415900376235,
+      "wolfram": 15.223415900376235,
+      "unit": "1",
+      "passed": true
+    },
+    {
+      "metric": "C02_R2_f_peak",
+      "python": 1100.0,
+      "wolfram": 1100.0,
+      "unit": "Hz",
+      "passed": true
+    },
+    {
+      "metric": "C02_R2_U_peak",
+      "python": 0.612,
+      "wolfram": 0.612,
+      "unit": "V",
+      "passed": true
+    },
+    {
+      "metric": "C02_R2_f_low",
+      "python": 1053.7498700172334,
+      "wolfram": 1053.7498700172334,
+      "unit": "Hz",
+      "passed": true
+    },
+    {
+      "metric": "C02_R2_f_high",
+      "python": 1154.1426307889049,
+      "wolfram": 1154.1426307889049,
+      "unit": "Hz",
+      "passed": true
+    },
+    {
+      "metric": "C02_R2_bandwidth",
+      "python": 100.39276077167142,
+      "wolfram": 100.39276077167142,
+      "unit": "Hz",
+      "passed": true
+    },
+    {
+      "metric": "C02_R2_Q_bandwidth",
+      "python": 10.956965338385189,
+      "wolfram": 10.956965338385187,
+      "unit": "1",
+      "passed": true
+    },
+    {
+      "metric": "C02_relative_error_percent",
+      "python": -2.2565753605159484,
+      "wolfram": -2.2565753605159484,
+      "unit": "%",
+      "passed": true
+    },
+    {
+      "metric": "C01_f_theory",
+      "python": 1591.5494309189535,
+      "wolfram": 1591.5494309189535,
+      "unit": "Hz",
+      "passed": true
+    },
+    {
+      "metric": "C01_R1_f_peak",
+      "python": 1580.0,
+      "wolfram": 1580.0,
+      "unit": "Hz",
+      "passed": true
+    },
+    {
+      "metric": "C01_R1_U_peak",
+      "python": 0.337,
+      "wolfram": 0.337,
+      "unit": "V",
+      "passed": true
+    },
+    {
+      "metric": "C01_R1_f_low",
+      "python": 1524.5477445280148,
+      "wolfram": 1524.5477445280148,
+      "unit": "Hz",
+      "passed": true
+    },
+    {
+      "metric": "C01_R1_f_high",
+      "python": 1617.396978630384,
+      "wolfram": 1617.396978630384,
+      "unit": "Hz",
+      "passed": true
+    },
+    {
+      "metric": "C01_R1_bandwidth",
+      "python": 92.84923410236911,
+      "wolfram": 92.84923410236911,
+      "unit": "Hz",
+      "passed": true
+    },
+    {
+      "metric": "C01_R1_Q_bandwidth",
+      "python": 17.016833959642597,
+      "wolfram": 17.016833959642593,
+      "unit": "1",
+      "passed": true
+    },
+    {
+      "metric": "C01_R2_f_peak",
+      "python": 1580.0,
+      "wolfram": 1580.0,
+      "unit": "Hz",
+      "passed": true
+    },
+    {
+      "metric": "C01_R2_U_peak",
+      "python": 0.53,
+      "wolfram": 0.53,
+      "unit": "V",
+      "passed": true
+    },
+    {
+      "metric": "C01_R2_f_low",
+      "python": 1511.312652225164,
+      "wolfram": 1511.312652225164,
+      "unit": "Hz",
+      "passed": true
+    },
+    {
+      "metric": "C01_R2_f_high",
+      "python": 1633.4270706711366,
+      "wolfram": 1633.4270706711366,
+      "unit": "Hz",
+      "passed": true
+    },
+    {
+      "metric": "C01_R2_bandwidth",
+      "python": 122.11441844597266,
+      "wolfram": 122.11441844597266,
+      "unit": "Hz",
+      "passed": true
+    },
+    {
+      "metric": "C01_R2_Q_bandwidth",
+      "python": 12.93868504724561,
+      "wolfram": 12.93868504724561,
+      "unit": "1",
+      "passed": true
+    },
+    {
+      "metric": "C01_relative_error_percent",
+      "python": -0.7256721465625411,
+      "wolfram": -0.7256721465625411,
+      "unit": "%",
+      "passed": true
+    },
+    {
+      "metric": "C02_R1_Q_voltage",
+      "python": 15.585,
+      "wolfram": 15.585,
+      "unit": "1",
+      "passed": true
+    },
+    {
+      "metric": "C02_R1_voltage_asymmetry_percent",
+      "python": 0.32082130253448143,
+      "wolfram": 0.3208213025344814,
+      "unit": "%",
+      "passed": true
+    },
+    {
+      "metric": "C02_R2_Q_voltage",
+      "python": 11.05,
+      "wolfram": 11.05,
+      "unit": "1",
+      "passed": true
+    },
+    {
+      "metric": "C02_R2_voltage_asymmetry_percent",
+      "python": 0.18099547511313438,
+      "wolfram": 0.18099547511313438,
+      "unit": "%",
+      "passed": true
+    },
+    {
+      "metric": "C01_R1_Q_voltage",
+      "python": 17.895,
+      "wolfram": 17.895,
+      "unit": "1",
+      "passed": true
+    },
+    {
+      "metric": "C01_R1_voltage_asymmetry_percent",
+      "python": 2.9617211511595483,
+      "wolfram": 2.9617211511595483,
+      "unit": "%",
+      "passed": true
+    },
+    {
+      "metric": "C01_R2_Q_voltage",
+      "python": 13.825,
+      "wolfram": 13.825,
+      "unit": "1",
+      "passed": true
+    },
+    {
+      "metric": "C01_R2_voltage_asymmetry_percent",
+      "python": 2.676311030741405,
+      "wolfram": 2.676311030741405,
+      "unit": "%",
+      "passed": true
+    },
+    {
+      "metric": "model_Q2_response_09",
+      "python": 0.9212495614113857,
+      "wolfram": 0.9212495614113857,
+      "unit": "1",
+      "passed": true
+    },
+    {
+      "metric": "model_Q2_peak",
+      "python": 1.0,
+      "wolfram": 1.0,
+      "unit": "1",
+      "passed": true
+    },
+    {
+      "metric": "model_Q8_response_09",
+      "python": 0.5094920066677705,
+      "wolfram": 0.5094920066677705,
+      "unit": "1",
+      "passed": true
+    },
+    {
+      "metric": "model_Q8_peak",
+      "python": 1.0,
+      "wolfram": 1.0,
+      "unit": "1",
+      "passed": true
+    },
+    {
+      "metric": "model_Q15_response_09",
+      "python": 0.3011313679370973,
+      "wolfram": 0.3011313679370973,
+      "unit": "1",
+      "passed": true
+    },
+    {
+      "metric": "model_Q15_peak",
+      "python": 1.0,
+      "wolfram": 1.0,
+      "unit": "1",
+      "passed": true
+    },
+    {
+      "table": "C02_a",
+      "row": 0,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "C02_a",
+      "row": 0,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "C02_a",
+      "row": 0,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "C02_a",
+      "row": 0,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "C02_a",
+      "row": 0,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "C02_a",
+      "row": 0,
+      "column": 6,
+      "passed": true
+    },
+    {
+      "table": "C02_a",
+      "row": 0,
+      "column": 7,
+      "passed": true
+    },
+    {
+      "table": "C02_a",
+      "row": 0,
+      "column": 8,
+      "passed": true
+    },
+    {
+      "table": "C02_a",
+      "row": 0,
+      "column": 9,
+      "passed": true
+    },
+    {
+      "table": "C02_a",
+      "row": 0,
+      "column": 10,
+      "passed": true
+    },
+    {
+      "table": "C02_a",
+      "row": 1,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "C02_a",
+      "row": 1,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "C02_a",
+      "row": 1,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "C02_a",
+      "row": 1,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "C02_a",
+      "row": 1,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "C02_a",
+      "row": 1,
+      "column": 6,
+      "passed": true
+    },
+    {
+      "table": "C02_a",
+      "row": 1,
+      "column": 7,
+      "passed": true
+    },
+    {
+      "table": "C02_a",
+      "row": 1,
+      "column": 8,
+      "passed": true
+    },
+    {
+      "table": "C02_a",
+      "row": 1,
+      "column": 9,
+      "passed": true
+    },
+    {
+      "table": "C02_a",
+      "row": 1,
+      "column": 10,
+      "passed": true
+    },
+    {
+      "table": "C02_a",
+      "row": 2,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "C02_a",
+      "row": 2,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "C02_a",
+      "row": 2,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "C02_a",
+      "row": 2,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "C02_a",
+      "row": 2,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "C02_a",
+      "row": 2,
+      "column": 6,
+      "passed": true
+    },
+    {
+      "table": "C02_a",
+      "row": 2,
+      "column": 7,
+      "passed": true
+    },
+    {
+      "table": "C02_a",
+      "row": 2,
+      "column": 8,
+      "passed": true
+    },
+    {
+      "table": "C02_a",
+      "row": 2,
+      "column": 9,
+      "passed": true
+    },
+    {
+      "table": "C02_a",
+      "row": 2,
+      "column": 10,
+      "passed": true
+    },
+    {
+      "table": "C02_b",
+      "row": 0,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "C02_b",
+      "row": 0,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "C02_b",
+      "row": 0,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "C02_b",
+      "row": 0,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "C02_b",
+      "row": 0,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "C02_b",
+      "row": 0,
+      "column": 6,
+      "passed": true
+    },
+    {
+      "table": "C02_b",
+      "row": 0,
+      "column": 7,
+      "passed": true
+    },
+    {
+      "table": "C02_b",
+      "row": 0,
+      "column": 8,
+      "passed": true
+    },
+    {
+      "table": "C02_b",
+      "row": 0,
+      "column": 9,
+      "passed": true
+    },
+    {
+      "table": "C02_b",
+      "row": 0,
+      "column": 10,
+      "passed": true
+    },
+    {
+      "table": "C02_b",
+      "row": 1,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "C02_b",
+      "row": 1,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "C02_b",
+      "row": 1,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "C02_b",
+      "row": 1,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "C02_b",
+      "row": 1,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "C02_b",
+      "row": 1,
+      "column": 6,
+      "passed": true
+    },
+    {
+      "table": "C02_b",
+      "row": 1,
+      "column": 7,
+      "passed": true
+    },
+    {
+      "table": "C02_b",
+      "row": 1,
+      "column": 8,
+      "passed": true
+    },
+    {
+      "table": "C02_b",
+      "row": 1,
+      "column": 9,
+      "passed": true
+    },
+    {
+      "table": "C02_b",
+      "row": 1,
+      "column": 10,
+      "passed": true
+    },
+    {
+      "table": "C02_b",
+      "row": 2,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "C02_b",
+      "row": 2,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "C02_b",
+      "row": 2,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "C02_b",
+      "row": 2,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "C02_b",
+      "row": 2,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "C02_b",
+      "row": 2,
+      "column": 6,
+      "passed": true
+    },
+    {
+      "table": "C02_b",
+      "row": 2,
+      "column": 7,
+      "passed": true
+    },
+    {
+      "table": "C02_b",
+      "row": 2,
+      "column": 8,
+      "passed": true
+    },
+    {
+      "table": "C02_b",
+      "row": 2,
+      "column": 9,
+      "passed": true
+    },
+    {
+      "table": "C02_b",
+      "row": 2,
+      "column": 10,
+      "passed": true
+    },
+    {
+      "table": "C01_a",
+      "row": 0,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "C01_a",
+      "row": 0,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "C01_a",
+      "row": 0,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "C01_a",
+      "row": 0,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "C01_a",
+      "row": 0,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "C01_a",
+      "row": 0,
+      "column": 6,
+      "passed": true
+    },
+    {
+      "table": "C01_a",
+      "row": 0,
+      "column": 7,
+      "passed": true
+    },
+    {
+      "table": "C01_a",
+      "row": 0,
+      "column": 8,
+      "passed": true
+    },
+    {
+      "table": "C01_a",
+      "row": 0,
+      "column": 9,
+      "passed": true
+    },
+    {
+      "table": "C01_a",
+      "row": 0,
+      "column": 10,
+      "passed": true
+    },
+    {
+      "table": "C01_a",
+      "row": 0,
+      "column": 11,
+      "passed": true
+    },
+    {
+      "table": "C01_a",
+      "row": 1,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "C01_a",
+      "row": 1,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "C01_a",
+      "row": 1,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "C01_a",
+      "row": 1,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "C01_a",
+      "row": 1,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "C01_a",
+      "row": 1,
+      "column": 6,
+      "passed": true
+    },
+    {
+      "table": "C01_a",
+      "row": 1,
+      "column": 7,
+      "passed": true
+    },
+    {
+      "table": "C01_a",
+      "row": 1,
+      "column": 8,
+      "passed": true
+    },
+    {
+      "table": "C01_a",
+      "row": 1,
+      "column": 9,
+      "passed": true
+    },
+    {
+      "table": "C01_a",
+      "row": 1,
+      "column": 10,
+      "passed": true
+    },
+    {
+      "table": "C01_a",
+      "row": 1,
+      "column": 11,
+      "passed": true
+    },
+    {
+      "table": "C01_a",
+      "row": 2,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "C01_a",
+      "row": 2,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "C01_a",
+      "row": 2,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "C01_a",
+      "row": 2,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "C01_a",
+      "row": 2,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "C01_a",
+      "row": 2,
+      "column": 6,
+      "passed": true
+    },
+    {
+      "table": "C01_a",
+      "row": 2,
+      "column": 7,
+      "passed": true
+    },
+    {
+      "table": "C01_a",
+      "row": 2,
+      "column": 8,
+      "passed": true
+    },
+    {
+      "table": "C01_a",
+      "row": 2,
+      "column": 9,
+      "passed": true
+    },
+    {
+      "table": "C01_a",
+      "row": 2,
+      "column": 10,
+      "passed": true
+    },
+    {
+      "table": "C01_a",
+      "row": 2,
+      "column": 11,
+      "passed": true
+    },
+    {
+      "table": "frequencies",
+      "row": 0,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "frequencies",
+      "row": 0,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "frequencies",
+      "row": 0,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "frequencies",
+      "row": 0,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "frequencies",
+      "row": 1,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "frequencies",
+      "row": 1,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "frequencies",
+      "row": 1,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "frequencies",
+      "row": 1,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "bandwidth",
+      "row": 0,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "bandwidth",
+      "row": 0,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "bandwidth",
+      "row": 0,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "bandwidth",
+      "row": 0,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "bandwidth",
+      "row": 0,
+      "column": 6,
+      "passed": true
+    },
+    {
+      "table": "bandwidth",
+      "row": 0,
+      "column": 7,
+      "passed": true
+    },
+    {
+      "table": "bandwidth",
+      "row": 1,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "bandwidth",
+      "row": 1,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "bandwidth",
+      "row": 1,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "bandwidth",
+      "row": 1,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "bandwidth",
+      "row": 1,
+      "column": 6,
+      "passed": true
+    },
+    {
+      "table": "bandwidth",
+      "row": 1,
+      "column": 7,
+      "passed": true
+    },
+    {
+      "table": "bandwidth",
+      "row": 2,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "bandwidth",
+      "row": 2,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "bandwidth",
+      "row": 2,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "bandwidth",
+      "row": 2,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "bandwidth",
+      "row": 2,
+      "column": 6,
+      "passed": true
+    },
+    {
+      "table": "bandwidth",
+      "row": 2,
+      "column": 7,
+      "passed": true
+    },
+    {
+      "table": "bandwidth",
+      "row": 3,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "bandwidth",
+      "row": 3,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "bandwidth",
+      "row": 3,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "bandwidth",
+      "row": 3,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "bandwidth",
+      "row": 3,
+      "column": 6,
+      "passed": true
+    },
+    {
+      "table": "bandwidth",
+      "row": 3,
+      "column": 7,
+      "passed": true
+    },
+    {
+      "table": "voltage_ratio",
+      "row": 0,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "voltage_ratio",
+      "row": 0,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "voltage_ratio",
+      "row": 0,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "voltage_ratio",
+      "row": 0,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "voltage_ratio",
+      "row": 1,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "voltage_ratio",
+      "row": 1,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "voltage_ratio",
+      "row": 1,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "voltage_ratio",
+      "row": 1,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "voltage_ratio",
+      "row": 2,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "voltage_ratio",
+      "row": 2,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "voltage_ratio",
+      "row": 2,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "voltage_ratio",
+      "row": 2,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "voltage_ratio",
+      "row": 3,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "voltage_ratio",
+      "row": 3,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "voltage_ratio",
+      "row": 3,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "voltage_ratio",
+      "row": 3,
+      "column": 5,
+      "passed": true
+    }
+  ],
+  "input_hashes": {
+    "data/provenance.json": "934c3aefd1639bd0a3919e39784129bdd77323fe4132b827727a645f477958a4",
+    "data/python-author-validation.json": "b18ff87462371e6208fd3ac5dae2f3befa39083a215362fde19ffcf0756ef29f",
+    "data/resonance_voltages.csv": "0126e078fe125da6f3012a29485b4c7d25c64a15103ff2d8b05ac441979f35be",
+    "data/response.csv": "b5699c20e190f7deb1564b1fd1c72d4937abbf65d867c95e65692d179abf2ea1",
+    "experiment.json": "ef5195fc697d2a70b344ed6291e18594b0bdb0ae060c6146905c5f2216039a72"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "id": "course-01/vaporization-heat",
+  "title": "水的汽化热的测定",
+  "data_version": "1.0.0",
+  "parameters": {
+    "water_specific_heat_j_gk": 4.18,
+    "inner_specific_heat_j_gk": 0.897,
+    "stirrer_specific_heat_j_gk": 0.39,
+    "reference_latent_heat_j_kg": 2250000,
+    "kelvin_offset": 273.15,
+    "sensor_gain_mv_k": 1,
+    "steam_temperature_c": 100
+  },
+  "units": {
+    "mass": "g",
+    "voltage": "mV",
+    "temperature": "degC",
+    "latent_heat": "J/kg"
+  },
+  "assumptions": [
+    "按源温度标定U数值mV等于温度数值K",
+    "主结果沿用初末称量构成相同的质量差，末态构成需核实",
+    "蒸汽温度按100℃理论值，未测气压",
+    "忽略量热器与环境热交换及蒸汽含液滴"
+  ]
+}

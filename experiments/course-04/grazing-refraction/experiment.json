@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "id": "course-04/grazing-refraction",
+  "title": "用掠射法测定透明介质的折射率",
+  "parameters": {
+    "angle_error_bound_arcmin": 1,
+    "prism_refractive_index": 1.5425,
+    "prism_standard_uncertainty": 0.0006
+  },
+  "models": {
+    "grazing": "空气、直角棱镜A=90度，n=sqrt(n1²−sin²phi)，n<n1。"
+  },
+  "source_docx": "originals/course-04/04_实验四_用掠射法测定透明介质的折射率_实验报告.docx",
+  "data_version": "1.0.0"
+}

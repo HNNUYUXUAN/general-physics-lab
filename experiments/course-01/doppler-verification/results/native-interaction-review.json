@@ -1,0 +1,58 @@
+{
+  "experiment": "course-01/doppler-verification",
+  "paclet": "DopplerVerificationLab",
+  "status": "passed",
+  "source_hashes": {
+    "analysis.wl": "b1ccd39d245f68b712b65b37667d6dd3936d314b5141490547df135f3b750abc",
+    "authoring.json": "5caa9c0712f5fdc5ce14e3dc7e943c0e1f56d039723f5a2dec7ddc165192f1d8"
+  },
+  "input_hashes": {
+    "data/author-verification.json": "6cbdc6d375da8f4b3fbbd97962e4a4ae11d0fa659bab8e1679e8ed9b24400a2a",
+    "data/observations.csv": "6c82fae6f91efaad98b9d96e4ab1e0b649f02c6fb933ff4c6aaa185a4f45255d",
+    "data/provenance.json": "481b8e603044e73f36889df45985cf4a6391d1793f932983d3d60664dd0c2334",
+    "experiment.json": "9787f2afce6c4cbaab2b4fee76a7df3a08a180f41a912e5b0e91713d656c7efa"
+  },
+  "models": [
+    {
+      "key": "receiver-speed",
+      "capture_messages": [],
+      "status": "passed",
+      "held_body_sha256": "a3de3701b7bd8e3bf0ce08a97ff84dddda33968cde0bfc8dd481291557cc5473",
+      "default_evaluation": {
+        "status": "evaluated",
+        "output_head": "Graphics",
+        "response_sha256": "ac51d375bab838e1797c3aab2dc028ba84b5a36d78906e4dcceaffc8ff97366e",
+        "graphics_count": 1,
+        "messages": [],
+        "unresolved_heads": []
+      },
+      "default_repeat": {
+        "status": "evaluated",
+        "output_head": "Graphics",
+        "response_sha256": "ac51d375bab838e1797c3aab2dc028ba84b5a36d78906e4dcceaffc8ff97366e",
+        "graphics_count": 1,
+        "messages": [],
+        "unresolved_heads": []
+      },
+      "default_deterministic": true,
+      "controls": [
+        {
+          "name": "DopplerVerificationLab`Private`v",
+          "default": 0,
+          "changed": 0.03,
+          "specification_sha256": "772f34997a894550ff5d488f6c203b3c839f464461353afc6615d0362698b647",
+          "evaluation": {
+            "status": "evaluated",
+            "output_head": "Graphics",
+            "response_sha256": "8cdfcd8811f4a271a82de62a53fd63ce0406c18365f23aa6fb2df8725088844b",
+            "graphics_count": 1,
+            "messages": [],
+            "unresolved_heads": []
+          },
+          "response_changed": true,
+          "status": "passed"
+        }
+      ]
+    }
+  ]
+}

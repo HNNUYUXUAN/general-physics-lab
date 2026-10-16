@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "id": "course-02/string-vibration",
+  "title": "弦振动的研究",
+  "data_version": "1.0.0",
+  "parameters": {
+    "gravity_m_s2": 9.794,
+    "fixed_frequency_hz": 60,
+    "fixed_mass_g": 100
+  },
+  "source_reported": {
+    "last_tension_wavelength_cm": 166.6,
+    "tension_slope": 0.447
+  },
+  "assumptions": [
+    "弦均匀、张力近似mg",
+    "驻波半波数依源记录；长度和半波数优先于源派生波长",
+    "回归对数为常用对数，所取量纲基准1N、1Hz和1cm"
+  ]
+}

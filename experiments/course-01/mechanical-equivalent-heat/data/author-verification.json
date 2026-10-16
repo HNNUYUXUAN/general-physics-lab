@@ -1,0 +1,53 @@
+{
+  "status": "python-executed-awaiting-wolfram",
+  "checks": [
+    "30 source temperatures",
+    "time min-to-second conversion",
+    "17.26K rise",
+    "four interactive fitting windows"
+  ],
+  "metrics": {
+    "heating_slope": {
+      "value": 0.010159695958472383,
+      "unit": "K/s",
+      "label": "全区间温升拟合斜率",
+      "uncertainty": 7.583173824594306e-05
+    },
+    "temperature_intercept": {
+      "value": 291.62139784946237,
+      "unit": "K",
+      "label": "拟合初温截距",
+      "uncertainty": 0.07683368117288729
+    },
+    "correlation": {
+      "value": 0.9992209579427005,
+      "unit": "1",
+      "label": "相关系数"
+    },
+    "endpoint_slope": {
+      "value": 0.009919540229885084,
+      "unit": "K/s",
+      "label": "首尾温升速率"
+    },
+    "early_slope": {
+      "value": 0.010836904761904798,
+      "unit": "K/s",
+      "label": "前15点拟合斜率"
+    },
+    "late_slope": {
+      "value": 0.009627976190476175,
+      "unit": "K/s",
+      "label": "后15点拟合斜率"
+    },
+    "total_temperature_rise": {
+      "value": 17.260000000000048,
+      "unit": "K",
+      "label": "首尾温升"
+    },
+    "source_slope_difference": {
+      "value": 5.775075049165873,
+      "unit": "%",
+      "label": "相对源仪器斜率差异"
+    }
+  }
+}

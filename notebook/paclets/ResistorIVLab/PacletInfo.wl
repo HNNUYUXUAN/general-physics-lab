@@ -1,0 +1,1 @@
+PacletObject[<|"Name"->"ResistorIVLab","Version"->"0.1.0","WolframVersion"->"14.0+","Description"->"\:7535\:963b\:4f0f\:5b89\:7279\:6027\:7684\:6d4b\:5b9a","Creator"->"Physics Lab Contributors","Extensions"->{{"Kernel","Root"->"Kernel","Context"->{"ResistorIVLab`"}},{"Resource","Root"->".","Resources"->{"Notebooks","data","assets"}}}|>]

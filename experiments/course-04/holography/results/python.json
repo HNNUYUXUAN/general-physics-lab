@@ -1,0 +1,221 @@
+{
+  "metrics": {
+    "fringe_spacing_um": {
+      "value": 1.222475725751445,
+      "unit": "um",
+      "label": "理想平面波干涉条纹间距"
+    },
+    "mean_intensity_ratio": {
+      "value": 1.820872694556905,
+      "unit": "1",
+      "label": "参考光与物光光强比均值"
+    },
+    "intensity_ratio_type_a": {
+      "value": 0.012156074316908388,
+      "unit": "1",
+      "label": "光强比均值A类"
+    },
+    "mean_magnification": {
+      "value": 1.0083333333333335,
+      "unit": "1",
+      "label": "再现横向放大率均值"
+    },
+    "magnification_type_a": {
+      "value": 0.0033333333333333366,
+      "unit": "1",
+      "label": "放大率均值A类"
+    },
+    "ideal_visibility_mean": {
+      "value": 0.9567205392974355,
+      "unit": "1",
+      "label": "等偏振完全相干理论可见度均值"
+    },
+    "mean_total_exposure_mj_cm2": {
+      "value": 5.5,
+      "unit": "mJ/cm^2",
+      "label": "两束平均光强的曝光量均值"
+    },
+    "maximum_path_difference_cm": {
+      "value": 1.7999999999999972,
+      "unit": "cm",
+      "label": "最大记录光路差"
+    }
+  },
+  "tables": {
+    "table1": {
+      "headers": [
+        "次数",
+        "物光路/cm",
+        "参考光路/cm",
+        "两束光夹角/(°)",
+        "物光强/(mW·cm⁻²)",
+        "参考光强/(mW·cm⁻²)",
+        "曝光时间/s"
+      ],
+      "rows": [
+        [
+          "1",
+          "80.2",
+          "82.0",
+          "30.0",
+          "0.38",
+          "0.70",
+          "5.0"
+        ],
+        [
+          "2",
+          "80.0",
+          "81.6",
+          "30.0",
+          "0.40",
+          "0.72",
+          "5.0"
+        ],
+        [
+          "3",
+          "80.4",
+          "82.2",
+          "30.0",
+          "0.39",
+          "0.71",
+          "5.0"
+        ]
+      ]
+    },
+    "table2": {
+      "headers": [
+        "次数",
+        "记录时物距 $z_p$/mm",
+        "再现像距 $z_i$/mm",
+        "物宽 $\\Delta x_p$/mm",
+        "再现像宽 $\\Delta x_i$/mm"
+      ],
+      "rows": [
+        [
+          "1",
+          "300.0",
+          "302.0",
+          "20.0",
+          "20.1"
+        ],
+        [
+          "2",
+          "300.0",
+          "304.0",
+          "20.0",
+          "20.3"
+        ],
+        [
+          "3",
+          "300.0",
+          "301.0",
+          "20.0",
+          "20.1"
+        ]
+      ]
+    },
+    "table3": {
+      "headers": [
+        "次数",
+        "$I_r/I_o$"
+      ],
+      "rows": [
+        [
+          1,
+          1.84210526
+        ],
+        [
+          2,
+          1.8
+        ],
+        [
+          3,
+          1.82051282
+        ]
+      ]
+    },
+    "table4": {
+      "headers": [
+        "次数",
+        "$\\Delta x_i/\\Delta x_p$"
+      ],
+      "rows": [
+        [
+          1,
+          1.005
+        ],
+        [
+          2,
+          1.015
+        ],
+        [
+          3,
+          1.005
+        ]
+      ]
+    }
+  },
+  "series": {
+    "hologram-ratio": {
+      "x": [
+        1,
+        2,
+        3
+      ],
+      "y": [
+        1.8421052631578947,
+        1.7999999999999998,
+        1.8205128205128203
+      ],
+      "x_label": "测量次数",
+      "y_label": "光强比 $K=I_r/I_o$",
+      "label": "记录光强计算"
+    },
+    "hologram-magnification": {
+      "x": [
+        1,
+        2,
+        3
+      ],
+      "y": [
+        1.0050000000000001,
+        1.0150000000000001,
+        1.0050000000000001
+      ],
+      "x_label": "测量次数",
+      "y_label": "横向放大率 $M$",
+      "label": "记录物像尺寸计算"
+    }
+  },
+  "notes": [
+    "理论可见度假定相同偏振、完全相干、等波前稳定性，未作为实测条纹对比度。",
+    "相干长度和干板响应未记录，不能由光路差单独保证相干或曝光最佳。",
+    "只有三次重复，仪器、物像定位和干板处理误差未给。"
+  ],
+  "experiment_id": "course-04/holography",
+  "engine": "python",
+  "input_hashes": {
+    "data/observations-01.csv": "9d933f50b74f23400ec113d577e0faed335944235ad31ebd645f002adacde9b5",
+    "data/observations-02.csv": "2e7a55b9be9662469b7da77ff64ac32f80aed646619c3810f311081ec8b8af88",
+    "data/provenance.json": "b3b3175d84c3bab38f3ffec9232b66ac5b590f62099208907246bcd24fcff078",
+    "experiment.json": "f4341cc8612ae33e045eab8318f88f0ed5d91a57a57938a8ddfe451a10360d40"
+  },
+  "code_hashes": {
+    "src/physicslab/common/__init__.py": "7cc50d4a8325535fb401e04aed51f6a04ad3ca7f40c4b972624547491c83e1a2",
+    "src/physicslab/common/io.py": "5135c2253071c4e3885dec26db357a7777c1a13c7a83559f5152007abb986541",
+    "src/physicslab/common/manuscripts.py": "847e4bade7e617d524e0b484db6e17ee82097687e37b84bb0ac3796dbe06ed10",
+    "src/physicslab/common/plots.py": "37825a8c2a8f5dd8ca7f01968dd343a8dd6cb6139d2ef67275ff745b04e9b907",
+    "src/physicslab/common/tex_boxes.py": "0e2b226fce4c79bba37cc2ba6b6153802a5cb6dbda9dfee95d1a98e5894f9554",
+    "src/physicslab/common/theme.py": "ee8592a54efb71efd91ccdc55b66c7d8bda14a32454dfd75aa34ef606269a01c",
+    "src/physicslab/experiments/holography.py": "34c8bcd696e223a1adff34cd42058703a9b1d2cc9f4b9e6ef4931e68614dbaf0"
+  },
+  "environment": {
+    "python": "3.14.7",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "matplotlib": "3.11.2",
+    "nbclient": "0.11.0",
+    "nbformat": "5.11.1",
+    "plotly": "7.1.0"
+  }
+}

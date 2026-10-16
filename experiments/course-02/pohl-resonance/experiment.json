@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "id": "course-02/pohl-resonance",
+  "title": "波尔共振实验",
+  "parameters": {
+    "forced_reference_periods_s": [
+      1.6249,
+      1.6258,
+      1.6286,
+      1.6292,
+      1.6297,
+      1.6286,
+      1.6274,
+      1.626,
+      1.625,
+      1.6238
+    ]
+  },
+  "models": {
+    "pohl": "线性回复与速度阻尼，beta=b/(2J)量纲s^-1，参考周期有幅度依赖。"
+  },
+  "source_docx": "originals/course-02/波尔共振实验/实验报告-波尔共振实验.docx",
+  "data_version": "1.0.0"
+}

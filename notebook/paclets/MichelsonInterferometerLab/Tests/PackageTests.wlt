@@ -1,0 +1,5 @@
+VerificationTest[NumberQ[MichelsonInterferometerLab`Analyze[]["metrics"]["wavelength_mean_nm"]["value"]],True,TestID->"finite-wavelength_mean_nm"]
+VerificationTest[NumberQ[MichelsonInterferometerLab`Analyze[]["metrics"]["wavelength_type_a_nm"]["value"]],True,TestID->"finite-wavelength_type_a_nm"]
+VerificationTest[NumberQ[MichelsonInterferometerLab`Analyze[]["metrics"]["relative_reference_difference_percent"]["value"]],True,TestID->"finite-relative_reference_difference_percent"]
+VerificationTest[FileExistsQ[MichelsonInterferometerLab`LabNotebookPath[]],True,TestID->"notebook-entry"]
+VerificationTest[FileNameTake[MichelsonInterferometerLab`LabNotebookPath[]],"MichelsonInterferometerLab.nb",TestID->"notebook-name"]

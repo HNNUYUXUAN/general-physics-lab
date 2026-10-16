@@ -1,0 +1,59 @@
+{
+  "experiment": "course-02/pohl-resonance",
+  "paclet": "PohlResonanceLab",
+  "status": "passed",
+  "source_hashes": {
+    "analysis.wl": "32e272cea5fee967feeaf01bf7bf16e044e131b083651bf211f0feee98d4f451",
+    "authoring.json": "fc6a31a2266ac9f01715fa1f81a333ae758d5df03cd4d3f029b7cd8d029d60c7"
+  },
+  "input_hashes": {
+    "data/observations-01.csv": "820cc3aa754797f2a1bc7110f0b012cca024c3777c9141557c8a15976eaf5a5c",
+    "data/observations-02.csv": "ba92120aa47caa3d45054231aa104f38148594c1cefdaf528939036147f136dc",
+    "data/observations-03.csv": "8baafb502a79faefacc2f17342c99191470785dde328938736fc511d9746f2d3",
+    "data/provenance.json": "9199b0ba30a8aab8db901dfe9dbae404f8491010bd6887ee9576c1e44dfe95a4",
+    "experiment.json": "a62f83461c772b4282b134baaab4e09df2cfb19bd8e3afba2fd41c43269ce978"
+  },
+  "models": [
+    {
+      "key": "damping-response",
+      "capture_messages": [],
+      "status": "passed",
+      "held_body_sha256": "91d04c56094852ced19ede08f184b8a9a9fc3483474c75dc957ed1367da00b0e",
+      "default_evaluation": {
+        "status": "evaluated",
+        "output_head": "Column",
+        "response_sha256": "bb622f480fea1bed08e587eff0f81f3a003f93d78dc071ee91d14ac7b917e545",
+        "graphics_count": 2,
+        "messages": [],
+        "unresolved_heads": []
+      },
+      "default_repeat": {
+        "status": "evaluated",
+        "output_head": "Column",
+        "response_sha256": "bb622f480fea1bed08e587eff0f81f3a003f93d78dc071ee91d14ac7b917e545",
+        "graphics_count": 2,
+        "messages": [],
+        "unresolved_heads": []
+      },
+      "default_deterministic": true,
+      "controls": [
+        {
+          "name": "PohlResonanceLab`Private`factor",
+          "default": 1,
+          "changed": 1.1,
+          "specification_sha256": "b4378135fe3f0ce12788b7bae65714f2a97e9f298c1e4551009fcd10e8418c10",
+          "evaluation": {
+            "status": "evaluated",
+            "output_head": "Column",
+            "response_sha256": "752fea87d8073c540c1bd21b995c0d80ce6799b5f8d508fd849585890bf9790e",
+            "graphics_count": 2,
+            "messages": [],
+            "unresolved_heads": []
+          },
+          "response_changed": true,
+          "status": "passed"
+        }
+      ]
+    }
+  ]
+}

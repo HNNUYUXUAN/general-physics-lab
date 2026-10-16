@@ -1,0 +1,41 @@
+{
+  "primary_source": "originals/course-04/06_实验六_用光学仪器测量放大率和微小长度_实验报告.docx",
+  "primary_sha256": "e7be7e8843b3ca0b2111f368ce6a6fd0cb656d91b214b6d808e96626ef86f793",
+  "converted_source": "processed/courses-01-03-04/普通物理实验4/06_实验六_用光学仪器测量放大率和微小长度_实验报告_docx/正文.md",
+  "verification": "直接从主DOCX XML逐单元格提取观测，规范CSV完整保留读数；源计算表不作为观测输入。",
+  "table_mappings": [
+    {
+      "file": "observations-01.csv",
+      "source_table": 1,
+      "mapping": "行列顺序及单元格文本原样保存"
+    },
+    {
+      "file": "observations-02.csv",
+      "source_table": 2,
+      "mapping": "行列顺序及单元格文本原样保存"
+    },
+    {
+      "file": "observations-03.csv",
+      "source_table": 3,
+      "mapping": "行列顺序及单元格文本原样保存"
+    },
+    {
+      "file": "observations-04.csv",
+      "source_table": 4,
+      "mapping": "行列顺序及单元格文本原样保存"
+    }
+  ],
+  "transformations": [
+    "使用原表单位，派生结果从未修约观测重新计算。"
+  ],
+  "issues": [
+    {
+      "status": "documented",
+      "detail": "仪器、标尺和成像系统分量未记录。"
+    },
+    {
+      "status": "documented",
+      "detail": "共享标定的误差不随细丝重复次数再次缩小。"
+    }
+  ]
+}

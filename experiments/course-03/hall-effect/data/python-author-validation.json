@@ -1,0 +1,688 @@
+{
+  "checks": {
+    "finite_json": true,
+    "parity_basis": true,
+    "common_rejected": true,
+    "current_odd_rejected": true,
+    "same_setting_conflict": true,
+    "relative_reference": true,
+    "thirty_states": true
+  },
+  "metrics": {
+    "working_current_source_column_max_difference": {
+      "value": 7.105427357601002e-15,
+      "unit": "mV",
+      "label": "working_current 源处理列最大差"
+    },
+    "working_current_slope": {
+      "value": 32.00772727272727,
+      "unit": "mV/mA",
+      "label": "working_current 线性拟合斜率"
+    },
+    "working_current_intercept": {
+      "value": 0.09900000000001086,
+      "unit": "mV",
+      "label": "working_current 线性拟合截距"
+    },
+    "working_current_fit_R2": {
+      "value": 0.999815456592224,
+      "unit": "1",
+      "label": "working_current 拟合决定系数"
+    },
+    "working_current_point1_channel1": {
+      "value": 9.87,
+      "unit": "mV",
+      "label": "working_current 点1通道1"
+    },
+    "working_current_point1_channel2": {
+      "value": -9.6,
+      "unit": "mV",
+      "label": "working_current 点1通道2"
+    },
+    "working_current_point1_channel3": {
+      "value": 9.57,
+      "unit": "mV",
+      "label": "working_current 点1通道3"
+    },
+    "working_current_point1_channel4": {
+      "value": -9.79,
+      "unit": "mV",
+      "label": "working_current 点1通道4"
+    },
+    "working_current_point2_channel1": {
+      "value": 19.46,
+      "unit": "mV",
+      "label": "working_current 点2通道1"
+    },
+    "working_current_point2_channel2": {
+      "value": -19.72,
+      "unit": "mV",
+      "label": "working_current 点2通道2"
+    },
+    "working_current_point2_channel3": {
+      "value": 19.08,
+      "unit": "mV",
+      "label": "working_current 点2通道3"
+    },
+    "working_current_point2_channel4": {
+      "value": -19.46,
+      "unit": "mV",
+      "label": "working_current 点2通道4"
+    },
+    "working_current_point3_channel1": {
+      "value": 29.16,
+      "unit": "mV",
+      "label": "working_current 点3通道1"
+    },
+    "working_current_point3_channel2": {
+      "value": -28.62,
+      "unit": "mV",
+      "label": "working_current 点3通道2"
+    },
+    "working_current_point3_channel3": {
+      "value": 28.65,
+      "unit": "mV",
+      "label": "working_current 点3通道3"
+    },
+    "working_current_point3_channel4": {
+      "value": -29.13,
+      "unit": "mV",
+      "label": "working_current 点3通道4"
+    },
+    "working_current_point4_channel1": {
+      "value": 38.93,
+      "unit": "mV",
+      "label": "working_current 点4通道1"
+    },
+    "working_current_point4_channel2": {
+      "value": -38.18,
+      "unit": "mV",
+      "label": "working_current 点4通道2"
+    },
+    "working_current_point4_channel3": {
+      "value": 38.24,
+      "unit": "mV",
+      "label": "working_current 点4通道3"
+    },
+    "working_current_point4_channel4": {
+      "value": -38.98,
+      "unit": "mV",
+      "label": "working_current 点4通道4"
+    },
+    "working_current_point5_channel1": {
+      "value": 48.67,
+      "unit": "mV",
+      "label": "working_current 点5通道1"
+    },
+    "working_current_point5_channel2": {
+      "value": -47.85,
+      "unit": "mV",
+      "label": "working_current 点5通道2"
+    },
+    "working_current_point5_channel3": {
+      "value": 47.81,
+      "unit": "mV",
+      "label": "working_current 点5通道3"
+    },
+    "working_current_point5_channel4": {
+      "value": -48.72,
+      "unit": "mV",
+      "label": "working_current 点5通道4"
+    },
+    "working_current_point6_channel1": {
+      "value": 58.44,
+      "unit": "mV",
+      "label": "working_current 点6通道1"
+    },
+    "working_current_point6_channel2": {
+      "value": -57.36,
+      "unit": "mV",
+      "label": "working_current 点6通道2"
+    },
+    "working_current_point6_channel3": {
+      "value": 57.29,
+      "unit": "mV",
+      "label": "working_current 点6通道3"
+    },
+    "working_current_point6_channel4": {
+      "value": -58.39,
+      "unit": "mV",
+      "label": "working_current 点6通道4"
+    },
+    "working_current_point7_channel1": {
+      "value": 68.12,
+      "unit": "mV",
+      "label": "working_current 点7通道1"
+    },
+    "working_current_point7_channel2": {
+      "value": -66.86,
+      "unit": "mV",
+      "label": "working_current 点7通道2"
+    },
+    "working_current_point7_channel3": {
+      "value": 61.81,
+      "unit": "mV",
+      "label": "working_current 点7通道3"
+    },
+    "working_current_point7_channel4": {
+      "value": -68.07,
+      "unit": "mV",
+      "label": "working_current 点7通道4"
+    },
+    "working_current_point8_channel1": {
+      "value": 77.81,
+      "unit": "mV",
+      "label": "working_current 点8通道1"
+    },
+    "working_current_point8_channel2": {
+      "value": -76.36,
+      "unit": "mV",
+      "label": "working_current 点8通道2"
+    },
+    "working_current_point8_channel3": {
+      "value": 76.4,
+      "unit": "mV",
+      "label": "working_current 点8通道3"
+    },
+    "working_current_point8_channel4": {
+      "value": -77.73,
+      "unit": "mV",
+      "label": "working_current 点8通道4"
+    },
+    "working_current_point9_channel1": {
+      "value": 87.51,
+      "unit": "mV",
+      "label": "working_current 点9通道1"
+    },
+    "working_current_point9_channel2": {
+      "value": -85.88,
+      "unit": "mV",
+      "label": "working_current 点9通道2"
+    },
+    "working_current_point9_channel3": {
+      "value": 85.94,
+      "unit": "mV",
+      "label": "working_current 点9通道3"
+    },
+    "working_current_point9_channel4": {
+      "value": -87.54,
+      "unit": "mV",
+      "label": "working_current 点9通道4"
+    },
+    "working_current_point10_channel1": {
+      "value": 97.22,
+      "unit": "mV",
+      "label": "working_current 点10通道1"
+    },
+    "working_current_point10_channel2": {
+      "value": -95.52,
+      "unit": "mV",
+      "label": "working_current 点10通道2"
+    },
+    "working_current_point10_channel3": {
+      "value": 95.48,
+      "unit": "mV",
+      "label": "working_current 点10通道3"
+    },
+    "working_current_point10_channel4": {
+      "value": -97.25,
+      "unit": "mV",
+      "label": "working_current 点10通道4"
+    },
+    "working_current_max_current_odd": {
+      "value": 1.879999999999999,
+      "unit": "mV",
+      "label": "working_current 最大电流奇分量绝对值"
+    },
+    "magnet_current_source_column_max_difference": {
+      "value": 8.527900607901984e-15,
+      "unit": "mV",
+      "label": "magnet_current 源处理列最大差"
+    },
+    "magnet_current_slope": {
+      "value": 0.00023939393939396972,
+      "unit": "mV/mA",
+      "label": "magnet_current 线性拟合斜率"
+    },
+    "magnet_current_intercept": {
+      "value": -0.008333333333342803,
+      "unit": "mV",
+      "label": "magnet_current 线性拟合截距"
+    },
+    "magnet_current_fit_R2": {
+      "value": 0.9409015528418747,
+      "unit": "1",
+      "label": "magnet_current 拟合决定系数"
+    },
+    "magnet_current_point1_channel1": {
+      "value": 297.2,
+      "unit": "mV",
+      "label": "magnet_current 点1通道1"
+    },
+    "magnet_current_point1_channel2": {
+      "value": 297.2,
+      "unit": "mV",
+      "label": "magnet_current 点1通道2"
+    },
+    "magnet_current_point1_channel3": {
+      "value": -297.3,
+      "unit": "mV",
+      "label": "magnet_current 点1通道3"
+    },
+    "magnet_current_point1_channel4": {
+      "value": -297.3,
+      "unit": "mV",
+      "label": "magnet_current 点1通道4"
+    },
+    "magnet_current_point2_channel1": {
+      "value": 297.2,
+      "unit": "mV",
+      "label": "magnet_current 点2通道1"
+    },
+    "magnet_current_point2_channel2": {
+      "value": 297.2,
+      "unit": "mV",
+      "label": "magnet_current 点2通道2"
+    },
+    "magnet_current_point2_channel3": {
+      "value": -297.3,
+      "unit": "mV",
+      "label": "magnet_current 点2通道3"
+    },
+    "magnet_current_point2_channel4": {
+      "value": -297.4,
+      "unit": "mV",
+      "label": "magnet_current 点2通道4"
+    },
+    "magnet_current_point3_channel1": {
+      "value": 297.2,
+      "unit": "mV",
+      "label": "magnet_current 点3通道1"
+    },
+    "magnet_current_point3_channel2": {
+      "value": 297.2,
+      "unit": "mV",
+      "label": "magnet_current 点3通道2"
+    },
+    "magnet_current_point3_channel3": {
+      "value": -297.3,
+      "unit": "mV",
+      "label": "magnet_current 点3通道3"
+    },
+    "magnet_current_point3_channel4": {
+      "value": -297.4,
+      "unit": "mV",
+      "label": "magnet_current 点3通道4"
+    },
+    "magnet_current_point4_channel1": {
+      "value": 297.2,
+      "unit": "mV",
+      "label": "magnet_current 点4通道1"
+    },
+    "magnet_current_point4_channel2": {
+      "value": 297.2,
+      "unit": "mV",
+      "label": "magnet_current 点4通道2"
+    },
+    "magnet_current_point4_channel3": {
+      "value": -297.3,
+      "unit": "mV",
+      "label": "magnet_current 点4通道3"
+    },
+    "magnet_current_point4_channel4": {
+      "value": -297.4,
+      "unit": "mV",
+      "label": "magnet_current 点4通道4"
+    },
+    "magnet_current_point5_channel1": {
+      "value": 297.3,
+      "unit": "mV",
+      "label": "magnet_current 点5通道1"
+    },
+    "magnet_current_point5_channel2": {
+      "value": 297.2,
+      "unit": "mV",
+      "label": "magnet_current 点5通道2"
+    },
+    "magnet_current_point5_channel3": {
+      "value": -297.3,
+      "unit": "mV",
+      "label": "magnet_current 点5通道3"
+    },
+    "magnet_current_point5_channel4": {
+      "value": -297.4,
+      "unit": "mV",
+      "label": "magnet_current 点5通道4"
+    },
+    "magnet_current_point6_channel1": {
+      "value": 297.3,
+      "unit": "mV",
+      "label": "magnet_current 点6通道1"
+    },
+    "magnet_current_point6_channel2": {
+      "value": 297.2,
+      "unit": "mV",
+      "label": "magnet_current 点6通道2"
+    },
+    "magnet_current_point6_channel3": {
+      "value": -297.3,
+      "unit": "mV",
+      "label": "magnet_current 点6通道3"
+    },
+    "magnet_current_point6_channel4": {
+      "value": -297.5,
+      "unit": "mV",
+      "label": "magnet_current 点6通道4"
+    },
+    "magnet_current_point7_channel1": {
+      "value": 297.3,
+      "unit": "mV",
+      "label": "magnet_current 点7通道1"
+    },
+    "magnet_current_point7_channel2": {
+      "value": 297.2,
+      "unit": "mV",
+      "label": "magnet_current 点7通道2"
+    },
+    "magnet_current_point7_channel3": {
+      "value": -297.3,
+      "unit": "mV",
+      "label": "magnet_current 点7通道3"
+    },
+    "magnet_current_point7_channel4": {
+      "value": -297.5,
+      "unit": "mV",
+      "label": "magnet_current 点7通道4"
+    },
+    "magnet_current_point8_channel1": {
+      "value": 297.4,
+      "unit": "mV",
+      "label": "magnet_current 点8通道1"
+    },
+    "magnet_current_point8_channel2": {
+      "value": 297.2,
+      "unit": "mV",
+      "label": "magnet_current 点8通道2"
+    },
+    "magnet_current_point8_channel3": {
+      "value": -297.3,
+      "unit": "mV",
+      "label": "magnet_current 点8通道3"
+    },
+    "magnet_current_point8_channel4": {
+      "value": -297.5,
+      "unit": "mV",
+      "label": "magnet_current 点8通道4"
+    },
+    "magnet_current_point9_channel1": {
+      "value": 297.4,
+      "unit": "mV",
+      "label": "magnet_current 点9通道1"
+    },
+    "magnet_current_point9_channel2": {
+      "value": 297.2,
+      "unit": "mV",
+      "label": "magnet_current 点9通道2"
+    },
+    "magnet_current_point9_channel3": {
+      "value": -297.4,
+      "unit": "mV",
+      "label": "magnet_current 点9通道3"
+    },
+    "magnet_current_point9_channel4": {
+      "value": -297.6,
+      "unit": "mV",
+      "label": "magnet_current 点9通道4"
+    },
+    "magnet_current_point10_channel1": {
+      "value": 297.4,
+      "unit": "mV",
+      "label": "magnet_current 点10通道1"
+    },
+    "magnet_current_point10_channel2": {
+      "value": 297.2,
+      "unit": "mV",
+      "label": "magnet_current 点10通道2"
+    },
+    "magnet_current_point10_channel3": {
+      "value": -297.4,
+      "unit": "mV",
+      "label": "magnet_current 点10通道3"
+    },
+    "magnet_current_point10_channel4": {
+      "value": -297.6,
+      "unit": "mV",
+      "label": "magnet_current 点10通道4"
+    },
+    "magnet_current_max_current_odd": {
+      "value": 297.4,
+      "unit": "mV",
+      "label": "magnet_current 最大电流奇分量绝对值"
+    },
+    "position_source_column_max_difference": {
+      "value": 1.4210854715202004e-14,
+      "unit": "mV",
+      "label": "position 源处理列最大差"
+    },
+    "position_point1_channel1": {
+      "value": 97.23,
+      "unit": "mV",
+      "label": "position 点1通道1"
+    },
+    "position_point1_channel2": {
+      "value": -95.46,
+      "unit": "mV",
+      "label": "position 点1通道2"
+    },
+    "position_point1_channel3": {
+      "value": 95.44,
+      "unit": "mV",
+      "label": "position 点1通道3"
+    },
+    "position_point1_channel4": {
+      "value": -97.19,
+      "unit": "mV",
+      "label": "position 点1通道4"
+    },
+    "position_point2_channel1": {
+      "value": 97.19,
+      "unit": "mV",
+      "label": "position 点2通道1"
+    },
+    "position_point2_channel2": {
+      "value": -95.4,
+      "unit": "mV",
+      "label": "position 点2通道2"
+    },
+    "position_point2_channel3": {
+      "value": 95.39,
+      "unit": "mV",
+      "label": "position 点2通道3"
+    },
+    "position_point2_channel4": {
+      "value": -97.14,
+      "unit": "mV",
+      "label": "position 点2通道4"
+    },
+    "position_point3_channel1": {
+      "value": 97.13,
+      "unit": "mV",
+      "label": "position 点3通道1"
+    },
+    "position_point3_channel2": {
+      "value": -95.34,
+      "unit": "mV",
+      "label": "position 点3通道2"
+    },
+    "position_point3_channel3": {
+      "value": 95.34,
+      "unit": "mV",
+      "label": "position 点3通道3"
+    },
+    "position_point3_channel4": {
+      "value": -97.08,
+      "unit": "mV",
+      "label": "position 点3通道4"
+    },
+    "position_point4_channel1": {
+      "value": 97.08,
+      "unit": "mV",
+      "label": "position 点4通道1"
+    },
+    "position_point4_channel2": {
+      "value": -95.29,
+      "unit": "mV",
+      "label": "position 点4通道2"
+    },
+    "position_point4_channel3": {
+      "value": 95.29,
+      "unit": "mV",
+      "label": "position 点4通道3"
+    },
+    "position_point4_channel4": {
+      "value": -97.02,
+      "unit": "mV",
+      "label": "position 点4通道4"
+    },
+    "position_point5_channel1": {
+      "value": 97.01,
+      "unit": "mV",
+      "label": "position 点5通道1"
+    },
+    "position_point5_channel2": {
+      "value": -95.25,
+      "unit": "mV",
+      "label": "position 点5通道2"
+    },
+    "position_point5_channel3": {
+      "value": 95.23,
+      "unit": "mV",
+      "label": "position 点5通道3"
+    },
+    "position_point5_channel4": {
+      "value": -96.97,
+      "unit": "mV",
+      "label": "position 点5通道4"
+    },
+    "position_point6_channel1": {
+      "value": 96.93,
+      "unit": "mV",
+      "label": "position 点6通道1"
+    },
+    "position_point6_channel2": {
+      "value": -95.17,
+      "unit": "mV",
+      "label": "position 点6通道2"
+    },
+    "position_point6_channel3": {
+      "value": 95.15,
+      "unit": "mV",
+      "label": "position 点6通道3"
+    },
+    "position_point6_channel4": {
+      "value": -96.88,
+      "unit": "mV",
+      "label": "position 点6通道4"
+    },
+    "position_point7_channel1": {
+      "value": 96.85,
+      "unit": "mV",
+      "label": "position 点7通道1"
+    },
+    "position_point7_channel2": {
+      "value": -95.06,
+      "unit": "mV",
+      "label": "position 点7通道2"
+    },
+    "position_point7_channel3": {
+      "value": 95.06,
+      "unit": "mV",
+      "label": "position 点7通道3"
+    },
+    "position_point7_channel4": {
+      "value": -96.78,
+      "unit": "mV",
+      "label": "position 点7通道4"
+    },
+    "position_point8_channel1": {
+      "value": 96.21,
+      "unit": "mV",
+      "label": "position 点8通道1"
+    },
+    "position_point8_channel2": {
+      "value": -94.48,
+      "unit": "mV",
+      "label": "position 点8通道2"
+    },
+    "position_point8_channel3": {
+      "value": 94.5,
+      "unit": "mV",
+      "label": "position 点8通道3"
+    },
+    "position_point8_channel4": {
+      "value": -96.14,
+      "unit": "mV",
+      "label": "position 点8通道4"
+    },
+    "position_point9_channel1": {
+      "value": 84.81,
+      "unit": "mV",
+      "label": "position 点9通道1"
+    },
+    "position_point9_channel2": {
+      "value": -83.41,
+      "unit": "mV",
+      "label": "position 点9通道2"
+    },
+    "position_point9_channel3": {
+      "value": 84.28,
+      "unit": "mV",
+      "label": "position 点9通道3"
+    },
+    "position_point9_channel4": {
+      "value": -85.78,
+      "unit": "mV",
+      "label": "position 点9通道4"
+    },
+    "position_point10_channel1": {
+      "value": 48.11,
+      "unit": "mV",
+      "label": "position 点10通道1"
+    },
+    "position_point10_channel2": {
+      "value": -47.3,
+      "unit": "mV",
+      "label": "position 点10通道2"
+    },
+    "position_point10_channel3": {
+      "value": 45.75,
+      "unit": "mV",
+      "label": "position 点10通道3"
+    },
+    "position_point10_channel4": {
+      "value": -47.32,
+      "unit": "mV",
+      "label": "position 点10通道4"
+    },
+    "position_max_current_odd": {
+      "value": 0.884999999999998,
+      "unit": "mV",
+      "label": "position 最大电流奇分量绝对值"
+    },
+    "same_setting_voltage_ratio": {
+      "value": 963.6749999999179,
+      "unit": "1",
+      "label": "两表同标记设置霍尔投影比值"
+    },
+    "field_end_ratio": {
+      "value": 0.4891518737672584,
+      "unit": "1",
+      "label": "20 mm相对2 mm的场投影比值"
+    },
+    "field_inner_spread_percent": {
+      "value": 0.4074535451053652,
+      "unit": "%",
+      "label": "2–14 mm记录相对变化范围"
+    }
+  }
+}

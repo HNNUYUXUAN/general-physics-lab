@@ -1,0 +1,58 @@
+{
+  "experiment": "course-02/sound-speed",
+  "paclet": "SoundSpeedLab",
+  "status": "passed",
+  "source_hashes": {
+    "analysis.wl": "122005287afb4a2115b05bf9615aec94b0803a98304c5b90337e6562f57a27d7",
+    "authoring.json": "783360734cb5451343df486c57dbc520283d05258874652799b2ef6ffc49a646"
+  },
+  "input_hashes": {
+    "data/author-verification.json": "e477df6d33780f512307e876d2b113e623272c39edf0460d4a07b7d4a3005ff5",
+    "data/provenance.json": "4029939511bef35530c041d73799cea267d0b2f038987c8cff154fc4818fe8e7",
+    "data/wavelengths.csv": "0b371cfa5323a42b39727125df48dfda685be10b74928493e89a07de102bb7e9",
+    "experiment.json": "f01d93ad250e07c8193f5ef088c58043b12648faac88a28ea9c21f2a79126f81"
+  },
+  "models": [
+    {
+      "key": "length-scale",
+      "capture_messages": [],
+      "status": "passed",
+      "held_body_sha256": "cd3395ad7b3986affc8645479ab62eb946e89e3d2741b121202012cf6c03db95",
+      "default_evaluation": {
+        "status": "evaluated",
+        "output_head": "Legended",
+        "response_sha256": "7cb680093e32793bc15e4c6762dd1f6ebf8cd6520b01758f3306df92cc649ae8",
+        "graphics_count": 1,
+        "messages": [],
+        "unresolved_heads": []
+      },
+      "default_repeat": {
+        "status": "evaluated",
+        "output_head": "Legended",
+        "response_sha256": "7cb680093e32793bc15e4c6762dd1f6ebf8cd6520b01758f3306df92cc649ae8",
+        "graphics_count": 1,
+        "messages": [],
+        "unresolved_heads": []
+      },
+      "default_deterministic": true,
+      "controls": [
+        {
+          "name": "SoundSpeedLab`Private`scale",
+          "default": 1,
+          "changed": 1.0004,
+          "specification_sha256": "75071f637cabe60bacc1696b76ee3f2eec90a3213e7f8a03be8afc97f4e761fa",
+          "evaluation": {
+            "status": "evaluated",
+            "output_head": "Legended",
+            "response_sha256": "9364d2d6df8497c9269a91fbcb62bf78b6fcf4626df3aa91791f1297dfd41a02",
+            "graphics_count": 1,
+            "messages": [],
+            "unresolved_heads": []
+          },
+          "response_changed": true,
+          "status": "passed"
+        }
+      ]
+    }
+  ]
+}

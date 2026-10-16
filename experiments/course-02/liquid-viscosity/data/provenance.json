@@ -1,0 +1,36 @@
+{
+  "primary_source": "originals/course-02/08-液体粘度系数的测量/实验报告-液体粘滞系数的测量.docx",
+  "primary_sha256": "a70de87054889d187683d83e7fdf8287cd60998d2f8e6c784f5b64d75793fff9",
+  "converted_source": "processed/course-02/08-液体粘度系数的测量/实验报告-液体粘滞系数的测量/正文.md",
+  "verification": "直接从主DOCX XML逐单元格提取观测，规范CSV完整保留读数；源计算表不作为观测输入。",
+  "table_mappings": [
+    {
+      "file": "observations-01.csv",
+      "source_table": 1,
+      "mapping": "行列顺序及单元格文本原样保存"
+    },
+    {
+      "file": "observations-02.csv",
+      "source_table": 2,
+      "mapping": "行列顺序及单元格文本原样保存"
+    },
+    {
+      "file": "observations-03.csv",
+      "source_table": 3,
+      "mapping": "行列顺序及单元格文本原样保存"
+    }
+  ],
+  "transformations": [
+    "使用原表单位，派生结果从未修约观测重新计算。"
+  ],
+  "issues": [
+    {
+      "status": "documented",
+      "detail": "另两组照片计时未拼接；计时定义需代表累计下落耗时。"
+    },
+    {
+      "status": "documented",
+      "detail": "只传播直径与时间给定分量，温度密度管径长度系统分量缺失。"
+    }
+  ]
+}

@@ -1,0 +1,482 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "metric": "group1_Rx",
+      "python": 194.4,
+      "wolfram": 194.4,
+      "unit": "Ω",
+      "passed": true
+    },
+    {
+      "metric": "group1_Cx",
+      "python": 1.0288065843621398e-07,
+      "wolfram": 1.0288065843621398e-07,
+      "unit": "F",
+      "passed": true
+    },
+    {
+      "metric": "group1_loss_factor",
+      "python": 0.1256637061435917,
+      "wolfram": 0.1256637061435917,
+      "unit": "1",
+      "passed": true
+    },
+    {
+      "metric": "group1_loss_angle",
+      "python": 7.162455806725821,
+      "wolfram": 7.162455806725821,
+      "unit": "degree",
+      "passed": true
+    },
+    {
+      "metric": "group1_reactance",
+      "python": 1546.986046853223,
+      "wolfram": 1546.986046853223,
+      "unit": "Ω",
+      "passed": true
+    },
+    {
+      "metric": "group1_impedance_magnitude",
+      "python": 1559.1527151496616,
+      "wolfram": 1559.1527151496616,
+      "unit": "Ω",
+      "passed": true
+    },
+    {
+      "metric": "group1_loss_identity_residual",
+      "python": 0.0,
+      "wolfram": 0.0,
+      "unit": "1",
+      "passed": true
+    },
+    {
+      "metric": "group2_Rx",
+      "python": 229.653,
+      "wolfram": 229.653,
+      "unit": "Ω",
+      "passed": true
+    },
+    {
+      "metric": "group2_Cx",
+      "python": 1.0319917440660475e-07,
+      "wolfram": 1.0319917440660473e-07,
+      "unit": "F",
+      "passed": true
+    },
+    {
+      "metric": "group2_loss_factor",
+      "python": 0.14891149178015617,
+      "wolfram": 0.1489114917801562,
+      "unit": "1",
+      "passed": true
+    },
+    {
+      "metric": "group2_loss_angle",
+      "python": 8.469761342034008,
+      "wolfram": 8.46976134203401,
+      "unit": "degree",
+      "passed": true
+    },
+    {
+      "metric": "group2_reactance",
+      "python": 1542.2113985604658,
+      "wolfram": 1542.211398560466,
+      "unit": "Ω",
+      "passed": true
+    },
+    {
+      "metric": "group2_impedance_magnitude",
+      "python": 1559.2166296762064,
+      "wolfram": 1559.2166296762068,
+      "unit": "Ω",
+      "passed": true
+    },
+    {
+      "metric": "group2_loss_identity_residual",
+      "python": 2.7755575615628914e-17,
+      "wolfram": -5.551115123125783e-17,
+      "unit": "1",
+      "passed": true
+    },
+    {
+      "metric": "group3_Rx",
+      "python": 231.84,
+      "wolfram": 231.84,
+      "unit": "Ω",
+      "passed": true
+    },
+    {
+      "metric": "group3_Cx",
+      "python": 1.0351966873706004e-07,
+      "wolfram": 1.0351966873706004e-07,
+      "unit": "F",
+      "passed": true
+    },
+    {
+      "metric": "group3_loss_factor",
+      "python": 0.15079644737231004,
+      "wolfram": 0.15079644737231007,
+      "unit": "1",
+      "passed": true
+    },
+    {
+      "metric": "group3_loss_angle",
+      "python": 8.575389309455968,
+      "wolfram": 8.57538930945597,
+      "unit": "degree",
+      "passed": true
+    },
+    {
+      "metric": "group3_reactance",
+      "python": 1537.4367502677092,
+      "wolfram": 1537.4367502677092,
+      "unit": "Ω",
+      "passed": true
+    },
+    {
+      "metric": "group3_impedance_magnitude",
+      "python": 1554.818814741362,
+      "wolfram": 1554.818814741362,
+      "unit": "Ω",
+      "passed": true
+    },
+    {
+      "metric": "group3_loss_identity_residual",
+      "python": 2.7755575615628914e-17,
+      "wolfram": 0.0,
+      "unit": "1",
+      "passed": true
+    },
+    {
+      "metric": "Rx_mean",
+      "python": 218.631,
+      "wolfram": 218.631,
+      "unit": "Ω",
+      "passed": true
+    },
+    {
+      "metric": "Cx_mean",
+      "python": 1.0319983385995958e-07,
+      "wolfram": 1.0319983385995958e-07,
+      "unit": "F",
+      "passed": true
+    },
+    {
+      "metric": "loss_mean",
+      "python": 0.1417905484320193,
+      "wolfram": 0.14179054843201933,
+      "unit": "1",
+      "passed": true
+    },
+    {
+      "metric": "capacitance_spread_percent",
+      "python": 0.6191970247870598,
+      "wolfram": 0.6191970247870598,
+      "unit": "%",
+      "passed": true
+    },
+    {
+      "metric": "resistance_spread_percent",
+      "python": 17.124744432399797,
+      "wolfram": 17.124744432399797,
+      "unit": "%",
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 0,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 0,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 0,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 0,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 0,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 0,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 1,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 1,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 1,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 1,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 1,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 1,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 2,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 2,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 2,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 2,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 2,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 2,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "results",
+      "row": 0,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "results",
+      "row": 0,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "results",
+      "row": 0,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "results",
+      "row": 0,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "results",
+      "row": 0,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "results",
+      "row": 0,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "results",
+      "row": 0,
+      "column": 6,
+      "passed": true
+    },
+    {
+      "table": "results",
+      "row": 0,
+      "column": 7,
+      "passed": true
+    },
+    {
+      "table": "results",
+      "row": 0,
+      "column": 8,
+      "passed": true
+    },
+    {
+      "table": "results",
+      "row": 1,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "results",
+      "row": 1,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "results",
+      "row": 1,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "results",
+      "row": 1,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "results",
+      "row": 1,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "results",
+      "row": 1,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "results",
+      "row": 1,
+      "column": 6,
+      "passed": true
+    },
+    {
+      "table": "results",
+      "row": 1,
+      "column": 7,
+      "passed": true
+    },
+    {
+      "table": "results",
+      "row": 1,
+      "column": 8,
+      "passed": true
+    },
+    {
+      "table": "results",
+      "row": 2,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "results",
+      "row": 2,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "results",
+      "row": 2,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "results",
+      "row": 2,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "results",
+      "row": 2,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "results",
+      "row": 2,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "results",
+      "row": 2,
+      "column": 6,
+      "passed": true
+    },
+    {
+      "table": "results",
+      "row": 2,
+      "column": 7,
+      "passed": true
+    },
+    {
+      "table": "results",
+      "row": 2,
+      "column": 8,
+      "passed": true
+    },
+    {
+      "table": "summary",
+      "row": 0,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "summary",
+      "row": 1,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "summary",
+      "row": 2,
+      "column": 1,
+      "passed": true
+    }
+  ],
+  "input_hashes": {
+    "data/balance.csv": "55e36a00001977373629242a29e564661ee5cad24e6e97243f1b75df7ffb10bf",
+    "data/label-repair-validation.json": "4378f0085362948086694361c4e4da9b7f145f90e8a76f2285352bdaf08de651",
+    "data/provenance.json": "5ab38c49b7a0d193fc652b9fe409c6d218e277792bbbbf1a3a707fddee76fcf6",
+    "data/python-author-validation.json": "127d1b0b2eeea1786581d5a10927529e40cac1aef48593a1c64b27c87fd0a606",
+    "experiment.json": "8c4d5869fa6d8a34a1542ca3156db939567441021a01861c25c37f688f302e74"
+  }
+}

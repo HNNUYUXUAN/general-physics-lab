@@ -1,0 +1,86 @@
+{
+  "checks": {
+    "finite_json": true,
+    "ratio_product": true,
+    "100_div_100": true,
+    "all_balanced_model_zero": true,
+    "four_interactive_states": true
+  },
+  "metrics": {
+    "R1_measured": {
+      "value": 3.0660000000000003,
+      "unit": "Ω",
+      "label": "标称3Ω的平衡结果"
+    },
+    "R1_nominal_deviation": {
+      "value": 2.200000000000009,
+      "unit": "%",
+      "label": "标称3Ω的相对偏差"
+    },
+    "R2_measured": {
+      "value": 46.594,
+      "unit": "Ω",
+      "label": "标称47Ω的平衡结果"
+    },
+    "R2_nominal_deviation": {
+      "value": -0.8638297872340401,
+      "unit": "%",
+      "label": "标称47Ω的相对偏差"
+    },
+    "R3_measured": {
+      "value": 200.2,
+      "unit": "Ω",
+      "label": "标称200Ω的平衡结果"
+    },
+    "R3_nominal_deviation": {
+      "value": 0.09999999999999432,
+      "unit": "%",
+      "label": "标称200Ω的相对偏差"
+    },
+    "R4_measured": {
+      "value": 1979.7,
+      "unit": "Ω",
+      "label": "标称2000Ω的平衡结果"
+    },
+    "R4_nominal_deviation": {
+      "value": -1.0149999999999977,
+      "unit": "%",
+      "label": "标称2000Ω的相对偏差"
+    },
+    "R5_measured": {
+      "value": 20421.0,
+      "unit": "Ω",
+      "label": "标称20000Ω的平衡结果"
+    },
+    "R5_nominal_deviation": {
+      "value": 2.105,
+      "unit": "%",
+      "label": "标称20000Ω的相对偏差"
+    },
+    "source_example_limit_arithmetic": {
+      "value": 0.006533,
+      "unit": "Ω",
+      "label": "源示例参数代入的限差算术值（非已确认适用）"
+    },
+    "model_M0p1_balance": {
+      "value": 0.0,
+      "unit": "1",
+      "label": "M=0.1平衡桥电压"
+    },
+    "model_M1_balance": {
+      "value": 0.0,
+      "unit": "1",
+      "label": "M=1平衡桥电压"
+    },
+    "model_M10_balance": {
+      "value": 0.0,
+      "unit": "1",
+      "label": "M=10平衡桥电压"
+    },
+    "model_M100_balance": {
+      "value": 0.0,
+      "unit": "1",
+      "label": "M=100平衡桥电压"
+    }
+  }
+}

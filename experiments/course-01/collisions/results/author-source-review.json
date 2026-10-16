@@ -1,0 +1,26 @@
+{
+  "experiment": "course-01/collisions",
+  "status": "passed-source-review",
+  "reviewed_at": "2026-10-16T00:33:51.171787+08:00",
+  "checks": [
+    "physical variables and units in Markdown and expansion prose use standard LaTeX",
+    "figure captions follow images",
+    "table captions precede data tables",
+    "expansion table captions before and figure captions after",
+    "no non-image links or cross-manuscript dependencies in reader text",
+    "display and inline math delimiters balanced"
+  ],
+  "changes": [
+    "Reader prose physical units converted to standard LaTeX; applicable bare beta, k, e, n and d converted to math. No data or algorithm changes."
+  ],
+  "source_hashes": {
+    "report\\report.template.md": "f4c2c16d48b0225c15bf22fd53a924cea0b2eb333c5ca3a9a4496f55ccf5c7eb",
+    "authoring.json": "420bcd4d393b37a513b45eb8b5e2a0ecfcb19bc89950bc879ce02fe7f6f92d20"
+  },
+  "issues": [],
+  "scope": "Source text review only; rebuilt Jupyter/Wolfram rendering is checked separately.",
+  "reviewed_files": [
+    "report/report.template.md",
+    "authoring.json"
+  ]
+}

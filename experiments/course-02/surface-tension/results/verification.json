@@ -1,0 +1,590 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "metric": "calibration_difference",
+      "python": 53.73749999999999,
+      "wolfram": 53.73749999999999,
+      "unit": "mV",
+      "passed": true
+    },
+    {
+      "metric": "conversion_difference",
+      "python": 0.00036451267736682956,
+      "wolfram": 0.0003645126773668296,
+      "unit": "N/mV",
+      "passed": true
+    },
+    {
+      "metric": "conversion_regression",
+      "python": 0.0003635098506681102,
+      "wolfram": 0.00036350985066811015,
+      "unit": "N/mV",
+      "passed": true
+    },
+    {
+      "metric": "calibration_intercept",
+      "python": -0.03274995506763144,
+      "wolfram": -0.03274995506763144,
+      "unit": "N",
+      "passed": true
+    },
+    {
+      "metric": "calibration_correlation",
+      "python": 0.9999775996444561,
+      "wolfram": 0.9999775996444561,
+      "unit": "1",
+      "passed": true
+    },
+    {
+      "metric": "mean_pull_difference",
+      "python": 38.18,
+      "wolfram": 38.18,
+      "unit": "mV",
+      "passed": true
+    },
+    {
+      "metric": "mean_inner_diameter",
+      "python": 33.008,
+      "wolfram": 33.008,
+      "unit": "mm",
+      "passed": true
+    },
+    {
+      "metric": "mean_outer_diameter",
+      "python": 34.944,
+      "wolfram": 34.944,
+      "unit": "mm",
+      "passed": true
+    },
+    {
+      "metric": "contact_length",
+      "python": 0.21347750399673363,
+      "wolfram": 0.21347750399673363,
+      "unit": "m",
+      "passed": true
+    },
+    {
+      "metric": "surface_tension",
+      "python": 0.06519232125778693,
+      "wolfram": 0.06519232125778693,
+      "unit": "N/m",
+      "passed": true
+    },
+    {
+      "metric": "surface_tension_regression",
+      "python": 0.06501296782409824,
+      "wolfram": 0.06501296782409823,
+      "unit": "N/m",
+      "passed": true
+    },
+    {
+      "metric": "conditional_uncertainty",
+      "python": 0.0010736135692195822,
+      "wolfram": 0.0010736135692195824,
+      "unit": "N/m",
+      "passed": true
+    },
+    {
+      "metric": "relative_deviation",
+      "python": 10.450108162380598,
+      "wolfram": 10.450108162380598,
+      "unit": "%",
+      "passed": true
+    },
+    {
+      "table": "calibration",
+      "row": 0,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "calibration",
+      "row": 0,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "calibration",
+      "row": 0,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "calibration",
+      "row": 0,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "calibration",
+      "row": 0,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "calibration",
+      "row": 1,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "calibration",
+      "row": 1,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "calibration",
+      "row": 1,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "calibration",
+      "row": 1,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "calibration",
+      "row": 1,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "calibration",
+      "row": 2,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "calibration",
+      "row": 2,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "calibration",
+      "row": 2,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "calibration",
+      "row": 2,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "calibration",
+      "row": 2,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "calibration",
+      "row": 3,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "calibration",
+      "row": 3,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "calibration",
+      "row": 3,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "calibration",
+      "row": 3,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "calibration",
+      "row": 3,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "calibration",
+      "row": 4,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "calibration",
+      "row": 4,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "calibration",
+      "row": 4,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "calibration",
+      "row": 4,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "calibration",
+      "row": 5,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "calibration",
+      "row": 5,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "calibration",
+      "row": 5,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "calibration",
+      "row": 5,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "calibration",
+      "row": 6,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "calibration",
+      "row": 6,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "calibration",
+      "row": 6,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "calibration",
+      "row": 6,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "calibration",
+      "row": 7,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "calibration",
+      "row": 7,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "calibration",
+      "row": 7,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "calibration",
+      "row": 7,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "pulls",
+      "row": 0,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "pulls",
+      "row": 0,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "pulls",
+      "row": 0,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "pulls",
+      "row": 0,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "pulls",
+      "row": 1,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "pulls",
+      "row": 1,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "pulls",
+      "row": 1,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "pulls",
+      "row": 1,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "pulls",
+      "row": 2,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "pulls",
+      "row": 2,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "pulls",
+      "row": 2,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "pulls",
+      "row": 2,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "pulls",
+      "row": 3,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "pulls",
+      "row": 3,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "pulls",
+      "row": 3,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "pulls",
+      "row": 3,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "pulls",
+      "row": 4,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "pulls",
+      "row": 4,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "pulls",
+      "row": 4,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "pulls",
+      "row": 4,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "pulls",
+      "row": 5,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "diameters",
+      "row": 0,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "diameters",
+      "row": 0,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "diameters",
+      "row": 0,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "diameters",
+      "row": 0,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "diameters",
+      "row": 0,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "diameters",
+      "row": 0,
+      "column": 6,
+      "passed": true
+    },
+    {
+      "table": "diameters",
+      "row": 1,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "diameters",
+      "row": 1,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "diameters",
+      "row": 1,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "diameters",
+      "row": 1,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "diameters",
+      "row": 1,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "diameters",
+      "row": 1,
+      "column": 6,
+      "passed": true
+    },
+    {
+      "table": "uncertainty",
+      "row": 0,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "uncertainty",
+      "row": 0,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "uncertainty",
+      "row": 0,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "uncertainty",
+      "row": 1,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "uncertainty",
+      "row": 1,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "uncertainty",
+      "row": 2,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "uncertainty",
+      "row": 2,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "uncertainty",
+      "row": 2,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "uncertainty",
+      "row": 3,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "uncertainty",
+      "row": 3,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "uncertainty",
+      "row": 4,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "uncertainty",
+      "row": 4,
+      "column": 3,
+      "passed": true
+    }
+  ],
+  "input_hashes": {
+    "data/author-verification.json": "5776703720133e2d6345a8b2ffc2276feda4859cb0d1e1e0b91939c37d5f0a4f",
+    "data/calibration.csv": "42b3c4731fc43897ee4576a10e22d8c8653d62f076f2ca580b475413b42700d3",
+    "data/diameters.csv": "9aacf24a9ab941c43d143e6703021a48623842ee51bb79c0949d2cedcefc649d",
+    "data/provenance.json": "95355a52ba504708323d39d7ab215c568be90922f1b1b31a8239788c56700d88",
+    "data/pulls.csv": "890e3a9b50707a573c5c458b09ac5f342b96fb8ffb9d6ed4c56da81947b05ab4",
+    "experiment.json": "d53c2e834a5404d10a305babc0ae2305da55732f1d741e279879eec7c5967f31"
+  }
+}

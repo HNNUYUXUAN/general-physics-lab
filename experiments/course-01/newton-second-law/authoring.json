@@ -1,0 +1,61 @@
+{
+  "title": "牛顿第二运动定律的验证",
+  "course": "course-01",
+  "slug": "newton-second-law",
+  "module": "newton_second_law",
+  "paclet": "NewtonSecondLawLab",
+  "source_docx": "originals/course-01/牛顿第二定律的验证/牛顿第二运动定律验证实验报告.docx",
+  "source_converted": "processed/courses-01-03-04/普通物理实验1/牛顿第二定律的验证/牛顿第二运动定律验证实验报告_docx/正文.md",
+  "sections": [
+    "一、实验名称",
+    "二、实验目的",
+    "三、实验原理",
+    "四、主要仪器设备",
+    "五、实验步骤",
+    "六、原始数据记录",
+    "七、数据处理",
+    "八、实验结果与讨论"
+  ],
+  "comparison": [
+    "acceleration_1",
+    "acceleration_2",
+    "acceleration_3",
+    "acceleration_4",
+    "acceleration_5",
+    "slope",
+    "intercept",
+    "correlation",
+    "r_squared",
+    "inferred_system_mass",
+    "equivalent_resistance",
+    "sse",
+    "slope_without_group1",
+    "intercept_without_group1",
+    "correlation_without_group1"
+  ],
+  "status": "authored-python-verified",
+  "expansions": [
+    {
+      "section": "七、数据处理",
+      "title": "未修约数据与复算检查",
+      "prose": "逐次重算有速度记录的加速度，并展示记录列与计算列差异。第一组使用直接记录值。",
+      "python": "table_display(result[\"tables\"][\"recalculation\"])",
+      "wolfram": "tableView[r[\"tables\"][\"recalculation\"]]",
+      "caption": "表 4　逐次加速度复算检查",
+      "caption_position": "before"
+    },
+    {
+      "section": "八、实验结果与讨论",
+      "title": "拟合组别选择与影响分析",
+      "prose": "切换全部五组或省略其中一组，观察拟合直线变化。所有观测点始终显示；只改变拟合使用的集合。默认保留全部五组，选点用于诊断，不自动更改正式结论。",
+      "python": "display_plotly(adapter.explore(\"fit-selection\",result))",
+      "wolfram": "exploreView[\"fit-selection\"]",
+      "caption": "图 2　各组观测对质量—加速度拟合的影响"
+    }
+  ],
+  "limitations": [
+    "未提供独立称量系统总质量，不能将斜率推算值与实测值比较。",
+    "F1采用直接加速度、其他组采用速度重算，测量模式差异可能影响线性拟合。",
+    "缺挡光片宽度、计时分辨率、测距及砝码误差限，无法完整传播仪器不确定度。"
+  ]
+}

@@ -1,0 +1,1 @@
+PacletObject[<|"Name"->"MeterCalibrationLab","Version"->"0.1.0","WolframVersion"->"14.0+","Description"->"\:7535\:8868\:7684\:6539\:88c5\:4e0e\:6821\:51c6","Creator"->"Physics Lab Contributors","Extensions"->{{"Kernel","Root"->"Kernel","Context"->{"MeterCalibrationLab`"}},{"Resource","Root"->".","Resources"->{"Notebooks","data","assets"}}}|>]

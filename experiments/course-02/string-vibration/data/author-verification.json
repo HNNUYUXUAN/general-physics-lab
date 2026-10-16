@@ -1,0 +1,73 @@
+{
+  "status": "python-executed-awaiting-wolfram",
+  "checks": [
+    "14 source cases",
+    "last wavelength126.60cm",
+    "fixed-end zero boundary",
+    "n2 default and n1–4 states"
+  ],
+  "metrics": {
+    "tension_exponent": {
+      "value": 0.3078547635664914,
+      "unit": "1",
+      "label": "张力幂指数",
+      "uncertainty": 0.0911449101906881
+    },
+    "tension_intercept": {
+      "value": 2.089677244350785,
+      "unit": "1",
+      "label": "张力双对数截距"
+    },
+    "tension_correlation": {
+      "value": 0.833833969432504,
+      "unit": "1",
+      "label": "张力双对数相关系数"
+    },
+    "tension_slope_uncertainty": {
+      "value": 0.0911449101906881,
+      "unit": "1",
+      "label": "张力指数回归标准误差"
+    },
+    "tension_exponent_deviation": {
+      "value": 38.429047286701724,
+      "unit": "%",
+      "label": "张力指数相对理论差异"
+    },
+    "frequency_exponent": {
+      "value": -0.9830405903265617,
+      "unit": "1",
+      "label": "频率幂指数",
+      "uncertainty": 0.06967249724117791
+    },
+    "frequency_intercept": {
+      "value": 3.85455186112266,
+      "unit": "1",
+      "label": "频率双对数截距"
+    },
+    "frequency_correlation": {
+      "value": -0.987673727539698,
+      "unit": "1",
+      "label": "频率双对数相关系数"
+    },
+    "frequency_slope_uncertainty": {
+      "value": 0.06967249724117791,
+      "unit": "1",
+      "label": "频率指数回归标准误差"
+    },
+    "frequency_exponent_deviation": {
+      "value": 1.6959409673438341,
+      "unit": "%",
+      "label": "频率指数相对理论差异"
+    },
+    "last_tension_wavelength": {
+      "value": 126.6,
+      "unit": "cm",
+      "label": "最后张力点由L与n复算波长"
+    },
+    "baseline_wave_speed": {
+      "value": 59.46,
+      "unit": "m/s",
+      "label": "第一驻波记录推算传播速度"
+    }
+  }
+}

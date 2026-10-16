@@ -1,0 +1,1 @@
+PacletObject[<|"Name"->"SingleSlitDiffractionLab","Version"->"0.1.0","WolframVersion"->"14.0+","Description"->"\:5355\:7f1d\:884d\:5c04\:5149\:5f3a\:5206\:5e03\:7814\:7a76","Creator"->"Physics Lab Contributors","Extensions"->{{"Kernel","Root"->"Kernel","Context"->{"SingleSlitDiffractionLab`"}},{"Resource","Root"->".","Resources"->{"Notebooks","data","assets"}}}|>]

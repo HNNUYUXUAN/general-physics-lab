@@ -1,0 +1,1 @@
+PacletObject[<|"Name"->"HolographyLab","Version"->"0.1.0","WolframVersion"->"14.0+","Description"->"\:5168\:606f\:7167\:76f8","Creator"->"Physics Lab Contributors","Extensions"->{{"Kernel","Root"->"Kernel","Context"->{"HolographyLab`"}},{"Resource","Root"->".","Resources"->{"Notebooks","data","assets"}}}|>]

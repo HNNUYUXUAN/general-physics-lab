@@ -1,0 +1,7 @@
+VerificationTest[NumberQ[OpticalRotationLab`Analyze[]["metrics"]["rotation_magnitude_deg"]["value"]],True,TestID->"finite-rotation_magnitude_deg"]
+VerificationTest[NumberQ[OpticalRotationLab`Analyze[]["metrics"]["rotation_type_a_arcmin"]["value"]],True,TestID->"finite-rotation_type_a_arcmin"]
+VerificationTest[NumberQ[OpticalRotationLab`Analyze[]["metrics"]["conditional_concentration_g_ml"]["value"]],True,TestID->"finite-conditional_concentration_g_ml"]
+VerificationTest[NumberQ[OpticalRotationLab`Analyze[]["metrics"]["concentration_type_a_g_ml"]["value"]],True,TestID->"finite-concentration_type_a_g_ml"]
+VerificationTest[NumberQ[OpticalRotationLab`Analyze[]["metrics"]["maximum_vernier_disagreement_arcmin"]["value"]],True,TestID->"finite-maximum_vernier_disagreement_arcmin"]
+VerificationTest[FileExistsQ[OpticalRotationLab`LabNotebookPath[]],True,TestID->"notebook-entry"]
+VerificationTest[FileNameTake[OpticalRotationLab`LabNotebookPath[]],"OpticalRotationLab.nb",TestID->"notebook-name"]

@@ -1,0 +1,200 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "metric": "water_mass",
+      "python": 119.76,
+      "wolfram": 119.76,
+      "unit": "g",
+      "passed": true
+    },
+    {
+      "metric": "steam_mass",
+      "python": 7.800000000000011,
+      "wolfram": 7.800000000000011,
+      "unit": "g",
+      "passed": true
+    },
+    {
+      "metric": "initial_temperature",
+      "python": 12.650000000000034,
+      "wolfram": 12.650000000000034,
+      "unit": "degC",
+      "passed": true
+    },
+    {
+      "metric": "final_temperature",
+      "python": 45.150000000000034,
+      "wolfram": 45.150000000000034,
+      "unit": "degC",
+      "passed": true
+    },
+    {
+      "metric": "temperature_rise",
+      "python": 32.5,
+      "wolfram": 32.5,
+      "unit": "K",
+      "passed": true
+    },
+    {
+      "metric": "steam_temperature_drop",
+      "python": 54.849999999999966,
+      "wolfram": 54.849999999999966,
+      "unit": "K",
+      "passed": true
+    },
+    {
+      "metric": "system_heat_capacity",
+      "python": 528.57384,
+      "wolfram": 528.57384,
+      "unit": "J/K",
+      "passed": true
+    },
+    {
+      "metric": "absorbed_heat",
+      "python": 17178.6498,
+      "wolfram": 17178.6498,
+      "unit": "J",
+      "passed": true
+    },
+    {
+      "metric": "sensible_heat",
+      "python": 1788.3294000000012,
+      "wolfram": 1788.3294000000012,
+      "unit": "J",
+      "passed": true
+    },
+    {
+      "metric": "latent_heat_total",
+      "python": 15390.320399999999,
+      "wolfram": 15390.320399999999,
+      "unit": "J",
+      "passed": true
+    },
+    {
+      "metric": "latent_heat",
+      "python": 1973117.999999997,
+      "wolfram": 1973117.999999997,
+      "unit": "J/kg",
+      "passed": true
+    },
+    {
+      "metric": "relative_deviation",
+      "python": 12.3058666666668,
+      "wolfram": 12.305866666666802,
+      "unit": "%",
+      "passed": true
+    },
+    {
+      "metric": "alternative_steam_mass",
+      "python": 3.9600000000000115,
+      "wolfram": 3.9600000000000115,
+      "unit": "g",
+      "passed": true
+    },
+    {
+      "metric": "alternative_latent_heat",
+      "python": 4108769.8787878663,
+      "wolfram": 4108769.8787878654,
+      "unit": "J/kg",
+      "passed": true
+    },
+    {
+      "metric": "final_temperature_sensitivity",
+      "python": 71945.87692307684,
+      "wolfram": 71945.87692307684,
+      "unit": "J/(kg K)",
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 0,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 1,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 2,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 3,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 4,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 5,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 6,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "energy",
+      "row": 0,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "energy",
+      "row": 1,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "energy",
+      "row": 2,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "composition",
+      "row": 0,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "composition",
+      "row": 0,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "composition",
+      "row": 1,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "composition",
+      "row": 1,
+      "column": 2,
+      "passed": true
+    }
+  ],
+  "input_hashes": {
+    "data/author-verification.json": "98697446b3cdc77bd6bf83a4dde5bf0cf00e8fdd45c4f747b5e817b10532aaa1",
+    "data/observations.csv": "37468cf162ffae188e79b52c00f0219f258f2c18dee016ab00f34adf400d5236",
+    "data/provenance.json": "a32026efe19a962abcc60fd596d7496929c48c031137ca1358065042ae5ae326",
+    "experiment.json": "c9076b69918f27af1efb1bba345bbddd2cc5d785dadefb06b671daaf0e4ad776"
+  }
+}

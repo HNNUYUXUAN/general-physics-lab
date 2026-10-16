@@ -1,0 +1,1 @@
+PacletObject[<|"Name"->"DividerCircuitsLab","Version"->"0.1.0","WolframVersion"->"14.0+","Description"->"\:5236\:6d41\:5206\:538b\:7535\:8def","Creator"->"Physics Lab Contributors","Extensions"->{{"Kernel","Root"->"Kernel","Context"->{"DividerCircuitsLab`"}},{"Resource","Root"->".","Resources"->{"Notebooks","data","assets"}}}|>]

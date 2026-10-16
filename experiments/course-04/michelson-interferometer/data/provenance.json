@@ -1,0 +1,26 @@
+{
+  "primary_source": "originals/course-04/08_实验八_迈克尔逊干涉仪的调节和使用_实验报告.docx",
+  "primary_sha256": "26ee969d8ddfbeacf1ac22ae6a3a4defd1632170ee42421574c388115d2593f9",
+  "converted_source": "processed/courses-01-03-04/普通物理实验4/08_实验八_迈克尔逊干涉仪的调节和使用_实验报告_docx/正文.md",
+  "verification": "直接从主DOCX XML逐单元格提取观测，规范CSV完整保留读数；源计算表不作为观测输入。",
+  "table_mappings": [
+    {
+      "file": "observations-01.csv",
+      "source_table": 1,
+      "mapping": "行列顺序及单元格文本原样保存"
+    }
+  ],
+  "transformations": [
+    "使用原表单位，派生结果从未修约观测重新计算。"
+  ],
+  "issues": [
+    {
+      "status": "documented",
+      "detail": "缺位移标尺和条纹计数不确定度。"
+    },
+    {
+      "status": "documented",
+      "detail": "632.8nm仅是指定常用参考值。"
+    }
+  ]
+}

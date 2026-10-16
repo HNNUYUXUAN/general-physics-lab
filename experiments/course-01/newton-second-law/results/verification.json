@@ -1,0 +1,1766 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "metric": "acceleration_1",
+      "python": 20.107999999999997,
+      "wolfram": 20.107999999999997,
+      "unit": "cm/s^2",
+      "passed": true
+    },
+    {
+      "metric": "acceleration_2",
+      "python": 55.1072938,
+      "wolfram": 55.1072938,
+      "unit": "cm/s^2",
+      "passed": true
+    },
+    {
+      "metric": "acceleration_3",
+      "python": 83.1913522,
+      "wolfram": 83.1913522,
+      "unit": "cm/s^2",
+      "passed": true
+    },
+    {
+      "metric": "acceleration_4",
+      "python": 112.1110076,
+      "wolfram": 112.11100760000002,
+      "unit": "cm/s^2",
+      "passed": true
+    },
+    {
+      "metric": "acceleration_5",
+      "python": 140.95204540000003,
+      "wolfram": 140.95204540000003,
+      "unit": "cm/s^2",
+      "passed": true
+    },
+    {
+      "metric": "slope",
+      "python": 0.16711263100883547,
+      "wolfram": 0.16711263100883544,
+      "unit": "g/(cm/s^2)",
+      "passed": true
+    },
+    {
+      "metric": "intercept",
+      "python": 1.2476432039392797,
+      "wolfram": 1.2476432039392815,
+      "unit": "g",
+      "passed": true
+    },
+    {
+      "metric": "correlation",
+      "python": 0.9991513731910995,
+      "wolfram": 0.9991513731910995,
+      "unit": "1",
+      "passed": true
+    },
+    {
+      "metric": "r_squared",
+      "python": 0.9983034665496597,
+      "wolfram": 0.9983034665496597,
+      "unit": "1",
+      "passed": true
+    },
+    {
+      "metric": "inferred_system_mass",
+      "python": 163.77037838865877,
+      "wolfram": 163.77037838865874,
+      "unit": "g",
+      "passed": true
+    },
+    {
+      "metric": "equivalent_resistance",
+      "python": 0.012226903398604943,
+      "wolfram": 0.01222690339860496,
+      "unit": "N",
+      "passed": true
+    },
+    {
+      "metric": "sse",
+      "python": 0.42413336258503553,
+      "wolfram": 0.4241333625850341,
+      "unit": "g^2",
+      "passed": true
+    },
+    {
+      "metric": "slope_without_group1",
+      "python": 0.1745402775964133,
+      "wolfram": 0.17454027759641325,
+      "unit": "g/(cm/s^2)",
+      "passed": true
+    },
+    {
+      "metric": "intercept_without_group1",
+      "python": 0.4229051039840108,
+      "wolfram": 0.4229051039840179,
+      "unit": "g",
+      "passed": true
+    },
+    {
+      "metric": "correlation_without_group1",
+      "python": 0.9999774497946048,
+      "wolfram": 0.9999774497946046,
+      "unit": "1",
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 0,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 0,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 0,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 0,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 0,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 1,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 1,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 1,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 1,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 1,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 2,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 2,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 2,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 2,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 2,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 3,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 3,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 3,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 3,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 3,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 4,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 4,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 4,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 4,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 4,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 5,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 5,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 5,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 5,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 5,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 5,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 6,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 6,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 6,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 6,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 6,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 6,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 7,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 7,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 7,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 7,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 7,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 7,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 8,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 8,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 8,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 8,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 8,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 8,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 9,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 9,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 9,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 9,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 9,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 9,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 10,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 10,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 10,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 10,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 10,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 10,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 11,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 11,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 11,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 11,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 11,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 11,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 12,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 12,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 12,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 12,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 12,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 12,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 13,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 13,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 13,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 13,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 13,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 13,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 14,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 14,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 14,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 14,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 14,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 14,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 15,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 15,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 15,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 15,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 15,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 15,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 16,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 16,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 16,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 16,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 16,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 16,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 17,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 17,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 17,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 17,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 17,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 17,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 18,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 18,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 18,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 18,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 18,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 18,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 19,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 19,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 19,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 19,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 19,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 19,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 20,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 20,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 20,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 20,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 20,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 20,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 21,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 21,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 21,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 21,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 21,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 21,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 22,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 22,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 22,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 22,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 22,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 22,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 23,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 23,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 23,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 23,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 23,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 23,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 24,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 24,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 24,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 24,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 24,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 24,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "recalculation",
+      "row": 0,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "recalculation",
+      "row": 0,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "recalculation",
+      "row": 0,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "recalculation",
+      "row": 0,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "recalculation",
+      "row": 1,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "recalculation",
+      "row": 1,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "recalculation",
+      "row": 1,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "recalculation",
+      "row": 1,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "recalculation",
+      "row": 2,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "recalculation",
+      "row": 2,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "recalculation",
+      "row": 2,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "recalculation",
+      "row": 2,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "recalculation",
+      "row": 3,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "recalculation",
+      "row": 3,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "recalculation",
+      "row": 3,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "recalculation",
+      "row": 3,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "recalculation",
+      "row": 4,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "recalculation",
+      "row": 4,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "recalculation",
+      "row": 4,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "recalculation",
+      "row": 4,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "recalculation",
+      "row": 5,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "recalculation",
+      "row": 5,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "recalculation",
+      "row": 5,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "recalculation",
+      "row": 5,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "recalculation",
+      "row": 6,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "recalculation",
+      "row": 6,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "recalculation",
+      "row": 6,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "recalculation",
+      "row": 6,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "recalculation",
+      "row": 7,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "recalculation",
+      "row": 7,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "recalculation",
+      "row": 7,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "recalculation",
+      "row": 7,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "recalculation",
+      "row": 8,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "recalculation",
+      "row": 8,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "recalculation",
+      "row": 8,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "recalculation",
+      "row": 8,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "recalculation",
+      "row": 9,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "recalculation",
+      "row": 9,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "recalculation",
+      "row": 9,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "recalculation",
+      "row": 9,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "recalculation",
+      "row": 10,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "recalculation",
+      "row": 10,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "recalculation",
+      "row": 10,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "recalculation",
+      "row": 10,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "recalculation",
+      "row": 11,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "recalculation",
+      "row": 11,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "recalculation",
+      "row": 11,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "recalculation",
+      "row": 11,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "recalculation",
+      "row": 12,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "recalculation",
+      "row": 12,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "recalculation",
+      "row": 12,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "recalculation",
+      "row": 12,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "recalculation",
+      "row": 13,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "recalculation",
+      "row": 13,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "recalculation",
+      "row": 13,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "recalculation",
+      "row": 13,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "recalculation",
+      "row": 14,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "recalculation",
+      "row": 14,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "recalculation",
+      "row": 14,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "recalculation",
+      "row": 14,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "recalculation",
+      "row": 15,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "recalculation",
+      "row": 15,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "recalculation",
+      "row": 15,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "recalculation",
+      "row": 15,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "recalculation",
+      "row": 16,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "recalculation",
+      "row": 16,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "recalculation",
+      "row": 16,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "recalculation",
+      "row": 16,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "recalculation",
+      "row": 17,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "recalculation",
+      "row": 17,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "recalculation",
+      "row": 17,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "recalculation",
+      "row": 17,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "recalculation",
+      "row": 18,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "recalculation",
+      "row": 18,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "recalculation",
+      "row": 18,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "recalculation",
+      "row": 18,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "recalculation",
+      "row": 19,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "recalculation",
+      "row": 19,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "recalculation",
+      "row": 19,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "recalculation",
+      "row": 19,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "recalculation",
+      "row": 20,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "recalculation",
+      "row": 20,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "recalculation",
+      "row": 20,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "recalculation",
+      "row": 20,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "recalculation",
+      "row": 21,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "recalculation",
+      "row": 21,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "recalculation",
+      "row": 21,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "recalculation",
+      "row": 21,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "recalculation",
+      "row": 22,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "recalculation",
+      "row": 22,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "recalculation",
+      "row": 22,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "recalculation",
+      "row": 22,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "recalculation",
+      "row": 23,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "recalculation",
+      "row": 23,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "recalculation",
+      "row": 23,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "recalculation",
+      "row": 23,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "recalculation",
+      "row": 24,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "recalculation",
+      "row": 24,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "recalculation",
+      "row": 24,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "recalculation",
+      "row": 24,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "summary",
+      "row": 0,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "summary",
+      "row": 0,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "summary",
+      "row": 0,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "summary",
+      "row": 0,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "summary",
+      "row": 0,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "summary",
+      "row": 0,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "summary",
+      "row": 1,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "summary",
+      "row": 1,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "summary",
+      "row": 1,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "summary",
+      "row": 1,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "summary",
+      "row": 1,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "summary",
+      "row": 1,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "summary",
+      "row": 2,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "summary",
+      "row": 2,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "summary",
+      "row": 2,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "summary",
+      "row": 2,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "summary",
+      "row": 2,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "summary",
+      "row": 2,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "summary",
+      "row": 3,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "summary",
+      "row": 3,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "summary",
+      "row": 3,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "summary",
+      "row": 3,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "summary",
+      "row": 3,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "summary",
+      "row": 3,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "summary",
+      "row": 4,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "summary",
+      "row": 4,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "summary",
+      "row": 4,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "summary",
+      "row": 4,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "summary",
+      "row": 4,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "summary",
+      "row": 4,
+      "column": 5,
+      "passed": true
+    }
+  ],
+  "input_hashes": {
+    "data/author-verification.json": "d740b1e1c9d53a49defcd1e255224bda29869f733b99eb100f3f3e2c5d61d21e",
+    "data/observations.csv": "c9da0b469d3d96476dd3b1c3ea9475857e578560bd7191ba49d44b52be67f657",
+    "data/provenance.json": "208b7b5f1db168ddb26fd981b543302f79bc5d0b2fdf20dbe0eb06863445d63d",
+    "experiment.json": "c56bcce64fcbd61cd2a20801e4aa15fa88af83ddc1d7a2af2d1e4e7287646e9b"
+  }
+}

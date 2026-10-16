@@ -1,0 +1,89 @@
+{
+  "status": "python-executed-awaiting-wolfram",
+  "metrics": {
+    "acceleration_1": {
+      "value": 20.107999999999997,
+      "unit": "cm/s^2",
+      "label": "第1组平均加速度",
+      "uncertainty": 0.05526300751859211
+    },
+    "acceleration_2": {
+      "value": 55.1072938,
+      "unit": "cm/s^2",
+      "label": "第2组平均加速度",
+      "uncertainty": 0.12550715135019339
+    },
+    "acceleration_3": {
+      "value": 83.1913522,
+      "unit": "cm/s^2",
+      "label": "第3组平均加速度",
+      "uncertainty": 0.12535857585997204
+    },
+    "acceleration_4": {
+      "value": 112.1110076,
+      "unit": "cm/s^2",
+      "label": "第4组平均加速度",
+      "uncertainty": 0.3948850492577029
+    },
+    "acceleration_5": {
+      "value": 140.95204540000003,
+      "unit": "cm/s^2",
+      "label": "第5组平均加速度",
+      "uncertainty": 0.7975857390851189
+    },
+    "slope": {
+      "value": 0.16711263100883547,
+      "unit": "g/(cm/s^2)",
+      "label": "质量—加速度拟合斜率",
+      "uncertainty": 0.003977393625025838
+    },
+    "intercept": {
+      "value": 1.2476432039392797,
+      "unit": "g",
+      "label": "拟合截距",
+      "uncertainty": 0.36798223196759644
+    },
+    "correlation": {
+      "value": 0.9991513731910995,
+      "unit": "1",
+      "label": "相关系数"
+    },
+    "r_squared": {
+      "value": 0.9983034665496597,
+      "unit": "1",
+      "label": "决定系数"
+    },
+    "inferred_system_mass": {
+      "value": 163.77037838865877,
+      "unit": "g",
+      "label": "斜率推算系统质量",
+      "uncertainty": 3.897845752525321
+    },
+    "equivalent_resistance": {
+      "value": 0.012226903398604943,
+      "unit": "N",
+      "label": "截距等效阻力",
+      "uncertainty": 0.0036062258732824453
+    },
+    "sse": {
+      "value": 0.42413336258503553,
+      "unit": "g^2",
+      "label": "拟合残差平方和"
+    },
+    "slope_without_group1": {
+      "value": 0.1745402775964133,
+      "unit": "g/(cm/s^2)",
+      "label": "去掉第一组后的斜率"
+    },
+    "intercept_without_group1": {
+      "value": 0.4229051039840108,
+      "unit": "g",
+      "label": "去掉第一组后的截距"
+    },
+    "correlation_without_group1": {
+      "value": 0.9999774497946048,
+      "unit": "1",
+      "label": "去掉第一组后的相关系数"
+    }
+  }
+}

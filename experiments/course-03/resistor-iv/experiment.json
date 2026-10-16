@@ -1,0 +1,29 @@
+{
+  "experiment_id": "course-03/resistor-iv",
+  "title": "电阻伏安特性的测定",
+  "data_version": 1,
+  "current_ranges_mA": {
+    "R1": "20 mA",
+    "R2": "2 mA"
+  },
+  "diode_recorded_current_range_mA": 2,
+  "model": {
+    "voltmeter_ammeter_ratios": [
+      1000,
+      10000,
+      1000000
+    ],
+    "assumptions": [
+      "仪表内阻为正且恒定",
+      "加载误差模型采用无量纲电阻比，未指定实测内阻",
+      "二极管半对数分析只用0.40–0.60 V记录，未拟合量程冲突的0.65 V点"
+    ]
+  },
+  "units": {
+    "voltage_V": "V",
+    "current_mA": "mA"
+  },
+  "uncertainty": {
+    "status": "未给出精度等级、仪表内阻、重复测量，不计算完整不确定度"
+  }
+}

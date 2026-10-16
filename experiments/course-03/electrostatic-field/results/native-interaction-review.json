@@ -1,0 +1,58 @@
+{
+  "experiment": "course-03/electrostatic-field",
+  "paclet": "ElectrostaticFieldLab",
+  "status": "passed",
+  "source_hashes": {
+    "analysis.wl": "e1e067a010bb058402ac31b66a218ec5a7889a30e71ab1b3449a3fa4d2fdc319",
+    "authoring.json": "687c724421838542124d4013e36d757a0b5178bc29d9846cb5725f96937cdfa3"
+  },
+  "input_hashes": {
+    "data/provenance.json": "d972535b8a669e54daac299d50295df28a804ddcc37cba41d16c8e92806a5238",
+    "data/python-author-validation.json": "cea74ca0521d5f49fddce18c4851ee74b92ea399ed23388f2171d3a0e4196806",
+    "data/reported_radii.csv": "cd1490db3a896d43b1d6b019dff70966145ae918f91aae84bfd7864ee34eaab8",
+    "experiment.json": "cdb3051358f50d40fec6a4f39e3a916c267491caf400ced5fcc8f74e65090a6c"
+  },
+  "models": [
+    {
+      "key": "coaxial",
+      "capture_messages": [],
+      "status": "passed",
+      "held_body_sha256": "248dce775a2a3f4ae1ab6360281df546aefb86180eed73e9236bfe19ae40c523",
+      "default_evaluation": {
+        "status": "evaluated",
+        "output_head": "Graphics",
+        "response_sha256": "8c00cf30b99fd78c541b2aaf69ee6cac146a4837227e02a0176c89132afa574e",
+        "graphics_count": 3,
+        "messages": [],
+        "unresolved_heads": []
+      },
+      "default_repeat": {
+        "status": "evaluated",
+        "output_head": "Graphics",
+        "response_sha256": "8c00cf30b99fd78c541b2aaf69ee6cac146a4837227e02a0176c89132afa574e",
+        "graphics_count": 3,
+        "messages": [],
+        "unresolved_heads": []
+      },
+      "default_deterministic": true,
+      "controls": [
+        {
+          "name": "ElectrostaticFieldLab`Private`u",
+          "default": 10,
+          "changed": 5,
+          "specification_sha256": "b7e86f6bd28bf039bd034b1d24656202550241cbfbe81ea881787a80e6835480",
+          "evaluation": {
+            "status": "evaluated",
+            "output_head": "Graphics",
+            "response_sha256": "e3b06ec863008fde61a23d6778b1bdc71d50ff3856baf873b69971e70a95c2e5",
+            "graphics_count": 3,
+            "messages": [],
+            "unresolved_heads": []
+          },
+          "response_changed": true,
+          "status": "passed"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "id": "course-04/optical-rotation",
+  "title": "用旋光仪测定旋光性溶液的旋光率和浓度",
+  "parameters": {
+    "assumed_tube_length_dm": 2.0,
+    "reference_specific_rotation": 66.46
+  },
+  "models": {
+    "rotation": "仅已记录角差绝对值，给定蔗糖参考值下c=|phi|/(alpha*l)。"
+  },
+  "source_docx": "originals/course-04/11_实验十一_用旋光仪测定旋光性溶液的旋光率和浓度_实验报告_A3双面示范格式版.docx",
+  "data_version": "1.0.0"
+}

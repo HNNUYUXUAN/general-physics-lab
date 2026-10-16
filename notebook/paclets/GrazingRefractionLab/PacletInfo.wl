@@ -1,0 +1,1 @@
+PacletObject[<|"Name"->"GrazingRefractionLab","Version"->"0.1.0","WolframVersion"->"14.0+","Description"->"\:7528\:63a0\:5c04\:6cd5\:6d4b\:5b9a\:900f\:660e\:4ecb\:8d28\:7684\:6298\:5c04\:7387","Creator"->"Physics Lab Contributors","Extensions"->{{"Kernel","Root"->"Kernel","Context"->{"GrazingRefractionLab`"}},{"Resource","Root"->".","Resources"->{"Notebooks","data","assets"}}}|>]

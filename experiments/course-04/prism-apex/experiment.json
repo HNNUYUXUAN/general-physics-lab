@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "id": "course-04/prism-apex",
+  "title": "用分光计测三棱镜的顶角",
+  "parameters": {
+    "angle_error_bound_arcmin": 1
+  },
+  "models": {
+    "reflection": "反射光夹角为2A；两游标平均后除以2。"
+  },
+  "source_docx": "originals/course-04/02_实验二_用分光计测三棱镜的顶角_实验报告_A3双面示范格式版.docx",
+  "data_version": "1.0.0"
+}

@@ -1,0 +1,110 @@
+{
+  "checked_at": "2026-10-15T22:43:13.750033+08:00",
+  "reference_images": [
+    "E:/系统下载/表3-11-4_差分斜率判定图.png",
+    "E:/系统下载/表3-11-4_温度电压曲线.png"
+  ],
+  "report": {
+    "source": "archive/originals/course-01/单摆测重力加速度/牛顿第二运动定律测重力加速度实验报告.docx",
+    "outline_and_table_order": "checked",
+    "shared_main_sections": [
+      "实验目的",
+      "实验原理",
+      "主要仪器设备",
+      "实验步骤",
+      "原始数据记录",
+      "数据处理",
+      "实验结果与讨论"
+    ],
+    "visual_review": "header, formulas, observation tables, fit and residual figure, discussion"
+  },
+  "typography": {
+    "chinese": "SimSun",
+    "latin_and_numbers": "Times New Roman",
+    "browser_body_platform_fonts_verified": [
+      "SimSun",
+      "Times New Roman"
+    ],
+    "formulas": {
+      "html": "MathJax LaTeX",
+      "static_charts": "mathtext with Times New Roman",
+      "wolfram": "native mathematical boxes with Times New Roman"
+    },
+    "font_files_distributed": false
+  },
+  "figures": {
+    "style": "white background, black curves, open circles, horizontal light-grey grids, left/bottom axes, inward ticks",
+    "reviewed": [
+      "fit",
+      "residuals",
+      "trajectory",
+      "amplitude-scan",
+      "motion and phase space"
+    ],
+    "static_png_count": 3
+  },
+  "jupyter": {
+    "executed_code_cells": 10,
+    "interactive_figures": 5,
+    "same_main_outline_as_report": true,
+    "browser_fit_omit_group_action": "passed",
+    "browser_console_errors": 0,
+    "visual_alignment": {
+      "interactive_panel_count": 5,
+      "left_px": 130.5714,
+      "width_px": 1004,
+      "viewport_width_px": 1280,
+      "document_width_px": 1265,
+      "horizontal_overflow": false
+    },
+    "formula_render_errors": 0
+  },
+  "wolfram": {
+    "native_frontend_sections_reviewed": 7,
+    "fresh_kernel_execution": "passed",
+    "installed_package_tests": 16,
+    "output_cells": 13,
+    "manual_native_pointer_interaction": "not_performed",
+    "formula_review": [
+      "decimal places",
+      "minus signs",
+      "percentages",
+      "elliptic integral notation"
+    ],
+    "context_label_leaks": "none in reviewed renders"
+  },
+  "validation": {
+    "python_tests_passed": 27,
+    "wolfram_tests_passed": 16,
+    "cross_language_checks_passed": 36,
+    "broken_links": 0
+  },
+  "file_hashes": {
+    "experiments/course-01/pendulum/report/report.md": "ac45c0a275e2cf485a3a7091de82e75b5083dbf86fb9fd2149eba211517435df",
+    "experiments/course-01/pendulum/report/report.html": "396f98bf2a53a802e787a9501fd3472181d1c2074b34690a2a6e77bfbecaa013",
+    "experiments/course-01/pendulum/notebooks/analysis.ipynb": "d1d203cb391a2ef2d3793403aeddb56eea3565c0f534b73ed78b31d0961c31b3",
+    "experiments/course-01/pendulum/notebooks/analysis.html": "84506f190220a9351695ea086a113b160789b0fe2284c9239bf25ec59afd9d2f",
+    "notebook/paclets/PendulumLab/Notebooks/Pendulum.nb": "3d1e1e960744628c147bfb55f1627ea69cea63ffcd95e0967782a71ec73b088c",
+    "notebook/paclets/PendulumLab/dist/PendulumLab-0.1.0.paclet": "1aa7ea56cda41bdc89f91c6464bd6e5080393e6010e24911c6a7d56be7da7679",
+    "experiments/course-01/pendulum/results/figures/fit.png": "0018fa2d9bbd7adfe9a8b2c82c3cf0d3670f940d60e1f5eba9835aea4c1b722d",
+    "experiments/course-01/pendulum/results/figures/fit.svg": "f35a3bf765b19a28d2edaa0a82545c228c8d79f4022dc1c71a9b00691606fbae",
+    "experiments/course-01/pendulum/results/figures/trajectory.png": "b2b9c5deb4fa8a80902b9c20dfa3391f6184bc0293874957d9d626996bcce045",
+    "experiments/course-01/pendulum/results/figures/trajectory.svg": "e77608030af06b680f93e118f37182d8f9cc0a7c586720ffd0e88bb0a4a98d4c",
+    "experiments/course-01/pendulum/results/figures/amplitude-scan.png": "d83cb8b0072fcf44b1428b46b761d777dcad4e3f386ad4e20b39967822355872",
+    "experiments/course-01/pendulum/results/figures/amplitude-scan.svg": "d7e062d9e6cf463b20dbae46f98c877db5b0a27d282ceb35d665eff85355b4a1"
+  },
+  "academic_layout": {
+    "manuscripts_independent": true,
+    "visible_internal_manuscript_links": 0,
+    "figure_captions": "below",
+    "table_captions": "above",
+    "wolfram_outputs_alignment": "center",
+    "web_formula_counts": {
+      "report": 55,
+      "jupyter": 84
+    },
+    "web_formula_errors": 0,
+    "native_unique_formulas_reviewed": 65,
+    "native_uncertainty_headers": "mathematical boxes"
+  }
+}

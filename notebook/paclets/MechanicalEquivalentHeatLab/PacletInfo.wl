@@ -1,0 +1,1 @@
+PacletObject[<|"Name"->"MechanicalEquivalentHeatLab","Version"->"0.1.0","WolframVersion"->"14.0+","Description"->"\:70ed\:529f\:5f53\:91cf\:7684\:6d4b\:91cf","Creator"->"Physics Lab Contributors","Extensions"->{{"Kernel","Root"->"Kernel","Context"->{"MechanicalEquivalentHeatLab`"}},{"Resource","Root"->".","Resources"->{"Notebooks","data","assets"}}}|>]

@@ -1,0 +1,13 @@
+{
+  "id": "course-03/oscilloscope",
+  "status": "passed",
+  "paclet_sha256": "ea34948176de2f2d17d68f8d11a60da207aabeebcc10b044f7686bddd210a439",
+  "canonical_inputs_checked": [
+    "data/lissajous.csv",
+    "data/provenance.json",
+    "data/python-author-validation.json",
+    "data/waveforms.csv",
+    "experiment.json"
+  ],
+  "kernel_and_notebook_match_source": true
+}

@@ -1,0 +1,59 @@
+{
+  "title": "水的汽化热的测定",
+  "course": "course-01",
+  "slug": "vaporization-heat",
+  "module": "vaporization_heat",
+  "paclet": "VaporizationHeatLab",
+  "source_docx": "originals/course-01/液体比汽化热的测量/液体比汽化热测量实验报告.docx",
+  "source_converted": "processed/courses-01-03-04/普通物理实验1/液体比汽化热的测量/液体比汽化热测量实验报告_docx/正文.md",
+  "sections": [
+    "一、实验名称",
+    "二、实验目的",
+    "三、实验原理",
+    "四、主要仪器设备",
+    "五、实验步骤",
+    "六、原始数据记录",
+    "七、数据处理",
+    "八、实验结果与讨论",
+    "九、思考题"
+  ],
+  "comparison": [
+    "water_mass",
+    "steam_mass",
+    "initial_temperature",
+    "final_temperature",
+    "temperature_rise",
+    "steam_temperature_drop",
+    "system_heat_capacity",
+    "absorbed_heat",
+    "sensible_heat",
+    "latent_heat_total",
+    "latent_heat",
+    "relative_deviation",
+    "alternative_steam_mass",
+    "alternative_latent_heat",
+    "final_temperature_sensitivity"
+  ],
+  "status": "authored-python-verified",
+  "expansions": [
+    {
+      "section": "七、数据处理",
+      "title": "热平衡分项核算",
+      "prose": "将系统吸热、显热和凝结潜热分别计算，并显示条件结果及质量构成敏感性。",
+      "python": "metrics_display(result)",
+      "wolfram": "metricView[r]"
+    },
+    {
+      "section": "八、实验结果与讨论",
+      "title": "末温偏差与热量估计",
+      "prose": "保持源质量、初温和100 ${}^{\\circ}\\mathrm{C}$蒸汽温度，假设末温偏移−2至2 $\\mathrm{K}$，步长0.04 $\\mathrm{K}$，默认0。未将范围解释为实测温度误差。",
+      "python": "display_plotly(adapter.explore(\"temperature-shift\",result))",
+      "wolfram": "exploreView[\"temperature-shift\"]",
+      "caption": "图 2　末温偏移的热平衡模型探索"
+    }
+  ],
+  "limitations": [
+    "末态称量是否含搅拌器需核实，主L为条件结果。",
+    "无完整标定、仪器误差限、气压和热交换记录。"
+  ]
+}

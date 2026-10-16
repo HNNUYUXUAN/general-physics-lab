@@ -1,0 +1,1366 @@
+Notebook[
+ {Cell[BoxData[RowBox[{RowBox[{"PacletDirectoryLoad", "[", 
+        RowBox[{"DirectoryName", "[", RowBox[{"NotebookDirectory", "[", 
+            "]"}], "]"}], "]"}], ";", RowBox[{"Needs", "[", 
+        "\"AbbeImagingLab`\"", "]"}]}]], "Input", CellOpen -> False], 
+  Cell[TextData[
+    {StyleBox[
+      "\:963f\:8d1d\:6210\:50cf\:539f\:7406\:548c\:7a7a\:95f4\:6ee4\:6ce2", 
+      FontFamily -> "SimSun"]}], "Title"], 
+  Cell[TextData[{StyleBox["\:5b9e\:9a8c\:540d\:79f0", 
+      FontFamily -> "SimSun"]}], "Section"], 
+  Cell[TextData[{StyleBox["\:5b9e\:9a8c\:5341\:4e09", 
+      FontFamily -> "SimSun"], StyleBox[" ", FontFamily -> 
+       "Times New Roman"], StyleBox[
+      "\:963f\:8d1d\:6210\:50cf\:539f\:7406\:548c\:7a7a\:95f4\:6ee4\:6ce2", 
+      FontFamily -> "SimSun"]}], "Text"], 
+  Cell[TextData[{StyleBox["\:5b9e\:9a8c\:76ee\:7684", 
+      FontFamily -> "SimSun"]}], "Section"], 
+  Cell[TextData[{StyleBox["1.  ", FontFamily -> "Times New Roman"], 
+     StyleBox["\:7406\:89e3\:963f\:8d1d\:6210\:50cf\:7684", 
+      FontFamily -> "SimSun"], StyleBox["\[OpenCurlyDoubleQuote]", 
+      FontFamily -> "Times New Roman"], StyleBox["\:9891\:8c31\:5f62\:6210", 
+      FontFamily -> "SimSun"], StyleBox["\[LongDash]", 
+      FontFamily -> "Times New Roman"], StyleBox["\:9891\:8c31\:5408\:6210", 
+      FontFamily -> "SimSun"], StyleBox["\[CloseCurlyDoubleQuote]", 
+      FontFamily -> "Times New Roman"], 
+     StyleBox["\:4e24\:6b65\:8fc7\:7a0b\:3002", FontFamily -> "SimSun"], 
+     StyleBox["\n2.  ", FontFamily -> "Times New Roman"], 
+     StyleBox["\:638c\:63e1\:76f8\:5e72\:5149\:6761\:4ef6\:4e0b\:591a\:900f\
+\:955c\:7cfb\:7edf\:7684\:5171\:8f74\:8c03\:8282\:3002", 
+      FontFamily -> "SimSun"], StyleBox["\n3.  ", 
+      FontFamily -> "Times New Roman"], StyleBox["\:89c2\:5bdf\:548c\:5206\
+\:6790\:4e0d\:540c\:7a7a\:95f4\:6ee4\:6ce2\:65b9\:5f0f\:5bf9\:50cf\:9762\
+\:7ed3\:6784\:7684\:5f71\:54cd\:3002", FontFamily -> "SimSun"]}], "Text"], 
+  Cell[TextData[{StyleBox["\:5b9e\:9a8c\:539f\:7406", 
+      FontFamily -> "SimSun"]}], "Section"], 
+  Cell[TextData[{StyleBox["\:963f\:8d1d\:6210\:50cf\:7406\:8bba\:8ba4\:4e3a\
+\:ff0c\:7269\:4f53\:7ecf\:76f8\:5e72\:5e73\:884c\:5149\:7167\:660e\:540e\
+\:ff0c\:900f\:955c\:5728\:540e\:7126\:9762\:5f62\:6210\:7269\:7684\:7a7a\
+\:95f4\:9891\:8c31\:ff1b\:5404\:7a7a\:95f4\:9891\:7387\:5206\:91cf\:518d\
+\:4f20\:64ad\:5230\:50cf\:9762\:5e76\:76f8\:5e72\:53e0\:52a0\:ff0c\:5f62\
+\:6210\:7269\:50cf\:3002\:5bf9\:4e8c\:7ef4\:7269\:4f53", 
+      FontFamily -> "SimSun"], StyleBox[" ", FontFamily -> 
+       "Times New Roman"], 
+     Cell[BoxData[FormBox[StyleBox[RowBox[
+          {"g", RowBox[{"(", RowBox[{"x", ",", "y"}], ")"}]}], 
+         FontFamily -> "Times New Roman", AutoSpacing -> False, 
+         AutoMultiplicationSymbol -> False, ShowAutoStyles -> False], 
+        TraditionalForm]], "InlineFormula", FontFamily -> "Times New Roman"], 
+     StyleBox["\:ff0c\:9891\:8c31\:4e3a\:5176\:5085\:91cc\:53f6\:53d8\:6362", 
+      FontFamily -> "SimSun"]}], "Text"], 
+  Cell[BoxData[FormBox[StyleBox[RowBox[{"G", "", 
+        RowBox[{"(", RowBox[{SubscriptBox["f", "x"], ",", SubscriptBox["f", 
+             "y"], ""}], ")"}], "=", "\:222c", "g", 
+        RowBox[{"(", RowBox[{"x", ",", "y"}], ")"}], SuperscriptBox["e", 
+         RowBox[{"-", "i", "2", "\[Pi]", "", RowBox[
+            {"(", RowBox[{SubscriptBox["f", "x"], "x", "+", SubscriptBox["f", 
+                "y"], "y", ""}], ")"}]}]], " ", "d", "x", " ", "d", "y", 
+        "."}], FontFamily -> "Times New Roman", AutoSpacing -> False, 
+      AutoMultiplicationSymbol -> False, ShowAutoStyles -> False], 
+     TraditionalForm]], "DisplayFormula", TextAlignment -> Center], 
+  Cell[TextData[{StyleBox["\:4e00\:7ef4\:5149\:6805\:5e38\:6570\:4e3a", 
+      FontFamily -> "SimSun"], StyleBox[" ", FontFamily -> 
+       "Times New Roman"], 
+     Cell[BoxData[FormBox[StyleBox["d", FontFamily -> "Times New Roman", 
+         AutoSpacing -> False, AutoMultiplicationSymbol -> False, 
+         ShowAutoStyles -> False], TraditionalForm]], "InlineFormula", 
+      FontFamily -> "Times New Roman"], 
+     StyleBox["\:ff0c\:7a7a\:95f4\:9891\:7387", FontFamily -> "SimSun"], 
+     StyleBox[" ", FontFamily -> "Times New Roman"], 
+     Cell[BoxData[FormBox[StyleBox[RowBox[{SubscriptBox["f", "0"], "=", "1", 
+           "/", "d"}], FontFamily -> "Times New Roman", AutoSpacing -> False, 
+         AutoMultiplicationSymbol -> False, ShowAutoStyles -> False], 
+        TraditionalForm]], "InlineFormula", FontFamily -> "Times New Roman"], 
+     StyleBox["\:3002\:900f\:955c\:7126\:8ddd\:4e3a", 
+      FontFamily -> "SimSun"], StyleBox[" ", FontFamily -> 
+       "Times New Roman"], 
+     Cell[BoxData[FormBox[StyleBox["F", FontFamily -> "Times New Roman", 
+         AutoSpacing -> False, AutoMultiplicationSymbol -> False, 
+         ShowAutoStyles -> False], TraditionalForm]], "InlineFormula", 
+      FontFamily -> "Times New Roman"], StyleBox[" ", 
+      FontFamily -> "Times New Roman"], StyleBox["\:65f6\:ff0c\:7b2c", 
+      FontFamily -> "SimSun"], StyleBox[" ", FontFamily -> 
+       "Times New Roman"], 
+     Cell[BoxData[FormBox[StyleBox["k", FontFamily -> "Times New Roman", 
+         AutoSpacing -> False, AutoMultiplicationSymbol -> False, 
+         ShowAutoStyles -> False], TraditionalForm]], "InlineFormula", 
+      FontFamily -> "Times New Roman"], StyleBox[" ", 
+      FontFamily -> "Times New Roman"], StyleBox["\:7ea7\:9891\:8c31\:70b9\
+\:5728\:540e\:7126\:9762\:7684\:4f4d\:7f6e\:4e3a", FontFamily -> "SimSun"]}], 
+   "Text"], 
+  Cell[BoxData[FormBox[StyleBox[RowBox[{SubscriptBox["\[Xi]", "k"], "=", 
+        FractionBox[RowBox[{"k", "\[Lambda]", "F"}], "d"], "."}], 
+      FontFamily -> "Times New Roman", AutoSpacing -> False, 
+      AutoMultiplicationSymbol -> False, ShowAutoStyles -> False], 
+     TraditionalForm]], "DisplayFormula", TextAlignment -> Center], 
+  Cell[TextData[{StyleBox["\:5728\:9891\:8c31\:9762\:653e\:7f6e\:5149\:9611\
+\:53ef\:9009\:62e9\:6027\:901a\:8fc7\:6216\:963b\:65ad\:67d0\:4e9b\:7a7a\
+\:95f4\:9891\:7387\:ff1a\:4ec5\:901a\:96f6\:7ea7\:65f6\:50cf\:9762\:53ea\
+\:5269\:5e73\:5747\:7167\:660e\:ff1b\:901a\:8fc7\:96f6\:7ea7\:548c\:4e00\
+\:7ea7\:53ef\:6062\:590d\:57fa\:672c\:5468\:671f\:ff1b\:9ad8\:9891\:5206\
+\:91cf\:8d8a\:5145\:5206\:ff0c\:8fb9\:7f18\:548c\:7ec6\:8282\:8d8a\:6e05\
+\:6670\:3002", FontFamily -> "SimSun"]}], "Text"], 
+  Cell[TextData[{StyleBox["\:4e3b\:8981\:4eea\:5668\:8bbe\:5907", 
+      FontFamily -> "SimSun"]}], "Section"], 
+  Cell[TextData[{StyleBox["\:6c26\:6c16\:6fc0\:5149\:5668\:3001\:6269\:675f\
+\:4e0e\:51c6\:76f4\:7cfb\:7edf\:3001\:4e00\:7ef4\:5149\:6805\:3001\:5085\
+\:91cc\:53f6\:900f\:955c\:3001\:6210\:50cf\:900f\:955c\:3001\:5c4f\:3001\
+\:5149\:9611\:548c\:7a7a\:95f4\:6ee4\:6ce2\:7247\:3002", 
+      FontFamily -> "SimSun"]}], "Text"], 
+  Cell[TextData[{StyleBox["\:5b9e\:9a8c\:6b65\:9aa4", 
+      FontFamily -> "SimSun"]}], "Section"], 
+  Cell[TextData[{StyleBox["1.  ", FontFamily -> "Times New Roman"], 
+     StyleBox["\:8c03\:6574\:6fc0\:5149\:5668\:3001\:6269\:675f\:955c\:3001\
+\:51c6\:76f4\:900f\:955c\:3001\:5149\:6805\:3001\:5085\:91cc\:53f6\:900f\
+\:955c\:548c\:5c4f\:5171\:8f74\:3002", FontFamily -> "SimSun"], 
+     StyleBox["\n2.  ", FontFamily -> "Times New Roman"], 
+     StyleBox["\:5c06\:5c4f\:7f6e\:4e8e\:5085\:91cc\:53f6\:900f\:955c\:540e\
+\:7126\:9762\:ff0c\:89c2\:5bdf\:79bb\:6563\:7684", FontFamily -> "SimSun"], 
+     StyleBox[" ", FontFamily -> "Times New Roman"], 
+     Cell[BoxData[FormBox[StyleBox[RowBox[{"0", ",", "\[PlusMinus]", "1", 
+           ",", "\[PlusMinus]", "2"}], FontFamily -> "Times New Roman", 
+         AutoSpacing -> False, AutoMultiplicationSymbol -> False, 
+         ShowAutoStyles -> False], TraditionalForm]], "InlineFormula", 
+      FontFamily -> "Times New Roman"], StyleBox[" ", 
+      FontFamily -> "Times New Roman"], 
+     StyleBox[
+      "\:7ea7\:9891\:8c31\:70b9\:5e76\:6d4b\:91cf\:5176\:4f4d\:7f6e\:3002", 
+      FontFamily -> "SimSun"], StyleBox["\n3.  ", 
+      FontFamily -> "Times New Roman"], StyleBox["\:5c06\:6210\:50cf\:5c4f\
+\:79fb\:5230\:50cf\:9762\:ff0c\:89c2\:5bdf\:672a\:6ee4\:6ce2\:65f6\:7684\
+\:5149\:6805\:50cf\:3002", FontFamily -> "SimSun"], 
+     StyleBox["\n4.  ", FontFamily -> "Times New Roman"], 
+     StyleBox["\:5728\:9891\:8c31\:9762\:4f9d\:6b21\:653e\:7f6e\:5c0f\:5b54\
+\:3001\:7ad6\:7f1d\:548c\:6321\:677f\:ff0c\:5206\:522b\:5b9e\:73b0\:4ec5\
+\:901a\:96f6\:7ea7\:3001\:901a\:96f6\:7ea7\:548c\:4e00\:7ea7\:3001\:6321\
+\:53bb\:96f6\:7ea7\:7b49\:6ee4\:6ce2\:3002", FontFamily -> "SimSun"], 
+     StyleBox["\n5.  ", FontFamily -> "Times New Roman"], 
+     StyleBox["\:8bb0\:5f55\:50cf\:9762\:6761\:7eb9\:3001\:80cc\:666f\:548c\
+\:6e05\:6670\:5ea6\:7684\:53d8\:5316\:ff0c\:6bd4\:8f83\:5404\:7a7a\:95f4\
+\:9891\:7387\:5206\:91cf\:7684\:4f5c\:7528\:3002", FontFamily -> "SimSun"], 
+     StyleBox["\n6.  ", FontFamily -> "Times New Roman"], 
+     StyleBox["\:5168\:7a0b\:4fdd\:6301\:6ee4\:6ce2\:7247\:5904\:4e8e\:540e\
+\:7126\:9762\:ff0c\:907f\:514d\:89e6\:78b0\:5149\:5177\:5ea7\:9020\:6210\
+\:5931\:8c03\:3002", FontFamily -> "SimSun"]}], "Text"], 
+  Cell[TextData[{StyleBox["\:539f\:59cb\:6570\:636e\:8bb0\:5f55", 
+      FontFamily -> "SimSun"]}], "Section"], 
+  Cell[TextData[{StyleBox["\:672c\:5b9e\:9a8c\:4ee5\:4e00\:7ef4\:5149\:6805\
+\:4e3a\:7269\:ff0c\:7528\:900f\:955c\:5728\:540e\:7126\:9762\:5f62\:6210\
+\:7a7a\:95f4\:9891\:8c31\:ff0c\:5e76\:5728\:9891\:8c31\:9762\:52a0\:5165\
+\:4e0d\:540c\:6ee4\:6ce2\:7247\:89c2\:5bdf\:50cf\:9762\:53d8\:5316\:3002\
+\:6fc0\:5149\:6ce2\:957f\:53d6", FontFamily -> "SimSun"], 
+     StyleBox[" ", FontFamily -> "Times New Roman"], 
+     Cell[BoxData[FormBox[StyleBox[RowBox[{"\[Lambda]", "=", "632.8", " ", 
+           StyleBox["nm", FontSlant -> "Plain", FontFamily -> 
+             "Times New Roman"]}], FontFamily -> "Times New Roman", 
+         AutoSpacing -> False, AutoMultiplicationSymbol -> False, 
+         ShowAutoStyles -> False], TraditionalForm]], "InlineFormula", 
+      FontFamily -> "Times New Roman"], 
+     StyleBox["\:ff0c\:900f\:955c\:7126\:8ddd", FontFamily -> "SimSun"], 
+     StyleBox[" ", FontFamily -> "Times New Roman"], 
+     Cell[BoxData[FormBox[StyleBox[RowBox[{"F", "=", "150.0", " ", 
+           StyleBox["mm", FontSlant -> "Plain", FontFamily -> 
+             "Times New Roman"]}], FontFamily -> "Times New Roman", 
+         AutoSpacing -> False, AutoMultiplicationSymbol -> False, 
+         ShowAutoStyles -> False], TraditionalForm]], "InlineFormula", 
+      FontFamily -> "Times New Roman"], StyleBox["\:3002", 
+      FontFamily -> "SimSun"]}], "Text"], 
+  Cell[TextData[{StyleBox["\:8868", FontFamily -> "SimSun"], 
+     StyleBox[" 1", FontFamily -> "Times New Roman"], 
+     StyleBox["\:3000\:9891\:8c31\:9762\:884d\:5c04\:7ea7\:6b21\:4f4d\:7f6e", 
+      FontFamily -> "SimSun"]}], "Caption", TextAlignment -> Center], 
+  Cell[BoxData[TagBox[GridBox[
+      {{RowBox[{StyleBox["\:884d\:5c04\:7ea7\:6b21", FontFamily -> "SimSun"], 
+          StyleBox[" ", FontFamily -> "Times New Roman"], 
+          FormBox[StyleBox["k", FontFamily -> "Times New Roman", 
+            AutoSpacing -> False, AutoMultiplicationSymbol -> False, 
+            ShowAutoStyles -> False], TraditionalForm]}], 
+        RowBox[{StyleBox["\:9891\:8c31\:4f4d\:7f6e", FontFamily -> "SimSun"], 
+          StyleBox[" ", FontFamily -> "Times New Roman"], 
+          FormBox[StyleBox["\[Xi]", FontFamily -> "Times New Roman", 
+            AutoSpacing -> False, AutoMultiplicationSymbol -> False, 
+            ShowAutoStyles -> False], TraditionalForm], StyleBox[" / mm", 
+           FontFamily -> "Times New Roman"]}]}, 
+       {RowBox[{StyleBox["-2", FontFamily -> "Times New Roman"]}], 
+        RowBox[{StyleBox["-0.948", FontFamily -> "Times New Roman"]}]}, 
+       {RowBox[{StyleBox["-1", FontFamily -> "Times New Roman"]}], 
+        RowBox[{StyleBox["-0.474", FontFamily -> "Times New Roman"]}]}, 
+       {RowBox[{StyleBox["0", FontFamily -> "Times New Roman"]}], 
+        RowBox[{StyleBox["0", FontFamily -> "Times New Roman"]}]}, 
+       {RowBox[{StyleBox["1", FontFamily -> "Times New Roman"]}], 
+        RowBox[{StyleBox["0.476", FontFamily -> "Times New Roman"]}]}, 
+       {RowBox[{StyleBox["2", FontFamily -> "Times New Roman"]}], 
+        RowBox[{StyleBox["0.951", FontFamily -> "Times New Roman"]}]}}, 
+      GridBoxAlignment -> {"Columns" -> {{Center}}}, AutoDelete -> False, 
+      GridBoxDividers -> {"Columns" -> {{None}}, "RowsIndexed" -> 
+         {1 -> GrayLevel[0], 2 -> GrayLevel[0], -1 -> GrayLevel[0]}}, 
+      GridBoxItemSize -> {"Columns" -> {{Automatic}}, 
+        "Rows" -> {{Automatic}}}, GridBoxSpacings -> {"Columns" -> {{1.1}}, 
+        "Rows" -> {{0.8}}}, BaseStyle -> {FontSize -> 13, 
+        FontFamily -> "Times New Roman"}], "Grid"]], "Output"], 
+  Cell[TextData[{StyleBox["\:8868", FontFamily -> "SimSun"], 
+     StyleBox[" 2", FontFamily -> "Times New Roman"], 
+     StyleBox["\:3000\:7a7a\:95f4\:6ee4\:6ce2\:89c2\:5bdf\:8bb0\:5f55", 
+      FontFamily -> "SimSun"]}], "Caption", TextAlignment -> Center], 
+  Cell[BoxData[TagBox[GridBox[
+      {{RowBox[{StyleBox["\:6ee4\:6ce2\:65b9\:5f0f", FontFamily -> 
+            "SimSun"]}], RowBox[
+         {StyleBox["\:901a\:8fc7\:7684\:4e3b\:8981\:9891\:8c31\:6210\:5206", 
+           FontFamily -> "SimSun"]}], 
+        RowBox[{StyleBox["\:50cf\:9762\:73b0\:8c61", FontFamily -> 
+            "SimSun"]}], RowBox[{StyleBox["\:76f8\:5bf9\:53ef\:89c1\:5ea6", 
+           FontFamily -> "SimSun"]}]}, 
+       {RowBox[{StyleBox["\:4e0d\:52a0\:7a7a\:95f4\:6ee4\:6ce2", 
+           FontFamily -> "SimSun"]}], 
+        RowBox[{StyleBox["0, \[PlusMinus]1, \[PlusMinus]2", 
+           FontFamily -> "Times New Roman"], StyleBox[
+           "\:7ea7\:5747\:901a\:8fc7", FontFamily -> "SimSun"]}], 
+        RowBox[{StyleBox[
+           "\:6761\:7eb9\:6e05\:6670\:ff0c\:7ec6\:8282\:8f83\:5b8c\:6574", 
+           FontFamily -> "SimSun"]}], 
+        RowBox[{StyleBox["0.82", FontFamily -> "Times New Roman"]}]}, 
+       {RowBox[{StyleBox["\:5c0f\:5b54\:4ec5\:901a", FontFamily -> "SimSun"], 
+          StyleBox["0", FontFamily -> "Times New Roman"], 
+          StyleBox["\:7ea7", FontFamily -> "SimSun"]}], 
+        RowBox[{StyleBox["\:4ec5", FontFamily -> "SimSun"], 
+          StyleBox["0", FontFamily -> "Times New Roman"], 
+          StyleBox["\:7ea7", FontFamily -> "SimSun"]}], 
+        RowBox[{StyleBox["\:50cf\:9762\:8fd1\:4f3c\:5747\:5300\:7167\:660e\
+\:ff0c\:6761\:7eb9\:6d88\:5931", FontFamily -> "SimSun"]}], 
+        RowBox[{StyleBox["0.05", FontFamily -> "Times New Roman"]}]}, 
+       {RowBox[{StyleBox["\:7ad6\:7f1d\:901a", FontFamily -> "SimSun"], 
+          StyleBox["0", FontFamily -> "Times New Roman"], 
+          StyleBox["\:7ea7\:548c", FontFamily -> "SimSun"], 
+          StyleBox["\[PlusMinus]1", FontFamily -> "Times New Roman"], 
+          StyleBox["\:7ea7", FontFamily -> "SimSun"]}], 
+        RowBox[{StyleBox["0, \[PlusMinus]1", FontFamily -> 
+            "Times New Roman"], StyleBox["\:7ea7", FontFamily -> "SimSun"]}], 
+        RowBox[{StyleBox["\:6062\:590d\:57fa\:672c\:5468\:671f\:6761\:7eb9\
+\:ff0c\:7ec6\:8282\:8f83\:5c11", FontFamily -> "SimSun"]}], 
+        RowBox[{StyleBox["0.74", FontFamily -> "Times New Roman"]}]}, 
+       {RowBox[{StyleBox["\:6321\:53bb", FontFamily -> "SimSun"], 
+          StyleBox["0", FontFamily -> "Times New Roman"], 
+          StyleBox["\:7ea7\:ff0c\:4ec5\:901a", FontFamily -> "SimSun"], 
+          StyleBox["\[PlusMinus]1", FontFamily -> "Times New Roman"], 
+          StyleBox["\:7ea7", FontFamily -> "SimSun"]}], 
+        RowBox[{StyleBox["\[PlusMinus]1", FontFamily -> "Times New Roman"], 
+          StyleBox["\:7ea7", FontFamily -> "SimSun"]}], 
+        RowBox[{StyleBox[
+           "\:51fa\:73b0\:53cd\:76f8\:6761\:7eb9\:ff0c\:80cc\:666f\:53d8\
+\:6697", FontFamily -> "SimSun"]}], RowBox[{StyleBox["0.63", 
+           FontFamily -> "Times New Roman"]}]}, 
+       {RowBox[{StyleBox["\:6a2a\:5411\:906e\:6321\:9ad8\:9891\:7ea7\:6b21", 
+           FontFamily -> "SimSun"]}], 
+        RowBox[{StyleBox["0", FontFamily -> "Times New Roman"], 
+          StyleBox["\:7ea7\:4e3a\:4e3b\:ff0c\:9ad8\:7ea7\:6b21\:5f31", 
+           FontFamily -> "SimSun"]}], 
+        RowBox[{StyleBox[
+           "\:8fb9\:7f18\:6a21\:7cca\:ff0c\:5206\:8fa8\:7387\:4e0b\:964d", 
+           FontFamily -> "SimSun"]}], 
+        RowBox[{StyleBox["0.28", FontFamily -> "Times New Roman"]}]}}, 
+      GridBoxAlignment -> {"Columns" -> {{Center}}}, AutoDelete -> False, 
+      GridBoxDividers -> {"Columns" -> {{None}}, "RowsIndexed" -> 
+         {1 -> GrayLevel[0], 2 -> GrayLevel[0], -1 -> GrayLevel[0]}}, 
+      GridBoxItemSize -> {"Columns" -> {{Automatic}}, 
+        "Rows" -> {{Automatic}}}, GridBoxSpacings -> {"Columns" -> {{1.1}}, 
+        "Rows" -> {{0.8}}}, BaseStyle -> {FontSize -> 13, 
+        FontFamily -> "Times New Roman"}], "Grid"]], "Output"], 
+  Cell[TextData[{StyleBox["\:6570\:636e\:5904\:7406", 
+      FontFamily -> "SimSun"]}], "Section"], 
+  Cell[TextData[{StyleBox["\:91c7\:7528", FontFamily -> "SimSun"], 
+     StyleBox[" ", FontFamily -> "Times New Roman"], 
+     Cell[BoxData[FormBox[StyleBox[RowBox[{"\[Lambda]", "=", "632.8", " ", 
+           StyleBox["nm", FontSlant -> "Plain", FontFamily -> 
+             "Times New Roman"]}], FontFamily -> "Times New Roman", 
+         AutoSpacing -> False, AutoMultiplicationSymbol -> False, 
+         ShowAutoStyles -> False], TraditionalForm]], "InlineFormula", 
+      FontFamily -> "Times New Roman"], StyleBox["\:3001", 
+      FontFamily -> "SimSun"], 
+     Cell[BoxData[FormBox[StyleBox[RowBox[{"F", "=", "150.0", " ", 
+           StyleBox["mm", FontSlant -> "Plain", FontFamily -> 
+             "Times New Roman"]}], FontFamily -> "Times New Roman", 
+         AutoSpacing -> False, AutoMultiplicationSymbol -> False, 
+         ShowAutoStyles -> False], TraditionalForm]], "InlineFormula", 
+      FontFamily -> "Times New Roman"], StyleBox["\:3002\:7531\:6b63\:8d1f\
+\:4e00\:7ea7\:4f4d\:7f6e\:7684\:5e73\:5747\:7edd\:5bf9\:503c", 
+      FontFamily -> "SimSun"], StyleBox[" ", FontFamily -> 
+       "Times New Roman"], 
+     Cell[BoxData[FormBox[StyleBox[RowBox[{"|", SubscriptBox["\[Xi]", "1"], 
+           "|", "=", "0.475000", " ", StyleBox["mm", FontSlant -> "Plain", 
+            FontFamily -> "Times New Roman"]}], FontFamily -> 
+          "Times New Roman", AutoSpacing -> False, 
+         AutoMultiplicationSymbol -> False, ShowAutoStyles -> False], 
+        TraditionalForm]], "InlineFormula", FontFamily -> "Times New Roman"], 
+     StyleBox["\:ff0c\:5f97\:5230", FontFamily -> "SimSun"]}], "Text"], 
+  Cell[BoxData[FormBox[StyleBox[RowBox[{"d", "=", FractionBox[
+         RowBox[{"\[Lambda]", "F"}], RowBox[{"|", SubscriptBox["\[Xi]", "1"], 
+           "|"}]], "=", "0.19983158", " ", StyleBox["mm", 
+         FontSlant -> "Plain", FontFamily -> "Times New Roman"], ",", "  ", 
+        SubscriptBox["f", "0"], "=", FractionBox["1", "d"], "=", "5.004214", 
+        " ", SuperscriptBox[StyleBox["mm", FontSlant -> "Plain", 
+          FontFamily -> "Times New Roman"], RowBox[{"-", "1"}]], "."}], 
+      FontFamily -> "Times New Roman", AutoSpacing -> False, 
+      AutoMultiplicationSymbol -> False, ShowAutoStyles -> False], 
+     TraditionalForm]], "DisplayFormula", TextAlignment -> Center], 
+  Cell[TextData[{StyleBox["\:5bf9\:5168\:90e8\:4e94\:7ea7\:4f4d\:7f6e\:4f5c\
+\:5e26\:622a\:8ddd\:7ebf\:6027\:62df\:5408", FontFamily -> "SimSun"], 
+     StyleBox[" ", FontFamily -> "Times New Roman"], 
+     Cell[BoxData[FormBox[StyleBox[RowBox[{SubscriptBox["\[Xi]", "k"], "=", 
+           "a", "k", "+", "b"}], FontFamily -> "Times New Roman", 
+         AutoSpacing -> False, AutoMultiplicationSymbol -> False, 
+         ShowAutoStyles -> False], TraditionalForm]], "InlineFormula", 
+      FontFamily -> "Times New Roman"], StyleBox["\:ff0c\:5f97\:5230", 
+      FontFamily -> "SimSun"], StyleBox[" ", FontFamily -> 
+       "Times New Roman"], 
+     Cell[BoxData[FormBox[StyleBox[RowBox[{"a", "=", "0.4748000", " ", 
+           StyleBox["mm", FontSlant -> "Plain", FontFamily -> 
+             "Times New Roman"]}], FontFamily -> "Times New Roman", 
+         AutoSpacing -> False, AutoMultiplicationSymbol -> False, 
+         ShowAutoStyles -> False], TraditionalForm]], "InlineFormula", 
+      FontFamily -> "Times New Roman"], StyleBox["\:3001", 
+      FontFamily -> "SimSun"], 
+     Cell[BoxData[FormBox[StyleBox[RowBox[{"b", "=", "0.0010000", " ", 
+           StyleBox["mm", FontSlant -> "Plain", FontFamily -> 
+             "Times New Roman"]}], FontFamily -> "Times New Roman", 
+         AutoSpacing -> False, AutoMultiplicationSymbol -> False, 
+         ShowAutoStyles -> False], TraditionalForm]], "InlineFormula", 
+      FontFamily -> "Times New Roman"], StyleBox["\:ff0c\:76f8\:5e94", 
+      FontFamily -> "SimSun"], StyleBox[" ", FontFamily -> 
+       "Times New Roman"], 
+     Cell[BoxData[FormBox[StyleBox[RowBox[{SubscriptBox["d", 
+            StyleBox["fit", FontSlant -> "Plain", FontFamily -> 
+              "Times New Roman"]], "=", "0.19991575", " ", 
+           StyleBox["mm", FontSlant -> "Plain", FontFamily -> 
+             "Times New Roman"]}], FontFamily -> "Times New Roman", 
+         AutoSpacing -> False, AutoMultiplicationSymbol -> False, 
+         ShowAutoStyles -> False], TraditionalForm]], "InlineFormula", 
+      FontFamily -> "Times New Roman"], StyleBox["\:3002\:62df\:5408\:4fdd\
+\:7559\:622a\:8ddd\:4ee5\:68c0\:67e5\:9891\:8c31\:4e2d\:5fc3\:5b9a\:4f4d\
+\:ff0c\:4e0d\:5f3a\:5236\:96f6\:70b9\:5b8c\:7f8e\:3002", 
+      FontFamily -> "SimSun"]}], "Text"], 
+  Cell[CellGroupData[
+    {Cell[BoxData[RowBox[{"ResultsFigure", "[", "\"spectrum-fit\"", "]"}]], 
+      "Input", CellOpen -> False], 
+     Cell[BoxData[TagBox[GridBox[
+         {{GraphicsBox[{{{}, InterpretationBox[{TagBox[
+                 {{TagBox[{Directive[PointSize[0.012833333333333334], 
+                      AbsoluteThickness[2], FontFamily -> "Times New Roman", 
+                      FontSize -> 15, GrayLevel[0]], 
+                     GeometricTransformationBox[InsetBox[BoxData[FormBox[
+                         StyleBox[StyleBox["\"\[EmptyCircle]\"", GrayLevel[
+                          0], FontFamily -> "Times New Roman", 
+                          StripOnInput -> False], GraphicsBoxOptions -> 
+                          {DefaultBaseStyle -> Directive[PointSize[
+                          0.012833333333333334], AbsoluteThickness[2], 
+                          FontFamily -> "Times New Roman", FontSize -> 15, 
+                          GrayLevel[0]]}, StripOnInput -> False], 
+                         TraditionalForm]], {0., 0.}, Automatic, Offset[11]], 
+                      {{{-2., -0.948}}, {{-1., -0.474}}, {{0., 0.}}, {{1., 
+                      0.476}}, {{2., 0.951}}}]}, Annotation[#1, 
+                      "Charting`Private`Tag#1"] & ]}}, 
+                 {"WolframDynamicHighlight", <|"Label" -> {"XYLabel"}, 
+                   "Ball" -> {"IndicatedBall"}|>}], StyleBox[DynamicBox[
+                  (Charting`HighlightActionBox["DynamicHighlight", {}, 
+                     #HighlightElements, #LayoutOptions, #Meta, 
+                     Charting`HighlightActionFunction["DynamicHighlight", 
+                      {{Annotation[{Directive[PointSize[
+                          0.012833333333333334], AbsoluteThickness[2], 
+                          FontFamily -> "Times New Roman", FontSize -> 15, 
+                          GrayLevel[0]], GeometricTransformation[Inset[
+                          Style[Style["\[EmptyCircle]", GrayLevel[0], 
+                          FontFamily -> "Times New Roman"], 
+                          GraphicsBoxOptions -> {DefaultBaseStyle -> 
+                          Directive[PointSize[0.012833333333333334], 
+                          AbsoluteThickness[2], FontFamily -> 
+                          "Times New Roman", FontSize -> 15, GrayLevel[0]]}], 
+                          {0., 0.}, Automatic, Offset[11]], {{{-2., -0.948}}, 
+                          {{-1., -0.474}}, {{0., 0.}}, {{1., 0.476}}, {{2., 
+                          0.951}}}]}, "Charting`Private`Tag#1"]}}, 
+                      <|"HighlightElements" -> <|"Label" -> {"XYLabel"}, 
+                         "Ball" -> {"IndicatedBall"}|>, "LayoutOptions" -> 
+                        <|"PanelPlotLayout" -> <||>, "PlotRange" -> 
+                          {{-2., 2.}, {-0.948, 0.951}}, "Frame" -> 
+                          {{True, False}, {True, False}}, "AxesOrigin" -> 
+                          {0, 0}, "ImageSize" -> {720, 720/GoldenRatio}, 
+                         "Axes" -> {False, False}, "LabelStyle" -> 
+                          {FontFamily -> "Times New Roman", FontSize -> 15}, 
+                         "AspectRatio" -> GoldenRatio^(-1), "DefaultStyle" -> 
+                          {Directive[PointSize[0.012833333333333334], 
+                          AbsoluteThickness[2], FontFamily -> 
+                          "Times New Roman", FontSize -> 15, GrayLevel[0]]}, 
+                         "HighlightLabelingFunctions" -> <|
+                          "CoordinatesToolOptions" -> ({(Identity[#1] & )[
+                          #1[[1]]], (Identity[#1] & )[#1[[2]]]} & ), 
+                          "ScalingFunctions" -> {{Identity, Identity}, 
+                          {Identity, Identity}}|>, "Primitives" -> {}, 
+                         "GCFlag" -> False|>, "Meta" -> <|
+                         "DefaultHighlight" -> {"Dynamic", None}, "Index" -> 
+                          {}, "Function" -> ListPlot, "GroupHighlight" -> 
+                          False|>|>]] & )[<|"HighlightElements" -> 
+                     <|"Label" -> {"XYLabel"}, "Ball" -> {"IndicatedBall"}|>, 
+                    "LayoutOptions" -> <|"PanelPlotLayout" -> <||>, 
+                      "PlotRange" -> {{-2., 2.}, {-0.948, 0.951}}, "Frame" -> 
+                       {{True, False}, {True, False}}, "AxesOrigin" -> 
+                       {0, 0}, "ImageSize" -> {720, 720/GoldenRatio}, 
+                      "Axes" -> {False, False}, "LabelStyle" -> 
+                       {FontFamily -> "Times New Roman", FontSize -> 15}, 
+                      "AspectRatio" -> GoldenRatio^(-1), "DefaultStyle" -> 
+                       {Directive[PointSize[0.012833333333333334], 
+                         AbsoluteThickness[2], FontFamily -> 
+                          "Times New Roman", FontSize -> 15, GrayLevel[0]]}, 
+                      "HighlightLabelingFunctions" -> <|
+                        "CoordinatesToolOptions" -> ({(Identity[#1] & )[
+                          #1[[1]]], (Identity[#1] & )[#1[[2]]]} & ), 
+                        "ScalingFunctions" -> {{Identity, Identity}, 
+                          {Identity, Identity}}|>, "Primitives" -> {}, 
+                      "GCFlag" -> False|>, "Meta" -> <|"DefaultHighlight" -> 
+                       {"Dynamic", None}, "Index" -> {}, "Function" -> 
+                       ListPlot, "GroupHighlight" -> False|>|>]], 
+                 Selectable -> False]}, Annotation[{{Annotation[
+                   {Directive[PointSize[0.012833333333333334], 
+                     AbsoluteThickness[2], FontFamily -> "Times New Roman", 
+                     FontSize -> 15, GrayLevel[0]], GeometricTransformation[
+                     Inset[Style[Style["\[EmptyCircle]", GrayLevel[0], 
+                        FontFamily -> "Times New Roman"], 
+                       GraphicsBoxOptions -> {DefaultBaseStyle -> Directive[
+                          PointSize[0.012833333333333334], AbsoluteThickness[
+                          2], FontFamily -> "Times New Roman", FontSize -> 
+                          15, GrayLevel[0]]}], {0., 0.}, Automatic, 
+                      Offset[11]], {{{-2., -0.948}}, {{-1., -0.474}}, {{0., 
+                     0.}}, {{1., 0.476}}, {{2., 0.951}}}]}, 
+                   "Charting`Private`Tag#1"]}}, <|"HighlightElements" -> 
+                  <|"Label" -> {"XYLabel"}, "Ball" -> {"IndicatedBall"}|>, 
+                 "LayoutOptions" -> <|"PanelPlotLayout" -> <||>, 
+                   "PlotRange" -> {{-2., 2.}, {-0.948, 0.951}}, "Frame" -> 
+                    {{True, False}, {True, False}}, "AxesOrigin" -> {0, 0}, 
+                   "ImageSize" -> {720, 720/GoldenRatio}, "Axes" -> 
+                    {False, False}, "LabelStyle" -> {FontFamily -> 
+                      "Times New Roman", FontSize -> 15}, "AspectRatio" -> 
+                    GoldenRatio^(-1), "DefaultStyle" -> {Directive[PointSize[
+                       0.012833333333333334], AbsoluteThickness[2], 
+                      FontFamily -> "Times New Roman", FontSize -> 15, 
+                      GrayLevel[0]]}, "HighlightLabelingFunctions" -> 
+                    <|"CoordinatesToolOptions" -> ({(Identity[#1] & )[
+                         #1[[1]]], (Identity[#1] & )[#1[[2]]]} & ), 
+                     "ScalingFunctions" -> {{Identity, Identity}, {Identity, 
+                        Identity}}|>, "Primitives" -> {}, "GCFlag" -> 
+                    False|>, "Meta" -> <|"DefaultHighlight" -> {"Dynamic", 
+                     None}, "Index" -> {}, "Function" -> ListPlot, 
+                   "GroupHighlight" -> False|>|>, "DynamicHighlight"]], 
+              {{}, {}}}, {InterpretationBox[{TagBox[{{{{}, {}, TagBox[
+                     {Directive[Opacity[1.], AbsoluteThickness[2], GrayLevel[
+                        0]], LineBox[{{-1.999999918367347, 
+                       -0.9485999612408164}, {-1.9987731283177614, 
+                       -0.9480174813252731}, {-1.997546338268176, 
+                       -0.9474350014097299}, {-1.995092758169005, 
+                       -0.9462700415786436}, {-1.9901855979706633, 
+                       -0.9439401219164709}, {-1.9803712775739797, 
+                       -0.9392802825921256}, {-1.9607426367806124, 
+                       -0.9299606039434348}, {-1.9214853551938782, 
+                       -0.9113212466460534}, {-1.8363665716581652, 
+                       -0.8709068482232968}, {-1.7568884657193913, 
+                       -0.833170643523567}, {-1.6789694047244954, 
+                       -0.7961746733631904}, {-1.594446123367355, 
+                       -0.7560430193748202}, {-1.515563519607154, 
+                       -0.7185895591094767}, {-1.4300766954847084, 
+                       -0.6780004150161395}, {-1.3461489163061406, 
+                       -0.6381515054621556}, {-1.2678618147245122, 
+                       -0.6009807896311984}, {-1.1829704927806393, 
+                       -0.5606743899722475}, {-1.1037198484337056, 
+                       -0.5230461840363234}, {-1.0260282490306498, 
+                       -0.4861582126397525}, {-0.9417324292653497, 
+                       -0.44613455741518804}, {-0.8630772870969888, 
+                       -0.4087890959136503}, {-0.7778179245663834, 
+                       -0.36830795058411886}, {-0.6941176069796561, 
+                       -0.3285670397939407}, {-0.6160579669898679, 
+                       -0.2915043227267893}, {-0.5313941066378353, 
+                       -0.2513059218316442}, {-0.4523709238827418, 
+                       -0.2137857146595258}, {-0.3667435207654039, 
+                       -0.17312982365941376}, {-0.282675162591944, 
+                       -0.133214167198655}, {-0.20424748201542325, 
+                       -0.09597670446092296}, {-0.11921558107665804, 
+                       -0.05560355789519724}, {-0.03982435773483204, 
+                       -0.017908605052498253}, {0.03800782066311598, 
+                       0.01904611325084747}, {0.12244421942330848, 
+                       0.059136515382186866}, {0.20123994058656178, 
+                       0.09654872379049953}, {0.28663988211205954, 
+                       0.13709661602680587}, {0.3704807786936793, 
+                       0.17690427372375891}, {0.44868099767835984, 
+                       0.21403373769768524}, {0.533485437025285, 
+                       0.2542988854996053}, {0.6126491987752708, 
+                       0.29188583957849856}, {0.6902539155813786, 
+                       0.32873255911803856}, {0.7744628527497309, 
+                       0.36871496248557223}, {0.853031112321144, 
+                       0.4060191721300792}, {0.9382035922548017, 
+                       0.4464590656025798}, {1.01773539459152, 
+                       0.48422076535205366}, {1.0957081519843606, 
+                       0.5212422305621744}, {1.1802851297394454, 
+                       0.5613993796002887}, {1.2592214298975912, 
+                       0.5988783349153763}, {1.3447619504179815, 
+                       0.6394929740584576}, {1.4287434259944938, 
+                       0.6793673786621857}, {1.507084223974067, 
+                       0.716563589542887}, {1.5920292423158844, 
+                       0.7568954842515819}, {1.6713335830607627, 
+                       0.7945491852372502}, {1.749078878861763, 
+                       0.8314626516835651}, {1.8334283950250079, 
+                       0.8715118019578737}, {1.9121372335913134, 
+                       0.9088827585091556}, {1.913510088040939, 
+                       0.9095345898018379}, {1.9148829424905645, 
+                       0.91018642109452}, {1.9176286513898155, 
+                       0.9114900836798844}, {1.9231200691883177, 
+                       0.9140974088506132}, {1.9341029047853218, 
+                       0.9193120591920708}, {1.9560685759793301, 
+                       0.929741359874986}, {1.9574414304289558, 
+                       0.9303931911676682}, {1.9588142848785812, 
+                       0.9310450224603504}, {1.9615599937778323, 
+                       0.9323486850457148}, {1.9670514115763345, 
+                       0.9349560102164436}, {1.9780342471733385, 
+                       0.9401706605579011}, {1.979407101622964, 
+                       0.9408224918505833}, {1.9807799560725896, 
+                       0.9414743231432655}, {1.9835256649718405, 
+                       0.9427779857286298}, {1.9890170827703426, 
+                       0.9453853108993586}, {1.9903899372199683, 
+                       0.9460371421920409}, {1.9917627916695937, 
+                       0.9466889734847231}, {1.9945085005688448, 
+                       0.9479926360700875}, {1.9958813550184704, 
+                       0.9486444673627697}, {1.9972542094680958, 
+                       0.949296298655452}, {1.9986270639177213, 
+                       0.949948129948134}, {1.999999918367347, 
+                       0.9505999612408164}}]}, Annotation[#1, 
+                       "Charting`Private`Tag#1"] & ]}}, {}}, 
+                 {"WolframDynamicHighlight", <|"Label" -> {"XYLabel"}, 
+                   "Ball" -> {"InterpolatedBall"}|>}], StyleBox[DynamicBox[
+                  (Charting`HighlightActionBox["DynamicHighlight", {}, 
+                     #HighlightElements, #LayoutOptions, #Meta, 
+                     Charting`HighlightActionFunction["DynamicHighlight", 
+                      {{{{}, {}, Annotation[{Directive[Opacity[1.], 
+                          AbsoluteThickness[2], GrayLevel[0]], Line[
+                          {{-1.999999918367347, -0.9485999612408164}, 
+                          {-1.9987731283177614, -0.9480174813252731}, 
+                          {-1.997546338268176, -0.9474350014097299}, 
+                          {-1.995092758169005, -0.9462700415786436}, 
+                          {-1.9901855979706633, -0.9439401219164709}, 
+                          {-1.9803712775739797, -0.9392802825921256}, 
+                          {-1.9607426367806124, -0.9299606039434348}, 
+                          {-1.9214853551938782, -0.9113212466460534}, 
+                          {-1.8363665716581652, -0.8709068482232968}, 
+                          {-1.7568884657193913, -0.833170643523567}, 
+                          {-1.6789694047244954, -0.7961746733631904}, 
+                          {-1.594446123367355, -0.7560430193748202}, 
+                          {-1.515563519607154, -0.7185895591094767}, 
+                          {-1.4300766954847084, -0.6780004150161395}, 
+                          {-1.3461489163061406, -0.6381515054621556}, 
+                          {-1.2678618147245122, -0.6009807896311984}, 
+                          {-1.1829704927806393, -0.5606743899722475}, 
+                          {-1.1037198484337056, -0.5230461840363234}, 
+                          {-1.0260282490306498, -0.4861582126397525}, 
+                          {-0.9417324292653497, -0.44613455741518804}, 
+                          {-0.8630772870969888, -0.4087890959136503}, 
+                          {-0.7778179245663834, -0.36830795058411886}, 
+                          {-0.6941176069796561, -0.3285670397939407}, 
+                          {-0.6160579669898679, -0.2915043227267893}, 
+                          {-0.5313941066378353, -0.2513059218316442}, 
+                          {-0.4523709238827418, -0.2137857146595258}, 
+                          {-0.3667435207654039, -0.17312982365941376}, 
+                          {-0.282675162591944, -0.133214167198655}, 
+                          {-0.20424748201542325, -0.09597670446092296}, 
+                          {-0.11921558107665804, -0.05560355789519724}, 
+                          {-0.03982435773483204, -0.017908605052498253}, 
+                          {0.03800782066311598, 0.01904611325084747}, 
+                          {0.12244421942330848, 0.059136515382186866}, 
+                          {0.20123994058656178, 0.09654872379049953}, 
+                          {0.28663988211205954, 0.13709661602680587}, 
+                          {0.3704807786936793, 0.17690427372375891}, 
+                          {0.44868099767835984, 0.21403373769768524}, 
+                          {0.533485437025285, 0.2542988854996053}, 
+                          {0.6126491987752708, 0.29188583957849856}, 
+                          {0.6902539155813786, 0.32873255911803856}, 
+                          {0.7744628527497309, 0.36871496248557223}, 
+                          {0.853031112321144, 0.4060191721300792}, 
+                          {0.9382035922548017, 0.4464590656025798}, 
+                          {1.01773539459152, 0.48422076535205366}, 
+                          {1.0957081519843606, 0.5212422305621744}, 
+                          {1.1802851297394454, 0.5613993796002887}, 
+                          {1.2592214298975912, 0.5988783349153763}, 
+                          {1.3447619504179815, 0.6394929740584576}, 
+                          {1.4287434259944938, 0.6793673786621857}, 
+                          {1.507084223974067, 0.716563589542887}, 
+                          {1.5920292423158844, 0.7568954842515819}, 
+                          {1.6713335830607627, 0.7945491852372502}, 
+                          {1.749078878861763, 0.8314626516835651}, 
+                          {1.8334283950250079, 0.8715118019578737}, 
+                          {1.9121372335913134, 0.9088827585091556}, 
+                          {1.913510088040939, 0.9095345898018379}, 
+                          {1.9148829424905645, 0.91018642109452}, 
+                          {1.9176286513898155, 0.9114900836798844}, 
+                          {1.9231200691883177, 0.9140974088506132}, 
+                          {1.9341029047853218, 0.9193120591920708}, 
+                          {1.9560685759793301, 0.929741359874986}, 
+                          {1.9574414304289558, 0.9303931911676682}, 
+                          {1.9588142848785812, 0.9310450224603504}, 
+                          {1.9615599937778323, 0.9323486850457148}, 
+                          {1.9670514115763345, 0.9349560102164436}, 
+                          {1.9780342471733385, 0.9401706605579011}, 
+                          {1.979407101622964, 0.9408224918505833}, 
+                          {1.9807799560725896, 0.9414743231432655}, 
+                          {1.9835256649718405, 0.9427779857286298}, 
+                          {1.9890170827703426, 0.9453853108993586}, 
+                          {1.9903899372199683, 0.9460371421920409}, 
+                          {1.9917627916695937, 0.9466889734847231}, 
+                          {1.9945085005688448, 0.9479926360700875}, 
+                          {1.9958813550184704, 0.9486444673627697}, 
+                          {1.9972542094680958, 0.949296298655452}, 
+                          {1.9986270639177213, 0.949948129948134}, 
+                          {1.999999918367347, 0.9505999612408164}}]}, 
+                          "Charting`Private`Tag#1"]}}, {}}, 
+                      <|"HighlightElements" -> <|"Label" -> {"XYLabel"}, 
+                         "Ball" -> {"InterpolatedBall"}|>, "LayoutOptions" -> 
+                        <|"PanelPlotLayout" -> <||>, "PlotRange" -> {{-2, 2}, 
+                          {-0.9485999612408164, 0.9505999612408164}}, 
+                         "Frame" -> {{False, False}, {False, False}}, 
+                         "AxesOrigin" -> {0, 0}, "ImageSize" -> {360, 
+                          360/GoldenRatio}, "Axes" -> {True, True}, 
+                         "LabelStyle" -> {}, "AspectRatio" -> GoldenRatio^
+                          (-1), "DefaultStyle" -> {Directive[Opacity[1.], 
+                          AbsoluteThickness[2], GrayLevel[0]]}, 
+                         "HighlightLabelingFunctions" -> <|
+                          "CoordinatesToolOptions" -> ({(Identity[#1] & )[
+                          #1[[1]]], (Identity[#1] & )[#1[[2]]]} & ), 
+                          "ScalingFunctions" -> {{Identity, Identity}, 
+                          {Identity, Identity}}|>, "Primitives" -> {}, 
+                         "GCFlag" -> False|>, "Meta" -> <|
+                         "DefaultHighlight" -> {"Dynamic", None}, "Index" -> 
+                          {}, "Function" -> Plot, "GroupHighlight" -> 
+                          False|>|>]] & )[<|"HighlightElements" -> 
+                     <|"Label" -> {"XYLabel"}, "Ball" -> 
+                       {"InterpolatedBall"}|>, "LayoutOptions" -> 
+                     <|"PanelPlotLayout" -> <||>, "PlotRange" -> {{-2, 2}, 
+                        {-0.9485999612408164, 0.9505999612408164}}, 
+                      "Frame" -> {{False, False}, {False, False}}, 
+                      "AxesOrigin" -> {0, 0}, "ImageSize" -> {360, 
+                        360/GoldenRatio}, "Axes" -> {True, True}, 
+                      "LabelStyle" -> {}, "AspectRatio" -> GoldenRatio^(-1), 
+                      "DefaultStyle" -> {Directive[Opacity[1.], 
+                         AbsoluteThickness[2], GrayLevel[0]]}, 
+                      "HighlightLabelingFunctions" -> <|
+                        "CoordinatesToolOptions" -> ({(Identity[#1] & )[
+                          #1[[1]]], (Identity[#1] & )[#1[[2]]]} & ), 
+                        "ScalingFunctions" -> {{Identity, Identity}, 
+                          {Identity, Identity}}|>, "Primitives" -> {}, 
+                      "GCFlag" -> False|>, "Meta" -> <|"DefaultHighlight" -> 
+                       {"Dynamic", None}, "Index" -> {}, "Function" -> Plot, 
+                      "GroupHighlight" -> False|>|>]], Selectable -> False]}, 
+               Annotation[{{{{}, {}, Annotation[{Directive[Opacity[1.], 
+                      AbsoluteThickness[2], GrayLevel[0]], Line[
+                      {{-1.999999918367347, -0.9485999612408164}, 
+                      {-1.9987731283177614, -0.9480174813252731}, 
+                      {-1.997546338268176, -0.9474350014097299}, 
+                      {-1.995092758169005, -0.9462700415786436}, 
+                      {-1.9901855979706633, -0.9439401219164709}, 
+                      {-1.9803712775739797, -0.9392802825921256}, 
+                      {-1.9607426367806124, -0.9299606039434348}, 
+                      {-1.9214853551938782, -0.9113212466460534}, 
+                      {-1.8363665716581652, -0.8709068482232968}, 
+                      {-1.7568884657193913, -0.833170643523567}, 
+                      {-1.6789694047244954, -0.7961746733631904}, 
+                      {-1.594446123367355, -0.7560430193748202}, 
+                      {-1.515563519607154, -0.7185895591094767}, 
+                      {-1.4300766954847084, -0.6780004150161395}, 
+                      {-1.3461489163061406, -0.6381515054621556}, 
+                      {-1.2678618147245122, -0.6009807896311984}, 
+                      {-1.1829704927806393, -0.5606743899722475}, 
+                      {-1.1037198484337056, -0.5230461840363234}, 
+                      {-1.0260282490306498, -0.4861582126397525}, 
+                      {-0.9417324292653497, -0.44613455741518804}, 
+                      {-0.8630772870969888, -0.4087890959136503}, 
+                      {-0.7778179245663834, -0.36830795058411886}, 
+                      {-0.6941176069796561, -0.3285670397939407}, 
+                      {-0.6160579669898679, -0.2915043227267893}, 
+                      {-0.5313941066378353, -0.2513059218316442}, 
+                      {-0.4523709238827418, -0.2137857146595258}, 
+                      {-0.3667435207654039, -0.17312982365941376}, 
+                      {-0.282675162591944, -0.133214167198655}, 
+                      {-0.20424748201542325, -0.09597670446092296}, 
+                      {-0.11921558107665804, -0.05560355789519724}, 
+                      {-0.03982435773483204, -0.017908605052498253}, 
+                      {0.03800782066311598, 0.01904611325084747}, 
+                      {0.12244421942330848, 0.059136515382186866}, 
+                      {0.20123994058656178, 0.09654872379049953}, 
+                      {0.28663988211205954, 0.13709661602680587}, 
+                      {0.3704807786936793, 0.17690427372375891}, 
+                      {0.44868099767835984, 0.21403373769768524}, 
+                      {0.533485437025285, 0.2542988854996053}, 
+                      {0.6126491987752708, 0.29188583957849856}, 
+                      {0.6902539155813786, 0.32873255911803856}, 
+                      {0.7744628527497309, 0.36871496248557223}, 
+                      {0.853031112321144, 0.4060191721300792}, 
+                      {0.9382035922548017, 0.4464590656025798}, 
+                      {1.01773539459152, 0.48422076535205366}, 
+                      {1.0957081519843606, 0.5212422305621744}, 
+                      {1.1802851297394454, 0.5613993796002887}, 
+                      {1.2592214298975912, 0.5988783349153763}, 
+                      {1.3447619504179815, 0.6394929740584576}, 
+                      {1.4287434259944938, 0.6793673786621857}, 
+                      {1.507084223974067, 0.716563589542887}, 
+                      {1.5920292423158844, 0.7568954842515819}, 
+                      {1.6713335830607627, 0.7945491852372502}, 
+                      {1.749078878861763, 0.8314626516835651}, 
+                      {1.8334283950250079, 0.8715118019578737}, 
+                      {1.9121372335913134, 0.9088827585091556}, 
+                      {1.913510088040939, 0.9095345898018379}, 
+                      {1.9148829424905645, 0.91018642109452}, 
+                      {1.9176286513898155, 0.9114900836798844}, 
+                      {1.9231200691883177, 0.9140974088506132}, 
+                      {1.9341029047853218, 0.9193120591920708}, 
+                      {1.9560685759793301, 0.929741359874986}, 
+                      {1.9574414304289558, 0.9303931911676682}, 
+                      {1.9588142848785812, 0.9310450224603504}, 
+                      {1.9615599937778323, 0.9323486850457148}, 
+                      {1.9670514115763345, 0.9349560102164436}, 
+                      {1.9780342471733385, 0.9401706605579011}, 
+                      {1.979407101622964, 0.9408224918505833}, 
+                      {1.9807799560725896, 0.9414743231432655}, 
+                      {1.9835256649718405, 0.9427779857286298}, 
+                      {1.9890170827703426, 0.9453853108993586}, 
+                      {1.9903899372199683, 0.9460371421920409}, 
+                      {1.9917627916695937, 0.9466889734847231}, 
+                      {1.9945085005688448, 0.9479926360700875}, 
+                      {1.9958813550184704, 0.9486444673627697}, 
+                      {1.9972542094680958, 0.949296298655452}, 
+                      {1.9986270639177213, 0.949948129948134}, 
+                      {1.999999918367347, 0.9505999612408164}}]}, 
+                    "Charting`Private`Tag#1"]}}, {}}, 
+                <|"HighlightElements" -> <|"Label" -> {"XYLabel"}, 
+                   "Ball" -> {"InterpolatedBall"}|>, "LayoutOptions" -> 
+                  <|"PanelPlotLayout" -> <||>, "PlotRange" -> {{-2, 2}, 
+                     {-0.9485999612408164, 0.9505999612408164}}, "Frame" -> 
+                    {{False, False}, {False, False}}, "AxesOrigin" -> {0, 0}, 
+                   "ImageSize" -> {360, 360/GoldenRatio}, "Axes" -> 
+                    {True, True}, "LabelStyle" -> {}, "AspectRatio" -> 
+                    GoldenRatio^(-1), "DefaultStyle" -> {Directive[Opacity[
+                       1.], AbsoluteThickness[2], GrayLevel[0]]}, 
+                   "HighlightLabelingFunctions" -> 
+                    <|"CoordinatesToolOptions" -> ({(Identity[#1] & )[
+                         #1[[1]]], (Identity[#1] & )[#1[[2]]]} & ), 
+                     "ScalingFunctions" -> {{Identity, Identity}, {Identity, 
+                        Identity}}|>, "Primitives" -> {}, "GCFlag" -> 
+                    False|>, "Meta" -> <|"DefaultHighlight" -> {"Dynamic", 
+                     None}, "Index" -> {}, "Function" -> Plot, 
+                   "GroupHighlight" -> False|>|>, "DynamicHighlight"]]}}, 
+            {DisplayFunction -> Identity, DisplayFunction -> Identity, 
+             PlotInteractivity :> True, DefaultBaseStyle -> {"PlotGraphics", 
+               "Graphics"}, DisplayFunction -> Identity, PlotInteractivity :> 
+              True, DefaultBaseStyle -> {"PlotGraphics", "Graphics"}, 
+             AspectRatio -> NCache[GoldenRatio^(-1), 0.6180339887498948], 
+             Axes -> {False, False}, AxesLabel -> {None, None}, 
+             AxesOrigin -> {0, 0}, BaseStyle -> {FontFamily -> 
+                "Times New Roman", FontSize -> 15}, DisplayFunction :> 
+              Identity, Frame -> {{True, False}, {True, False}}, 
+             FrameLabel -> {{FormBox[TagBox[RowBox[{StyleBox[
+                     "\:540e\:7126\:9762\:4f4d\:7f6e", FontFamily -> 
+                      "SimSun"], StyleBox[" ", FontFamily -> 
+                      "Times New Roman"], FormBox[StyleBox["\[Xi]", 
+                      FontFamily -> "Times New Roman", AutoSpacing -> False, 
+                      AutoMultiplicationSymbol -> False, ShowAutoStyles -> 
+                       False], TraditionalForm], StyleBox[" / mm", 
+                     FontFamily -> "Times New Roman"]}], HoldForm], 
+                 TraditionalForm], None}, {FormBox[TagBox[RowBox[
+                   {StyleBox["\:884d\:5c04\:7ea7\:6b21", FontFamily -> 
+                      "SimSun"], StyleBox[" ", FontFamily -> 
+                      "Times New Roman"], FormBox[StyleBox["k", FontFamily -> 
+                       "Times New Roman", AutoSpacing -> False, 
+                      AutoMultiplicationSymbol -> False, ShowAutoStyles -> 
+                       False], TraditionalForm]}], HoldForm], 
+                 TraditionalForm], None}}, FrameTicks -> {{Automatic, 
+                Automatic}, {Automatic, Automatic}}, GridLines -> 
+              {None, Automatic}, GridLinesStyle -> Directive[GrayLevel[0.9], 
+               Thickness[Tiny]], ImageSize -> 720, Method -> 
+              {"AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> 
+                Automatic, "DefaultGraphicsInteraction" -> {"Version" -> 1.2, 
+                 "TrackMousePosition" -> {True, False}, "Effects" -> 
+                  {"Highlight" -> {"ratio" -> 2}, "HighlightPoint" -> 
+                    {"ratio" -> 2}, "Droplines" -> {"freeformCursorMode" -> 
+                      True, "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
+               "DefaultMeshStyle" -> AbsolutePointSize[6], 
+               "DefaultPlotStyle" -> {Directive[RGBColor[0.24, 0.6, 0.8], 
+                  AbsoluteThickness[2]], Directive[RGBColor[0.95, 0.627, 
+                   0.1425], AbsoluteThickness[2]], Directive[RGBColor[0.455, 
+                   0.7, 0.21], AbsoluteThickness[2]], Directive[RGBColor[
+                   0.922526, 0.385626, 0.209179], AbsoluteThickness[2]], 
+                 Directive[RGBColor[0.578, 0.51, 0.85], AbsoluteThickness[
+                   2]], Directive[RGBColor[0.772079, 0.431554, 0.102387], 
+                  AbsoluteThickness[2]], Directive[RGBColor[0., 0.6, 0.6], 
+                  AbsoluteThickness[2]], Directive[RGBColor[0.9, 0.36, 
+                   0.684], AbsoluteThickness[2]], Directive[RGBColor[0.56, 
+                   0.7, 0.], AbsoluteThickness[2]], Directive[RGBColor[0.9, 
+                   0.54, 0.], AbsoluteThickness[2]], Directive[RGBColor[
+                   0.585, 0.5976, 0.9], AbsoluteThickness[2]], Directive[
+                  RGBColor[0.9, 0.45, 0.45], AbsoluteThickness[2]], 
+                 Directive[RGBColor[0.7632186717367253, 0.8174402144034898, 
+                   0.], AbsoluteThickness[2]], Directive[RGBColor[
+                   0.8554632469481959, 0.24885384718327969, 
+                   0.833405387394855], AbsoluteThickness[2]], Directive[
+                  RGBColor[0.032972823413648836, 0.7396719749139476, 
+                   0.534700104525218], AbsoluteThickness[2]]}, 
+               "DomainPadding" -> Scaled[0.02], "PointSizeFunction" -> 
+                "SmallPointSize", "RangePadding" -> Scaled[0.05], 
+               "OptimizePlotMarkers" -> True, "IncludeHighlighting" -> 
+                Automatic, "HighlightStyle" -> Automatic, 
+               "OptimizePlotMarkers" -> True, "IncludeHighlighting" -> 
+                "CurrentPoint", "HighlightStyle" -> Automatic, 
+               "OptimizePlotMarkers" -> True, "CoordinatesToolOptions" -> 
+                {"DisplayFunction" -> ({(Identity[#1] & )[#1[[1]]], 
+                    (Identity[#1] & )[#1[[2]]]} & ), "CopiedValueFunction" -> 
+                  ({(Identity[#1] & )[#1[[1]]], (Identity[#1] & )[
+                     #1[[2]]]} & )}}, PlotInteractivity :> True, 
+             PlotRange -> {{-2., 2.}, {-0.948, 0.951}}, PlotRangeClipping -> 
+              True, PlotRangePadding -> {{Scaled[0.02], Scaled[0.02]}, {
+                Scaled[0.05], Scaled[0.05]}}, Ticks -> {Automatic, 
+               Automatic}, PlotInteractivity :> True}]}, 
+          {GraphicsBox[{{}, InterpretationBox[{TagBox[
+                {{TagBox[{Directive[PointSize[0.012833333333333334], 
+                     AbsoluteThickness[2], FontFamily -> "Times New Roman", 
+                     FontSize -> 15, GrayLevel[0]], 
+                    GeometricTransformationBox[InsetBox[BoxData[FormBox[
+                        StyleBox[StyleBox["\"\[EmptyCircle]\"", GrayLevel[0], 
+                          FontFamily -> "Times New Roman", StripOnInput -> 
+                          False], GraphicsBoxOptions -> {DefaultBaseStyle -> 
+                          Directive[PointSize[0.012833333333333334], 
+                          AbsoluteThickness[2], FontFamily -> 
+                          "Times New Roman", FontSize -> 15, GrayLevel[0]]}, 
+                         StripOnInput -> False], TraditionalForm]], {0., 0.}, 
+                      Automatic, Offset[11]], {{{-2., 
+                     0.0006000000000000449}}, {{-1., 
+                     -0.00019999999999997797}}, {{0., 
+                     -0.0010000000000000009}}, {{1., 
+                     0.00019999999999997797}}, {{2., 
+                     0.00039999999999995595}}}]}, Annotation[#1, 
+                     "Charting`Private`Tag#1"] & ]}}, 
+                {"WolframDynamicHighlight", <|"Label" -> {"XYLabel"}, 
+                  "Ball" -> {"IndicatedBall"}|>}], StyleBox[DynamicBox[
+                 (Charting`HighlightActionBox["DynamicHighlight", {}, 
+                    #HighlightElements, #LayoutOptions, #Meta, 
+                    Charting`HighlightActionFunction["DynamicHighlight", 
+                     {{Annotation[{Directive[PointSize[0.012833333333333334], 
+                          AbsoluteThickness[2], FontFamily -> 
+                          "Times New Roman", FontSize -> 15, GrayLevel[0]], 
+                         GeometricTransformation[Inset[Style[Style[
+                          "\[EmptyCircle]", GrayLevel[0], FontFamily -> 
+                          "Times New Roman"], GraphicsBoxOptions -> 
+                          {DefaultBaseStyle -> Directive[PointSize[
+                          0.012833333333333334], AbsoluteThickness[2], 
+                          FontFamily -> "Times New Roman", FontSize -> 15, 
+                          GrayLevel[0]]}], {0., 0.}, Automatic, Offset[11]], 
+                          {{{-2., 0.0006000000000000449}}, {{-1., 
+                          -0.00019999999999997797}}, {{0., 
+                          -0.0010000000000000009}}, {{1., 
+                          0.00019999999999997797}}, {{2., 
+                          0.00039999999999995595}}}]}, 
+                        "Charting`Private`Tag#1"]}}, <|"HighlightElements" -> 
+                       <|"Label" -> {"XYLabel"}, "Ball" -> 
+                         {"IndicatedBall"}|>, "LayoutOptions" -> 
+                       <|"PanelPlotLayout" -> <||>, "PlotRange" -> 
+                         {{-2., 2.}, {-0.0010000000000000009, 
+                          0.0006000000000000449}}, "Frame" -> {{True, False}, 
+                          {True, False}}, "AxesOrigin" -> {0, 0}, 
+                        "ImageSize" -> {720, 720/GoldenRatio}, "Axes" -> 
+                         {False, False}, "LabelStyle" -> {FontFamily -> 
+                          "Times New Roman", FontSize -> 15}, 
+                        "AspectRatio" -> GoldenRatio^(-1), "DefaultStyle" -> 
+                         {Directive[PointSize[0.012833333333333334], 
+                          AbsoluteThickness[2], FontFamily -> 
+                          "Times New Roman", FontSize -> 15, GrayLevel[0]]}, 
+                        "HighlightLabelingFunctions" -> <|
+                          "CoordinatesToolOptions" -> ({(Identity[#1] & )[
+                          #1[[1]]], (Identity[#1] & )[#1[[2]]]} & ), 
+                          "ScalingFunctions" -> {{Identity, Identity}, 
+                          {Identity, Identity}}|>, "Primitives" -> {}, 
+                        "GCFlag" -> False|>, "Meta" -> <|
+                        "DefaultHighlight" -> {"Dynamic", None}, "Index" -> 
+                         {}, "Function" -> ListPlot, "GroupHighlight" -> 
+                         False|>|>]] & )[<|"HighlightElements" -> 
+                    <|"Label" -> {"XYLabel"}, "Ball" -> {"IndicatedBall"}|>, 
+                   "LayoutOptions" -> <|"PanelPlotLayout" -> <||>, 
+                     "PlotRange" -> {{-2., 2.}, {-0.0010000000000000009, 
+                        0.0006000000000000449}}, "Frame" -> {{True, False}, 
+                       {True, False}}, "AxesOrigin" -> {0, 0}, "ImageSize" -> 
+                      {720, 720/GoldenRatio}, "Axes" -> {False, False}, 
+                     "LabelStyle" -> {FontFamily -> "Times New Roman", 
+                       FontSize -> 15}, "AspectRatio" -> GoldenRatio^(-1), 
+                     "DefaultStyle" -> {Directive[PointSize[
+                         0.012833333333333334], AbsoluteThickness[2], 
+                        FontFamily -> "Times New Roman", FontSize -> 15, 
+                        GrayLevel[0]]}, "HighlightLabelingFunctions" -> 
+                      <|"CoordinatesToolOptions" -> ({(Identity[#1] & )[
+                          #1[[1]]], (Identity[#1] & )[#1[[2]]]} & ), 
+                       "ScalingFunctions" -> {{Identity, Identity}, 
+                         {Identity, Identity}}|>, "Primitives" -> {}, 
+                     "GCFlag" -> False|>, "Meta" -> <|"DefaultHighlight" -> 
+                      {"Dynamic", None}, "Index" -> {}, "Function" -> 
+                      ListPlot, "GroupHighlight" -> False|>|>]], 
+                Selectable -> False]}, Annotation[{{Annotation[
+                  {Directive[PointSize[0.012833333333333334], 
+                    AbsoluteThickness[2], FontFamily -> "Times New Roman", 
+                    FontSize -> 15, GrayLevel[0]], GeometricTransformation[
+                    Inset[Style[Style["\[EmptyCircle]", GrayLevel[0], 
+                       FontFamily -> "Times New Roman"], 
+                      GraphicsBoxOptions -> {DefaultBaseStyle -> Directive[
+                          PointSize[0.012833333333333334], AbsoluteThickness[
+                          2], FontFamily -> "Times New Roman", FontSize -> 
+                          15, GrayLevel[0]]}], {0., 0.}, Automatic, 
+                     Offset[11]], {{{-2., 0.0006000000000000449}}, {{-1., 
+                    -0.00019999999999997797}}, {{0., 
+                    -0.0010000000000000009}}, {{1., 0.00019999999999997797}}, 
+                    {{2., 0.00039999999999995595}}}]}, 
+                  "Charting`Private`Tag#1"]}}, <|"HighlightElements" -> 
+                 <|"Label" -> {"XYLabel"}, "Ball" -> {"IndicatedBall"}|>, 
+                "LayoutOptions" -> <|"PanelPlotLayout" -> <||>, 
+                  "PlotRange" -> {{-2., 2.}, {-0.0010000000000000009, 
+                     0.0006000000000000449}}, "Frame" -> {{True, False}, 
+                    {True, False}}, "AxesOrigin" -> {0, 0}, "ImageSize" -> 
+                   {720, 720/GoldenRatio}, "Axes" -> {False, False}, 
+                  "LabelStyle" -> {FontFamily -> "Times New Roman", 
+                    FontSize -> 15}, "AspectRatio" -> GoldenRatio^(-1), 
+                  "DefaultStyle" -> {Directive[PointSize[
+                      0.012833333333333334], AbsoluteThickness[2], 
+                     FontFamily -> "Times New Roman", FontSize -> 15, 
+                     GrayLevel[0]]}, "HighlightLabelingFunctions" -> 
+                   <|"CoordinatesToolOptions" -> ({(Identity[#1] & )[
+                        #1[[1]]], (Identity[#1] & )[#1[[2]]]} & ), 
+                    "ScalingFunctions" -> {{Identity, Identity}, {Identity, 
+                       Identity}}|>, "Primitives" -> {}, "GCFlag" -> False|>, 
+                "Meta" -> <|"DefaultHighlight" -> {"Dynamic", None}, 
+                  "Index" -> {}, "Function" -> ListPlot, "GroupHighlight" -> 
+                   False|>|>, "DynamicHighlight"]], {{}, {}}}, 
+            {DisplayFunction -> Identity, DisplayFunction -> Identity, 
+             PlotInteractivity :> True, DefaultBaseStyle -> {"PlotGraphics", 
+               "Graphics"}, DisplayFunction -> Identity, PlotInteractivity :> 
+              True, DefaultBaseStyle -> {"PlotGraphics", "Graphics"}, 
+             AspectRatio -> NCache[GoldenRatio^(-1), 0.6180339887498948], 
+             Axes -> {False, False}, AxesLabel -> {None, None}, 
+             AxesOrigin -> {0, 0}, BaseStyle -> {FontFamily -> 
+                "Times New Roman", FontSize -> 15}, DisplayFunction :> 
+              Identity, Frame -> {{True, False}, {True, False}}, 
+             FrameLabel -> {{FormBox[TagBox[RowBox[{StyleBox["\:6b8b\:5dee", 
+                     FontFamily -> "SimSun"], StyleBox[" / mm", FontFamily -> 
+                      "Times New Roman"]}], HoldForm], TraditionalForm], 
+                None}, {FormBox[TagBox[RowBox[{StyleBox[
+                     "\:884d\:5c04\:7ea7\:6b21", FontFamily -> "SimSun"], 
+                    StyleBox[" ", FontFamily -> "Times New Roman"], 
+                    FormBox[StyleBox["k", FontFamily -> "Times New Roman", 
+                      AutoSpacing -> False, AutoMultiplicationSymbol -> 
+                       False, ShowAutoStyles -> False], TraditionalForm]}], 
+                  HoldForm], TraditionalForm], None}}, FrameTicks -> 
+              {{Automatic, Automatic}, {Automatic, Automatic}}, 
+             GridLines -> {None, {0}}, GridLinesStyle -> GrayLevel[0.8], 
+             ImageSize -> 720, Method -> {"AxisPadding" -> Scaled[0.02], 
+               "DefaultBoundaryStyle" -> Automatic, 
+               "DefaultGraphicsInteraction" -> {"Version" -> 1.2, 
+                 "TrackMousePosition" -> {True, False}, "Effects" -> 
+                  {"Highlight" -> {"ratio" -> 2}, "HighlightPoint" -> 
+                    {"ratio" -> 2}, "Droplines" -> {"freeformCursorMode" -> 
+                      True, "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
+               "DefaultMeshStyle" -> AbsolutePointSize[6], 
+               "DefaultPlotStyle" -> {Directive[RGBColor[0.24, 0.6, 0.8], 
+                  AbsoluteThickness[2]], Directive[RGBColor[0.95, 0.627, 
+                   0.1425], AbsoluteThickness[2]], Directive[RGBColor[0.455, 
+                   0.7, 0.21], AbsoluteThickness[2]], Directive[RGBColor[
+                   0.922526, 0.385626, 0.209179], AbsoluteThickness[2]], 
+                 Directive[RGBColor[0.578, 0.51, 0.85], AbsoluteThickness[
+                   2]], Directive[RGBColor[0.772079, 0.431554, 0.102387], 
+                  AbsoluteThickness[2]], Directive[RGBColor[0., 0.6, 0.6], 
+                  AbsoluteThickness[2]], Directive[RGBColor[0.9, 0.36, 
+                   0.684], AbsoluteThickness[2]], Directive[RGBColor[0.56, 
+                   0.7, 0.], AbsoluteThickness[2]], Directive[RGBColor[0.9, 
+                   0.54, 0.], AbsoluteThickness[2]], Directive[RGBColor[
+                   0.585, 0.5976, 0.9], AbsoluteThickness[2]], Directive[
+                  RGBColor[0.9, 0.45, 0.45], AbsoluteThickness[2]], 
+                 Directive[RGBColor[0.7632186717367253, 0.8174402144034898, 
+                   0.], AbsoluteThickness[2]], Directive[RGBColor[
+                   0.8554632469481959, 0.24885384718327969, 
+                   0.833405387394855], AbsoluteThickness[2]], Directive[
+                  RGBColor[0.032972823413648836, 0.7396719749139476, 
+                   0.534700104525218], AbsoluteThickness[2]]}, 
+               "DomainPadding" -> Scaled[0.02], "PointSizeFunction" -> 
+                "SmallPointSize", "RangePadding" -> Scaled[0.05], 
+               "OptimizePlotMarkers" -> True, "IncludeHighlighting" -> 
+                Automatic, "HighlightStyle" -> Automatic, 
+               "OptimizePlotMarkers" -> True, "IncludeHighlighting" -> 
+                "CurrentPoint", "HighlightStyle" -> Automatic, 
+               "OptimizePlotMarkers" -> True, "CoordinatesToolOptions" -> 
+                {"DisplayFunction" -> ({(Identity[#1] & )[#1[[1]]], 
+                    (Identity[#1] & )[#1[[2]]]} & ), "CopiedValueFunction" -> 
+                  ({(Identity[#1] & )[#1[[1]]], (Identity[#1] & )[
+                     #1[[2]]]} & )}}, PlotInteractivity :> True, 
+             PlotRange -> {{-2., 2.}, {-0.0010000000000000009, 
+                0.0006000000000000449}}, PlotRangeClipping -> True, 
+             PlotRangePadding -> {{Scaled[0.02], Scaled[0.02]}, {
+                Scaled[0.05], Scaled[0.05]}}, Ticks -> {Automatic, 
+               Automatic}, PlotInteractivity :> True}]}}, 
+         GridBoxAlignment -> {"Columns" -> {{Center}}}, DefaultBaseStyle -> 
+          "Column", GridBoxItemSize -> {"Columns" -> {{Automatic}}, 
+           "Rows" -> {{Automatic}}}], "Column"]], "Output", 
+      TextAlignment -> Center]}, Open]], 
+  Cell[TextData[{StyleBox["\:56fe", FontFamily -> "SimSun"], 
+     StyleBox[" 1", FontFamily -> "Times New Roman"], 
+     StyleBox["\:3000\:540e\:7126\:9762\:9891\:8c31\:4f4d\:7f6e\:4e0e\:7ea7\
+\:6b21\:7684\:62df\:5408\:53ca\:6b8b\:5dee", FontFamily -> "SimSun"]}], 
+   "Caption", TextAlignment -> Center], 
+  Cell[CellGroupData[
+    {Cell[BoxData[RowBox[{"ResultsFigure", "[", "\"filter-visibility\"", 
+         "]"}]], "Input", CellOpen -> False], 
+     Cell[BoxData[GraphicsBox[{{}, InterpretationBox[
+          {TagBox[{{TagBox[{Directive[PointSize[0.012833333333333334], 
+                 AbsoluteThickness[2], FontFamily -> "Times New Roman", 
+                 FontSize -> 15, GrayLevel[0]], GeometricTransformationBox[
+                 InsetBox[BoxData[FormBox[StyleBox[StyleBox[
+                      "\"\[EmptyCircle]\"", GrayLevel[0], FontFamily -> 
+                       "Times New Roman", StripOnInput -> False], 
+                     GraphicsBoxOptions -> {DefaultBaseStyle -> Directive[
+                         PointSize[0.012833333333333334], AbsoluteThickness[
+                          2], FontFamily -> "Times New Roman", FontSize -> 
+                          15, GrayLevel[0]]}, StripOnInput -> False], 
+                    TraditionalForm]], {0., 0.}, Automatic, Offset[11]], 
+                 {{{1., 0.82}}, {{2., 0.05}}, {{3., 0.74}}, {{4., 0.63}}, 
+                 {{5., 0.28}}}]}, Annotation[#1, 
+                 "Charting`Private`Tag#1"] & ]}}, {"WolframDynamicHighlight", 
+             <|"Label" -> {"XYLabel"}, "Ball" -> {"IndicatedBall"}|>}], 
+           StyleBox[DynamicBox[(Charting`HighlightActionBox[
+                "DynamicHighlight", {}, #HighlightElements, #LayoutOptions, 
+                #Meta, Charting`HighlightActionFunction["DynamicHighlight", 
+                 {{Annotation[{Directive[PointSize[0.012833333333333334], 
+                      AbsoluteThickness[2], FontFamily -> "Times New Roman", 
+                      FontSize -> 15, GrayLevel[0]], GeometricTransformation[
+                      Inset[Style[Style["\[EmptyCircle]", GrayLevel[0], 
+                         FontFamily -> "Times New Roman"], 
+                        GraphicsBoxOptions -> {DefaultBaseStyle -> Directive[
+                          PointSize[0.012833333333333334], AbsoluteThickness[
+                          2], FontFamily -> "Times New Roman", FontSize -> 
+                          15, GrayLevel[0]]}], {0., 0.}, Automatic, Offset[
+                        11]], {{{1., 0.82}}, {{2., 0.05}}, {{3., 0.74}}, 
+                      {{4., 0.63}}, {{5., 0.28}}}]}, 
+                    "Charting`Private`Tag#1"]}}, <|"HighlightElements" -> 
+                   <|"Label" -> {"XYLabel"}, "Ball" -> {"IndicatedBall"}|>, 
+                  "LayoutOptions" -> <|"PanelPlotLayout" -> <||>, 
+                    "PlotRange" -> {{0.916666666666669, 5.}, {0, 0.82}}, 
+                    "Frame" -> {{True, False}, {True, False}}, 
+                    "AxesOrigin" -> {0.916666666666669, 0}, "ImageSize" -> 
+                     {720, 720/GoldenRatio}, "Axes" -> {False, False}, 
+                    "LabelStyle" -> {FontFamily -> "Times New Roman", 
+                      FontSize -> 15}, "AspectRatio" -> GoldenRatio^(-1), 
+                    "DefaultStyle" -> {Directive[PointSize[
+                        0.012833333333333334], AbsoluteThickness[2], 
+                       FontFamily -> "Times New Roman", FontSize -> 15, 
+                       GrayLevel[0]]}, "HighlightLabelingFunctions" -> 
+                     <|"CoordinatesToolOptions" -> ({(Identity[#1] & )[
+                          #1[[1]]], (Identity[#1] & )[#1[[2]]]} & ), 
+                      "ScalingFunctions" -> {{Identity, Identity}, {Identity, 
+                         Identity}}|>, "Primitives" -> {}, "GCFlag" -> 
+                     False|>, "Meta" -> <|"DefaultHighlight" -> {"Dynamic", 
+                      None}, "Index" -> {}, "Function" -> ListPlot, 
+                    "GroupHighlight" -> False|>|>]] & )[
+              <|"HighlightElements" -> <|"Label" -> {"XYLabel"}, "Ball" -> 
+                  {"IndicatedBall"}|>, "LayoutOptions" -> 
+                <|"PanelPlotLayout" -> <||>, "PlotRange" -> 
+                  {{0.916666666666669, 5.}, {0, 0.82}}, "Frame" -> 
+                  {{True, False}, {True, False}}, "AxesOrigin" -> 
+                  {0.916666666666669, 0}, "ImageSize" -> {720, 
+                   720/GoldenRatio}, "Axes" -> {False, False}, 
+                 "LabelStyle" -> {FontFamily -> "Times New Roman", 
+                   FontSize -> 15}, "AspectRatio" -> GoldenRatio^(-1), 
+                 "DefaultStyle" -> {Directive[PointSize[
+                     0.012833333333333334], AbsoluteThickness[2], 
+                    FontFamily -> "Times New Roman", FontSize -> 15, 
+                    GrayLevel[0]]}, "HighlightLabelingFunctions" -> 
+                  <|"CoordinatesToolOptions" -> ({(Identity[#1] & )[#1[[1]]], 
+                      (Identity[#1] & )[#1[[2]]]} & ), "ScalingFunctions" -> 
+                    {{Identity, Identity}, {Identity, Identity}}|>, 
+                 "Primitives" -> {}, "GCFlag" -> False|>, "Meta" -> 
+                <|"DefaultHighlight" -> {"Dynamic", None}, "Index" -> {}, 
+                 "Function" -> ListPlot, "GroupHighlight" -> False|>|>]], 
+            Selectable -> False]}, Annotation[
+           {{Annotation[{Directive[PointSize[0.012833333333333334], 
+                AbsoluteThickness[2], FontFamily -> "Times New Roman", 
+                FontSize -> 15, GrayLevel[0]], GeometricTransformation[
+                Inset[Style[Style["\[EmptyCircle]", GrayLevel[0], 
+                   FontFamily -> "Times New Roman"], GraphicsBoxOptions -> 
+                   {DefaultBaseStyle -> Directive[PointSize[
+                       0.012833333333333334], AbsoluteThickness[2], 
+                      FontFamily -> "Times New Roman", FontSize -> 15, 
+                      GrayLevel[0]]}], {0., 0.}, Automatic, Offset[11]], 
+                {{{1., 0.82}}, {{2., 0.05}}, {{3., 0.74}}, {{4., 0.63}}, 
+                {{5., 0.28}}}]}, "Charting`Private`Tag#1"]}}, 
+           <|"HighlightElements" -> <|"Label" -> {"XYLabel"}, 
+              "Ball" -> {"IndicatedBall"}|>, "LayoutOptions" -> 
+             <|"PanelPlotLayout" -> <||>, "PlotRange" -> {{0.916666666666669, 
+                 5.}, {0, 0.82}}, "Frame" -> {{True, False}, {True, False}}, 
+              "AxesOrigin" -> {0.916666666666669, 0}, "ImageSize" -> {720, 
+                720/GoldenRatio}, "Axes" -> {False, False}, "LabelStyle" -> {
+                FontFamily -> "Times New Roman", FontSize -> 15}, 
+              "AspectRatio" -> GoldenRatio^(-1), "DefaultStyle" -> {
+                Directive[PointSize[0.012833333333333334], AbsoluteThickness[
+                  2], FontFamily -> "Times New Roman", FontSize -> 15, 
+                 GrayLevel[0]]}, "HighlightLabelingFunctions" -> <|
+                "CoordinatesToolOptions" -> ({(Identity[#1] & )[#1[[1]]], 
+                   (Identity[#1] & )[#1[[2]]]} & ), "ScalingFunctions" -> 
+                 {{Identity, Identity}, {Identity, Identity}}|>, 
+              "Primitives" -> {}, "GCFlag" -> False|>, "Meta" -> 
+             <|"DefaultHighlight" -> {"Dynamic", None}, "Index" -> {}, 
+              "Function" -> ListPlot, "GroupHighlight" -> False|>|>, 
+           "DynamicHighlight"]], {{}, {}}}, {DisplayFunction -> Identity, 
+         DisplayFunction -> Identity, PlotInteractivity :> True, 
+         DefaultBaseStyle -> {"PlotGraphics", "Graphics"}, 
+         DisplayFunction -> Identity, PlotInteractivity :> True, 
+         DefaultBaseStyle -> {"PlotGraphics", "Graphics"}, 
+         AspectRatio -> NCache[GoldenRatio^(-1), 0.6180339887498948], 
+         Axes -> {False, False}, AxesLabel -> {None, None}, 
+         AxesOrigin -> {0.916666666666669, 0}, BaseStyle -> 
+          {FontFamily -> "Times New Roman", FontSize -> 15}, 
+         DisplayFunction :> Identity, Frame -> {{True, False}, 
+           {True, False}}, FrameLabel -> 
+          {{FormBox[TagBox[RowBox[{StyleBox[
+                 "\:8bb0\:5f55\:76f8\:5bf9\:53ef\:89c1\:5ea6", FontFamily -> 
+                  "SimSun"]}], HoldForm], TraditionalForm], None}, 
+           {FormBox[TagBox[RowBox[{StyleBox["\:6ee4\:6ce2\:65b9\:5f0f\:5e8f\
+\:53f7\:ff08\:5bf9\:5e94\:89c2\:5bdf\:8868\:ff09", FontFamily -> "SimSun"]}], 
+              HoldForm], TraditionalForm], None}}, FrameTicks -> 
+          {{Automatic, Automatic}, {Automatic, Automatic}}, 
+         GridLines -> {None, Automatic}, GridLinesStyle -> 
+          Directive[GrayLevel[0.9], Thickness[Tiny]], ImageSize -> 720, 
+         Method -> {"AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> 
+            Automatic, "DefaultGraphicsInteraction" -> {"Version" -> 1.2, 
+             "TrackMousePosition" -> {True, False}, "Effects" -> 
+              {"Highlight" -> {"ratio" -> 2}, "HighlightPoint" -> 
+                {"ratio" -> 2}, "Droplines" -> {"freeformCursorMode" -> True, 
+                 "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
+           "DefaultMeshStyle" -> AbsolutePointSize[6], "DefaultPlotStyle" -> 
+            {Directive[RGBColor[0.24, 0.6, 0.8], AbsoluteThickness[2]], 
+             Directive[RGBColor[0.95, 0.627, 0.1425], AbsoluteThickness[2]], 
+             Directive[RGBColor[0.455, 0.7, 0.21], AbsoluteThickness[2]], 
+             Directive[RGBColor[0.922526, 0.385626, 0.209179], 
+              AbsoluteThickness[2]], Directive[RGBColor[0.578, 0.51, 0.85], 
+              AbsoluteThickness[2]], Directive[RGBColor[0.772079, 0.431554, 
+               0.102387], AbsoluteThickness[2]], Directive[RGBColor[0., 0.6, 
+               0.6], AbsoluteThickness[2]], Directive[RGBColor[0.9, 0.36, 
+               0.684], AbsoluteThickness[2]], Directive[RGBColor[0.56, 0.7, 
+               0.], AbsoluteThickness[2]], Directive[RGBColor[0.9, 0.54, 0.], 
+              AbsoluteThickness[2]], Directive[RGBColor[0.585, 0.5976, 0.9], 
+              AbsoluteThickness[2]], Directive[RGBColor[0.9, 0.45, 0.45], 
+              AbsoluteThickness[2]], Directive[RGBColor[0.7632186717367253, 
+               0.8174402144034898, 0.], AbsoluteThickness[2]], 
+             Directive[RGBColor[0.8554632469481959, 0.24885384718327969, 
+               0.833405387394855], AbsoluteThickness[2]], 
+             Directive[RGBColor[0.032972823413648836, 0.7396719749139476, 
+               0.534700104525218], AbsoluteThickness[2]]}, 
+           "DomainPadding" -> Scaled[0.02], "PointSizeFunction" -> 
+            "SmallPointSize", "RangePadding" -> Scaled[0.05], 
+           "OptimizePlotMarkers" -> True, "IncludeHighlighting" -> Automatic, 
+           "HighlightStyle" -> Automatic, "OptimizePlotMarkers" -> True, 
+           "IncludeHighlighting" -> "CurrentPoint", "HighlightStyle" -> 
+            Automatic, "OptimizePlotMarkers" -> True, 
+           "CoordinatesToolOptions" -> {"DisplayFunction" -> 
+              ({(Identity[#1] & )[#1[[1]]], (Identity[#1] & )[#1[[2]]]} & ), 
+             "CopiedValueFunction" -> ({(Identity[#1] & )[#1[[1]]], 
+                (Identity[#1] & )[#1[[2]]]} & )}}, PlotInteractivity :> True, 
+         PlotRange -> {{0.916666666666669, 5.}, {0, 0.82}}, 
+         PlotRangeClipping -> True, PlotRangePadding -> 
+          {{Scaled[0.02], Scaled[0.02]}, {Scaled[0.02], Scaled[0.05]}}, 
+         Ticks -> {Automatic, Automatic}, PlotInteractivity :> True}]], 
+      "Output", TextAlignment -> Center]}, Open]], 
+  Cell[TextData[{StyleBox["\:56fe", FontFamily -> "SimSun"], 
+     StyleBox[" 2", FontFamily -> "Times New Roman"], 
+     StyleBox["\:3000\:6309\:89c2\:5bdf\:8868\:987a\:5e8f\:5217\:51fa\:7684\
+\:76f8\:5bf9\:53ef\:89c1\:5ea6", FontFamily -> "SimSun"]}], "Caption", 
+   TextAlignment -> Center], 
+  Cell[TextData[{StyleBox["\:76f8\:5e72\:6ee4\:6ce2\:5bf9\:590d\:632f\:5e45\
+\:9891\:8c31\:4f5c\:4e58\:6cd5\:ff0c", FontFamily -> "SimSun"], 
+     Cell[BoxData[FormBox[StyleBox[RowBox[{SubscriptBox["g", 
+            StyleBox["out", FontSlant -> "Plain", FontFamily -> 
+              "Times New Roman"]], "=", SuperscriptBox["F", 
+            RowBox[{"-", "1"}]], RowBox[{"[", RowBox[{"H", "G"}], "]"}]}], 
+         FontFamily -> "Times New Roman", AutoSpacing -> False, 
+         AutoMultiplicationSymbol -> False, ShowAutoStyles -> False], 
+        TraditionalForm]], "InlineFormula", FontFamily -> "Times New Roman"], 
+     StyleBox["\:ff0c\:5b9e\:9645\:63a2\:6d4b\:5f3a\:5ea6\:4e3a", 
+      FontFamily -> "SimSun"], StyleBox[" ", FontFamily -> 
+       "Times New Roman"], 
+     Cell[BoxData[FormBox[StyleBox[RowBox[{"|", SubscriptBox["g", 
+            StyleBox["out", FontSlant -> "Plain", FontFamily -> 
+              "Times New Roman"]], SuperscriptBox["|", "2"]}], 
+         FontFamily -> "Times New Roman", AutoSpacing -> False, 
+         AutoMultiplicationSymbol -> False, ShowAutoStyles -> False], 
+        TraditionalForm]], "InlineFormula", FontFamily -> "Times New Roman"], 
+     StyleBox["\:3002\:4ec5\:901a\:76f4\:6d41\:5206\:91cf\:65f6\:5f62\:6210\
+\:5e73\:5747\:7167\:660e\:ff1b\:901a\:8fc7\:96f6\:7ea7\:53ca\:6b63\:8d1f\
+\:4e00\:7ea7\:53ef\:6062\:590d\:57fa\:9891\:7ed3\:6784\:ff0c\:66f4\:591a\
+\:9ad8\:9891\:5206\:91cf\:80fd\:591f\:8d21\:732e\:7ec6\:8282\:3002\:89c2\
+\:5bdf\:8868\:4e2d\:7684\:53ef\:89c1\:5ea6\:662f\:8bb0\:5f55\:503c\:ff0c\
+\:672a\:9644\:6700\:5927\:6700\:5c0f\:5149\:5f3a\:ff0c\:4e0d\:80fd\:91cd\
+\:65b0\:6838\:7b97\:3002", FontFamily -> "SimSun"]}], "Text"], 
+  Cell[TextData[
+    {StyleBox["\:9010\:7ec4\:8ba1\:7b97\:4e0e\:7ed3\:679c\:6838\:9a8c", 
+      FontFamily -> "SimSun"]}], "Subsubsection"], 
+  Cell[TextData[{StyleBox["\:8bfb\:53d6\:89c2\:6d4b\:5e76\:9010\:7ec4\:8ba1\
+\:7b97\:ff0c\:518d\:5f62\:6210\:6700\:7ec8\:6307\:6807\:ff1b\:4fee\:7ea6\
+\:53ea\:4f5c\:7528\:4e8e\:663e\:793a\:3002", FontFamily -> "SimSun"]}], 
+   "Text"], Cell[CellGroupData[
+    {Cell[BoxData[RowBox[{"ExecuteBlock", "[", "1", "]"}]], "Input", 
+      CellOpen -> False], 
+     Cell[BoxData[TagBox[GridBox[
+         {{RowBox[{StyleBox["\:8868\:3000\:8ba1\:7b97\:7ed3\:679c", 
+              FontFamily -> "SimSun"]}]}, 
+          {TagBox[GridBox[{{RowBox[{StyleBox["\:6307\:6807", FontFamily -> 
+                   "SimSun"]}], RowBox[{StyleBox["\:6570\:503c", 
+                  FontFamily -> "SimSun"]}], RowBox[{StyleBox["\:5355\:4f4d", 
+                  FontFamily -> "SimSun"]}]}, {RowBox[{StyleBox["\:6b63\:8d1f\
+\:4e00\:7ea7\:5e73\:5747\:7edd\:5bf9\:4f4d\:7f6e", FontFamily -> "SimSun"]}], 
+               TagBox[InterpretationBox[StyleBox["\"0.475\"", 
+                  ShowStringCharacters -> False], 0.475, AutoDelete -> True], 
+                NumberForm[#1, 10] & ], FormBox[StyleBox[StyleBox["mm", 
+                  FontSlant -> "Plain", FontFamily -> "Times New Roman"], 
+                 FontFamily -> "Times New Roman", AutoSpacing -> False, 
+                 ShowAutoStyles -> False], TraditionalForm]}, 
+              {RowBox[{StyleBox[
+                  "\:4e00\:7ea7\:4f4d\:7f6e\:5149\:6805\:5468\:671f", 
+                  FontFamily -> "SimSun"]}], TagBox[InterpretationBox[
+                 StyleBox["\"0.1998315789\"", ShowStringCharacters -> False], 
+                 0.19983157894736842, AutoDelete -> True], NumberForm[#1, 
+                  10] & ], FormBox[StyleBox[StyleBox["mm", FontSlant -> 
+                   "Plain", FontFamily -> "Times New Roman"], FontFamily -> 
+                  "Times New Roman", AutoSpacing -> False, ShowAutoStyles -> 
+                  False], TraditionalForm]}, {RowBox[{StyleBox[
+                  "\:57fa\:9891", FontFamily -> "SimSun"]}], TagBox[
+                InterpretationBox[StyleBox["\"5.004214075\"", 
+                  ShowStringCharacters -> False], 5.004214075010536, 
+                 AutoDelete -> True], NumberForm[#1, 10] & ], FormBox[
+                StyleBox[StyleBox[RowBox[{"1", "/", "mm"}], FontSlant -> 
+                   "Plain", FontFamily -> "Times New Roman"], FontFamily -> 
+                  "Times New Roman", AutoSpacing -> False, ShowAutoStyles -> 
+                  False], TraditionalForm]}, {RowBox[{StyleBox["\:5168\:7ea7\
+\:6b21\:9891\:8c31\:4f4d\:7f6e\:62df\:5408\:659c\:7387", FontFamily -> 
+                   "SimSun"]}], TagBox[InterpretationBox[StyleBox[
+                  "\"0.4748\"", ShowStringCharacters -> False], 
+                 0.47479999999999994, AutoDelete -> True], NumberForm[#1, 
+                  10] & ], FormBox[StyleBox[StyleBox["mm", FontSlant -> 
+                   "Plain", FontFamily -> "Times New Roman"], FontFamily -> 
+                  "Times New Roman", AutoSpacing -> False, ShowAutoStyles -> 
+                  False], TraditionalForm]}, {RowBox[{StyleBox[
+                  "\:9891\:8c31\:4f4d\:7f6e\:62df\:5408\:622a\:8ddd", 
+                  FontFamily -> "SimSun"]}], TagBox[InterpretationBox[
+                 StyleBox["\"0.001\"", ShowStringCharacters -> False], 
+                 0.0010000000000000009, AutoDelete -> True], 
+                NumberForm[#1, 10] & ], FormBox[StyleBox[StyleBox["mm", 
+                  FontSlant -> "Plain", FontFamily -> "Times New Roman"], 
+                 FontFamily -> "Times New Roman", AutoSpacing -> False, 
+                 ShowAutoStyles -> False], TraditionalForm]}, 
+              {RowBox[{StyleBox["\:5168\:7ea7\:6b21\:4f4d\:7f6e\:62df\:5408\
+\:5149\:6805\:5468\:671f", FontFamily -> "SimSun"]}], TagBox[
+                InterpretationBox[StyleBox["\"0.199915754\"", 
+                  ShowStringCharacters -> False], 0.19991575400168496, 
+                 AutoDelete -> True], NumberForm[#1, 10] & ], FormBox[
+                StyleBox[StyleBox["mm", FontSlant -> "Plain", FontFamily -> 
+                   "Times New Roman"], FontFamily -> "Times New Roman", 
+                 AutoSpacing -> False, ShowAutoStyles -> False], 
+                TraditionalForm]}, {RowBox[{StyleBox[
+                  "\:4ec5\:96f6\:7ea7\:8bb0\:5f55\:53ef\:89c1\:5ea6", 
+                  FontFamily -> "SimSun"]}], TagBox[InterpretationBox[
+                 StyleBox["\"0.05\"", ShowStringCharacters -> False], 0.05, 
+                 AutoDelete -> True], NumberForm[#1, 10] & ], FormBox[
+                StyleBox[StyleBox["1", FontSlant -> "Plain", FontFamily -> 
+                   "Times New Roman"], FontFamily -> "Times New Roman", 
+                 AutoSpacing -> False, ShowAutoStyles -> False], 
+                TraditionalForm]}, {RowBox[{StyleBox[
+                  "\:672a\:6ee4\:6ce2\:8bb0\:5f55\:53ef\:89c1\:5ea6", 
+                  FontFamily -> "SimSun"]}], TagBox[InterpretationBox[
+                 StyleBox["\"0.82\"", ShowStringCharacters -> False], 0.82, 
+                 AutoDelete -> True], NumberForm[#1, 10] & ], FormBox[
+                StyleBox[StyleBox["1", FontSlant -> "Plain", FontFamily -> 
+                   "Times New Roman"], FontFamily -> "Times New Roman", 
+                 AutoSpacing -> False, ShowAutoStyles -> False], 
+                TraditionalForm]}}, GridBoxAlignment -> {"Columns" -> 
+                {{Center}}}, AutoDelete -> False, GridBoxDividers -> 
+              {"Columns" -> {{None}}, "RowsIndexed" -> {1 -> GrayLevel[0], 
+                 2 -> GrayLevel[0], -1 -> GrayLevel[0]}}, GridBoxFrame -> 
+              {"Columns" -> None, "Rows" -> None}, GridBoxItemSize -> 
+              {"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             GridBoxSpacings -> {"Columns" -> {{1.1}}, "Rows" -> {{0.8}}}, 
+             BaseStyle -> {FontFamily -> "Times New Roman", FontSize -> 13}], 
+            "Grid"]}}, GridBoxAlignment -> {"Columns" -> {{Center}}}, 
+         DefaultBaseStyle -> "Column", GridBoxItemSize -> 
+          {"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+         GridBoxSpacings -> {"Columns" -> {{Automatic}}, "Rows" -> {{0.6}}}], 
+        "Column"]], "Output", TextAlignment -> Center]}, Open]], 
+  Cell[TextData[{StyleBox["\:5b9e\:9a8c\:7ed3\:679c\:4e0e\:8ba8\:8bba", 
+      FontFamily -> "SimSun"]}], "Section"], 
+  Cell[TextData[
+    {StyleBox["\:4e00\:7ea7\:4f4d\:7f6e\:6cd5\:6d4b\:5f97\:5149\:6805\:5468\
+\:671f\:7ea6", FontFamily -> "SimSun"], StyleBox[" ", 
+      FontFamily -> "Times New Roman"], 
+     Cell[BoxData[FormBox[StyleBox[RowBox[{"0.1998", " ", 
+           StyleBox["mm", FontSlant -> "Plain", FontFamily -> 
+             "Times New Roman"]}], FontFamily -> "Times New Roman", 
+         AutoSpacing -> False, AutoMultiplicationSymbol -> False, 
+         ShowAutoStyles -> False], TraditionalForm]], "InlineFormula", 
+      FontFamily -> "Times New Roman"], StyleBox["\:ff0c\:5168\:7ea7\:6b21\
+\:62df\:5408\:5f97\:5230\:8fd1\:4f3c\:4e00\:81f4\:7684\:5468\:671f\:3002\
+\:4ec5\:901a\:96f6\:7ea7\:65f6\:6761\:7eb9\:663e\:8457\:51cf\:5f31\:ff0c\
+\:7b26\:5408\:76f4\:6d41\:5206\:91cf\:4e0d\:80fd\:6062\:590d\:5468\:671f\
+\:7ed3\:6784\:7684\:5224\:65ad\:ff1b\:52a0\:5165\:4f4e\:7ea7\:9891\:8c31\
+\:53ef\:6062\:590d\:57fa\:672c\:6761\:7eb9\:ff0c\:53bb\:9664\:9ad8\:9891\
+\:4f1a\:635f\:5931\:8fb9\:7f18\:7ec6\:8282\:3002", FontFamily -> "SimSun"]}], 
+   "Text"], Cell[TextData[{StyleBox["\[OpenCurlyDoubleQuote]", 
+      FontFamily -> "Times New Roman"], 
+     StyleBox[
+      "\:6321\:53bb\:96f6\:7ea7\:540e\:51fa\:73b0\:53cd\:76f8\:6761\:7eb9", 
+      FontFamily -> "SimSun"], StyleBox["\[CloseCurlyDoubleQuote]", 
+      FontFamily -> "Times New Roman"], StyleBox["\:4e3a\:539f\:59cb\:89c2\
+\:5bdf\:63cf\:8ff0\:3002\:4ec5\:51ed\:901a\:8fc7\:6b63\:8d1f\:4e00\:7ea7\
+\:4e0d\:80fd\:666e\:904d\:65ad\:8a00\:6210\:50cf\:5fc5\:7136\:53cd\:76f8\
+\:ff1a\:76f8\:5e72\:53e0\:52a0\:7684\:76f8\:4f4d\:53ca\:50cf\:9762\:53d6\
+\:5f3a\:5ea6\:90fd\:4f1a\:5f71\:54cd\:5468\:671f\:4e0e\:5bf9\:6bd4\:5ea6\
+\:ff0c\:4f8b\:5982\:53ea\:5269\:7b49\:5e45\:6b63\:8d1f\:57fa\:9891\:65f6\
+\:5f3a\:5ea6\:53ef\:542b\:4e8c\:500d\:7a7a\:95f4\:9891\:7387\:3002\:5f53\
+\:524d\:7f3a\:5c11\:590d\:632f\:5e45\:3001\:7269\:4f53\:900f\:8fc7\:7387\
+\:53ca\:5149\:9611\:5c3a\:5bf8\:ff0c\:4e0d\:91cd\:5efa\:5b9e\:9645\:7269\
+\:50cf\:6216\:7ed9\:51fa\:672a\:6d4b\:7684\:6ee4\:6ce2\:53c2\:6570\:3002", 
+      FontFamily -> "SimSun"]}], "Text"], 
+  Cell[TextData[{StyleBox["\:8bef\:5dee\:4e3b\:8981\:6765\:81ea\:9891\:8c31\
+\:70b9\:5b9a\:4f4d\:3001\:540e\:7126\:9762\:5149\:9611\:4f4d\:7f6e\:3001\
+\:5149\:6805\:503e\:659c\:4e0e\:50cf\:5dee\:3002\:9891\:8c31\:7ea7\:6b21\
+\:5171\:4eab\:6ce2\:957f\:3001\:7126\:8ddd\:548c\:5b9a\:4f4d\:8bef\:5dee\
+\:ff0c\:672a\:63d0\:4f9b\:8fd9\:4e9b\:5206\:91cf\:ff0c\:4e0d\:80fd\:5c06\
+\:4e94\:4e2a\:4e0d\:540c\:7ea7\:6b21\:5f53\:72ec\:7acb\:91cd\:590d\:6d4b\
+\:91cf\:5408\:6210\:5b8c\:6574\:4e0d\:786e\:5b9a\:5ea6\:3002", 
+      FontFamily -> "SimSun"]}], "Text"], 
+  Cell[BoxData[RowBox[{RowBox[{"Analyze", "[", "]"}], "[", "\"metrics\"", 
+      "]"}]], "Input", CellOpen -> False]}, 
+ WindowTitle -> 
+  "\:963f\:8d1d\:6210\:50cf\:539f\:7406\:548c\:7a7a\:95f4\:6ee4\:6ce2", 
+ StyleDefinitions -> Notebook[
+   {Cell[StyleData[StyleDefinitions -> "Default.nb"]], 
+    Cell[StyleData["Notebook"], FontFamily -> "Times New Roman", 
+     FontColor -> GrayLevel[0]], Cell[StyleData["Title"], 
+     FontFamily -> "SimSun", FontColor -> GrayLevel[0], FontSize -> 28, 
+     FontWeight -> "Plain", TextAlignment -> Center, 
+     CellMargins -> {{60, 60}, {24, 24}}], Cell[StyleData["Section"], 
+     FontFamily -> "SimSun", FontColor -> GrayLevel[0], FontSize -> 23, 
+     FontWeight -> "Plain", CellMargins -> {{60, 60}, {18, 30}}], 
+    Cell[StyleData["Subsection"], FontFamily -> "SimSun", 
+     FontColor -> GrayLevel[0], FontSize -> 19, FontWeight -> "Plain"], 
+    Cell[StyleData["Subsubsection"], FontFamily -> "SimSun", 
+     FontColor -> GrayLevel[0], FontSize -> 17, FontWeight -> "Plain"], 
+    Cell[StyleData["Text"], FontSize -> 16, LineSpacing -> {1.5, 2}, 
+     CellMargins -> {{60, 60}, {10, 10}}], Cell[StyleData["Caption"], 
+     FontSize -> 16, TextAlignment -> Center, CellMargins -> 
+      {{60, 60}, {16, 8}}], Cell[StyleData["Output"], FontSize -> 15, 
+     TextAlignment -> Center, CellMargins -> {{60, 60}, {12, 12}}], 
+    Cell[StyleData["InlineFormula"], FontFamily -> "Times New Roman", 
+     AutoSpacing -> False, ShowAutoStyles -> False, 
+     AutoMultiplicationSymbol -> False], Cell[StyleData["DisplayFormula"], 
+     FontFamily -> "Times New Roman", FontSize -> 18, AutoSpacing -> False, 
+     ShowAutoStyles -> False, AutoMultiplicationSymbol -> False, 
+     TextAlignment -> Center, CellMargins -> {{60, 60}, {12, 12}}]}], 
+ CellContext -> Notebook, WindowSize -> {1180, 850}, 
+ CommonDefaultFormatTypes -> {"Output" -> StandardForm}, 
+ BaseStyle -> {FontFamily -> "Times New Roman", FontSize -> 16}]

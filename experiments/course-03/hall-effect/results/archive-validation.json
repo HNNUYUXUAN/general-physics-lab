@@ -1,0 +1,14 @@
+{
+  "id": "course-03/hall-effect",
+  "status": "passed",
+  "paclet_sha256": "69f0912cbb9e99f70522944c4eef3910b25e3e15ab7bc58e1fde70f1131fe1c7",
+  "canonical_inputs_checked": [
+    "data/magnet_current.csv",
+    "data/position.csv",
+    "data/provenance.json",
+    "data/python-author-validation.json",
+    "data/working_current.csv",
+    "experiment.json"
+  ],
+  "kernel_and_notebook_match_source": true
+}

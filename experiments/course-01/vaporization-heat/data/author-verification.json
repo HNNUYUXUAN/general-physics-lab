@@ -1,0 +1,87 @@
+{
+  "status": "python-executed-awaiting-wolfram",
+  "checks": [
+    "seven source entries",
+    "7.8g mass difference",
+    "energy partition balance",
+    "positive final-temperature derivative",
+    "interactive default/changed"
+  ],
+  "metrics": {
+    "water_mass": {
+      "value": 119.76,
+      "unit": "g",
+      "label": "冷水质量"
+    },
+    "steam_mass": {
+      "value": 7.800000000000011,
+      "unit": "g",
+      "label": "默认同构成称量的凝结质量"
+    },
+    "initial_temperature": {
+      "value": 12.650000000000034,
+      "unit": "degC",
+      "label": "初温"
+    },
+    "final_temperature": {
+      "value": 45.150000000000034,
+      "unit": "degC",
+      "label": "末温"
+    },
+    "temperature_rise": {
+      "value": 32.5,
+      "unit": "K",
+      "label": "冷水温升"
+    },
+    "steam_temperature_drop": {
+      "value": 54.849999999999966,
+      "unit": "K",
+      "label": "凝结水温降"
+    },
+    "system_heat_capacity": {
+      "value": 528.57384,
+      "unit": "J/K",
+      "label": "系统热容"
+    },
+    "absorbed_heat": {
+      "value": 17178.6498,
+      "unit": "J",
+      "label": "系统吸热"
+    },
+    "sensible_heat": {
+      "value": 1788.3294000000012,
+      "unit": "J",
+      "label": "凝结水显热"
+    },
+    "latent_heat_total": {
+      "value": 15390.320399999999,
+      "unit": "J",
+      "label": "凝结潜热总量"
+    },
+    "latent_heat": {
+      "value": 1973117.999999997,
+      "unit": "J/kg",
+      "label": "默认构成条件比汽化热"
+    },
+    "relative_deviation": {
+      "value": 12.3058666666668,
+      "unit": "%",
+      "label": "相对参考值差异"
+    },
+    "alternative_steam_mass": {
+      "value": 3.9600000000000115,
+      "unit": "g",
+      "label": "末态额外计搅拌器时凝结质量"
+    },
+    "alternative_latent_heat": {
+      "value": 4108769.8787878663,
+      "unit": "J/kg",
+      "label": "末态额外计搅拌器时比汽化热"
+    },
+    "final_temperature_sensitivity": {
+      "value": 71945.87692307684,
+      "unit": "J/(kg K)",
+      "label": "末温灵敏系数"
+    }
+  }
+}

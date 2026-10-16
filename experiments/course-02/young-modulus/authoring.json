@@ -1,0 +1,55 @@
+{
+  "title": "拉伸法测量金属杨氏模量",
+  "course": "course-02",
+  "slug": "young-modulus",
+  "module": "young_modulus",
+  "paclet": "YoungModulusLab",
+  "source_docx": "originals/course-02/02-杨氏模量的测量/实验报告-拉伸法测量金属杨氏模量.docx",
+  "source_converted": "processed/course-02/02-杨氏模量的测量/实验报告-拉伸法测量金属杨氏模量/正文.md",
+  "sections": [
+    "一、实验名称",
+    "二、实验目的",
+    "三、实验原理",
+    "四、主要仪器设备",
+    "五、实验步骤",
+    "六、原始数据记录",
+    "七、数据处理",
+    "八、实验结果与讨论"
+  ],
+  "comparison": [
+    "mean_apparent_diameter",
+    "mean_corrected_diameter",
+    "diameter_uncertainty_a",
+    "mean_extension_difference",
+    "fit_slope",
+    "fit_intercept",
+    "correlation",
+    "slope_uncertainty",
+    "young_modulus_difference",
+    "young_modulus_regression",
+    "conditional_uncertainty_difference",
+    "conditional_uncertainty_regression"
+  ],
+  "status": "authored-python-verified",
+  "expansions": [
+    {
+      "section": "七、数据处理",
+      "title": "两种估计及预算",
+      "prose": "用未修约读数分别计算逐差和回归估计，保留共同几何输入。",
+      "python": "metrics_display(result)",
+      "wolfram": "metricView[r]"
+    },
+    {
+      "section": "八、实验结果与讨论",
+      "title": "测微器零差敏感性",
+      "prose": "固定直径视值和回归斜率，扫描假设零差0.040–0.080 $\\mathrm{mm}$，步长0.0004 $\\mathrm{mm}$，默认源记录0.062 $\\mathrm{mm}$。范围是模型演示，不表示零差误差限。",
+      "python": "display_plotly(adapter.explore(\"zero-offset\",result))",
+      "wolfram": "exploreView[\"zero-offset\"]",
+      "caption": "图 3　零差修正对杨氏模量的平方反比影响"
+    }
+  ],
+  "limitations": [
+    "源标准不确定度作为条件输入，仪器误差限和相关性待核实。",
+    "模板身份与日期未填写。"
+  ]
+}

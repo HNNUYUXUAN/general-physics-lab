@@ -1,0 +1,1 @@
+PacletObject[<|"Name"->"VaporizationHeatLab","Version"->"0.1.0","WolframVersion"->"14.0+","Description"->"\:6c34\:7684\:6c7d\:5316\:70ed\:7684\:6d4b\:5b9a","Creator"->"Physics Lab Contributors","Extensions"->{{"Kernel","Root"->"Kernel","Context"->{"VaporizationHeatLab`"}},{"Resource","Root"->".","Resources"->{"Notebooks","data","assets"}}}|>]

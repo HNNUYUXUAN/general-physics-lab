@@ -1,0 +1,253 @@
+{
+  "experiment": "course-02/pohl-resonance",
+  "status": "passed",
+  "reviewed_at": "2026-10-16T08:24:20.336560+08:00",
+  "build_run": "C:\\Users\\yuxua\\.codex\\visualizations\\2026\\10\\15\\01a13f56-4554-7500-ab99-dad08368b735\\rollout\\project\\.build\\course-02\\pohl-resonance\\20261016_082700_609545",
+  "notebook": "C:\\Users\\yuxua\\.codex\\visualizations\\2026\\10\\15\\01a13f56-4554-7500-ab99-dad08368b735\\rollout\\project\\notebook\\paclets\\PohlResonanceLab\\Notebooks\\PohlResonanceLab.nb",
+  "notebook_sha256": "2caeedd63ba560b3d4540d5168084b69c9f148000cc43d8a02a291d9164c6197",
+  "method": "Actual view_image inspection of every fresh native QA panel without rescaling; long sections split with overlapping crops. Review covers mathematical typesetting, units, Chinese glyphs, centering, clipping and captions. Native controls visually inspected at saved default state; changing-state calculation validation is recorded by root serialized pipeline separately.",
+  "section_coverage": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "inspected_images": [
+    {
+      "path": "C:\\Users\\yuxua\\.codex\\visualizations\\2026\\10\\15\\01a13f56-4554-7500-ab99-dad08368b735\\rollout\\qa\\PohlResonanceLab\\review-01.png",
+      "sha256": "ef011632cce875500acb7bfc02b959faa3b2c744eab2e90afdd292fb430c4f6a",
+      "source_spans": [
+        {
+          "source": "section-01.png",
+          "top": 0,
+          "bottom": 244
+        },
+        {
+          "source": "section-02.png",
+          "top": 0,
+          "bottom": 238
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\yuxua\\.codex\\visualizations\\2026\\10\\15\\01a13f56-4554-7500-ab99-dad08368b735\\rollout\\qa\\PohlResonanceLab\\review-02.png",
+      "sha256": "5bbcd4399ffe90c583f77e583143aaa08d890916b739daa6ec6326e87e613ba2",
+      "source_spans": [
+        {
+          "source": "section-03.png",
+          "top": 0,
+          "bottom": 1150
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\yuxua\\.codex\\visualizations\\2026\\10\\15\\01a13f56-4554-7500-ab99-dad08368b735\\rollout\\qa\\PohlResonanceLab\\review-03.png",
+      "sha256": "799f1c60bf3383a04bbb50412747b007d5344ce38d6496b9ab0c291f12392663",
+      "source_spans": [
+        {
+          "source": "section-03.png",
+          "top": 1050,
+          "bottom": 1347
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\yuxua\\.codex\\visualizations\\2026\\10\\15\\01a13f56-4554-7500-ab99-dad08368b735\\rollout\\qa\\PohlResonanceLab\\review-04.png",
+      "sha256": "63aa7d1e7d44b23169d53cbf6ae114038d0f2ed97e36f68a949beb07349900c5",
+      "source_spans": [
+        {
+          "source": "section-04.png",
+          "top": 0,
+          "bottom": 143
+        },
+        {
+          "source": "section-05.png",
+          "top": 0,
+          "bottom": 240
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\yuxua\\.codex\\visualizations\\2026\\10\\15\\01a13f56-4554-7500-ab99-dad08368b735\\rollout\\qa\\PohlResonanceLab\\review-05.png",
+      "sha256": "e4ddc388d52782dabec18d62d82a7352e143d9fb9d809d5de317d8724a84812c",
+      "source_spans": [
+        {
+          "source": "section-06.png",
+          "top": 0,
+          "bottom": 1150
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\yuxua\\.codex\\visualizations\\2026\\10\\15\\01a13f56-4554-7500-ab99-dad08368b735\\rollout\\qa\\PohlResonanceLab\\review-06.png",
+      "sha256": "9eb6c7367967ae601cd65f601f84c11aa16e3bf4166ba141402dfd5ecd541c2d",
+      "source_spans": [
+        {
+          "source": "section-06.png",
+          "top": 1050,
+          "bottom": 1267
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\yuxua\\.codex\\visualizations\\2026\\10\\15\\01a13f56-4554-7500-ab99-dad08368b735\\rollout\\qa\\PohlResonanceLab\\review-07.png",
+      "sha256": "aa7cae12ddcd7fe081d45e0e81a39491f9478026571e060811d0e2628fc53771",
+      "source_spans": [
+        {
+          "source": "section-07.png",
+          "top": 0,
+          "bottom": 1150
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\yuxua\\.codex\\visualizations\\2026\\10\\15\\01a13f56-4554-7500-ab99-dad08368b735\\rollout\\qa\\PohlResonanceLab\\review-08.png",
+      "sha256": "ca85fd21459cf4cfc9c61a7c80a384dbe3512c2eeff9879ad6994259460c448d",
+      "source_spans": [
+        {
+          "source": "section-07.png",
+          "top": 1050,
+          "bottom": 2200
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\yuxua\\.codex\\visualizations\\2026\\10\\15\\01a13f56-4554-7500-ab99-dad08368b735\\rollout\\qa\\PohlResonanceLab\\review-09.png",
+      "sha256": "d7f17743249ef887a386e41b5ecbf056ef694888338172894418457d05a4a030",
+      "source_spans": [
+        {
+          "source": "section-07.png",
+          "top": 2100,
+          "bottom": 3250
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\yuxua\\.codex\\visualizations\\2026\\10\\15\\01a13f56-4554-7500-ab99-dad08368b735\\rollout\\qa\\PohlResonanceLab\\review-10.png",
+      "sha256": "55fc7ef584a0ea15638fa5b2cf227dc9a174be303185d903431c2aa2782f5c0e",
+      "source_spans": [
+        {
+          "source": "section-07.png",
+          "top": 3150,
+          "bottom": 4300
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\yuxua\\.codex\\visualizations\\2026\\10\\15\\01a13f56-4554-7500-ab99-dad08368b735\\rollout\\qa\\PohlResonanceLab\\review-11.png",
+      "sha256": "b9e48abda8d160a34b701c3ca98650d2594d19da62c5152566d0668684f6efa2",
+      "source_spans": [
+        {
+          "source": "section-07.png",
+          "top": 4200,
+          "bottom": 5056
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\yuxua\\.codex\\visualizations\\2026\\10\\15\\01a13f56-4554-7500-ab99-dad08368b735\\rollout\\qa\\PohlResonanceLab\\review-12.png",
+      "sha256": "7d92961c9d35da03762cdabaf36715a3f31d01884f5ed3e1239761360c2af5c6",
+      "source_spans": [
+        {
+          "source": "section-08.png",
+          "top": 0,
+          "bottom": 1150
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\yuxua\\.codex\\visualizations\\2026\\10\\15\\01a13f56-4554-7500-ab99-dad08368b735\\rollout\\qa\\PohlResonanceLab\\review-13.png",
+      "sha256": "cc806cf469a3830a72a5ff74ae9b5db9a646f4f6adedef7460133b9071762c21",
+      "source_spans": [
+        {
+          "source": "section-08.png",
+          "top": 1050,
+          "bottom": 2126
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\yuxua\\.codex\\visualizations\\2026\\10\\15\\01a13f56-4554-7500-ab99-dad08368b735\\rollout\\qa\\PohlResonanceLab\\review-14.png",
+      "sha256": "ec0fdca5a01851d0b77cc965ac61526356f52fbe06ed4e51637e11d72835e209",
+      "source_spans": [
+        {
+          "source": "section-08.png",
+          "top": 2100,
+          "bottom": 2126
+        }
+      ]
+    }
+  ],
+  "source_png_hashes": {
+    "section-01.png": {
+      "sha256": "c4d3ab6f56c9d60b56c292b6ca22d53ad03bb19ade2541c563cbb648ed8726ec",
+      "size": [
+        1200,
+        244
+      ]
+    },
+    "section-02.png": {
+      "sha256": "0b5433fc92e6fef460dab5dd3dd45c3439c7b3c1fdaae473bb713a91ce8a4a2b",
+      "size": [
+        1200,
+        238
+      ]
+    },
+    "section-03.png": {
+      "sha256": "ff3c17d74ccec41c1305125258d671a60645084f5c8db64ab91e987221bec39a",
+      "size": [
+        1200,
+        1347
+      ]
+    },
+    "section-04.png": {
+      "sha256": "67e1663ab2b328c46b46a72c1a5cc2d1f5de125baf6a602c49badb2e1cca8fdb",
+      "size": [
+        1200,
+        143
+      ]
+    },
+    "section-05.png": {
+      "sha256": "02051be9235327ba2bae5fc54f4777ac339d5fe4dfe4fc15a3a219c378a0a6c3",
+      "size": [
+        1200,
+        240
+      ]
+    },
+    "section-06.png": {
+      "sha256": "bd552c302418e82702b7c7e9db294d2694695a9814e90d5f5f302faef2a90b56",
+      "size": [
+        1200,
+        1267
+      ]
+    },
+    "section-07.png": {
+      "sha256": "3d544ffc22bf299966cd49a30fbaedb577b3b7a0acf27b71090f561167017430",
+      "size": [
+        1200,
+        5056
+      ]
+    },
+    "section-08.png": {
+      "sha256": "18397c7b6c1817a1af72f5a615e6b7ab7e27407887925c2b7f49793dee42b282",
+      "size": [
+        1200,
+        2126
+      ]
+    }
+  },
+  "issues": [],
+  "identical_image_refreshes": [
+    {
+      "at": "2026-10-16T08:28:57.039554+08:00",
+      "previous_notebook_sha256": "2caeedd63ba560b3d4540d5168084b69c9f148000cc43d8a02a291d9164c6197",
+      "current_notebook_sha256": "2caeedd63ba560b3d4540d5168084b69c9f148000cc43d8a02a291d9164c6197",
+      "build_run": "C:\\Users\\yuxua\\.codex\\visualizations\\2026\\10\\15\\01a13f56-4554-7500-ab99-dad08368b735\\rollout\\project\\.build\\course-02\\pohl-resonance\\20261016_082700_609545",
+      "evidence": "Every freshly prepared full-width QA crop is SHA256-identical to the previously actually viewed crop, with identical section spans and complete coverage; only raw source PNG metadata may differ. Original actual view_image inspection remains applicable."
+    }
+  ]
+}

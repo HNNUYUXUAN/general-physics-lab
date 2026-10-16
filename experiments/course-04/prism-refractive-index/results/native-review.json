@@ -1,0 +1,155 @@
+{
+  "experiment": "course-04/prism-refractive-index",
+  "status": "passed",
+  "reviewed_at": "2026-10-16T01:08:51.554614+08:00",
+  "build_run": "C:\\Users\\yuxua\\.codex\\visualizations\\2026\\10\\15\\01a13f56-4554-7500-ab99-dad08368b735\\rollout\\project\\.build\\course-04\\prism-refractive-index\\20261016_010718_449525",
+  "notebook": "C:\\Users\\yuxua\\.codex\\visualizations\\2026\\10\\15\\01a13f56-4554-7500-ab99-dad08368b735\\rollout\\project\\notebook\\paclets\\PrismRefractiveIndexLab\\Notebooks\\PrismRefractiveIndexLab.nb",
+  "notebook_sha256": "da5f607538333ee5b363302c9a31aa97fa071ffbbe43708238a08004a21b2491",
+  "method": "Actual view_image inspection of every fresh native QA panel without rescaling; long sections split with overlapping crops. Review covers mathematical typesetting, units, Chinese glyphs, centering, clipping and captions. Native controls visually inspected at saved default state; changing-state calculation validation is recorded by root serialized pipeline separately.",
+  "section_coverage": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "inspected_images": [
+    {
+      "path": "C:\\Users\\yuxua\\.codex\\visualizations\\2026\\10\\15\\01a13f56-4554-7500-ab99-dad08368b735\\rollout\\qa\\PrismRefractiveIndexLab\\review-01.png",
+      "sha256": "12126557b34e4981262b2d7020bb395ca98df670e9e639363f7add18173a9377",
+      "source_spans": [
+        {
+          "source": "section-01.png",
+          "top": 0,
+          "bottom": 246
+        },
+        {
+          "source": "section-02.png",
+          "top": 0,
+          "bottom": 215
+        },
+        {
+          "source": "section-03.png",
+          "top": 0,
+          "bottom": 375
+        },
+        {
+          "source": "section-04.png",
+          "top": 0,
+          "bottom": 143
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\yuxua\\.codex\\visualizations\\2026\\10\\15\\01a13f56-4554-7500-ab99-dad08368b735\\rollout\\qa\\PrismRefractiveIndexLab\\review-02.png",
+      "sha256": "182fca92745c13233698862a26265e27b30bbccac7a6eedba1b66efce607e3eb",
+      "source_spans": [
+        {
+          "source": "section-05.png",
+          "top": 0,
+          "bottom": 289
+        },
+        {
+          "source": "section-06.png",
+          "top": 0,
+          "bottom": 405
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\yuxua\\.codex\\visualizations\\2026\\10\\15\\01a13f56-4554-7500-ab99-dad08368b735\\rollout\\qa\\PrismRefractiveIndexLab\\review-03.png",
+      "sha256": "9a7b3229e64bdb80124fcef633410dd33eb3ca7f865dc326d0e51c9ee7da4ee8",
+      "source_spans": [
+        {
+          "source": "section-07.png",
+          "top": 0,
+          "bottom": 1150
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\yuxua\\.codex\\visualizations\\2026\\10\\15\\01a13f56-4554-7500-ab99-dad08368b735\\rollout\\qa\\PrismRefractiveIndexLab\\review-04.png",
+      "sha256": "59084ae5b3151d647075610c23f55f81c9f86c86d5553741690020bcbdc9ff7b",
+      "source_spans": [
+        {
+          "source": "section-07.png",
+          "top": 1050,
+          "bottom": 1862
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\yuxua\\.codex\\visualizations\\2026\\10\\15\\01a13f56-4554-7500-ab99-dad08368b735\\rollout\\qa\\PrismRefractiveIndexLab\\review-05.png",
+      "sha256": "cb1a594feacc12479bc593d9bf1b5d9a14faff3a14517f9ca2e016dd76e8a5f5",
+      "source_spans": [
+        {
+          "source": "section-08.png",
+          "top": 0,
+          "bottom": 255
+        }
+      ]
+    }
+  ],
+  "source_png_hashes": {
+    "section-01.png": {
+      "sha256": "dd9c7659fc620533c1fc37e197cc5036c24d6a0b7591e01df9daff2e004002d2",
+      "size": [
+        1200,
+        246
+      ]
+    },
+    "section-02.png": {
+      "sha256": "6dc658e63c879fc720515cd65726e0ffd5324de3d72b1015ad691517599c6284",
+      "size": [
+        1200,
+        215
+      ]
+    },
+    "section-03.png": {
+      "sha256": "e08f77fdc9fad3f0a9795358b0e15922373692f939f7f620a5125c63a93f7d53",
+      "size": [
+        1200,
+        375
+      ]
+    },
+    "section-04.png": {
+      "sha256": "97f1b1986be65e620bd040df095695df8d61f0638a467ae3d2ec7684419d7b3c",
+      "size": [
+        1200,
+        143
+      ]
+    },
+    "section-05.png": {
+      "sha256": "aef9c10929f7e89ce53dbbd5bdb3d454a93cb806727eb1ce1da657f3f65a5504",
+      "size": [
+        1200,
+        289
+      ]
+    },
+    "section-06.png": {
+      "sha256": "72687002cda4e0dafe184e31e1232327e22b8192a70f6320fdbd534b91b979f7",
+      "size": [
+        1200,
+        405
+      ]
+    },
+    "section-07.png": {
+      "sha256": "5de298469f5541991410c2617119df0b918ef5f3a6befa8ef417b661f87a6ed3",
+      "size": [
+        1200,
+        1862
+      ]
+    },
+    "section-08.png": {
+      "sha256": "3b01ad4dd391c227a7d8c7e4d74b9c78163dea97361bc563b7a267a71007053f",
+      "size": [
+        1200,
+        255
+      ]
+    }
+  },
+  "issues": []
+}

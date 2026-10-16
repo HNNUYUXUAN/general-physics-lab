@@ -1,0 +1,139 @@
+{
+  "metrics": {
+    "wavelength_mean_nm": {
+      "value": 632.5999999999983,
+      "unit": "nm",
+      "label": "激光波长均值"
+    },
+    "wavelength_type_a_nm": {
+      "value": 0.22803508502013872,
+      "unit": "nm",
+      "label": "波长均值A类分量"
+    },
+    "relative_reference_difference_percent": {
+      "value": 0.03160556257927261,
+      "unit": "%",
+      "label": "相对指定632.8nm的差异"
+    }
+  },
+  "tables": {
+    "table1": {
+      "headers": [
+        "次数",
+        "条纹数 $N$",
+        "$d_1$ / mm",
+        "$d_2$ / mm",
+        "$\\Delta d$ / mm"
+      ],
+      "rows": [
+        [
+          1,
+          100,
+          3.2142,
+          3.2458,
+          0.0316
+        ],
+        [
+          2,
+          100,
+          3.351,
+          3.38266,
+          0.03166
+        ],
+        [
+          3,
+          100,
+          3.4895,
+          3.52113,
+          0.03163
+        ],
+        [
+          4,
+          100,
+          3.628,
+          3.65965,
+          0.03165
+        ],
+        [
+          5,
+          100,
+          3.7724,
+          3.80401,
+          0.03161
+        ]
+      ]
+    },
+    "table2": {
+      "headers": [
+        "次数",
+        "$\\Delta d$ / mm",
+        "$\\lambda$ / nm"
+      ],
+      "rows": [
+        [
+          1,
+          0.0316,
+          632
+        ],
+        [
+          2,
+          0.03166,
+          633.2
+        ],
+        [
+          3,
+          0.03163,
+          632.6
+        ],
+        [
+          4,
+          0.03165,
+          633
+        ],
+        [
+          5,
+          0.03161,
+          632.2
+        ]
+      ]
+    }
+  },
+  "series": {
+    "wavelength-repeat": {
+      "x": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "y": [
+        632.0000000000015,
+        633.2000000000004,
+        632.5999999999965,
+        632.9999999999991,
+        632.1999999999939
+      ],
+      "x_label": "测量次数",
+      "y_label": "激光波长 $\\lambda$ / nm",
+      "label": "五次100条纹计数"
+    }
+  },
+  "notes": [
+    "632.8nm是指定常用参考值，未附本激光器校准证书。",
+    "只有重复性A类分量，缺仪器与计数系统误差。"
+  ],
+  "code_hashes": {
+    "Kernel/analysis.wl": "e893648d972e94ac1be55d3427d46a3da051863473ae090956c82823acae0929"
+  },
+  "input_hashes": {
+    "data/observations-01.csv": "75a4d3ab859f773b9f6c1b5f44864937e709ed35f539605a6c048c32ad6826a8",
+    "data/provenance.json": "e6274669a3b12ee1f6dcddd0a6b822db3d01e9aa456f776b5772409b2bbc1498",
+    "experiment.json": "ef03113480f65ad8ddd9ac2b789bc0afa819eaea7865c519b42c42b6e13de5a1"
+  },
+  "environment": {
+    "wolfram": "15.0.1 for Microsoft Windows (64-bit) (July 2, 2026)"
+  },
+  "engine": "wolfram",
+  "experiment_id": "course-04/michelson-interferometer"
+}

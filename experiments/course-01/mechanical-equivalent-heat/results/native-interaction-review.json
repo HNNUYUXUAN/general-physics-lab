@@ -1,0 +1,58 @@
+{
+  "experiment": "course-01/mechanical-equivalent-heat",
+  "paclet": "MechanicalEquivalentHeatLab",
+  "status": "passed",
+  "source_hashes": {
+    "analysis.wl": "61185c6b21d747d0d0c8c324cacab088382a2c3a90ac7b18dbb52cfc625d6c8f",
+    "authoring.json": "bcce1463d06dcf67fcd62d3a38ba0f464106abb5118586fccd7b04439e7bc360"
+  },
+  "input_hashes": {
+    "data/author-verification.json": "7dac8cea9886e869d0ae509c61399084c9ca5e03addcabf5ad88e1c95a6b1664",
+    "data/provenance.json": "6a5ee96c8d492205c5daf6a21145063f8f0882b813720329fa3e13dd924ee1fb",
+    "data/temperatures.csv": "dedfe84f572e2239de46dc75ada25fc2384c23549541f00dddfd3e25378c1c34",
+    "experiment.json": "4b3a422a7528db6ea49e7a260d4d6041972baf6f7eb67e5518347cc1d880d96f"
+  },
+  "models": [
+    {
+      "key": "fit-window",
+      "capture_messages": [],
+      "status": "passed",
+      "held_body_sha256": "f69edbd855eeebb65a5e63635b5103dc761d46aee41d2a43688b940bc77a9f74",
+      "default_evaluation": {
+        "status": "evaluated",
+        "output_head": "Graphics",
+        "response_sha256": "1029a4b94043fb8766c66d2e8fce7bf30d1863e53240837fe0857979035819c2",
+        "graphics_count": 1,
+        "messages": [],
+        "unresolved_heads": []
+      },
+      "default_repeat": {
+        "status": "evaluated",
+        "output_head": "Graphics",
+        "response_sha256": "1029a4b94043fb8766c66d2e8fce7bf30d1863e53240837fe0857979035819c2",
+        "graphics_count": 1,
+        "messages": [],
+        "unresolved_heads": []
+      },
+      "default_deterministic": true,
+      "controls": [
+        {
+          "name": "MechanicalEquivalentHeatLab`Private`window",
+          "default": 0,
+          "changed": 1,
+          "specification_sha256": "9726d22720203a50b7aa9aed1d518428e7fb09f50e44227871491aaeec0d0aab",
+          "evaluation": {
+            "status": "evaluated",
+            "output_head": "Graphics",
+            "response_sha256": "052360a938c771173c3f64a7511e6ade2ea9379ac407c48224dd03e9eb9fe6bf",
+            "graphics_count": 1,
+            "messages": [],
+            "unresolved_heads": []
+          },
+          "response_changed": true,
+          "status": "passed"
+        }
+      ]
+    }
+  ]
+}

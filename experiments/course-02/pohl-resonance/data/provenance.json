@@ -1,0 +1,40 @@
+{
+  "primary_source": "originals/course-02/波尔共振实验/实验报告-波尔共振实验.docx",
+  "primary_sha256": "14924d0d5581e294380d7ecb05eac8efbd1cb9f82d3a8c9f60935b986ecba3ed",
+  "converted_source": "processed/course-02/波尔共振实验/实验报告-波尔共振实验/正文.md",
+  "verification": "直接从主DOCX XML逐单元格提取观测，规范CSV完整保留读数；源计算表不作为观测输入。",
+  "table_mappings": [
+    {
+      "file": "observations-01.csv",
+      "source_table": 1,
+      "mapping": "行列顺序及单元格文本原样保存"
+    },
+    {
+      "file": "observations-02.csv",
+      "source_table": 2,
+      "mapping": "行列顺序及单元格文本原样保存"
+    },
+    {
+      "file": "observations-03.csv",
+      "source_table": 3,
+      "mapping": "行列顺序及单元格文本原样保存"
+    }
+  ],
+  "transformations": [
+    "使用原表单位，派生结果从未修约观测重新计算。"
+  ],
+  "issues": [
+    {
+      "status": "documented",
+      "detail": "部分指定T0超出自由表幅度范围，作为所列参数使用，未确认原内插算法。"
+    },
+    {
+      "status": "documented",
+      "detail": "峰位与理论定参数弱阻尼峰有差别。"
+    },
+    {
+      "status": "documented",
+      "detail": "仪器与单次相位原始数据不完整。"
+    }
+  ]
+}

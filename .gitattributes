@@ -1,0 +1,15 @@
+# Preserve audited byte hashes across Windows/Linux checkouts.
+experiments/course-01/pendulum/** -text
+notebook/paclets/PendulumLab/** -text
+experiments/**/experiment.json -text
+experiments/**/data/*.csv -text
+experiments/**/data/*.json -text
+experiments/**/data/* -text
+src/physicslab/experiments/*.py -text
+src/physicslab/common/*.py -text
+experiments/**/authoring.json -text
+experiments/**/notebooks/*.ipynb -text
+experiments/**/notebooks/*.html -text
+experiments/**/report/*.html -text
+notebook/paclets/*/Notebooks/*.nb -text
+notebook/paclets/*/Kernel/*.wl -text

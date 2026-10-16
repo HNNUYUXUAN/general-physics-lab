@@ -1,0 +1,31 @@
+{
+  "primary_source": "originals/course-04/14_实验十四_全息照相_实验报告.docx",
+  "primary_sha256": "6ed8c251098bcaeedad567fd897f4b9a98d69b301652904bc1a9aaca6956dd67",
+  "converted_source": "processed/courses-01-03-04/普通物理实验4/14_实验十四_全息照相_实验报告_docx/正文.md",
+  "verification": "直接从主DOCX XML逐单元格提取观测，规范CSV完整保留读数；源计算表不作为观测输入。",
+  "table_mappings": [
+    {
+      "file": "observations-01.csv",
+      "source_table": 1,
+      "mapping": "行列顺序及单元格文本原样保存"
+    },
+    {
+      "file": "observations-02.csv",
+      "source_table": 2,
+      "mapping": "行列顺序及单元格文本原样保存"
+    }
+  ],
+  "transformations": [
+    "角度度分读数按未修约的小数度计算；跨零角差使用圆周最短差，逐组计算后再取均值。"
+  ],
+  "issues": [
+    {
+      "status": "documented",
+      "detail": "相干长度及干板响应未记录。"
+    },
+    {
+      "status": "documented",
+      "detail": "理论可见度不能当作实测值；缺完整仪器分量。"
+    }
+  ]
+}

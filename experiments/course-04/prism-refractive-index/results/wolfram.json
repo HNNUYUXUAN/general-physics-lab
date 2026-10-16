@@ -1,0 +1,160 @@
+{
+  "metrics": {
+    "angle_mean_deg": {
+      "value": 40.94,
+      "unit": "deg",
+      "label": "最小偏向角均值"
+    },
+    "angle_type_a_arcmin": {
+      "value": 2.575849374478252,
+      "unit": "arcmin",
+      "label": "角度均值A类分量"
+    },
+    "angle_type_b_arcmin": {
+      "value": 0.5773502691896258,
+      "unit": "arcmin",
+      "label": "指定误差限B类分量"
+    },
+    "angle_combined_arcmin": {
+      "value": 2.639760090109201,
+      "unit": "arcmin",
+      "label": "两分量合成标准不确定度"
+    },
+    "refractive_index": {
+      "value": 1.5425828557059755,
+      "unit": "1",
+      "label": "棱镜折射率"
+    },
+    "refractive_index_standard_uncertainty": {
+      "value": 0.0005729882686944291,
+      "unit": "1",
+      "label": "指定角度分量传播不确定度"
+    }
+  },
+  "tables": {
+    "table1": {
+      "headers": [
+        "次数",
+        "$\\theta_1$（左）",
+        "$\\theta_2$（右）",
+        "$\\theta_3$（左）",
+        "$\\theta_4$（右）"
+      ],
+      "rows": [
+        [
+          "1",
+          "$90^{\\circ}07^{\\prime}$",
+          "$269^{\\circ}55^{\\prime}$",
+          "$130^{\\circ}57^{\\prime}$",
+          "$310^{\\circ}45^{\\prime}$"
+        ],
+        [
+          "2",
+          "$82^{\\circ}10^{\\prime}$",
+          "$262^{\\circ}48^{\\prime}$",
+          "$123^{\\circ}10^{\\prime}$",
+          "$303^{\\circ}29^{\\prime}$"
+        ],
+        [
+          "3",
+          "$100^{\\circ}20^{\\prime}$",
+          "$280^{\\circ}18^{\\prime}$",
+          "$141^{\\circ}21^{\\prime}$",
+          "$321^{\\circ}19^{\\prime}$"
+        ],
+        [
+          "4",
+          "$85^{\\circ}10^{\\prime}$",
+          "$265^{\\circ}08^{\\prime}$",
+          "$126^{\\circ}12^{\\prime}$",
+          "$306^{\\circ}10^{\\prime}$"
+        ],
+        [
+          "5",
+          "$80^{\\circ}01^{\\prime}$",
+          "$260^{\\circ}02^{\\prime}$",
+          "$120^{\\circ}59^{\\prime}$",
+          "$301^{\\circ}01^{\\prime}$"
+        ]
+      ]
+    },
+    "table2": {
+      "headers": [
+        "次数",
+        "左游标角差 / °",
+        "右游标角差 / °",
+        "最小偏向角 / °"
+      ],
+      "rows": [
+        [
+          1,
+          40.83333333,
+          40.83333333,
+          40.83333333
+        ],
+        [
+          2,
+          41,
+          40.68333333,
+          40.84166667
+        ],
+        [
+          3,
+          41.01666667,
+          41.01666667,
+          41.01666667
+        ],
+        [
+          4,
+          41.03333333,
+          41.03333333,
+          41.03333333
+        ],
+        [
+          5,
+          40.96666667,
+          40.98333333,
+          40.975
+        ]
+      ]
+    }
+  },
+  "series": {
+    "angle-repeat": {
+      "x": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "y": [
+        40.833333333333336,
+        40.84166666666667,
+        41.016666666666666,
+        41.03333333333333,
+        40.975
+      ],
+      "x_label": "测量次数",
+      "y_label": "最小偏向角 / °",
+      "label": "双游标结果"
+    }
+  },
+  "notes": [
+    "圆周最短角差处理跨零读数。",
+    "误差限1角分按最终角度估计的均匀分布限值采用；未含全部校准系统分量。"
+  ],
+  "code_hashes": {
+    "Kernel/analysis.wl": "8cc64a6cbedf28704f2d366535507b55692f9606d9311987dadc5597c6e97f36"
+  },
+  "input_hashes": {
+    "data/observations-01.csv": "525af74cb6302c187d5507a7ea9fcee0726f443cc684a21cc370a991cbe3f7e4",
+    "data/provenance.json": "142b29486591575513b89fc2022ae575c35c4f5ac2319dbc7810c80da6c79efd",
+    "experiment.json": "954bed89d2c1743461f1b004bea74c0552a96e545c8e72518b5b627082d7e4d2"
+  },
+  "environment": {
+    "wolfram": "15.0.1 for Microsoft Windows (64-bit) (July 2, 2026)"
+  },
+  "engine": "wolfram",
+  "experiment_id": "course-04/prism-refractive-index"
+}

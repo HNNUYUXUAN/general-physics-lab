@@ -1,0 +1,2974 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "metric": "working_current_source_column_max_difference",
+      "python": 7.105427357601002e-15,
+      "wolfram": 7.105427357601002e-15,
+      "unit": "mV",
+      "passed": true
+    },
+    {
+      "metric": "working_current_slope",
+      "python": 32.00772727272727,
+      "wolfram": 32.00772727272727,
+      "unit": "mV/mA",
+      "passed": true
+    },
+    {
+      "metric": "working_current_intercept",
+      "python": 0.09900000000001086,
+      "wolfram": 0.09900000000001086,
+      "unit": "mV",
+      "passed": true
+    },
+    {
+      "metric": "working_current_fit_R2",
+      "python": 0.999815456592224,
+      "wolfram": 0.999815456592224,
+      "unit": "1",
+      "passed": true
+    },
+    {
+      "metric": "working_current_point1_channel1",
+      "python": 9.87,
+      "wolfram": 9.87,
+      "unit": "mV",
+      "passed": true
+    },
+    {
+      "metric": "working_current_point1_channel2",
+      "python": -9.6,
+      "wolfram": -9.6,
+      "unit": "mV",
+      "passed": true
+    },
+    {
+      "metric": "working_current_point1_channel3",
+      "python": 9.57,
+      "wolfram": 9.57,
+      "unit": "mV",
+      "passed": true
+    },
+    {
+      "metric": "working_current_point1_channel4",
+      "python": -9.79,
+      "wolfram": -9.79,
+      "unit": "mV",
+      "passed": true
+    },
+    {
+      "metric": "working_current_point2_channel1",
+      "python": 19.46,
+      "wolfram": 19.46,
+      "unit": "mV",
+      "passed": true
+    },
+    {
+      "metric": "working_current_point2_channel2",
+      "python": -19.72,
+      "wolfram": -19.72,
+      "unit": "mV",
+      "passed": true
+    },
+    {
+      "metric": "working_current_point2_channel3",
+      "python": 19.08,
+      "wolfram": 19.08,
+      "unit": "mV",
+      "passed": true
+    },
+    {
+      "metric": "working_current_point2_channel4",
+      "python": -19.46,
+      "wolfram": -19.46,
+      "unit": "mV",
+      "passed": true
+    },
+    {
+      "metric": "working_current_point3_channel1",
+      "python": 29.16,
+      "wolfram": 29.16,
+      "unit": "mV",
+      "passed": true
+    },
+    {
+      "metric": "working_current_point3_channel2",
+      "python": -28.62,
+      "wolfram": -28.62,
+      "unit": "mV",
+      "passed": true
+    },
+    {
+      "metric": "working_current_point3_channel3",
+      "python": 28.65,
+      "wolfram": 28.65,
+      "unit": "mV",
+      "passed": true
+    },
+    {
+      "metric": "working_current_point3_channel4",
+      "python": -29.13,
+      "wolfram": -29.13,
+      "unit": "mV",
+      "passed": true
+    },
+    {
+      "metric": "working_current_point4_channel1",
+      "python": 38.93,
+      "wolfram": 38.93,
+      "unit": "mV",
+      "passed": true
+    },
+    {
+      "metric": "working_current_point4_channel2",
+      "python": -38.18,
+      "wolfram": -38.18,
+      "unit": "mV",
+      "passed": true
+    },
+    {
+      "metric": "working_current_point4_channel3",
+      "python": 38.24,
+      "wolfram": 38.24,
+      "unit": "mV",
+      "passed": true
+    },
+    {
+      "metric": "working_current_point4_channel4",
+      "python": -38.98,
+      "wolfram": -38.98,
+      "unit": "mV",
+      "passed": true
+    },
+    {
+      "metric": "working_current_point5_channel1",
+      "python": 48.67,
+      "wolfram": 48.67,
+      "unit": "mV",
+      "passed": true
+    },
+    {
+      "metric": "working_current_point5_channel2",
+      "python": -47.85,
+      "wolfram": -47.85,
+      "unit": "mV",
+      "passed": true
+    },
+    {
+      "metric": "working_current_point5_channel3",
+      "python": 47.81,
+      "wolfram": 47.81,
+      "unit": "mV",
+      "passed": true
+    },
+    {
+      "metric": "working_current_point5_channel4",
+      "python": -48.72,
+      "wolfram": -48.72,
+      "unit": "mV",
+      "passed": true
+    },
+    {
+      "metric": "working_current_point6_channel1",
+      "python": 58.44,
+      "wolfram": 58.44,
+      "unit": "mV",
+      "passed": true
+    },
+    {
+      "metric": "working_current_point6_channel2",
+      "python": -57.36,
+      "wolfram": -57.36,
+      "unit": "mV",
+      "passed": true
+    },
+    {
+      "metric": "working_current_point6_channel3",
+      "python": 57.29,
+      "wolfram": 57.29,
+      "unit": "mV",
+      "passed": true
+    },
+    {
+      "metric": "working_current_point6_channel4",
+      "python": -58.39,
+      "wolfram": -58.39,
+      "unit": "mV",
+      "passed": true
+    },
+    {
+      "metric": "working_current_point7_channel1",
+      "python": 68.12,
+      "wolfram": 68.12,
+      "unit": "mV",
+      "passed": true
+    },
+    {
+      "metric": "working_current_point7_channel2",
+      "python": -66.86,
+      "wolfram": -66.86,
+      "unit": "mV",
+      "passed": true
+    },
+    {
+      "metric": "working_current_point7_channel3",
+      "python": 61.81,
+      "wolfram": 61.81,
+      "unit": "mV",
+      "passed": true
+    },
+    {
+      "metric": "working_current_point7_channel4",
+      "python": -68.07,
+      "wolfram": -68.07,
+      "unit": "mV",
+      "passed": true
+    },
+    {
+      "metric": "working_current_point8_channel1",
+      "python": 77.81,
+      "wolfram": 77.81,
+      "unit": "mV",
+      "passed": true
+    },
+    {
+      "metric": "working_current_point8_channel2",
+      "python": -76.36,
+      "wolfram": -76.36,
+      "unit": "mV",
+      "passed": true
+    },
+    {
+      "metric": "working_current_point8_channel3",
+      "python": 76.4,
+      "wolfram": 76.4,
+      "unit": "mV",
+      "passed": true
+    },
+    {
+      "metric": "working_current_point8_channel4",
+      "python": -77.73,
+      "wolfram": -77.73,
+      "unit": "mV",
+      "passed": true
+    },
+    {
+      "metric": "working_current_point9_channel1",
+      "python": 87.51,
+      "wolfram": 87.51,
+      "unit": "mV",
+      "passed": true
+    },
+    {
+      "metric": "working_current_point9_channel2",
+      "python": -85.88,
+      "wolfram": -85.88,
+      "unit": "mV",
+      "passed": true
+    },
+    {
+      "metric": "working_current_point9_channel3",
+      "python": 85.94,
+      "wolfram": 85.94,
+      "unit": "mV",
+      "passed": true
+    },
+    {
+      "metric": "working_current_point9_channel4",
+      "python": -87.54,
+      "wolfram": -87.54,
+      "unit": "mV",
+      "passed": true
+    },
+    {
+      "metric": "working_current_point10_channel1",
+      "python": 97.22,
+      "wolfram": 97.22,
+      "unit": "mV",
+      "passed": true
+    },
+    {
+      "metric": "working_current_point10_channel2",
+      "python": -95.52,
+      "wolfram": -95.52,
+      "unit": "mV",
+      "passed": true
+    },
+    {
+      "metric": "working_current_point10_channel3",
+      "python": 95.48,
+      "wolfram": 95.48,
+      "unit": "mV",
+      "passed": true
+    },
+    {
+      "metric": "working_current_point10_channel4",
+      "python": -97.25,
+      "wolfram": -97.25,
+      "unit": "mV",
+      "passed": true
+    },
+    {
+      "metric": "working_current_max_current_odd",
+      "python": 1.879999999999999,
+      "wolfram": 1.879999999999999,
+      "unit": "mV",
+      "passed": true
+    },
+    {
+      "metric": "magnet_current_source_column_max_difference",
+      "python": 8.527900607901984e-15,
+      "wolfram": 8.527900607901984e-15,
+      "unit": "mV",
+      "passed": true
+    },
+    {
+      "metric": "magnet_current_slope",
+      "python": 0.00023939393939396972,
+      "wolfram": 0.00023939393939396972,
+      "unit": "mV/mA",
+      "passed": true
+    },
+    {
+      "metric": "magnet_current_intercept",
+      "python": -0.008333333333342803,
+      "wolfram": -0.008333333333342803,
+      "unit": "mV",
+      "passed": true
+    },
+    {
+      "metric": "magnet_current_fit_R2",
+      "python": 0.9409015528418747,
+      "wolfram": 0.9409015528418746,
+      "unit": "1",
+      "passed": true
+    },
+    {
+      "metric": "magnet_current_point1_channel1",
+      "python": 297.2,
+      "wolfram": 297.2,
+      "unit": "mV",
+      "passed": true
+    },
+    {
+      "metric": "magnet_current_point1_channel2",
+      "python": 297.2,
+      "wolfram": 297.2,
+      "unit": "mV",
+      "passed": true
+    },
+    {
+      "metric": "magnet_current_point1_channel3",
+      "python": -297.3,
+      "wolfram": -297.3,
+      "unit": "mV",
+      "passed": true
+    },
+    {
+      "metric": "magnet_current_point1_channel4",
+      "python": -297.3,
+      "wolfram": -297.3,
+      "unit": "mV",
+      "passed": true
+    },
+    {
+      "metric": "magnet_current_point2_channel1",
+      "python": 297.2,
+      "wolfram": 297.2,
+      "unit": "mV",
+      "passed": true
+    },
+    {
+      "metric": "magnet_current_point2_channel2",
+      "python": 297.2,
+      "wolfram": 297.2,
+      "unit": "mV",
+      "passed": true
+    },
+    {
+      "metric": "magnet_current_point2_channel3",
+      "python": -297.3,
+      "wolfram": -297.3,
+      "unit": "mV",
+      "passed": true
+    },
+    {
+      "metric": "magnet_current_point2_channel4",
+      "python": -297.4,
+      "wolfram": -297.4,
+      "unit": "mV",
+      "passed": true
+    },
+    {
+      "metric": "magnet_current_point3_channel1",
+      "python": 297.2,
+      "wolfram": 297.2,
+      "unit": "mV",
+      "passed": true
+    },
+    {
+      "metric": "magnet_current_point3_channel2",
+      "python": 297.2,
+      "wolfram": 297.2,
+      "unit": "mV",
+      "passed": true
+    },
+    {
+      "metric": "magnet_current_point3_channel3",
+      "python": -297.3,
+      "wolfram": -297.3,
+      "unit": "mV",
+      "passed": true
+    },
+    {
+      "metric": "magnet_current_point3_channel4",
+      "python": -297.4,
+      "wolfram": -297.4,
+      "unit": "mV",
+      "passed": true
+    },
+    {
+      "metric": "magnet_current_point4_channel1",
+      "python": 297.2,
+      "wolfram": 297.2,
+      "unit": "mV",
+      "passed": true
+    },
+    {
+      "metric": "magnet_current_point4_channel2",
+      "python": 297.2,
+      "wolfram": 297.2,
+      "unit": "mV",
+      "passed": true
+    },
+    {
+      "metric": "magnet_current_point4_channel3",
+      "python": -297.3,
+      "wolfram": -297.3,
+      "unit": "mV",
+      "passed": true
+    },
+    {
+      "metric": "magnet_current_point4_channel4",
+      "python": -297.4,
+      "wolfram": -297.4,
+      "unit": "mV",
+      "passed": true
+    },
+    {
+      "metric": "magnet_current_point5_channel1",
+      "python": 297.3,
+      "wolfram": 297.3,
+      "unit": "mV",
+      "passed": true
+    },
+    {
+      "metric": "magnet_current_point5_channel2",
+      "python": 297.2,
+      "wolfram": 297.2,
+      "unit": "mV",
+      "passed": true
+    },
+    {
+      "metric": "magnet_current_point5_channel3",
+      "python": -297.3,
+      "wolfram": -297.3,
+      "unit": "mV",
+      "passed": true
+    },
+    {
+      "metric": "magnet_current_point5_channel4",
+      "python": -297.4,
+      "wolfram": -297.4,
+      "unit": "mV",
+      "passed": true
+    },
+    {
+      "metric": "magnet_current_point6_channel1",
+      "python": 297.3,
+      "wolfram": 297.3,
+      "unit": "mV",
+      "passed": true
+    },
+    {
+      "metric": "magnet_current_point6_channel2",
+      "python": 297.2,
+      "wolfram": 297.2,
+      "unit": "mV",
+      "passed": true
+    },
+    {
+      "metric": "magnet_current_point6_channel3",
+      "python": -297.3,
+      "wolfram": -297.3,
+      "unit": "mV",
+      "passed": true
+    },
+    {
+      "metric": "magnet_current_point6_channel4",
+      "python": -297.5,
+      "wolfram": -297.5,
+      "unit": "mV",
+      "passed": true
+    },
+    {
+      "metric": "magnet_current_point7_channel1",
+      "python": 297.3,
+      "wolfram": 297.3,
+      "unit": "mV",
+      "passed": true
+    },
+    {
+      "metric": "magnet_current_point7_channel2",
+      "python": 297.2,
+      "wolfram": 297.2,
+      "unit": "mV",
+      "passed": true
+    },
+    {
+      "metric": "magnet_current_point7_channel3",
+      "python": -297.3,
+      "wolfram": -297.3,
+      "unit": "mV",
+      "passed": true
+    },
+    {
+      "metric": "magnet_current_point7_channel4",
+      "python": -297.5,
+      "wolfram": -297.5,
+      "unit": "mV",
+      "passed": true
+    },
+    {
+      "metric": "magnet_current_point8_channel1",
+      "python": 297.4,
+      "wolfram": 297.4,
+      "unit": "mV",
+      "passed": true
+    },
+    {
+      "metric": "magnet_current_point8_channel2",
+      "python": 297.2,
+      "wolfram": 297.2,
+      "unit": "mV",
+      "passed": true
+    },
+    {
+      "metric": "magnet_current_point8_channel3",
+      "python": -297.3,
+      "wolfram": -297.3,
+      "unit": "mV",
+      "passed": true
+    },
+    {
+      "metric": "magnet_current_point8_channel4",
+      "python": -297.5,
+      "wolfram": -297.5,
+      "unit": "mV",
+      "passed": true
+    },
+    {
+      "metric": "magnet_current_point9_channel1",
+      "python": 297.4,
+      "wolfram": 297.4,
+      "unit": "mV",
+      "passed": true
+    },
+    {
+      "metric": "magnet_current_point9_channel2",
+      "python": 297.2,
+      "wolfram": 297.2,
+      "unit": "mV",
+      "passed": true
+    },
+    {
+      "metric": "magnet_current_point9_channel3",
+      "python": -297.4,
+      "wolfram": -297.4,
+      "unit": "mV",
+      "passed": true
+    },
+    {
+      "metric": "magnet_current_point9_channel4",
+      "python": -297.6,
+      "wolfram": -297.6,
+      "unit": "mV",
+      "passed": true
+    },
+    {
+      "metric": "magnet_current_point10_channel1",
+      "python": 297.4,
+      "wolfram": 297.4,
+      "unit": "mV",
+      "passed": true
+    },
+    {
+      "metric": "magnet_current_point10_channel2",
+      "python": 297.2,
+      "wolfram": 297.2,
+      "unit": "mV",
+      "passed": true
+    },
+    {
+      "metric": "magnet_current_point10_channel3",
+      "python": -297.4,
+      "wolfram": -297.4,
+      "unit": "mV",
+      "passed": true
+    },
+    {
+      "metric": "magnet_current_point10_channel4",
+      "python": -297.6,
+      "wolfram": -297.6,
+      "unit": "mV",
+      "passed": true
+    },
+    {
+      "metric": "magnet_current_max_current_odd",
+      "python": 297.4,
+      "wolfram": 297.4,
+      "unit": "mV",
+      "passed": true
+    },
+    {
+      "metric": "position_source_column_max_difference",
+      "python": 1.4210854715202004e-14,
+      "wolfram": 0.0,
+      "unit": "mV",
+      "passed": true
+    },
+    {
+      "metric": "position_point1_channel1",
+      "python": 97.23,
+      "wolfram": 97.23,
+      "unit": "mV",
+      "passed": true
+    },
+    {
+      "metric": "position_point1_channel2",
+      "python": -95.46,
+      "wolfram": -95.46,
+      "unit": "mV",
+      "passed": true
+    },
+    {
+      "metric": "position_point1_channel3",
+      "python": 95.44,
+      "wolfram": 95.44,
+      "unit": "mV",
+      "passed": true
+    },
+    {
+      "metric": "position_point1_channel4",
+      "python": -97.19,
+      "wolfram": -97.19,
+      "unit": "mV",
+      "passed": true
+    },
+    {
+      "metric": "position_point2_channel1",
+      "python": 97.19,
+      "wolfram": 97.19,
+      "unit": "mV",
+      "passed": true
+    },
+    {
+      "metric": "position_point2_channel2",
+      "python": -95.4,
+      "wolfram": -95.4,
+      "unit": "mV",
+      "passed": true
+    },
+    {
+      "metric": "position_point2_channel3",
+      "python": 95.39,
+      "wolfram": 95.39,
+      "unit": "mV",
+      "passed": true
+    },
+    {
+      "metric": "position_point2_channel4",
+      "python": -97.14,
+      "wolfram": -97.14,
+      "unit": "mV",
+      "passed": true
+    },
+    {
+      "metric": "position_point3_channel1",
+      "python": 97.13,
+      "wolfram": 97.13,
+      "unit": "mV",
+      "passed": true
+    },
+    {
+      "metric": "position_point3_channel2",
+      "python": -95.34,
+      "wolfram": -95.34,
+      "unit": "mV",
+      "passed": true
+    },
+    {
+      "metric": "position_point3_channel3",
+      "python": 95.34,
+      "wolfram": 95.34,
+      "unit": "mV",
+      "passed": true
+    },
+    {
+      "metric": "position_point3_channel4",
+      "python": -97.08,
+      "wolfram": -97.08,
+      "unit": "mV",
+      "passed": true
+    },
+    {
+      "metric": "position_point4_channel1",
+      "python": 97.08,
+      "wolfram": 97.08,
+      "unit": "mV",
+      "passed": true
+    },
+    {
+      "metric": "position_point4_channel2",
+      "python": -95.29,
+      "wolfram": -95.29,
+      "unit": "mV",
+      "passed": true
+    },
+    {
+      "metric": "position_point4_channel3",
+      "python": 95.29,
+      "wolfram": 95.29,
+      "unit": "mV",
+      "passed": true
+    },
+    {
+      "metric": "position_point4_channel4",
+      "python": -97.02,
+      "wolfram": -97.02,
+      "unit": "mV",
+      "passed": true
+    },
+    {
+      "metric": "position_point5_channel1",
+      "python": 97.01,
+      "wolfram": 97.01,
+      "unit": "mV",
+      "passed": true
+    },
+    {
+      "metric": "position_point5_channel2",
+      "python": -95.25,
+      "wolfram": -95.25,
+      "unit": "mV",
+      "passed": true
+    },
+    {
+      "metric": "position_point5_channel3",
+      "python": 95.23,
+      "wolfram": 95.23,
+      "unit": "mV",
+      "passed": true
+    },
+    {
+      "metric": "position_point5_channel4",
+      "python": -96.97,
+      "wolfram": -96.97,
+      "unit": "mV",
+      "passed": true
+    },
+    {
+      "metric": "position_point6_channel1",
+      "python": 96.93,
+      "wolfram": 96.93,
+      "unit": "mV",
+      "passed": true
+    },
+    {
+      "metric": "position_point6_channel2",
+      "python": -95.17,
+      "wolfram": -95.17,
+      "unit": "mV",
+      "passed": true
+    },
+    {
+      "metric": "position_point6_channel3",
+      "python": 95.15,
+      "wolfram": 95.15,
+      "unit": "mV",
+      "passed": true
+    },
+    {
+      "metric": "position_point6_channel4",
+      "python": -96.88,
+      "wolfram": -96.88,
+      "unit": "mV",
+      "passed": true
+    },
+    {
+      "metric": "position_point7_channel1",
+      "python": 96.85,
+      "wolfram": 96.85,
+      "unit": "mV",
+      "passed": true
+    },
+    {
+      "metric": "position_point7_channel2",
+      "python": -95.06,
+      "wolfram": -95.06,
+      "unit": "mV",
+      "passed": true
+    },
+    {
+      "metric": "position_point7_channel3",
+      "python": 95.06,
+      "wolfram": 95.06,
+      "unit": "mV",
+      "passed": true
+    },
+    {
+      "metric": "position_point7_channel4",
+      "python": -96.78,
+      "wolfram": -96.78,
+      "unit": "mV",
+      "passed": true
+    },
+    {
+      "metric": "position_point8_channel1",
+      "python": 96.21,
+      "wolfram": 96.21,
+      "unit": "mV",
+      "passed": true
+    },
+    {
+      "metric": "position_point8_channel2",
+      "python": -94.48,
+      "wolfram": -94.48,
+      "unit": "mV",
+      "passed": true
+    },
+    {
+      "metric": "position_point8_channel3",
+      "python": 94.5,
+      "wolfram": 94.5,
+      "unit": "mV",
+      "passed": true
+    },
+    {
+      "metric": "position_point8_channel4",
+      "python": -96.14,
+      "wolfram": -96.14,
+      "unit": "mV",
+      "passed": true
+    },
+    {
+      "metric": "position_point9_channel1",
+      "python": 84.81,
+      "wolfram": 84.81,
+      "unit": "mV",
+      "passed": true
+    },
+    {
+      "metric": "position_point9_channel2",
+      "python": -83.41,
+      "wolfram": -83.41,
+      "unit": "mV",
+      "passed": true
+    },
+    {
+      "metric": "position_point9_channel3",
+      "python": 84.28,
+      "wolfram": 84.28,
+      "unit": "mV",
+      "passed": true
+    },
+    {
+      "metric": "position_point9_channel4",
+      "python": -85.78,
+      "wolfram": -85.78,
+      "unit": "mV",
+      "passed": true
+    },
+    {
+      "metric": "position_point10_channel1",
+      "python": 48.11,
+      "wolfram": 48.11,
+      "unit": "mV",
+      "passed": true
+    },
+    {
+      "metric": "position_point10_channel2",
+      "python": -47.3,
+      "wolfram": -47.3,
+      "unit": "mV",
+      "passed": true
+    },
+    {
+      "metric": "position_point10_channel3",
+      "python": 45.75,
+      "wolfram": 45.75,
+      "unit": "mV",
+      "passed": true
+    },
+    {
+      "metric": "position_point10_channel4",
+      "python": -47.32,
+      "wolfram": -47.32,
+      "unit": "mV",
+      "passed": true
+    },
+    {
+      "metric": "position_max_current_odd",
+      "python": 0.884999999999998,
+      "wolfram": 0.884999999999998,
+      "unit": "mV",
+      "passed": true
+    },
+    {
+      "metric": "same_setting_voltage_ratio",
+      "python": 963.6749999999179,
+      "wolfram": 963.6749999999179,
+      "unit": "1",
+      "passed": true
+    },
+    {
+      "metric": "field_end_ratio",
+      "python": 0.4891518737672584,
+      "wolfram": 0.4891518737672584,
+      "unit": "1",
+      "passed": true
+    },
+    {
+      "metric": "field_inner_spread_percent",
+      "python": 0.4074535451053652,
+      "wolfram": 0.4074535451053652,
+      "unit": "%",
+      "passed": true
+    },
+    {
+      "table": "working_current_observations",
+      "row": 0,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "working_current_observations",
+      "row": 0,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "working_current_observations",
+      "row": 0,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "working_current_observations",
+      "row": 0,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "working_current_observations",
+      "row": 0,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "working_current_observations",
+      "row": 0,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "working_current_observations",
+      "row": 1,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "working_current_observations",
+      "row": 1,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "working_current_observations",
+      "row": 1,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "working_current_observations",
+      "row": 1,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "working_current_observations",
+      "row": 1,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "working_current_observations",
+      "row": 1,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "working_current_observations",
+      "row": 2,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "working_current_observations",
+      "row": 2,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "working_current_observations",
+      "row": 2,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "working_current_observations",
+      "row": 2,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "working_current_observations",
+      "row": 2,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "working_current_observations",
+      "row": 2,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "working_current_observations",
+      "row": 3,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "working_current_observations",
+      "row": 3,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "working_current_observations",
+      "row": 3,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "working_current_observations",
+      "row": 3,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "working_current_observations",
+      "row": 3,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "working_current_observations",
+      "row": 3,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "working_current_observations",
+      "row": 4,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "working_current_observations",
+      "row": 4,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "working_current_observations",
+      "row": 4,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "working_current_observations",
+      "row": 4,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "working_current_observations",
+      "row": 4,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "working_current_observations",
+      "row": 4,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "working_current_observations",
+      "row": 5,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "working_current_observations",
+      "row": 5,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "working_current_observations",
+      "row": 5,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "working_current_observations",
+      "row": 5,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "working_current_observations",
+      "row": 5,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "working_current_observations",
+      "row": 5,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "working_current_observations",
+      "row": 6,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "working_current_observations",
+      "row": 6,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "working_current_observations",
+      "row": 6,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "working_current_observations",
+      "row": 6,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "working_current_observations",
+      "row": 6,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "working_current_observations",
+      "row": 6,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "working_current_observations",
+      "row": 7,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "working_current_observations",
+      "row": 7,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "working_current_observations",
+      "row": 7,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "working_current_observations",
+      "row": 7,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "working_current_observations",
+      "row": 7,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "working_current_observations",
+      "row": 7,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "working_current_observations",
+      "row": 8,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "working_current_observations",
+      "row": 8,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "working_current_observations",
+      "row": 8,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "working_current_observations",
+      "row": 8,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "working_current_observations",
+      "row": 8,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "working_current_observations",
+      "row": 8,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "working_current_observations",
+      "row": 9,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "working_current_observations",
+      "row": 9,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "working_current_observations",
+      "row": 9,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "working_current_observations",
+      "row": 9,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "working_current_observations",
+      "row": 9,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "working_current_observations",
+      "row": 9,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "working_current_decomposition",
+      "row": 0,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "working_current_decomposition",
+      "row": 0,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "working_current_decomposition",
+      "row": 0,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "working_current_decomposition",
+      "row": 0,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "working_current_decomposition",
+      "row": 0,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "working_current_decomposition",
+      "row": 1,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "working_current_decomposition",
+      "row": 1,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "working_current_decomposition",
+      "row": 1,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "working_current_decomposition",
+      "row": 1,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "working_current_decomposition",
+      "row": 1,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "working_current_decomposition",
+      "row": 2,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "working_current_decomposition",
+      "row": 2,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "working_current_decomposition",
+      "row": 2,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "working_current_decomposition",
+      "row": 2,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "working_current_decomposition",
+      "row": 2,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "working_current_decomposition",
+      "row": 3,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "working_current_decomposition",
+      "row": 3,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "working_current_decomposition",
+      "row": 3,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "working_current_decomposition",
+      "row": 3,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "working_current_decomposition",
+      "row": 3,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "working_current_decomposition",
+      "row": 4,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "working_current_decomposition",
+      "row": 4,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "working_current_decomposition",
+      "row": 4,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "working_current_decomposition",
+      "row": 4,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "working_current_decomposition",
+      "row": 4,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "working_current_decomposition",
+      "row": 5,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "working_current_decomposition",
+      "row": 5,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "working_current_decomposition",
+      "row": 5,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "working_current_decomposition",
+      "row": 5,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "working_current_decomposition",
+      "row": 5,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "working_current_decomposition",
+      "row": 6,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "working_current_decomposition",
+      "row": 6,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "working_current_decomposition",
+      "row": 6,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "working_current_decomposition",
+      "row": 6,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "working_current_decomposition",
+      "row": 6,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "working_current_decomposition",
+      "row": 7,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "working_current_decomposition",
+      "row": 7,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "working_current_decomposition",
+      "row": 7,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "working_current_decomposition",
+      "row": 7,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "working_current_decomposition",
+      "row": 7,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "working_current_decomposition",
+      "row": 8,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "working_current_decomposition",
+      "row": 8,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "working_current_decomposition",
+      "row": 8,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "working_current_decomposition",
+      "row": 8,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "working_current_decomposition",
+      "row": 8,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "working_current_decomposition",
+      "row": 9,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "working_current_decomposition",
+      "row": 9,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "working_current_decomposition",
+      "row": 9,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "working_current_decomposition",
+      "row": 9,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "working_current_decomposition",
+      "row": 9,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "magnet_current_observations",
+      "row": 0,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "magnet_current_observations",
+      "row": 0,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "magnet_current_observations",
+      "row": 0,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "magnet_current_observations",
+      "row": 0,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "magnet_current_observations",
+      "row": 0,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "magnet_current_observations",
+      "row": 0,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "magnet_current_observations",
+      "row": 1,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "magnet_current_observations",
+      "row": 1,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "magnet_current_observations",
+      "row": 1,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "magnet_current_observations",
+      "row": 1,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "magnet_current_observations",
+      "row": 1,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "magnet_current_observations",
+      "row": 1,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "magnet_current_observations",
+      "row": 2,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "magnet_current_observations",
+      "row": 2,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "magnet_current_observations",
+      "row": 2,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "magnet_current_observations",
+      "row": 2,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "magnet_current_observations",
+      "row": 2,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "magnet_current_observations",
+      "row": 2,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "magnet_current_observations",
+      "row": 3,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "magnet_current_observations",
+      "row": 3,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "magnet_current_observations",
+      "row": 3,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "magnet_current_observations",
+      "row": 3,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "magnet_current_observations",
+      "row": 3,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "magnet_current_observations",
+      "row": 3,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "magnet_current_observations",
+      "row": 4,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "magnet_current_observations",
+      "row": 4,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "magnet_current_observations",
+      "row": 4,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "magnet_current_observations",
+      "row": 4,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "magnet_current_observations",
+      "row": 4,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "magnet_current_observations",
+      "row": 4,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "magnet_current_observations",
+      "row": 5,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "magnet_current_observations",
+      "row": 5,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "magnet_current_observations",
+      "row": 5,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "magnet_current_observations",
+      "row": 5,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "magnet_current_observations",
+      "row": 5,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "magnet_current_observations",
+      "row": 5,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "magnet_current_observations",
+      "row": 6,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "magnet_current_observations",
+      "row": 6,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "magnet_current_observations",
+      "row": 6,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "magnet_current_observations",
+      "row": 6,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "magnet_current_observations",
+      "row": 6,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "magnet_current_observations",
+      "row": 6,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "magnet_current_observations",
+      "row": 7,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "magnet_current_observations",
+      "row": 7,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "magnet_current_observations",
+      "row": 7,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "magnet_current_observations",
+      "row": 7,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "magnet_current_observations",
+      "row": 7,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "magnet_current_observations",
+      "row": 7,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "magnet_current_observations",
+      "row": 8,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "magnet_current_observations",
+      "row": 8,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "magnet_current_observations",
+      "row": 8,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "magnet_current_observations",
+      "row": 8,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "magnet_current_observations",
+      "row": 8,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "magnet_current_observations",
+      "row": 8,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "magnet_current_observations",
+      "row": 9,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "magnet_current_observations",
+      "row": 9,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "magnet_current_observations",
+      "row": 9,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "magnet_current_observations",
+      "row": 9,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "magnet_current_observations",
+      "row": 9,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "magnet_current_observations",
+      "row": 9,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "magnet_current_decomposition",
+      "row": 0,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "magnet_current_decomposition",
+      "row": 0,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "magnet_current_decomposition",
+      "row": 0,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "magnet_current_decomposition",
+      "row": 0,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "magnet_current_decomposition",
+      "row": 0,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "magnet_current_decomposition",
+      "row": 1,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "magnet_current_decomposition",
+      "row": 1,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "magnet_current_decomposition",
+      "row": 1,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "magnet_current_decomposition",
+      "row": 1,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "magnet_current_decomposition",
+      "row": 1,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "magnet_current_decomposition",
+      "row": 2,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "magnet_current_decomposition",
+      "row": 2,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "magnet_current_decomposition",
+      "row": 2,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "magnet_current_decomposition",
+      "row": 2,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "magnet_current_decomposition",
+      "row": 2,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "magnet_current_decomposition",
+      "row": 3,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "magnet_current_decomposition",
+      "row": 3,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "magnet_current_decomposition",
+      "row": 3,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "magnet_current_decomposition",
+      "row": 3,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "magnet_current_decomposition",
+      "row": 3,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "magnet_current_decomposition",
+      "row": 4,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "magnet_current_decomposition",
+      "row": 4,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "magnet_current_decomposition",
+      "row": 4,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "magnet_current_decomposition",
+      "row": 4,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "magnet_current_decomposition",
+      "row": 4,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "magnet_current_decomposition",
+      "row": 5,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "magnet_current_decomposition",
+      "row": 5,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "magnet_current_decomposition",
+      "row": 5,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "magnet_current_decomposition",
+      "row": 5,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "magnet_current_decomposition",
+      "row": 5,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "magnet_current_decomposition",
+      "row": 6,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "magnet_current_decomposition",
+      "row": 6,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "magnet_current_decomposition",
+      "row": 6,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "magnet_current_decomposition",
+      "row": 6,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "magnet_current_decomposition",
+      "row": 6,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "magnet_current_decomposition",
+      "row": 7,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "magnet_current_decomposition",
+      "row": 7,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "magnet_current_decomposition",
+      "row": 7,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "magnet_current_decomposition",
+      "row": 7,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "magnet_current_decomposition",
+      "row": 7,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "magnet_current_decomposition",
+      "row": 8,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "magnet_current_decomposition",
+      "row": 8,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "magnet_current_decomposition",
+      "row": 8,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "magnet_current_decomposition",
+      "row": 8,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "magnet_current_decomposition",
+      "row": 8,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "magnet_current_decomposition",
+      "row": 9,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "magnet_current_decomposition",
+      "row": 9,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "magnet_current_decomposition",
+      "row": 9,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "magnet_current_decomposition",
+      "row": 9,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "magnet_current_decomposition",
+      "row": 9,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "position_observations",
+      "row": 0,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "position_observations",
+      "row": 0,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "position_observations",
+      "row": 0,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "position_observations",
+      "row": 0,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "position_observations",
+      "row": 0,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "position_observations",
+      "row": 0,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "position_observations",
+      "row": 1,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "position_observations",
+      "row": 1,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "position_observations",
+      "row": 1,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "position_observations",
+      "row": 1,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "position_observations",
+      "row": 1,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "position_observations",
+      "row": 1,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "position_observations",
+      "row": 2,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "position_observations",
+      "row": 2,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "position_observations",
+      "row": 2,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "position_observations",
+      "row": 2,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "position_observations",
+      "row": 2,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "position_observations",
+      "row": 2,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "position_observations",
+      "row": 3,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "position_observations",
+      "row": 3,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "position_observations",
+      "row": 3,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "position_observations",
+      "row": 3,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "position_observations",
+      "row": 3,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "position_observations",
+      "row": 3,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "position_observations",
+      "row": 4,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "position_observations",
+      "row": 4,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "position_observations",
+      "row": 4,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "position_observations",
+      "row": 4,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "position_observations",
+      "row": 4,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "position_observations",
+      "row": 4,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "position_observations",
+      "row": 5,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "position_observations",
+      "row": 5,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "position_observations",
+      "row": 5,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "position_observations",
+      "row": 5,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "position_observations",
+      "row": 5,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "position_observations",
+      "row": 5,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "position_observations",
+      "row": 6,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "position_observations",
+      "row": 6,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "position_observations",
+      "row": 6,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "position_observations",
+      "row": 6,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "position_observations",
+      "row": 6,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "position_observations",
+      "row": 6,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "position_observations",
+      "row": 7,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "position_observations",
+      "row": 7,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "position_observations",
+      "row": 7,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "position_observations",
+      "row": 7,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "position_observations",
+      "row": 7,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "position_observations",
+      "row": 7,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "position_observations",
+      "row": 8,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "position_observations",
+      "row": 8,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "position_observations",
+      "row": 8,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "position_observations",
+      "row": 8,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "position_observations",
+      "row": 8,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "position_observations",
+      "row": 8,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "position_observations",
+      "row": 9,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "position_observations",
+      "row": 9,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "position_observations",
+      "row": 9,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "position_observations",
+      "row": 9,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "position_observations",
+      "row": 9,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "position_observations",
+      "row": 9,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "position_decomposition",
+      "row": 0,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "position_decomposition",
+      "row": 0,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "position_decomposition",
+      "row": 0,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "position_decomposition",
+      "row": 0,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "position_decomposition",
+      "row": 0,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "position_decomposition",
+      "row": 1,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "position_decomposition",
+      "row": 1,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "position_decomposition",
+      "row": 1,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "position_decomposition",
+      "row": 1,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "position_decomposition",
+      "row": 1,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "position_decomposition",
+      "row": 2,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "position_decomposition",
+      "row": 2,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "position_decomposition",
+      "row": 2,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "position_decomposition",
+      "row": 2,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "position_decomposition",
+      "row": 2,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "position_decomposition",
+      "row": 3,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "position_decomposition",
+      "row": 3,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "position_decomposition",
+      "row": 3,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "position_decomposition",
+      "row": 3,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "position_decomposition",
+      "row": 3,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "position_decomposition",
+      "row": 4,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "position_decomposition",
+      "row": 4,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "position_decomposition",
+      "row": 4,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "position_decomposition",
+      "row": 4,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "position_decomposition",
+      "row": 4,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "position_decomposition",
+      "row": 5,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "position_decomposition",
+      "row": 5,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "position_decomposition",
+      "row": 5,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "position_decomposition",
+      "row": 5,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "position_decomposition",
+      "row": 5,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "position_decomposition",
+      "row": 6,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "position_decomposition",
+      "row": 6,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "position_decomposition",
+      "row": 6,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "position_decomposition",
+      "row": 6,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "position_decomposition",
+      "row": 6,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "position_decomposition",
+      "row": 7,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "position_decomposition",
+      "row": 7,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "position_decomposition",
+      "row": 7,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "position_decomposition",
+      "row": 7,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "position_decomposition",
+      "row": 7,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "position_decomposition",
+      "row": 8,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "position_decomposition",
+      "row": 8,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "position_decomposition",
+      "row": 8,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "position_decomposition",
+      "row": 8,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "position_decomposition",
+      "row": 8,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "position_decomposition",
+      "row": 9,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "position_decomposition",
+      "row": 9,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "position_decomposition",
+      "row": 9,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "position_decomposition",
+      "row": 9,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "position_decomposition",
+      "row": 9,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "fit_summary",
+      "row": 0,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "fit_summary",
+      "row": 0,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "fit_summary",
+      "row": 0,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "fit_summary",
+      "row": 1,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "fit_summary",
+      "row": 1,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "fit_summary",
+      "row": 1,
+      "column": 3,
+      "passed": true
+    }
+  ],
+  "input_hashes": {
+    "data/magnet_current.csv": "8e085837868cc98e09c04e516f50fdbaad34e2e61d7953865867b00f1be1a671",
+    "data/position.csv": "a834533bdcfe771e7a23f86ada3c624da2facb8228e701b6eeb2cb5993410fdc",
+    "data/provenance.json": "2c2ad9dc17753d8cbe26ec1e2288be8ca9fe0c641c89de03fc9fa68da992aa50",
+    "data/python-author-validation.json": "e9aaa6845eecde771f45de0f55d881462360411ec70219bb815e2ade48dd70a1",
+    "data/working_current.csv": "adf8fbd253176f7c33350deb54523df3c14264e7e39d81db0665a2a7864bf1dd",
+    "experiment.json": "116f9a24ac9c9cda6e87d41448c7b278b96ff3bb01375ac2e9092a409e520ff4"
+  }
+}

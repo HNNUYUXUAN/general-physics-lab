@@ -1,0 +1,8 @@
+VerificationTest[NumberQ[GrazingRefractionLab`Analyze[]["metrics"]["angle_mean_deg"]["value"]],True,TestID->"finite-angle_mean_deg"]
+VerificationTest[NumberQ[GrazingRefractionLab`Analyze[]["metrics"]["angle_type_a_arcmin"]["value"]],True,TestID->"finite-angle_type_a_arcmin"]
+VerificationTest[NumberQ[GrazingRefractionLab`Analyze[]["metrics"]["angle_type_b_arcmin"]["value"]],True,TestID->"finite-angle_type_b_arcmin"]
+VerificationTest[NumberQ[GrazingRefractionLab`Analyze[]["metrics"]["angle_combined_arcmin"]["value"]],True,TestID->"finite-angle_combined_arcmin"]
+VerificationTest[NumberQ[GrazingRefractionLab`Analyze[]["metrics"]["liquid_refractive_index"]["value"]],True,TestID->"finite-liquid_refractive_index"]
+VerificationTest[NumberQ[GrazingRefractionLab`Analyze[]["metrics"]["liquid_standard_uncertainty"]["value"]],True,TestID->"finite-liquid_standard_uncertainty"]
+VerificationTest[FileExistsQ[GrazingRefractionLab`LabNotebookPath[]],True,TestID->"notebook-entry"]
+VerificationTest[FileNameTake[GrazingRefractionLab`LabNotebookPath[]],"GrazingRefractionLab.nb",TestID->"notebook-name"]

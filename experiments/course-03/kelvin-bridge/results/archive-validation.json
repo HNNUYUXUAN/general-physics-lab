@@ -1,0 +1,13 @@
+{
+  "id": "course-03/kelvin-bridge",
+  "status": "passed",
+  "paclet_sha256": "d75f2b16a496bde739fafdeed1387f61f27e9b8a1b6132ddd784881bb75b3162",
+  "canonical_inputs_checked": [
+    "data/balance.csv",
+    "data/label-repair-validation.json",
+    "data/provenance.json",
+    "data/python-author-validation.json",
+    "experiment.json"
+  ],
+  "kernel_and_notebook_match_source": true
+}

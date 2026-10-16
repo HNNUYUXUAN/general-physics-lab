@@ -1,0 +1,76 @@
+{
+  "status": "authored-python-validated",
+  "title": "薄透镜焦距的测定",
+  "course": "course-04",
+  "slug": "thin-lens",
+  "module": "thin_lens",
+  "paclet": "ThinLensLab",
+  "source_docx": "originals/course-04/09_实验九_薄透镜焦距的测定_实验报告.docx",
+  "source_converted": "processed/courses-01-03-04/普通物理实验4/09_实验九_薄透镜焦距的测定_实验报告_docx/正文.md",
+  "sections": [
+    "实验名称",
+    "实验目的",
+    "实验原理",
+    "主要仪器设备",
+    "实验步骤",
+    "原始数据记录",
+    "数据处理",
+    "实验结果与讨论"
+  ],
+  "comparison": [
+    "autocollimation_mean_cm",
+    "autocollimation_type_a_cm",
+    "conjugates_mean_cm",
+    "conjugates_type_a_cm",
+    "bessel_mean_cm",
+    "bessel_type_a_cm",
+    "concave_mean_cm",
+    "concave_type_a_cm",
+    "convex_method_average_cm"
+  ],
+  "expansions": [
+    {
+      "section": "原始数据记录",
+      "title": "四种方法的观测输入",
+      "prose": "原始观测按方法分表保存，按原始长度逐次计算五次焦距。",
+      "python": "table_display(result[\"tables\"][\"autocollimation\"])\ntable_display(result[\"tables\"][\"conjugates\"])\ntable_display(result[\"tables\"][\"bessel\"])\ntable_display(result[\"tables\"][\"concave\"])",
+      "wolfram": "Column[tableView[r[\"tables\"][#]] & /@ {\"autocollimation\",\"conjugates\",\"bessel\",\"concave\"}, Alignment->Center]"
+    },
+    {
+      "section": "数据处理",
+      "title": "逐次焦距与A类分量",
+      "prose": "先逐次代入各方法公式，再计算均值和五次重复的均值标准误。凹透镜按照虚物距约定给出负焦距。",
+      "python": "table_display(result[\"tables\"][\"summary\"])\nmetrics_display(result)",
+      "wolfram": "Column[{tableView[r[\"tables\"][\"summary\"]],metricView[r]}, Alignment->Center]"
+    },
+    {
+      "section": "数据处理",
+      "title": "近轴光线与物像关系",
+      "prose": "用物距像距法均值作为固定 $f$。滑块 $u/f$ 从 $1.2$ 至 $4.0$，步长 $0.2$，默认 $2$；由 $v=fu/(u-f)$ 计算像距、$M=-v/u$ 计算放大率。三条近轴代表光线汇聚于同一像点。横向高度采用任意单位；图示假定薄透镜、近轴和理想成像。",
+      "python": "display_plotly(adapter.explore(\"ray-geometry\",result))",
+      "wolfram": "exploreView[\"ray-geometry\"]",
+      "caption": "图 3　物距变化时凸透镜的近轴光线与成像"
+    },
+    {
+      "section": "实验结果与讨论",
+      "title": "二次成像位置的分支与临界条件",
+      "prose": "取相同 $f$，由 $x_\\pm=[D\\pm\\sqrt{D^2-4Df}]/2$ 计算距物的两个透镜位置。$D/f$ 从 $4$ 至 $8$，步长 $0.2$，默认 $5$。$D/f=4$ 是两位置重合的临界点；小于该值时不存在两个不同的实成像位置。",
+      "python": "display_plotly(adapter.explore(\"bessel-branches\",result))",
+      "wolfram": "exploreView[\"bessel-branches\"]",
+      "caption": "图 4　二次成像法的两个透镜位置与临界条件"
+    }
+  ],
+  "python_checks": [
+    "assert len(result['tables']['autocollimation']['rows']) == 5",
+    "assert abs(result['metrics']['autocollimation_mean_cm']['value']-10.02) < 1e-12",
+    "assert all(row[-1] < 0 for row in result['tables']['concave_f']['rows'])",
+    "assert abs(result['metrics']['convex_method_average_cm']['value']-10.007884889687425) < 1e-8",
+    "assert len(adapter.explore('ray-geometry',result).layout.sliders[0].steps) == 15",
+    "assert len(adapter.explore('bessel-branches',result).layout.sliders[0].steps) == 21"
+  ],
+  "limitations": [
+    "缺仪器与成像位置判定误差，只有重复性A类分量。",
+    "缺标称值，不给准确度。",
+    "三方法均值只作描述，不将其作为独立重复误差缩减。"
+  ]
+}

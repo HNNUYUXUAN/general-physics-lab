@@ -1,0 +1,212 @@
+{
+  "metrics": {
+    "slope_s2_kg": {
+      "value": 1.9558942424209522,
+      "unit": "s^2/kg",
+      "label": "定标斜率"
+    },
+    "slope_residual_se_s2_kg": {
+      "value": 0.02616223207501861,
+      "unit": "s^2/kg",
+      "label": "残差斜率标准误"
+    },
+    "intercept_s2": {
+      "value": 0.08516104881939288,
+      "unit": "s^2",
+      "label": "定标截距"
+    },
+    "difference_slope_s2_kg": {
+      "value": 1.96390540153,
+      "unit": "s^2/kg",
+      "label": "逐差平均斜率"
+    },
+    "calibration_r_squared": {
+      "value": 0.9989276313040903,
+      "unit": "1",
+      "label": "定标决定系数"
+    },
+    "unknown_mass_g": {
+      "value": 193.60423869999252,
+      "unit": "g",
+      "label": "圆柱体反推惯性质量"
+    },
+    "unknown_calibration_component_g": {
+      "value": 1.3281560604689928,
+      "unit": "g",
+      "label": "仅定标参数协方差传播分量"
+    },
+    "relative_nominal_difference_percent": {
+      "value": 1.629521627292662,
+      "unit": "%",
+      "label": "相对标称190.5g差异"
+    },
+    "effective_stiffness_n_m": {
+      "value": 20.184331416351085,
+      "unit": "N/m",
+      "label": "等效劲度系数"
+    },
+    "stiffness_residual_component_n_m": {
+      "value": 0.2699875848808876,
+      "unit": "N/m",
+      "label": "斜率残差传播劲度分量"
+    },
+    "empty_effective_mass_g": {
+      "value": 43.540722689577976,
+      "unit": "g",
+      "label": "空载等效质量"
+    },
+    "empty_mass_covariance_component_g": {
+      "value": 2.223409879845866,
+      "unit": "g",
+      "label": "定标协方差空载质量分量"
+    }
+  },
+  "tables": {
+    "table1": {
+      "headers": [
+        "次数",
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "rows": [
+        [
+          "样品",
+          "标准质量片",
+          "标准质量片",
+          "标准质量片",
+          "标准质量片",
+          "标准质量片",
+          "标准质量片",
+          "标准质量片",
+          "标准质量片",
+          "圆柱体"
+        ],
+        [
+          "质量 / g",
+          25.0,
+          50.0,
+          75.0,
+          100.0,
+          125.0,
+          150.0,
+          175.00000000000003,
+          200.0,
+          "190.5（标称，不定标）"
+        ],
+        [
+          "周期 / s",
+          0.372956,
+          0.42954,
+          0.477866,
+          0.525413,
+          0.573683,
+          0.612982,
+          0.652948,
+          0.694534,
+          0.681051
+        ],
+        [
+          "周期平方 / s²",
+          0.13909617793600002,
+          0.18450461159999998,
+          0.22835591395600002,
+          0.276058820569,
+          0.32911218448900004,
+          0.375746932324,
+          0.42634109070399995,
+          0.482377477156,
+          0.46383046460099997
+        ],
+        [
+          "隔四组平方差 / s²",
+          0.190016007,
+          0.191242321,
+          0.197985177,
+          0.206318657,
+          "—",
+          "—",
+          "—",
+          "—",
+          "—"
+        ],
+        [
+          "隔四组质量差 / g",
+          100,
+          100,
+          100,
+          100,
+          "—",
+          "—",
+          "—",
+          "—",
+          "—"
+        ]
+      ]
+    }
+  },
+  "series": {
+    "balance-calibration": {
+      "x": [
+        0.025,
+        0.05,
+        0.075,
+        0.1,
+        0.125,
+        0.15,
+        0.17500000000000002,
+        0.2
+      ],
+      "y": [
+        0.13909617793600002,
+        0.18450461159999998,
+        0.22835591395600002,
+        0.276058820569,
+        0.32911218448900004,
+        0.375746932324,
+        0.42634109070399995,
+        0.482377477156
+      ],
+      "x_label": "标准附加质量 $m$ / kg",
+      "y_label": "周期平方 $T^2$ / s$^2$",
+      "label": "仅前8组标准质量",
+      "fit": true
+    }
+  },
+  "notes": [
+    "圆柱体190.5g只作为标称比较值，不进入定标。",
+    "周期平方由未修约周期重新计算，不用源表已修约平方求拟合。",
+    "斜率截距协方差在质量传播中保留，未含圆柱体周期和标准质量误差。"
+  ],
+  "experiment_id": "course-02/inertial-balance",
+  "engine": "python",
+  "input_hashes": {
+    "data/observations-01.csv": "d06b91f83f26219408b111c7953cab59d67961820666053e7e4d3e410ecb1613",
+    "data/provenance.json": "c37bf6dcce1c411f35faef1d3f0336fbd4238e5f2dd1813086e01fb92d96ca85",
+    "experiment.json": "82e779f109420f0e6e2f4d92de393777e55d5452137f9f2729210374a2e12dd0"
+  },
+  "code_hashes": {
+    "src/physicslab/common/__init__.py": "7cc50d4a8325535fb401e04aed51f6a04ad3ca7f40c4b972624547491c83e1a2",
+    "src/physicslab/common/io.py": "5135c2253071c4e3885dec26db357a7777c1a13c7a83559f5152007abb986541",
+    "src/physicslab/common/manuscripts.py": "847e4bade7e617d524e0b484db6e17ee82097687e37b84bb0ac3796dbe06ed10",
+    "src/physicslab/common/plots.py": "37825a8c2a8f5dd8ca7f01968dd343a8dd6cb6139d2ef67275ff745b04e9b907",
+    "src/physicslab/common/tex_boxes.py": "0e2b226fce4c79bba37cc2ba6b6153802a5cb6dbda9dfee95d1a98e5894f9554",
+    "src/physicslab/common/theme.py": "ee8592a54efb71efd91ccdc55b66c7d8bda14a32454dfd75aa34ef606269a01c",
+    "src/physicslab/experiments/inertial_balance.py": "ab4ccf3fbd3df3997e2e53da39e9e9f98d06add7c2d848977d3f7d28bea96816"
+  },
+  "environment": {
+    "python": "3.14.7",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "matplotlib": "3.11.2",
+    "nbclient": "0.11.0",
+    "nbformat": "5.11.1",
+    "plotly": "7.1.0"
+  }
+}

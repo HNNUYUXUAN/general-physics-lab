@@ -1,0 +1,99 @@
+{
+  "experiment": "course-04/newton-rings",
+  "paclet": "NewtonRingsLab",
+  "status": "passed",
+  "source_hashes": {
+    "analysis.wl": "005248074d4df0d052de262bb843ec217030b5ad13db40f1934e0837dd3dae42",
+    "authoring.json": "438b80e60a3815723692faf73cf4da0fb42952fa7ae74c3065e108dedd09eed2"
+  },
+  "input_hashes": {
+    "data/provenance.json": "10701de8883ce087b84649a81353e16c3421a32ad995112682998b4415ee77e2",
+    "data/rings.csv": "8e7508d7693ff654dc281d90c6081242c60d88847e6121b2f0befe19da0da447",
+    "data/wedge.csv": "84b995fd6537cec7aed67939339cb0905a5827e36f2c75285dbf275a0d4436bc",
+    "experiment.json": "8702f4acd2331177b64f4e728939864a75dd499ca209f512951b2ffb0c604eb5"
+  },
+  "models": [
+    {
+      "key": "ring-selection",
+      "capture_messages": [],
+      "status": "passed",
+      "held_body_sha256": "81aba1b272a299a3ff4a6cf99705db7e950a3e0704c5e13348d823e252ca2dc0",
+      "default_evaluation": {
+        "status": "evaluated",
+        "output_head": "Column",
+        "response_sha256": "c100db8ec5f19a6e9f5f2141eb27a113ece026860e67195149f2ffea2f7255fa",
+        "graphics_count": 2,
+        "messages": [],
+        "unresolved_heads": []
+      },
+      "default_repeat": {
+        "status": "evaluated",
+        "output_head": "Column",
+        "response_sha256": "c100db8ec5f19a6e9f5f2141eb27a113ece026860e67195149f2ffea2f7255fa",
+        "graphics_count": 2,
+        "messages": [],
+        "unresolved_heads": []
+      },
+      "default_deterministic": true,
+      "controls": [
+        {
+          "name": "NewtonRingsLab`Private`drop",
+          "default": 0,
+          "changed": 1,
+          "specification_sha256": "1f991fe4daea50f0a061700f733cf3e7f0d451c32af5340975dedf13e95b5262",
+          "evaluation": {
+            "status": "evaluated",
+            "output_head": "Column",
+            "response_sha256": "189d67459e068df132305e88034f8963e22885ea57eafce4be4a0e5d4d4fe514",
+            "graphics_count": 2,
+            "messages": [],
+            "unresolved_heads": []
+          },
+          "response_changed": true,
+          "status": "passed"
+        }
+      ]
+    },
+    {
+      "key": "contact-gap",
+      "capture_messages": [],
+      "status": "passed",
+      "held_body_sha256": "3adfeccb8cf502ed9042e44693d567545f6625a14ec0bb1df497970acecde580",
+      "default_evaluation": {
+        "status": "evaluated",
+        "output_head": "Legended",
+        "response_sha256": "ff008d67209b521e637e2134029e2001a95e9c68bdc66258c3c8652b85b9b630",
+        "graphics_count": 1,
+        "messages": [],
+        "unresolved_heads": []
+      },
+      "default_repeat": {
+        "status": "evaluated",
+        "output_head": "Legended",
+        "response_sha256": "ff008d67209b521e637e2134029e2001a95e9c68bdc66258c3c8652b85b9b630",
+        "graphics_count": 1,
+        "messages": [],
+        "unresolved_heads": []
+      },
+      "default_deterministic": true,
+      "controls": [
+        {
+          "name": "NewtonRingsLab`Private`fraction",
+          "default": 0,
+          "changed": 0.05,
+          "specification_sha256": "74cf3f2ae68adf7e4f802ab6e8e230c91cae7a04ff2f64f9d84052ac914c1345",
+          "evaluation": {
+            "status": "evaluated",
+            "output_head": "Legended",
+            "response_sha256": "af921cf402aa3a074c6e7d5863a5c37df5768f1f01c759cb29157a2bae191c16",
+            "graphics_count": 1,
+            "messages": [],
+            "unresolved_heads": []
+          },
+          "response_changed": true,
+          "status": "passed"
+        }
+      ]
+    }
+  ]
+}

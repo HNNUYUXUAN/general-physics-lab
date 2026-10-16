@@ -1,0 +1,59 @@
+{
+  "status": "authored-python-validated",
+  "title": "偏振光的观察与分析",
+  "course": "course-04",
+  "slug": "polarization",
+  "module": "polarization",
+  "paclet": "PolarizationLab",
+  "source_docx": "originals/course-04/10_实验十_偏振光的观察与分析.docx",
+  "source_converted": "processed/courses-01-03-04/普通物理实验4/10_实验十_偏振光的观察与分析_docx/正文.md",
+  "sections": [
+    "实验名称",
+    "实验目的",
+    "实验原理",
+    "主要仪器设备",
+    "实验步骤",
+    "原始数据记录",
+    "数据处理",
+    "实验结果与讨论"
+  ],
+  "comparison": [
+    "brewster_angle_deg",
+    "brewster_type_a_arcmin",
+    "glass_refractive_index",
+    "glass_index_type_a",
+    "malus_amplitude_ma",
+    "malus_background_ma",
+    "malus_r_squared"
+  ],
+  "expansions": [
+    {
+      "section": "数据处理",
+      "title": "拟合系数与折射率",
+      "prose": "角度以弧度进入三角函数与传播导数；拟合使用全部十组观测。",
+      "python": "metrics_display(result)\ntable_display(result[\"tables\"][\"table3\"])",
+      "wolfram": "Column[{metricView[r],tableView[r[\"tables\"][\"table3\"]]},Alignment->Center]"
+    },
+    {
+      "section": "实验结果与讨论",
+      "title": "检偏器零点对光强曲线的影响",
+      "prose": "固定已拟合的 $I_0,I_b$，比较 $I=I_0\\cos^2(\\theta-\\theta_0)+I_b$ 与实测点。模型零点 $\\theta_0$ 从 $-10^\\circ$ 至 $10^\\circ$，步长 $1^\\circ$，默认 $0^\\circ$。该扫描不重新拟合观测，也不把偏移当已测校准值。",
+      "python": "display_plotly(adapter.explore(\"malus-offset\",result))",
+      "wolfram": "exploreView[\"malus-offset\"]",
+      "caption": "图 2　检偏器模型零点偏移对光强曲线的影响"
+    }
+  ],
+  "limitations": [
+    "仪器和玻璃表面分量未记录。",
+    "波片状态只有定性步骤，无定量观测。"
+  ],
+  "python_checks": [
+    "assert abs(result['metrics']['brewster_angle_deg']['value']-(56.13333333333334)) < 5.6133333333333346e-08",
+    "assert abs(result['metrics']['brewster_type_a_arcmin']['value']-(5.147815070493485)) < 5.1478150704934855e-09",
+    "assert abs(result['metrics']['glass_refractive_index']['value']-(1.4900288003179127)) < 1.490028800317913e-09",
+    "assert abs(result['metrics']['glass_index_type_a']['value']-(0.004822030890872894)) < 1e-10",
+    "assert abs(result['metrics']['malus_amplitude_ma']['value']-(1.1820844777476678)) < 1.1820844777476679e-09",
+    "assert abs(result['metrics']['malus_background_ma']['value']-(0.024557761126166144)) < 1e-10",
+    "assert abs(result['metrics']['malus_r_squared']['value']-(0.9999092918155097)) < 9.999092918155097e-10"
+  ]
+}

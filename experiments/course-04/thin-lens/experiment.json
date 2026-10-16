@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "id": "course-04/thin-lens",
+  "title": "薄透镜焦距的测定",
+  "parameters": {
+    "length_unit": "cm"
+  },
+  "units": {
+    "trial": "1",
+    "f_cm": "cm",
+    "u_cm": "cm",
+    "v_cm": "cm",
+    "D_cm": "cm",
+    "d_cm": "cm",
+    "a_cm": "cm",
+    "b_cm": "cm"
+  },
+  "models": {
+    "thin_lens": "近轴薄透镜、空气、忽略厚度与像差。凸透镜实物距u与实像距v取正。",
+    "concave": "入射光会聚，虚物距u=-a，实像距v=b；1/f=-1/a+1/b。",
+    "type_a": "每种方法五次重复焦距的均值标准误，仅重复性分量。"
+  },
+  "interaction_parameters": {
+    "focal_length": "物距像距法五次焦距的算术平均",
+    "object_distance_over_f": {
+      "default": 2,
+      "minimum": 1.2,
+      "maximum": 4,
+      "step": 0.2
+    },
+    "screen_distance_over_f": {
+      "default": 5,
+      "minimum": 4,
+      "maximum": 8,
+      "step": 0.2
+    }
+  },
+  "source_docx": "originals/course-04/09_实验九_薄透镜焦距的测定_实验报告.docx",
+  "data_version": "1.0.0"
+}

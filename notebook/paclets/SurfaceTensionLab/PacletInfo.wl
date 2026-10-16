@@ -1,0 +1,1 @@
+PacletObject[<|"Name"->"SurfaceTensionLab","Version"->"0.1.0","WolframVersion"->"14.0+","Description"->"\:8868\:9762\:5f20\:529b\:7cfb\:6570\:7684\:6d4b\:5b9a","Creator"->"Physics Lab Contributors","Extensions"->{{"Kernel","Root"->"Kernel","Context"->{"SurfaceTensionLab`"}},{"Resource","Root"->".","Resources"->{"Notebooks","data","assets"}}}|>]

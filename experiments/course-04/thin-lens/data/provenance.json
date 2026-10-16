@@ -1,0 +1,111 @@
+{
+  "primary_source": "originals/course-04/09_实验九_薄透镜焦距的测定_实验报告.docx",
+  "primary_sha256": "db54d0b90e160a677a4a74ce8ab16cb515705bd27cb447d0e97790f718a2e0bd",
+  "converted_source": "processed/courses-01-03-04/普通物理实验4/09_实验九_薄透镜焦距的测定_实验报告_docx/正文.md",
+  "tables": [
+    {
+      "file": "autocollimation.csv",
+      "source_table": 1,
+      "source_rows": "2–6",
+      "mapping": {
+        "trial": "第1列",
+        "f_cm": "第2列"
+      }
+    },
+    {
+      "file": "conjugates.csv",
+      "source_table": 2,
+      "source_rows": "2–6",
+      "mapping": {
+        "trial": "第1列",
+        "u_cm": "第2列",
+        "v_cm": "第3列"
+      }
+    },
+    {
+      "file": "bessel.csv",
+      "source_table": 3,
+      "source_rows": "2–6",
+      "mapping": {
+        "trial": "第1列",
+        "D_cm": "第2列",
+        "d_cm": "第3列"
+      }
+    },
+    {
+      "file": "concave.csv",
+      "source_table": 4,
+      "source_rows": "2–6",
+      "mapping": {
+        "trial": "第1列",
+        "a_cm": "第2列",
+        "b_cm": "第3列"
+      }
+    }
+  ],
+  "transformations": [
+    "所有长度保留原始cm，不转换后截断。",
+    "表5–7为源计算表，重新从表1–4观测计算，先求每组焦距再求均值，最后修约。",
+    "三方法平均仅作描述性等权平均，不将三方法当独立重复作误差缩减。"
+  ],
+  "recomputed": {
+    "autocollimation_mean_cm": {
+      "value": 10.02,
+      "unit": "cm",
+      "label": "自准直法焦距均值"
+    },
+    "autocollimation_type_a_cm": {
+      "value": 0.0070710678118653236,
+      "unit": "cm",
+      "label": "自准直法均值A类分量"
+    },
+    "conjugates_mean_cm": {
+      "value": 10.008427569062277,
+      "unit": "cm",
+      "label": "物距像距法焦距均值"
+    },
+    "conjugates_type_a_cm": {
+      "value": 0.004946338873317829,
+      "unit": "cm",
+      "label": "物距像距法均值A类分量"
+    },
+    "bessel_mean_cm": {
+      "value": 9.9952271,
+      "unit": "cm",
+      "label": "二次成像法焦距均值"
+    },
+    "bessel_type_a_cm": {
+      "value": 0.002866632137195144,
+      "unit": "cm",
+      "label": "二次成像法均值A类分量"
+    },
+    "concave_mean_cm": {
+      "value": -16.423821490559334,
+      "unit": "cm",
+      "label": "辅助成像法（凹透镜）焦距均值"
+    },
+    "concave_type_a_cm": {
+      "value": 0.07107840762081072,
+      "unit": "cm",
+      "label": "辅助成像法（凹透镜）均值A类分量"
+    },
+    "convex_method_average_cm": {
+      "value": 10.007884889687425,
+      "unit": "cm",
+      "label": "三种凸透镜方法等权平均"
+    }
+  },
+  "issues": [
+    {
+      "id": "TL-01",
+      "status": "documented",
+      "detail": "缺少光具座刻度、定位、透镜光心和校准误差，A类分量不能作为完整不确定度。"
+    },
+    {
+      "id": "TL-02",
+      "status": "documented",
+      "detail": "未给透镜标称值，无法计算准确度或相对误差。"
+    }
+  ],
+  "verification": "已直接读取 DOCX XML 前4张原始数据表，与规范CSV逐格数值一致。"
+}

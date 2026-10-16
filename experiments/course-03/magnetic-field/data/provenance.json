@@ -1,0 +1,29 @@
+{
+  "primary_source": "originals/course-03/7磁场的描绘/实验报告-磁场的描绘.docx",
+  "primary_sha256": "d89597e0acbf07b1d013ff0888b0436fa36b36882f8d494869088d9e3d409fbc",
+  "converted_source": "processed/courses-01-03-04/普通物理实验3/7磁场的描绘/实验报告-磁场的描绘_docx/正文.md",
+  "table_mapping": "唯一表格，数据行2/5/8/11位置，行3/6/9/12测量，行4/7/10/13源理论；取各行最后7列。",
+  "transformations": [
+    "mm→m、mA→A用于经典线圈公式；理论T→mT。",
+    "测量读数保留原单位，不与理论作未经确认的绝对差。",
+    "双线圈中心按明确d=.105m取±52.5mm，不用近似±52调整源观测坐标。"
+  ],
+  "issues": [
+    {
+      "type": "missing_unit",
+      "resolution": "主DOCX未注明B单位，课程表格还误写mH，暂不推定mT。"
+    },
+    {
+      "type": "geometry_conflict",
+      "resolution": "源双线圈记录在−52mm附近峰值，按中点0的亥姆霍兹模型峰应在0；保留冲突不平移坐标。"
+    },
+    {
+      "type": "theory_recalculation",
+      "resolution": "重新由N500/R105mm/I计算理论，不照录不一致的源理论值。"
+    },
+    {
+      "type": "incomplete_superposition_test",
+      "resolution": "仅记录单个线圈和双线圈，没有另一个单线圈独立测量，B双>B单不足以独立证明等式叠加。"
+    }
+  ]
+}

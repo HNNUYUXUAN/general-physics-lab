@@ -1,0 +1,1 @@
+PacletObject[<|"Name"->"TransmissionGratingLab","Version"->"0.1.0","WolframVersion"->"14.0+","Description"->"\:7528\:900f\:5c04\:5149\:6805\:6d4b\:5b9a\:5149\:6ce2\:6ce2\:957f","Creator"->"Physics Lab Contributors","Extensions"->{{"Kernel","Root"->"Kernel","Context"->{"TransmissionGratingLab`"}},{"Resource","Root"->".","Resources"->{"Notebooks","data","assets"}}}|>]

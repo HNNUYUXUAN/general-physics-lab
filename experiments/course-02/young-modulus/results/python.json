@@ -1,0 +1,322 @@
+{
+  "metrics": {
+    "mean_apparent_diameter": {
+      "value": 0.582,
+      "unit": "mm",
+      "label": "直径视值均值"
+    },
+    "mean_corrected_diameter": {
+      "value": 0.52,
+      "unit": "mm",
+      "label": "零差修正直径均值"
+    },
+    "diameter_uncertainty_a": {
+      "value": 0.005066228051190209,
+      "unit": "mm",
+      "label": "直径均值A类不确定度"
+    },
+    "mean_extension_difference": {
+      "value": 21.14,
+      "unit": "mm",
+      "label": "五组逐差平均"
+    },
+    "fit_slope": {
+      "value": 4.219393939393939,
+      "unit": "mm/kg",
+      "label": "标尺质量拟合斜率"
+    },
+    "fit_intercept": {
+      "value": 32.083333333333336,
+      "unit": "mm",
+      "label": "标尺拟合截距"
+    },
+    "correlation": {
+      "value": 0.9999394209439023,
+      "unit": "1",
+      "label": "标尺质量相关系数"
+    },
+    "slope_uncertainty": {
+      "value": 0.01642105526495476,
+      "unit": "mm/kg",
+      "label": "回归斜率标准误差"
+    },
+    "young_modulus_difference": {
+      "value": 307555716271.98334,
+      "unit": "Pa",
+      "label": "逐差杨氏模量",
+      "uncertainty": 7938637626.791675
+    },
+    "young_modulus_regression": {
+      "value": 308183020375.84174,
+      "unit": "Pa",
+      "label": "回归杨氏模量",
+      "uncertainty": 6756804961.33268
+    },
+    "conditional_uncertainty_difference": {
+      "value": 7938637626.791675,
+      "unit": "Pa",
+      "label": "逐差条件标准不确定度"
+    },
+    "conditional_uncertainty_regression": {
+      "value": 6756804961.33268,
+      "unit": "Pa",
+      "label": "回归条件标准不确定度"
+    }
+  },
+  "tables": {
+    "geometry": {
+      "headers": [
+        "$L / \\mathrm{mm}$",
+        "$H / \\mathrm{mm}$",
+        "$D / \\mathrm{mm}$"
+      ],
+      "rows": [
+        [
+          720,
+          690,
+          35.26
+        ]
+      ]
+    },
+    "diameters": {
+      "headers": [
+        "序号",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "平均值 / mm"
+      ],
+      "rows": [
+        [
+          "直径视值 / mm",
+          0.578,
+          0.595,
+          0.581,
+          0.59,
+          0.56,
+          0.588,
+          0.582
+        ],
+        [
+          "修正直径 / mm",
+          0.516,
+          0.5329999999999999,
+          0.5189999999999999,
+          0.528,
+          0.49800000000000005,
+          0.526,
+          0.52
+        ]
+      ]
+    },
+    "loading_first": {
+      "headers": [
+        "序号",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "rows": [
+        [
+          "质量视值 / kg",
+          1.0,
+          2.0,
+          3.0,
+          4.0,
+          5.0
+        ],
+        [
+          "加力刻度 / mm",
+          36.1,
+          40.5,
+          44.9,
+          49.0,
+          53.0
+        ],
+        [
+          "减力刻度 / mm",
+          36.1,
+          40.5,
+          45.0,
+          49.0,
+          53.1
+        ],
+        [
+          "平均刻度 / mm",
+          36.1,
+          40.5,
+          44.95,
+          49.0,
+          53.05
+        ]
+      ]
+    },
+    "loading_second": {
+      "headers": [
+        "序号",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10"
+      ],
+      "rows": [
+        [
+          "质量视值 / kg",
+          6.0,
+          7.0,
+          8.0,
+          9.0,
+          10.0
+        ],
+        [
+          "加力刻度 / mm",
+          57.2,
+          61.5,
+          65.9,
+          70.0,
+          74.1
+        ],
+        [
+          "减力刻度 / mm",
+          57.8,
+          62.0,
+          66.0,
+          70.0,
+          74.1
+        ],
+        [
+          "平均刻度 / mm",
+          57.5,
+          61.75,
+          65.95,
+          70.0,
+          74.1
+        ],
+        [
+          "逐差 / mm",
+          21.4,
+          21.25,
+          21.0,
+          21.0,
+          21.049999999999997
+        ]
+      ]
+    },
+    "uncertainty": {
+      "headers": [
+        "物理量",
+        "标准不确定度",
+        "物理量",
+        "标准不确定度"
+      ],
+      "rows": [
+        [
+          "$L / \\mathrm{mm}$",
+          0.462,
+          "$H / \\mathrm{mm}$",
+          0.462
+        ],
+        [
+          "$D / \\mathrm{mm}$",
+          0.0115,
+          "质量增量 / kg",
+          0.0041
+        ],
+        [
+          "$d / \\mathrm{mm}$",
+          0.0056,
+          "逐差 / mm",
+          0.2995
+        ]
+      ]
+    }
+  },
+  "series": {
+    "loading_fit": {
+      "x": [
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        6.0,
+        7.0,
+        8.0,
+        9.0,
+        10.0
+      ],
+      "y": [
+        36.1,
+        40.5,
+        44.95,
+        49.0,
+        53.05,
+        57.5,
+        61.75,
+        65.95,
+        70.0,
+        74.1
+      ],
+      "x_label": "拉力质量视值 / kg",
+      "y_label": "平均标尺刻度 / mm",
+      "fit": true
+    },
+    "diameter_sequence": {
+      "x": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "y": [
+        0.516,
+        0.5329999999999999,
+        0.5189999999999999,
+        0.528,
+        0.49800000000000005,
+        0.526
+      ],
+      "x_label": "测量序号",
+      "y_label": "修正直径 / mm"
+    }
+  },
+  "notes": [
+    "预算中一次性量及合成直径/逐差标准不确定度沿用源已给数值，来源误差限需核实。",
+    "质量增量校准误差在回归法中按u_m/5相对尺度项处理；几何与零差相关性未量化。"
+  ],
+  "experiment_id": "course-02/young-modulus",
+  "engine": "python",
+  "input_hashes": {
+    "data/author-verification.json": "24e99499f86bdf517534b8e3d8a932a20bdf8976f92f08582735ad24ce459786",
+    "data/diameters.csv": "5e1867cd1d9da89bea7980cbc8d9c51c0f26301d7e55958e058d45c8e8ba1b83",
+    "data/loading.csv": "554d9bae0377fca4770372f7123f8619aefc34fc70bb28f6e9c859a1b42901c8",
+    "data/provenance.json": "c29beb07ad28a4ff74825eb5f01d5b10c9f6234d2e54a098edced97f52600b9b",
+    "experiment.json": "567180663443e3d13bffd78b425de04b753ee38ddb52656b4788d73e8337760c"
+  },
+  "code_hashes": {
+    "src/physicslab/common/__init__.py": "7cc50d4a8325535fb401e04aed51f6a04ad3ca7f40c4b972624547491c83e1a2",
+    "src/physicslab/common/io.py": "5135c2253071c4e3885dec26db357a7777c1a13c7a83559f5152007abb986541",
+    "src/physicslab/common/manuscripts.py": "847e4bade7e617d524e0b484db6e17ee82097687e37b84bb0ac3796dbe06ed10",
+    "src/physicslab/common/plots.py": "37825a8c2a8f5dd8ca7f01968dd343a8dd6cb6139d2ef67275ff745b04e9b907",
+    "src/physicslab/common/tex_boxes.py": "0e2b226fce4c79bba37cc2ba6b6153802a5cb6dbda9dfee95d1a98e5894f9554",
+    "src/physicslab/common/theme.py": "ee8592a54efb71efd91ccdc55b66c7d8bda14a32454dfd75aa34ef606269a01c",
+    "src/physicslab/experiments/young_modulus.py": "6309896ca9ab1fff5fef61699546ec3917762132edddab5af8bdfcb4de2d1e28"
+  },
+  "environment": {
+    "python": "3.14.7",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "matplotlib": "3.11.2",
+    "nbclient": "0.11.0",
+    "nbformat": "5.11.1",
+    "plotly": "7.1.0"
+  }
+}

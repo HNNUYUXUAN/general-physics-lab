@@ -1,0 +1,168 @@
+{
+  "metrics": {
+    "rotation_magnitude_deg": {
+      "value": 8.15666666666667,
+      "unit": "deg",
+      "label": "旋光角绝对值均值"
+    },
+    "rotation_type_a_arcmin": {
+      "value": 11.44159079848607,
+      "unit": "arcmin",
+      "label": "旋光角均值A类"
+    },
+    "conditional_concentration_g_ml": {
+      "value": 0.06136523221988166,
+      "unit": "g/mL",
+      "label": "指定蔗糖比旋光率及管长下浓度"
+    },
+    "concentration_type_a_g_ml": {
+      "value": 0.0014346462531956655,
+      "unit": "g/mL",
+      "label": "只传播旋光角重复性分量"
+    },
+    "maximum_vernier_disagreement_arcmin": {
+      "value": 58.9999999999975,
+      "unit": "arcmin",
+      "label": "双游标旋光角最大不一致"
+    }
+  },
+  "tables": {
+    "table1": {
+      "headers": [
+        "次数",
+        "$\\theta_1$",
+        "$\\theta_2$",
+        "$\\theta_3$",
+        "$\\theta_4$"
+      ],
+      "rows": [
+        [
+          "1",
+          "$128^{\\circ}19^{\\prime}$",
+          "$308^{\\circ}15^{\\prime}$",
+          "$120^{\\circ}30^{\\prime}$",
+          "$300^{\\circ}25^{\\prime}$"
+        ],
+        [
+          "2",
+          "$133^{\\circ}18^{\\prime}$",
+          "$314^{\\circ}15^{\\prime}$",
+          "$125^{\\circ}35^{\\prime}$",
+          "$305^{\\circ}33^{\\prime}$"
+        ],
+        [
+          "3",
+          "$134^{\\circ}30^{\\prime}$",
+          "$314^{\\circ}29^{\\prime}$",
+          "$126^{\\circ}51^{\\prime}$",
+          "$306^{\\circ}41^{\\prime}$"
+        ],
+        [
+          "4",
+          "$130^{\\circ}30^{\\prime}$",
+          "$310^{\\circ}24^{\\prime}$",
+          "$122^{\\circ}15^{\\prime}$",
+          "$302^{\\circ}13^{\\prime}$"
+        ],
+        [
+          "5",
+          "$137^{\\circ}55^{\\prime}$",
+          "$317^{\\circ}45^{\\prime}$",
+          "$128^{\\circ}55^{\\prime}$",
+          "$309^{\\circ}08^{\\prime}$"
+        ]
+      ]
+    },
+    "table2": {
+      "headers": [
+        "次数",
+        "左游标角差 / °",
+        "右游标角差 / °",
+        "旋光角绝对值 / °"
+      ],
+      "rows": [
+        [
+          1,
+          7.81666667,
+          7.83333333,
+          7.825
+        ],
+        [
+          2,
+          7.71666667,
+          8.7,
+          8.20833333
+        ],
+        [
+          3,
+          7.65,
+          7.8,
+          7.725
+        ],
+        [
+          4,
+          8.25,
+          8.18333333,
+          8.21666667
+        ],
+        [
+          5,
+          9.0,
+          8.61666667,
+          8.80833333
+        ]
+      ]
+    }
+  },
+  "series": {
+    "rotation-repeat": {
+      "x": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "y": [
+        7.824999999999989,
+        8.208333333333343,
+        7.7250000000000085,
+        8.216666666666669,
+        8.808333333333337
+      ],
+      "x_label": "测量次数",
+      "y_label": "旋光角绝对值 $|\\varphi|$ / °",
+      "label": "双游标平均"
+    }
+  },
+  "notes": [
+    "液柱长度2.00dm由源作者按常用样品管取值，不是独立实测记录。",
+    "温度、溶液身份、比旋光率和管长误差未记录，浓度是给定假设下的反推。",
+    "角差取绝对值，不能由此独立判定旋光方向。"
+  ],
+  "experiment_id": "course-04/optical-rotation",
+  "engine": "python",
+  "input_hashes": {
+    "data/observations-01.csv": "87a8f4134b405beb02ade665d75ba3de4e4f3cd424459c9a3ef2e0cfc8f65b0b",
+    "data/provenance.json": "e467d0942f3c8278548bb656e0246d2ff261b4c06ed021d95b06934f31398911",
+    "experiment.json": "daf74156cced55fe26f53351ab471a211253a71001fdf2985cd0ea643e2a48f3"
+  },
+  "code_hashes": {
+    "src/physicslab/common/__init__.py": "7cc50d4a8325535fb401e04aed51f6a04ad3ca7f40c4b972624547491c83e1a2",
+    "src/physicslab/common/io.py": "5135c2253071c4e3885dec26db357a7777c1a13c7a83559f5152007abb986541",
+    "src/physicslab/common/manuscripts.py": "847e4bade7e617d524e0b484db6e17ee82097687e37b84bb0ac3796dbe06ed10",
+    "src/physicslab/common/plots.py": "37825a8c2a8f5dd8ca7f01968dd343a8dd6cb6139d2ef67275ff745b04e9b907",
+    "src/physicslab/common/tex_boxes.py": "0e2b226fce4c79bba37cc2ba6b6153802a5cb6dbda9dfee95d1a98e5894f9554",
+    "src/physicslab/common/theme.py": "ee8592a54efb71efd91ccdc55b66c7d8bda14a32454dfd75aa34ef606269a01c",
+    "src/physicslab/experiments/optical_rotation.py": "14f0700c57b8c86c233c1b13c9158e73d7ba818cb25636b12dc175214996076a"
+  },
+  "environment": {
+    "python": "3.14.7",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "matplotlib": "3.11.2",
+    "nbclient": "0.11.0",
+    "nbformat": "5.11.1",
+    "plotly": "7.1.0"
+  }
+}

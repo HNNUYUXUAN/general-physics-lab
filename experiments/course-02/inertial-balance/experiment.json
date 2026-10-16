@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "id": "course-02/inertial-balance",
+  "title": "惯性秤的应用",
+  "parameters": {
+    "period_count": 20,
+    "reference_mass_g": 190.5
+  },
+  "models": {
+    "balance": "小振幅简谐，前8组定标，未知圆柱只反推；质量统一kg。"
+  },
+  "source_docx": "originals/course-02/惯性秤的应用/实验报告-惯性秤的应用.docx",
+  "data_version": "1.0.0"
+}

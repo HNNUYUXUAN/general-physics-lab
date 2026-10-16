@@ -1,0 +1,46 @@
+{
+  "experiment_id": "course-03/kelvin-bridge",
+  "title": "直流双臂电桥测低电阻",
+  "data_version": 1,
+  "diameter_mm": 4,
+  "source_raw_Rx": [
+    1.802,
+    1.982,
+    2.16,
+    2.34,
+    2.52
+  ],
+  "source_reported_rho_mean_Ohm_m": 7.3374e-08,
+  "units": {
+    "length_mm": "mm",
+    "S_Ohm": "Ω",
+    "M_Ohm": "Ω",
+    "comparison_Ohm": "Ω"
+  },
+  "specification": {
+    "grade_lowest_range_percent": 0.5,
+    "range_Ohm": [
+      0.001,
+      0.01
+    ],
+    "limit_formula": "C_fraction*(RN/10+X)",
+    "RN_status": "基准值未核定"
+  },
+  "model": {
+    "diameter_scan_mm": [
+      3.9,
+      4,
+      4.1
+    ],
+    "assumptions": [
+      "均匀圆柱导体",
+      "温度保持不变",
+      "比率匹配时导线修正项消失"
+    ]
+  },
+  "limitations": [
+    "直径只给4.00mm汇总，未提供3–5次读数、零点修正或限差。",
+    "电桥基准值、参考温度、重复测量未完整记录。",
+    "原Rx行单位数量级错误，统一按S/M与比较臂重算。"
+  ]
+}

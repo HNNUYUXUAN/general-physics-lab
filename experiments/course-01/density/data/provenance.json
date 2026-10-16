@@ -1,0 +1,63 @@
+{
+  "primary_source": {
+    "path": "originals/course-01/物质密度的测量/物质密度测量实验报告.docx",
+    "sha256": "03d1ec56c6f5c9b3feaa38b2f42d49c5e4eecdccb7ef9f678d6023f1fbb8d980"
+  },
+  "converted_source": {
+    "path": "processed/courses-01-03-04/普通物理实验1/物质密度的测量/物质密度测量实验报告_docx/正文.md",
+    "sha256": "936d915b781230e942c6b509dcaf3e3404859003026fa385108915ff6dfd8201"
+  },
+  "mappings": [
+    {
+      "csv": "solid.csv",
+      "source_table": 1,
+      "source_rows": [
+        2,
+        3,
+        4
+      ],
+      "columns": {
+        "trial": 1,
+        "air_mass_g": 2,
+        "submerged_mass_g": 3
+      }
+    },
+    {
+      "csv": "liquid.csv",
+      "source_table": 2,
+      "source_rows": [
+        2,
+        3,
+        4
+      ],
+      "columns": {
+        "trial": 1,
+        "empty_mass_g": 2,
+        "water_total_mass_g": 3,
+        "brine_total_mass_g": 4
+      }
+    }
+  ],
+  "transformations": [
+    "保留各组三次称量；源表平均值由程序重新计算，不作为第四次观测。",
+    "液体空瓶质量记为 m_0，避免与固体水中视质量符号混淆。",
+    "辅助 XLSX 与 DOCX 的两张数据表逐项相同，仅用于核对。",
+    "使用均值的样本标准不确定度，未提前修约；密度由质量均值计算。"
+  ],
+  "corrections": [
+    "源盐水近似密度1.0838复算为1.0838493875；正式展示按不确定度修约。",
+    "源盐水忽略 A 类分量且误将共享空瓶质量组成的两个差量视为独立，改为三个原始质量的偏导传播。",
+    "删除未证实的 P=0.683，所有不确定度均为 k=1 标准不确定度。",
+    "拆开转换结果中连写的多条公式，纠正转义美元符号。"
+  ],
+  "issues": [
+    {
+      "status": "limitation",
+      "detail": "仪器误差限0.01 g根据记录位数推断，未找到天平铭牌或检定证书。条件合成不确定度不能视为经核实的完整预算。"
+    },
+    {
+      "status": "limitation",
+      "detail": "水密度不确定度、质量均值间相关性以及空气浮力和吊丝修正无法由现有材料定量评估。"
+    }
+  ]
+}

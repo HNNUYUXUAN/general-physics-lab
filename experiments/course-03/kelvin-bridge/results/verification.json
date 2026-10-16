@@ -1,0 +1,467 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "metric": "cross_section",
+      "python": 1.2566370614359172e-05,
+      "wolfram": 1.2566370614359172e-05,
+      "unit": "m²",
+      "passed": true
+    },
+    {
+      "metric": "rho_mean",
+      "python": 7.336402471087488e-08,
+      "wolfram": 7.336402471087489e-08,
+      "unit": "Ω·m",
+      "passed": true
+    },
+    {
+      "metric": "rho_sd_descriptive",
+      "python": 2.3105018129045877e-10,
+      "wolfram": 2.3105018129045267e-10,
+      "unit": "Ω·m",
+      "passed": true
+    },
+    {
+      "metric": "rho_from_slope",
+      "python": 7.514689627386785e-08,
+      "wolfram": 7.514689627386785e-08,
+      "unit": "Ω·m",
+      "passed": true
+    },
+    {
+      "metric": "resistance_slope",
+      "python": 0.00598,
+      "wolfram": 0.00598,
+      "unit": "Ω/m",
+      "passed": true
+    },
+    {
+      "metric": "resistance_intercept",
+      "python": -5.179999999999985e-05,
+      "wolfram": -5.179999999999985e-05,
+      "unit": "Ω",
+      "passed": true
+    },
+    {
+      "metric": "model_matched_contact_shift",
+      "python": 0,
+      "wolfram": 0.0,
+      "unit": "Ω",
+      "passed": true
+    },
+    {
+      "metric": "R1",
+      "python": 0.001802,
+      "wolfram": 0.001802,
+      "unit": "Ω",
+      "passed": true
+    },
+    {
+      "metric": "rho1",
+      "python": 7.304709628088782e-08,
+      "wolfram": 7.304709628088783e-08,
+      "unit": "Ω·m",
+      "passed": true
+    },
+    {
+      "metric": "R2",
+      "python": 0.0019820000000000003,
+      "wolfram": 0.0019820000000000003,
+      "unit": "Ω",
+      "passed": true
+    },
+    {
+      "metric": "rho2",
+      "python": 7.325454869899964e-08,
+      "wolfram": 7.325454869899965e-08,
+      "unit": "Ω·m",
+      "passed": true
+    },
+    {
+      "metric": "R3",
+      "python": 0.00216,
+      "wolfram": 0.00216,
+      "unit": "Ω",
+      "passed": true
+    },
+    {
+      "metric": "rho3",
+      "python": 7.336043385679949e-08,
+      "wolfram": 7.336043385679949e-08,
+      "unit": "Ω·m",
+      "passed": true
+    },
+    {
+      "metric": "R4",
+      "python": 0.00234,
+      "wolfram": 0.00234,
+      "unit": "Ω",
+      "passed": true
+    },
+    {
+      "metric": "rho4",
+      "python": 7.351326809400116e-08,
+      "wolfram": 7.351326809400116e-08,
+      "unit": "Ω·m",
+      "passed": true
+    },
+    {
+      "metric": "R5",
+      "python": 0.00252,
+      "wolfram": 0.00252,
+      "unit": "Ω",
+      "passed": true
+    },
+    {
+      "metric": "rho5",
+      "python": 7.364477662368631e-08,
+      "wolfram": 7.364477662368631e-08,
+      "unit": "Ω·m",
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 0,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 0,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 0,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 0,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 0,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 0,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 1,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 1,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 1,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 1,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 1,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 1,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 2,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 2,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 2,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 2,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 2,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 2,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 3,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 3,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 3,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 3,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 3,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 3,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 4,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 4,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 4,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 4,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 4,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 4,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "results",
+      "row": 0,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "results",
+      "row": 0,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "results",
+      "row": 0,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "results",
+      "row": 0,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "results",
+      "row": 1,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "results",
+      "row": 1,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "results",
+      "row": 1,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "results",
+      "row": 1,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "results",
+      "row": 2,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "results",
+      "row": 2,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "results",
+      "row": 2,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "results",
+      "row": 2,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "results",
+      "row": 3,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "results",
+      "row": 3,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "results",
+      "row": 3,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "results",
+      "row": 3,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "results",
+      "row": 4,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "results",
+      "row": 4,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "results",
+      "row": 4,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "results",
+      "row": 4,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "summary",
+      "row": 0,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "summary",
+      "row": 1,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "summary",
+      "row": 2,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "summary",
+      "row": 3,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "summary",
+      "row": 4,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "summary",
+      "row": 5,
+      "column": 1,
+      "passed": true
+    }
+  ],
+  "input_hashes": {
+    "data/balance.csv": "992927805056d588844b92f5db7d20b0f7fdfca9f768fe32d036ee2869a3927c",
+    "data/label-repair-validation.json": "8575a0b816cde66202a6f55085748398b5a2580a88ec4a6ca6cb9c5069cee7c6",
+    "data/provenance.json": "b18b93c0b59c33d37833d1767c1f26aac0a77cbde5e97684742acd339683433d",
+    "data/python-author-validation.json": "0c78cb46903475b57789b531e735361a6e49bb60c3c218fea85fef501395b966",
+    "experiment.json": "fdd8cb9ddcbd6b4d8ef98dfd05fa935b2738782e29421e231f632ce7e4c71bc9"
+  }
+}

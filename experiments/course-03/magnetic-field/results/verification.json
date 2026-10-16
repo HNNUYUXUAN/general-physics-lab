@@ -1,0 +1,1134 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "metric": "single_300_peak_position",
+      "python": -52.0,
+      "wolfram": -52.0,
+      "unit": "mm",
+      "passed": true
+    },
+    {
+      "metric": "single_300_theory_at_minus52",
+      "python": 0.8975673713501592,
+      "wolfram": 0.8975673713501592,
+      "unit": "mT",
+      "passed": true
+    },
+    {
+      "metric": "single_500_peak_position",
+      "python": -52.0,
+      "wolfram": -52.0,
+      "unit": "mm",
+      "passed": true
+    },
+    {
+      "metric": "single_500_theory_at_minus52",
+      "python": 1.495945618916932,
+      "wolfram": 1.495945618916932,
+      "unit": "mT",
+      "passed": true
+    },
+    {
+      "metric": "single_current_ratio_max_deviation",
+      "python": 0.8270676691729095,
+      "wolfram": 0.8270676691729095,
+      "unit": "%",
+      "passed": true
+    },
+    {
+      "metric": "double_300_peak_position",
+      "python": -52.0,
+      "wolfram": -52.0,
+      "unit": "mm",
+      "passed": true
+    },
+    {
+      "metric": "double_300_theory_at_minus52",
+      "python": 1.217191035939319,
+      "wolfram": 1.217191035939319,
+      "unit": "mT",
+      "passed": true
+    },
+    {
+      "metric": "double_500_peak_position",
+      "python": -42.0,
+      "wolfram": -42.0,
+      "unit": "mm",
+      "passed": true
+    },
+    {
+      "metric": "double_500_theory_at_minus52",
+      "python": 2.0286517265655317,
+      "wolfram": 2.0286517265655317,
+      "unit": "mT",
+      "passed": true
+    },
+    {
+      "metric": "double_current_ratio_max_deviation",
+      "python": 1.003460207612461,
+      "wolfram": 1.003460207612461,
+      "unit": "%",
+      "passed": true
+    },
+    {
+      "metric": "spacing_0p5_curvature",
+      "python": -1.9930795847750864,
+      "wolfram": -1.9930795847750864,
+      "unit": "1",
+      "passed": true
+    },
+    {
+      "metric": "spacing_1_curvature",
+      "python": 0.0,
+      "wolfram": 0.0,
+      "unit": "1",
+      "passed": true
+    },
+    {
+      "metric": "spacing_1p5_curvature",
+      "python": 1.536,
+      "wolfram": 1.536,
+      "unit": "1",
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 0,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 0,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 0,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 0,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 0,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 0,
+      "column": 6,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 0,
+      "column": 7,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 0,
+      "column": 8,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 1,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 1,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 1,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 1,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 1,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 1,
+      "column": 6,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 1,
+      "column": 7,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 1,
+      "column": 8,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 2,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 2,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 2,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 2,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 2,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 2,
+      "column": 6,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 2,
+      "column": 7,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 2,
+      "column": 8,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 3,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 3,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 3,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 3,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 3,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 3,
+      "column": 6,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 3,
+      "column": 7,
+      "passed": true
+    },
+    {
+      "table": "observations",
+      "row": 3,
+      "column": 8,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 0,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 0,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 0,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 0,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 0,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 1,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 1,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 1,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 1,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 1,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 2,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 2,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 2,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 2,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 2,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 3,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 3,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 3,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 3,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 3,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 4,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 4,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 4,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 4,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 4,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 5,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 5,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 5,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 5,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 5,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 6,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 6,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 6,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 6,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 6,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 7,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 7,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 7,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 7,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 7,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 8,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 8,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 8,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 8,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 8,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 9,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 9,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 9,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 9,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 9,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 10,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 10,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 10,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 10,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 10,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 11,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 11,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 11,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 11,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 11,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 12,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 12,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 12,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 12,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 12,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 13,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 13,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 13,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 13,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 13,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 14,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 14,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 14,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 14,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 14,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 15,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 15,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 15,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 15,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 15,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 16,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 16,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 16,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 16,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 16,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 17,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 17,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 17,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 17,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 17,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 18,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 18,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 18,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 18,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 18,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 19,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 19,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 19,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 19,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 19,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 20,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 20,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 20,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 20,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 20,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 21,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 21,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 21,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 21,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 21,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 22,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 22,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 22,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 22,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 22,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 23,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 23,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 23,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 23,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 23,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 24,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 24,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 24,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 24,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 24,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 25,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 25,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 25,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 25,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 25,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 26,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 26,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 26,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 26,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 26,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 27,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 27,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 27,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 27,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 27,
+      "column": 5,
+      "passed": true
+    }
+  ],
+  "input_hashes": {
+    "data/provenance.json": "b55037a74fe9534f486f9f0fb1e399483c49adff51efdfdb98fc8be8ec1b7ad0",
+    "data/python-author-validation.json": "c1249d6bce768e9d17010cf36c9adfc708cfccd8335be6d2b781c29cc7bf4940",
+    "data/readings.csv": "a6af61cb6cea8d3b7577e06da0c3df1eaceaab8dbbae46d704dd15e707b72ee9",
+    "experiment.json": "dd6efb2ed96b9b6f54679af442bff312946178abe8b5c37fa4f068de5fa1b25d"
+  }
+}

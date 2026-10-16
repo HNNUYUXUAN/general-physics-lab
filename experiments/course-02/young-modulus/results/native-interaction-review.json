@@ -1,0 +1,59 @@
+{
+  "experiment": "course-02/young-modulus",
+  "paclet": "YoungModulusLab",
+  "status": "passed",
+  "source_hashes": {
+    "analysis.wl": "93abfe7eea4518ac3226f633e55bcf190bb4d80ee50731cbb2cfa6c61c8cbf65",
+    "authoring.json": "60bd22ae16ccdc1a8c70fec9c028f81c6df5eca9b52dba817a054a4f520e0a0e"
+  },
+  "input_hashes": {
+    "data/author-verification.json": "24e99499f86bdf517534b8e3d8a932a20bdf8976f92f08582735ad24ce459786",
+    "data/diameters.csv": "5e1867cd1d9da89bea7980cbc8d9c51c0f26301d7e55958e058d45c8e8ba1b83",
+    "data/loading.csv": "554d9bae0377fca4770372f7123f8619aefc34fc70bb28f6e9c859a1b42901c8",
+    "data/provenance.json": "c29beb07ad28a4ff74825eb5f01d5b10c9f6234d2e54a098edced97f52600b9b",
+    "experiment.json": "567180663443e3d13bffd78b425de04b753ee38ddb52656b4788d73e8337760c"
+  },
+  "models": [
+    {
+      "key": "zero-offset",
+      "capture_messages": [],
+      "status": "passed",
+      "held_body_sha256": "22ffc5cb1dc261e50833619c2ff82ea5e3953cdeb5b8b59b1d9c38c2142fb00c",
+      "default_evaluation": {
+        "status": "evaluated",
+        "output_head": "Graphics",
+        "response_sha256": "b0e59b81a0e3e02465bcdaf4353c4719f19b5aaeb904fddea81d8815c986784f",
+        "graphics_count": 1,
+        "messages": [],
+        "unresolved_heads": []
+      },
+      "default_repeat": {
+        "status": "evaluated",
+        "output_head": "Graphics",
+        "response_sha256": "b0e59b81a0e3e02465bcdaf4353c4719f19b5aaeb904fddea81d8815c986784f",
+        "graphics_count": 1,
+        "messages": [],
+        "unresolved_heads": []
+      },
+      "default_deterministic": true,
+      "controls": [
+        {
+          "name": "YoungModulusLab`Private`zero",
+          "default": 0.062,
+          "changed": 0.0624,
+          "specification_sha256": "5530e743052273c03d0eb9b60a883dacd27434e542fe2fc335d05654c9b3c937",
+          "evaluation": {
+            "status": "evaluated",
+            "output_head": "Graphics",
+            "response_sha256": "bfd740bbd4f6b25ae4872a520800c69f029283c29f30a52cb2bedb5467dc3d91",
+            "graphics_count": 1,
+            "messages": [],
+            "unresolved_heads": []
+          },
+          "response_changed": true,
+          "status": "passed"
+        }
+      ]
+    }
+  ]
+}

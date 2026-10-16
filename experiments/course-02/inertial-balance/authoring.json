@@ -1,0 +1,61 @@
+{
+  "status": "authored-python-validated",
+  "title": "惯性秤的应用",
+  "course": "course-02",
+  "slug": "inertial-balance",
+  "module": "inertial_balance",
+  "paclet": "InertialBalanceLab",
+  "source_docx": "originals/course-02/惯性秤的应用/实验报告-惯性秤的应用.docx",
+  "source_converted": "processed/course-02/惯性秤的应用/实验报告-惯性秤的应用/正文.md",
+  "sections": [
+    "实验名称",
+    "实验目的",
+    "实验原理",
+    "主要仪器设备",
+    "实验步骤",
+    "原始数据记录",
+    "数据处理",
+    "实验结果与讨论"
+  ],
+  "comparison": [
+    "slope_s2_kg",
+    "slope_residual_se_s2_kg",
+    "intercept_s2",
+    "difference_slope_s2_kg",
+    "calibration_r_squared",
+    "unknown_mass_g",
+    "unknown_calibration_component_g",
+    "relative_nominal_difference_percent",
+    "effective_stiffness_n_m",
+    "stiffness_residual_component_n_m",
+    "empty_effective_mass_g",
+    "empty_mass_covariance_component_g"
+  ],
+  "expansions": [
+    {
+      "section": "数据处理",
+      "title": "逐组计算与结果核验",
+      "prose": "读取观测并逐组计算，再形成最终指标；修约只作用于显示。",
+      "python": "metrics_display(result)",
+      "wolfram": "metricView[r]"
+    }
+  ],
+  "limitations": [
+    "圆柱标称质量不是校准真值。",
+    "未知周期与标准质量误差缺失；只计算定标参数协方差分量。"
+  ],
+  "python_checks": [
+    "assert abs(result['metrics']['slope_s2_kg']['value']-(1.9558942424209522)) < 1.9558942424209523e-09",
+    "assert abs(result['metrics']['slope_residual_se_s2_kg']['value']-(0.02616223207501861)) < 1e-10",
+    "assert abs(result['metrics']['intercept_s2']['value']-(0.08516104881939288)) < 1e-10",
+    "assert abs(result['metrics']['difference_slope_s2_kg']['value']-(1.96390540153)) < 1.96390540153e-09",
+    "assert abs(result['metrics']['calibration_r_squared']['value']-(0.9989276313040903)) < 9.989276313040903e-10",
+    "assert abs(result['metrics']['unknown_mass_g']['value']-(193.60423869999252)) < 1.9360423869999253e-07",
+    "assert abs(result['metrics']['unknown_calibration_component_g']['value']-(1.3281560604689928)) < 1.328156060468993e-09",
+    "assert abs(result['metrics']['relative_nominal_difference_percent']['value']-(1.629521627292662)) < 1.629521627292662e-09",
+    "assert abs(result['metrics']['effective_stiffness_n_m']['value']-(20.184331416351085)) < 2.0184331416351088e-08",
+    "assert abs(result['metrics']['stiffness_residual_component_n_m']['value']-(0.2699875848808876)) < 2.699875848808876e-10",
+    "assert abs(result['metrics']['empty_effective_mass_g']['value']-(43.540722689577976)) < 4.3540722689577976e-08",
+    "assert abs(result['metrics']['empty_mass_covariance_component_g']['value']-(2.223409879845866)) < 2.2234098798458662e-09"
+  ]
+}

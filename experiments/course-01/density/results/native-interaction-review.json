@@ -1,0 +1,59 @@
+{
+  "experiment": "course-01/density",
+  "paclet": "DensityLab",
+  "status": "passed",
+  "source_hashes": {
+    "analysis.wl": "102c80ab080e6747df154abfc4045789c16c0cfbcdf3e99a8b125d9cc5758dec",
+    "authoring.json": "26b04e625f06bcfa2ecf451f19e63f7d1340df514b032b2cccbe424d3e323256"
+  },
+  "input_hashes": {
+    "data/author-verification.json": "7047e0d899b40b1d7c765dbda2097fcdf723a44c771fbfbf3181a10e2c352abf",
+    "data/liquid.csv": "b33bca425fa6efa5d1ce3cfac58f6846518b12bda9c0eeadc10f2c1621d5f7b3",
+    "data/provenance.json": "453fe533d3b5bf04eb84bf63e3e55a170cb9f4a7469a0f2ceca2f0fede48fa91",
+    "data/solid.csv": "faf5f4161da8862de4826e026b31b427957ec64200b476fbe511687ef94ad3a6",
+    "experiment.json": "ac30dbb08e79b71747183139a4ef1087b8bb886df5fbe8b239ad831386e063b4"
+  },
+  "models": [
+    {
+      "key": "mass-bias",
+      "capture_messages": [],
+      "status": "passed",
+      "held_body_sha256": "3a41d2611bbc80acb54c5c7a383dd5c32be157fed912766f2b141029b91eaa16",
+      "default_evaluation": {
+        "status": "evaluated",
+        "output_head": "Graphics",
+        "response_sha256": "7b5951c89d2baca747606623fc4151fcf90e825c58220bcd99b60be87ee629f2",
+        "graphics_count": 1,
+        "messages": [],
+        "unresolved_heads": []
+      },
+      "default_repeat": {
+        "status": "evaluated",
+        "output_head": "Graphics",
+        "response_sha256": "7b5951c89d2baca747606623fc4151fcf90e825c58220bcd99b60be87ee629f2",
+        "graphics_count": 1,
+        "messages": [],
+        "unresolved_heads": []
+      },
+      "default_deterministic": true,
+      "controls": [
+        {
+          "name": "DensityLab`Private`delta",
+          "default": 0,
+          "changed": 0.001,
+          "specification_sha256": "58daa31fec397bec02e5feda821c6ff8754f934379bfb28912673c5884978c55",
+          "evaluation": {
+            "status": "evaluated",
+            "output_head": "Graphics",
+            "response_sha256": "a65e5d9400091dfc7ea1d98b0ecfeb008838780d451310a935a62b09d5aedf0e",
+            "graphics_count": 1,
+            "messages": [],
+            "unresolved_heads": []
+          },
+          "response_changed": true,
+          "status": "passed"
+        }
+      ]
+    }
+  ]
+}

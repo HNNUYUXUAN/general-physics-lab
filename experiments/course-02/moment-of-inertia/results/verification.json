@@ -1,0 +1,385 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "metric": "beta_mean_1",
+      "python": -0.107675,
+      "wolfram": -0.107675,
+      "unit": "rad/s^2",
+      "passed": true
+    },
+    {
+      "metric": "beta_mean_2",
+      "python": 2.0763,
+      "wolfram": 2.0763,
+      "unit": "rad/s^2",
+      "passed": true
+    },
+    {
+      "metric": "beta_mean_3",
+      "python": -0.08472500000000001,
+      "wolfram": -0.08472500000000001,
+      "unit": "rad/s^2",
+      "passed": true
+    },
+    {
+      "metric": "beta_mean_4",
+      "python": 1.1677,
+      "wolfram": 1.1677,
+      "unit": "rad/s^2",
+      "passed": true
+    },
+    {
+      "metric": "beta_mean_5",
+      "python": -0.0806,
+      "wolfram": -0.0806,
+      "unit": "rad/s^2",
+      "passed": true
+    },
+    {
+      "metric": "beta_mean_6",
+      "python": 1.3783,
+      "wolfram": 1.3783,
+      "unit": "rad/s^2",
+      "passed": true
+    },
+    {
+      "metric": "ring_inertia_from_reported_totals",
+      "python": 0.0042060000000000005,
+      "wolfram": 0.0042060000000000005,
+      "unit": "kg m^2",
+      "passed": true
+    },
+    {
+      "metric": "cylinder_inertia_from_reported_totals",
+      "python": 0.0014050000000000004,
+      "wolfram": 0.0014050000000000004,
+      "unit": "kg m^2",
+      "passed": true
+    },
+    {
+      "metric": "ring_inertia_theory",
+      "python": 0.005542649999999999,
+      "wolfram": 0.005542649999999999,
+      "unit": "kg m^2",
+      "passed": true
+    },
+    {
+      "metric": "cylinder_center_inertia",
+      "python": 1.8675e-05,
+      "wolfram": 1.8675e-05,
+      "unit": "kg m^2",
+      "passed": true
+    },
+    {
+      "metric": "cylinder_offset_inertia_theory",
+      "python": 0.0016786750000000003,
+      "wolfram": 0.0016786750000000003,
+      "unit": "kg m^2",
+      "passed": true
+    },
+    {
+      "metric": "ring_relative_deviation",
+      "python": -24.115720819463586,
+      "wolfram": -24.115720819463586,
+      "unit": "%",
+      "passed": true
+    },
+    {
+      "metric": "cylinder_relative_deviation",
+      "python": -16.303036621144646,
+      "wolfram": -16.303036621144646,
+      "unit": "%",
+      "passed": true
+    },
+    {
+      "metric": "parallel_axis_contribution",
+      "python": 0.0016600000000000005,
+      "wolfram": 0.0016600000000000005,
+      "unit": "kg m^2",
+      "passed": true
+    },
+    {
+      "table": "geometry",
+      "row": 0,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "geometry",
+      "row": 1,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "geometry",
+      "row": 2,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "geometry",
+      "row": 3,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "geometry",
+      "row": 4,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "geometry",
+      "row": 5,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "geometry",
+      "row": 6,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "beta",
+      "row": 0,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "beta",
+      "row": 0,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "beta",
+      "row": 0,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "beta",
+      "row": 0,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "beta",
+      "row": 0,
+      "column": 6,
+      "passed": true
+    },
+    {
+      "table": "beta",
+      "row": 1,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "beta",
+      "row": 1,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "beta",
+      "row": 1,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "beta",
+      "row": 1,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "beta",
+      "row": 1,
+      "column": 6,
+      "passed": true
+    },
+    {
+      "table": "beta",
+      "row": 2,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "beta",
+      "row": 2,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "beta",
+      "row": 2,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "beta",
+      "row": 2,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "beta",
+      "row": 2,
+      "column": 6,
+      "passed": true
+    },
+    {
+      "table": "beta",
+      "row": 3,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "beta",
+      "row": 3,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "beta",
+      "row": 3,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "beta",
+      "row": 3,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "beta",
+      "row": 3,
+      "column": 6,
+      "passed": true
+    },
+    {
+      "table": "beta",
+      "row": 4,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "beta",
+      "row": 4,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "beta",
+      "row": 4,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "beta",
+      "row": 4,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "beta",
+      "row": 4,
+      "column": 6,
+      "passed": true
+    },
+    {
+      "table": "beta",
+      "row": 5,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "beta",
+      "row": 5,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "beta",
+      "row": 5,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "beta",
+      "row": 5,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "beta",
+      "row": 5,
+      "column": 6,
+      "passed": true
+    },
+    {
+      "table": "reported_totals",
+      "row": 0,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "reported_totals",
+      "row": 1,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "reported_totals",
+      "row": 2,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 0,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 0,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 0,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 1,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 1,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "comparison",
+      "row": 1,
+      "column": 3,
+      "passed": true
+    }
+  ],
+  "input_hashes": {
+    "data/author-verification.json": "478c645e186920e23a25d9769f576e5fd274439af300769d4abb2909feb72077",
+    "data/geometry.csv": "cea47a12417539715cff60fa5fabece68ecb2bea5fd9fb2d10b2ce3bac4f1dda",
+    "data/provenance.json": "df6383ad6944f2bcf5b7c20ad8b6d939981a3096921e693120fea32f34d07c76",
+    "experiment.json": "d28e05a04330c09b19b005b1ddba09bb73d79277f63f755c8a628bd09d5ebdcb"
+  }
+}

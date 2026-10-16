@@ -1,0 +1,172 @@
+{
+  "experiment": "course-04/transmission-grating",
+  "status": "passed",
+  "reviewed_at": "2026-10-16T01:09:47.335870+08:00",
+  "build_run": "C:\\Users\\yuxua\\.codex\\visualizations\\2026\\10\\15\\01a13f56-4554-7500-ab99-dad08368b735\\rollout\\project\\.build\\course-04\\transmission-grating\\20261016_010830_091507",
+  "notebook": "C:\\Users\\yuxua\\.codex\\visualizations\\2026\\10\\15\\01a13f56-4554-7500-ab99-dad08368b735\\rollout\\project\\notebook\\paclets\\TransmissionGratingLab\\Notebooks\\TransmissionGratingLab.nb",
+  "notebook_sha256": "7d98673b54d14159b4c519febc80a35b48269f2e15b1be1f01ef49176c74878d",
+  "method": "Actual view_image inspection of every fresh native QA panel without rescaling; long sections split with overlapping crops. Review covers mathematical typesetting, units, Chinese glyphs, centering, clipping and captions. Native controls visually inspected at saved default state; changing-state calculation validation is recorded by root serialized pipeline separately.",
+  "section_coverage": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "inspected_images": [
+    {
+      "path": "C:\\Users\\yuxua\\.codex\\visualizations\\2026\\10\\15\\01a13f56-4554-7500-ab99-dad08368b735\\rollout\\qa\\TransmissionGratingLab\\review-01.png",
+      "sha256": "7268246d144d71320b879b53167c48baadfd554a660af5264a58e97f3999dca5",
+      "source_spans": [
+        {
+          "source": "section-01.png",
+          "top": 0,
+          "bottom": 246
+        },
+        {
+          "source": "section-02.png",
+          "top": 0,
+          "bottom": 215
+        },
+        {
+          "source": "section-03.png",
+          "top": 0,
+          "bottom": 553
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\yuxua\\.codex\\visualizations\\2026\\10\\15\\01a13f56-4554-7500-ab99-dad08368b735\\rollout\\qa\\TransmissionGratingLab\\review-02.png",
+      "sha256": "386c0f1a075fbce4c29862930c5e483ece00f99324178c99c0f3d3de42ed7be2",
+      "source_spans": [
+        {
+          "source": "section-04.png",
+          "top": 0,
+          "bottom": 141
+        },
+        {
+          "source": "section-05.png",
+          "top": 0,
+          "bottom": 324
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\yuxua\\.codex\\visualizations\\2026\\10\\15\\01a13f56-4554-7500-ab99-dad08368b735\\rollout\\qa\\TransmissionGratingLab\\review-03.png",
+      "sha256": "320fc5d6a67b4f4cc0fe2006a1f488df0224d8ee5e68559c851d0a0c437eca40",
+      "source_spans": [
+        {
+          "source": "section-06.png",
+          "top": 0,
+          "bottom": 1150
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\yuxua\\.codex\\visualizations\\2026\\10\\15\\01a13f56-4554-7500-ab99-dad08368b735\\rollout\\qa\\TransmissionGratingLab\\review-04.png",
+      "sha256": "22bef3dabf26bb719410d8c07191ebbc69f8c6de2513aeb98efbe12333552d6c",
+      "source_spans": [
+        {
+          "source": "section-06.png",
+          "top": 1050,
+          "bottom": 1188
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\yuxua\\.codex\\visualizations\\2026\\10\\15\\01a13f56-4554-7500-ab99-dad08368b735\\rollout\\qa\\TransmissionGratingLab\\review-05.png",
+      "sha256": "447f4f6c5bab33d160887764cfb17b6f5b31676909dad314c029c12afe68bf23",
+      "source_spans": [
+        {
+          "source": "section-07.png",
+          "top": 0,
+          "bottom": 1150
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\yuxua\\.codex\\visualizations\\2026\\10\\15\\01a13f56-4554-7500-ab99-dad08368b735\\rollout\\qa\\TransmissionGratingLab\\review-06.png",
+      "sha256": "6fe9364c18efad0aeef8c189338147344ba4ba4d26670502ec25ea710d1e9f7b",
+      "source_spans": [
+        {
+          "source": "section-07.png",
+          "top": 1050,
+          "bottom": 1963
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\yuxua\\.codex\\visualizations\\2026\\10\\15\\01a13f56-4554-7500-ab99-dad08368b735\\rollout\\qa\\TransmissionGratingLab\\review-07.png",
+      "sha256": "95e8d4880e7bc63bf84d7107fb1cbafaceaa38fa7f391cf185c0e12bf870364f",
+      "source_spans": [
+        {
+          "source": "section-08.png",
+          "top": 0,
+          "bottom": 334
+        }
+      ]
+    }
+  ],
+  "source_png_hashes": {
+    "section-01.png": {
+      "sha256": "8174806354344b6ac6370797f1c6ca02b3d08cc542e180bae90ef2a4b90be008",
+      "size": [
+        1200,
+        246
+      ]
+    },
+    "section-02.png": {
+      "sha256": "3a405c2a5802656768d888cfc855cd5a5eaafe8dbda2f7ed99ff167d934115ab",
+      "size": [
+        1200,
+        215
+      ]
+    },
+    "section-03.png": {
+      "sha256": "0f6a7c3f32f303697f485a931b5f78fb349bb862b60502d27d7fb207187f8265",
+      "size": [
+        1200,
+        553
+      ]
+    },
+    "section-04.png": {
+      "sha256": "c0490d3426b83db8a2219e3dbdca571e2c97b81c2c4d2c6c1b020908748f6e0d",
+      "size": [
+        1200,
+        141
+      ]
+    },
+    "section-05.png": {
+      "sha256": "d670eec4dc119d708bb7fd458c0b951f41d9347081c6c5781f1743e229df3bd9",
+      "size": [
+        1200,
+        324
+      ]
+    },
+    "section-06.png": {
+      "sha256": "65ba21db7ee154e45cca34841c78aff0b1f3b239dba52739ac96a641b8f4120a",
+      "size": [
+        1200,
+        1188
+      ]
+    },
+    "section-07.png": {
+      "sha256": "39267870cd6f12a2d15371c62a92c34d8f63077ef86aaf64dd234bd7db251e32",
+      "size": [
+        1200,
+        1963
+      ]
+    },
+    "section-08.png": {
+      "sha256": "5eef0613e8a2fac4193274e10db7b99dcb911053629aee86995c6c43b9d82b4d",
+      "size": [
+        1200,
+        334
+      ]
+    }
+  },
+  "issues": []
+}

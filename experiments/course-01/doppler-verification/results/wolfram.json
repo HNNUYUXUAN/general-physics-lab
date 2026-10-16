@@ -1,0 +1,157 @@
+{
+  "metrics": {
+    "slope": {
+      "value": 117.39692053322312,
+      "unit": "Hz/(m/s)",
+      "label": "频率速度拟合斜率",
+      "uncertainty": 0.20570454931701596
+    },
+    "intercept": {
+      "value": 40000.90797767904,
+      "unit": "Hz",
+      "label": "拟合截距",
+      "uncertainty": 0.19417245551697007
+    },
+    "correlation": {
+      "value": 0.9999953946499942,
+      "unit": "1",
+      "label": "相关系数"
+    },
+    "sound_speed": {
+      "value": 340.7414761674222,
+      "unit": "m/s",
+      "label": "实验声速",
+      "uncertainty": 0.5970520476199235
+    },
+    "theoretical_speed": {
+      "value": 345.1807757542445,
+      "unit": "m/s",
+      "label": "温度模型声速"
+    },
+    "relative_deviation": {
+      "value": 1.286079613536448,
+      "unit": "%",
+      "label": "声速相对差异"
+    },
+    "intercept_offset": {
+      "value": -1.092022320961405,
+      "unit": "Hz",
+      "label": "截距与声源频率差"
+    }
+  },
+  "tables": {
+    "observations": {
+      "headers": [
+        "序号",
+        "$v / (\\mathrm{m\\,s^{-1}})$",
+        "$f / \\mathrm{Hz}$"
+      ],
+      "rows": [
+        [
+          1,
+          0.46,
+          40055
+        ],
+        [
+          2,
+          0.76,
+          40090
+        ],
+        [
+          3,
+          0.93,
+          40110
+        ],
+        [
+          4,
+          1.09,
+          40129
+        ],
+        [
+          5,
+          1.27,
+          40150
+        ]
+      ]
+    },
+    "processed": {
+      "headers": [
+        "序号",
+        "模型预测频率 / Hz",
+        "拟合残差 / Hz",
+        "温度模型预测频率 / Hz"
+      ],
+      "rows": [
+        [
+          1,
+          40054.91056112432,
+          0.08943887567875208,
+          40055.308067228805
+        ],
+        [
+          2,
+          40090.12963728429,
+          -0.12963728429167531,
+          40090.07419803021
+        ],
+        [
+          3,
+          40110.087113774935,
+          -0.08711377493455075,
+          40109.775005484335
+        ],
+        [
+          4,
+          40128.870621060254,
+          0.12937893974594772,
+          40128.31694191175
+        ],
+        [
+          5,
+          40150.002066756235,
+          -0.0020667562348535284,
+          40149.17662039259
+        ]
+      ]
+    }
+  },
+  "series": {
+    "doppler_fit": {
+      "x": [
+        0.46,
+        0.76,
+        0.93,
+        1.09,
+        1.27
+      ],
+      "y": [
+        40055.0,
+        40090.0,
+        40110.0,
+        40129.0,
+        40150.0
+      ],
+      "x_label": "接收器速度 / (m s⁻¹)",
+      "y_label": "接收频率 / Hz",
+      "fit": true
+    }
+  },
+  "notes": [
+    "声源固定，接收器向声源运动为正。",
+    "声速不确定度只传播回归斜率标准误差，未计声源频率、测速和温度仪器误差。"
+  ],
+  "code_hashes": {
+    "Kernel/analysis.wl": "b1ccd39d245f68b712b65b37667d6dd3936d314b5141490547df135f3b750abc"
+  },
+  "input_hashes": {
+    "data/author-verification.json": "6cbdc6d375da8f4b3fbbd97962e4a4ae11d0fa659bab8e1679e8ed9b24400a2a",
+    "data/observations.csv": "6c82fae6f91efaad98b9d96e4ab1e0b649f02c6fb933ff4c6aaa185a4f45255d",
+    "data/provenance.json": "481b8e603044e73f36889df45985cf4a6391d1793f932983d3d60664dd0c2334",
+    "experiment.json": "9787f2afce6c4cbaab2b4fee76a7df3a08a180f41a912e5b0e91713d656c7efa"
+  },
+  "environment": {
+    "wolfram": "15.0.1 for Microsoft Windows (64-bit) (July 2, 2026)"
+  },
+  "engine": "wolfram",
+  "experiment_id": "course-01/doppler-verification"
+}

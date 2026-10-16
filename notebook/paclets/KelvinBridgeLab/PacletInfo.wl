@@ -1,0 +1,1 @@
+PacletObject[<|"Name"->"KelvinBridgeLab","Version"->"0.1.0","WolframVersion"->"14.0+","Description"->"\:76f4\:6d41\:53cc\:81c2\:7535\:6865\:6d4b\:4f4e\:7535\:963b","Creator"->"Physics Lab Contributors","Extensions"->{{"Kernel","Root"->"Kernel","Context"->{"KelvinBridgeLab`"}},{"Resource","Root"->".","Resources"->{"Notebooks","data","assets"}}}|>]

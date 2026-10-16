@@ -1,0 +1,459 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "metric": "air_mass",
+      "python": 44.81999999999999,
+      "wolfram": 44.81999999999999,
+      "unit": "g",
+      "passed": true
+    },
+    {
+      "metric": "submerged_mass",
+      "python": 39.16,
+      "wolfram": 39.16,
+      "unit": "g",
+      "passed": true
+    },
+    {
+      "metric": "empty_mass",
+      "python": 31.63,
+      "wolfram": 31.63,
+      "unit": "g",
+      "passed": true
+    },
+    {
+      "metric": "water_total_mass",
+      "python": 47.629999999999995,
+      "wolfram": 47.629999999999995,
+      "unit": "g",
+      "passed": true
+    },
+    {
+      "metric": "brine_total_mass",
+      "python": 49.01,
+      "wolfram": 49.01,
+      "unit": "g",
+      "passed": true
+    },
+    {
+      "metric": "solid_density",
+      "python": 7.90122752650177,
+      "wolfram": 7.901227526501771,
+      "unit": "g/cm^3",
+      "passed": true
+    },
+    {
+      "metric": "liquid_density",
+      "python": 1.0838493875000001,
+      "wolfram": 1.0838493875000001,
+      "unit": "g/cm^3",
+      "passed": true
+    },
+    {
+      "metric": "solid_uncertainty_a",
+      "python": 0.010702633563648778,
+      "wolfram": 0.010702633563648778,
+      "unit": "g/cm^3",
+      "passed": true
+    },
+    {
+      "metric": "liquid_uncertainty_a",
+      "python": 0.000532501051087294,
+      "wolfram": 0.000532501051087294,
+      "unit": "g/cm^3",
+      "passed": true
+    },
+    {
+      "metric": "solid_uncertainty_conditional",
+      "python": 0.015135809538821574,
+      "wolfram": 0.015135809538821572,
+      "unit": "g/cm^3",
+      "passed": true
+    },
+    {
+      "metric": "liquid_uncertainty_conditional",
+      "python": 0.000753070208425521,
+      "wolfram": 0.000753070208425521,
+      "unit": "g/cm^3",
+      "passed": true
+    },
+    {
+      "metric": "solid_relative_uncertainty",
+      "python": 0.19156276019205942,
+      "wolfram": 0.19156276019205937,
+      "unit": "%",
+      "passed": true
+    },
+    {
+      "metric": "liquid_relative_uncertainty",
+      "python": 0.06948107524077195,
+      "wolfram": 0.06948107524077193,
+      "unit": "%",
+      "passed": true
+    },
+    {
+      "metric": "solid_volume",
+      "python": 5.672536305234566,
+      "wolfram": 5.672536305234565,
+      "unit": "cm^3",
+      "passed": true
+    },
+    {
+      "metric": "bottle_volume",
+      "python": 16.03543831868429,
+      "wolfram": 16.03543831868429,
+      "unit": "cm^3",
+      "passed": true
+    },
+    {
+      "table": "solid_observations",
+      "row": 0,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "solid_observations",
+      "row": 0,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "solid_observations",
+      "row": 0,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "solid_observations",
+      "row": 1,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "solid_observations",
+      "row": 1,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "solid_observations",
+      "row": 1,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "solid_observations",
+      "row": 2,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "solid_observations",
+      "row": 2,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "solid_observations",
+      "row": 2,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "solid_observations",
+      "row": 3,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "solid_observations",
+      "row": 3,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "liquid_observations",
+      "row": 0,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "liquid_observations",
+      "row": 0,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "liquid_observations",
+      "row": 0,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "liquid_observations",
+      "row": 0,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "liquid_observations",
+      "row": 1,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "liquid_observations",
+      "row": 1,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "liquid_observations",
+      "row": 1,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "liquid_observations",
+      "row": 1,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "liquid_observations",
+      "row": 2,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "liquid_observations",
+      "row": 2,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "liquid_observations",
+      "row": 2,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "liquid_observations",
+      "row": 2,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "liquid_observations",
+      "row": 3,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "liquid_observations",
+      "row": 3,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "liquid_observations",
+      "row": 3,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "mass_uncertainty",
+      "row": 0,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "mass_uncertainty",
+      "row": 0,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "mass_uncertainty",
+      "row": 0,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "mass_uncertainty",
+      "row": 1,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "mass_uncertainty",
+      "row": 1,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "mass_uncertainty",
+      "row": 1,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "mass_uncertainty",
+      "row": 2,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "mass_uncertainty",
+      "row": 2,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "mass_uncertainty",
+      "row": 2,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "mass_uncertainty",
+      "row": 3,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "mass_uncertainty",
+      "row": 3,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "mass_uncertainty",
+      "row": 3,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "mass_uncertainty",
+      "row": 4,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "mass_uncertainty",
+      "row": 4,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "mass_uncertainty",
+      "row": 4,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "density_results",
+      "row": 0,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "density_results",
+      "row": 0,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "density_results",
+      "row": 0,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "density_results",
+      "row": 1,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "density_results",
+      "row": 1,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "density_results",
+      "row": 1,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "sensitivity",
+      "row": 0,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "sensitivity",
+      "row": 0,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "sensitivity",
+      "row": 1,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "sensitivity",
+      "row": 1,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "sensitivity",
+      "row": 2,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "sensitivity",
+      "row": 2,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "sensitivity",
+      "row": 3,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "sensitivity",
+      "row": 3,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "sensitivity",
+      "row": 4,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "sensitivity",
+      "row": 4,
+      "column": 2,
+      "passed": true
+    }
+  ],
+  "input_hashes": {
+    "data/author-verification.json": "7047e0d899b40b1d7c765dbda2097fcdf723a44c771fbfbf3181a10e2c352abf",
+    "data/liquid.csv": "b33bca425fa6efa5d1ce3cfac58f6846518b12bda9c0eeadc10f2c1621d5f7b3",
+    "data/provenance.json": "453fe533d3b5bf04eb84bf63e3e55a170cb9f4a7469a0f2ceca2f0fede48fa91",
+    "data/solid.csv": "faf5f4161da8862de4826e026b31b427957ec64200b476fbe511687ef94ad3a6",
+    "experiment.json": "ac30dbb08e79b71747183139a4ef1087b8bb886df5fbe8b239ad831386e063b4"
+  }
+}

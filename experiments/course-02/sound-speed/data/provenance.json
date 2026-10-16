@@ -1,0 +1,54 @@
+{
+  "primary_source": {
+    "path": "originals/course-02/04-声速的测量/实验报告-声速的测量.docx",
+    "sha256": "25f77f0bb9a5dea524574941c28faa9c529f11e3d0749d8b235d11bea70ba717"
+  },
+  "converted_source": {
+    "path": "processed/course-02/04-声速的测量/实验报告-声速的测量/正文.md",
+    "sha256": "8e092c0e47830f2caae146679fe708660e7a618c00f2651eeaa91d72b6180c4f"
+  },
+  "image_sources": [
+    {
+      "path": "processed/course-02/04-声速的测量/实验报告-声速的测量/assets/media/image1.png",
+      "sha256": "ccc02a24a4c6e6044955244fc987a886eacbd132e938b7e213a87bdad439bc1a",
+      "inspection": "已用view_image人工逐格核读，数字清晰；均值和样本标准差复算核对"
+    },
+    {
+      "path": "processed/course-02/04-声速的测量/实验报告-声速的测量/assets/media/image2.png",
+      "sha256": "268821d1a193b2fcd70ddb6570178cc1c018e0306ea575095bec6ce38ddfae2e",
+      "inspection": "已用view_image人工逐格核读，数字清晰；均值和样本标准差复算核对"
+    },
+    {
+      "path": "processed/course-02/04-声速的测量/实验报告-声速的测量/assets/media/image3.png",
+      "sha256": "9702dbb96b19badaec6c1b296d4528813df7e75d7f2d2187a5010155dd064567",
+      "inspection": "已用view_image人工逐格核读，数字清晰；均值和样本标准差复算核对"
+    }
+  ],
+  "mappings": [
+    {
+      "csv": "wavelengths.csv",
+      "source": "DOCX内嵌image1、image2",
+      "source_cells": "横排1–10列，两个波长行；image3确认参考声速347.21"
+    }
+  ],
+  "transformations": [
+    "按清晰原表逐格人工核录20读数，未盲OCR补值。",
+    "源均值和样本标准差作为复算检查，不作新增数据。",
+    "mm波长乘36015Hz再除1000得到m/s。"
+  ],
+  "corrections": [
+    "主报告实验名称误写弦振动的研究，按目的、仪器和数据统一更正为声速的测量。",
+    "理论声速段数值空白不补猜，比较值直接采用DOCX结果表明确347.21。",
+    "gamma按未修约v计算，且不假定两种方法的平均能消除共同系统偏差。"
+  ],
+  "issues": [
+    {
+      "status": "limitation",
+      "detail": "源只给换算后的波长，没有原始位置；无法重新核对逐差及波节计数。"
+    },
+    {
+      "status": "limitation",
+      "detail": "T、摩尔质量和环境因素不确定度未给出，声速/gamma预算为条件估计。"
+    }
+  ]
+}

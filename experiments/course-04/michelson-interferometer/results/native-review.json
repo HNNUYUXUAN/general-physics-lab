@@ -1,0 +1,155 @@
+{
+  "experiment": "course-04/michelson-interferometer",
+  "status": "passed",
+  "reviewed_at": "2026-10-16T01:11:23.026381+08:00",
+  "build_run": "C:\\Users\\yuxua\\.codex\\visualizations\\2026\\10\\15\\01a13f56-4554-7500-ab99-dad08368b735\\rollout\\project\\.build\\course-04\\michelson-interferometer\\20261016_010947_335152",
+  "notebook": "C:\\Users\\yuxua\\.codex\\visualizations\\2026\\10\\15\\01a13f56-4554-7500-ab99-dad08368b735\\rollout\\project\\notebook\\paclets\\MichelsonInterferometerLab\\Notebooks\\MichelsonInterferometerLab.nb",
+  "notebook_sha256": "5d4b3a02c954af64b86711f1d9a3002c0de94dabdcabab2655584e9b93d73f1c",
+  "method": "Actual view_image inspection of every fresh native QA panel without rescaling; long sections split with overlapping crops. Review covers mathematical typesetting, units, Chinese glyphs, centering, clipping and captions. Native controls visually inspected at saved default state; changing-state calculation validation is recorded by root serialized pipeline separately.",
+  "section_coverage": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "inspected_images": [
+    {
+      "path": "C:\\Users\\yuxua\\.codex\\visualizations\\2026\\10\\15\\01a13f56-4554-7500-ab99-dad08368b735\\rollout\\qa\\MichelsonInterferometerLab\\review-01.png",
+      "sha256": "9da9c36680318d0ded1e12c02d1a195167dc43d147888e5ff325774be8a13502",
+      "source_spans": [
+        {
+          "source": "section-01.png",
+          "top": 0,
+          "bottom": 246
+        },
+        {
+          "source": "section-02.png",
+          "top": 0,
+          "bottom": 215
+        },
+        {
+          "source": "section-03.png",
+          "top": 0,
+          "bottom": 478
+        },
+        {
+          "source": "section-04.png",
+          "top": 0,
+          "bottom": 141
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\yuxua\\.codex\\visualizations\\2026\\10\\15\\01a13f56-4554-7500-ab99-dad08368b735\\rollout\\qa\\MichelsonInterferometerLab\\review-02.png",
+      "sha256": "add3b0d586299ba43139c0ae7865e62b690046e541128699fdac0c21283325d3",
+      "source_spans": [
+        {
+          "source": "section-05.png",
+          "top": 0,
+          "bottom": 324
+        },
+        {
+          "source": "section-06.png",
+          "top": 0,
+          "bottom": 398
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\yuxua\\.codex\\visualizations\\2026\\10\\15\\01a13f56-4554-7500-ab99-dad08368b735\\rollout\\qa\\MichelsonInterferometerLab\\review-03.png",
+      "sha256": "621fcd557f64f33db849b2ae0b66f7f0bc4bf662100d65abf30c02fd7702628e",
+      "source_spans": [
+        {
+          "source": "section-07.png",
+          "top": 0,
+          "bottom": 1150
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\yuxua\\.codex\\visualizations\\2026\\10\\15\\01a13f56-4554-7500-ab99-dad08368b735\\rollout\\qa\\MichelsonInterferometerLab\\review-04.png",
+      "sha256": "04c60a3130988b0366125ca0c58a44da4a0ab45537aa04976c790a23e0f56cff",
+      "source_spans": [
+        {
+          "source": "section-07.png",
+          "top": 1050,
+          "bottom": 1563
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\yuxua\\.codex\\visualizations\\2026\\10\\15\\01a13f56-4554-7500-ab99-dad08368b735\\rollout\\qa\\MichelsonInterferometerLab\\review-05.png",
+      "sha256": "7defb99e4cd82fa5ffb9626d0457bedc51c54813aeb6e5dee03251906cbbd72b",
+      "source_spans": [
+        {
+          "source": "section-08.png",
+          "top": 0,
+          "bottom": 255
+        }
+      ]
+    }
+  ],
+  "source_png_hashes": {
+    "section-01.png": {
+      "sha256": "bf34e3ce9624fc03e5776b3415bb1d69f32b5db39eb3a07fd3105cc47030547d",
+      "size": [
+        1200,
+        246
+      ]
+    },
+    "section-02.png": {
+      "sha256": "515ecfc9f9ef9a2230bb485786df5fdbf72ffa328fdb9e0cd15bf6daebfca910",
+      "size": [
+        1200,
+        215
+      ]
+    },
+    "section-03.png": {
+      "sha256": "dbfb8c39569ab3e847609331d33025e8bef26001ba2a1bbba4c859eb37b94fc1",
+      "size": [
+        1200,
+        478
+      ]
+    },
+    "section-04.png": {
+      "sha256": "ced8b122e761d2fa83dd02bf7de7c98a27f5bfd9dec5365756a114b4c2987634",
+      "size": [
+        1200,
+        141
+      ]
+    },
+    "section-05.png": {
+      "sha256": "39f82ca4d59d878e3697c5d7e60a2bea8f470bcf2f6635723c48aaf3b913e89b",
+      "size": [
+        1200,
+        324
+      ]
+    },
+    "section-06.png": {
+      "sha256": "8f826abf94a1e7b511ce28d08139d602fb0c5e82f3c28c2b6725bb70bfd37d3d",
+      "size": [
+        1200,
+        398
+      ]
+    },
+    "section-07.png": {
+      "sha256": "465351dd322aef203c016040939004a272daeec6fe00b1154061e72849bd9178",
+      "size": [
+        1200,
+        1563
+      ]
+    },
+    "section-08.png": {
+      "sha256": "e7850d585e8ed63c302b22b1fe23d1c19fc0dea7ca11af30857188bcba6a56bb",
+      "size": [
+        1200,
+        255
+      ]
+    }
+  },
+  "issues": []
+}

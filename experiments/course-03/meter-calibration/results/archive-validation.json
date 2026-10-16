@@ -1,0 +1,13 @@
+{
+  "id": "course-03/meter-calibration",
+  "status": "passed",
+  "paclet_sha256": "2073092db4dbb2978e3fb46a5e625f86530232faaebb50abf12c048dc57a2d2e",
+  "canonical_inputs_checked": [
+    "data/current.csv",
+    "data/provenance.json",
+    "data/python-author-validation.json",
+    "data/voltage.csv",
+    "experiment.json"
+  ],
+  "kernel_and_notebook_match_source": true
+}

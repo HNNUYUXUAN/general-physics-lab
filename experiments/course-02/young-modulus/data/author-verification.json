@@ -1,0 +1,73 @@
+{
+  "status": "python-executed-awaiting-wolfram",
+  "checks": [
+    "six diameters/ten loads",
+    "0.520mm corrected mean",
+    "21.14mm difference",
+    "zero-offset interaction default/changed"
+  ],
+  "metrics": {
+    "mean_apparent_diameter": {
+      "value": 0.582,
+      "unit": "mm",
+      "label": "直径视值均值"
+    },
+    "mean_corrected_diameter": {
+      "value": 0.52,
+      "unit": "mm",
+      "label": "零差修正直径均值"
+    },
+    "diameter_uncertainty_a": {
+      "value": 0.005066228051190209,
+      "unit": "mm",
+      "label": "直径均值A类不确定度"
+    },
+    "mean_extension_difference": {
+      "value": 21.14,
+      "unit": "mm",
+      "label": "五组逐差平均"
+    },
+    "fit_slope": {
+      "value": 4.219393939393939,
+      "unit": "mm/kg",
+      "label": "标尺质量拟合斜率"
+    },
+    "fit_intercept": {
+      "value": 32.083333333333336,
+      "unit": "mm",
+      "label": "标尺拟合截距"
+    },
+    "correlation": {
+      "value": 0.9999394209439023,
+      "unit": "1",
+      "label": "标尺质量相关系数"
+    },
+    "slope_uncertainty": {
+      "value": 0.01642105526495476,
+      "unit": "mm/kg",
+      "label": "回归斜率标准误差"
+    },
+    "young_modulus_difference": {
+      "value": 307555716271.98334,
+      "unit": "Pa",
+      "label": "逐差杨氏模量",
+      "uncertainty": 7938637626.791675
+    },
+    "young_modulus_regression": {
+      "value": 308183020375.84174,
+      "unit": "Pa",
+      "label": "回归杨氏模量",
+      "uncertainty": 6756804961.33268
+    },
+    "conditional_uncertainty_difference": {
+      "value": 7938637626.791675,
+      "unit": "Pa",
+      "label": "逐差条件标准不确定度"
+    },
+    "conditional_uncertainty_regression": {
+      "value": 6756804961.33268,
+      "unit": "Pa",
+      "label": "回归条件标准不确定度"
+    }
+  }
+}

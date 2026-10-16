@@ -1,0 +1,13 @@
+{
+  "id": "course-03/multimeter",
+  "status": "passed",
+  "paclet_sha256": "2d05477cfea0b1c38d3683d07990e33cfd008139bd1b6df8ac1af113c0063d56",
+  "canonical_inputs_checked": [
+    "data/provenance.json",
+    "data/python-author-validation.json",
+    "data/resistance.csv",
+    "data/voltage.csv",
+    "experiment.json"
+  ],
+  "kernel_and_notebook_match_source": true
+}

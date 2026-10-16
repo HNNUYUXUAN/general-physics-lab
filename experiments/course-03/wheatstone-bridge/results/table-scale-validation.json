@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "numeric_cells": 35,
+  "rtol": 1e-07,
+  "atol": 1e-14,
+  "input_hashes": {
+    "data/balance.csv": "d47f01d43ec454057a92bf203bfcd13712d57233f4112a63d855060e4bd73690",
+    "data/provenance.json": "734ff3cf3d4a5b783292b7115e8fd9ea10ff00756db69410961f20bf8708853c",
+    "data/python-author-validation.json": "5d717710b86046bfc98f005619c3bb509bdd5f2d4e0e9c8e14d5700fa2720b7b",
+    "experiment.json": "de7ca9849581bac3a53f3bc7d392834570b523bcaeda63b7719b284a6d2ba7f3"
+  },
+  "differences": []
+}

@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "numeric_cells": 75,
+  "rtol": 1e-07,
+  "atol": 1e-14,
+  "input_hashes": {
+    "data/provenance.json": "21263b6de3b22225d46baa3c93ee6abb439011ffebb66d54c51a7e1e69810af1",
+    "data/python-author-validation.json": "25bbcec10d02455f63d67882056f6a61a1f854dd5f9e3e1ec23509ec9d30482b",
+    "data/resistance.csv": "aa4767e012b528192c69725d70c05a894df0732832987a36a5dba0a27ebf8118",
+    "data/voltage.csv": "b30280a5ce689958cc1cd1421715b42b4528b0524d8ff3803bb869e9ef8742b7",
+    "experiment.json": "4cbda94be6a67cac861df863b50f8ee71f3ea6f6d8658f1fd6e4714eebbd085f"
+  },
+  "differences": []
+}

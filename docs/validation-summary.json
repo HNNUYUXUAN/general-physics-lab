@@ -1,0 +1,1085 @@
+{
+  "status": "passed",
+  "experiment_count": 45,
+  "newly_executed_experiments": 44,
+  "approved_baseline": "course-01/pendulum",
+  "jupyter_code_cells": 141,
+  "cross_language_checks": 4867,
+  "browser_pages": 88,
+  "rendered_formula_occurrences": 4981,
+  "python_controls": 37,
+  "native_controls": 41,
+  "native_interactive_experiments": 31,
+  "native_static_experiments": 13,
+  "automatic_tests": 77,
+  "experiments": [
+    {
+      "id": "course-01/pendulum",
+      "status": "passed",
+      "code_cells": 10,
+      "cross_language_checks": 36,
+      "links_checked": 8
+    },
+    {
+      "id": "course-01/doppler-verification",
+      "status": "passed",
+      "code_cells": 3,
+      "cross_language_checks": 42,
+      "links_checked": 6,
+      "limitations": [
+        "缺少仪器误差限，回归标准误差不是完整测量不确定度。"
+      ]
+    },
+    {
+      "id": "course-01/doppler-application",
+      "status": "passed",
+      "code_cells": 3,
+      "cross_language_checks": 57,
+      "links_checked": 7,
+      "limitations": [
+        "第1组剔除规则未量化，保留全组对照。",
+        "无弹簧质量、实际振幅和完整速度时序；无完整仪器不确定度。"
+      ]
+    },
+    {
+      "id": "course-01/newton-second-law",
+      "status": "passed",
+      "code_cells": 3,
+      "cross_language_checks": 290,
+      "links_checked": 6,
+      "limitations": [
+        "未提供独立称量系统总质量，不能将斜率推算值与实测值比较。",
+        "F1采用直接加速度、其他组采用速度重算，测量模式差异可能影响线性拟合。",
+        "缺挡光片宽度、计时分辨率、测距及砝码误差限，无法完整传播仪器不确定度。"
+      ]
+    },
+    {
+      "id": "course-01/collisions",
+      "status": "passed",
+      "code_cells": 3,
+      "cross_language_checks": 109,
+      "links_checked": 7,
+      "limitations": [
+        "弹性组无碰前速度；条件e不构成独立测定。",
+        "缺轻撞重观测及完整仪器不确定度。"
+      ]
+    },
+    {
+      "id": "course-01/mechanical-equivalent-heat",
+      "status": "passed",
+      "code_cells": 3,
+      "cross_language_checks": 218,
+      "links_checked": 6,
+      "limitations": [
+        "缺实际V/I及热容，不复算源J=4.21。",
+        "缺环境和冷却记录，未作散热修正。",
+        "电学精度与温度不确定度需核实。"
+      ]
+    },
+    {
+      "id": "course-01/density",
+      "status": "passed",
+      "code_cells": 4,
+      "cross_language_checks": 72,
+      "links_checked": 8,
+      "limitations": [
+        "0.01 g仪器误差限待核实，合成不确定度为条件估计。",
+        "无法定量评估水密度、空气浮力、吊丝、温漂及称量间协方差。"
+      ]
+    },
+    {
+      "id": "course-01/vaporization-heat",
+      "status": "passed",
+      "code_cells": 3,
+      "cross_language_checks": 29,
+      "links_checked": 6,
+      "limitations": [
+        "末态称量是否含搅拌器需核实，主L为条件结果。",
+        "无完整标定、仪器误差限、气压和热交换记录。"
+      ]
+    },
+    {
+      "id": "course-02/surface-tension",
+      "status": "passed",
+      "code_cells": 3,
+      "cross_language_checks": 94,
+      "links_checked": 7,
+      "limitations": [
+        "独立量化模型仅为条件预算，系统误差未完整量化。",
+        "源模板个人字段和日期未填写。"
+      ]
+    },
+    {
+      "id": "course-02/young-modulus",
+      "status": "passed",
+      "code_cells": 3,
+      "cross_language_checks": 80,
+      "links_checked": 7,
+      "limitations": [
+        "源标准不确定度作为条件输入，仪器误差限和相关性待核实。",
+        "模板身份与日期未填写。"
+      ]
+    },
+    {
+      "id": "course-02/string-vibration",
+      "status": "passed",
+      "code_cells": 3,
+      "cross_language_checks": 111,
+      "links_checked": 7,
+      "limitations": [
+        "张力第7点原始与派生波长冲突待回查。",
+        "无完整仪器预算、振幅和线密度测量。"
+      ]
+    },
+    {
+      "id": "course-02/sound-speed",
+      "status": "passed",
+      "code_cells": 3,
+      "cross_language_checks": 65,
+      "links_checked": 7,
+      "limitations": [
+        "无原始位置序列，不能重算定位逐差。",
+        "gamma预算不含温度和空气组成。"
+      ]
+    },
+    {
+      "id": "course-02/moment-of-inertia",
+      "status": "passed",
+      "code_cells": 3,
+      "cross_language_checks": 60,
+      "links_checked": 6,
+      "limitations": [
+        "原始记录误插热学表，k-t和悬挂质量缺失，动力学J不可独立重算。",
+        "只有单偏轴位置，不能定量验证平行轴幂律。",
+        "无完整仪器不确定度。"
+      ]
+    },
+    {
+      "id": "course-02/thermal-expansion",
+      "status": "passed",
+      "code_cells": 2,
+      "cross_language_checks": 81,
+      "links_checked": 6,
+      "limitations": [
+        "八组读数与讲义B示例相同，不认定独立新增观测。",
+        "有效长度、温度、千分表系统分量缺失；仅计算拟合残差传播分量。"
+      ]
+    },
+    {
+      "id": "course-02/thermal-conductivity",
+      "status": "passed",
+      "code_cells": 2,
+      "cross_language_checks": 122,
+      "links_checked": 8,
+      "limitations": [
+        "只使用主DOCX13..28min序列，其他照片时间或单位冲突单独存档。",
+        "电阻110Ω及其他近似参数未独立确认；残差标准误不是完整不确定度。"
+      ]
+    },
+    {
+      "id": "course-02/liquid-viscosity",
+      "status": "passed",
+      "code_cells": 2,
+      "cross_language_checks": 42,
+      "links_checked": 7,
+      "limitations": [
+        "另两组照片计时未拼接；计时定义需代表累计下落耗时。",
+        "只传播直径与时间给定分量，温度密度管径长度系统分量缺失。"
+      ]
+    },
+    {
+      "id": "course-02/pohl-resonance",
+      "status": "passed",
+      "code_cells": 3,
+      "cross_language_checks": 130,
+      "links_checked": 10,
+      "limitations": [
+        "部分指定T0超出自由表幅度范围，作为所列参数使用，未确认原内插算法。",
+        "峰位与理论定参数弱阻尼峰有差别。",
+        "仪器与单次相位原始数据不完整。"
+      ]
+    },
+    {
+      "id": "course-02/inertial-balance",
+      "status": "passed",
+      "code_cells": 2,
+      "cross_language_checks": 46,
+      "links_checked": 6,
+      "limitations": [
+        "圆柱标称质量不是校准真值。",
+        "未知周期与标准质量误差缺失；只计算定标参数协方差分量。"
+      ]
+    },
+    {
+      "id": "course-03/multimeter",
+      "status": "passed",
+      "code_cells": 3,
+      "cross_language_checks": 111,
+      "links_checked": 7,
+      "limitations": [
+        "缺少本台仪表精度与校准依据、重复测量。",
+        "标称值不作为可溯源准确真值；没有电流实测记录。"
+      ]
+    },
+    {
+      "id": "course-03/current-voltage-divider",
+      "status": "passed",
+      "code_cells": 3,
+      "cross_language_checks": 118,
+      "links_checked": 11,
+      "limitations": [
+        "源报告未记录电源、电阻绝对值和I/U单位，分析限定同标度形状。",
+        "无仪器限差及重复测量。"
+      ]
+    },
+    {
+      "id": "course-03/electrostatic-field",
+      "status": "passed",
+      "code_cells": 3,
+      "cross_language_checks": 116,
+      "links_checked": 10,
+      "limitations": [
+        "只有报告汇总半径，逐方向点及六次尺寸读数未提供。",
+        "原表对数及直径具有处理值身份，不当独立观测。",
+        "没有仪器限差和重复数据，不能评估完整不确定度。"
+      ]
+    },
+    {
+      "id": "course-03/meter-calibration",
+      "status": "passed",
+      "code_cells": 3,
+      "cross_language_checks": 212,
+      "links_checked": 8,
+      "limitations": [
+        "缺少表头内阻独立实测与标准表不确定度。",
+        "电压1.25V行与参考均值1.3305V存在疑点，保留不擅改。",
+        "欧姆表前四个表头不可辨识、格数非单调，不能标定未知电阻。"
+      ]
+    },
+    {
+      "id": "course-03/hall-effect",
+      "status": "passed",
+      "code_cells": 3,
+      "cross_language_checks": 471,
+      "links_checked": 9,
+      "limitations": [
+        "三组数据同设置投影存在严重不一致，不能联合验证电流比例系数。",
+        "缺少灵敏度、独立磁场、厚度和仪器误差。",
+        "步骤中的1000mA/10mA为计划，实际表头500mA/3mA为记录条件。"
+      ]
+    },
+    {
+      "id": "course-03/resistor-iv",
+      "status": "passed",
+      "code_cells": 4,
+      "cross_language_checks": 154,
+      "links_checked": 12,
+      "limitations": [
+        "未提供仪表内阻、精度等级和重复测量。",
+        "二极管最高电流超过表注量程；未测反向特性。"
+      ]
+    },
+    {
+      "id": "course-03/magnetic-field",
+      "status": "passed",
+      "code_cells": 3,
+      "cross_language_checks": 185,
+      "links_checked": 10,
+      "limitations": [
+        "原B表未注明读数单位，未将其擅定为mT。",
+        "双线圈表坐标形状与同轴中点约定不符。",
+        "源理论列不与重新计算理论混同；缺少感应探头频率与灵敏度。"
+      ]
+    },
+    {
+      "id": "course-03/oscilloscope",
+      "status": "passed",
+      "code_cells": 4,
+      "cross_language_checks": 80,
+      "links_checked": 13,
+      "limitations": [
+        "读格与仪器精度、探头倍率未完整记录，不能计算完整不确定度。",
+        "毫伏表对非正弦信号的响应模式未说明。",
+        "李萨如截图相位未量化，模型不冒充截图重现。"
+      ]
+    },
+    {
+      "id": "course-03/wheatstone-bridge",
+      "status": "passed",
+      "code_cells": 3,
+      "cross_language_checks": 50,
+      "links_checked": 6,
+      "limitations": [
+        "3Ω低于说明书单桥有效范围下限。",
+        "各档RN及环境参考条件未记录，不确认源限差表达适用性。",
+        "标称值不是可溯源校准标准。"
+      ]
+    },
+    {
+      "id": "course-03/kelvin-bridge",
+      "status": "passed",
+      "code_cells": 3,
+      "cross_language_checks": 73,
+      "links_checked": 7,
+      "limitations": [
+        "直径只给4.00mm汇总，未提供3–5次读数、零点修正或限差。",
+        "电桥基准值、参考温度、重复测量未完整记录。",
+        "原Rx行单位数量级错误，统一按S/M与比较臂重算。"
+      ]
+    },
+    {
+      "id": "course-03/rlc-resonance",
+      "status": "passed",
+      "code_cells": 5,
+      "cross_language_checks": 183,
+      "links_checked": 9,
+      "limitations": [
+        "未记录电阻数值、仪器限差、重复测量和逐点源电压。",
+        "电压比 Q 以 U约1 V为条件，与带宽估计不强行合并。"
+      ]
+    },
+    {
+      "id": "course-03/ac-bridge",
+      "status": "passed",
+      "code_cells": 3,
+      "cross_language_checks": 74,
+      "links_checked": 7,
+      "limitations": [
+        "未给标准元件误差、频率限差、重复性。",
+        "三组改变比率臂和增益，散布不单独决定准确度。",
+        "分布电容和接触原因未独立测量，只作为可能来源。"
+      ]
+    },
+    {
+      "id": "course-03/photosensor",
+      "status": "passed",
+      "code_cells": 4,
+      "cross_language_checks": 623,
+      "links_checked": 11,
+      "limitations": [
+        "56条记录多不满足图示负载回路关系，不能认定为已验证器件IV数据。",
+        "没有短路、开路点或照度校准，不求Isc/Voc/效率/最大功率点。",
+        "弱光采样电压0.4–0.5mV，缺仪表限差和重复性。"
+      ]
+    },
+    {
+      "id": "course-04/spectrometer",
+      "status": "passed",
+      "code_cells": 2,
+      "cross_language_checks": 24,
+      "links_checked": 6,
+      "limitations": [
+        "圆周最短角差处理跨零读数。",
+        "误差限1角分按最终角度估计的均匀分布限值采用；未含全部校准系统分量。"
+      ]
+    },
+    {
+      "id": "course-04/prism-apex",
+      "status": "passed",
+      "code_cells": 2,
+      "cross_language_checks": 24,
+      "links_checked": 6,
+      "limitations": [
+        "圆周最短角差处理跨零读数。",
+        "误差限1角分按最终角度估计的均匀分布限值采用；未含全部校准系统分量。"
+      ]
+    },
+    {
+      "id": "course-04/prism-refractive-index",
+      "status": "passed",
+      "code_cells": 2,
+      "cross_language_checks": 26,
+      "links_checked": 6,
+      "limitations": [
+        "圆周最短角差处理跨零读数。",
+        "误差限1角分按最终角度估计的均匀分布限值采用；未含全部校准系统分量。",
+        "顶角及1.47角分不确定度按本实验所列输入采用；未依赖其他成稿运行。"
+      ]
+    },
+    {
+      "id": "course-04/grazing-refraction",
+      "status": "passed",
+      "code_cells": 2,
+      "cross_language_checks": 26,
+      "links_checked": 6,
+      "limitations": [
+        "圆周最短角差处理跨零读数。",
+        "误差限1角分按最终角度估计的均匀分布限值采用；未含全部校准系统分量。",
+        "液体名称、温度和棱镜波长条件未记录。"
+      ]
+    },
+    {
+      "id": "course-04/transmission-grating",
+      "status": "passed",
+      "code_cells": 2,
+      "cross_language_checks": 71,
+      "links_checked": 6,
+      "limitations": [
+        "部分双游标角差严重不一致；保留原始读数并限制准确度结论。",
+        "波长标准和仪器误差未记录，只传播重复性。"
+      ]
+    },
+    {
+      "id": "course-04/optical-magnification",
+      "status": "passed",
+      "code_cells": 2,
+      "cross_language_checks": 84,
+      "links_checked": 6,
+      "limitations": [
+        "仪器、标尺和成像系统分量未记录。",
+        "共享标定的误差不随细丝重复次数再次缩小。"
+      ]
+    },
+    {
+      "id": "course-04/newton-rings",
+      "status": "passed",
+      "code_cells": 6,
+      "cross_language_checks": 114,
+      "links_checked": 7,
+      "limitations": [
+        "仪器误差、标尺校准和波长不确定度未记录。",
+        "隔级差结果相关，不将四组标准差除以根号4作为均值不确定度。",
+        "条纹间隔端点计数未另附记录，按主报告公式及N=20执行。"
+      ]
+    },
+    {
+      "id": "course-04/michelson-interferometer",
+      "status": "passed",
+      "code_cells": 2,
+      "cross_language_checks": 43,
+      "links_checked": 6,
+      "limitations": [
+        "缺位移标尺和条纹计数不确定度。",
+        "632.8nm仅是指定常用参考值。"
+      ]
+    },
+    {
+      "id": "course-04/thin-lens",
+      "status": "passed",
+      "code_cells": 5,
+      "cross_language_checks": 132,
+      "links_checked": 7,
+      "limitations": [
+        "缺仪器与成像位置判定误差，只有重复性A类分量。",
+        "缺标称值，不给准确度。",
+        "三方法均值只作描述，不将其作为独立重复误差缩减。"
+      ]
+    },
+    {
+      "id": "course-04/polarization",
+      "status": "passed",
+      "code_cells": 3,
+      "cross_language_checks": 67,
+      "links_checked": 6,
+      "limitations": [
+        "仪器和玻璃表面分量未记录。",
+        "波片状态只有定性步骤，无定量观测。"
+      ]
+    },
+    {
+      "id": "course-04/optical-rotation",
+      "status": "passed",
+      "code_cells": 2,
+      "cross_language_checks": 25,
+      "links_checked": 6,
+      "limitations": [
+        "管长为源作者假定值，非独立测量。",
+        "温度、溶液身份及标准系列未完整记录；浓度有条件。"
+      ]
+    },
+    {
+      "id": "course-04/single-slit-diffraction",
+      "status": "passed",
+      "code_cells": 3,
+      "cross_language_checks": 59,
+      "links_checked": 8,
+      "limitations": [
+        "暗纹级次共享系统误差，形式标准误不是完整不确定度。",
+        "归一化扫描缺原始电流和暗电流。"
+      ]
+    },
+    {
+      "id": "course-04/abbe-imaging",
+      "status": "passed",
+      "code_cells": 2,
+      "cross_language_checks": 18,
+      "links_checked": 7,
+      "limitations": [
+        "只记录可见度结果，没有明暗光强及频谱复振幅。",
+        "光阑尺寸与实际物体透过率未记录，不重建实际物像。"
+      ]
+    },
+    {
+      "id": "course-04/holography",
+      "status": "passed",
+      "code_cells": 4,
+      "cross_language_checks": 20,
+      "links_checked": 7,
+      "limitations": [
+        "相干长度及干板响应未记录。",
+        "理论可见度不能当作实测值；缺完整仪器分量。"
+      ]
+    }
+  ],
+  "archives": [
+    {
+      "id": "course-01/pendulum",
+      "status": "passed",
+      "paclet_sha256": "1aa7ea56cda41bdc89f91c6464bd6e5080393e6010e24911c6a7d56be7da7679",
+      "canonical_inputs_checked": [
+        "experiment.json",
+        "data/measurements.csv",
+        "data/diameters.csv",
+        "data/provenance.json"
+      ],
+      "kernel_and_notebook_match_source": true
+    },
+    {
+      "id": "course-01/doppler-verification",
+      "status": "passed",
+      "paclet_sha256": "f4d9c6a021f8d46e3c86fa1e538ac51215c3eb38f97f750680c7dde5f95e6901",
+      "canonical_inputs_checked": [
+        "data/author-verification.json",
+        "data/observations.csv",
+        "data/provenance.json",
+        "experiment.json"
+      ],
+      "kernel_and_notebook_match_source": true
+    },
+    {
+      "id": "course-01/doppler-application",
+      "status": "passed",
+      "paclet_sha256": "af0a533daeacbdafec5336764e5e649b02dc623bb2ae7bf6f40d4871b42d4b7f",
+      "canonical_inputs_checked": [
+        "data/author-verification.json",
+        "data/periods.csv",
+        "data/provenance.json",
+        "data/static.csv",
+        "experiment.json"
+      ],
+      "kernel_and_notebook_match_source": true
+    },
+    {
+      "id": "course-01/newton-second-law",
+      "status": "passed",
+      "paclet_sha256": "5a63d212ae677c93d478e1c132c4218212c8f19c2eec2f07a5062bdd9029bbcc",
+      "canonical_inputs_checked": [
+        "data/author-verification.json",
+        "data/observations.csv",
+        "data/provenance.json",
+        "experiment.json"
+      ],
+      "kernel_and_notebook_match_source": true
+    },
+    {
+      "id": "course-01/collisions",
+      "status": "passed",
+      "paclet_sha256": "d16add01d5a9317260425c49166bd7e2dad61f1dfc56d8130bc9e03f67876e82",
+      "canonical_inputs_checked": [
+        "data/author-verification.json",
+        "data/elastic.csv",
+        "data/inelastic.csv",
+        "data/provenance.json",
+        "experiment.json"
+      ],
+      "kernel_and_notebook_match_source": true
+    },
+    {
+      "id": "course-01/mechanical-equivalent-heat",
+      "status": "passed",
+      "paclet_sha256": "5496bd4da7ff4f1823c4aa8a1a29c7adb7bf2e257a9b8c18e6e12a8defc9e26e",
+      "canonical_inputs_checked": [
+        "data/author-verification.json",
+        "data/provenance.json",
+        "data/temperatures.csv",
+        "experiment.json"
+      ],
+      "kernel_and_notebook_match_source": true
+    },
+    {
+      "id": "course-01/density",
+      "status": "passed",
+      "paclet_sha256": "e60520d724e20452844cc73d10bfd81941fa3c943a493eec29c84969bf03acea",
+      "canonical_inputs_checked": [
+        "data/author-verification.json",
+        "data/liquid.csv",
+        "data/provenance.json",
+        "data/solid.csv",
+        "experiment.json"
+      ],
+      "kernel_and_notebook_match_source": true
+    },
+    {
+      "id": "course-01/vaporization-heat",
+      "status": "passed",
+      "paclet_sha256": "fc42145c6bb32e3f4bcc782cfe8f43333d68232eb3d5c9e744a6415e76aa98fa",
+      "canonical_inputs_checked": [
+        "data/author-verification.json",
+        "data/observations.csv",
+        "data/provenance.json",
+        "experiment.json"
+      ],
+      "kernel_and_notebook_match_source": true
+    },
+    {
+      "id": "course-02/surface-tension",
+      "status": "passed",
+      "paclet_sha256": "fdaf93f158affe0dc957d61e2dcfccd4f6865fb0967bbc5ecc6e208cf19c4b1a",
+      "canonical_inputs_checked": [
+        "data/author-verification.json",
+        "data/calibration.csv",
+        "data/diameters.csv",
+        "data/provenance.json",
+        "data/pulls.csv",
+        "experiment.json"
+      ],
+      "kernel_and_notebook_match_source": true
+    },
+    {
+      "id": "course-02/young-modulus",
+      "status": "passed",
+      "paclet_sha256": "8a84dfa0ee6d97cfc21bf320cf61e4183580821bd0282f5c069e7064e5808246",
+      "canonical_inputs_checked": [
+        "data/author-verification.json",
+        "data/diameters.csv",
+        "data/loading.csv",
+        "data/provenance.json",
+        "experiment.json"
+      ],
+      "kernel_and_notebook_match_source": true
+    },
+    {
+      "id": "course-02/string-vibration",
+      "status": "passed",
+      "paclet_sha256": "4122a66b2eed1e43ad0ce9a5cde8774fb96ae80491433dfe6000a34a594bd351",
+      "canonical_inputs_checked": [
+        "data/author-verification.json",
+        "data/frequency.csv",
+        "data/provenance.json",
+        "data/tension.csv",
+        "experiment.json"
+      ],
+      "kernel_and_notebook_match_source": true
+    },
+    {
+      "id": "course-02/sound-speed",
+      "status": "passed",
+      "paclet_sha256": "2e28cb537e9bf9a8fc29506887370b17921b2200ab2d8a7b60c7a6ad09383f53",
+      "canonical_inputs_checked": [
+        "data/author-verification.json",
+        "data/provenance.json",
+        "data/wavelengths.csv",
+        "experiment.json"
+      ],
+      "kernel_and_notebook_match_source": true
+    },
+    {
+      "id": "course-02/moment-of-inertia",
+      "status": "passed",
+      "paclet_sha256": "383fd6b1cdc151f69b14d1c961d6977dd39bc1ccd0c599bca8b729e9246d4174",
+      "canonical_inputs_checked": [
+        "data/author-verification.json",
+        "data/geometry.csv",
+        "data/provenance.json",
+        "experiment.json"
+      ],
+      "kernel_and_notebook_match_source": true
+    },
+    {
+      "id": "course-02/thermal-expansion",
+      "status": "passed",
+      "paclet_sha256": "f5504ac5ce28c42010598bdfcfb2a417d260bb3814da5abf24420e2711ad6b38",
+      "canonical_inputs_checked": [
+        "data/observations-01.csv",
+        "data/observations-02.csv",
+        "data/provenance.json",
+        "experiment.json"
+      ],
+      "kernel_and_notebook_match_source": true
+    },
+    {
+      "id": "course-02/thermal-conductivity",
+      "status": "passed",
+      "paclet_sha256": "a7abf94e496c4db2181a4a95ce81f950f58b4ca02b4fa24832402194cb3d86e2",
+      "canonical_inputs_checked": [
+        "data/observations-01.csv",
+        "data/observations-02.csv",
+        "data/provenance.json",
+        "experiment.json"
+      ],
+      "kernel_and_notebook_match_source": true
+    },
+    {
+      "id": "course-02/liquid-viscosity",
+      "status": "passed",
+      "paclet_sha256": "080786f466c2edfa9d1ff07db2b302ebb6e0a114a6ae13ad0817749dd0e4c1a8",
+      "canonical_inputs_checked": [
+        "data/observations-01.csv",
+        "data/observations-02.csv",
+        "data/observations-03.csv",
+        "data/provenance.json",
+        "experiment.json"
+      ],
+      "kernel_and_notebook_match_source": true
+    },
+    {
+      "id": "course-02/pohl-resonance",
+      "status": "passed",
+      "paclet_sha256": "927032175daaffbfc2fc9c3b7a2311260238c3952e13be9a19995f0972410fea",
+      "canonical_inputs_checked": [
+        "data/observations-01.csv",
+        "data/observations-02.csv",
+        "data/observations-03.csv",
+        "data/provenance.json",
+        "experiment.json"
+      ],
+      "kernel_and_notebook_match_source": true
+    },
+    {
+      "id": "course-02/inertial-balance",
+      "status": "passed",
+      "paclet_sha256": "ee050e7c2c272f6a65bf42c4401b76d7cf6dd8a380d8e2d33ecf74101a521e21",
+      "canonical_inputs_checked": [
+        "data/observations-01.csv",
+        "data/provenance.json",
+        "experiment.json"
+      ],
+      "kernel_and_notebook_match_source": true
+    },
+    {
+      "id": "course-03/multimeter",
+      "status": "passed",
+      "paclet_sha256": "2d05477cfea0b1c38d3683d07990e33cfd008139bd1b6df8ac1af113c0063d56",
+      "canonical_inputs_checked": [
+        "data/provenance.json",
+        "data/python-author-validation.json",
+        "data/resistance.csv",
+        "data/voltage.csv",
+        "experiment.json"
+      ],
+      "kernel_and_notebook_match_source": true
+    },
+    {
+      "id": "course-03/current-voltage-divider",
+      "status": "passed",
+      "paclet_sha256": "cb3f28b75bf66472f08f5c0b685ebd9baecca3246631fd12db2919e108cb51b6",
+      "canonical_inputs_checked": [
+        "data/observations.csv",
+        "data/provenance.json",
+        "data/python-author-validation.json",
+        "experiment.json"
+      ],
+      "kernel_and_notebook_match_source": true
+    },
+    {
+      "id": "course-03/electrostatic-field",
+      "status": "passed",
+      "paclet_sha256": "b18755417ee0bfceb17c88fdd114fc4c1d14e676ab7b3aa27855d0bbfadec168",
+      "canonical_inputs_checked": [
+        "data/provenance.json",
+        "data/python-author-validation.json",
+        "data/reported_radii.csv",
+        "experiment.json"
+      ],
+      "kernel_and_notebook_match_source": true
+    },
+    {
+      "id": "course-03/meter-calibration",
+      "status": "passed",
+      "paclet_sha256": "2073092db4dbb2978e3fb46a5e625f86530232faaebb50abf12c048dc57a2d2e",
+      "canonical_inputs_checked": [
+        "data/current.csv",
+        "data/provenance.json",
+        "data/python-author-validation.json",
+        "data/voltage.csv",
+        "experiment.json"
+      ],
+      "kernel_and_notebook_match_source": true
+    },
+    {
+      "id": "course-03/hall-effect",
+      "status": "passed",
+      "paclet_sha256": "69f0912cbb9e99f70522944c4eef3910b25e3e15ab7bc58e1fde70f1131fe1c7",
+      "canonical_inputs_checked": [
+        "data/magnet_current.csv",
+        "data/position.csv",
+        "data/provenance.json",
+        "data/python-author-validation.json",
+        "data/working_current.csv",
+        "experiment.json"
+      ],
+      "kernel_and_notebook_match_source": true
+    },
+    {
+      "id": "course-03/resistor-iv",
+      "status": "passed",
+      "paclet_sha256": "feeccc0e7c691fa1bc06a0bb4757d895b5d54dfee5bdb11c235cdcc1eae3251c",
+      "canonical_inputs_checked": [
+        "data/diode.csv",
+        "data/provenance.json",
+        "data/python-author-validation.json",
+        "data/resistors.csv",
+        "experiment.json"
+      ],
+      "kernel_and_notebook_match_source": true
+    },
+    {
+      "id": "course-03/magnetic-field",
+      "status": "passed",
+      "paclet_sha256": "982b7e2e8ac58f173da79103ffe01d970dd24494059b345227f1b2a8adfd6890",
+      "canonical_inputs_checked": [
+        "data/provenance.json",
+        "data/python-author-validation.json",
+        "data/readings.csv",
+        "experiment.json"
+      ],
+      "kernel_and_notebook_match_source": true
+    },
+    {
+      "id": "course-03/oscilloscope",
+      "status": "passed",
+      "paclet_sha256": "ea34948176de2f2d17d68f8d11a60da207aabeebcc10b044f7686bddd210a439",
+      "canonical_inputs_checked": [
+        "data/lissajous.csv",
+        "data/provenance.json",
+        "data/python-author-validation.json",
+        "data/waveforms.csv",
+        "experiment.json"
+      ],
+      "kernel_and_notebook_match_source": true
+    },
+    {
+      "id": "course-03/wheatstone-bridge",
+      "status": "passed",
+      "paclet_sha256": "5d3773706a4c7e62dc57bca8a61fbdd5d61566eb68c233765e28f83574800ec1",
+      "canonical_inputs_checked": [
+        "data/balance.csv",
+        "data/provenance.json",
+        "data/python-author-validation.json",
+        "experiment.json"
+      ],
+      "kernel_and_notebook_match_source": true
+    },
+    {
+      "id": "course-03/kelvin-bridge",
+      "status": "passed",
+      "paclet_sha256": "d75f2b16a496bde739fafdeed1387f61f27e9b8a1b6132ddd784881bb75b3162",
+      "canonical_inputs_checked": [
+        "data/balance.csv",
+        "data/label-repair-validation.json",
+        "data/provenance.json",
+        "data/python-author-validation.json",
+        "experiment.json"
+      ],
+      "kernel_and_notebook_match_source": true
+    },
+    {
+      "id": "course-03/rlc-resonance",
+      "status": "passed",
+      "paclet_sha256": "2014e49bdef2bbab94a24203b57ab80e5cbe45406fa46d6d6b1a513ab3ca35b6",
+      "canonical_inputs_checked": [
+        "data/provenance.json",
+        "data/python-author-validation.json",
+        "data/resonance_voltages.csv",
+        "data/response.csv",
+        "experiment.json"
+      ],
+      "kernel_and_notebook_match_source": true
+    },
+    {
+      "id": "course-03/ac-bridge",
+      "status": "passed",
+      "paclet_sha256": "74d86d39c42feffa3951f69b7947b823cd94f920b71742210818cf008775e9b1",
+      "canonical_inputs_checked": [
+        "data/balance.csv",
+        "data/label-repair-validation.json",
+        "data/provenance.json",
+        "data/python-author-validation.json",
+        "experiment.json"
+      ],
+      "kernel_and_notebook_match_source": true
+    },
+    {
+      "id": "course-03/photosensor",
+      "status": "passed",
+      "paclet_sha256": "332c8d3415a3d392871bcd1fec102acbc956501174d6ec41de51d1cd8687aa32",
+      "canonical_inputs_checked": [
+        "data/label-repair-validation.json",
+        "data/measurements.csv",
+        "data/provenance.json",
+        "data/python-author-validation.json",
+        "experiment.json"
+      ],
+      "kernel_and_notebook_match_source": true
+    },
+    {
+      "id": "course-04/spectrometer",
+      "status": "passed",
+      "paclet_sha256": "4394259039840ca6cee82a711ee8450b1657c786effff0f6c35c981b5120fb6d",
+      "canonical_inputs_checked": [
+        "data/observations-01.csv",
+        "data/observations-02.csv",
+        "data/provenance.json",
+        "experiment.json"
+      ],
+      "kernel_and_notebook_match_source": true
+    },
+    {
+      "id": "course-04/prism-apex",
+      "status": "passed",
+      "paclet_sha256": "e5eea8aa0fc711fb2a95b7563189b8eea6defe5d70993c9689fc61991bc63cfc",
+      "canonical_inputs_checked": [
+        "data/observations-01.csv",
+        "data/provenance.json",
+        "experiment.json"
+      ],
+      "kernel_and_notebook_match_source": true
+    },
+    {
+      "id": "course-04/prism-refractive-index",
+      "status": "passed",
+      "paclet_sha256": "382f356abec52212a5d9dfa0a4cabaa26b518904b8b3c60de91a614dda8852d3",
+      "canonical_inputs_checked": [
+        "data/observations-01.csv",
+        "data/provenance.json",
+        "experiment.json"
+      ],
+      "kernel_and_notebook_match_source": true
+    },
+    {
+      "id": "course-04/grazing-refraction",
+      "status": "passed",
+      "paclet_sha256": "90fc54a0e43dfdfa6efe25e16a90a08597d99fccfe4c279fe45347680e40f7d1",
+      "canonical_inputs_checked": [
+        "data/observations-01.csv",
+        "data/provenance.json",
+        "experiment.json"
+      ],
+      "kernel_and_notebook_match_source": true
+    },
+    {
+      "id": "course-04/transmission-grating",
+      "status": "passed",
+      "paclet_sha256": "8600d674cea099eb6d2e8f18d0b13852142705499bd965ee59d5ffe455a778fe",
+      "canonical_inputs_checked": [
+        "data/observations-01.csv",
+        "data/observations-02.csv",
+        "data/observations-03.csv",
+        "data/observations-04.csv",
+        "data/provenance.json",
+        "experiment.json"
+      ],
+      "kernel_and_notebook_match_source": true
+    },
+    {
+      "id": "course-04/optical-magnification",
+      "status": "passed",
+      "paclet_sha256": "afaf5f412762eb034980548144f9e8a02ef235e31f35c12af8f55e29dfe9404a",
+      "canonical_inputs_checked": [
+        "data/observations-01.csv",
+        "data/observations-02.csv",
+        "data/observations-03.csv",
+        "data/observations-04.csv",
+        "data/provenance.json",
+        "experiment.json"
+      ],
+      "kernel_and_notebook_match_source": true
+    },
+    {
+      "id": "course-04/newton-rings",
+      "status": "passed",
+      "paclet_sha256": "f6af6d3516591aed26a1e07e34fe45c5326dac837923c38dc8df69153f8d52c3",
+      "canonical_inputs_checked": [
+        "data/provenance.json",
+        "data/rings.csv",
+        "data/wedge.csv",
+        "experiment.json"
+      ],
+      "kernel_and_notebook_match_source": true
+    },
+    {
+      "id": "course-04/michelson-interferometer",
+      "status": "passed",
+      "paclet_sha256": "74f3d6d3857535b2196cb90d60d706411ed80fb583206cbf0dbcda957715564b",
+      "canonical_inputs_checked": [
+        "data/observations-01.csv",
+        "data/provenance.json",
+        "experiment.json"
+      ],
+      "kernel_and_notebook_match_source": true
+    },
+    {
+      "id": "course-04/thin-lens",
+      "status": "passed",
+      "paclet_sha256": "ad2eddb8e31e8fa2713a6e7217474d09068a6f51e65559bd67425e6f40e82947",
+      "canonical_inputs_checked": [
+        "data/autocollimation.csv",
+        "data/bessel.csv",
+        "data/concave.csv",
+        "data/conjugates.csv",
+        "data/provenance.json",
+        "experiment.json"
+      ],
+      "kernel_and_notebook_match_source": true
+    },
+    {
+      "id": "course-04/polarization",
+      "status": "passed",
+      "paclet_sha256": "d384c01062b8d78c45061c1564339955fc873781386bde75448df46559aab740",
+      "canonical_inputs_checked": [
+        "data/observations-01.csv",
+        "data/observations-02.csv",
+        "data/provenance.json",
+        "experiment.json"
+      ],
+      "kernel_and_notebook_match_source": true
+    },
+    {
+      "id": "course-04/optical-rotation",
+      "status": "passed",
+      "paclet_sha256": "5de583d6b32591a8fb5ce05002c48518395e688027a579d77270c4852aceed69",
+      "canonical_inputs_checked": [
+        "data/observations-01.csv",
+        "data/provenance.json",
+        "experiment.json"
+      ],
+      "kernel_and_notebook_match_source": true
+    },
+    {
+      "id": "course-04/single-slit-diffraction",
+      "status": "passed",
+      "paclet_sha256": "223359ecf428b4fd5d00d029c2ca84d8da20a82acc1c2467ff1d16fa26f6a162",
+      "canonical_inputs_checked": [
+        "data/observations-01.csv",
+        "data/observations-02.csv",
+        "data/provenance.json",
+        "experiment.json"
+      ],
+      "kernel_and_notebook_match_source": true
+    },
+    {
+      "id": "course-04/abbe-imaging",
+      "status": "passed",
+      "paclet_sha256": "3ffed4a79acb219ffecee8547bad4158fd8655576329a5a8f6c7bf1606f19c10",
+      "canonical_inputs_checked": [
+        "data/observations-01.csv",
+        "data/observations-02.csv",
+        "data/provenance.json",
+        "experiment.json"
+      ],
+      "kernel_and_notebook_match_source": true
+    },
+    {
+      "id": "course-04/holography",
+      "status": "passed",
+      "paclet_sha256": "ad3d1ea60918d99d604f8bbf7f3193c134cda832faf42dae996af76179fed5d1",
+      "canonical_inputs_checked": [
+        "data/observations-01.csv",
+        "data/observations-02.csv",
+        "data/provenance.json",
+        "experiment.json"
+      ],
+      "kernel_and_notebook_match_source": true
+    }
+  ]
+}

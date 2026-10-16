@@ -1,0 +1,1 @@
+PacletObject[<|"Name"->"ThermalConductivityLab","Version"->"0.1.0","WolframVersion"->"14.0+","Description"->"\:56fa\:4f53\:5bfc\:70ed\:7cfb\:6570\:7684\:6d4b\:91cf","Creator"->"Physics Lab Contributors","Extensions"->{{"Kernel","Root"->"Kernel","Context"->{"ThermalConductivityLab`"}},{"Resource","Root"->".","Resources"->{"Notebooks","data","assets"}}}|>]

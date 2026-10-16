@@ -1,0 +1,14 @@
+{
+  "id": "course-04/transmission-grating",
+  "status": "passed",
+  "paclet_sha256": "8600d674cea099eb6d2e8f18d0b13852142705499bd965ee59d5ffe455a778fe",
+  "canonical_inputs_checked": [
+    "data/observations-01.csv",
+    "data/observations-02.csv",
+    "data/observations-03.csv",
+    "data/observations-04.csv",
+    "data/provenance.json",
+    "experiment.json"
+  ],
+  "kernel_and_notebook_match_source": true
+}

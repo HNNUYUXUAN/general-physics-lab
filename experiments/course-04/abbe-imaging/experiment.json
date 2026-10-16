@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "id": "course-04/abbe-imaging",
+  "title": "阿贝成像原理和空间滤波",
+  "parameters": {
+    "wavelength_nm": 632.8,
+    "fourier_focal_length_mm": 150.0
+  },
+  "models": {
+    "imaging": "相干成像的复振幅频谱选择；探测强度为逆变换复振幅的模平方。"
+  },
+  "source_docx": "originals/course-04/13_实验十三_阿贝成像原理和空间滤波.docx",
+  "data_version": "1.0.0"
+}

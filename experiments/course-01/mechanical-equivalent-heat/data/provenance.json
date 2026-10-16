@@ -1,0 +1,42 @@
+{
+  "primary_source": {
+    "path": "originals/course-01/热功当量的测量/热功当量的测量实验报告.docx",
+    "sha256": "e320560d6601f4165ca1f5e3efbfd0ce221afb4c6ec63e06484ab7b90193d11f"
+  },
+  "converted_source": {
+    "path": "processed/courses-01-03-04/普通物理实验1/热功当量的测量/热功当量的测量实验报告_docx/正文.md",
+    "sha256": "b4b81f2208e3b9edb931604c8a1a541bbdc377993727703dff1a7199c5c412fb"
+  },
+  "mappings": [
+    {
+      "csv": "temperatures.csv",
+      "source_table": 1,
+      "source_rows": "2–16",
+      "source_cells": "第1–3列为1–15次，第4–6列为16–30次"
+    }
+  ],
+  "transformations": [
+    "两半并列温度表转为30个观测，成稿保留原并列表结构。",
+    "时间min乘60转为s再回归。",
+    "源J=4.21及a=.009605作为已报告结果单独存JSON，不当作原始观测。"
+  ],
+  "corrections": [
+    "重算30点回归系数，不沿用源仪器给出的斜率。",
+    "纠正线性回归自动修正散热的说法；缺环境温度及冷却记录，未进行散热修正。",
+    "源电学0.5级与误差限的写法不一致，20V的0.5%为.10V，2A的0.5%为.010A，不能直接采用.05V/.005A作完整预算。"
+  ],
+  "issues": [
+    {
+      "status": "limitation",
+      "detail": "缺实际电压、电流和水/内筒/加热器热容，无法独立复算热功当量。"
+    },
+    {
+      "status": "limitation",
+      "detail": "缺环境温度、冷却曲线和散热系数，无法定量热损失修正。"
+    },
+    {
+      "status": "limitation",
+      "detail": "温度分辨率不等于完整温度标准不确定度，仪器精度等级需核实。"
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+PacletObject[<|"Name"->"SoundSpeedLab","Version"->"0.1.0","WolframVersion"->"14.0+","Description"->"\:58f0\:901f\:7684\:6d4b\:91cf","Creator"->"Physics Lab Contributors","Extensions"->{{"Kernel","Root"->"Kernel","Context"->{"SoundSpeedLab`"}},{"Resource","Root"->".","Resources"->{"Notebooks","data","assets"}}}|>]

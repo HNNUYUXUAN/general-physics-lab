@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "id": "course-01/newton-second-law",
+  "title": "牛顿第二运动定律的验证",
+  "data_version": "1.0.0",
+  "parameters": {
+    "gate_spacing_m": 0.5,
+    "gravity_m_s2": 9.8
+  },
+  "units": {
+    "source_velocity": "cm/s",
+    "source_acceleration": "cm/s^2",
+    "mass": "g"
+  },
+  "assumptions": [
+    "气垫导轨水平、细线轻且不可伸长",
+    "将滑块和悬挂砝码视为系统，砝码转移保持总质量恒定",
+    "滑轮转动惯量和空气阻力未单独修正",
+    "最小二乘采用等权、拟合m0对a；不确定度仅为残差回归标准误差"
+  ]
+}

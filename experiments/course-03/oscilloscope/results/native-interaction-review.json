@@ -1,0 +1,116 @@
+{
+  "experiment": "course-03/oscilloscope",
+  "paclet": "OscilloscopeLab",
+  "status": "passed",
+  "source_hashes": {
+    "analysis.wl": "c3213a0e1b6dd95ed1d5a6d49385cfb9eb056ca6bf5a3a5209d57501234d9f08",
+    "authoring.json": "644cdfeeb3a4136bc1a35a5c157b47f89bf1413c700d96192ab81e151fe7c1b6"
+  },
+  "input_hashes": {
+    "data/lissajous.csv": "5a3438189cf8d125dda8a65972914555880b2370942c97a0b3a555ee5b793260",
+    "data/provenance.json": "7eb6797da28120893c936a8f5bcb3bba4b54fba02426f43999017f6fd4ef4130",
+    "data/python-author-validation.json": "49e0b4674582448831d32e31d77b5c213e33f8d27d47c3d3579f8f83e2af5d0b",
+    "data/waveforms.csv": "811570ac218435ec24f6fcec815c3251a5f7891478df6f57986dee3c23e57d75",
+    "experiment.json": "8094d5d48454bccd2b112ec4650c1333300ebe226bc516ba59db03051426c44b"
+  },
+  "models": [
+    {
+      "key": "waveforms",
+      "capture_messages": [],
+      "status": "passed",
+      "held_body_sha256": "453eb9e5424263d32d7186a40d0325a65d53540f662f26ef07fcbf7aaf7a5fcc",
+      "default_evaluation": {
+        "status": "evaluated",
+        "output_head": "Graphics",
+        "response_sha256": "7b8a7d490adf947f0eb0217f7daeb45f6a8156590ea7cdba19cd582ed8cb2e02",
+        "graphics_count": 1,
+        "messages": [],
+        "unresolved_heads": []
+      },
+      "default_repeat": {
+        "status": "evaluated",
+        "output_head": "Graphics",
+        "response_sha256": "7b8a7d490adf947f0eb0217f7daeb45f6a8156590ea7cdba19cd582ed8cb2e02",
+        "graphics_count": 1,
+        "messages": [],
+        "unresolved_heads": []
+      },
+      "default_deterministic": true,
+      "controls": [
+        {
+          "name": "OscilloscopeLab`Private`k",
+          "default": "sine",
+          "changed": "triangle",
+          "specification_sha256": "27fba44dae8d1a4847ed6c6cf3e112e90cd4b5fb19eb0f293114ce7a2dade600",
+          "evaluation": {
+            "status": "evaluated",
+            "output_head": "Graphics",
+            "response_sha256": "fb274cfe7156e876d369f2777bc02ba27f8a8098817c9c43c8fe4a29cc485327",
+            "graphics_count": 1,
+            "messages": [],
+            "unresolved_heads": []
+          },
+          "response_changed": true,
+          "status": "passed"
+        }
+      ]
+    },
+    {
+      "key": "lissajous",
+      "capture_messages": [],
+      "status": "passed",
+      "held_body_sha256": "80d9023adc51c6e4bc36f0965f484f249da0bad6b2f7497df86b9d558daeeec8",
+      "default_evaluation": {
+        "status": "evaluated",
+        "output_head": "Graphics",
+        "response_sha256": "f59a8ea3d4cf4452add02f0c18937c000720d0dc89841d1645c8c31ea6ed24ae",
+        "graphics_count": 1,
+        "messages": [],
+        "unresolved_heads": []
+      },
+      "default_repeat": {
+        "status": "evaluated",
+        "output_head": "Graphics",
+        "response_sha256": "f59a8ea3d4cf4452add02f0c18937c000720d0dc89841d1645c8c31ea6ed24ae",
+        "graphics_count": 1,
+        "messages": [],
+        "unresolved_heads": []
+      },
+      "default_deterministic": true,
+      "controls": [
+        {
+          "name": "OscilloscopeLab`Private`fx",
+          "default": 250,
+          "changed": 500,
+          "specification_sha256": "e63b4ed7723c3c55913fd888bf45d1d6fe6cec684649dd8c7c0a04b4ff0b9354",
+          "evaluation": {
+            "status": "evaluated",
+            "output_head": "Graphics",
+            "response_sha256": "425616a5aefe869cfd28d8dcda330a387b84ce0283ecf5518b2ed53ead425160",
+            "graphics_count": 1,
+            "messages": [],
+            "unresolved_heads": []
+          },
+          "response_changed": true,
+          "status": "passed"
+        },
+        {
+          "name": "OscilloscopeLab`Private`phase",
+          "default": 0.7853981633974483,
+          "changed": 0,
+          "specification_sha256": "353e39266c649b17b46ac4e95f0938fa0a5bfc875e27b34b7622ccaa5a3e8be3",
+          "evaluation": {
+            "status": "evaluated",
+            "output_head": "Graphics",
+            "response_sha256": "0d42501f132c5781779120dfd1b41afbccf48f279e536633cd0e0a68e8bf7df3",
+            "graphics_count": 1,
+            "messages": [],
+            "unresolved_heads": []
+          },
+          "response_changed": true,
+          "status": "passed"
+        }
+      ]
+    }
+  ]
+}

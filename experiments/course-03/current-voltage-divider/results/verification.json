@@ -1,0 +1,747 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "metric": "current_K0p1_amplitude",
+      "python": 18.441021383737155,
+      "wolfram": 18.44102138373715,
+      "unit": "原记录电流单位",
+      "passed": true
+    },
+    {
+      "metric": "current_K0p1_rmse",
+      "python": 1.6371721798527432,
+      "wolfram": 1.6371721798527425,
+      "unit": "原记录电流单位",
+      "passed": true
+    },
+    {
+      "metric": "current_K0p1_max_relative_residual",
+      "python": 8.636355721573821,
+      "wolfram": 8.636355721573793,
+      "unit": "%",
+      "passed": true
+    },
+    {
+      "metric": "current_K0p5_amplitude",
+      "python": 17.69996385802114,
+      "wolfram": 17.699963858021142,
+      "unit": "原记录电流单位",
+      "passed": true
+    },
+    {
+      "metric": "current_K0p5_rmse",
+      "python": 0.26197468683189024,
+      "wolfram": 0.2619746868318901,
+      "unit": "原记录电流单位",
+      "passed": true
+    },
+    {
+      "metric": "current_K0p5_max_relative_residual",
+      "python": 2.6084861334558775,
+      "wolfram": 2.6084861334558984,
+      "unit": "%",
+      "passed": true
+    },
+    {
+      "metric": "current_K1p0_amplitude",
+      "python": 17.693665322980127,
+      "wolfram": 17.693665322980127,
+      "unit": "原记录电流单位",
+      "passed": true
+    },
+    {
+      "metric": "current_K1p0_rmse",
+      "python": 0.11840737811625827,
+      "wolfram": 0.11840737811625827,
+      "unit": "原记录电流单位",
+      "passed": true
+    },
+    {
+      "metric": "current_K1p0_max_relative_residual",
+      "python": 1.9741533352901655,
+      "wolfram": 1.974153335290165,
+      "unit": "%",
+      "passed": true
+    },
+    {
+      "metric": "voltage_K0p1_amplitude",
+      "python": 5.0032217184842,
+      "wolfram": 5.0032217184842,
+      "unit": "原记录电压单位",
+      "passed": true
+    },
+    {
+      "metric": "voltage_K0p1_rmse",
+      "python": 0.09548717642711113,
+      "wolfram": 0.09548717642711109,
+      "unit": "原记录电压单位",
+      "passed": true
+    },
+    {
+      "metric": "voltage_K0p1_max_relative_residual",
+      "python": 10.496928112983877,
+      "wolfram": 10.49692811298389,
+      "unit": "%",
+      "passed": true
+    },
+    {
+      "metric": "voltage_K0p5_amplitude",
+      "python": 5.091991302132404,
+      "wolfram": 5.091991302132405,
+      "unit": "原记录电压单位",
+      "passed": true
+    },
+    {
+      "metric": "voltage_K0p5_rmse",
+      "python": 0.07345317696247422,
+      "wolfram": 0.07345317696247428,
+      "unit": "原记录电压单位",
+      "passed": true
+    },
+    {
+      "metric": "voltage_K0p5_max_relative_residual",
+      "python": 10.647355543946203,
+      "wolfram": 10.647355543946217,
+      "unit": "%",
+      "passed": true
+    },
+    {
+      "metric": "voltage_K1p0_amplitude",
+      "python": 5.085167739433549,
+      "wolfram": 5.085167739433548,
+      "unit": "原记录电压单位",
+      "passed": true
+    },
+    {
+      "metric": "voltage_K1p0_rmse",
+      "python": 0.06706708539262264,
+      "wolfram": 0.06706708539262261,
+      "unit": "原记录电压单位",
+      "passed": true
+    },
+    {
+      "metric": "voltage_K1p0_max_relative_residual",
+      "python": 33.294042973356476,
+      "wolfram": 33.29404297335646,
+      "unit": "%",
+      "passed": true
+    },
+    {
+      "metric": "model_K0p1_current_end",
+      "python": 0.09090909090909091,
+      "wolfram": 0.09090909090909091,
+      "unit": "1",
+      "passed": true
+    },
+    {
+      "metric": "model_K0p1_voltage_mid",
+      "python": 0.14285714285714288,
+      "wolfram": 0.14285714285714288,
+      "unit": "1",
+      "passed": true
+    },
+    {
+      "metric": "model_K0p5_current_end",
+      "python": 0.3333333333333333,
+      "wolfram": 0.3333333333333333,
+      "unit": "1",
+      "passed": true
+    },
+    {
+      "metric": "model_K0p5_voltage_mid",
+      "python": 0.3333333333333333,
+      "wolfram": 0.3333333333333333,
+      "unit": "1",
+      "passed": true
+    },
+    {
+      "metric": "model_K1p0_current_end",
+      "python": 0.5,
+      "wolfram": 0.5,
+      "unit": "1",
+      "passed": true
+    },
+    {
+      "metric": "model_K1p0_voltage_mid",
+      "python": 0.4,
+      "wolfram": 0.4,
+      "unit": "1",
+      "passed": true
+    },
+    {
+      "metric": "model_K2p0_current_end",
+      "python": 0.6666666666666666,
+      "wolfram": 0.6666666666666666,
+      "unit": "1",
+      "passed": true
+    },
+    {
+      "metric": "model_K2p0_voltage_mid",
+      "python": 0.4444444444444444,
+      "wolfram": 0.4444444444444444,
+      "unit": "1",
+      "passed": true
+    },
+    {
+      "metric": "model_K10p0_current_end",
+      "python": 0.9090909090909091,
+      "wolfram": 0.9090909090909092,
+      "unit": "1",
+      "passed": true
+    },
+    {
+      "metric": "model_K10p0_voltage_mid",
+      "python": 0.4878048780487805,
+      "wolfram": 0.4878048780487805,
+      "unit": "1",
+      "passed": true
+    },
+    {
+      "table": "current_observations",
+      "row": 0,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "current_observations",
+      "row": 0,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "current_observations",
+      "row": 0,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "current_observations",
+      "row": 0,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "current_observations",
+      "row": 0,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "current_observations",
+      "row": 0,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "current_observations",
+      "row": 0,
+      "column": 6,
+      "passed": true
+    },
+    {
+      "table": "current_observations",
+      "row": 0,
+      "column": 7,
+      "passed": true
+    },
+    {
+      "table": "current_observations",
+      "row": 0,
+      "column": 8,
+      "passed": true
+    },
+    {
+      "table": "current_observations",
+      "row": 0,
+      "column": 9,
+      "passed": true
+    },
+    {
+      "table": "current_observations",
+      "row": 0,
+      "column": 10,
+      "passed": true
+    },
+    {
+      "table": "current_observations",
+      "row": 1,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "current_observations",
+      "row": 1,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "current_observations",
+      "row": 1,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "current_observations",
+      "row": 1,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "current_observations",
+      "row": 1,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "current_observations",
+      "row": 1,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "current_observations",
+      "row": 1,
+      "column": 6,
+      "passed": true
+    },
+    {
+      "table": "current_observations",
+      "row": 1,
+      "column": 7,
+      "passed": true
+    },
+    {
+      "table": "current_observations",
+      "row": 1,
+      "column": 8,
+      "passed": true
+    },
+    {
+      "table": "current_observations",
+      "row": 1,
+      "column": 9,
+      "passed": true
+    },
+    {
+      "table": "current_observations",
+      "row": 1,
+      "column": 10,
+      "passed": true
+    },
+    {
+      "table": "current_observations",
+      "row": 2,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "current_observations",
+      "row": 2,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "current_observations",
+      "row": 2,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "current_observations",
+      "row": 2,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "current_observations",
+      "row": 2,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "current_observations",
+      "row": 2,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "current_observations",
+      "row": 2,
+      "column": 6,
+      "passed": true
+    },
+    {
+      "table": "current_observations",
+      "row": 2,
+      "column": 7,
+      "passed": true
+    },
+    {
+      "table": "current_observations",
+      "row": 2,
+      "column": 8,
+      "passed": true
+    },
+    {
+      "table": "current_observations",
+      "row": 2,
+      "column": 9,
+      "passed": true
+    },
+    {
+      "table": "current_observations",
+      "row": 2,
+      "column": 10,
+      "passed": true
+    },
+    {
+      "table": "voltage_observations",
+      "row": 0,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "voltage_observations",
+      "row": 0,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "voltage_observations",
+      "row": 0,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "voltage_observations",
+      "row": 0,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "voltage_observations",
+      "row": 0,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "voltage_observations",
+      "row": 0,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "voltage_observations",
+      "row": 0,
+      "column": 6,
+      "passed": true
+    },
+    {
+      "table": "voltage_observations",
+      "row": 0,
+      "column": 7,
+      "passed": true
+    },
+    {
+      "table": "voltage_observations",
+      "row": 0,
+      "column": 8,
+      "passed": true
+    },
+    {
+      "table": "voltage_observations",
+      "row": 0,
+      "column": 9,
+      "passed": true
+    },
+    {
+      "table": "voltage_observations",
+      "row": 0,
+      "column": 10,
+      "passed": true
+    },
+    {
+      "table": "voltage_observations",
+      "row": 1,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "voltage_observations",
+      "row": 1,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "voltage_observations",
+      "row": 1,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "voltage_observations",
+      "row": 1,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "voltage_observations",
+      "row": 1,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "voltage_observations",
+      "row": 1,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "voltage_observations",
+      "row": 1,
+      "column": 6,
+      "passed": true
+    },
+    {
+      "table": "voltage_observations",
+      "row": 1,
+      "column": 7,
+      "passed": true
+    },
+    {
+      "table": "voltage_observations",
+      "row": 1,
+      "column": 8,
+      "passed": true
+    },
+    {
+      "table": "voltage_observations",
+      "row": 1,
+      "column": 9,
+      "passed": true
+    },
+    {
+      "table": "voltage_observations",
+      "row": 1,
+      "column": 10,
+      "passed": true
+    },
+    {
+      "table": "voltage_observations",
+      "row": 2,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "voltage_observations",
+      "row": 2,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "voltage_observations",
+      "row": 2,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "voltage_observations",
+      "row": 2,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "voltage_observations",
+      "row": 2,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "voltage_observations",
+      "row": 2,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "voltage_observations",
+      "row": 2,
+      "column": 6,
+      "passed": true
+    },
+    {
+      "table": "voltage_observations",
+      "row": 2,
+      "column": 7,
+      "passed": true
+    },
+    {
+      "table": "voltage_observations",
+      "row": 2,
+      "column": 8,
+      "passed": true
+    },
+    {
+      "table": "voltage_observations",
+      "row": 2,
+      "column": 9,
+      "passed": true
+    },
+    {
+      "table": "voltage_observations",
+      "row": 2,
+      "column": 10,
+      "passed": true
+    },
+    {
+      "table": "model_fit",
+      "row": 0,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "model_fit",
+      "row": 0,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "model_fit",
+      "row": 0,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "model_fit",
+      "row": 0,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "model_fit",
+      "row": 1,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "model_fit",
+      "row": 1,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "model_fit",
+      "row": 1,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "model_fit",
+      "row": 1,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "model_fit",
+      "row": 2,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "model_fit",
+      "row": 2,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "model_fit",
+      "row": 2,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "model_fit",
+      "row": 2,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "model_fit",
+      "row": 3,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "model_fit",
+      "row": 3,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "model_fit",
+      "row": 3,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "model_fit",
+      "row": 3,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "model_fit",
+      "row": 4,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "model_fit",
+      "row": 4,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "model_fit",
+      "row": 4,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "model_fit",
+      "row": 4,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "model_fit",
+      "row": 5,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "model_fit",
+      "row": 5,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "model_fit",
+      "row": 5,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "model_fit",
+      "row": 5,
+      "column": 4,
+      "passed": true
+    }
+  ],
+  "input_hashes": {
+    "data/observations.csv": "48f66ebf1996f6f608cb1d05ac3e6064f2c8fdf0902f4b31d330468b6c5dbff1",
+    "data/provenance.json": "8cb6a1c119b41c31e05bd7e50dec4a9b207af469c37838fafef9f5c44b74b5a3",
+    "data/python-author-validation.json": "625ef6c2cc602fede294c2338526c03afe6d6c8094410c1e64c0f100d665186d",
+    "experiment.json": "8a2e3085a935d7c29530c1c8435c071fa018e3b9bb3cb39298e2d2bf861b9305"
+  }
+}

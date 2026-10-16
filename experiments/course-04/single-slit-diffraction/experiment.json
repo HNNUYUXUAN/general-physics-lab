@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "id": "course-04/single-slit-diffraction",
+  "title": "单缝衍射光强分布研究",
+  "parameters": {
+    "wavelength_nm": 632.8,
+    "screen_distance_mm": 800.0
+  },
+  "models": {
+    "diffraction": "单色平面波、夫琅禾费、小角度；sinc中心取连续极限。"
+  },
+  "source_docx": "originals/course-04/12_实验十二_单缝衍射光强分布研究.docx",
+  "data_version": "1.0.0"
+}

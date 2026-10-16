@@ -1,0 +1,30 @@
+{
+  "experiment_id": "course-03/current-voltage-divider",
+  "title": "制流分压电路",
+  "data_version": 1,
+  "units": {
+    "K": "1",
+    "X": "1",
+    "current_reading": "原记录未注明",
+    "voltage_reading": "原记录未注明"
+  },
+  "model": {
+    "K_values": [
+      0.1,
+      0.5,
+      1,
+      2,
+      10
+    ],
+    "assumptions": [
+      "理想直流源",
+      "变阻器阻值与X成比例",
+      "忽略仪表加载与接触电阻",
+      "观测幅度以固定K的物理模型最小二乘估计，不据此推定E或R0实测值"
+    ]
+  },
+  "limitations": [
+    "源报告未记录电源、电阻绝对值和I/U单位，分析限定同标度形状。",
+    "无仪器限差及重复测量。"
+  ]
+}

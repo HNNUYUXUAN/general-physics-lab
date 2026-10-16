@@ -1,0 +1,716 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "metric": "lnr_slope",
+      "python": -1.8837628663732697,
+      "wolfram": -1.883762866373269,
+      "unit": "1",
+      "passed": true
+    },
+    {
+      "metric": "lnr_intercept",
+      "python": 1.9356677836923604,
+      "wolfram": 1.9356677836923601,
+      "unit": "1",
+      "passed": true
+    },
+    {
+      "metric": "fit_R2",
+      "python": 0.9999778445863324,
+      "wolfram": 0.9999778445863324,
+      "unit": "1",
+      "passed": true
+    },
+    {
+      "metric": "theory_slope",
+      "python": -1.8885116103492812,
+      "wolfram": -1.8885116103492812,
+      "unit": "1",
+      "passed": true
+    },
+    {
+      "metric": "theory_intercept",
+      "python": 1.937301774518713,
+      "wolfram": 1.937301774518713,
+      "unit": "1",
+      "passed": true
+    },
+    {
+      "metric": "max_voltage_difference",
+      "python": 0.0280111075688394,
+      "wolfram": 0.02801110756883851,
+      "unit": "V",
+      "passed": true
+    },
+    {
+      "metric": "voltage_rmse",
+      "python": 0.012490882113198766,
+      "wolfram": 0.012490882113198737,
+      "unit": "V",
+      "passed": true
+    },
+    {
+      "metric": "inner_field",
+      "python": 504.30240786542424,
+      "wolfram": 504.30240786542424,
+      "unit": "V/m",
+      "passed": true
+    },
+    {
+      "metric": "outer_field",
+      "python": 76.29935565687255,
+      "wolfram": 76.29935565687255,
+      "unit": "V/m",
+      "passed": true
+    },
+    {
+      "table": "source_summary",
+      "row": 0,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "source_summary",
+      "row": 0,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "source_summary",
+      "row": 0,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "source_summary",
+      "row": 0,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "source_summary",
+      "row": 0,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "source_summary",
+      "row": 1,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "source_summary",
+      "row": 1,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "source_summary",
+      "row": 1,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "source_summary",
+      "row": 1,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "source_summary",
+      "row": 1,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "source_summary",
+      "row": 2,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "source_summary",
+      "row": 2,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "source_summary",
+      "row": 2,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "source_summary",
+      "row": 2,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "source_summary",
+      "row": 2,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "source_summary",
+      "row": 3,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "source_summary",
+      "row": 3,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "source_summary",
+      "row": 3,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "source_summary",
+      "row": 3,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "source_summary",
+      "row": 3,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "source_summary",
+      "row": 4,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "source_summary",
+      "row": 4,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "source_summary",
+      "row": 4,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "source_summary",
+      "row": 4,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "source_summary",
+      "row": 4,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "source_summary",
+      "row": 5,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "source_summary",
+      "row": 5,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "source_summary",
+      "row": 5,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "source_summary",
+      "row": 5,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "source_summary",
+      "row": 5,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "source_summary",
+      "row": 6,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "source_summary",
+      "row": 6,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "source_summary",
+      "row": 6,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "source_summary",
+      "row": 6,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "source_summary",
+      "row": 6,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "source_summary",
+      "row": 7,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "source_summary",
+      "row": 7,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "source_summary",
+      "row": 7,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "source_summary",
+      "row": 7,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "source_summary",
+      "row": 7,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "source_summary",
+      "row": 8,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "source_summary",
+      "row": 8,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "source_summary",
+      "row": 8,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "source_summary",
+      "row": 8,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "source_summary",
+      "row": 8,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "source_summary",
+      "row": 9,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "source_summary",
+      "row": 9,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "source_summary",
+      "row": 9,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "source_summary",
+      "row": 9,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "source_summary",
+      "row": 9,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "recalculated",
+      "row": 0,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "recalculated",
+      "row": 0,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "recalculated",
+      "row": 0,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "recalculated",
+      "row": 0,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "recalculated",
+      "row": 0,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "recalculated",
+      "row": 1,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "recalculated",
+      "row": 1,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "recalculated",
+      "row": 1,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "recalculated",
+      "row": 1,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "recalculated",
+      "row": 1,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "recalculated",
+      "row": 2,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "recalculated",
+      "row": 2,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "recalculated",
+      "row": 2,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "recalculated",
+      "row": 2,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "recalculated",
+      "row": 2,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "recalculated",
+      "row": 3,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "recalculated",
+      "row": 3,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "recalculated",
+      "row": 3,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "recalculated",
+      "row": 3,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "recalculated",
+      "row": 3,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "recalculated",
+      "row": 4,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "recalculated",
+      "row": 4,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "recalculated",
+      "row": 4,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "recalculated",
+      "row": 4,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "recalculated",
+      "row": 4,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "recalculated",
+      "row": 5,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "recalculated",
+      "row": 5,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "recalculated",
+      "row": 5,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "recalculated",
+      "row": 5,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "recalculated",
+      "row": 5,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "recalculated",
+      "row": 6,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "recalculated",
+      "row": 6,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "recalculated",
+      "row": 6,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "recalculated",
+      "row": 6,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "recalculated",
+      "row": 6,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "recalculated",
+      "row": 7,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "recalculated",
+      "row": 7,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "recalculated",
+      "row": 7,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "recalculated",
+      "row": 7,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "recalculated",
+      "row": 7,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "recalculated",
+      "row": 8,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "recalculated",
+      "row": 8,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "recalculated",
+      "row": 8,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "recalculated",
+      "row": 8,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "recalculated",
+      "row": 8,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "recalculated",
+      "row": 9,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "recalculated",
+      "row": 9,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "recalculated",
+      "row": 9,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "recalculated",
+      "row": 9,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "recalculated",
+      "row": 9,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "fit",
+      "row": 0,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "fit",
+      "row": 1,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "fit",
+      "row": 2,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "fit",
+      "row": 3,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "fit",
+      "row": 4,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "fit",
+      "row": 5,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "fit",
+      "row": 6,
+      "column": 1,
+      "passed": true
+    }
+  ],
+  "input_hashes": {
+    "data/provenance.json": "d972535b8a669e54daac299d50295df28a804ddcc37cba41d16c8e92806a5238",
+    "data/python-author-validation.json": "cea74ca0521d5f49fddce18c4851ee74b92ea399ed23388f2171d3a0e4196806",
+    "data/reported_radii.csv": "cd1490db3a896d43b1d6b019dff70966145ae918f91aae84bfd7864ee34eaab8",
+    "experiment.json": "cdb3051358f50d40fec6a4f39e3a916c267491caf400ced5fcc8f74e65090a6c"
+  }
+}

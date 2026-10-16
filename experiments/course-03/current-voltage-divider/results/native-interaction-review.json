@@ -1,0 +1,58 @@
+{
+  "experiment": "course-03/current-voltage-divider",
+  "paclet": "DividerCircuitsLab",
+  "status": "passed",
+  "source_hashes": {
+    "analysis.wl": "f2f3690125fbf451fbf137d04412a63355ccfd914d41b5fab3f27d9ace76b95e",
+    "authoring.json": "7bfeb3ef6ce9fd98b7e7aa2d28fb2bf0ad56b148e80b6cc7c3bbe7df3d00fa86"
+  },
+  "input_hashes": {
+    "data/observations.csv": "48f66ebf1996f6f608cb1d05ac3e6064f2c8fdf0902f4b31d330468b6c5dbff1",
+    "data/provenance.json": "8cb6a1c119b41c31e05bd7e50dec4a9b207af469c37838fafef9f5c44b74b5a3",
+    "data/python-author-validation.json": "625ef6c2cc602fede294c2338526c03afe6d6c8094410c1e64c0f100d665186d",
+    "experiment.json": "8a2e3085a935d7c29530c1c8435c071fa018e3b9bb3cb39298e2d2bf861b9305"
+  },
+  "models": [
+    {
+      "key": "divider",
+      "capture_messages": [],
+      "status": "passed",
+      "held_body_sha256": "7d1abb47f5227ae72eb5c10eb63b0370b9de286c40ca74d0fd50612111921368",
+      "default_evaluation": {
+        "status": "evaluated",
+        "output_head": "Graphics",
+        "response_sha256": "87faa04908d968680963fdf30faf0cd0aa5b3fc5a7be0d7d340a7137a7c41283",
+        "graphics_count": 3,
+        "messages": [],
+        "unresolved_heads": []
+      },
+      "default_repeat": {
+        "status": "evaluated",
+        "output_head": "Graphics",
+        "response_sha256": "87faa04908d968680963fdf30faf0cd0aa5b3fc5a7be0d7d340a7137a7c41283",
+        "graphics_count": 3,
+        "messages": [],
+        "unresolved_heads": []
+      },
+      "default_deterministic": true,
+      "controls": [
+        {
+          "name": "DividerCircuitsLab`Private`k",
+          "default": 1,
+          "changed": 0.1,
+          "specification_sha256": "018699a80f51bbe3fda655c9b0b0c78ea87e8e14807daafa083ac3e484c780e1",
+          "evaluation": {
+            "status": "evaluated",
+            "output_head": "Graphics",
+            "response_sha256": "a65a595e3bf0756ae1b948c89ae23c0cd3794004f462febcbee5aadac782b591",
+            "graphics_count": 3,
+            "messages": [],
+            "unresolved_heads": []
+          },
+          "response_changed": true,
+          "status": "passed"
+        }
+      ]
+    }
+  ]
+}

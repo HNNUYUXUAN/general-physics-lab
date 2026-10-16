@@ -1,0 +1,58 @@
+{
+  "experiment": "course-04/polarization",
+  "paclet": "PolarizationLab",
+  "status": "passed",
+  "source_hashes": {
+    "analysis.wl": "92a6dcfdb998734a92346df298f158491b1f81546759a6bf4a6c414768e70010",
+    "authoring.json": "53bf5cd0c7b3a736fef36ee86afde05f628e5eec57bad16cc54e93ff682e7bbf"
+  },
+  "input_hashes": {
+    "data/observations-01.csv": "9d389c0c85099947a3c7ef31c467e02293598313a694037d33e4af935044997e",
+    "data/observations-02.csv": "7961e3d52307cb3b4de03fb1d03fff1ca5087b5e293d8c84c3401cddcec4fe6e",
+    "data/provenance.json": "5559b2e431e59b7d6d65389ac5f226b1587ee08d8183c8489306b2f3d1ff3edc",
+    "experiment.json": "90c5bc21b8e38dd8300d6c74136c9c4745f6e4b3afb52e1ca65c10af9824456a"
+  },
+  "models": [
+    {
+      "key": "malus-offset",
+      "capture_messages": [],
+      "status": "passed",
+      "held_body_sha256": "12ba9ae54687a61bad7b56bb276b30e951813177ba52168235c900b9802051d0",
+      "default_evaluation": {
+        "status": "evaluated",
+        "output_head": "Graphics",
+        "response_sha256": "e6da599d34d0252e3336384f6949b0b58112417d20eed3c253752fc981b34b66",
+        "graphics_count": 2,
+        "messages": [],
+        "unresolved_heads": []
+      },
+      "default_repeat": {
+        "status": "evaluated",
+        "output_head": "Graphics",
+        "response_sha256": "e6da599d34d0252e3336384f6949b0b58112417d20eed3c253752fc981b34b66",
+        "graphics_count": 2,
+        "messages": [],
+        "unresolved_heads": []
+      },
+      "default_deterministic": true,
+      "controls": [
+        {
+          "name": "PolarizationLab`Private`offset",
+          "default": 0,
+          "changed": 1,
+          "specification_sha256": "e264655da4ff721f2b755e8336f5b1ff64bc6b85c58f2296e1ce4f781d902bb4",
+          "evaluation": {
+            "status": "evaluated",
+            "output_head": "Graphics",
+            "response_sha256": "3003d15019f2cc1f3e4f37f14f74e318c038c1f411414ac480709ad2c243dcce",
+            "graphics_count": 2,
+            "messages": [],
+            "unresolved_heads": []
+          },
+          "response_changed": true,
+          "status": "passed"
+        }
+      ]
+    }
+  ]
+}

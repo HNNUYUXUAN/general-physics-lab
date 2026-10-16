@@ -1,0 +1,75 @@
+{
+  "experiment": "course-03/rlc-resonance",
+  "paclet": "RLCResonanceLab",
+  "status": "passed",
+  "source_hashes": {
+    "analysis.wl": "c15bf813a7ab49bc4fddca9e46e3af7f450e9c1dad18932c6e022200a45ac328",
+    "authoring.json": "edc978fe265e584be6fac554fba7b9a8415187b4e9e9ac343433a775784a4388"
+  },
+  "input_hashes": {
+    "data/provenance.json": "934c3aefd1639bd0a3919e39784129bdd77323fe4132b827727a645f477958a4",
+    "data/python-author-validation.json": "b18ff87462371e6208fd3ac5dae2f3befa39083a215362fde19ffcf0756ef29f",
+    "data/resonance_voltages.csv": "0126e078fe125da6f3012a29485b4c7d25c64a15103ff2d8b05ac441979f35be",
+    "data/response.csv": "b5699c20e190f7deb1564b1fd1c72d4937abbf65d867c95e65692d179abf2ea1",
+    "experiment.json": "ef5195fc697d2a70b344ed6291e18594b0bdb0ae060c6146905c5f2216039a72"
+  },
+  "models": [
+    {
+      "key": "resonance",
+      "capture_messages": [],
+      "status": "passed",
+      "held_body_sha256": "3f99cd6e034bfa8cfc26a07d440229352a2a2e9c160fe14d70248890e5295ab9",
+      "default_evaluation": {
+        "status": "evaluated",
+        "output_head": "Column",
+        "response_sha256": "55da76fb09b1758284e2fb6c822f2c80b25df3d6896019dde10a3f36f2e7e6c5",
+        "graphics_count": 3,
+        "messages": [],
+        "unresolved_heads": []
+      },
+      "default_repeat": {
+        "status": "evaluated",
+        "output_head": "Column",
+        "response_sha256": "55da76fb09b1758284e2fb6c822f2c80b25df3d6896019dde10a3f36f2e7e6c5",
+        "graphics_count": 3,
+        "messages": [],
+        "unresolved_heads": []
+      },
+      "default_deterministic": true,
+      "controls": [
+        {
+          "name": "RLCResonanceLab`Private`q",
+          "default": 8,
+          "changed": 8.5,
+          "specification_sha256": "f03492eb02b76a9cd778106a7a5be9aca1043375e3aba6eec64d0e7353ca7d4c",
+          "evaluation": {
+            "status": "evaluated",
+            "output_head": "Column",
+            "response_sha256": "fba24e731fe7d3c0b428849e7cd33254aa495151913160ffd1af1568501ed08f",
+            "graphics_count": 3,
+            "messages": [],
+            "unresolved_heads": []
+          },
+          "response_changed": true,
+          "status": "passed"
+        },
+        {
+          "name": "RLCResonanceLab`Private`c",
+          "default": 2e-07,
+          "changed": 1e-07,
+          "specification_sha256": "9fb40399face107cbf856232fbccdda37682850b99d1d12fb92026a4c037f17d",
+          "evaluation": {
+            "status": "evaluated",
+            "output_head": "Column",
+            "response_sha256": "5e790f3a5b4bf19e6bc6b5c562ea3f5c3abac9d9aff1fb86b56d47d2692302ed",
+            "graphics_count": 3,
+            "messages": [],
+            "unresolved_heads": []
+          },
+          "response_changed": true,
+          "status": "passed"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "id": "course-04/transmission-grating",
+  "title": "用透射光栅测定光波波长",
+  "parameters": {
+    "green_wavelength_nm": 546.1,
+    "yellow_reference_gap_nm": 2.06,
+    "diffraction_order": 1
+  },
+  "models": {
+    "grating": "垂直入射一级主极大；圆周最短角差。"
+  },
+  "source_docx": "originals/course-04/05_实验五_用透射光栅测定光波波长_实验报告.docx",
+  "data_version": "1.0.0"
+}

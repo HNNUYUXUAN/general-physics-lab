@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "numeric_cells": 123,
+  "rtol": 1e-07,
+  "atol": 1e-14,
+  "input_hashes": {
+    "data/autocollimation.csv": "efa26abb813ad4f533a83db9acb816b193bd1d48d24a28a2fa59de5269524963",
+    "data/bessel.csv": "218ef1a0970fc42a4a12ca4f9ce7dc83993c87cb25663748642bf89dbe267eeb",
+    "data/concave.csv": "d31431dbbbe8c25f7b13fa6eebed8ce6a4c223fa2297eca43491e3fd14674aaa",
+    "data/conjugates.csv": "a0735038e8126ac0de03fb280fc7a590bed86b70ea8e4b53eb86bc072de9c455",
+    "data/provenance.json": "730934b9bdf30fd20385018f809d39d5d716910ad1d18aa3804308e2ed6db364",
+    "experiment.json": "19af99e8619bd65de71d137b1b5543048486713874ad02b8787e1d4b49e996a3"
+  },
+  "differences": []
+}

@@ -1,0 +1,296 @@
+{
+  "metrics": {
+    "group1_Rx": {
+      "value": 194.4,
+      "unit": "Ω",
+      "label": "第1组 串联损耗电阻"
+    },
+    "group1_Cx": {
+      "value": 1.0288065843621398e-07,
+      "unit": "F",
+      "label": "第1组 电容量"
+    },
+    "group1_loss_factor": {
+      "value": 0.1256637061435917,
+      "unit": "1",
+      "label": "第1组 损耗因数"
+    },
+    "group1_loss_angle": {
+      "value": 7.162455806725821,
+      "unit": "degree",
+      "label": "第1组 损耗角"
+    },
+    "group1_reactance": {
+      "value": 1546.986046853223,
+      "unit": "Ω",
+      "label": "第1组 容抗幅值"
+    },
+    "group1_impedance_magnitude": {
+      "value": 1559.1527151496616,
+      "unit": "Ω",
+      "label": "第1组 串联阻抗幅值"
+    },
+    "group1_loss_identity_residual": {
+      "value": 0.0,
+      "unit": "1",
+      "label": "第1组 两种损耗公式差"
+    },
+    "group2_Rx": {
+      "value": 229.653,
+      "unit": "Ω",
+      "label": "第2组 串联损耗电阻"
+    },
+    "group2_Cx": {
+      "value": 1.0319917440660473e-07,
+      "unit": "F",
+      "label": "第2组 电容量"
+    },
+    "group2_loss_factor": {
+      "value": 0.1489114917801562,
+      "unit": "1",
+      "label": "第2组 损耗因数"
+    },
+    "group2_loss_angle": {
+      "value": 8.46976134203401,
+      "unit": "degree",
+      "label": "第2组 损耗角"
+    },
+    "group2_reactance": {
+      "value": 1542.211398560466,
+      "unit": "Ω",
+      "label": "第2组 容抗幅值"
+    },
+    "group2_impedance_magnitude": {
+      "value": 1559.2166296762068,
+      "unit": "Ω",
+      "label": "第2组 串联阻抗幅值"
+    },
+    "group2_loss_identity_residual": {
+      "value": -5.551115123125783e-17,
+      "unit": "1",
+      "label": "第2组 两种损耗公式差"
+    },
+    "group3_Rx": {
+      "value": 231.84,
+      "unit": "Ω",
+      "label": "第3组 串联损耗电阻"
+    },
+    "group3_Cx": {
+      "value": 1.0351966873706004e-07,
+      "unit": "F",
+      "label": "第3组 电容量"
+    },
+    "group3_loss_factor": {
+      "value": 0.15079644737231007,
+      "unit": "1",
+      "label": "第3组 损耗因数"
+    },
+    "group3_loss_angle": {
+      "value": 8.57538930945597,
+      "unit": "degree",
+      "label": "第3组 损耗角"
+    },
+    "group3_reactance": {
+      "value": 1537.4367502677092,
+      "unit": "Ω",
+      "label": "第3组 容抗幅值"
+    },
+    "group3_impedance_magnitude": {
+      "value": 1554.818814741362,
+      "unit": "Ω",
+      "label": "第3组 串联阻抗幅值"
+    },
+    "group3_loss_identity_residual": {
+      "value": 0.0,
+      "unit": "1",
+      "label": "第3组 两种损耗公式差"
+    },
+    "Rx_mean": {
+      "value": 218.631,
+      "unit": "Ω",
+      "label": "损耗电阻均值"
+    },
+    "Cx_mean": {
+      "value": 1.0319983385995958e-07,
+      "unit": "F",
+      "label": "电容量均值"
+    },
+    "loss_mean": {
+      "value": 0.14179054843201933,
+      "unit": "1",
+      "label": "损耗因数均值"
+    },
+    "capacitance_spread_percent": {
+      "value": 0.6191970247870598,
+      "unit": "%",
+      "label": "电容量极差相对均值"
+    },
+    "resistance_spread_percent": {
+      "value": 17.124744432399797,
+      "unit": "%",
+      "label": "损耗电阻极差相对均值"
+    }
+  },
+  "tables": {
+    "observations": {
+      "headers": [
+        "组号",
+        "$R_n/\\Omega$",
+        "$C_n/\\mu\\mathrm{F}$",
+        "$R_3/\\Omega$",
+        "$R_4/\\Omega$",
+        "指零仪增益"
+      ],
+      "rows": [
+        [
+          1,
+          200.0,
+          0.09999999999999999,
+          10000.0,
+          9720.0,
+          13
+        ],
+        [
+          2,
+          237.0,
+          0.09999999999999999,
+          1000.0,
+          969.0,
+          26
+        ],
+        [
+          3,
+          240.0,
+          0.09999999999999999,
+          100.0,
+          96.6,
+          29
+        ]
+      ]
+    },
+    "results": {
+      "headers": [
+        "组号",
+        "$R_3/\\Omega$",
+        "$R_4/\\Omega$",
+        "$R_n/\\Omega$",
+        "$R_x/\\Omega$",
+        "$C_x/\\mu\\mathrm{F}$",
+        "$\\tan\\delta$",
+        "损耗角 / °",
+        "$|Z_x|/\\Omega$"
+      ],
+      "rows": [
+        [
+          1,
+          10000.0,
+          9720.0,
+          200.0,
+          194.39999999999998,
+          0.102880658,
+          0.12566370600000001,
+          7.162456,
+          1559.152715
+        ],
+        [
+          2,
+          1000.0,
+          969.0,
+          237.0,
+          229.653,
+          0.103199174,
+          0.148911492,
+          8.469761,
+          1559.21663
+        ],
+        [
+          3,
+          100.0,
+          96.6,
+          240.0,
+          231.84,
+          0.10351966900000001,
+          0.150796447,
+          8.575389,
+          1554.8188149999999
+        ]
+      ]
+    },
+    "summary": {
+      "headers": [
+        "参数",
+        "均值",
+        "单位"
+      ],
+      "rows": [
+        [
+          "电容量",
+          0.10319983385995958,
+          "μF"
+        ],
+        [
+          "损耗电阻",
+          218.631,
+          "Ω"
+        ],
+        [
+          "损耗因数",
+          0.14179054843201933,
+          "1"
+        ]
+      ]
+    }
+  },
+  "series": {
+    "capacitance": {
+      "x": [
+        1,
+        2,
+        3
+      ],
+      "y": [
+        0.10288065843621398,
+        0.10319917440660473,
+        0.10351966873706005
+      ],
+      "x_label": "组号",
+      "y_label": "电容量 $C_x\\,/\\,\\mu\\mathrm{F}$",
+      "label": "三组平衡结果"
+    },
+    "loss_resistance": {
+      "x": [
+        1,
+        2,
+        3
+      ],
+      "y": [
+        194.4,
+        229.653,
+        231.84
+      ],
+      "x_label": "组号",
+      "y_label": "损耗电阻 $R_x\\,/\\,\\Omega$",
+      "label": "三组平衡结果"
+    }
+  },
+  "notes": [
+    "三组改变比率臂并非重复相同设置；散布不能直接代表准确度。",
+    "指零仪增益只记录为观察条件，不作为物理放大系数进入元件计算。",
+    "模平衡和相平衡均需满足；参数稳定不代表已知绝对误差。"
+  ],
+  "code_hashes": {
+    "Kernel/analysis.wl": "42295e7a4c09179522223ed5c7849016c8f4f9facf03f8e4a53f1c595b74ee67"
+  },
+  "input_hashes": {
+    "data/balance.csv": "55e36a00001977373629242a29e564661ee5cad24e6e97243f1b75df7ffb10bf",
+    "data/label-repair-validation.json": "4378f0085362948086694361c4e4da9b7f145f90e8a76f2285352bdaf08de651",
+    "data/provenance.json": "5ab38c49b7a0d193fc652b9fe409c6d218e277792bbbbf1a3a707fddee76fcf6",
+    "data/python-author-validation.json": "127d1b0b2eeea1786581d5a10927529e40cac1aef48593a1c64b27c87fd0a606",
+    "experiment.json": "8c4d5869fa6d8a34a1542ca3156db939567441021a01861c25c37f688f302e74"
+  },
+  "environment": {
+    "wolfram": "15.0.1 for Microsoft Windows (64-bit) (July 2, 2026)"
+  },
+  "engine": "wolfram",
+  "experiment_id": "course-03/ac-bridge"
+}

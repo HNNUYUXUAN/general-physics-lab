@@ -1,0 +1,58 @@
+{
+  "experiment": "course-03/magnetic-field",
+  "paclet": "MagneticFieldLab",
+  "status": "passed",
+  "source_hashes": {
+    "analysis.wl": "9439c574f8f88c71263930fe62700ed853f4fe6840db39f9ec2829ebed128997",
+    "authoring.json": "0fa1fc32ff51c851fc743d1c625042238ae91cfffca719526c90bd1bbd97d1f7"
+  },
+  "input_hashes": {
+    "data/provenance.json": "b55037a74fe9534f486f9f0fb1e399483c49adff51efdfdb98fc8be8ec1b7ad0",
+    "data/python-author-validation.json": "c1249d6bce768e9d17010cf36c9adfc708cfccd8335be6d2b781c29cc7bf4940",
+    "data/readings.csv": "a6af61cb6cea8d3b7577e06da0c3df1eaceaab8dbbae46d704dd15e707b72ee9",
+    "experiment.json": "dd6efb2ed96b9b6f54679af442bff312946178abe8b5c37fa4f068de5fa1b25d"
+  },
+  "models": [
+    {
+      "key": "spacing",
+      "capture_messages": [],
+      "status": "passed",
+      "held_body_sha256": "15bedc3654502d1374914330ae1310642dbc58a4ce980b43363c3089d867e1f7",
+      "default_evaluation": {
+        "status": "evaluated",
+        "output_head": "Graphics",
+        "response_sha256": "b00494e2bb4f74c7520a4a06495b3e3a3d16f871958ef5735de41ed7eba4dc30",
+        "graphics_count": 1,
+        "messages": [],
+        "unresolved_heads": []
+      },
+      "default_repeat": {
+        "status": "evaluated",
+        "output_head": "Graphics",
+        "response_sha256": "b00494e2bb4f74c7520a4a06495b3e3a3d16f871958ef5735de41ed7eba4dc30",
+        "graphics_count": 1,
+        "messages": [],
+        "unresolved_heads": []
+      },
+      "default_deterministic": true,
+      "controls": [
+        {
+          "name": "MagneticFieldLab`Private`d",
+          "default": 1,
+          "changed": 0.5,
+          "specification_sha256": "887d31b1dae5b3654c7bdb301e923e18c06e02f07d1d965991d8dca994b9ed5d",
+          "evaluation": {
+            "status": "evaluated",
+            "output_head": "Graphics",
+            "response_sha256": "827122b49a4175e8b995f5e0a4c73effe8b3f9a9236bbcf0db147317898c8266",
+            "graphics_count": 1,
+            "messages": [],
+            "unresolved_heads": []
+          },
+          "response_changed": true,
+          "status": "passed"
+        }
+      ]
+    }
+  ]
+}

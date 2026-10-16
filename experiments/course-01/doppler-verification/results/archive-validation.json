@@ -1,0 +1,12 @@
+{
+  "id": "course-01/doppler-verification",
+  "status": "passed",
+  "paclet_sha256": "f4d9c6a021f8d46e3c86fa1e538ac51215c3eb38f97f750680c7dde5f95e6901",
+  "canonical_inputs_checked": [
+    "data/author-verification.json",
+    "data/observations.csv",
+    "data/provenance.json",
+    "experiment.json"
+  ],
+  "kernel_and_notebook_match_source": true
+}

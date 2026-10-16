@@ -1,0 +1,58 @@
+{
+  "experiment": "course-03/wheatstone-bridge",
+  "paclet": "WheatstoneBridgeLab",
+  "status": "passed",
+  "source_hashes": {
+    "analysis.wl": "58a6f096085fde6e9351f9f95444978d2e2348ee7a7f2eda75d86fa8d4bf8593",
+    "authoring.json": "8907891a76d976e8fdc384ddd6e1e70deebf3d46794fa37519c28b2f1600818b"
+  },
+  "input_hashes": {
+    "data/balance.csv": "d47f01d43ec454057a92bf203bfcd13712d57233f4112a63d855060e4bd73690",
+    "data/provenance.json": "734ff3cf3d4a5b783292b7115e8fd9ea10ff00756db69410961f20bf8708853c",
+    "data/python-author-validation.json": "5d717710b86046bfc98f005619c3bb509bdd5f2d4e0e9c8e14d5700fa2720b7b",
+    "experiment.json": "de7ca9849581bac3a53f3bc7d392834570b523bcaeda63b7719b284a6d2ba7f3"
+  },
+  "models": [
+    {
+      "key": "balance",
+      "capture_messages": [],
+      "status": "passed",
+      "held_body_sha256": "75d7d076cf246ab56ab95c330f8cdd26b5707e8a03e97f8a92ca169f80e53215",
+      "default_evaluation": {
+        "status": "evaluated",
+        "output_head": "Graphics",
+        "response_sha256": "71f08fb9464e49fa99a3720ba00e49b96272d1f6cad5982e2d723dd9cd439beb",
+        "graphics_count": 1,
+        "messages": [],
+        "unresolved_heads": []
+      },
+      "default_repeat": {
+        "status": "evaluated",
+        "output_head": "Graphics",
+        "response_sha256": "71f08fb9464e49fa99a3720ba00e49b96272d1f6cad5982e2d723dd9cd439beb",
+        "graphics_count": 1,
+        "messages": [],
+        "unresolved_heads": []
+      },
+      "default_deterministic": true,
+      "controls": [
+        {
+          "name": "WheatstoneBridgeLab`Private`m",
+          "default": 1,
+          "changed": 0.1,
+          "specification_sha256": "8cdbeb26dbd152005ed7b9b740928ba6f7b93ce0eed43fa5a8dfd10c73aba759",
+          "evaluation": {
+            "status": "evaluated",
+            "output_head": "Graphics",
+            "response_sha256": "a8764cb62e5ea2a4b38012ae69ecf77c77b29ff4ee7b4689373ccc284d635fcd",
+            "graphics_count": 1,
+            "messages": [],
+            "unresolved_heads": []
+          },
+          "response_changed": true,
+          "status": "passed"
+        }
+      ]
+    }
+  ]
+}

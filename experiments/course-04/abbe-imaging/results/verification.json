@@ -1,0 +1,127 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "metric": "first_order_mean_abs_mm",
+      "python": 0.475,
+      "wolfram": 0.475,
+      "unit": "mm",
+      "passed": true
+    },
+    {
+      "metric": "grating_period_mm",
+      "python": 0.19983157894736844,
+      "wolfram": 0.19983157894736842,
+      "unit": "mm",
+      "passed": true
+    },
+    {
+      "metric": "spatial_frequency_per_mm",
+      "python": 5.004214075010535,
+      "wolfram": 5.004214075010536,
+      "unit": "1/mm",
+      "passed": true
+    },
+    {
+      "metric": "spectrum_slope_mm",
+      "python": 0.47479999999999994,
+      "wolfram": 0.47479999999999994,
+      "unit": "mm",
+      "passed": true
+    },
+    {
+      "metric": "spectrum_intercept_mm",
+      "python": 0.0010000000000000009,
+      "wolfram": 0.0010000000000000009,
+      "unit": "mm",
+      "passed": true
+    },
+    {
+      "metric": "period_fit_mm",
+      "python": 0.19991575400168496,
+      "wolfram": 0.19991575400168496,
+      "unit": "mm",
+      "passed": true
+    },
+    {
+      "metric": "visibility_zero_only",
+      "python": 0.05,
+      "wolfram": 0.05,
+      "unit": "1",
+      "passed": true
+    },
+    {
+      "metric": "visibility_unfiltered",
+      "python": 0.82,
+      "wolfram": 0.82,
+      "unit": "1",
+      "passed": true
+    },
+    {
+      "table": "table1",
+      "row": 0,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "table1",
+      "row": 0,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "table1",
+      "row": 1,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "table1",
+      "row": 1,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "table1",
+      "row": 2,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "table1",
+      "row": 2,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "table1",
+      "row": 3,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "table1",
+      "row": 3,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "table1",
+      "row": 4,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "table1",
+      "row": 4,
+      "column": 1,
+      "passed": true
+    }
+  ],
+  "input_hashes": {
+    "data/observations-01.csv": "40eb18601744225c5f0b881cc3c8ac2c0d944cdd75c843c1d572abd1c00c6fca",
+    "data/observations-02.csv": "f48b8a58a0a472a9a6b3df10bb2ba09a292dd540af381965503e29bb5854e829",
+    "data/provenance.json": "fa0c6408e48fcce4106f63e5354811057dffbe98f410b2847e8d78def543facd",
+    "experiment.json": "2b471c66e12083f84247a7854095b6cfad8156d44d1ef359f3f75f6ac03e0306"
+  }
+}

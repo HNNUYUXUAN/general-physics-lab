@@ -1,0 +1,165 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "metric": "rotation_magnitude_deg",
+      "python": 8.15666666666667,
+      "wolfram": 8.156666666666666,
+      "unit": "deg",
+      "passed": true
+    },
+    {
+      "metric": "rotation_type_a_arcmin",
+      "python": 11.44159079848607,
+      "wolfram": 11.441590798486022,
+      "unit": "arcmin",
+      "passed": true
+    },
+    {
+      "metric": "conditional_concentration_g_ml",
+      "python": 0.06136523221988166,
+      "wolfram": 0.06136523221988164,
+      "unit": "g/mL",
+      "passed": true
+    },
+    {
+      "metric": "concentration_type_a_g_ml",
+      "python": 0.0014346462531956655,
+      "wolfram": 0.0014346462531956595,
+      "unit": "g/mL",
+      "passed": true
+    },
+    {
+      "metric": "maximum_vernier_disagreement_arcmin",
+      "python": 58.9999999999975,
+      "wolfram": 59.0,
+      "unit": "arcmin",
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 0,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 0,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 0,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 0,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 1,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 1,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 1,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 1,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 2,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 2,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 2,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 2,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 3,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 3,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 3,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 3,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 4,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 4,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 4,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 4,
+      "column": 3,
+      "passed": true
+    }
+  ],
+  "input_hashes": {
+    "data/observations-01.csv": "87a8f4134b405beb02ade665d75ba3de4e4f3cd424459c9a3ef2e0cfc8f65b0b",
+    "data/provenance.json": "e467d0942f3c8278548bb656e0246d2ff261b4c06ed021d95b06934f31398911",
+    "experiment.json": "daf74156cced55fe26f53351ab471a211253a71001fdf2985cd0ea643e2a48f3"
+  }
+}

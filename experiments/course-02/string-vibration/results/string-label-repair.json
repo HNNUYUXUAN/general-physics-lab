@@ -1,0 +1,10 @@
+{
+  "status": "passed-python-source",
+  "metric_count": 12,
+  "changes": "Metric label spells out length and half-wave count identically in both implementations; no extra math-map entries needed.",
+  "numeric_results_unchanged": true,
+  "source_hashes": {
+    "string_vibration.py": "59362867fcdfa37d1ffb03b20dcc16bcd4529c93db77fdccfa95497d88615730",
+    "analysis.wl": "229681fbcc377c59c174d9270003c5a694d427d221dfbd6a5e28b1129d2e9311"
+  }
+}

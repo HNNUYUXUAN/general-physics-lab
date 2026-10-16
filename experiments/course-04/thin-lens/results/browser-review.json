@@ -1,0 +1,25 @@
+{
+  "status": "passed",
+  "reviewed_at": "2026-10-16T09:15:53.349770+08:00",
+  "method": "Actual local HTTP browser DOM. All formulas rendered, no raw formula/overflow. Each provided slider/dropdown changed from default; SVG geometry or physical coordinate scale changed. Dropdowns and changed-state view checked after screenshot stabilization.",
+  "controls_checked": 2,
+  "controls_status": "passed",
+  "report": {
+    "sha256": "2fbcc76148d465641c2a17ea6db95e3769237e313b586e972367f6cfc58b0a76",
+    "math_sources": 53,
+    "math_rendered": 53,
+    "errors": [],
+    "raw_formula": false,
+    "overflow": false,
+    "font": "Times New Roman, SimSun, serif"
+  },
+  "notebook": {
+    "sha256": "1d82459b102954bd229befd5ade5aab64e0ff2df698a80f960dd833271aa3bc5",
+    "math_sources": 85,
+    "math_rendered": 85,
+    "errors": [],
+    "raw_formula": false,
+    "overflow": false,
+    "font": "Times New Roman, SimSun, serif"
+  }
+}

@@ -1,0 +1,454 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "metric": "grating_spacing_nm",
+      "python": 2486.4163344364615,
+      "wolfram": 2486.416334436462,
+      "unit": "nm",
+      "passed": true
+    },
+    {
+      "metric": "grating_spacing_type_a_nm",
+      "python": 8.115560410817558,
+      "wolfram": 8.11556041081755,
+      "unit": "nm",
+      "passed": true
+    },
+    {
+      "metric": "grating_lines_per_mm",
+      "python": 402.18526002671507,
+      "wolfram": 402.185260026715,
+      "unit": "1/mm",
+      "passed": true
+    },
+    {
+      "metric": "violet_wavelength_nm",
+      "python": 436.35511590462784,
+      "wolfram": 436.3551159046279,
+      "unit": "nm",
+      "passed": true
+    },
+    {
+      "metric": "violet_type_a_nm",
+      "python": 1.8461221032757569,
+      "wolfram": 1.8461221032757598,
+      "unit": "nm",
+      "passed": true
+    },
+    {
+      "metric": "green_wavelength_nm",
+      "python": 546.1,
+      "wolfram": 546.1,
+      "unit": "nm",
+      "passed": true
+    },
+    {
+      "metric": "green_type_a_nm",
+      "python": 0.0,
+      "wolfram": 0.0,
+      "unit": "nm",
+      "passed": true
+    },
+    {
+      "metric": "yellow_1_wavelength_nm",
+      "python": 569.6411875646269,
+      "wolfram": 569.641187564627,
+      "unit": "nm",
+      "passed": true
+    },
+    {
+      "metric": "yellow_1_type_a_nm",
+      "python": 5.699102061644722,
+      "wolfram": 5.699102061644783,
+      "unit": "nm",
+      "passed": true
+    },
+    {
+      "metric": "yellow_2_wavelength_nm",
+      "python": 579.2818784835649,
+      "wolfram": 579.281878483565,
+      "unit": "nm",
+      "passed": true
+    },
+    {
+      "metric": "yellow_2_type_a_nm",
+      "python": 7.471461811588474,
+      "wolfram": 7.471461811588419,
+      "unit": "nm",
+      "passed": true
+    },
+    {
+      "metric": "yellow_angle_gap_arcmin",
+      "python": 13.70000000000001,
+      "wolfram": 13.7,
+      "unit": "arcmin",
+      "passed": true
+    },
+    {
+      "metric": "dispersion_empirical_rad_per_nm",
+      "python": 0.0019345477954953343,
+      "wolfram": 0.001934547795495333,
+      "unit": "rad/nm",
+      "passed": true
+    },
+    {
+      "metric": "dispersion_theoretical_rad_per_nm",
+      "python": 0.00041336931710766523,
+      "wolfram": 0.0004133693171076651,
+      "unit": "rad/nm",
+      "passed": true
+    },
+    {
+      "metric": "maximum_vernier_gap_arcmin",
+      "python": 120.99999999999909,
+      "wolfram": 121.0,
+      "unit": "arcmin",
+      "passed": true
+    },
+    {
+      "table": "table1",
+      "row": 0,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "table1",
+      "row": 0,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "table1",
+      "row": 1,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "table1",
+      "row": 1,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "table1",
+      "row": 2,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "table1",
+      "row": 2,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "table1",
+      "row": 3,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "table1",
+      "row": 3,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "table1",
+      "row": 4,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "table1",
+      "row": 4,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 0,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 0,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 1,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 1,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 2,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 2,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 3,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 3,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 4,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 4,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "table3",
+      "row": 0,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "table3",
+      "row": 0,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "table3",
+      "row": 1,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "table3",
+      "row": 1,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "table3",
+      "row": 2,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "table3",
+      "row": 2,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "table3",
+      "row": 3,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "table3",
+      "row": 3,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "table3",
+      "row": 4,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "table3",
+      "row": 4,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "table4",
+      "row": 0,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "table4",
+      "row": 0,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "table4",
+      "row": 1,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "table4",
+      "row": 1,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "table4",
+      "row": 2,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "table4",
+      "row": 2,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "table4",
+      "row": 3,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "table4",
+      "row": 3,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "table4",
+      "row": 4,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "table4",
+      "row": 4,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "table5",
+      "row": 0,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "table5",
+      "row": 0,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "table5",
+      "row": 0,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "table5",
+      "row": 0,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "table5",
+      "row": 1,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "table5",
+      "row": 1,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "table5",
+      "row": 1,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "table5",
+      "row": 1,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "table5",
+      "row": 2,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "table5",
+      "row": 2,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "table5",
+      "row": 2,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "table5",
+      "row": 2,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "table5",
+      "row": 3,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "table5",
+      "row": 3,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "table5",
+      "row": 3,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "table5",
+      "row": 3,
+      "column": 4,
+      "passed": true
+    }
+  ],
+  "input_hashes": {
+    "data/observations-01.csv": "1c2ef41401dce686dfc0bb6d2a9622df27b5b3edd50d7be257ce2904e90159b6",
+    "data/observations-02.csv": "5bced39f153b7430337ee0d296aaea7b0edc456ef505d7c1f1c5618964f46dca",
+    "data/observations-03.csv": "5e3e8431cfa3cac8e47c6b3dc75d8e003c511c30c35c4bb69d9c7f70dc7eac37",
+    "data/observations-04.csv": "df5485fca350c2b5b357c978398bf308c97ba46dae39d0a8551833df1967c26a",
+    "data/provenance.json": "8f2c120282158fdb71439610c52724b8189cf50ded8a07e9bb51a5af0aeb8cac",
+    "experiment.json": "d9da783a321aea7a81813572faa19dac564ee53440a5f54b1abc9e117d9d2792"
+  }
+}

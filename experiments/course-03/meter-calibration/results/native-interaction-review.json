@@ -1,0 +1,59 @@
+{
+  "experiment": "course-03/meter-calibration",
+  "paclet": "MeterCalibrationLab",
+  "status": "passed",
+  "source_hashes": {
+    "analysis.wl": "c4af245b406c3f05b642d9d1d727532cb6b6736cb74e594e4d01e86c2968de5a",
+    "authoring.json": "af15583700dfa28b5c5a4884dde82008a8fa71984c28343025ce2d05f7c82a4a"
+  },
+  "input_hashes": {
+    "data/current.csv": "a02f0c087f508964df36420890486725adc63b12b2acb938262a2600e2ed0d51",
+    "data/provenance.json": "9ecc4b54a14ea5b9a3c3a36aff11df721b370355dc5e9b1e32426237787c4b52",
+    "data/python-author-validation.json": "87b35a2cee15c54b5338cef0b6c2a862df346f32bf2d90f0f4cb8a47046e03d4",
+    "data/voltage.csv": "ff31e4bd0cb4c6a1d78f492fab86f5eef79308395fefe4dae0ebddcb0e64f6f5",
+    "experiment.json": "8bf7aed5b792f38c67f67ef72ddb79e54579450c2297c0b279dde3b072bd5dce"
+  },
+  "models": [
+    {
+      "key": "zero-design",
+      "capture_messages": [],
+      "status": "passed",
+      "held_body_sha256": "0e24204e79762bb7f6abbc16659535e3ff6814a5c1dcaf84b54e6e51f20d1147",
+      "default_evaluation": {
+        "status": "evaluated",
+        "output_head": "Graphics",
+        "response_sha256": "d0f70c8a604d266dbbe01e27d82c94c8bc6db452f17eb85f1adfa359699391ee",
+        "graphics_count": 1,
+        "messages": [],
+        "unresolved_heads": []
+      },
+      "default_repeat": {
+        "status": "evaluated",
+        "output_head": "Graphics",
+        "response_sha256": "d0f70c8a604d266dbbe01e27d82c94c8bc6db452f17eb85f1adfa359699391ee",
+        "graphics_count": 1,
+        "messages": [],
+        "unresolved_heads": []
+      },
+      "default_deterministic": true,
+      "controls": [
+        {
+          "name": "MeterCalibrationLab`Private`r3",
+          "default": 1100,
+          "changed": 1000,
+          "specification_sha256": "72197672a1398ce68acc9e1a05fcea8b841f66054d41f989041062e48756d84b",
+          "evaluation": {
+            "status": "evaluated",
+            "output_head": "Graphics",
+            "response_sha256": "45f81d23473373614c861a0592c7f758c676e44aa1ee56fb963c9f8de373d676",
+            "graphics_count": 1,
+            "messages": [],
+            "unresolved_heads": []
+          },
+          "response_changed": true,
+          "status": "passed"
+        }
+      ]
+    }
+  ]
+}

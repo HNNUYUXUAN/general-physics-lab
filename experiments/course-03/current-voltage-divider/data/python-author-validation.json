@@ -1,0 +1,151 @@
+{
+  "checks": {
+    "sixty_observations": true,
+    "finite_json": true,
+    "zero_voltage_endpoint": true,
+    "full_voltage_endpoint": true,
+    "model_interaction": true
+  },
+  "metrics": {
+    "current_K0p1_amplitude": {
+      "value": 18.441021383737155,
+      "unit": "原记录电流单位",
+      "label": "current K=0.1 物理模型幅度估计"
+    },
+    "current_K0p1_rmse": {
+      "value": 1.6371721798527432,
+      "unit": "原记录电流单位",
+      "label": "current K=0.1 模型均方根残差"
+    },
+    "current_K0p1_max_relative_residual": {
+      "value": 8.636355721573821,
+      "unit": "%",
+      "label": "current K=0.1 最大相对读数残差"
+    },
+    "current_K0p5_amplitude": {
+      "value": 17.69996385802114,
+      "unit": "原记录电流单位",
+      "label": "current K=0.5 物理模型幅度估计"
+    },
+    "current_K0p5_rmse": {
+      "value": 0.26197468683189024,
+      "unit": "原记录电流单位",
+      "label": "current K=0.5 模型均方根残差"
+    },
+    "current_K0p5_max_relative_residual": {
+      "value": 2.6084861334558775,
+      "unit": "%",
+      "label": "current K=0.5 最大相对读数残差"
+    },
+    "current_K1p0_amplitude": {
+      "value": 17.693665322980127,
+      "unit": "原记录电流单位",
+      "label": "current K=1.0 物理模型幅度估计"
+    },
+    "current_K1p0_rmse": {
+      "value": 0.11840737811625827,
+      "unit": "原记录电流单位",
+      "label": "current K=1.0 模型均方根残差"
+    },
+    "current_K1p0_max_relative_residual": {
+      "value": 1.9741533352901655,
+      "unit": "%",
+      "label": "current K=1.0 最大相对读数残差"
+    },
+    "voltage_K0p1_amplitude": {
+      "value": 5.0032217184842,
+      "unit": "原记录电压单位",
+      "label": "voltage K=0.1 物理模型幅度估计"
+    },
+    "voltage_K0p1_rmse": {
+      "value": 0.09548717642711113,
+      "unit": "原记录电压单位",
+      "label": "voltage K=0.1 模型均方根残差"
+    },
+    "voltage_K0p1_max_relative_residual": {
+      "value": 10.496928112983877,
+      "unit": "%",
+      "label": "voltage K=0.1 最大相对读数残差"
+    },
+    "voltage_K0p5_amplitude": {
+      "value": 5.091991302132404,
+      "unit": "原记录电压单位",
+      "label": "voltage K=0.5 物理模型幅度估计"
+    },
+    "voltage_K0p5_rmse": {
+      "value": 0.07345317696247422,
+      "unit": "原记录电压单位",
+      "label": "voltage K=0.5 模型均方根残差"
+    },
+    "voltage_K0p5_max_relative_residual": {
+      "value": 10.647355543946203,
+      "unit": "%",
+      "label": "voltage K=0.5 最大相对读数残差"
+    },
+    "voltage_K1p0_amplitude": {
+      "value": 5.085167739433549,
+      "unit": "原记录电压单位",
+      "label": "voltage K=1.0 物理模型幅度估计"
+    },
+    "voltage_K1p0_rmse": {
+      "value": 0.06706708539262264,
+      "unit": "原记录电压单位",
+      "label": "voltage K=1.0 模型均方根残差"
+    },
+    "voltage_K1p0_max_relative_residual": {
+      "value": 33.294042973356476,
+      "unit": "%",
+      "label": "voltage K=1.0 最大相对读数残差"
+    },
+    "model_K0p1_current_end": {
+      "value": 0.09090909090909091,
+      "unit": "1",
+      "label": "K=0.1 制流末端归一化电流"
+    },
+    "model_K0p1_voltage_mid": {
+      "value": 0.14285714285714288,
+      "unit": "1",
+      "label": "K=0.1 分压中点归一化电压"
+    },
+    "model_K0p5_current_end": {
+      "value": 0.3333333333333333,
+      "unit": "1",
+      "label": "K=0.5 制流末端归一化电流"
+    },
+    "model_K0p5_voltage_mid": {
+      "value": 0.3333333333333333,
+      "unit": "1",
+      "label": "K=0.5 分压中点归一化电压"
+    },
+    "model_K1p0_current_end": {
+      "value": 0.5,
+      "unit": "1",
+      "label": "K=1.0 制流末端归一化电流"
+    },
+    "model_K1p0_voltage_mid": {
+      "value": 0.4,
+      "unit": "1",
+      "label": "K=1.0 分压中点归一化电压"
+    },
+    "model_K2p0_current_end": {
+      "value": 0.6666666666666666,
+      "unit": "1",
+      "label": "K=2.0 制流末端归一化电流"
+    },
+    "model_K2p0_voltage_mid": {
+      "value": 0.4444444444444444,
+      "unit": "1",
+      "label": "K=2.0 分压中点归一化电压"
+    },
+    "model_K10p0_current_end": {
+      "value": 0.9090909090909091,
+      "unit": "1",
+      "label": "K=10.0 制流末端归一化电流"
+    },
+    "model_K10p0_voltage_mid": {
+      "value": 0.4878048780487805,
+      "unit": "1",
+      "label": "K=10.0 分压中点归一化电压"
+    }
+  }
+}

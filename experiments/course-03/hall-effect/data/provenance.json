@@ -1,0 +1,35 @@
+{
+  "primary_source": "originals/course-03/5霍尔效应的实验研究/实验报告-霍尔效应的实验研究.docx",
+  "primary_sha256": "4741152c5097a7ea6b834daf283f382f32fca75bd0e467985db1ae8eb8b0da4a",
+  "converted_source": "processed/courses-01-03-04/普通物理实验3/5霍尔效应的实验研究/实验报告-霍尔效应的实验研究_docx/正文.md",
+  "table_mapping": {
+    "working_current.csv": "DOCX表15、magnet_current.csv表16、position.csv表17；数据行2–11，列1自变量，列2–5为四极性读数；列6只保存源处理值。"
+  },
+  "transformations": [
+    "四极性读数按实际表头顺序进行奇偶投影。",
+    "由mV/mA单位拟合，未按结论图片误写成μV/mA。",
+    "固定工作电流下位置投影归一化为相对场；不反演绝对B。"
+  ],
+  "issues": [
+    {
+      "type": "units_error",
+      "resolution": "源结论图写第一表32.1μV/mA，原表mV单位决定斜率为约32mV/mA。"
+    },
+    {
+      "type": "incompatible_series",
+      "resolution": "第一表3mA/500mA为96.3675mV，第二表同标记条件为0.1mV；不能声称4%内一致。"
+    },
+    {
+      "type": "possible_typo",
+      "resolution": "第一表Is2.1mA第三通道61.81mV偏离邻近趋势，原值保留不擅改。"
+    },
+    {
+      "type": "conversion_artifact",
+      "resolution": "位置20mm第四通道DOCX文本为−47.32mV，去除转换图片标记。"
+    },
+    {
+      "type": "missing_calibration",
+      "resolution": "KH/d/独立B未给出，绝对场和载流子浓度不计算。"
+    }
+  ]
+}

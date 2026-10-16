@@ -1,0 +1,26 @@
+{
+  "experiment": "course-01/doppler-application",
+  "status": "passed-source-review",
+  "reviewed_at": "2026-10-16T00:33:51.163385+08:00",
+  "checks": [
+    "physical variables and units in Markdown and expansion prose use standard LaTeX",
+    "figure captions follow images",
+    "table captions precede data tables",
+    "expansion table captions before and figure captions after",
+    "no non-image links or cross-manuscript dependencies in reader text",
+    "display and inline math delimiters balanced"
+  ],
+  "changes": [
+    "Reader prose physical units converted to standard LaTeX; applicable bare beta, k, e, n and d converted to math. No data or algorithm changes."
+  ],
+  "source_hashes": {
+    "report\\report.template.md": "f0b65df1de6c97e34f737315df5f9d90212985144c1cd25ee8e155b098742639",
+    "authoring.json": "e3e4ea34eacec0f825a694b2cfb596169176f2db81124edf33a71499dcb85f24"
+  },
+  "issues": [],
+  "scope": "Source text review only; rebuilt Jupyter/Wolfram rendering is checked separately.",
+  "reviewed_files": [
+    "report/report.template.md",
+    "authoring.json"
+  ]
+}

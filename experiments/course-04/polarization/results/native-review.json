@@ -1,0 +1,181 @@
+{
+  "experiment": "course-04/polarization",
+  "status": "passed",
+  "reviewed_at": "2026-10-16T08:18:37.560544+08:00",
+  "build_run": "C:\\Users\\yuxua\\.codex\\visualizations\\2026\\10\\15\\01a13f56-4554-7500-ab99-dad08368b735\\rollout\\project\\.build\\course-04\\polarization\\20261016_082150_267136",
+  "notebook": "C:\\Users\\yuxua\\.codex\\visualizations\\2026\\10\\15\\01a13f56-4554-7500-ab99-dad08368b735\\rollout\\project\\notebook\\paclets\\PolarizationLab\\Notebooks\\PolarizationLab.nb",
+  "notebook_sha256": "81bcc84fb1145406015554800b833664bdce5e9d0c52dadfc60c39cfc7e74151",
+  "method": "Actual view_image inspection of every fresh native QA panel without rescaling; long sections split with overlapping crops. Review covers mathematical typesetting, units, Chinese glyphs, centering, clipping and captions. Native controls visually inspected at saved default state; changing-state calculation validation is recorded by root serialized pipeline separately.",
+  "section_coverage": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "inspected_images": [
+    {
+      "path": "C:\\Users\\yuxua\\.codex\\visualizations\\2026\\10\\15\\01a13f56-4554-7500-ab99-dad08368b735\\rollout\\qa\\PolarizationLab\\review-01.png",
+      "sha256": "a728930959b518bae1fe68f15149fc244d5be54070fb64922c16c56ac642b6b0",
+      "source_spans": [
+        {
+          "source": "section-01.png",
+          "top": 0,
+          "bottom": 246
+        },
+        {
+          "source": "section-02.png",
+          "top": 0,
+          "bottom": 215
+        },
+        {
+          "source": "section-03.png",
+          "top": 0,
+          "bottom": 501
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\yuxua\\.codex\\visualizations\\2026\\10\\15\\01a13f56-4554-7500-ab99-dad08368b735\\rollout\\qa\\PolarizationLab\\review-02.png",
+      "sha256": "00240a2c7f9b8267a02fcba475ba2e78f4eecc0b65b5963eef5490d35fc999ff",
+      "source_spans": [
+        {
+          "source": "section-04.png",
+          "top": 0,
+          "bottom": 141
+        },
+        {
+          "source": "section-05.png",
+          "top": 0,
+          "bottom": 291
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\yuxua\\.codex\\visualizations\\2026\\10\\15\\01a13f56-4554-7500-ab99-dad08368b735\\rollout\\qa\\PolarizationLab\\review-03.png",
+      "sha256": "76d9cbef096698efa8bf55515813b76709f4d98d682b22417ecbf538554ff8e1",
+      "source_spans": [
+        {
+          "source": "section-06.png",
+          "top": 0,
+          "bottom": 793
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\yuxua\\.codex\\visualizations\\2026\\10\\15\\01a13f56-4554-7500-ab99-dad08368b735\\rollout\\qa\\PolarizationLab\\review-04.png",
+      "sha256": "baa543cbefec36c0df40caead6d07f76f70895dfe4b7e9c311cfc995310b8ea0",
+      "source_spans": [
+        {
+          "source": "section-07.png",
+          "top": 0,
+          "bottom": 1150
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\yuxua\\.codex\\visualizations\\2026\\10\\15\\01a13f56-4554-7500-ab99-dad08368b735\\rollout\\qa\\PolarizationLab\\review-05.png",
+      "sha256": "9c87ab2dd1a7e49d8527379a541310eb288dac816a35eef13a71f3c6f4f2cc2a",
+      "source_spans": [
+        {
+          "source": "section-07.png",
+          "top": 1050,
+          "bottom": 2200
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\yuxua\\.codex\\visualizations\\2026\\10\\15\\01a13f56-4554-7500-ab99-dad08368b735\\rollout\\qa\\PolarizationLab\\review-06.png",
+      "sha256": "2340909c6e532c60c68fe2e38646468c136f2566dcac55e93d90aefd62b04375",
+      "source_spans": [
+        {
+          "source": "section-07.png",
+          "top": 2100,
+          "bottom": 2655
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\yuxua\\.codex\\visualizations\\2026\\10\\15\\01a13f56-4554-7500-ab99-dad08368b735\\rollout\\qa\\PolarizationLab\\review-07.png",
+      "sha256": "07a51174c24fb4e6a3c6471945972de5468f467ead2abaf265fb05ff705046d6",
+      "source_spans": [
+        {
+          "source": "section-08.png",
+          "top": 0,
+          "bottom": 1125
+        }
+      ]
+    }
+  ],
+  "source_png_hashes": {
+    "section-01.png": {
+      "sha256": "20bee5de1e59218e7c1da75745d60c7be1467aa4aa960ffb585f722e09902797",
+      "size": [
+        1200,
+        246
+      ]
+    },
+    "section-02.png": {
+      "sha256": "ce28d378e501c9193fefc6d90fbc47144b317e6ca6942062c922cfcca41549a8",
+      "size": [
+        1200,
+        215
+      ]
+    },
+    "section-03.png": {
+      "sha256": "35748d65e373b2ddeb780b1632863e64a4889ba4710564d60adeb68a1940575a",
+      "size": [
+        1200,
+        501
+      ]
+    },
+    "section-04.png": {
+      "sha256": "5b57fe240571a38dbe0fe4e6c8847d9ceaa9bcf203d24f5711f8f052a95fe320",
+      "size": [
+        1200,
+        141
+      ]
+    },
+    "section-05.png": {
+      "sha256": "aeda954257c49f034e571cb8871c2217a9f4ebb32fdd961bdf1a337481359449",
+      "size": [
+        1200,
+        291
+      ]
+    },
+    "section-06.png": {
+      "sha256": "0328820cdbe4681083627b70b8a79247edcc542e40151657a94ac3e07c9f3fdf",
+      "size": [
+        1200,
+        793
+      ]
+    },
+    "section-07.png": {
+      "sha256": "b6db47d44566448416fc36b717595764dfded843b232f901c8021a20499ceaf2",
+      "size": [
+        1200,
+        2655
+      ]
+    },
+    "section-08.png": {
+      "sha256": "d677147ce7c0933233117b5fddb4cd44ef2bf95059635b51545a69c3cb5cefca",
+      "size": [
+        1200,
+        1125
+      ]
+    }
+  },
+  "issues": [],
+  "identical_image_refreshes": [
+    {
+      "at": "2026-10-16T08:29:30.810420+08:00",
+      "previous_notebook_sha256": "81bcc84fb1145406015554800b833664bdce5e9d0c52dadfc60c39cfc7e74151",
+      "current_notebook_sha256": "81bcc84fb1145406015554800b833664bdce5e9d0c52dadfc60c39cfc7e74151",
+      "build_run": "C:\\Users\\yuxua\\.codex\\visualizations\\2026\\10\\15\\01a13f56-4554-7500-ab99-dad08368b735\\rollout\\project\\.build\\course-04\\polarization\\20261016_082150_267136",
+      "evidence": "Every freshly prepared full-width QA crop is SHA256-identical to the previously actually viewed crop, with identical section spans and complete coverage; only raw source PNG metadata may differ. Original actual view_image inspection remains applicable."
+    }
+  ]
+}

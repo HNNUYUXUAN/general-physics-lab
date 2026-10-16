@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "id": "course-02/thermal-expansion",
+  "title": "金属线膨胀系数的测量",
+  "parameters": {
+    "nominal_length_mm": 150,
+    "reference_alpha_per_k": 1.725e-05
+  },
+  "models": {
+    "expansion": "30..100°C内常系数线膨胀，八组数据为讲义同值示例。"
+  },
+  "source_docx": "originals/course-02/06-金属线膨胀系数的测量/实验报告-金属线胀系数的测量.docx",
+  "data_version": "1.0.0"
+}

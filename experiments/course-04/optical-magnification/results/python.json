@@ -1,0 +1,258 @@
+{
+  "metrics": {
+    "microscope_magnification": {
+      "value": 24.988000000000003,
+      "unit": "1",
+      "label": "显微镜投影放大率"
+    },
+    "microscope_type_a": {
+      "value": 0.02416609194718913,
+      "unit": "1",
+      "label": "显微镜放大率均值A类"
+    },
+    "telescope_magnification": {
+      "value": 4.892525130380177,
+      "unit": "1",
+      "label": "望远镜放大率绝对值"
+    },
+    "telescope_type_a": {
+      "value": 0.01388115996091462,
+      "unit": "1",
+      "label": "望远镜放大率均值A类"
+    },
+    "eyepiece_scale_mm": {
+      "value": 0.0025490738975742096,
+      "unit": "mm/div",
+      "label": "测微目镜每格值"
+    },
+    "eyepiece_scale_type_a_mm": {
+      "value": 1.6572005817678215e-06,
+      "unit": "mm/div",
+      "label": "每格值均值A类"
+    },
+    "wire_diameter_um": {
+      "value": 69.18186558016407,
+      "unit": "um",
+      "label": "细丝直径均值"
+    },
+    "wire_repeat_type_a_um": {
+      "value": 0.12997777545320832,
+      "unit": "um",
+      "label": "固定标定下细丝均值A类"
+    },
+    "wire_random_combined_um": {
+      "value": 0.1375394518261165,
+      "unit": "um",
+      "label": "标定与宽度重复性传播分量"
+    }
+  },
+  "tables": {
+    "table1": {
+      "headers": [
+        "次数",
+        "$l_0$ / mm",
+        "$l$ / mm",
+        "$M_m$"
+      ],
+      "rows": [
+        [
+          1,
+          5.0,
+          124.6,
+          24.92
+        ],
+        [
+          2,
+          5.0,
+          125.1,
+          25.02
+        ],
+        [
+          3,
+          5.0,
+          124.8,
+          24.96
+        ],
+        [
+          4,
+          5.0,
+          125.3,
+          25.06
+        ],
+        [
+          5,
+          5.0,
+          124.9,
+          24.98
+        ]
+      ]
+    },
+    "table2": {
+      "headers": [
+        "次数",
+        "$l_1$ / mm",
+        "$l_2$ / mm",
+        "$|M_t|$"
+      ],
+      "rows": [
+        [
+          1,
+          20.0,
+          4.05,
+          4.9382716
+        ],
+        [
+          2,
+          20.0,
+          4.1,
+          4.87804878
+        ],
+        [
+          3,
+          20.0,
+          4.08,
+          4.90196078
+        ],
+        [
+          4,
+          20.0,
+          4.12,
+          4.85436893
+        ],
+        [
+          5,
+          20.0,
+          4.09,
+          4.88997555
+        ]
+      ]
+    },
+    "table3": {
+      "headers": [
+        "次数",
+        "$L$ / mm",
+        "$S$ / 格",
+        "$k$ / (mm/格)"
+      ],
+      "rows": [
+        [
+          1,
+          0.2,
+          78.5,
+          0.00254777
+        ],
+        [
+          2,
+          0.2,
+          78.3,
+          0.00255428
+        ],
+        [
+          3,
+          0.2,
+          78.6,
+          0.00254453
+        ],
+        [
+          4,
+          0.2,
+          78.4,
+          0.00255102
+        ],
+        [
+          5,
+          0.2,
+          78.5,
+          0.00254777
+        ]
+      ]
+    },
+    "table4": {
+      "headers": [
+        "次数",
+        "宽度 $s$ / 格",
+        "直径 $d$ / mm"
+      ],
+      "rows": [
+        [
+          1,
+          27.1,
+          0.0690799
+        ],
+        [
+          2,
+          27.0,
+          0.068825
+        ],
+        [
+          3,
+          27.3,
+          0.06958972
+        ],
+        [
+          4,
+          27.2,
+          0.06933481
+        ],
+        [
+          5,
+          27.1,
+          0.0690799
+        ]
+      ]
+    }
+  },
+  "series": {
+    "wire-repeat": {
+      "x": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "y": [
+        69.07990262426108,
+        68.82499523450366,
+        69.58971740377592,
+        69.3348100140185,
+        69.07990262426108
+      ],
+      "x_label": "测量次数",
+      "y_label": "细丝直径 $d$ / μm",
+      "label": "共用标定均值"
+    }
+  },
+  "notes": [
+    "标定均值是所有细丝读数共享的乘法因子，其分量不能再次随细丝重复次数缩小。",
+    "未给标尺、投影距离和对焦系统误差；重复性不等于准确度。"
+  ],
+  "experiment_id": "course-04/optical-magnification",
+  "engine": "python",
+  "input_hashes": {
+    "data/observations-01.csv": "2415039af2bc40ecfc6eef74c30b475f9a17e462e582260d265ef8227069b922",
+    "data/observations-02.csv": "019dbb578851c09e83adae2d80c56a5d8c6a15216f97d2e9d471175e8ee776d8",
+    "data/observations-03.csv": "7dfe7134a5466be8a7fef3592524c2a8cee5ba0f15f18dd4daca02aacbef963c",
+    "data/observations-04.csv": "1aae8cae0d373254cb8747fa6bdb3c347ccc525be1dcb0eee07e37e3d35f9acf",
+    "data/provenance.json": "c42eb97a2bbc00829334098c77b70aa0c66ecd27614776201f8821d79ddf68a8",
+    "experiment.json": "870a15f86edde443ffc2050290cd93be02fdcb0b8da55fd769ee30e19355e1dc"
+  },
+  "code_hashes": {
+    "src/physicslab/common/__init__.py": "7cc50d4a8325535fb401e04aed51f6a04ad3ca7f40c4b972624547491c83e1a2",
+    "src/physicslab/common/io.py": "5135c2253071c4e3885dec26db357a7777c1a13c7a83559f5152007abb986541",
+    "src/physicslab/common/manuscripts.py": "847e4bade7e617d524e0b484db6e17ee82097687e37b84bb0ac3796dbe06ed10",
+    "src/physicslab/common/plots.py": "37825a8c2a8f5dd8ca7f01968dd343a8dd6cb6139d2ef67275ff745b04e9b907",
+    "src/physicslab/common/tex_boxes.py": "0e2b226fce4c79bba37cc2ba6b6153802a5cb6dbda9dfee95d1a98e5894f9554",
+    "src/physicslab/common/theme.py": "ee8592a54efb71efd91ccdc55b66c7d8bda14a32454dfd75aa34ef606269a01c",
+    "src/physicslab/experiments/optical_magnification.py": "ffa13cbaf8ec37560db01127e48ea70dff3099ad3c02260ac91ca71345af3507"
+  },
+  "environment": {
+    "python": "3.14.7",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "matplotlib": "3.11.2",
+    "nbclient": "0.11.0",
+    "nbformat": "5.11.1",
+    "plotly": "7.1.0"
+  }
+}

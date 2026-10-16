@@ -1,0 +1,756 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "metric": "effective_area_m2",
+      "python": 0.006885,
+      "wolfram": 0.006885,
+      "unit": "m^2",
+      "passed": true
+    },
+    {
+      "metric": "heat_flux_w_m2",
+      "python": 214.3793490460157,
+      "wolfram": 214.37934904601573,
+      "unit": "W/m^2",
+      "passed": true
+    },
+    {
+      "metric": "temperature_difference_endpoint_k",
+      "python": 4.6,
+      "wolfram": 4.6,
+      "unit": "K",
+      "passed": true
+    },
+    {
+      "metric": "thermal_conductivity_endpoint",
+      "python": 0.23302103157175622,
+      "wolfram": 0.23302103157175624,
+      "unit": "W/(m K)",
+      "passed": true
+    },
+    {
+      "metric": "thermal_conductivity_mean_delta",
+      "python": 0.2457950257783054,
+      "wolfram": 0.24579502577830542,
+      "unit": "W/(m K)",
+      "passed": true
+    },
+    {
+      "metric": "rise_rate_fit_k_s",
+      "python": 0.009505514705882352,
+      "wolfram": 0.009505514705882352,
+      "unit": "K/s",
+      "passed": true
+    },
+    {
+      "metric": "rise_rate_residual_se_k_s",
+      "python": 5.0736414722600584e-05,
+      "wolfram": 5.073641472260055e-05,
+      "unit": "K/s",
+      "passed": true
+    },
+    {
+      "metric": "rise_rate_difference_k_s",
+      "python": 0.00951171875,
+      "wolfram": 0.00951171875,
+      "unit": "K/s",
+      "passed": true
+    },
+    {
+      "metric": "specific_heat_j_kg_k",
+      "python": 2006.5084756321792,
+      "wolfram": 2006.5084756321796,
+      "unit": "J/(kg K)",
+      "passed": true
+    },
+    {
+      "metric": "center_slope_uv_min",
+      "python": 22.813235294117646,
+      "wolfram": 22.813235294117646,
+      "unit": "uV/min",
+      "passed": true
+    },
+    {
+      "metric": "center_intercept_uv",
+      "python": -54.98382352941178,
+      "wolfram": -54.983823529411765,
+      "unit": "uV",
+      "passed": true
+    },
+    {
+      "metric": "center_fit_r_squared",
+      "python": 0.9996013028581554,
+      "wolfram": 0.9996013028581554,
+      "unit": "1",
+      "passed": true
+    },
+    {
+      "metric": "delta_drift_percent",
+      "python": 11.515151515151516,
+      "wolfram": 11.515151515151516,
+      "unit": "%",
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 0,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 0,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 0,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 0,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 0,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 0,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 0,
+      "column": 6,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 1,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 1,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 1,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 1,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 1,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 1,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 1,
+      "column": 6,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 2,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 2,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 2,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 2,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 2,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 2,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 2,
+      "column": 6,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 3,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 3,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 3,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 3,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 3,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 3,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 3,
+      "column": 6,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 4,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 4,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 4,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 4,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 4,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 4,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 4,
+      "column": 6,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 5,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 5,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 5,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 5,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 5,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 5,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 5,
+      "column": 6,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 6,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 6,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 6,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 6,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 6,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 6,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 6,
+      "column": 6,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 7,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 7,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 7,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 7,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 7,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 7,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 7,
+      "column": 6,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 8,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 8,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 8,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 8,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 8,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 8,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 9,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 9,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 9,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 9,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 9,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 9,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 10,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 10,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 10,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 10,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 10,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 10,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 11,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 11,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 11,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 11,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 11,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 11,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 12,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 12,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 12,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 12,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 12,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 12,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 13,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 13,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 13,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 13,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 13,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 13,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 14,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 14,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 14,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 14,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 14,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 14,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 15,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 15,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 15,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 15,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 15,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "table3",
+      "row": 0,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "table3",
+      "row": 1,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "table3",
+      "row": 2,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "table3",
+      "row": 3,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "table3",
+      "row": 4,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "table3",
+      "row": 5,
+      "column": 1,
+      "passed": true
+    }
+  ],
+  "input_hashes": {
+    "data/observations-01.csv": "2a52be343b885e4a985766af96a94c62248fb65068dd98d1745690fa578ce180",
+    "data/observations-02.csv": "7fde5817a5fce7c809bae94cbfbcbd37d90e147e3b6997793fd2ce893ca3b7b9",
+    "data/provenance.json": "fd2562c2af4aa756f7bede73bc5df5d3a8e4ab2c914e203b1351b8deca8324ab",
+    "experiment.json": "ff78108715ca3622c6316b8e72935f9db707e35a782518dbd0b45e02596d94f4"
+  }
+}

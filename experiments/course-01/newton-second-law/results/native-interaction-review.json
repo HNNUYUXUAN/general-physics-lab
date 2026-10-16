@@ -1,0 +1,58 @@
+{
+  "experiment": "course-01/newton-second-law",
+  "paclet": "NewtonSecondLawLab",
+  "status": "passed",
+  "source_hashes": {
+    "analysis.wl": "29c781fe1404e780ae973f94f45d782651fc1d98bf0d3324511e0957e3dc1237",
+    "authoring.json": "65a11d278b8047f74be29cd6dba680d32b95e05935d2af5596a3dedd0a948d44"
+  },
+  "input_hashes": {
+    "data/author-verification.json": "d740b1e1c9d53a49defcd1e255224bda29869f733b99eb100f3f3e2c5d61d21e",
+    "data/observations.csv": "c9da0b469d3d96476dd3b1c3ea9475857e578560bd7191ba49d44b52be67f657",
+    "data/provenance.json": "208b7b5f1db168ddb26fd981b543302f79bc5d0b2fdf20dbe0eb06863445d63d",
+    "experiment.json": "c56bcce64fcbd61cd2a20801e4aa15fa88af83ddc1d7a2af2d1e4e7287646e9b"
+  },
+  "models": [
+    {
+      "key": "fit-selection",
+      "capture_messages": [],
+      "status": "passed",
+      "held_body_sha256": "733565eb9ae5b8d68b97c48ac8c689c6ef610eef40993f7c02ed66700aba61d5",
+      "default_evaluation": {
+        "status": "evaluated",
+        "output_head": "Graphics",
+        "response_sha256": "120df38f849360b184deb7bbc311c4d19247bf4e3049a88455145fd7368c129e",
+        "graphics_count": 1,
+        "messages": [],
+        "unresolved_heads": []
+      },
+      "default_repeat": {
+        "status": "evaluated",
+        "output_head": "Graphics",
+        "response_sha256": "120df38f849360b184deb7bbc311c4d19247bf4e3049a88455145fd7368c129e",
+        "graphics_count": 1,
+        "messages": [],
+        "unresolved_heads": []
+      },
+      "default_deterministic": true,
+      "controls": [
+        {
+          "name": "NewtonSecondLawLab`Private`selection",
+          "default": 0,
+          "changed": 1,
+          "specification_sha256": "2e7144bda6f516f418f3ae395c182635ab2ac4379b64239aa69e1854ce3598b0",
+          "evaluation": {
+            "status": "evaluated",
+            "output_head": "Graphics",
+            "response_sha256": "c14a1e3c32718b1530ba5b3ca07ece371c94f5afc5421f252e11f547414253e3",
+            "graphics_count": 1,
+            "messages": [],
+            "unresolved_heads": []
+          },
+          "response_changed": true,
+          "status": "passed"
+        }
+      ]
+    }
+  ]
+}

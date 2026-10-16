@@ -1,0 +1,106 @@
+{
+  "experiment_id": "course-03/meter-calibration",
+  "title": "电表的改装与校准",
+  "data_version": 1,
+  "source_calibration_columns": {
+    "current": {
+      "means": [
+        0.5,
+        1.0,
+        1.49,
+        1.98,
+        2.45,
+        2.93,
+        3.41,
+        3.93,
+        4.4,
+        4.93
+      ],
+      "errors": [
+        0.0,
+        -0.02,
+        0.0,
+        0.02,
+        0.0,
+        0.0,
+        0.0,
+        -0.01,
+        -0.03,
+        0.0
+      ]
+    },
+    "voltage": {
+      "means": [
+        0.151,
+        0.302,
+        0.453,
+        0.604,
+        0.745,
+        0.888,
+        1.037,
+        1.188,
+        1.331,
+        1.49
+      ],
+      "errors": [
+        -0.002,
+        -0.002,
+        -0.003,
+        -0.006,
+        -0.006,
+        -0.007,
+        -0.007,
+        -0.011,
+        -0.005,
+        0.0
+      ]
+    }
+  },
+  "ohm_headers": [
+    "表头不可辨识1",
+    "表头不可辨识2",
+    "表头不可辨识3",
+    "表头不可辨识4",
+    "原表标E=1.5 V",
+    "$2R_{\\mathrm{mid}}$",
+    "$3R_{\\mathrm{mid}}$",
+    "$4R_{\\mathrm{mid}}$",
+    "$5R_{\\mathrm{mid}}$"
+  ],
+  "ohm_deflections": [
+    33,
+    30,
+    24,
+    16,
+    0,
+    16,
+    30,
+    33,
+    33
+  ],
+  "design": {
+    "Ig_A": 0.001,
+    "Rg_inferred_Ohm": 30,
+    "Rg_status": "由源分流电阻7.5Ω和扩程倍数5反推，非内阻实测",
+    "target_current_A": 0.005,
+    "target_voltage_V": 1.5,
+    "midpoint_resistance_Ohm": 1500,
+    "battery_range_V": [
+      1.3,
+      1.6
+    ],
+    "original_R3_Ohm": 1000,
+    "original_Rw_max_Ohm": 470,
+    "improved_R3_Ohm": 1100
+  },
+  "units": {
+    "current": "mA",
+    "voltage": "V",
+    "resistance": "Ω"
+  },
+  "limitations": [
+    "缺少表头内阻独立实测与标准表不确定度。",
+    "电压1.25V行与参考均值1.3305V存在疑点，保留不擅改。",
+    "欧姆表前四个表头不可辨识、格数非单调，不能标定未知电阻。"
+  ]
+}

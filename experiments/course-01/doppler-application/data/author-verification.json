@@ -1,0 +1,54 @@
+{
+  "status": "python-executed-awaiting-wolfram",
+  "checks": [
+    "13 periods sum11.48s",
+    "source exclusion retained",
+    "zero spring mass limit",
+    "positive spring mass raises inferred stiffness",
+    "interactive default/changed"
+  ],
+  "metrics": {
+    "static_stiffness": {
+      "value": 3.6563411676689928,
+      "unit": "N/m",
+      "label": "静态逐组劲度系数平均"
+    },
+    "static_stiffness_all": {
+      "value": 4.193915039398352,
+      "unit": "N/m",
+      "label": "全部五组静态比值平均"
+    },
+    "static_fit_slope": {
+      "value": 3.18267909267944,
+      "unit": "N/m",
+      "label": "源保留组静态拟合斜率"
+    },
+    "static_fit_intercept": {
+      "value": 0.07461377583746287,
+      "unit": "N",
+      "label": "源保留组静态拟合截距"
+    },
+    "mean_period": {
+      "value": 0.8830769230769229,
+      "unit": "s",
+      "label": "平均周期",
+      "uncertainty": 0.006829856718906265
+    },
+    "period_sum": {
+      "value": 11.479999999999997,
+      "unit": "s",
+      "label": "周期总和"
+    },
+    "dynamic_stiffness": {
+      "value": 5.224471477088448,
+      "unit": "N/m",
+      "label": "动态劲度系数",
+      "uncertainty": 0.08081377893150642
+    },
+    "relative_difference": {
+      "value": 42.887964703227546,
+      "unit": "%",
+      "label": "动静态相对差异"
+    }
+  }
+}

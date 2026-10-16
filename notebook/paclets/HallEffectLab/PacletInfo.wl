@@ -1,0 +1,1 @@
+PacletObject[<|"Name"->"HallEffectLab","Version"->"0.1.0","WolframVersion"->"14.0+","Description"->"\:970d\:5c14\:6548\:5e94\:7684\:5b9e\:9a8c\:7814\:7a76","Creator"->"Physics Lab Contributors","Extensions"->{{"Kernel","Root"->"Kernel","Context"->{"HallEffectLab`"}},{"Resource","Root"->".","Resources"->{"Notebooks","data","assets"}}}|>]

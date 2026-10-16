@@ -1,0 +1,8 @@
+VerificationTest[NumberQ[PrismRefractiveIndexLab`Analyze[]["metrics"]["angle_mean_deg"]["value"]],True,TestID->"finite-angle_mean_deg"]
+VerificationTest[NumberQ[PrismRefractiveIndexLab`Analyze[]["metrics"]["angle_type_a_arcmin"]["value"]],True,TestID->"finite-angle_type_a_arcmin"]
+VerificationTest[NumberQ[PrismRefractiveIndexLab`Analyze[]["metrics"]["angle_type_b_arcmin"]["value"]],True,TestID->"finite-angle_type_b_arcmin"]
+VerificationTest[NumberQ[PrismRefractiveIndexLab`Analyze[]["metrics"]["angle_combined_arcmin"]["value"]],True,TestID->"finite-angle_combined_arcmin"]
+VerificationTest[NumberQ[PrismRefractiveIndexLab`Analyze[]["metrics"]["refractive_index"]["value"]],True,TestID->"finite-refractive_index"]
+VerificationTest[NumberQ[PrismRefractiveIndexLab`Analyze[]["metrics"]["refractive_index_standard_uncertainty"]["value"]],True,TestID->"finite-refractive_index_standard_uncertainty"]
+VerificationTest[FileExistsQ[PrismRefractiveIndexLab`LabNotebookPath[]],True,TestID->"notebook-entry"]
+VerificationTest[FileNameTake[PrismRefractiveIndexLab`LabNotebookPath[]],"PrismRefractiveIndexLab.nb",TestID->"notebook-name"]

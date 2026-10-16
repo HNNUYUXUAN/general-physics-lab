@@ -1,0 +1,227 @@
+{
+  "experiment": "course-04/thin-lens",
+  "status": "passed",
+  "reviewed_at": "2026-10-16T08:38:36.680940+08:00",
+  "build_run": "C:\\Users\\yuxua\\.codex\\visualizations\\2026\\10\\15\\01a13f56-4554-7500-ab99-dad08368b735\\rollout\\project\\.build\\course-04\\thin-lens\\20261016_083633_229684",
+  "notebook": "C:\\Users\\yuxua\\.codex\\visualizations\\2026\\10\\15\\01a13f56-4554-7500-ab99-dad08368b735\\rollout\\project\\notebook\\paclets\\ThinLensLab\\Notebooks\\ThinLensLab.nb",
+  "notebook_sha256": "bacb5df8a77c5a5658e2f1cf68bd0168c6563e334756a113e090eefcc2f0432f",
+  "method": "Actual view_image inspection of every fresh native QA panel without rescaling; long sections split with overlapping crops. Review covers mathematical typesetting, units, Chinese glyphs, centering, clipping and captions. Native controls visually inspected at saved default state; changing-state calculation validation is recorded by root serialized pipeline separately.",
+  "section_coverage": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "inspected_images": [
+    {
+      "path": "C:\\Users\\yuxua\\.codex\\visualizations\\2026\\10\\15\\01a13f56-4554-7500-ab99-dad08368b735\\rollout\\qa\\ThinLensLab\\review-01.png",
+      "sha256": "7d2fdd9c5281102cd9bf9aafa33f7aac2228d69c7a3388c20a87ad44daab0ac7",
+      "source_spans": [
+        {
+          "source": "section-01.png",
+          "top": 0,
+          "bottom": 246
+        },
+        {
+          "source": "section-02.png",
+          "top": 0,
+          "bottom": 215
+        },
+        {
+          "source": "section-03.png",
+          "top": 0,
+          "bottom": 557
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\yuxua\\.codex\\visualizations\\2026\\10\\15\\01a13f56-4554-7500-ab99-dad08368b735\\rollout\\qa\\ThinLensLab\\review-02.png",
+      "sha256": "894544878817d9732eeabff60ce431faa4dcf4a0c2c937115214ae1d58dc8dd5",
+      "source_spans": [
+        {
+          "source": "section-04.png",
+          "top": 0,
+          "bottom": 141
+        },
+        {
+          "source": "section-05.png",
+          "top": 0,
+          "bottom": 329
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\yuxua\\.codex\\visualizations\\2026\\10\\15\\01a13f56-4554-7500-ab99-dad08368b735\\rollout\\qa\\ThinLensLab\\review-03.png",
+      "sha256": "b971938631b3ebeceed933c0518d73225c4fa143c882f3628f23cbfac9c985f2",
+      "source_spans": [
+        {
+          "source": "section-06.png",
+          "top": 0,
+          "bottom": 1150
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\yuxua\\.codex\\visualizations\\2026\\10\\15\\01a13f56-4554-7500-ab99-dad08368b735\\rollout\\qa\\ThinLensLab\\review-04.png",
+      "sha256": "38612296400da2c8a40aca9f709930a9433c7ad5a27494333cefc36c332db697",
+      "source_spans": [
+        {
+          "source": "section-06.png",
+          "top": 1050,
+          "bottom": 2102
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\yuxua\\.codex\\visualizations\\2026\\10\\15\\01a13f56-4554-7500-ab99-dad08368b735\\rollout\\qa\\ThinLensLab\\review-05.png",
+      "sha256": "6e754966f6322eca3db06b7a3a998b694e687a3cc0874d3493c93591853d7f6d",
+      "source_spans": [
+        {
+          "source": "section-06.png",
+          "top": 2100,
+          "bottom": 2102
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\yuxua\\.codex\\visualizations\\2026\\10\\15\\01a13f56-4554-7500-ab99-dad08368b735\\rollout\\qa\\ThinLensLab\\review-06.png",
+      "sha256": "9ea378fd00ad5e4bb58f6b01af870c67f448c849bbaccd1a94a435771c7ca4aa",
+      "source_spans": [
+        {
+          "source": "section-07.png",
+          "top": 0,
+          "bottom": 1150
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\yuxua\\.codex\\visualizations\\2026\\10\\15\\01a13f56-4554-7500-ab99-dad08368b735\\rollout\\qa\\ThinLensLab\\review-07.png",
+      "sha256": "1197004fc81800751ec64443328a8b25c118f2838953220689e9a4d530f1bdea",
+      "source_spans": [
+        {
+          "source": "section-07.png",
+          "top": 1050,
+          "bottom": 2200
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\yuxua\\.codex\\visualizations\\2026\\10\\15\\01a13f56-4554-7500-ab99-dad08368b735\\rollout\\qa\\ThinLensLab\\review-08.png",
+      "sha256": "7fd4b5663d0a4b3c00b8ea4423d0be614ff405106b106b509998a7cf79c6a467",
+      "source_spans": [
+        {
+          "source": "section-07.png",
+          "top": 2100,
+          "bottom": 3250
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\yuxua\\.codex\\visualizations\\2026\\10\\15\\01a13f56-4554-7500-ab99-dad08368b735\\rollout\\qa\\ThinLensLab\\review-09.png",
+      "sha256": "946048dd039b0aebf711ac8bd3a77223d1d746e96a278f49724b8216e41b21c3",
+      "source_spans": [
+        {
+          "source": "section-07.png",
+          "top": 3150,
+          "bottom": 4300
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\yuxua\\.codex\\visualizations\\2026\\10\\15\\01a13f56-4554-7500-ab99-dad08368b735\\rollout\\qa\\ThinLensLab\\review-10.png",
+      "sha256": "4e93a5c76299bf017bbc7524848a0c2c96833ff42d3a76b8f2d220e18a6fdd2a",
+      "source_spans": [
+        {
+          "source": "section-07.png",
+          "top": 4200,
+          "bottom": 4664
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\yuxua\\.codex\\visualizations\\2026\\10\\15\\01a13f56-4554-7500-ab99-dad08368b735\\rollout\\qa\\ThinLensLab\\review-11.png",
+      "sha256": "8638c27b6f8a6382bff9257e233b71c68ed13157c494719ca750dc78f484f4df",
+      "source_spans": [
+        {
+          "source": "section-08.png",
+          "top": 0,
+          "bottom": 1150
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\yuxua\\.codex\\visualizations\\2026\\10\\15\\01a13f56-4554-7500-ab99-dad08368b735\\rollout\\qa\\ThinLensLab\\review-12.png",
+      "sha256": "8f7db656f5aeadce7301575bacd95a2b4d1153f7980257fa317ea24b0653675c",
+      "source_spans": [
+        {
+          "source": "section-08.png",
+          "top": 1050,
+          "bottom": 1327
+        }
+      ]
+    }
+  ],
+  "source_png_hashes": {
+    "section-01.png": {
+      "sha256": "279a59c0c8b450a2a74754388d9d6d89da01b507f7fcb5c97744486c39884dc8",
+      "size": [
+        1200,
+        246
+      ]
+    },
+    "section-02.png": {
+      "sha256": "9f1e0c39780a39896959a186e1cf21160e1ded76cb28ed9e0aee8aa66e9a9da7",
+      "size": [
+        1200,
+        215
+      ]
+    },
+    "section-03.png": {
+      "sha256": "8fd35e7c54343079420f63c46be30c75feb9f3ee9bbf33be92f0652a3e93ebb1",
+      "size": [
+        1200,
+        557
+      ]
+    },
+    "section-04.png": {
+      "sha256": "90d2f47bc6b086c29e324a852d7653802f6bdc8646babbd3c917e12747f9784b",
+      "size": [
+        1200,
+        141
+      ]
+    },
+    "section-05.png": {
+      "sha256": "e13e3d4eb1738b81a906a87416cd7bf7f9e89cc1510406c04b96225de73ae20a",
+      "size": [
+        1200,
+        329
+      ]
+    },
+    "section-06.png": {
+      "sha256": "65bb8dfe315d021c3767fa2ce8d66f9b08c787d5611f31d6a171b79cc2bafd87",
+      "size": [
+        1200,
+        2102
+      ]
+    },
+    "section-07.png": {
+      "sha256": "7a0ebf6d7340f8550ba2774594b2cf547fc499d6dd9ed6cc7066b94bf263f560",
+      "size": [
+        1200,
+        4664
+      ]
+    },
+    "section-08.png": {
+      "sha256": "96d6a3edae9c1c066a2772762ced8c9ff49a2b3590c602e8de736cc21ba9c4d1",
+      "size": [
+        1200,
+        1327
+      ]
+    }
+  },
+  "issues": []
+}

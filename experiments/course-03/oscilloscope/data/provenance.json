@@ -1,0 +1,29 @@
+{
+  "primary_source": "originals/course-03/8示波器的调节与使用/实验报告-示波器的调节和使用实验.docx",
+  "primary_sha256": "7bc711e817576cd4361836b86afa8012ef00138b5cd67afc66ec62a6b315c817",
+  "converted_source": "processed/courses-01-03-04/普通物理实验3/8示波器的调节与使用/实验报告-示波器的调节和使用实验_docx/正文.md",
+  "table_mapping": {
+    "waveforms.csv": "DOCX表1行2/3为偏转因数/峰峰格数、行6毫伏表；表2行2/3为扫描档及周期格数；列2–4对应三波形。",
+    "lissajous.csv": "DOCX表3行1标准频率250,500,1000,1500,2000；交点计数行8/2,4/2,2/2,4/6,2/4。"
+  },
+  "transformations": [
+    "按Upp=kv y、Up=Upp/2重算三波形有效值。",
+    "扫描ms/div换算s，频率由周期倒数。",
+    "李萨如交点计数取同一计数约定，fy=fx Nx/Ny。",
+    "插图为理论波形/理论李萨如，非原屏幕截图像素复刻。"
+  ],
+  "issues": [
+    {
+      "type": "arithmetic_correction",
+      "resolution": "源正弦RMS0.5V误用峰值，修正为1/(2sqrt2)=.353553V。"
+    },
+    {
+      "type": "conversion_artifact",
+      "resolution": "源表信号频率1000前的图片引用为转换混入，DOCX数值保留1000Hz。"
+    },
+    {
+      "type": "counting_definition",
+      "resolution": "源正文切点与表格交点措辞不同；按表格的水平/垂直线交点计数定义，特殊相位退化时需改变相位或计数线。"
+    }
+  ]
+}

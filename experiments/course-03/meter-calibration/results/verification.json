@@ -1,0 +1,1299 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "metric": "current_max_error",
+      "python": 0.10500000000000043,
+      "wolfram": 0.10500000000000043,
+      "unit": "mA",
+      "passed": true
+    },
+    {
+      "metric": "current_FS_error_percent",
+      "python": 2.1000000000000085,
+      "wolfram": 2.100000000000009,
+      "unit": "%",
+      "passed": true
+    },
+    {
+      "metric": "current_max_hysteresis",
+      "python": 0.03000000000000025,
+      "wolfram": 0.03000000000000025,
+      "unit": "mA",
+      "passed": true
+    },
+    {
+      "metric": "current_correction_slope",
+      "python": 0.9767272727272727,
+      "wolfram": 0.9767272727272727,
+      "unit": "1",
+      "passed": true
+    },
+    {
+      "metric": "current_correction_intercept",
+      "python": 0.01499999999999968,
+      "wolfram": 0.015000000000000124,
+      "unit": "mA",
+      "passed": true
+    },
+    {
+      "metric": "voltage_max_error",
+      "python": 0.08050000000000002,
+      "wolfram": 0.08050000000000002,
+      "unit": "V",
+      "passed": true
+    },
+    {
+      "metric": "voltage_FS_error_percent",
+      "python": 5.366666666666667,
+      "wolfram": 5.366666666666667,
+      "unit": "%",
+      "passed": true
+    },
+    {
+      "metric": "voltage_max_hysteresis",
+      "python": 0.01100000000000012,
+      "wolfram": 0.01100000000000012,
+      "unit": "V",
+      "passed": true
+    },
+    {
+      "metric": "voltage_correction_slope",
+      "python": 1.0090768356767503,
+      "wolfram": 1.0090768356767505,
+      "unit": "1",
+      "passed": true
+    },
+    {
+      "metric": "voltage_correction_intercept",
+      "python": -0.003747621076551466,
+      "wolfram": -0.003747621076551688,
+      "unit": "V",
+      "passed": true
+    },
+    {
+      "metric": "shunt_resistance",
+      "python": 7.5,
+      "wolfram": 7.5,
+      "unit": "Ω",
+      "passed": true
+    },
+    {
+      "metric": "series_resistance",
+      "python": 1470.0,
+      "wolfram": 1470.0,
+      "unit": "Ω",
+      "passed": true
+    },
+    {
+      "metric": "original_Rw_at_16",
+      "python": 570.0,
+      "wolfram": 570.0,
+      "unit": "Ω",
+      "passed": true
+    },
+    {
+      "metric": "improved_Rw_at_13",
+      "python": 170.0,
+      "wolfram": 170.0,
+      "unit": "Ω",
+      "passed": true
+    },
+    {
+      "metric": "improved_Rw_at_16",
+      "python": 470.0,
+      "wolfram": 470.0,
+      "unit": "Ω",
+      "passed": true
+    },
+    {
+      "table": "current_observations",
+      "row": 0,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "current_observations",
+      "row": 0,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "current_observations",
+      "row": 0,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "current_observations",
+      "row": 0,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "current_observations",
+      "row": 0,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "current_observations",
+      "row": 1,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "current_observations",
+      "row": 1,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "current_observations",
+      "row": 1,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "current_observations",
+      "row": 1,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "current_observations",
+      "row": 1,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "current_observations",
+      "row": 2,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "current_observations",
+      "row": 2,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "current_observations",
+      "row": 2,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "current_observations",
+      "row": 2,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "current_observations",
+      "row": 2,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "current_observations",
+      "row": 3,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "current_observations",
+      "row": 3,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "current_observations",
+      "row": 3,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "current_observations",
+      "row": 3,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "current_observations",
+      "row": 3,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "current_observations",
+      "row": 4,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "current_observations",
+      "row": 4,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "current_observations",
+      "row": 4,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "current_observations",
+      "row": 4,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "current_observations",
+      "row": 4,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "current_observations",
+      "row": 5,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "current_observations",
+      "row": 5,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "current_observations",
+      "row": 5,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "current_observations",
+      "row": 5,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "current_observations",
+      "row": 5,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "current_observations",
+      "row": 6,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "current_observations",
+      "row": 6,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "current_observations",
+      "row": 6,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "current_observations",
+      "row": 6,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "current_observations",
+      "row": 6,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "current_observations",
+      "row": 7,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "current_observations",
+      "row": 7,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "current_observations",
+      "row": 7,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "current_observations",
+      "row": 7,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "current_observations",
+      "row": 7,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "current_observations",
+      "row": 8,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "current_observations",
+      "row": 8,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "current_observations",
+      "row": 8,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "current_observations",
+      "row": 8,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "current_observations",
+      "row": 8,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "current_observations",
+      "row": 9,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "current_observations",
+      "row": 9,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "current_observations",
+      "row": 9,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "current_observations",
+      "row": 9,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "current_observations",
+      "row": 9,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "current_calibration",
+      "row": 0,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "current_calibration",
+      "row": 0,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "current_calibration",
+      "row": 0,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "current_calibration",
+      "row": 0,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "current_calibration",
+      "row": 1,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "current_calibration",
+      "row": 1,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "current_calibration",
+      "row": 1,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "current_calibration",
+      "row": 1,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "current_calibration",
+      "row": 2,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "current_calibration",
+      "row": 2,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "current_calibration",
+      "row": 2,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "current_calibration",
+      "row": 2,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "current_calibration",
+      "row": 3,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "current_calibration",
+      "row": 3,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "current_calibration",
+      "row": 3,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "current_calibration",
+      "row": 3,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "current_calibration",
+      "row": 4,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "current_calibration",
+      "row": 4,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "current_calibration",
+      "row": 4,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "current_calibration",
+      "row": 4,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "current_calibration",
+      "row": 5,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "current_calibration",
+      "row": 5,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "current_calibration",
+      "row": 5,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "current_calibration",
+      "row": 5,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "current_calibration",
+      "row": 6,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "current_calibration",
+      "row": 6,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "current_calibration",
+      "row": 6,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "current_calibration",
+      "row": 6,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "current_calibration",
+      "row": 7,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "current_calibration",
+      "row": 7,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "current_calibration",
+      "row": 7,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "current_calibration",
+      "row": 7,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "current_calibration",
+      "row": 8,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "current_calibration",
+      "row": 8,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "current_calibration",
+      "row": 8,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "current_calibration",
+      "row": 8,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "current_calibration",
+      "row": 9,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "current_calibration",
+      "row": 9,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "current_calibration",
+      "row": 9,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "current_calibration",
+      "row": 9,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "voltage_observations",
+      "row": 0,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "voltage_observations",
+      "row": 0,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "voltage_observations",
+      "row": 0,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "voltage_observations",
+      "row": 0,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "voltage_observations",
+      "row": 0,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "voltage_observations",
+      "row": 1,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "voltage_observations",
+      "row": 1,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "voltage_observations",
+      "row": 1,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "voltage_observations",
+      "row": 1,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "voltage_observations",
+      "row": 1,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "voltage_observations",
+      "row": 2,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "voltage_observations",
+      "row": 2,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "voltage_observations",
+      "row": 2,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "voltage_observations",
+      "row": 2,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "voltage_observations",
+      "row": 2,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "voltage_observations",
+      "row": 3,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "voltage_observations",
+      "row": 3,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "voltage_observations",
+      "row": 3,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "voltage_observations",
+      "row": 3,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "voltage_observations",
+      "row": 3,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "voltage_observations",
+      "row": 4,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "voltage_observations",
+      "row": 4,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "voltage_observations",
+      "row": 4,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "voltage_observations",
+      "row": 4,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "voltage_observations",
+      "row": 4,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "voltage_observations",
+      "row": 5,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "voltage_observations",
+      "row": 5,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "voltage_observations",
+      "row": 5,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "voltage_observations",
+      "row": 5,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "voltage_observations",
+      "row": 5,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "voltage_observations",
+      "row": 6,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "voltage_observations",
+      "row": 6,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "voltage_observations",
+      "row": 6,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "voltage_observations",
+      "row": 6,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "voltage_observations",
+      "row": 6,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "voltage_observations",
+      "row": 7,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "voltage_observations",
+      "row": 7,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "voltage_observations",
+      "row": 7,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "voltage_observations",
+      "row": 7,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "voltage_observations",
+      "row": 7,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "voltage_observations",
+      "row": 8,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "voltage_observations",
+      "row": 8,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "voltage_observations",
+      "row": 8,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "voltage_observations",
+      "row": 8,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "voltage_observations",
+      "row": 8,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "voltage_observations",
+      "row": 9,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "voltage_observations",
+      "row": 9,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "voltage_observations",
+      "row": 9,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "voltage_observations",
+      "row": 9,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "voltage_observations",
+      "row": 9,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "voltage_calibration",
+      "row": 0,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "voltage_calibration",
+      "row": 0,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "voltage_calibration",
+      "row": 0,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "voltage_calibration",
+      "row": 0,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "voltage_calibration",
+      "row": 1,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "voltage_calibration",
+      "row": 1,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "voltage_calibration",
+      "row": 1,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "voltage_calibration",
+      "row": 1,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "voltage_calibration",
+      "row": 2,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "voltage_calibration",
+      "row": 2,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "voltage_calibration",
+      "row": 2,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "voltage_calibration",
+      "row": 2,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "voltage_calibration",
+      "row": 3,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "voltage_calibration",
+      "row": 3,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "voltage_calibration",
+      "row": 3,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "voltage_calibration",
+      "row": 3,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "voltage_calibration",
+      "row": 4,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "voltage_calibration",
+      "row": 4,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "voltage_calibration",
+      "row": 4,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "voltage_calibration",
+      "row": 4,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "voltage_calibration",
+      "row": 5,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "voltage_calibration",
+      "row": 5,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "voltage_calibration",
+      "row": 5,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "voltage_calibration",
+      "row": 5,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "voltage_calibration",
+      "row": 6,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "voltage_calibration",
+      "row": 6,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "voltage_calibration",
+      "row": 6,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "voltage_calibration",
+      "row": 6,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "voltage_calibration",
+      "row": 7,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "voltage_calibration",
+      "row": 7,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "voltage_calibration",
+      "row": 7,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "voltage_calibration",
+      "row": 7,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "voltage_calibration",
+      "row": 8,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "voltage_calibration",
+      "row": 8,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "voltage_calibration",
+      "row": 8,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "voltage_calibration",
+      "row": 8,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "voltage_calibration",
+      "row": 9,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "voltage_calibration",
+      "row": 9,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "voltage_calibration",
+      "row": 9,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "voltage_calibration",
+      "row": 9,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "ohm_record",
+      "row": 0,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "ohm_record",
+      "row": 0,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "ohm_record",
+      "row": 0,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "ohm_record",
+      "row": 0,
+      "column": 4,
+      "passed": true
+    },
+    {
+      "table": "ohm_record",
+      "row": 0,
+      "column": 5,
+      "passed": true
+    },
+    {
+      "table": "ohm_record",
+      "row": 0,
+      "column": 6,
+      "passed": true
+    },
+    {
+      "table": "ohm_record",
+      "row": 0,
+      "column": 7,
+      "passed": true
+    },
+    {
+      "table": "ohm_record",
+      "row": 0,
+      "column": 8,
+      "passed": true
+    },
+    {
+      "table": "ohm_record",
+      "row": 0,
+      "column": 9,
+      "passed": true
+    },
+    {
+      "table": "zero_design",
+      "row": 0,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "zero_design",
+      "row": 0,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "zero_design",
+      "row": 0,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "zero_design",
+      "row": 0,
+      "column": 3,
+      "passed": true
+    },
+    {
+      "table": "zero_design",
+      "row": 1,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "zero_design",
+      "row": 1,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "zero_design",
+      "row": 1,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "zero_design",
+      "row": 1,
+      "column": 3,
+      "passed": true
+    }
+  ],
+  "input_hashes": {
+    "data/current.csv": "a02f0c087f508964df36420890486725adc63b12b2acb938262a2600e2ed0d51",
+    "data/provenance.json": "9ecc4b54a14ea5b9a3c3a36aff11df721b370355dc5e9b1e32426237787c4b52",
+    "data/python-author-validation.json": "87b35a2cee15c54b5338cef0b6c2a862df346f32bf2d90f0f4cb8a47046e03d4",
+    "data/voltage.csv": "ff31e4bd0cb4c6a1d78f492fab86f5eef79308395fefe4dae0ebddcb0e64f6f5",
+    "experiment.json": "8bf7aed5b792f38c67f67ef72ddb79e54579450c2297c0b279dde3b072bd5dce"
+  }
+}

@@ -1,0 +1,370 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "metric": "slit_width_mean_mm",
+      "python": 0.19993115408263293,
+      "wolfram": 0.1999311540826329,
+      "unit": "mm",
+      "passed": true
+    },
+    {
+      "metric": "slit_width_spread_sem_mm",
+      "python": 0.00024827787143287257,
+      "wolfram": 0.00024827787143287414,
+      "unit": "mm",
+      "passed": true
+    },
+    {
+      "metric": "slit_width_origin_fit_mm",
+      "python": 0.20020036910097552,
+      "wolfram": 0.2002003691009755,
+      "unit": "mm",
+      "passed": true
+    },
+    {
+      "metric": "maximum_small_angle_correction_mm",
+      "python": 1.597756335688927e-05,
+      "wolfram": 1.5977563356917024e-05,
+      "unit": "mm",
+      "passed": true
+    },
+    {
+      "metric": "scan_model_rmse",
+      "python": 0.0160862001322567,
+      "wolfram": 0.01608620013225669,
+      "unit": "1",
+      "passed": true
+    },
+    {
+      "table": "table1",
+      "row": 0,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "table1",
+      "row": 0,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "table1",
+      "row": 1,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "table1",
+      "row": 1,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "table1",
+      "row": 2,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "table1",
+      "row": 2,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "table1",
+      "row": 3,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "table1",
+      "row": 3,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "table1",
+      "row": 4,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "table1",
+      "row": 4,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "table1",
+      "row": 5,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "table1",
+      "row": 5,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "table1",
+      "row": 6,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "table1",
+      "row": 6,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "table1",
+      "row": 7,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "table1",
+      "row": 7,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "table1",
+      "row": 8,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "table1",
+      "row": 8,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "table1",
+      "row": 9,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "table1",
+      "row": 9,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "table1",
+      "row": 10,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "table1",
+      "row": 10,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "table1",
+      "row": 11,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "table1",
+      "row": 11,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "table1",
+      "row": 12,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "table1",
+      "row": 12,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "table1",
+      "row": 13,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "table1",
+      "row": 13,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "table1",
+      "row": 14,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "table1",
+      "row": 14,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "table1",
+      "row": 15,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "table1",
+      "row": 15,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "table1",
+      "row": 16,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "table1",
+      "row": 16,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 0,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 0,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 1,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 1,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 2,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 2,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 3,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "table2",
+      "row": 3,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "table3",
+      "row": 0,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "table3",
+      "row": 0,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "table3",
+      "row": 0,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "table3",
+      "row": 1,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "table3",
+      "row": 1,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "table3",
+      "row": 1,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "table3",
+      "row": 2,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "table3",
+      "row": 2,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "table3",
+      "row": 2,
+      "column": 2,
+      "passed": true
+    },
+    {
+      "table": "table3",
+      "row": 3,
+      "column": 0,
+      "passed": true
+    },
+    {
+      "table": "table3",
+      "row": 3,
+      "column": 1,
+      "passed": true
+    },
+    {
+      "table": "table3",
+      "row": 3,
+      "column": 2,
+      "passed": true
+    }
+  ],
+  "input_hashes": {
+    "data/observations-01.csv": "bca33c140d782a3d024c5b75650a11d1f45fc7402116d79e6ba9a6f8dd7722eb",
+    "data/observations-02.csv": "d681e1be8568f563df7cf23ebee9cd9b9556021ff88864b5f78074a2a4ab244c",
+    "data/provenance.json": "c45b8db5210096bb0375ea98bc11ca58ade03035555e0b118ffbb83f927e28e4",
+    "experiment.json": "778b2ec0910c751ace34d904f197861ce19816cd1c2d2a02a410e0f2c5de86d4"
+  }
+}

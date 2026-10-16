@@ -1,0 +1,48 @@
+{
+  "primary_source": {
+    "path": "originals/course-02/01-表面张力系数的测定(拉脱法)/实验报告-表面张力系数的测定.docx",
+    "sha256": "bfb9bb0d2c9592550f49200833003e6840bc1d170c2110574750b3f024c0d74f"
+  },
+  "converted_source": {
+    "path": "processed/course-02/01-表面张力系数的测定(拉脱法)/实验报告-表面张力系数的测定/正文.md",
+    "sha256": "fa69a3484ff1fcab032af6ec27721c3ee4195cbd938ffbe2de5296fbb0de34e9"
+  },
+  "mappings": [
+    {
+      "csv": "calibration.csv",
+      "source_table": 1,
+      "source_rows": "2–9",
+      "columns": "质量、增重、减重，源平均及逐差由程序重算"
+    },
+    {
+      "csv": "pulls.csv",
+      "source_table": 3,
+      "source_rows": "2–6",
+      "columns": "次数、V1、V2；源表题与索引编号不一致，按内容定位"
+    },
+    {
+      "csv": "diameters.csv",
+      "source_table": 4,
+      "source_rows": "内径、外径的1–5列"
+    }
+  ],
+  "transformations": [
+    "保留源8标定、5拉脱和5直径，不合并辅助数据。",
+    "标定平均由两个读数平均，逐差跨四点对应2000mg；未提前修约。"
+  ],
+  "corrections": [
+    "源表编号重复，按首次出现顺序规范编号。",
+    "量化B类按四个平均逐差、五次拉脱均值和直径均值的系数传播；每个原始读数的半宽为半分辨力。",
+    "采用未修约内外径均值、逐差和电压差，重新求alpha与条件不确定度。"
+  ],
+  "issues": [
+    {
+      "status": "limitation",
+      "detail": "缺砝码精度和g误差，未量化润湿、液膜质量、迟滞与漂移；条件预算不代表完整准确度。"
+    },
+    {
+      "status": "limitation",
+      "detail": "源姓名、班级、日期为请输入，成稿不编造实验身份或日期。"
+    }
+  ]
+}

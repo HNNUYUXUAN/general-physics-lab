@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "id": "course-02/thermal-conductivity",
+  "title": "固体导热系数的测量",
+  "parameters": {
+    "voltage_v": 18.02,
+    "assumed_resistance_ohm": 110,
+    "thermocouple_uv_k": 40,
+    "density_kg_m3": 1124,
+    "thickness_m": 0.01,
+    "corrected_area_factor": 0.85
+  },
+  "models": {
+    "conduction": "沿用所列四试样准稳态模型；16读数15分钟；温差尚漂移。"
+  },
+  "source_docx": "originals/course-02/07-固体导热系数的测量/实验报告-固体导热系数的测量.docx",
+  "data_version": "1.0.0"
+}

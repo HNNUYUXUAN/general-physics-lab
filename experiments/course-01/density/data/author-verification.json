@@ -1,0 +1,91 @@
+{
+  "status": "python-verified-awaiting-wolfram",
+  "checks": [
+    "canonical observations match DOCX tables",
+    "density rational arithmetic",
+    "A+B variance ratio",
+    "variance contributions sum to unity",
+    "interactive default",
+    "interactive +0.01 g",
+    "Matplotlib LaTeX labels"
+  ],
+  "metrics": {
+    "air_mass": {
+      "value": 44.81999999999999,
+      "unit": "g",
+      "label": "空气中质量"
+    },
+    "submerged_mass": {
+      "value": 39.16,
+      "unit": "g",
+      "label": "水中视质量"
+    },
+    "empty_mass": {
+      "value": 31.63,
+      "unit": "g",
+      "label": "空瓶质量"
+    },
+    "water_total_mass": {
+      "value": 47.629999999999995,
+      "unit": "g",
+      "label": "瓶与水总质量"
+    },
+    "brine_total_mass": {
+      "value": 49.01,
+      "unit": "g",
+      "label": "瓶与盐水总质量"
+    },
+    "solid_density": {
+      "value": 7.90122752650177,
+      "unit": "g/cm^3",
+      "uncertainty": 0.015135809538821574,
+      "label": "合金密度"
+    },
+    "liquid_density": {
+      "value": 1.0838493875000001,
+      "unit": "g/cm^3",
+      "uncertainty": 0.000753070208425521,
+      "label": "盐水密度"
+    },
+    "solid_uncertainty_a": {
+      "value": 0.010702633563648778,
+      "unit": "g/cm^3",
+      "label": "合金密度A类不确定度"
+    },
+    "liquid_uncertainty_a": {
+      "value": 0.000532501051087294,
+      "unit": "g/cm^3",
+      "label": "盐水密度A类不确定度"
+    },
+    "solid_uncertainty_conditional": {
+      "value": 0.015135809538821574,
+      "unit": "g/cm^3",
+      "label": "合金密度条件标准不确定度"
+    },
+    "liquid_uncertainty_conditional": {
+      "value": 0.000753070208425521,
+      "unit": "g/cm^3",
+      "label": "盐水密度条件标准不确定度"
+    },
+    "solid_relative_uncertainty": {
+      "value": 0.19156276019205942,
+      "unit": "%",
+      "label": "合金密度条件相对不确定度"
+    },
+    "liquid_relative_uncertainty": {
+      "value": 0.06948107524077195,
+      "unit": "%",
+      "label": "盐水密度条件相对不确定度"
+    },
+    "solid_volume": {
+      "value": 5.672536305234566,
+      "unit": "cm^3",
+      "label": "合金体积"
+    },
+    "bottle_volume": {
+      "value": 16.03543831868429,
+      "unit": "cm^3",
+      "label": "比重瓶容积"
+    }
+  }
+}

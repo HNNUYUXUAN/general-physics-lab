@@ -1,0 +1,1 @@
+PacletObject[<|"Name"->"DopplerApplicationLab","Version"->"0.1.0","WolframVersion"->"14.0+","Description"->"\:591a\:666e\:52d2\:6548\:5e94\:7684\:5e94\:7528","Creator"->"Physics Lab Contributors","Extensions"->{{"Kernel","Root"->"Kernel","Context"->{"DopplerApplicationLab`"}},{"Resource","Root"->".","Resources"->{"Notebooks","data","assets"}}}|>]

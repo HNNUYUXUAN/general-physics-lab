@@ -1,0 +1,6 @@
+VerificationTest[NumberQ[PrismApexLab`Analyze[]["metrics"]["angle_mean_deg"]["value"]],True,TestID->"finite-angle_mean_deg"]
+VerificationTest[NumberQ[PrismApexLab`Analyze[]["metrics"]["angle_type_a_arcmin"]["value"]],True,TestID->"finite-angle_type_a_arcmin"]
+VerificationTest[NumberQ[PrismApexLab`Analyze[]["metrics"]["angle_type_b_arcmin"]["value"]],True,TestID->"finite-angle_type_b_arcmin"]
+VerificationTest[NumberQ[PrismApexLab`Analyze[]["metrics"]["angle_combined_arcmin"]["value"]],True,TestID->"finite-angle_combined_arcmin"]
+VerificationTest[FileExistsQ[PrismApexLab`LabNotebookPath[]],True,TestID->"notebook-entry"]
+VerificationTest[FileNameTake[PrismApexLab`LabNotebookPath[]],"PrismApexLab.nb",TestID->"notebook-name"]

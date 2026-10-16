@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "verified_against": "DOCX document.xml tables and converted CSV numeric cells",
+  "sources": [
+    {
+      "archive_relative_path": "originals/course-01/单摆测重力加速度/牛顿第二运动定律测重力加速度实验报告.docx",
+      "sha256": "f67986dc775724ada8e57e89b62cb65b0ecb2f8ed5d7a7da2f0104c1d875972f"
+    },
+    {
+      "archive_relative_path": "processed/courses-01-03-04/普通物理实验1/单摆测重力加速度/牛顿第二运动定律测重力加速度实验报告_docx/正文.md",
+      "sha256": "c1a7652f5e3d5138c90fb08656d6064f757f150bbc3f22d836c40af2ddb5e52b"
+    },
+    {
+      "archive_relative_path": "processed/courses-01-03-04/普通物理实验1/单摆测重力加速度/牛顿第二运动定律测重力加速度实验报告_docx/数据/表001.csv",
+      "sha256": "69307d59162106cdf385827df42012f9f0ab7b376b566fe0cbb7f5f37c2efd5d"
+    },
+    {
+      "archive_relative_path": "processed/courses-01-03-04/普通物理实验1/单摆测重力加速度/牛顿第二运动定律测重力加速度实验报告_docx/数据/表002.csv",
+      "sha256": "9c156641ae60337eae41b6586fd18d021e538ebe0b5e4ad28088532de030b959"
+    }
+  ],
+  "column_mapping": {
+    "diameters.csv": "DOCX表1，第2行，6次独立直径记录；排除平均值列",
+    "measurements.csv": "DOCX表2，第2至7行；使用组号、长度及t1/t2/t3；每条记录20次全振动"
+  },
+  "transformations": [
+    "保留源记录的cm和s及小数位；计算时显式换算SI单位",
+    "宽表计时记录转换为每行一次重复测量",
+    "源表均值、周期、周期平方和源报告拟合结果均不作为计算输入"
+  ],
+  "issues": [
+    {
+      "id": "P01",
+      "status": "corrected_in_authored_outputs",
+      "detail": "源报告标题和实验名称混入牛顿第二定律；按原理、步骤和数据统一为单摆测重力加速度。"
+    },
+    {
+      "id": "P02",
+      "status": "corrected_in_authored_outputs",
+      "detail": "源公式把T²关系与g公式串联，输出中分别排版。"
+    },
+    {
+      "id": "P03",
+      "status": "recompute",
+      "detail": "源报告拟合斜率与g须由未修约计时记录重新计算。"
+    },
+    {
+      "id": "P04",
+      "status": "unresolved",
+      "detail": "仪器型号、误差限和当地g标定证据未提供；不填造B类不确定度。"
+    }
+  ]
+}
