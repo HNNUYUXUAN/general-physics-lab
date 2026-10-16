@@ -22,7 +22,7 @@
 
 GitHub 仓库页面显示 HTML 文件源码。要查看完整页面，可克隆或下载仓库后，在浏览器中打开实验的 `analysis.html`；保留完整仓库可同时使用报告引用的相对路径图片。
 
-若浏览器对本地文件有限制，在仓库根目录启动仅本机可访问的预览服务：
+在仓库根目录启动本地预览服务：
 
 ```powershell
 python -m http.server 8000 --bind 127.0.0.1
@@ -36,7 +36,7 @@ http://127.0.0.1:8000/experiments/course-01/pendulum/notebooks/analysis.html
 
 其中 `course-01/pendulum` 可替换为其他实验标识。查看报告阅读版则将后半段改为 `report/report.html`。结束时在启动服务的终端按 `Ctrl+C`。
 
-HTML 中的滑块、菜单、曲线提示与缩放在浏览器中执行；每个实验实际提供的控件以其页面为准。页面中的公式由 MathJax 显示，需要其资源可以加载。当前仓库尚未配置 GitHub Pages。
+HTML 中的滑块、菜单、曲线提示与缩放在浏览器中执行。数学公式由 MathJax 排版。
 
 ## 运行 Jupyter Notebook
 
@@ -55,7 +55,7 @@ Python 要求 3.11 及以上。macOS／Linux 的虚拟环境解释器路径为 `
 
 在 JupyterLab 打开一个实验的 `notebooks/analysis.ipynb`，选择 **General Physics Lab** 内核，重启内核并运行所有单元。Notebook 自带执行输出；GitHub 静态预览可用于阅读，较大的文件可下载到本机查看。
 
-成稿图表要求宋体（SimSun）与 Times New Roman。运行前安装这两种字体；字体文件不随仓库分发。Markdown／Jupyter 的数学公式使用标准 LaTeX，建议使用 VS Code 或 Jupyter 的数学显示。
+成稿图表使用宋体（SimSun）与 Times New Roman。运行前安装这两种字体。Markdown／Jupyter 的数学公式使用标准 LaTeX，可在 VS Code 或 Jupyter 中查看。
 
 只想重新检查某个已保存 Notebook 的执行情况：
 
@@ -63,7 +63,7 @@ Python 要求 3.11 及以上。macOS／Linux 的虚拟环境解释器路径为 `
 .\.venv\Scripts\python.exe scripts/execute_notebooks.py --experiment course-03/rlc-resonance
 ```
 
-该命令使用新内核运行并保存到 `.build/notebook-checks/`，正式成稿保持原样。使用 `--all` 可检查全部 45 个实验。
+执行结果保存在 `.build/notebook-checks/`。使用 `--all` 可检查全部 45 个实验。
 
 ## 打开 Wolfram Notebook
 
@@ -97,9 +97,9 @@ DensityLab`OpenNotebook[]
 
 通过 `WOLFRAMSCRIPT` 指定本机 WolframScript 路径；Windows 可用 `PHYSICSLAB_BUILD_ROOT` 设置较短的暂存目录。构建、呈现检查和结果发布流程见[开发文档](development.md)。
 
-`--all` 构建其余 44 个实验，单摆作为基线保留。无参数的 `scripts/pipeline.py all` 专门用于显式重建单摆。
+`--all` 批量构建单摆以外的 44 个实验。单摆使用 `scripts/pipeline.py all` 重建。
 
-## 结果可信度与问题定位
+## 计算记录与问题定位
 
 每个实验的 `results/verification.json` 记录双端数值对照；执行、呈现和交互核验分别保存在本实验的 `results/` 中。[验收汇总](delivery-summary.md)集中列出资料限制。
 

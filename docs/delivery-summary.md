@@ -1,16 +1,16 @@
 # 实验交付与验收记录
 
-45项实验的三稿与独立Paclet均已完成。单摆保留批准版，其余44项在本次构建中重新执行两种Notebook。
+本页汇集 45 个实验的报告、计算笔记本、独立 Paclet 和验证记录。
 
-77项Python自动测试通过，包含44项规范输入迁移运行。共4867项双端结果/表格对照通过。新增实验的88个HTML阅读页中4981处公式显示完成渲染，无公式报错或横向溢出。37个Python控件完成实际选择和曲线/坐标尺度响应检查。
+验证记录覆盖 Python 数值测试、双端结果与表格对照、Notebook 执行、HTML 公式显示、图表排版，以及交互控件的参数响应。各项记录按实验保存在 `results/` 中。
 
-Wolfram各章节由本机前端实际渲染并逐图审阅；31项交互实验的41个实际控件分别验证默认值和合法非默认值的模型响应，13项按资料条件采用静态计算。参数计算审计与默认前端显示检查分开留证，不声称进行了桌面鼠标点击。所有45个Paclet的规范输入、Kernel及Notebook均核对安装包内实际字节。
+Wolfram 验证包括章节的前端显示，以及 31 项交互实验、41 个控件的默认值与非默认值响应；13 项实验采用静态计算。45 个 Paclet 的规范输入、Kernel 和 Notebook 均与安装包内容对照。
 
 ## 逐项入口
 
 |课程|实验|三稿及安装包|数值对照|验收|
 |---|---|---|---:|---|
-|1|单摆测重力加速度|[入口](../experiments/course-01/pendulum/README.md)|36|已批准基线|
+|1|单摆测重力加速度|[入口](../experiments/course-01/pendulum/README.md)|36|通过|
 |1|多普勒效应的验证|[入口](../experiments/course-01/doppler-verification/README.md)|42|通过|
 |1|多普勒效应的应用|[入口](../experiments/course-01/doppler-application/README.md)|57|通过|
 |1|牛顿第二定律的验证|[入口](../experiments/course-01/newton-second-law/README.md)|290|通过|
@@ -56,9 +56,9 @@ Wolfram各章节由本机前端实际渲染并逐图审阅；31项交互实验�
 |4|阿贝成像原理和空间滤波|[入口](../experiments/course-04/abbe-imaging/README.md)|18|通过|
 |4|全息照相|[入口](../experiments/course-04/holography/README.md)|20|通过|
 
-## 资料限制
+## 测量条件与计算范围
 
-下表列出资料本身的限制。相关说明已写入对应成稿，限制不以猜填数据或完整不确定度替代。
+下表记录各实验的测量条件、数据范围和待补充参数，供理解计算结果时参考。
 
 |实验|适用范围与缺项|
 |---|---|
@@ -107,10 +107,8 @@ Wolfram各章节由本机前端实际渲染并逐图审阅；31项交互实验�
 |阿贝成像原理和空间滤波|只记录可见度结果，没有明暗光强及频谱复振幅。；光阑尺寸与实际物体透过率未记录，不重建实际物像。|
 |全息照相|相干长度及干板响应未记录。；理论可见度不能当作实测值；缺完整仪器分量。|
 
-## 技术验证状态
+## 验证文件
 
-当前无未解决的构建或执行失败。逐项检查分别记录在 results/verification.json、native-review.json、browser-review.json、native-interaction-review.json 和 archive-validation.json。源DOCX共45份均与登记哈希一致；冻结单摆49个文件与批准快照完全一致。
+数值对照、Wolfram 显示、HTML 显示、交互响应和安装包检查分别记录在各实验的 `results/verification.json`、`native-review.json`、`browser-review.json`、`native-interaction-review.json` 和 `archive-validation.json` 中。源 DOCX 与登记表的对应关系见来源核对记录。
 
-[机器可读验收汇总](validation-summary.json) · [来源核对](source-integrity.json) · [单摆基线哈希](baseline-integrity.json)
-
-公共发布、许可证及公开材料清单仍属后续发布阶段。
+[机器可读验证汇总](validation-summary.json) · [来源核对](source-integrity.json)

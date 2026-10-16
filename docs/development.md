@@ -41,9 +41,9 @@ python scripts/batch.py --list
 
 ## 自动检查与发布记录
 
-公共 CI 执行 Python 数值测试；只有运行环境具备宋体（SimSun）和 Times New Roman 时才执行成稿 Notebook，否则在 ci-status.json 中记录缺失字体与跳过状态。字体文件不随项目分发。CI 明确标记 Wolfram 未运行；完整发布前在具备指定字体和 Wolfram 内核的本机运行双端流程。成功执行与视觉检查分别记录，保留清晰图表和可读的表格，不以缓存输出代替运行验证。
+CI 执行 Python 数值测试。Notebook 执行还需要宋体（SimSun）和 Times New Roman；字体检查与运行状态记录在 `ci-status.json`。Wolfram 计算与双端流程在配置了字体、内核和前端的环境中执行。计算执行与视觉检查分别记录。
 
-数据或方法修改时，依次更新来源说明、重算双端、审阅残差与结论、重新生成报告。代码环境由 pyproject 定义，并提供当前 Windows 环境的精确依赖清单。公共发布及许可证设置为后续阶段。
+数据或方法修改时，依次更新来源说明、重算双端、审阅残差与结论、重新生成报告。代码环境由 `pyproject.toml` 定义，Windows 环境的精确依赖清单保存在 `requirements-windows.lock.txt`。
 
 独立安装验证使用 `wolframscript -file notebook/paclets/PendulumLab/Support/verify-installed.wls`，会将生成的包安装到用户 Paclet 仓库，核对自带数据，并在新内核中重新执行 Notebook。该验证记录保存在实验的 `results/wolfram-installed-validation.json`；实际前端渲染保存在本地 `.build/wolfram-visual/`。
 
@@ -51,8 +51,8 @@ python scripts/batch.py --list
 
 ## 全量验收
 
-`--all` 构建新增44个实验；已批准单摆保持基线，无参数命令用于显式重建单摆。`python scripts/check_delivery.py --all` 对45项成稿执行只读检查，核对入口、真实执行输出、输入与代码哈希、双端数值、章节及最终审查记录。`python scripts/execute_notebooks.py --all` 在新内核中逐本重跑，写入隔离的检查目录。
+`--all` 批量构建单摆以外的 44 个实验；单摆使用无参数命令重建。`python scripts/check_delivery.py --all` 检查 45 项成稿的入口、执行输出、输入与代码哈希、双端数值和章节。`python scripts/execute_notebooks.py --all` 在新内核中逐本重跑，结果写入独立的检查目录。
 
-Wolfram 控件核验采用两份证据：前端实际渲染图检查默认控件、字体、题注和裁切；`scripts/audit_wolfram_interactions.wl` 从实际 Manipulate 提取模型与控件，逐个代入合法非默认值并核验真实计算与几何响应。该计算审计不声称进行了桌面鼠标点击。输出的模型和控件级记录保存在各实验 results/native-interaction-review.json。
+Wolfram 控件验证包括默认状态的前端显示检查，以及参数变化后的计算与几何响应检查。`scripts/audit_wolfram_interactions.wl` 从 `Manipulate` 提取模型与控件，逐个代入合法非默认值；记录保存在各实验的 `results/native-interaction-review.json`。
 
 构建会在暂存目录运行；若源文件在执行过程中变化，拒绝发布该轮输出并保留当前源和上一份成稿，待新快照重试。长期构建的检查点及日志放在 .build/，审核记录同时保留产物哈希。

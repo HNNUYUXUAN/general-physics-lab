@@ -12,7 +12,7 @@
 
 ![普通物理实验概念插图：单摆、电路与棱镜光学装置](docs/assets/physics-lab-cover.png)
 
-*封面为概念插图；下文图表均来自仓库中的实际计算结果。*
+*单摆、电路与光学：从测量进入模型。*
 
 ## 这个仓库怎样使用
 
@@ -28,7 +28,7 @@
 |使用原生数学排版、符号推导与交互|**Wolfram Notebook** `.nb`／**Paclet** `.paclet`|本机 Wolfram 环境|
 |对照 DOCX 转换后的报告、讲义与说明书|**源资料 PDF**|[57 份 PDF 索引](pdf/README.md)|
 
-GitHub 中的 HTML 链接用于查看和下载文件；可操作的页面需在浏览器中打开。目前网站托管尚未启用。HTML 中提供的交互由浏览器完成，修改 Python／Wolfram 计算过程则需要相应内核。
+下载仓库后，在浏览器中打开 HTML 阅读版即可操作页面中的控件；在 Jupyter 或 Wolfram 中打开 Notebook，可以编辑并重新计算。
 
 ## 按课程找实验
 
@@ -84,17 +84,17 @@ python -m venv .venv
 .\.venv\Scripts\python.exe -m jupyterlab
 ```
 
-进入 `experiments/course-01/pendulum/notebooks/analysis.ipynb`，选择当前虚拟环境的 Python 内核，再从头运行。当前仓库为私有，克隆时使用具有访问权限的 GitHub 账号。
+进入 `experiments/course-01/pendulum/notebooks/analysis.ipynb`，选择当前虚拟环境的 Python 内核，再从头运行。
 
-重现成稿字体需安装宋体和 Times New Roman；HTML 的公式资源也需可访问。完整环境、Wolfram 安装包的打开方式和单个实验重跑命令见[使用指南](docs/usage.md)。
+安装宋体和 Times New Roman 可重现图表排版。环境配置、Wolfram 安装包和单个实验的运行方式见[使用指南](docs/usage.md)。
 
 ## 数据如何成为结论
 
 观测值保存在每个实验的 `data/`，单位、参数和模型假设保存在 `experiment.json`。Python 模块与独立 Wolfram Paclet 分别计算，再对照未修约结果；图表、数表和报告中的结果由这些计算生成。
 
-资料中的重复记录、来源冲突与仪器误差缺项保留说明。缺少依据的读数保持缺失，不确定度只计算有测量信息支持的部分。交互围绕本实验的实际物理问题展开，资料条件不足的实验提供静态计算。
+每个实验说明测量条件、拟合方法和不确定度的定义。Notebook 将观测数据与物理模型放在同一章节，通过数据选择、参数扫描和曲线比较理解结果。
 
-已完成的本机检查包含 **77 项 Python 测试、4,867 项双端数值与表格对照**，以及 Notebook 执行、公式显示、图表排版和交互响应核验。[逐项验收记录](docs/delivery-summary.md)列出实验状态及资料限制；[PDF 核验记录](pdf/verification.json)保存 57 份转换文件的对应关系与哈希。
+计算方法见[数据与方法](docs/data-and-methods.md)，各实验的执行和结果对照见[验证记录](docs/delivery-summary.md)。原报告、讲义与说明书可通过[PDF 索引](pdf/README.md)查阅。
 
 ## 想继续修改或扩展
 

@@ -1,29 +1,126 @@
+[普通物理实验 1](../README.md) · [项目首页](../../../README.md) · [使用指南](../../../docs/usage.md)
+
 # 单摆测重力加速度
 
-普通物理实验 1 · 缪雨轩 · 2414050120
+**用长度和时间测量重力，用残差和摆角理解模型。**
 
-| 成果 | 文件 |
-| --- | --- |
-| 完整实验报告 | [report.md](report/report.md) |
-| 报告排版阅读 | [report.html](report/report.html) |
-| 浏览器交互阅读 | [analysis.html](notebooks/analysis.html) |
-| Python 计算与模型探索 | [analysis.ipynb](notebooks/analysis.ipynb) |
-| Wolfram 计算与交互探索 | [Pendulum.nb](../../../notebook/paclets/PendulumLab/Notebooks/Pendulum.nb) |
-| 双端数值核验 | [verification.json](results/verification.json) |
-| 数据来源与校核问题 | [provenance.json](data/provenance.json) |
+改变摆长、重复计时，将周期平方与有效摆长联系起来，求出重力加速度。再从小角度近似走向非线性单摆，观察摆幅如何改变周期与测量结果。
 
-数据为源实验报告记录的 18 条计时与 6 条摆球直径观测。首次使用源 Paclet 前，运行项目根目录的 `python scripts/pipeline.py prepare`；完整构建使用 `python scripts/pipeline.py all`。
+[读实验报告](report/report.md) · [浏览器交互](notebooks/analysis.html) · [Python 笔记本](notebooks/analysis.ipynb) · [Wolfram 笔记本](../../../notebook/paclets/PendulumLab/Notebooks/Pendulum.nb)
 
-源包保留可编辑 Wolfram 代码；构建产出的安装包位于 `notebook/paclets/PendulumLab/dist/PendulumLab-0.1.0.paclet`。安装后可调用 `Needs["PendulumLab`"]`、`PLNotebookPath[]` 和 `PLOpenNotebook[]`。
+![单摆有效摆长、摆球直径及周期平方拟合的关系](assets/pendulum-overview.svg)
 
-实验分析与模型情景分别展示；仪器 B 类不确定度、实际摆幅记录和当地重力参考值的独立标定依据尚未确认。详情见报告的误差分析。
+图 1　从摆长与计时读数到重力加速度
 
-## 交互操作
+## 选择你的入口
 
-Jupyter 运行全部单元后，可用菜单筛选重复计时、暂不纳入某组拟合数据、选择摆角与摆长情景；动画支持播放、暂停和时间拖动，摆角扫描支持滑块定位。交互阅读版内嵌绘图库，浏览器可直接打开；公式排版由阅读器提供。GitHub 静态预览显示保留的静态图，完整交互请使用可信的本地 Notebook 或 HTML。
+|用途|入口|打开方式|
+|---|---|---|
+|阅读原理、测量记录和实验结论|[完整实验报告](report/report.md) · [排版阅读版](report/report.html)|GitHub、Markdown 阅读器或本地浏览器|
+|筛选数据、改变摆角、播放运动|[HTML 交互阅读版](notebooks/analysis.html)|下载后用浏览器打开|
+|逐步运行和修改 Python 计算|[Jupyter Notebook](notebooks/analysis.ipynb)|JupyterLab 或 VS Code|
+|进行符号推导与原生交互计算|[Wolfram Notebook](../../../notebook/paclets/PendulumLab/Notebooks/Pendulum.nb) · [Paclet 安装包](../../../notebook/paclets/PendulumLab/dist/PendulumLab-0.1.0.paclet)|Wolfram 前端|
+|对照原始实验报告|[源报告 PDF](../../../pdf/course-01/单摆测重力加速度/牛顿第二运动定律测重力加速度实验报告.pdf)|GitHub 或 PDF 阅读器|
 
-Wolfram Notebook 提供对应的原生菜单和滑块，并能连续调整摆长与摆角、播放时间动画、切换小角度解。输入单元默认折叠，可通过单元括号展开；首次打开请求值全部单元。计算实现位于独立 Paclet 上下文中。
+## 从一组读数开始
 
-## 成稿规范
+实验记录包含 **6 组摆长、每组 3 次计时**，每次计时对应 **20 次全振动**；摆球直径另有 6 次测量。
 
-三份成稿共用原 DOCX 的七个主章节。Notebook 在实验原理、原始数据记录、数据处理及误差分析中展开符号推导、拟合、数值求解和参数探索。中文使用宋体（SimSun），西文及数字使用 Times New Roman；公式采用 LaTeX／原生数学排版，图表采用黑白线型和点型。重建正式图表需本机安装这两种字体；字体文件不随项目分发。Markdown 的字体由阅读器决定，指定字体的报告预览见 report.html。
+取平均直径 $\bar d$ 和平均计时 $\bar t$，得到有效摆长与周期：
+
+$$
+L'=L+\frac{\bar d}{2},\qquad T=\frac{\bar t}{20}.
+$$
+
+小角度条件下，周期平方与有效摆长呈线性关系。用含截距模型拟合：
+
+$$
+T^2=kL'+b,\qquad g=\frac{4\pi^2}{k}.
+$$
+
+表 1　两种数据处理方法得到的重力加速度
+
+|处理方法|$g/(\mathrm{m\,s^{-2}})$|计算入口|
+|---|---:|---|
+|各组计算后取算术平均|9.797523|[报告：逐组计算](report/report.md#1-逐组计算重力加速度)|
+|含截距线性拟合|9.735218|[报告：数据处理](report/report.md#数据处理)|
+
+两种方法对截距项和误差结构的处理不同。对照拟合曲线、残差及测量条件，可以进一步理解结果的差异。
+
+## 让拟合与残差一起说话
+
+![周期平方与有效摆长的拟合及残差](results/figures/fit.png)
+
+图 2　周期平方与有效摆长的含截距线性拟合及残差；误差条表示重复计时传播得到的 A 类标准不确定度
+
+Notebook 中可以选择重复计时、暂不纳入某组数据，观察拟合参数与残差如何响应。完整数据表、不确定度定义及结果讨论见[实验报告](report/report.md)。
+
+## 把摆角放大，观察近似何时发生偏离
+
+理想无阻尼单摆满足
+
+$$
+\ddot\theta+\frac{g}{L'}\sin\theta=0.
+$$
+
+运动示例取有效摆长 $L'=1\ \mathrm m$、初始摆角 $20^\circ$、初始角速度为零，观察 10 s 内的运动；重力参数采用实验拟合值。摆角扫描从 $1^\circ$ 延伸至 $60^\circ$，比较非线性周期与小角度近似。
+
+<table>
+  <tr>
+    <td width="50%" align="center" valign="top">
+      <a href="results/figures/trajectory.png"><img src="results/figures/trajectory.png" width="410" alt="非线性单摆与小角度解的摆角比较，以及角速度随时间的变化"></a>
+    </td>
+    <td width="50%" align="center" valign="top">
+      <a href="results/figures/amplitude-scan.png"><img src="results/figures/amplitude-scan.png" width="410" alt="初始摆角对周期增量与重力估计偏差的影响"></a>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" valign="top">
+      <strong>图 3　摆角与角速度</strong><br>
+      比较运动波形与随时间累积的相位差。
+    </td>
+    <td align="center" valign="top">
+      <strong>图 4　初始摆角扫描</strong><br>
+      连接周期增量与重力估计偏差。
+    </td>
+  </tr>
+</table>
+
+## 四个交互探索
+
+|操作|观察什么|
+|---|---|
+|筛选重复计时|均值、周期与重复性分量的变化|
+|调整参与拟合的数据组|斜率、截距、重力估计和残差的变化|
+|改变摆长与初始摆角，播放或拖动时间|摆球运动、摆角与角速度的对应关系|
+|在摆角扫描中移动滑块|小角度近似的周期偏差及其对重力估计的影响|
+
+在 [HTML](notebooks/analysis.html) 中直接操作已有控件；在 [Jupyter](notebooks/analysis.ipynb) 或 [Wolfram](../../../notebook/paclets/PendulumLab/Notebooks/Pendulum.nb) 中运行全部单元，可继续修改计算参数与模型。
+
+## 在本机打开
+
+安装步骤见[使用指南](../../../docs/usage.md)。在仓库根目录启动本实验的 Jupyter Notebook：
+
+```powershell
+.\.venv\Scripts\python.exe -m jupyterlab experiments/course-01/pendulum/notebooks/analysis.ipynb
+```
+
+Wolfram 可安装本实验的独立 Paclet，再通过包入口打开 Notebook。将下面的仓库路径改为本机路径：
+
+```wolfram
+PacletInstall["D:/general-physics-lab/notebook/paclets/PendulumLab/dist/PendulumLab-0.1.0.paclet"];
+Needs["PendulumLab`"];
+PendulumLab`PLOpenNotebook[]
+```
+
+## 数据与计算实现
+
+|内容|文件|
+|---|---|
+|摆长与重复计时|[measurements.csv](data/measurements.csv)|
+|摆球直径|[diameters.csv](data/diameters.csv)|
+|单位、分析参数与模型条件|[experiment.json](experiment.json)|
+|Python 计算模块|[pendulum.py](../../../src/physicslab/experiments/pendulum.py)|
+|Wolfram 包实现|[PendulumLab.wl](../../../notebook/paclets/PendulumLab/Kernel/PendulumLab.wl)|
+
+[单摆计算方法](../../../docs/data-and-methods.md#拟合与不确定度) · [数据来源](data/provenance.json) · [返回课程目录](../README.md)
