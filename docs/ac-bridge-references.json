@@ -1,0 +1,33 @@
+{
+  "experimentId": "course-03/ac-bridge",
+  "references": [
+    {
+      "id": "qi2021",
+      "authors": [
+        "齐晓华",
+        "朱一博",
+        "史冬梅"
+      ],
+      "title": "交流电桥原理与应用浅析",
+      "journal": "渤海大学学报(自然科学版)",
+      "year": 2021,
+      "volume": "42",
+      "issue": "3",
+      "pages": "253–258",
+      "doi": "10.13831/j.cnki.issn.1673-0569.2021.03.011",
+      "fulltextSha256": "dc5cb5f42ab8d3485e94e46f35223e43612458adb04623004dbd98a484e68de5",
+      "readingStatus": "verified-fulltext",
+      "locators": [
+        "p.254 section 1, Figure 1 and equations (1)–(9)",
+        "p.255 section 2, two-variable alternating bridge adjustment"
+      ],
+      "uses": [
+        "Complex bridge balance, phase/amplitude conditions and adjacent comparison arms"
+      ],
+      "notes": [
+        "Section 4 RL frequency example is not the teaching capacitor comparison circuit.",
+        "Equation (2) checked in the rendered PDF; no printed formula correction is required."
+      ]
+    }
+  ]
+}

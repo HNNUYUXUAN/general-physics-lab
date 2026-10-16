@@ -1,0 +1,15 @@
+{
+  "experimentId": "course-03/kelvin-bridge",
+  "status": "passed",
+  "method": "independent four-node Kelvin bridge with actual secondary shunt of contact link",
+  "caseCount": 243,
+  "maxScaledErrors": {
+    "bridge_uV": 3.469446951953614e-12,
+    "uncorrected_mOhm": 0,
+    "mainCurrent": 1.942890293094024e-15
+  },
+  "scaling": "abs(error)/max(1,abs(reference))",
+  "tolerance": 1e-10,
+  "modelSha256": "9f9841a2ebbac9dfb8ab38fce8a6d563cdaab9c74bb153529a4a529b22b735f6",
+  "numpyVersion": "2.5.4"
+}

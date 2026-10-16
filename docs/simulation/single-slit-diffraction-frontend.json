@@ -1,0 +1,174 @@
+{
+  "status": "passed",
+  "source_record_sha256": "457b1e21afc6afa880cfd6bfa5be364c6f3abcb2dcea6d875c22d9b10c327e45",
+  "interaction_checks": 5,
+  "visual_status": "passed",
+  "exports_status": "passed",
+  "exports": [
+    {
+      "filename": "single-slit-diffraction-single-slit-experiment.json",
+      "sha256": "9dc00dd4efeac22fc481edeb8f8e5766634d2853961010efc7baa38278d6c053",
+      "bytes": 4575
+    },
+    {
+      "filename": "single-slit-diffraction-single-slit-records.csv",
+      "sha256": "200434c285907d6f7494550a87a10c9014d927ba3e9b9ce0ada9d816c7730333",
+      "bytes": 723
+    }
+  ],
+  "fonts": {
+    "h1": {
+      "fonts": [
+        {
+          "familyName": "SimSun",
+          "postScriptName": "SimSun",
+          "isCustomFont": false,
+          "glyphCount": 8
+        }
+      ]
+    },
+    "#count": {
+      "fonts": [
+        {
+          "familyName": "Times New Roman",
+          "postScriptName": "TimesNewRomanPSMT",
+          "isCustomFont": false,
+          "glyphCount": 1
+        }
+      ]
+    }
+  },
+  "browser": null,
+  "layout": {
+    "mobile": {
+      "width": 390,
+      "scrollWidth": 390,
+      "mathErrors": 0,
+      "mathObjects": 18
+    }
+  },
+  "interaction": [
+    {
+      "name": "缝宽改变与连续中心",
+      "status": "passed"
+    },
+    {
+      "name": "暗纹模型与反演",
+      "status": "passed"
+    },
+    {
+      "name": "探针保存强度",
+      "status": "passed"
+    },
+    {
+      "name": "中心不是暗纹",
+      "status": "passed"
+    },
+    {
+      "name": "真实双格式导出与刷新恢复",
+      "status": "passed"
+    }
+  ],
+  "background": {
+    "status": "not-applicable"
+  },
+  "checked_at_utc": null,
+  "screenshots": [
+    {
+      "path": "docs/assets/simulations/single-slit-diffraction/frontend-01-d65bd67f42e7.png",
+      "sha256": "d65bd67f42e71d5c19d52428a31f8bb3ff80cf56f88175a87e50c1ccc369b53e"
+    },
+    {
+      "path": "docs/assets/simulations/single-slit-diffraction/frontend-02-fc3f67667056.png",
+      "sha256": "fc3f676670569137f47452aa47a7370a8c16a0186795b61f736143498c276d9c"
+    },
+    {
+      "path": "docs/assets/simulations/single-slit-diffraction/frontend-03-15e1bd15c2e5.png",
+      "sha256": "15e1bd15c2e564e7e1f515f6025c74096903205f2ebce3eb2ad341a89e960c2a"
+    },
+    {
+      "path": "docs/assets/simulations/single-slit-diffraction/frontend-04-5d207bc82d69.png",
+      "sha256": "5d207bc82d692c133608d7346bc29530534061ce91c0e365a26fe85053882667"
+    },
+    {
+      "path": "docs/assets/simulations/single-slit-diffraction/frontend-05-54ee88fcc414.png",
+      "sha256": "54ee88fcc414af57e184f0a08bd9f97865892342d6708499c74374530b6c8f8e"
+    },
+    {
+      "path": "docs/assets/simulations/single-slit-diffraction/frontend-06-ec94336bb197.png",
+      "sha256": "ec94336bb197492eb344970432c31ca23541eab1a730953e92773e5f1e252d1b"
+    },
+    {
+      "path": "docs/assets/simulations/single-slit-diffraction/frontend-07-55d9912e867a.png",
+      "sha256": "55d9912e867a47b9cac643e5146d52e01cbb0891caef4c37b4f448afa89922e5"
+    }
+  ],
+  "schema_version": 1,
+  "experiment_id": "course-04/single-slit-diffraction",
+  "numerical": {
+    "status": "passed",
+    "reference_sha256": "b8da7fe5958d1e0ded3c02c95f66db2a268d08c95a9ce28e9c83f0b9ac168602",
+    "source_files": {
+      "simulations/single-slit-diffraction/index.html": "6de4752dbdff86923f656a2a9cbe7c4ab7c2fc5ff245b41c5b446d70146b6718",
+      "simulations/single-slit-diffraction/model.mjs": "792ee087eead4fc751640f2045be4ee029810d685d556c0e5802b31a8b7e5e86",
+      "simulations/single-slit-diffraction/app.mjs": "b9e28f388b81249a5957cda8524510799cbda9a95d831b4a14c069eb8252348a",
+      "simulations/single-slit-diffraction/chart.mjs": "3f923dc9a51225ff63c7e6379aab231e5586654f7e43d67fe11530e21f893f07",
+      "simulations/single-slit-diffraction/lab.css": "cb522360179f29fdbe39c933213bc377b0ab4c2b577adb5d498706173c40f321",
+      "simulations/single-slit-diffraction/observations.json": "773815a80d13c803abae6942257894e6cc8e884db627c1c971cb4e6a0992dbfd",
+      "docs/single-slit-diffraction-model-evidence.md": "3182e89e95d7f0a3153ada5c76378f847c1a9676646b4beb67708cb5169c4545",
+      "docs/single-slit-diffraction-references.json": "deb98ebed698c14e4666cc007728216ce0417968349ccd30a6e830cb88326aeb",
+      "docs/single-slit-diffraction-references.bib": "1673c9a54645062d5c79b4fcab006d3add9b859c1bc512664a358ebe3237d1f9",
+      "docs/simulation/single-slit-diffraction-reference.json": "938d24baaf094f649dcf0c111cea9ef3ab7d8ad04d678e3f6b53e4aa98c410b5",
+      "scripts/validate_single_slit_diffraction_simulation.py": "f3edfd242c5859df683600deb6890dc9bc26632d8f8d83a8fcf387f4286cd2eb",
+      "tests/single-slit-diffraction-model.test.mjs": "18718590d156164fae59370ae0db4ccb8c36fc01381309223f9f927c8638cbe3"
+    }
+  },
+  "scientific_evidence": {
+    "status": "verified",
+    "decision_source_files": {
+      "docs/single-slit-diffraction-references.json": "deb98ebed698c14e4666cc007728216ce0417968349ccd30a6e830cb88326aeb",
+      "docs/single-slit-diffraction-model-evidence.md": "3182e89e95d7f0a3153ada5c76378f847c1a9676646b4beb67708cb5169c4545",
+      "simulations/single-slit-diffraction/model.mjs": "792ee087eead4fc751640f2045be4ee029810d685d556c0e5802b31a8b7e5e86"
+    },
+    "core_references": [
+      {
+        "id": "AnEtAl2021Fraunhofer",
+        "pdf_sha256": "797a7f819da1bc21e7ddeb313ade88258ae9b029ad9e04a446e92d8d3a2de747",
+        "locators": [
+          {
+            "printed_pages": "4",
+            "pdf_pages": [
+              1
+            ],
+            "location": "第1.1-1.2节及图1-2",
+            "role": "焦面与远场装置、R及Z远大于a²/(4λ)的条件"
+          },
+          {
+            "printed_pages": "5",
+            "pdf_pages": [
+              2
+            ],
+            "location": "第2.1节公式(1)及其后第(2)点",
+            "role": "sinc²强度、β定义、非零整数级暗纹"
+          },
+          {
+            "printed_pages": "6",
+            "pdf_pages": [
+              3
+            ],
+            "location": "实验测试场景",
+            "role": "650nm及0.2mm是该论文参数，不替换原报告632.8nm"
+          }
+        ]
+      }
+    ]
+  },
+  "source_hashes": {
+    "simulations/single-slit-diffraction/app.mjs": "b9e28f388b81249a5957cda8524510799cbda9a95d831b4a14c069eb8252348a",
+    "simulations/single-slit-diffraction/chart.mjs": "3f923dc9a51225ff63c7e6379aab231e5586654f7e43d67fe11530e21f893f07",
+    "simulations/single-slit-diffraction/index.html": "6de4752dbdff86923f656a2a9cbe7c4ab7c2fc5ff245b41c5b446d70146b6718",
+    "simulations/single-slit-diffraction/lab.css": "cb522360179f29fdbe39c933213bc377b0ab4c2b577adb5d498706173c40f321",
+    "simulations/single-slit-diffraction/model.mjs": "792ee087eead4fc751640f2045be4ee029810d685d556c0e5802b31a8b7e5e86",
+    "simulations/single-slit-diffraction/observations.json": "773815a80d13c803abae6942257894e6cc8e884db627c1c971cb4e6a0992dbfd"
+  }
+}

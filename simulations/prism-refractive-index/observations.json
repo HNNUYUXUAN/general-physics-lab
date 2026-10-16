@@ -1,0 +1,69 @@
+{
+  "experiment_id": "course-04/prism-refractive-index",
+  "source": "original-report",
+  "tables": [
+    {
+      "headers": [
+        "次数",
+        "θ₁（左）",
+        "θ₂（右）",
+        "θ₃（左）",
+        "θ₄（右）"
+      ],
+      "rows": [
+        [
+          "1",
+          "90°07′",
+          "269°55′",
+          "130°57′",
+          "310°45′"
+        ],
+        [
+          "2",
+          "82°10′",
+          "262°48′",
+          "123°10′",
+          "303°29′"
+        ],
+        [
+          "3",
+          "100°20′",
+          "280°18′",
+          "141°21′",
+          "321°19′"
+        ],
+        [
+          "4",
+          "85°10′",
+          "265°08′",
+          "126°12′",
+          "306°10′"
+        ],
+        [
+          "5",
+          "80°01′",
+          "260°02′",
+          "120°59′",
+          "301°01′"
+        ]
+      ]
+    }
+  ],
+  "analysis": {
+    "angle_mean_deg": 40.93999999999998,
+    "type_a_arcmin": 2.5758493744783153,
+    "refractive_index": 1.5425828557059755,
+    "per_trial_deg": [
+      40.83333333333332,
+      40.84166666666667,
+      41.01666666666666,
+      41.033333333333346,
+      40.97499999999998
+    ]
+  },
+  "input_hashes": {
+    "experiments/course-04/prism-refractive-index/experiment.json": "954bed89d2c1743461f1b004bea74c0552a96e545c8e72518b5b627082d7e4d2",
+    "experiments/course-04/prism-refractive-index/data/observations-01.csv": "525af74cb6302c187d5507a7ea9fcee0726f443cc684a21cc370a991cbe3f7e4",
+    "experiments/course-04/prism-refractive-index/data/provenance.json": "142b29486591575513b89fc2022ae575c35c4f5ac2319dbc7810c80da6c79efd"
+  }
+}

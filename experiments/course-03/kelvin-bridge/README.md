@@ -1,5 +1,8 @@
 [普通物理实验 3](../README.md) · [项目首页](../../../README.md) · [使用指南](../../../docs/usage.md)
 
+<!-- virtual-laboratory-entry -->
+[在线虚拟实验](https://hnnuyuxuan.github.io/general-physics-lab/simulations/kelvin-bridge/) · [模型依据与参数来源](../../../docs/kelvin-bridge-model-evidence.md)
+
 # 直流双臂电桥测低电阻
 
 **把电流端和电位端分开，从毫欧读数求导体电阻率。**

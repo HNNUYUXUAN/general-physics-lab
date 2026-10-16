@@ -1,0 +1,1026 @@
+{
+  "experiment_id": "course-04/polarization",
+  "status": "passed",
+  "created_at": "2026-10-16T14:09:07.260739+00:00",
+  "environment": {
+    "python": "3.14.7",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1"
+  },
+  "model_sha256": "e0e0c9a71ea742242a3593c0403db9823e3026a35184a20cebde227012f31298",
+  "input_hashes": {
+    "experiments/course-04/polarization/experiment.json": "90c5bc21b8e38dd8300d6c74136c9c4745f6e4b3afb52e1ca65c10af9824456a",
+    "experiments/course-04/polarization/data/observations-01.csv": "9d389c0c85099947a3c7ef31c467e02293598313a694037d33e4af935044997e",
+    "experiments/course-04/polarization/data/observations-02.csv": "7961e3d52307cb3b4de03fb1d03fff1ca5087b5e293d8c84c3401cddcec4fe6e",
+    "experiments/course-04/polarization/data/provenance.json": "5559b2e431e59b7d6d65389ac5f226b1587ee08d8183c8489306b2f3d1ff3edc"
+  },
+  "methods": [
+    "NumPy complex rotation/retarder matrix and projection",
+    "independent s-polarized boundary linear system",
+    "independent p Fresnel trigonometric form",
+    "SciPy linregress on original photodetector records"
+  ],
+  "case_count": 36,
+  "jones_cases": [
+    {
+      "parameters": {
+        "amplitude_ma": 0.1,
+        "background_ma": 0.02,
+        "plate_axis_deg": 0,
+        "retardance_deg": 0,
+        "refractive_index": 1.5
+      },
+      "points": [
+        {
+          "angle_deg": 0,
+          "current_ma": 0.12000000000000001
+        },
+        {
+          "angle_deg": 20,
+          "current_ma": 0.10830222215594891
+        },
+        {
+          "angle_deg": 45,
+          "current_ma": 0.07000000000000002
+        },
+        {
+          "angle_deg": 90,
+          "current_ma": 0.02
+        },
+        {
+          "angle_deg": 135,
+          "current_ma": 0.06999999999999999
+        },
+        {
+          "angle_deg": 180,
+          "current_ma": 0.12000000000000001
+        }
+      ]
+    },
+    {
+      "parameters": {
+        "amplitude_ma": 0.1,
+        "background_ma": 0.02,
+        "plate_axis_deg": 0,
+        "retardance_deg": 90,
+        "refractive_index": 1.5
+      },
+      "points": [
+        {
+          "angle_deg": 0,
+          "current_ma": 0.12000000000000001
+        },
+        {
+          "angle_deg": 20,
+          "current_ma": 0.10830222215594891
+        },
+        {
+          "angle_deg": 45,
+          "current_ma": 0.07000000000000002
+        },
+        {
+          "angle_deg": 90,
+          "current_ma": 0.02
+        },
+        {
+          "angle_deg": 135,
+          "current_ma": 0.06999999999999999
+        },
+        {
+          "angle_deg": 180,
+          "current_ma": 0.12000000000000001
+        }
+      ]
+    },
+    {
+      "parameters": {
+        "amplitude_ma": 0.1,
+        "background_ma": 0.02,
+        "plate_axis_deg": 22.5,
+        "retardance_deg": 0,
+        "refractive_index": 1.5
+      },
+      "points": [
+        {
+          "angle_deg": 0,
+          "current_ma": 0.12000000000000001
+        },
+        {
+          "angle_deg": 20,
+          "current_ma": 0.10830222215594891
+        },
+        {
+          "angle_deg": 45,
+          "current_ma": 0.07000000000000002
+        },
+        {
+          "angle_deg": 90,
+          "current_ma": 0.02
+        },
+        {
+          "angle_deg": 135,
+          "current_ma": 0.06999999999999999
+        },
+        {
+          "angle_deg": 180,
+          "current_ma": 0.12000000000000001
+        }
+      ]
+    },
+    {
+      "parameters": {
+        "amplitude_ma": 0.1,
+        "background_ma": 0.02,
+        "plate_axis_deg": 22.5,
+        "retardance_deg": 90,
+        "refractive_index": 1.5
+      },
+      "points": [
+        {
+          "angle_deg": 0,
+          "current_ma": 0.095
+        },
+        {
+          "angle_deg": 20,
+          "current_ma": 0.10522080132013793
+        },
+        {
+          "angle_deg": 45,
+          "current_ma": 0.095
+        },
+        {
+          "angle_deg": 90,
+          "current_ma": 0.04500000000000001
+        },
+        {
+          "angle_deg": 135,
+          "current_ma": 0.045
+        },
+        {
+          "angle_deg": 180,
+          "current_ma": 0.095
+        }
+      ]
+    },
+    {
+      "parameters": {
+        "amplitude_ma": 0.1,
+        "background_ma": 0.02,
+        "plate_axis_deg": 45,
+        "retardance_deg": 0,
+        "refractive_index": 1.5
+      },
+      "points": [
+        {
+          "angle_deg": 0,
+          "current_ma": 0.12000000000000005
+        },
+        {
+          "angle_deg": 20,
+          "current_ma": 0.10830222215594897
+        },
+        {
+          "angle_deg": 45,
+          "current_ma": 0.07000000000000002
+        },
+        {
+          "angle_deg": 90,
+          "current_ma": 0.02
+        },
+        {
+          "angle_deg": 135,
+          "current_ma": 0.07000000000000002
+        },
+        {
+          "angle_deg": 180,
+          "current_ma": 0.12000000000000005
+        }
+      ]
+    },
+    {
+      "parameters": {
+        "amplitude_ma": 0.1,
+        "background_ma": 0.02,
+        "plate_axis_deg": 45,
+        "retardance_deg": 90,
+        "refractive_index": 1.5
+      },
+      "points": [
+        {
+          "angle_deg": 0,
+          "current_ma": 0.07000000000000002
+        },
+        {
+          "angle_deg": 20,
+          "current_ma": 0.07000000000000003
+        },
+        {
+          "angle_deg": 45,
+          "current_ma": 0.07000000000000002
+        },
+        {
+          "angle_deg": 90,
+          "current_ma": 0.07000000000000002
+        },
+        {
+          "angle_deg": 135,
+          "current_ma": 0.07000000000000002
+        },
+        {
+          "angle_deg": 180,
+          "current_ma": 0.07000000000000002
+        }
+      ]
+    },
+    {
+      "parameters": {
+        "amplitude_ma": 0.1,
+        "background_ma": 0.02,
+        "plate_axis_deg": 90,
+        "retardance_deg": 0,
+        "refractive_index": 1.5
+      },
+      "points": [
+        {
+          "angle_deg": 0,
+          "current_ma": 0.12000000000000001
+        },
+        {
+          "angle_deg": 20,
+          "current_ma": 0.10830222215594891
+        },
+        {
+          "angle_deg": 45,
+          "current_ma": 0.07000000000000002
+        },
+        {
+          "angle_deg": 90,
+          "current_ma": 0.02
+        },
+        {
+          "angle_deg": 135,
+          "current_ma": 0.06999999999999999
+        },
+        {
+          "angle_deg": 180,
+          "current_ma": 0.12000000000000001
+        }
+      ]
+    },
+    {
+      "parameters": {
+        "amplitude_ma": 0.1,
+        "background_ma": 0.02,
+        "plate_axis_deg": 90,
+        "retardance_deg": 90,
+        "refractive_index": 1.5
+      },
+      "points": [
+        {
+          "angle_deg": 0,
+          "current_ma": 0.12000000000000001
+        },
+        {
+          "angle_deg": 20,
+          "current_ma": 0.10830222215594891
+        },
+        {
+          "angle_deg": 45,
+          "current_ma": 0.07000000000000002
+        },
+        {
+          "angle_deg": 90,
+          "current_ma": 0.02
+        },
+        {
+          "angle_deg": 135,
+          "current_ma": 0.06999999999999999
+        },
+        {
+          "angle_deg": 180,
+          "current_ma": 0.12000000000000001
+        }
+      ]
+    },
+    {
+      "parameters": {
+        "amplitude_ma": 1.2,
+        "background_ma": 0.02,
+        "plate_axis_deg": 0,
+        "retardance_deg": 0,
+        "refractive_index": 1.5
+      },
+      "points": [
+        {
+          "angle_deg": 0,
+          "current_ma": 1.22
+        },
+        {
+          "angle_deg": 20,
+          "current_ma": 1.079626665871387
+        },
+        {
+          "angle_deg": 45,
+          "current_ma": 0.6200000000000001
+        },
+        {
+          "angle_deg": 90,
+          "current_ma": 0.02
+        },
+        {
+          "angle_deg": 135,
+          "current_ma": 0.6199999999999999
+        },
+        {
+          "angle_deg": 180,
+          "current_ma": 1.22
+        }
+      ]
+    },
+    {
+      "parameters": {
+        "amplitude_ma": 1.2,
+        "background_ma": 0.02,
+        "plate_axis_deg": 0,
+        "retardance_deg": 90,
+        "refractive_index": 1.5
+      },
+      "points": [
+        {
+          "angle_deg": 0,
+          "current_ma": 1.22
+        },
+        {
+          "angle_deg": 20,
+          "current_ma": 1.079626665871387
+        },
+        {
+          "angle_deg": 45,
+          "current_ma": 0.6200000000000001
+        },
+        {
+          "angle_deg": 90,
+          "current_ma": 0.02
+        },
+        {
+          "angle_deg": 135,
+          "current_ma": 0.6199999999999999
+        },
+        {
+          "angle_deg": 180,
+          "current_ma": 1.22
+        }
+      ]
+    },
+    {
+      "parameters": {
+        "amplitude_ma": 1.2,
+        "background_ma": 0.02,
+        "plate_axis_deg": 22.5,
+        "retardance_deg": 0,
+        "refractive_index": 1.5
+      },
+      "points": [
+        {
+          "angle_deg": 0,
+          "current_ma": 1.22
+        },
+        {
+          "angle_deg": 20,
+          "current_ma": 1.079626665871387
+        },
+        {
+          "angle_deg": 45,
+          "current_ma": 0.6200000000000001
+        },
+        {
+          "angle_deg": 90,
+          "current_ma": 0.02
+        },
+        {
+          "angle_deg": 135,
+          "current_ma": 0.6199999999999999
+        },
+        {
+          "angle_deg": 180,
+          "current_ma": 1.22
+        }
+      ]
+    },
+    {
+      "parameters": {
+        "amplitude_ma": 1.2,
+        "background_ma": 0.02,
+        "plate_axis_deg": 22.5,
+        "retardance_deg": 90,
+        "refractive_index": 1.5
+      },
+      "points": [
+        {
+          "angle_deg": 0,
+          "current_ma": 0.9199999999999998
+        },
+        {
+          "angle_deg": 20,
+          "current_ma": 1.0426496158416552
+        },
+        {
+          "angle_deg": 45,
+          "current_ma": 0.9199999999999998
+        },
+        {
+          "angle_deg": 90,
+          "current_ma": 0.3200000000000001
+        },
+        {
+          "angle_deg": 135,
+          "current_ma": 0.31999999999999995
+        },
+        {
+          "angle_deg": 180,
+          "current_ma": 0.9199999999999998
+        }
+      ]
+    },
+    {
+      "parameters": {
+        "amplitude_ma": 1.2,
+        "background_ma": 0.02,
+        "plate_axis_deg": 45,
+        "retardance_deg": 0,
+        "refractive_index": 1.5
+      },
+      "points": [
+        {
+          "angle_deg": 0,
+          "current_ma": 1.2200000000000004
+        },
+        {
+          "angle_deg": 20,
+          "current_ma": 1.0796266658713873
+        },
+        {
+          "angle_deg": 45,
+          "current_ma": 0.6200000000000002
+        },
+        {
+          "angle_deg": 90,
+          "current_ma": 0.02
+        },
+        {
+          "angle_deg": 135,
+          "current_ma": 0.6200000000000001
+        },
+        {
+          "angle_deg": 180,
+          "current_ma": 1.2200000000000004
+        }
+      ]
+    },
+    {
+      "parameters": {
+        "amplitude_ma": 1.2,
+        "background_ma": 0.02,
+        "plate_axis_deg": 45,
+        "retardance_deg": 90,
+        "refractive_index": 1.5
+      },
+      "points": [
+        {
+          "angle_deg": 0,
+          "current_ma": 0.6200000000000002
+        },
+        {
+          "angle_deg": 20,
+          "current_ma": 0.6200000000000004
+        },
+        {
+          "angle_deg": 45,
+          "current_ma": 0.6200000000000002
+        },
+        {
+          "angle_deg": 90,
+          "current_ma": 0.6200000000000002
+        },
+        {
+          "angle_deg": 135,
+          "current_ma": 0.6200000000000002
+        },
+        {
+          "angle_deg": 180,
+          "current_ma": 0.6200000000000002
+        }
+      ]
+    },
+    {
+      "parameters": {
+        "amplitude_ma": 1.2,
+        "background_ma": 0.02,
+        "plate_axis_deg": 90,
+        "retardance_deg": 0,
+        "refractive_index": 1.5
+      },
+      "points": [
+        {
+          "angle_deg": 0,
+          "current_ma": 1.22
+        },
+        {
+          "angle_deg": 20,
+          "current_ma": 1.079626665871387
+        },
+        {
+          "angle_deg": 45,
+          "current_ma": 0.6200000000000001
+        },
+        {
+          "angle_deg": 90,
+          "current_ma": 0.02
+        },
+        {
+          "angle_deg": 135,
+          "current_ma": 0.6199999999999999
+        },
+        {
+          "angle_deg": 180,
+          "current_ma": 1.22
+        }
+      ]
+    },
+    {
+      "parameters": {
+        "amplitude_ma": 1.2,
+        "background_ma": 0.02,
+        "plate_axis_deg": 90,
+        "retardance_deg": 90,
+        "refractive_index": 1.5
+      },
+      "points": [
+        {
+          "angle_deg": 0,
+          "current_ma": 1.22
+        },
+        {
+          "angle_deg": 20,
+          "current_ma": 1.079626665871387
+        },
+        {
+          "angle_deg": 45,
+          "current_ma": 0.6200000000000001
+        },
+        {
+          "angle_deg": 90,
+          "current_ma": 0.02
+        },
+        {
+          "angle_deg": 135,
+          "current_ma": 0.6199999999999999
+        },
+        {
+          "angle_deg": 180,
+          "current_ma": 1.22
+        }
+      ]
+    },
+    {
+      "parameters": {
+        "amplitude_ma": 2,
+        "background_ma": 0.02,
+        "plate_axis_deg": 0,
+        "retardance_deg": 0,
+        "refractive_index": 1.5
+      },
+      "points": [
+        {
+          "angle_deg": 0,
+          "current_ma": 2.02
+        },
+        {
+          "angle_deg": 20,
+          "current_ma": 1.7860444431189781
+        },
+        {
+          "angle_deg": 45,
+          "current_ma": 1.0200000000000002
+        },
+        {
+          "angle_deg": 90,
+          "current_ma": 0.02
+        },
+        {
+          "angle_deg": 135,
+          "current_ma": 1.0199999999999998
+        },
+        {
+          "angle_deg": 180,
+          "current_ma": 2.02
+        }
+      ]
+    },
+    {
+      "parameters": {
+        "amplitude_ma": 2,
+        "background_ma": 0.02,
+        "plate_axis_deg": 0,
+        "retardance_deg": 90,
+        "refractive_index": 1.5
+      },
+      "points": [
+        {
+          "angle_deg": 0,
+          "current_ma": 2.02
+        },
+        {
+          "angle_deg": 20,
+          "current_ma": 1.7860444431189781
+        },
+        {
+          "angle_deg": 45,
+          "current_ma": 1.0200000000000002
+        },
+        {
+          "angle_deg": 90,
+          "current_ma": 0.02
+        },
+        {
+          "angle_deg": 135,
+          "current_ma": 1.0199999999999998
+        },
+        {
+          "angle_deg": 180,
+          "current_ma": 2.02
+        }
+      ]
+    },
+    {
+      "parameters": {
+        "amplitude_ma": 2,
+        "background_ma": 0.02,
+        "plate_axis_deg": 22.5,
+        "retardance_deg": 0,
+        "refractive_index": 1.5
+      },
+      "points": [
+        {
+          "angle_deg": 0,
+          "current_ma": 2.02
+        },
+        {
+          "angle_deg": 20,
+          "current_ma": 1.7860444431189781
+        },
+        {
+          "angle_deg": 45,
+          "current_ma": 1.0200000000000002
+        },
+        {
+          "angle_deg": 90,
+          "current_ma": 0.02
+        },
+        {
+          "angle_deg": 135,
+          "current_ma": 1.0199999999999998
+        },
+        {
+          "angle_deg": 180,
+          "current_ma": 2.02
+        }
+      ]
+    },
+    {
+      "parameters": {
+        "amplitude_ma": 2,
+        "background_ma": 0.02,
+        "plate_axis_deg": 22.5,
+        "retardance_deg": 90,
+        "refractive_index": 1.5
+      },
+      "points": [
+        {
+          "angle_deg": 0,
+          "current_ma": 1.5199999999999998
+        },
+        {
+          "angle_deg": 20,
+          "current_ma": 1.7244160264027586
+        },
+        {
+          "angle_deg": 45,
+          "current_ma": 1.5199999999999998
+        },
+        {
+          "angle_deg": 90,
+          "current_ma": 0.5200000000000002
+        },
+        {
+          "angle_deg": 135,
+          "current_ma": 0.5199999999999999
+        },
+        {
+          "angle_deg": 180,
+          "current_ma": 1.5199999999999998
+        }
+      ]
+    },
+    {
+      "parameters": {
+        "amplitude_ma": 2,
+        "background_ma": 0.02,
+        "plate_axis_deg": 45,
+        "retardance_deg": 0,
+        "refractive_index": 1.5
+      },
+      "points": [
+        {
+          "angle_deg": 0,
+          "current_ma": 2.020000000000001
+        },
+        {
+          "angle_deg": 20,
+          "current_ma": 1.786044443118979
+        },
+        {
+          "angle_deg": 45,
+          "current_ma": 1.0200000000000005
+        },
+        {
+          "angle_deg": 90,
+          "current_ma": 0.02
+        },
+        {
+          "angle_deg": 135,
+          "current_ma": 1.0200000000000002
+        },
+        {
+          "angle_deg": 180,
+          "current_ma": 2.020000000000001
+        }
+      ]
+    },
+    {
+      "parameters": {
+        "amplitude_ma": 2,
+        "background_ma": 0.02,
+        "plate_axis_deg": 45,
+        "retardance_deg": 90,
+        "refractive_index": 1.5
+      },
+      "points": [
+        {
+          "angle_deg": 0,
+          "current_ma": 1.0200000000000005
+        },
+        {
+          "angle_deg": 20,
+          "current_ma": 1.0200000000000007
+        },
+        {
+          "angle_deg": 45,
+          "current_ma": 1.0200000000000005
+        },
+        {
+          "angle_deg": 90,
+          "current_ma": 1.0200000000000005
+        },
+        {
+          "angle_deg": 135,
+          "current_ma": 1.0200000000000005
+        },
+        {
+          "angle_deg": 180,
+          "current_ma": 1.0200000000000005
+        }
+      ]
+    },
+    {
+      "parameters": {
+        "amplitude_ma": 2,
+        "background_ma": 0.02,
+        "plate_axis_deg": 90,
+        "retardance_deg": 0,
+        "refractive_index": 1.5
+      },
+      "points": [
+        {
+          "angle_deg": 0,
+          "current_ma": 2.02
+        },
+        {
+          "angle_deg": 20,
+          "current_ma": 1.7860444431189781
+        },
+        {
+          "angle_deg": 45,
+          "current_ma": 1.0200000000000002
+        },
+        {
+          "angle_deg": 90,
+          "current_ma": 0.02
+        },
+        {
+          "angle_deg": 135,
+          "current_ma": 1.0199999999999998
+        },
+        {
+          "angle_deg": 180,
+          "current_ma": 2.02
+        }
+      ]
+    },
+    {
+      "parameters": {
+        "amplitude_ma": 2,
+        "background_ma": 0.02,
+        "plate_axis_deg": 90,
+        "retardance_deg": 90,
+        "refractive_index": 1.5
+      },
+      "points": [
+        {
+          "angle_deg": 0,
+          "current_ma": 2.02
+        },
+        {
+          "angle_deg": 20,
+          "current_ma": 1.7860444431189781
+        },
+        {
+          "angle_deg": 45,
+          "current_ma": 1.0200000000000002
+        },
+        {
+          "angle_deg": 90,
+          "current_ma": 0.02
+        },
+        {
+          "angle_deg": 135,
+          "current_ma": 1.0199999999999998
+        },
+        {
+          "angle_deg": 180,
+          "current_ma": 2.02
+        }
+      ]
+    }
+  ],
+  "reflection_cases": [
+    {
+      "parameters": {
+        "amplitude_ma": 1.2,
+        "background_ma": 0.02,
+        "plate_axis_deg": 45,
+        "retardance_deg": 0,
+        "refractive_index": 1.2
+      },
+      "angle_deg": 0,
+      "rs": 0.00826446280991736,
+      "rp": 0.00826446280991735
+    },
+    {
+      "parameters": {
+        "amplitude_ma": 1.2,
+        "background_ma": 0.02,
+        "plate_axis_deg": 45,
+        "retardance_deg": 0,
+        "refractive_index": 1.2
+      },
+      "angle_deg": 20,
+      "rs": 0.010148152725593778,
+      "rp": 0.0065711124054755946
+    },
+    {
+      "parameters": {
+        "amplitude_ma": 1.2,
+        "background_ma": 0.02,
+        "plate_axis_deg": 45,
+        "retardance_deg": 0,
+        "refractive_index": 1.2
+      },
+      "angle_deg": 50.19442890773481,
+      "rs": 0.03251814028486965,
+      "rp": 4.926695922696625e-33
+    },
+    {
+      "parameters": {
+        "amplitude_ma": 1.2,
+        "background_ma": 0.02,
+        "plate_axis_deg": 45,
+        "retardance_deg": 0,
+        "refractive_index": 1.2
+      },
+      "angle_deg": 85,
+      "rs": 0.5921067716517445,
+      "rp": 0.46796465893705286
+    },
+    {
+      "parameters": {
+        "amplitude_ma": 1.2,
+        "background_ma": 0.02,
+        "plate_axis_deg": 45,
+        "retardance_deg": 0,
+        "refractive_index": 1.5
+      },
+      "angle_deg": 0,
+      "rs": 0.03999999999999998,
+      "rp": 0.04000000000000001
+    },
+    {
+      "parameters": {
+        "amplitude_ma": 1.2,
+        "background_ma": 0.02,
+        "plate_axis_deg": 45,
+        "retardance_deg": 0,
+        "refractive_index": 1.5
+      },
+      "angle_deg": 20,
+      "rs": 0.047080933358768264,
+      "rp": 0.03345152397419263
+    },
+    {
+      "parameters": {
+        "amplitude_ma": 1.2,
+        "background_ma": 0.02,
+        "plate_axis_deg": 45,
+        "retardance_deg": 0,
+        "refractive_index": 1.5
+      },
+      "angle_deg": 56.309932474020215,
+      "rs": 0.14792899408284022,
+      "rp": 6.509374056692096e-34
+    },
+    {
+      "parameters": {
+        "amplitude_ma": 1.2,
+        "background_ma": 0.02,
+        "plate_axis_deg": 45,
+        "retardance_deg": 0,
+        "refractive_index": 1.5
+      },
+      "angle_deg": 85,
+      "rs": 0.7323454787108016,
+      "rp": 0.4932538118188537
+    },
+    {
+      "parameters": {
+        "amplitude_ma": 1.2,
+        "background_ma": 0.02,
+        "plate_axis_deg": 45,
+        "retardance_deg": 0,
+        "refractive_index": 1.8
+      },
+      "angle_deg": 0,
+      "rs": 0.08163265306122448,
+      "rp": 0.08163265306122451
+    },
+    {
+      "parameters": {
+        "amplitude_ma": 1.2,
+        "background_ma": 0.02,
+        "plate_axis_deg": 45,
+        "retardance_deg": 0,
+        "refractive_index": 1.8
+      },
+      "angle_deg": 20,
+      "rs": 0.09345598813795802,
+      "rp": 0.07047487409369027
+    },
+    {
+      "parameters": {
+        "amplitude_ma": 1.2,
+        "background_ma": 0.02,
+        "plate_axis_deg": 45,
+        "retardance_deg": 0,
+        "refractive_index": 1.8
+      },
+      "angle_deg": 60.94539590092286,
+      "rs": 0.27910288358846563,
+      "rp": 1.4516193451936999e-33
+    },
+    {
+      "parameters": {
+        "amplitude_ma": 1.2,
+        "background_ma": 0.02,
+        "plate_axis_deg": 45,
+        "retardance_deg": 0,
+        "refractive_index": 1.8
+      },
+      "angle_deg": 85,
+      "rs": 0.792310380167919,
+      "rp": 0.46648334900290933
+    }
+  ],
+  "maximum_errors": {
+    "current_ma": 8.881784197001252e-16,
+    "reflectance": 6.106226635438361e-16
+  },
+  "tolerances": {
+    "current_ma": 1e-12,
+    "reflectance": 1e-12
+  },
+  "original_observation_fit": {
+    "amplitude_ma": 1.1820844777476676,
+    "background_ma": 0.024557761126166255,
+    "brewster_mean_deg": 56.13333333333334,
+    "refractive_index": 1.4900288003179127
+  }
+}

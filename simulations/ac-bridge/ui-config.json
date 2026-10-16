@@ -1,0 +1,98 @@
+{
+  "slug": "ac-bridge",
+  "title": "交流电桥",
+  "experimentId": "course-03/ac-bridge",
+  "controls": [
+    {
+      "key": "Rn",
+      "type": "number",
+      "label": "标准串联 $R_n/\\Omega$",
+      "default": 200,
+      "min": 10,
+      "max": 1000
+    },
+    {
+      "key": "R4",
+      "type": "number",
+      "label": "比率臂 $R_4/\\Omega$",
+      "default": 9720,
+      "min": 5000,
+      "max": 20000
+    },
+    {
+      "key": "frequency",
+      "type": "number",
+      "label": "频率 $f/\\mathrm{Hz}$",
+      "default": 1000,
+      "min": 100,
+      "max": 10000
+    },
+    {
+      "key": "Rx",
+      "type": "number",
+      "label": "教学损耗 $R_x/\\Omega$",
+      "default": 194.4,
+      "min": 100,
+      "max": 300
+    },
+    {
+      "key": "Cx",
+      "type": "number",
+      "label": "教学电容 $C_x/\\mu\\mathrm F$",
+      "default": 0.102880658436214,
+      "min": 0.05,
+      "max": 0.2
+    }
+  ],
+  "columns": [
+    {
+      "key": "Rn",
+      "label": "$R_n/\\Omega$",
+      "short": "Rn / Ω"
+    },
+    {
+      "key": "R4",
+      "label": "$R_4/\\Omega$",
+      "short": "R4 / Ω"
+    },
+    {
+      "key": "real",
+      "label": "$\\Re(U_G/E)$",
+      "short": "实部"
+    },
+    {
+      "key": "imag",
+      "label": "$\\Im(U_G/E)$",
+      "short": "虚部"
+    },
+    {
+      "key": "inferredR",
+      "label": "候选 $R_x/\\Omega$",
+      "short": "候选Rx"
+    },
+    {
+      "key": "inferredC",
+      "label": "候选 $C_x/\\mu\\mathrm F$",
+      "short": "候选Cx"
+    }
+  ],
+  "units": {
+    "parameters": {
+      "Rn": "ohm",
+      "R4": "ohm",
+      "frequency": "Hz",
+      "Rx": "ohm",
+      "Cx": "uF"
+    },
+    "readings": {
+      "Rn": "ohm",
+      "R4": "ohm",
+      "real": "1",
+      "imag": "1",
+      "magnitude": "1",
+      "inferredR": "ohm",
+      "inferredC": "uF",
+      "loss": "1"
+    }
+  }
+}

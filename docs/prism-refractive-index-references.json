@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "experiment_id": "course-04/prism-refractive-index",
+  "review_date": "2026-10-17",
+  "access_channel": "两校机构数据库交叉检索，西南财经大学会话取得全文",
+  "verification_method": "全文6页实际核读并渲染印刷172-177逐页查看数学及装置，映射仅到确实覆盖的关系。",
+  "references": [
+    {
+      "id": "TanWu2024PrismMethods",
+      "title": "三种测量三棱镜折射率方法的讨论",
+      "authors": [
+        "谭锦博",
+        "吴秀梅"
+      ],
+      "journal": "物理与工程",
+      "year": 2024,
+      "volume": "34",
+      "issue": "3",
+      "pages": "172-177",
+      "doi": null,
+      "url": null,
+      "bibliographic_verification": "首页引文格式及机构数据库题录均确认；未提供DOI字段，不补猜链接。",
+      "source_pdf": {
+        "sha256": "b4335b9daec3d5a1a326ae004c0772cfe600d97e3d6c986a2436ad20ccef440a",
+        "pages": 6,
+        "bytes": 1485683
+      },
+      "review_status": "full_text_reviewed",
+      "parameter_identity": "钠光、约60度三棱镜、参考n1.6500和FGY分光计30角秒属论文批次，不替换项目独立教学值及原报告仪器信息。",
+      "review_findings": [
+        "p173自准直顶角A=180-phi按图2选定法线支向定义，与同束双反射夹角法不同；表1直接最短角差不能未经支向判断就等同phi。",
+        "p175式20的p偏振反射幅度写成正弦比，无法支持Brewster消光，未采用该式。",
+        "p174两掠射分支式5/7在文中随后n_air=1的前提下使用；本项目两侧不同介质的90度关系由逐界面Snell独立消元，不照搬该式。"
+      ],
+      "locators": [
+        {
+          "printed_pages": "174-175",
+          "pdf_pages": [
+            3,
+            4
+          ],
+          "location": "第2.3节，图5-6，公式(8)-(19)",
+          "role": "两面Snell、几何偏向、对称最小值、反演以及望远镜寻转向点"
+        },
+        {
+          "printed_pages": "173",
+          "pdf_pages": [
+            2
+          ],
+          "location": "第1节及第2.1节",
+          "role": "论文仪器分度及自准直顶角方法的范围区分"
+        },
+        {
+          "printed_pages": "176-177",
+          "pdf_pages": [
+            5,
+            6
+          ],
+          "location": "结果讨论及参考文献",
+          "role": "参数身份、该批次结果范围与后续题名提取"
+        }
+      ],
+      "application": "软件两面折射、最小偏向对称条件及n反演的核心公式由全文支持，独立brentq和极小值搜索检验实现。",
+      "scope": "均匀无吸收棱镜、两侧空气n=1、几何光学可透射分支；不认证色散、材料实际n或仪器校准。"
+    }
+  ]
+}

@@ -1,0 +1,170 @@
+{
+  "status": "passed",
+  "source_record_sha256": "8d6558ccf0ba7a51ccb5e82262bfff7d312ecf24cbd9f857c9fdd5920f6c58ec",
+  "interaction_checks": 4,
+  "visual_status": "passed",
+  "exports_status": "passed",
+  "exports": [
+    {
+      "filename": "photosensor-photosensor-experiment.json",
+      "sha256": "d97d516fb67a600dd706369c3380f1289d76734771e24efb2241b49e54dc6eb7",
+      "bytes": 20720
+    },
+    {
+      "filename": "photosensor-photosensor-records.csv",
+      "sha256": "6acf4e241fc3ce627f352228d7369475f9831bf74c2f83907b7cb24832558813",
+      "bytes": 1137
+    }
+  ],
+  "fonts": {
+    "h1": {
+      "fonts": [
+        {
+          "familyName": "SimSun",
+          "postScriptName": "SimSun",
+          "isCustomFont": false,
+          "glyphCount": 9
+        }
+      ]
+    },
+    "#count": {
+      "fonts": [
+        {
+          "familyName": "Times New Roman",
+          "postScriptName": "TimesNewRomanPSMT",
+          "isCustomFont": false,
+          "glyphCount": 1
+        }
+      ]
+    }
+  },
+  "browser": null,
+  "layout": {
+    "mobile": {
+      "width": 390,
+      "scrollWidth": 390,
+      "mathErrors": 0,
+      "mathObjects": 3
+    }
+  },
+  "interaction": [
+    {
+      "name": "同来源暗校正和光电流",
+      "status": "passed"
+    },
+    {
+      "name": "跨阻过量程无效状态",
+      "status": "passed"
+    },
+    {
+      "name": "自动扫描只保存线性点",
+      "status": "passed"
+    },
+    {
+      "name": "真实双格式导出与刷新恢复",
+      "status": "passed"
+    }
+  ],
+  "background": {
+    "status": "not-applicable"
+  },
+  "checked_at_utc": null,
+  "screenshots": [
+    {
+      "path": "docs/assets/simulations/photosensor/frontend-01-693c5f9ad88b.png",
+      "sha256": "693c5f9ad88bc7f3b867bd67a125ca40ca96077eb02a667006cb69b32e475f69"
+    },
+    {
+      "path": "docs/assets/simulations/photosensor/frontend-02-b9c12ed3865b.png",
+      "sha256": "b9c12ed3865b69de687ca70c6ca45a355dadcd321b679a9bf3803067d107c1bb"
+    },
+    {
+      "path": "docs/assets/simulations/photosensor/frontend-03-abaf38c9bccb.png",
+      "sha256": "abaf38c9bccb548d1c2b9a624d875404c1fcddc469627d0fa22853718b5f2f65"
+    },
+    {
+      "path": "docs/assets/simulations/photosensor/frontend-04-83a6a8f82581.png",
+      "sha256": "83a6a8f8258140008d204ce7021807eb347d164ba2696f254fbd168acf6a9719"
+    },
+    {
+      "path": "docs/assets/simulations/photosensor/frontend-05-af02b22d69ef.png",
+      "sha256": "af02b22d69efccbbf6f770d136cf545f657fa8a1e7e6a678d9caea3dc2bb1eef"
+    },
+    {
+      "path": "docs/assets/simulations/photosensor/frontend-06-5aefa884c58b.png",
+      "sha256": "5aefa884c58b19e43cfb0f01db609d9150b25458c68e97810e13b8e4c1c37f35"
+    }
+  ],
+  "schema_version": 1,
+  "experiment_id": "course-03/photosensor",
+  "numerical": {
+    "status": "passed",
+    "reference_sha256": "b1090f0dd1de41b1f2566d5eb65fab8bd722ffaa45c95ba7696661bc41f01e27",
+    "source_files": {
+      "simulations/photosensor/index.html": "682ae3a925cc107bb3d016b13c3e2b4aa38494a9aa9ae599790087cf8f0a4194",
+      "simulations/photosensor/model.mjs": "9a397e57c10304451297496e71b2319597c19ad0ef23e83f42ae7b68b787ab6c",
+      "simulations/photosensor/app.mjs": "48794a846bef9db545df878983faf89a3aa7c9843a18bf7182bee1f4395ccea7",
+      "simulations/photosensor/chart.mjs": "a46884a1989da9c768b9cd95a7e520f8da9a7d28a2d75efb2461c40187488ccb",
+      "simulations/photosensor/lab.css": "6560b500d0e36d2653215f08fa18b24e225af5dc105213b04ccb3c79edcf1f68",
+      "simulations/photosensor/observations.json": "0f8319d36a9bb3749ac1679beb8b5863949644363c86ad93152be35928c52c6e",
+      "docs/photosensor-model-evidence.md": "31684bbef0e0bc05a745fbf9413040c065cc0fa480007ced8bf265374834d196",
+      "docs/photosensor-references.json": "8eb6f84a7c84206968bc3151bbecff996299ab74d8314a27e0edb72295e76884",
+      "docs/photosensor-references.bib": "555ea8817aefb4d85fdf129cf8c07d8d0f56ba6487ee990e5a978ce96fbebd42",
+      "docs/simulation/photosensor-reference.json": "576341de3b9c3d3bdccd99de845225d8498a91ddb6aaf7f48eb73c4658b776fb",
+      "scripts/validate_photosensor_simulation.py": "60ae0722dca6ea483bbbf3f8c1474dccbf0c5bfa758be0b35beae4f0766320c1",
+      "tests/photosensor-model.test.mjs": "95ff5ebc7c627def7185569bc33a8ecb534b215a58370bf4f2acb18bb6a46365"
+    }
+  },
+  "scientific_evidence": {
+    "status": "verified",
+    "decision_source_files": {
+      "docs/photosensor-references.json": "8eb6f84a7c84206968bc3151bbecff996299ab74d8314a27e0edb72295e76884",
+      "docs/photosensor-model-evidence.md": "31684bbef0e0bc05a745fbf9413040c065cc0fa480007ced8bf265374834d196",
+      "simulations/photosensor/model.mjs": "9a397e57c10304451297496e71b2319597c19ad0ef23e83f42ae7b68b787ab6c"
+    },
+    "core_references": [
+      {
+        "id": "VishayBPW34Doc81521",
+        "pdf_sha256": "848a480a7dabad95338765a9d6646ca25223db77c4f426aa5218eb7778687c65",
+        "locators": [
+          {
+            "pdf_pages": [
+              1
+            ],
+            "location": "Features",
+            "role": "受光面积7.5mm²"
+          },
+          {
+            "pdf_pages": [
+              2
+            ],
+            "location": "Basic Characteristics: Reverse Light Current",
+            "role": "25℃、λ950nm、VR5V、Ee1mW/cm²下典型50μA/最低40μA"
+          },
+          {
+            "pdf_pages": [
+              2
+            ],
+            "location": "Reverse Dark Current",
+            "role": "暗电流行条件VR10V，未作为5V点参数"
+          },
+          {
+            "pdf_pages": [
+              3
+            ],
+            "location": "Fig.3 Reverse Light Current vs.Irradiance",
+            "role": "λ950nm、VR5V下近线性趋势"
+          }
+        ]
+      }
+    ]
+  },
+  "source_hashes": {
+    "simulations/photosensor/app.mjs": "48794a846bef9db545df878983faf89a3aa7c9843a18bf7182bee1f4395ccea7",
+    "simulations/photosensor/chart.mjs": "a46884a1989da9c768b9cd95a7e520f8da9a7d28a2d75efb2461c40187488ccb",
+    "simulations/photosensor/index.html": "682ae3a925cc107bb3d016b13c3e2b4aa38494a9aa9ae599790087cf8f0a4194",
+    "simulations/photosensor/lab.css": "6560b500d0e36d2653215f08fa18b24e225af5dc105213b04ccb3c79edcf1f68",
+    "simulations/photosensor/model.mjs": "9a397e57c10304451297496e71b2319597c19ad0ef23e83f42ae7b68b787ab6c",
+    "simulations/photosensor/observations.json": "0f8319d36a9bb3749ac1679beb8b5863949644363c86ad93152be35928c52c6e"
+  }
+}

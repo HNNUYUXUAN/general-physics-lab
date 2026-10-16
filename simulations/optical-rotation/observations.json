@@ -1,0 +1,60 @@
+{
+  "experiment_id": "course-04/optical-rotation",
+  "source": "original-report",
+  "table": {
+    "headers": [
+      "次数",
+      "θ₁",
+      "θ₂",
+      "θ₃",
+      "θ₄"
+    ],
+    "rows": [
+      [
+        "1",
+        "128°19′",
+        "308°15′",
+        "120°30′",
+        "300°25′"
+      ],
+      [
+        "2",
+        "133°18′",
+        "314°15′",
+        "125°35′",
+        "305°33′"
+      ],
+      [
+        "3",
+        "134°30′",
+        "314°29′",
+        "126°51′",
+        "306°41′"
+      ],
+      [
+        "4",
+        "130°30′",
+        "310°24′",
+        "122°15′",
+        "302°13′"
+      ],
+      [
+        "5",
+        "137°55′",
+        "317°45′",
+        "128°55′",
+        "309°08′"
+      ]
+    ]
+  },
+  "analysis": {
+    "rotation_magnitude_deg": 8.156666666666668,
+    "conditional_concentration_g_ml": 0.061365232219881646,
+    "type_a_arcmin": 11.441590798486065
+  },
+  "input_hashes": {
+    "experiments/course-04/optical-rotation/experiment.json": "daf74156cced55fe26f53351ab471a211253a71001fdf2985cd0ea643e2a48f3",
+    "experiments/course-04/optical-rotation/data/observations-01.csv": "87a8f4134b405beb02ade665d75ba3de4e4f3cd424459c9a3ef2e0cfc8f65b0b",
+    "experiments/course-04/optical-rotation/data/provenance.json": "e467d0942f3c8278548bb656e0246d2ff261b4c06ed021d95b06934f31398911"
+  }
+}

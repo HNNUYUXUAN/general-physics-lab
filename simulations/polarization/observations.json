@@ -1,0 +1,79 @@
+{
+  "experiment_id": "course-04/polarization",
+  "source": "original-report",
+  "brewster": [
+    {
+      "trial": 1,
+      "as_recorded": "55°50′",
+      "angle_deg": 55.833333333333336
+    },
+    {
+      "trial": 2,
+      "as_recorded": "56°10′",
+      "angle_deg": 56.166666666666664
+    },
+    {
+      "trial": 3,
+      "as_recorded": "56°20′",
+      "angle_deg": 56.333333333333336
+    },
+    {
+      "trial": 4,
+      "as_recorded": "56°05′",
+      "angle_deg": 56.083333333333336
+    },
+    {
+      "trial": 5,
+      "as_recorded": "56°15′",
+      "angle_deg": 56.25
+    }
+  ],
+  "malus": [
+    {
+      "angle_deg": 0.0,
+      "current_ma": 1.205
+    },
+    {
+      "angle_deg": 10.0,
+      "current_ma": 1.177
+    },
+    {
+      "angle_deg": 20.0,
+      "current_ma": 1.063
+    },
+    {
+      "angle_deg": 30.0,
+      "current_ma": 0.916
+    },
+    {
+      "angle_deg": 40.0,
+      "current_ma": 0.711
+    },
+    {
+      "angle_deg": 50.0,
+      "current_ma": 0.517
+    },
+    {
+      "angle_deg": 60.0,
+      "current_ma": 0.317
+    },
+    {
+      "angle_deg": 70.0,
+      "current_ma": 0.165
+    },
+    {
+      "angle_deg": 80.0,
+      "current_ma": 0.06
+    },
+    {
+      "angle_deg": 90.0,
+      "current_ma": 0.025
+    }
+  ],
+  "input_hashes": {
+    "experiments/course-04/polarization/experiment.json": "90c5bc21b8e38dd8300d6c74136c9c4745f6e4b3afb52e1ca65c10af9824456a",
+    "experiments/course-04/polarization/data/observations-01.csv": "9d389c0c85099947a3c7ef31c467e02293598313a694037d33e4af935044997e",
+    "experiments/course-04/polarization/data/observations-02.csv": "7961e3d52307cb3b4de03fb1d03fff1ca5087b5e293d8c84c3401cddcec4fe6e",
+    "experiments/course-04/polarization/data/provenance.json": "5559b2e431e59b7d6d65389ac5f226b1587ee08d8183c8489306b2f3d1ff3edc"
+  }
+}

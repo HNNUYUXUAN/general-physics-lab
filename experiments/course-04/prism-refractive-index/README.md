@@ -1,5 +1,8 @@
 [普通物理实验 4](../README.md) · [项目首页](../../../README.md) · [使用指南](../../../docs/usage.md)
 
+<!-- virtual-laboratory-entry -->
+[在线虚拟实验](https://hnnuyuxuan.github.io/general-physics-lab/simulations/prism-refractive-index/) · [模型依据与参数来源](../../../docs/prism-refractive-index-model-evidence.md)
+
 # 三棱镜折射率的测定
 
 **寻找谱线运动的转折点，把最小偏向角换成折射率。**

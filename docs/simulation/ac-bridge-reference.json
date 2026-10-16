@@ -1,0 +1,17 @@
+{
+  "experimentId": "course-03/ac-bridge",
+  "status": "passed",
+  "method": "independent complex nodal bridge solve",
+  "caseCount": 81,
+  "maxScaledErrors": {
+    "real": 1.1102230246251565e-16,
+    "imag": 6.071532165918825e-17,
+    "magnitude": 1.6653345369377348e-16,
+    "inferredR": 0,
+    "inferredC": 0
+  },
+  "scaling": "abs(error)/max(1,abs(reference))",
+  "tolerance": 1e-10,
+  "modelSha256": "a4e3aeaca0ddc292dae3f7155f23bd61150a1d6020059feb9889ee8fde06a2c3",
+  "numpyVersion": "2.5.4"
+}

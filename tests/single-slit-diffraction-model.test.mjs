@@ -1,0 +1,9 @@
+import test from'node:test';import assert from'node:assert/strict';import{DEFAULTS,intensity,darkPosition,measurement,fitDark,validateParameters,fresnelNumber,sameParameters}from'../simulations/single-slit-diffraction/model.mjs';const close=(a,b,t=1e-10)=>assert.ok(Math.abs(a-b)<t,`${a} ${b}`);
+test('center limit is continuous and symmetric',()=>{close(intensity(0,DEFAULTS),1);close(intensity(1e-9,DEFAULTS),1);close(intensity(2,DEFAULTS),intensity(-2,DEFAULTS));});
+test('dark positions satisfy destructive interference',()=>{for(const m of[1,2,4,20])close(intensity(darkPosition(m,DEFAULTS),DEFAULTS),0,1e-23);});
+test('parameter boundaries enforce finite positive measurements',()=>{for(const[k,v]of Object.entries({width_mm:0,distance_mm:NaN,wavelength_nm:701}))assert.throws(()=>validateParameters({...DEFAULTS,[k]:v}));assert.throws(()=>measurement(1,DEFAULTS,'manual-probe',0));assert.throws(()=>darkPosition(0,DEFAULTS));});
+test('Fraunhofer software domain Fresnel number maximum',()=>{assert.ok(fresnelNumber({width_mm:.2,distance_mm:800,wavelength_nm:500})<=.10000000001);});
+test('screen position scales with distance',()=>close(darkPosition(1,{...DEFAULTS,distance_mm:1600}),2*darkPosition(1,DEFAULTS)));
+test('fit angular geometry recovers independent width',()=>{const fit=fitDark([1,2,3,4].map(m=>measurement(m,DEFAULTS)));close(fit.width_mm,.2);close(fit.intercept,0);});
+test('data identity and repeated-order rejection',()=>{const rows=[1,2,3].map(m=>measurement(m,DEFAULTS));rows[1].source='manual-probe';assert.throws(()=>fitDark(rows));assert.throws(()=>fitDark([rows[0],rows[0],rows[0]]));assert.ok(!sameParameters(DEFAULTS,{...DEFAULTS,width_mm:.1}));});
+test('manual probe position remains observed with source identity',()=>{const r=measurement(1,DEFAULTS,'manual-probe',-2.54);close(r.position_mm,2.54);assert.equal(r.source,'manual-probe');close(r.width_estimate_mm,632.8e-6*Math.hypot(800,2.54)/2.54);});

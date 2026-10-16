@@ -1,0 +1,226 @@
+{
+  "status": "passed",
+  "source_record_sha256": "fcafea0884b00d7dfdefff38435aab071b78c5e8f4d05b6bdbd637f6a385598e",
+  "interaction_checks": 18,
+  "visual_status": "passed",
+  "exports_status": "passed",
+  "exports": [
+    {
+      "filename": "1-ac-bridge-records.csv",
+      "sha256": "2f4d0154eb2b5da8de859b394e51f199a0197174388fbde504ab86dc349c8542",
+      "bytes": 784
+    },
+    {
+      "filename": "2-ac-bridge-records.json",
+      "sha256": "f249a6445c156230be91a9b354ba27a17fbbdc2d7aac99edf10ca53db03d4e0b",
+      "bytes": 2080
+    }
+  ],
+  "fonts": {
+    "h1": [
+      {
+        "familyName": "SimSun",
+        "postScriptName": "SimSun",
+        "isCustomFont": false,
+        "glyphCount": 8
+      }
+    ],
+    "#summary": [
+      {
+        "familyName": "Times New Roman",
+        "postScriptName": "TimesNewRomanPSMT",
+        "isCustomFont": false,
+        "glyphCount": 41
+      },
+      {
+        "familyName": "SimSun",
+        "postScriptName": "SimSun",
+        "isCustomFont": false,
+        "glyphCount": 4
+      }
+    ]
+  },
+  "browser": "fixed Playwright Chromium 1243",
+  "layout": {
+    "wide": {
+      "width": 1280,
+      "scrollWidth": 1280,
+      "math": 12,
+      "mathErrors": 0
+    },
+    "narrow": {
+      "width": 390,
+      "scrollWidth": 390,
+      "math": 12,
+      "mathErrors": 0
+    }
+  },
+  "interaction": [
+    {
+      "name": "Rn=10",
+      "status": "passed"
+    },
+    {
+      "name": "Rn=1000",
+      "status": "passed"
+    },
+    {
+      "name": "R4=5000",
+      "status": "passed"
+    },
+    {
+      "name": "R4=20000",
+      "status": "passed"
+    },
+    {
+      "name": "frequency=100",
+      "status": "passed"
+    },
+    {
+      "name": "frequency=10000",
+      "status": "passed"
+    },
+    {
+      "name": "Rx=100",
+      "status": "passed"
+    },
+    {
+      "name": "Rx=300",
+      "status": "passed"
+    },
+    {
+      "name": "Cx=0.05",
+      "status": "passed"
+    },
+    {
+      "name": "Cx=0.2",
+      "status": "passed"
+    },
+    {
+      "name": "原表 balance",
+      "status": "passed"
+    },
+    {
+      "name": "默认设置读数与记录",
+      "status": "passed"
+    },
+    {
+      "name": "测量闭环与同组分析",
+      "status": "passed"
+    },
+    {
+      "name": "调零与平衡操作",
+      "status": "passed"
+    },
+    {
+      "name": "非法编辑blur后不得记录",
+      "status": "passed"
+    },
+    {
+      "name": "恢复删除与清空",
+      "status": "passed"
+    },
+    {
+      "name": "真实CSV/JSON导出与元数据",
+      "status": "passed"
+    },
+    {
+      "name": "restore",
+      "status": "passed"
+    }
+  ],
+  "background": {
+    "status": "not-applicable"
+  },
+  "checked_at_utc": "2026-10-16T16:12:52.545Z",
+  "screenshots": [
+    {
+      "path": "docs/assets/simulations/ac-bridge/frontend-01-223bf09918b4.png",
+      "sha256": "223bf09918b4c8d19a7ae5245e1568a868090c46e561fc6942e6863cc8271362"
+    },
+    {
+      "path": "docs/assets/simulations/ac-bridge/frontend-02-43ed98529264.png",
+      "sha256": "43ed98529264216d0292b1ffc7f2a99319184049df3ab16a88cd31dfc9810447"
+    },
+    {
+      "path": "docs/assets/simulations/ac-bridge/frontend-03-3dd93cbcdfd6.png",
+      "sha256": "3dd93cbcdfd6789a5ecb90f4690e5ca63e5dbd1183333bcc1a55d9a4b92ed237"
+    },
+    {
+      "path": "docs/assets/simulations/ac-bridge/frontend-04-c6acb76dc11a.png",
+      "sha256": "c6acb76dc11ad3a4352c9dfb2d614bcd14e2626a8e96d391aac296f93f321a91"
+    },
+    {
+      "path": "docs/assets/simulations/ac-bridge/frontend-05-cdf764e71bee.png",
+      "sha256": "cdf764e71bee4b4c1915724d496ce9cccaa110b41e1c2d42c6ccc30ab91387b5"
+    },
+    {
+      "path": "docs/assets/simulations/ac-bridge/frontend-06-bc5ce34d055a.png",
+      "sha256": "bc5ce34d055af7fbe9a037ce075526b311230051e5491fce8489ae9d78d735a4"
+    },
+    {
+      "path": "docs/assets/simulations/ac-bridge/frontend-07-0a28867593ae.png",
+      "sha256": "0a28867593aeb0ecef9eed6d1afee6f8a43334647717962bbdd92d6663b5410a"
+    },
+    {
+      "path": "docs/assets/simulations/ac-bridge/frontend-08-f7d9cc173266.png",
+      "sha256": "f7d9cc173266021696c9a7fff300ab364c25b7f0e0977ed2582bb430713d342a"
+    },
+    {
+      "path": "docs/assets/simulations/ac-bridge/frontend-09-d0665267cb7f.png",
+      "sha256": "d0665267cb7fd704d5feface58c3c70aba35e33dc2f1203516a2987e0a8c9067"
+    },
+    {
+      "path": "docs/assets/simulations/ac-bridge/frontend-10-f5d323a35f80.png",
+      "sha256": "f5d323a35f8076c3dd1d31a2bd8c056554835e6bd3de3f13ac4cdefd4d286ba5"
+    }
+  ],
+  "schema_version": 1,
+  "experiment_id": "course-03/ac-bridge",
+  "numerical": {
+    "status": "passed",
+    "reference_sha256": "be16da8997b97311b56c3704f280b34986f091fd911b1c98ff66142cfaaf8890",
+    "source_files": {
+      "simulations/ac-bridge/index.html": "7d030a6bf1d49cf8db78f81e0bb38b0f4f5888d37816c89029180b087b71c27c",
+      "simulations/ac-bridge/model.mjs": "a4e3aeaca0ddc292dae3f7155f23bd61150a1d6020059feb9889ee8fde06a2c3",
+      "simulations/ac-bridge/app.mjs": "fc58c5a9e3648bcbf7896f7025281a623681df7f01bcb607ceca7701030f78b6",
+      "simulations/ac-bridge/chart.mjs": "7661b7bfc2fe4ac33d2ab50733687b64f47c7110505e27c14c80c42c38df82dd",
+      "simulations/ac-bridge/lab.css": "d007905ee689191cb3d99caebe74d1e5e924b6fd068c7a81d2417c75219b6169",
+      "simulations/ac-bridge/observations.json": "09f66ecd3b476bb9fb2d0d07667997e8e09857f8789ee54d63f388fee5a6f189",
+      "docs/ac-bridge-model-evidence.md": "98a7c188cfd227004b0b652289044c7161a29cce98ee888a7d71c4319c9fdd7e",
+      "docs/ac-bridge-references.json": "946f11660285a84a6eea75c5031f6dc90b6e243ee6859612231a1fc157ea2a70",
+      "docs/ac-bridge-references.bib": "6a98400211e2afced59db2ca1eda35c4290d1a8be58403b7297d312bcebbb503",
+      "docs/simulation/ac-bridge-reference.json": "be16da8997b97311b56c3704f280b34986f091fd911b1c98ff66142cfaaf8890",
+      "scripts/validate_ac_bridge_simulation.py": "6de9bad394738df660c35d1003be1caa684ecdb6cd18e8ebc08d7e590bc8c377",
+      "tests/ac-bridge-model.test.mjs": "1023b752aca2d92f6f3f0823faecc2876fab843877c5949b6b53451b59397362"
+    }
+  },
+  "scientific_evidence": {
+    "status": "verified",
+    "decision_source_files": {
+      "docs/ac-bridge-references.json": "946f11660285a84a6eea75c5031f6dc90b6e243ee6859612231a1fc157ea2a70",
+      "docs/ac-bridge-model-evidence.md": "98a7c188cfd227004b0b652289044c7161a29cce98ee888a7d71c4319c9fdd7e",
+      "simulations/ac-bridge/model.mjs": "a4e3aeaca0ddc292dae3f7155f23bd61150a1d6020059feb9889ee8fde06a2c3"
+    },
+    "core_references": [
+      {
+        "id": "qi2021",
+        "pdf_sha256": "dc5cb5f42ab8d3485e94e46f35223e43612458adb04623004dbd98a484e68de5",
+        "locators": [
+          "p.254 section 1, Figure 1 and equations (1)–(9)",
+          "p.255 section 2, two-variable alternating bridge adjustment"
+        ]
+      }
+    ]
+  },
+  "source_hashes": {
+    "simulations/ac-bridge/model.mjs": "a4e3aeaca0ddc292dae3f7155f23bd61150a1d6020059feb9889ee8fde06a2c3",
+    "simulations/ac-bridge/app.mjs": "fc58c5a9e3648bcbf7896f7025281a623681df7f01bcb607ceca7701030f78b6",
+    "simulations/ac-bridge/chart.mjs": "7661b7bfc2fe4ac33d2ab50733687b64f47c7110505e27c14c80c42c38df82dd",
+    "simulations/ac-bridge/lab.css": "d007905ee689191cb3d99caebe74d1e5e924b6fd068c7a81d2417c75219b6169",
+    "simulations/ac-bridge/observations.json": "09f66ecd3b476bb9fb2d0d07667997e8e09857f8789ee54d63f388fee5a6f189",
+    "simulations/ac-bridge/diagram.mjs": "5fe1bc64e35481644953e48a0ad9c7d0bb9e4d09c894fd42575dbe4aac9fd784",
+    "simulations/ac-bridge/ui-config.json": "58288e1e417f0ecb7eca7d4e3e0da06332d207132d20cf7ab92309ac8846ff00",
+    "simulations/ac-bridge/index.html": "7d030a6bf1d49cf8db78f81e0bb38b0f4f5888d37816c89029180b087b71c27c"
+  }
+}

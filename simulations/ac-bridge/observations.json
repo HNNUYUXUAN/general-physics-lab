@@ -1,0 +1,42 @@
+{
+  "experimentId": "course-03/ac-bridge",
+  "source": "original-report-observations",
+  "tables": {
+    "balance": {
+      "title": "balance",
+      "headers": [
+        "Rn_Ohm",
+        "Cn_uF",
+        "R3_Ohm",
+        "R4_Ohm",
+        "null_gain"
+      ],
+      "rows": [
+        [
+          "200.0",
+          "0.1",
+          "10000.0",
+          "9720.0",
+          "13.0"
+        ],
+        [
+          "237.0",
+          "0.1",
+          "1000.0",
+          "969.0",
+          "26.0"
+        ],
+        [
+          "240.0",
+          "0.1",
+          "100.0",
+          "96.6",
+          "29.0"
+        ]
+      ]
+    }
+  },
+  "sourceHashes": {
+    "balance.csv": "55e36a00001977373629242a29e564661ee5cad24e6e97243f1b75df7ffb10bf"
+  }
+}

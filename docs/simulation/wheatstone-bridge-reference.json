@@ -1,0 +1,14 @@
+{
+  "experimentId": "course-03/wheatstone-bridge",
+  "status": "passed",
+  "method": "independent two-node loaded Wheatstone matrix",
+  "caseCount": 108,
+  "maxScaledErrors": {
+    "galvanometer_uA": 2.220446049250313e-11,
+    "inferredResistance": 0
+  },
+  "scaling": "abs(error)/max(1,abs(reference))",
+  "tolerance": 1e-10,
+  "modelSha256": "b5696b34a71627a1b27678ba79e89699d30f0364a5a31abd797a912894544dbb",
+  "numpyVersion": "2.5.4"
+}

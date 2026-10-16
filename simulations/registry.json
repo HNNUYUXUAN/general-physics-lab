@@ -254,7 +254,7 @@
       "slug": "thin-lens",
       "group": 2,
       "priority": 6,
-      "status": "research",
+      "status": "validated",
       "model_version": "1.0.0",
       "resources": {
         "simulation_html": "simulations/thin-lens/index.html",
@@ -272,8 +272,9 @@
         "tests/thin-lens-model.test.mjs"
       ],
       "validator": "scripts/validate_thin_lens_simulation.py",
-      "evidence_status": "pending",
-      "frontend_status": "not_run"
+      "evidence_status": "verified",
+      "frontend_status": "passed",
+      "frontend_validation": "docs/simulation/thin-lens-frontend.json"
     },
     {
       "experiment_id": "course-04/single-slit-diffraction",
@@ -281,7 +282,7 @@
       "slug": "single-slit-diffraction",
       "group": 2,
       "priority": 7,
-      "status": "research",
+      "status": "validated",
       "model_version": "1.0.0",
       "resources": {
         "simulation_html": "simulations/single-slit-diffraction/index.html",
@@ -299,8 +300,9 @@
         "tests/single-slit-diffraction-model.test.mjs"
       ],
       "validator": "scripts/validate_single_slit_diffraction_simulation.py",
-      "evidence_status": "pending",
-      "frontend_status": "not_run"
+      "evidence_status": "verified",
+      "frontend_status": "passed",
+      "frontend_validation": "docs/simulation/single-slit-diffraction-frontend.json"
     },
     {
       "experiment_id": "course-04/polarization",
@@ -308,7 +310,7 @@
       "slug": "polarization",
       "group": 2,
       "priority": 8,
-      "status": "research",
+      "status": "validated",
       "model_version": "1.0.0",
       "resources": {
         "simulation_html": "simulations/polarization/index.html",
@@ -326,8 +328,9 @@
         "tests/polarization-model.test.mjs"
       ],
       "validator": "scripts/validate_polarization_simulation.py",
-      "evidence_status": "pending",
-      "frontend_status": "not_run"
+      "evidence_status": "verified",
+      "frontend_status": "passed",
+      "frontend_validation": "docs/simulation/polarization-frontend.json"
     },
     {
       "experiment_id": "course-03/current-voltage-divider",
@@ -389,7 +392,7 @@
       "slug": "wheatstone-bridge",
       "group": 3,
       "priority": 3,
-      "status": "research",
+      "status": "validated",
       "model_version": "1.0.0",
       "resources": {
         "simulation_html": "simulations/wheatstone-bridge/index.html",
@@ -407,8 +410,9 @@
         "tests/wheatstone-bridge-model.test.mjs"
       ],
       "validator": "scripts/validate_wheatstone_bridge_simulation.py",
-      "evidence_status": "pending",
-      "frontend_status": "not_run"
+      "evidence_status": "verified",
+      "frontend_status": "passed",
+      "frontend_validation": "docs/simulation/wheatstone-bridge-frontend.json"
     },
     {
       "experiment_id": "course-03/ac-bridge",
@@ -416,7 +420,7 @@
       "slug": "ac-bridge",
       "group": 3,
       "priority": 4,
-      "status": "research",
+      "status": "validated",
       "model_version": "1.0.0",
       "resources": {
         "simulation_html": "simulations/ac-bridge/index.html",
@@ -434,8 +438,9 @@
         "tests/ac-bridge-model.test.mjs"
       ],
       "validator": "scripts/validate_ac_bridge_simulation.py",
-      "evidence_status": "pending",
-      "frontend_status": "not_run"
+      "evidence_status": "verified",
+      "frontend_status": "passed",
+      "frontend_validation": "docs/simulation/ac-bridge-frontend.json"
     },
     {
       "experiment_id": "course-03/oscilloscope",
@@ -524,7 +529,7 @@
       "slug": "kelvin-bridge",
       "group": 3,
       "priority": 8,
-      "status": "research",
+      "status": "validated",
       "model_version": "1.0.0",
       "resources": {
         "simulation_html": "simulations/kelvin-bridge/index.html",
@@ -542,8 +547,9 @@
         "tests/kelvin-bridge-model.test.mjs"
       ],
       "validator": "scripts/validate_kelvin_bridge_simulation.py",
-      "evidence_status": "pending",
-      "frontend_status": "not_run"
+      "evidence_status": "verified",
+      "frontend_status": "passed",
+      "frontend_validation": "docs/simulation/kelvin-bridge-frontend.json"
     },
     {
       "experiment_id": "course-04/spectrometer",
@@ -605,7 +611,7 @@
       "slug": "prism-refractive-index",
       "group": 4,
       "priority": 3,
-      "status": "research",
+      "status": "validated",
       "model_version": "1.0.0",
       "resources": {
         "simulation_html": "simulations/prism-refractive-index/index.html",
@@ -623,8 +629,9 @@
         "tests/prism-refractive-index-model.test.mjs"
       ],
       "validator": "scripts/validate_prism_refractive_index_simulation.py",
-      "evidence_status": "pending",
-      "frontend_status": "not_run"
+      "evidence_status": "verified",
+      "frontend_status": "passed",
+      "frontend_validation": "docs/simulation/prism-refractive-index-frontend.json"
     },
     {
       "experiment_id": "course-04/grazing-refraction",
@@ -659,7 +666,7 @@
       "slug": "transmission-grating",
       "group": 4,
       "priority": 5,
-      "status": "research",
+      "status": "validated",
       "model_version": "1.0.0",
       "resources": {
         "simulation_html": "simulations/transmission-grating/index.html",
@@ -677,8 +684,9 @@
         "tests/transmission-grating-model.test.mjs"
       ],
       "validator": "scripts/validate_transmission_grating_simulation.py",
-      "evidence_status": "pending",
-      "frontend_status": "not_run"
+      "evidence_status": "verified",
+      "frontend_status": "passed",
+      "frontend_validation": "docs/simulation/transmission-grating-frontend.json"
     },
     {
       "experiment_id": "course-04/optical-magnification",
@@ -713,7 +721,7 @@
       "slug": "optical-rotation",
       "group": 4,
       "priority": 7,
-      "status": "research",
+      "status": "validated",
       "model_version": "1.0.0",
       "resources": {
         "simulation_html": "simulations/optical-rotation/index.html",
@@ -731,8 +739,9 @@
         "tests/optical-rotation-model.test.mjs"
       ],
       "validator": "scripts/validate_optical_rotation_simulation.py",
-      "evidence_status": "pending",
-      "frontend_status": "not_run"
+      "evidence_status": "verified",
+      "frontend_status": "passed",
+      "frontend_validation": "docs/simulation/optical-rotation-frontend.json"
     },
     {
       "experiment_id": "course-04/michelson-interferometer",
@@ -1145,7 +1154,7 @@
       "slug": "photosensor",
       "group": 7,
       "priority": 1,
-      "status": "research",
+      "status": "validated",
       "model_version": "1.0.0",
       "resources": {
         "simulation_html": "simulations/photosensor/index.html",
@@ -1163,8 +1172,9 @@
         "tests/photosensor-model.test.mjs"
       ],
       "validator": "scripts/validate_photosensor_simulation.py",
-      "evidence_status": "pending",
-      "frontend_status": "not_run"
+      "evidence_status": "verified",
+      "frontend_status": "passed",
+      "frontend_validation": "docs/simulation/photosensor-frontend.json"
     },
     {
       "experiment_id": "course-04/abbe-imaging",

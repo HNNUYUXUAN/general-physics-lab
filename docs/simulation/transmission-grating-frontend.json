@@ -1,0 +1,191 @@
+{
+  "status": "passed",
+  "source_record_sha256": "5caaf1e36c898abdc12f48516e1f2b1f83afd169646484ad669744bb088b83a0",
+  "interaction_checks": 5,
+  "visual_status": "passed",
+  "exports_status": "passed",
+  "exports": [
+    {
+      "filename": "transmission-grating-transmission-grating-experiment.json",
+      "sha256": "4c0f4c52c376adb763a29e1f132ae56684e2b193b305b0768a79d50994b32f4a",
+      "bytes": 7087
+    },
+    {
+      "filename": "transmission-grating-transmission-grating-records.csv",
+      "sha256": "3e05bc2d28afbd8ad1ad2bf925077ab6454d4cd82a8ddf344905d5afdda6274a",
+      "bytes": 685
+    }
+  ],
+  "fonts": {
+    "h1": {
+      "fonts": [
+        {
+          "familyName": "SimSun",
+          "postScriptName": "SimSun",
+          "isCustomFont": false,
+          "glyphCount": 8
+        }
+      ]
+    },
+    "#count": {
+      "fonts": [
+        {
+          "familyName": "Times New Roman",
+          "postScriptName": "TimesNewRomanPSMT",
+          "isCustomFont": false,
+          "glyphCount": 1
+        }
+      ]
+    }
+  },
+  "browser": null,
+  "layout": {
+    "mobile": {
+      "width": 390,
+      "scrollWidth": 390,
+      "mathErrors": 0,
+      "mathObjects": 10
+    }
+  },
+  "interaction": [
+    {
+      "name": "绿线双侧反演",
+      "status": "passed"
+    },
+    {
+      "name": "N变化与有限阵列强度",
+      "status": "passed"
+    },
+    {
+      "name": "无传播级",
+      "status": "passed"
+    },
+    {
+      "name": "选择可传播一级",
+      "status": "passed"
+    },
+    {
+      "name": "真实双格式导出与刷新恢复",
+      "status": "passed"
+    }
+  ],
+  "background": {
+    "status": "not-applicable"
+  },
+  "checked_at_utc": null,
+  "screenshots": [
+    {
+      "path": "docs/assets/simulations/transmission-grating/frontend-01-c74a443739ac.png",
+      "sha256": "c74a443739ac1f465005bcac649176601139421a39792c3123eeae11336e80b6"
+    },
+    {
+      "path": "docs/assets/simulations/transmission-grating/frontend-02-a20105320b79.png",
+      "sha256": "a20105320b79eeb709e45f0fd00935a5cd56e9165d533cf64fc392253b716c54"
+    },
+    {
+      "path": "docs/assets/simulations/transmission-grating/frontend-03-1086080c886c.png",
+      "sha256": "1086080c886c894603cae7225cbd26ccca7b218b3497fb1cf8153959928d3ce1"
+    },
+    {
+      "path": "docs/assets/simulations/transmission-grating/frontend-04-fb1add746cae.png",
+      "sha256": "fb1add746cae99bda46017b6022e1b9010d08543e432abaafa3e9d219eb73b1b"
+    },
+    {
+      "path": "docs/assets/simulations/transmission-grating/frontend-05-662c5ca27fed.png",
+      "sha256": "662c5ca27fed1ca899e32f0fcb9caf9361f29c49bf7a7b3cf0936ce062f4e8dd"
+    },
+    {
+      "path": "docs/assets/simulations/transmission-grating/frontend-06-a058603f37c6.png",
+      "sha256": "a058603f37c64b896a7de521f6d09cebb3461ac8de64244be32d51e8d17cec9b"
+    },
+    {
+      "path": "docs/assets/simulations/transmission-grating/frontend-07-043938ed10ae.png",
+      "sha256": "043938ed10ae73cb38a9b03e2ed8163ecd7579ad8e5a9c862292e813e20f445e"
+    }
+  ],
+  "schema_version": 1,
+  "experiment_id": "course-04/transmission-grating",
+  "numerical": {
+    "status": "passed",
+    "reference_sha256": "89d34fc5aff05cdea441b1961ad7bd97806609a0841cc1e5aec1416eab138d23",
+    "source_files": {
+      "simulations/transmission-grating/index.html": "8f041680088eb30ea392c8c287401ef1d9048a28537bc9db0450444c198d21ce",
+      "simulations/transmission-grating/model.mjs": "5720e861b60fddbf6a9add47cf3f93e327824db4d82a267cbbdf7869288a0127",
+      "simulations/transmission-grating/app.mjs": "f90fe87d588a225dc626363cce375211f63a0b59b4c40e108a8c088ce594447b",
+      "simulations/transmission-grating/chart.mjs": "53dc5dccd61884835f77d055b64435aaaa7c7e27b41033f59d2b7153f38f9afd",
+      "simulations/transmission-grating/lab.css": "6752aacc953e020b61d8d1ebfa1e1f88044684c18da66bdf2083ad2ad2a74e19",
+      "simulations/transmission-grating/observations.json": "ddf823c893831ef6e925c4954be490c962a9faed728ac5fc34aefe653ac89c70",
+      "docs/transmission-grating-model-evidence.md": "4d8186bd21f13434d0aad7312717587af257c247c284328e499d37b08570c82a",
+      "docs/transmission-grating-references.json": "2afe8ceccf169c1f3e6298b9d855370067e3ce439c273a3575017f1a7f79d155",
+      "docs/transmission-grating-references.bib": "0d202beafc5c1ece08e9f7582abc483bf0772e427f128eb9ef4beb6faa15b74e",
+      "docs/simulation/transmission-grating-reference.json": "4e473e2d15199ecbe9f900762b8fd033d9880a7a2f21b28c2ce5331bda8ab65f",
+      "scripts/validate_transmission_grating_simulation.py": "39b4a2e723271310367e1aa8be931596beb05386ad85005ba6323543ceefd015",
+      "tests/transmission-grating-model.test.mjs": "7b75e2af8eb9ac069598675d06f85d0715ecc6490a89fc22a8e16146e6c2755c"
+    }
+  },
+  "scientific_evidence": {
+    "status": "verified",
+    "decision_source_files": {
+      "docs/transmission-grating-references.json": "2afe8ceccf169c1f3e6298b9d855370067e3ce439c273a3575017f1a7f79d155",
+      "docs/transmission-grating-model-evidence.md": "4d8186bd21f13434d0aad7312717587af257c247c284328e499d37b08570c82a",
+      "simulations/transmission-grating/model.mjs": "5720e861b60fddbf6a9add47cf3f93e327824db4d82a267cbbdf7869288a0127"
+    },
+    "core_references": [
+      {
+        "id": "ZengEtAl2019FraunhoferGrating",
+        "pdf_sha256": "3f8a1e85c6d8cfee08692f60b3b9f7ea428faecefb0dd9fd4e874fdaf3c579d5",
+        "locators": [
+          {
+            "printed_pages": "26",
+            "pdf_pages": [
+              1
+            ],
+            "location": "第1节",
+            "role": "等间距矩形缝、准直光与焦面夫琅禾费装置及符号定义"
+          },
+          {
+            "printed_pages": "27",
+            "pdf_pages": [
+              2
+            ],
+            "location": "公式(1)-(3)、第2节、图1(b)",
+            "role": "单缝包络乘有限多缝干涉、参数示例及代码核查"
+          },
+          {
+            "printed_pages": "28",
+            "pdf_pages": [
+              3
+            ],
+            "location": "第3.4节公式(5)",
+            "role": "屏坐标与角度正弦的几何关系；焦面线宽与角宽的区分"
+          },
+          {
+            "printed_pages": "29",
+            "pdf_pages": [
+              4
+            ],
+            "location": "第3.6节公式(6)-(7)、图7",
+            "role": "光栅主极大与单缝暗纹重合的缺级条件，式(7)分母核查"
+          },
+          {
+            "printed_pages": "30",
+            "pdf_pages": [
+              5
+            ],
+            "location": "结论及参考文献",
+            "role": "参数影响结论核查与下一轮题名提取"
+          }
+        ]
+      }
+    ]
+  },
+  "source_hashes": {
+    "simulations/transmission-grating/angles.mjs": "b25e2fa4341846209d68acaed83cf06b40c0b3902af9fbdaa94d8cdbb92796eb",
+    "simulations/transmission-grating/app.mjs": "f90fe87d588a225dc626363cce375211f63a0b59b4c40e108a8c088ce594447b",
+    "simulations/transmission-grating/chart.mjs": "53dc5dccd61884835f77d055b64435aaaa7c7e27b41033f59d2b7153f38f9afd",
+    "simulations/transmission-grating/index.html": "8f041680088eb30ea392c8c287401ef1d9048a28537bc9db0450444c198d21ce",
+    "simulations/transmission-grating/lab.css": "6752aacc953e020b61d8d1ebfa1e1f88044684c18da66bdf2083ad2ad2a74e19",
+    "simulations/transmission-grating/model.mjs": "5720e861b60fddbf6a9add47cf3f93e327824db4d82a267cbbdf7869288a0127",
+    "simulations/transmission-grating/observations.json": "ddf823c893831ef6e925c4954be490c962a9faed728ac5fc34aefe653ac89c70"
+  }
+}

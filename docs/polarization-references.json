@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "experiment_id": "course-04/polarization",
+  "review_date": "2026-10-16",
+  "access_channel": "两校机构学术数据库交叉检索",
+  "verification_method": "取得全文逐页核读，渲染关键页核对公式和角度基准；物理实现另作独立算法验证。",
+  "references": [
+    {
+      "id": "ShiEtAl2024Polarization",
+      "title": "光的偏振实验教学的拓展研究",
+      "authors": [
+        "时俊仙",
+        "菅婧涵",
+        "涂茹婷",
+        "金宇",
+        "李昭涵",
+        "唐亚楠"
+      ],
+      "journal": "实验室科学",
+      "year": 2024,
+      "volume": "27",
+      "issue": "4",
+      "pages": "46-50",
+      "doi": "10.3969/j.issn.1672-4305.2024.04.011",
+      "url": "https://doi.org/10.3969/j.issn.1672-4305.2024.04.011",
+      "source_pdf": {
+        "sha256": "5150ead6885fb8b7c32da2a41d18d5f16acc69116bda6d58052310e43faf4364",
+        "pages": 5
+      },
+      "locators": [
+        {
+          "printed_pages": "47",
+          "pdf_pages": [
+            2
+          ],
+          "location": "第1.2节",
+          "role": "马吕斯定律与偏振轴夹角；原表角基准另核对"
+        },
+        {
+          "printed_pages": "48",
+          "pdf_pages": [
+            3
+          ],
+          "location": "第2.2节",
+          "role": "波片相位、快轴45°与四分之一波片圆偏振"
+        },
+        {
+          "printed_pages": "49",
+          "pdf_pages": [
+            4
+          ],
+          "location": "第3.1节",
+          "role": "固定实验条件下旋光角与浓度的线性关系"
+        }
+      ],
+      "application": "以两偏振轴实际夹角采用cos²投影，波片用正交分量相位；旋光仅采用给定条件下线性关系，不采用其材料系数数值。",
+      "scope": "理想偏振元件和条件旋光关系，原532nm装置为该论文场景，不给本实验额外材料参数。",
+      "review_findings": [
+        "第47页文字最小强度描述和表1角原点与cos²轴夹角基准冲突，本模型采用两轴相对θ=0亮、90暗。",
+        "第50页β数值与单位和θ=βc关系不一致，未采用其材料旋光参数。"
+      ],
+      "review_status": "full_text_reviewed"
+    },
+    {
+      "id": "MaoEtAl2015Fresnel",
+      "title": "光的偏振和反射理论的综合实验设计",
+      "authors": [
+        "毛红敏",
+        "王军",
+        "王晓丹",
+        "臧涛成"
+      ],
+      "journal": "物理实验",
+      "year": 2015,
+      "volume": "35",
+      "issue": "6",
+      "pages": "29-31,34",
+      "doi": "10.19655/j.cnki.1005-4642.2015.06.009",
+      "url": "https://doi.org/10.19655/j.cnki.1005-4642.2015.06.009",
+      "source_pdf": {
+        "sha256": "31d6584a6b5b7b25a295e9315927769785f2263b495fad2b2cb7a62c6cc61858",
+        "pages": 4
+      },
+      "locators": [
+        {
+          "printed_pages": "29",
+          "pdf_pages": [
+            1
+          ],
+          "location": "第2.1节公式(1)-(4)",
+          "role": "s/p振幅反射系数及反射率"
+        },
+        {
+          "printed_pages": "31",
+          "pdf_pages": [
+            3
+          ],
+          "location": "第4节",
+          "role": "BK7在638nm的n1.515是论文示例，不替换本页n1.5教学设定"
+        }
+      ],
+      "application": "令入射空气n1=1，出射介质n2=n，采用无吸收单界面的Fresnel系数；Brewster条件由rp=0与Snell自行推导。",
+      "scope": "各向同性非吸收平面界面，忽略表面粗糙、吸收和多界面干涉。",
+      "review_status": "full_text_reviewed"
+    }
+  ]
+}

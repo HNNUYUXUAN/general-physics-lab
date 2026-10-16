@@ -1,0 +1,234 @@
+{
+  "status": "passed",
+  "source_record_sha256": "6c8d02292b5a0766da7ce0f7724f257ac1d77cc02f6d33ac6f66ba608a2e640d",
+  "interaction_checks": 20,
+  "visual_status": "passed",
+  "exports_status": "passed",
+  "exports": [
+    {
+      "filename": "1-kelvin-bridge-records.csv",
+      "sha256": "071d91198c393c2b47e293eefa728511c1ac468ba38a4cb1fa25930bda44aca9",
+      "bytes": 855
+    },
+    {
+      "filename": "2-kelvin-bridge-records.json",
+      "sha256": "38c6bb54f9ec0eac71e582c9ae88ce87aaf6c536c49059c336e27c7d41db6d88",
+      "bytes": 2362
+    }
+  ],
+  "fonts": {
+    "h1": [
+      {
+        "familyName": "SimSun",
+        "postScriptName": "SimSun",
+        "isCustomFont": false,
+        "glyphCount": 10
+      }
+    ],
+    "#summary": [
+      {
+        "familyName": "Times New Roman",
+        "postScriptName": "TimesNewRomanPSMT",
+        "isCustomFont": false,
+        "glyphCount": 30
+      },
+      {
+        "familyName": "SimSun",
+        "postScriptName": "SimSun",
+        "isCustomFont": false,
+        "glyphCount": 5
+      }
+    ]
+  },
+  "browser": "fixed Playwright Chromium 1243",
+  "layout": {
+    "wide": {
+      "width": 1280,
+      "scrollWidth": 1280,
+      "math": 8,
+      "mathErrors": 0
+    },
+    "narrow": {
+      "width": 390,
+      "scrollWidth": 390,
+      "math": 8,
+      "mathErrors": 0
+    }
+  },
+  "interaction": [
+    {
+      "name": "unknown_mOhm=1",
+      "status": "passed"
+    },
+    {
+      "name": "unknown_mOhm=10",
+      "status": "passed"
+    },
+    {
+      "name": "standard_mOhm=0.1",
+      "status": "passed"
+    },
+    {
+      "name": "standard_mOhm=200",
+      "status": "passed"
+    },
+    {
+      "name": "ratio=0.1",
+      "status": "passed"
+    },
+    {
+      "name": "ratio=10",
+      "status": "passed"
+    },
+    {
+      "name": "contact_mOhm=0",
+      "status": "passed"
+    },
+    {
+      "name": "contact_mOhm=100",
+      "status": "passed"
+    },
+    {
+      "name": "mismatch=-0.1",
+      "status": "passed"
+    },
+    {
+      "name": "mismatch=0.1",
+      "status": "passed"
+    },
+    {
+      "name": "sourceVoltage=0.001",
+      "status": "passed"
+    },
+    {
+      "name": "sourceVoltage=0.1",
+      "status": "passed"
+    },
+    {
+      "name": "原表 balance",
+      "status": "passed"
+    },
+    {
+      "name": "默认设置读数与记录",
+      "status": "passed"
+    },
+    {
+      "name": "测量闭环与同组分析",
+      "status": "passed"
+    },
+    {
+      "name": "调零与平衡操作",
+      "status": "passed"
+    },
+    {
+      "name": "非法编辑blur后不得记录",
+      "status": "passed"
+    },
+    {
+      "name": "恢复删除与清空",
+      "status": "passed"
+    },
+    {
+      "name": "真实CSV/JSON导出与元数据",
+      "status": "passed"
+    },
+    {
+      "name": "restore",
+      "status": "passed"
+    }
+  ],
+  "background": {
+    "status": "not-applicable"
+  },
+  "checked_at_utc": "2026-10-16T16:13:22.887Z",
+  "screenshots": [
+    {
+      "path": "docs/assets/simulations/kelvin-bridge/frontend-01-ee5c06c872bb.png",
+      "sha256": "ee5c06c872bb0f61d4ec74fd7ae0fa6f7335d50588144f814e41c6818550ca04"
+    },
+    {
+      "path": "docs/assets/simulations/kelvin-bridge/frontend-02-6372bd98957f.png",
+      "sha256": "6372bd98957fb57c10eaaa0263ae0ff2c7d9fab60d39316f4930a28bc3edb7e4"
+    },
+    {
+      "path": "docs/assets/simulations/kelvin-bridge/frontend-03-dd539f4cb445.png",
+      "sha256": "dd539f4cb445ff72a9507bbe73aa1579097f0c711c8eae0d0caa81162d16de69"
+    },
+    {
+      "path": "docs/assets/simulations/kelvin-bridge/frontend-04-6e602b69d8cd.png",
+      "sha256": "6e602b69d8cdb9db08048ddf01ca19b6938bc51eec7ed42ccf6dd9b882f82dd4"
+    },
+    {
+      "path": "docs/assets/simulations/kelvin-bridge/frontend-05-5fc7b0c9abd3.png",
+      "sha256": "5fc7b0c9abd35293809bc2b685434ffda6914e69751b4694a225f3eb5893a4a6"
+    },
+    {
+      "path": "docs/assets/simulations/kelvin-bridge/frontend-06-a0f3d8751bcc.png",
+      "sha256": "a0f3d8751bccf69251706b8390cac76be6fa43ec509ad402ef16ea4416db5e65"
+    },
+    {
+      "path": "docs/assets/simulations/kelvin-bridge/frontend-07-7a85ab6c932e.png",
+      "sha256": "7a85ab6c932e5f1faa35c430a4127748d2e775b2338c21df80d661a912f0554c"
+    },
+    {
+      "path": "docs/assets/simulations/kelvin-bridge/frontend-08-fee2f55059e1.png",
+      "sha256": "fee2f55059e1328e0b51a2159723141d9e88a5bd5aefc14d9bd13af8a02ae73d"
+    },
+    {
+      "path": "docs/assets/simulations/kelvin-bridge/frontend-09-3f09b9b15228.png",
+      "sha256": "3f09b9b152282726ea0d150ba0216ed23bf131aac3a26bcfad51f837951a6d6c"
+    },
+    {
+      "path": "docs/assets/simulations/kelvin-bridge/frontend-10-9b3d3aa255c9.png",
+      "sha256": "9b3d3aa255c95b12b25f50a3444b7076d2f78887d93192a73f3c70625058bfb0"
+    }
+  ],
+  "schema_version": 1,
+  "experiment_id": "course-03/kelvin-bridge",
+  "numerical": {
+    "status": "passed",
+    "reference_sha256": "8412d84f4dd95638d23f63b280b6f22593c33f9b8dd36ca108c0c55d9fe6e947",
+    "source_files": {
+      "simulations/kelvin-bridge/index.html": "ab3a9eb820f20dd673591f0b0491ab4ac8ebd32c74644d8bdb5c2bbb04d2bf14",
+      "simulations/kelvin-bridge/model.mjs": "9f9841a2ebbac9dfb8ab38fce8a6d563cdaab9c74bb153529a4a529b22b735f6",
+      "simulations/kelvin-bridge/app.mjs": "0f94176f051ec7c545ff17ae04e5e869266628e33e103f6ab30535b8c1c0c098",
+      "simulations/kelvin-bridge/chart.mjs": "7661b7bfc2fe4ac33d2ab50733687b64f47c7110505e27c14c80c42c38df82dd",
+      "simulations/kelvin-bridge/lab.css": "d007905ee689191cb3d99caebe74d1e5e924b6fd068c7a81d2417c75219b6169",
+      "simulations/kelvin-bridge/observations.json": "2ce74f4b689fd2600930a3457b272279b19b610393640fd5d7387dfc03abcd47",
+      "docs/kelvin-bridge-model-evidence.md": "9232a7a978add201aa84998c519164390fac402cf84d7caf6e83e335a75e54f2",
+      "docs/kelvin-bridge-references.json": "d345f26541abf98046400df1e90f4ed47b67ef5595ed4a142133d818be5917fd",
+      "docs/kelvin-bridge-references.bib": "5945fe329b136772af1ba502ed453253125a36e2aa5f5c7da76a6e210ac052a1",
+      "docs/simulation/kelvin-bridge-reference.json": "8412d84f4dd95638d23f63b280b6f22593c33f9b8dd36ca108c0c55d9fe6e947",
+      "scripts/validate_kelvin_bridge_simulation.py": "2551039c75d50097004904cc5f37fe6612c6ab63387c727b4b2d22c1993d3a2c",
+      "tests/kelvin-bridge-model.test.mjs": "c611304e91f557f4710d6df2ab405976900629eeb9454f3b8b5c8e29b183f54b"
+    }
+  },
+  "scientific_evidence": {
+    "status": "verified",
+    "decision_source_files": {
+      "docs/kelvin-bridge-references.json": "d345f26541abf98046400df1e90f4ed47b67ef5595ed4a142133d818be5917fd",
+      "docs/kelvin-bridge-model-evidence.md": "9232a7a978add201aa84998c519164390fac402cf84d7caf6e83e335a75e54f2",
+      "simulations/kelvin-bridge/model.mjs": "9f9841a2ebbac9dfb8ab38fce8a6d563cdaab9c74bb153529a4a529b22b735f6"
+    },
+    "core_references": [
+      {
+        "id": "yang2017bridges",
+        "pdf_sha256": "4720641e78d39df9ef02036648e4f7cbc40f3eaa5f26ffcb658fe56b367aecd3",
+        "locators": [
+          "p.37 section 2.1 equation (1), section 2.2 Kirchhoff equations",
+          "p.38 section 3.2 equation (3)"
+        ]
+      }
+    ]
+  },
+  "source_hashes": {
+    "simulations/kelvin-bridge/model.mjs": "9f9841a2ebbac9dfb8ab38fce8a6d563cdaab9c74bb153529a4a529b22b735f6",
+    "simulations/kelvin-bridge/app.mjs": "0f94176f051ec7c545ff17ae04e5e869266628e33e103f6ab30535b8c1c0c098",
+    "simulations/kelvin-bridge/chart.mjs": "7661b7bfc2fe4ac33d2ab50733687b64f47c7110505e27c14c80c42c38df82dd",
+    "simulations/kelvin-bridge/lab.css": "d007905ee689191cb3d99caebe74d1e5e924b6fd068c7a81d2417c75219b6169",
+    "simulations/kelvin-bridge/observations.json": "2ce74f4b689fd2600930a3457b272279b19b610393640fd5d7387dfc03abcd47",
+    "simulations/kelvin-bridge/diagram.mjs": "bcf443792b4e879c069897cdf52998e1e0238ec956833a5fff5d357f939ca640",
+    "simulations/kelvin-bridge/ui-config.json": "ee53820428d5ceaa5b78589965c403529e7c7a2380855e661d323adcfa0564c9",
+    "simulations/kelvin-bridge/index.html": "ab3a9eb820f20dd673591f0b0491ab4ac8ebd32c74644d8bdb5c2bbb04d2bf14"
+  }
+}

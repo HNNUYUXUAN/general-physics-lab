@@ -1,5 +1,8 @@
 [普通物理实验 4](../README.md) · [项目首页](../../../README.md) · [使用指南](../../../docs/usage.md)
 
+<!-- virtual-laboratory-entry -->
+[在线虚拟实验](https://hnnuyuxuan.github.io/general-physics-lab/simulations/newton-rings/) · [模型依据与参数来源](../../../docs/newton-rings-model-evidence.md)
+
 # 牛顿环实验
 
 **用干涉条纹测曲率，也用条纹间隔测细丝厚度。**

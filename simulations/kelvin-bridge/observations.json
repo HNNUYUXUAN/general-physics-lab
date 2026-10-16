@@ -1,0 +1,50 @@
+{
+  "experimentId": "course-03/kelvin-bridge",
+  "source": "original-report-observations",
+  "tables": {
+    "balance": {
+      "title": "balance",
+      "headers": [
+        "length_mm",
+        "S_Ohm",
+        "M_Ohm",
+        "comparison_Ohm"
+      ],
+      "rows": [
+        [
+          "310.0",
+          "0.01",
+          "1000",
+          "180.2"
+        ],
+        [
+          "340.0",
+          "0.01",
+          "1000",
+          "198.2"
+        ],
+        [
+          "370.0",
+          "0.01",
+          "1000",
+          "216.0"
+        ],
+        [
+          "400.0",
+          "0.01",
+          "1000",
+          "234.0"
+        ],
+        [
+          "430.0",
+          "0.01",
+          "1000",
+          "252.0"
+        ]
+      ]
+    }
+  },
+  "sourceHashes": {
+    "balance.csv": "992927805056d588844b92f5db7d20b0f7fdfca9f768fe32d036ee2869a3927c"
+  }
+}

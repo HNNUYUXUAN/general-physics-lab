@@ -1,0 +1,232 @@
+{
+  "status": "passed",
+  "source_record_sha256": "5b56c34e327b769790b2a20815dcb7c192ff73b5cc944b5bc4e05322b4584fe3",
+  "interaction_checks": 20,
+  "visual_status": "passed",
+  "exports_status": "passed",
+  "exports": [
+    {
+      "filename": "1-thin-lens-records.json",
+      "sha256": "58ecc0285c3147b446e0d5053bbad20cefaf408de2789959adfdf2886d160efd",
+      "bytes": 2148
+    },
+    {
+      "filename": "2-thin-lens-records.csv",
+      "sha256": "ed74c567a3f0bfa2537a61cbd496a3c9585352961e9c60b8d6bf0d9aba220e64",
+      "bytes": 1249
+    }
+  ],
+  "fonts": {
+    "h1": [
+      {
+        "familyName": "SimSun",
+        "postScriptName": "SimSun",
+        "isCustomFont": false,
+        "glyphCount": 7
+      }
+    ],
+    "#summary": [
+      {
+        "familyName": "Times New Roman",
+        "postScriptName": "TimesNewRomanPSMT",
+        "isCustomFont": false,
+        "glyphCount": 39
+      },
+      {
+        "familyName": "SimSun",
+        "postScriptName": "SimSun",
+        "isCustomFont": false,
+        "glyphCount": 8
+      }
+    ]
+  },
+  "browser": "fixed Playwright Chromium 1243",
+  "layout": {
+    "wide": {
+      "width": 1280,
+      "scrollWidth": 1280,
+      "math": 18,
+      "mathErrors": 0
+    },
+    "narrow": {
+      "width": 390,
+      "scrollWidth": 390,
+      "math": 18,
+      "mathErrors": 0
+    }
+  },
+  "interaction": [
+    {
+      "name": "method=conjugates",
+      "status": "passed"
+    },
+    {
+      "name": "method=bessel",
+      "status": "passed"
+    },
+    {
+      "name": "focal=5",
+      "status": "passed"
+    },
+    {
+      "name": "focal=20",
+      "status": "passed"
+    },
+    {
+      "name": "object=Home",
+      "status": "passed"
+    },
+    {
+      "name": "object=End",
+      "status": "passed"
+    },
+    {
+      "name": "screen=Home",
+      "status": "passed"
+    },
+    {
+      "name": "screen=End",
+      "status": "passed"
+    },
+    {
+      "name": "lens=Home",
+      "status": "passed"
+    },
+    {
+      "name": "lens=End",
+      "status": "passed"
+    },
+    {
+      "name": "source-method=autocollimation",
+      "status": "passed"
+    },
+    {
+      "name": "source-method=conjugates",
+      "status": "passed"
+    },
+    {
+      "name": "source-method=bessel",
+      "status": "passed"
+    },
+    {
+      "name": "source-method=concave",
+      "status": "passed"
+    },
+    {
+      "name": "平行光临界",
+      "status": "passed"
+    },
+    {
+      "name": "Bessel双位置反演",
+      "status": "passed"
+    },
+    {
+      "name": "D小于4f无实位置",
+      "status": "passed"
+    },
+    {
+      "name": "非法焦距与导出",
+      "status": "passed"
+    },
+    {
+      "name": "删除清空与恢复",
+      "status": "passed"
+    },
+    {
+      "name": "restore",
+      "status": "passed"
+    }
+  ],
+  "background": {
+    "status": "not-applicable"
+  },
+  "checked_at_utc": "2026-10-16T16:12:31.474Z",
+  "screenshots": [
+    {
+      "path": "docs/assets/simulations/thin-lens/frontend-01-8a401366335e.png",
+      "sha256": "8a401366335e771f22b1bdf438cc3c81b1fbdd1b845ba9e8cc2c35799a09c6c4"
+    },
+    {
+      "path": "docs/assets/simulations/thin-lens/frontend-02-316205ec7633.png",
+      "sha256": "316205ec763351a4d8120f6f074be075289012582b6d503a982bbdb914b5d5a6"
+    },
+    {
+      "path": "docs/assets/simulations/thin-lens/frontend-03-30ddb6a25176.png",
+      "sha256": "30ddb6a251761192e4c6093acc20fe03c4c6bd77ca02e31d4006b1cdd0e8f337"
+    },
+    {
+      "path": "docs/assets/simulations/thin-lens/frontend-04-76f443972973.png",
+      "sha256": "76f44397297393f9041265ffe57f25d08c3a4cd54042a7c7398063ca39bfcb19"
+    },
+    {
+      "path": "docs/assets/simulations/thin-lens/frontend-05-cb0afae6cd6d.png",
+      "sha256": "cb0afae6cd6d1679a3fe8ad5504c6225dd118ec2e53a52669697e9b0728ad351"
+    },
+    {
+      "path": "docs/assets/simulations/thin-lens/frontend-06-f8034419c3aa.png",
+      "sha256": "f8034419c3aa64913b84c3534a2c88aa676da4c7441fbe466cd91d42eb2be9f4"
+    },
+    {
+      "path": "docs/assets/simulations/thin-lens/frontend-07-52b1643e6a06.png",
+      "sha256": "52b1643e6a0631cbb8f960f1aeef9cb1d0ffb805b92fb51b82fae4d3bb0c859e"
+    },
+    {
+      "path": "docs/assets/simulations/thin-lens/frontend-08-5cb88f5fc172.png",
+      "sha256": "5cb88f5fc172dfbd22f76877866caf8ae03236d6a6e9d81a057b12959f39dc8d"
+    },
+    {
+      "path": "docs/assets/simulations/thin-lens/frontend-09-941e663784e5.png",
+      "sha256": "941e663784e5662723791c8a688990132fa5c55740ac9dd549f08a3133eafbd1"
+    },
+    {
+      "path": "docs/assets/simulations/thin-lens/frontend-10-a14696117369.png",
+      "sha256": "a1469611736997ffe30e827e06667b9a580b743229a6ca5111047d686c272098"
+    }
+  ],
+  "schema_version": 1,
+  "experiment_id": "course-04/thin-lens",
+  "numerical": {
+    "status": "passed",
+    "reference_sha256": "8cbc1eef9545da7827d66842338feb9f175ebb2464aae22685cbf484e3c460e5",
+    "source_files": {
+      "simulations/thin-lens/index.html": "36a41d151e8c69f2633179282b7cb0c7b1c899121eafa629d8002d465cd9a2ba",
+      "simulations/thin-lens/model.mjs": "13655a921f9ab0bdf801b28de35f097c2f4d83510f2a86f3fbb44d4aed344814",
+      "simulations/thin-lens/app.mjs": "6edefa8cc6bc8ff210f0349bb91700fd3304822d5b3f54c36ab857856d4c48ec",
+      "simulations/thin-lens/chart.mjs": "e579faefec314cbb328463457b8027c26d3c830da56a483a5d1dba3698e57201",
+      "simulations/thin-lens/lab.css": "48ed8ac294f6e59b5030b86bb1759771c9438cb2eef10227aa86f3e80cc2d07d",
+      "simulations/thin-lens/observations.json": "f0d6bf9a84a75aaadbcac2b0b68186ea84778520fe705dec836f01c118cb882e",
+      "docs/thin-lens-model-evidence.md": "760b24aee22c2c2731af64065a8a1309f86a8089d3f8cc6e74e01e3698f5d455",
+      "docs/thin-lens-references.json": "0ec521fc14a929bb79e4e0b0120039cb123530e1a5bebc18582d48c7f53bfaec",
+      "docs/thin-lens-references.bib": "7955d8c9bc8fec01421164b8ef9fe5d18ec40b9796808877c3a53632c28be34c",
+      "docs/simulation/thin-lens-reference.json": "8cbc1eef9545da7827d66842338feb9f175ebb2464aae22685cbf484e3c460e5",
+      "scripts/validate_thin_lens_simulation.py": "2ec971ca333287fc844ff23c3a2d80414231c970e42451f064a0cab1b1f59706",
+      "tests/thin-lens-model.test.mjs": "77c391e5f6841897880b74e1d761b9e08c78d4028f4d38949aec911d6c5272b7"
+    }
+  },
+  "scientific_evidence": {
+    "status": "verified",
+    "decision_source_files": {
+      "docs/thin-lens-references.json": "0ec521fc14a929bb79e4e0b0120039cb123530e1a5bebc18582d48c7f53bfaec",
+      "docs/thin-lens-model-evidence.md": "760b24aee22c2c2731af64065a8a1309f86a8089d3f8cc6e74e01e3698f5d455",
+      "simulations/thin-lens/model.mjs": "13655a921f9ab0bdf801b28de35f097c2f4d83510f2a86f3fbb44d4aed344814"
+    },
+    "core_references": [
+      {
+        "id": "xu2011",
+        "pdf_sha256": "03e733c2ff7b1a8b9087a73e3e864cb7bffac825748553873e701c5e367cedd7",
+        "locators": [
+          "p.101 section 3.1 Bessel formula and D>4f",
+          "p.101 section 3.2 coaxial two-position operation"
+        ]
+      }
+    ]
+  },
+  "source_hashes": {
+    "simulations/thin-lens/model.mjs": "13655a921f9ab0bdf801b28de35f097c2f4d83510f2a86f3fbb44d4aed344814",
+    "simulations/thin-lens/app.mjs": "6edefa8cc6bc8ff210f0349bb91700fd3304822d5b3f54c36ab857856d4c48ec",
+    "simulations/thin-lens/chart.mjs": "e579faefec314cbb328463457b8027c26d3c830da56a483a5d1dba3698e57201",
+    "simulations/thin-lens/lab.css": "48ed8ac294f6e59b5030b86bb1759771c9438cb2eef10227aa86f3e80cc2d07d",
+    "simulations/thin-lens/observations.json": "f0d6bf9a84a75aaadbcac2b0b68186ea84778520fe705dec836f01c118cb882e",
+    "simulations/thin-lens/index.html": "36a41d151e8c69f2633179282b7cb0c7b1c899121eafa629d8002d465cd9a2ba"
+  }
+}

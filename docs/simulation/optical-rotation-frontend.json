@@ -1,0 +1,174 @@
+{
+  "status": "passed",
+  "source_record_sha256": "ce2c68b6e868b4512940220d4b9254417e70cd1c78009560e1c09da3a8544e26",
+  "interaction_checks": 5,
+  "visual_status": "passed",
+  "exports_status": "passed",
+  "exports": [
+    {
+      "filename": "optical-rotation-optical-rotation-experiment.json",
+      "sha256": "264e9520395e92ca5b260689d037daf7812721fc904d4c21b4e3106cdaac6a97",
+      "bytes": 2924
+    },
+    {
+      "filename": "optical-rotation-optical-rotation-records.csv",
+      "sha256": "4d3627e100a448f5067823522fdfaab025e83b86d2d2c9a3ab4876406c52e29e",
+      "bytes": 466
+    }
+  ],
+  "fonts": {
+    "h1": {
+      "fonts": [
+        {
+          "familyName": "SimSun",
+          "postScriptName": "SimSun",
+          "isCustomFont": false,
+          "glyphCount": 7
+        }
+      ]
+    },
+    "#count": {
+      "fonts": [
+        {
+          "familyName": "Times New Roman",
+          "postScriptName": "TimesNewRomanPSMT",
+          "isCustomFont": false,
+          "glyphCount": 1
+        }
+      ]
+    }
+  },
+  "browser": null,
+  "layout": {
+    "mobile": {
+      "width": 390,
+      "scrollWidth": 390,
+      "mathErrors": 0,
+      "mathObjects": 5
+    }
+  },
+  "interaction": [
+    {
+      "name": "自动暗等亮及条件浓度",
+      "status": "passed"
+    },
+    {
+      "name": "浓度变化使半视场平移",
+      "status": "passed"
+    },
+    {
+      "name": "空白与溶液身份捕获",
+      "status": "passed"
+    },
+    {
+      "name": "90度分支歧义拒绝",
+      "status": "passed"
+    },
+    {
+      "name": "真实双格式导出与刷新恢复",
+      "status": "passed"
+    }
+  ],
+  "background": {
+    "status": "not-applicable"
+  },
+  "checked_at_utc": null,
+  "screenshots": [
+    {
+      "path": "docs/assets/simulations/optical-rotation/frontend-01-6193eb24e380.png",
+      "sha256": "6193eb24e380c7e382b4fd1cfff96770c8aa620f3b0edd7134fd1ec899e114a8"
+    },
+    {
+      "path": "docs/assets/simulations/optical-rotation/frontend-02-833140404fed.png",
+      "sha256": "833140404fed2f7c5269dd5578caf9bfbead70284cec4df642078fbfd0bed659"
+    },
+    {
+      "path": "docs/assets/simulations/optical-rotation/frontend-03-587aba19fd96.png",
+      "sha256": "587aba19fd963bb2b070dcb9d57de4b5735aa441c8ef88494237467f40da75ee"
+    },
+    {
+      "path": "docs/assets/simulations/optical-rotation/frontend-04-2397482a2880.png",
+      "sha256": "2397482a2880e968b1a87b535648ab6babec6ef13a0ee93ae20eca46c0a559be"
+    },
+    {
+      "path": "docs/assets/simulations/optical-rotation/frontend-05-d25e1b324182.png",
+      "sha256": "d25e1b324182a3a8ce9ae61570d66525e776373d52d12553ed45fb556ea18a0b"
+    },
+    {
+      "path": "docs/assets/simulations/optical-rotation/frontend-06-05c3d9c99422.png",
+      "sha256": "05c3d9c99422b19b1489a5c86ce03d2e7a9ec1fdf7f652055d511f3743d2d042"
+    },
+    {
+      "path": "docs/assets/simulations/optical-rotation/frontend-07-77d9e55c070d.png",
+      "sha256": "77d9e55c070dd1cb99e57711520813fe979d39e83b8293d930c545ffe3148e31"
+    }
+  ],
+  "schema_version": 1,
+  "experiment_id": "course-04/optical-rotation",
+  "numerical": {
+    "status": "passed",
+    "reference_sha256": "06426b3d8dfd42106ae51868cd8804098d15a935ee271ff5bded28dad56fe70f",
+    "source_files": {
+      "simulations/optical-rotation/index.html": "e141b90ff4a3e7cbeb9e22693115b370fa0c70dc8807e27e31b33cc407eb7084",
+      "simulations/optical-rotation/model.mjs": "cbbeabbf083e5c01ffa33f3670767fda882f07ac8bc71752606747da9bb37ae1",
+      "simulations/optical-rotation/app.mjs": "a9bd8c76e1c38f2fcc08a5d9b2451da4ede66e9a59c8023fb5cfb12e51563232",
+      "simulations/optical-rotation/chart.mjs": "4b6b62b126df5dc0c9f0f1de88c252a3eaf606fd73f84f81c2a6ef98e3227a1a",
+      "simulations/optical-rotation/lab.css": "d49a0441c85d1c723605c901a2a6e8a38d85bfac1ff3d70ca145783c1a603e30",
+      "simulations/optical-rotation/observations.json": "dc43bc38027b33b4c6035cd72042ff7c299e6e71143ef8263a0146ffc417fded",
+      "docs/optical-rotation-model-evidence.md": "46e5effdb06e3797eac3a749e2dd3e26f0338b0a0ea3ee72bbb025834f3a30b2",
+      "docs/optical-rotation-references.json": "2e7b01c6f0dd60f3cab623323e1ff507d7d0553443b64a92024b671dc5196085",
+      "docs/optical-rotation-references.bib": "ebc9a260de361d888dadf8a150d1aabc6a6c5750721c17a6b92532bc6615f958",
+      "docs/simulation/optical-rotation-reference.json": "71b5510a9d9606b26b2cce82e59d9f50be910bfd3664cfbe1f1da76325769cc1",
+      "scripts/validate_optical_rotation_simulation.py": "f0d5521efa531fdfb8f3bc9b9ba696e7eb96e156010b9658709f46c78c7921a4",
+      "tests/optical-rotation-model.test.mjs": "41e8dc94c5faa1ae7512870e9f3a5c0f435e95e36a67bb5bdb046d15513e43f4"
+    }
+  },
+  "scientific_evidence": {
+    "status": "verified",
+    "decision_source_files": {
+      "docs/optical-rotation-references.json": "2e7b01c6f0dd60f3cab623323e1ff507d7d0553443b64a92024b671dc5196085",
+      "docs/optical-rotation-model-evidence.md": "46e5effdb06e3797eac3a749e2dd3e26f0338b0a0ea3ee72bbb025834f3a30b2",
+      "simulations/optical-rotation/model.mjs": "cbbeabbf083e5c01ffa33f3670767fda882f07ac8bc71752606747da9bb37ae1"
+    },
+    "core_references": [
+      {
+        "id": "ShiEtAl2024Polarization",
+        "pdf_sha256": "5150ead6885fb8b7c32da2a41d18d5f16acc69116bda6d58052310e43faf4364",
+        "locators": [
+          {
+            "printed_pages": "47",
+            "pdf_pages": [
+              2
+            ],
+            "location": "第1.2节",
+            "role": "马吕斯定律与偏振轴夹角；原表角基准另核对"
+          },
+          {
+            "printed_pages": "48",
+            "pdf_pages": [
+              3
+            ],
+            "location": "第2.2节",
+            "role": "波片相位、快轴45°与四分之一波片圆偏振"
+          },
+          {
+            "printed_pages": "49",
+            "pdf_pages": [
+              4
+            ],
+            "location": "第3.1节",
+            "role": "固定实验条件下旋光角与浓度的线性关系"
+          }
+        ]
+      }
+    ]
+  },
+  "source_hashes": {
+    "simulations/optical-rotation/app.mjs": "a9bd8c76e1c38f2fcc08a5d9b2451da4ede66e9a59c8023fb5cfb12e51563232",
+    "simulations/optical-rotation/chart.mjs": "4b6b62b126df5dc0c9f0f1de88c252a3eaf606fd73f84f81c2a6ef98e3227a1a",
+    "simulations/optical-rotation/index.html": "e141b90ff4a3e7cbeb9e22693115b370fa0c70dc8807e27e31b33cc407eb7084",
+    "simulations/optical-rotation/lab.css": "d49a0441c85d1c723605c901a2a6e8a38d85bfac1ff3d70ca145783c1a603e30",
+    "simulations/optical-rotation/model.mjs": "cbbeabbf083e5c01ffa33f3670767fda882f07ac8bc71752606747da9bb37ae1",
+    "simulations/optical-rotation/observations.json": "dc43bc38027b33b4c6035cd72042ff7c299e6e71143ef8263a0146ffc417fded"
+  }
+}

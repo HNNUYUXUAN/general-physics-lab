@@ -1,0 +1,6 @@
+import test from'node:test';import assert from'node:assert/strict';import{DEFAULTS,workingPoint,zeroCalibration,measurement,validateParameters}from'../simulations/photosensor/model.mjs';const close=(a,b)=>assert.ok(Math.abs(a-b)<1e-10);
+test('datasheet950nm1mWcm2typical point maintained at5V',()=>{const w=workingPoint({...DEFAULTS,irradiance_mw_cm2:1});close(w.photo_current_ua,50);close(w.output_v,-2.5);});
+test('dark zero is independent calibration, not10V datasheet current',()=>{const p={...DEFAULTS,zero_current_ua:.1},zero=zeroCalibration(p),r=measurement(p,zero);close(zero.raw.output_v,-.005);close(r.derived.corrected_photo_current_ua,25);});
+test('TIA overrange is invalid instead of an invented clipped bias point',()=>{const p={...DEFAULTS,irradiance_mw_cm2:1,feedback_kohm:200},w=workingPoint(p);assert.equal(w.linear_valid,false);assert.equal(w.output_v,null);assert.throws(()=>measurement(p,zeroCalibration(p)));});
+test('calibration source and resistor must match',()=>{const zero=zeroCalibration(DEFAULTS);assert.throws(()=>measurement({...DEFAULTS,feedback_kohm:100},zero));assert.throws(()=>measurement(DEFAULTS,zero,'ideal-model'));});
+test('fixed wavelength and bias identity cannot be extrapolated',()=>{assert.throws(()=>validateParameters({...DEFAULTS,wavelength_nm:532}));assert.throws(()=>validateParameters({...DEFAULTS,reverse_bias_v:10}));});

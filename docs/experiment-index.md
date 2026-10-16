@@ -310,6 +310,8 @@
 
 [实验入口](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/wheatstone-bridge/README.md) · [报告](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/wheatstone-bridge/report/report.md) · [Jupyter](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/wheatstone-bridge/notebooks/analysis.ipynb) · [Wolfram](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/WheatstoneBridgeLab/Notebooks/WheatstoneBridgeLab.nb) · [源PDF](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/pdf/course-03/9%E5%8D%95%E8%87%82%E7%94%B5%E6%A1%A5%E6%B5%8B%E7%94%B5%E9%98%BB/%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A-%E5%8D%95%E8%87%82%E7%94%B5%E6%A1%A5%E6%B5%8B%E7%94%B5%E9%98%BB.pdf)
 
+[虚拟实验](https://hnnuyuxuan.github.io/general-physics-lab/simulations/wheatstone-bridge/index.html) · [模型依据](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/wheatstone-bridge-model-evidence.md) · [浏览器模型](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/wheatstone-bridge/model.mjs) · [观测对照](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/wheatstone-bridge/observations.json) · [文献题录](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/wheatstone-bridge-references.json) · [数值验证](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/simulation/wheatstone-bridge-reference.json)
+
 
 ### 用直流双臂电桥测低电阻 · Low Resistance and Resistivity with a Kelvin Double Bridge
 
@@ -320,6 +322,8 @@
 主题：低电阻比较测量；四端接法；导体电阻率；截面积敏感性。方法：面板比率换算平衡电阻；逐长度电阻率计算；电阻长度含截距回归；拟合斜率反演电阻率；直径平方敏感性扫描。
 
 [实验入口](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/kelvin-bridge/README.md) · [报告](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/kelvin-bridge/report/report.md) · [Jupyter](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/kelvin-bridge/notebooks/analysis.ipynb) · [Wolfram](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/KelvinBridgeLab/Notebooks/KelvinBridgeLab.nb) · [源PDF](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/pdf/course-03/10%E7%94%A8%E7%9B%B4%E6%B5%81%E5%8F%8C%E8%87%82%E7%94%B5%E6%A1%A5%E6%B5%8B%E4%BD%8E%E7%94%B5%E9%98%BB/%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A-%E7%9B%B4%E6%B5%81%E5%8F%8C%E8%87%82%E7%94%B5%E6%A1%A5%E6%B5%8B%E4%BD%8E%E7%94%B5%E9%98%BB.pdf)
+
+[虚拟实验](https://hnnuyuxuan.github.io/general-physics-lab/simulations/kelvin-bridge/index.html) · [模型依据](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/kelvin-bridge-model-evidence.md) · [浏览器模型](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/kelvin-bridge/model.mjs) · [观测对照](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/kelvin-bridge/observations.json) · [文献题录](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/kelvin-bridge-references.json) · [数值验证](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/simulation/kelvin-bridge-reference.json)
 
 
 ### RLC串联电路谐振特性的研究 · Resonance of a Series RLC Circuit
@@ -345,6 +349,8 @@
 
 [实验入口](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/ac-bridge/README.md) · [报告](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/ac-bridge/report/report.md) · [Jupyter](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/ac-bridge/notebooks/analysis.ipynb) · [Wolfram](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/ACBridgeLab/Notebooks/ACBridgeLab.nb) · [源PDF](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/pdf/course-03/12%E4%BA%A4%E6%B5%81%E7%94%B5%E6%A1%A5/%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A-%E4%BA%A4%E6%B5%81%E7%94%B5%E6%A1%A5.pdf)
 
+[虚拟实验](https://hnnuyuxuan.github.io/general-physics-lab/simulations/ac-bridge/index.html) · [模型依据](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/ac-bridge-model-evidence.md) · [浏览器模型](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/ac-bridge/model.mjs) · [观测对照](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/ac-bridge/observations.json) · [文献题录](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/ac-bridge-references.json) · [数值验证](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/simulation/ac-bridge-reference.json)
+
 
 ### 光敏传感器光电特性研究 · Photocell Load Response and Circuit Consistency
 
@@ -355,6 +361,8 @@
 主题：光电转换；光电池负载回路；取样电流；单二极管归一化模型。方法：取样压降换算电流；端电压与串联回路差检查；共同负载位置响应比较；四位置原记录切换；单二极管无量纲形状扫描。
 
 [实验入口](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/photosensor/README.md) · [报告](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/photosensor/report/report.md) · [Jupyter](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/photosensor/notebooks/analysis.ipynb) · [Wolfram](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/PhotosensorLab/Notebooks/PhotosensorLab.nb) · [源PDF](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/pdf/course-03/13%E5%85%89%E6%95%8F%E4%BC%A0%E6%84%9F%E5%99%A8%E5%85%89%E7%94%B5%E7%89%B9%E6%80%A7%E7%A0%94%E7%A9%B6/%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A-%E5%85%89%E6%95%8F%E4%BC%A0%E6%84%9F%E5%99%A8%E5%85%89%E7%94%B5%E7%89%B9%E6%80%A7%E7%A0%94%E7%A9%B6.pdf)
+
+[虚拟实验](https://hnnuyuxuan.github.io/general-physics-lab/simulations/photosensor/index.html) · [模型依据](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/photosensor-model-evidence.md) · [浏览器模型](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/photosensor/model.mjs) · [观测对照](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/photosensor/observations.json) · [文献题录](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/photosensor-references.json) · [数值验证](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/simulation/photosensor-reference.json)
 
 
 ## 普通物理实验 4 · 14项
@@ -391,6 +399,8 @@
 
 [实验入口](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/prism-refractive-index/README.md) · [报告](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/prism-refractive-index/report/report.md) · [Jupyter](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/prism-refractive-index/notebooks/analysis.ipynb) · [Wolfram](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/PrismRefractiveIndexLab/Notebooks/PrismRefractiveIndexLab.nb) · [源PDF](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/pdf/course-04/03_%E5%AE%9E%E9%AA%8C%E4%B8%89_%E4%B8%89%E6%A3%B1%E9%95%9C%E6%8A%98%E5%B0%84%E7%8E%87%E7%9A%84%E6%B5%8B%E5%AE%9A_%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A.pdf)
 
+[虚拟实验](https://hnnuyuxuan.github.io/general-physics-lab/simulations/prism-refractive-index/index.html) · [模型依据](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/prism-refractive-index-model-evidence.md) · [浏览器模型](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/prism-refractive-index/model.mjs) · [观测对照](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/prism-refractive-index/observations.json) · [文献题录](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/prism-refractive-index-references.json) · [数值验证](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/simulation/prism-refractive-index-reference.json)
+
 
 ### 用掠射法测定透明介质的折射率 · Liquid Refractive Index by Grazing Incidence with a Right-Angle Prism
 
@@ -412,6 +422,8 @@
 主题：光栅衍射；谱线波长；角度色散；标定与回代。方法：同级双侧谱线圆周角差配对；绿线波长标定光栅常数 / diffraction grating calibration；其他谱线波长反演；重复性传播与游标一致性检查；黄线角间隔色散比较。
 
 [实验入口](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/transmission-grating/README.md) · [报告](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/transmission-grating/report/report.md) · [Jupyter](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/transmission-grating/notebooks/analysis.ipynb) · [Wolfram](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/TransmissionGratingLab/Notebooks/TransmissionGratingLab.nb) · [源PDF](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/pdf/course-04/05_%E5%AE%9E%E9%AA%8C%E4%BA%94_%E7%94%A8%E9%80%8F%E5%B0%84%E5%85%89%E6%A0%85%E6%B5%8B%E5%AE%9A%E5%85%89%E6%B3%A2%E6%B3%A2%E9%95%BF_%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A.pdf)
+
+[虚拟实验](https://hnnuyuxuan.github.io/general-physics-lab/simulations/transmission-grating/index.html) · [模型依据](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/transmission-grating-model-evidence.md) · [浏览器模型](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/transmission-grating/model.mjs) · [观测对照](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/transmission-grating/observations.json) · [文献题录](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/transmission-grating-references.json) · [数值验证](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/simulation/transmission-grating-reference.json)
 
 
 ### 用光学仪器测量放大率和微小长度 · Optical Magnification and Microscopic Length Measurement
@@ -459,6 +471,8 @@
 
 [实验入口](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/thin-lens/README.md) · [报告](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/thin-lens/report/report.md) · [Jupyter](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/thin-lens/notebooks/analysis.ipynb) · [Wolfram](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/ThinLensLab/Notebooks/ThinLensLab.nb) · [源PDF](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/pdf/course-04/09_%E5%AE%9E%E9%AA%8C%E4%B9%9D_%E8%96%84%E9%80%8F%E9%95%9C%E7%84%A6%E8%B7%9D%E7%9A%84%E6%B5%8B%E5%AE%9A_%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A.pdf)
 
+[虚拟实验](https://hnnuyuxuan.github.io/general-physics-lab/simulations/thin-lens/index.html) · [模型依据](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/thin-lens-model-evidence.md) · [浏览器模型](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/thin-lens/model.mjs) · [观测对照](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/thin-lens/observations.json) · [文献题录](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/thin-lens-references.json) · [数值验证](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/simulation/thin-lens-reference.json)
+
 
 ### 偏振光的观察与分析 · Polarization, Malus's Law and Brewster's Angle
 
@@ -469,6 +483,8 @@
 主题：线偏振；反射偏振；马吕斯关系；恒定背景电流。方法：布儒斯特角平均反推折射率；方向余弦平方线性化；光电流带背景拟合与残差；角度重复性传播 / repeatability uncertainty propagation；检偏器零点模型扫描。
 
 [实验入口](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/polarization/README.md) · [报告](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/polarization/report/report.md) · [Jupyter](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/polarization/notebooks/analysis.ipynb) · [Wolfram](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/PolarizationLab/Notebooks/PolarizationLab.nb) · [源PDF](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/pdf/course-04/10_%E5%AE%9E%E9%AA%8C%E5%8D%81_%E5%81%8F%E6%8C%AF%E5%85%89%E7%9A%84%E8%A7%82%E5%AF%9F%E4%B8%8E%E5%88%86%E6%9E%90.pdf)
+
+[虚拟实验](https://hnnuyuxuan.github.io/general-physics-lab/simulations/polarization/index.html) · [模型依据](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/polarization-model-evidence.md) · [浏览器模型](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/polarization/model.mjs) · [观测对照](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/polarization/observations.json) · [文献题录](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/polarization-references.json) · [数值验证](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/simulation/polarization-reference.json)
 
 
 ### 用旋光仪测定旋光性溶液的旋光率和浓度 · Optical Rotation and Conditional Solution Concentration by Polarimetry
@@ -481,6 +497,8 @@
 
 [实验入口](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/optical-rotation/README.md) · [报告](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/optical-rotation/report/report.md) · [Jupyter](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/optical-rotation/notebooks/analysis.ipynb) · [Wolfram](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/OpticalRotationLab/Notebooks/OpticalRotationLab.nb) · [源PDF](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/pdf/course-04/11_%E5%AE%9E%E9%AA%8C%E5%8D%81%E4%B8%80_%E7%94%A8%E6%97%8B%E5%85%89%E4%BB%AA%E6%B5%8B%E5%AE%9A%E6%97%8B%E5%85%89%E6%80%A7%E6%BA%B6%E6%B6%B2%E7%9A%84%E6%97%8B%E5%85%89%E7%8E%87%E5%92%8C%E6%B5%93%E5%BA%A6_%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A_A3%E5%8F%8C%E9%9D%A2%E7%A4%BA%E8%8C%83%E6%A0%BC%E5%BC%8F%E7%89%88.pdf)
 
+[虚拟实验](https://hnnuyuxuan.github.io/general-physics-lab/simulations/optical-rotation/index.html) · [模型依据](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/optical-rotation-model-evidence.md) · [浏览器模型](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/optical-rotation/model.mjs) · [观测对照](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/optical-rotation/observations.json) · [文献题录](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/optical-rotation-references.json) · [数值验证](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/simulation/optical-rotation-reference.json)
+
 
 ### 单缝衍射光强分布研究 · Single-Slit Diffraction and Intensity Distribution
 
@@ -491,6 +509,8 @@
 主题：夫琅禾费衍射；暗纹几何；狭缝宽度；归一化光强。方法：四级暗纹逐级缝宽反演；过原点缝宽拟合；带截距中心偏移检查；精确正弦几何修正；归一化扫描与缝宽模型比较。
 
 [实验入口](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/single-slit-diffraction/README.md) · [报告](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/single-slit-diffraction/report/report.md) · [Jupyter](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/single-slit-diffraction/notebooks/analysis.ipynb) · [Wolfram](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/notebook/paclets/SingleSlitDiffractionLab/Notebooks/SingleSlitDiffractionLab.nb) · [源PDF](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/pdf/course-04/12_%E5%AE%9E%E9%AA%8C%E5%8D%81%E4%BA%8C_%E5%8D%95%E7%BC%9D%E8%A1%8D%E5%B0%84%E5%85%89%E5%BC%BA%E5%88%86%E5%B8%83%E7%A0%94%E7%A9%B6.pdf)
+
+[虚拟实验](https://hnnuyuxuan.github.io/general-physics-lab/simulations/single-slit-diffraction/index.html) · [模型依据](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/single-slit-diffraction-model-evidence.md) · [浏览器模型](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/single-slit-diffraction/model.mjs) · [观测对照](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/single-slit-diffraction/observations.json) · [文献题录](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/single-slit-diffraction-references.json) · [数值验证](https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/simulation/single-slit-diffraction-reference.json)
 
 
 ### 阿贝成像原理和空间滤波 · Abbe Imaging and Spatial Filtering

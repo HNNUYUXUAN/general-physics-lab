@@ -1,5 +1,8 @@
 [普通物理实验 1](../README.md) · [项目首页](../../../README.md) · [使用指南](../../../docs/usage.md)
 
+<!-- virtual-laboratory-entry -->
+[在线虚拟实验](https://hnnuyuxuan.github.io/general-physics-lab/simulations/pendulum/) · [模型依据与参数来源](../../../docs/pendulum-model-evidence.md)
+
 # 单摆测重力加速度
 
 **用长度和时间测量重力，用残差和摆角理解模型。**

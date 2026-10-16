@@ -1,0 +1,185 @@
+{
+  "status": "passed",
+  "source_record_sha256": "28114a53b9efd696aef7e661c29a8549c9cecfb9c3cfb75d83cc3b8de84e2443",
+  "interaction_checks": 6,
+  "visual_status": "passed",
+  "exports_status": "passed",
+  "exports": [
+    {
+      "filename": "prism-refractive-index-prism-refractive-index-experiment.json",
+      "sha256": "633ac708266be18ee6484810fa8a85059f20beb7a052436c569a27d9133fbc4b",
+      "bytes": 5061
+    },
+    {
+      "filename": "prism-refractive-index-prism-refractive-index-records.csv",
+      "sha256": "eacedd530520dafbceff9b3ebddd2ae80e226221c697090354b7fbf4b4b6469a",
+      "bytes": 942
+    }
+  ],
+  "fonts": {
+    "h1": {
+      "fonts": [
+        {
+          "familyName": "SimSun",
+          "postScriptName": "SimSun",
+          "isCustomFont": false,
+          "glyphCount": 9
+        }
+      ]
+    },
+    "#count": {
+      "fonts": [
+        {
+          "familyName": "Times New Roman",
+          "postScriptName": "TimesNewRomanPSMT",
+          "isCustomFont": false,
+          "glyphCount": 1
+        }
+      ]
+    }
+  },
+  "browser": null,
+  "layout": {
+    "mobile": {
+      "width": 390,
+      "scrollWidth": 390,
+      "mathErrors": 0,
+      "mathObjects": 12
+    }
+  },
+  "interaction": [
+    {
+      "name": "最小偏向折射率反演",
+      "status": "passed"
+    },
+    {
+      "name": "材料改变后寻极小",
+      "status": "passed"
+    },
+    {
+      "name": "全反射状态",
+      "status": "passed"
+    },
+    {
+      "name": "恢复合法光路",
+      "status": "passed"
+    },
+    {
+      "name": "非法折射率后的保存动作被阻断",
+      "status": "passed"
+    },
+    {
+      "name": "真实双格式导出与刷新恢复",
+      "status": "passed"
+    }
+  ],
+  "background": {
+    "status": "not-applicable"
+  },
+  "checked_at_utc": null,
+  "screenshots": [
+    {
+      "path": "docs/assets/simulations/prism-refractive-index/frontend-01-f1f8c8a99965.png",
+      "sha256": "f1f8c8a999654fd7cd8eebe667059cb902385a7309c74ddd702b8acbed28a4f7"
+    },
+    {
+      "path": "docs/assets/simulations/prism-refractive-index/frontend-02-12c2284f78c0.png",
+      "sha256": "12c2284f78c09bd9ebb90664f17ce7b6c044ab5dff58442eca95214956c0c5c6"
+    },
+    {
+      "path": "docs/assets/simulations/prism-refractive-index/frontend-03-d42130e8075e.png",
+      "sha256": "d42130e8075ed561273860f3c551c9d7303aafe37bf4ac6eba61a90355462fb4"
+    },
+    {
+      "path": "docs/assets/simulations/prism-refractive-index/frontend-04-bb1db4adcfc3.png",
+      "sha256": "bb1db4adcfc35bebb89de811cd306d399bedb1eab360a807ddf24c7f9b01aa64"
+    },
+    {
+      "path": "docs/assets/simulations/prism-refractive-index/frontend-05-127e4d5a12b4.png",
+      "sha256": "127e4d5a12b4bb6817464aab643d291563a77235c4da223b2921f7ca7132a2d6"
+    },
+    {
+      "path": "docs/assets/simulations/prism-refractive-index/frontend-06-a594e1d2391d.png",
+      "sha256": "a594e1d2391d8861833b60c50d8b8844ce1bbe5a7913fc2f7aa82eb50945a8a7"
+    },
+    {
+      "path": "docs/assets/simulations/prism-refractive-index/frontend-07-360034177f3c.png",
+      "sha256": "360034177f3c37e1530ea900517c9009ae505bccacbe9299cde1957ce94e0a27"
+    },
+    {
+      "path": "docs/assets/simulations/prism-refractive-index/frontend-08-53d9aba8a525.png",
+      "sha256": "53d9aba8a525ef175c3ff40ca9703d6b81c00c978544651739068528894b45ce"
+    }
+  ],
+  "schema_version": 1,
+  "experiment_id": "course-04/prism-refractive-index",
+  "numerical": {
+    "status": "passed",
+    "reference_sha256": "9724bdbc22659ee16f5487f9ec6e064d7ad2a762f1dabbf7e5cfee241176667a",
+    "source_files": {
+      "simulations/prism-refractive-index/index.html": "1f0246ebe405408416f47d946efa31b27c626ab31ca85f2cdf50db071b31c98e",
+      "simulations/prism-refractive-index/model.mjs": "6d816752f0bef9b74f47be30cabac8d95c41d837bedd536ee09cef457065c0e2",
+      "simulations/prism-refractive-index/app.mjs": "563cb13387ba4ad884fdb77ed731e86e33a08c262a7743325a70118b2bbe1817",
+      "simulations/prism-refractive-index/chart.mjs": "2cf283ea545418aed75f6175e6feb7c82983f7ed523e6b0ffb0e0723fcf1b5d7",
+      "simulations/prism-refractive-index/lab.css": "f09f3aa9916b0574f112d367ac0e713575f0e59ad9f239ee81e452953681e20c",
+      "simulations/prism-refractive-index/observations.json": "d6d6c8b41af519a665eec21ea98b42bbc7e6554ff4251025929489490eb3b98e",
+      "docs/prism-refractive-index-model-evidence.md": "73943403e9247d8fa7917aed703be7ee08afd265919ab0ef5d52d3d231c48746",
+      "docs/prism-refractive-index-references.json": "2d8f6271ce11f8f99003735025c7a08ea4bad526ee348e164166392d548995a3",
+      "docs/prism-refractive-index-references.bib": "2d716d8b38a5883f6bee3ea6205b26fc2cb047326d3bca882bd2a0906a45e81f",
+      "docs/simulation/prism-refractive-index-reference.json": "af14c449eee657a6ff2ac4ee2fd78d2ebc969809e821ca5fc8e342024f20c4e5",
+      "scripts/validate_prism_refractive_index_simulation.py": "4fff81f7957870bceee7d6a9ce1e20ee83bd49faaa8a045bffe267a618f99203",
+      "tests/prism-refractive-index-model.test.mjs": "38d689f1b5bcd788ca8fd972b9c9bd2173cd0eb37e6ac819bbd535f8ba52bc7e"
+    }
+  },
+  "scientific_evidence": {
+    "status": "verified",
+    "decision_source_files": {
+      "docs/prism-refractive-index-references.json": "2d8f6271ce11f8f99003735025c7a08ea4bad526ee348e164166392d548995a3",
+      "docs/prism-refractive-index-model-evidence.md": "73943403e9247d8fa7917aed703be7ee08afd265919ab0ef5d52d3d231c48746",
+      "simulations/prism-refractive-index/model.mjs": "6d816752f0bef9b74f47be30cabac8d95c41d837bedd536ee09cef457065c0e2"
+    },
+    "core_references": [
+      {
+        "id": "TanWu2024PrismMethods",
+        "pdf_sha256": "b4335b9daec3d5a1a326ae004c0772cfe600d97e3d6c986a2436ad20ccef440a",
+        "locators": [
+          {
+            "printed_pages": "174-175",
+            "pdf_pages": [
+              3,
+              4
+            ],
+            "location": "第2.3节，图5-6，公式(8)-(19)",
+            "role": "两面Snell、几何偏向、对称最小值、反演以及望远镜寻转向点"
+          },
+          {
+            "printed_pages": "173",
+            "pdf_pages": [
+              2
+            ],
+            "location": "第1节及第2.1节",
+            "role": "论文仪器分度及自准直顶角方法的范围区分"
+          },
+          {
+            "printed_pages": "176-177",
+            "pdf_pages": [
+              5,
+              6
+            ],
+            "location": "结果讨论及参考文献",
+            "role": "参数身份、该批次结果范围与后续题名提取"
+          }
+        ]
+      }
+    ]
+  },
+  "source_hashes": {
+    "simulations/prism-refractive-index/angles.mjs": "b25e2fa4341846209d68acaed83cf06b40c0b3902af9fbdaa94d8cdbb92796eb",
+    "simulations/prism-refractive-index/app.mjs": "563cb13387ba4ad884fdb77ed731e86e33a08c262a7743325a70118b2bbe1817",
+    "simulations/prism-refractive-index/chart.mjs": "2cf283ea545418aed75f6175e6feb7c82983f7ed523e6b0ffb0e0723fcf1b5d7",
+    "simulations/prism-refractive-index/index.html": "1f0246ebe405408416f47d946efa31b27c626ab31ca85f2cdf50db071b31c98e",
+    "simulations/prism-refractive-index/lab.css": "f09f3aa9916b0574f112d367ac0e713575f0e59ad9f239ee81e452953681e20c",
+    "simulations/prism-refractive-index/model.mjs": "6d816752f0bef9b74f47be30cabac8d95c41d837bedd536ee09cef457065c0e2",
+    "simulations/prism-refractive-index/observations.json": "d6d6c8b41af519a665eec21ea98b42bbc7e6554ff4251025929489490eb3b98e"
+  }
+}

@@ -22,7 +22,7 @@
 
 |你想做什么|选择什么|在哪里使用|
 |---|---|---|
-|操作虚拟装置、测量并检验物理关系|**[虚拟实验平台](https://hnnuyuxuan.github.io/general-physics-lab/simulations/)**|单摆计时、RLC扫频、牛顿环测微与驻波测量；可导出实验记录|
+|操作虚拟装置、测量并检验物理关系|**[虚拟实验平台](https://hnnuyuxuan.github.io/general-physics-lab/simulations/)**|运动、波动、电路与光学测量；可导出实验记录|
 |快速读完实验、查数据与结论|**实验报告** `report.md`|GitHub 或支持数学公式的 Markdown 阅读器|
 |查看图表、操作已有滑块或菜单|**[在线 HTML 计算阅读版](https://hnnuyuxuan.github.io/general-physics-lab/)**|直接在浏览器访问；下载后也可使用[本地预览](docs/usage.md#在浏览器中查看-html)|
 |逐步运行 Python、修改数据或模型|**Jupyter Notebook** `analysis.ipynb`|JupyterLab 或 VS Code|
@@ -75,7 +75,7 @@
 
 [进入单摆虚拟实验](https://hnnuyuxuan.github.io/general-physics-lab/simulations/pendulum/)，调节摆长和初始摆角，观察非线性运动，再用自动或手动计时收集多组数据。页面实时拟合 $T^2$ 与 $L$ 的关系，展示有限摆角对重力估计的影响，并提供原报告读数作为独立对照。实验记录可导出为 CSV 或 JSON。
 
-从[虚拟实验目录](simulations/README.md)还可以进入 RLC 谐振、牛顿环与弦振动，分别练习幅相测量、条纹测微和波节间距测量。
+从[虚拟实验目录](simulations/README.md)选择运动、波动、电路或光学实验，练习计时、调零、幅相测量、条纹测微和游标测角。
 
 模型方程、参数来源、适用范围和逐页文献依据见[单摆模型依据](docs/pendulum-model-evidence.md)。系列平台的开发路径见[开发方案](docs/virtual-lab-development.md)，复现与扩展见[虚拟实验维护指南](docs/virtual-lab-agent-guide.md)。
 

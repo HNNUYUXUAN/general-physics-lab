@@ -1,0 +1,228 @@
+{
+  "status": "passed",
+  "source_record_sha256": "20dad4efbb906cc73cbbf4ac6d51ed068432cae9ca011a38f84eb0f42e31b6a8",
+  "interaction_checks": 20,
+  "visual_status": "passed",
+  "exports_status": "passed",
+  "exports": [
+    {
+      "filename": "1-wheatstone-bridge-records.csv",
+      "sha256": "19f33d63d12b68c89ddc6ca301f96d7d56ff2a53554248b05a3cda21cabf49e3",
+      "bytes": 772
+    },
+    {
+      "filename": "2-wheatstone-bridge-records.json",
+      "sha256": "a1ca60be277db19584d229c19d2a44ae72ae00d1f9ff71da48ebdf58f45fd7e8",
+      "bytes": 2282
+    }
+  ],
+  "fonts": {
+    "h1": [
+      {
+        "familyName": "SimSun",
+        "postScriptName": "SimSun",
+        "isCustomFont": false,
+        "glyphCount": 8
+      }
+    ],
+    "#summary": [
+      {
+        "familyName": "Times New Roman",
+        "postScriptName": "TimesNewRomanPSMT",
+        "isCustomFont": false,
+        "glyphCount": 43
+      }
+    ]
+  },
+  "browser": "fixed Playwright Chromium 1243",
+  "layout": {
+    "wide": {
+      "width": 1280,
+      "scrollWidth": 1280,
+      "math": 10,
+      "mathErrors": 0
+    },
+    "narrow": {
+      "width": 390,
+      "scrollWidth": 390,
+      "math": 10,
+      "mathErrors": 0
+    }
+  },
+  "interaction": [
+    {
+      "name": "ratio=0.1",
+      "status": "passed"
+    },
+    {
+      "name": "ratio=1",
+      "status": "passed"
+    },
+    {
+      "name": "ratio=10",
+      "status": "passed"
+    },
+    {
+      "name": "ratio=100",
+      "status": "passed"
+    },
+    {
+      "name": "unknown=10",
+      "status": "passed"
+    },
+    {
+      "name": "unknown=100000",
+      "status": "passed"
+    },
+    {
+      "name": "comparison=0.1",
+      "status": "passed"
+    },
+    {
+      "name": "comparison=1000000",
+      "status": "passed"
+    },
+    {
+      "name": "E=0.1",
+      "status": "passed"
+    },
+    {
+      "name": "E=10",
+      "status": "passed"
+    },
+    {
+      "name": "RG=10",
+      "status": "passed"
+    },
+    {
+      "name": "RG=100000",
+      "status": "passed"
+    },
+    {
+      "name": "原表 balance",
+      "status": "passed"
+    },
+    {
+      "name": "默认设置读数与记录",
+      "status": "passed"
+    },
+    {
+      "name": "测量闭环与同组分析",
+      "status": "passed"
+    },
+    {
+      "name": "调零与平衡操作",
+      "status": "passed"
+    },
+    {
+      "name": "非法编辑blur后不得记录",
+      "status": "passed"
+    },
+    {
+      "name": "恢复删除与清空",
+      "status": "passed"
+    },
+    {
+      "name": "真实CSV/JSON导出与元数据",
+      "status": "passed"
+    },
+    {
+      "name": "restore",
+      "status": "passed"
+    }
+  ],
+  "background": {
+    "status": "not-applicable"
+  },
+  "checked_at_utc": "2026-10-16T16:12:47.817Z",
+  "screenshots": [
+    {
+      "path": "docs/assets/simulations/wheatstone-bridge/frontend-01-b0b0aa3d05ac.png",
+      "sha256": "b0b0aa3d05ac6f8b39e03529fa6d4b938229a5fc1d970fb9dd00d77d623d6210"
+    },
+    {
+      "path": "docs/assets/simulations/wheatstone-bridge/frontend-02-1f32b602bc55.png",
+      "sha256": "1f32b602bc557733223b6cf855fa60315bd5770e0106830d6256fc4b9fa0479b"
+    },
+    {
+      "path": "docs/assets/simulations/wheatstone-bridge/frontend-03-399862329df1.png",
+      "sha256": "399862329df1155791465570525fe8e292a8d2d2f1165c84ce46a40a120700c9"
+    },
+    {
+      "path": "docs/assets/simulations/wheatstone-bridge/frontend-04-e67a181c4cea.png",
+      "sha256": "e67a181c4cea4fbc9c74b471f1d914e28ae0c45d1d87e15c5c7b27d3639b5a95"
+    },
+    {
+      "path": "docs/assets/simulations/wheatstone-bridge/frontend-05-b83a38911078.png",
+      "sha256": "b83a38911078534c71d7d6dc9b392102802acde621ae96674be5571f7f00b526"
+    },
+    {
+      "path": "docs/assets/simulations/wheatstone-bridge/frontend-06-fe36de9a5d02.png",
+      "sha256": "fe36de9a5d026f934cf3b8b38d80f03bb91342c142e53616ecc319158134d7d4"
+    },
+    {
+      "path": "docs/assets/simulations/wheatstone-bridge/frontend-07-b16190ac78a0.png",
+      "sha256": "b16190ac78a0ead5828d0a49cac60679ea67b7d373fdd1dcbec114dfa5589a83"
+    },
+    {
+      "path": "docs/assets/simulations/wheatstone-bridge/frontend-08-08ecc10cbd38.png",
+      "sha256": "08ecc10cbd384a4d843851b43205a961501b056f1b18c74a092b74227a6ba4b1"
+    },
+    {
+      "path": "docs/assets/simulations/wheatstone-bridge/frontend-09-9680a17a6fd4.png",
+      "sha256": "9680a17a6fd408c9146052642bac15546c36bbccb041d3f6647359dd72a58ca8"
+    },
+    {
+      "path": "docs/assets/simulations/wheatstone-bridge/frontend-10-a52b3750f4ff.png",
+      "sha256": "a52b3750f4ff61d72a0886c7a0f45508a9afd628455ae9ab05a0593ec797b3d2"
+    }
+  ],
+  "schema_version": 1,
+  "experiment_id": "course-03/wheatstone-bridge",
+  "numerical": {
+    "status": "passed",
+    "reference_sha256": "73c8376ffb39faf5c5fc8214f028a8a757f73a5b3dacd8387aba4144f3a57451",
+    "source_files": {
+      "simulations/wheatstone-bridge/index.html": "616ae811ab025e2ccc9b950da9446e70f7b502a12436f5cf167937bf5d0416fa",
+      "simulations/wheatstone-bridge/model.mjs": "b5696b34a71627a1b27678ba79e89699d30f0364a5a31abd797a912894544dbb",
+      "simulations/wheatstone-bridge/app.mjs": "ad789f021fb8766918acf476eee23262ee89a0af7580acbc7a80221c461b4afa",
+      "simulations/wheatstone-bridge/chart.mjs": "7661b7bfc2fe4ac33d2ab50733687b64f47c7110505e27c14c80c42c38df82dd",
+      "simulations/wheatstone-bridge/lab.css": "d007905ee689191cb3d99caebe74d1e5e924b6fd068c7a81d2417c75219b6169",
+      "simulations/wheatstone-bridge/observations.json": "38fae7738ee2db78830b7c5f6b99abb5d6d1a9351ffe67d302cd43cf42e404b4",
+      "docs/wheatstone-bridge-model-evidence.md": "5ab73c59fbf97e701da69711a6131f2cdb9bfe1ceff3f4465ca27d29b4e5a542",
+      "docs/wheatstone-bridge-references.json": "7d7ec5939c1617db76768f23f5d175dac957adef2f5b050220ebe3f870e24bbe",
+      "docs/wheatstone-bridge-references.bib": "5945fe329b136772af1ba502ed453253125a36e2aa5f5c7da76a6e210ac052a1",
+      "docs/simulation/wheatstone-bridge-reference.json": "73c8376ffb39faf5c5fc8214f028a8a757f73a5b3dacd8387aba4144f3a57451",
+      "scripts/validate_wheatstone_bridge_simulation.py": "f45385809bb21b6f34a8ab5b92abe9454b5afbdef83b901c51e15b9ec0370459",
+      "tests/wheatstone-bridge-model.test.mjs": "5366f9dccf4eefde0e25ac0b0c4e1f79967832be0ce884b3b19df4103068fe02"
+    }
+  },
+  "scientific_evidence": {
+    "status": "verified",
+    "decision_source_files": {
+      "docs/wheatstone-bridge-references.json": "7d7ec5939c1617db76768f23f5d175dac957adef2f5b050220ebe3f870e24bbe",
+      "docs/wheatstone-bridge-model-evidence.md": "5ab73c59fbf97e701da69711a6131f2cdb9bfe1ceff3f4465ca27d29b4e5a542",
+      "simulations/wheatstone-bridge/model.mjs": "b5696b34a71627a1b27678ba79e89699d30f0364a5a31abd797a912894544dbb"
+    },
+    "core_references": [
+      {
+        "id": "yang2017bridges",
+        "pdf_sha256": "4720641e78d39df9ef02036648e4f7cbc40f3eaa5f26ffcb658fe56b367aecd3",
+        "locators": [
+          "p.37 section 2.1 equation (1), section 2.2 Kirchhoff equations",
+          "p.38 section 3.2 equation (3)"
+        ]
+      }
+    ]
+  },
+  "source_hashes": {
+    "simulations/wheatstone-bridge/model.mjs": "b5696b34a71627a1b27678ba79e89699d30f0364a5a31abd797a912894544dbb",
+    "simulations/wheatstone-bridge/app.mjs": "ad789f021fb8766918acf476eee23262ee89a0af7580acbc7a80221c461b4afa",
+    "simulations/wheatstone-bridge/chart.mjs": "7661b7bfc2fe4ac33d2ab50733687b64f47c7110505e27c14c80c42c38df82dd",
+    "simulations/wheatstone-bridge/lab.css": "d007905ee689191cb3d99caebe74d1e5e924b6fd068c7a81d2417c75219b6169",
+    "simulations/wheatstone-bridge/observations.json": "38fae7738ee2db78830b7c5f6b99abb5d6d1a9351ffe67d302cd43cf42e404b4",
+    "simulations/wheatstone-bridge/diagram.mjs": "5e71ba9c102e229339bdb858e52924b6927a83c25e04e9016fcf133388b5fa90",
+    "simulations/wheatstone-bridge/ui-config.json": "e151af16afee5b1b1e0910823557b895d0faf5b68322363daed7ee7d1db6a87c",
+    "simulations/wheatstone-bridge/index.html": "616ae811ab025e2ccc9b950da9446e70f7b502a12436f5cf167937bf5d0416fa"
+  }
+}

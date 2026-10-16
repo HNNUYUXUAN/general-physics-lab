@@ -1,0 +1,204 @@
+{
+  "status": "passed",
+  "source_record_sha256": "f0d96f8655f6215bb7be8fe2a4cf72e93bb0a6c9dff8fd256eec47f0ecac089e",
+  "interaction_checks": 6,
+  "visual_status": "passed",
+  "exports_status": "passed",
+  "exports": [
+    {
+      "filename": "polarization-polarization-experiment.json",
+      "sha256": "54db5ba93578b802ef691443e2bdf0106fa544f35ad9e59c3bdd98029f24bedb",
+      "bytes": 7321
+    },
+    {
+      "filename": "polarization-polarization-records.csv",
+      "sha256": "a03f156fb23eb96d4735b40e7068159f9018233db8726288af476d0a1cde461d",
+      "bytes": 1487
+    }
+  ],
+  "fonts": {
+    "h1": {
+      "fonts": [
+        {
+          "familyName": "SimSun",
+          "postScriptName": "SimSun",
+          "isCustomFont": false,
+          "glyphCount": 7
+        }
+      ]
+    },
+    "#count": {
+      "fonts": [
+        {
+          "familyName": "Times New Roman",
+          "postScriptName": "TimesNewRomanPSMT",
+          "isCustomFont": false,
+          "glyphCount": 1
+        }
+      ]
+    }
+  },
+  "browser": null,
+  "layout": {
+    "mobile": {
+      "width": 390,
+      "scrollWidth": 390,
+      "mathErrors": 0,
+      "mathObjects": 13
+    }
+  },
+  "interaction": [
+    {
+      "name": "Malus自动扫描与拟合",
+      "status": "passed"
+    },
+    {
+      "name": "四分之一波片圆偏振",
+      "status": "passed"
+    },
+    {
+      "name": "反射参数改变",
+      "status": "passed"
+    },
+    {
+      "name": "非法折射率恢复",
+      "status": "passed"
+    },
+    {
+      "name": "非法折射率后的保存动作被阻断",
+      "status": "passed"
+    },
+    {
+      "name": "真实双格式导出与刷新恢复",
+      "status": "passed"
+    }
+  ],
+  "background": {
+    "status": "not-applicable"
+  },
+  "checked_at_utc": null,
+  "screenshots": [
+    {
+      "path": "docs/assets/simulations/polarization/frontend-01-55088e0abcce.png",
+      "sha256": "55088e0abccee5296efc1e456b5d27f3e7f34e468aab4d0870f236295a77e317"
+    },
+    {
+      "path": "docs/assets/simulations/polarization/frontend-02-09064d243af9.png",
+      "sha256": "09064d243af9c12d866f82154259ca58685344c63b276c527212a737fef7f880"
+    },
+    {
+      "path": "docs/assets/simulations/polarization/frontend-03-7c36ceb4ea03.png",
+      "sha256": "7c36ceb4ea038bea13fdd87dd37292d53ca0479eb5a0d25deabc04b6549426f5"
+    },
+    {
+      "path": "docs/assets/simulations/polarization/frontend-04-aba84a3fcdcb.png",
+      "sha256": "aba84a3fcdcb5aa41bbb9c1121faecd28974f1788966675e577839ea0dddd8a0"
+    },
+    {
+      "path": "docs/assets/simulations/polarization/frontend-05-f7938cbdc31f.png",
+      "sha256": "f7938cbdc31f1809fc10840021c21b12c32dbd1928d2e5471ea2911f6122881d"
+    },
+    {
+      "path": "docs/assets/simulations/polarization/frontend-06-16c527a378f2.png",
+      "sha256": "16c527a378f27b8545966667443f19e30c0d5992623c73658442f4f88403b83e"
+    },
+    {
+      "path": "docs/assets/simulations/polarization/frontend-07-5b2815a2b6c3.png",
+      "sha256": "5b2815a2b6c372401f12cb8b439105786603cb5e6fcebb48306e7b2265b8573e"
+    },
+    {
+      "path": "docs/assets/simulations/polarization/frontend-08-570cf0707b19.png",
+      "sha256": "570cf0707b1927baae1227baf4a99f638dee79616d1a013419b7685be41cd29e"
+    }
+  ],
+  "schema_version": 1,
+  "experiment_id": "course-04/polarization",
+  "numerical": {
+    "status": "passed",
+    "reference_sha256": "44053f25d9c5e0c86d025cec36cde7baeb41a661c2715898dc1ac8f99bc6da30",
+    "source_files": {
+      "simulations/polarization/index.html": "2b2869d6b90d30ef04f2239831d2275aa37d987049053927db6d17fe4eaf0125",
+      "simulations/polarization/model.mjs": "e0e0c9a71ea742242a3593c0403db9823e3026a35184a20cebde227012f31298",
+      "simulations/polarization/app.mjs": "6cf5c3419cee65ea185e36fdf8093b72c6f56ccd3ae6babcda6f91374ead0905",
+      "simulations/polarization/chart.mjs": "d8ede33d60f3aa0fc4b0fe4f52ee4151d369927b1abb08b44507cde65135d90f",
+      "simulations/polarization/lab.css": "44775a742344aa00b5998f2697a5cf4129789e42174cc33a3346d4cd646f5428",
+      "simulations/polarization/observations.json": "a9048b3d478f79d9161f7761dc93ebee1186e6707b39fe91ccb917a0c993c984",
+      "docs/polarization-model-evidence.md": "9ba3c15afbbd9b00b21c84f45c6dbe03ea88a3f2671ad747f12f94a4ac7c1920",
+      "docs/polarization-references.json": "25e0b77b66b3c8baa884f98b08a4cc8971baf6cb492b6fc911fb12318f506161",
+      "docs/polarization-references.bib": "3f9fb9312b26c5308b02bcaad9130ffd85f703310cfc8c1b9f5eb539059456ad",
+      "docs/simulation/polarization-reference.json": "dc6c0e54f537d477b73a33347f225be5421dc95314c8a766ed92526ebc226ccf",
+      "scripts/validate_polarization_simulation.py": "9e188c646d6da956e1931692de0788fbfb61558dfc966d51cbd94150e7cfcb34",
+      "tests/polarization-model.test.mjs": "a20dd48a01ae80331990336c0827db944a2e4bcd4de026d5b465ae699ebed68b"
+    }
+  },
+  "scientific_evidence": {
+    "status": "verified",
+    "decision_source_files": {
+      "docs/polarization-references.json": "25e0b77b66b3c8baa884f98b08a4cc8971baf6cb492b6fc911fb12318f506161",
+      "docs/polarization-model-evidence.md": "9ba3c15afbbd9b00b21c84f45c6dbe03ea88a3f2671ad747f12f94a4ac7c1920",
+      "simulations/polarization/model.mjs": "e0e0c9a71ea742242a3593c0403db9823e3026a35184a20cebde227012f31298"
+    },
+    "core_references": [
+      {
+        "id": "ShiEtAl2024Polarization",
+        "pdf_sha256": "5150ead6885fb8b7c32da2a41d18d5f16acc69116bda6d58052310e43faf4364",
+        "locators": [
+          {
+            "printed_pages": "47",
+            "pdf_pages": [
+              2
+            ],
+            "location": "第1.2节",
+            "role": "马吕斯定律与偏振轴夹角；原表角基准另核对"
+          },
+          {
+            "printed_pages": "48",
+            "pdf_pages": [
+              3
+            ],
+            "location": "第2.2节",
+            "role": "波片相位、快轴45°与四分之一波片圆偏振"
+          },
+          {
+            "printed_pages": "49",
+            "pdf_pages": [
+              4
+            ],
+            "location": "第3.1节",
+            "role": "固定实验条件下旋光角与浓度的线性关系"
+          }
+        ]
+      },
+      {
+        "id": "MaoEtAl2015Fresnel",
+        "pdf_sha256": "31d6584a6b5b7b25a295e9315927769785f2263b495fad2b2cb7a62c6cc61858",
+        "locators": [
+          {
+            "printed_pages": "29",
+            "pdf_pages": [
+              1
+            ],
+            "location": "第2.1节公式(1)-(4)",
+            "role": "s/p振幅反射系数及反射率"
+          },
+          {
+            "printed_pages": "31",
+            "pdf_pages": [
+              3
+            ],
+            "location": "第4节",
+            "role": "BK7在638nm的n1.515是论文示例，不替换本页n1.5教学设定"
+          }
+        ]
+      }
+    ]
+  },
+  "source_hashes": {
+    "simulations/polarization/app.mjs": "6cf5c3419cee65ea185e36fdf8093b72c6f56ccd3ae6babcda6f91374ead0905",
+    "simulations/polarization/chart.mjs": "d8ede33d60f3aa0fc4b0fe4f52ee4151d369927b1abb08b44507cde65135d90f",
+    "simulations/polarization/index.html": "2b2869d6b90d30ef04f2239831d2275aa37d987049053927db6d17fe4eaf0125",
+    "simulations/polarization/lab.css": "44775a742344aa00b5998f2697a5cf4129789e42174cc33a3346d4cd646f5428",
+    "simulations/polarization/model.mjs": "e0e0c9a71ea742242a3593c0403db9823e3026a35184a20cebde227012f31298",
+    "simulations/polarization/observations.json": "a9048b3d478f79d9161f7761dc93ebee1186e6707b39fe91ccb917a0c993c984"
+  }
+}

@@ -80,7 +80,7 @@ def validate():
             observations = read_json(ROOT / entry['resources']['simulation_observations']['path'])
             identity=observations.get('experiment_id',observations.get('experimentId',observations.get('experiment')))
             assert identity == entry['id'], ('Simulation observation identity', entry['id'])
-            sources=observations.get('source_files',observations.get('sourceFiles',observations.get('provenance',{}).get('input_hashes')))
+            sources=next((observations[k] for k in ('source_files','sourceFiles','sourceHashes','input_hashes') if observations.get(k)),observations.get('provenance',{}).get('input_hashes'))
             assert sources, ('Observation source hashes missing',entry['id'])
             if isinstance(sources,dict):sources=[{'path':key,'sha256':value} for key,value in sources.items()]
             for source in sources:

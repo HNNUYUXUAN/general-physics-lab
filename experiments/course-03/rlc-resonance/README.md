@@ -1,5 +1,8 @@
 [普通物理实验 3](../README.md) · [项目首页](../../../README.md) · [使用指南](../../../docs/usage.md)
 
+<!-- virtual-laboratory-entry -->
+[在线虚拟实验](https://hnnuyuxuan.github.io/general-physics-lab/simulations/rlc-resonance/) · [模型依据与参数来源](../../../docs/rlc-resonance-model-evidence.md)
+
 # RLC 串联电路谐振特性的研究
 
 **从谐振峰到半功率带宽，看清电路的频率选择性。**

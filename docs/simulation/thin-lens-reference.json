@@ -1,0 +1,26 @@
+{
+  "experimentId": "course-04/thin-lens",
+  "status": "passed",
+  "method": "independent NumPy ABCD ray transfer matrices",
+  "caseCount": 90,
+  "scenarios": {
+    "real": 45,
+    "virtual": 30,
+    "collimated": 15,
+    "bessel_none": 18,
+    "bessel_single": 18,
+    "bessel_two": 54
+  },
+  "maxErrors": {
+    "ABCD_B_absolute_m": 3.552713678800501e-15,
+    "image_magnification_absolute": 1.4210854715202004e-14,
+    "bessel_focus_B_absolute_m": 4.440892098500626e-16
+  },
+  "tolerances": {
+    "ABCD_B_absolute_m": 1e-11,
+    "image_magnification_absolute": 1e-11,
+    "bessel_focus_B_absolute_m": 1e-11
+  },
+  "modelSha256": "13655a921f9ab0bdf801b28de35f097c2f4d83510f2a86f3fbb44d4aed344814",
+  "numpyVersion": "2.5.4"
+}

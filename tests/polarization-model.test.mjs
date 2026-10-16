@@ -1,0 +1,10 @@
+import test from'node:test';import assert from'node:assert/strict';import{DEFAULTS,jones,transmission,reflection,measurement,fitMalus,validateParameters}from'../simulations/polarization/model.mjs';const close=(a,b,t=1e-11)=>assert.ok(Math.abs(a-b)<t,`${a} ≠ ${b}`);
+test('no plate gives Malus with independent background',()=>{close(transmission(0,DEFAULTS),1.22);close(transmission(90,DEFAULTS),.02);close(transmission(45,DEFAULTS),.62);});
+test('quarter-wave plate at45 degrees gives circular polarization',()=>{const p={...DEFAULTS,retardance_deg:90};for(const a of[0,20,45,90,180])close(transmission(a,p),.62);});
+test('plate axis aligned with input retains linear state',()=>{const p={...DEFAULTS,retardance_deg:90,plate_axis_deg:0};close(transmission(90,p),.02);close(transmission(0,p),1.22);});
+test('lossless Jones element preserves norm',()=>{for(const angle of[0,20,45,90])for(const delta of[0,90]){const j=jones({...DEFAULTS,plate_axis_deg:angle,retardance_deg:delta});close([...j.ex,...j.ey].reduce((a,b)=>a+b*b,0),1);}});
+test('Brewster p reflection zero and s nonzero',()=>{for(const n of[1.2,1.5,1.8]){const p={...DEFAULTS,refractive_index:n},r=reflection(Math.atan(n)*180/Math.PI,p);assert.ok(r.rp<1e-28);assert.ok(r.rs>0);}});
+test('normal incidence s p equality',()=>{const r=reflection(0,DEFAULTS);close(r.rs,.04);close(r.rp,.04);});
+test('fit recovers independent response and background',()=>{const f=fitMalus([0,30,60,90].map(a=>measurement(a,DEFAULTS,'ideal-model')));close(f.amplitude_ma,1.2);close(f.background_ma,.02);});
+test('fit rejects plate state and same-angle degeneracy',()=>{assert.throws(()=>fitMalus([0,30,60].map(a=>measurement(a,{...DEFAULTS,retardance_deg:90}))));assert.throws(()=>fitMalus([0,0,0].map(a=>measurement(a,DEFAULTS))));});
+test('invalid domain and identity rejected',()=>{assert.throws(()=>validateParameters({...DEFAULTS,refractive_index:1}));assert.throws(()=>reflection(90,DEFAULTS));assert.throws(()=>transmission(NaN,DEFAULTS));assert.throws(()=>measurement(20,DEFAULTS,'fabricated'));});

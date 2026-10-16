@@ -1,0 +1,1281 @@
+{
+  "experiment_id": "course-04/optical-rotation",
+  "status": "passed",
+  "created_at": "2026-10-16T14:36:57.491041+00:00",
+  "environment": {
+    "python": "3.14.7",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1"
+  },
+  "model_sha256": "cbbeabbf083e5c01ffa33f3670767fda882f07ac8bc71752606747da9bb37ae1",
+  "input_hashes": {
+    "experiments/course-04/optical-rotation/experiment.json": "daf74156cced55fe26f53351ab471a211253a71001fdf2985cd0ea643e2a48f3",
+    "experiments/course-04/optical-rotation/data/observations-01.csv": "87a8f4134b405beb02ade665d75ba3de4e4f3cd424459c9a3ef2e0cfc8f65b0b",
+    "experiments/course-04/optical-rotation/data/provenance.json": "e467d0942f3c8278548bb656e0246d2ff261b4c06ed021d95b06934f31398911"
+  },
+  "methods": [
+    "matrix rotation of two linear Jones states and projection",
+    "brentq search for dim equal-field root",
+    "source circular differences via complex phase"
+  ],
+  "case_count": 27,
+  "cases": [
+    {
+      "parameters": {
+        "concentration_g_ml": 0.01,
+        "tube_length_dm": 0.5,
+        "specific_rotation": 60,
+        "half_angle_deg": 5
+      },
+      "root_deg": 90.3,
+      "points": [
+        {
+          "angle_deg": 0,
+          "intensities": [
+            0.9914676745747771,
+            0.9932860808034847
+          ]
+        },
+        {
+          "angle_deg": 45,
+          "intensities": [
+            0.5919756753063601,
+            0.4183370188791889
+          ]
+        },
+        {
+          "angle_deg": 90,
+          "intensities": [
+            0.008532325425222888,
+            0.00671391919651528
+          ]
+        },
+        {
+          "angle_deg": 90.3,
+          "intensities": [
+            0.007596123493895996,
+            0.007596123493895938
+          ]
+        },
+        {
+          "angle_deg": 180,
+          "intensities": [
+            0.9914676745747771,
+            0.9932860808034847
+          ]
+        }
+      ]
+    },
+    {
+      "parameters": {
+        "concentration_g_ml": 0.01,
+        "tube_length_dm": 0.5,
+        "specific_rotation": 66.46,
+        "half_angle_deg": 5
+      },
+      "root_deg": 90.3323,
+      "points": [
+        {
+          "angle_deg": 0,
+          "intensities": [
+            0.9913636612332596,
+            0.9933778408453093
+          ]
+        },
+        {
+          "angle_deg": 45,
+          "intensities": [
+            0.5925297380275473,
+            0.4188932421877147
+          ]
+        },
+        {
+          "angle_deg": 90,
+          "intensities": [
+            0.008636338766740399,
+            0.0066221591546907895
+          ]
+        },
+        {
+          "angle_deg": 90.3323,
+          "intensities": [
+            0.007596123493895972,
+            0.007596123493895966
+          ]
+        },
+        {
+          "angle_deg": 180,
+          "intensities": [
+            0.9913636612332596,
+            0.9933778408453093
+          ]
+        }
+      ]
+    },
+    {
+      "parameters": {
+        "concentration_g_ml": 0.01,
+        "tube_length_dm": 0.5,
+        "specific_rotation": 70,
+        "half_angle_deg": 5
+      },
+      "root_deg": 90.35,
+      "points": [
+        {
+          "angle_deg": 0,
+          "intensities": [
+            0.9913063982718078,
+            0.9934278582034036
+          ]
+        },
+        {
+          "angle_deg": 45,
+          "intensities": [
+            0.5928333076927889,
+            0.41919808944831954
+          ]
+        },
+        {
+          "angle_deg": 90,
+          "intensities": [
+            0.008693601728192404,
+            0.006572141796596347
+          ]
+        },
+        {
+          "angle_deg": 90.35,
+          "intensities": [
+            0.007596123493896008,
+            0.00759612349389593
+          ]
+        },
+        {
+          "angle_deg": 180,
+          "intensities": [
+            0.9913063982718076,
+            0.9934278582034038
+          ]
+        }
+      ]
+    },
+    {
+      "parameters": {
+        "concentration_g_ml": 0.01,
+        "tube_length_dm": 2,
+        "specific_rotation": 60,
+        "half_angle_deg": 5
+      },
+      "root_deg": 91.2,
+      "points": [
+        {
+          "angle_deg": 0,
+          "intensities": [
+            0.988336139167084,
+            0.9956077701257708
+          ]
+        },
+        {
+          "angle_deg": 45,
+          "intensities": [
+            0.6073676635835318,
+            0.4338718048714389
+          ]
+        },
+        {
+          "angle_deg": 90,
+          "intensities": [
+            0.011663860832916064,
+            0.004392229874229129
+          ]
+        },
+        {
+          "angle_deg": 91.2,
+          "intensities": [
+            0.007596123493895974,
+            0.007596123493895964
+          ]
+        },
+        {
+          "angle_deg": 180,
+          "intensities": [
+            0.988336139167084,
+            0.9956077701257708
+          ]
+        }
+      ]
+    },
+    {
+      "parameters": {
+        "concentration_g_ml": 0.01,
+        "tube_length_dm": 2,
+        "specific_rotation": 66.46,
+        "half_angle_deg": 5
+      },
+      "root_deg": 91.3292,
+      "points": [
+        {
+          "angle_deg": 0,
+          "intensities": [
+            0.9878469538349066,
+            0.9959009625053383
+          ]
+        },
+        {
+          "angle_deg": 45,
+          "intensities": [
+            0.6095689264070915,
+            0.4361076265405724
+          ]
+        },
+        {
+          "angle_deg": 90,
+          "intensities": [
+            0.012153046165093495,
+            0.004099037494661611
+          ]
+        },
+        {
+          "angle_deg": 91.3292,
+          "intensities": [
+            0.007596123493895984,
+            0.007596123493895952
+          ]
+        },
+        {
+          "angle_deg": 180,
+          "intensities": [
+            0.9878469538349066,
+            0.9959009625053383
+          ]
+        }
+      ]
+    },
+    {
+      "parameters": {
+        "concentration_g_ml": 0.01,
+        "tube_length_dm": 2,
+        "specific_rotation": 70,
+        "half_angle_deg": 5
+      },
+      "root_deg": 91.4,
+      "points": [
+        {
+          "angle_deg": 0,
+          "intensities": [
+            0.9875746771527816,
+            0.9960573506572389
+          ]
+        },
+        {
+          "angle_deg": 45,
+          "intensities": [
+            0.6107742488097336,
+            0.4373333832178478
+          ]
+        },
+        {
+          "angle_deg": 90,
+          "intensities": [
+            0.012425322847218397,
+            0.003942649342761075
+          ]
+        },
+        {
+          "angle_deg": 91.4,
+          "intensities": [
+            0.007596123493895974,
+            0.007596123493895964
+          ]
+        },
+        {
+          "angle_deg": 180,
+          "intensities": [
+            0.9875746771527816,
+            0.9960573506572389
+          ]
+        }
+      ]
+    },
+    {
+      "parameters": {
+        "concentration_g_ml": 0.01,
+        "tube_length_dm": 3,
+        "specific_rotation": 60,
+        "half_angle_deg": 5
+      },
+      "root_deg": 91.8,
+      "points": [
+        {
+          "angle_deg": 0,
+          "intensities": [
+            0.9859805002892731,
+            0.9968839595802982
+          ]
+        },
+        {
+          "angle_deg": 45,
+          "intensities": [
+            0.617571056551295,
+            0.44426553389683726
+          ]
+        },
+        {
+          "angle_deg": 90,
+          "intensities": [
+            0.014019499710726894,
+            0.003116040419701804
+          ]
+        },
+        {
+          "angle_deg": 91.8,
+          "intensities": [
+            0.007596123493895972,
+            0.007596123493895966
+          ]
+        },
+        {
+          "angle_deg": 180,
+          "intensities": [
+            0.9859805002892731,
+            0.9968839595802982
+          ]
+        }
+      ]
+    },
+    {
+      "parameters": {
+        "concentration_g_ml": 0.01,
+        "tube_length_dm": 3,
+        "specific_rotation": 66.46,
+        "half_angle_deg": 5
+      },
+      "root_deg": 91.9938,
+      "points": [
+        {
+          "angle_deg": 0,
+          "intensities": [
+            0.9851740302445097,
+            0.9972496249706315
+          ]
+        },
+        {
+          "angle_deg": 45,
+          "intensities": [
+            0.6208559488659933,
+            0.4476281519653332
+          ]
+        },
+        {
+          "angle_deg": 90,
+          "intensities": [
+            0.014825969755490246,
+            0.0027503750293684033
+          ]
+        },
+        {
+          "angle_deg": 91.9938,
+          "intensities": [
+            0.007596123493896008,
+            0.00759612349389593
+          ]
+        },
+        {
+          "angle_deg": 180,
+          "intensities": [
+            0.9851740302445097,
+            0.9972496249706315
+          ]
+        }
+      ]
+    },
+    {
+      "parameters": {
+        "concentration_g_ml": 0.01,
+        "tube_length_dm": 3,
+        "specific_rotation": 70,
+        "half_angle_deg": 5
+      },
+      "root_deg": 92.10000000000001,
+      "points": [
+        {
+          "angle_deg": 0,
+          "intensities": [
+            0.9847226749475694,
+            0.9974403544143939
+          ]
+        },
+        {
+          "angle_deg": 45,
+          "intensities": [
+            0.6226536929394012,
+            0.4494718514085269
+          ]
+        },
+        {
+          "angle_deg": 90,
+          "intensities": [
+            0.015277325052430575,
+            0.002559645585605897
+          ]
+        },
+        {
+          "angle_deg": 92.10000000000001,
+          "intensities": [
+            0.007596123493895952,
+            0.0075961234938959855
+          ]
+        },
+        {
+          "angle_deg": 180,
+          "intensities": [
+            0.9847226749475694,
+            0.9974403544143939
+          ]
+        }
+      ]
+    },
+    {
+      "parameters": {
+        "concentration_g_ml": 0.1,
+        "tube_length_dm": 0.5,
+        "specific_rotation": 60,
+        "half_angle_deg": 5
+      },
+      "root_deg": 93.0,
+      "points": [
+        {
+          "angle_deg": 0,
+          "intensities": [
+            0.9806308479691593,
+            0.9987820251299122
+          ]
+        },
+        {
+          "angle_deg": 45,
+          "intensities": [
+            0.6378186779084996,
+            0.46512176312793746
+          ]
+        },
+        {
+          "angle_deg": 90,
+          "intensities": [
+            0.019369152030840584,
+            0.0012179748700878712
+          ]
+        },
+        {
+          "angle_deg": 93.0,
+          "intensities": [
+            0.007596123493895966,
+            0.007596123493895969
+          ]
+        },
+        {
+          "angle_deg": 180,
+          "intensities": [
+            0.9806308479691593,
+            0.9987820251299122
+          ]
+        }
+      ]
+    },
+    {
+      "parameters": {
+        "concentration_g_ml": 0.1,
+        "tube_length_dm": 0.5,
+        "specific_rotation": 66.46,
+        "half_angle_deg": 5
+      },
+      "root_deg": 93.32300000000001,
+      "points": [
+        {
+          "angle_deg": 0,
+          "intensities": [
+            0.9790464501574346,
+            0.9991435602045426
+          ]
+        },
+        {
+          "angle_deg": 45,
+          "intensities": [
+            0.6432288329616656,
+            0.4707475418753559
+          ]
+        },
+        {
+          "angle_deg": 90,
+          "intensities": [
+            0.020953549842565523,
+            0.0008564397954572985
+          ]
+        },
+        {
+          "angle_deg": 93.32300000000001,
+          "intensities": [
+            0.007596123493895935,
+            0.007596123493896003
+          ]
+        },
+        {
+          "angle_deg": 180,
+          "intensities": [
+            0.9790464501574346,
+            0.9991435602045426
+          ]
+        }
+      ]
+    },
+    {
+      "parameters": {
+        "concentration_g_ml": 0.1,
+        "tube_length_dm": 0.5,
+        "specific_rotation": 70,
+        "half_angle_deg": 5
+      },
+      "root_deg": 93.5,
+      "points": [
+        {
+          "angle_deg": 0,
+          "intensities": [
+            0.9781523779815176,
+            0.9993147673772869
+          ]
+        },
+        {
+          "angle_deg": 45,
+          "intensities": [
+            0.6461858523613683,
+            0.47383202187852813
+          ]
+        },
+        {
+          "angle_deg": 90,
+          "intensities": [
+            0.021847622018482272,
+            0.0006852326227130591
+          ]
+        },
+        {
+          "angle_deg": 93.5,
+          "intensities": [
+            0.0075961234938959855,
+            0.007596123493895952
+          ]
+        },
+        {
+          "angle_deg": 180,
+          "intensities": [
+            0.9781523779815176,
+            0.9993147673772869
+          ]
+        }
+      ]
+    },
+    {
+      "parameters": {
+        "concentration_g_ml": 0.1,
+        "tube_length_dm": 2,
+        "specific_rotation": 60,
+        "half_angle_deg": 5
+      },
+      "root_deg": 102.0,
+      "points": [
+        {
+          "angle_deg": 0,
+          "intensities": [
+            0.9145187862775209,
+            0.9851478631379984
+          ]
+        },
+        {
+          "angle_deg": 45,
+          "intensities": [
+            0.7795964517353737,
+            0.6209609477998341
+          ]
+        },
+        {
+          "angle_deg": 90,
+          "intensities": [
+            0.08548121372247917,
+            0.014852136862001776
+          ]
+        },
+        {
+          "angle_deg": 102.0,
+          "intensities": [
+            0.007596123493895966,
+            0.007596123493895972
+          ]
+        },
+        {
+          "angle_deg": 180,
+          "intensities": [
+            0.9145187862775209,
+            0.9851478631379984
+          ]
+        }
+      ]
+    },
+    {
+      "parameters": {
+        "concentration_g_ml": 0.1,
+        "tube_length_dm": 2,
+        "specific_rotation": 66.46,
+        "half_angle_deg": 5
+      },
+      "root_deg": 103.292,
+      "points": [
+        {
+          "angle_deg": 0,
+          "intensities": [
+            0.9014919706403386,
+            0.9792011581702231
+          ]
+        },
+        {
+          "angle_deg": 45,
+          "intensities": [
+            0.7980003313946769,
+            0.6427103710608191
+          ]
+        },
+        {
+          "angle_deg": 90,
+          "intensities": [
+            0.09850802935966113,
+            0.020798841829776805
+          ]
+        },
+        {
+          "angle_deg": 103.292,
+          "intensities": [
+            0.007596123493895952,
+            0.007596123493895984
+          ]
+        },
+        {
+          "angle_deg": 180,
+          "intensities": [
+            0.9014919706403386,
+            0.9792011581702231
+          ]
+        }
+      ]
+    },
+    {
+      "parameters": {
+        "concentration_g_ml": 0.1,
+        "tube_length_dm": 2,
+        "specific_rotation": 70,
+        "half_angle_deg": 5
+      },
+      "root_deg": 104.0,
+      "points": [
+        {
+          "angle_deg": 0,
+          "intensities": [
+            0.894005376803361,
+            0.9755282581475766
+          ]
+        },
+        {
+          "angle_deg": 45,
+          "intensities": [
+            0.8078307376628292,
+            0.6545084971874737
+          ]
+        },
+        {
+          "angle_deg": 90,
+          "intensities": [
+            0.10599462319663905,
+            0.02447174185242323
+          ]
+        },
+        {
+          "angle_deg": 104.0,
+          "intensities": [
+            0.007596123493895957,
+            0.007596123493895981
+          ]
+        },
+        {
+          "angle_deg": 180,
+          "intensities": [
+            0.8940053768033608,
+            0.9755282581475768
+          ]
+        }
+      ]
+    },
+    {
+      "parameters": {
+        "concentration_g_ml": 0.1,
+        "tube_length_dm": 3,
+        "specific_rotation": 60,
+        "half_angle_deg": 5
+      },
+      "root_deg": 108.0,
+      "points": [
+        {
+          "angle_deg": 0,
+          "intensities": [
+            0.8473291852294985,
+            0.9493970231495833
+          ]
+        },
+        {
+          "angle_deg": 45,
+          "intensities": [
+            0.8596699001693257,
+            0.7191855733945389
+          ]
+        },
+        {
+          "angle_deg": 90,
+          "intensities": [
+            0.15267081477050137,
+            0.050602976850416516
+          ]
+        },
+        {
+          "angle_deg": 108.0,
+          "intensities": [
+            0.0075961234938959855,
+            0.007596123493895952
+          ]
+        },
+        {
+          "angle_deg": 180,
+          "intensities": [
+            0.8473291852294985,
+            0.9493970231495833
+          ]
+        }
+      ]
+    },
+    {
+      "parameters": {
+        "concentration_g_ml": 0.1,
+        "tube_length_dm": 3,
+        "specific_rotation": 66.46,
+        "half_angle_deg": 5
+      },
+      "root_deg": 109.938,
+      "points": [
+        {
+          "angle_deg": 0,
+          "intensities": [
+            0.8222219913851648,
+            0.9335527394664768
+          ]
+        },
+        {
+          "angle_deg": 45,
+          "intensities": [
+            0.8823257619724038,
+            0.7490622855855809
+          ]
+        },
+        {
+          "angle_deg": 90,
+          "intensities": [
+            0.17777800861483542,
+            0.06644726053352336
+          ]
+        },
+        {
+          "angle_deg": 109.938,
+          "intensities": [
+            0.007596123493895984,
+            0.007596123493895954
+          ]
+        },
+        {
+          "angle_deg": 180,
+          "intensities": [
+            0.8222219913851648,
+            0.9335527394664768
+          ]
+        }
+      ]
+    },
+    {
+      "parameters": {
+        "concentration_g_ml": 0.1,
+        "tube_length_dm": 3,
+        "specific_rotation": 70,
+        "half_angle_deg": 5
+      },
+      "root_deg": 111.0,
+      "points": [
+        {
+          "angle_deg": 0,
+          "intensities": [
+            0.8078307376628292,
+            0.924024048078213
+          ]
+        },
+        {
+          "angle_deg": 45,
+          "intensities": [
+            0.894005376803361,
+            0.7649596321166026
+          ]
+        },
+        {
+          "angle_deg": 90,
+          "intensities": [
+            0.1921692623371709,
+            0.07597595192178706
+          ]
+        },
+        {
+          "angle_deg": 111.0,
+          "intensities": [
+            0.007596123493895966,
+            0.007596123493895972
+          ]
+        },
+        {
+          "angle_deg": 180,
+          "intensities": [
+            0.8078307376628292,
+            0.924024048078213
+          ]
+        }
+      ]
+    },
+    {
+      "parameters": {
+        "concentration_g_ml": 0.2,
+        "tube_length_dm": 0.5,
+        "specific_rotation": 60,
+        "half_angle_deg": 5
+      },
+      "root_deg": 96.0,
+      "points": [
+        {
+          "angle_deg": 0,
+          "intensities": [
+            0.9635919272833935,
+            0.9996954135095477
+          ]
+        },
+        {
+          "angle_deg": 45,
+          "intensities": [
+            0.6873032967079561,
+            0.5174497483512506
+          ]
+        },
+        {
+          "angle_deg": 90,
+          "intensities": [
+            0.036408072716606316,
+            0.00030458649045213726
+          ]
+        },
+        {
+          "angle_deg": 96.0,
+          "intensities": [
+            0.007596123493895954,
+            0.007596123493895981
+          ]
+        },
+        {
+          "angle_deg": 180,
+          "intensities": [
+            0.9635919272833935,
+            0.9996954135095477
+          ]
+        }
+      ]
+    },
+    {
+      "parameters": {
+        "concentration_g_ml": 0.2,
+        "tube_length_dm": 0.5,
+        "specific_rotation": 66.46,
+        "half_angle_deg": 5
+      },
+      "root_deg": 96.646,
+      "points": [
+        {
+          "angle_deg": 0,
+          "intensities": [
+            0.9592508004805025,
+            0.9991749221684088
+          ]
+        },
+        {
+          "angle_deg": 45,
+          "intensities": [
+            0.6977086297004204,
+            0.5287123157924091
+          ]
+        },
+        {
+          "angle_deg": 90,
+          "intensities": [
+            0.0407491995194977,
+            0.0008250778315912052
+          ]
+        },
+        {
+          "angle_deg": 96.646,
+          "intensities": [
+            0.007596123493895966,
+            0.007596123493895972
+          ]
+        },
+        {
+          "angle_deg": 180,
+          "intensities": [
+            0.9592508004805023,
+            0.999174922168409
+          ]
+        }
+      ]
+    },
+    {
+      "parameters": {
+        "concentration_g_ml": 0.2,
+        "tube_length_dm": 0.5,
+        "specific_rotation": 70,
+        "half_angle_deg": 5
+      },
+      "root_deg": 97.0,
+      "points": [
+        {
+          "angle_deg": 0,
+          "intensities": [
+            0.9567727288213004,
+            0.9987820251299122
+          ]
+        },
+        {
+          "angle_deg": 45,
+          "intensities": [
+            0.7033683215379002,
+            0.5348782368720626
+          ]
+        },
+        {
+          "angle_deg": 90,
+          "intensities": [
+            0.04322727117869957,
+            0.0012179748700878804
+          ]
+        },
+        {
+          "angle_deg": 97.0,
+          "intensities": [
+            0.007596123493895991,
+            0.007596123493895947
+          ]
+        },
+        {
+          "angle_deg": 180,
+          "intensities": [
+            0.9567727288213004,
+            0.9987820251299122
+          ]
+        }
+      ]
+    },
+    {
+      "parameters": {
+        "concentration_g_ml": 0.2,
+        "tube_length_dm": 2,
+        "specific_rotation": 60,
+        "half_angle_deg": 5
+      },
+      "root_deg": 114.0,
+      "points": [
+        {
+          "angle_deg": 0,
+          "intensities": [
+            0.7649596321166023,
+            0.8940053768033608
+          ]
+        },
+        {
+          "angle_deg": 45,
+          "intensities": [
+            0.9240240480782133,
+            0.8078307376628294
+          ]
+        },
+        {
+          "angle_deg": 90,
+          "intensities": [
+            0.23504036788339755,
+            0.10599462319663908
+          ]
+        },
+        {
+          "angle_deg": 114.0,
+          "intensities": [
+            0.007596123493895957,
+            0.007596123493895981
+          ]
+        },
+        {
+          "angle_deg": 180,
+          "intensities": [
+            0.7649596321166023,
+            0.8940053768033608
+          ]
+        }
+      ]
+    },
+    {
+      "parameters": {
+        "concentration_g_ml": 0.2,
+        "tube_length_dm": 2,
+        "specific_rotation": 66.46,
+        "half_angle_deg": 5
+      },
+      "root_deg": 116.584,
+      "points": [
+        {
+          "angle_deg": 0,
+          "intensities": [
+            0.7256879921536161,
+            0.8646754184684295
+          ]
+        },
+        {
+          "angle_deg": 45,
+          "intensities": [
+            0.9461669308651967,
+            0.8420699331494595
+          ]
+        },
+        {
+          "angle_deg": 90,
+          "intensities": [
+            0.2743120078463838,
+            0.1353245815315705
+          ]
+        },
+        {
+          "angle_deg": 116.584,
+          "intensities": [
+            0.007596123493895923,
+            0.007596123493896012
+          ]
+        },
+        {
+          "angle_deg": 180,
+          "intensities": [
+            0.7256879921536161,
+            0.8646754184684295
+          ]
+        }
+      ]
+    },
+    {
+      "parameters": {
+        "concentration_g_ml": 0.2,
+        "tube_length_dm": 2,
+        "specific_rotation": 70,
+        "half_angle_deg": 5
+      },
+      "root_deg": 118.0,
+      "points": [
+        {
+          "angle_deg": 0,
+          "intensities": [
+            0.7033683215379003,
+            0.8473291852294987
+          ]
+        },
+        {
+          "angle_deg": 45,
+          "intensities": [
+            0.9567727288213006,
+            0.8596699001693257
+          ]
+        },
+        {
+          "angle_deg": 90,
+          "intensities": [
+            0.29663167846210003,
+            0.1526708147705014
+          ]
+        },
+        {
+          "angle_deg": 118.0,
+          "intensities": [
+            0.007596123493895945,
+            0.007596123493895993
+          ]
+        },
+        {
+          "angle_deg": 180,
+          "intensities": [
+            0.7033683215379002,
+            0.8473291852294985
+          ]
+        }
+      ]
+    },
+    {
+      "parameters": {
+        "concentration_g_ml": 0.2,
+        "tube_length_dm": 3,
+        "specific_rotation": 60,
+        "half_angle_deg": 5
+      },
+      "root_deg": 126.0,
+      "points": [
+        {
+          "angle_deg": 0,
+          "intensities": [
+            0.5695865504800329,
+            0.7347357813929455
+          ]
+        },
+        {
+          "angle_deg": 45,
+          "intensities": [
+            0.9951340343707853,
+            0.9414737964294635
+          ]
+        },
+        {
+          "angle_deg": 90,
+          "intensities": [
+            0.43041344951996724,
+            0.2652642186070547
+          ]
+        },
+        {
+          "angle_deg": 126.0,
+          "intensities": [
+            0.0075961234938959855,
+            0.007596123493895952
+          ]
+        },
+        {
+          "angle_deg": 180,
+          "intensities": [
+            0.5695865504800327,
+            0.7347357813929453
+          ]
+        }
+      ]
+    },
+    {
+      "parameters": {
+        "concentration_g_ml": 0.2,
+        "tube_length_dm": 3,
+        "specific_rotation": 66.46,
+        "half_angle_deg": 5
+      },
+      "root_deg": 129.876,
+      "points": [
+        {
+          "angle_deg": 0,
+          "intensities": [
+            0.5021642015146706,
+            0.6730421539054908
+          ]
+        },
+        {
+          "angle_deg": 45,
+          "intensities": [
+            0.999995316209866,
+            0.969101708557695
+          ]
+        },
+        {
+          "angle_deg": 90,
+          "intensities": [
+            0.49783579848532955,
+            0.3269578460945092
+          ]
+        },
+        {
+          "angle_deg": 129.876,
+          "intensities": [
+            0.00759612349389601,
+            0.007596123493895926
+          ]
+        },
+        {
+          "angle_deg": 180,
+          "intensities": [
+            0.5021642015146703,
+            0.6730421539054907
+          ]
+        }
+      ]
+    },
+    {
+      "parameters": {
+        "concentration_g_ml": 0.2,
+        "tube_length_dm": 3,
+        "specific_rotation": 70,
+        "half_angle_deg": 5
+      },
+      "root_deg": 132.0,
+      "points": [
+        {
+          "angle_deg": 0,
+          "intensities": [
+            0.46512176312793746,
+            0.6378186779084996
+          ]
+        },
+        {
+          "angle_deg": 45,
+          "intensities": [
+            0.9987820251299124,
+            0.9806308479691596
+          ]
+        },
+        {
+          "angle_deg": 90,
+          "intensities": [
+            0.5348782368720626,
+            0.3621813220915004
+          ]
+        },
+        {
+          "angle_deg": 132.0,
+          "intensities": [
+            0.007596123493895966,
+            0.007596123493895972
+          ]
+        },
+        {
+          "angle_deg": 180,
+          "intensities": [
+            0.4651217631279372,
+            0.6378186779084996
+          ]
+        }
+      ]
+    }
+  ],
+  "maximum_errors": {
+    "angle_deg": 8.43769498715119e-15,
+    "intensity": 3.3306690738754696e-16,
+    "concentration_g_ml": 9.645062526431047e-16
+  },
+  "tolerances": {
+    "angle_deg": 1e-09,
+    "intensity": 1e-12,
+    "concentration_g_ml": 1e-12
+  },
+  "original_observation_analysis": {
+    "rotation_magnitude_deg": 8.156666666666668,
+    "conditional_concentration_g_ml": 0.061365232219881646,
+    "type_a_arcmin": 11.441590798486065
+  }
+}

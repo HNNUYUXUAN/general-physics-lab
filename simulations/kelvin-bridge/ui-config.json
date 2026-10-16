@@ -1,0 +1,100 @@
+{
+  "slug": "kelvin-bridge",
+  "title": "直流双臂电桥",
+  "experimentId": "course-03/kelvin-bridge",
+  "controls": [
+    {
+      "key": "unknown_mOhm",
+      "type": "number",
+      "label": "教学待测 $R_x/\\mathrm{m}\\Omega$",
+      "default": 2,
+      "min": 1,
+      "max": 10
+    },
+    {
+      "key": "standard_mOhm",
+      "type": "number",
+      "label": "标准低阻 $R_s/\\mathrm{m}\\Omega$",
+      "default": 2,
+      "min": 0.1,
+      "max": 200
+    },
+    {
+      "key": "ratio",
+      "type": "number",
+      "label": "主比率 $P/Q$",
+      "default": 1,
+      "min": 0.1,
+      "max": 10
+    },
+    {
+      "key": "contact_mOhm",
+      "type": "number",
+      "label": "接触连线 $r/\\mathrm{m}\\Omega$",
+      "default": 10,
+      "min": 0,
+      "max": 100
+    },
+    {
+      "key": "mismatch",
+      "type": "number",
+      "label": "副比率相对失配 $\\epsilon$",
+      "default": 0,
+      "min": -0.1,
+      "max": 0.1
+    },
+    {
+      "key": "sourceVoltage",
+      "type": "number",
+      "label": "桥端电压 / V",
+      "default": 0.01,
+      "min": 0.001,
+      "max": 0.1
+    }
+  ],
+  "columns": [
+    {
+      "key": "standard_mOhm",
+      "label": "$R_s/\\mathrm{m}\\Omega$",
+      "short": "Rs / mΩ"
+    },
+    {
+      "key": "bridge_uV",
+      "label": "$U_G/\\mu\\mathrm V$",
+      "short": "UG / μV"
+    },
+    {
+      "key": "uncorrected_mOhm",
+      "label": "主比率读数 / mΩ",
+      "short": "主比率mΩ"
+    },
+    {
+      "key": "contactCorrection_mOhm",
+      "label": "失配修正项 / mΩ",
+      "short": "修正mΩ"
+    },
+    {
+      "key": "corrected_mOhm",
+      "label": "含修正候选 / mΩ",
+      "short": "候选mΩ"
+    }
+  ],
+  "units": {
+    "parameters": {
+      "unknown_mOhm": "mohm",
+      "standard_mOhm": "mohm",
+      "ratio": "1",
+      "contact_mOhm": "mohm",
+      "mismatch": "1",
+      "sourceVoltage": "V"
+    },
+    "readings": {
+      "standard_mOhm": "mohm",
+      "bridge_uV": "uV",
+      "uncorrected_mOhm": "mohm",
+      "contactCorrection_mOhm": "mohm",
+      "corrected_mOhm": "mohm",
+      "mainCurrent": "A"
+    }
+  }
+}

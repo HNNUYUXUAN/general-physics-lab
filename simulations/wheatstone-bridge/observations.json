@@ -1,0 +1,50 @@
+{
+  "experimentId": "course-03/wheatstone-bridge",
+  "source": "original-report-observations",
+  "tables": {
+    "balance": {
+      "title": "balance",
+      "headers": [
+        "nominal_Ohm",
+        "ratio_M",
+        "ratio_label",
+        "comparison_Ohm"
+      ],
+      "rows": [
+        [
+          "3",
+          "0.1",
+          "0.1",
+          "30.66"
+        ],
+        [
+          "47",
+          "0.1",
+          "0.1",
+          "465.94"
+        ],
+        [
+          "200",
+          "1",
+          "100/100",
+          "200.2"
+        ],
+        [
+          "2000",
+          "10.0",
+          "10",
+          "197.97"
+        ],
+        [
+          "20000",
+          "100.0",
+          "100",
+          "204.21"
+        ]
+      ]
+    }
+  },
+  "sourceHashes": {
+    "balance.csv": "d47f01d43ec454057a92bf203bfcd13712d57233f4112a63d855060e4bd73690"
+  }
+}

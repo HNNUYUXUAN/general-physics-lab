@@ -1,5 +1,8 @@
 [普通物理实验 4](../README.md) · [项目首页](../../../README.md) · [使用指南](../../../docs/usage.md)
 
+<!-- virtual-laboratory-entry -->
+[在线虚拟实验](https://hnnuyuxuan.github.io/general-physics-lab/simulations/thin-lens/) · [模型依据与参数来源](../../../docs/thin-lens-model-evidence.md)
+
 # 薄透镜焦距的测定
 
 **用四种成像方法测焦距，再把物像关系画成会变化的光路。**

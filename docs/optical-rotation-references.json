@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "experiment_id": "course-04/optical-rotation",
+  "review_date": "2026-10-16",
+  "access_channel": "两校机构学术数据库交叉检索",
+  "verification_method": "取得全文逐页核读，渲染关键页核对公式和角度基准；物理实现另作独立算法验证。",
+  "references": [
+    {
+      "id": "ShiEtAl2024Polarization",
+      "title": "光的偏振实验教学的拓展研究",
+      "authors": [
+        "时俊仙",
+        "菅婧涵",
+        "涂茹婷",
+        "金宇",
+        "李昭涵",
+        "唐亚楠"
+      ],
+      "journal": "实验室科学",
+      "year": 2024,
+      "volume": "27",
+      "issue": "4",
+      "pages": "46-50",
+      "doi": "10.3969/j.issn.1672-4305.2024.04.011",
+      "url": "https://doi.org/10.3969/j.issn.1672-4305.2024.04.011",
+      "source_pdf": {
+        "sha256": "5150ead6885fb8b7c32da2a41d18d5f16acc69116bda6d58052310e43faf4364",
+        "pages": 5
+      },
+      "locators": [
+        {
+          "printed_pages": "47",
+          "pdf_pages": [
+            2
+          ],
+          "location": "第1.2节",
+          "role": "马吕斯定律与偏振轴夹角；原表角基准另核对"
+        },
+        {
+          "printed_pages": "48",
+          "pdf_pages": [
+            3
+          ],
+          "location": "第2.2节",
+          "role": "波片相位、快轴45°与四分之一波片圆偏振"
+        },
+        {
+          "printed_pages": "49",
+          "pdf_pages": [
+            4
+          ],
+          "location": "第3.1节",
+          "role": "固定实验条件下旋光角与浓度的线性关系"
+        }
+      ],
+      "application": "以两偏振轴实际夹角采用cos²投影，波片用正交分量相位；旋光仅采用给定条件下线性关系，不采用其材料系数数值。",
+      "scope": "理想偏振元件和条件旋光关系，原532nm装置为该论文场景，不给本实验额外材料参数。",
+      "review_findings": [
+        "第47页文字最小强度描述和表1角原点与cos²轴夹角基准冲突，本模型采用两轴相对θ=0亮、90暗。",
+        "第50页β数值与单位和θ=βc关系不一致，未采用其材料旋光参数。"
+      ],
+      "review_status": "full_text_reviewed"
+    }
+  ]
+}

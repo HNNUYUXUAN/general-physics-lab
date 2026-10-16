@@ -71,8 +71,8 @@
           "path": "experiments/course-01/pendulum/README.md",
           "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/experiments/course-01/pendulum/README.md",
           "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-01/pendulum/README.md",
-          "sha256": "8631eafa32c234bef2c63e4b45e2ad0c9e89e785c91e65393936839a87cfb0ad",
-          "bytes": 6674,
+          "sha256": "f0dc6dcb4f73dad1cb655a34c8c678ccbccfc55733b86294e557290b028e33db",
+          "bytes": 6877,
           "hash_basis": "utf8-lf"
         },
         "report": {
@@ -3723,8 +3723,8 @@
           "path": "experiments/course-02/string-vibration/README.md",
           "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/experiments/course-02/string-vibration/README.md",
           "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-02/string-vibration/README.md",
-          "sha256": "8400665ec12960d0c4ecb3be81d0e1ce63364e5fd5ed97227e091804d9851f62",
-          "bytes": 4989,
+          "sha256": "07de390a41577975d6d404cb2599dad4be1be757041796677b3a23bb90254fae",
+          "bytes": 5208,
           "hash_basis": "utf8-lf"
         },
         "report": {
@@ -10713,8 +10713,8 @@
           "path": "experiments/course-03/wheatstone-bridge/README.md",
           "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/experiments/course-03/wheatstone-bridge/README.md",
           "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/wheatstone-bridge/README.md",
-          "sha256": "05a28fd1b204617697d65a94f7dfdcc04255161c468cc5042737a2378fab11fd",
-          "bytes": 5853,
+          "sha256": "8654c4b1f92c1661deae115f2a7f904d49859914937f4264020c917e6901f79b",
+          "bytes": 6074,
           "hash_basis": "utf8-lf"
         },
         "report": {
@@ -10877,6 +10877,87 @@
           "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/wheatstone-bridge/results/presentation-validation.json",
           "sha256": "78ee1c4553d31de512d60999a5e157fe65c45af2be03c76ff933bdad421f09eb",
           "bytes": 1141,
+          "hash_basis": "utf8-lf"
+        },
+        "simulation_html": {
+          "path": "simulations/wheatstone-bridge/index.html",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/simulations/wheatstone-bridge/index.html",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/wheatstone-bridge/index.html",
+          "sha256": "616ae811ab025e2ccc9b950da9446e70f7b502a12436f5cf167937bf5d0416fa",
+          "bytes": 4845,
+          "hash_basis": "utf8-lf",
+          "online_url": "https://hnnuyuxuan.github.io/general-physics-lab/simulations/wheatstone-bridge/index.html"
+        },
+        "simulation_model": {
+          "path": "simulations/wheatstone-bridge/model.mjs",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/simulations/wheatstone-bridge/model.mjs",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/wheatstone-bridge/model.mjs",
+          "sha256": "b5696b34a71627a1b27678ba79e89699d30f0364a5a31abd797a912894544dbb",
+          "bytes": 1889,
+          "hash_basis": "utf8-lf"
+        },
+        "simulation_controller": {
+          "path": "simulations/wheatstone-bridge/app.mjs",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/simulations/wheatstone-bridge/app.mjs",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/wheatstone-bridge/app.mjs",
+          "sha256": "ad789f021fb8766918acf476eee23262ee89a0af7580acbc7a80221c461b4afa",
+          "bytes": 5277,
+          "hash_basis": "utf8-lf"
+        },
+        "simulation_charts": {
+          "path": "simulations/wheatstone-bridge/chart.mjs",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/simulations/wheatstone-bridge/chart.mjs",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/wheatstone-bridge/chart.mjs",
+          "sha256": "7661b7bfc2fe4ac33d2ab50733687b64f47c7110505e27c14c80c42c38df82dd",
+          "bytes": 2419,
+          "hash_basis": "utf8-lf"
+        },
+        "simulation_styles": {
+          "path": "simulations/wheatstone-bridge/lab.css",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/simulations/wheatstone-bridge/lab.css",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/wheatstone-bridge/lab.css",
+          "sha256": "d007905ee689191cb3d99caebe74d1e5e924b6fd068c7a81d2417c75219b6169",
+          "bytes": 8353,
+          "hash_basis": "utf8-lf"
+        },
+        "simulation_observations": {
+          "path": "simulations/wheatstone-bridge/observations.json",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/simulations/wheatstone-bridge/observations.json",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/wheatstone-bridge/observations.json",
+          "sha256": "df709b7cf1769a7004553670272dd5b70053910c0cd95ae24a351f8d62133a1f",
+          "bytes": 873,
+          "hash_basis": "utf8-lf"
+        },
+        "model_evidence": {
+          "path": "docs/wheatstone-bridge-model-evidence.md",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/docs/wheatstone-bridge-model-evidence.md",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/wheatstone-bridge-model-evidence.md",
+          "sha256": "5ab73c59fbf97e701da69711a6131f2cdb9bfe1ceff3f4465ca27d29b4e5a542",
+          "bytes": 1816,
+          "hash_basis": "utf8-lf"
+        },
+        "references_json": {
+          "path": "docs/wheatstone-bridge-references.json",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/docs/wheatstone-bridge-references.json",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/wheatstone-bridge-references.json",
+          "sha256": "7d7ec5939c1617db76768f23f5d175dac957adef2f5b050220ebe3f870e24bbe",
+          "bytes": 1007,
+          "hash_basis": "utf8-lf"
+        },
+        "references_bibtex": {
+          "path": "docs/wheatstone-bridge-references.bib",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/docs/wheatstone-bridge-references.bib",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/wheatstone-bridge-references.bib",
+          "sha256": "5945fe329b136772af1ba502ed453253125a36e2aa5f5c7da76a6e210ac052a1",
+          "bytes": 328,
+          "hash_basis": "utf8-lf"
+        },
+        "simulation_validation": {
+          "path": "docs/simulation/wheatstone-bridge-reference.json",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/docs/simulation/wheatstone-bridge-reference.json",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/simulation/wheatstone-bridge-reference.json",
+          "sha256": "56fad635149982d11555a5e10264016732cdc2a2ac9fd20b609a6068e7cd68cc",
+          "bytes": 440,
           "hash_basis": "utf8-lf"
         },
         "source_pdf": {
@@ -11088,8 +11169,8 @@
           "path": "experiments/course-03/kelvin-bridge/README.md",
           "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/experiments/course-03/kelvin-bridge/README.md",
           "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/kelvin-bridge/README.md",
-          "sha256": "0e7cffe0691bf6328609f8f78c12edc6b5bf4767ad21795a4473badca314e056",
-          "bytes": 5787,
+          "sha256": "799e44e04d8a8cda31b0679cc1aff0a4ac90e676d4302dddab81d0e970a76c43",
+          "bytes": 6000,
           "hash_basis": "utf8-lf"
         },
         "report": {
@@ -11252,6 +11333,87 @@
           "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/kelvin-bridge/results/presentation-validation.json",
           "sha256": "1e40f4fc5f84db7930d154a4640e6760913a8cf5f63fbbed199bee885dcd472d",
           "bytes": 1185,
+          "hash_basis": "utf8-lf"
+        },
+        "simulation_html": {
+          "path": "simulations/kelvin-bridge/index.html",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/simulations/kelvin-bridge/index.html",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/kelvin-bridge/index.html",
+          "sha256": "ab3a9eb820f20dd673591f0b0491ab4ac8ebd32c74644d8bdb5c2bbb04d2bf14",
+          "bytes": 5107,
+          "hash_basis": "utf8-lf",
+          "online_url": "https://hnnuyuxuan.github.io/general-physics-lab/simulations/kelvin-bridge/index.html"
+        },
+        "simulation_model": {
+          "path": "simulations/kelvin-bridge/model.mjs",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/simulations/kelvin-bridge/model.mjs",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/kelvin-bridge/model.mjs",
+          "sha256": "9f9841a2ebbac9dfb8ab38fce8a6d563cdaab9c74bb153529a4a529b22b735f6",
+          "bytes": 2072,
+          "hash_basis": "utf8-lf"
+        },
+        "simulation_controller": {
+          "path": "simulations/kelvin-bridge/app.mjs",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/simulations/kelvin-bridge/app.mjs",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/kelvin-bridge/app.mjs",
+          "sha256": "0f94176f051ec7c545ff17ae04e5e869266628e33e103f6ab30535b8c1c0c098",
+          "bytes": 5468,
+          "hash_basis": "utf8-lf"
+        },
+        "simulation_charts": {
+          "path": "simulations/kelvin-bridge/chart.mjs",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/simulations/kelvin-bridge/chart.mjs",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/kelvin-bridge/chart.mjs",
+          "sha256": "7661b7bfc2fe4ac33d2ab50733687b64f47c7110505e27c14c80c42c38df82dd",
+          "bytes": 2419,
+          "hash_basis": "utf8-lf"
+        },
+        "simulation_styles": {
+          "path": "simulations/kelvin-bridge/lab.css",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/simulations/kelvin-bridge/lab.css",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/kelvin-bridge/lab.css",
+          "sha256": "d007905ee689191cb3d99caebe74d1e5e924b6fd068c7a81d2417c75219b6169",
+          "bytes": 8353,
+          "hash_basis": "utf8-lf"
+        },
+        "simulation_observations": {
+          "path": "simulations/kelvin-bridge/observations.json",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/simulations/kelvin-bridge/observations.json",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/kelvin-bridge/observations.json",
+          "sha256": "3aafa1b06613105c810ab576dee78a2f74fad663e38dbb90703c5fb7d7fe5046",
+          "bytes": 872,
+          "hash_basis": "utf8-lf"
+        },
+        "model_evidence": {
+          "path": "docs/kelvin-bridge-model-evidence.md",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/docs/kelvin-bridge-model-evidence.md",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/kelvin-bridge-model-evidence.md",
+          "sha256": "9232a7a978add201aa84998c519164390fac402cf84d7caf6e83e335a75e54f2",
+          "bytes": 2112,
+          "hash_basis": "utf8-lf"
+        },
+        "references_json": {
+          "path": "docs/kelvin-bridge-references.json",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/docs/kelvin-bridge-references.json",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/kelvin-bridge-references.json",
+          "sha256": "d345f26541abf98046400df1e90f4ed47b67ef5595ed4a142133d818be5917fd",
+          "bytes": 1003,
+          "hash_basis": "utf8-lf"
+        },
+        "references_bibtex": {
+          "path": "docs/kelvin-bridge-references.bib",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/docs/kelvin-bridge-references.bib",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/kelvin-bridge-references.bib",
+          "sha256": "5945fe329b136772af1ba502ed453253125a36e2aa5f5c7da76a6e210ac052a1",
+          "bytes": 328,
+          "hash_basis": "utf8-lf"
+        },
+        "simulation_validation": {
+          "path": "docs/simulation/kelvin-bridge-reference.json",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/docs/simulation/kelvin-bridge-reference.json",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/simulation/kelvin-bridge-reference.json",
+          "sha256": "b08ca8f3866e6acb4cca6a150c5cb2132a03d078d972d186335e850645ba38bd",
+          "bytes": 504,
           "hash_basis": "utf8-lf"
         },
         "source_pdf": {
@@ -11465,8 +11627,8 @@
           "path": "experiments/course-03/rlc-resonance/README.md",
           "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/experiments/course-03/rlc-resonance/README.md",
           "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/rlc-resonance/README.md",
-          "sha256": "0bc7ec51c344f7b9084db3eeb0501d94355d137e7136e01a1c7eed295af88626",
-          "bytes": 5993,
+          "sha256": "2705011f2589c7dba4301eb8a21889b327f49b663ef886750600297b89eb516c",
+          "bytes": 6206,
           "hash_basis": "utf8-lf"
         },
         "report": {
@@ -12079,8 +12241,8 @@
           "path": "experiments/course-03/ac-bridge/README.md",
           "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/experiments/course-03/ac-bridge/README.md",
           "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/ac-bridge/README.md",
-          "sha256": "813ebf926e5866445de38d9439c848328e0dc29e95e375b92df1fbdf9648df56",
-          "bytes": 5630,
+          "sha256": "53c33c75de189beb14a749fef57f0d275119b11e200f8b00d9e1e3f88f328287",
+          "bytes": 5835,
           "hash_basis": "utf8-lf"
         },
         "report": {
@@ -12243,6 +12405,87 @@
           "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/ac-bridge/results/presentation-validation.json",
           "sha256": "a70dd38af33a4448be4e4348f57617039b5d410ebea6a89df5bc7189cbe9c81c",
           "bytes": 1169,
+          "hash_basis": "utf8-lf"
+        },
+        "simulation_html": {
+          "path": "simulations/ac-bridge/index.html",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/simulations/ac-bridge/index.html",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/ac-bridge/index.html",
+          "sha256": "7d030a6bf1d49cf8db78f81e0bb38b0f4f5888d37816c89029180b087b71c27c",
+          "bytes": 4956,
+          "hash_basis": "utf8-lf",
+          "online_url": "https://hnnuyuxuan.github.io/general-physics-lab/simulations/ac-bridge/index.html"
+        },
+        "simulation_model": {
+          "path": "simulations/ac-bridge/model.mjs",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/simulations/ac-bridge/model.mjs",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/ac-bridge/model.mjs",
+          "sha256": "a4e3aeaca0ddc292dae3f7155f23bd61150a1d6020059feb9889ee8fde06a2c3",
+          "bytes": 1780,
+          "hash_basis": "utf8-lf"
+        },
+        "simulation_controller": {
+          "path": "simulations/ac-bridge/app.mjs",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/simulations/ac-bridge/app.mjs",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/ac-bridge/app.mjs",
+          "sha256": "fc58c5a9e3648bcbf7896f7025281a623681df7f01bcb607ceca7701030f78b6",
+          "bytes": 5283,
+          "hash_basis": "utf8-lf"
+        },
+        "simulation_charts": {
+          "path": "simulations/ac-bridge/chart.mjs",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/simulations/ac-bridge/chart.mjs",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/ac-bridge/chart.mjs",
+          "sha256": "7661b7bfc2fe4ac33d2ab50733687b64f47c7110505e27c14c80c42c38df82dd",
+          "bytes": 2419,
+          "hash_basis": "utf8-lf"
+        },
+        "simulation_styles": {
+          "path": "simulations/ac-bridge/lab.css",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/simulations/ac-bridge/lab.css",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/ac-bridge/lab.css",
+          "sha256": "d007905ee689191cb3d99caebe74d1e5e924b6fd068c7a81d2417c75219b6169",
+          "bytes": 8353,
+          "hash_basis": "utf8-lf"
+        },
+        "simulation_observations": {
+          "path": "simulations/ac-bridge/observations.json",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/simulations/ac-bridge/observations.json",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/ac-bridge/observations.json",
+          "sha256": "23a754c55ea9371b2ad5f3d1ab284dc0f3a914decb889c80e1b705f69d062069",
+          "bytes": 748,
+          "hash_basis": "utf8-lf"
+        },
+        "model_evidence": {
+          "path": "docs/ac-bridge-model-evidence.md",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/docs/ac-bridge-model-evidence.md",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/ac-bridge-model-evidence.md",
+          "sha256": "98a7c188cfd227004b0b652289044c7161a29cce98ee888a7d71c4319c9fdd7e",
+          "bytes": 2505,
+          "hash_basis": "utf8-lf"
+        },
+        "references_json": {
+          "path": "docs/ac-bridge-references.json",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/docs/ac-bridge-references.json",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/ac-bridge-references.json",
+          "sha256": "946f11660285a84a6eea75c5031f6dc90b6e243ee6859612231a1fc157ea2a70",
+          "bytes": 1071,
+          "hash_basis": "utf8-lf"
+        },
+        "references_bibtex": {
+          "path": "docs/ac-bridge-references.bib",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/docs/ac-bridge-references.bib",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/ac-bridge-references.bib",
+          "sha256": "6a98400211e2afced59db2ca1eda35c4290d1a8be58403b7297d312bcebbb503",
+          "bytes": 283,
+          "hash_basis": "utf8-lf"
+        },
+        "simulation_validation": {
+          "path": "docs/simulation/ac-bridge-reference.json",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/docs/simulation/ac-bridge-reference.json",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/simulation/ac-bridge-reference.json",
+          "sha256": "b33f0aeaa96f4ce94fdacf59c50ec31c37bdc08f20401c0765619536e5e809d4",
+          "bytes": 501,
           "hash_basis": "utf8-lf"
         },
         "source_pdf": {
@@ -12509,8 +12752,8 @@
           "path": "experiments/course-03/photosensor/README.md",
           "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/experiments/course-03/photosensor/README.md",
           "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/photosensor/README.md",
-          "sha256": "15dcdb5b6d1c7d95e91e79cf85bfef5e49593fc93e687dd8e676fb175253773e",
-          "bytes": 6178,
+          "sha256": "5a3eaf227155d3bae61ed23cebc6ae1e5a0308d093d23732326c08fae8a1f129",
+          "bytes": 6387,
           "hash_basis": "utf8-lf"
         },
         "report": {
@@ -12673,6 +12916,87 @@
           "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-03/photosensor/results/presentation-validation.json",
           "sha256": "6a629b25839edbe661cb14a6fdebd4fd13c180addbe9875b21b7c065993774fa",
           "bytes": 1215,
+          "hash_basis": "utf8-lf"
+        },
+        "simulation_html": {
+          "path": "simulations/photosensor/index.html",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/simulations/photosensor/index.html",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/photosensor/index.html",
+          "sha256": "682ae3a925cc107bb3d016b13c3e2b4aa38494a9aa9ae599790087cf8f0a4194",
+          "bytes": 5263,
+          "hash_basis": "utf8-lf",
+          "online_url": "https://hnnuyuxuan.github.io/general-physics-lab/simulations/photosensor/index.html"
+        },
+        "simulation_model": {
+          "path": "simulations/photosensor/model.mjs",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/simulations/photosensor/model.mjs",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/photosensor/model.mjs",
+          "sha256": "9a397e57c10304451297496e71b2319597c19ad0ef23e83f42ae7b68b787ab6c",
+          "bytes": 2481,
+          "hash_basis": "utf8-lf"
+        },
+        "simulation_controller": {
+          "path": "simulations/photosensor/app.mjs",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/simulations/photosensor/app.mjs",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/photosensor/app.mjs",
+          "sha256": "48794a846bef9db545df878983faf89a3aa7c9843a18bf7182bee1f4395ccea7",
+          "bytes": 6078,
+          "hash_basis": "utf8-lf"
+        },
+        "simulation_charts": {
+          "path": "simulations/photosensor/chart.mjs",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/simulations/photosensor/chart.mjs",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/photosensor/chart.mjs",
+          "sha256": "6f9f6dc907b7c71c608d2979703762a9a5eab5e76afbd45536071e76a1cc908a",
+          "bytes": 2514,
+          "hash_basis": "utf8-lf"
+        },
+        "simulation_styles": {
+          "path": "simulations/photosensor/lab.css",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/simulations/photosensor/lab.css",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/photosensor/lab.css",
+          "sha256": "5e55cfb424d9225fd0fc8c69607a40e6b2521bdf25109e5a827c3a7f1099c460",
+          "bytes": 7639,
+          "hash_basis": "utf8-lf"
+        },
+        "simulation_observations": {
+          "path": "simulations/photosensor/observations.json",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/simulations/photosensor/observations.json",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/photosensor/observations.json",
+          "sha256": "92570b8eef84395d39fc67c96db097665139feb98942993348f11e202b6a74bb",
+          "bytes": 13259,
+          "hash_basis": "utf8-lf"
+        },
+        "model_evidence": {
+          "path": "docs/photosensor-model-evidence.md",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/docs/photosensor-model-evidence.md",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/photosensor-model-evidence.md",
+          "sha256": "31684bbef0e0bc05a745fbf9413040c065cc0fa480007ced8bf265374834d196",
+          "bytes": 4102,
+          "hash_basis": "utf8-lf"
+        },
+        "references_json": {
+          "path": "docs/photosensor-references.json",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/docs/photosensor-references.json",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/photosensor-references.json",
+          "sha256": "8eb6f84a7c84206968bc3151bbecff996299ab74d8314a27e0edb72295e76884",
+          "bytes": 1549,
+          "hash_basis": "utf8-lf"
+        },
+        "references_bibtex": {
+          "path": "docs/photosensor-references.bib",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/docs/photosensor-references.bib",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/photosensor-references.bib",
+          "sha256": "555ea8817aefb4d85fdf129cf8c07d8d0f56ba6487ee990e5a978ce96fbebd42",
+          "bytes": 300,
+          "hash_basis": "utf8-lf"
+        },
+        "simulation_validation": {
+          "path": "docs/simulation/photosensor-reference.json",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/docs/simulation/photosensor-reference.json",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/simulation/photosensor-reference.json",
+          "sha256": "e0c071eb902cf2028acf5863d60ec917d5dc9f34d19b05e2327c44e53b3fa325",
+          "bytes": 12562,
           "hash_basis": "utf8-lf"
         },
         "source_pdf": {
@@ -13562,8 +13886,8 @@
           "path": "experiments/course-04/prism-refractive-index/README.md",
           "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/experiments/course-04/prism-refractive-index/README.md",
           "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/prism-refractive-index/README.md",
-          "sha256": "647c09ebbcf6fd5de7be59c1d7a86cc5b57bc255555700a0e1d9af9a5db0ef19",
-          "bytes": 5109,
+          "sha256": "fd92ee698598a04187babd864cbbb60a4b543792aa12e69206516a3e9b2b06bc",
+          "bytes": 5340,
           "hash_basis": "utf8-lf"
         },
         "report": {
@@ -13726,6 +14050,87 @@
           "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/prism-refractive-index/results/presentation-validation.json",
           "sha256": "05e3a485483591b395637b0adcb08af3f9428b04c477f5e38f82c47658618ad6",
           "bytes": 1164,
+          "hash_basis": "utf8-lf"
+        },
+        "simulation_html": {
+          "path": "simulations/prism-refractive-index/index.html",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/simulations/prism-refractive-index/index.html",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/prism-refractive-index/index.html",
+          "sha256": "107fea962bfbef6e3709c2c9de9eaa0fc2755d38ae65528482ed8c6bc9af1a33",
+          "bytes": 5947,
+          "hash_basis": "utf8-lf",
+          "online_url": "https://hnnuyuxuan.github.io/general-physics-lab/simulations/prism-refractive-index/index.html"
+        },
+        "simulation_model": {
+          "path": "simulations/prism-refractive-index/model.mjs",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/simulations/prism-refractive-index/model.mjs",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/prism-refractive-index/model.mjs",
+          "sha256": "f68e1e3ffc9c8839adcfc25df750d9d59230a75da8cd79187930fd0d4ece07e3",
+          "bytes": 2471,
+          "hash_basis": "utf8-lf"
+        },
+        "simulation_controller": {
+          "path": "simulations/prism-refractive-index/app.mjs",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/simulations/prism-refractive-index/app.mjs",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/prism-refractive-index/app.mjs",
+          "sha256": "c89d3fd41352bba699cd6563571e4c109043c08e246ef262fdc4e5a060f7e87b",
+          "bytes": 7301,
+          "hash_basis": "utf8-lf"
+        },
+        "simulation_charts": {
+          "path": "simulations/prism-refractive-index/chart.mjs",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/simulations/prism-refractive-index/chart.mjs",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/prism-refractive-index/chart.mjs",
+          "sha256": "2485a9b387021a9568392e2557e409ae8fc90cd829b80fcbb5e1aa9ebfe50b12",
+          "bytes": 1665,
+          "hash_basis": "utf8-lf"
+        },
+        "simulation_styles": {
+          "path": "simulations/prism-refractive-index/lab.css",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/simulations/prism-refractive-index/lab.css",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/prism-refractive-index/lab.css",
+          "sha256": "cb6d06f1d090ad170bc33d6eb6a13b0f296e0d1e44f4ccae35c8ac95968cbd2b",
+          "bytes": 7914,
+          "hash_basis": "utf8-lf"
+        },
+        "simulation_observations": {
+          "path": "simulations/prism-refractive-index/observations.json",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/simulations/prism-refractive-index/observations.json",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/prism-refractive-index/observations.json",
+          "sha256": "b2febbca71b01786e030a06bdbbb318edc8e0509b161551d49e26a63abc5c700",
+          "bytes": 1690,
+          "hash_basis": "utf8-lf"
+        },
+        "model_evidence": {
+          "path": "docs/prism-refractive-index-model-evidence.md",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/docs/prism-refractive-index-model-evidence.md",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/prism-refractive-index-model-evidence.md",
+          "sha256": "73943403e9247d8fa7917aed703be7ee08afd265919ab0ef5d52d3d231c48746",
+          "bytes": 4081,
+          "hash_basis": "utf8-lf"
+        },
+        "references_json": {
+          "path": "docs/prism-refractive-index-references.json",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/docs/prism-refractive-index-references.json",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/prism-refractive-index-references.json",
+          "sha256": "6edfb31ba3fcd98c3e15af30c12c06d3f819a7b75eff5ec7173f18a9dd523b21",
+          "bytes": 2811,
+          "hash_basis": "utf8-lf"
+        },
+        "references_bibtex": {
+          "path": "docs/prism-refractive-index-references.bib",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/docs/prism-refractive-index-references.bib",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/prism-refractive-index-references.bib",
+          "sha256": "5431d9c2ef82736e4363ae538b80b171d19aaa4cb6d13d4acd2f4ebce7fc4aa9",
+          "bytes": 233,
+          "hash_basis": "utf8-lf"
+        },
+        "simulation_validation": {
+          "path": "docs/simulation/prism-refractive-index-reference.json",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/docs/simulation/prism-refractive-index-reference.json",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/simulation/prism-refractive-index-reference.json",
+          "sha256": "829e3351b5fbb2d1bb430aa5a3c5c8c4e46efe27ebd3b09929be663093576222",
+          "bytes": 11346,
           "hash_basis": "utf8-lf"
         },
         "source_pdf": {
@@ -14208,8 +14613,8 @@
           "path": "experiments/course-04/transmission-grating/README.md",
           "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/experiments/course-04/transmission-grating/README.md",
           "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/transmission-grating/README.md",
-          "sha256": "af6c0de6759b3be2ed691be81dec54aa09bfdd5c052eac33ff4e36f5ab0c7ff3",
-          "bytes": 5415,
+          "sha256": "a142c0b8767c78f9a1cdfc8d3b8bfd8f063e83109a605f740428d25a34ac3ecf",
+          "bytes": 5642,
           "hash_basis": "utf8-lf"
         },
         "report": {
@@ -14372,6 +14777,87 @@
           "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/transmission-grating/results/presentation-validation.json",
           "sha256": "e21492a0d5f53ccb78e64ccf9738c3704fa9829388e36528711357a991035631",
           "bytes": 1068,
+          "hash_basis": "utf8-lf"
+        },
+        "simulation_html": {
+          "path": "simulations/transmission-grating/index.html",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/simulations/transmission-grating/index.html",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/transmission-grating/index.html",
+          "sha256": "c6bf6506001a0451538d56d5f69b298b55164f5878997643706badece6a23bbc",
+          "bytes": 6987,
+          "hash_basis": "utf8-lf",
+          "online_url": "https://hnnuyuxuan.github.io/general-physics-lab/simulations/transmission-grating/index.html"
+        },
+        "simulation_model": {
+          "path": "simulations/transmission-grating/model.mjs",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/simulations/transmission-grating/model.mjs",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/transmission-grating/model.mjs",
+          "sha256": "5720e861b60fddbf6a9add47cf3f93e327824db4d82a267cbbdf7869288a0127",
+          "bytes": 2481,
+          "hash_basis": "utf8-lf"
+        },
+        "simulation_controller": {
+          "path": "simulations/transmission-grating/app.mjs",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/simulations/transmission-grating/app.mjs",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/transmission-grating/app.mjs",
+          "sha256": "8132da74371182e0319d4091c734dafae99c4da09c76c870229b92820fe16012",
+          "bytes": 6885,
+          "hash_basis": "utf8-lf"
+        },
+        "simulation_charts": {
+          "path": "simulations/transmission-grating/chart.mjs",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/simulations/transmission-grating/chart.mjs",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/transmission-grating/chart.mjs",
+          "sha256": "942d310910c31bd6ed138cdcdc457180580c69771ce0c5ba97919aeb9785d7d8",
+          "bytes": 2509,
+          "hash_basis": "utf8-lf"
+        },
+        "simulation_styles": {
+          "path": "simulations/transmission-grating/lab.css",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/simulations/transmission-grating/lab.css",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/transmission-grating/lab.css",
+          "sha256": "d5f49d0288b778f8a6b35309d98c8a2006ca48cb9ff8561923a84f59a9725e3c",
+          "bytes": 7865,
+          "hash_basis": "utf8-lf"
+        },
+        "simulation_observations": {
+          "path": "simulations/transmission-grating/observations.json",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/simulations/transmission-grating/observations.json",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/transmission-grating/observations.json",
+          "sha256": "0367f07a3de6c3999b41a32860f68a98675e798ab5720eb69dbc1b5a9cdfe4cb",
+          "bytes": 4433,
+          "hash_basis": "utf8-lf"
+        },
+        "model_evidence": {
+          "path": "docs/transmission-grating-model-evidence.md",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/docs/transmission-grating-model-evidence.md",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/transmission-grating-model-evidence.md",
+          "sha256": "4d8186bd21f13434d0aad7312717587af257c247c284328e499d37b08570c82a",
+          "bytes": 5367,
+          "hash_basis": "utf8-lf"
+        },
+        "references_json": {
+          "path": "docs/transmission-grating-references.json",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/docs/transmission-grating-references.json",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/transmission-grating-references.json",
+          "sha256": "fa52815c0b6cab807c46bc00a2d18dbeec0b405057e859142084d419edf5642b",
+          "bytes": 3430,
+          "hash_basis": "utf8-lf"
+        },
+        "references_bibtex": {
+          "path": "docs/transmission-grating-references.bib",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/docs/transmission-grating-references.bib",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/transmission-grating-references.bib",
+          "sha256": "fe9284c4da1bc38b4f285e4b0a568edcf8365a7460781dc25836c16f1c7c417c",
+          "bytes": 402,
+          "hash_basis": "utf8-lf"
+        },
+        "simulation_validation": {
+          "path": "docs/simulation/transmission-grating-reference.json",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/docs/simulation/transmission-grating-reference.json",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/simulation/transmission-grating-reference.json",
+          "sha256": "f4e1da797c27d085876ff99ab27fbdb644c80ced8ad710e94f0654f441c19798",
+          "bytes": 67405,
           "hash_basis": "utf8-lf"
         },
         "source_pdf": {
@@ -15031,8 +15517,8 @@
           "path": "experiments/course-04/newton-rings/README.md",
           "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/experiments/course-04/newton-rings/README.md",
           "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/newton-rings/README.md",
-          "sha256": "18c255822604a6170bac37de020a4c571650be3516ece3f3aeb25ee8f11e8d6c",
-          "bytes": 5746,
+          "sha256": "517450cd10972280f0ee505fe8b2e45997bfddd51b1f2cf3ebb35f476fdabe4a",
+          "bytes": 5957,
           "hash_basis": "utf8-lf"
         },
         "report": {
@@ -15780,8 +16266,8 @@
           "path": "experiments/course-04/thin-lens/README.md",
           "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/experiments/course-04/thin-lens/README.md",
           "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/thin-lens/README.md",
-          "sha256": "f5e70fbad0b3d74fbf0571efe2ef5023b1eb54e4f82739cfedd61f09a8e57abf",
-          "bytes": 5865,
+          "sha256": "8c8fd6d4c584a005e5b7a4abd6f8a1a0a6d93cfe0e1680af360e699c09b316ea",
+          "bytes": 6070,
           "hash_basis": "utf8-lf"
         },
         "report": {
@@ -15944,6 +16430,87 @@
           "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/thin-lens/results/presentation-validation.json",
           "sha256": "78a886ce8508358a6b24658909746067487f95c4cae3bc52791c9c4fd2a6cd33",
           "bytes": 1105,
+          "hash_basis": "utf8-lf"
+        },
+        "simulation_html": {
+          "path": "simulations/thin-lens/index.html",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/simulations/thin-lens/index.html",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/thin-lens/index.html",
+          "sha256": "36a41d151e8c69f2633179282b7cb0c7b1c899121eafa629d8002d465cd9a2ba",
+          "bytes": 5771,
+          "hash_basis": "utf8-lf",
+          "online_url": "https://hnnuyuxuan.github.io/general-physics-lab/simulations/thin-lens/index.html"
+        },
+        "simulation_model": {
+          "path": "simulations/thin-lens/model.mjs",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/simulations/thin-lens/model.mjs",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/thin-lens/model.mjs",
+          "sha256": "13655a921f9ab0bdf801b28de35f097c2f4d83510f2a86f3fbb44d4aed344814",
+          "bytes": 2592,
+          "hash_basis": "utf8-lf"
+        },
+        "simulation_controller": {
+          "path": "simulations/thin-lens/app.mjs",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/simulations/thin-lens/app.mjs",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/thin-lens/app.mjs",
+          "sha256": "6edefa8cc6bc8ff210f0349bb91700fd3304822d5b3f54c36ab857856d4c48ec",
+          "bytes": 7149,
+          "hash_basis": "utf8-lf"
+        },
+        "simulation_charts": {
+          "path": "simulations/thin-lens/chart.mjs",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/simulations/thin-lens/chart.mjs",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/thin-lens/chart.mjs",
+          "sha256": "e579faefec314cbb328463457b8027c26d3c830da56a483a5d1dba3698e57201",
+          "bytes": 4555,
+          "hash_basis": "utf8-lf"
+        },
+        "simulation_styles": {
+          "path": "simulations/thin-lens/lab.css",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/simulations/thin-lens/lab.css",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/thin-lens/lab.css",
+          "sha256": "48ed8ac294f6e59b5030b86bb1759771c9438cb2eef10227aa86f3e80cc2d07d",
+          "bytes": 8367,
+          "hash_basis": "utf8-lf"
+        },
+        "simulation_observations": {
+          "path": "simulations/thin-lens/observations.json",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/simulations/thin-lens/observations.json",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/thin-lens/observations.json",
+          "sha256": "be653ebfa986576f2fc3a7f78535c99f9e48d05f84492661b4920159f7f8446d",
+          "bytes": 3020,
+          "hash_basis": "utf8-lf"
+        },
+        "model_evidence": {
+          "path": "docs/thin-lens-model-evidence.md",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/docs/thin-lens-model-evidence.md",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/thin-lens-model-evidence.md",
+          "sha256": "760b24aee22c2c2731af64065a8a1309f86a8089d3f8cc6e74e01e3698f5d455",
+          "bytes": 3154,
+          "hash_basis": "utf8-lf"
+        },
+        "references_json": {
+          "path": "docs/thin-lens-references.json",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/docs/thin-lens-references.json",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/thin-lens-references.json",
+          "sha256": "0ec521fc14a929bb79e4e0b0120039cb123530e1a5bebc18582d48c7f53bfaec",
+          "bytes": 1073,
+          "hash_basis": "utf8-lf"
+        },
+        "references_bibtex": {
+          "path": "docs/thin-lens-references.bib",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/docs/thin-lens-references.bib",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/thin-lens-references.bib",
+          "sha256": "7955d8c9bc8fec01421164b8ef9fe5d18ec40b9796808877c3a53632c28be34c",
+          "bytes": 337,
+          "hash_basis": "utf8-lf"
+        },
+        "simulation_validation": {
+          "path": "docs/simulation/thin-lens-reference.json",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/docs/simulation/thin-lens-reference.json",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/simulation/thin-lens-reference.json",
+          "sha256": "968114c0d3aa525a9776d6252e15a4094951d6fd3e4f169f12c72036baba6067",
+          "bytes": 727,
           "hash_basis": "utf8-lf"
         },
         "source_pdf": {
@@ -16171,8 +16738,8 @@
           "path": "experiments/course-04/polarization/README.md",
           "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/experiments/course-04/polarization/README.md",
           "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/polarization/README.md",
-          "sha256": "263dff21e6a3cb5ca4300f648b682fa1bf37e480534e2a947946b6745b267ab3",
-          "bytes": 5176,
+          "sha256": "319812ac7770eb411d8a429e80347955a354c21ebb2def41ece67da149efa091",
+          "bytes": 5387,
           "hash_basis": "utf8-lf"
         },
         "report": {
@@ -16335,6 +16902,87 @@
           "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/polarization/results/presentation-validation.json",
           "sha256": "90148c31708e793d715852e1c08dd79ebfabe85ca5ce172e37933b248077241c",
           "bytes": 1013,
+          "hash_basis": "utf8-lf"
+        },
+        "simulation_html": {
+          "path": "simulations/polarization/index.html",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/simulations/polarization/index.html",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/polarization/index.html",
+          "sha256": "2a26bb32b8acb5c28edb1642758c7a4ab5a32fa2dd43cb011ae9dcea2be4b31a",
+          "bytes": 6622,
+          "hash_basis": "utf8-lf",
+          "online_url": "https://hnnuyuxuan.github.io/general-physics-lab/simulations/polarization/index.html"
+        },
+        "simulation_model": {
+          "path": "simulations/polarization/model.mjs",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/simulations/polarization/model.mjs",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/polarization/model.mjs",
+          "sha256": "e0e0c9a71ea742242a3593c0403db9823e3026a35184a20cebde227012f31298",
+          "bytes": 3103,
+          "hash_basis": "utf8-lf"
+        },
+        "simulation_controller": {
+          "path": "simulations/polarization/app.mjs",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/simulations/polarization/app.mjs",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/polarization/app.mjs",
+          "sha256": "62de9980ebc5d467540d42f8541d3001865c64879b06fb6c3c044c6eface15e3",
+          "bytes": 6566,
+          "hash_basis": "utf8-lf"
+        },
+        "simulation_charts": {
+          "path": "simulations/polarization/chart.mjs",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/simulations/polarization/chart.mjs",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/polarization/chart.mjs",
+          "sha256": "81d45ede84b29becd6aa5729d1000e170df4227c1dd81f8b646cc9b794d3530d",
+          "bytes": 2836,
+          "hash_basis": "utf8-lf"
+        },
+        "simulation_styles": {
+          "path": "simulations/polarization/lab.css",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/simulations/polarization/lab.css",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/polarization/lab.css",
+          "sha256": "b54867925ab668a6bab2c216dbcdf44460c89bf7fa5dc896cd75d192b814e525",
+          "bytes": 7925,
+          "hash_basis": "utf8-lf"
+        },
+        "simulation_observations": {
+          "path": "simulations/polarization/observations.json",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/simulations/polarization/observations.json",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/polarization/observations.json",
+          "sha256": "093f4730cde0c29b5d0e639bf79005f8bb8b28ad1f6e12ed9664a6f84b98feb5",
+          "bytes": 1807,
+          "hash_basis": "utf8-lf"
+        },
+        "model_evidence": {
+          "path": "docs/polarization-model-evidence.md",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/docs/polarization-model-evidence.md",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/polarization-model-evidence.md",
+          "sha256": "3cbfa799a56e56d59166fd7102fb7e0b7516b6b8a225cafcede1eeb9320f014a",
+          "bytes": 3952,
+          "hash_basis": "utf8-lf"
+        },
+        "references_json": {
+          "path": "docs/polarization-references.json",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/docs/polarization-references.json",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/polarization-references.json",
+          "sha256": "6eb4ea942839a198a874ca7ba3b957cd9acd0d1e17fc300065a4960be3b1bda7",
+          "bytes": 3644,
+          "hash_basis": "utf8-lf"
+        },
+        "references_bibtex": {
+          "path": "docs/polarization-references.bib",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/docs/polarization-references.bib",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/polarization-references.bib",
+          "sha256": "8fa1c24672f7b65c370a830be3d01264ca93dfcec0800d130641a90385c4b6cb",
+          "bytes": 763,
+          "hash_basis": "utf8-lf"
+        },
+        "simulation_validation": {
+          "path": "docs/simulation/polarization-reference.json",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/docs/simulation/polarization-reference.json",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/simulation/polarization-reference.json",
+          "sha256": "08c940baa93f4e2220f2461b50c07bbb52ae67c397e61a1383492efec7114fe1",
+          "bytes": 22853,
           "hash_basis": "utf8-lf"
         },
         "source_pdf": {
@@ -16519,8 +17167,8 @@
           "path": "experiments/course-04/optical-rotation/README.md",
           "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/experiments/course-04/optical-rotation/README.md",
           "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/optical-rotation/README.md",
-          "sha256": "c1dd5b2e2ca5f557a2a71e1dc434791f95a1cc780cbe0596ca63f50055357aaa",
-          "bytes": 5299,
+          "sha256": "a772e0a913dd1ff508fe64b0873e7f04167f94dd098b8e84bffb254dc154989c",
+          "bytes": 5518,
           "hash_basis": "utf8-lf"
         },
         "report": {
@@ -16685,6 +17333,87 @@
           "bytes": 1043,
           "hash_basis": "utf8-lf"
         },
+        "simulation_html": {
+          "path": "simulations/optical-rotation/index.html",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/simulations/optical-rotation/index.html",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/optical-rotation/index.html",
+          "sha256": "3e8f391c7409c507041678e444cef615b94bfdb8374d9008815634fb8ca58d2a",
+          "bytes": 5062,
+          "hash_basis": "utf8-lf",
+          "online_url": "https://hnnuyuxuan.github.io/general-physics-lab/simulations/optical-rotation/index.html"
+        },
+        "simulation_model": {
+          "path": "simulations/optical-rotation/model.mjs",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/simulations/optical-rotation/model.mjs",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/optical-rotation/model.mjs",
+          "sha256": "cbbeabbf083e5c01ffa33f3670767fda882f07ac8bc71752606747da9bb37ae1",
+          "bytes": 1786,
+          "hash_basis": "utf8-lf"
+        },
+        "simulation_controller": {
+          "path": "simulations/optical-rotation/app.mjs",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/simulations/optical-rotation/app.mjs",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/optical-rotation/app.mjs",
+          "sha256": "a9bd8c76e1c38f2fcc08a5d9b2451da4ede66e9a59c8023fb5cfb12e51563232",
+          "bytes": 5744,
+          "hash_basis": "utf8-lf"
+        },
+        "simulation_charts": {
+          "path": "simulations/optical-rotation/chart.mjs",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/simulations/optical-rotation/chart.mjs",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/optical-rotation/chart.mjs",
+          "sha256": "4b6b62b126df5dc0c9f0f1de88c252a3eaf606fd73f84f81c2a6ef98e3227a1a",
+          "bytes": 1964,
+          "hash_basis": "utf8-lf"
+        },
+        "simulation_styles": {
+          "path": "simulations/optical-rotation/lab.css",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/simulations/optical-rotation/lab.css",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/optical-rotation/lab.css",
+          "sha256": "5a2df66d24be4c235d36977a05a596f54563b789b3397be77c26bff06d89985a",
+          "bytes": 7724,
+          "hash_basis": "utf8-lf"
+        },
+        "simulation_observations": {
+          "path": "simulations/optical-rotation/observations.json",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/simulations/optical-rotation/observations.json",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/optical-rotation/observations.json",
+          "sha256": "a0739031eabe77f504133a4b9e1bbc2dced84d2b70c885502c4deee0ee4a76af",
+          "bytes": 1402,
+          "hash_basis": "utf8-lf"
+        },
+        "model_evidence": {
+          "path": "docs/optical-rotation-model-evidence.md",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/docs/optical-rotation-model-evidence.md",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/optical-rotation-model-evidence.md",
+          "sha256": "f818a31ecba2bd01b75695066d970db08f969fa3fe946d0e0f90d7baf39a47c9",
+          "bytes": 3126,
+          "hash_basis": "utf8-lf"
+        },
+        "references_json": {
+          "path": "docs/optical-rotation-references.json",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/docs/optical-rotation-references.json",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/optical-rotation-references.json",
+          "sha256": "c5951be5c48db4faa2ef6496d57636b672b2df6d242bd44ea6e03a3283d5a4a2",
+          "bytes": 2279,
+          "hash_basis": "utf8-lf"
+        },
+        "references_bibtex": {
+          "path": "docs/optical-rotation-references.bib",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/docs/optical-rotation-references.bib",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/optical-rotation-references.bib",
+          "sha256": "35998c070b86f6ed020381061647c3b4c4d2e0d5b6d8dc8d541fc4aab43251d2",
+          "bytes": 392,
+          "hash_basis": "utf8-lf"
+        },
+        "simulation_validation": {
+          "path": "docs/simulation/optical-rotation-reference.json",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/docs/simulation/optical-rotation-reference.json",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/simulation/optical-rotation-reference.json",
+          "sha256": "f8b85e938c4fac7882b3268df002f7cd0f5b34feb7188609f2db0b9f09087716",
+          "bytes": 27949,
+          "hash_basis": "utf8-lf"
+        },
         "source_pdf": {
           "path": "pdf/course-04/11_实验十一_用旋光仪测定旋光性溶液的旋光率和浓度_实验报告_A3双面示范格式版.pdf",
           "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/pdf/course-04/11_%E5%AE%9E%E9%AA%8C%E5%8D%81%E4%B8%80_%E7%94%A8%E6%97%8B%E5%85%89%E4%BB%AA%E6%B5%8B%E5%AE%9A%E6%97%8B%E5%85%89%E6%80%A7%E6%BA%B6%E6%B6%B2%E7%9A%84%E6%97%8B%E5%85%89%E7%8E%87%E5%92%8C%E6%B5%93%E5%BA%A6_%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A_A3%E5%8F%8C%E9%9D%A2%E7%A4%BA%E8%8C%83%E6%A0%BC%E5%BC%8F%E7%89%88.pdf",
@@ -16838,8 +17567,8 @@
           "path": "experiments/course-04/single-slit-diffraction/README.md",
           "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/experiments/course-04/single-slit-diffraction/README.md",
           "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/single-slit-diffraction/README.md",
-          "sha256": "6a528658369816b0d9918ba7ee04f408b2e4302d5c98a71ba915a40cee3a5f2c",
-          "bytes": 6055,
+          "sha256": "3a323d5f797e10e60241c5696176ebc3c5372921801d99f1dd6031d4a29cb134",
+          "bytes": 6288,
           "hash_basis": "utf8-lf"
         },
         "report": {
@@ -17002,6 +17731,87 @@
           "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/experiments/course-04/single-slit-diffraction/results/presentation-validation.json",
           "sha256": "070c90acff111a5be5038d1f5d808652f81f2574d8c5e3cd86787c59f2c0a481",
           "bytes": 1043,
+          "hash_basis": "utf8-lf"
+        },
+        "simulation_html": {
+          "path": "simulations/single-slit-diffraction/index.html",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/simulations/single-slit-diffraction/index.html",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/single-slit-diffraction/index.html",
+          "sha256": "6de4752dbdff86923f656a2a9cbe7c4ab7c2fc5ff245b41c5b446d70146b6718",
+          "bytes": 6190,
+          "hash_basis": "utf8-lf",
+          "online_url": "https://hnnuyuxuan.github.io/general-physics-lab/simulations/single-slit-diffraction/index.html"
+        },
+        "simulation_model": {
+          "path": "simulations/single-slit-diffraction/model.mjs",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/simulations/single-slit-diffraction/model.mjs",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/single-slit-diffraction/model.mjs",
+          "sha256": "792ee087eead4fc751640f2045be4ee029810d685d556c0e5802b31a8b7e5e86",
+          "bytes": 2693,
+          "hash_basis": "utf8-lf"
+        },
+        "simulation_controller": {
+          "path": "simulations/single-slit-diffraction/app.mjs",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/simulations/single-slit-diffraction/app.mjs",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/single-slit-diffraction/app.mjs",
+          "sha256": "26fcf5dd99f8cbda3da6b671d677cca646e680938bf4e00ec198ad8850e19256",
+          "bytes": 6021,
+          "hash_basis": "utf8-lf"
+        },
+        "simulation_charts": {
+          "path": "simulations/single-slit-diffraction/chart.mjs",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/simulations/single-slit-diffraction/chart.mjs",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/single-slit-diffraction/chart.mjs",
+          "sha256": "3a09d972325d7bd9e621001cf5cddd039a508ee3f461b4033f2664bf8680e87d",
+          "bytes": 2110,
+          "hash_basis": "utf8-lf"
+        },
+        "simulation_styles": {
+          "path": "simulations/single-slit-diffraction/lab.css",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/simulations/single-slit-diffraction/lab.css",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/single-slit-diffraction/lab.css",
+          "sha256": "3c74697b82a8c0b109c145a6caa7f1e15913aae2fab4eddd1f4d9d9f4c8f20c8",
+          "bytes": 7997,
+          "hash_basis": "utf8-lf"
+        },
+        "simulation_observations": {
+          "path": "simulations/single-slit-diffraction/observations.json",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/simulations/single-slit-diffraction/observations.json",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/simulations/single-slit-diffraction/observations.json",
+          "sha256": "5d89634d5899c036c967e1b1e372b8b0c2658b214a3d81ff88f3c1ccda3cb865",
+          "bytes": 2271,
+          "hash_basis": "utf8-lf"
+        },
+        "model_evidence": {
+          "path": "docs/single-slit-diffraction-model-evidence.md",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/docs/single-slit-diffraction-model-evidence.md",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/single-slit-diffraction-model-evidence.md",
+          "sha256": "3182e89e95d7f0a3153ada5c76378f847c1a9676646b4beb67708cb5169c4545",
+          "bytes": 4135,
+          "hash_basis": "utf8-lf"
+        },
+        "references_json": {
+          "path": "docs/single-slit-diffraction-references.json",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/docs/single-slit-diffraction-references.json",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/single-slit-diffraction-references.json",
+          "sha256": "deb98ebed698c14e4666cc007728216ce0417968349ccd30a6e830cb88326aeb",
+          "bytes": 1649,
+          "hash_basis": "utf8-lf"
+        },
+        "references_bibtex": {
+          "path": "docs/single-slit-diffraction-references.bib",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/docs/single-slit-diffraction-references.bib",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/single-slit-diffraction-references.bib",
+          "sha256": "1673c9a54645062d5c79b4fcab006d3add9b859c1bc512664a358ebe3237d1f9",
+          "bytes": 350,
+          "hash_basis": "utf8-lf"
+        },
+        "simulation_validation": {
+          "path": "docs/simulation/single-slit-diffraction-reference.json",
+          "url": "https://github.com/HNNUYUXUAN/general-physics-lab/blob/main/docs/simulation/single-slit-diffraction-reference.json",
+          "raw_url": "https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/simulation/single-slit-diffraction-reference.json",
+          "sha256": "5dcbc618fdb5894204eebd113337cbd0192f3fbd390f9be8402fe2010c34d6fa",
+          "bytes": 28042,
           "hash_basis": "utf8-lf"
         },
         "source_pdf": {

@@ -1,5 +1,8 @@
 [普通物理实验 3](../README.md) · [项目首页](../../../README.md) · [使用指南](../../../docs/usage.md)
 
+<!-- virtual-laboratory-entry -->
+[在线虚拟实验](https://hnnuyuxuan.github.io/general-physics-lab/simulations/wheatstone-bridge/) · [模型依据与参数来源](../../../docs/wheatstone-bridge-model-evidence.md)
+
 # 单臂电桥测电阻
 
 **以零点作比较，用桥臂比率读出未知电阻。**

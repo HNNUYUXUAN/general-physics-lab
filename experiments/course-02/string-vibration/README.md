@@ -1,5 +1,8 @@
 [普通物理实验 2](../README.md) · [项目首页](../../../README.md) · [使用指南](../../../docs/usage.md)
 
+<!-- virtual-laboratory-entry -->
+[在线虚拟实验](https://hnnuyuxuan.github.io/general-physics-lab/simulations/string-vibration/) · [模型依据与参数来源](../../../docs/string-vibration-model-evidence.md)
+
 # 弦振动的研究
 
 **用波节数读出波长，用对数斜率检验弦上的幂律。**

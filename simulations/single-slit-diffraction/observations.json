@@ -1,0 +1,100 @@
+{
+  "experiment_id": "course-04/single-slit-diffraction",
+  "source": "original-report",
+  "wavelength_nm": 632.8,
+  "distance_mm": 800,
+  "scan": [
+    {
+      "position_mm": -8.0,
+      "normalized_intensity": 0.02
+    },
+    {
+      "position_mm": -7.0,
+      "normalized_intensity": 0.024
+    },
+    {
+      "position_mm": -6.0,
+      "normalized_intensity": 0.033
+    },
+    {
+      "position_mm": -5.0,
+      "normalized_intensity": 0.018
+    },
+    {
+      "position_mm": -4.0,
+      "normalized_intensity": 0.055
+    },
+    {
+      "position_mm": -3.0,
+      "normalized_intensity": 0.039
+    },
+    {
+      "position_mm": -2.0,
+      "normalized_intensity": 0.078
+    },
+    {
+      "position_mm": -1.0,
+      "normalized_intensity": 0.589
+    },
+    {
+      "position_mm": 0.0,
+      "normalized_intensity": 1.0
+    },
+    {
+      "position_mm": 1.0,
+      "normalized_intensity": 0.589
+    },
+    {
+      "position_mm": 2.0,
+      "normalized_intensity": 0.078
+    },
+    {
+      "position_mm": 3.0,
+      "normalized_intensity": 0.039
+    },
+    {
+      "position_mm": 4.0,
+      "normalized_intensity": 0.055
+    },
+    {
+      "position_mm": 5.0,
+      "normalized_intensity": 0.018
+    },
+    {
+      "position_mm": 6.0,
+      "normalized_intensity": 0.033
+    },
+    {
+      "position_mm": 7.0,
+      "normalized_intensity": 0.024
+    },
+    {
+      "position_mm": 8.0,
+      "normalized_intensity": 0.02
+    }
+  ],
+  "dark": [
+    {
+      "order": 1,
+      "position_mm": 2.54
+    },
+    {
+      "order": 2,
+      "position_mm": 5.06
+    },
+    {
+      "order": 3,
+      "position_mm": 7.6
+    },
+    {
+      "order": 4,
+      "position_mm": 10.1
+    }
+  ],
+  "input_hashes": {
+    "experiments/course-04/single-slit-diffraction/experiment.json": "778b2ec0910c751ace34d904f197861ce19816cd1c2d2a02a410e0f2c5de86d4",
+    "experiments/course-04/single-slit-diffraction/data/observations-01.csv": "bca33c140d782a3d024c5b75650a11d1f45fc7402116d79e6ba9a6f8dd7722eb",
+    "experiments/course-04/single-slit-diffraction/data/observations-02.csv": "d681e1be8568f563df7cf23ebee9cd9b9556021ff88864b5f78074a2a4ab244c",
+    "experiments/course-04/single-slit-diffraction/data/provenance.json": "c45b8db5210096bb0375ea98bc11ca58ade03035555e0b118ffbb83f927e28e4"
+  }
+}

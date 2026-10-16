@@ -1,0 +1,452 @@
+{
+  "experiment_id": "course-03/photosensor",
+  "status": "passed",
+  "created_at": "2026-10-16T15:14:00.065993+00:00",
+  "environment": {
+    "python": "3.14.7",
+    "numpy": "2.5.4"
+  },
+  "model_sha256": "9a397e57c10304451297496e71b2319597c19ad0ef23e83f42ae7b68b787ab6c",
+  "input_hashes": {
+    "experiments/course-03/photosensor/experiment.json": "b6b18c06c6dc8ba0179c27a2db77e369b76f0f90267b1d53b73c2b556ebf0d6b",
+    "experiments/course-03/photosensor/data/measurements.csv": "1fd3331271a283d9934211553c759ad09a79a5f48cabe595ffd40b20b435e628",
+    "experiments/course-03/photosensor/data/provenance.json": "4170d8dbb3940428d32f5035e62d12e43e26a2a6e6092680c48d4e9c7a00e65e"
+  },
+  "device_basis": {
+    "model": "Vishay BPW34",
+    "document": "81521 Rev2.1 23-Aug-2011",
+    "test_conditions": {
+      "wavelength_nm": 950,
+      "reverse_bias_v": 5,
+      "temperature_c": 25,
+      "irradiance_mw_cm2": 1,
+      "typical_current_ua": 50
+    }
+  },
+  "methods": [
+    "independent nodal KCL linear system for ideal transimpedance stage",
+    "independent dark baseline linear solve and subtraction",
+    "explicit linear-output-bound invalid-point classification",
+    "source10Ohm sample current and circuit voltage recomputation"
+  ],
+  "case_count": 27,
+  "cases": [
+    {
+      "parameters": {
+        "irradiance_mw_cm2": 0,
+        "feedback_kohm": 1,
+        "zero_current_ua": -0.1,
+        "wavelength_nm": 950,
+        "reverse_bias_v": 5,
+        "temperature_c": 25,
+        "linear_output_limit_v": 4.5
+      },
+      "current_ua": -0.09999999999999999,
+      "ideal_output_v": 9.999999999999999e-05,
+      "dark_output_v": 9.999999999999999e-05,
+      "linear_valid": true
+    },
+    {
+      "parameters": {
+        "irradiance_mw_cm2": 0,
+        "feedback_kohm": 1,
+        "zero_current_ua": 0,
+        "wavelength_nm": 950,
+        "reverse_bias_v": 5,
+        "temperature_c": 25,
+        "linear_output_limit_v": 4.5
+      },
+      "current_ua": 0.0,
+      "ideal_output_v": -0.0,
+      "dark_output_v": -0.0,
+      "linear_valid": true
+    },
+    {
+      "parameters": {
+        "irradiance_mw_cm2": 0,
+        "feedback_kohm": 1,
+        "zero_current_ua": 0.1,
+        "wavelength_nm": 950,
+        "reverse_bias_v": 5,
+        "temperature_c": 25,
+        "linear_output_limit_v": 4.5
+      },
+      "current_ua": 0.09999999999999999,
+      "ideal_output_v": -9.999999999999999e-05,
+      "dark_output_v": -9.999999999999999e-05,
+      "linear_valid": true
+    },
+    {
+      "parameters": {
+        "irradiance_mw_cm2": 0,
+        "feedback_kohm": 50,
+        "zero_current_ua": -0.1,
+        "wavelength_nm": 950,
+        "reverse_bias_v": 5,
+        "temperature_c": 25,
+        "linear_output_limit_v": 4.5
+      },
+      "current_ua": -0.09999999999999998,
+      "ideal_output_v": 0.004999999999999999,
+      "dark_output_v": 0.004999999999999999,
+      "linear_valid": true
+    },
+    {
+      "parameters": {
+        "irradiance_mw_cm2": 0,
+        "feedback_kohm": 50,
+        "zero_current_ua": 0,
+        "wavelength_nm": 950,
+        "reverse_bias_v": 5,
+        "temperature_c": 25,
+        "linear_output_limit_v": 4.5
+      },
+      "current_ua": 0.0,
+      "ideal_output_v": -0.0,
+      "dark_output_v": -0.0,
+      "linear_valid": true
+    },
+    {
+      "parameters": {
+        "irradiance_mw_cm2": 0,
+        "feedback_kohm": 50,
+        "zero_current_ua": 0.1,
+        "wavelength_nm": 950,
+        "reverse_bias_v": 5,
+        "temperature_c": 25,
+        "linear_output_limit_v": 4.5
+      },
+      "current_ua": 0.09999999999999998,
+      "ideal_output_v": -0.004999999999999999,
+      "dark_output_v": -0.004999999999999999,
+      "linear_valid": true
+    },
+    {
+      "parameters": {
+        "irradiance_mw_cm2": 0,
+        "feedback_kohm": 200,
+        "zero_current_ua": -0.1,
+        "wavelength_nm": 950,
+        "reverse_bias_v": 5,
+        "temperature_c": 25,
+        "linear_output_limit_v": 4.5
+      },
+      "current_ua": -0.09999999999999998,
+      "ideal_output_v": 0.019999999999999997,
+      "dark_output_v": 0.019999999999999997,
+      "linear_valid": true
+    },
+    {
+      "parameters": {
+        "irradiance_mw_cm2": 0,
+        "feedback_kohm": 200,
+        "zero_current_ua": 0,
+        "wavelength_nm": 950,
+        "reverse_bias_v": 5,
+        "temperature_c": 25,
+        "linear_output_limit_v": 4.5
+      },
+      "current_ua": 0.0,
+      "ideal_output_v": -0.0,
+      "dark_output_v": -0.0,
+      "linear_valid": true
+    },
+    {
+      "parameters": {
+        "irradiance_mw_cm2": 0,
+        "feedback_kohm": 200,
+        "zero_current_ua": 0.1,
+        "wavelength_nm": 950,
+        "reverse_bias_v": 5,
+        "temperature_c": 25,
+        "linear_output_limit_v": 4.5
+      },
+      "current_ua": 0.09999999999999998,
+      "ideal_output_v": -0.019999999999999997,
+      "dark_output_v": -0.019999999999999997,
+      "linear_valid": true
+    },
+    {
+      "parameters": {
+        "irradiance_mw_cm2": 0.5,
+        "feedback_kohm": 1,
+        "zero_current_ua": -0.1,
+        "wavelength_nm": 950,
+        "reverse_bias_v": 5,
+        "temperature_c": 25,
+        "linear_output_limit_v": 4.5
+      },
+      "current_ua": 24.9,
+      "ideal_output_v": -0.0249,
+      "dark_output_v": 9.999999999999999e-05,
+      "linear_valid": true
+    },
+    {
+      "parameters": {
+        "irradiance_mw_cm2": 0.5,
+        "feedback_kohm": 1,
+        "zero_current_ua": 0,
+        "wavelength_nm": 950,
+        "reverse_bias_v": 5,
+        "temperature_c": 25,
+        "linear_output_limit_v": 4.5
+      },
+      "current_ua": 24.999999999999996,
+      "ideal_output_v": -0.024999999999999998,
+      "dark_output_v": -0.0,
+      "linear_valid": true
+    },
+    {
+      "parameters": {
+        "irradiance_mw_cm2": 0.5,
+        "feedback_kohm": 1,
+        "zero_current_ua": 0.1,
+        "wavelength_nm": 950,
+        "reverse_bias_v": 5,
+        "temperature_c": 25,
+        "linear_output_limit_v": 4.5
+      },
+      "current_ua": 25.1,
+      "ideal_output_v": -0.0251,
+      "dark_output_v": -9.999999999999999e-05,
+      "linear_valid": true
+    },
+    {
+      "parameters": {
+        "irradiance_mw_cm2": 0.5,
+        "feedback_kohm": 50,
+        "zero_current_ua": -0.1,
+        "wavelength_nm": 950,
+        "reverse_bias_v": 5,
+        "temperature_c": 25,
+        "linear_output_limit_v": 4.5
+      },
+      "current_ua": 24.9,
+      "ideal_output_v": -1.2449999999999999,
+      "dark_output_v": 0.004999999999999999,
+      "linear_valid": true
+    },
+    {
+      "parameters": {
+        "irradiance_mw_cm2": 0.5,
+        "feedback_kohm": 50,
+        "zero_current_ua": 0,
+        "wavelength_nm": 950,
+        "reverse_bias_v": 5,
+        "temperature_c": 25,
+        "linear_output_limit_v": 4.5
+      },
+      "current_ua": 24.999999999999993,
+      "ideal_output_v": -1.2499999999999998,
+      "dark_output_v": -0.0,
+      "linear_valid": true
+    },
+    {
+      "parameters": {
+        "irradiance_mw_cm2": 0.5,
+        "feedback_kohm": 50,
+        "zero_current_ua": 0.1,
+        "wavelength_nm": 950,
+        "reverse_bias_v": 5,
+        "temperature_c": 25,
+        "linear_output_limit_v": 4.5
+      },
+      "current_ua": 25.099999999999998,
+      "ideal_output_v": -1.255,
+      "dark_output_v": -0.004999999999999999,
+      "linear_valid": true
+    },
+    {
+      "parameters": {
+        "irradiance_mw_cm2": 0.5,
+        "feedback_kohm": 200,
+        "zero_current_ua": -0.1,
+        "wavelength_nm": 950,
+        "reverse_bias_v": 5,
+        "temperature_c": 25,
+        "linear_output_limit_v": 4.5
+      },
+      "current_ua": 24.9,
+      "ideal_output_v": -4.9799999999999995,
+      "dark_output_v": 0.019999999999999997,
+      "linear_valid": false
+    },
+    {
+      "parameters": {
+        "irradiance_mw_cm2": 0.5,
+        "feedback_kohm": 200,
+        "zero_current_ua": 0,
+        "wavelength_nm": 950,
+        "reverse_bias_v": 5,
+        "temperature_c": 25,
+        "linear_output_limit_v": 4.5
+      },
+      "current_ua": 24.999999999999993,
+      "ideal_output_v": -4.999999999999999,
+      "dark_output_v": -0.0,
+      "linear_valid": false
+    },
+    {
+      "parameters": {
+        "irradiance_mw_cm2": 0.5,
+        "feedback_kohm": 200,
+        "zero_current_ua": 0.1,
+        "wavelength_nm": 950,
+        "reverse_bias_v": 5,
+        "temperature_c": 25,
+        "linear_output_limit_v": 4.5
+      },
+      "current_ua": 25.099999999999998,
+      "ideal_output_v": -5.02,
+      "dark_output_v": -0.019999999999999997,
+      "linear_valid": false
+    },
+    {
+      "parameters": {
+        "irradiance_mw_cm2": 1,
+        "feedback_kohm": 1,
+        "zero_current_ua": -0.1,
+        "wavelength_nm": 950,
+        "reverse_bias_v": 5,
+        "temperature_c": 25,
+        "linear_output_limit_v": 4.5
+      },
+      "current_ua": 49.89999999999999,
+      "ideal_output_v": -0.04989999999999999,
+      "dark_output_v": 9.999999999999999e-05,
+      "linear_valid": true
+    },
+    {
+      "parameters": {
+        "irradiance_mw_cm2": 1,
+        "feedback_kohm": 1,
+        "zero_current_ua": 0,
+        "wavelength_nm": 950,
+        "reverse_bias_v": 5,
+        "temperature_c": 25,
+        "linear_output_limit_v": 4.5
+      },
+      "current_ua": 49.99999999999999,
+      "ideal_output_v": -0.049999999999999996,
+      "dark_output_v": -0.0,
+      "linear_valid": true
+    },
+    {
+      "parameters": {
+        "irradiance_mw_cm2": 1,
+        "feedback_kohm": 1,
+        "zero_current_ua": 0.1,
+        "wavelength_nm": 950,
+        "reverse_bias_v": 5,
+        "temperature_c": 25,
+        "linear_output_limit_v": 4.5
+      },
+      "current_ua": 50.1,
+      "ideal_output_v": -0.0501,
+      "dark_output_v": -9.999999999999999e-05,
+      "linear_valid": true
+    },
+    {
+      "parameters": {
+        "irradiance_mw_cm2": 1,
+        "feedback_kohm": 50,
+        "zero_current_ua": -0.1,
+        "wavelength_nm": 950,
+        "reverse_bias_v": 5,
+        "temperature_c": 25,
+        "linear_output_limit_v": 4.5
+      },
+      "current_ua": 49.89999999999999,
+      "ideal_output_v": -2.4949999999999997,
+      "dark_output_v": 0.004999999999999999,
+      "linear_valid": true
+    },
+    {
+      "parameters": {
+        "irradiance_mw_cm2": 1,
+        "feedback_kohm": 50,
+        "zero_current_ua": 0,
+        "wavelength_nm": 950,
+        "reverse_bias_v": 5,
+        "temperature_c": 25,
+        "linear_output_limit_v": 4.5
+      },
+      "current_ua": 49.999999999999986,
+      "ideal_output_v": -2.4999999999999996,
+      "dark_output_v": -0.0,
+      "linear_valid": true
+    },
+    {
+      "parameters": {
+        "irradiance_mw_cm2": 1,
+        "feedback_kohm": 50,
+        "zero_current_ua": 0.1,
+        "wavelength_nm": 950,
+        "reverse_bias_v": 5,
+        "temperature_c": 25,
+        "linear_output_limit_v": 4.5
+      },
+      "current_ua": 50.1,
+      "ideal_output_v": -2.505,
+      "dark_output_v": -0.004999999999999999,
+      "linear_valid": true
+    },
+    {
+      "parameters": {
+        "irradiance_mw_cm2": 1,
+        "feedback_kohm": 200,
+        "zero_current_ua": -0.1,
+        "wavelength_nm": 950,
+        "reverse_bias_v": 5,
+        "temperature_c": 25,
+        "linear_output_limit_v": 4.5
+      },
+      "current_ua": 49.89999999999999,
+      "ideal_output_v": -9.979999999999999,
+      "dark_output_v": 0.019999999999999997,
+      "linear_valid": false
+    },
+    {
+      "parameters": {
+        "irradiance_mw_cm2": 1,
+        "feedback_kohm": 200,
+        "zero_current_ua": 0,
+        "wavelength_nm": 950,
+        "reverse_bias_v": 5,
+        "temperature_c": 25,
+        "linear_output_limit_v": 4.5
+      },
+      "current_ua": 49.999999999999986,
+      "ideal_output_v": -9.999999999999998,
+      "dark_output_v": -0.0,
+      "linear_valid": false
+    },
+    {
+      "parameters": {
+        "irradiance_mw_cm2": 1,
+        "feedback_kohm": 200,
+        "zero_current_ua": 0.1,
+        "wavelength_nm": 950,
+        "reverse_bias_v": 5,
+        "temperature_c": 25,
+        "linear_output_limit_v": 4.5
+      },
+      "current_ua": 50.1,
+      "ideal_output_v": -10.02,
+      "dark_output_v": -0.019999999999999997,
+      "linear_valid": false
+    }
+  ],
+  "overrange_case_count": 6,
+  "maximum_errors": {
+    "voltage_v": 1.7763568394002505e-15,
+    "corrected_current_ua": 3.552713678800501e-15
+  },
+  "tolerances": {
+    "voltage_v": 1e-12,
+    "corrected_current_ua": 1e-10
+  },
+  "original_observation_analysis": {
+    "maximum_circuit_relative_difference_percent": 93.64089775561096
+  }
+}

@@ -1,5 +1,8 @@
 [普通物理实验 4](../README.md) · [项目首页](../../../README.md) · [使用指南](../../../docs/usage.md)
 
+<!-- virtual-laboratory-entry -->
+[在线虚拟实验](https://hnnuyuxuan.github.io/general-physics-lab/simulations/single-slit-diffraction/) · [模型依据与参数来源](../../../docs/single-slit-diffraction-model-evidence.md)
+
 # 单缝衍射光强分布研究
 
 **用暗纹确定缝宽，再用整条光强曲线理解衍射。**

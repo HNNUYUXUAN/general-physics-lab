@@ -1,0 +1,33 @@
+{
+  "experimentId": "course-03/kelvin-bridge",
+  "references": [
+    {
+      "id": "yang2017bridges",
+      "authors": [
+        "杨铁柱",
+        "赖晓磊",
+        "张志强",
+        "苏明",
+        "孟书生",
+        "潘峰"
+      ],
+      "title": "基于LabVIEW的单臂、双臂电桥仿真实验系统开发",
+      "journal": "大学物理",
+      "year": 2017,
+      "volume": "36",
+      "issue": "6",
+      "pages": "36–40,77",
+      "doi": "10.16854/j.cnki.1000-0712.2017.06.010",
+      "fulltextSha256": "4720641e78d39df9ef02036648e4f7cbc40f3eaa5f26ffcb658fe56b367aecd3",
+      "readingStatus": "verified-fulltext",
+      "locators": [
+        "p.37 section 2.1 equation (1), section 2.2 Kirchhoff equations",
+        "p.38 section 3.2 equation (3)"
+      ],
+      "notes": [
+        "Printed Kelvin correction denominator is corrected by independent Kirchhoff derivation.",
+        "Random noise and apparatus-specific resistor defaults are not adopted."
+      ]
+    }
+  ]
+}
