@@ -6,7 +6,7 @@
 
 小钢球沿玻璃管下落，连续计时形成累计记录。由时间直线的斜率求平均下落时间，结合直径零差与管壁修正，计算蓖麻油黏度。
 
-[读实验报告](report/report.md) · [HTML 阅读版](notebooks/analysis.html) · [Python 笔记本](notebooks/analysis.ipynb) · [Wolfram 笔记本](../../../notebook/paclets/LiquidViscosityLab/Notebooks/LiquidViscosityLab.nb)
+[读实验报告](report/report.md) · [HTML 阅读版](https://hnnuyuxuan.github.io/general-physics-lab/experiments/course-02/liquid-viscosity/notebooks/analysis.html) · [Python 笔记本](notebooks/analysis.ipynb) · [Wolfram 笔记本](../../../notebook/paclets/LiquidViscosityLab/Notebooks/LiquidViscosityLab.nb)
 
 ![液体粘度系数的测量：测量、计算与物理解释](assets/readme-overview.svg)
 
@@ -16,8 +16,8 @@
 
 |用途|入口|打开方式|
 |---|---|---|
-|阅读原理、记录、计算与结论|[Markdown 报告](report/report.md) · [排版阅读版](report/report.html)|GitHub、Markdown 阅读器或浏览器|
-|浏览计算图表与结果|[HTML 阅读版](notebooks/analysis.html)|下载后用浏览器打开|
+|阅读原理、记录、计算与结论|[Markdown 报告](report/report.md) · [排版阅读版](https://hnnuyuxuan.github.io/general-physics-lab/experiments/course-02/liquid-viscosity/report/report.html)|GitHub、Markdown 阅读器或浏览器|
+|浏览计算图表与结果|[HTML 阅读版](https://hnnuyuxuan.github.io/general-physics-lab/experiments/course-02/liquid-viscosity/notebooks/analysis.html)|直接在线打开，也可下载到本机|
 |逐步执行和修改 Python 计算|[Jupyter Notebook](notebooks/analysis.ipynb)|JupyterLab 或 VS Code|
 |原生数学排版与 Wolfram 计算|[Wolfram Notebook](../../../notebook/paclets/LiquidViscosityLab/Notebooks/LiquidViscosityLab.nb) · [Paclet 安装包](../../../notebook/paclets/LiquidViscosityLab/dist/LiquidViscosityLab-0.1.0.paclet)|Wolfram 前端|
 |对照原始报告|[源报告 PDF](../../../pdf/course-02/08-液体粘度系数的测量/实验报告-液体粘滞系数的测量.pdf)|GitHub 或 PDF 阅读器|

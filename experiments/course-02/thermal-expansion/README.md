@@ -6,7 +6,7 @@
 
 温度逐级升高，千分表记录金属杆伸长。对等温差配对与整组回归分别计算线胀系数，让两种算法在同一数据上形成直观对照。
 
-[读实验报告](report/report.md) · [HTML 阅读版](notebooks/analysis.html) · [Python 笔记本](notebooks/analysis.ipynb) · [Wolfram 笔记本](../../../notebook/paclets/ThermalExpansionLab/Notebooks/ThermalExpansionLab.nb)
+[读实验报告](report/report.md) · [HTML 阅读版](https://hnnuyuxuan.github.io/general-physics-lab/experiments/course-02/thermal-expansion/notebooks/analysis.html) · [Python 笔记本](notebooks/analysis.ipynb) · [Wolfram 笔记本](../../../notebook/paclets/ThermalExpansionLab/Notebooks/ThermalExpansionLab.nb)
 
 ![金属线膨胀系数的测量：测量、计算与物理解释](assets/readme-overview.svg)
 
@@ -16,8 +16,8 @@
 
 |用途|入口|打开方式|
 |---|---|---|
-|阅读原理、记录、计算与结论|[Markdown 报告](report/report.md) · [排版阅读版](report/report.html)|GitHub、Markdown 阅读器或浏览器|
-|浏览计算图表与结果|[HTML 阅读版](notebooks/analysis.html)|下载后用浏览器打开|
+|阅读原理、记录、计算与结论|[Markdown 报告](report/report.md) · [排版阅读版](https://hnnuyuxuan.github.io/general-physics-lab/experiments/course-02/thermal-expansion/report/report.html)|GitHub、Markdown 阅读器或浏览器|
+|浏览计算图表与结果|[HTML 阅读版](https://hnnuyuxuan.github.io/general-physics-lab/experiments/course-02/thermal-expansion/notebooks/analysis.html)|直接在线打开，也可下载到本机|
 |逐步执行和修改 Python 计算|[Jupyter Notebook](notebooks/analysis.ipynb)|JupyterLab 或 VS Code|
 |原生数学排版与 Wolfram 计算|[Wolfram Notebook](../../../notebook/paclets/ThermalExpansionLab/Notebooks/ThermalExpansionLab.nb) · [Paclet 安装包](../../../notebook/paclets/ThermalExpansionLab/dist/ThermalExpansionLab-0.1.0.paclet)|Wolfram 前端|
 |对照原始报告|[源报告 PDF](../../../pdf/course-02/06-金属线膨胀系数的测量/实验报告-金属线胀系数的测量.pdf)|GitHub 或 PDF 阅读器|

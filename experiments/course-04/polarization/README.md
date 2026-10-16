@@ -6,7 +6,7 @@
 
 最暗反射位置给出布儒斯特角，旋转检偏器的光电流记录检验马吕斯关系。拟合保留恒定背景项，再通过零点扫描观察检偏器方向偏差的作用。
 
-[读实验报告](report/report.md) · [HTML 阅读版](notebooks/analysis.html) · [Python 笔记本](notebooks/analysis.ipynb) · [Wolfram 笔记本](../../../notebook/paclets/PolarizationLab/Notebooks/PolarizationLab.nb)
+[读实验报告](report/report.md) · [HTML 阅读版](https://hnnuyuxuan.github.io/general-physics-lab/experiments/course-04/polarization/notebooks/analysis.html) · [Python 笔记本](notebooks/analysis.ipynb) · [Wolfram 笔记本](../../../notebook/paclets/PolarizationLab/Notebooks/PolarizationLab.nb)
 
 ![偏振实验的两条数据线：布儒斯特角折射率与马吕斯光强拟合](assets/readme-overview.svg)
 
@@ -16,8 +16,8 @@
 
 |用途|入口|打开方式|
 |---|---|---|
-|阅读原理、测量记录和实验结论|[Markdown 实验报告](report/report.md) · [排版阅读版](report/report.html)|GitHub、Markdown 阅读器或本地浏览器|
-|浏览计算图表与操作模型控件|[HTML 阅读版](notebooks/analysis.html)|下载后用浏览器打开|
+|阅读原理、测量记录和实验结论|[Markdown 实验报告](report/report.md) · [排版阅读版](https://hnnuyuxuan.github.io/general-physics-lab/experiments/course-04/polarization/report/report.html)|GitHub、Markdown 阅读器或本地浏览器|
+|浏览计算图表与操作模型控件|[HTML 阅读版](https://hnnuyuxuan.github.io/general-physics-lab/experiments/course-04/polarization/notebooks/analysis.html)|直接在线打开，也可下载到本机|
 |逐步运行和修改 Python 计算|[Jupyter Notebook](notebooks/analysis.ipynb)|JupyterLab 或 VS Code|
 |运行原生公式与计算图表|[Wolfram Notebook](../../../notebook/paclets/PolarizationLab/Notebooks/PolarizationLab.nb) · [Paclet 安装包](../../../notebook/paclets/PolarizationLab/dist/PolarizationLab-0.1.0.paclet)|Wolfram 前端|
 |对照原始实验报告|[源报告 PDF](../../../pdf/course-04/10_实验十_偏振光的观察与分析.pdf)|GitHub 或 PDF 阅读器|

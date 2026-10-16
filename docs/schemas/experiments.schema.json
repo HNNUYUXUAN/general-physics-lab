@@ -2,12 +2,13 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "General Physics Lab experiment discovery catalog",
   "type": "object",
-  "required": ["schema_version", "repository_url", "raw_base_url", "path_base", "experiment_count", "courses", "experiments"],
+  "required": ["schema_version", "repository_url", "raw_base_url", "site_base_url", "path_base", "experiment_count", "courses", "experiments"],
   "additionalProperties": false,
   "properties": {
     "schema_version": {"const": 1},
     "repository_url": {"type": "string", "format": "uri"},
     "raw_base_url": {"type": "string", "format": "uri"},
+    "site_base_url": {"type": "string", "format": "uri"},
     "path_base": {"const": "repository_root"},
     "experiment_count": {"type": "integer", "minimum": 1},
     "courses": {
@@ -23,7 +24,7 @@
       "type": "object", "required": ["path", "url", "raw_url", "sha256", "bytes", "hash_basis"], "additionalProperties": false,
       "properties": {
         "path": {"type": "string", "minLength": 1, "pattern": "^(?!/)(?!.*\\\\)(?!.*\\.\\./).+$"},
-        "url": {"type": "string", "format": "uri"}, "raw_url": {"type": "string", "format": "uri"},
+        "url": {"type": "string", "format": "uri"}, "raw_url": {"type": "string", "format": "uri"}, "online_url": {"type": "string", "format": "uri"},
         "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}, "bytes": {"type": "integer", "minimum": 1},
         "hash_basis": {"enum": ["utf8-lf", "raw-bytes"]}
       }

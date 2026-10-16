@@ -8,7 +8,7 @@
 
 这里整理了淮南师范学院四门普通物理实验课程的 **45 个实验**。每个实验都有一份完整报告，以及 Python 和 Wolfram 两种实现的计算笔记本：先理解实验，再复算结果，最后通过参数变化观察模型的适用范围。
 
-[按课程找实验](#按课程找实验) · [从三个实验开始](#从三个实验开始) · [如何打开与运行](docs/usage.md) · [源资料 PDF](pdf/README.md)
+[在线阅读与交互](https://hnnuyuxuan.github.io/general-physics-lab/) · [版本发布与下载](https://github.com/HNNUYUXUAN/general-physics-lab/releases) · [按课程找实验](#按课程找实验) · [从三个实验开始](#从三个实验开始) · [如何打开与运行](docs/usage.md) · [源资料 PDF](pdf/README.md)
 
 ![普通物理实验概念插图：单摆、电路与棱镜光学装置](docs/assets/physics-lab-cover.png)
 
@@ -23,16 +23,16 @@
 |你想做什么|选择什么|在哪里使用|
 |---|---|---|
 |快速读完实验、查数据与结论|**实验报告** `report.md`|GitHub 或支持数学公式的 Markdown 阅读器|
-|查看图表、操作已有滑块或菜单|**Notebook 阅读版** `analysis.html`|下载后在浏览器打开，或使用[本地预览](docs/usage.md#在浏览器中查看-html)|
+|查看图表、操作已有滑块或菜单|**[在线 HTML 计算阅读版](https://hnnuyuxuan.github.io/general-physics-lab/)**|直接在浏览器访问；下载后也可使用[本地预览](docs/usage.md#在浏览器中查看-html)|
 |逐步运行 Python、修改数据或模型|**Jupyter Notebook** `analysis.ipynb`|JupyterLab 或 VS Code|
 |使用原生数学排版、符号推导与交互|**Wolfram Notebook** `.nb`／**Paclet** `.paclet`|本机 Wolfram 环境|
 |对照 DOCX 转换后的报告、讲义与说明书|**源资料 PDF**|[57 份 PDF 索引](pdf/README.md)|
 
-下载仓库后，在浏览器中打开 HTML 阅读版即可操作页面中的控件；在 Jupyter 或 Wolfram 中打开 Notebook，可以编辑并重新计算。
+从在线站点进入实验，即可阅读排版报告并操作 HTML 中已有的滑块、菜单和图表。版本发布提供可下载的项目资料；在本机 Jupyter 或 Wolfram 中打开 Notebook，可以编辑并重新计算。
 
 ## 按课程找实验
 
-课程目录提供每个实验的**报告、Python、Wolfram 和源报告 PDF**直达链接。
+课程目录提供每个实验的**在线报告、HTML、Python、Wolfram 和源报告 PDF**直达链接。
 
 |课程入口|实验数|主要内容|可以先看|
 |---|---:|---|---|
@@ -47,7 +47,7 @@
 
 从有效摆长与重复计时出发，计算周期，拟合重力加速度，再查看残差。随后比较小角度近似与非线性单摆，观察初始摆角对周期和测量结果的影响。
 
-[实验入口](experiments/course-01/pendulum/README.md) · [直接读报告](experiments/course-01/pendulum/report/report.md) · [打开 Python 笔记本](experiments/course-01/pendulum/notebooks/analysis.ipynb)
+[实验入口](experiments/course-01/pendulum/README.md) · [在线交互](https://hnnuyuxuan.github.io/general-physics-lab/experiments/course-01/pendulum/notebooks/analysis.html) · [直接读报告](experiments/course-01/pendulum/report/report.md) · [打开 Python 笔记本](experiments/course-01/pendulum/notebooks/analysis.ipynb)
 
 ### 谐振与衍射：让数据和模型相遇
 
@@ -59,13 +59,13 @@
       <a href="experiments/course-03/rlc-resonance/README.md"><img src="experiments/course-03/rlc-resonance/results/figures/C01_R1_normalized.png" width="430" alt="RLC 实测归一化电压随频率的变化，空心点标记观测值"></a><br>
       <strong>RLC 串联谐振 · 实测响应</strong><br>
       比较峰值、半功率带宽与品质因数。<br>
-      <a href="experiments/course-03/rlc-resonance/README.md">进入实验</a>
+      <a href="experiments/course-03/rlc-resonance/README.md">进入实验</a> · <a href="https://hnnuyuxuan.github.io/general-physics-lab/experiments/course-03/rlc-resonance/notebooks/analysis.html">在线交互</a>
     </td>
     <td width="50%" align="center" valign="top">
       <a href="experiments/course-04/single-slit-diffraction/README.md"><img src="experiments/course-04/single-slit-diffraction/results/figures/scan-model.png" width="430" alt="由测量缝宽构建的单缝衍射理论归一化光强分布"></a><br>
       <strong>单缝衍射 · 理论光强分布</strong><br>
       从暗纹位置估计缝宽，检查近轴近似。<br>
-      <a href="experiments/course-04/single-slit-diffraction/README.md">进入实验</a>
+      <a href="experiments/course-04/single-slit-diffraction/README.md">进入实验</a> · <a href="https://hnnuyuxuan.github.io/general-physics-lab/experiments/course-04/single-slit-diffraction/notebooks/analysis.html">在线交互</a>
     </td>
   </tr>
 </table>
@@ -113,5 +113,15 @@ python -m venv .venv
 从 [`llms.txt`](llms.txt) 了解项目，按[中英文实验目录](docs/experiment-index.md)找到物理问题，再沿[阅读指南](docs/agent-guide.md)定位原始数据、完整精度结果与计算实现。[复现指南](docs/agent-reproduction.md)提供新内核执行、双端重建和 Paclet 入口。
 
 程序检索使用[机器目录](docs/experiments.json)与[检索命令](docs/agent-catalog.md)；一次读取可使用 [`llms-full.txt`](llms-full.txt)。引用项目见 [`CITATION.cff`](CITATION.cff)，引用具体数值同时附实验标识、指标键、来源文件和提交版本。
+
+## 使用与许可
+
+|内容|许可与说明|
+|---|---|
+|项目代码|[MIT License](LICENSE)|
+|项目原创文稿与整理数据|[CC BY 4.0，署名使用](LICENSING.md)|
+|第三方报告、讲义、校徽及其他素材|按各自权利与来源说明使用，见[第三方材料说明](THIRD_PARTY_NOTICES.md)|
+
+[完整许可说明](LICENSING.md) · [版本发布与下载](https://github.com/HNNUYUXUAN/general-physics-lab/releases)
 
 维护：**缪雨轩 · 淮南师范学院**

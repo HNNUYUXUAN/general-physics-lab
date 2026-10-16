@@ -6,7 +6,7 @@
 
 对工作电流、励磁电流和探头位置进行三组扫描。由四种电流与磁场极性组合分解电压，比较霍尔投影、共模及单奇分量，再以位置扫描描绘相对场。
 
-[读实验报告](report/report.md) · [浏览器交互](notebooks/analysis.html) · [Python 笔记本](notebooks/analysis.ipynb) · [Wolfram 笔记本](../../../notebook/paclets/HallEffectLab/Notebooks/HallEffectLab.nb)
+[读实验报告](report/report.md) · [浏览器交互](https://hnnuyuxuan.github.io/general-physics-lab/experiments/course-03/hall-effect/notebooks/analysis.html) · [Python 笔记本](notebooks/analysis.ipynb) · [Wolfram 笔记本](../../../notebook/paclets/HallEffectLab/Notebooks/HallEffectLab.nb)
 
 ![霍尔效应的实验研究：记录、计算与物理探索](assets/readme-overview.svg)
 
@@ -16,8 +16,8 @@
 
 |用途|入口|打开方式|
 |---|---|---|
-|阅读原理、记录与结论|[Markdown 实验报告](report/report.md) · [排版阅读版](report/report.html)|GitHub、Markdown 阅读器或本地浏览器|
-|改变参数、查看曲线响应|[HTML 交互阅读版](notebooks/analysis.html)|下载后用浏览器打开|
+|阅读原理、记录与结论|[Markdown 实验报告](report/report.md) · [排版阅读版](https://hnnuyuxuan.github.io/general-physics-lab/experiments/course-03/hall-effect/report/report.html)|GitHub、Markdown 阅读器或本地浏览器|
+|改变参数、查看曲线响应|[HTML 交互阅读版](https://hnnuyuxuan.github.io/general-physics-lab/experiments/course-03/hall-effect/notebooks/analysis.html)|直接在线打开，也可下载到本机|
 |运行 Python 计算与探索|[Jupyter Notebook](notebooks/analysis.ipynb)|JupyterLab 或 VS Code|
 |运行原生数学排版与交互计算|[Wolfram Notebook](../../../notebook/paclets/HallEffectLab/Notebooks/HallEffectLab.nb) · [Paclet 安装包](../../../notebook/paclets/HallEffectLab/dist/HallEffectLab-0.1.0.paclet)|Wolfram 前端|
 |对照源实验记录|[源报告 PDF](../../../pdf/course-03/5霍尔效应的实验研究/实验报告-霍尔效应的实验研究.pdf)|GitHub 或 PDF 阅读器|
@@ -67,7 +67,7 @@ $$
 |---|---|---|
 |逐点切换换向记录|在工作电流、励磁电流、位置三组共 30 个记录中选择|左侧看四极性原读数，右侧看霍尔、共模、电流奇和磁场奇分量|
 
-[HTML 阅读版](notebooks/analysis.html) 包含上述控件；[Jupyter](notebooks/analysis.ipynb) 与 [Wolfram Notebook](../../../notebook/paclets/HallEffectLab/Notebooks/HallEffectLab.nb) 沿报告章节展开公式、数据处理和模型计算。
+[HTML 阅读版](https://hnnuyuxuan.github.io/general-physics-lab/experiments/course-03/hall-effect/notebooks/analysis.html) 包含上述控件；[Jupyter](notebooks/analysis.ipynb) 与 [Wolfram Notebook](../../../notebook/paclets/HallEffectLab/Notebooks/HallEffectLab.nb) 沿报告章节展开公式、数据处理和模型计算。
 
 建议按以下顺序阅读：
 

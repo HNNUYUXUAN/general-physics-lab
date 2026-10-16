@@ -6,7 +6,7 @@
 
 让蒸汽进入量热器，以初末称量确定凝结质量，以传感器电压换算温度。冷水与器件吸热、凝结水降温放热分别核算，最后求单位质量潜热。
 
-[读实验报告](report/report.md) · [HTML 阅读与探索](notebooks/analysis.html) · [Python 笔记本](notebooks/analysis.ipynb) · [Wolfram 笔记本](../../../notebook/paclets/VaporizationHeatLab/Notebooks/VaporizationHeatLab.nb)
+[读实验报告](report/report.md) · [HTML 阅读与探索](https://hnnuyuxuan.github.io/general-physics-lab/experiments/course-01/vaporization-heat/notebooks/analysis.html) · [Python 笔记本](notebooks/analysis.ipynb) · [Wolfram 笔记本](../../../notebook/paclets/VaporizationHeatLab/Notebooks/VaporizationHeatLab.nb)
 
 ![液体比汽化热的测量：测量、计算与物理解释](assets/readme-overview.svg)
 
@@ -16,8 +16,8 @@
 
 |用途|入口|打开方式|
 |---|---|---|
-|阅读原理、记录、计算与结论|[Markdown 报告](report/report.md) · [排版阅读版](report/report.html)|GitHub、Markdown 阅读器或浏览器|
-|浏览计算图表、操作交互控件|[HTML 阅读版](notebooks/analysis.html)|下载后用浏览器打开|
+|阅读原理、记录、计算与结论|[Markdown 报告](report/report.md) · [排版阅读版](https://hnnuyuxuan.github.io/general-physics-lab/experiments/course-01/vaporization-heat/report/report.html)|GitHub、Markdown 阅读器或浏览器|
+|浏览计算图表、操作交互控件|[HTML 阅读版](https://hnnuyuxuan.github.io/general-physics-lab/experiments/course-01/vaporization-heat/notebooks/analysis.html)|直接在线打开，也可下载到本机|
 |逐步执行和修改 Python 计算|[Jupyter Notebook](notebooks/analysis.ipynb)|JupyterLab 或 VS Code|
 |原生数学排版与 Wolfram 计算|[Wolfram Notebook](../../../notebook/paclets/VaporizationHeatLab/Notebooks/VaporizationHeatLab.nb) · [Paclet 安装包](../../../notebook/paclets/VaporizationHeatLab/dist/VaporizationHeatLab-0.1.0.paclet)|Wolfram 前端|
 |对照原始报告|[源报告 PDF](../../../pdf/course-01/液体比汽化热的测量/液体比汽化热测量实验报告.pdf)|GitHub 或 PDF 阅读器|
@@ -58,7 +58,7 @@ $C_{\mathrm{sys}}$ 为水、内筒与搅拌器的总热容，$M$ 为蒸汽凝结
 |---|---|---|
 |假设末温偏移滑块|−2 至 2 K，默认 0 K|保持初温、质量和 100 °C 蒸汽温度，观察热平衡估值的变化。|
 
-在 [HTML](notebooks/analysis.html) 中操作已有控件；在 [Jupyter](notebooks/analysis.ipynb) 或 [Wolfram](../../../notebook/paclets/VaporizationHeatLab/Notebooks/VaporizationHeatLab.nb) 中运行全部单元，可继续修改输入与计算。
+在 [HTML](https://hnnuyuxuan.github.io/general-physics-lab/experiments/course-01/vaporization-heat/notebooks/analysis.html) 中操作已有控件；在 [Jupyter](notebooks/analysis.ipynb) 或 [Wolfram](../../../notebook/paclets/VaporizationHeatLab/Notebooks/VaporizationHeatLab.nb) 中运行全部单元，可继续修改输入与计算。
 
 ## 在本机打开
 

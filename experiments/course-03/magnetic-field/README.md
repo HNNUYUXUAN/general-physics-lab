@@ -6,7 +6,7 @@
 
 在两种励磁电流下测量单线圈和双线圈轴向响应。将共同读数标度的电流比例与几何理论分开比较，再扫描线圈间距，理解亥姆霍兹条件的中心均匀性。
 
-[读实验报告](report/report.md) · [浏览器交互](notebooks/analysis.html) · [Python 笔记本](notebooks/analysis.ipynb) · [Wolfram 笔记本](../../../notebook/paclets/MagneticFieldLab/Notebooks/MagneticFieldLab.nb)
+[读实验报告](report/report.md) · [浏览器交互](https://hnnuyuxuan.github.io/general-physics-lab/experiments/course-03/magnetic-field/notebooks/analysis.html) · [Python 笔记本](notebooks/analysis.ipynb) · [Wolfram 笔记本](../../../notebook/paclets/MagneticFieldLab/Notebooks/MagneticFieldLab.nb)
 
 ![磁场的描绘：记录、计算与物理探索](assets/readme-overview.svg)
 
@@ -16,8 +16,8 @@
 
 |用途|入口|打开方式|
 |---|---|---|
-|阅读原理、记录与结论|[Markdown 实验报告](report/report.md) · [排版阅读版](report/report.html)|GitHub、Markdown 阅读器或本地浏览器|
-|改变参数、查看曲线响应|[HTML 交互阅读版](notebooks/analysis.html)|下载后用浏览器打开|
+|阅读原理、记录与结论|[Markdown 实验报告](report/report.md) · [排版阅读版](https://hnnuyuxuan.github.io/general-physics-lab/experiments/course-03/magnetic-field/report/report.html)|GitHub、Markdown 阅读器或本地浏览器|
+|改变参数、查看曲线响应|[HTML 交互阅读版](https://hnnuyuxuan.github.io/general-physics-lab/experiments/course-03/magnetic-field/notebooks/analysis.html)|直接在线打开，也可下载到本机|
 |运行 Python 计算与探索|[Jupyter Notebook](notebooks/analysis.ipynb)|JupyterLab 或 VS Code|
 |运行原生数学排版与交互计算|[Wolfram Notebook](../../../notebook/paclets/MagneticFieldLab/Notebooks/MagneticFieldLab.nb) · [Paclet 安装包](../../../notebook/paclets/MagneticFieldLab/dist/MagneticFieldLab-0.1.0.paclet)|Wolfram 前端|
 |对照源实验记录|[源报告 PDF](../../../pdf/course-03/7磁场的描绘/实验报告-磁场的描绘.pdf)|GitHub 或 PDF 阅读器|
@@ -67,7 +67,7 @@ $$
 |---|---|---|
 |改变线圈间距比|选择 $d/R=0.5,1,1.5$|比较归一化场的中心峰、平台与双峰趋势|
 
-[HTML 阅读版](notebooks/analysis.html) 包含上述控件；[Jupyter](notebooks/analysis.ipynb) 与 [Wolfram Notebook](../../../notebook/paclets/MagneticFieldLab/Notebooks/MagneticFieldLab.nb) 沿报告章节展开公式、数据处理和模型计算。
+[HTML 阅读版](https://hnnuyuxuan.github.io/general-physics-lab/experiments/course-03/magnetic-field/notebooks/analysis.html) 包含上述控件；[Jupyter](notebooks/analysis.ipynb) 与 [Wolfram Notebook](../../../notebook/paclets/MagneticFieldLab/Notebooks/MagneticFieldLab.nb) 沿报告章节展开公式、数据处理和模型计算。
 
 建议按以下顺序阅读：
 

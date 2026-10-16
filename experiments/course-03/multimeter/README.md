@@ -6,7 +6,7 @@
 
 用数字式与指针式万用表测量五组电压、五个电阻，比较读数与标称值。再把欧姆档写成无量纲电路模型，理解为什么同一刻度盘不同位置的读数难度不同。
 
-[读实验报告](report/report.md) · [浏览器交互](notebooks/analysis.html) · [Python 笔记本](notebooks/analysis.ipynb) · [Wolfram 笔记本](../../../notebook/paclets/MultimeterLab/Notebooks/MultimeterLab.nb)
+[读实验报告](report/report.md) · [浏览器交互](https://hnnuyuxuan.github.io/general-physics-lab/experiments/course-03/multimeter/notebooks/analysis.html) · [Python 笔记本](notebooks/analysis.ipynb) · [Wolfram 笔记本](../../../notebook/paclets/MultimeterLab/Notebooks/MultimeterLab.nb)
 
 ![万用电表的使用：记录、计算与物理探索](assets/readme-overview.svg)
 
@@ -16,8 +16,8 @@
 
 |用途|入口|打开方式|
 |---|---|---|
-|阅读原理、记录与结论|[Markdown 实验报告](report/report.md) · [排版阅读版](report/report.html)|GitHub、Markdown 阅读器或本地浏览器|
-|改变参数、查看曲线响应|[HTML 交互阅读版](notebooks/analysis.html)|下载后用浏览器打开|
+|阅读原理、记录与结论|[Markdown 实验报告](report/report.md) · [排版阅读版](https://hnnuyuxuan.github.io/general-physics-lab/experiments/course-03/multimeter/report/report.html)|GitHub、Markdown 阅读器或本地浏览器|
+|改变参数、查看曲线响应|[HTML 交互阅读版](https://hnnuyuxuan.github.io/general-physics-lab/experiments/course-03/multimeter/notebooks/analysis.html)|直接在线打开，也可下载到本机|
 |运行 Python 计算与探索|[Jupyter Notebook](notebooks/analysis.ipynb)|JupyterLab 或 VS Code|
 |运行原生数学排版与交互计算|[Wolfram Notebook](../../../notebook/paclets/MultimeterLab/Notebooks/MultimeterLab.nb) · [Paclet 安装包](../../../notebook/paclets/MultimeterLab/dist/MultimeterLab-0.1.0.paclet)|Wolfram 前端|
 |对照源实验记录|[源报告 PDF](../../../pdf/course-03/1万用电表的使用/实验报告-万用电表的使用.pdf)|GitHub 或 PDF 阅读器|
@@ -67,7 +67,7 @@ $$
 |---|---|---|
 |移动欧姆刻度滑块|选择电阻比 $R_x/R_{\mathrm{int}}=0.1,0.5,1,2,5,10,20$|观察标记点的归一化偏转与局部刻度疏密|
 
-[HTML 阅读版](notebooks/analysis.html) 包含上述控件；[Jupyter](notebooks/analysis.ipynb) 与 [Wolfram Notebook](../../../notebook/paclets/MultimeterLab/Notebooks/MultimeterLab.nb) 沿报告章节展开公式、数据处理和模型计算。
+[HTML 阅读版](https://hnnuyuxuan.github.io/general-physics-lab/experiments/course-03/multimeter/notebooks/analysis.html) 包含上述控件；[Jupyter](notebooks/analysis.ipynb) 与 [Wolfram Notebook](../../../notebook/paclets/MultimeterLab/Notebooks/MultimeterLab.nb) 沿报告章节展开公式、数据处理和模型计算。
 
 建议按以下顺序阅读：
 

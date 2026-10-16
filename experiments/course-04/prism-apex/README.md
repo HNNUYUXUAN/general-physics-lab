@@ -6,7 +6,7 @@
 
 平行光分别照到三棱镜的两面，望远镜依次寻找反射狭缝像。两方向之间的夹角是顶角的两倍；双游标和多次测量将这条几何关系落实为可复算的数据。
 
-[读实验报告](report/report.md) · [HTML 阅读版](notebooks/analysis.html) · [Python 笔记本](notebooks/analysis.ipynb) · [Wolfram 笔记本](../../../notebook/paclets/PrismApexLab/Notebooks/PrismApexLab.nb)
+[读实验报告](report/report.md) · [HTML 阅读版](https://hnnuyuxuan.github.io/general-physics-lab/experiments/course-04/prism-apex/notebooks/analysis.html) · [Python 笔记本](notebooks/analysis.ipynb) · [Wolfram 笔记本](../../../notebook/paclets/PrismApexLab/Notebooks/PrismApexLab.nb)
 
 ![反射法顶角测量：反射方向夹角为顶角的两倍](assets/readme-overview.svg)
 
@@ -16,8 +16,8 @@
 
 |用途|入口|打开方式|
 |---|---|---|
-|阅读原理、测量记录和实验结论|[Markdown 实验报告](report/report.md) · [排版阅读版](report/report.html)|GitHub、Markdown 阅读器或本地浏览器|
-|浏览逐次计算表与静态图表|[HTML 阅读版](notebooks/analysis.html)|下载后用浏览器打开|
+|阅读原理、测量记录和实验结论|[Markdown 实验报告](report/report.md) · [排版阅读版](https://hnnuyuxuan.github.io/general-physics-lab/experiments/course-04/prism-apex/report/report.html)|GitHub、Markdown 阅读器或本地浏览器|
+|浏览逐次计算表与静态图表|[HTML 阅读版](https://hnnuyuxuan.github.io/general-physics-lab/experiments/course-04/prism-apex/notebooks/analysis.html)|直接在线打开，也可下载到本机|
 |逐步运行和修改 Python 计算|[Jupyter Notebook](notebooks/analysis.ipynb)|JupyterLab 或 VS Code|
 |运行原生公式与计算图表|[Wolfram Notebook](../../../notebook/paclets/PrismApexLab/Notebooks/PrismApexLab.nb) · [Paclet 安装包](../../../notebook/paclets/PrismApexLab/dist/PrismApexLab-0.1.0.paclet)|Wolfram 前端|
 |对照原始实验报告|[源报告 PDF](../../../pdf/course-04/02_实验二_用分光计测三棱镜的顶角_实验报告_A3双面示范格式版.pdf)|GitHub 或 PDF 阅读器|

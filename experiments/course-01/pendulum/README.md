@@ -6,7 +6,7 @@
 
 改变摆长、重复计时，将周期平方与有效摆长联系起来，求出重力加速度。再从小角度近似走向非线性单摆，观察摆幅如何改变周期与测量结果。
 
-[读实验报告](report/report.md) · [浏览器交互](notebooks/analysis.html) · [Python 笔记本](notebooks/analysis.ipynb) · [Wolfram 笔记本](../../../notebook/paclets/PendulumLab/Notebooks/Pendulum.nb)
+[读实验报告](report/report.md) · [浏览器交互](https://hnnuyuxuan.github.io/general-physics-lab/experiments/course-01/pendulum/notebooks/analysis.html) · [Python 笔记本](notebooks/analysis.ipynb) · [Wolfram 笔记本](../../../notebook/paclets/PendulumLab/Notebooks/Pendulum.nb)
 
 ![单摆有效摆长、摆球直径及周期平方拟合的关系](assets/pendulum-overview.svg)
 
@@ -16,8 +16,8 @@
 
 |用途|入口|打开方式|
 |---|---|---|
-|阅读原理、测量记录和实验结论|[完整实验报告](report/report.md) · [排版阅读版](report/report.html)|GitHub、Markdown 阅读器或本地浏览器|
-|筛选数据、改变摆角、播放运动|[HTML 交互阅读版](notebooks/analysis.html)|下载后用浏览器打开|
+|阅读原理、测量记录和实验结论|[完整实验报告](report/report.md) · [排版阅读版](https://hnnuyuxuan.github.io/general-physics-lab/experiments/course-01/pendulum/report/report.html)|GitHub、Markdown 阅读器或本地浏览器|
+|筛选数据、改变摆角、播放运动|[HTML 交互阅读版](https://hnnuyuxuan.github.io/general-physics-lab/experiments/course-01/pendulum/notebooks/analysis.html)|直接在线打开，也可下载到本机|
 |逐步运行和修改 Python 计算|[Jupyter Notebook](notebooks/analysis.ipynb)|JupyterLab 或 VS Code|
 |进行符号推导与原生交互计算|[Wolfram Notebook](../../../notebook/paclets/PendulumLab/Notebooks/Pendulum.nb) · [Paclet 安装包](../../../notebook/paclets/PendulumLab/dist/PendulumLab-0.1.0.paclet)|Wolfram 前端|
 |对照原始实验报告|[源报告 PDF](../../../pdf/course-01/单摆测重力加速度/牛顿第二运动定律测重力加速度实验报告.pdf)|GitHub 或 PDF 阅读器|
@@ -95,7 +95,7 @@ $$
 |改变摆长与初始摆角，播放或拖动时间|摆球运动、摆角与角速度的对应关系|
 |在摆角扫描中移动滑块|小角度近似的周期偏差及其对重力估计的影响|
 
-在 [HTML](notebooks/analysis.html) 中直接操作已有控件；在 [Jupyter](notebooks/analysis.ipynb) 或 [Wolfram](../../../notebook/paclets/PendulumLab/Notebooks/Pendulum.nb) 中运行全部单元，可继续修改计算参数与模型。
+在 [HTML](https://hnnuyuxuan.github.io/general-physics-lab/experiments/course-01/pendulum/notebooks/analysis.html) 中直接操作已有控件；在 [Jupyter](notebooks/analysis.ipynb) 或 [Wolfram](../../../notebook/paclets/PendulumLab/Notebooks/Pendulum.nb) 中运行全部单元，可继续修改计算参数与模型。
 
 ## 在本机打开
 

@@ -6,7 +6,7 @@
 
 固定超声声源，让接收器沿导轨接近声源。把同步记录的速度与频率画在一起，用线性回归连接多普勒频移和空气声速。
 
-[读实验报告](report/report.md) · [HTML 阅读与探索](notebooks/analysis.html) · [Python 笔记本](notebooks/analysis.ipynb) · [Wolfram 笔记本](../../../notebook/paclets/DopplerVerificationLab/Notebooks/DopplerVerificationLab.nb)
+[读实验报告](report/report.md) · [HTML 阅读与探索](https://hnnuyuxuan.github.io/general-physics-lab/experiments/course-01/doppler-verification/notebooks/analysis.html) · [Python 笔记本](notebooks/analysis.ipynb) · [Wolfram 笔记本](../../../notebook/paclets/DopplerVerificationLab/Notebooks/DopplerVerificationLab.nb)
 
 ![多普勒效应的验证：测量、计算与物理解释](assets/readme-overview.svg)
 
@@ -16,8 +16,8 @@
 
 |用途|入口|打开方式|
 |---|---|---|
-|阅读原理、记录、计算与结论|[Markdown 报告](report/report.md) · [排版阅读版](report/report.html)|GitHub、Markdown 阅读器或浏览器|
-|浏览计算图表、操作交互控件|[HTML 阅读版](notebooks/analysis.html)|下载后用浏览器打开|
+|阅读原理、记录、计算与结论|[Markdown 报告](report/report.md) · [排版阅读版](https://hnnuyuxuan.github.io/general-physics-lab/experiments/course-01/doppler-verification/report/report.html)|GitHub、Markdown 阅读器或浏览器|
+|浏览计算图表、操作交互控件|[HTML 阅读版](https://hnnuyuxuan.github.io/general-physics-lab/experiments/course-01/doppler-verification/notebooks/analysis.html)|直接在线打开，也可下载到本机|
 |逐步执行和修改 Python 计算|[Jupyter Notebook](notebooks/analysis.ipynb)|JupyterLab 或 VS Code|
 |原生数学排版与 Wolfram 计算|[Wolfram Notebook](../../../notebook/paclets/DopplerVerificationLab/Notebooks/DopplerVerificationLab.nb) · [Paclet 安装包](../../../notebook/paclets/DopplerVerificationLab/dist/DopplerVerificationLab-0.1.0.paclet)|Wolfram 前端|
 |对照原始报告|[源报告 PDF](../../../pdf/course-01/多普勒效应的验证/多普勒效应验证实验报告.pdf)|GitHub 或 PDF 阅读器|
@@ -58,7 +58,7 @@ $$
 |---|---|---|
 |接收器速度滑块|−1.5 至 1.5 m/s，默认 0|观察接近与远离时的频移，以及静止时恢复发射频率。|
 
-在 [HTML](notebooks/analysis.html) 中操作已有控件；在 [Jupyter](notebooks/analysis.ipynb) 或 [Wolfram](../../../notebook/paclets/DopplerVerificationLab/Notebooks/DopplerVerificationLab.nb) 中运行全部单元，可继续修改输入与计算。
+在 [HTML](https://hnnuyuxuan.github.io/general-physics-lab/experiments/course-01/doppler-verification/notebooks/analysis.html) 中操作已有控件；在 [Jupyter](notebooks/analysis.ipynb) 或 [Wolfram](../../../notebook/paclets/DopplerVerificationLab/Notebooks/DopplerVerificationLab.nb) 中运行全部单元，可继续修改输入与计算。
 
 ## 在本机打开
 

@@ -6,7 +6,7 @@
 
 标准质量片加载惯性秤，周期平方建立质量定标。再测圆柱体周期，通过同一条直线反推惯性质量，并从斜率与截距理解等效劲度和空载质量。
 
-[读实验报告](report/report.md) · [HTML 阅读版](notebooks/analysis.html) · [Python 笔记本](notebooks/analysis.ipynb) · [Wolfram 笔记本](../../../notebook/paclets/InertialBalanceLab/Notebooks/InertialBalanceLab.nb)
+[读实验报告](report/report.md) · [HTML 阅读版](https://hnnuyuxuan.github.io/general-physics-lab/experiments/course-02/inertial-balance/notebooks/analysis.html) · [Python 笔记本](notebooks/analysis.ipynb) · [Wolfram 笔记本](../../../notebook/paclets/InertialBalanceLab/Notebooks/InertialBalanceLab.nb)
 
 ![惯性秤的应用：测量、计算与物理解释](assets/readme-overview.svg)
 
@@ -16,8 +16,8 @@
 
 |用途|入口|打开方式|
 |---|---|---|
-|阅读原理、记录、计算与结论|[Markdown 报告](report/report.md) · [排版阅读版](report/report.html)|GitHub、Markdown 阅读器或浏览器|
-|浏览计算图表与结果|[HTML 阅读版](notebooks/analysis.html)|下载后用浏览器打开|
+|阅读原理、记录、计算与结论|[Markdown 报告](report/report.md) · [排版阅读版](https://hnnuyuxuan.github.io/general-physics-lab/experiments/course-02/inertial-balance/report/report.html)|GitHub、Markdown 阅读器或浏览器|
+|浏览计算图表与结果|[HTML 阅读版](https://hnnuyuxuan.github.io/general-physics-lab/experiments/course-02/inertial-balance/notebooks/analysis.html)|直接在线打开，也可下载到本机|
 |逐步执行和修改 Python 计算|[Jupyter Notebook](notebooks/analysis.ipynb)|JupyterLab 或 VS Code|
 |原生数学排版与 Wolfram 计算|[Wolfram Notebook](../../../notebook/paclets/InertialBalanceLab/Notebooks/InertialBalanceLab.nb) · [Paclet 安装包](../../../notebook/paclets/InertialBalanceLab/dist/InertialBalanceLab-0.1.0.paclet)|Wolfram 前端|
 |对照原始报告|[源报告 PDF](../../../pdf/course-02/惯性秤的应用/实验报告-惯性秤的应用.pdf)|GitHub 或 PDF 阅读器|

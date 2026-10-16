@@ -6,7 +6,7 @@
 
 调节惠斯通电桥至平衡，通过比率臂和比较臂测量五个电阻。再观察平衡附近的桥电压，理解比率选择如何改变零点灵敏度，并将读数放回仪器的适用量程。
 
-[读实验报告](report/report.md) · [浏览器交互](notebooks/analysis.html) · [Python 笔记本](notebooks/analysis.ipynb) · [Wolfram 笔记本](../../../notebook/paclets/WheatstoneBridgeLab/Notebooks/WheatstoneBridgeLab.nb)
+[读实验报告](report/report.md) · [浏览器交互](https://hnnuyuxuan.github.io/general-physics-lab/experiments/course-03/wheatstone-bridge/notebooks/analysis.html) · [Python 笔记本](notebooks/analysis.ipynb) · [Wolfram 笔记本](../../../notebook/paclets/WheatstoneBridgeLab/Notebooks/WheatstoneBridgeLab.nb)
 
 ![单臂电桥测电阻：记录、计算与物理探索](assets/readme-overview.svg)
 
@@ -16,8 +16,8 @@
 
 |用途|入口|打开方式|
 |---|---|---|
-|阅读原理、记录与结论|[Markdown 实验报告](report/report.md) · [排版阅读版](report/report.html)|GitHub、Markdown 阅读器或本地浏览器|
-|改变参数、查看曲线响应|[HTML 交互阅读版](notebooks/analysis.html)|下载后用浏览器打开|
+|阅读原理、记录与结论|[Markdown 实验报告](report/report.md) · [排版阅读版](https://hnnuyuxuan.github.io/general-physics-lab/experiments/course-03/wheatstone-bridge/report/report.html)|GitHub、Markdown 阅读器或本地浏览器|
+|改变参数、查看曲线响应|[HTML 交互阅读版](https://hnnuyuxuan.github.io/general-physics-lab/experiments/course-03/wheatstone-bridge/notebooks/analysis.html)|直接在线打开，也可下载到本机|
 |运行 Python 计算与探索|[Jupyter Notebook](notebooks/analysis.ipynb)|JupyterLab 或 VS Code|
 |运行原生数学排版与交互计算|[Wolfram Notebook](../../../notebook/paclets/WheatstoneBridgeLab/Notebooks/WheatstoneBridgeLab.nb) · [Paclet 安装包](../../../notebook/paclets/WheatstoneBridgeLab/dist/WheatstoneBridgeLab-0.1.0.paclet)|Wolfram 前端|
 |对照源实验记录|[源报告 PDF](../../../pdf/course-03/9单臂电桥测电阻/实验报告-单臂电桥测电阻.pdf)|GitHub 或 PDF 阅读器|
@@ -72,7 +72,7 @@ $$
 |---|---|---|
 |切换比率臂 M|选择 $M=0.1,1,10,100$|比较同一相对失衡范围内的归一化桥电压和零点斜率|
 
-[HTML 阅读版](notebooks/analysis.html) 包含上述控件；[Jupyter](notebooks/analysis.ipynb) 与 [Wolfram Notebook](../../../notebook/paclets/WheatstoneBridgeLab/Notebooks/WheatstoneBridgeLab.nb) 沿报告章节展开公式、数据处理和模型计算。
+[HTML 阅读版](https://hnnuyuxuan.github.io/general-physics-lab/experiments/course-03/wheatstone-bridge/notebooks/analysis.html) 包含上述控件；[Jupyter](notebooks/analysis.ipynb) 与 [Wolfram Notebook](../../../notebook/paclets/WheatstoneBridgeLab/Notebooks/WheatstoneBridgeLab.nb) 沿报告章节展开公式、数据处理和模型计算。
 
 建议按以下顺序阅读：
 

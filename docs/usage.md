@@ -1,16 +1,16 @@
 # 阅读与运行指南
 
-[返回项目首页](../README.md) · [课程 1](../experiments/course-01/README.md) · [课程 2](../experiments/course-02/README.md) · [课程 3](../experiments/course-03/README.md) · [课程 4](../experiments/course-04/README.md)
+[在线站点](https://hnnuyuxuan.github.io/general-physics-lab/) · [版本发布与下载](https://github.com/HNNUYUXUAN/general-physics-lab/releases) · [返回项目首页](../README.md) · [课程 1](../experiments/course-01/README.md) · [课程 2](../experiments/course-02/README.md) · [课程 3](../experiments/course-03/README.md) · [课程 4](../experiments/course-04/README.md)
 
 ## 先找到一个实验
 
-从首页课程表进入课程目录，再点击实验名称查看完整入口。目录也提供报告、Jupyter、Wolfram 与源报告 PDF 的直达链接。
+从首页课程表进入课程目录，再点击实验名称查看完整入口。目录提供在线报告、HTML 计算阅读版、Jupyter、Wolfram 与源报告 PDF 的直达链接。
 
 |文件|用途|打开方式|
 |---|---|---|
 |`report/report.md`|整理后的完整实验报告|GitHub、VS Code 的 Markdown 预览|
-|`report/report.html`|排版后的报告阅读版|本地浏览器|
-|`notebooks/analysis.html`|包含已保存图表及适用交互的计算阅读版|本地浏览器|
+|`report/report.html`|排版后的报告阅读版|在线浏览器直接访问，也可下载后本地打开|
+|`notebooks/analysis.html`|包含已保存图表及适用交互的计算阅读版|在线浏览器直接访问，也可下载后本地打开|
 |`notebooks/analysis.ipynb`|可修改并重算的 Python 笔记本|JupyterLab、VS Code|
 |Paclet 中的 `.nb`|可修改并重算的 Wolfram 笔记本|本机 Wolfram 前端|
 |Paclet 中的 `.paclet`|包含代码、数据和 Notebook 的独立安装包|Wolfram 的 `PacletInstall`|
@@ -20,7 +20,31 @@
 
 ## 在浏览器中查看 HTML
 
-GitHub 仓库页面显示 HTML 文件源码。要查看完整页面，可克隆或下载仓库后，在浏览器中打开实验的 `analysis.html`；保留完整仓库可同时使用报告引用的相对路径图片。
+从[在线站点](https://hnnuyuxuan.github.io/general-physics-lab/)或课程目录中的在线入口进入实验。HTML 计算阅读版可直接操作已有控件，报告阅读版提供完整排版。例如：[单摆在线计算](https://hnnuyuxuan.github.io/general-physics-lab/experiments/course-01/pendulum/notebooks/analysis.html) · [单摆在线报告](https://hnnuyuxuan.github.io/general-physics-lab/experiments/course-01/pendulum/report/report.html)。
+
+克隆或下载完整仓库后，也可在本机浏览器打开仓库中的原始 HTML；保留完整目录可同时使用报告引用的相对路径图片。
+
+### 下载版本阅读包
+
+从[版本发布](https://github.com/HNNUYUXUAN/general-physics-lab/releases)下载 `general-physics-lab-v0.1.0-reading.zip`，解压后进入其中的 `general-physics-lab-v0.1.0` 文件夹，启动随包提供的本地阅读服务：
+
+```powershell
+Expand-Archive .\general-physics-lab-v0.1.0-reading.zip -DestinationPath .\reading
+cd .\reading\general-physics-lab-v0.1.0
+python serve.py
+```
+
+在浏览器打开：
+
+```text
+http://127.0.0.1:8000/general-physics-lab/
+```
+
+阅读包保持在线站点的 `/general-physics-lab/` 路径，`serve.py` 将该目录、公式资源和图表一起提供给本机浏览器。服务仅绑定本机地址；结束时按 `Ctrl+C`。使用其他版本时，将文件名与解压目录中的版本号相应替换。
+
+阅读包用于报告、图表和已有控件；编辑数据或重新运行 Python、Wolfram 计算时，使用完整仓库与对应运行环境。
+
+### 克隆仓库的本地预览
 
 在仓库根目录启动本地预览服务：
 
@@ -105,7 +129,7 @@ DensityLab`OpenNotebook[]
 
 |现象|优先检查|
 |---|---|
-|HTML 在 GitHub 上显示为源码|下载后用浏览器打开，或使用本地 HTTP 预览|
+|打开了 HTML 文件的 GitHub 源码页|点击实验入口中的在线 HTML 链接；本机资料可用本地 HTTP 预览|
 |HTML 公式空白或显示原始符号|MathJax 资源能否加载；可改用 VS Code／Jupyter 查看|
 |图表中文乱码或字体检查失败|本机是否安装 SimSun 与 Times New Roman|
 |Python 找不到 `physicslab`|是否在仓库根目录安装依赖，且选中了虚拟环境内核|

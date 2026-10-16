@@ -102,7 +102,8 @@ Needs["PacletTools`"];
 stage=FileNameJoin[{root,"dist","package-source","@@PACLET@@"}];
 CreateDirectory[stage,CreateIntermediateDirectories->True];
 CopyFile[FileNameJoin[{root,"PacletInfo.wl"}],FileNameJoin[{stage,"PacletInfo.wl"}]];
-Scan[If[DirectoryQ[FileNameJoin[{root,#}]],CopyDirectory[FileNameJoin[{root,#}],FileNameJoin[{stage,#}]]]&,{"Kernel","Notebooks","data","Tests","assets"}];
+Scan[If[DirectoryQ[FileNameJoin[{root,#}]],CopyDirectory[FileNameJoin[{root,#}],FileNameJoin[{stage,#}]]]&,{"Kernel","Notebooks","data","Tests","assets","LICENSES"}];
+Scan[CopyFile[FileNameJoin[{root,#}],FileNameJoin[{stage,#}]]&,{"LICENSE","LICENSING.md","THIRD_PARTY_NOTICES.md"}];
 packed=CreatePacletArchive[stage,FileNameJoin[{root,"dist"}]];
 If[!FileExistsQ[FileNameJoin[{root,"dist","@@PACLET@@-0.1.0.paclet"}]],Print[packed];Exit[1]];
 Print["WOLFRAM_BUILD_OK"];
@@ -149,6 +150,10 @@ Print["WOLFRAM_VERIFY_OK"];
 
 def generate(paclet,entry,a):
     name=entry['paclet']
+    project=Path(__file__).resolve().parents[1]
+    for license_file in ('LICENSE','LICENSING.md','THIRD_PARTY_NOTICES.md'):
+        shutil.copy2(project/license_file,paclet/license_file)
+    shutil.copytree(project/'LICENSES',paclet/'LICENSES',dirs_exist_ok=True)
     # Encode worker-authored WL as ASCII before kernel execution.
     path=paclet/'Kernel/analysis.wl';write_wl(path,path.read_text(encoding='utf-8'))
     write_wl(paclet/f'Kernel/{name}.wl',KERNEL.replace('@@PACLET@@',name))

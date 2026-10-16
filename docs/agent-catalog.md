@@ -2,6 +2,8 @@
 
 [`experiments.json`](experiments.json) 是45项实验的机器可读目录，[JSON Schema](schemas/experiments.schema.json)定义字段。所有 `path` 相对仓库根目录；`url` 指向 GitHub 阅读页，`raw_url` 指向原文件。
 
+`site_base_url` 指向在线实验站点；已部署的HTML与PDF资源提供 `online_url`，可以直接访问。
+
 每个资源记录 SHA-256、字节数与 `hash_basis`。`utf8-lf` 表示先将 UTF-8 文本的 CRLF 换为 LF，再计算哈希和字节数，便于跨平台识别同一内容；PDF、Paclet 使用 `raw-bytes`，直接计算原字节。计算结果内的 `input_hashes` 和 `code_hashes` 按各实验原有的原字节规则核验。
 
 ## 检索命令

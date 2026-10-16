@@ -6,7 +6,7 @@
 
 比较气垫导轨上的粘合碰撞和弹性附件碰撞。前者对照碰前后动量与动能，后者从碰后速度比观察实际运动与理想弹性模型的差别。
 
-[读实验报告](report/report.md) · [HTML 阅读与探索](notebooks/analysis.html) · [Python 笔记本](notebooks/analysis.ipynb) · [Wolfram 笔记本](../../../notebook/paclets/CollisionsLab/Notebooks/CollisionsLab.nb)
+[读实验报告](report/report.md) · [HTML 阅读与探索](https://hnnuyuxuan.github.io/general-physics-lab/experiments/course-01/collisions/notebooks/analysis.html) · [Python 笔记本](notebooks/analysis.ipynb) · [Wolfram 笔记本](../../../notebook/paclets/CollisionsLab/Notebooks/CollisionsLab.nb)
 
 ![碰撞规律的研究：测量、计算与物理解释](assets/readme-overview.svg)
 
@@ -16,8 +16,8 @@
 
 |用途|入口|打开方式|
 |---|---|---|
-|阅读原理、记录、计算与结论|[Markdown 报告](report/report.md) · [排版阅读版](report/report.html)|GitHub、Markdown 阅读器或浏览器|
-|浏览计算图表、操作交互控件|[HTML 阅读版](notebooks/analysis.html)|下载后用浏览器打开|
+|阅读原理、记录、计算与结论|[Markdown 报告](report/report.md) · [排版阅读版](https://hnnuyuxuan.github.io/general-physics-lab/experiments/course-01/collisions/report/report.html)|GitHub、Markdown 阅读器或浏览器|
+|浏览计算图表、操作交互控件|[HTML 阅读版](https://hnnuyuxuan.github.io/general-physics-lab/experiments/course-01/collisions/notebooks/analysis.html)|直接在线打开，也可下载到本机|
 |逐步执行和修改 Python 计算|[Jupyter Notebook](notebooks/analysis.ipynb)|JupyterLab 或 VS Code|
 |原生数学排版与 Wolfram 计算|[Wolfram Notebook](../../../notebook/paclets/CollisionsLab/Notebooks/CollisionsLab.nb) · [Paclet 安装包](../../../notebook/paclets/CollisionsLab/dist/CollisionsLab-0.1.0.paclet)|Wolfram 前端|
 |对照原始报告|[源报告 PDF](../../../pdf/course-01/碰撞规律的研究/碰撞规律研究实验报告.pdf)|GitHub 或 PDF 阅读器|
@@ -62,7 +62,7 @@ $$
 |---|---|---|
 |恢复系数滑块|0–1，默认 1|固定两块质量和示例入射速度 71.02 cm/s，观察两块碰后速度如何分配。|
 
-在 [HTML](notebooks/analysis.html) 中操作已有控件；在 [Jupyter](notebooks/analysis.ipynb) 或 [Wolfram](../../../notebook/paclets/CollisionsLab/Notebooks/CollisionsLab.nb) 中运行全部单元，可继续修改输入与计算。
+在 [HTML](https://hnnuyuxuan.github.io/general-physics-lab/experiments/course-01/collisions/notebooks/analysis.html) 中操作已有控件；在 [Jupyter](notebooks/analysis.ipynb) 或 [Wolfram](../../../notebook/paclets/CollisionsLab/Notebooks/CollisionsLab.nb) 中运行全部单元，可继续修改输入与计算。
 
 ## 在本机打开
 

@@ -6,7 +6,7 @@
 
 固定电感，使用两种电容与两个电阻设置扫描频率。由电阻电压观测定位峰值、插值半功率交点，再将带宽品质因数与谐振元件电压比放在一起比较。
 
-[读实验报告](report/report.md) · [浏览器交互](notebooks/analysis.html) · [Python 笔记本](notebooks/analysis.ipynb) · [Wolfram 笔记本](../../../notebook/paclets/RLCResonanceLab/Notebooks/RLCResonanceLab.nb)
+[读实验报告](report/report.md) · [浏览器交互](https://hnnuyuxuan.github.io/general-physics-lab/experiments/course-03/rlc-resonance/notebooks/analysis.html) · [Python 笔记本](notebooks/analysis.ipynb) · [Wolfram 笔记本](../../../notebook/paclets/RLCResonanceLab/Notebooks/RLCResonanceLab.nb)
 
 ![RLC 串联电路谐振特性的研究：记录、计算与物理探索](assets/readme-overview.svg)
 
@@ -16,8 +16,8 @@
 
 |用途|入口|打开方式|
 |---|---|---|
-|阅读原理、记录与结论|[Markdown 实验报告](report/report.md) · [排版阅读版](report/report.html)|GitHub、Markdown 阅读器或本地浏览器|
-|改变参数、查看曲线响应|[HTML 交互阅读版](notebooks/analysis.html)|下载后用浏览器打开|
+|阅读原理、记录与结论|[Markdown 实验报告](report/report.md) · [排版阅读版](https://hnnuyuxuan.github.io/general-physics-lab/experiments/course-03/rlc-resonance/report/report.html)|GitHub、Markdown 阅读器或本地浏览器|
+|改变参数、查看曲线响应|[HTML 交互阅读版](https://hnnuyuxuan.github.io/general-physics-lab/experiments/course-03/rlc-resonance/notebooks/analysis.html)|直接在线打开，也可下载到本机|
 |运行 Python 计算与探索|[Jupyter Notebook](notebooks/analysis.ipynb)|JupyterLab 或 VS Code|
 |运行原生数学排版与交互计算|[Wolfram Notebook](../../../notebook/paclets/RLCResonanceLab/Notebooks/RLCResonanceLab.nb) · [Paclet 安装包](../../../notebook/paclets/RLCResonanceLab/dist/RLCResonanceLab-0.1.0.paclet)|Wolfram 前端|
 |对照源实验记录|[源报告 PDF](../../../pdf/course-03/11RLC串联电路谐振特性的研究/实验报告-RLC串联电路谐振特性的研究实验报告.pdf)|GitHub 或 PDF 阅读器|
@@ -68,7 +68,7 @@ $$
 |---|---|---|
 |切换电容与品质因数|电容 0.1/0.2 μF，品质因数 2、5、8、15、25|同步观察模型幅频峰宽与相频变化|
 
-[HTML 阅读版](notebooks/analysis.html) 包含上述控件；[Jupyter](notebooks/analysis.ipynb) 与 [Wolfram Notebook](../../../notebook/paclets/RLCResonanceLab/Notebooks/RLCResonanceLab.nb) 沿报告章节展开公式、数据处理和模型计算。
+[HTML 阅读版](https://hnnuyuxuan.github.io/general-physics-lab/experiments/course-03/rlc-resonance/notebooks/analysis.html) 包含上述控件；[Jupyter](notebooks/analysis.ipynb) 与 [Wolfram Notebook](../../../notebook/paclets/RLCResonanceLab/Notebooks/RLCResonanceLab.nb) 沿报告章节展开公式、数据处理和模型计算。
 
 建议按以下顺序阅读：
 

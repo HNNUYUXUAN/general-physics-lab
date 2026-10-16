@@ -6,6 +6,8 @@
 
 |目的|文件|内容|
 |---|---|---|
+|在线阅读与图表互动|[在线站点](https://hnnuyuxuan.github.io/general-physics-lab/)|45 项实验的报告与 HTML 计算阅读版|
+|下载具体版本|[版本发布](https://github.com/HNNUYUXUAN/general-physics-lab/releases)|项目资料与版本记录|
 |让 agent 快速了解项目|[`llms.txt`](../llms.txt)|简短背景、阅读顺序、课程和方法入口|
 |一次读取完整导览|[`llms-full.txt`](../llms-full.txt)|接手说明、复现流程与45项实验卡片|
 |按中英文主题找实验|[实验检索目录](experiment-index.md)|别名、物理问题、分析方法、三稿和数据链接|
@@ -22,11 +24,11 @@ https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/llms.txt
 https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/docs/experiments.json
 ```
 
-需要锁定引用版本时，用实际 Git 提交 SHA 替换 URL 中的 `main`。阅读器沿 GitHub 文件链接浏览；获取纯文本时使用目录中的 `raw_url`。HTML 交互阅读方式见[使用指南](usage.md#在浏览器中查看-html)。
+需要锁定引用版本时，用实际 Git 提交 SHA 替换 URL 中的 `main`。阅读器沿 GitHub 文件链接浏览；获取纯文本时使用目录中的 `raw_url`。HTML 可从[在线站点](https://hnnuyuxuan.github.io/general-physics-lab/)直接访问；下载与本地预览方式见[使用指南](usage.md#在浏览器中查看-html)。
 
 ## 从问题进入证据
 
-例如检索“半功率带宽”会定位 RLC 谐振实验。先读实验 README 的测量与计算主线，再读报告的带宽定义；由 `results/python.json` 的 `C02_R1_Q_bandwidth` 获取完整精度，由 `results/verification.json` 核对双端结果，最后追溯到频率扫描 CSV 和参数文件。
+例如检索“半功率带宽”会定位 RLC 谐振实验。先读实验 README 的测量与计算主线，再读报告的带宽定义；由 `results/python.json` 的 `C02_R1_bandwidth` 获取带宽、`C02_R1_Q_bandwidth` 获取带宽法品质因数的完整精度，由 `results/verification.json` 核对双端结果，最后追溯到频率扫描 CSV 和参数文件。
 
 引用一个结果时同时保留实验标识、指标键、数值、单位、适用条件、来源路径与提交 SHA。引用观测时注明数据表和行标识；引用模型时注明参数与模型假设。项目整体引用信息见 `CITATION.cff`。
 

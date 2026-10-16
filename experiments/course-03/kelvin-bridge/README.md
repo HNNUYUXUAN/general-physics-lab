@@ -6,7 +6,7 @@
 
 使用开尔文双臂电桥测量同一导体不同长度的低电阻。由四端接法、比率臂与圆截面几何求电阻率，同时比较逐长度平均和含截距拟合，理解共用直径带来的敏感性。
 
-[读实验报告](report/report.md) · [浏览器交互](notebooks/analysis.html) · [Python 笔记本](notebooks/analysis.ipynb) · [Wolfram 笔记本](../../../notebook/paclets/KelvinBridgeLab/Notebooks/KelvinBridgeLab.nb)
+[读实验报告](report/report.md) · [浏览器交互](https://hnnuyuxuan.github.io/general-physics-lab/experiments/course-03/kelvin-bridge/notebooks/analysis.html) · [Python 笔记本](notebooks/analysis.ipynb) · [Wolfram 笔记本](../../../notebook/paclets/KelvinBridgeLab/Notebooks/KelvinBridgeLab.nb)
 
 ![直流双臂电桥测低电阻：记录、计算与物理探索](assets/readme-overview.svg)
 
@@ -16,8 +16,8 @@
 
 |用途|入口|打开方式|
 |---|---|---|
-|阅读原理、记录与结论|[Markdown 实验报告](report/report.md) · [排版阅读版](report/report.html)|GitHub、Markdown 阅读器或本地浏览器|
-|改变参数、查看曲线响应|[HTML 交互阅读版](notebooks/analysis.html)|下载后用浏览器打开|
+|阅读原理、记录与结论|[Markdown 实验报告](report/report.md) · [排版阅读版](https://hnnuyuxuan.github.io/general-physics-lab/experiments/course-03/kelvin-bridge/report/report.html)|GitHub、Markdown 阅读器或本地浏览器|
+|改变参数、查看曲线响应|[HTML 交互阅读版](https://hnnuyuxuan.github.io/general-physics-lab/experiments/course-03/kelvin-bridge/notebooks/analysis.html)|直接在线打开，也可下载到本机|
 |运行 Python 计算与探索|[Jupyter Notebook](notebooks/analysis.ipynb)|JupyterLab 或 VS Code|
 |运行原生数学排版与交互计算|[Wolfram Notebook](../../../notebook/paclets/KelvinBridgeLab/Notebooks/KelvinBridgeLab.nb) · [Paclet 安装包](../../../notebook/paclets/KelvinBridgeLab/dist/KelvinBridgeLab-0.1.0.paclet)|Wolfram 前端|
 |对照源实验记录|[源报告 PDF](../../../pdf/course-03/10用直流双臂电桥测低电阻/实验报告-直流双臂电桥测低电阻.pdf)|GitHub 或 PDF 阅读器|
@@ -71,7 +71,7 @@ $$
 |---|---|---|
 |改变模型直径|选择 $D=3.9,4.0,4.1\ \mathrm{mm}$，保持长度与电阻读数|观察整组电阻率按 $D^2$ 同步变化|
 
-[HTML 阅读版](notebooks/analysis.html) 包含上述控件；[Jupyter](notebooks/analysis.ipynb) 与 [Wolfram Notebook](../../../notebook/paclets/KelvinBridgeLab/Notebooks/KelvinBridgeLab.nb) 沿报告章节展开公式、数据处理和模型计算。
+[HTML 阅读版](https://hnnuyuxuan.github.io/general-physics-lab/experiments/course-03/kelvin-bridge/notebooks/analysis.html) 包含上述控件；[Jupyter](notebooks/analysis.ipynb) 与 [Wolfram Notebook](../../../notebook/paclets/KelvinBridgeLab/Notebooks/KelvinBridgeLab.nb) 沿报告章节展开公式、数据处理和模型计算。
 
 建议按以下顺序阅读：
 

@@ -6,7 +6,7 @@
 
 用均匀导电介质中的稳恒电流场模拟无自由电荷区域的静电场。将同轴电极间的汇总半径线性化，再计算径向电位与场强，连接测绘、边界条件和拉普拉斯方程。
 
-[读实验报告](report/report.md) · [浏览器交互](notebooks/analysis.html) · [Python 笔记本](notebooks/analysis.ipynb) · [Wolfram 笔记本](../../../notebook/paclets/ElectrostaticFieldLab/Notebooks/ElectrostaticFieldLab.nb)
+[读实验报告](report/report.md) · [浏览器交互](https://hnnuyuxuan.github.io/general-physics-lab/experiments/course-03/electrostatic-field/notebooks/analysis.html) · [Python 笔记本](notebooks/analysis.ipynb) · [Wolfram 笔记本](../../../notebook/paclets/ElectrostaticFieldLab/Notebooks/ElectrostaticFieldLab.nb)
 
 ![用稳恒电场模拟静电场：记录、计算与物理探索](assets/readme-overview.svg)
 
@@ -16,8 +16,8 @@
 
 |用途|入口|打开方式|
 |---|---|---|
-|阅读原理、记录与结论|[Markdown 实验报告](report/report.md) · [排版阅读版](report/report.html)|GitHub、Markdown 阅读器或本地浏览器|
-|改变参数、查看曲线响应|[HTML 交互阅读版](notebooks/analysis.html)|下载后用浏览器打开|
+|阅读原理、记录与结论|[Markdown 实验报告](report/report.md) · [排版阅读版](https://hnnuyuxuan.github.io/general-physics-lab/experiments/course-03/electrostatic-field/report/report.html)|GitHub、Markdown 阅读器或本地浏览器|
+|改变参数、查看曲线响应|[HTML 交互阅读版](https://hnnuyuxuan.github.io/general-physics-lab/experiments/course-03/electrostatic-field/notebooks/analysis.html)|直接在线打开，也可下载到本机|
 |运行 Python 计算与探索|[Jupyter Notebook](notebooks/analysis.ipynb)|JupyterLab 或 VS Code|
 |运行原生数学排版与交互计算|[Wolfram Notebook](../../../notebook/paclets/ElectrostaticFieldLab/Notebooks/ElectrostaticFieldLab.nb) · [Paclet 安装包](../../../notebook/paclets/ElectrostaticFieldLab/dist/ElectrostaticFieldLab-0.1.0.paclet)|Wolfram 前端|
 |对照源实验记录|[源报告 PDF](../../../pdf/course-03/3用稳恒电场模拟静电场/实验报告-用稳恒电场模拟静电场.pdf)|GitHub 或 PDF 阅读器|
@@ -67,7 +67,7 @@ $$
 |---|---|---|
 |改变内电极电压|选择 $U_0=5,10,15\ \mathrm{V}$，固定两电极半径|同步观察电位与场强的线性尺度响应|
 
-[HTML 阅读版](notebooks/analysis.html) 包含上述控件；[Jupyter](notebooks/analysis.ipynb) 与 [Wolfram Notebook](../../../notebook/paclets/ElectrostaticFieldLab/Notebooks/ElectrostaticFieldLab.nb) 沿报告章节展开公式、数据处理和模型计算。
+[HTML 阅读版](https://hnnuyuxuan.github.io/general-physics-lab/experiments/course-03/electrostatic-field/notebooks/analysis.html) 包含上述控件；[Jupyter](notebooks/analysis.ipynb) 与 [Wolfram Notebook](../../../notebook/paclets/ElectrostaticFieldLab/Notebooks/ElectrostaticFieldLab.nb) 沿报告章节展开公式、数据处理和模型计算。
 
 建议按以下顺序阅读：
 

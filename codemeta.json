@@ -1,10 +1,12 @@
 {
   "@context": "https://w3id.org/codemeta/3.0",
   "@type": "SoftwareSourceCode",
+  "softwareVersion": "0.1.0",
+  "license": ["https://spdx.org/licenses/MIT.html", "https://creativecommons.org/licenses/by/4.0/"],
   "name": "普通物理实验 · General Physics Lab",
   "description": "45个普通物理实验的独立报告、Python/Jupyter与Wolfram计算笔记本、共享CSV/JSON输入、双端结果对照和独立Paclet。Reproducible general physics laboratory experiments in mechanics, thermodynamics, electromagnetism and optics.",
   "codeRepository": "https://github.com/HNNUYUXUAN/general-physics-lab",
-  "url": "https://github.com/HNNUYUXUAN/general-physics-lab",
+  "url": "https://hnnuyuxuan.github.io/general-physics-lab/",
   "programmingLanguage": ["Python", "Wolfram Language"],
   "inLanguage": ["zh-CN", "en"],
   "applicationCategory": "Education, Computational Physics",

@@ -6,7 +6,7 @@
 
 自准直、物距像距和二次成像三种方法测凸透镜，辅助成像法测凹透镜。通过逐次复算与近轴光线探索，把焦距数值、像的位置、放大率和实像条件连接起来。
 
-[读实验报告](report/report.md) · [HTML 阅读版](notebooks/analysis.html) · [Python 笔记本](notebooks/analysis.ipynb) · [Wolfram 笔记本](../../../notebook/paclets/ThinLensLab/Notebooks/ThinLensLab.nb)
+[读实验报告](report/report.md) · [HTML 阅读版](https://hnnuyuxuan.github.io/general-physics-lab/experiments/course-04/thin-lens/notebooks/analysis.html) · [Python 笔记本](notebooks/analysis.ipynb) · [Wolfram 笔记本](../../../notebook/paclets/ThinLensLab/Notebooks/ThinLensLab.nb)
 
 ![四种测量方法与近轴成像模型的关系；凸凹透镜分别计算](assets/readme-overview.svg)
 
@@ -16,8 +16,8 @@
 
 |用途|入口|打开方式|
 |---|---|---|
-|阅读原理、测量记录和实验结论|[Markdown 实验报告](report/report.md) · [排版阅读版](report/report.html)|GitHub、Markdown 阅读器或本地浏览器|
-|浏览计算图表与操作模型控件|[HTML 阅读版](notebooks/analysis.html)|下载后用浏览器打开|
+|阅读原理、测量记录和实验结论|[Markdown 实验报告](report/report.md) · [排版阅读版](https://hnnuyuxuan.github.io/general-physics-lab/experiments/course-04/thin-lens/report/report.html)|GitHub、Markdown 阅读器或本地浏览器|
+|浏览计算图表与操作模型控件|[HTML 阅读版](https://hnnuyuxuan.github.io/general-physics-lab/experiments/course-04/thin-lens/notebooks/analysis.html)|直接在线打开，也可下载到本机|
 |逐步运行和修改 Python 计算|[Jupyter Notebook](notebooks/analysis.ipynb)|JupyterLab 或 VS Code|
 |运行原生公式与计算图表|[Wolfram Notebook](../../../notebook/paclets/ThinLensLab/Notebooks/ThinLensLab.nb) · [Paclet 安装包](../../../notebook/paclets/ThinLensLab/dist/ThinLensLab-0.1.0.paclet)|Wolfram 前端|
 |对照原始实验报告|[源报告 PDF](../../../pdf/course-04/09_实验九_薄透镜焦距的测定_实验报告.pdf)|GitHub 或 PDF 阅读器|

@@ -6,7 +6,7 @@
 
 同一弹性摆轮经历自由、阻尼与受迫振动。对数振幅给出衰减率，频率扫描显示共振附近振幅与相位的同步变化，再用线性响应模型探索阻尼的作用。
 
-[读实验报告](report/report.md) · [HTML 阅读与探索](notebooks/analysis.html) · [Python 笔记本](notebooks/analysis.ipynb) · [Wolfram 笔记本](../../../notebook/paclets/PohlResonanceLab/Notebooks/PohlResonanceLab.nb)
+[读实验报告](report/report.md) · [HTML 阅读与探索](https://hnnuyuxuan.github.io/general-physics-lab/experiments/course-02/pohl-resonance/notebooks/analysis.html) · [Python 笔记本](notebooks/analysis.ipynb) · [Wolfram 笔记本](../../../notebook/paclets/PohlResonanceLab/Notebooks/PohlResonanceLab.nb)
 
 ![波尔共振实验：测量、计算与物理解释](assets/readme-overview.svg)
 
@@ -16,8 +16,8 @@
 
 |用途|入口|打开方式|
 |---|---|---|
-|阅读原理、记录、计算与结论|[Markdown 报告](report/report.md) · [排版阅读版](report/report.html)|GitHub、Markdown 阅读器或浏览器|
-|浏览计算图表、操作交互控件|[HTML 阅读版](notebooks/analysis.html)|下载后用浏览器打开|
+|阅读原理、记录、计算与结论|[Markdown 报告](report/report.md) · [排版阅读版](https://hnnuyuxuan.github.io/general-physics-lab/experiments/course-02/pohl-resonance/report/report.html)|GitHub、Markdown 阅读器或浏览器|
+|浏览计算图表、操作交互控件|[HTML 阅读版](https://hnnuyuxuan.github.io/general-physics-lab/experiments/course-02/pohl-resonance/notebooks/analysis.html)|直接在线打开，也可下载到本机|
 |逐步执行和修改 Python 计算|[Jupyter Notebook](notebooks/analysis.ipynb)|JupyterLab 或 VS Code|
 |原生数学排版与 Wolfram 计算|[Wolfram Notebook](../../../notebook/paclets/PohlResonanceLab/Notebooks/PohlResonanceLab.nb) · [Paclet 安装包](../../../notebook/paclets/PohlResonanceLab/dist/PohlResonanceLab-0.1.0.paclet)|Wolfram 前端|
 |对照原始报告|[源报告 PDF](../../../pdf/course-02/波尔共振实验/实验报告-波尔共振实验.pdf)|GitHub 或 PDF 阅读器|
@@ -69,7 +69,7 @@ $$
 |---|---|---|
 |衰减率比例滑块|实测拟合值的 0.5–2 倍，默认 1 倍|同时观察归一化幅频峰宽、峰高与相频转变，固定自由表平均周期。|
 
-在 [HTML](notebooks/analysis.html) 中操作已有控件；在 [Jupyter](notebooks/analysis.ipynb) 或 [Wolfram](../../../notebook/paclets/PohlResonanceLab/Notebooks/PohlResonanceLab.nb) 中运行全部单元，可继续修改输入与计算。
+在 [HTML](https://hnnuyuxuan.github.io/general-physics-lab/experiments/course-02/pohl-resonance/notebooks/analysis.html) 中操作已有控件；在 [Jupyter](notebooks/analysis.ipynb) 或 [Wolfram](../../../notebook/paclets/PohlResonanceLab/Notebooks/PohlResonanceLab.nb) 中运行全部单元，可继续修改输入与计算。
 
 ## 在本机打开
 

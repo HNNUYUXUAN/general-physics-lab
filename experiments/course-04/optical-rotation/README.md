@@ -6,7 +6,7 @@
 
 旋光仪以两半视场的明暗平衡定位读数。样品前后方向相减，得到旋光角的大小；结合液柱长度和比旋光率，可以计算与这些输入条件对应的溶液浓度。
 
-[读实验报告](report/report.md) · [HTML 阅读版](notebooks/analysis.html) · [Python 笔记本](notebooks/analysis.ipynb) · [Wolfram 笔记本](../../../notebook/paclets/OpticalRotationLab/Notebooks/OpticalRotationLab.nb)
+[读实验报告](report/report.md) · [HTML 阅读版](https://hnnuyuxuan.github.io/general-physics-lab/experiments/course-04/optical-rotation/notebooks/analysis.html) · [Python 笔记本](notebooks/analysis.ipynb) · [Wolfram 笔记本](../../../notebook/paclets/OpticalRotationLab/Notebooks/OpticalRotationLab.nb)
 
 ![旋光角大小与条件浓度的计算链；样品关系与管长作为给定输入](assets/readme-overview.svg)
 
@@ -16,8 +16,8 @@
 
 |用途|入口|打开方式|
 |---|---|---|
-|阅读原理、测量记录和实验结论|[Markdown 实验报告](report/report.md) · [排版阅读版](report/report.html)|GitHub、Markdown 阅读器或本地浏览器|
-|浏览逐次计算表与静态图表|[HTML 阅读版](notebooks/analysis.html)|下载后用浏览器打开|
+|阅读原理、测量记录和实验结论|[Markdown 实验报告](report/report.md) · [排版阅读版](https://hnnuyuxuan.github.io/general-physics-lab/experiments/course-04/optical-rotation/report/report.html)|GitHub、Markdown 阅读器或本地浏览器|
+|浏览逐次计算表与静态图表|[HTML 阅读版](https://hnnuyuxuan.github.io/general-physics-lab/experiments/course-04/optical-rotation/notebooks/analysis.html)|直接在线打开，也可下载到本机|
 |逐步运行和修改 Python 计算|[Jupyter Notebook](notebooks/analysis.ipynb)|JupyterLab 或 VS Code|
 |运行原生公式与计算图表|[Wolfram Notebook](../../../notebook/paclets/OpticalRotationLab/Notebooks/OpticalRotationLab.nb) · [Paclet 安装包](../../../notebook/paclets/OpticalRotationLab/dist/OpticalRotationLab-0.1.0.paclet)|Wolfram 前端|
 |对照原始实验报告|[源报告 PDF](../../../pdf/course-04/11_实验十一_用旋光仪测定旋光性溶液的旋光率和浓度_实验报告_A3双面示范格式版.pdf)|GitHub 或 PDF 阅读器|

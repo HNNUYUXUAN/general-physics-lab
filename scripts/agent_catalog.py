@@ -13,6 +13,7 @@ from urllib.parse import quote, urlsplit
 ROOT = Path(__file__).resolve().parents[1]
 REPO = 'https://github.com/HNNUYUXUAN/general-physics-lab'
 RAW = 'https://raw.githubusercontent.com/HNNUYUXUAN/general-physics-lab/main/'
+PAGES = 'https://hnnuyuxuan.github.io/general-physics-lab/'
 GENERATED = ('docs/experiments.json', 'docs/experiment-index.md',
              'llms.txt', 'llm.txt', 'llms-full.txt')
 
@@ -34,10 +35,13 @@ def resource(path, root=ROOT):
     text_resource = path.suffix.lower() in {'.md', '.json', '.csv', '.py', '.wl', '.ipynb', '.html'}
     if text_resource:
         content = content.decode('utf-8').replace('\r\n', '\n').encode('utf-8')
-    return {'path': relative, 'url': REPO + '/blob/main/' + quote(relative, safe='/'),
+    descriptor = {'path': relative, 'url': REPO + '/blob/main/' + quote(relative, safe='/'),
             'raw_url': RAW + quote(relative, safe='/'),
             'sha256': hashlib.sha256(content).hexdigest(), 'bytes': len(content),
             'hash_basis': 'utf8-lf' if text_resource else 'raw-bytes'}
+    if relative.endswith('.html') or relative.startswith('pdf/') and relative.endswith('.pdf'):
+        descriptor['online_url'] = PAGES + quote(relative, safe='/')
+    return descriptor
 
 
 def compile_catalog(root=ROOT):
@@ -134,7 +138,7 @@ def compile_catalog(root=ROOT):
                                 'pdf_path': pdf_resource['path'], 'pdf_sha256': pdf_resource['sha256'],
                                 'pdf_pages': int(pdf['pages'])},
         })
-    return {'schema_version': 1, 'repository_url': REPO, 'raw_base_url': RAW,
+    return {'schema_version': 1, 'repository_url': REPO, 'raw_base_url': RAW, 'site_base_url': PAGES,
             'path_base': 'repository_root', 'experiment_count': len(experiments),
             'courses': [{'id': f'course-{number:02}', 'title': f'普通物理实验 {number}',
                          'experiment_count': sum(e['course'] == f'course-{number:02}' for e in experiments)}
@@ -194,6 +198,7 @@ def documents(catalog, root=ROOT):
             'Reproducible general physics laboratory experiments in mechanics, thermodynamics, electromagnetism and optics. Primary language: Chinese (zh-CN); English aliases support topic lookup.', '',
             '按任务检索一个实验，先读其README与报告，再取参数、CSV及完整结果。引用数值时附实验标识、指标键、单位、适用条件与提交SHA。Python要求3.11及以上；Wolfram复算使用本机Wolfram环境。', '',
             '## 阅读与接手', '',
+            '- [在线实验站点](' + PAGES + '): 45项实验报告与浏览器交互，Notebook和Paclet提供下载复算。',
             '- ' + link('Agent阅读指南 / Reading guide', 'docs/agent-guide.md') + ': 定位实验、读取证据和引用结果。',
             '- ' + link('Agent复现指南 / Reproduction', 'docs/agent-reproduction.md') + ': 新内核执行、双端重建、Paclet与验收。',
             '- ' + link('仓库工作约定 / AGENTS.md', 'AGENTS.md') + ': 修改范围、数据和排版规则。',
@@ -211,6 +216,7 @@ def documents(catalog, root=ROOT):
              '- ' + link('验证汇总', 'docs/delivery-summary.md') + ': 实验验证记录与资料条件。',
              '- ' + link('源资料PDF', 'pdf/README.md') + ': 45份主报告和12份参考资料。',
              '- ' + link('引用信息 / Citation', 'CITATION.cff') + ': 作者与项目身份；具体结果附提交与路径。', '',
+             '- ' + link('许可范围 / Licensing', 'LICENSING.md') + ': 代码MIT，原创文稿及数据整理贡献CC BY 4.0，第三方材料保留各自权利。', '',
              '## Optional', '',
              '- ' + link('完整导览 / Expanded guide', 'llms-full.txt') + ': 接手文档与全部实验卡片。',
              '- ' + link('软件元数据 / CodeMeta', 'codemeta.json') + ': 软件、语言与学科描述。',

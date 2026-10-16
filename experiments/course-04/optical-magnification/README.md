@@ -6,7 +6,7 @@
 
 先比较物体与像的标尺长度，测量显微镜和望远镜的放大率；再标定测微目镜每格值，利用同一标定因子计算细丝直径。
 
-[读实验报告](report/report.md) · [HTML 阅读版](notebooks/analysis.html) · [Python 笔记本](notebooks/analysis.ipynb) · [Wolfram 笔记本](../../../notebook/paclets/OpticalMagnificationLab/Notebooks/OpticalMagnificationLab.nb)
+[读实验报告](report/report.md) · [HTML 阅读版](https://hnnuyuxuan.github.io/general-physics-lab/experiments/course-04/optical-magnification/notebooks/analysis.html) · [Python 笔记本](notebooks/analysis.ipynb) · [Wolfram 笔记本](../../../notebook/paclets/OpticalMagnificationLab/Notebooks/OpticalMagnificationLab.nb)
 
 ![从放大率测量、目镜标定到细丝直径的长度传递](assets/readme-overview.svg)
 
@@ -16,8 +16,8 @@
 
 |用途|入口|打开方式|
 |---|---|---|
-|阅读原理、测量记录和实验结论|[Markdown 实验报告](report/report.md) · [排版阅读版](report/report.html)|GitHub、Markdown 阅读器或本地浏览器|
-|浏览逐次计算表与静态图表|[HTML 阅读版](notebooks/analysis.html)|下载后用浏览器打开|
+|阅读原理、测量记录和实验结论|[Markdown 实验报告](report/report.md) · [排版阅读版](https://hnnuyuxuan.github.io/general-physics-lab/experiments/course-04/optical-magnification/report/report.html)|GitHub、Markdown 阅读器或本地浏览器|
+|浏览逐次计算表与静态图表|[HTML 阅读版](https://hnnuyuxuan.github.io/general-physics-lab/experiments/course-04/optical-magnification/notebooks/analysis.html)|直接在线打开，也可下载到本机|
 |逐步运行和修改 Python 计算|[Jupyter Notebook](notebooks/analysis.ipynb)|JupyterLab 或 VS Code|
 |运行原生公式与计算图表|[Wolfram Notebook](../../../notebook/paclets/OpticalMagnificationLab/Notebooks/OpticalMagnificationLab.nb) · [Paclet 安装包](../../../notebook/paclets/OpticalMagnificationLab/dist/OpticalMagnificationLab-0.1.0.paclet)|Wolfram 前端|
 |对照原始实验报告|[源报告 PDF](../../../pdf/course-04/06_实验六_用光学仪器测量放大率和微小长度_实验报告.pdf)|GitHub 或 PDF 阅读器|

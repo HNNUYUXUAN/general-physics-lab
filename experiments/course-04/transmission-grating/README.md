@@ -6,7 +6,7 @@
 
 在光栅两侧寻找同一级谱线，以双游标读数形成衍射角。绿线提供光栅常数，紫线和双黄线用于波长计算；双侧配对与两游标一致性共同决定读数的物理含义。
 
-[读实验报告](report/report.md) · [HTML 阅读版](notebooks/analysis.html) · [Python 笔记本](notebooks/analysis.ipynb) · [Wolfram 笔记本](../../../notebook/paclets/TransmissionGratingLab/Notebooks/TransmissionGratingLab.nb)
+[读实验报告](report/report.md) · [HTML 阅读版](https://hnnuyuxuan.github.io/general-physics-lab/experiments/course-04/transmission-grating/notebooks/analysis.html) · [Python 笔记本](notebooks/analysis.ipynb) · [Wolfram 笔记本](../../../notebook/paclets/TransmissionGratingLab/Notebooks/TransmissionGratingLab.nb)
 
 ![透射光栅的两阶段处理：绿线标定与其他谱线的波长计算](assets/readme-overview.svg)
 
@@ -16,8 +16,8 @@
 
 |用途|入口|打开方式|
 |---|---|---|
-|阅读原理、测量记录和实验结论|[Markdown 实验报告](report/report.md) · [排版阅读版](report/report.html)|GitHub、Markdown 阅读器或本地浏览器|
-|浏览逐次计算表与静态图表|[HTML 阅读版](notebooks/analysis.html)|下载后用浏览器打开|
+|阅读原理、测量记录和实验结论|[Markdown 实验报告](report/report.md) · [排版阅读版](https://hnnuyuxuan.github.io/general-physics-lab/experiments/course-04/transmission-grating/report/report.html)|GitHub、Markdown 阅读器或本地浏览器|
+|浏览逐次计算表与静态图表|[HTML 阅读版](https://hnnuyuxuan.github.io/general-physics-lab/experiments/course-04/transmission-grating/notebooks/analysis.html)|直接在线打开，也可下载到本机|
 |逐步运行和修改 Python 计算|[Jupyter Notebook](notebooks/analysis.ipynb)|JupyterLab 或 VS Code|
 |运行原生公式与计算图表|[Wolfram Notebook](../../../notebook/paclets/TransmissionGratingLab/Notebooks/TransmissionGratingLab.nb) · [Paclet 安装包](../../../notebook/paclets/TransmissionGratingLab/dist/TransmissionGratingLab-0.1.0.paclet)|Wolfram 前端|
 |对照原始实验报告|[源报告 PDF](../../../pdf/course-04/05_实验五_用透射光栅测定光波波长_实验报告.pdf)|GitHub 或 PDF 阅读器|

@@ -6,7 +6,7 @@
 
 迈克尔逊干涉仪把动镜的微小位移放大为可计数的条纹变化。光在动镜臂往返传播，位移与光程差之间的二倍关系，是从读数计算波长的关键。
 
-[读实验报告](report/report.md) · [HTML 阅读版](notebooks/analysis.html) · [Python 笔记本](notebooks/analysis.ipynb) · [Wolfram 笔记本](../../../notebook/paclets/MichelsonInterferometerLab/Notebooks/MichelsonInterferometerLab.nb)
+[读实验报告](report/report.md) · [HTML 阅读版](https://hnnuyuxuan.github.io/general-physics-lab/experiments/course-04/michelson-interferometer/notebooks/analysis.html) · [Python 笔记本](notebooks/analysis.ipynb) · [Wolfram 笔记本](../../../notebook/paclets/MichelsonInterferometerLab/Notebooks/MichelsonInterferometerLab.nb)
 
 ![迈克尔逊干涉测波长：动镜位移、往返光程差与条纹计数](assets/readme-overview.svg)
 
@@ -16,8 +16,8 @@
 
 |用途|入口|打开方式|
 |---|---|---|
-|阅读原理、测量记录和实验结论|[Markdown 实验报告](report/report.md) · [排版阅读版](report/report.html)|GitHub、Markdown 阅读器或本地浏览器|
-|浏览逐次计算表与静态图表|[HTML 阅读版](notebooks/analysis.html)|下载后用浏览器打开|
+|阅读原理、测量记录和实验结论|[Markdown 实验报告](report/report.md) · [排版阅读版](https://hnnuyuxuan.github.io/general-physics-lab/experiments/course-04/michelson-interferometer/report/report.html)|GitHub、Markdown 阅读器或本地浏览器|
+|浏览逐次计算表与静态图表|[HTML 阅读版](https://hnnuyuxuan.github.io/general-physics-lab/experiments/course-04/michelson-interferometer/notebooks/analysis.html)|直接在线打开，也可下载到本机|
 |逐步运行和修改 Python 计算|[Jupyter Notebook](notebooks/analysis.ipynb)|JupyterLab 或 VS Code|
 |运行原生公式与计算图表|[Wolfram Notebook](../../../notebook/paclets/MichelsonInterferometerLab/Notebooks/MichelsonInterferometerLab.nb) · [Paclet 安装包](../../../notebook/paclets/MichelsonInterferometerLab/dist/MichelsonInterferometerLab-0.1.0.paclet)|Wolfram 前端|
 |对照原始实验报告|[源报告 PDF](../../../pdf/course-04/08_实验八_迈克尔逊干涉仪的调节和使用_实验报告.pdf)|GitHub 或 PDF 阅读器|

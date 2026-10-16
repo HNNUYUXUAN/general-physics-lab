@@ -6,7 +6,7 @@
 
 铜—康铜热电偶记录加热面与中心面的热电势。中心面的斜率连接比热容，两面之差连接导热系数，双线索共同检验准稳态近似。
 
-[读实验报告](report/report.md) · [HTML 阅读版](notebooks/analysis.html) · [Python 笔记本](notebooks/analysis.ipynb) · [Wolfram 笔记本](../../../notebook/paclets/ThermalConductivityLab/Notebooks/ThermalConductivityLab.nb)
+[读实验报告](report/report.md) · [HTML 阅读版](https://hnnuyuxuan.github.io/general-physics-lab/experiments/course-02/thermal-conductivity/notebooks/analysis.html) · [Python 笔记本](notebooks/analysis.ipynb) · [Wolfram 笔记本](../../../notebook/paclets/ThermalConductivityLab/Notebooks/ThermalConductivityLab.nb)
 
 ![固体导热系数的测量：测量、计算与物理解释](assets/readme-overview.svg)
 
@@ -16,8 +16,8 @@
 
 |用途|入口|打开方式|
 |---|---|---|
-|阅读原理、记录、计算与结论|[Markdown 报告](report/report.md) · [排版阅读版](report/report.html)|GitHub、Markdown 阅读器或浏览器|
-|浏览计算图表与结果|[HTML 阅读版](notebooks/analysis.html)|下载后用浏览器打开|
+|阅读原理、记录、计算与结论|[Markdown 报告](report/report.md) · [排版阅读版](https://hnnuyuxuan.github.io/general-physics-lab/experiments/course-02/thermal-conductivity/report/report.html)|GitHub、Markdown 阅读器或浏览器|
+|浏览计算图表与结果|[HTML 阅读版](https://hnnuyuxuan.github.io/general-physics-lab/experiments/course-02/thermal-conductivity/notebooks/analysis.html)|直接在线打开，也可下载到本机|
 |逐步执行和修改 Python 计算|[Jupyter Notebook](notebooks/analysis.ipynb)|JupyterLab 或 VS Code|
 |原生数学排版与 Wolfram 计算|[Wolfram Notebook](../../../notebook/paclets/ThermalConductivityLab/Notebooks/ThermalConductivityLab.nb) · [Paclet 安装包](../../../notebook/paclets/ThermalConductivityLab/dist/ThermalConductivityLab-0.1.0.paclet)|Wolfram 前端|
 |对照原始报告|[源报告 PDF](../../../pdf/course-02/07-固体导热系数的测量/实验报告-固体导热系数的测量.pdf)|GitHub 或 PDF 阅读器|

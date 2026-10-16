@@ -13,3 +13,9 @@ experiments/**/notebooks/*.html -text
 experiments/**/report/*.html -text
 notebook/paclets/*/Notebooks/*.nb -text
 notebook/paclets/*/Kernel/*.wl -text
+notebook/paclets/*/Tests/* -text
+site/vendor/** -text
+**/LICENSE text eol=lf
+**/LICENSING.md text eol=lf
+**/THIRD_PARTY_NOTICES.md text eol=lf
+**/LICENSES/*.txt text eol=lf

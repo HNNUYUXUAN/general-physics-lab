@@ -70,7 +70,8 @@ If[DirectoryQ[stage]&&!FileExistsQ[FileNameJoin[{stage,"PacletInfo.wl"}]],Print[
 If[DirectoryQ[stage],DeleteDirectory[stage,DeleteContents->True]];
 CreateDirectory[stage,CreateIntermediateDirectories->True];
 CopyFile[FileNameJoin[{root,"PacletInfo.wl"}],FileNameJoin[{stage,"PacletInfo.wl"}]];
-Scan[CopyDirectory[FileNameJoin[{root,#}],FileNameJoin[{stage,#}]]&, {"Kernel","Notebooks","data","Tests"}];
+Scan[CopyDirectory[FileNameJoin[{root,#}],FileNameJoin[{stage,#}]]&, {"Kernel","Notebooks","data","Tests","LICENSES"}];
+Scan[CopyFile[FileNameJoin[{root,#}],FileNameJoin[{stage,#}]]&, {"LICENSE","LICENSING.md","THIRD_PARTY_NOTICES.md"}];
 Needs["PacletTools`"];
 archive=FileNameJoin[{root,"dist","PendulumLab-0.1.0.paclet"}];
 If[FileExistsQ[archive],DeleteFile[archive]];
