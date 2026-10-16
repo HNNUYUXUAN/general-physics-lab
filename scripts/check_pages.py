@@ -64,8 +64,14 @@ def check(site):
         if not p.is_file() or p.stat().st_size!=f['bytes'] or sha(p)!=f['sha256']:errors.append([f['path'],'vendor resource hash'])
     for source in vendor['sources']:
         if not (site/'vendor'/source['license_file']).is_file():errors.append([source['name'],'vendor license'])
-    for name in ['site.css','favicon.svg','pendulum-animation.js','plot-math.js']:
+    for name in ['site.css','favicon.svg','pendulum-animation.js','plot-math.js','simulation-directory.css','simulation-directory.mjs']:
         if sha(site/'assets'/name)!=sha(ROOT/'site/assets'/name):errors.append(['assets/'+name,'site runtime source hash'])
+    directory=BeautifulSoup((site/'simulations/index.html').read_text(encoding='utf-8'),'html.parser')
+    cards=directory.select('[data-directory] .experiment-entry')
+    identities=[card.get('data-id') for card in cards]
+    expected={e['experiment_id'] for e in manifest.get('simulations',[])}
+    if len(identities)!=len(expected) or set(identities)!=expected:errors.append(['simulations/index.html','directory experiment coverage'])
+    if not directory.select_one('form[role=search]') or not directory.select_one('[aria-live=polite]'):errors.append(['simulations/index.html','directory search semantics'])
     animated='experiments/course-01/pendulum/notebooks/analysis.html'
     for relative in pages:
         published=(site/relative).read_text(encoding='utf-8')

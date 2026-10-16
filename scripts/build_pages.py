@@ -85,6 +85,9 @@ class Builder:
         self.simulation_files=list(files.values())
         for relative in files:self.mapping[relative]=relative
         if self.has_simulation_registry:self.mapping['simulations/README.md']='simulations/index.html'
+        if self.has_simulation_registry:
+            for name in ['simulation-directory.css','simulation-directory.mjs']:
+                self.mapping['site/assets/'+name]='assets/'+name
     def build_simulation(self):
         for path in self.simulation_files:
             relative=path.relative_to(self.root).as_posix()
@@ -194,6 +197,8 @@ class Builder:
         for old in soup.select('link[rel="canonical"]'):old.decompose()
         soup.head.append(soup.new_tag('link',rel='canonical',href=self.canonical(destination)))
         soup.head.append(soup.new_tag('link',rel='stylesheet',href=self.url('assets/site.css')))
+        directory_style=soup.select_one('link[href$="/assets/simulation-directory.css"]')
+        if directory_style:soup.head.append(directory_style.extract())
         soup.head.append(soup.new_tag('link',rel='icon',href=self.url('assets/favicon.svg'),type='image/svg+xml'))
         if not notebook:
             config=soup.new_tag('script',type='text/x-mathjax-config')
@@ -210,6 +215,11 @@ class Builder:
     def markdown_page(self,path,destination,title=None):
         text=path.read_text(encoding='utf-8')
         title=title or next((l.lstrip('# ').strip()for l in text.splitlines()if l.startswith('# ')),path.stem)
+        if self.has_simulation_registry and path==self.root/'simulations/README.md':
+            sys.path.insert(0,str(Path(__file__).resolve().parent))
+            from simulation_directory import catalog,render
+            self.transform(render(*catalog(self.root,self.simulation_entries)),path,destination,title)
+            return
         # Keep LaTeX before Markdown's backslash and emphasis processing.
         math=[]
         def hold(m):math.append(m[0]);return 'PHYSICSLABMATHPLACEHOLDER'+str(len(math)-1)+'END'
@@ -258,6 +268,9 @@ class Builder:
         self.write('assets/favicon.svg',(self.root/'site/assets/favicon.svg').read_bytes())
         self.write('assets/pendulum-animation.js',(self.root/'site/assets/pendulum-animation.js').read_bytes())
         self.write('assets/plot-math.js',(self.root/'site/assets/plot-math.js').read_bytes())
+        if self.has_simulation_registry:
+            for name in ['simulation-directory.css','simulation-directory.mjs']:
+                self.write('assets/'+name,(self.root/'site/assets'/name).read_bytes())
         vendor=load(self.root/'site/vendor/manifest.json');vendor_files=[]
         versions={s['name']:s['version']for s in vendor['sources']}
         if versions!={'MathJax':'2.7.7','RequireJS':'2.1.10'}:raise ValueError('Unexpected mathematics runtime versions')

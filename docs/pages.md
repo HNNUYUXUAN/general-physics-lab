@@ -49,3 +49,16 @@ python -m http.server 8000 --bind 127.0.0.1 --directory .build/pages/preview
 [Pages workflow](../.github/workflows/pages.yml) 在 `main` 更新或手动触发时执行：安装依赖 → 测试与文档同步检查 → 构建 → 站点检查 → 上传 Pages 产物 → 部署。仓库 Settings → Pages 的构建来源设为 **GitHub Actions**。
 
 构建失败在对应步骤报告错误并返回非零状态。核验记录作为 `pages-validation` 工作流产物保存，部署地址由 `github-pages` 环境记录。Python/Wolfram 的完整重算流程见[复现指南](agent-reproduction.md)。
+
+## 虚拟实验目录
+
+[在线虚拟实验目录](https://hnnuyuxuan.github.io/general-physics-lab/simulations/)提供四门课程与八个物理主题的分组入口。可组合课程、主题和关键词筛选；搜索支持中英文名称、别名、物理问题与计算方法，空格分开的关键词共同匹配。筛选条件保存在网址中，复制当前网址即可分享或再次打开。
+
+课程及主题分组可单独展开，也可展开或收起全部。清除筛选回到课程总览。关闭JavaScript时，课程折叠目录和实验链接仍可使用。
+
+页面从已验收仿真登记、实验检索信息与科学主题清单生成。操作摘要维护在 `site/simulation-directory.json`；样式与搜索逻辑位于 `site/assets/simulation-directory.css` 和 `simulation-directory.mjs`。更新后同步GitHub阅读入口：
+
+```text
+python scripts/simulation_directory.py
+python scripts/simulation_directory.py --check
+```

@@ -15,6 +15,7 @@ jobs:
       - name: Check agent discovery catalog and documentation
         run: |
           python scripts/build_simulation_scientific_index.py --require-all-ready --check
+          python scripts/simulation_directory.py --check
           python scripts/agent_catalog.py build --check
           python scripts/check_agent_docs.py
       - name: Check manuscript fonts and execute notebook when available
